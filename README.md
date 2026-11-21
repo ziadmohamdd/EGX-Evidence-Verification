@@ -85,6 +85,10 @@ A reference answer is one JSON file per case, written by one author and checked 
 
 Each cited figure is judged against the reference, not against the evidence store the agents saw: **correct** (within 0.5%), **wrong_value** (with a note if it is off by a factor of 1,000 or more), **ambiguous_used**, or **unknown**. The scorer writes `scores.json` and `summary.csv` into the run folder and prints a table per condition. Accuracy and coverage (share of usable figures cited correctly) are always shown together. Run errors and cases without a reference are counted but not scored. These metric definitions are a draft until the primary endpoints are agreed.
 
+## Evaluation plan
+
+The hypotheses, main measure, sample size, statistics, case design, human rating and freeze rules are in [docs/evaluation_plan.md](docs/evaluation_plan.md).
+
 ## Not built yet
 
 - Run the reader on real reports and measure how well it extracts against hand-checked figures
