@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Secrets: API keys live in environment variables, never in files
+.env
+.env.*
+
+# Company report PDFs: not ours to republish. reports/SOURCES.json lists each
+# file's official link and SHA-256, so the exact files can be re-downloaded.
+reports/*.pdf
+
+# Local tool state
+.claude/

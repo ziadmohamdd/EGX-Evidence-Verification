@@ -1,0 +1,44 @@
+{
+  "case_id": "synthetic_001",
+  "information_cutoff": "2025-03-31",
+  "profile": {
+    "goal": "SYNTHETIC TEST CASE - grow savings for a home deposit",
+    "horizon": "3-5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 20000,
+    "currency": "EGP",
+    "holdings": [{"ticker": "SYNA", "shares": 200}]
+  },
+  "prices": {"SYNA": 50.0, "SYNB": 25.0},
+  "evidence": [
+    {
+      "evidence_id": "SYNA-FY24-np",
+      "company": "SYNA",
+      "document": "SYNTHETIC_SYNA_FY2024.pdf",
+      "page": 3,
+      "label": "Net profit attributable to shareholders",
+      "source_text": "Net profit 1,250 (EGP millions) - SYNTHETIC",
+      "value": 1250000000,
+      "scale": 1000000,
+      "period": "FY2024"
+    },
+    {
+      "evidence_id": "SYNB-FY24-rev",
+      "company": "SYNB",
+      "document": "SYNTHETIC_SYNB_FY2024.pdf",
+      "page": 5,
+      "label": "Revenue",
+      "source_text": "Revenue 8?0 (EGP millions) - SYNTHETIC, digit illegible",
+      "value": null,
+      "scale": 1000000,
+      "period": "FY2024",
+      "status": "ambiguous",
+      "note": "second digit illegible in scan"
+    }
+  ]
+}
