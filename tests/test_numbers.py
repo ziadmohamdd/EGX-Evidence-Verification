@@ -1,6 +1,6 @@
 import pytest
 
-from egx_guide.numbers import arabic_ratio, contains_number, detect_scale, normalize, parse_amount
+from egx_guide.numbers import arabic_ratio, contains_number, detect_scale, figure_kind, normalize, parse_amount
 
 
 @pytest.mark.parametrize("raw, value", [
@@ -87,6 +87,21 @@ def test_contains_number_is_whole_number_only():
     assert not contains_number(page, "5,123")
     assert not contains_number(page, "55,12")
     assert contains_number("صافي الربح ٥٥٬١٢٣", "55,123")
+
+
+@pytest.mark.parametrize("label, kind", [
+    ("Basic earnings per share", "per_share"),
+    ("EPS (diluted)", "per_share"),
+    ("Dividends per share", "per_share"),
+    ("نصيب السهم في الأرباح", "per_share"),
+    ("ربحية السهم الأساسية", "per_share"),
+    ("Weighted average number of shares", "count"),
+    ("عدد الأسهم", "count"),
+    ("Net profit for the year", None),
+    ("Shareholders' equity", None),
+])
+def test_figure_kind(label, kind):
+    assert figure_kind(label) == kind
 
 
 def test_arabic_ratio():

@@ -170,6 +170,18 @@ def test_percentages_are_not_scaled():
     assert why == [] and value == 33.4 and scale == 1.0
 
 
+def test_per_share_figures_keep_pounds_on_a_thousands_page():
+    # CIB: "All amounts in EGP thousands", but earnings per share is printed in pounds
+    page = PageRecord(1, "text", "EGP thousands\nNet profit 82,238,852\nBasic 18.25 14.72", 80, 0, 0.0)
+    eps = ExtractedFigure(label="Earnings per share - Basic", printed_value="18.25",
+                          row_text="Basic 18.25 14.72", period="FY2025")
+    value, scale, why, *_ = check_figure(eps, page, "EGP thousands")
+    assert why == [] and value == 18.25 and scale == 1.0
+    profit = ExtractedFigure(label="Net profit", printed_value="82,238,852", row_text="Net profit 82,238,852",
+                             period="FY2025")
+    assert check_figure(profit, page, "EGP thousands")[0] == 82_238_852_000
+
+
 def test_extractor_doubt_and_rtl_layer_are_caught():
     assert any("extractor marked uncertain" in r for r in reasons(fig("55,123", uncertain=True)))
     rtl = PageRecord(1, "text", PAGE.text, 100, 0, 0.8, ["Arabic text layer: reading order may be wrong"])

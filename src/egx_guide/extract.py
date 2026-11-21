@@ -32,7 +32,7 @@ from pydantic import BaseModel, Field
 from .documents import DocumentRecord, PageRecord, parse_pages, read_pdf
 from .llm import Caller
 from .models import EvidenceItem, EvidenceStatus
-from .numbers import contains_number, detect_scale, normalize, parse_amount
+from .numbers import contains_number, detect_scale, figure_kind, normalize, parse_amount
 
 
 class ExtractedFigure(BaseModel):
@@ -110,7 +110,8 @@ def check_figure(fig: ExtractedFigure, page: PageRecord, unit_line: str | None) 
     if page.method == "text" and any("Arabic text layer" in w for w in page.warnings):
         reasons.append("column/period order unverified (right-to-left text layer)")
 
-    if percent:  # a ratio, not an amount: the page's currency unit does not apply
+    kind = figure_kind(f"{fig.label} {fig.row_text}")
+    if percent or kind:  # ratios, per-share figures, share counts: the page's money unit does not apply
         reasons = [r for r in reasons if "unit" not in r and "scale" not in r]
         scale = 1.0
     value = None if parsed.value is None or scale is None else parsed.value * scale
@@ -137,7 +138,9 @@ def extract_figures(doc: DocumentRecord, company: str, caller: Caller) -> tuple[
                 source_text=fig.row_text + (f" | unit: {result.unit_line}" if result.unit_line else ""),
                 value=None if ambiguous else value,
                 scale=scale or 1.0,
-                currency=None if fig.printed_value.strip().endswith("%") else (fig.currency or "EGP"),
+                currency=(None if fig.printed_value.strip().endswith("%")
+                          or figure_kind(f"{fig.label} {fig.row_text}") == "count"
+                          else (fig.currency or "EGP")),
                 period=fig.period,
                 status=EvidenceStatus.AMBIGUOUS if ambiguous else EvidenceStatus.VERIFIED,
                 note="; ".join(reasons) or None,

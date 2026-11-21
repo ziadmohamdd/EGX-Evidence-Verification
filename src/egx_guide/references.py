@@ -33,7 +33,7 @@ from pathlib import Path
 from pydantic import BaseModel
 
 from .models import EvidenceItem, EvidenceStatus
-from .numbers import detect_scale, normalize, parse_amount
+from .numbers import detect_scale, figure_kind, normalize, parse_amount
 
 REL_TOL = 0.005
 LABEL_MATCH = 0.7  # label similarity needed to link an extracted figure to a reference row
@@ -234,7 +234,12 @@ def build_figures(rows: list[dict], require_checked: bool = True) -> tuple[list[
                 problems.append(f"{key}: value {printed!r} cannot be read ({parsed.reason}); "
                                 "fix it or mark usable=no with a note")
                 continue
-            if printed.endswith("%"):
+            kind = figure_kind(f"{r.get('item', '')} {r.get('line_item_as_printed', '')}")
+            if kind == "per_share" and (detect_scale(unit or "")[0] or 1.0) > 1.0:
+                problems.append(f"{key}: per share figures are in pounds, not {unit!r}; "
+                                "write the unit as 'EGP per share'")
+                continue
+            if printed.endswith("%") or kind == "count":
                 scale = 1.0
             else:
                 scale = detect_scale(unit or "")[0]

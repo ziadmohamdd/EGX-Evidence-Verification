@@ -125,6 +125,28 @@ def detect_scale(text: str) -> tuple[float | None, list[str]]:
     return (1.0, currency) if currency else (None, [])
 
 
+# ------------------------------------------------------------------ non-money rows
+
+_PER_SHARE = [r"per share", r"\beps\b", r"نصيب السهم", r"ربحية السهم", r"ربح السهم", r"عائد السهم",
+              r"توزيعات السهم"]
+_SHARE_COUNT = [r"number of shares", r"shares outstanding", r"عدد الأسهم", r"عدد الاسهم"]
+
+
+def figure_kind(label: str) -> str | None:
+    """'per_share' (pounds per share), 'count' (number of shares), or None (a money amount).
+
+    A page's unit line ("EGP thousands") applies to money amounts only. Per-share
+    figures are printed in whole pounds and share counts are plain numbers, so
+    scaling them by the page unit would be off by a factor of 1,000 or more.
+    """
+    t = normalize(label).lower()
+    if any(re.search(p, t) for p in _PER_SHARE):
+        return "per_share"
+    if any(re.search(p, t) for p in _SHARE_COUNT):
+        return "count"
+    return None
+
+
 def contains_number(haystack: str, raw: str) -> bool:
     """Whether the printed number appears in the page text (after normalising both)."""
     needle = normalize(raw).strip().strip("()").strip()

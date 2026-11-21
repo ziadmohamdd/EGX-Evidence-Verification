@@ -57,6 +57,19 @@ def test_values_are_computed_from_printed_number_and_unit(printed, unit, value):
     assert problems == [] and f.value == pytest.approx(value) and f.usable
 
 
+def test_per_share_row_with_thousands_unit_is_a_problem():
+    _, problems = build_figures([row(item="Basic earnings per share", line_item_as_printed="Basic",
+                                     printed_value="18.25", unit_as_printed="EGP thousands")])
+    assert "per share" in problems[0]
+
+
+def test_share_count_needs_no_currency():
+    [f], problems = build_figures([row(item="Weighted average number of shares",
+                                       line_item_as_printed="عدد الأسهم", printed_value="3,000,000",
+                                       unit_as_printed="")])
+    assert problems == [] and f.value == 3_000_000
+
+
 def test_problems_are_reported_and_rows_left_out():
     rows = [
         row(figure_key="a", unit_as_printed=""),
