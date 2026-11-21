@@ -1,0 +1,103 @@
+{
+  "case_id": "dev_003",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "steady growth with some income",
+    "horizon": "3-5 years",
+    "liquidity_needs": "may need 10% of the money within a year",
+    "loss_willingness": "medium",
+    "loss_capacity": "low",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "prices": {
+    "EFID": 20.4,
+    "ETEL": 141.95
+  },
+  "evidence": [
+    {
+      "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "company": "EFID",
+      "document": "EFID_FY2025_EAS_consolidated_signed_en.pdf",
+      "page": 6,
+      "label": "Revenue (consolidated)",
+      "source_text": "Revenue | | 20 915 072 432 | 16 146 545 699 | unit: EGP",
+      "value": 20915072432.0,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31 December 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "company": "EFID",
+      "document": "EFID_FY2025_EAS_consolidated_signed_en.pdf",
+      "page": 6,
+      "label": "Net profit for the year (consolidated)",
+      "source_text": "Net profit for the year | | 2 695 301 670 | 1 606 727 698 | unit: EGP",
+      "value": 2695301670.0,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31 December 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+      "company": "EFID",
+      "document": "EFID_FY2025_EAS_consolidated_signed_en.pdf",
+      "page": 5,
+      "label": "Total equity",
+      "source_text": "Total equity | | 5 724 525 864 | 4 055 484 719 | unit: None",
+      "value": 5724525864.0,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31 December 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "company": "ETEL",
+      "document": "ETEL_FY2025_EAS_consolidated_en.pdf",
+      "page": 6,
+      "label": "Operating revenues (5)",
+      "source_text": "Operating revenues (5) 106 672 946 81 677 812 | unit: L.E.(000)",
+      "value": 106672946000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "31/12/2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+      "company": "ETEL",
+      "document": "ETEL_FY2025_EAS_consolidated_en.pdf",
+      "page": 5,
+      "label": "Total Equity (consolidated)",
+      "source_text": "Total Equity | | 63 687 826 | 45 937 991 | unit: L.E. (000)",
+      "value": 63687826000.0,
+      "scale": 1000.0,
+      "currency": "L.E.",
+      "period": "31/12/2025",
+      "status": "verified",
+      "note": null
+    }
+  ],
+  "question": "What should I do with my portfolio given this information?"
+}

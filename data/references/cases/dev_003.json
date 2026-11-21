@@ -1,0 +1,38 @@
+{
+  "case_id": "dev_003",
+  "figures": {
+    "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01": {
+      "value": 20915072432.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30": {
+      "value": 2695301670.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39": {
+      "value": 5724525864.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01": {
+      "value": 106672946000.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45": {
+      "value": 63687826000.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    }
+  },
+  "acceptable_actions": [
+    "hold",
+    "keep_cash",
+    "sell"
+  ],
+  "prepared_by": "PROVISIONAL: reader output, not hand-checked",
+  "checked_by": null,
+  "notes": "trap: scale; Trap: Telecom Egypt reports in EGP thousands, Edita in whole pounds. Comparing them without converting gives a 1,000x error."
+}

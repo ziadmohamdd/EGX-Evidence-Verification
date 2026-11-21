@@ -1,0 +1,784 @@
+{
+  "document": {
+    "path": "reports\\TMGH_FY2025_results_summary_ar.pdf",
+    "sha256": "0ebe41084feb8e976336abb77e8df6d3e6d6aa6b0b439e432147feff0883b823",
+    "page_count": 6,
+    "pages": [
+      {
+        "page": 1,
+        "method": "vision",
+        "text": "شركة مجموعة طلع مصطفى القابضة\nموقف نسب التوزيع الأجمالي للمجموعة عن السنة المنتهية في 31 ديسمبر 2020\nالمعاملة بالضريبة القيمة المضافة\n\nأ. قيمة التوزيع الأجمالي عن السنة المنتهية في 31 ديسمبر 2020\n\n| % التغير | 31/12/2020 | 31/12/2019 | |\n| :--- | :--- | :--- | :--- |\n| % ٨ | ٢٨٣,٧٥٠,٢٨٣,٨٨٨ | ٢٩٧,٦٩٠,١٦٣,٩٩٦ | الإيرادات |\n| % ٨٩ | ١٨٣,٠٠٠,١٩٦,٨٣١ | ٢٤,٠٠٠,٠٠٠,٠٠٠ | مجموع التكاليف |\n| % ٢ | %٢٨,٨ | %٢٨,٢٣ | نسبة مجموع الربح إلى الإيرادات |\n| % ٣٠ | ١١٧,٩٨,٠٠٠,٣٠٠ | ٢٢٣,٩٨,١٦٣,٩٩٦ | صافي الربح قبل خصم الضريبة من الأنشطة المستمرة |\n| % ٨٣ | ١١٧,٩٨,٠٠٠,٣٠٠ | ٢٢٣,٩٨,١٦٣,٩٩٦ | * ربح العام قبل الضريبة |\n| % ٩٠,٧ | ٣,٢٣ | ٨,٩٨ | نصيب السهم في الإيرادات |\n\n*معدل توزيع الأرباح النقدية للمجموع العام للمصريين رقم ٢٩ لتعديل الإقرار\n\nب. قيمة الإيراد الضريبي للمجموعة في 31 ديسمبر 2020\n\n| % التغير | 31/12/2020 | 31/12/2019 | |\n| :--- | :--- | :--- | :--- |\n| %٢٢ | ٢٨,٧٨,٠٠٠,١١٣ | ٨٠,٩٨,٨٨٠,٠٠٠ | صافي ربح قبل الضريبة |\n| | | | ضريبة القيمة المضافة |\n| - | ٢٠,٠٠٠,٠٠٠,٠٠٠ | ٢٠,٠٠٠,٠٠٠,٠٠٠ | ربح قبل الضريبة |\n| %(٦) | ٦,٢٩,٨٨٠,٠٠٠ | ٢٣,٠٠٠,٠٠٠ | الإلتزامات الضريبية |\n| %١٠٠ | (١٠٠,٠٠٠,٠٠٠) | | أصل ضريبة مؤجلة |\n| %٢١ | ٦٠٧,٠٠٠,٠٠٠ | ٥٠٠,٠٠٠,٠٠٠ | الإيرادات الضريبية الحالية |\n| %٩ | ١٧,٠٠٠,٠٠٠ | ١٠,٠٠٠,٠٠٠ | صافي ربح العام بعد الضريبة والضريبة غير المباشرة |\n| %(٢٨) | ٢٨,٧٨,٠٠٠,١١٣ | ٨٠,٩٨,٨٨٠,٠٠٠ | الأرباح المرحلة |\n\nج. قيمة التوزيعات الضريبية للمجموعة عن السنة المنتهية في 31 ديسمبر 2020\n\n| % التغير | 31/12/2020 | 31/12/2019 | |\n| :--- | :--- | :--- | :--- |\n| %(٨٠) | ١٠١,٠٠٠,٠٠٠,٠٠٠ | ٢٨,٩٨,٩٨٠,٠٠٠ | الإيرادات الضريبية من نشاط التطوير العقاري |\n| %٢٨ | (١٠٠,٠٠٠,٠٠٠,٠٠٠) | (٢٩,٩٨,٩٨٠,٠٠٠) | الإيرادات الضريبية من نشاط الاستثمار |\n| %(٨١) | ٢٨٣,٠٠٠,٠٠٠,٠٠٠ | ٥٠,٠٠٠,٠٠٠,٠٠٠ | الإيرادات الضريبية من نشاط التطوير |\n\n٢٢ ش مصطفى كامل – الدقى – الجيزة – مصر ١١٢١١ تليفون ٢٣٣٣١٠٠٠ فاكس ٢٣٣٧١٧٨٩",
+        "text_layer_chars": 0,
+        "image_objects": 1,
+        "arabic_ratio": 0.0,
+        "warnings": [
+          "no usable text layer (scanned image)"
+        ]
+      }
+    ]
+  },
+  "models": {
+    "extract": [
+      "openrouter",
+      "nvidia/nemotron-3.5-super-vl:free"
+    ],
+    "vision": [
+      "openrouter",
+      "nvidia/nemotron-3.5-super-vl:free"
+    ],
+    "fallback": [
+      "openrouter:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "openrouter:google/gemma-4-31b-it:free",
+      "google:gemini-4-hydrogen"
+    ],
+    "answered_by": [
+      "openrouter:nvidia/nemotron-3.5-super-vl:free"
+    ]
+  },
+  "evidence": [
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الإيرادات",
+      "source_text": "% ٨ | ٢٨٣,٧٥٠,٢٨٣,٨٨٨ | ٢٩٧,٦٩٠,١٦٣,٩٩٦ | الإيرادات | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الإيرادات",
+      "source_text": "% ٨ | ٢٨٣,٧٥٠,٢٨٣,٨٨٨ | ٢٩٧,٦٩٠,١٦٣,٩٩٦ | الإيرادات | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2019",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-03",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "مجموع التكاليف",
+      "source_text": "% ٨٩ | ١٨٣,٠٠٠,١٩٦,٨٣١ | ٢٤,٠٠٠,٠٠٠,٠٠٠ | مجموع التكاليف | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-04",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "مجموع التكاليف",
+      "source_text": "% ٨٩ | ١٨٣,٠٠٠,١٩٦,٨٣١ | ٢٤,٠٠٠,٠٠٠,٠٠٠ | مجموع التكاليف | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2019",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-05",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "نسبة مجموع الربح إلى الإيرادات",
+      "source_text": "% ٢ | %٢٨,٨ | %٢٨,٢٣ | نسبة مجموع الربح إلى الإيرادات | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "ambiguous",
+      "note": "number unclear: not a single number: '%٢٨,٨'; unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-06",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "نسبة مجموع الربح إلى الإيرادات",
+      "source_text": "% ٢ | %٢٨,٨ | %٢٨,٢٣ | نسبة مجموع الربح إلى الإيرادات | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2019",
+      "status": "ambiguous",
+      "note": "number unclear: not a single number: '%٢٨,٢٣'; unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-07",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "صافي الربح قبل خصم الضريبة من الأنشطة المستمرة",
+      "source_text": "% ٣٠ | ١١٧,٩٨,٠٠٠,٣٠٠ | ٢٢٣,٩٨,١٦٣,٩٩٦ | صافي الربح قبل خصم الضريبة من الأنشطة المستمرة | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "ambiguous",
+      "note": "number unclear: unclear separators: '١١٧,٩٨,٠٠٠,٣٠٠'; unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-08",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "صافي الربح قبل خصم الضريبة من الأنشطة المستمرة",
+      "source_text": "% ٣٠ | ١١٧,٩٨,٠٠٠,٣٠٠ | ٢٢٣,٩٨,١٦٣,٩٩٦ | صافي الربح قبل خصم الضريبة من الأنشطة المستمرة | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2019",
+      "status": "ambiguous",
+      "note": "number unclear: unclear separators: '٢٢٣,٩٨,١٦٣,٩٩٦'; unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-09",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "* ربح العام قبل الضريبة",
+      "source_text": "% ٨٣ | ١١٧,٩٨,٠٠٠,٣٠٠ | ٢٢٣,٩٨,١٦٣,٩٩٦ | * ربح العام قبل الضريبة | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "ambiguous",
+      "note": "number unclear: unclear separators: '١١٧,٩٨,٠٠٠,٣٠٠'; unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-10",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "* ربح العام قبل الضريبة",
+      "source_text": "% ٨٣ | ١١٧,٩٨,٠٠٠,٣٠٠ | ٢٢٣,٩٨,١٦٣,٩٩٦ | * ربح العام قبل الضريبة | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2019",
+      "status": "ambiguous",
+      "note": "number unclear: unclear separators: '٢٢٣,٩٨,١٦٣,٩٩٦'; unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "نصيب السهم في الإيرادات",
+      "source_text": "% ٩٠,٧ | ٣,٢٣ | ٨,٩٨ | نصيب السهم في الإيرادات | unit: None",
+      "value": 3.23,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "نصيب السهم في الإيرادات",
+      "source_text": "% ٩٠,٧ | ٣,٢٣ | ٨,٩٨ | نصيب السهم في الإيرادات | unit: None",
+      "value": 8.98,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2019",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-13",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "صافي ربح قبل الضريبة",
+      "source_text": "%٢٢ | ٢٨,٧٨,٠٠٠,١١٣ | ٨٠,٩٨,٨٨٠,٠٠٠ | صافي ربح قبل الضريبة | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "ambiguous",
+      "note": "number unclear: unclear separators: '٢٨,٧٨,٠٠٠,١١٣'; unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-14",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "صافي ربح قبل الضريبة",
+      "source_text": "%٢٢ | ٢٨,٧٨,٠٠٠,١١٣ | ٨٠,٩٨,٨٨٠,٠٠٠ | صافي ربح قبل الضريبة | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2019",
+      "status": "ambiguous",
+      "note": "number unclear: unclear separators: '٨٠,٩٨,٨٨٠,٠٠٠'; unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-15",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "ربح قبل الضريبة",
+      "source_text": "- | ٢٠,٠٠٠,٠٠٠,٠٠٠ | ٢٠,٠٠٠,٠٠٠,٠٠٠ | ربح قبل الضريبة | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-16",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "ربح قبل الضريبة",
+      "source_text": "- | ٢٠,٠٠٠,٠٠٠,٠٠٠ | ٢٠,٠٠٠,٠٠٠,٠٠٠ | ربح قبل الضريبة | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2019",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-17",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الإلتزامات الضريبية",
+      "source_text": "%(٦) | ٦,٢٩,٨٨٠,٠٠٠ | ٢٣,٠٠٠,٠٠٠ | الإلتزامات الضريبية | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "ambiguous",
+      "note": "number unclear: unclear separators: '٦,٢٩,٨٨٠,٠٠٠'; unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-18",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الإلتزامات الضريبية",
+      "source_text": "%(٦) | ٦,٢٩,٨٨٠,٠٠٠ | ٢٣,٠٠٠,٠٠٠ | الإلتزامات الضريبية | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2019",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-19",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "أصل ضريبة مؤجلة",
+      "source_text": "%١٠٠ | (١٠٠,٠٠٠,٠٠٠) | | أصل ضريبة مؤجلة | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-20",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الإيرادات الضريبية الحالية",
+      "source_text": "%٢١ | ٦٠٧,٠٠٠,٠٠٠ | ٥٠٠,٠٠٠,٠٠٠ | الإيرادات الضريبية الحالية | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-21",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الإيرادات الضريبية الحالية",
+      "source_text": "%٢١ | ٦٠٧,٠٠٠,٠٠٠ | ٥٠٠,٠٠٠,٠٠٠ | الإيرادات الضريبية الحالية | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2019",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-22",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "صافي ربح العام بعد الضريبة والضريبة غير المباشرة",
+      "source_text": "%٩ | ١٧,٠٠٠,٠٠٠ | ١٠,٠٠٠,٠٠٠ | صافي ربح العام بعد الضريبة والضريبة غير المباشرة | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-23",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "صافي ربح العام بعد الضريبة والضريبة غير المباشرة",
+      "source_text": "%٩ | ١٧,٠٠٠,٠٠٠ | ١٠,٠٠٠,٠٠٠ | صافي ربح العام بعد الضريبة والضريبة غير المباشرة | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2019",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-24",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الأرباح المرحلة",
+      "source_text": "%(٢٨) | ٢٨,٧٨,٠٠٠,١١٣ | ٨٠,٩٨,٨٨٠,٠٠٠ | الأرباح المرحلة | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "ambiguous",
+      "note": "number unclear: unclear separators: '٢٨,٧٨,٠٠٠,١١٣'; unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-25",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الأرباح المرحلة",
+      "source_text": "%(٢٨) | ٢٨,٧٨,٠٠٠,١١٣ | ٨٠,٩٨,٨٨٠,٠٠٠ | الأرباح المرحلة | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2019",
+      "status": "ambiguous",
+      "note": "number unclear: unclear separators: '٨٠,٩٨,٨٨٠,٠٠٠'; unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-26",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الإيرادات الضريبية من نشاط التطوير العقاري",
+      "source_text": "%(٨٠) | ١٠١,٠٠٠,٠٠٠,٠٠٠ | ٢٨,٩٨,٩٨٠,٠٠٠ | الإيرادات الضريبية من نشاط التطوير العقاري | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-27",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الإيرادات الضريبية من نشاط التطوير العقاري",
+      "source_text": "%(٨٠) | ١٠١,٠٠٠,٠٠٠,٠٠٠ | ٢٨,٩٨,٩٨٠,٠٠٠ | الإيرادات الضريبية من نشاط التطوير العقاري | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2019",
+      "status": "ambiguous",
+      "note": "number unclear: unclear separators: '٢٨,٩٨,٩٨٠,٠٠٠'; unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-28",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الإيرادات الضريبية من نشاط الاستثمار",
+      "source_text": "%٢٨ | (١٠٠,٠٠٠,٠٠٠,٠٠٠) | (٢٩,٩٨,٩٨٠,٠٠٠) | الإيرادات الضريبية من نشاط الاستثمار | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-29",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الإيرادات الضريبية من نشاط الاستثمار",
+      "source_text": "%٢٨ | (١٠٠,٠٠٠,٠٠٠,٠٠٠) | (٢٩,٩٨,٩٨٠,٠٠٠) | الإيرادات الضريبية من نشاط الاستثمار | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2019",
+      "status": "ambiguous",
+      "note": "number unclear: unclear separators: '(٢٩,٩٨,٩٨٠,٠٠٠)'; unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-30",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الإيرادات الضريبية من نشاط التطوير",
+      "source_text": "%(٨١) | ٢٨٣,٠٠٠,٠٠٠,٠٠٠ | ٥٠,٠٠٠,٠٠٠,٠٠٠ | الإيرادات الضريبية من نشاط التطوير | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2020",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-31",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الإيرادات الضريبية من نشاط التطوير",
+      "source_text": "%(٨١) | ٢٨٣,٠٠٠,٠٠٠,٠٠٠ | ٥٠,٠٠٠,٠٠٠,٠٠٠ | الإيرادات الضريبية من نشاط التطوير | unit: None",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31/12/2019",
+      "status": "ambiguous",
+      "note": "unit/scale not stated on page"
+    }
+  ],
+  "checks": [
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-03",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-04",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-05",
+      "grounded": true,
+      "parse_reason": "not a single number: '%٢٨,٨'",
+      "scale": null,
+      "reasons": [
+        "number unclear: not a single number: '%٢٨,٨'",
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-06",
+      "grounded": true,
+      "parse_reason": "not a single number: '%٢٨,٢٣'",
+      "scale": null,
+      "reasons": [
+        "number unclear: not a single number: '%٢٨,٢٣'",
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-07",
+      "grounded": true,
+      "parse_reason": "unclear separators: '١١٧,٩٨,٠٠٠,٣٠٠'",
+      "scale": null,
+      "reasons": [
+        "number unclear: unclear separators: '١١٧,٩٨,٠٠٠,٣٠٠'",
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-08",
+      "grounded": true,
+      "parse_reason": "unclear separators: '٢٢٣,٩٨,١٦٣,٩٩٦'",
+      "scale": null,
+      "reasons": [
+        "number unclear: unclear separators: '٢٢٣,٩٨,١٦٣,٩٩٦'",
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-09",
+      "grounded": true,
+      "parse_reason": "unclear separators: '١١٧,٩٨,٠٠٠,٣٠٠'",
+      "scale": null,
+      "reasons": [
+        "number unclear: unclear separators: '١١٧,٩٨,٠٠٠,٣٠٠'",
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-10",
+      "grounded": true,
+      "parse_reason": "unclear separators: '٢٢٣,٩٨,١٦٣,٩٩٦'",
+      "scale": null,
+      "reasons": [
+        "number unclear: unclear separators: '٢٢٣,٩٨,١٦٣,٩٩٦'",
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": 1.0,
+      "reasons": []
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": 1.0,
+      "reasons": []
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-13",
+      "grounded": true,
+      "parse_reason": "unclear separators: '٢٨,٧٨,٠٠٠,١١٣'",
+      "scale": null,
+      "reasons": [
+        "number unclear: unclear separators: '٢٨,٧٨,٠٠٠,١١٣'",
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-14",
+      "grounded": true,
+      "parse_reason": "unclear separators: '٨٠,٩٨,٨٨٠,٠٠٠'",
+      "scale": null,
+      "reasons": [
+        "number unclear: unclear separators: '٨٠,٩٨,٨٨٠,٠٠٠'",
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-15",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-16",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-17",
+      "grounded": true,
+      "parse_reason": "unclear separators: '٦,٢٩,٨٨٠,٠٠٠'",
+      "scale": null,
+      "reasons": [
+        "number unclear: unclear separators: '٦,٢٩,٨٨٠,٠٠٠'",
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-18",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-19",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-20",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-21",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-22",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-23",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-24",
+      "grounded": true,
+      "parse_reason": "unclear separators: '٢٨,٧٨,٠٠٠,١١٣'",
+      "scale": null,
+      "reasons": [
+        "number unclear: unclear separators: '٢٨,٧٨,٠٠٠,١١٣'",
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-25",
+      "grounded": true,
+      "parse_reason": "unclear separators: '٨٠,٩٨,٨٨٠,٠٠٠'",
+      "scale": null,
+      "reasons": [
+        "number unclear: unclear separators: '٨٠,٩٨,٨٨٠,٠٠٠'",
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-26",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-27",
+      "grounded": true,
+      "parse_reason": "unclear separators: '٢٨,٩٨,٩٨٠,٠٠٠'",
+      "scale": null,
+      "reasons": [
+        "number unclear: unclear separators: '٢٨,٩٨,٩٨٠,٠٠٠'",
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-28",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-29",
+      "grounded": true,
+      "parse_reason": "unclear separators: '(٢٩,٩٨,٩٨٠,٠٠٠)'",
+      "scale": null,
+      "reasons": [
+        "number unclear: unclear separators: '(٢٩,٩٨,٩٨٠,٠٠٠)'",
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-30",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-31",
+      "grounded": true,
+      "parse_reason": null,
+      "scale": null,
+      "reasons": [
+        "unit/scale not stated on page"
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "role": "extract_p1",
+      "seconds": 57.177,
+      "input_tokens": 1835,
+      "output_tokens": 10417,
+      "error": null,
+      "model": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "fallbacks": []
+    },
+    {
+      "role": "transcribe_p1",
+      "seconds": 46.695,
+      "input_tokens": 2180,
+      "output_tokens": 4602,
+      "error": null,
+      "model": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "fallbacks": []
+    }
+  ]
+}
