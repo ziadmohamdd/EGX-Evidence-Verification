@@ -82,12 +82,16 @@ def main(argv=None):
     ap.add_argument("--base-url")
     ap.add_argument("--temperature", type=float, default=0.0)
     ap.add_argument("--fee-rate", type=float, default=0.0)
+    ap.add_argument("--fallback", action="append", default=[], metavar="PROVIDER:MODEL",
+                    help="development only: model to use when the main one is overloaded; "
+                         "final runs must use one model for every condition")
     ap.add_argument("--out", type=Path, default=Path("runs"))
     a = ap.parse_args(argv)
 
-    from .llm import make_chat_model
-    llm = make_chat_model(a.provider, a.model, a.base_url, temperature=a.temperature)
-    info = {"provider": a.provider, "model": a.model, "base_url": a.base_url, "temperature": a.temperature}
+    from .llm import make_fallback_chat
+    llm = make_fallback_chat([f"{a.provider}:{a.model}", *a.fallback], a.base_url, temperature=a.temperature)
+    info = {"provider": a.provider, "model": a.model, "base_url": a.base_url, "temperature": a.temperature,
+            "fallback": a.fallback}
     print(run(load_cases(a.cases), a.conditions, llm, a.out, info, a.fee_rate))
 
 

@@ -160,15 +160,18 @@ def main(argv=None):
     ap.add_argument("--vision-provider", help="defaults to --provider")
     ap.add_argument("--vision-model", help="defaults to --model; use 'none' to disable vision")
     ap.add_argument("--base-url")
+    ap.add_argument("--fallback", action="append", default=[], metavar="PROVIDER:MODEL",
+                    help="model to use when the main one is overloaded or out of quota; repeatable, "
+                         "e.g. openrouter:nvidia/nemotron-3.5-super-vl:free")
     ap.add_argument("--out", type=Path, default=Path("data/evidence"))
     a = ap.parse_args(argv)
 
-    from .llm import make_chat_model
-    caller = Caller(make_chat_model(a.provider, a.model, a.base_url, temperature=0.0))
+    from .llm import make_fallback_chat
+    caller = Caller(make_fallback_chat([f"{a.provider}:{a.model}", *a.fallback], a.base_url, temperature=0.0))
     vision = None
     if a.vision_model != "none" and a.mode != "text":
-        vision = Caller(make_chat_model(a.vision_provider or a.provider, a.vision_model or a.model,
-                                        a.base_url, temperature=0.0))
+        main_vision = f"{a.vision_provider or a.provider}:{a.vision_model or a.model}"
+        vision = Caller(make_fallback_chat([main_vision, *a.fallback], a.base_url, temperature=0.0))
 
     doc = read_pdf(a.pdf, parse_pages(a.pages), a.mode, vision)
     items, checks = extract_figures(doc, a.company, caller)
@@ -179,7 +182,9 @@ def main(argv=None):
         "document": {"path": doc.path, "sha256": doc.sha256, "page_count": doc.page_count,
                      "pages": [asdict(p) for p in doc.pages]},
         "models": {"extract": [a.provider, a.model],
-                   "vision": [a.vision_provider or a.provider, a.vision_model or a.model] if vision else None},
+                   "vision": [a.vision_provider or a.provider, a.vision_model or a.model] if vision else None,
+                   "fallback": a.fallback,
+                   "answered_by": sorted({c.model for c in caller.calls + (vision.calls if vision else []) if c.model})},
         "evidence": [i.model_dump(mode="json") for i in items],
         "checks": [asdict(c) for c in checks],
         "calls": caller.log() + (vision.log() if vision else []),

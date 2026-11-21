@@ -25,7 +25,7 @@ import pypdfium2 as pdfium
 import pypdfium2.raw as pdfium_raw
 from langchain_core.messages import HumanMessage, SystemMessage
 
-from .llm import Caller
+from .llm import Caller, is_transient
 from .numbers import arabic_ratio, detect_scale
 
 Mode = Literal["auto", "text", "vision"]
@@ -89,12 +89,6 @@ def transcribe_page(caller: Caller, page: pdfium.PdfPage, number: int) -> str:
     ])
 
 
-def is_rate_limit(exc: BaseException) -> bool:
-    """Provider quota or rate-limit errors (e.g. Gemini 429 RESOURCE_EXHAUSTED)."""
-    text = f"{type(exc).__name__} {exc}"
-    return "RateLimit" in text or "RESOURCE_EXHAUSTED" in text or " 429" in text
-
-
 def read_pdf(
     path: str | Path,
     pages: list[int] | None = None,
@@ -143,8 +137,8 @@ def read_pdf(
                     text = transcribe_page(vision, page, n)
                     method = "vision"
                 except Exception as exc:  # keep the failure visible
-                    if is_rate_limit(exc):
-                        raise  # out of quota: stop, rather than save the page as unreadable
+                    if is_transient(exc):
+                        raise  # quota or overload on every model: stop, rather than save the page as unreadable
                     warnings.append(f"vision transcription failed: {exc!r}")
                     text, method = (layer, "text") if has_text else ("", "none")
             elif has_text:

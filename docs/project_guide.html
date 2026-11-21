@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>EGX Evidence Verification — Project Guide</title>
+<style>
+  @page { size: A4; margin: 16mm 15mm 16mm 15mm; }
+  :root {
+    --ink: #1d2433; --muted: #5b6577; --line: #d9dee7; --accent: #1f5fae; --accent-soft: #e8f0fb;
+    --ar: #0f6b5c; --ar-soft: #e7f5f1; --warn: #9a5b00; --warn-soft: #fff4e0; --ok: #1d7a3a; --ok-soft: #e6f5ea;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", Arial, sans-serif; color: var(--ink); font-size: 9.8pt; line-height: 1.4; margin: 0; }
+  h1 { font-size: 22pt; margin: 0 0 4px; color: var(--accent); }
+  h2 { font-size: 13.5pt; margin: 12px 0 6px; padding-bottom: 4px; border-bottom: 2px solid var(--accent); color: var(--accent);
+       display: flex; justify-content: space-between; align-items: baseline; break-after: avoid; }
+  h2 .ar-h { font-family: "Segoe UI", Tahoma, sans-serif; direction: rtl; color: var(--ar); font-size: 13pt; }
+  h3 { font-size: 11.5pt; margin: 12px 0 4px; break-after: avoid; }
+  p { margin: 4px 0 6px; }
+  .page { break-after: page; }
+  .page:last-child { break-after: auto; }
+  .ar { direction: rtl; text-align: right; font-family: "Segoe UI", Tahoma, sans-serif; background: var(--ar-soft);
+        border-right: 4px solid var(--ar); padding: 5px 9px; margin: 3px 0 8px; border-radius: 3px; font-size: 9.8pt; }
+  .ar ul, .ar ol { padding-right: 18px; padding-left: 0; margin: 2px 0; }
+  .en ul, .en ol, ul, ol { padding-left: 18px; margin: 2px 0 6px; }
+  li { margin: 1px 0; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .two .ar { margin: 0; }
+  .two > div:first-child { padding: 6px 10px; border-left: 4px solid var(--accent); background: var(--accent-soft); border-radius: 3px; }
+  table { width: 100%; border-collapse: collapse; margin: 5px 0 8px; font-size: 9pt; break-inside: avoid; }
+  th, td { border: 1px solid var(--line); padding: 3px 5px; vertical-align: top; }
+  th { background: #f1f4f9; text-align: left; }
+  td.ar-cell, th.ar-cell { direction: rtl; text-align: right; font-family: "Segoe UI", Tahoma, sans-serif; color: var(--ar); }
+  .cover { text-align: center; padding-top: 60px; }
+  .cover .sub { font-size: 12pt; color: var(--muted); margin: 6px 0 2px; }
+  .cover .ar-title { direction: rtl; font-size: 18pt; color: var(--ar); margin: 18px 0 4px; font-weight: 600; }
+  .cover .box { margin: 34px auto 0; max-width: 520px; text-align: left; }
+  .flow { display: flex; flex-wrap: wrap; align-items: stretch; gap: 0; margin: 10px 0 6px; justify-content: center; }
+  .step { border: 1.5px solid var(--accent); border-radius: 6px; padding: 5px 7px; width: 108px; font-size: 8.6pt;
+          background: #fff; text-align: center; }
+  .step b { display: block; font-size: 9pt; color: var(--accent); }
+  .step .a { direction: rtl; color: var(--ar); display: block; margin-top: 2px; }
+  .step.check { border-color: var(--warn); } .step.check b { color: var(--warn); }
+  .step.score { border-color: var(--ok); } .step.score b { color: var(--ok); }
+  .arrow { align-self: center; font-size: 15pt; color: var(--muted); padding: 0 3px; }
+  .note { background: var(--warn-soft); border-left: 4px solid var(--warn); padding: 6px 10px; border-radius: 3px; margin: 6px 0; font-size: 9.3pt; }
+  .note .ar-line { display: block; direction: rtl; text-align: right; font-family: "Segoe UI", Tahoma, sans-serif; margin-top: 3px; }
+  .done { color: var(--ok); font-weight: 600; } .now { color: var(--warn); font-weight: 600; } .next { color: var(--muted); font-weight: 600; }
+  .small { font-size: 9pt; color: var(--muted); }
+  code { font-family: Consolas, monospace; font-size: 9pt; background: #f1f4f9; padding: 0 3px; border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<!-- ================================================================ COVER -->
+<div class="page cover">
+  <h1>EGX Evidence Verification</h1>
+  <div class="sub">A plain-language guide to the whole project: what we are building, how it works, and where we are now</div>
+  <div class="ar-title" dir="rtl">دليل مبسّط للمشروع كاملًا</div>
+  <div class="sub" dir="rtl" style="font-family:'Segoe UI',Tahoma">ماذا نبني، وكيف يعمل، وأين وصلنا الآن</div>
+  <div class="box">
+    <table>
+      <tr><th>Paper (working title)</th><td>Evaluating Evidence Verification in Multi-Agent Investment Recommendations Using Arabic and English Egyptian Financial Disclosures</td></tr>
+      <tr><th>Conference</th><td>ICT in Our Lives, 19–21 December 2026 (submission deadline: still to confirm)</td></tr>
+      <tr><th>Code</th><td>Private GitHub repository: <code>ziadmohamdd/EGX-Evidence-Verification</code></td></tr>
+      <tr><th>Guide date</th><td>21 November 2026</td></tr>
+    </table>
+    <p class="small">How to read this guide: each idea is written in English (blue) and then in Arabic (green). Sections 1–4 explain the idea, 5–9 explain how it is done, and 10–12 explain where we are and what is next.</p>
+    <div class="ar" dir="rtl">طريقة القراءة: كل فكرة مكتوبة بالإنجليزية (أزرق) ثم بالعربية (أخضر). الأقسام ١–٤ تشرح الفكرة، و٥–٩ تشرح طريقة التنفيذ، و١٠–١٢ توضح أين وصلنا وما الخطوة التالية.</div>
+  </div>
+</div>
+
+<!-- ================================================================ 1 -->
+<div class="page">
+<h2><span>1. The big idea</span><span class="ar-h">١. الفكرة الأساسية</span></h2>
+<div class="two">
+  <div>
+    <p>AI "investment assistants" read company reports and give advice like <i>"buy 50 shares of CIB"</i>. Their biggest danger is <b>quoting a wrong number</b>: a profit of 55 billion read as 55 million, a 9-month figure treated as a full year, or a digit misread from a scanned page.</p>
+    <p><b>Our question:</b> if we add an <b>evidence verifier</b> — a step that checks every number the AI uses against the official report before the advice is shown — do wrong numbers go down? And does it matter whether the AI is <b>one agent</b> or <b>a team of agents</b>?</p>
+  </div>
+  <div class="ar" dir="rtl">
+    <p>المساعدات الاستثمارية التي تعمل بالذكاء الاصطناعي تقرأ تقارير الشركات وتعطي نصيحة مثل <b>«اشترِ ٥٠ سهمًا من البنك التجاري الدولي»</b>. أكبر خطر فيها هو <b>استخدام رقم خاطئ</b>: ربح ٥٥ مليار يُقرأ على أنه ٥٥ مليون، أو رقم ٩ أشهر يُعامل كأنه سنة كاملة، أو رقم يُقرأ خطأً من صفحة ممسوحة ضوئيًا.</p>
+    <p><b>سؤالنا البحثي:</b> لو أضفنا <b>مدقِّقًا للأدلة</b> — خطوة تراجع كل رقم يستخدمه الذكاء الاصطناعي مقابل التقرير الرسمي قبل عرض النصيحة — هل تقل الأرقام الخاطئة؟ وهل يفرق إن كان النظام <b>وكيلًا واحدًا</b> أو <b>فريقًا من الوكلاء</b>؟</p>
+  </div>
+</div>
+
+<h3>What this project is NOT / ما ليس هو المشروع</h3>
+<div class="two">
+  <div><ul>
+    <li>Not a trading bot: <b>no real trades, no real money</b>.</li>
+    <li>Not predicting prices or promising profits.</li>
+    <li>Investors and portfolios are <b>hypothetical</b>; company reports and share prices are <b>real</b>.</li>
+  </ul></div>
+  <div class="ar" dir="rtl"><ul>
+    <li>ليس روبوت تداول: <b>لا صفقات حقيقية ولا أموال حقيقية</b>.</li>
+    <li>لا نتنبأ بالأسعار ولا نَعِد بأرباح.</li>
+    <li>المستثمرون والمحافظ <b>افتراضية</b>؛ أما تقارير الشركات وأسعار الأسهم <b>فحقيقية</b>.</li>
+  </ul></div>
+</div>
+
+<!-- ================================================================ 2 -->
+<h2><span>2. The experiment: four versions (A–D)</span><span class="ar-h">٢. التجربة: أربع نسخ (A–D)</span></h2>
+<p>We build the same assistant four ways and give all four <b>exactly the same cases</b>. They differ in only two switches, so any difference in results comes from those switches.</p>
+<div class="ar" dir="rtl">نبني نفس المساعد بأربع طرق ونعطي الأربعة <b>نفس الحالات بالضبط</b>. الفرق بينها مفتاحان فقط، فأي اختلاف في النتائج يكون بسببهما.</div>
+<table>
+  <tr><th>Version</th><th>Agents</th><th>Evidence verifier</th><th>Portfolio checks</th><th class="ar-cell">بالعربية</th></tr>
+  <tr><td><b>A</b></td><td>1 agent</td><td>Off</td><td>On</td><td class="ar-cell">وكيل واحد، بدون مدقّق</td></tr>
+  <tr><td><b>B</b></td><td>1 agent</td><td><b>On</b></td><td>On</td><td class="ar-cell">وكيل واحد، مع المدقّق</td></tr>
+  <tr><td><b>C</b></td><td>Team of 3</td><td>Off</td><td>On</td><td class="ar-cell">فريق من ٣ وكلاء، بدون مدقّق</td></tr>
+  <tr><td><b>D</b></td><td>Team of 3</td><td><b>On</b></td><td>On</td><td class="ar-cell">فريق من ٣ وكلاء، مع المدقّق</td></tr>
+</table>
+<div class="two">
+  <div><p><b>The team (C, D):</b> a <i>financial analyst</i> studies the company figures, a <i>suitability analyst</i> studies the investor, and a <i>decision agent</i> reads both reports and decides.</p>
+  <p><b>Main comparison:</b> B vs A, and D vs C. Does switching the verifier on reduce wrong numbers?</p></div>
+  <div class="ar" dir="rtl"><p><b>الفريق (C و D):</b> <i>محلل مالي</i> يدرس أرقام الشركة، و<i>محلل ملاءمة</i> يدرس وضع المستثمر، و<i>وكيل قرار</i> يقرأ التقريرين ويتخذ القرار.</p>
+  <p><b>المقارنة الأساسية:</b> B مقابل A، و D مقابل C. هل تشغيل المدقّق يقلل الأرقام الخاطئة؟</p></div>
+</div>
+<div class="note"><b>Portfolio checks are always on</b> in all four versions: the assistant can never sell shares the investor doesn't own, sell more than they hold, or spend more cash than they have.<span class="ar-line">فحوصات المحفظة تعمل دائمًا في النسخ الأربع: لا يمكن بيع أسهم غير مملوكة، أو بيع أكثر من الموجود، أو إنفاق نقد أكثر من المتاح.</span></div>
+</div>
+
+<!-- ================================================================ 3 -->
+<div class="page">
+<h2><span>3. How one run works, step by step</span><span class="ar-h">٣. كيف تعمل التجربة الواحدة خطوة بخطوة</span></h2>
+
+<div class="flow">
+  <div class="step"><b>1. Reports</b>Official PDFs<span class="a">التقارير الرسمية</span></div><div class="arrow">→</div>
+  <div class="step"><b>2. Reader</b>Pulls out numbers<span class="a">قارئ التقارير</span></div><div class="arrow">→</div>
+  <div class="step"><b>3. Case</b>Investor + portfolio + figures<span class="a">الحالة</span></div><div class="arrow">→</div>
+  <div class="step"><b>4. Agent(s)</b>Advice + cited numbers<span class="a">الوكيل / الفريق</span></div>
+</div>
+<div class="flow">
+  <div class="step check"><b>5. Verifier</b>B, D only: checks each number<span class="a">المدقّق</span></div><div class="arrow">→</div>
+  <div class="step check"><b>6. Portfolio checks</b>All versions<span class="a">فحوصات المحفظة</span></div><div class="arrow">→</div>
+  <div class="step"><b>7. Final advice</b>What the investor sees<span class="a">النصيحة النهائية</span></div><div class="arrow">→</div>
+  <div class="step score"><b>8. Scorer</b>Compares with the true numbers<span class="a">التقييم</span></div>
+</div>
+
+<table>
+  <tr><th style="width:4%">#</th><th style="width:48%">What happens</th><th class="ar-cell">ماذا يحدث</th></tr>
+  <tr><td>1</td><td>We download the official financial statements (PDFs) of 5 Egyptian companies.</td><td class="ar-cell">نحمّل القوائم المالية الرسمية (ملفات PDF) لخمس شركات مصرية.</td></tr>
+  <tr><td>2</td><td>The <b>reader</b> turns each statement page into a list of figures (e.g. "Net profit 2025 = 55,123 thousand EGP"). Scanned pages are read by an AI that can see images. Plain code then double-checks each figure: is the number really on the page? Is the unit clear? Is the period stated? Anything doubtful is marked <b>ambiguous</b>, never guessed.</td><td class="ar-cell"><b>القارئ</b> يحوّل كل صفحة إلى قائمة أرقام (مثل «صافي ربح ٢٠٢٥ = ٥٥٬١٢٣ ألف جنيه»). الصفحات الممسوحة يقرؤها ذكاء اصطناعي يرى الصور، ثم يراجع كود عادي كل رقم: هل الرقم موجود فعلًا في الصفحة؟ هل الوحدة واضحة؟ هل الفترة مذكورة؟ أي رقم مشكوك فيه يُعلَّم <b>غامضًا</b> ولا يُخمَّن أبدًا.</td></tr>
+  <tr><td>3</td><td>A <b>case</b> combines a hypothetical investor (goal, time horizon, risk tolerance), their portfolio (shares + cash), real share prices, and a chosen set of figures.</td><td class="ar-cell"><b>الحالة</b> تجمع مستثمرًا افتراضيًا (الهدف، المدة، تحمّل المخاطر) ومحفظته (أسهم + نقد) وأسعار أسهم حقيقية ومجموعة مختارة من الأرقام.</td></tr>
+  <tr><td>4</td><td>The agent (or team) reads the case and gives advice: buy, hold, sell, keep cash, or "not enough evidence". It must list every number it relied on.</td><td class="ar-cell">الوكيل (أو الفريق) يقرأ الحالة ويعطي نصيحة: شراء، احتفاظ، بيع، إبقاء النقد، أو «الأدلة غير كافية»، ويجب أن يذكر كل رقم اعتمد عليه.</td></tr>
+  <tr><td>5</td><td>In B and D, the <b>verifier</b> compares each cited number with the evidence. If something is wrong, the agent gets <b>one chance to fix it</b>. If it is still wrong, the number is removed and the investor is told which figure was not used.</td><td class="ar-cell">في B و D يقارن <b>المدقّق</b> كل رقم بالدليل. إن وُجد خطأ يحصل الوكيل على <b>فرصة واحدة للتصحيح</b>، وإن بقي الخطأ يُحذف الرقم ويُخبَر المستثمر بالرقم الذي لم يُستخدم.</td></tr>
+  <tr><td>6</td><td>The portfolio checks block impossible advice (selling unowned shares, overselling, not enough cash).</td><td class="ar-cell">فحوصات المحفظة تمنع النصائح المستحيلة (بيع أسهم غير مملوكة، بيع أكثر من الموجود، نقد غير كافٍ).</td></tr>
+  <tr><td>7–8</td><td>The final advice is saved, then the <b>scorer</b> compares every number in it with the <b>hand-checked true numbers</b> (section 6) and counts the mistakes.</td><td class="ar-cell">تُحفظ النصيحة النهائية، ثم <b>يقارن المقيِّم</b> كل رقم فيها مع <b>الأرقام الصحيحة المراجَعة يدويًا</b> (القسم ٦) ويحسب الأخطاء.</td></tr>
+</table>
+
+<!-- ================================================================ 4 -->
+<h2><span>4. Why this is a real contribution</span><span class="ar-h">٤. لماذا يعدّ هذا إسهامًا حقيقيًا</span></h2>
+<div class="two">
+  <div><ul>
+    <li>Multi-agent finance systems exist (e.g. TradingAgents), but they are rarely tested on <b>whether their numbers are right</b>.</li>
+    <li>Egyptian reports are hard: <b>Arabic and English</b>, <b>scanned pages</b>, Arabic-Indic digits (٥٥٬١٢٣), "in thousands" units, 9-month periods.</li>
+    <li>We measure errors against <b>hand-checked answers</b>, not against another AI's opinion.</li>
+  </ul></div>
+  <div class="ar" dir="rtl"><ul>
+    <li>أنظمة الوكلاء المتعددين في التمويل موجودة (مثل TradingAgents)، لكن نادرًا ما تُختبر <b>صحة أرقامها</b>.</li>
+    <li>التقارير المصرية صعبة: <b>عربي وإنجليزي</b>، <b>صفحات ممسوحة ضوئيًا</b>، أرقام هندية (٥٥٬١٢٣)، وحدات «بالألف»، وفترات ٩ أشهر.</li>
+    <li>نقيس الأخطاء مقابل <b>إجابات مراجَعة يدويًا</b>، وليس مقابل رأي ذكاء اصطناعي آخر.</li>
+  </ul></div>
+</div>
+</div>
+
+<!-- ================================================================ 5 -->
+<div class="page">
+<h2><span>5. The data</span><span class="ar-h">٥. البيانات</span></h2>
+<table>
+  <tr><th>Company</th><th>Code</th><th>Report</th><th>Type</th><th>Price 18/11/2026</th><th class="ar-cell">الشركة</th></tr>
+  <tr><td>Commercial International Bank</td><td>COMI</td><td>Full year 2025</td><td>Text (unit drawn in header)</td><td>128.00</td><td class="ar-cell">البنك التجاري الدولي</td></tr>
+  <tr><td>Telecom Egypt</td><td>ETEL</td><td>Full year 2025</td><td>Mixed text + scanned</td><td>141.95</td><td class="ar-cell">المصرية للاتصالات</td></tr>
+  <tr><td>Talaat Moustafa Group</td><td>TMGH</td><td>Full year 2025 (English) + Arabic summary</td><td>Scanned; Arabic digits</td><td>82.50</td><td class="ar-cell">مجموعة طلعت مصطفى</td></tr>
+  <tr><td>Edita Food Industries</td><td>EFID</td><td>Full year 2025</td><td>Scanned, signed</td><td>20.40</td><td class="ar-cell">إيديتا للصناعات الغذائية</td></tr>
+  <tr><td>Abou Kir Fertilizers</td><td>ABUK</td><td><b>9 months</b> 2026 (Jan–Sep)</td><td>Scanned, Arabic</td><td>76.21</td><td class="ar-cell">أبوقير للأسمدة</td></tr>
+</table>
+<div class="two">
+  <div><p>The PDFs are in <code>reports/</code> on your laptop but are <b>not uploaded to GitHub</b> (they belong to the companies). <code>reports/SOURCES.json</code> records the official link and a digital fingerprint of each file, so anyone can download exactly the same files. Prices are EGX closing prices with their source in <code>data/cases/prices.json</code>.</p></div>
+  <div class="ar" dir="rtl"><p>ملفات PDF موجودة في مجلد <code>reports/</code> على جهازك لكنها <b>غير مرفوعة على GitHub</b> (فهي ملك الشركات). الملف <code>reports/SOURCES.json</code> يسجّل الرابط الرسمي و«بصمة رقمية» لكل ملف، فيمكن لأي شخص تحميل نفس الملفات بالضبط. الأسعار هي أسعار إغلاق البورصة المصرية ومصدرها في <code>data/cases/prices.json</code>.</p></div>
+</div>
+
+<!-- ================================================================ 6 -->
+<h2><span>6. The "true answers" (ground truth)</span><span class="ar-h">٦. «الإجابات الصحيحة» (المرجع)</span></h2>
+<div class="two">
+  <div>
+    <p>To know whether an answer is wrong, we need the correct numbers, written by a <b>human</b> from the PDFs. This is the <b>reference sheet</b> (<code>data/references/reference_sheet.xlsx</code>): 116 figures across the 6 reports.</p>
+    <ol>
+      <li><b>You</b> fill in each row from the PDF (number as printed, unit, period).</li>
+      <li><b>Claude</b> checks every row against the page image and lists any mismatch. It never fills in values.</li>
+      <li><b>You</b> re-read the PDF for each listed row and decide.</li>
+    </ol>
+    <p><b>Important:</b> don't look at the system's results while filling the sheet, so the true answers stay independent.</p>
+  </div>
+  <div class="ar" dir="rtl">
+    <p>لنعرف إن كانت الإجابة خاطئة، نحتاج الأرقام الصحيحة يكتبها <b>إنسان</b> من ملفات PDF. هذا هو <b>جدول المرجع</b> (<code>data/references/reference_sheet.xlsx</code>): ١١٦ رقمًا من التقارير الستة.</p>
+    <ol>
+      <li><b>أنت</b> تملأ كل صف من ملف PDF (الرقم كما هو مطبوع، الوحدة، الفترة).</li>
+      <li><b>Claude</b> يراجع كل صف مقابل صورة الصفحة ويعرض أي اختلاف، ولا يكتب أي قيمة بنفسه.</li>
+      <li><b>أنت</b> تعيد قراءة الملف لكل صف معروض وتتخذ القرار النهائي.</li>
+    </ol>
+    <p><b>مهم:</b> لا تنظر إلى نتائج النظام أثناء ملء الجدول، حتى تبقى الإجابات الصحيحة مستقلة.</p>
+  </div>
+</div>
+<p class="small">Full instructions / التعليمات الكاملة: <code>docs/reference_answer_guide.md</code></p>
+</div>
+
+<!-- ================================================================ 7 -->
+<div class="page">
+<h2><span>7. Cases and traps</span><span class="ar-h">٧. الحالات والفخاخ</span></h2>
+<div class="two">
+  <div><p>A <b>case</b> is one investor situation. The final experiment uses <b>30 test cases</b>; about <b>6 development cases</b> are used only to build and tune the system and are never counted in the results. About a third of the test cases contain one deliberate <b>trap</b>:</p></div>
+  <div class="ar" dir="rtl"><p><b>الحالة</b> هي موقف استثماري واحد. التجربة النهائية تستخدم <b>٣٠ حالة اختبار</b>، ونحو <b>٦ حالات تطوير</b> تُستخدم فقط لبناء النظام وضبطه ولا تُحسب في النتائج أبدًا. نحو ثلث حالات الاختبار تحتوي <b>فخًا</b> متعمدًا:</p></div>
+</div>
+<table>
+  <tr><th>Trap</th><th>What could go wrong</th><th class="ar-cell">الفخ وما قد يحدث من خطأ</th></tr>
+  <tr><td>Period</td><td>Abu Qir's 9-month profit treated as a full year</td><td class="ar-cell">الفترة: معاملة ربح ٩ أشهر لأبوقير كأنه سنة كاملة</td></tr>
+  <tr><td>Scale</td><td>Mixing "EGP thousands" with whole pounds → 1,000× error</td><td class="ar-cell">الوحدة: خلط «بالألف جنيه» بالجنيه الكامل ← خطأ ١٠٠٠ ضعف</td></tr>
+  <tr><td>Unreadable</td><td>Guessing a number hidden by a stamp instead of saying it's unclear</td><td class="ar-cell">غير مقروء: تخمين رقم مغطى بختم بدلًا من القول إنه غير واضح</td></tr>
+  <tr><td>Per-share</td><td>Earnings per share multiplied by 1,000 on a "thousands" page</td><td class="ar-cell">لكل سهم: ضرب ربحية السهم في ١٠٠٠ في صفحة «بالألف»</td></tr>
+  <tr><td>Arabic-only</td><td>Misreading Arabic-Indic digits (٦٫٩٨ = 6.98)</td><td class="ar-cell">عربي فقط: خطأ في قراءة الأرقام الهندية (٦٫٩٨ = 6.98)</td></tr>
+</table>
+<p>The 6 development cases already exist (<code>data/cases/specs/</code>): one natural case plus one of each trap.</p>
+<div class="ar" dir="rtl">حالات التطوير الست جاهزة بالفعل (<code>data/cases/specs/</code>): حالة طبيعية واحدة وحالة لكل فخ.</div>
+
+<!-- ================================================================ 8 -->
+<h2><span>8. How we measure success</span><span class="ar-h">٨. كيف نقيس النجاح</span></h2>
+<table>
+  <tr><th>Measure</th><th>Meaning</th><th class="ar-cell">المقياس ومعناه</th></tr>
+  <tr><td><b>Main result</b></td><td>% of advice that contains <b>at least one wrong number</b>. Lower is better.</td><td class="ar-cell"><b>النتيجة الرئيسية:</b> نسبة النصائح التي فيها <b>رقم خاطئ واحد على الأقل</b>. الأقل أفضل.</td></tr>
+  <tr><td><b>Coverage</b></td><td>% of the available correct numbers the advice actually used. Stops a system from "winning" by using no numbers at all.</td><td class="ar-cell"><b>التغطية:</b> نسبة الأرقام الصحيحة المتاحة التي استُخدمت فعلًا، حتى لا «يفوز» نظام بعدم استخدام أي رقم.</td></tr>
+  <tr><td>Wrong "verified" figures</td><td>Numbers the reader got wrong but marked as checked: the most dangerous error.</td><td class="ar-cell">أرقام قرأها القارئ خطأً لكنه علّمها «مُتحقَّق منها»: أخطر نوع من الأخطاء.</td></tr>
+  <tr><td>Other</td><td>Portfolio rule breaks, cost, speed, and human rating of the explanation.</td><td class="ar-cell">أخرى: مخالفات قواعد المحفظة، التكلفة، السرعة، وتقييم بشري للشرح.</td></tr>
+</table>
+<div class="two">
+  <div><p><b>Size:</b> 30 cases × 4 versions × 3 repeats = <b>360 runs</b>. <b>Human rating:</b> you rate 25% of explanations (labels hidden), and re-rate 20% of those a week later to show you are consistent. Everything is <b>frozen</b> (code, cases, answers) before the final runs, so results can't be tuned afterwards.</p></div>
+  <div class="ar" dir="rtl"><p><b>الحجم:</b> ٣٠ حالة × ٤ نسخ × ٣ تكرارات = <b>٣٦٠ تشغيلًا</b>. <b>التقييم البشري:</b> تقيّم أنت ٢٥٪ من الشروحات (مع إخفاء النسخة)، ثم تعيد تقييم ٢٠٪ منها بعد أسبوع لإثبات ثبات تقييمك. يُجمَّد كل شيء (الكود والحالات والإجابات) قبل التشغيل النهائي حتى لا تُعدَّل النتائج بعده.</p></div>
+</div>
+<p class="small">Details / التفاصيل: <code>docs/evaluation_plan.md</code></p>
+</div>
+
+<!-- ================================================================ 9 -->
+<div class="page">
+<h2><span>9. The AI models we use</span><span class="ar-h">٩. نماذج الذكاء الاصطناعي المستخدمة</span></h2>
+<div class="two">
+  <div>
+    <p><b>Now (development) — free:</b> Google Gemini and free OpenRouter models (e.g. NVIDIA Nemotron). Free models have daily limits and outages, so the system <b>automatically switches</b> to the next model when one is busy, and records which model answered.</p>
+    <p><b>Final experiment — paid (Claude):</b> all 360 runs must use <b>one fixed model</b> so the comparison is fair. Before that, we measure the real number of calls and you approve a budget with a spending cap. <b>Nothing is paid without your OK.</b></p>
+    <p>The model is just a setting: switching providers needs no code changes.</p>
+  </div>
+  <div class="ar" dir="rtl">
+    <p><b>الآن (مرحلة التطوير) — مجانًا:</b> Google Gemini ونماذج مجانية من OpenRouter (مثل NVIDIA Nemotron). النماذج المجانية لها حدود يومية وأعطال، لذلك ينتقل النظام <b>تلقائيًا</b> إلى النموذج التالي عند انشغال أحدها، ويسجّل أي نموذج أجاب.</p>
+    <p><b>التجربة النهائية — مدفوعة (Claude):</b> يجب أن تستخدم التشغيلات الـ٣٦٠ <b>نموذجًا واحدًا ثابتًا</b> لتكون المقارنة عادلة. قبل ذلك نقيس العدد الحقيقي للطلبات وتوافق أنت على ميزانية بحد أقصى للإنفاق. <b>لا يُدفع أي شيء دون موافقتك.</b></p>
+    <p>النموذج مجرد إعداد: تغيير المزوّد لا يحتاج أي تعديل في الكود.</p>
+  </div>
+</div>
+
+<!-- ================================================================ 10 -->
+<h2><span>10. Where we are now</span><span class="ar-h">١٠. أين وصلنا الآن</span></h2>
+<table>
+  <tr><th style="width:12%">Status</th><th>Item</th><th class="ar-cell">البند</th></tr>
+  <tr><td class="done">✔ Done</td><td>Four versions A–D, verifier, portfolio checks, scorer</td><td class="ar-cell">النسخ الأربع والمدقّق وفحوصات المحفظة والمقيِّم</td></tr>
+  <tr><td class="done">✔ Done</td><td>Report reader with number/unit checks (Arabic + English, scanned pages)</td><td class="ar-cell">قارئ التقارير مع فحص الأرقام والوحدات (عربي وإنجليزي وصفحات ممسوحة)</td></tr>
+  <tr><td class="done">✔ Done</td><td>Reports for all 5 companies + real EGX prices</td><td class="ar-cell">تقارير الشركات الخمس + أسعار البورصة الحقيقية</td></tr>
+  <tr><td class="done">✔ Done</td><td>Reference sheet + guide; reader-accuracy report</td><td class="ar-cell">جدول المرجع ودليله؛ تقرير دقة القارئ</td></tr>
+  <tr><td class="done">✔ Done</td><td>Case builder + 6 development case designs; evaluation plan</td><td class="ar-cell">منشئ الحالات + تصميم ٦ حالات تطوير؛ خطة التقييم</td></tr>
+  <tr><td class="done">✔ Done</td><td>Automatic switching between free AI models; private GitHub repo</td><td class="ar-cell">التنقل التلقائي بين النماذج المجانية؛ مستودع GitHub خاص</td></tr>
+  <tr><td class="now">⟳ Now</td><td>Reader re-reading the 6 reports with all fixes, then building the 6 development cases</td><td class="ar-cell">القارئ يعيد قراءة التقارير الستة بكل الإصلاحات، ثم بناء حالات التطوير الست</td></tr>
+  <tr><td class="next">○ Next</td><td>First end-to-end runs of A–D on the 6 development cases (free models)</td><td class="ar-cell">أول تشغيل كامل للنسخ A–D على حالات التطوير الست (نماذج مجانية)</td></tr>
+  <tr><td class="next">○ Next</td><td>Statistics script; blinded rating sheet; 30 test cases</td><td class="ar-cell">برنامج الإحصاء؛ جدول التقييم المُعمّى؛ ٣٠ حالة اختبار</td></tr>
+  <tr><td class="next">○ Later</td><td>Freeze → final Claude runs (budget OK) → results → write the paper</td><td class="ar-cell">التجميد ← التشغيل النهائي بـClaude (بعد موافقة الميزانية) ← النتائج ← كتابة البحث</td></tr>
+</table>
+</div>
+
+<!-- ================================================================ 11 -->
+<div class="page">
+<h2><span>11. What you need to do</span><span class="ar-h">١١. المطلوب منك</span></h2>
+<table>
+  <tr><th style="width:5%">#</th><th>Task</th><th class="ar-cell">المهمة</th></tr>
+  <tr><td>1</td><td><b>Find the conference submission deadline.</b> It decides how much we can fit.</td><td class="ar-cell"><b>معرفة موعد تسليم البحث للمؤتمر.</b> فهو يحدد حجم ما نستطيع إنجازه.</td></tr>
+  <tr><td>2</td><td><b>Fill in the reference sheet</b> (~20 rows a day is fine). Tell Claude after each batch so it can check it.</td><td class="ar-cell"><b>ملء جدول المرجع</b> (نحو ٢٠ صفًا يوميًا كافٍ). أخبر Claude بعد كل دفعة ليراجعها.</td></tr>
+  <tr><td>3</td><td><b>Review the 6 development cases</b>: are the "acceptable actions" sensible for each investor?</td><td class="ar-cell"><b>مراجعة حالات التطوير الست</b>: هل «الإجراءات المقبولة» منطقية لكل مستثمر؟</td></tr>
+  <tr><td>4</td><td>Keep the Claude app open and the laptop plugged in during long runs.</td><td class="ar-cell">إبقاء تطبيق Claude مفتوحًا والجهاز موصولًا بالكهرباء أثناء التشغيلات الطويلة.</td></tr>
+  <tr><td>5</td><td>Later: approve the Claude budget for the final runs (with a spending cap).</td><td class="ar-cell">لاحقًا: الموافقة على ميزانية Claude للتشغيل النهائي (مع حد أقصى للإنفاق).</td></tr>
+</table>
+<div class="note"><b>Safety rules:</b> never paste or screenshot API keys; keys live only in Windows (<code>setx</code>). Nothing is pushed to GitHub except code, documents and data files — never the PDFs or keys.<span class="ar-line">قواعد الأمان: لا تلصق مفاتيح API ولا تصوّرها؛ المفاتيح محفوظة في ويندوز فقط. لا يُرفع إلى GitHub إلا الكود والمستندات والبيانات، وليس ملفات PDF أو المفاتيح أبدًا.</span></div>
+
+<!-- ================================================================ 12 -->
+<h2><span>12. Key words</span><span class="ar-h">١٢. مصطلحات أساسية</span></h2>
+<table>
+  <tr><th>Term</th><th>Simple meaning</th><th class="ar-cell">المصطلح ومعناه</th></tr>
+  <tr><td>Agent</td><td>An AI given a specific role and instructions</td><td class="ar-cell">وكيل: ذكاء اصطناعي له دور وتعليمات محددة</td></tr>
+  <tr><td>Evidence</td><td>The figures taken from the official reports</td><td class="ar-cell">الأدلة: الأرقام المأخوذة من التقارير الرسمية</td></tr>
+  <tr><td>Verified / Ambiguous</td><td>A figure that passed every check / one with any doubt (must not be used in calculations)</td><td class="ar-cell">مُتحقَّق منه / غامض: رقم اجتاز كل الفحوص / رقم فيه أي شك (لا يُستخدم في الحسابات)</td></tr>
+  <tr><td>Verifier</td><td>The step that checks each cited number before advice is shown</td><td class="ar-cell">المدقّق: الخطوة التي تراجع كل رقم قبل عرض النصيحة</td></tr>
+  <tr><td>Reference (ground truth)</td><td>The correct numbers, checked by a human</td><td class="ar-cell">المرجع: الأرقام الصحيحة المراجَعة يدويًا</td></tr>
+  <tr><td>Case / Run</td><td>One investor situation / one case under one version, once</td><td class="ar-cell">الحالة / التشغيل: موقف استثماري واحد / تشغيل حالة على نسخة واحدة مرة واحدة</td></tr>
+  <tr><td>Coverage</td><td>How many of the available correct numbers were used</td><td class="ar-cell">التغطية: كم من الأرقام الصحيحة المتاحة استُخدم</td></tr>
+  <tr><td>Information cutoff</td><td>The date the case is "set" at (18 Nov 2026); nothing after it may be used</td><td class="ar-cell">تاريخ القطع: التاريخ الذي تُبنى عليه الحالة (١٨ نوفمبر ٢٠٢٦)؛ لا يُستخدم شيء بعده</td></tr>
+  <tr><td>Freeze</td><td>Locking code, cases and answers before the final runs</td><td class="ar-cell">التجميد: قفل الكود والحالات والإجابات قبل التشغيل النهائي</td></tr>
+  <tr><td>Fallback</td><td>Automatically trying the next AI model when one is busy</td><td class="ar-cell">النموذج البديل: تجربة النموذج التالي تلقائيًا عند انشغال أحدها</td></tr>
+</table>
+</div>
+
+</body>
+</html>
