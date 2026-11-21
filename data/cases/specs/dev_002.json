@@ -1,0 +1,34 @@
+{
+  "case_id": "dev_002",
+  "split": "dev",
+  "trap": "unreadable",
+  "information_cutoff": "2026-11-18",
+  "notes": "Trap: last year's net profit is unreadable, so growth cannot be computed from it. A good answer says so instead of guessing.",
+  "profile": {
+    "goal": "long-term wealth building",
+    "horizon": "10+ years",
+    "liquidity_needs": "no withdrawals planned",
+    "loss_willingness": "high",
+    "loss_capacity": "high",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 100000,
+    "holdings": []
+  },
+  "figures": [
+    "TMGH-en-revenue-FY2025",
+    "TMGH-en-revenue-FY2024",
+    "TMGH-en-net_profit_for_the_period-FY2025",
+    "TMGH-en-net_profit_for_the_period-FY2024",
+    "TMGH-en-total_equity-31-12-2025"
+  ],
+  "make_ambiguous": {
+    "TMGH-en-net_profit_for_the_period-FY2024": "digits covered by an auditor's stamp"
+  },
+  "acceptable_actions": [
+    "buy",
+    "keep_cash",
+    "insufficient_evidence"
+  ]
+}

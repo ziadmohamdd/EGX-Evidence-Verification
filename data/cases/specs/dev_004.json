@@ -1,0 +1,36 @@
+{
+  "case_id": "dev_004",
+  "split": "dev",
+  "trap": "per_share",
+  "information_cutoff": "2026-11-18",
+  "notes": "Trap: CIB's statements are in EGP thousands but earnings per share is in pounds. Retiree with liquidity needs holding one bank stock.",
+  "profile": {
+    "goal": "preserve capital and draw income in retirement",
+    "horizon": "1-3 years",
+    "liquidity_needs": "needs about 30,000 EGP within 6 months",
+    "loss_willingness": "low",
+    "loss_capacity": "low",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 5000,
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 1000
+      }
+    ]
+  },
+  "figures": [
+    "COMI-en-net_interest_income-FY2025",
+    "COMI-en-net_profit_for_the_period-FY2025",
+    "COMI-en-net_profit_for_the_period-FY2024",
+    "COMI-en-basic_earnings_per_share-FY2025",
+    "COMI-en-customer_deposits-31-12-2025",
+    "COMI-en-total_equity-31-12-2025"
+  ],
+  "acceptable_actions": [
+    "sell",
+    "hold"
+  ]
+}

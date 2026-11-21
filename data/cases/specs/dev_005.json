@@ -1,0 +1,35 @@
+{
+  "case_id": "dev_005",
+  "split": "dev",
+  "trap": "period",
+  "information_cutoff": "2026-11-18",
+  "notes": "Trap: Abu Qir's figures cover 9 months (Jan-Sep 2026), not a full year. Annualising or calling them full-year figures is wrong.",
+  "profile": {
+    "goal": "add a fertilizer exporter for diversification",
+    "horizon": "5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 40000,
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "figures": [
+    "ABUK-ar-revenue-9M2026",
+    "ABUK-ar-revenue-9M2025",
+    "ABUK-ar-net_profit_for_the_period-9M2026",
+    "ABUK-ar-net_profit_for_the_period-9M2025"
+  ],
+  "acceptable_actions": [
+    "buy",
+    "keep_cash",
+    "hold"
+  ]
+}

@@ -44,7 +44,7 @@ Python 3.12 virtual environment in `.venv`:
 Put an API key in the environment, e.g. `GOOGLE_API_KEY` for Gemini or `ANTHROPIC_API_KEY` for Claude. Then:
 
 ```powershell
-.venv\Scripts\python -m egx_guide.runner --cases tests\fixtures\cases --conditions A B C D --provider google --model <model-name>
+.venv\Scripts\python -m egx_guide.runner --cases data\cases\dev --conditions A B C D --provider google --model <model-name>
 ```
 
 Results go to `runs/<timestamp>/<condition>/<case_id>.json` with a `manifest.json`.
@@ -71,6 +71,17 @@ One author fills in [data/references/reference_sheet.xlsx](data/references/refer
 ```
 
 `build` computes each value in base units with the same rules as the reader and lists problem rows. `accuracy` reports, per document, how many checked figures the reader got **correct**, got **wrong but marked verified** (the dangerous case), **flagged as ambiguous**, or **missed**.
+
+## Building cases
+
+A case spec in `data/cases/specs/` describes one case: investor profile, portfolio, information cutoff, the figures the agents get (by reference-sheet key, e.g. `COMI-en-net_profit_for_the_period-FY2025`), acceptable actions, and optionally one trap (`period`, `scale`, `unreadable`, `arabic_only`, `per_share`). Prices come from [data/cases/prices.json](data/cases/prices.json), which holds EGX closing prices with their source.
+
+```powershell
+.venv\Scripts\python -m egx_guide.cases                 # with hand-checked figures (data/references/figures.json)
+.venv\Scripts\python -m egx_guide.cases --provisional   # development only: the reader's values stand in
+```
+
+Cases go to `data/cases/<dev|test>/` and their reference answers to `data/references/cases/`. Agents only see figures that have a reference. A figure the reader got wrong stays as read, and the reference holds the true value. If the reader's row label differs from the sheet, write the figure as `{"key": "...", "label": "Operating revenues"}`. Test cases refuse provisional references.
 
 ## Scoring a run
 

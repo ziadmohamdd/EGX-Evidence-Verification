@@ -1,0 +1,42 @@
+{
+  "case_id": "dev_001",
+  "split": "dev",
+  "information_cutoff": "2026-11-18",
+  "notes": "Natural case. Existing ETEL holder with moderate risk; does the evidence support holding, adding or trimming?",
+  "profile": {
+    "goal": "grow savings for a child's university fees",
+    "horizon": "5-7 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 20000,
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 300
+      }
+    ]
+  },
+  "figures": [
+    {
+      "key": "ETEL-en-revenue-FY2025",
+      "label": "Operating revenues"
+    },
+    {
+      "key": "ETEL-en-revenue-FY2024",
+      "label": "Operating revenues"
+    },
+    "ETEL-en-gross_profit-FY2025",
+    "ETEL-en-gross_profit-FY2024",
+    "ETEL-en-total_assets-31-12-2025",
+    "ETEL-en-total_equity-31-12-2025"
+  ],
+  "acceptable_actions": [
+    "hold",
+    "buy",
+    "keep_cash"
+  ]
+}

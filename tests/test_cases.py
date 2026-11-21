@@ -1,0 +1,142 @@
+import json
+
+import pytest
+
+from egx_guide.cases import CaseSpec, build_case, main, template_figures
+from egx_guide.models import EvidenceItem, EvidenceStatus
+from egx_guide.references import RefFigure
+
+DOC = "COMI_FY2025.pdf"
+
+
+def ev(eid, label, period, value, status=EvidenceStatus.VERIFIED, page=5, company="COMI", doc=DOC):
+    return EvidenceItem(evidence_id=eid, company=company, document=doc, page=page, label=label,
+                        source_text="row", value=value if status is EvidenceStatus.VERIFIED else None,
+                        period=period, status=status, note=None if status is EvidenceStatus.VERIFIED else "unclear")
+
+
+ITEMS = [
+    ev("e1", "Net profit for the year (consolidated)", "Dec. 31, 2025", 55_123_000),
+    ev("e2", "Net profit for the year (consolidated)", "Dec. 31, 2024", 48_900),          # reader scale error
+    ev("e3", "Total assets", "Dec. 31, 2025", None, EvidenceStatus.AMBIGUOUS, page=4),
+    ev("e4", "Revenue", "Dec. 31, 2025", 9e9),                                           # not chosen
+    ev("x1", "Net profit", "31 December 2025", 2_000_000_000, company="EFID", doc="EFID.pdf", page=6),
+]
+
+
+def fig(key, line, period, value, usable=True, page=5, company="COMI", doc=DOC):
+    return RefFigure(figure_key=key, company=company, document=doc, pages=[page], statement="",
+                     line_item=line, period_code=period, period_as_printed=None, printed_value=None,
+                     unit=None, value=value, usable=usable, checked_by="B")
+
+
+BANK = {f.figure_key: f for f in [
+    fig("np25", "Net profit for the year", "FY2025", 55_123_000),
+    fig("np24", "Net profit for the year", "FY2024", 48_900_000),
+    fig("ta25", "Total assets", "31-12-2025", 1_250_000_000, page=4),
+    fig("eps25", "Basic earnings per share", "FY2025", 18.25),
+    fig("efid_np", "Net profit", "FY2025", 2_000_000_000, company="EFID", doc="EFID.pdf", page=6),
+]}
+
+PRICES = {"2026-11-18": {"COMI": {"price": 80.5, "source": "egx.com.eg"},
+                         "EFID": {"price": 30.0, "source": "egx.com.eg"}}}
+
+
+def spec(**kw):
+    base = {
+        "case_id": "dev_001", "split": "dev", "information_cutoff": "2026-11-18",
+        "profile": {"goal": "grow savings", "horizon": "3-5 years", "liquidity_needs": "low",
+                    "loss_willingness": "medium", "loss_capacity": "medium"},
+        "portfolio": {"cash": 50_000, "holdings": [{"ticker": "COMI", "shares": 100}]},
+        "figures": ["np25", "np24", "ta25"],
+        "acceptable_actions": ["hold", "keep_cash"],
+    }
+    return CaseSpec.model_validate({**base, **kw})
+
+
+def test_case_uses_only_chosen_figures_with_true_values_as_reference():
+    case, ref, problems = build_case(spec(), ITEMS, BANK, PRICES)
+    assert problems == []
+    assert [e.evidence_id for e in case.evidence] == ["e1", "e2", "e3"]
+    assert case.prices == {"COMI": 80.5}
+    # the reader's scale error stays in the evidence; the reference holds the checked value
+    assert ref.figures["e2"].value == 48_900_000 and ref.figures["e1"].value == 55_123_000
+    assert ref.figures["e3"].usable and ref.figures["e3"].value == 1_250_000_000
+    assert ref.case_id == "dev_001" and [a.value for a in ref.acceptable_actions] == ["hold", "keep_cash"]
+
+
+def test_missing_figure_and_unknown_key_are_problems():
+    case, ref, problems = build_case(spec(figures=["np25", "eps25", "nope"]), ITEMS, BANK, PRICES)
+    assert [e.evidence_id for e in case.evidence] == ["e1"]
+    text = "\n".join(problems)
+    assert "eps25" in text and "reader" in text
+    assert "nope" in text and "reference" in text
+
+
+def test_missing_price_stops_the_case():
+    case, ref, problems = build_case(spec(figures=["efid_np"]), ITEMS, BANK, {"2026-11-18": {"COMI": PRICES["2026-11-18"]["COMI"]}})
+    assert case is None and any("EFID" in p and "price" in p for p in problems)
+
+
+def test_prices_cover_portfolio_and_evidence_companies():
+    case, _, problems = build_case(spec(figures=["np25", "efid_np"]), ITEMS, BANK, PRICES)
+    assert problems == [] and case.prices == {"COMI": 80.5, "EFID": 30.0}
+
+
+def test_trap_makes_a_figure_unreadable_in_evidence_and_reference():
+    s = spec(trap="unreadable", make_ambiguous={"np25": "last digit hidden by a stamp"})
+    case, ref, problems = build_case(s, ITEMS, BANK, PRICES)
+    e1 = next(e for e in case.evidence if e.evidence_id == "e1")
+    assert e1.status is EvidenceStatus.AMBIGUOUS and e1.value is None and "stamp" in e1.note
+    assert ref.figures["e1"].usable is False
+
+
+def test_label_override_helps_matching():
+    s = spec(figures=[{"key": "np25", "label": "Net profit for the year"}])
+    bank = {"np25": BANK["np25"].model_copy(update={"line_item": "Profit after tax"})}
+    case, _, problems = build_case(s, ITEMS, bank, PRICES)
+    assert problems == [] and [e.evidence_id for e in case.evidence] == ["e1"]
+
+
+TEMPLATE = [
+    {"figure_key": "np25", "company": "COMI", "document": DOC, "page": "5", "statement": "income statement",
+     "item": "Net profit for the year", "period_code": "FY2025"},
+    {"figure_key": "np24", "company": "COMI", "document": DOC, "page": "5", "statement": "income statement",
+     "item": "Net profit for the year", "period_code": "FY2024"},
+    {"figure_key": "ta25", "company": "COMI", "document": DOC, "page": "4", "statement": "balance sheet",
+     "item": "Total assets", "period_code": "31-12-2025"},
+]
+
+
+def test_test_cases_cannot_use_provisional_references():
+    with pytest.raises(ValueError, match="provisional"):
+        build_case(spec(split="test"), ITEMS, template_figures(TEMPLATE), PRICES, provisional=True)
+
+
+def test_provisional_references_use_sheet_keys_and_reader_values():
+    case, ref, problems = build_case(spec(), ITEMS, template_figures(TEMPLATE), PRICES, provisional=True)
+    assert problems == [] and [e.evidence_id for e in case.evidence] == ["e1", "e2", "e3"]
+    assert ref.figures["e1"].value == 55_123_000
+    assert ref.figures["e2"].value == 48_900          # the reader's value, errors included: hence PROVISIONAL
+    assert ref.figures["e3"].usable is False
+    assert "PROVISIONAL" in ref.prepared_by
+
+
+def test_default_template_keys_are_available():
+    assert "COMI-en-net_profit_for_the_period-FY2025" in template_figures()
+
+
+def test_cli_writes_case_and_reference(tmp_path):
+    (tmp_path / "specs").mkdir()
+    (tmp_path / "evidence").mkdir()
+    (tmp_path / "specs" / "dev_001.json").write_text(spec().model_dump_json())
+    (tmp_path / "evidence" / "COMI.json").write_text(json.dumps({"evidence": [e.model_dump(mode="json") for e in ITEMS]}))
+    (tmp_path / "figures.json").write_text(json.dumps([f.model_dump() for f in BANK.values()]))
+    (tmp_path / "prices.json").write_text(json.dumps(PRICES))
+    main(["--specs", str(tmp_path / "specs"), "--evidence", str(tmp_path / "evidence"),
+          "--figures", str(tmp_path / "figures.json"), "--prices", str(tmp_path / "prices.json"),
+          "--out", str(tmp_path / "out")])
+    case = json.loads((tmp_path / "out" / "cases" / "dev" / "dev_001.json").read_text(encoding="utf-8"))
+    ref = json.loads((tmp_path / "out" / "references" / "cases" / "dev_001.json").read_text(encoding="utf-8"))
+    assert case["case_id"] == "dev_001" and len(case["evidence"]) == 3
+    assert ref["figures"]["e2"]["value"] == 48_900_000

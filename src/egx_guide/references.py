@@ -286,6 +286,21 @@ def _close(a: float, b: float) -> bool:
     return abs(a - b) <= REL_TOL * max(abs(b), 1e-9)
 
 
+def match_items(fig: RefFigure, items: list[EvidenceItem]) -> list[EvidenceItem]:
+    """Extracted items for this reference figure: same document, page, period, and the closest label."""
+    candidates = []
+    for it in items:
+        if it.document != fig.document or not _same_period(fig, it):
+            continue
+        if fig.pages and it.page not in fig.pages:
+            continue
+        score = SequenceMatcher(None, _label(fig.line_item), _label(it.label)).ratio()
+        if score >= LABEL_MATCH:
+            candidates.append((score, it))
+    best = max((s for s, _ in candidates), default=0)
+    return [it for s, it in candidates if s == best]
+
+
 def compare_extraction(items: list[EvidenceItem], figures: list[RefFigure]) -> list[dict]:
     """For each checked figure, what did the reader do with it?
 
@@ -297,17 +312,7 @@ def compare_extraction(items: list[EvidenceItem], figures: list[RefFigure]) -> l
     """
     out = []
     for fig in figures:
-        candidates = []
-        for it in items:
-            if it.document != fig.document or not _same_period(fig, it):
-                continue
-            if fig.pages and it.page not in fig.pages:
-                continue
-            score = SequenceMatcher(None, _label(fig.line_item), _label(it.label)).ratio()
-            if score >= LABEL_MATCH:
-                candidates.append((score, it))
-        best = max((s for s, _ in candidates), default=0)
-        matched = [it for s, it in candidates if s == best]
+        matched = match_items(fig, items)
         verified = [it for it in matched if it.status is EvidenceStatus.VERIFIED and it.value is not None]
 
         if not matched:

@@ -1,0 +1,43 @@
+{
+  "case_id": "dev_003",
+  "split": "dev",
+  "trap": "scale",
+  "information_cutoff": "2026-11-18",
+  "notes": "Trap: Telecom Egypt reports in EGP thousands, Edita in whole pounds. Comparing them without converting gives a 1,000x error.",
+  "profile": {
+    "goal": "steady growth with some income",
+    "horizon": "3-5 years",
+    "liquidity_needs": "may need 10% of the money within a year",
+    "loss_willingness": "medium",
+    "loss_capacity": "low",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 15000,
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "figures": [
+    "EFID-en-revenue-FY2025",
+    "EFID-en-net_profit_for_the_period-FY2025",
+    "EFID-en-total_equity-31-12-2025",
+    {
+      "key": "ETEL-en-revenue-FY2025",
+      "label": "Operating revenues"
+    },
+    "ETEL-en-total_equity-31-12-2025"
+  ],
+  "acceptable_actions": [
+    "hold",
+    "keep_cash",
+    "sell"
+  ]
+}
