@@ -25,6 +25,7 @@ Code for the paper on whether evidence verification reduces incorrect financial 
 | `src/egx_guide/numbers.py` | Reads printed amounts and units (Arabic-Indic digits, negatives, "بالألف جنيه", "EGP thousands") without a model |
 | `src/egx_guide/documents.py` | Reads PDF pages: text layer, or a vision model for scanned and Arabic pages |
 | `src/egx_guide/extract.py` | Proposes figures with a model, then checks each one in code and marks it verified or ambiguous |
+| `src/egx_guide/references.py` | Reference sheet for hand-checked figures, converts it to `figures.json`, measures the report reader's accuracy |
 | `src/egx_guide/score.py` | Scores a run against the reference answers: wrong-claim rate before and after the verifier, coverage, acceptable action, portfolio violations |
 | `vendor/TradingAgents` | Pinned at `9fa1196`, used only for model providers (Apache-2.0) |
 | `docs/compatibility_check_tradingagents.md` | Why only part of TradingAgents is used |
@@ -56,9 +57,20 @@ Results go to `runs/<timestamp>/<condition>/<case_id>.json` with a `manifest.jso
 .venv\Scripts\python -m egx_guide.extract --pdf reports\COMI_FY2024.pdf --company COMI --pages 3-6 --provider google --model <model-name>
 ```
 
-The output is `data/evidence/<company>_<file>.json`. It holds the page text and how each page was read, every figure with its status and reasons, and the model calls. `--mode text` never uses the vision model, and `--mode vision` sends every page to it. In the default `auto` mode, scanned pages and Arabic text-layer pages go to the vision model, because Arabic text layers can come out reversed.
+The output is `data/evidence/<company>_<file>.json`. It holds the page text and how each page was read, every figure with its status and reasons, and the model calls. `--mode text` never uses the vision model, and `--mode vision` sends every page to it. In the default `auto` mode, scanned pages and Arabic text-layer pages go to the vision model, because Arabic text layers can come out reversed. So do table pages whose text layer has no unit line (CIB draws "EGP thousands" in the page header as graphics).
 
 A figure is marked **verified** only if all of these hold: its number is found on the page, it reads without doubt, the unit is printed and consistent, the period is stated, and the page was not read from an Arabic text layer. Anything else is **ambiguous**, with the reason. These are automatic checks; the partner's reference answers remain the ground truth.
+
+## Reference figures (hand-checked ground truth)
+
+One author fills in [data/references/reference_sheet.xlsx](data/references/reference_sheet.xlsx) from the PDFs and the other checks every row, both without looking at system output. Instructions: [docs/reference_answer_guide.md](docs/reference_answer_guide.md).
+
+```powershell
+.venv\Scripts\python -m egx_guide.references build --sheet data\references\reference_sheet.xlsx
+.venv\Scripts\python -m egx_guide.references accuracy --figures data\references\figures.json --evidence data\evidence
+```
+
+`build` computes each value in base units with the same rules as the reader and lists problem rows. `accuracy` reports, per document, how many checked figures the reader got **correct**, got **wrong but marked verified** (the dangerous case), **flagged as ambiguous**, or **missed**.
 
 ## Scoring a run
 
