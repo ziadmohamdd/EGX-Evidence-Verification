@@ -5,12 +5,13 @@ These figures are the **ground truth** for the paper. Every result we report, in
 **File:** `data/references/reference_sheet.xlsx` (one row per figure)
 **Reports:** the PDFs in `reports/`. If you don't have them, re-download them from the links in `reports/SOURCES.json`.
 
-## Two roles
+## How it works (one person)
 
-1. **Preparer** fills in the blue columns for every row, reading straight from the PDF.
-2. **Checker** then opens the same PDF and checks every row, filling in the green columns.
+1. **You fill in** the blue columns for every row, reading straight from the PDF. Put your initials in `prepared_by`.
+2. **Claude checks** every filled row against the page image and lists the rows where the sheet and the page don't seem to match. It never fills in values.
+3. **You re-read the PDF** for each listed row and make the final call. Then fill in the green columns: `checked_by` = your initials plus `+AI` (e.g. `ZM+AI`), `checker_agrees` = `yes` once the row is right, and `checker_note` for anything you corrected.
 
-**Neither of you looks at any system output while doing this**: nothing in `data/evidence/`, `runs/`, or results that Claude shows in chat. The reference must be independent of what the system produced, or the comparison means nothing.
+**Don't look at any system output while filling in the sheet**: nothing in `data/evidence/`, `runs/`, or reader results Claude shows in chat. The reference must be independent of what the system produced, or the comparison means nothing.
 
 ## The columns
 
@@ -18,17 +19,17 @@ These figures are the **ground truth** for the paper. Every result we report, in
 |---|---|---|
 | `figure_key`, `company`, `document`, `statement`, `item` | already filled | What to look for. Don't change these. |
 | `page` | already filled, or blank | Page where the statement is. Correct it if wrong. Fill it in if blank (Abu Qir). For a range, write `5-6`. |
-| `line_item_as_printed` | preparer | The row label **exactly as printed**, in the report's language. E.g. `Net profit for the year` or `صافي ربح العام`. |
+| `line_item_as_printed` | you | The row label **exactly as printed**, in the report's language. E.g. `Net profit for the year` or `صافي ربح العام`. |
 | `period_code` | already filled | `FY2025` = full year 2025, `9M2026` = Jan–Sep 2026, `31-12-2025` = balance sheet date. Correct it if the column you read is a different period. |
-| `period_as_printed` | preparer | The column header as printed, e.g. `Dec. 31, 2025` or `٣١ ديسمبر ٢٠٢٥`. |
-| `printed_value` | preparer | The number **exactly as printed**: keep commas, brackets and Arabic digits. E.g. `(1,234,567)`, `٥٥٬١٢٣`, `18.25`. |
-| `unit_as_printed` | preparer | The unit that applies to **this** number, as printed, e.g. `EGP thousands`, `L.E. (000)`, `بالألف جنيه`, `EGP`. See the rules below. |
-| `usable` | preparer | `yes`, or `no` if the number cannot be read with certainty. |
-| `prepared_by` | preparer | Your initials. |
-| `preparer_note` | preparer | Anything unusual: restated figures, a stamp over digits, two possible rows. |
-| `checked_by` | checker | Your initials. |
-| `checker_agrees` | checker | `yes` if the whole row (value, unit, period, line item) matches the PDF, `no` if anything differs. |
-| `checker_note` | checker | If `no`, what the PDF actually shows. |
+| `period_as_printed` | you | The column header as printed, e.g. `Dec. 31, 2025` or `٣١ ديسمبر ٢٠٢٥`. |
+| `printed_value` | you | The number **exactly as printed**: keep commas, brackets and Arabic digits. E.g. `(1,234,567)`, `٥٥٬١٢٣`, `18.25`. |
+| `unit_as_printed` | you | The unit that applies to **this** number, as printed, e.g. `EGP thousands`, `L.E. (000)`, `بالألف جنيه`, `EGP`. See the rules below. |
+| `usable` | you | `yes`, or `no` if the number cannot be read with certainty. |
+| `prepared_by` | you | Your initials. |
+| `preparer_note` | you | Anything unusual: restated figures, a stamp over digits, two possible rows. |
+| `checked_by` | you, after the check | Your initials plus `+AI`, e.g. `ZM+AI`. |
+| `checker_agrees` | you, after the check | `yes` once you've confirmed the whole row (value, unit, period, line item) against the PDF. `no` if you couldn't settle it. |
+| `checker_note` | you, after the check | What you corrected after the check, or why it's still unsettled. |
 
 ## Rules
 
@@ -66,4 +67,4 @@ Save the file in `data/references/` under the same name and tell Claude. It will
 .venv\Scripts\python -m egx_guide.references build --sheet data\references\reference_sheet.xlsx
 ```
 
-This turns the sheet into `figures.json`, computes each value in pounds, and lists any rows with problems: an unclear unit, an unreadable value, a disagreement, or a row not yet checked. Fix those and run it again. Only rows where the checker wrote `yes` are used.
+This turns the sheet into `figures.json`, computes each value in pounds, and lists any rows with problems: an unclear unit, an unreadable value, a disagreement, or a row not yet checked. Fix those and run it again. Only rows with `checker_agrees` = `yes` are used.

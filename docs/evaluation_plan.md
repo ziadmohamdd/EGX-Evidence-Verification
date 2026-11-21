@@ -90,20 +90,21 @@ All are reported per condition. Most are already in `egx_guide.score`.
 
 - **Investor profiles** vary goal, horizon, liquidity needs and loss tolerance. Some portfolios hold shares, so sell decisions can be tested, including tempting oversells.
 - **Prices:** EGX closing prices on the information cutoff date, entered by hand from egx.com.eg. Each price's source and date is recorded.
-- **Information cutoff:** for the full-year 2025 reports, a date after they were published (to be fixed when building cases). For Abu Qir's 9-month report, a date after 15 November 2026.
-- **Reference answers:** every case gets acceptable actions and its figures from the hand-checked reference sheet (`data/references/`). One author prepares them and the other checks them, both without seeing system output.
+- **Information cutoff:** 18 November 2026, the last trading day before the cases were built. All six reports were published before it, including Abu Qir's 9-month report on 15 November 2026. Prices are EGX closes on that day (`data/cases/prices.json`).
+- **Reference answers:** every case gets acceptable actions and its figures from the hand-checked reference sheet (`data/references/`). One author fills in the sheet from the PDFs without seeing system output. Every row is then checked against the page images by a separate AI-assisted pass, which flags disagreements. The author re-reads the PDF for each flagged row and makes the final call. The paper reports how many rows were flagged and how many corrected. The AI check only compares the sheet with the page; it never supplies values.
 
 ## 8. Human rating of explanations
 
 - **Sample:** 25% of final runs, chosen at random with equal numbers per condition (about 90 explanations).
 - **Blinding:** condition labels and agent names are removed and the order is shuffled.
-- **Raters:** both authors rate every sampled explanation independently.
+- **Rater:** one author rates every sampled explanation. At least a week later, the same author re-rates a random 20% of them (about 18) without seeing the first ratings.
 - **Rubric, per explanation:**
   - Each factual claim about the company is labelled **supported**, **unsupported** (the evidence doesn't say it) or **contradicted** (the evidence says otherwise).
   - Yes/no: are unused or unclear figures disclosed?
   - Yes/no: is the portfolio effect described correctly?
   - Yes/no: is the advice consistent with the investor profile?
-- **Agreement:** Cohen's kappa for each rubric item, reported before disagreements are resolved by discussion. Both the raw and the resolved results are reported.
+- **Consistency:** Cohen's kappa between the first and second rating of each rubric item (intra-rater reliability). Results use the first ratings.
+- **Limitation, stated in the paper:** a single rater can't rule out a personal bias. Blinding to condition and the consistency check reduce this, but don't replace a second independent rater.
 - The rubric is tried on development cases first and then frozen.
 
 ## 9. Freezing
@@ -130,7 +131,7 @@ The reader's extraction accuracy is reported on its own, using `python -m egx_gu
 
 | Date | Change | Reason | Runs redone? |
 |---|---|---|---|
-| | | | |
+| 2026-11-21 | One author does all reference figures and ratings. An AI-assisted check of the sheet against the page images replaces the second author's check, and intra-rater reliability replaces inter-rater agreement (§7, §8). | The work is done by one author | No runs yet |
 
 ## Still to build
 

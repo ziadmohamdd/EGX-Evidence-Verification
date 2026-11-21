@@ -59,11 +59,11 @@ Results go to `runs/<timestamp>/<condition>/<case_id>.json` with a `manifest.jso
 
 The output is `data/evidence/<company>_<file>.json`. It holds the page text and how each page was read, every figure with its status and reasons, and the model calls. `--mode text` never uses the vision model, and `--mode vision` sends every page to it. In the default `auto` mode, scanned pages and Arabic text-layer pages go to the vision model, because Arabic text layers can come out reversed. So do table pages whose text layer has no unit line (CIB draws "EGP thousands" in the page header as graphics).
 
-A figure is marked **verified** only if all of these hold: its number is found on the page, it reads without doubt, the unit is printed and consistent, the period is stated, and the page was not read from an Arabic text layer. Anything else is **ambiguous**, with the reason. These are automatic checks; the partner's reference answers remain the ground truth.
+A figure is marked **verified** only if all of these hold: its number is found on the page, it reads without doubt, the unit is printed and consistent, the period is stated, and the page was not read from an Arabic text layer. Anything else is **ambiguous**, with the reason. These are automatic checks; the hand-checked reference figures remain the ground truth.
 
 ## Reference figures (hand-checked ground truth)
 
-One author fills in [data/references/reference_sheet.xlsx](data/references/reference_sheet.xlsx) from the PDFs and the other checks every row, both without looking at system output. Instructions: [docs/reference_answer_guide.md](docs/reference_answer_guide.md).
+The author fills in [data/references/reference_sheet.xlsx](data/references/reference_sheet.xlsx) from the PDFs without looking at system output. An AI-assisted pass then checks every row against the page images and flags mismatches for the author to settle. Instructions: [docs/reference_answer_guide.md](docs/reference_answer_guide.md).
 
 ```powershell
 .venv\Scripts\python -m egx_guide.references build --sheet data\references\reference_sheet.xlsx
@@ -89,7 +89,7 @@ Cases go to `data/cases/<dev|test>/` and their reference answers to `data/refere
 .venv\Scripts\python -m egx_guide.score runs\<timestamp> --references data\references
 ```
 
-A reference answer is one JSON file per case, written by one author and checked by the other without seeing system outputs. Example: [tests/fixtures/references/synthetic_001.json](tests/fixtures/references/synthetic_001.json).
+A reference answer is one JSON file per case, built from the hand-checked reference figures by `egx_guide.cases`. Example: [tests/fixtures/references/synthetic_001.json](tests/fixtures/references/synthetic_001.json).
 
 - `figures`: for every `evidence_id` in the case, the true `value` in base units (EGP, not millions). Set `"usable": false` (and `value` to null if unknown) for a figure that should not be relied on.
 - `acceptable_actions`: the actions the authors accept for this case (`buy`, `hold`, `sell`, `keep_cash`, `insufficient_evidence`).
@@ -103,5 +103,5 @@ The hypotheses, main measure, sample size, statistics, case design, human rating
 ## Not built yet
 
 - Run the reader on real reports and measure how well it extracts against hand-checked figures
-- Real dev and test cases, and the partner's checked reference answers
+- The 30 test cases, and the filled-in, checked reference sheet
 - Frozen prompts, the fee/lot-size assumptions, and the final model choice
