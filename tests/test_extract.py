@@ -199,6 +199,21 @@ def test_per_share_figures_keep_pounds_on_a_thousands_page():
     assert check_figure(profit, page, "EGP thousands")[0] == 82_238_852_000
 
 
+def test_basic_and_diluted_rows_under_an_eps_heading_are_per_share():
+    # CIB prints "Earnings per share" as a heading, then rows labelled just "Basic" and "Diluted"
+    page = PageRecord(1, "vision", "All amounts are shown in EGP thousands\nNet profit 82,238,852\n"
+                      "Earnings per share\nBasic 18.25 14.72\nDiluted 18.05 14.56", 80, 0, 0.0)
+    for label, printed in (("Basic", "18.25"), ("Diluted", "18.05")):
+        f = ExtractedFigure(label=label, printed_value=printed, row_text=f"{label} {printed}", period="FY2025")
+        assert check_figure(f, page, "EGP thousands")[0] == float(printed)
+
+
+def test_basic_row_without_eps_on_page_is_a_money_amount():
+    page = PageRecord(1, "vision", "EGP thousands\nBasic salaries 1,234", 30, 0, 0.0)
+    f = ExtractedFigure(label="Basic salaries", printed_value="1,234", row_text="Basic salaries 1,234", period="FY2025")
+    assert check_figure(f, page, "EGP thousands")[0] == 1_234_000
+
+
 def test_extractor_doubt_and_rtl_layer_are_caught():
     assert any("extractor marked uncertain" in r for r in reasons(fig("55,123", uncertain=True)))
     rtl = PageRecord(1, "text", PAGE.text, 100, 0, 0.8, ["Arabic text layer: reading order may be wrong"])

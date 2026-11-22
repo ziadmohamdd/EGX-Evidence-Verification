@@ -94,6 +94,19 @@ def _slug(s: str) -> str:
     return re.sub(r"[^A-Za-z0-9]+", "_", s).strip("_") or "doc"
 
 
+_EPS_SUBROWS = {"basic", "diluted", "basic and diluted", "الأساسي", "الاساسي", "المخفض", "الأساسية", "المخفضة"}
+
+
+def row_kind(fig: ExtractedFigure, page: PageRecord) -> str | None:
+    """figure_kind of a row, also catching 'Basic'/'Diluted' rows printed under an EPS heading."""
+    kind = figure_kind(f"{fig.label} {fig.row_text}")
+    if kind is None:
+        label = re.sub(r"\((consolidated|separate|standalone)\)", "", normalize(fig.label).lower()).strip(" :-")
+        if label in _EPS_SUBROWS and figure_kind(page.text) == "per_share":
+            kind = "per_share"
+    return kind
+
+
 def check_figure(fig: ExtractedFigure, page: PageRecord, unit_line: str | None) -> tuple[float | None, float | None, list[str], bool, str | None]:
     """Return (value, scale, ambiguity reasons, grounded, parse reason)."""
     reasons = []
@@ -132,7 +145,7 @@ def check_figure(fig: ExtractedFigure, page: PageRecord, unit_line: str | None) 
         reasons.append("column/period order unverified (right-to-left text layer)")
     reasons += [w for w in page.warnings if w.startswith("unconfirmed transcription")]
 
-    kind = figure_kind(f"{fig.label} {fig.row_text}")
+    kind = row_kind(fig, page)
     if percent or kind:  # ratios, per-share figures, share counts: the page's money unit does not apply
         reasons = [r for r in reasons if "unit" not in r and "scale" not in r]
         scale = 1.0
@@ -160,8 +173,7 @@ def extract_figures(doc: DocumentRecord, company: str, caller: Caller) -> tuple[
                 source_text=fig.row_text + (f" | unit: {result.unit_line}" if result.unit_line else ""),
                 value=None if ambiguous else value,
                 scale=scale or 1.0,
-                currency=(None if fig.printed_value.strip().endswith("%")
-                          or figure_kind(f"{fig.label} {fig.row_text}") == "count"
+                currency=(None if fig.printed_value.strip().endswith("%") or row_kind(fig, page) == "count"
                           else (fig.currency or "EGP")),
                 period=fig.period,
                 status=EvidenceStatus.AMBIGUOUS if ambiguous else EvidenceStatus.VERIFIED,

@@ -38,7 +38,10 @@ ARABIC_PAGE_RATIO = 0.3   # share of letters that are Arabic before a page count
 RENDER_SCALE = 2.0        # 144 dpi; enough for statement tables
 
 TRANSCRIBE_SYSTEM = """You transcribe pages of company financial reports exactly.
+- Start with the page header exactly as printed: the company name, the statement title, the date or period,
+  and any unit line (e.g. "All amounts are shown in EGP thousands"), even if they are small, in a corner, or in a logo.
 - Copy all text in its original language (Arabic or English). Do not translate, summarise or compute.
+- If the page is unreadable, say so. Never write content that is not on the page.
 - Reproduce tables as Markdown tables, keeping every row label, column header (periods, notes) and the unit line (e.g. "بالألف جنيه" or "EGP thousands").
 - Copy every number exactly as printed, including parentheses, commas and Arabic-Indic digits.
 - If any character of a number is unclear, write "?" in its place. Never guess a digit.
