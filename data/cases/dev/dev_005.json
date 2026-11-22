@@ -1,0 +1,113 @@
+{
+  "case_id": "dev_005",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "add a fertilizer exporter for diversification",
+    "horizon": "5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "prices": {
+    "ABUK": 76.21,
+    "COMI": 128.0
+  },
+  "evidence": [
+    {
+      "evidence_id": "ABUK-ABUK_9M2026_results-p2-01",
+      "company": "ABUK",
+      "document": "ABUK_9M2026_results.pdf",
+      "page": 2,
+      "label": "إيرادات النشاط",
+      "source_text": "إيرادات النشاط | ٣١٤٨٨ | ١٦٥٧٨ | ٦٠٩٠ | ٧٩٦٤ | ٣٩١١ | %٠١٠٤ | unit: مليون جنيه",
+      "value": null,
+      "scale": 1000000.0,
+      "currency": "EGP",
+      "period": "التسعة أشهر المنتهية في 30 سبتمبر 2026",
+      "status": "ambiguous",
+      "note": "page shows several units ['مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليون']; relying on table unit line 'مليون جنيه'"
+    },
+    {
+      "evidence_id": "ABUK-ABUK_9M2026_results-p2-02",
+      "company": "ABUK",
+      "document": "ABUK_9M2026_results.pdf",
+      "page": 2,
+      "label": "إيرادات النشاط",
+      "source_text": "إيرادات النشاط | ٣١٤٨٨ | ١٦٥٧٨ | ٦٠٩٠ | ٧٩٦٤ | ٣٩١١ | %٠١٠٤ | unit: مليون جنيه",
+      "value": null,
+      "scale": 1000000.0,
+      "currency": "EGP",
+      "period": "التسعة أشهر المنتهية في 30 سبتمبر 2025",
+      "status": "ambiguous",
+      "note": "page shows several units ['مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليون']; relying on table unit line 'مليون جنيه'"
+    },
+    {
+      "evidence_id": "ABUK-ABUK_9M2026_results-p2-25",
+      "company": "ABUK",
+      "document": "ABUK_9M2026_results.pdf",
+      "page": 2,
+      "label": "صافي ربح الفترة",
+      "source_text": "صافي ربح الفترة | ١٢٩٧٠ | ٦٣٩٦ | %١٠٣ | ٢٩٥٨ | ١٨٢٨ | ٦٠٦٢ | unit: مليون جنيه",
+      "value": null,
+      "scale": 1000000.0,
+      "currency": "EGP",
+      "period": "التسعة أشهر المنتهية في 30 سبتمبر 2026",
+      "status": "ambiguous",
+      "note": "page shows several units ['مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليون']; relying on table unit line 'مليون جنيه'"
+    },
+    {
+      "evidence_id": "ABUK-ABUK_9M2026_results-p2-26",
+      "company": "ABUK",
+      "document": "ABUK_9M2026_results.pdf",
+      "page": 2,
+      "label": "صافي ربح الفترة",
+      "source_text": "صافي ربح الفترة | ١٢٩٧٠ | ٦٣٩٦ | %١٠٣ | ٢٩٥٨ | ١٨٢٨ | ٦٠٦٢ | unit: مليون جنيه",
+      "value": null,
+      "scale": 1000000.0,
+      "currency": "EGP",
+      "period": "التسعة أشهر المنتهية في 30 سبتمبر 2025",
+      "status": "ambiguous",
+      "note": "page shows several units ['مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليار', 'مليون']; relying on table unit line 'مليون جنيه'"
+    },
+    {
+      "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+      "company": "ABUK",
+      "document": "ABUK_9M2026_results.pdf",
+      "page": 2,
+      "label": "نصيب السهم الأساسي في الأرباح (جنيه)",
+      "source_text": "نصيب السهم الأساسي في الأرباح ) جنيه ( | ٨،٧٤ | ٤،٢٨ | %١٠٤ | ١٩٩ | ١،٢٣ | ٦٦٢ | unit: مليون جنيه",
+      "value": 8.74,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "التسعة أشهر المنتهية في 30 سبتمبر 2026",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+      "company": "ABUK",
+      "document": "ABUK_9M2026_results.pdf",
+      "page": 2,
+      "label": "نصيب السهم الأساسي في الأرباح (جنيه)",
+      "source_text": "نصيب السهم الأساسي في الأرباح ) جنيه ( | ٨،٧٤ | ٤،٢٨ | %١٠٤ | ١٩٩ | ١،٢٣ | ٦٦٢ | unit: مليون جنيه",
+      "value": 4.28,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "التسعة أشهر المنتهية في 30 سبتمبر 2025",
+      "status": "verified",
+      "note": null
+    }
+  ],
+  "question": "What should I do with my portfolio given this information?"
+}
