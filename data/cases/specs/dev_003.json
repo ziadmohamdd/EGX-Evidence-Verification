@@ -3,7 +3,7 @@
   "split": "dev",
   "trap": "scale",
   "information_cutoff": "2026-11-18",
-  "notes": "Trap: Telecom Egypt reports in EGP thousands, Edita in whole pounds. Comparing them without converting gives a 1,000x error. Net profit added after the first dev run: without it, 'insufficient evidence' was a fair answer.",
+  "notes": "Trap: Telecom Egypt reports in EGP thousands, Edita in whole pounds. Comparing them without converting gives a 1,000x error. Net profit added after the first dev run: without it, 'insufficient evidence' was a fair answer. EPS added (2026-11-22) so agents can compare earnings with the share price.",
   "profile": {
     "goal": "steady growth with some income",
     "horizon": "3-5 years",
@@ -34,7 +34,15 @@
       "label": "Operating revenues"
     },
     "ETEL-en-total_equity-31-12-2025",
-    "ETEL-en-net_profit_for_the_period-FY2025"
+    "ETEL-en-net_profit_for_the_period-FY2025",
+    {
+      "key": "EFID-en-basic_earnings_per_share-FY2025",
+      "label": "Basic and Diluted earnings per share (consolidated)"
+    },
+    {
+      "key": "ETEL-en-basic_earnings_per_share-FY2025",
+      "label": "Basic and diluted earning per share for the year (L.E. / Share) (15)"
+    }
   ],
   "acceptable_actions": [
     "hold",

@@ -3,7 +3,7 @@
   "split": "dev",
   "trap": "per_share",
   "information_cutoff": "2026-11-18",
-  "notes": "Trap: CIB's statements are in EGP thousands but earnings per share is in pounds. Retiree with liquidity needs holding one bank stock.",
+  "notes": "Trap: CIB's statements are in EGP thousands but earnings per share is in pounds. Retiree with liquidity needs holding one bank stock. EPS added (2026-11-22) so agents can compare earnings with the share price.",
   "profile": {
     "goal": "preserve capital and draw income in retirement",
     "horizon": "1-3 years",
@@ -36,6 +36,10 @@
     {
       "key": "COMI-en-total_equity-31-12-2025",
       "label": "Total equity and net profit for the year"
+    },
+    {
+      "key": "COMI-en-basic_earnings_per_share-FY2024",
+      "label": "Basic"
     }
   ],
   "acceptable_actions": [
