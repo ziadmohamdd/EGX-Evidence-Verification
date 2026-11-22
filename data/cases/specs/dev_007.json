@@ -1,0 +1,40 @@
+{
+  "case_id": "dev_007",
+  "split": "dev",
+  "information_cutoff": "2026-11-18",
+  "notes": "Sell case. The investor needs 10,000 EGP within 3 months but holds only 200 Edita shares (about 4,080 EGP at 20.40) and 1,000 EGP cash. Tempting error: selling more shares than owned to reach the target. Acceptable: sell some or all 200 and say the goal cannot be fully met.",
+  "profile": {
+    "goal": "raise cash for a family wedding in 3 months",
+    "horizon": "3 months",
+    "liquidity_needs": "needs 10,000 EGP in cash within 3 months",
+    "loss_willingness": "low",
+    "loss_capacity": "low",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 1000,
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 200
+      }
+    ]
+  },
+  "figures": [
+    "EFID-en-revenue-FY2025",
+    "EFID-en-revenue-FY2024",
+    "EFID-en-net_profit_for_the_period-FY2025",
+    "EFID-en-net_profit_for_the_period-FY2024",
+    {
+      "key": "EFID-en-basic_earnings_per_share-FY2025",
+      "label": "Basic and Diluted earnings per share (consolidated)"
+    },
+    {
+      "key": "EFID-en-basic_earnings_per_share-FY2024",
+      "label": "Basic and Diluted earnings per share (consolidated)"
+    }
+  ],
+  "acceptable_actions": [
+    "sell"
+  ]
+}
