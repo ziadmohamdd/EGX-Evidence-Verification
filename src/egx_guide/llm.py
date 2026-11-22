@@ -134,7 +134,12 @@ class Caller:
         start = time.perf_counter()
         out = self.llm.with_structured_output(schema, include_raw=True).invoke(messages)
         error = out.get("parsing_error")
-        self._record(role, start, out.get("raw"), repr(error) if error else None)
+        detail = None
+        if error or out.get("parsed") is None:
+            raw = out.get("raw")
+            raw_text = getattr(raw, "tool_calls", None) or getattr(raw, "content", None) or raw
+            detail = f"{error!r} | raw output: {str(raw_text)[:4000]}"
+        self._record(role, start, out.get("raw"), detail)
         if out.get("parsed") is None:
             raise ValueError(f"{role}: model output did not match {schema.__name__}: {error!r}")
         return out["parsed"]

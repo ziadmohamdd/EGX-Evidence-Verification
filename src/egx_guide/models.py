@@ -9,7 +9,11 @@ from __future__ import annotations
 from enum import StrEnum
 from typing import Literal
 
-from pydantic import BaseModel, ConfigDict, Field
+import ast
+import json
+import re
+
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 
 class _Strict(BaseModel):
@@ -99,6 +103,25 @@ class FigureClaim(BaseModel):
     statement: str = Field(description="The sentence in the explanation that uses this figure")
 
 
+def _decode_list(s: str) -> list | None:
+    """Decode list text a model produced, tolerating raw newlines, a stray ']',
+    trailing commas and Python quoting. Returns None unless the result is a list."""
+    candidates = [s]
+    while candidates[-1].endswith("]]") and candidates[-1].count("]") > candidates[-1].count("["):
+        candidates.append(candidates[-1][:-1])
+    for c in list(candidates):
+        candidates.append(re.sub(r",\s*([\]}])", r"\1", c))
+    for c in candidates:
+        for parse in (lambda t: json.loads(t, strict=False), ast.literal_eval):
+            try:
+                out = parse(c)
+            except (ValueError, SyntaxError, TypeError, MemoryError, RecursionError):
+                continue
+            if isinstance(out, list):
+                return out
+    return None
+
+
 class Recommendation(BaseModel):
     action: Action
     ticker: str | None = Field(default=None, description="Company acted on; required for buy/sell/hold")
@@ -110,6 +133,18 @@ class Recommendation(BaseModel):
         description="evidence_ids of figures deliberately not used (e.g. ambiguous), with their effect stated in the explanation",
     )
     limitations: list[str] = Field(default_factory=list)
+
+    @field_validator("claims", "unused_figures", "limitations", mode="before")
+    @classmethod
+    def _decode_list_text(cls, v):
+        """Some models send a list as JSON text ('["a", "b"]'); decode it. A lone sentence becomes [sentence]."""
+        if isinstance(v, str):
+            s = v.strip()
+            if s.startswith("["):
+                decoded = _decode_list(s)
+                return v if decoded is None else decoded  # undecodable: let validation report it
+            return [s] if s else []
+        return v
 
 
 # --------------------------------------------------------------------------
