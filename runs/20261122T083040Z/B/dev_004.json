@@ -1,0 +1,92 @@
+{
+  "case_id": "dev_004",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 200,
+    "explanation": "The investor requires 30,000 EGP in liquidity within 6 months, currently holds only 5,000 EGP in cash, and has a low willingness and ability to withstand financial losses in retirement. Holding 1,000 shares of COMI (worth 128,000 EGP at 128.00 EGP/share) represents over 96% of the portfolio, creating severe single-stock concentration risk. Selling 200 shares of COMI at 128.00 EGP per share generates 25,600 EGP in proceeds, raising total cash to 30,600 EGP and meeting the 6-month liquidity need while reducing equity concentration. Although COMI exhibits solid financial performance—with net profit growing to 82,258,800,000 EGP in 2025 from 55,256,700,000 EGP in 2024, backed by net interest income of 107,700,000,000 EGP—liquidity requirements and capital preservation goals dictate reducing equity exposure.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258800000.0,
+        "statement": "COMI generated a net profit of 82,258,800,000 EGP in 2025."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256700000.0,
+        "statement": "This represents an increase from the 55,256,700,000 EGP net profit reported in 2024."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107700000000.0,
+        "statement": "Net interest income for 2025 reached 107,700,000,000 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Share price fluctuations prior to execution could change the exact cash proceeds.",
+      "Equity income (dividends) from remaining COMI shares is subject to corporate distribution decisions."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 200,
+    "explanation": "The investor requires 30,000 EGP in liquidity within 6 months, currently holds only 5,000 EGP in cash, and has a low willingness and ability to withstand financial losses in retirement. Holding 1,000 shares of COMI (worth 128,000 EGP at 128.00 EGP/share) represents over 96% of the portfolio, creating severe single-stock concentration risk. Selling 200 shares of COMI at 128.00 EGP per share generates 25,600 EGP in proceeds, raising total cash to 30,600 EGP and meeting the 6-month liquidity need while reducing equity concentration. Although COMI exhibits solid financial performance—with net profit growing to 82,258,800,000 EGP in 2025 from 55,256,700,000 EGP in 2024, backed by net interest income of 107,700,000,000 EGP—liquidity requirements and capital preservation goals dictate reducing equity exposure.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258800000.0,
+        "statement": "COMI generated a net profit of 82,258,800,000 EGP in 2025."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256700000.0,
+        "statement": "This represents an increase from the 55,256,700,000 EGP net profit reported in 2024."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107700000000.0,
+        "statement": "Net interest income for 2025 reached 107,700,000,000 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Share price fluctuations prior to execution could change the exact cash proceeds.",
+      "Equity income (dividends) from remaining COMI shares is subject to corporate distribution decisions."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30600.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 800
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 38.373,
+      "input_tokens": 1305,
+      "output_tokens": 4025,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 38.376
+}

@@ -1,0 +1,97 @@
+{
+  "case_id": "dev_004",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 200,
+    "explanation": "The investor has a strict liquidity requirement of 30,000 EGP within 6 months and a low willingness and ability to withstand losses. Currently, the portfolio holds only 5,000.00 EGP in cash alongside 1,000 shares of COMI at 128.00 EGP per share. To meet the 30,000 EGP short-term cash demand, the investor needs an additional 25,000 EGP. Selling 200 shares of COMI at 128.00 EGP per share yields 25,600 EGP, raising total cash reserves to 30,600 EGP and fully covering the liquidity need without relying on uncertain dividend payments. COMI demonstrates solid underlying financial performance: COMI reported a consolidated net profit of 82,258,800,000 EGP for FY2025, up from COMI reported a consolidated net profit of 55,256,700,000 EGP for FY2024. Basic earnings per share stood at 18.25 EGP in FY2025 compared to Basic earnings per share stood at 14.72 EGP in FY2024. Retaining 800 shares allows the investor to maintain equity exposure for retirement capital preservation and potential future dividend income while eliminating short-term liquidity risk.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258800000.0,
+        "statement": "COMI reported a consolidated net profit of 82,258,800,000 EGP for FY2025."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256700000.0,
+        "statement": "COMI reported a consolidated net profit of 55,256,700,000 EGP for FY2024."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "Basic earnings per share stood at 18.25 EGP in FY2025."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+        "stated_value": 14.72,
+        "statement": "Basic earnings per share stood at 14.72 EGP in FY2024."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Dividend yield and distribution timing for FY2025 are not specified in the financial statements, requiring partial share liquidation to secure liquidity.",
+      "Share prices can fluctuate, exposing the remaining 800 shares to equity market risk."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 200,
+    "explanation": "The investor has a strict liquidity requirement of 30,000 EGP within 6 months and a low willingness and ability to withstand losses. Currently, the portfolio holds only 5,000.00 EGP in cash alongside 1,000 shares of COMI at 128.00 EGP per share. To meet the 30,000 EGP short-term cash demand, the investor needs an additional 25,000 EGP. Selling 200 shares of COMI at 128.00 EGP per share yields 25,600 EGP, raising total cash reserves to 30,600 EGP and fully covering the liquidity need without relying on uncertain dividend payments. COMI demonstrates solid underlying financial performance: COMI reported a consolidated net profit of 82,258,800,000 EGP for FY2025, up from COMI reported a consolidated net profit of 55,256,700,000 EGP for FY2024. Basic earnings per share stood at 18.25 EGP in FY2025 compared to Basic earnings per share stood at 14.72 EGP in FY2024. Retaining 800 shares allows the investor to maintain equity exposure for retirement capital preservation and potential future dividend income while eliminating short-term liquidity risk.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258800000.0,
+        "statement": "COMI reported a consolidated net profit of 82,258,800,000 EGP for FY2025."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256700000.0,
+        "statement": "COMI reported a consolidated net profit of 55,256,700,000 EGP for FY2024."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "Basic earnings per share stood at 18.25 EGP in FY2025."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+        "stated_value": 14.72,
+        "statement": "Basic earnings per share stood at 14.72 EGP in FY2024."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Dividend yield and distribution timing for FY2025 are not specified in the financial statements, requiring partial share liquidation to secure liquidity.",
+      "Share prices can fluctuate, exposing the remaining 800 shares to equity market risk."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30600.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 800
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 28.705,
+      "input_tokens": 1305,
+      "output_tokens": 3591,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 28.707
+}

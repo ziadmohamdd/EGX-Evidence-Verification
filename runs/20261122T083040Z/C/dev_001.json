@@ -1,0 +1,128 @@
+{
+  "case_id": "dev_001",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "We recommend holding the current position of 300 shares in Telecom Egypt (ETEL). Telecom Egypt demonstrated exceptional operational performance, with FY2025 net profit rising to 22578100000 EGP from 10111300000 EGP in FY2024. FY2025 earnings per share stood at 11.93 EGP, placing the stock at a reasonable price-to-earnings multiple of ~11.90x based on the share price of 141.95 EGP. Total equity reached 63687800000 EGP against total assets of 225883000000 EGP. Given the investor's 5-7 year horizon for funding university tuition and a medium risk profile, maintaining the current equity position allows the portfolio to benefit from company growth. However, because ETEL already accounts for approximately 68% of the total portfolio value (42,585 EGP out of 62,585 EGP), purchasing additional shares would over-concentrate the portfolio into a single equity. Holding preserves liquidity in cash (20,000 EGP) while capturing upside potential.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578100000.0,
+        "statement": "Net profit for FY2025 reached 22578100000 EGP, representing substantial growth year-over-year."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111300000.0,
+        "statement": "This compares favorably to FY2024 net profit of 10111300000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "FY2025 earnings per share stood at 11.93 EGP, placing the stock at an attractive valuation multiple."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687800000.0,
+        "statement": "Total equity reached 63687800000 EGP as of 31/12/2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225883000000.0,
+        "statement": "Total assets expanded to 225883000000 EGP as of 31/12/2025."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Financial statements lack detailed breakdown of debt maturity profile and cash flows.",
+      "High single-stock concentration risk with ETEL comprising ~68% of total portfolio value."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "We recommend holding the current position of 300 shares in Telecom Egypt (ETEL). Telecom Egypt demonstrated exceptional operational performance, with FY2025 net profit rising to 22578100000 EGP from 10111300000 EGP in FY2024. FY2025 earnings per share stood at 11.93 EGP, placing the stock at a reasonable price-to-earnings multiple of ~11.90x based on the share price of 141.95 EGP. Total equity reached 63687800000 EGP against total assets of 225883000000 EGP. Given the investor's 5-7 year horizon for funding university tuition and a medium risk profile, maintaining the current equity position allows the portfolio to benefit from company growth. However, because ETEL already accounts for approximately 68% of the total portfolio value (42,585 EGP out of 62,585 EGP), purchasing additional shares would over-concentrate the portfolio into a single equity. Holding preserves liquidity in cash (20,000 EGP) while capturing upside potential.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578100000.0,
+        "statement": "Net profit for FY2025 reached 22578100000 EGP, representing substantial growth year-over-year."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111300000.0,
+        "statement": "This compares favorably to FY2024 net profit of 10111300000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "FY2025 earnings per share stood at 11.93 EGP, placing the stock at an attractive valuation multiple."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687800000.0,
+        "statement": "Total equity reached 63687800000 EGP as of 31/12/2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225883000000.0,
+        "statement": "Total assets expanded to 225883000000 EGP as of 31/12/2025."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Financial statements lack detailed breakdown of debt maturity profile and cash flows.",
+      "High single-stock concentration risk with ETEL comprising ~68% of total portfolio value."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "### Financial Analysis Report: Telecom Egypt (ETEL)\n\n---\n\n### 1. Portfolio & Valuation Overview\n\n* **Current Holdings:** 300 shares of ETEL at a market price of **141.95 EGP** per share.\n* **Holding Market Value:** 42,585.00 EGP.\n* **Cash Balance:** 20,000.00 EGP.\n* **Total Portfolio Value:** 62,585.00 EGP (Equity position represents ~68.04% of total portfolio value).\n* **Valuation Multiple:** Based on FY2025 EPS of **11.93 EGP** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] and the cutoff share price of **141.95 EGP**, ETEL trades at a Price-to-Earnings (P/E) ratio of **11.90x**.\n\n---\n\n### 2. Growth Performance\n\n* **Operating Revenue Growth:**\n  * FY2025 Operating Revenues reached **1.06673e+11 EGP** (106.67 billion EGP) [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01], compared to **8.16778e+10 EGP** (81.68 billion EGP) [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02] in FY2024.\n  * Year-over-Year (YoY) Revenue Growth: **+30.60%**.\n\n* **Net Profit Growth:**\n  * FY2025 Net Profit for the year reached **2.25781e+10 EGP** (22.58 billion EGP) [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35], compared to **1.01113e+10 EGP** (10.11 billion EGP) [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] in FY2024.\n  * YoY Net Profit Growth: **+123.29%**.\n\n* **Earnings Per Share (EPS) Growth:**\n  * FY2025 EPS rose to **11.93 EGP** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] from **4.79 EGP** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56] in FY2024.\n  * YoY EPS Growth: **+149.06%**.\n\n---\n\n### 3. Profitability Analysis\n\n* **Gross Profit & Margin:**\n  * FY2025 Gross Profit increased to **4.48391e+10 EGP** (44.84 billion EGP) [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05] from **3.04928e+10 EGP** (30.49 billion EGP) [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06] in FY2024 (YoY growth of **+47.05%**).\n  * Gross Profit Margin expanded from **37.33%** in FY2024 to **42.03%** in FY2025.\n\n* **Net Profit Margin:**\n  * Net margin increased from **12.38%** in FY2024 to **21.17%** in FY2025.\n\n* **Return Metrics (FY2025):**\n  * **Return on Equity (ROE):** Net Profit of **2.25781e+10 EGP** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] divided by Total Equity of **6.36878e+10 L.E.** [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] yields **35.45%**.\n  * **Return on Assets (ROA):** Net Profit of **2.25781e+10 EGP** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] divided by Total Assets of **2.25883e+11 L.E.** [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31] yields **10.00%**.\n\n---\n\n### 4. Balance Sheet & Leverage Analysis\n\n* **Total Assets (as of 31/12/2025):** **2.25883e+11 L.E.** (225.88 billion EGP) [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31].\n* **Total Equity (as of 31/12/2025):** **6.36878e+10 L.E.** (63.69 billion EGP) [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45].\n* **Total Liabilities (Derived):** Total Assets (**2.25883e+11 L.E.** [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31]) minus Total Equity (**6.36878e+10 L.E.** [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]) = **1.62195e+11 L.E.** (162.20 billion EGP).\n* **Financial Leverage:**\n  * Financial Leverage Ratio (Total Assets / Equity): **3.55x**.\n  * Liabilities-to-Equity Ratio: **2.55x**.\n\n---\n\n### 5. Risk Factors & Vulnerabilities\n\n1. **Leverage & Debt Burden:**\n   * Total liabilities of **1.62195e+11 L.E.** relative to equity of **6.36878e+10 L.E.** [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] highlight substantial leverage, exposing the firm to interest rate fluctuations or refinancing costs.\n\n2. **Single-Stock Portfolio Concentration:**\n   * The current portfolio exhibits high single-stock risk, with ETEL accounting for ~68.04% of total financial assets, contrasting with the investor's medium risk profile and 5–7 year savings goal for university fees.\n\n---\n\n### 6. Data Quality & Limitations\n\n* **Data Integrity:** All cited data points are verified directly from consolidated Egyptian Accounting Standards (EAS) financial statements for FY2025. No figures are flagged as AMBIGUOUS.\n* **Limitations:** The provided evidence set lacks detailed breakdowns of short-term vs. long-term debt, working capital metrics, capital expenditures, or cash flow statement line items.",
+    "investor": "Here is the suitability assessment based on your investor profile and current portfolio position:\n\n---\n\n### 1. Investment Horizon & Goal Suitability\n* **Goal:** Funding a child’s university education.\n* **Time Horizon:** 5–7 years (medium-term).\n* **Assessment:** A 5-to-7-year horizon provides enough time to participate in growth-oriented assets while allowing buffer room to navigate market cycles before liquidity is required for tuition payments. \n\n---\n\n### 2. Liquidity Needs\n* **Assessment:** Low immediate liquidity demand for this portfolio, as you maintain a separate emergency fund outside of these assets. This allows the full portfolio balance to be invested toward medium-term growth without needing to reserve a portion for short-term operational expenses.\n\n---\n\n### 3. Loss Willingness & Capacity\n* **Willingness to Accept Losses:** Medium.\n* **Capacity to Withstand Losses:** Medium.\n* **Assessment:** A medium risk profile aligns with moderate growth assets. Portfolio risk should be balanced to prevent severe capital drawdowns that could impair the ability to meet university funding targets, while taking enough controlled risk to outpace inflation over 5–7 years.\n\n---\n\n### 4. Current Portfolio Concentration\n* **Total Portfolio Value:** **62,585.00 EGP**\n  * **Cash:** 20,000.00 EGP (31.96% of total portfolio)\n  * **ETEL Holdings:** 300 shares × 141.95 EGP = **42,585.00 EGP** (68.04% of total portfolio)\n* **Assessment:** The portfolio has a high concentration in a single stock (ETEL represents 100% of equity holdings and ~68% of the total investment balance). Single-stock concentration exposes the portfolio to idiosyncratic company risk, which may be elevated relative to a medium risk willingness and capacity.\n\n---\n\n### 5. Available Portfolio Flexibility & Deployable Cash\n* **Free Cash:** **20,000.00 EGP** is fully unallocated within the portfolio. Because a separate emergency fund exists, up to **20,000.00 EGP** in cash can reasonably be committed toward new investments or rebalancing.\n* **Liquid Assets Available to Trade/Sell:** \n  * The **20,000.00 EGP** cash balance is immediately free for deployment.\n  * Any portion of the **300 ETEL shares** (valued at **42,585.00 EGP**) is eligible to be held, partially sold, or fully liquidated depending on desired asset allocation."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 81.723,
+      "input_tokens": 1588,
+      "output_tokens": 4823,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 31.663,
+      "input_tokens": 1580,
+      "output_tokens": 1603,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 41.011,
+      "input_tokens": 4058,
+      "output_tokens": 4504,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 154.399
+}

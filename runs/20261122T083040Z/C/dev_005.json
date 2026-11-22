@@ -1,0 +1,122 @@
+{
+  "case_id": "dev_005",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "Although ABUK reported a basic earnings per share of 8.74 EGP for the nine months ended 30 September 2026 compared to 4.28 EGP for the nine months ended 30 September 2025, the provided evidence is insufficient to make a sound investment decision. The company's operating revenues (ABUK-ABUK_9M2026_results-p2-01, ABUK-ABUK_9M2026_results-p2-02) and net profit figures (ABUK-ABUK_9M2026_results-p2-25, ABUK-ABUK_9M2026_results-p2-26) are marked AMBIGUOUS with unresolved values due to conflicting unit indicators ('billion' vs. 'million') on the source page. Consequently, absolute revenue, net margin, and revenue growth cannot be calculated. Furthermore, there is a total lack of balance sheet data (cash, total debt, liquidity, and equity) and cash flow statements, making it impossible to assess solvency, debt burden, or capital expenditure needs. Lastly, no operational evidence is provided to confirm ABUK's export revenue share, which is critical to fulfilling the investor's stated diversification goal. Therefore, capital deployment from the available 40,000.00 EGP cash cannot be responsibly recommended at this time.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK reported a basic earnings per share of 8.74 EGP for the nine months ended 30 September 2026."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "This compares with a basic earnings per share of 4.28 EGP for the nine months ended 30 September 2025."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Operating revenue and net profit figures are ambiguous due to conflicting unit headers, preventing margin and scale analysis.",
+      "Complete absence of balance sheet, debt obligations, and liquidity metrics.",
+      "Absence of cash flow statements to evaluate operational cash generation.",
+      "Lack of verified operational metrics confirming export exposure and fertilizer business dynamics.",
+      "No financial statements provided for the existing holding COMI."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "Although ABUK reported a basic earnings per share of 8.74 EGP for the nine months ended 30 September 2026 compared to 4.28 EGP for the nine months ended 30 September 2025, the provided evidence is insufficient to make a sound investment decision. The company's operating revenues (ABUK-ABUK_9M2026_results-p2-01, ABUK-ABUK_9M2026_results-p2-02) and net profit figures (ABUK-ABUK_9M2026_results-p2-25, ABUK-ABUK_9M2026_results-p2-26) are marked AMBIGUOUS with unresolved values due to conflicting unit indicators ('billion' vs. 'million') on the source page. Consequently, absolute revenue, net margin, and revenue growth cannot be calculated. Furthermore, there is a total lack of balance sheet data (cash, total debt, liquidity, and equity) and cash flow statements, making it impossible to assess solvency, debt burden, or capital expenditure needs. Lastly, no operational evidence is provided to confirm ABUK's export revenue share, which is critical to fulfilling the investor's stated diversification goal. Therefore, capital deployment from the available 40,000.00 EGP cash cannot be responsibly recommended at this time.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK reported a basic earnings per share of 8.74 EGP for the nine months ended 30 September 2026."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "This compares with a basic earnings per share of 4.28 EGP for the nine months ended 30 September 2025."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Operating revenue and net profit figures are ambiguous due to conflicting unit headers, preventing margin and scale analysis.",
+      "Complete absence of balance sheet, debt obligations, and liquidity metrics.",
+      "Absence of cash flow statements to evaluate operational cash generation.",
+      "Lack of verified operational metrics confirming export exposure and fertilizer business dynamics.",
+      "No financial statements provided for the existing holding COMI."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "### Company Financial Analysis: ABUK\n\n#### 1. Profitability\n* **Basic Earnings Per Share (EPS):** Verified basic EPS for the 9 months ended 30 September 2026 is **8.74 EGP** [ABUK-ABUK_9M2026_results-p2-31], compared to **4.28 EGP** [ABUK-ABUK_9M2026_results-p2-32] for the 9 months ended 30 September 2025.\n* **Net Profit & Operating Revenue:** Absolute net profit and operating revenue figures cannot be confirmed or used to calculate profit margins because all four line items are flagged as **AMBIGUOUS** with **unresolved EGP** values:\n  * Operating revenues (9M 2026): **unresolved EGP** (**AMBIGUOUS**) [ABUK-ABUK_9M2026_results-p2-01]\n  * Operating revenues (9M 2025): **unresolved EGP** (**AMBIGUOUS**) [ABUK-ABUK_9M2026_results-p2-02]\n  * Net profit for the period (9M 2026): **unresolved EGP** (**AMBIGUOUS**) [ABUK-ABUK_9M2026_results-p2-25]\n  * Net profit for the period (9M 2025): **unresolved EGP** (**AMBIGUOUS**) [ABUK-ABUK_9M2026_results-p2-26]\n* **Valuation Context (9M EPS vs. Cutoff Price):** Using the cutoff share price of **76.21 EGP** and verified 9M 2026 basic EPS of **8.74 EGP** [ABUK-ABUK_9M2026_results-p2-31], the price-to-9M-EPS multiple is approximately **8.72x** (note: this reflects 9-month earnings rather than full-year or trailing 12-month earnings, as Q4 figures are not in the evidence).\n\n#### 2. Growth\n* **EPS Growth:** Based on the verified per-share figures, basic EPS increased from **4.28 EGP** in 9M 2025 [ABUK-ABUK_9M2026_results-p2-32] to **8.74 EGP** in 9M 2026 [ABUK-ABUK_9M2026_results-p2-31], representing a year-over-year increase of **4.46 EGP** per share, or **+104.21%**.\n* **Revenue & Net Profit Growth:** Cannot be computed from the evidence because the underlying revenue ([ABUK-ABUK_9M2026_results-p2-01], [ABUK-ABUK_9M2026_results-p2-02]) and net profit ([ABUK-ABUK_9M2026_results-p2-25], [ABUK-ABUK_9M2026_results-p2-26]) values are **AMBIGUOUS** (**unresolved EGP**).\n\n#### 3. Balance Sheet\n* **No Evidence Available:** The provided evidence contains no balance sheet items (e.g., cash, debt, working capital, shareholders' equity) or cash flow statement figures for ABUK. Leverage, liquidity, and capital structure cannot be assessed.\n\n#### 4. Risks & Information Gaps\n* **Severe Financial Visibility Gaps:** Only 9M 2026 and 9M 2025 headline P&L excerpts are provided, with no balance sheet, cash flow, cost structure, or margin data.\n* **Unverified Business & Export Profile:** The evidence does not confirm ABUK's export share, product mix, FX exposure, feedstock/gas pricing, or competitive positioning.\n* **Lack of Multi-Year & Quarterly Trend Data:** No full-year historical figures or standalone quarterly progression data are provided to assess earnings sustainability or cyclicality over a 5-year horizon.\n* **Missing Data on Existing Holding (COMI):** No financial evidence is provided for COMI beyond its share price (**128.00 EGP**).\n\n#### 5. Data Quality\n* **Mixed Data Quality:**\n  * **Verified (2 items):** Basic EPS for 9M 2026 (**8.74 EGP**) [ABUK-ABUK_9M2026_results-p2-31] and 9M 2025 (**4.28 EGP**) [ABUK-ABUK_9M2026_results-p2-32] are verified.\n  * **Ambiguous / Unusable (4 items):** Operating revenues ([ABUK-ABUK_9M2026_results-p2-01], [ABUK-ABUK_9M2026_results-p2-02]) and net profit ([ABUK-ABUK_9M2026_results-p2-25], [ABUK-ABUK_9M2026_results-p2-26]) are all marked **AMBIGUOUS** with **unresolved EGP** values due to conflicting unit labels on page 2 of `ABUK_9M2026_results.pdf` (mix of \"billion\" and \"million\" markers alongside the table unit line \"million EGP\"). No calculations have been performed using these ambiguous figures.",
+    "investor": "### Investor Suitability & Portfolio Profile Assessment\n\n#### 1. Investment Horizon & Liquidity Needs\n* **Time Horizon:** The investor has an explicit 5-year horizon. This medium-to-long-term timeframe is well-suited for equity exposure and can tolerate cyclical market fluctuations.\n* **Liquidity Needs:** Minimal from this portfolio. Because the investor maintains a separate emergency fund, portfolio capital does not need to cover short-term living expenses, allowing the capital to remain deployed over the intended horizon.\n\n#### 2. Risk Profile (Loss Willingness & Capacity)\n* **Willingness to Accept Losses:** Medium. The investor is open to market volatility for potential growth, provided it does not lead to extreme or unhedged drawdowns.\n* **Loss-Bearing Capacity:** Medium. The separate emergency cushion supports their capacity to absorb intermediate valuation drops, though exposure should remain balanced to avoid excessive downside to total net worth.\n\n#### 3. Current Portfolio Structure & Concentration\n* **Holdings Valuation:**\n  * **COMI:** 200 shares @ 128.00 EGP = **25,600.00 EGP** (39.02% of total portfolio)\n  * **Cash:** **40,000.00 EGP** (60.98% of total portfolio)\n  * **Total Portfolio Value:** **65,600.00 EGP**\n* **Concentration Analysis:**\n  * 100% of the invested equity portion is concentrated in a single name and sector (banking via COMI).\n  * The portfolio is currently very liquid, holding over 60% in cash.\n  * Adding an exporter/fertilizer exposure aligns structurally with the investor’s diversification goal, spreading equity risk across non-correlated sectors.\n\n#### 4. Available Capital & Transaction Flexibility\n* **Free Cash Available:** The entire **40,000.00 EGP** cash balance is unencumbered within this portfolio, as liquid reserve needs are handled externally. \n* **Deployable Range:** \n  * A full deployment of the 40,000.00 EGP into equities would result in a fully invested portfolio (61% new position, 39% COMI).\n  * A moderate deployment (e.g., committing a portion of the 40,000.00 EGP to match or balance the 25,600.00 EGP COMI weight) would leave a cash buffer while achieving sector diversification.\n* **Liquidation Flexibility:**\n  * The investor holds 200 liquid shares of COMI (worth 25,600.00 EGP), all or part of which can be sold if the target allocation requires trimming existing banking exposure to fund new positions or rebalance equity weights."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 18.049,
+      "input_tokens": 1325,
+      "output_tokens": 2508,
+      "error": null,
+      "model": "google:gemini-4-hydrogen",
+      "fallbacks": [
+        "google:gemini-3.5-flash: GoogleRateLimitError"
+      ]
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 58.757,
+      "input_tokens": 1249,
+      "output_tokens": 984,
+      "error": null,
+      "model": "google:gemini-3.7-flash",
+      "fallbacks": [
+        "google:gemini-3.5-flash: GoogleRateLimitError",
+        "google:gemini-4-hydrogen: GoogleAPIError"
+      ]
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 174.82,
+      "input_tokens": 3311,
+      "output_tokens": 2761,
+      "error": null,
+      "model": "google:gemini-3.7-flash",
+      "fallbacks": [
+        "google:gemini-3.5-flash: GoogleRateLimitError",
+        "google:gemini-4-hydrogen: GoogleAPIError"
+      ]
+    }
+  ],
+  "seconds": 251.629
+}

@@ -1,0 +1,93 @@
+{
+  "case_id": "dev_005",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 524,
+    "explanation": "The investor aims to add a fertilizer exporter for portfolio diversification over a 5-year horizon. ABUK fits this strategic goal. Verified financial evidence demonstrates strong earnings growth, with basic earnings per share increasing from 4.28 EGP for 9M2025 to 8.74 EGP for 9M2026. Given the investor's available cash of 40,000.00 EGP and ABUK's price of 76.21 EGP per share, buying 524 shares requires 39,934.04 EGP, which fits comfortably within available funds while retaining existing COMI holdings. Note that revenue and net profit figures (evidence IDs ABUK-ABUK_9M2026_results-p2-01, ABUK-ABUK_9M2026_results-p2-02, ABUK-ABUK_9M2026_results-p2-25, and ABUK-ABUK_9M2026_results-p2-26) are marked AMBIGUOUS due to conflicting unit headings in the source document and were excluded from calculations, preventing a complete analysis of total revenues and profit margins. However, the verified EPS growth provides sufficient evidence to support a buy recommendation for long-term growth and diversification.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK reported a basic earnings per share of 8.74 EGP for the nine-month period ending September 30, 2026."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "In the prior period ending September 30, 2025, ABUK recorded a basic earnings per share of 4.28 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Total revenue and total net profit figures were marked ambiguous due to conflicting table units in the source report, so profit margins and total revenue scale could not be computed.",
+      "Analysis is limited to 9M earnings per share without full balance sheet or cash flow statement evidence.",
+      "Past per-share earnings performance does not guarantee future financial results over the 5-year investment horizon."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 524,
+    "explanation": "The investor aims to add a fertilizer exporter for portfolio diversification over a 5-year horizon. ABUK fits this strategic goal. Verified financial evidence demonstrates strong earnings growth, with basic earnings per share increasing from 4.28 EGP for 9M2025 to 8.74 EGP for 9M2026. Given the investor's available cash of 40,000.00 EGP and ABUK's price of 76.21 EGP per share, buying 524 shares requires 39,934.04 EGP, which fits comfortably within available funds while retaining existing COMI holdings. Note that revenue and net profit figures (evidence IDs ABUK-ABUK_9M2026_results-p2-01, ABUK-ABUK_9M2026_results-p2-02, ABUK-ABUK_9M2026_results-p2-25, and ABUK-ABUK_9M2026_results-p2-26) are marked AMBIGUOUS due to conflicting unit headings in the source document and were excluded from calculations, preventing a complete analysis of total revenues and profit margins. However, the verified EPS growth provides sufficient evidence to support a buy recommendation for long-term growth and diversification.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK reported a basic earnings per share of 8.74 EGP for the nine-month period ending September 30, 2026."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "In the prior period ending September 30, 2025, ABUK recorded a basic earnings per share of 4.28 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Total revenue and total net profit figures were marked ambiguous due to conflicting table units in the source report, so profit margins and total revenue scale could not be computed.",
+      "Analysis is limited to 9M earnings per share without full balance sheet or cash flow statement evidence.",
+      "Past per-share earnings performance does not guarantee future financial results over the 5-year investment horizon."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 65.96,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      },
+      {
+        "ticker": "ABUK",
+        "shares": 524
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 26.394,
+      "input_tokens": 1390,
+      "output_tokens": 3415,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 26.396
+}

@@ -1,0 +1,114 @@
+{
+  "case_id": "dev_001",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ETEL",
+    "shares": 140,
+    "explanation": "The investor has a medium-term horizon of 5-7 years to save for child university fees and maintains a separate emergency fund. ETEL demonstrates strong earnings growth, with operating revenues increasing from 81,677,812,000 EGP in FY2024 to 106,672,946,000 EGP in FY2025, and net profit more than doubling from 10,111,328,000 EGP to 22,578,063,000 EGP over the same period. Basic and diluted earnings per share reached 11.93 EGP in FY2025. Purchasing 140 shares at 141.95 EGP requires 19,873 EGP, which fits within the available cash of 20,000 EGP. This increases total holdings to 440 shares while aligning with the investor's medium risk tolerance and long-term accumulation objective. This guidance does not guarantee future performance.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues for FY2025 reached 106,672,946,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "Operating revenues were 81,677,812,000 EGP in FY2024."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for FY2025 grew to 22,578,063,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit was 10,111,328,000 EGP in FY2024."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "Basic and diluted earnings per share reached 11.93 EGP in FY2025."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Past earnings growth may not persist in future periods.",
+      "Deploying nearly all cash into ETEL increases portfolio concentration risk in a single stock.",
+      "Guidance is based on available historical financial statements and does not guarantee investment returns."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ETEL",
+    "shares": 140,
+    "explanation": "The investor has a medium-term horizon of 5-7 years to save for child university fees and maintains a separate emergency fund. ETEL demonstrates strong earnings growth, with operating revenues increasing from 81,677,812,000 EGP in FY2024 to 106,672,946,000 EGP in FY2025, and net profit more than doubling from 10,111,328,000 EGP to 22,578,063,000 EGP over the same period. Basic and diluted earnings per share reached 11.93 EGP in FY2025. Purchasing 140 shares at 141.95 EGP requires 19,873 EGP, which fits within the available cash of 20,000 EGP. This increases total holdings to 440 shares while aligning with the investor's medium risk tolerance and long-term accumulation objective. This guidance does not guarantee future performance.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues for FY2025 reached 106,672,946,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "Operating revenues were 81,677,812,000 EGP in FY2024."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for FY2025 grew to 22,578,063,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit was 10,111,328,000 EGP in FY2024."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "Basic and diluted earnings per share reached 11.93 EGP in FY2025."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Past earnings growth may not persist in future periods.",
+      "Deploying nearly all cash into ETEL increases portfolio concentration risk in a single stock.",
+      "Guidance is based on available historical financial statements and does not guarantee investment returns."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 127.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 440
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 25.062,
+      "input_tokens": 1721,
+      "output_tokens": 3943,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 25.065
+}
