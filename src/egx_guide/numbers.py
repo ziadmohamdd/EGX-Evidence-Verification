@@ -26,7 +26,13 @@ _BIDI_MARKS = re.compile("[‎‏‪-‮⁦-⁩؜]")
 
 def normalize(text: str) -> str:
     """NFKC (folds Arabic presentation forms), ASCII digits, no bidi control marks."""
-    return _BIDI_MARKS.sub("", unicodedata.normalize("NFKC", text)).translate(_DIGITS)
+    out = _BIDI_MARKS.sub("", unicodedata.normalize("NFKC", text)).translate(_DIGITS)
+    return _ARABIC_COMMA_IN_NUMBER.sub(",", out)
+
+
+# The Arabic comma '،' between digits is a number separator (OCR output uses it);
+# elsewhere it is ordinary punctuation and is left alone.
+_ARABIC_COMMA_IN_NUMBER = re.compile(r"(?<=\d)،(?=\d)")
 
 
 @dataclass(frozen=True)

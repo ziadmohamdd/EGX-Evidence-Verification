@@ -7,6 +7,9 @@ in the wrong order; in "auto" mode they are sent to the vision model too when
 one is available. So are table pages whose text layer has no unit line, since
 some reports draw "EGP thousands" in the page header as graphics.
 
+Mode "ocr" sends the same pages to free local OCR (EasyOCR) instead of a vision
+model; it is used for Arabic scans, where free vision models invented pages.
+
 A page that cannot be read is kept with method "none" and a warning, so the
 failure shows up in the output instead of disappearing.
 """
@@ -28,7 +31,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from .llm import Caller, is_transient
 from .numbers import arabic_ratio, detect_scale, normalize
 
-Mode = Literal["auto", "text", "vision"]
+Mode = Literal["auto", "text", "vision", "ocr"]
 
 MIN_TABLE_AMOUNTS = 3     # amounts of 4+ digits before a page counts as a financial table
 _AMOUNT = re.compile(r"\d{1,3}(?:[, ]\d{3})+|\d{4,}")
@@ -51,7 +54,7 @@ TRANSCRIBE_SYSTEM = """You transcribe pages of company financial reports exactly
 @dataclass
 class PageRecord:
     page: int                                   # 1-based
-    method: Literal["text", "vision", "none"]
+    method: Literal["text", "vision", "ocr", "none"]
     text: str
     text_layer_chars: int
     image_objects: int
@@ -155,9 +158,13 @@ def read_pdf(
             if unitless_table:
                 warnings.append("no unit in text layer: unit may be drawn as graphics")
 
-            use_vision = vision is not None and (
-                mode == "vision" or (mode == "auto" and (not has_text or arabic_layer or unitless_table)))
-            if use_vision:
+            needs_image = not has_text or arabic_layer or unitless_table
+            use_vision = vision is not None and (mode == "vision" or (mode == "auto" and needs_image))
+            if mode == "ocr" and needs_image:
+                from .ocr import ocr_page
+                text, method = ocr_page(page), "ocr"
+                warnings += confirm_transcription(text, expect, expect_years)
+            elif use_vision:
                 try:
                     text = transcribe_page(vision, page, n)
                     method = "vision"

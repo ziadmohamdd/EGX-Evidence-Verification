@@ -33,6 +33,7 @@ from .documents import DocumentRecord, PageRecord, parse_pages, read_pdf
 from .llm import Caller
 from .models import EvidenceItem, EvidenceStatus
 from .numbers import contains_number, detect_scale, figure_kind, normalize, parse_amount
+from .ocr import ocr_number_doubts
 
 
 class ExtractedFigure(BaseModel):
@@ -146,6 +147,8 @@ def check_figure(fig: ExtractedFigure, page: PageRecord, unit_line: str | None) 
     reasons += [w for w in page.warnings if w.startswith("unconfirmed transcription")]
 
     kind = row_kind(fig, page)
+    if page.method == "ocr":
+        reasons += ocr_number_doubts(printed, page.text, per_share=kind == "per_share")
     if percent or kind:  # ratios, per-share figures, share counts: the page's money unit does not apply
         reasons = [r for r in reasons if "unit" not in r and "scale" not in r]
         scale = 1.0
@@ -188,7 +191,8 @@ def main(argv=None):
     ap.add_argument("--pdf", type=Path, required=True)
     ap.add_argument("--company", required=True)
     ap.add_argument("--pages", help="e.g. 3-6,9 (default: all)")
-    ap.add_argument("--mode", choices=["auto", "text", "vision"], default="auto")
+    ap.add_argument("--mode", choices=["auto", "text", "vision", "ocr"], default="auto",
+                    help="ocr: free local EasyOCR for scanned/Arabic pages instead of a vision model")
     ap.add_argument("--provider", required=True)
     ap.add_argument("--model", required=True)
     ap.add_argument("--vision-provider", help="defaults to --provider")
@@ -203,7 +207,7 @@ def main(argv=None):
     from .llm import make_fallback_chat
     caller = Caller(make_fallback_chat([f"{a.provider}:{a.model}", *a.fallback], a.base_url, temperature=0.0))
     vision = None
-    if a.vision_model != "none" and a.mode != "text":
+    if a.vision_model != "none" and a.mode not in ("text", "ocr"):
         main_vision = f"{a.vision_provider or a.provider}:{a.vision_model or a.model}"
         vision = Caller(make_fallback_chat([main_vision, *a.fallback], a.base_url, temperature=0.0))
 
@@ -218,6 +222,7 @@ def main(argv=None):
                      "pages": [asdict(p) for p in doc.pages]},
         "models": {"extract": [a.provider, a.model],
                    "vision": [a.vision_provider or a.provider, a.vision_model or a.model] if vision else None,
+                   "ocr": "easyocr (ar, en)" if a.mode == "ocr" else None,
                    "fallback": a.fallback,
                    "answered_by": sorted({c.model for c in caller.calls + (vision.calls if vision else []) if c.model})},
         "evidence": [i.model_dump(mode="json") for i in items],

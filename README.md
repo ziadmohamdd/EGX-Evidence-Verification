@@ -23,7 +23,8 @@ Code for the paper on whether evidence verification reduces incorrect financial 
 | `src/egx_guide/runner.py` | Runs cases under conditions and saves one JSON record each |
 | `src/egx_guide/llm.py` | Model access through TradingAgents' provider factory, with per-call logging |
 | `src/egx_guide/numbers.py` | Reads printed amounts and units (Arabic-Indic digits, negatives, "بالألف جنيه", "EGP thousands") without a model |
-| `src/egx_guide/documents.py` | Reads PDF pages: text layer, or a vision model for scanned and Arabic pages |
+| `src/egx_guide/documents.py` | Reads PDF pages: text layer, or a vision model or local OCR for scanned and Arabic pages |
+| `src/egx_guide/ocr.py` | Free local OCR (EasyOCR) for Arabic scans, and the checks for numbers it may have misread |
 | `src/egx_guide/extract.py` | Proposes figures with a model, then checks each one in code and marks it verified or ambiguous |
 | `src/egx_guide/references.py` | Reference sheet for hand-checked figures, converts it to `figures.json`, measures the report reader's accuracy |
 | `src/egx_guide/score.py` | Scores a run against the reference answers: wrong-claim rate before and after the verifier, coverage, acceptable action, portfolio violations |
@@ -57,7 +58,7 @@ Results go to `runs/<timestamp>/<condition>/<case_id>.json` with a `manifest.jso
 .venv\Scripts\python -m egx_guide.extract --pdf reports\COMI_FY2024.pdf --company COMI --pages 3-6 --provider google --model <model-name>
 ```
 
-The output is `data/evidence/<company>_<file>.json`. It holds the page text and how each page was read, every figure with its status and reasons, and the model calls. `--mode text` never uses the vision model, and `--mode vision` sends every page to it. In the default `auto` mode, scanned pages and Arabic text-layer pages go to the vision model, because Arabic text layers can come out reversed. So do table pages whose text layer has no unit line (CIB draws "EGP thousands" in the page header as graphics).
+The output is `data/evidence/<company>_<file>.json`. It holds the page text and how each page was read, every figure with its status and reasons, and the model calls. `--mode text` never uses the vision model, and `--mode vision` sends every page to it. In the default `auto` mode, scanned pages and Arabic text-layer pages go to the vision model, because Arabic text layers can come out reversed. So do table pages whose text layer has no unit line (CIB draws "EGP thousands" in the page header as graphics). `--mode ocr` reads those same pages with free local OCR (EasyOCR, Arabic and English; install with `pip install -e ".[ocr]"`) instead of a vision model. It is used for the Arabic scans, where free vision models invented pages. OCR figures with signs of a misread comma are marked ambiguous.
 
 A figure is marked **verified** only if all of these hold: its number is found on the page, it reads without doubt, the unit is printed and consistent, the period is stated, and the page was not read from an Arabic text layer. Anything else is **ambiguous**, with the reason. These are automatic checks; the hand-checked reference figures remain the ground truth.
 
