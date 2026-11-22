@@ -72,6 +72,23 @@ def test_scanned_page_goes_to_vision(tmp_path):
     assert vision.images[0].startswith("data:image/png;base64,")
 
 
+def test_transcription_must_name_the_company_and_year(tmp_path):
+    # 2026-11-21: a free model "transcribed" Abu Qir's page as another company's 2023 results
+    path = scanned_pdf(tmp_path / "scan.pdf")
+    invented = FakeVision("شركة أورا للتطوير العقاري\nالربع الأول ٢٠٢٣\n| صافي الربح | ٥٥٬١٢٣ |")
+    [p] = read_pdf(path, vision=Caller(invented), expect=["أبوقير", "Abou Kir"], expect_years=["2026"]).pages
+    assert any(w.startswith("unconfirmed transcription") for w in p.warnings)
+    real = FakeVision("شركة أبوقير للأسمدة\nالتسعة أشهر المنتهية في ٣٠ سبتمبر ٢٠٢٦\n| صافي الربح | ٥٥٬١٢٣ |")
+    [p] = read_pdf(path, vision=Caller(real), expect=["أبوقير", "Abou Kir"], expect_years=["2026"]).pages
+    assert not any(w.startswith("unconfirmed") for w in p.warnings)
+
+
+def test_figures_from_an_unconfirmed_transcription_are_ambiguous():
+    page = PageRecord(1, "vision", "EGP thousands\nNet profit 55,123", 0, 1, 0.0,
+                      ["unconfirmed transcription: does not name the company"])
+    assert any("unconfirmed transcription" in r for r in check_figure(fig("55,123"), page, "EGP thousands")[2])
+
+
 def test_arabic_text_layer_is_flagged_and_sent_to_vision_in_auto(tmp_path):
     path = text_pdf(tmp_path / "ar.pdf", [ARABIC])
     [p] = read_pdf(path).pages

@@ -26,7 +26,7 @@ import pypdfium2.raw as pdfium_raw
 from langchain_core.messages import HumanMessage, SystemMessage
 
 from .llm import Caller, is_transient
-from .numbers import arabic_ratio, detect_scale
+from .numbers import arabic_ratio, detect_scale, normalize
 
 Mode = Literal["auto", "text", "vision"]
 
@@ -89,13 +89,35 @@ def transcribe_page(caller: Caller, page: pdfium.PdfPage, number: int) -> str:
     ])
 
 
+def confirm_transcription(text: str, expect: list[str] | None, expect_years: list[str] | None) -> list[str]:
+    """Warnings if a vision transcription doesn't name the company or the report's year.
+
+    A model can invent a plausible page (on 2026-11-21 one turned Abu Qir's results
+    into another company's 2023 quarter). Figures are then "grounded" in the invented
+    text, so this check against what we know about the file is the only cheap guard.
+    """
+    t = normalize(text).lower()
+    out = []
+    if expect and not any(normalize(e).lower() in t for e in expect):
+        out.append(f"unconfirmed transcription: does not name the company ({', '.join(expect)})")
+    if expect_years and not any(y in t for y in expect_years):
+        out.append(f"unconfirmed transcription: does not mention {' or '.join(expect_years)}")
+    return out
+
+
 def read_pdf(
     path: str | Path,
     pages: list[int] | None = None,
     mode: Mode = "auto",
     vision: Caller | None = None,
+    expect: list[str] | None = None,
+    expect_years: list[str] | None = None,
 ) -> DocumentRecord:
-    """Read the chosen pages (1-based; all if None)."""
+    """Read the chosen pages (1-based; all if None).
+
+    ``expect`` (company names) and ``expect_years`` are checked against every vision
+    transcription; a miss is recorded as an "unconfirmed transcription" warning.
+    """
     path = Path(path)
     if mode == "vision" and vision is None:
         raise ValueError("mode 'vision' needs a vision model")
@@ -136,6 +158,7 @@ def read_pdf(
                 try:
                     text = transcribe_page(vision, page, n)
                     method = "vision"
+                    warnings += confirm_transcription(text, expect, expect_years)
                 except Exception as exc:  # keep the failure visible
                     if is_transient(exc):
                         raise  # quota or overload on every model: stop, rather than save the page as unreadable

@@ -69,6 +69,27 @@ class FigureCheck:
     reasons: list[str]
 
 
+# How each company names itself on its pages, used to confirm vision transcriptions.
+COMPANY_NAMES = {
+    "COMI": ["Commercial International Bank", "CIB", "التجاري الدولي"],
+    "ETEL": ["Telecom Egypt", "telecomegypt", "المصرية للاتصالات"],
+    "TMGH": ["Talaat", "TMG", "طلعت مصطفى", "طلعت مصطفي"],
+    "EFID": ["Edita", "إيديتا", "ايديتا"],
+    "ABUK": ["Abu Qir", "Abou Kir", "Abu Kir", "أبوقير", "أبو قير", "ابوقير", "ابو قير"],
+}
+
+
+def expected_years(pdf: Path, sources: Path = Path("reports/SOURCES.json")) -> list[str]:
+    """Years of the report's own period, from reports/SOURCES.json (e.g. '9M2026 ...' -> ['2026'])."""
+    if not sources.exists():
+        return []
+    for s in json.loads(sources.read_text(encoding="utf-8")):
+        if s.get("file") == pdf.name:
+            years = re.findall(r"(?<!\d)20\d{2}(?!\d)", s.get("period", ""))
+            return sorted(set(years))[-1:]  # the latest year: comparatives may be older
+    return []
+
+
 def _slug(s: str) -> str:
     return re.sub(r"[^A-Za-z0-9]+", "_", s).strip("_") or "doc"
 
@@ -109,6 +130,7 @@ def check_figure(fig: ExtractedFigure, page: PageRecord, unit_line: str | None) 
         reasons.append("extractor marked uncertain" + (f": {fig.note}" if fig.note else ""))
     if page.method == "text" and any("Arabic text layer" in w for w in page.warnings):
         reasons.append("column/period order unverified (right-to-left text layer)")
+    reasons += [w for w in page.warnings if w.startswith("unconfirmed transcription")]
 
     kind = figure_kind(f"{fig.label} {fig.row_text}")
     if percent or kind:  # ratios, per-share figures, share counts: the page's money unit does not apply
@@ -173,7 +195,8 @@ def main(argv=None):
         main_vision = f"{a.vision_provider or a.provider}:{a.vision_model or a.model}"
         vision = Caller(make_fallback_chat([main_vision, *a.fallback], a.base_url, temperature=0.0))
 
-    doc = read_pdf(a.pdf, parse_pages(a.pages), a.mode, vision)
+    doc = read_pdf(a.pdf, parse_pages(a.pages), a.mode, vision,
+                   expect=COMPANY_NAMES.get(a.company.upper()), expect_years=expected_years(a.pdf))
     items, checks = extract_figures(doc, a.company, caller)
 
     a.out.mkdir(parents=True, exist_ok=True)
