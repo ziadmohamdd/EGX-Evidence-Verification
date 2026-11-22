@@ -243,12 +243,12 @@
 <div class="two">
   <div>
     <p><b>Now (development) — free:</b> Google Gemini and free OpenRouter models (e.g. NVIDIA Nemotron). Free models have daily limits and outages, so the system <b>automatically switches</b> to the next model when one is busy, and records which model answered.</p>
-    <p><b>Final experiment — paid (Claude):</b> all 360 runs must use <b>one fixed model</b> so the comparison is fair. Before that, we measure the real number of calls and you approve a budget with a spending cap. <b>Nothing is paid without your OK.</b></p>
+    <p><b>Final experiment — also free:</b> the project spends <b>no money</b>. All 360 runs use <b>one fixed free model</b>, with no switching, so the comparison is fair. Because free models have daily limits, the final runs are spread over several days. Arabic scans that free vision models can't read are handled with free local OCR (Tesseract).</p>
     <p>The model is just a setting: switching providers needs no code changes.</p>
   </div>
   <div class="ar" dir="rtl">
     <p><b>الآن (مرحلة التطوير) — مجانًا:</b> Google Gemini ونماذج مجانية من OpenRouter (مثل NVIDIA Nemotron). النماذج المجانية لها حدود يومية وأعطال، لذلك ينتقل النظام <b>تلقائيًا</b> إلى النموذج التالي عند انشغال أحدها، ويسجّل أي نموذج أجاب.</p>
-    <p><b>التجربة النهائية — مدفوعة (Claude):</b> يجب أن تستخدم التشغيلات الـ٣٦٠ <b>نموذجًا واحدًا ثابتًا</b> لتكون المقارنة عادلة. قبل ذلك نقيس العدد الحقيقي للطلبات وتوافق أنت على ميزانية بحد أقصى للإنفاق. <b>لا يُدفع أي شيء دون موافقتك.</b></p>
+    <p><b>التجربة النهائية — مجانية أيضًا:</b> المشروع <b>لا ينفق أي أموال</b>. تستخدم التشغيلات الـ٣٦٠ <b>نموذجًا مجانيًا واحدًا ثابتًا</b> دون تبديل، حتى تكون المقارنة عادلة. وبسبب الحدود اليومية للنماذج المجانية تُوزَّع التشغيلات النهائية على عدة أيام. أما الصفحات العربية الممسوحة التي تعجز عنها النماذج المجانية فتُقرأ ببرنامج OCR مجاني محلي (Tesseract).</p>
     <p>النموذج مجرد إعداد: تغيير المزوّد لا يحتاج أي تعديل في الكود.</p>
   </div>
 </div>
@@ -263,10 +263,10 @@
   <tr><td class="done">✔ Done</td><td>Reference sheet + guide; reader-accuracy report</td><td class="ar-cell">جدول المرجع ودليله؛ تقرير دقة القارئ</td></tr>
   <tr><td class="done">✔ Done</td><td>Case builder + 6 development case designs; evaluation plan</td><td class="ar-cell">منشئ الحالات + تصميم ٦ حالات تطوير؛ خطة التقييم</td></tr>
   <tr><td class="done">✔ Done</td><td>Automatic switching between free AI models; private GitHub repo</td><td class="ar-cell">التنقل التلقائي بين النماذج المجانية؛ مستودع GitHub خاص</td></tr>
-  <tr><td class="now">⟳ Now</td><td>Reader re-reading the 6 reports with all fixes, then building the 6 development cases</td><td class="ar-cell">القارئ يعيد قراءة التقارير الستة بكل الإصلاحات، ثم بناء حالات التطوير الست</td></tr>
-  <tr><td class="next">○ Next</td><td>First end-to-end runs of A–D on the 6 development cases (free models)</td><td class="ar-cell">أول تشغيل كامل للنسخ A–D على حالات التطوير الست (نماذج مجانية)</td></tr>
+  <tr><td class="done">✔ Done</td><td>English reports read (98–100% verified); 4 development cases built; first run of A and B</td><td class="ar-cell">قراءة التقارير الإنجليزية (تحقق ٩٨–١٠٠٪)؛ بناء ٤ حالات تطوير؛ أول تشغيل للنسختين A وB</td></tr>
+  <tr><td class="now">⟳ Now</td><td>Running C and D; reading the 2 Arabic scans with free OCR; adding EPS and share counts to cases</td><td class="ar-cell">تشغيل C وD؛ قراءة الصفحتين العربيتين ببرنامج OCR مجاني؛ إضافة ربحية السهم وعدد الأسهم للحالات</td></tr>
   <tr><td class="next">○ Next</td><td>Statistics script; blinded rating sheet; 30 test cases</td><td class="ar-cell">برنامج الإحصاء؛ جدول التقييم المُعمّى؛ ٣٠ حالة اختبار</td></tr>
-  <tr><td class="next">○ Later</td><td>Freeze → final Claude runs (budget OK) → results → write the paper</td><td class="ar-cell">التجميد ← التشغيل النهائي بـClaude (بعد موافقة الميزانية) ← النتائج ← كتابة البحث</td></tr>
+  <tr><td class="next">○ Later</td><td>Freeze → final runs on one free model (over several days) → results → write the paper</td><td class="ar-cell">التجميد ← التشغيل النهائي بنموذج مجاني واحد (على عدة أيام) ← النتائج ← كتابة البحث</td></tr>
 </table>
 </div>
 
@@ -279,7 +279,7 @@
   <tr><td>2</td><td><b>Fill in the reference sheet</b> (~20 rows a day is fine). Tell Claude after each batch so it can check it.</td><td class="ar-cell"><b>ملء جدول المرجع</b> (نحو ٢٠ صفًا يوميًا كافٍ). أخبر Claude بعد كل دفعة ليراجعها.</td></tr>
   <tr><td>3</td><td><b>Review the 6 development cases</b>: are the "acceptable actions" sensible for each investor?</td><td class="ar-cell"><b>مراجعة حالات التطوير الست</b>: هل «الإجراءات المقبولة» منطقية لكل مستثمر؟</td></tr>
   <tr><td>4</td><td>Keep the Claude app open and the laptop plugged in during long runs.</td><td class="ar-cell">إبقاء تطبيق Claude مفتوحًا والجهاز موصولًا بالكهرباء أثناء التشغيلات الطويلة.</td></tr>
-  <tr><td>5</td><td>Later: approve the Claude budget for the final runs (with a spending cap).</td><td class="ar-cell">لاحقًا: الموافقة على ميزانية Claude للتشغيل النهائي (مع حد أقصى للإنفاق).</td></tr>
+  <tr><td>5</td><td>Nothing to pay: the whole project uses free models only.</td><td class="ar-cell">لا شيء للدفع: المشروع كله يستخدم نماذج مجانية فقط.</td></tr>
 </table>
 <div class="note"><b>Safety rules:</b> never paste or screenshot API keys; keys live only in Windows (<code>setx</code>). Nothing is pushed to GitHub except code, documents and data files — never the PDFs or keys.<span class="ar-line">قواعد الأمان: لا تلصق مفاتيح API ولا تصوّرها؛ المفاتيح محفوظة في ويندوز فقط. لا يُرفع إلى GitHub إلا الكود والمستندات والبيانات، وليس ملفات PDF أو المفاتيح أبدًا.</span></div>
 

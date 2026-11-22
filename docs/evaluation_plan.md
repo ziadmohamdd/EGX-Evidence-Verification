@@ -117,11 +117,16 @@ Before the final runs, all of the following are fixed in a git tag `freeze-v1`:
 
 The final runs use only that tag. Results that look poor are not followed by prompt changes. If something must change, it's logged in §12 and the full set of runs is redone.
 
-## 10. Models and budget
+## 10. Models (free only)
 
-- **Development:** Gemini free tier, limited to 20 requests per day per model.
-- **Final runs:** Claude, the same model and version for all conditions. This needs the authors' approval of the budget before any spending.
-- **Expected volume:** 360 runs at roughly 3–7 model calls each, about 1,000–2,500 calls. Reading the reports is separate, because evidence is extracted once and shared by all conditions. The real number of calls per run gets measured on the development cases before the budget request.
+**The project spends no money.** Every model is a free option: the Gemini free tier, free OpenRouter models, or a model running locally with Ollama.
+
+- **Development:** free models with automatic fallback (`--fallback`), so work continues when one model is overloaded or out of daily requests. Each call records which model answered.
+- **Final runs:** **one fixed free model** for every condition, with **no fallback**, so conditions stay comparable. It's chosen on the development cases for reliability, valid structured output, and requests available per day. Its exact model ID and the dates of the runs are reported. Candidates: `gemini-4-hydrogen` (20 requests/day), `openrouter:nvidia/nemotron-3.5-super-vl:free` (daily limit to be measured), or a local Ollama model (no limit, but weaker).
+- **Expected volume:** measured on the first development run, about 1–3 calls per run (A, B: 1–2; C, D: 3–4), so 360 runs is roughly 800 calls. At free-tier limits, the final runs are spread over several days in daily batches. Every run is saved as it finishes, so batches simply continue the next day.
+- **If free limits make 360 runs impossible before the deadline**, the size drops to 30 cases × 2 repeats (240 runs) or 20 cases × 3 repeats, decided before the freeze and logged in §12. The power statement in §5 is updated to match.
+- **Repeatability:** some free models ignore the temperature setting, so the 3 repeats also measure how much answers vary, as §5 already reports.
+- **Reading the reports:** this happens once, and every condition shares the result. Free vision models read English scans accurately, but invented or returned empty Arabic scans (21–22 Nov 2026). The free alternative for Arabic scans is local OCR (Tesseract with Arabic), checked the same way (company and year confirmation, then the reference sheet). If that fails too, Arabic scans are reported as a limitation of the reader.
 
 ## 11. Separate component result: the report reader
 
@@ -131,6 +136,7 @@ The reader's extraction accuracy is reported on its own, using `python -m egx_gu
 
 | Date | Change | Reason | Runs redone? |
 |---|---|---|---|
+| 2026-11-22 | Final runs use one fixed free model instead of paid Claude (§10). | No budget; the project spends no money | No runs yet |
 | 2026-11-21 | One author does all reference figures and ratings. An AI-assisted check of the sheet against the page images replaces the second author's check, and intra-rater reliability replaces inter-rater agreement (§7, §8). | The work is done by one author | No runs yet |
 
 ## Still to build

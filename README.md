@@ -41,7 +41,7 @@ Python 3.12 virtual environment in `.venv`:
 
 ## Running
 
-Put an API key in the environment, e.g. `GOOGLE_API_KEY` for Gemini or `ANTHROPIC_API_KEY` for Claude. Then:
+The project uses free models only. Put the free keys in the environment (`GOOGLE_API_KEY` for Gemini, `OPENROUTER_API_KEY` for OpenRouter's free models). Then:
 
 ```powershell
 .venv\Scripts\python -m egx_guide.runner --cases data\cases\dev --conditions A B C D --provider google --model <model-name>
