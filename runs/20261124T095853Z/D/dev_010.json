@@ -1,0 +1,105 @@
+{
+  "case_id": "dev_010",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "Profit growth belonging to Talaat Moustafa's own shareholders (Parent Company, consolidated) grew from 9,025,066,065 LE in the restated 2024 period to 14,383,890,306 LE in 2025, an absolute increase of 5,358,824,241 LE and a year‑over‑year increase of approximately 59.38%. While the growth is strong, the investor's portfolio is heavily concentrated in TMGH (≈58% of total value ≈71,250 EGP) and the investor has only medium capacity to withstand losses. Adding to the position would increase concentration and risk, which is inconsistent with the medium loss‑capacity constraint. Therefore, the recommendation is to hold the existing position and not increase exposure at this time.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2025: 14,383,890,306 LE"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2024 (Restated): 9,025,066,065 LE"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "High single‑stock concentration (~58% of portfolio) and medium loss‑capacity constrain the ability to add materially to the position.",
+      "Growth figures are based on restated 2024 data; any comparison should note the restatement.",
+      "Recommendation does not guarantee future performance; it reflects current evidence and investor suitability."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "Profit growth belonging to Talaat Moustafa's own shareholders (Parent Company, consolidated) grew from 9,025,066,065 LE in the restated 2024 period to 14,383,890,306 LE in 2025, an absolute increase of 5,358,824,241 LE and a year‑over‑year increase of approximately 59.38%. While the growth is strong, the investor's portfolio is heavily concentrated in TMGH (≈58% of total value ≈71,250 EGP) and the investor has only medium capacity to withstand losses. Adding to the position would increase concentration and risk, which is inconsistent with the medium loss‑capacity constraint. Therefore, the recommendation is to hold the existing position and not increase exposure at this time.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2025: 14,383,890,306 LE"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2024 (Restated): 9,025,066,065 LE"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "High single‑stock concentration (~58% of portfolio) and medium loss‑capacity constrain the ability to add materially to the position.",
+      "Growth figures are based on restated 2024 data; any comparison should note the restatement.",
+      "Recommendation does not guarantee future performance; it reflects current evidence and investor suitability."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": {
+    "financial": "**Profit belonging to Talaat Moustafa's own shareholders (Parent Company, consolidated):**\n\n- [TMGH-TMGH_FY2025_consolidated_en-p7-57]: 14,383,890,306 LE (period 2025)  \n- [TMGH-TMGH_FY2025_consolidated_en-p7-58]: 9,025,066,065 LE (period 2024, Restated)\n\n**Growth calculation (using evidence-only figures):**\n- Absolute growth: 14,383,890,306 − 9,025,066,065 = **5,358,824,241 LE**  \n- Percentage growth: (5,358,824,241 / 9,025,066,065) × 100 ≈ **59.38% year-over-year**  \n- Note: The 2024 figure is restated; growth compares the restated 2024 balance against the 2025 figure.\n\n**Regarding position adjustment:**  \nPer instructions, I do not recommend an action. The decision agent determines whether adding to the position is appropriate. The evidence shows a ~59.38% growth in shareholders' profit (restated 2024 vs. 2025), but this alone does not constitute a recommendation.",
+    "investor": "**Investor-Suitability Assessment**  \n*(Per role instructions, I do not analyse company financials or make action-based recommendations such as whether to add to a position. The following evaluates the investor’s fit across the specified parameters using only the provided profile and portfolio structure.)*\n\n### **1. Horizon & Goal Alignment**\n- **Horizon:** 5–10 years matches the long-term growth goal, supporting a patient, compounding-oriented approach.\n- **Fit:** Strong alignment, provided the investor can tolerate the interim volatility inherent in growth-oriented portfolios.\n\n### **2. Liquidity Needs**\n- The investor states they keep a separate emergency fund.  \n- **Current cash:** 30,000 EGP.  \n- **Assessment:** This amount is treated as available for investment commitments, though the explicit size of the emergency reserve isn’t quantified. If 30,000 EGP *is* the emergency fund, additional commitment capacity would be limited to new cash inflows.\n\n### **3. Loss Willingness vs. Capacity**\n- **Willingness:** High – the investor is comfortable with price declines.\n- **Capacity:** Medium – the financial ability to withstand losses is moderate.  \n- **Implication:** A mismatch exists between willingness and capacity. Position sizing must be conservative enough that a significant drawdown does not threaten the investor’s financial stability or force untimely liquidation. The overall portfolio should reflect a risk level consistent with the *medium* capacity, regardless of high willingness.\n\n### **4. Current Concentration**\n- **Holdings:** 500 shares of TMGH at 82.50 EGP/share = **~41,250 EGP**.  \n- **Cash:** 30,000 EGP.  \n- **Total portfolio value:** ~71,250 EGP.  \n- **TMGH concentration:** ~58% of the total portfolio.  \n- **Assessment:** This is a high single-stock concentration. Combined with the medium loss-capacity constraint, this creates a meaningful risk cluster. Diversification across uncorrelated assets would better align with the capacity profile.\n\n### **5. Cash Commitment Capacity**\n- **Realizable assets:** The 500 TMGH shares can be sold for approximately **41,250 EGP** at the cutoff price.  \n- **Free cash:** **30,000 EGP** (as stated, separate from the emergency fund).  \n- **Total available for commitment:** ~71,250 EGP (cash + realizable equity), though the actual \"new\" capital the investor can deploy depends on whether the 30,000 EGP is incremental or already earmarked.  \n- **Recommendation (within suitability bounds):** Given the concentration and medium loss capacity, any new commitment should be sized conservatively (e.g., a smaller percentage of the 30,000 EGP cash, or a diversified allocation) rather than adding significantly to the existing TMGH position.\n\n### **Portfolio Allowances (What the Portfolio Permits)**\n- **What can be sold:** The 500 TMGH shares (~41,250 EGP realizable at 82.50 EGP/share).  \n- **What cash is free:** 30,000 EGP (per the investor’s statement of a separate emergency fund; exact emergency-fund size not provided, so availability for commitment is assessed at face value).\n\n---\n\n**Per my role instructions, I cannot calculate the year-over-year profit growth belonging to Talaat Moustafa’s shareholders or evaluate whether that growth justifies adding to the position. That type of security-specific financial analysis and recommendation falls outside the scope of an investor-suitability assessment, which focuses on the investor’s parameters rather than the merits of a particular holding.**"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 22.409,
+      "input_tokens": 1741,
+      "output_tokens": 2438,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 16.737,
+      "input_tokens": 1735,
+      "output_tokens": 3035,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 11.382,
+      "input_tokens": 3734,
+      "output_tokens": 1485,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 50.532
+}

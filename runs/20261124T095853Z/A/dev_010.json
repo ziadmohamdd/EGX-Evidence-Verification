@@ -1,0 +1,101 @@
+{
+  "case_id": "dev_010",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 363,
+    "explanation": "The profit belonging to Talaat Moustafa's own shareholders (Shareholders of the Parent Company, consolidated) grew from 9,025,066,065 LE in 2024 (restated) to 14,383,890,306 LE in 2025, an increase of 5,358,824,241 LE, i.e., ~59.4% year‑over‑year growth. Corresponding earnings per share rose from 4.38 LE to 6.98 LE, also a ~59.4% increase, giving a price‑to‑earnings ratio of roughly 82.50 EGP / 6.98 EGP ≈ 11.8, which is low relative to the strong profit growth. The investor has 30,000 EGP in cash and, at the cutoff price of 82.50 EGP per share, can purchase up to ⌊30,000 / 82.50⌋ = 363 shares, leaving a small cash remainder. Given the robust increase in shareholder profit, improved EPS, and an attractive valuation, adding to the position is justified for a long‑term growth‑oriented investor with high risk tolerance. However, this guidance is not a guarantee of returns; Egyptian market macro‑economic risks, sector‑specific factors, and possible dividend changes should be considered.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) increased from 9,025,066,065 LE (2024) to 14,383,890,306 LE (2025), a growth of ~59.4%."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) in 2024 (restated) were 9,025,066,065 LE."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "EPS for 2025 was 6.98 LE, up from 4.38 LE in 2024, implying ~59.4% growth."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "EPS for 2024 (restated) was 4.38 LE."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Historical profit growth does not guarantee future performance.",
+      "The calculation uses only the provided consolidated equity‑holder profit and EPS figures; other financial metrics (e.g., cash flow, debt) are not examined here.",
+      "Egyptian market conditions, regulatory changes, and macro‑economic factors can affect the stock's trajectory.",
+      "The purchase amount (363 shares) uses all available cash, leaving a small residual (≈52.50 EGP) that is not invested."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 363,
+    "explanation": "The profit belonging to Talaat Moustafa's own shareholders (Shareholders of the Parent Company, consolidated) grew from 9,025,066,065 LE in 2024 (restated) to 14,383,890,306 LE in 2025, an increase of 5,358,824,241 LE, i.e., ~59.4% year‑over‑year growth. Corresponding earnings per share rose from 4.38 LE to 6.98 LE, also a ~59.4% increase, giving a price‑to‑earnings ratio of roughly 82.50 EGP / 6.98 EGP ≈ 11.8, which is low relative to the strong profit growth. The investor has 30,000 EGP in cash and, at the cutoff price of 82.50 EGP per share, can purchase up to ⌊30,000 / 82.50⌋ = 363 shares, leaving a small cash remainder. Given the robust increase in shareholder profit, improved EPS, and an attractive valuation, adding to the position is justified for a long‑term growth‑oriented investor with high risk tolerance. However, this guidance is not a guarantee of returns; Egyptian market macro‑economic risks, sector‑specific factors, and possible dividend changes should be considered.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) increased from 9,025,066,065 LE (2024) to 14,383,890,306 LE (2025), a growth of ~59.4%."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) in 2024 (restated) were 9,025,066,065 LE."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "EPS for 2025 was 6.98 LE, up from 4.38 LE in 2024, implying ~59.4% growth."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "EPS for 2024 (restated) was 4.38 LE."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Historical profit growth does not guarantee future performance.",
+      "The calculation uses only the provided consolidated equity‑holder profit and EPS figures; other financial metrics (e.g., cash flow, debt) are not examined here.",
+      "Egyptian market conditions, regulatory changes, and macro‑economic factors can affect the stock's trajectory.",
+      "The purchase amount (363 shares) uses all available cash, leaving a small residual (≈52.50 EGP) that is not invested."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 52.5,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 863
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 14.229,
+      "input_tokens": 2541,
+      "output_tokens": 2454,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 14.233
+}

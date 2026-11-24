@@ -1,0 +1,69 @@
+{
+  "case_id": "dev_009",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The investor wants a full‑year 2026 EPS and P/E ratio for Abu Qir Fertilizers (ABUK) to judge whether the share is cheap enough to buy. The only EPS figure provided is the nine‑months‑ended‑30‑September‑2026 basic EPS of 8.74 EGP (verified, evidence_id ABUK‑ABUK_9M2026_results‑p2‑31). The nine‑months‑ended‑30‑September‑2025 EPS of 4.28 EGP is also available. No full‑year 2026 EPS is reported, and there is no guidance in the evidence on how to derive the full‑year result from the nine‑month data. Without a reliable full‑year EPS we cannot compute a price‑to‑earnings ratio (price = 76.21 EGP). Consequently there is insufficient evidence to support a buy, hold, or sell recommendation. The ambiguous revenue‑unit figures (evidence_ids ABUK‑ABUK_9M2026_results‑p2‑01, ‑p2‑02, and the corresponding 2025 figures) have been listed as unused and were not employed in any calculation. Given the missing full‑year earnings data, a responsible decision cannot be made; the appropriate action is insufficient_evidence.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Only nine‑months EPS is provided; full‑year EPS is not reported.",
+      "No basis in the evidence to annualise the nine‑month result (e.g., seasonal pattern, guidance).",
+      "Price‑to‑earnings ratio cannot be calculated without full‑year EPS.",
+      "Ambiguous revenue unit markings were identified and excluded from any calculation."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The investor wants a full‑year 2026 EPS and P/E ratio for Abu Qir Fertilizers (ABUK) to judge whether the share is cheap enough to buy. The only EPS figure provided is the nine‑months‑ended‑30‑September‑2026 basic EPS of 8.74 EGP (verified, evidence_id ABUK‑ABUK_9M2026_results‑p2‑31). The nine‑months‑ended‑30‑September‑2025 EPS of 4.28 EGP is also available. No full‑year 2026 EPS is reported, and there is no guidance in the evidence on how to derive the full‑year result from the nine‑month data. Without a reliable full‑year EPS we cannot compute a price‑to‑earnings ratio (price = 76.21 EGP). Consequently there is insufficient evidence to support a buy, hold, or sell recommendation. The ambiguous revenue‑unit figures (evidence_ids ABUK‑ABUK_9M2026_results‑p2‑01, ‑p2‑02, and the corresponding 2025 figures) have been listed as unused and were not employed in any calculation. Given the missing full‑year earnings data, a responsible decision cannot be made; the appropriate action is insufficient_evidence.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Only nine‑months EPS is provided; full‑year EPS is not reported.",
+      "No basis in the evidence to annualise the nine‑month result (e.g., seasonal pattern, guidance).",
+      "Price‑to‑earnings ratio cannot be calculated without full‑year EPS.",
+      "Ambiguous revenue unit markings were identified and excluded from any calculation."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 11.617,
+      "input_tokens": 2110,
+      "output_tokens": 1827,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 11.62
+}

@@ -1,0 +1,95 @@
+{
+  "case_id": "dev_005",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "none",
+    "shares": 0,
+    "explanation": "The investor aims to add a fertilizer exporter for diversification, but the provided evidence set contains no financial data for any fertilizer exporter company. The only available listed company data are for ABUK and the existing COMI holding. ABUK's financial figures are largely AMBIGUOUS (revenue and net profit for 9M 2025/2026) due to unit‑label conflicts, and the two verified EPS figures (8.74 EGP and 4.28 EGP) are insufficient to assess the company's suitability as a fertilizer exporter. No COMI fundamentals (sector, revenue, profitability, balance‑sheet) are supplied, so we cannot determine whether COMI already operates in the fertilizer sector or whether a new addition would truly diversify the portfolio. Because the evidence does not allow a responsible evaluation of a fertilizer‑exporter purchase, the decision cannot be made on the given data. Missing evidence: (1) financial statements or key figures for any candidate fertilizer exporter, (2) clarification of COMI's business sector and its overlap/​",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "No financial data for any fertilizer exporter beyond the ambiguous ABUK figures.",
+      "No sector information for COMI; cannot assess diversification impact.",
+      "Ambiguous unit labels prevent use of revenue and net‑profit figures.",
+      "Only two verified EPS values are available, which are insufficient for a full recommendation."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "none",
+    "shares": 0,
+    "explanation": "The investor aims to add a fertilizer exporter for diversification, but the provided evidence set contains no financial data for any fertilizer exporter company. The only available listed company data are for ABUK and the existing COMI holding. ABUK's financial figures are largely AMBIGUOUS (revenue and net profit for 9M 2025/2026) due to unit‑label conflicts, and the two verified EPS figures (8.74 EGP and 4.28 EGP) are insufficient to assess the company's suitability as a fertilizer exporter. No COMI fundamentals (sector, revenue, profitability, balance‑sheet) are supplied, so we cannot determine whether COMI already operates in the fertilizer sector or whether a new addition would truly diversify the portfolio. Because the evidence does not allow a responsible evaluation of a fertilizer‑exporter purchase, the decision cannot be made on the given data. Missing evidence: (1) financial statements or key figures for any candidate fertilizer exporter, (2) clarification of COMI's business sector and its overlap/​",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "No financial data for any fertilizer exporter beyond the ambiguous ABUK figures.",
+      "No sector information for COMI; cannot assess diversification impact.",
+      "Ambiguous unit labels prevent use of revenue and net‑profit figures.",
+      "Only two verified EPS values are available, which are insufficient for a full recommendation."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": {
+    "financial": "**Evidence Analysis – Restricted to Provided Data Only**\n\nThe following analysis draws exclusively on the evidence set supplied. No external data, company reports, or market prices (beyond the stated cutoff) are used. Figures are cited per instruction; ambiguous items are flagged and excluded from computation.\n\n### Profitability\n- [ABUK-ABUK_9M2026_results-p2-31]: **Verified** EPS 9M ended 30 Sep 2026 = **8.74 EGP** per share.  \n- [ABUK-ABUK_9M2026_results-p2-32]: **Verified** EPS 9M ended 30 Sep 2025 = **4.28 EGP** per share.  \n- [ABUK-ABUK_9M2026_results-p2-25]: **AMBIGUOUS** Net profit 9M ended 30 Sep 2026. Source line shows \"صافي ربح الفترة | ١٢٩٧٠ | ٦٣٩٦ | %١٠٣ | ٢٩٥٨ | ١٨٢٨ | ٦٠٦٢ | unit: مليون جنيه\", but the page's unit indicators are predominantly 'مليار' (billion). Value unresolved EGP. Not used in margin or ratio calculations.  \n- [ABUK-ABUK_9M2026_results-p2-26]: **AMBIGUOUS** Net profit 9M ended 30 Sep 2025. Same unit conflict. Value unresolved EGP.  \n- [ABUK-ABUK_9M2026_results-p2-01] & [ABUK-ABUK_9M2026_results-p2-02]: **AMBIGUOUS** Revenue (إيرادات النشاط) for 9M 2026 and 9M 2025. Source units conflict ('مليار' vs 'مليون'); values unresolved EGP. Not used in profitability metrics.\n\n**Observation:** Only the two EPS figures are verified and internally consistent. All revenue and net profit figures carry an AMBIGUOUS data-quality flag due to unit-label discrepancies, preventing computation of net margins, ROE, or other profitability ratios.\n\n### Growth\n- No verifiable revenue figures are available (both periods AMBIGUOUS).  \n- The verified EPS increased from 4.28 EGP to 8.74 EGP, representing a period-over-period rise, but without revenue context this cannot be assessed as operational growth. Any growth calculation would rely on AMBIGUOUS figures and is therefore excluded.\n\n### Balance Sheet\n- No evidence regarding total assets, liabilities, equity, cash, or debt was provided in this evidence set. A balance-sheet assessment cannot be performed.\n\n### Risks\n- **Data ambiguity:** Six of eight reported figures (revenue 9M2026, revenue 9M2025, net profit 9M2026, net profit 9M2025) are AMBIGUOUS due to conflicting unit labels (billion vs. million). This is the primary risk, as it undermines the reliability of any quantitative analysis.  \n- **Limited coverage:** Only nine-month truncated data are present; no full-year or quarterly breakdowns are included.  \n- **No leverage or liquidity data:** Absent from the evidence set, so solvency and cash-flow risks cannot be evaluated.\n\n### Data Quality\n- **Verified figures:** 2 items (EPS 9M2026: 8.74 EGP; EPS 9M2025: 4.28 EGP).  \n- **AMBIGUOUS figures:** 6 items (revenue and net profit for both periods).  \n- **Unit conflict:** The source lines cite \"unit: مليون جنيه\", yet the page's unit indicators are almost entirely 'مليار'. The note \"relying on table unit line 'مليون جنيه'\" is present, but this creates uncertainty; any figure relying on that line is flagged AMBIGUOUS.  \n- **Computability:** All AMBIGUOUS figures are explicitly excluded from computation per instructions. Only the two verified EPS values may be used for descriptive reference.\n\n### Compliance with Constraints\n- **No investment recommendation** is provided. The decision agent will determine portfolio action based on its own processes.  \n- **Only the given evidence** is used. The current portfolio (COMI holding, cash position), investor profile, and price data (ABUK: 76.21 EGP, COMI: 128.00 EGP) are noted for context but do not drive the analysis below.  \n- **No COMI financial evidence** was included in this evidence set; therefore, any analysis of the existing holding or diversification into fertilizer exports based on COMI fundamentals is unsupported by the data provided.\n\n**Summary of Cited Figures:**\n- [ABUK-ABUK_9M2026_results-p2-01]: AMBIGUOUS revenue 9M2026, value unresolved EGP  \n- [ABUK-ABUK_9M2026_results-p2-02]: AMBIGUOUS revenue 9M2025, value unresolved EGP  \n- [ABUK-ABUK_9M2026_results-p2-25]: AMBIGUOUS net profit 9M2026, value unresolved EGP  \n- [ABUK-ABUK_9M2026_results-p2-26]: AMBIGUOUS net profit 9M2025, value unresolved EGP  \n- [ABUK-ABUK_9M2026_results-p2-31]: **Verified** EPS 9M2026 = **8.74 EGP**  \n- [ABUK-ABUK_9M2026_results-p2-32]: **Verified** EPS 9M2025 = **4.28 EGP**  \n\nAll AMBIGUOUS figures are flagged and excluded from computation.",
+    "investor": "**Investor Suitability Assessment**\n\n### Profile Summary\n- **Goal:** Add a fertilizer exporter position for diversification.\n- **Horizon:** 5 years (medium term).\n- **Liquidity:** Maintains a separate emergency fund.\n- **Loss profile:** Willingness and financial ability to withstand losses: both rated *medium*.\n- **Current holdings:** Cash EGP 40,000; 200 shares of COMI at EGP 128.00/share (market value EGP 25,600). Total portfolio value ~EGP 65,600.\n- **Price reference at cutoff:** ABUK EGP 76.21/share (quoted for context; not analysed per instructions).\n\n---\n\n### 1. Horizon Compatibility\nA 5-year horizon aligns with a *medium* loss tolerance. It provides sufficient time to absorb typical equity volatility while keeping the investment goal within a reasonable timeframe. This horizon supports moderate-risk exposure such as a single-sector equity addition, provided the investor can stay committed through interim drawdowns.\n\n### 2. Liquidity Needs\nThe investor explicitly keeps a separate emergency fund. The EGP 40,000 cash balance should be assessed against that reserve: if the emergency fund is already segregated and fully funded, the 40,000 is available for commitment without compromising liquidity. If the 40,000 includes or overlaps the emergency buffer, only the amount above that threshold should be considered commitable. No other liquidity constraints or liabilities are indicated.\n\n### 3. Loss Willingness & Capacity\nBoth willingness and capacity are rated *medium*. This suggests the investor can tolerate a moderate decline in portfolio value (e.g., 15–30% in stressed scenarios) without material impact on financial stability, especially over a 5-year horizon. The position size should reflect this capacity: a meaningful but not dominant allocation to the new fertilizer exporter is appropriate.\n\n### 4. Current Concentration\n- **Existing holding:** 200 shares of COMI (EGP 25,600), representing ~39% of the total portfolio value.\n- **Goal intent:** “Add a fertilizer exporter for diversification.”\n- **Consideration:** If COMI operates in the fertilizer/agricultural sector, adding another fertilizer exporter may *increase* sector concentration rather than diversify it, unless the new position is geographically, operationally, or product-diversified. The suitability assessment should flag this overlap and suggest that diversification benefit hinges on the new issuer’s distinct characteristics (region, supply chain, customer base). If COMI is *not* a fertilizer exporter, the existing holding poses no sector conflict.\n\n### 5. Cash Commitment Capacity\n- **Free liquidity:** EGP 40,000 cash is immediately available without selling existing assets.\n- **Alternative liquidity:** The COMI holding (EGP 25,600) can be sold to free capital, but this would reduce current holdings and potentially alter the portfolio’s risk profile and concentration.\n- **Reasonable commitment range:** Given the medium loss profile and 5-year horizon, a commitment of EGP 15,000–30,000 from the cash balance would use 37.5%–75% of free liquidity while preserving a liquidity buffer. The full 40,000 could be committed only if the emergency fund is fully separate and funded, and the investor is comfortable with the resulting liquidity position. No specific allocation is prescribed; the range above reflects suitability guardrails.\n\n### 6. Portfolio Flexibility (What the Portfolio Allows)\n- **Cash:** EGP 40,000 is free and can be deployed into a new position without trading existing securities.\n- **COMI shares:** 200 shares with a market value of EGP 25,600. These can be sold for immediate liquidity, but doing so would:\n  - Realize any gain/loss (tax/fee considerations not assessed here).\n  - Reduce the existing holding entirely.\n  - Shift the portfolio from its current composition toward cash or a new position, affecting concentration dynamics.\n- **No other holdings or constraints** are indicated in the provided data.\n\n### 7. Suitability Conclusion (No Action Picked)\nThe investor’s profile supports a *moderate* equity addition with a 5-year holding period, provided:\n- The emergency fund status is confirmed independent of the EGP 40,000 cash balance.\n- The new fertilizer exporter position is evaluated for sector overlap with the existing COMI holding to ensure genuine diversification.\n- The allocation size respects the medium loss capacity, typically staying within a range that does not overly concentrate the portfolio in a single sector or asset class.\n\nThe portfolio has sufficient free cash to make a meaningful commitment without liquidity disruption, and the horizon/loss profile is compatible with moderate-risk exposure. The key suitability decision points are the emergency fund verification and the diversification assessment relative to the COMI holding."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 29.74,
+      "input_tokens": 1292,
+      "output_tokens": 5489,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 20.175,
+      "input_tokens": 1286,
+      "output_tokens": 3380,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 9.235,
+      "input_tokens": 4571,
+      "output_tokens": 1265,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 59.154
+}

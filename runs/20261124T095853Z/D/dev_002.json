@@ -1,0 +1,84 @@
+{
+  "case_id": "dev_002",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "The evidence provided does not allow a responsible investment decision for the following reasons: (1) Key financial metrics required for valuation (revenue, operating profit, cash flow, debt) are absent from the evidence set; (2) The 2024 restated net profit figure is AMBIGUOUS (auditor stamp coverage) and cannot be used in any calculation, undermining year‑on‑year growth analysis; (3) While EPS for 2025 (6.98 LE) and total equity (157,708,140,765 LE) are available, there are no benchmarks or comparable data to assess whether the current share price of 82.50 EGP (implying a P/E of ~11.8) is attractive or fair. (4) The suitability analyst confirms that no specific action is prescribed based on the TMGH data alone. Given the high long‑term wealth‑building goal and risk tolerance, the investor could consider allocating cash to TMGH shares, but the lack of complete financial information means a definitive recommendation cannot be made. Therefore, the decision is classified as insufficient_evidence. Unused figures",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "No revenue, operating profit, cash‑flow, or debt figures are provided.",
+      "The 2024 restated net profit is ambiguous and cannot be relied upon.",
+      "Valuation metrics (P/E, dividend yield, etc.) lack context because market price is the only price data available.",
+      "No information on dividend policy or future earnings guidance."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "The evidence provided does not allow a responsible investment decision for the following reasons: (1) Key financial metrics required for valuation (revenue, operating profit, cash flow, debt) are absent from the evidence set; (2) The 2024 restated net profit figure is AMBIGUOUS (auditor stamp coverage) and cannot be used in any calculation, undermining year‑on‑year growth analysis; (3) While EPS for 2025 (6.98 LE) and total equity (157,708,140,765 LE) are available, there are no benchmarks or comparable data to assess whether the current share price of 82.50 EGP (implying a P/E of ~11.8) is attractive or fair. (4) The suitability analyst confirms that no specific action is prescribed based on the TMGH data alone. Given the high long‑term wealth‑building goal and risk tolerance, the investor could consider allocating cash to TMGH shares, but the lack of complete financial information means a definitive recommendation cannot be made. Therefore, the decision is classified as insufficient_evidence. Unused figures",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "No revenue, operating profit, cash‑flow, or debt figures are provided.",
+      "The 2024 restated net profit is ambiguous and cannot be relied upon.",
+      "Valuation metrics (P/E, dividend yield, etc.) lack context because market price is the only price data available.",
+      "No information on dividend policy or future earnings guidance."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 100000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": {
+    "financial": "**Evidence‑Based Analysis of TMGH (FY2025 Consolidated)**\n\nAll figures and observations below are drawn exclusively from the provided evidence set. Every quoted value is cited with its evidence ID. Figures flagged as AMBIGUOUS are not used in calculations.\n\n---\n\n### **Profitability**\n- **Gross profit, 2025:** [TMGH‑TMGH_FY2025_consolidated_en‑p7‑19] TMGH consolidated gross profit for period 2025 = **2.08554 × 10¹⁰ LE** (source: 20,855,400,384 LE; verified).\n- **Gross profit, 2024 (restated):** [TMGH‑TMGH_FY2025_consolidated_en‑p7‑20] TMGH consolidated gross profit for period 2024 (restated) = **1.40022 × 10¹⁰ LE** (source: 14,002,196,445 LE; verified).\n- **Net profit for the year, 2025:** [TMGH‑TMGH_FY2025_consolidated_en‑p7‑55] TMGH consolidated net profit for the year 2025 = **1.8202 × 10¹⁰ LE** (source: 18,201,981,482 LE; verified).\n- **Earnings per Share (EPS), 2025:** [TMGH‑TMGH_FY2025_consolidated_en‑p7‑61] TMGH consolidated EPS for period 2025 = **6.98 LE** (verified).\n- **EPS, 2024 (restated):** [TMGH‑TMGH_FY2025_consolidated_en‑p7‑62] TMGH consolidated EPS for period 2024 (restated) = **4.38 LE** (verified).\n\n*Note: Both EPS figures are verifiable and show an increase from 4.38 LE to 6.98 LE year‑on‑year. Gross profit also rose from 1.40022 × 10¹⁰ LE to 2.08554 × 10¹⁰ LE.*\n\n---\n\n### **Growth (unambiguous figures only)**\n- Gross profit increased from **1.40022 × 10¹⁰ LE** in 2024 (restated) to **2.08554 × 10¹⁰ LE** in 2025 [p7‑19, p7‑20]. The absolute change is +6.8522 × 10⁹ LE.\n- EPS rose from **4.38 LE** to **6.98 LE** [p7‑61, p7‑62]. The absolute change is +2.60 LE per share.\n- *Caution:* Any growth metric involving the 2024 restated net profit cannot be computed reliably (see Risks/Data Quality below).\n\n---\n\n### **Balance Sheet**\n- **Total equity (consolidated), 31 December 2025:** [TMGH‑TMGH_FY2025_consolidated_en‑p5‑67] TMGH total equity (consolidated) = **1.57708 × 10¹¹ LE** (source: 157,708,140,765 LE; verified).\n\n*No further balance‑sheet items (assets, liabilities, cash, debt) are provided in the evidence set. The equity figure alone limits balance‑sheet analysis.*\n\n---\n\n### **Risks and Data Quality**\n- **AMBIGUOUS figure flagged:** [TMGH‑TMGH_FY2025_consolidated_en‑p7‑56] TMGH net profit for the year 2024 (restated) = **value unresolved; AMBIGUOUS**. Source note: “unreadable: digits covered by an auditor’s stamp”. This figure **cannot be relied upon** for any computation, including year‑on‑year net‑profit growth or derived ratios.\n- Because the 2024 restated net profit is ambiguous, any performance comparison that depends on it (e.g., net‑profit margin trends, ROE calculations using 2024 equity) is of uncertain reliability.\n- **Data‑quality limitation:** The evidence set does not include revenue, operating profit, cash‑flow, or debt figures. The analysis is therefore confined to gross profit, net profit (with the above ambiguity), EPS, and total equity. Stakeholders should seek additional filings for a complete financial picture.\n\n---\n\n### **Summary for Decision Agent**\n- **Profitability:** 2025 shows higher gross profit (2.08554 × 10¹⁰ LE) and EPS (6.98 LE) compared with restated 2024 figures (1.40022 × 10¹⁰ LE gross profit; 4.38 LE EPS). Net profit for 2025 is 1.8202 × 10¹⁰ LE.\n- **Growth:** Absolute increases in gross profit and EPS are supported by verified data. YoY growth rates involving 2024 net profit are unreliable due to the ambiguous figure.\n- **Balance sheet:** Total equity stands at 1.57708 × 10¹¹ LE as of 31 Dec 2025; no other balance‑sheet line items are available from the evidence.\n- **Key risk:** The 2024 restated net profit is ambiguous (auditor‑stamp coverage), undermining any metric that hinges on that figure. Data coverage is partial (no revenue, debt, or cash‑flow data).\n\n*No investment action (buy, hold, sell, or portfolio adjustment) is recommended here. The above analysis provides the evidence‑based foundation for the decision agent to evaluate your portfolio given your long‑term wealth‑building profile and 10+‑year horizon.*",
+    "investor": "**Suitability Assessment**\n\n**Investor Profile Summary**\n- Goal: Long-term wealth building\n- Horizon: 10+ years\n- Liquidity needs: No withdrawals planned\n- Loss willingness: High; loss capacity: High\n- Current holdings: None (100% cash: 100,000.00 EGP)\n\n**1. Horizon Suitability**\nA 10+ year horizon strongly supports investments with growth potential over time, including equities, real assets, or other long-duration vehicles. The absence of near-term liquidity needs allows the portfolio to ride out market cycles without forced selling.\n\n**2. Liquidity Suitability**\nWith no planned withdrawals, the investor can accept assets that are less liquid (e.g., certain equities, funds with lock-up periods). The portfolio currently holds only cash, which is fully liquid, but the profile indicates capacity to allocate to less liquid long-term positions if desired.\n\n**3. Loss Willingness & Capacity**\nBoth willingness and financial ability to withstand losses are rated high. This supports meaningful equity exposure, including assets with higher volatility, without threatening the investor’s financial stability or goals.\n\n**4. Current Concentration**\nThe portfolio has zero concentration in securities or other asset classes. All capital is in cash. This represents a starting point with no diversification risk, but also no market exposure. The profile suggests this cash position could be meaningfully deployed toward diversified long-term holdings.\n\n**5. Cash Reasonably Commitable**\nThe full 100,000.00 EGP is available for commitment. Given the high loss capacity and long horizon, a substantial portion (or all) could be allocated to long-term growth assets. The exact allocation would depend on the investor’s risk taxonomy, diversification preferences, and chosen vehicle types—not on any analysis of the provided TMGH financial data.\n\n**6. Portfolio Allowances**\n- **What can be sold:** Nothing. The current holdings list is empty.\n- **What cash is free:** 100,000.00 EGP is fully free and unencumbered.\n- **Share-purchase reference (neutral):** At the cutoff price of 82.50 EGP per TMGH share, the cash balance could purchase approximately 1,212 shares, but this figure is provided only as a mathematical reference and does not imply a recommendation or analysis of the company’s fundamentals.\n\n**Guideline Compliance**\n- No analysis of TMGH’s consolidated financials (gross profit, net profit, equity, EPS, etc.) has been performed or incorporated into the suitability conclusion.\n- No specific action (buy, sell, hold, shift allocation) is prescribed. The assessment identifies what the investor’s profile suits and what the portfolio currently permits."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 30.413,
+      "input_tokens": 1066,
+      "output_tokens": 5852,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 16.424,
+      "input_tokens": 1060,
+      "output_tokens": 2433,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 9.77,
+      "input_tokens": 3854,
+      "output_tokens": 1458,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 56.61
+}

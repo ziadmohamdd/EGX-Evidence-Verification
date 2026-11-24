@@ -1,0 +1,44 @@
+{
+  "case_id": "dev_007",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor needs 10,000 EGP in cash within three months for a family wedding. The current portfolio consists of 1,000 EGP cash and 200 EFID shares. At the cutoff price of 20.40 EGP per share, the EFID holding is worth 200 × 20.40 = 4,080 EGP. Selling all 200 shares therefore generates 4,080 EGP, bringing total available cash to 1,000 + 4,080 = 5,080 EGP. This falls short of the 10,000 EGP target by 4,920 EGP. Given the investor's low willingness and ability to withstand losses and the short three‑month horizon, the most appropriate action is to liquidate the EFID position to realise the available equity value. The proceeds, combined with the existing cash, provide the maximum cash that can be generated from the current portfolio. The investor will still need to seek additional cash sources (e.g., savings, family support, or other liquid assets) to meet the full 10,000 EGP requirement. The company's reported FY2025 net profit of 2.695 billion EGP and EPS of 2.18 EGP indicate strong profitability, but these长期",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor needs 10,000 EGP in cash within three months for a family wedding. The current portfolio consists of 1,000 EGP cash and 200 EFID shares. At the cutoff price of 20.40 EGP per share, the EFID holding is worth 200 × 20.40 = 4,080 EGP. Selling all 200 shares therefore generates 4,080 EGP, bringing total available cash to 1,000 + 4,080 = 5,080 EGP. This falls short of the 10,000 EGP target by 4,920 EGP. Given the investor's low willingness and ability to withstand losses and the short three‑month horizon, the most appropriate action is to liquidate the EFID position to realise the available equity value. The proceeds, combined with the existing cash, provide the maximum cash that can be generated from the current portfolio. The investor will still need to seek additional cash sources (e.g., savings, family support, or other liquid assets) to meet the full 10,000 EGP requirement. The company's reported FY2025 net profit of 2.695 billion EGP and EPS of 2.18 EGP indicate strong profitability, but these长期",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 5080.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 10.726,
+      "input_tokens": 1827,
+      "output_tokens": 1819,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 10.73
+}

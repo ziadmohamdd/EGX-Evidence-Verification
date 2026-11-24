@@ -1,0 +1,83 @@
+{
+  "case_id": "dev_008",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The friend's claim that Telecom Egypt (ETEL) made a net profit of 225.9 billion EGP in 2025 is ambiguous: the evidence shows the 2025 net profit was 2.25781 × 10¹⁰ EGP (≈22.58 billion EGP), and the 225.9 billion figure actually corresponds to total assets (2.25883 × 10¹¹ EGP). The profit more than doubled relative to 2024 (1.01113 × 10¹⁰ EGP), not a >10× increase. Using only the provided evidence, the key figures are: net profit 2025 = 2.25781 × 10¹⁰ EGP (evidence_id ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35); net profit 2024 = 1.01113 × 10¹⁰ EGP (p6-36); total assets 2025 = 2.25883 × 10¹¹ EGP (p5-31); basic & diluted EPS 2025 = 11.93 EGP/share (p6-55). These figures confirm the profit growth is modest, not the exaggerated multiple claimed. Allocating the entire 50 k EGP cash into additional ETEL shares would raise the ETEL weight in the portfolio from the current ~30 % (150 shares ≈ 21.3 k EGP) to roughly 81 % of the total portfolio. This concentration conflicts with the investor’s 5‑year retirement horizon",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "No forward‑looking analysis, sector‑risk factors, or tax considerations are provided.",
+      "The evidence does not include liquidity constraints, transaction costs, or the investor’s emergency‑fund status beyond the stated separate fund.",
+      "The ambiguous 225.9 billion‑EGP figure is not supported by any evidence and has been excluded from calculations."
+    ]
+  },
+  "final": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The friend's claim that Telecom Egypt (ETEL) made a net profit of 225.9 billion EGP in 2025 is ambiguous: the evidence shows the 2025 net profit was 2.25781 × 10¹⁰ EGP (≈22.58 billion EGP), and the 225.9 billion figure actually corresponds to total assets (2.25883 × 10¹¹ EGP). The profit more than doubled relative to 2024 (1.01113 × 10¹⁰ EGP), not a >10× increase. Using only the provided evidence, the key figures are: net profit 2025 = 2.25781 × 10¹⁰ EGP (evidence_id ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35); net profit 2024 = 1.01113 × 10¹⁰ EGP (p6-36); total assets 2025 = 2.25883 × 10¹¹ EGP (p5-31); basic & diluted EPS 2025 = 11.93 EGP/share (p6-55). These figures confirm the profit growth is modest, not the exaggerated multiple claimed. Allocating the entire 50 k EGP cash into additional ETEL shares would raise the ETEL weight in the portfolio from the current ~30 % (150 shares ≈ 21.3 k EGP) to roughly 81 % of the total portfolio. This concentration conflicts with the investor’s 5‑year retirement horizon",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "No forward‑looking analysis, sector‑risk factors, or tax considerations are provided.",
+      "The evidence does not include liquidity constraints, transaction costs, or the investor’s emergency‑fund status beyond the stated separate fund.",
+      "The ambiguous 225.9 billion‑EGP figure is not supported by any evidence and has been excluded from calculations."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 50000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 150
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": {
+    "financial": "**Assessment of the net‑profit claim**\n\n- Evidence [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] reports Net profit for the year (period 31/12/2025): **2.25781×10¹⁰ EGP** (≈22.58 billion EGP).  \n- Evidence [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] reports Net profit for the year (period 31/12/2024): **1.01113×10¹⁰ EGP** (≈10.11 billion EGP).  \n- The ratio of 2025 to 2024 net profit is approximately **2.2×**, not “more than ten times.”  \n- The figure “225.9 billion pounds” does not match either reported net‑profit figure. It appears to conflate net profit with another line item; for reference, Total Assets (period 31/12/2025) per [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31] are **2.25883×10¹¹ L.E.** (≈225.9 billion EGP). The claim of “225.9 billion pounds” is therefore **ambiguous** relative to the provided evidence and does not describe the 2025 net profit. I am flagging this as an ambiguous figure and will not compute with it.\n\n**Evidence‑based overview of ETEL (period up to 31/12/2025)**\n\n| Metric | 2025 | 2024 | Source |\n|---|---|---|---|\n| Operating revenues | 1.06673×10¹¹ EGP | 8.16778×10¹⁰ EGP | [p6-01], [p6-02] |\n| Net profit for the year | 2.25781×10¹⁰ EGP | 1.01113×10¹⁰ EGP | [p6-35], [p6-36] |\n| Basic & diluted EPS | 11.93 EGP/share | 4.79 EGP/share | [p6-55], [p6-56] |\n| Total Assets (consolidated) | 2.25883×10¹¹ L.E. | (not shown for 2024 in evidence) | [p5-31] |\n| Total Equity (consolidated) | 6.36878×10¹⁰ L.E. | (not shown for 2024 in evidence) | [p5-45] |\n\n**On the question of allocating all cash into more ETEL shares**\n\nThe investment evidence provided covers profitability, growth, balance‑sheet scale, and per‑share earnings, but it does **not** contain forward‑looking analysis, market‑price drivers, sector‑risk factors, liquidity considerations beyond the stated cutoff price (141.95 EGP/share), or your full financial profile (emergency‑fund status, tax implications, diversification needs, etc.). Per the instructions, I do not recommend any action; the decision agent will determine allocation based on a complete suitability assessment. Using only the given evidence, I can state the factual figures above but cannot advise on whether you should top up your ETEL position.",
+    "investor": "**On your friend's claim:**\n- ETEL's reported net profit for FY2025: **22.58 billion EGP** (2.25781 × 10¹⁰ EGP)\n- ETEL's reported net profit for FY2024: **10.11 billion EGP** (1.01113 × 10¹⁰ EGP)\n- The profit more than **doubled** (~2.23×), not \"more than ten times.\" The \"225.9 billion\" figure is off by a factor of ~10. Both numbers are in Egyptian pounds (EGP), so the currency label is correct, but the magnitude and growth multiple are not.\n\n**On suitability for your profile:**\n\n| Factor | Your Profile | Current Position | Impact of Committing All 50k Cash to ETEL |\n|--------|-------------|------------------|------------------------------------------|\n| **Investment horizon** | 5 years (retirement top-up) | 150 ETEL shares (~21.3k EGP) + 50k cash | A 5-year horizon typically warrants some downside protection; concentrating 100% of investable cash in one stock introduces unnecessary timing risk. |\n| **Liquidity needs** | Separate emergency fund already kept | 50k cash is free (no emergency fund conflict) | Selling ETEL or using cash both remain liquid, but the cash would become illiquid if fully deployed into one position. |\n| **Loss willingness & capacity** | Medium both ways | ETEL already ~30% of total portfolio value (21.3k / 71.3k) | Adding 50k would raise ETEL weight to ~81%. A 20% ETEL decline would erase ~10k of your total portfolio, which strains a \"medium\" loss capacity, especially for a retirement goal. |\n| **Current concentration** | Not specified, but 150 ETEL shares already held | ETEL: ~29.9% of portfolio | Committing all cash would create a highly undiversified position, contradicting typical best practices for a 5-year retirement horizon with medium risk tolerance. |\n| **Cash that could reasonably be committed** | 50k EGP available, emergency fund separate | 50k EGP free cash | A reasonable commitment might be a portion of the cash (e.g., 10–30% of the portfolio) or none at all if you prefer to keep it as dry powder or diversify. |\n\n**What the portfolio allows:**\n- You can **sell the 150 ETEL shares** (~21.3k EGP) at the cutoff price of 141.95 EGP/share.\n- You have **50k EGP in free cash** with no stated restrictions.\n- No explicit transaction costs, tax implications, or trading limits are provided, but both actions (selling ETEL, deploying cash) are operationally feasible.\n\n**Bottom line on the question:**  \nEven if ETEL's profits were growing as your friend described, putting **all** your 50k cash into more ETEL shares would:\n- Push your ETEL exposure to roughly 80% of your total portfolio,\n- Conflict with your 5-year retirement horizon and medium loss capacity,\n- Introduce significant concentration risk for a goal-oriented saver.\n\nThe evidence-based correction of your friend's claim and the suitability assessment both suggest that deploying all available cash into a single stock is misaligned with your stated profile. A more suited approach would involve reviewing your overall asset allocation, considering diversification, and committing only a portion of the cash if you wish to increase ETEL exposure."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 19.709,
+      "input_tokens": 1332,
+      "output_tokens": 3868,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 14.77,
+      "input_tokens": 1326,
+      "output_tokens": 2057,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 12.337,
+      "input_tokens": 3780,
+      "output_tokens": 2325,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 46.82
+}

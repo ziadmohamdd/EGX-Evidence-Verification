@@ -1,0 +1,59 @@
+{
+  "case_id": "dev_004",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "none",
+    "shares": 0,
+    "explanation": "The available evidence does not provide enough information to responsibly recommend a specific action for the investor's situation. Key missing pieces include: (1) no data on COMI's dividend policy or expected income, which is essential for an investor seeking to draw income in retirement; (2) no information on the stock's price volatility or recent trends, making it difficult to assess the risk of selling shares at the current price of 128 EGP; (3) no cash‑flow or liquidity figures that would indicate how quickly the investor could convert holdings into cash without incurring significant loss; and (4) no guidance on alternative sources of the required 30,000 EGP within six months. Without these data points, any recommendation (buy, hold, sell, or keep_cash) would be speculative and could jeopardize the investor's low risk tolerance, capital‑preservation goal, and liquidity need. Therefore, the decision is deemed insufficient_evidence.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "No dividend or income data from the evidence",
+      "No price trend or volatility information",
+      "No cash‑flow or liquidity metrics",
+      "No data on alternative funding sources for the 30,000 EGP need"
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "none",
+    "shares": 0,
+    "explanation": "The available evidence does not provide enough information to responsibly recommend a specific action for the investor's situation. Key missing pieces include: (1) no data on COMI's dividend policy or expected income, which is essential for an investor seeking to draw income in retirement; (2) no information on the stock's price volatility or recent trends, making it difficult to assess the risk of selling shares at the current price of 128 EGP; (3) no cash‑flow or liquidity figures that would indicate how quickly the investor could convert holdings into cash without incurring significant loss; and (4) no guidance on alternative sources of the required 30,000 EGP within six months. Without these data points, any recommendation (buy, hold, sell, or keep_cash) would be speculative and could jeopardize the investor's low risk tolerance, capital‑preservation goal, and liquidity need. Therefore, the decision is deemed insufficient_evidence.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "No dividend or income data from the evidence",
+      "No price trend or volatility information",
+      "No cash‑flow or liquidity metrics",
+      "No data on alternative funding sources for the 30,000 EGP need"
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 5000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 8.79,
+      "input_tokens": 1958,
+      "output_tokens": 1736,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 8.792
+}

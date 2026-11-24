@@ -1,0 +1,86 @@
+{
+  "case_id": "dev_007",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The decision cannot be responsibly made because the evidence set does not contain a verified market price per EFID share or a verified share count that can be used to calculate the proceeds from selling the holding. While the case states a price of 20.40 EGP and 200 shares, these figures are user‑provided and are not supported by any evidence_id in the authoritative evidence list. Without a verified price, the total realizable cash (cash + proceeds from selling EFID) cannot be confirmed, and it is unknown whether the portfolio can meet the 10,000 EGP cash need within three months. Consequently, there is insufficient evidence to support a buy, hold, or sell action. The ambiguous EPS figures (1.09 → 2.18 EGP) are noted but do not affect the liquidity assessment; they are listed in unused_figures for completeness.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39"
+    ],
+    "limitations": [
+      "No verified market price per share in the evidence; price of 20.40 EGP is user‑stated.",
+      "Share count of 200 is user‑stated and not cross‑checked against evidence.",
+      "Cash balance of 1,000 EGP is user‑stated and not derived from evidence.",
+      "Absence of dividend, cash‑flow, or balance‑sheet data prevents assessment of interim cash generation."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The decision cannot be responsibly made because the evidence set does not contain a verified market price per EFID share or a verified share count that can be used to calculate the proceeds from selling the holding. While the case states a price of 20.40 EGP and 200 shares, these figures are user‑provided and are not supported by any evidence_id in the authoritative evidence list. Without a verified price, the total realizable cash (cash + proceeds from selling EFID) cannot be confirmed, and it is unknown whether the portfolio can meet the 10,000 EGP cash need within three months. Consequently, there is insufficient evidence to support a buy, hold, or sell action. The ambiguous EPS figures (1.09 → 2.18 EGP) are noted but do not affect the liquidity assessment; they are listed in unused_figures for completeness.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39"
+    ],
+    "limitations": [
+      "No verified market price per share in the evidence; price of 20.40 EGP is user‑stated.",
+      "Share count of 200 is user‑stated and not cross‑checked against evidence.",
+      "Cash balance of 1,000 EGP is user‑stated and not derived from evidence.",
+      "Absence of dividend, cash‑flow, or balance‑sheet data prevents assessment of interim cash generation."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 1000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Investor Profile & Portfolio Snapshot**\n- **Goal:** Raise 10,000 EGP in cash within 3 months (family wedding).  \n- **Horizon:** 3 months. **Liquidity needs:** 10,000 EGP. **Risk tolerance:** low; **ability to withstand losses:** low.  \n- **Current portfolio:** Cash: 1,000.00 EGP [user-stated]. Holdings: 200 shares of EFID.  \n- **Market price per EFID share at cutoff:** 20.40 EGP (user-provided; not in evidence set).  \n- **Current total liquidity:** 1,000 + (200 × 20.40) = **5,080 EGP**.  \n- **Cash shortfall to meet goal:** 10,000 – 5,080 = **4,920 EGP** (even if all EFID shares are sold).\n\n**EFID Company Evidence Analysis**  \nAll figures below are taken from the verified FY2025/EFID consolidated EAS financial statements [evidence_ids].\n\n| Metric | FY2025 (period 31 Dec 2025) | FY2024 (period 31 Dec 2024) | Observation |\n|--------|-----------------------------|-----------------------------|-------------|\n| **Revenue (consolidated)** | 2.09151 × 10¹⁰ EGP = **20,915,072,432 EGP** [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01] | 1.61465 × 10¹⁰ EGP = **16,146,545,699 EGP** [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02] | Revenue grew ~29.5% year-on-year. |\n| **Net profit for the year (consolidated)** | **2,695,301,670 EGP** [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] | **1,606,727,698 EGP** [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31] | Net profit grew ~67.8% year-on-year. |\n| **Basic and Diluted EPS (consolidated)** | **2.18 EGP** [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] | **1.09 EGP** [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39] | EPS exactly doubled from 2024 to 2025. |\n| **Implied share count (cross-check)** | Net profit / EPS = 2,695,301,670 / 2.18 ≈ 1.236 billion shares | Net profit / EPS = 1,606,727,698 / 1.09 ≈ 1.474 billion shares | The ~16% increase in implied shares may reflect a capital increase, bonus issue, or split; the evidence does not specify the cause. |\n\n**Profitability & Growth:** EFID shows strong profitability growth: revenue +29.5% and net profit +67.8% year-on-year, with EPS doubling. These are positive operational trends.\n\n**Ambiguous Figures & Data Gaps**  \n- The **EPS doubling** (1.09 → 2.18) is mathematically consistent with the net profit figures and the reported EPS values, but the evidence does not explain whether this results from a change in share count, a one-time adjustment, or a stock split. This is flagged as ambiguous without additional context.  \n- **No dividend data** is provided in the evidence. EPS ≠ dividend per share; the company’s payout policy cannot be inferred.  \n- **Balance sheet, cash flow, debt levels, and liquidity ratios** are absent. With only income-statement items, overall financial risk (solvency, interest burden, cash generation) cannot be fully assessed.  \n- **Market price (20.40 EGP)** is user-stated at cutoff; the evidence does not contain pricing or valuation metrics.\n\n**Factual Assessment of Cash Needs**  \n- Selling the entire EFID holding at the cutoff price yields 200 × 20.40 = **4,080 EGP** [derived from user-stated price and share count].  \n- Adding existing cash (1,000 EGP) gives **5,080 EGP** total immediate liquidity.  \n- This falls **4,920 EGP short** of the 10,000 EGP needed within 3 months, even with full liquidation of the equity holding.  \n- No evidence of interim cash flows, dividends, or rights issues that could alter this outcome within the 3-month horizon.\n\n**No Recommendation Provided**  \nPer instructions, no action (buy, sell, hold) is recommended. The decision agent will determine next steps based on the analyzed evidence and your full financial context.\n\n**All figures cited as [evidence_id] with values as shown. No computation performed with ambiguous or missing data beyond what is explicitly given.**",
+    "investor": "**Suitability Assessment**\n\n**1. Horizon & Liquidity Needs**\n- Investor horizon: 3 months. This aligns with the timeframe for the family wedding cash need.\n- Liquidity need: 10,000 EGP in cash within 3 months.\n- Current cash position: 1,000.00 EGP.\n- **Suitability:** The horizon is compatible, but the portfolio is materially insufficient to meet the liquidity need. A shortfall of approximately 9,000 EGP exists even before considering transaction costs or market impact.\n\n**2. Loss Willingness & Capacity**\n- Willingness to accept losses: low.\n- Financial ability to withstand losses: low.\n- **Suitability:** Very low tolerance for volatility or capital erosion. Any strategy must prioritize capital preservation and predictable cash conversion over return-seeking positions.\n\n**3. Current Concentration**\n- Holdings: 200 shares of EFID (single-stock exposure).\n- Cash: 1,000.00 EGP.\n- **Suitability:** The portfolio is heavily concentrated in one equity. With low loss capacity, this concentration presents a risk if the position must be liquidated under unfavorable conditions, or if the stock experiences illiquidity/price disruption. No other asset classes or diversifiers are present.\n\n**4. What the Portfolio Allows (at cutoff 2026-11-18)**\n- **Free cash:** 1,000.00 EGP (immediately available, no sale required).\n- **Sellable holdings:** 200 shares of EFID at the quoted price of 20.40 EGP per share.\n  - Approximate proceeds from full sale: 200 × 20.40 = **4,080.00 EGP**.\n  - These shares are the only liquidatable non-cash assets on the portfolio statement.\n- **Total realizable cash if EFID is sold:** ~5,080.00 EGP (1,000 + 4,080).\n- **Note:** The provided EFID financial statements (revenue, net profit, EPS) have not been analysed per instructions. Only the market price and share count are used for liquidity assessment.\n\n**5. Reasonable Cash Commitment Capacity**\n- Given the need for 10,000 EGP and the portfolio’s realizable maximum of ~5,080 EGP, the investor can reasonably commit at most the full realizable amount (~5,080 EGP) toward the wedding goal, which would still leave a gap of ~4,920 EGP.\n- Any commitment beyond the portfolio’s realizable value would require external funding, a horizon extension, or acceptance of unmet liquidity need.\n- Given the low loss willingness and capacity, any partial or full sale of EFID should be evaluated for execution timing, transaction costs, and price certainty over the 3-month window, but no action is prescribed.\n\n**Summary**\n- The 3-month horizon matches the need, but the portfolio cannot satisfy the 10,000 EGP liquidity requirement.\n- The investor holds 1,000 EGP cash and 200 EFID shares (~4,080 EGP realizable), totaling ~5,080 EGP if fully liquidated.\n- Loss tolerance is low, and concentration risk is elevated relative to capacity.\n- The portfolio allows selling the EFID position for ~4,080 EGP and has 1,000 EGP free cash; no other assets are listed.\n- A realistic commitment toward the goal is limited to the portfolio’s realizable total (~5,080 EGP), with the remaining ~4,920 EGP needing alternative sourcing or a revised timeline."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 20.798,
+      "input_tokens": 1027,
+      "output_tokens": 4841,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 10.765,
+      "input_tokens": 1021,
+      "output_tokens": 2281,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 20.592,
+      "input_tokens": 3928,
+      "output_tokens": 3478,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 52.158
+}

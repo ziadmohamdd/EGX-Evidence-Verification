@@ -1,0 +1,96 @@
+{
+  "case_id": "dev_008",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ETEL",
+    "shares": 250,
+    "explanation": "The friend's claim that Telecom Egypt made a net profit of 225.9 billion pounds in 2025 is not supported by the evidence. The reported net profit for the year ending 31/12/2025 is 2.25781×10¹⁰ EGP (≈22.58 billion EGP), and for 2024 it is 1.01113×10¹⁰ EGP (≈10.11 billion EGP). This represents roughly a 2.2‑fold increase, not more than ten times. The basic and diluted earnings per share for 2025 were 11.93 EGP per share (evidence_id ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55). Using the market price of 141.95 EGP per share, the implied P/E ratio is about 11.9, which is moderate. The operating revenues for 2025 were 1.06673×10¹¹ EGP (≈106.7 billion EGP). While the company shows solid profitability and revenue scale, allocating the entire cash reserve (50,000 EGP) into a single stock would create a large concentration risk, especially given the medium risk tolerance and a 5‑year retirement horizon. Therefore a measured top‑up of 250 shares (cost ≈35,487.5 EGP) is recommended, leaving cash reserve for flexibility.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL's net profit for 2025 was 22.58 billion EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL's net profit for 2024 was 10.11 billion EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "Basic and diluted EPS for 2025 was 11.93 EGP per share."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Investment decision based on historical figures only; future prospects, dividends, and market conditions are not addressed.",
+      "Share price of 141.95 EGP is taken from the investor profile, not from the provided evidence, and may change.",
+      "P/E ratio calculation uses the given price and EPS; any deviation in price or EPS would affect valuation.",
+      "No information on dividend policy, debt levels, or macro‑economic factors is included."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ETEL",
+    "shares": 250,
+    "explanation": "The friend's claim that Telecom Egypt made a net profit of 225.9 billion pounds in 2025 is not supported by the evidence. The reported net profit for the year ending 31/12/2025 is 2.25781×10¹⁰ EGP (≈22.58 billion EGP), and for 2024 it is 1.01113×10¹⁰ EGP (≈10.11 billion EGP). This represents roughly a 2.2‑fold increase, not more than ten times. The basic and diluted earnings per share for 2025 were 11.93 EGP per share (evidence_id ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55). Using the market price of 141.95 EGP per share, the implied P/E ratio is about 11.9, which is moderate. The operating revenues for 2025 were 1.06673×10¹¹ EGP (≈106.7 billion EGP). While the company shows solid profitability and revenue scale, allocating the entire cash reserve (50,000 EGP) into a single stock would create a large concentration risk, especially given the medium risk tolerance and a 5‑year retirement horizon. Therefore a measured top‑up of 250 shares (cost ≈35,487.5 EGP) is recommended, leaving cash reserve for flexibility.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL's net profit for 2025 was 22.58 billion EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL's net profit for 2024 was 10.11 billion EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "Basic and diluted EPS for 2025 was 11.93 EGP per share."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Investment decision based on historical figures only; future prospects, dividends, and market conditions are not addressed.",
+      "Share price of 141.95 EGP is taken from the investor profile, not from the provided evidence, and may change.",
+      "P/E ratio calculation uses the given price and EPS; any deviation in price or EPS would affect valuation.",
+      "No information on dividend policy, debt levels, or macro‑economic factors is included."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 14512.5,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 400
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 20.75,
+      "input_tokens": 2132,
+      "output_tokens": 3787,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 20.752
+}

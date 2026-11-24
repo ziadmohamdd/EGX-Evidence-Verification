@@ -1,0 +1,89 @@
+{
+  "case_id": "dev_006",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "لا يمكن اتخاذ قرار استثماري مسؤول بناءً على الأدلة المتوفرة. الأدلة المؤكدة تتضمن الإيرادات المجمعة FY2025 بقيمة ٦٢,٤٩٥,١٤٤,١٩٧ جنيه مصري، وإيصالات السهم (EPS) بقيمة ٦.٩٨ جنيه مصري. أما الأرقام الأخرى فmarked AMBIGUOUS: الإيرادات FY2024 (evidence_id p1-02) وربح العام بعد الضرائب FY2025 (evidence_id p1-09) غير موثوق بها بسبب أخطاء OCR في الفواصل العشرية، ولا يجوز استخدامها في أي حسابات. lacking figures: لا توجد بيانات ربح بعد الضرائب موثوقة، ولا بيانات نمو الإيرادات، ولا بيانات الميزانية العمومية، مما يمنع حساب الهامش الصافي، نسبة السعر إلى الأرباح (P/E)، أو تقييم الاستدامة والمخاطر. بما أن الأدلة غير كافية لتحديد ما إذا كان يجب الاحتفاظ بالسهم أو بيعه أو زيادة التعرض، فإن القرار الأمثل هو keep cash وتجنب التعرض غير المبرر للسهم الواحد TMGH given the high concentration (22% من المحفظة) والأفق الزمني 3-5 سنوات لشراء شقة مع تحمل مخاطر متوسط. يفتقر التحليل إلى معطيات موثوقة تدعم التوصية بشراء أو بيع أو الاحتفاظ.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا يمكن الاعتماد على الإيرادات أو الأرباح غير الموثوقة لحساب الهوامش أو النمو",
+      "غياب بيانات الميزانية العمومية وتدفقات النقد",
+      "أرقام OCR ambiguous تحد من القدرة على مقارنة الأداء بين الفترات"
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "لا يمكن اتخاذ قرار استثماري مسؤول بناءً على الأدلة المتوفرة. الأدلة المؤكدة تتضمن الإيرادات المجمعة FY2025 بقيمة ٦٢,٤٩٥,١٤٤,١٩٧ جنيه مصري، وإيصالات السهم (EPS) بقيمة ٦.٩٨ جنيه مصري. أما الأرقام الأخرى فmarked AMBIGUOUS: الإيرادات FY2024 (evidence_id p1-02) وربح العام بعد الضرائب FY2025 (evidence_id p1-09) غير موثوق بها بسبب أخطاء OCR في الفواصل العشرية، ولا يجوز استخدامها في أي حسابات. lacking figures: لا توجد بيانات ربح بعد الضرائب موثوقة، ولا بيانات نمو الإيرادات، ولا بيانات الميزانية العمومية، مما يمنع حساب الهامش الصافي، نسبة السعر إلى الأرباح (P/E)، أو تقييم الاستدامة والمخاطر. بما أن الأدلة غير كافية لتحديد ما إذا كان يجب الاحتفاظ بالسهم أو بيعه أو زيادة التعرض، فإن القرار الأمثل هو keep cash وتجنب التعرض غير المبرر للسهم الواحد TMGH given the high concentration (22% من المحفظة) والأفق الزمني 3-5 سنوات لشراء شقة مع تحمل مخاطر متوسط. يفتقر التحليل إلى معطيات موثوقة تدعم التوصية بشراء أو بيع أو الاحتفاظ.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا يمكن الاعتماد على الإيرادات أو الأرباح غير الموثوقة لحساب الهوامش أو النمو",
+      "غياب بيانات الميزانية العمومية وتدفقات النقد",
+      "أرقام OCR ambiguous تحد من القدرة على مقارنة الأداء بين الفترات"
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 60000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": {
+    "financial": "**Portfolio Snapshot (as of cutoff)**\n- Cash: 60,000.00 EGP\n- TMGH holdings: 200 shares × 82.50 EGP/share = 16,500.00 EGP (price per share at cutoff: 82.50 EGP [given])\n- Total portfolio value: 76,500.00 EGP\n- Investor goal: savings growth for apartment purchase over 3–5 years; medium risk tolerance, medium loss-bearing ability.\n\n**TMGH FY2025 Evidence Analysis**\n\n| Figure | Value | Status | Notes |\n|--------|-------|--------|-------|\n| [TMGH-TMGH_FY2025_results_summary_ar-p1-01] Consolidated revenue, period 31 Dec 2025 | 62,495,144,197 EGP | **Verified** | Source PDF p.1; unit: جنيه مصري. This is the only fully verified top-line figure for TMGH in the evidence set. |\n| [TMGH-TMGH_FY2025_results_summary_ar-p1-02] Consolidated revenue, period 31 Dec 2024 | Unresolved EGP | **AMBIGUOUS** | Extractor marked uncertain; OCR produced a long number without the thousands separators used elsewhere on the page. Cannot reliably compare 2024 vs 2025 revenue or compute growth. |\n| [TMGH-TMGH_FY2025_results_summary_ar-p1-09] Profit after taxes, period 31 Dec 2025 | Unresolved EGP | **AMBIGUOUS** | Number shown as `١٨٠٢٠١,٩٨١٠٤٨٢`; separator positions unclear. Extractor marked uncertain. Cannot compute net margin, EPS reconciliation, or payout ratios. |\n| [TMGH-TMGH_FY2025_results_summary_ar-p1-11] EPS (consolidated), period 31 Dec 2025 | 6.98 EGP | **Verified** | Source PDF p.1; unit: جنيه مصري. Reliable per-share profitability figure for the year. |\n\n**Data Quality Assessment**\n- **Profitability**: Only EPS is verified (6.98 EGP). Revenue is verified at ~62.5 billion EGP, but without verified profit-after-tax figures, net margin, ROE, or earnings quality cannot be derived from the evidence.\n- **Growth**: No reliable 2024 revenue figure exists in the evidence set; therefore YoY revenue growth and trend analysis are not supportable.\n- **Balance Sheet**: No balance-sheet evidence (assets, liabilities, equity) is provided in this snippet.\n- **Risks highlighted by data gaps**: \n  - OCR/separator ambiguities in two critical FY2025 line items.\n  - Inability to benchmark against prior year.\n  - Absence of leverage, liquidity, or cash-flow data.\n  - Single-verified-year metrics limit trend analysis.\n\n**What the Evidence Allows / Does Not Allow**\n- Allows stating: TMGH reported consolidated revenue of ~62.5 billion EGP for FY2025 (verified) and an EPS of 6.98 EGP (verified).\n- Does **not** allow: computing profit margin, P/E ratio relying on ambiguous profit data, revenue growth rates, or any balance-sheet–based metrics.\n- All ambiguous figures ([p1-02], [p1-09]) are explicitly flagged and must not be used in any calculation or comparison.\n\n**Portfolio Context**\nYour current TMGH position (200 shares × 82.50 EGP = 16,500 EGP) represents roughly 22% of your total portfolio (76,500 EGP). The verified EPS of 6.98 EGP and the large revenue figure suggest scale, but the data gaps mean any assessment of TMGH’s valuation trajectory, sustainability, or risk profile remains inconclusive based solely on this evidence.\n\n*No action recommendation is provided here, per instructions. The decision agent will act on the analysis above.*",
+    "investor": "**Portfolio Snapshot (as of 2026-11-18)**\n- **Cash:** 60,000 EGP (free, liquid)\n- **Holdings:** TMGH: 200 shares × 82.50 EGP/share = **16,500 EGP** current market value\n- **Total portfolio value:** ~76,500 EGP\n- **Goal:** Accumulate savings for a home purchase (3–5 year horizon)\n- **Profile:** Medium loss willingness & capacity; separate emergency fund already in place\n\n---\n\n### Suitability Assessment\n\n| Factor | Assessment | Notes |\n|---|---|---|\n| **Horizon (3–5 years)** | Medium-term. Suits moderate-risk strategies, but a 3–5 year window generally favors capital preservation or low-to-moderate volatility. A single-stock position adds idiosyncratic risk that may not align with a fixed-date goal unless the position is small relative to the goal’s funding need. | The horizon is long enough to absorb some volatility, but not so long that concentration risk can be fully discounted. |\n| **Liquidity Needs** | Separate emergency fund is noted. This means the 76,500 EGP portfolio can be allocated to growth/equity exposure without compromising basic liquidity safety. | Cash portion (60,000 EGP) is already liquid and can be deployed or kept as dry powder. |\n| **Loss Willingness & Capacity (both medium)** | Can tolerate moderate drawdowns, but extreme or sustained losses would impact the home‑purchase goal. A 10–20% portfolio decline would reduce purchasing power and should be weighed against the timeline. | Single‑stock exposure amplifies this: TMGH could move more than the portfolio average. |\n| **Current Concentration** | The portfolio is 100% exposed to TMGH if the shares are retained, representing ~22% of total value in equities and ~100% of the equity sleeve in one issuer. For a 3–5 year savings goal with medium loss capacity, this concentration is notable. | Cash represents the remaining ~78% and provides a buffer, but the equity sleeve is undiversified. |\n| **Cash That Could Reasonably Be Committed** | - **Free liquid cash:** 60,000 EGP (fully available for reallocation, new purchases, or keeping as liquid reserve).<br>- **Sellable asset:** TMGH 200 shares → ~16,500 EGP liquidity (typical T+2 settlement).<br>- **Total readily convertible to cash:** ~76,500 EGP. | Any commitment would depend on the investor’s risk tolerance for the remaining horizon and desire for diversification. |\n\n---\n\n### Portfolio Capabilities (What the Portfolio Allows)\n\n- **Sellable:** The 200 TMGH shares can be liquidated for approximately 16,500 EGP in cash.\n- **Free cash:** 60,000 EGP is immediately available and not tied to any position.\n- **No other holdings** are reported; the portfolio consists of cash + a single listed equity.\n- **No action is recommended or implied.** The above simply describes what the current structure permits.\n\n---\n\n### Compliance with Instructions\n- **Company financials not analyzed:** The ambiguous FY2025 revenue/profit figures from the provided evidence are not interpreted or dissected. Only the verified price per share (82.50 EGP) and share count are used for suitability framing.\n- **No action picked:** No “buy,” “sell,” or “hold” recommendation is given. The output assesses suitability and notes portfolio mechanics only."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 21.094,
+      "input_tokens": 816,
+      "output_tokens": 3439,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 14.339,
+      "input_tokens": 810,
+      "output_tokens": 2483,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 9.849,
+      "input_tokens": 3392,
+      "output_tokens": 1588,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 45.286
+}

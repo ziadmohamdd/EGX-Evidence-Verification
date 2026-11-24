@@ -1,0 +1,62 @@
+{
+  "case_id": "dev_012",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor asked for the percentage growth in Edita's net profit from 2024 to 2025 and indicated they would buy more if growth exceeded 50%. The 2025 net profit figure is marked AMBIGUOUS and is described as unresolved because a stamp covers the value on the scanned page (evidence_id: EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30). Consequently, we cannot calculate the actual net‑profit growth. The 2024 net profit (EGP 1,606,727,698) is available, but without the 2025 figure any growth calculation is impossible. The earnings‑per‑share figures (2025 EGP 2.18, 2024 EGP 1.09) are verified, but they are not net‑profit numbers and therefore do not satisfy the investor's specific question. Because the required evidence is ambiguous and missing, the evidence base is insufficient to support a responsible buy/hold/sell decision based on the >50% growth criterion.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "2025 net profit figure is ambiguous and cannot be used; reliance on EPS would not answer the net‑profit growth question."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor asked for the percentage growth in Edita's net profit from 2024 to 2025 and indicated they would buy more if growth exceeded 50%. The 2025 net profit figure is marked AMBIGUOUS and is described as unresolved because a stamp covers the value on the scanned page (evidence_id: EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30). Consequently, we cannot calculate the actual net‑profit growth. The 2024 net profit (EGP 1,606,727,698) is available, but without the 2025 figure any growth calculation is impossible. The earnings‑per‑share figures (2025 EGP 2.18, 2024 EGP 1.09) are verified, but they are not net‑profit numbers and therefore do not satisfy the investor's specific question. Because the required evidence is ambiguous and missing, the evidence base is insufficient to support a responsible buy/hold/sell decision based on the >50% growth criterion.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "2025 net profit figure is ambiguous and cannot be used; reliance on EPS would not answer the net‑profit growth question."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 5.898,
+      "input_tokens": 1856,
+      "output_tokens": 1133,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 5.904
+}

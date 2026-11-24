@@ -1,0 +1,114 @@
+{
+  "case_id": "dev_003",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "portfolio",
+    "shares": 0,
+    "explanation": "The investor's portfolio consists of ETEL (100 shares) and EFID (1500 shares) with a total market value of about 59,795 EGP (cash 15,000 EGP + ETEL 14,195 EGP + EFID 30,600 EGP). The cash holding already covers the projected 10% liquidity need (~6,000 EGP) within a year, aligning with the low financial ability to withstand losses.  Using the available evidence: EFID earnings per share (EPS) = 2.18 EGP (evidence_id EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑38), giving a price‑to‑earnings ratio of roughly 20.40/2.18 ≈ 9.4, suggesting the stock is relatively cheap on earnings. EFID net profit = 2.6953 billion EGP (EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑30) on revenue of 20.915 billion EGP (EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑01), yielding a net‑profit margin of about 12.9 %. ETEL operating revenues = 1.06673 trillion EGP (ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑01) and net profit = 22.578 billion EGP (ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑35), giving a margin of roughly 21 %. No divid‑​",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID EPS of 2.18 EGP used to estimate a P/E ratio of ~9.4."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed-en-p6-30",
+        "stated_value": 2695300000.0,
+        "statement": "EFID net profit of 2.6953 billion EGP used to calculate net‑profit margin."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID revenue of 20.915 billion EGP used to calculate net‑profit margin."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106673000000.0,
+        "statement": "ETEL operating revenue of 1.06673 trillion EGP used to assess scale."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit of 22.578 billion EGP used to assess profitability."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55"
+    ],
+    "limitations": [
+      "No dividend or income data are provided, so the ‘some income’ goal cannot be directly evaluated.",
+      "ETEL EPS (evidence_id ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑55) is marked with unit L.E.(000) and has been excluded as ambiguous; therefore P/E for ETEL cannot be computed.",
+      "No forward‑looking growth forecasts, macro‑economic context, or market‑price history are available; the recommendation is based solely on the reported historical figures.",
+      "The investor’s liquidity need (10% of capital within a year) is already met by the existing cash balance, so no forced selling is required."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The proposed hold was blocked by the portfolio checks (cannot hold PORTFOLIO: the investor owns none). No change to the portfolio is recommended.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "Blocked recommendation: hold 0 portfolio"
+    ]
+  },
+  "blocked": true,
+  "violations": [
+    {
+      "rule": "hold_unowned",
+      "detail": "cannot hold PORTFOLIO: the investor owns none"
+    }
+  ],
+  "proposed_portfolio": null,
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed-en-p6-30",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "rule": "value_mismatch",
+        "detail": "stated 1.06673e+08 but evidence 'Operating revenues (5)' is 1.06673e+11 [Operating revenues (5) 106 672 946 81 677 812 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "value_mismatch",
+        "detail": "stated 2.25781e+07 but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      }
+    ],
+    "dropped": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35"
+    ]
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 399.373,
+      "input_tokens": 2108,
+      "output_tokens": 4944,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 18.842,
+      "input_tokens": 3249,
+      "output_tokens": 3007,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 418.218
+}

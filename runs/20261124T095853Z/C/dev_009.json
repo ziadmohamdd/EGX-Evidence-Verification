@@ -1,0 +1,107 @@
+{
+  "case_id": "dev_009",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The available evidence does not allow a responsible valuation decision. The financial analyst report confirms that full‑year 2026 EPS is not reported; only nine‑month EPS (8.74 EGP for 9M2026 and 4.28 EGP for 9M2025) are verified. The net‑profit and revenue figures for both periods are flagged AMBIGUOUS because the PDF page mixes unit indicators (billion vs. million EGP); these have been excluded from any calculation. Consequently, the price‑to‑earnings ratio cannot be derived, and it cannot be determined whether the share price of 76.21 EGP is cheap or expensive. The suitability analyst also states that full‑year EPS, P/E, and buy/hold/sell judgments cannot be made from the given data. What is missing: a reported full‑year EPS (or a reliable annualization method) and unambiguous net‑profit/revenue figures. Without these, any recommendation on ‘cheap enough to buy’ would be speculative.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Nine‑month EPS (9M2026) verified at 8.74 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Nine‑month EPS (9M2025) verified at 4.28 EGP per share."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02"
+    ],
+    "limitations": [
+      "Net‑profit and revenue figures are AMBIGUOUS (mixed billion/million units) and have been excluded.",
+      "Full‑year EPS is not provided; only nine‑month data are available.",
+      "P/E ratio requires full‑year EPS, which cannot be calculated from the given evidence.",
+      "No guidance on dividend yield, payout sustainability, or future earnings trends."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The available evidence does not allow a responsible valuation decision. The financial analyst report confirms that full‑year 2026 EPS is not reported; only nine‑month EPS (8.74 EGP for 9M2026 and 4.28 EGP for 9M2025) are verified. The net‑profit and revenue figures for both periods are flagged AMBIGUOUS because the PDF page mixes unit indicators (billion vs. million EGP); these have been excluded from any calculation. Consequently, the price‑to‑earnings ratio cannot be derived, and it cannot be determined whether the share price of 76.21 EGP is cheap or expensive. The suitability analyst also states that full‑year EPS, P/E, and buy/hold/sell judgments cannot be made from the given data. What is missing: a reported full‑year EPS (or a reliable annualization method) and unambiguous net‑profit/revenue figures. Without these, any recommendation on ‘cheap enough to buy’ would be speculative.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Nine‑month EPS (9M2026) verified at 8.74 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Nine‑month EPS (9M2025) verified at 4.28 EGP per share."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02"
+    ],
+    "limitations": [
+      "Net‑profit and revenue figures are AMBIGUOUS (mixed billion/million units) and have been excluded.",
+      "Full‑year EPS is not provided; only nine‑month data are available.",
+      "P/E ratio requires full‑year EPS, which cannot be calculated from the given evidence.",
+      "No guidance on dividend yield, payout sustainability, or future earnings trends."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Evidence Summary & Calculations**\n\n- **EPS (9M2026)**: 8.74 EGP per share [ABUK-ABUK_9M2026_results-p2-31] (verified)\n- **EPS (9M2025)**: 4.28 EGP per share [ABUK-ABUK_9M2026_results-p2-32] (verified)\n- **Net profit (9M2026)**: AMBIGUOUS [ABUK-ABUK_9M2026_results-p2-25] – table unit line reads \"مليون جنيه\", but the page header shows ['مليار', 'مليار', …, 'مليون']; figure unresolved and not used for computation.\n- **Net profit (9M2025)**: AMBIGUOUS [ABUK-ABUK_9M2026_results-p2-26] – same unit ambiguity; figure unresolved and not used for computation.\n- **Revenue (9M2026/9M2025)**: AMBIGUOUS [ABUK-ABUK_9M2026_results-p2-01, p2-02] – unit ambiguity identical to net profit rows; figures unresolved.\n\n**Full‑year 2026 EPS**: The evidence provides only nine‑month EPS. Full‑year earnings per share are not reported in the supplied extracts, and I am not computing an annualized estimate beyond the given data.\n\n**P/E Ratio**: Requires full‑year EPS. Since full‑year EPS is absent from the evidence, the price‑to‑earnings ratio cannot be calculated from the provided information. The share price at the cutoff is 76.21 EGP (user‑provided), but without the full‑year EPS figure, a P/E cannot be derived here.\n\n**Data Quality Note**: The net profit and revenue figures carry an AMBIGUOUS flag due to mixed unit indicators (Billion vs. Million EGP). These have been flagged and excluded from any quantitative work per instructions.\n\n**No recommendation on “cheap enough”** is provided, as per the constraint to use only the evidence given and to let the decision agent determine action.",
+    "investor": "**Role Constraint Notice**\nPer my instructions, I am prohibited from analysing company financials, computing valuation metrics (such as full-year EPS or P/E), or making buy/hold/sell recommendations. I will therefore not calculate Abu Qir's full-year 2026 EPS, derive a P/E ratio, or assess whether the share is \"cheap enough\" to buy. I can, however, complete the suitability assessment you requested and note what the portfolio currently allows.\n\n---\n\n### Investor-Suitability Assessment\n\n| **Criterion** | **Investor Profile** | **Portfolio Reality** | **Suitability Notes** |\n|---------------|----------------------|-----------------------|----------------------|\n| **Investment Horizon** | 3–5 years | Cash position of 30,000 EGP, no holdings | A 3–5 year horizon aligns with holding a single equity position through moderate cycles. No immediate need to liquidate is indicated. |\n| **Liquidity Needs** | Keeps a separate emergency fund | 30,000 EGP cash; emergency fund size not specified in the profile | The investor must ensure that any commitment to ABUK leaves the emergency fund untouched. If the emergency fund is, for example, 3–6 months of expenses, the allocable amount from the 30,000 EGP should be determined separately. |\n| **Willingness to Accept Losses** | Medium | Medium financial ability to withstand losses | A medium loss tolerance suggests the investor can accept a 10–20% decline without panic selling, but position sizing should reflect that capacity. With 30,000 EGP total cash, a position exceeding ~15,000 EGP (50%) would concentrate risk significantly. |\n| **Financial Ability to Withstand Losses** | Medium | Same as above | Earnings volatility for an exporter/fertilizer player can be driven by commodity prices, currency, and global demand. A position sized at 20–25% of available investable cash is typically consistent with medium ability. |\n| **Current Concentration** | None (holdings: none) | No existing positions; cash is the only asset class | The portfolio is uncluttered, which is favorable for adding a new single-stock exposure. However, lack of diversification means the ABUK position would represent 100% of equity exposure unless other assets are held outside this cash account. |\n| **Income & Growth Goal (from an exporter)** | Stated preference | ABUK is an exporter (fertilizer/chemicals) with reported EPS of 8.74 EGP (9M2026) and a market price of 76.21 EGP | The share offers a visible earnings base, but I cannot assess dividend yield, payout ratio, or sustainability per my constraints. The exporter profile may provide currency diversification and exposure to global agricultural cycles. |\n| **Cash That Could Reasonably Be Committed** | Not specified | 30,000 EGP total cash, emergency fund separate | A reasonable commitment range for a medium-risk, 3–5 year holding in a single exporter would typically be 20–30% of available investable cash (i.e., 6,000–9,000 EGP), provided the emergency fund remains fully intact. |\n\n### Portfolio Allowances (What Can Be Actioned)\n- **Sellable holdings:** None currently held.\n- **Free cash available:** 30,000.00 EGP (subject to the investor’s separate emergency fund requirement).\n- **Cash that can be deployed:** Up to the amount that preserves the emergency buffer; the exact figure depends on the investor’s undisclosed monthly expenses/reserve target.\n\n### What I Cannot Do\n- Derive a full-year 2026 EPS or P/E ratio from the 9-month data.\n- Judge whether 76.21 EGP per share is \"cheap\" or \"expensive.\"\n- Recommend buying, holding, or selling ABUK or any other security.\n\nIf you would like a suitability adjustment (e.g., recommitting a specific cash amount, reviewing loss-exposure limits, or aligning the position with a broader diversified strategy), I can help with that framework without touching the financial calculations above."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 15.814,
+      "input_tokens": 1310,
+      "output_tokens": 2904,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 12.691,
+      "input_tokens": 1304,
+      "output_tokens": 1965,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 10.63,
+      "input_tokens": 3545,
+      "output_tokens": 1941,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 39.139
+}

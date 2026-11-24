@@ -1,0 +1,106 @@
+{
+  "case_id": "dev_006",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "بناءً على الأدلة المتوفرة، تمسك بالموقف الحالي (Hold) في أسهم TMGH مع الاحتفاظ بالنقد. الأرقام المعتمدة المتاحة هي: إيرادات FY2025 البالغة 62,495,144,197 EGP (evidence_id p1-01) ونصيب السهم في الأرباح EPS 6.98 EGP (evidence_id p1-11). هذه الأرقام تدل على وجود نشاط ربحي، ولكن لا تتوفر بيانات صافي الربح بعد الضرائب (وهي figure AMBIGUOUS) ولا بيانات عن الأرباح الموزعة أو الميزانية العمومية، مما يمنع تقييم دقيق للاستدامة أو العائد على الاستثمار. بالإضافة إلى ذلك، يظل التعرض لأسهم واحدة (TMGH) يمثل خطرًا فرديًا، والأفق الزمني للمستثمر (3-5 سنوات) وتقبله للمخاطر moderate يقتضي الحذر والحفاظ على الغالبية من النقد. لذلك، يوصى بالحفاظ على الوضع الراهن دون زيادة أو تقليل الحصة الحالية.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+        "stated_value": 62495144197.0,
+        "statement": "الإيرادات الموحدة FY2025 تبلغ 62,495,144,197 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "يستخدم EPS المعتمد 6.98 EGP لتقييم الربحية."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا توجد بيانات عن صافي الربح بعد الضرائب باستثناء EPS، مما يحد من القدرة على تقييم الاستدامة.",
+      "لا توجد بيانات عن الأرباح الموزعة أو التدفقات النقدية.",
+      "لا توجد بيانات ميزانية عمومية لتقييم الرافعة المالية وبنية رأس المال."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "بناءً على الأدلة المتوفرة، تمسك بالموقف الحالي (Hold) في أسهم TMGH مع الاحتفاظ بالنقد. الأرقام المعتمدة المتاحة هي: إيرادات FY2025 البالغة 62,495,144,197 EGP (evidence_id p1-01) ونصيب السهم في الأرباح EPS 6.98 EGP (evidence_id p1-11). هذه الأرقام تدل على وجود نشاط ربحي، ولكن لا تتوفر بيانات صافي الربح بعد الضرائب (وهي figure AMBIGUOUS) ولا بيانات عن الأرباح الموزعة أو الميزانية العمومية، مما يمنع تقييم دقيق للاستدامة أو العائد على الاستثمار. بالإضافة إلى ذلك، يظل التعرض لأسهم واحدة (TMGH) يمثل خطرًا فرديًا، والأفق الزمني للمستثمر (3-5 سنوات) وتقبله للمخاطر moderate يقتضي الحذر والحفاظ على الغالبية من النقد. لذلك، يوصى بالحفاظ على الوضع الراهن دون زيادة أو تقليل الحصة الحالية.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+        "stated_value": 62495144197.0,
+        "statement": "الإيرادات الموحدة FY2025 تبلغ 62,495,144,197 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "يستخدم EPS المعتمد 6.98 EGP لتقييم الربحية."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا توجد بيانات عن صافي الربح بعد الضرائب باستثناء EPS، مما يحد من القدرة على تقييم الاستدامة.",
+      "لا توجد بيانات عن الأرباح الموزعة أو التدفقات النقدية.",
+      "لا توجد بيانات ميزانية عمومية لتقييم الرافعة المالية وبنية رأس المال."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 60000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Portfolio Snapshot (as of 2026-11-18 cutoff)**\n- Cash: 60,000.00 EGP [user-provided]\n- TMGH holdings: 200 shares × 82.50 EGP/share = 16,500.00 EGP [cutoff price from investor profile]\n- Total portfolio value: 76,500.00 EGP\n\n**Company Evidence Analysis**\n\n*Profitability*\n- [TMGH-TMGH_FY2025_results_summary_ar-p1-01]: Consolidated revenues, period 31 Dec 2025 = **6.24951×10¹⁰ EGP** (62,495,144,197 EGP), **verified**.\n- [TMGH-TMGH_FY2025_results_summary_ar-p1-11]: Consolidated EPS, period 31 Dec 2025 = **6.98 EGP**, **verified**.\n- [TMGH-TMGH_FY2025_results_summary_ar-p1-09]: Consolidated profit after taxes, period 31 Dec 2025 = **AMBIGUOUS**, value unresolved. Extractor noted uncertainty; OCR produced `١٨٠٢٠١,٩٨١٠٤٨٢` with unclear separators. **Do not compute with this figure.**\n- [TMGH-TMGH_FY2025_results_summary_ar-p1-02]: Consolidated revenues, period 31 Dec 2024 = **AMBIGUOUS**, value unresolved. Note: extractor marked uncertain; OCR long number without thousands separators used elsewhere on the page. **Do not compute with this figure.**\n\n*Growth*\n- FY2025 revenue is verified at ~62.5 billion EGP, but FY2024 revenue is ambiguous. No reliable year-on-year growth figure can be derived from the provided evidence. Any calculation would require computing with an AMBIGUOUS figure, which is prohibited per instructions.\n\n*Balance Sheet*\n- No balance sheet data (assets, liabilities, equity, debt ratios, etc.) appears in the evidence set. Cannot assess leverage, liquidity, or capital structure from this material.\n\n*Risks & Data Quality*\n- Two critical figures are flagged **AMBIGUOUS** ([p1-02], [p1-09]): profit after taxes and FY2024 revenue. OCR/separator issues prevent reliable extraction.\n- Verified figures available: FY2025 revenue (~62.5B EGP) and EPS (6.98 EGP). These are the only hard numbers on profitability.\n- No dividend information, no cash-flow data, no segment breakdown, and no prior-year comparables without ambiguity.\n- Concentration risk: portfolio holds a single Egyptian listed stock (TMGH) alongside cash; no sector or macro-overlay data provided.\n\n**Summary of Usable Evidence**\n| Metric | Period | Value | Status |\n|--------|--------|-------|--------|\n| Revenue | FY2025 | 6.24951×10¹⁰ EGP | Verified [p1-01] |\n| EPS | FY2025 | 6.98 EGP | Verified [p1-11] |\n| Profit after taxes | FY2025 | unresolved | AMBIGUOUS [p1-09] |\n| Revenue | FY2024 | unresolved | AMBIGUOUS [p1-02] |\n\n**Key Limitation**: The evidence set provides one verified profitability snapshot (revenue + EPS for FY2025) but lacks the profit-after-tax figure and a comparable prior-year revenue figure due to documented OCR/extraction uncertainties. Without net profit or dividend data, and with no balance sheet information, any assessment of valuation sustainability, dividend yield, or financial risk would require computing with AMBIGUOUS figures or relying on data outside the provided evidence.\n\n*No actionable recommendation is provided here, per instructions. The decision agent will act on the analysis above.*",
+    "investor": "**Suitability Assessment (Informational Only – No Action/Recommendation Picked)**\n\n### 1. Horizon: 3–5 Years  \n- This is a medium-term horizon aligned with your goal of saving for an apartment.  \n- Equities carry inherent volatility; a 3–5 year window may not provide sufficient time to recover from significant downturns, especially near the target date.  \n- Your stated *medium* loss willingness sits at the borderline for this horizon: enough risk tolerance to hold growth assets, but not so high that short-term drawdowns are easily tolerated when a specific purchase is planned.\n\n### 2. Liquidity Needs  \n- You have a separate emergency fund, so the below assets are discretionary for the apartment goal.  \n- **Current discretionary liquidity:**  \n  - Cash: 60,000 EGP (immediately free)  \n  - TMGH: 200 shares × 82.50 EGP = ~16,500 EGP (liquid on market days)  \n  - **Total liquidity available:** ~76,500 EGP  \n\n### 3. Loss Willingness & Financial Ability  \n- Both rated *medium*. You can withstand moderate fluctuations but likely prefer to avoid substantial losses close to the 3–5 year target date.  \n- A portfolio weighted toward volatile single‑stock exposure would test this tolerance, especially if the purchase date approaches and values are down.\n\n### 4. Current Concentration  \n- **Cash:** ~78.4% of total portfolio value  \n- **TMGH (single stock):** ~21.6% of total portfolio value  \n- Equity concentration is low in absolute terms, but 100% exposure to one stock introduces idiosyncratic risk (earnings volatility, sector shocks, etc.) that is not diversified away. No other holdings are noted.\n\n### 5. How Much Cash Could Reasonably Be Committed  \n- Total commit‑able funds: ~76,500 EGP (cash + realizable TMGH value).  \n- Given the 3–5 year savings goal, medium loss tolerance, and the need for capital preservation toward a specific purchase, a conservative approach would keep the majority in cash or cash‑equivalents and allocate only a small portion to equities—if any—unless the equity allocation is strictly for long‑term growth beyond the apartment timeline.  \n- Committing all 76,500 EGP to TMGH or other equities would increase exposure beyond what the horizon and loss profile comfortably support.\n\n### Portfolio Capabilities (What the Portfolio Allows)  \n- **Cash of 60,000 EGP:** Fully free and liquid; can be deployed or kept as is without restriction.  \n- **TMGH 200 shares:** Currently priced at 82.50 EGP/share; can be sold on market days for ~16,500 EGP. No ownership restrictions are indicated. Proceeds would be added to cash upon settlement.  \n- **No other assets** are listed, so the portfolio consists of cash + one listed equity position.\n\n### Notes on Provided Evidence  \n- I have **not analysed** the TMGH FY2025 financial statements/revenue data included in the evidence. Suitability assessment above relies solely on the investor profile, horizon, loss parameters, and the known portfolio composition (cash + TMGH shares at the stated price).  \n- I am **not picking an action** (e.g., “sell TMGH,” “keep holding,” “invest more”). The purpose is to frame how the current portfolio aligns (or does not align) with your stated suitability factors, leaving the decision to you.\n\n**Key Takeaway:** Your portfolio is heavily cash‑weighted with a modest single‑stock equity position. The 3–5 year apartment savings goal, combined with medium loss tolerance, suggests that maintaining or increasing cash dominance may better suit your horizon and risk profile, while the TMGH holding can be held or liquidated based on your liquidity preferences without materially altering the overall suitability picture."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 20.909,
+      "input_tokens": 816,
+      "output_tokens": 3019,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 22.169,
+      "input_tokens": 810,
+      "output_tokens": 3270,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 11.816,
+      "input_tokens": 3457,
+      "output_tokens": 2213,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 54.898
+}

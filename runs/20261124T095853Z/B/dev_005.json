@@ -1,0 +1,74 @@
+{
+  "case_id": "dev_005",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "none",
+    "shares": 0,
+    "explanation": "The investor aims to add a fertilizer exporter for diversification, but the available evidence does not provide a responsible basis for a buy, hold, or sell decision. The only verifiable financial metric is ABUK's earnings per share (EGP 8.74 for 9M2026 and EGP 4.28 for 9M2025), while revenue and net‑profit figures are marked AMBIGUOUS and cannot be used. There is no evidence on COMI’s fundamentals, ABUK’s export performance, dividend policy, or valuation multiples. Critical information such as debt levels, cash flow, and future outlook is missing. Without these data, any action would rely on speculation rather than analysis. Therefore, the recommendation is to stay with the current portfolio and keep cash aside, pending more complete information.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Revenue and net‑profit figures are AMBIGUOUS (unit uncertainty) and have been excluded from calculations.",
+      "No financial data for COMI are provided; its current price (128.00 EGP) and holding (200 shares) cannot be evaluated.",
+      "ABUK’s export exposure, dividend history, and longer‑term profitability trends are not covered by the evidence.",
+      "Investor’s medium risk tolerance and 5‑year horizon are not matched by any quantified risk metric in the evidence."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "none",
+    "shares": 0,
+    "explanation": "The investor aims to add a fertilizer exporter for diversification, but the available evidence does not provide a responsible basis for a buy, hold, or sell decision. The only verifiable financial metric is ABUK's earnings per share (EGP 8.74 for 9M2026 and EGP 4.28 for 9M2025), while revenue and net‑profit figures are marked AMBIGUOUS and cannot be used. There is no evidence on COMI’s fundamentals, ABUK’s export performance, dividend policy, or valuation multiples. Critical information such as debt levels, cash flow, and future outlook is missing. Without these data, any action would rely on speculation rather than analysis. Therefore, the recommendation is to stay with the current portfolio and keep cash aside, pending more complete information.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Revenue and net‑profit figures are AMBIGUOUS (unit uncertainty) and have been excluded from calculations.",
+      "No financial data for COMI are provided; its current price (128.00 EGP) and holding (200 shares) cannot be evaluated.",
+      "ABUK’s export exposure, dividend history, and longer‑term profitability trends are not covered by the evidence.",
+      "Investor’s medium risk tolerance and 5‑year horizon are not matched by any quantified risk metric in the evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 14.689,
+      "input_tokens": 2092,
+      "output_tokens": 2032,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 14.695
+}

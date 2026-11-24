@@ -1,0 +1,99 @@
+{
+  "case_id": "dev_011",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ETEL",
+    "shares": 563,
+    "explanation": "The investor seeks long‑term growth with a 7+ year horizon and has medium risk tolerance. Using the available evidence we can compare the four listed companies on net‑profit growth (2024→2025) and price‑to‑earnings (P/E) ratios (price / 2025 EPS).  Net‑profit growth rates: ETEL +123 %, COMI +48.9 %, EFID +67.8 %; TMGH 2024 net profit not provided. P/E ratios (using 2025 EPS and the cutoff prices): ETEL 141.95 / 11.93 = 11.9×, COMI 128 / 18.25 = 7.0×, EFID 20.40 / 2.18 = 9.4×, TMGH 82.50 / 6.98 = 11.8×.  The PEG (P/E ÷ growth) for ETEL is ≈9.6, lower than the others, indicating the most attractive valuation relative to its strong profit growth.  With 80,000 EGP cash the investor can purchase 563 ETEL shares at 141.95 EGP each (total cost 79,937.85 EGP), leaving a small cash residual.  The recommendation to buy ETEL is based on its robust net‑profit increase, acceptable P/E, and the highest PEG efficiency among the candidates.  Limitations: TMGH’s 2024 net profit is not in the evidence, so its growth rate could",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578100000.0,
+        "statement": "ETEL net profit for the year 2025 was 2.25781×10^10 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS for 2025 was 11.93 EGP per share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic and diluted EPS for 2024 was 4.79 EGP per share"
+      },
+      {
+        "evidence_id": "price_ETEL_cutoff",
+        "stated_value": 141.95,
+        "statement": "ETEL share price at the 2026‑11‑18 cutoff was 141.95 EGP"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "TMGH 2024 net profit figure is not provided, so growth rate for TMGH could not be calculated.",
+      "All P/E and PEG calculations use the 2025 EPS and cutoff prices; forward‑looking performance may differ.",
+      "The recommendation is guidance only and not a guarantee of returns; market risks and company‑specific factors not captured in the evidence may affect outcomes."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ETEL",
+    "shares": 563,
+    "explanation": "The investor seeks long‑term growth with a 7+ year horizon and has medium risk tolerance. Using the available evidence we can compare the four listed companies on net‑profit growth (2024→2025) and price‑to‑earnings (P/E) ratios (price / 2025 EPS).  Net‑profit growth rates: ETEL +123 %, COMI +48.9 %, EFID +67.8 %; TMGH 2024 net profit not provided. P/E ratios (using 2025 EPS and the cutoff prices): ETEL 141.95 / 11.93 = 11.9×, COMI 128 / 18.25 = 7.0×, EFID 20.40 / 2.18 = 9.4×, TMGH 82.50 / 6.98 = 11.8×.  The PEG (P/E ÷ growth) for ETEL is ≈9.6, lower than the others, indicating the most attractive valuation relative to its strong profit growth.  With 80,000 EGP cash the investor can purchase 563 ETEL shares at 141.95 EGP each (total cost 79,937.85 EGP), leaving a small cash residual.  The recommendation to buy ETEL is based on its robust net‑profit increase, acceptable P/E, and the highest PEG efficiency among the candidates.  Limitations: TMGH’s 2024 net profit is not in the evidence, so its growth rate could",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578100000.0,
+        "statement": "ETEL net profit for the year 2025 was 2.25781×10^10 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS for 2025 was 11.93 EGP per share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic and diluted EPS for 2024 was 4.79 EGP per share"
+      },
+      {
+        "evidence_id": "price_ETEL_cutoff",
+        "stated_value": 141.95,
+        "statement": "ETEL share price at the 2026‑11‑18 cutoff was 141.95 EGP"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "TMGH 2024 net profit figure is not provided, so growth rate for TMGH could not be calculated.",
+      "All P/E and PEG calculations use the 2025 EPS and cutoff prices; forward‑looking performance may differ.",
+      "The recommendation is guidance only and not a guarantee of returns; market risks and company‑specific factors not captured in the evidence may affect outcomes."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 82.15,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 563
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 27.604,
+      "input_tokens": 3095,
+      "output_tokens": 4932,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 27.607
+}

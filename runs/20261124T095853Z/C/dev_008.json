@@ -1,0 +1,108 @@
+{
+  "case_id": "dev_008",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The friend's claim that Telecom Egypt earned 225.9 billion EGP net profit in 2025 is not supported by the evidence. The verified net profit for 2025 (evidence ID ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35) is 2.25781×10¹⁰ EGP ≈ 22.58 billion EGP, and 2024 net profit (evidence ID ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36) is 1.01113×10¹⁰ EGP ≈ 10.11 billion EGP. The resulting year‑on‑year ratio is about 2.2×, not “more than ten times.” The evidence also shows operating revenues grew ~30.6 % and basic/diluted EPS rose from 4.79 EGP (2024) to 11.93 EGP (2025). Given the investor’s medium risk tolerance, the existing ~30 % concentration in ETEL (150 shares ≈ 21,293 EGP out of a ~71,293 EGP portfolio), and the need for diversification, allocating the full 50,000 EGP cash into additional ETEL shares would increase risk beyond the stated willingness and capacity. Therefore the recommendation is to hold the current ETEL position and keep the cash aside.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578100000.0,
+        "statement": "Verified net profit for 2025 was 22.58 billion EGP (22578100000 EGP)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111300000.0,
+        "statement": "Verified net profit for 2024 was 10.11 billion EGP (10111300000 EGP)."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36"
+    ],
+    "limitations": [
+      "Decision relies on the verified financial figures; the raw source text groups numbers ambiguously but the scientific‑notation values are used.",
+      "Investor profile (medium risk tolerance, 5‑year horizon, separate emergency fund) is considered, but no guarantee of returns.",
+      "Concentration risk: ETEL already represents ~30 % of the portfolio; additional exposure could increase volatility.",
+      "No outside information or later events beyond the 2025‑2024 evidence are used."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The friend's claim that Telecom Egypt earned 225.9 billion EGP net profit in 2025 is not supported by the evidence. The verified net profit for 2025 (evidence ID ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35) is 2.25781×10¹⁰ EGP ≈ 22.58 billion EGP, and 2024 net profit (evidence ID ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36) is 1.01113×10¹⁰ EGP ≈ 10.11 billion EGP. The resulting year‑on‑year ratio is about 2.2×, not “more than ten times.” The evidence also shows operating revenues grew ~30.6 % and basic/diluted EPS rose from 4.79 EGP (2024) to 11.93 EGP (2025). Given the investor’s medium risk tolerance, the existing ~30 % concentration in ETEL (150 shares ≈ 21,293 EGP out of a ~71,293 EGP portfolio), and the need for diversification, allocating the full 50,000 EGP cash into additional ETEL shares would increase risk beyond the stated willingness and capacity. Therefore the recommendation is to hold the current ETEL position and keep the cash aside.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578100000.0,
+        "statement": "Verified net profit for 2025 was 22.58 billion EGP (22578100000 EGP)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111300000.0,
+        "statement": "Verified net profit for 2024 was 10.11 billion EGP (10111300000 EGP)."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36"
+    ],
+    "limitations": [
+      "Decision relies on the verified financial figures; the raw source text groups numbers ambiguously but the scientific‑notation values are used.",
+      "Investor profile (medium risk tolerance, 5‑year horizon, separate emergency fund) is considered, but no guarantee of returns.",
+      "Concentration risk: ETEL already represents ~30 % of the portfolio; additional exposure could increase volatility.",
+      "No outside information or later events beyond the 2025‑2024 evidence are used."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 50000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 150
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Claim evaluation against evidence:**\n\n- **Net profit 2025** ([ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]): **2.25781×10¹⁰ EGP** = ~22.58 billion EGP  \n- **Net profit 2024** ([ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36]): **1.01113×10¹⁰ EGP** = ~10.11 billion EGP  \n- **Ratio 2025/2024**: ~22.58 ÷ 10.11 ≈ **2.2×** increase, not \"more than ten times.\"\n\nThe claim of **225.9 billion EGP** net profit in 2025 is inconsistent with the verified evidence, which reports ~22.58 billion EGP—a factor of 10 higher. The \"more than ten times\" comparison also does not match the evidence, which shows roughly a 2.2× year‑on‑year increase.\n\n**Supporting context from the same statements:**\n- Operating revenues grew from 8.16778×10¹⁰ EGP (2024) to 1.06673×10¹¹ EGP (2025), a ~30.6% increase ([ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01, -p6-02]).\n- Basic and diluted EPS rose from 4.79 EGP/share (2024) to 11.93 EGP/share (2025) ([ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55, -p6-56]).\n\n**Data quality note:**  \nThe raw source text on p.6 lists figures as \"22 578 063 10 111 328\" for net profit, which is ambiguous in its grouping. The analysis uses the verified scientific‑notation values provided in the evidence metadata, which are the authoritative numbers.\n\n**On portfolio allocation:**  \nI do not recommend any action. The evidence shows Telecom Egypt's 2025 net profit was ~22.58 billion EGP, with roughly 2.2× growth over 2024, and EPS nearly 2.5× higher. Any investment decision should consider your full profile, risk tolerance, and the decision agent's guidance.",
+    "investor": "**Investor Suitability Assessment**\n\n- **Horizon (5 years):** A 5-year timeframe supports medium-term growth objectives and allows for moderate equity volatility, but does not inherently prescribe a specific asset class; it simply provides a window for potential recovery if short-term movements occur.\n\n- **Liquidity Needs:** The investor maintains a separate emergency fund. The stated 50,000.00 EGP cash balance is available for investment commitment without compromising those liquidity needs.\n\n- **Loss Willingness & Capacity:** Both rated medium. This indicates a capacity for moderate portfolio fluctuation, but position sizing should aim to limit the impact of adverse moves on the overall portfolio value and preserve stability consistent with the stated risk tolerance.\n\n- **Current Concentration:** The holding consists of 150 shares of ETEL at the cutoff price of 141.95 EGP, valued at approximately 21,292.50 EGP. Combined with 50,000.00 EGP cash, the total portfolio value is ~71,292.50 EGP, meaning ETEL represents roughly 30% of the holdings. This is a notable single-stock concentration.\n\n- **Cash Reasonably Committeable:** 50,000.00 EGP is free of the liquidity constraints noted. Given the medium risk tolerance and existing ~30% concentration in one equity, any additional commitment should consider diversification to align with the stated loss willingness and capacity.\n\n**Portfolio Allowances**\n\n- **Current Holdings Value:** 150 × 141.95 = 21,292.50 EGP (ETEL shares).\n- **Liquidatable Assets:** The 150 ETEL shares can be sold, converting to approximately 21,293 EGP in cash.\n- **Free Cash:** 50,000.00 EGP is available, assuming the separate emergency fund is preserved and not tapped.\n\n**On the Investor Question**\n\n- I cannot verify the 225.9 billion pound net profit claim, as doing so would require analysing company financials, which is outside the scope of this suitability assessment.\n- I am not recommending an action regarding allocating additional cash to ETEL. Suitability is evaluated based on the factors above, and any investment decision should consider its effect on concentration, risk exposure, and alignment with the investor's profile."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 25.044,
+      "input_tokens": 1332,
+      "output_tokens": 2424,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 20.068,
+      "input_tokens": 1326,
+      "output_tokens": 3953,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 27.611,
+      "input_tokens": 3260,
+      "output_tokens": 4178,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 72.727
+}

@@ -1,0 +1,70 @@
+{
+  "case_id": "dev_002",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 1212,
+    "explanation": "The investor has a long‑term horizon, high risk tolerance, and no current holdings. Based on the available evidence, TMGH appears attractively valued: the 2025 EPS of 6.98 LE combined with the market price of 82.50 EGP yields a P/E ratio of about 11.8, which is low relative to many Egyptian listed firms. Net profit for 2025 was 18.202 bn LE (evidence_id TMGH‑TMGH_FY2025_consolidated_en‑p7‑55), and total equity stood at 157.708 bn LE as of 31 Dec 2025 (evidence_id TMGH‑TMGH_FY2025_consolidated_en‑p5‑67), supporting a book‑value‑per‑share of roughly 60 EGP (implied share count from net profit/EPS). Gross profit also grew from 14.0 bn LE in 2024 (restated) to 20.86 bn LE in 2025, indicating operational improvement. With 100,000 EGP cash, the investor can purchase 1,212 shares (1,212 × 82.50 = 99,990 EGP). The decision hinges on the belief that the company’s profitability and equity base will continue to support long‑term growth, but the recommendation is qualified by the AMBIGUOUS 2024 net‑profit figure (evid_id",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "No data on dividend policy or cash‑flow statements;",
+      "Share count is inferred from EPS and net profit, not directly provided;",
+      "The 2024 net‑profit figure is ambiguous and cannot be used for trend analysis;",
+      "Macro‑economic or regulatory changes in Egypt could affect returns;",
+      "Past performance does not guarantee future results."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 1212,
+    "explanation": "The investor has a long‑term horizon, high risk tolerance, and no current holdings. Based on the available evidence, TMGH appears attractively valued: the 2025 EPS of 6.98 LE combined with the market price of 82.50 EGP yields a P/E ratio of about 11.8, which is low relative to many Egyptian listed firms. Net profit for 2025 was 18.202 bn LE (evidence_id TMGH‑TMGH_FY2025_consolidated_en‑p7‑55), and total equity stood at 157.708 bn LE as of 31 Dec 2025 (evidence_id TMGH‑TMGH_FY2025_consolidated_en‑p5‑67), supporting a book‑value‑per‑share of roughly 60 EGP (implied share count from net profit/EPS). Gross profit also grew from 14.0 bn LE in 2024 (restated) to 20.86 bn LE in 2025, indicating operational improvement. With 100,000 EGP cash, the investor can purchase 1,212 shares (1,212 × 82.50 = 99,990 EGP). The decision hinges on the belief that the company’s profitability and equity base will continue to support long‑term growth, but the recommendation is qualified by the AMBIGUOUS 2024 net‑profit figure (evid_id",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "No data on dividend policy or cash‑flow statements;",
+      "Share count is inferred from EPS and net profit, not directly provided;",
+      "The 2024 net‑profit figure is ambiguous and cannot be used for trend analysis;",
+      "Macro‑economic or regulatory changes in Egypt could affect returns;",
+      "Past performance does not guarantee future results."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 1212
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 7.772,
+      "input_tokens": 1866,
+      "output_tokens": 1374,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 7.776
+}

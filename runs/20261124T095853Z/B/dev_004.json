@@ -1,0 +1,76 @@
+{
+  "case_id": "dev_004",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 235,
+    "explanation": "The investor needs about 30,000 EGP within six months for income but currently holds only 5,000 EGP in cash. The portfolio includes 1,000 shares of COMI, valued at 128.00 EGP per share (total 128,000 EGP). To meet the liquidity need while respecting the low risk tolerance, the investor should sell 235 shares, which at the cutoff price yields approximately 30,080 EGP (235 × 128.00). This leaves 765 shares (≈98,040 EGP) retained for potential future income, limiting the proportion of the portfolio liquidated. The decision uses only the given price and the investor's cash‑flow requirement; it does not rely on future price movements or dividend data, which are not provided. The basic EPS of 18.25 EGP (evidence COMI‑COMI_FY2025_consolidated_condensed_en‑p5‑39) shows the company's profitability, but the recommendation focuses on cash generation rather than earnings metrics.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "Basic EPS of 18.25 EGP indicates profitability"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Price of 128.00 EGP is fixed at the cutoff date (2026‑11‑18) and may change before the 6‑month horizon.",
+      "No information on dividends, future earnings, or market conditions beyond the provided evidence.",
+      "The investor’s low risk tolerance means any sale locks in the current price; a decline in COMI’s market price would reduce the cash obtained.",
+      "The analysis uses only the given evidence; outside data (e.g., macro‑economic factors, regulatory changes) are not considered."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 235,
+    "explanation": "The investor needs about 30,000 EGP within six months for income but currently holds only 5,000 EGP in cash. The portfolio includes 1,000 shares of COMI, valued at 128.00 EGP per share (total 128,000 EGP). To meet the liquidity need while respecting the low risk tolerance, the investor should sell 235 shares, which at the cutoff price yields approximately 30,080 EGP (235 × 128.00). This leaves 765 shares (≈98,040 EGP) retained for potential future income, limiting the proportion of the portfolio liquidated. The decision uses only the given price and the investor's cash‑flow requirement; it does not rely on future price movements or dividend data, which are not provided. The basic EPS of 18.25 EGP (evidence COMI‑COMI_FY2025_consolidated_condensed_en‑p5‑39) shows the company's profitability, but the recommendation focuses on cash generation rather than earnings metrics.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "Basic EPS of 18.25 EGP indicates profitability"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Price of 128.00 EGP is fixed at the cutoff date (2026‑11‑18) and may change before the 6‑month horizon.",
+      "No information on dividends, future earnings, or market conditions beyond the provided evidence.",
+      "The investor’s low risk tolerance means any sale locks in the current price; a decline in COMI’s market price would reduce the cash obtained.",
+      "The analysis uses only the given evidence; outside data (e.g., macro‑economic factors, regulatory changes) are not considered."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 35080.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 765
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 14.686,
+      "input_tokens": 1958,
+      "output_tokens": 2191,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 14.69
+}

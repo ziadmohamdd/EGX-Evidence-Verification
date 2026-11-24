@@ -1,0 +1,90 @@
+{
+  "case_id": "dev_004",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 200,
+    "explanation": "The investor needs about 30,000 EGP within 6 months and currently holds 5,000 EGP cash, leaving a shortfall of 25,000 EGP. At the cutoff price of 128.00 EGP per COMI share, selling 200 shares yields 200 × 128 = 25,600 EGP, bringing total available cash to 5,000 + 25,600 = 30,600 EGP, which satisfies the 6‑month liquidity need. After the sale the portfolio will hold 804 COMI shares (≈103,000 EGP), reducing the concentration from the original 96 % of invested assets while retaining some exposure. This partial sale aligns with the investor’s low loss willingness and capital‑preservation goal, as it generates the required cash without fully liquidating the position. The decision relies on the given share price (128.00 EGP) and the investor’s cash need; no financial ratios from the COMI financial statements are used because the basic EPS figures (18.25 and 14.72 EGP) are flagged as AMBIGUOUS (unit stated as EGP thousands) and are therefore excluded from calculations. The remaining concentration, while reduced, is仍",
+    "claims": [],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40"
+    ],
+    "limitations": [
+      "The share price of 128.00 EGP is given at the cutoff date; actual execution price may differ, introducing market price risk.",
+      "No dividend or income data are provided; the investor’s income‑draw goal in retirement cannot be assessed from this evidence alone.",
+      "The basic EPS figures (p5‑39, p5‑40) are ambiguous (unit stated as EGP thousands) and have been excluded from any ratio or yield calculations.",
+      "Evidence does not address bid‑ask spreads, trading volumes, or market impact; selling 200 shares may incur transaction costs or price slippage.",
+      "After the sale, COMI still represents a large portion of the portfolio (≈77 % of invested assets), so concentration risk remains elevated despite the reduction.",
+      "The 6‑month liquidity need is based on the investor’s profile; any change in cash requirements or COMI price could affect the adequacy of the generated cash."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 200,
+    "explanation": "The investor needs about 30,000 EGP within 6 months and currently holds 5,000 EGP cash, leaving a shortfall of 25,000 EGP. At the cutoff price of 128.00 EGP per COMI share, selling 200 shares yields 200 × 128 = 25,600 EGP, bringing total available cash to 5,000 + 25,600 = 30,600 EGP, which satisfies the 6‑month liquidity need. After the sale the portfolio will hold 804 COMI shares (≈103,000 EGP), reducing the concentration from the original 96 % of invested assets while retaining some exposure. This partial sale aligns with the investor’s low loss willingness and capital‑preservation goal, as it generates the required cash without fully liquidating the position. The decision relies on the given share price (128.00 EGP) and the investor’s cash need; no financial ratios from the COMI financial statements are used because the basic EPS figures (18.25 and 14.72 EGP) are flagged as AMBIGUOUS (unit stated as EGP thousands) and are therefore excluded from calculations. The remaining concentration, while reduced, is仍",
+    "claims": [],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40"
+    ],
+    "limitations": [
+      "The share price of 128.00 EGP is given at the cutoff date; actual execution price may differ, introducing market price risk.",
+      "No dividend or income data are provided; the investor’s income‑draw goal in retirement cannot be assessed from this evidence alone.",
+      "The basic EPS figures (p5‑39, p5‑40) are ambiguous (unit stated as EGP thousands) and have been excluded from any ratio or yield calculations.",
+      "Evidence does not address bid‑ask spreads, trading volumes, or market impact; selling 200 shares may incur transaction costs or price slippage.",
+      "After the sale, COMI still represents a large portion of the portfolio (≈77 % of invested assets), so concentration risk remains elevated despite the reduction.",
+      "The 6‑month liquidity need is based on the investor’s profile; any change in cash requirements or COMI price could affect the adequacy of the generated cash."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30600.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 800
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Portfolio Context (as provided)**\n- Cash: 5,000 EGP [investor profile]\n- COMI holdings: 1,000 shares; price per share at cutoff: 128.00 EGP (not an evidence figure; given in your profile)\n- Current portfolio value: ~133,000 EGP (cash + COMI)\n- Liquidity need: ~30,000 EGP within 6 months\n- Risk profile: preserve capital, income in retirement; low willingness/ability to withstand losses\n\n**COMI Evidence Analysis**\n\n*Profitability*\n- Net interest income (period Dec. 31, 2025): 1.077×10¹¹ EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-05]\n- Net profit for the year (period Dec. 31, 2025): 8.22588×10¹⁰ EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-33]\n- Net profit for the year (period Dec. 31, 2024): 5.52567×10¹⁰ EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-34]\n\n*Growth (year-over-year)*\n- Net profit increased from 5.52567×10¹⁰ EGP to 8.22588×10¹⁰ EGP (absolute increase of ~2.70×10¹⁰ EGP). The evidence does not provide a verified percentage-growth figure; any ratio computation would rely on the two profit values.\n- Basic EPS (period Dec. 31, 2025): 18.25 EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-39]\n- Basic EPS (period Dec. 31, 2024): 14.72 EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-40]\n\n*Balance Sheet (period Dec. 31, 2025)*\n- Due to customers (consolidated): 1.1104×10¹² EGP [COMI-COMI_FY2025_consolidated_condensed_en-p4-28]\n- Total equity and net profit for the year (consolidated): 2.31486×10¹¹ EGP [COMI-COMI_FY2025_consolidated_condensed_en-p4-54]\n\n*Risks & Data Quality Flags*\n- **EPS unit ambiguity**: The source tables for [p5-39] and [p5-40] state the unit as \"All amounts are shown in EGP thousands,\" yet the evidence ID values are given as \"18.25 EGP\" and \"14.72 EGP.\" This discrepancy is flagged; I am refraining from computing dividend payout ratios, forward yields, or any metric that depends on the EPS unit precision. The raw EPS figures (18.25 and 14.72) are used only as stated.\n- **No dividend or yield data**: The evidence contains no information on declared dividends, payout ratio, or dividend history. Your income-draw goal cannot be assessed from this evidence alone.\n- **Single-stock concentration**: Your portfolio holds 1,000 shares of one listed bank (COMI). Evidence shows a large balance sheet (due-to-customers ~1.11 trillion EGP, total equity ~231.5 billion EGP), but sector-specific risk factors (interest-rate sensitivity, credit cycles, regulatory changes) are not detailed.\n- **Liquidity need vs portfolio**: You need ~30,000 EGP within 6 months; current cash is 5,000 EGP, and COMI holdings represent ~128,000 EGP at the quoted price. Selling shares would realize market price, which may fluctuate over a 1–3 year horizon and is not covered by the evidence. The evidence does not address bid-ask spreads, trading volumes, or market impact.\n- **All figures above are verified** per their respective evidence IDs. No other data-quality issues are apparent from the provided evidence.\n\n**Summary of Evidence**\n- COMI reported strong profitability and year-over-year growth in both net profit and basic EPS for FY2025.\n- The balance sheet reflects a large deposit base and equity base typical of a major banking institution.\n- Critical gaps for your profile: no dividend information, no liquidity or marketability data for COMI shares, no risk metrics, and a unit ambiguity on EPS that prevents reliable ratio computation.\n- The evidence does not provide a basis for evaluating COMI’s suitability for capital preservation, income generation, or meeting your 6-month liquidity need without exposing capital to market price risk.\n\nThe decision agent will use this evidence summary, along with any additional portfolio or market data, to determine an action. Your next steps should consider the liquidity need, risk tolerance, and the evidence gaps noted above.",
+    "investor": "**Investor‑Suitability Assessment**\n\n**Horizon (1–3 years) vs. Liquidity Need (30,000 EGP within 6 months)**  \nThe investor’s 6‑month cash requirement sits at the short end of the 1–3 year horizon. Aligning the portfolio with this need does not require extending the horizon; reducing the existing equity position to generate the required cash would be consistent with the time frame.\n\n**Liquidity Needs**  \n- Current free cash: 5,000 EGP  \n- Shortfall: 25,000 EGP (to reach the 30,000 EGP goal)  \n- The COMI holding (1,000 shares × 128 EGP/share = 128,000 EGP) provides ample liquidity. Selling approximately 234 shares (30,000 ÷ 128) would cover the shortfall exactly; selling slightly more would provide a small buffer. No other assets are listed, so COMI is the sole source of liquidity beyond the existing cash.\n\n**Loss Willingness & Capacity (both low)**  \n- Low loss willingness and low financial ability to withstand losses make a concentrated single‑stock position unsuitable.  \n- The portfolio is 100% invested in COMI (excluding the 5,000 EGP cash), creating undiversified risk and a high sensitivity to any adverse movement in that security. Reducing the COMI holding addresses both the liquidity shortfall and the concentration‑risk mismatch.\n\n**Current Concentration**  \n- Equity exposure: 128,000 EGP in COMI (1,000 shares)  \n- Cash buffer: 5,000 EGP  \n- Total portfolio value: ~133,000 EGP  \n- COMI represents approximately 96% of invested assets. This level of concentration is inconsistent with the investor’s low loss willingness and capacity, and it conflicts with the goal of capital preservation and income drawing in retirement.\n\n**What the Portfolio Allows**  \n- **Sellable:** The 1,000 COMI shares can be sold in any quantity at the cutoff price of 128 EGP/share.  \n- **Free cash:** 5,000 EGP is immediately available.  \n- **No other holdings** are listed; thus, COMI is the only instrument that can be converted to cash.  \n- **Partial or full liquidation** is possible. Selling a portion preserves some exposure while meeting the cash need; full liquidation would yield 128,000 EGP but is unnecessary for the stated goal.\n\n**Cash Reasonably Commitable**  \n- 5,000 EGP is already free.  \n- An additional 25,000–30,000 EGP can be generated by selling roughly 200–235 COMI shares, leaving the remainder of the position intact.  \n- Full liquidation of the COMI position would yield 128,000 EGP, but given the low loss capacity and the investor’s goal of capital preservation, a partial sale that satisfies the 6‑month liquidity need while retaining a reduced, more diversified exposure is more suitable.\n\n**Summary of Suitability**  \nThe investor’s horizon and liquidity need are compatible if a portion of the COMI position is liquidated. The current concentration and low loss capacity argue against maintaining full exposure to a single equity. The portfolio structure allows the necessary cash generation through selective selling of COMI shares, which would simultaneously improve liquidity, reduce concentration risk, and better align with the investor’s risk profile and retirement‑focused goals."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 41.222,
+      "input_tokens": 1158,
+      "output_tokens": 7064,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 15.208,
+      "input_tokens": 1152,
+      "output_tokens": 3014,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 614.743,
+      "input_tokens": 3964,
+      "output_tokens": 2972,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 671.177
+}

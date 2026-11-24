@@ -1,0 +1,62 @@
+{
+  "case_id": "dev_009",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The investor asked for the full‑year 2026 earnings per share (EPS) and the price‑to‑earnings (P/E) ratio for Abu Qir (ABUK). The only EPS figures provided in the evidence are for the nine‑month periods ending 30 September 2026 (8.74 EGP per share) and 30 September 2025 (4.28 EGP per share). No full‑year 2026 EPS is reported, and there are no reliable year‑end profit‑after‑tax figures that can be used to derive a full‑year estimate without making assumptions beyond the given evidence. The revenue and net‑profit figures for the nine‑month periods are marked AMBIGUOUS (units of ‘مليار’ vs ‘مليون’) and have been listed as unused. Because the necessary full‑year earnings data are missing, a responsible P/E calculation cannot be performed. Therefore the evidence is insufficient for a buy/hold/sell decision on the basis of the requested metrics.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "No full‑year 2026 EPS figure is provided; only nine‑month data are available.",
+      "Revenue and net‑profit figures are ambiguous with respect to unit (billion vs million Egyptian pounds) and are therefore excluded from any calculation.",
+      "Any annualisation of the nine‑month EPS would rely on assumptions not supported by the evidence."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The investor asked for the full‑year 2026 earnings per share (EPS) and the price‑to‑earnings (P/E) ratio for Abu Qir (ABUK). The only EPS figures provided in the evidence are for the nine‑month periods ending 30 September 2026 (8.74 EGP per share) and 30 September 2025 (4.28 EGP per share). No full‑year 2026 EPS is reported, and there are no reliable year‑end profit‑after‑tax figures that can be used to derive a full‑year estimate without making assumptions beyond the given evidence. The revenue and net‑profit figures for the nine‑month periods are marked AMBIGUOUS (units of ‘مليار’ vs ‘مليون’) and have been listed as unused. Because the necessary full‑year earnings data are missing, a responsible P/E calculation cannot be performed. Therefore the evidence is insufficient for a buy/hold/sell decision on the basis of the requested metrics.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "No full‑year 2026 EPS figure is provided; only nine‑month data are available.",
+      "Revenue and net‑profit figures are ambiguous with respect to unit (billion vs million Egyptian pounds) and are therefore excluded from any calculation.",
+      "Any annualisation of the nine‑month EPS would rely on assumptions not supported by the evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 8.384,
+      "input_tokens": 2110,
+      "output_tokens": 1076,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 8.388
+}

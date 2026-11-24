@@ -1,0 +1,57 @@
+{
+  "case_id": "dev_011",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked to compare Telecom Egypt (ETEL), CIB, Edita (EFID) and Talaat Moustafa (TMGH) on net‑profit growth 2024‑2025 and on price‑to‑earnings ratio, and to select one stock to buy with 80,000 EGP.  The evidence supplied contains financial data for ETEL, EFID (Edita) and TMGH, but it does **not** contain any figures for CIB (Commercial International Bank).  Without CIB data a full comparative analysis of all four companies cannot be performed.  Moreover, TMGH’s 2024 net‑profit figure is absent from the evidence, so growth for TMGH cannot be calculated.  Because the evidence is insufficient to evaluate all requested companies responsibly, the appropriate action is insufficient_evidence.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "No CIB financial data are provided in the evidence set.",
+      "TMGH 2024 net profit is missing; only 2025 net profit and EPS are available.",
+      "All calculations are based solely on the supplied evidence; no external market data or future expectations are used."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked to compare Telecom Egypt (ETEL), CIB, Edita (EFID) and Talaat Moustafa (TMGH) on net‑profit growth 2024‑2025 and on price‑to‑earnings ratio, and to select one stock to buy with 80,000 EGP.  The evidence supplied contains financial data for ETEL, EFID (Edita) and TMGH, but it does **not** contain any figures for CIB (Commercial International Bank).  Without CIB data a full comparative analysis of all four companies cannot be performed.  Moreover, TMGH’s 2024 net‑profit figure is absent from the evidence, so growth for TMGH cannot be calculated.  Because the evidence is insufficient to evaluate all requested companies responsibly, the appropriate action is insufficient_evidence.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "No CIB financial data are provided in the evidence set.",
+      "TMGH 2024 net profit is missing; only 2025 net profit and EPS are available.",
+      "All calculations are based solely on the supplied evidence; no external market data or future expectations are used."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 80000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 16.739,
+      "input_tokens": 3095,
+      "output_tokens": 3114,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 16.744
+}

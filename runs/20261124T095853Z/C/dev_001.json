@@ -1,0 +1,112 @@
+{
+  "case_id": "dev_001",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "ETEL",
+    "shares": 100,
+    "explanation": "The investor aims to grow savings for a child's university fees over a 5–7 year horizon with medium risk tolerance and a separate emergency fund. The current portfolio is heavily concentrated in ETEL (≈68% of total value). The financial analyst's evidence shows FY2025 basic/diluted EPS of 11.93 L.E./Share [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] with no unit‑conversion ambiguity, while FY2024 EPS was 4.79 L.E./Share. Using the cutoff price of 141.95 EGP per share implies a P/E ratio of ≈11.9, suggesting a reasonable valuation relative to earnings. However, the analyst flagged substantial unit‑conversion ambiguity for operating revenues, gross profit, net profit, total assets and total equity (all sourced as L.E.(000)); these figures are therefore excluded from ratio calculations. The suitability analyst noted that such concentration may not suit a medium‑risk investor with a specific, time‑bound savings goal unless there is strong conviction. To reduce concentration and increase the cash buffer whileKeen‑",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "FY2025 basic and diluted earning per share 11.93 L.E./Share"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36"
+    ],
+    "limitations": [
+      "Unit‑conversion ambiguity for many income‑statement and balance‑sheet items (L.E.(000)) prevents reliable ratio analysis; only EPS is used.",
+      "Duplicate source text for operating revenues may indicate a PDF‑extraction artifact; values are retained as given but not relied upon.",
+      "Portfolio concentration risk: selling reduces ETEL weight but the remaining holding still represents a significant portion of total assets.",
+      "No outside information or post‑cutoff events may affect the decision; all judgments are based solely on the provided evidence and price.",
+      "Transaction costs, taxes, or market impact are not modelled."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "ETEL",
+    "shares": 100,
+    "explanation": "The investor aims to grow savings for a child's university fees over a 5–7 year horizon with medium risk tolerance and a separate emergency fund. The current portfolio is heavily concentrated in ETEL (≈68% of total value). The financial analyst's evidence shows FY2025 basic/diluted EPS of 11.93 L.E./Share [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] with no unit‑conversion ambiguity, while FY2024 EPS was 4.79 L.E./Share. Using the cutoff price of 141.95 EGP per share implies a P/E ratio of ≈11.9, suggesting a reasonable valuation relative to earnings. However, the analyst flagged substantial unit‑conversion ambiguity for operating revenues, gross profit, net profit, total assets and total equity (all sourced as L.E.(000)); these figures are therefore excluded from ratio calculations. The suitability analyst noted that such concentration may not suit a medium‑risk investor with a specific, time‑bound savings goal unless there is strong conviction. To reduce concentration and increase the cash buffer whileKeen‑",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "FY2025 basic and diluted earning per share 11.93 L.E./Share"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36"
+    ],
+    "limitations": [
+      "Unit‑conversion ambiguity for many income‑statement and balance‑sheet items (L.E.(000)) prevents reliable ratio analysis; only EPS is used.",
+      "Duplicate source text for operating revenues may indicate a PDF‑extraction artifact; values are retained as given but not relied upon.",
+      "Portfolio concentration risk: selling reduces ETEL weight but the remaining holding still represents a significant portion of total assets.",
+      "No outside information or post‑cutoff events may affect the decision; all judgments are based solely on the provided evidence and price.",
+      "Transaction costs, taxes, or market impact are not modelled."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 34195.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Portfolio Snapshot (at 2026-11-18 cutoff)**\n- Cash: 20,000.00 EGP (as stated)\n- ETEL holdings: 300 shares × 141.95 EGP/share = **42,585.00 EGP**\n- Total portfolio value: **62,585.00 EGP**\n- ETEL weight: ~68% of portfolio; Cash buffer: ~32%\n\n**ETEL Financial Evidence Analysis**\n\n*Operating Revenues*\n- FY2025: 1.06673 × 10¹¹ EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]\n- FY2024: 8.16778 × 10¹⁰ EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02]\n- Source documents report these figures in L.E.(000); the provided values appear already converted to EGP. **Flag: unit conversion ambiguous** – not used for ratio calculations.\n\n*Gross Profit*\n- FY2025: 4.48391 × 10¹⁰ EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05]\n- FY2024: 3.04928 × 10¹⁰ EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06]\n- Source units: L.E.(000). **Flag: same ambiguity as above.**\n\n*Net Profit for the Year*\n- FY2025: 2.25781 × 10¹⁰ EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]\n- FY2024: 1.01113 × 10¹⁰ EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36]\n- Source units: L.E.(000). **Flag: ambiguity noted.**\n\n*Earnings Per Share (Basic and diluted)*\n- FY2025: 11.93 L.E./Share [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55]\n- FY2024: 4.79 L.E./Share [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56]\n- These are reported directly in L.E./Share; **no unit-conversion ambiguity** for this metric.\n\n*Balance Sheet (as of 31/12/2025)*\n- Total Assets (consolidated): 2.25883 × 10¹¹ L.E. [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31]\n  - Source: L.E.(000) showing 225,882,527 (i.e., 225,882,527,000 L.E. if the (000) unit applies). **Flag: unit conversion ambiguous.**\n- Total Equity (consolidated): 6.36878 × 10¹⁰ L.E. [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]\n  - Source: L.E.(000) showing 63,687,826. **Flag: same ambiguity.**\n\n**Data Quality / Ambiguities Flagged**\n1. **Unit conversion**: Multiple income-statement and balance-sheet items carry source-unit designations of L.E.(000), while evidence IDs supply values in EGP or L.E. The implied ×1,000 conversion is consistent with the numeric magnitudes but is not explicitly verified in the evidence metadata. Per instructions, I do not compute derived ratios (e.g., gross margin, debt/equity, P/E) using these figures.\n2. **Duplicate source text**: The source citation for operating revenues appears identically for both FY2025 (p6-01) and FY2024 (p6-02): \"Operating revenues (5) 106 672 946 81 677 812\". The reported values differ (1.06673e11 vs 8.16778e10), suggesting a PDF-extraction artifact; the values are retained as given, but the duplicate text is flagged.\n3. **EPS metrics** are the most directly comparable figures without unit-conversion concerns.\n\n**Portfolio Context (descriptive only)**\n- The portfolio is heavily concentrated in a single Egyptian listed stock (ETEL), representing roughly two-thirds of total value, with a 20,000 EGP cash buffer separate from the emergency fund (as noted in the investor profile).\n- ETEL’s FY2025 vs FY2024 consolidated results show year-over-year increases in operating revenues, gross profit, net profit, and EPS. The absolute figures and directional changes are as cited above.\n- The balance sheet as of FY2025 reports total assets of ~2.26e11 L.E. and total equity of ~6.37e10 L.E.; the equity ratio and composition of liabilities are not detailed in the evidence.\n- P/E ratio calculation would require a confirmed share price relative to EPS, but given the unit-conversion ambiguity for the EPS and profit figures, such a ratio is not computed here.\n\n**Decision Framework (no action recommended)**\nThe evidence provides a snapshot of ETEL’s profitability, growth, and balance-sheet position as of FY2025. Key takeaways from the evidence: operating revenues and net profit more than doubled year-over-year; EPS improved from 4.79 to 11.93 L.E./Share; the balance sheet shows substantial assets relative to equity. However, the noted ambiguities in unit reporting and source-text duplicates limit the precision of cross-period ratio analysis. The investor’s profile (5–7 year horizon for university fees, medium risk tolerance, separate emergency fund) and the portfolio’s current allocation (ETEL-concentrated with a cash buffer) are acknowledged. The decision agent will integrate these evidence-based insights with the investor’s goals, risk constraints, and liquidity needs to determine an appropriate action.",
+    "investor": "**Investor-suitability assessment (no financial analysis of ETEL, no action recommendation)**\n\n**Horizon (5–7 years)**  \nA medium-term horizon can support moderate growth objectives, but university-fee savings typically warrant a capital-preservation mindset as the target date approaches. The 5–7 year window allows for some volatility, but the liability’s fixed timing suggests reducing exposure to sharp drawdowns in the later years.\n\n**Liquidity needs**  \nThe investor reports maintaining a separate emergency fund. The current portfolio holds 20,000.00 EGP in cash, which aligns with this stated practice. ETEL shares are a liquidable asset, but reliance on a single listed equity for near-term cash needs introduces concentration risk relative to a diversified liquidity buffer.\n\n**Willingness to accept losses & financial ability to withstand losses (both medium)**  \nA medium risk tolerance and medium loss-bearing capacity suggest a balanced approach is appropriate. However, because the goal is a specific, time-bound expense (university fees), losses that erode the capital base early in the horizon may have outsized impact compared with a retirement or long-term wealth goal. Stress testing the portfolio’s ability to absorb a meaningful decline without compromising the fee timeline is prudent.\n\n**Current concentration**  \nThe portfolio consists of:\n- Cash: 20,000.00 EGP\n- ETEL: 300 shares (approximately 42,585.00 EGP at the 141.95 EGP/share cutoff price)\n\nThis represents a highly concentrated position in a single equity. For an investor with a 5–7 year horizon, medium loss capacity, and a specific savings goal, such concentration may not suit the risk-return profile unless the investor has a strong conviction or additional offsetting holdings not reported here.\n\n**Cash commitment capacity**  \n- Freely available cash: 20,000.00 EGP  \n- Current equity exposure market value: ~42,585.00 EGP (300 × 141.95)  \n- Total portfolio value: ~62,585.00 EGP  \nAdditional commitment capacity would depend on the investor’s overall balance sheet, willingness to adjust the concentrated equity position, and whether new funds are available beyond the existing cash and ETEL holding.\n\n**What the portfolio allows**  \n- The 20,000.00 EGP cash is freely available for reallocation or as a liquidity buffer.  \n- The 300 ETEL shares can be sold for liquidity, subject to market execution and any applicable transaction costs or tax considerations. Selling would reduce the concentrated equity exposure and increase cash freedom, but would also realize any gain or loss relative to the unprovided cost basis.  \n- No other holdings are reported, so there are no other assets to liquidate or rebalance within the current scope.\n\n**Compliance note**  \nI have not analysed the ETEL financial evidence provided (revenues, profits, asset values, etc.), nor have I made a buy, sell, or hold recommendation. The assessment above focuses solely on suitability dimensions and portfolio structure as they relate to the investor’s profile and stated goals."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 113.408,
+      "input_tokens": 1542,
+      "output_tokens": 8931,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 13.819,
+      "input_tokens": 1536,
+      "output_tokens": 2452,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 20.403,
+      "input_tokens": 4516,
+      "output_tokens": 3276,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 147.634
+}
