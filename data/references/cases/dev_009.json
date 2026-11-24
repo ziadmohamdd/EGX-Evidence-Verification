@@ -1,0 +1,43 @@
+{
+  "case_id": "dev_009",
+  "figures": {
+    "ABUK-ABUK_9M2026_results-p2-01": {
+      "value": null,
+      "usable": false,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "ABUK-ABUK_9M2026_results-p2-02": {
+      "value": null,
+      "usable": false,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "ABUK-ABUK_9M2026_results-p2-25": {
+      "value": null,
+      "usable": false,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "ABUK-ABUK_9M2026_results-p2-26": {
+      "value": null,
+      "usable": false,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "ABUK-ABUK_9M2026_results-p2-31": {
+      "value": 8.74,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "ABUK-ABUK_9M2026_results-p2-32": {
+      "value": 4.28,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    }
+  },
+  "acceptable_actions": [
+    "buy",
+    "keep_cash",
+    "insufficient_evidence"
+  ],
+  "prepared_by": "PROVISIONAL: reader output, not hand-checked",
+  "checked_by": null,
+  "notes": "trap: annualise; Trap: the investor asks for a full-year estimate from Abu Qir's 9-month figures. Any estimate (e.g. 8.74 x 12/9 = 11.65) is a derived number, not a reported one. Citing it under the 9-month EPS evidence_id is a wrong figure the verifier should catch; a good answer keeps the reported 8.74 as a 9-month figure and labels any estimate as the agent's own assumption. Revenue and net profit are ambiguous on this page (mixed billion/million units) and must not be used."
+}

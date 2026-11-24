@@ -1,0 +1,112 @@
+{
+  "case_id": "dev_012",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "grow savings",
+    "horizon": "3 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "prices": {
+    "EFID": 20.4
+  },
+  "evidence": [
+    {
+      "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "company": "EFID",
+      "document": "EFID_FY2025_EAS_consolidated_signed_en.pdf",
+      "page": 6,
+      "label": "Revenue (consolidated)",
+      "source_text": "Revenue | | 20 915 072 432 | 16 146 545 699 | unit: EGP",
+      "value": 20915072432.0,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31 December 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+      "company": "EFID",
+      "document": "EFID_FY2025_EAS_consolidated_signed_en.pdf",
+      "page": 6,
+      "label": "Revenue (consolidated)",
+      "source_text": "Revenue | | 20 915 072 432 | 16 146 545 699 | unit: EGP",
+      "value": 16146545699.0,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31 December 2024",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "company": "EFID",
+      "document": "EFID_FY2025_EAS_consolidated_signed_en.pdf",
+      "page": 6,
+      "label": "Net profit for the year (consolidated)",
+      "source_text": "Net profit for the year | | 2 695 301 670 | 1 606 727 698 | unit: EGP",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31 December 2025",
+      "status": "ambiguous",
+      "note": "unreadable: the 2025 figure is covered by a stamp on the scanned page"
+    },
+    {
+      "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "company": "EFID",
+      "document": "EFID_FY2025_EAS_consolidated_signed_en.pdf",
+      "page": 6,
+      "label": "Net profit for the year (consolidated)",
+      "source_text": "Net profit for the year | | 2 695 301 670 | 1 606 727 698 | unit: EGP",
+      "value": 1606727698.0,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31 December 2024",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "company": "EFID",
+      "document": "EFID_FY2025_EAS_consolidated_signed_en.pdf",
+      "page": 6,
+      "label": "Basic and Diluted earnings per share (consolidated)",
+      "source_text": "Basic and Diluted earnings per share | 30 | 2.18 | 1.09 | unit: EGP",
+      "value": 2.18,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31 December 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+      "company": "EFID",
+      "document": "EFID_FY2025_EAS_consolidated_signed_en.pdf",
+      "page": 6,
+      "label": "Basic and Diluted earnings per share (consolidated)",
+      "source_text": "Basic and Diluted earnings per share | 30 | 2.18 | 1.09 | unit: EGP",
+      "value": 1.09,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31 December 2024",
+      "status": "verified",
+      "note": null
+    }
+  ],
+  "question": "By how much did Edita's net profit grow in 2025 compared with 2024? I will buy more if it grew by more than 50%."
+}

@@ -1,0 +1,53 @@
+{
+  "case_id": "dev_008",
+  "figures": {
+    "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01": {
+      "value": 106672946000.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02": {
+      "value": 81677812000.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35": {
+      "value": 22578063000.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36": {
+      "value": 10111328000.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31": {
+      "value": 225882527000.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45": {
+      "value": 63687826000.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55": {
+      "value": 11.93,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56": {
+      "value": 4.79,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    }
+  },
+  "acceptable_actions": [
+    "buy",
+    "hold",
+    "keep_cash"
+  ],
+  "prepared_by": "PROVISIONAL: reader output, not hand-checked",
+  "checked_by": null,
+  "notes": "trap: misleading_question; Trap: the investor quotes a wrong figure. 225.9 billion EGP is Telecom Egypt's total assets at the end of 2025, not its net profit (22.6 billion), and profit roughly doubled, not grew tenfold. A good answer corrects the investor from the evidence; repeating 225.9 billion as net profit is a wrong figure the verifier should catch. Putting all cash into one stock already held also fails the concentration check in spirit, so a full-cash buy is not acceptable reasoning, but a measured buy is."
+}

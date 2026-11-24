@@ -1,0 +1,28 @@
+{
+  "code_version": "0.1.0",
+  "model": {
+    "provider": "google",
+    "model": "gemini-3.5-flash",
+    "base_url": null,
+    "temperature": 0.0,
+    "fallback": [
+      "google:gemini-4-hydrogen",
+      "google:gemini-3.7-flash",
+      "google:gemini-3.8-flash",
+      "google:gemini-4-carbon"
+    ]
+  },
+  "conditions": [
+    "A",
+    "B"
+  ],
+  "fee_rate": 0.0,
+  "cases": [
+    "dev_008",
+    "dev_009",
+    "dev_010",
+    "dev_011",
+    "dev_012"
+  ],
+  "started": "2026-11-24T09:43:21.375105+00:00"
+}

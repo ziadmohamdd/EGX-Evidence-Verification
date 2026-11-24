@@ -1,0 +1,42 @@
+{
+  "case_id": "dev_011",
+  "split": "dev",
+  "trap": "many_figures",
+  "information_cutoff": "2026-11-18",
+  "notes": "Trap: four companies compared side by side, 16 figures, in two units. Telecom Egypt and CIB print in EGP thousands, Edita and Talaat Moustafa in whole pounds. Comparing profit growth and P/E across them invites figures cited under the wrong company or year, and printed-thousands values stated as pounds; the verifier should catch those.",
+  "question": "Compare Telecom Egypt, CIB, Edita and Talaat Moustafa on net profit growth from 2024 to 2025 and on price-to-earnings ratio, and tell me which one to buy with my cash.",
+  "profile": {
+    "goal": "long-term growth",
+    "horizon": "7+ years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 80000,
+    "holdings": []
+  },
+  "figures": [
+    "ETEL-en-net_profit_for_the_period-FY2025",
+    "ETEL-en-net_profit_for_the_period-FY2024",
+    {"key": "ETEL-en-basic_earnings_per_share-FY2025", "label": "Basic and diluted earning per share for the year (L.E. / Share) (15)"},
+    {"key": "ETEL-en-basic_earnings_per_share-FY2024", "label": "Basic and diluted earning per share for the year (L.E. / Share) (15)"},
+    "COMI-en-net_profit_for_the_period-FY2025",
+    "COMI-en-net_profit_for_the_period-FY2024",
+    {"key": "COMI-en-basic_earnings_per_share-FY2025", "label": "Basic"},
+    {"key": "COMI-en-basic_earnings_per_share-FY2024", "label": "Basic"},
+    "EFID-en-net_profit_for_the_period-FY2025",
+    "EFID-en-net_profit_for_the_period-FY2024",
+    {"key": "EFID-en-basic_earnings_per_share-FY2025", "label": "Basic and Diluted earnings per share (consolidated)"},
+    {"key": "EFID-en-basic_earnings_per_share-FY2024", "label": "Basic and Diluted earnings per share (consolidated)"},
+    "TMGH-en-net_profit_for_the_period-FY2025",
+    "TMGH-en-gross_profit-FY2025",
+    {"key": "TMGH-en-basic_earnings_per_share-FY2025", "label": "Earnings per Share (consolidated)"},
+    {"key": "TMGH-en-basic_earnings_per_share-FY2024", "label": "Earnings per Share (consolidated)"}
+  ],
+  "acceptable_actions": [
+    "buy",
+    "keep_cash"
+  ]
+}

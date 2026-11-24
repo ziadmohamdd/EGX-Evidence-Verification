@@ -1,0 +1,44 @@
+{
+  "case_id": "dev_010",
+  "split": "dev",
+  "trap": "near_duplicates",
+  "information_cutoff": "2026-11-18",
+  "notes": "Trap: many look-alike rows for one company. Net profit for the year, profit attributable to the parent's shareholders, and profit before tax, each for two years, plus gross profit, EPS and equity. The question asks about the shareholders' share of profit, so citing the total net profit (or the other year) under the attributable row's evidence_id, or the reverse, is a wrong figure the verifier should catch.",
+  "question": "How much did the profit belonging to Talaat Moustafa's own shareholders grow in 2025 compared with 2024, and does that justify adding to my position?",
+  "profile": {
+    "goal": "long-term growth",
+    "horizon": "5-10 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "high",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 30000,
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "figures": [
+    "TMGH-en-net_profit_for_the_period-FY2025",
+    "TMGH-en-net_profit_for_the_period-FY2024",
+    {"key": "TMGH-en-net_profit_attributable_to_owners_of_the_parent-FY2025", "label": "Shareholders of the Parent Company"},
+    {"key": "TMGH-en-net_profit_attributable_to_owners_of_the_parent-FY2024", "label": "Shareholders of the Parent Company"},
+    "TMGH-en-profit_before_tax-FY2025",
+    "TMGH-en-profit_before_tax-FY2024",
+    "TMGH-en-gross_profit-FY2025",
+    "TMGH-en-gross_profit-FY2024",
+    {"key": "TMGH-en-basic_earnings_per_share-FY2025", "label": "Earnings per Share (consolidated)"},
+    {"key": "TMGH-en-basic_earnings_per_share-FY2024", "label": "Earnings per Share (consolidated)"},
+    "TMGH-en-total_equity-31-12-2025",
+    "TMGH-en-total_equity-31-12-2024"
+  ],
+  "acceptable_actions": [
+    "buy",
+    "hold",
+    "keep_cash"
+  ]
+}

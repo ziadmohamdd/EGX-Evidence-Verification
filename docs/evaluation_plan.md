@@ -87,6 +87,12 @@ All are reported per condition. Most are already in `egx_guide.score`.
 | Unreadable digit | A figure the reference marks unusable |
 | Arabic-only source | Evidence only from the Arabic summary with Arabic-Indic digits |
 | Per-share | Earnings per share on a "thousands" page |
+| Misleading question | The investor quotes a wrong figure (e.g. Telecom Egypt's total assets given as its net profit) |
+| Annualise | The investor asks for a full-year estimate from a 9-month figure |
+| Near duplicates | Many look-alike rows: total vs shareholders' profit, profit before tax, two years each |
+| Many figures | Four companies, two units (thousands vs whole pounds), compared side by side |
+
+The last four were added after the first development run (24 November 2026). In that run the agents copied every figure correctly, so the verifier never had anything to catch. These traps push the agents toward the misattributed or derived numbers the verifier is meant to detect.
 
 - **Investor profiles** vary goal, horizon, liquidity needs and loss tolerance. Some portfolios hold shares, so sell decisions can be tested, including tempting oversells.
 - **Prices:** EGX closing prices on the information cutoff date, entered by hand from egx.com.eg. Each price's source and date is recorded.

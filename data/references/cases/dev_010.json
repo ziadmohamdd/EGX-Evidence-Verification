@@ -1,0 +1,73 @@
+{
+  "case_id": "dev_010",
+  "figures": {
+    "TMGH-TMGH_FY2025_consolidated_en-p7-55": {
+      "value": 18201981482.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "TMGH-TMGH_FY2025_consolidated_en-p7-56": {
+      "value": 12769517325.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "TMGH-TMGH_FY2025_consolidated_en-p7-57": {
+      "value": 14383890306.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "TMGH-TMGH_FY2025_consolidated_en-p7-58": {
+      "value": 9025066065.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "TMGH-TMGH_FY2025_consolidated_en-p7-49": {
+      "value": 23653557143.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "TMGH-TMGH_FY2025_consolidated_en-p7-50": {
+      "value": 16490175692.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "TMGH-TMGH_FY2025_consolidated_en-p7-19": {
+      "value": 20855400384.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "TMGH-TMGH_FY2025_consolidated_en-p7-20": {
+      "value": 14002196445.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "TMGH-TMGH_FY2025_consolidated_en-p7-61": {
+      "value": 6.98,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "TMGH-TMGH_FY2025_consolidated_en-p7-62": {
+      "value": 4.38,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "TMGH-TMGH_FY2025_consolidated_en-p5-67": {
+      "value": 157708140765.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    },
+    "TMGH-TMGH_FY2025_consolidated_en-p5-68": {
+      "value": 129879813693.0,
+      "usable": true,
+      "note": "PROVISIONAL: reader output, not hand-checked"
+    }
+  },
+  "acceptable_actions": [
+    "buy",
+    "hold",
+    "keep_cash"
+  ],
+  "prepared_by": "PROVISIONAL: reader output, not hand-checked",
+  "checked_by": null,
+  "notes": "trap: near_duplicates; Trap: many look-alike rows for one company. Net profit for the year, profit attributable to the parent's shareholders, and profit before tax, each for two years, plus gross profit, EPS and equity. The question asks about the shareholders' share of profit, so citing the total net profit (or the other year) under the attributable row's evidence_id, or the reverse, is a wrong figure the verifier should catch."
+}

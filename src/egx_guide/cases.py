@@ -39,7 +39,11 @@ from .models import Action, Case, EvidenceItem, EvidenceStatus, InvestorProfile,
 from .references import RefFigure, _pages, load_evidence, match_items, template_rows
 from .score import ReferenceAnswer, ReferenceFigure
 
-Trap = Literal["period", "scale", "unreadable", "arabic_only", "per_share"]
+# The last four push the agents toward citing a figure with the wrong value, which is what
+# the verifier exists to catch: a wrong number in the question, a request to annualise a
+# 9-month figure, many look-alike rows, and many figures across companies in mixed units.
+Trap = Literal["period", "scale", "unreadable", "arabic_only", "per_share",
+               "misleading_question", "annualise", "near_duplicates", "many_figures"]
 
 
 class FigureRef(BaseModel):

@@ -1,0 +1,100 @@
+{
+  "case_id": "dev_010",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 363,
+    "explanation": "Net profit attributable to shareholders of the parent company increased from 9,025,066,065 LE in 2024 to 14,383,890,306 LE in 2025, representing a growth of 5,358,824,241 LE or approximately 59.38%. This strong bottom-line expansion is accompanied by an increase in earnings per share from 4.38 LE in 2024 to 6.98 LE in 2025. At the prevailing price of 82.50 EGP per share, the stock trades at roughly 11.8 times 2025 earnings. Given your 5-10 year investment horizon, high risk tolerance, and separate emergency fund, this earnings performance justifies adding to your position. With 30,000.00 EGP in available cash, you can purchase 363 shares for a total cost of 29,947.50 EGP, leaving 52.50 EGP in cash.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Net profit attributable to shareholders of the parent company increased from 9,025,066,065 LE in 2024 to 14,383,890,306 LE in 2025, representing a growth of 5,358,824,241 LE or approximately 59.38%."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Net profit attributable to shareholders of the parent company increased from 9,025,066,065 LE in 2024 to 14,383,890,306 LE in 2025, representing a growth of 5,358,824,241 LE or approximately 59.38%."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "This strong bottom-line expansion is accompanied by an increase in earnings per share from 4.38 LE in 2024 to 6.98 LE in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "This strong bottom-line expansion is accompanied by an increase in earnings per share from 4.38 LE in 2024 to 6.98 LE in 2025."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Analysis is strictly limited to the provided financial figures and cutoff date; it does not account for macroeconomic factors, industry trends, or subsequent quarterly developments.",
+      "Purchasing 363 additional shares concentrates your portfolio heavily into a single issuer (TMGH), increasing specific company risk."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 363,
+    "explanation": "Net profit attributable to shareholders of the parent company increased from 9,025,066,065 LE in 2024 to 14,383,890,306 LE in 2025, representing a growth of 5,358,824,241 LE or approximately 59.38%. This strong bottom-line expansion is accompanied by an increase in earnings per share from 4.38 LE in 2024 to 6.98 LE in 2025. At the prevailing price of 82.50 EGP per share, the stock trades at roughly 11.8 times 2025 earnings. Given your 5-10 year investment horizon, high risk tolerance, and separate emergency fund, this earnings performance justifies adding to your position. With 30,000.00 EGP in available cash, you can purchase 363 shares for a total cost of 29,947.50 EGP, leaving 52.50 EGP in cash.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Net profit attributable to shareholders of the parent company increased from 9,025,066,065 LE in 2024 to 14,383,890,306 LE in 2025, representing a growth of 5,358,824,241 LE or approximately 59.38%."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Net profit attributable to shareholders of the parent company increased from 9,025,066,065 LE in 2024 to 14,383,890,306 LE in 2025, representing a growth of 5,358,824,241 LE or approximately 59.38%."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "This strong bottom-line expansion is accompanied by an increase in earnings per share from 4.38 LE in 2024 to 6.98 LE in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "This strong bottom-line expansion is accompanied by an increase in earnings per share from 4.38 LE in 2024 to 6.98 LE in 2025."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Analysis is strictly limited to the provided financial figures and cutoff date; it does not account for macroeconomic factors, industry trends, or subsequent quarterly developments.",
+      "Purchasing 363 additional shares concentrates your portfolio heavily into a single issuer (TMGH), increasing specific company risk."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 52.5,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 863
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 289.841,
+      "input_tokens": 1908,
+      "output_tokens": 2324,
+      "error": null,
+      "model": "google:gemini-3.7-flash",
+      "fallbacks": [
+        "google:gemini-3.5-flash: GoogleRateLimitError",
+        "google:gemini-4-hydrogen: GoogleAPIError"
+      ]
+    }
+  ],
+  "seconds": 289.847
+}
