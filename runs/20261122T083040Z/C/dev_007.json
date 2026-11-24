@@ -1,8 +1,133 @@
 {
   "case_id": "dev_007",
   "condition": "C",
-  "status": "error",
-  "error": "GoogleAPIError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")",
-  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 4328, in _generate\n    response: GenerateContentResponse = self.client.models.generate_content(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\models.py\", line 6204, in generate_content\n    response = self._generate_content_with_continuation(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\models.py\", line 6045, in _generate_content_with_continuation\n    response = self._generate_content(\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\models.py\", line 4573, in _generate_content\n    response = self._api_client.request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\_api_client.py\", line 2374, in request\n    response = self._request(http_request, http_options, stream=False)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\_api_client.py\", line 2148, in _request\n    return retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 470, in __call__\n    do = self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 371, in iter\n    result = action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 413, in exc_check\n    raise retry_exc.reraise()\n          ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 184, in reraise\n    raise self.last_attempt.result()\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 473, in __call__\n    result = fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\_api_client.py\", line 2127, in _request_once\n    errors.APIError.raise_for_response(response)\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\errors.py\", line 187, in raise_for_response\n    cls.raise_error(response.status_code, response_json, response)\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\errors.py\", line 218, in raise_error\n    raise ServerError(status_code, response_json, response)\ngoogle.genai.errors.ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\runner.py\", line 64, in run\n    state, caller = run_case(case, CONDITIONS[name], llm, fee_rate)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\pipeline.py\", line 93, in run_case\n    state = build_graph(condition, caller, fee_rate).invoke({\"case\": case})\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\main.py\", line 4025, in invoke\n    for chunk in self.stream(\n                 ^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\main.py\", line 3084, in stream\n    for _ in runner.tick(\n             ^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\_runner.py\", line 210, in tick\n    run_with_retry(\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\_retry.py\", line 637, in run_with_retry\n    return task.proc.invoke(task.input, config)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\_internal\\_runnable.py\", line 794, in invoke\n    input = context.run(step.invoke, input, config, **kwargs)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\_internal\\_runnable.py\", line 479, in invoke\n    ret = self.func(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\pipeline.py\", line 38, in analysts\n    return {\"reports\": agents.multi_agent_reports(caller, s[\"case\"])}\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\agents.py\", line 100, in multi_agent_reports\n    \"financial\": caller.text(\"financial_analyst\", [SystemMessage(FINANCIAL_SYSTEM), HumanMessage(ctx)]),\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 126, in text\n    msg = self.llm.invoke(messages)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 77, in invoke\n    return self._run(lambda m: m.invoke(messages))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 74, in _run\n    raise error\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 66, in _run\n    out = call(model)\n          ^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 77, in <lambda>\n    return self._run(lambda m: m.invoke(messages))\n                               ^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\vendor\\TradingAgents\\tradingagents\\llm_clients\\google_client.py\", line 31, in invoke\n    return normalize_content(super().invoke(input, config, **kwargs))\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 3715, in invoke\n    return super().invoke(input, config, stop=stop, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 529, in invoke\n    self.generate_prompt(\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 1920, in generate_prompt\n    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 1727, in generate\n    self._generate_with_cache(\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 2065, in _generate_with_cache\n    result = self._generate(\n             ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 4334, in _generate\n    _handle_server_error(e)\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 359, in _handle_server_error\n    raise GoogleAPIError(\nlangchain_google_genai.chat_models.GoogleAPIError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\nDuring task with name 'analysts' and id '62cc61cd-050e-e0ab-de4e-176509e3331d'\n",
-  "seconds": 64.666
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor has a short 3-month horizon with a critical liquidity need of 10,000.00 EGP for a family wedding, combined with low willingness and capacity to accept financial losses. To protect capital from potential short-term equity price volatility, selling all 200 shares of EFID at 20.40 EGP per share is recommended, generating 4,080.00 EGP in proceeds. Added to the existing cash of 1,000.00 EGP, total cash reaches 5,080.00 EGP. Operationally, EFID showed strong financial growth in FY2025, with revenue of 20915072432 EGP compared to 16146545699 EGP in FY2024, net profit rising to 2695301670 EGP from 1606727698 EGP in FY2024, and basic/diluted EPS increasing to 2.18 EGP from 1.09 EGP in FY2024. Despite these strong fundamental results, equity market risks over a short 3-month period conflict with the investor's immediate liquidity target and low risk tolerance. Even after liquidating the entire stock position, total portfolio capital (5,080.00 EGP) falls short of the required 10,000.00 EGP by 4,920.00 EGP, which must be covered via external sources.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "Consolidated revenue grew to 20915072432 EGP in FY2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "Consolidated revenue was 16146545699 EGP in FY2024."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID demonstrated strong performance with consolidated net profit for FY2025 reaching 2695301670 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID net profit for FY2024 was 1606727698 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "Basic and diluted earnings per share reached 2.18 EGP in FY2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "Basic and diluted earnings per share were 1.09 EGP in FY2024."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Total portfolio value after selling all EFID shares yields 5,080.00 EGP, leaving a 4,920.00 EGP deficit against the 10,000.00 EGP requirement.",
+      "Balance sheet metrics, debt leverage, and statement of cash flows were not available in the evidence set."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor has a short 3-month horizon with a critical liquidity need of 10,000.00 EGP for a family wedding, combined with low willingness and capacity to accept financial losses. To protect capital from potential short-term equity price volatility, selling all 200 shares of EFID at 20.40 EGP per share is recommended, generating 4,080.00 EGP in proceeds. Added to the existing cash of 1,000.00 EGP, total cash reaches 5,080.00 EGP. Operationally, EFID showed strong financial growth in FY2025, with revenue of 20915072432 EGP compared to 16146545699 EGP in FY2024, net profit rising to 2695301670 EGP from 1606727698 EGP in FY2024, and basic/diluted EPS increasing to 2.18 EGP from 1.09 EGP in FY2024. Despite these strong fundamental results, equity market risks over a short 3-month period conflict with the investor's immediate liquidity target and low risk tolerance. Even after liquidating the entire stock position, total portfolio capital (5,080.00 EGP) falls short of the required 10,000.00 EGP by 4,920.00 EGP, which must be covered via external sources.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "Consolidated revenue grew to 20915072432 EGP in FY2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "Consolidated revenue was 16146545699 EGP in FY2024."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID demonstrated strong performance with consolidated net profit for FY2025 reaching 2695301670 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID net profit for FY2024 was 1606727698 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "Basic and diluted earnings per share reached 2.18 EGP in FY2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "Basic and diluted earnings per share were 1.09 EGP in FY2024."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Total portfolio value after selling all EFID shares yields 5,080.00 EGP, leaving a 4,920.00 EGP deficit against the 10,000.00 EGP requirement.",
+      "Balance sheet metrics, debt leverage, and statement of cash flows were not available in the evidence set."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 5080.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "### 1. Profitability & Financial Performance\n* **Revenue:** Consolidated revenue reached 2.09151e+10 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01] in FY2025, compared to 1.61465e+10 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02] in FY2024.\n* **Net Profit:** Consolidated net profit for FY2025 rose to 2.6953e+09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] from 1.60673e+09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31] in FY2024.\n* **Earnings Per Share (EPS):** Basic and diluted EPS doubled to 2.18 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] in FY2025 from 1.09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39] in FY2024.\n* **Profitability Margins:**\n  * **FY2024 Net Profit Margin:** ~9.95% (based on 1.60673e+09 EGP net profit [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31] divided by 1.61465e+10 EGP revenue [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02]).\n  * **FY2025 Net Profit Margin:** ~12.89% (based on 2.6953e+09 EGP net profit [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] divided by 2.09151e+10 EGP revenue [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]).\n\n### 2. Growth Analysis\n* **Revenue Growth:** Annual consolidated revenue grew by approximately 29.53% year-over-year (from 1.61465e+10 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02] to 2.09151e+10 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]).\n* **Net Profit Growth:** Net profit grew by approximately 67.75% year-over-year (from 1.60673e+09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31] to 2.6953e+09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]).\n\n### 3. Balance Sheet & Cash Flow Availability\n* **Balance Sheet Data:** No balance sheet items (e.g., total assets, liabilities, working capital, or corporate cash reserves) were provided in the evidence set.\n* **Cash Flow Data:** Operating, investing, and financing cash flow details are absent from the provided evidence.\n\n### 4. Risks & Data Quality\n* **Data Quality:** All reported income statement figures are verified. No figures in the provided evidence are marked AMBIGUOUS.\n* **Information Limitations:** The provided evidence lacks balance sheet strength, leverage metrics, dividend policies, or recent short-term market volatility data for EFID.\n\n### 5. Portfolio & Context Fact Summary\n* **Current Portfolio Value:**\n  * Cash: 1,000.00 EGP\n  * Equity Holdings: 200 shares of EFID at 20.40 EGP per share = 4,080.00 EGP\n  * Total Combined Portfolio Value: 5,080.00 EGP\n* **Required Cash Need:** 10,000.00 EGP within 3 months.",
+    "investor": "### Investor Suitability Assessment\n\n#### 1. Investment Horizon\n* **Horizon:** Short-term (3 months). \n* **Implication:** A 3-month timeline leaves minimal flexibility to recover from short-term market downturns or price volatility.\n\n#### 2. Liquidity Needs\n* **Requirement:** 10,000 EGP in cash within 3 months for a planned expenditure (family wedding).\n* **Target vs. Assets:** The total value of the investor’s current portfolio (cash + securities) is **5,080.00 EGP**, which falls significantly short of the 10,000 EGP cash goal.\n\n#### 3. Risk Profile (Willingness & Capacity for Losses)\n* **Willingness to Accept Losses:** Low. The investor prefers asset preservation to support an upcoming known expense.\n* **Loss Capacity:** Low. Because the total portfolio value is already less than the required liquid amount, any capital decline directly increases the funding deficit.\n\n#### 4. Current Portfolio Breakdown & Concentration\n* **Cash Position:** 1,000.00 EGP (19.7% of total portfolio value).\n* **Equity Position:** 200 shares of EFID @ 20.40 EGP/share = 4,080.00 EGP (80.3% of total portfolio value).\n* **Concentration Risk:** High single-stock concentration. 100% of the invested portion of the portfolio is held in a single equity asset (EFID).\n\n#### 5. Portfolio Allowances & Cash Availability\n* **Free Cash:** 1,000.00 EGP is currently uncommitted and available in cash.\n* **Liquidatable Assets:** Up to 200 shares of EFID can be sold at market prices.\n* **Maximum Achievable Cash from Portfolio:** Liquidating the entire equity position at the current market price of 20.40 EGP per share yields 4,080.00 EGP (excluding fees/taxes). Combined with the existing 1,000.00 EGP in cash, the total available capital in the portfolio is **5,080.00 EGP**.\n* **Shortfall:** The portfolio under current market valuations can provide at most 5,080.00 EGP, leaving a minimum funding gap of **4,920.00 EGP** relative to the 10,000 EGP target."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 45.251,
+      "input_tokens": 1042,
+      "output_tokens": 2754,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 42.415,
+      "input_tokens": 1034,
+      "output_tokens": 1302,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 31.427,
+      "input_tokens": 2803,
+      "output_tokens": 3473,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 119.104
 }

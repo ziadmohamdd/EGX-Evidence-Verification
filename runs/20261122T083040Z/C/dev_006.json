@@ -1,8 +1,106 @@
 {
   "case_id": "dev_006",
   "condition": "C",
-  "status": "error",
-  "error": "GoogleAPIError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")",
-  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 4328, in _generate\n    response: GenerateContentResponse = self.client.models.generate_content(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\models.py\", line 6204, in generate_content\n    response = self._generate_content_with_continuation(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\models.py\", line 6045, in _generate_content_with_continuation\n    response = self._generate_content(\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\models.py\", line 4573, in _generate_content\n    response = self._api_client.request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\_api_client.py\", line 2374, in request\n    response = self._request(http_request, http_options, stream=False)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\_api_client.py\", line 2148, in _request\n    return retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 470, in __call__\n    do = self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 371, in iter\n    result = action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 413, in exc_check\n    raise retry_exc.reraise()\n          ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 184, in reraise\n    raise self.last_attempt.result()\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 473, in __call__\n    result = fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\_api_client.py\", line 2127, in _request_once\n    errors.APIError.raise_for_response(response)\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\errors.py\", line 187, in raise_for_response\n    cls.raise_error(response.status_code, response_json, response)\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\errors.py\", line 218, in raise_error\n    raise ServerError(status_code, response_json, response)\ngoogle.genai.errors.ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\runner.py\", line 64, in run\n    state, caller = run_case(case, CONDITIONS[name], llm, fee_rate)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\pipeline.py\", line 93, in run_case\n    state = build_graph(condition, caller, fee_rate).invoke({\"case\": case})\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\main.py\", line 4025, in invoke\n    for chunk in self.stream(\n                 ^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\main.py\", line 3084, in stream\n    for _ in runner.tick(\n             ^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\_runner.py\", line 210, in tick\n    run_with_retry(\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\_retry.py\", line 637, in run_with_retry\n    return task.proc.invoke(task.input, config)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\_internal\\_runnable.py\", line 794, in invoke\n    input = context.run(step.invoke, input, config, **kwargs)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\_internal\\_runnable.py\", line 479, in invoke\n    ret = self.func(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\pipeline.py\", line 38, in analysts\n    return {\"reports\": agents.multi_agent_reports(caller, s[\"case\"])}\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\agents.py\", line 100, in multi_agent_reports\n    \"financial\": caller.text(\"financial_analyst\", [SystemMessage(FINANCIAL_SYSTEM), HumanMessage(ctx)]),\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 126, in text\n    msg = self.llm.invoke(messages)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 77, in invoke\n    return self._run(lambda m: m.invoke(messages))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 74, in _run\n    raise error\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 66, in _run\n    out = call(model)\n          ^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 77, in <lambda>\n    return self._run(lambda m: m.invoke(messages))\n                               ^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\vendor\\TradingAgents\\tradingagents\\llm_clients\\google_client.py\", line 31, in invoke\n    return normalize_content(super().invoke(input, config, **kwargs))\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 3715, in invoke\n    return super().invoke(input, config, stop=stop, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 529, in invoke\n    self.generate_prompt(\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 1920, in generate_prompt\n    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 1727, in generate\n    self._generate_with_cache(\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 2065, in _generate_with_cache\n    result = self._generate(\n             ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 4334, in _generate\n    _handle_server_error(e)\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 359, in _handle_server_error\n    raise GoogleAPIError(\nlangchain_google_genai.chat_models.GoogleAPIError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\nDuring task with name 'analysts' and id '061dee33-9b36-ba19-792d-7519c0e28834'\n",
-  "seconds": 188.576
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "بناءً على الأدلة والبيانات المالية المتاحة، تبين أن الأدلة غير كافية لاتخاذ قرار استثماري مسؤول (سواء بالشراء، البيع، أو الاحتفاظ). على الرغم من ثبوت تحقيق الشركة إيرادات مجمعة لعام 2025 بلغت 62495144197 جنيه مصري ونسب نصيب السهم في الأرباح لعام 2025 قدره 6.98 جنيه مصري، إلا أن هناك نقصاً جوهرياً وغموضاً في البيانات الأساسية: 1) إيرادات عام 2024 غير محددة وغامضة (AMBIGUOUS)، مما يمنع احتساب معدل نمو الإيرادات السنوي. 2) صافي ربح عام 2025 بعد الضرائب غامض وغير محدد (AMBIGUOUS) بسبب عدم وضوح الفواصل الرقمية، مما يمنع حساب هامش صافي الربح والربحية الكلية للشركة. 3) غياب تام لبيانات الميزانية العمومية (إجمالي الأصول، الديون والالتزامات، وحقوق الملكية)، مما يمنع تقييم الملاءة المالية والرافعة المالية للشركة. وبالنظر إلى هدف المستثمر (تنمية مدخرات لشراء شقة خلال 3-5 سنوات) وقدرته المتوسطة على تحمل المخاطر، فإن اتخاذ قرار استثماري بدون ميزانية عمومية واضحة وأرقام مقارنة موثوقة ينطوي على مخاطرة غير محسوبة. نوصي بالانتظار حتى توفر القوائم المالية الكاملة والمعدلة.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+        "stated_value": 62495144197.0,
+        "statement": "حققت الشركة إيرادات مجمعة لعام 2025 بلغت 62495144197 جنيه مصري."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "بلغ نصيب السهم المجمع في الأرباح لعام 2025 قدره 6.98 جنيه مصري."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "غموض رقم إيرادات عام 2024 (AMBIGUOUS) يمنع حساب نسبة نمو الإيرادات.",
+      "غموض صافي ربح عام 2025 بعد الضرائب (AMBIGUOUS) يمنع قياس هامش الربحية.",
+      "غياب بيانات الميزانية العمومية والهيكل المالي (الديون والأصول وحقوق الملكية) بشكل كامل."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "بناءً على الأدلة والبيانات المالية المتاحة، تبين أن الأدلة غير كافية لاتخاذ قرار استثماري مسؤول (سواء بالشراء، البيع، أو الاحتفاظ). على الرغم من ثبوت تحقيق الشركة إيرادات مجمعة لعام 2025 بلغت 62495144197 جنيه مصري ونسب نصيب السهم في الأرباح لعام 2025 قدره 6.98 جنيه مصري، إلا أن هناك نقصاً جوهرياً وغموضاً في البيانات الأساسية: 1) إيرادات عام 2024 غير محددة وغامضة (AMBIGUOUS)، مما يمنع احتساب معدل نمو الإيرادات السنوي. 2) صافي ربح عام 2025 بعد الضرائب غامض وغير محدد (AMBIGUOUS) بسبب عدم وضوح الفواصل الرقمية، مما يمنع حساب هامش صافي الربح والربحية الكلية للشركة. 3) غياب تام لبيانات الميزانية العمومية (إجمالي الأصول، الديون والالتزامات، وحقوق الملكية)، مما يمنع تقييم الملاءة المالية والرافعة المالية للشركة. وبالنظر إلى هدف المستثمر (تنمية مدخرات لشراء شقة خلال 3-5 سنوات) وقدرته المتوسطة على تحمل المخاطر، فإن اتخاذ قرار استثماري بدون ميزانية عمومية واضحة وأرقام مقارنة موثوقة ينطوي على مخاطرة غير محسوبة. نوصي بالانتظار حتى توفر القوائم المالية الكاملة والمعدلة.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+        "stated_value": 62495144197.0,
+        "statement": "حققت الشركة إيرادات مجمعة لعام 2025 بلغت 62495144197 جنيه مصري."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "بلغ نصيب السهم المجمع في الأرباح لعام 2025 قدره 6.98 جنيه مصري."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "غموض رقم إيرادات عام 2024 (AMBIGUOUS) يمنع حساب نسبة نمو الإيرادات.",
+      "غموض صافي ربح عام 2025 بعد الضرائب (AMBIGUOUS) يمنع قياس هامش الربحية.",
+      "غياب بيانات الميزانية العمومية والهيكل المالي (الديون والأصول وحقوق الملكية) بشكل كامل."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 60000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "إليك التحليل المالي لشركة طلعت مصطفى القابضة (TMGH) بناءً على البيانات والأدلة المتاحة فقط، ودون تقديم أي توصية استثمارية مباشرة (حيث يخضع ذلك لقرار وكيل اتخاذ القرار).\n\n---\n\n### 1. وضع المحفظة الحالية للمستثمر\n* **النقدية:** 60,000.00 جنيه مصري.\n* **الأسهم المملوكة:** 200 سهم في TMGH.\n* **السعر الحالي للسهم:** 82.50 جنيه مصري.\n* **القيمة السوقية للأسهم:** 16,500.00 جنيه مصري (200 سهم × 82.50 جنيه).\n* **إجمالي المحفظة:** 76,500.00 جنيه مصري.\n\n---\n\n### 2. الربحية والنمو (Profitability & Growth)\n* **إيرادات سنة 2025 (المجمعة):** بلغت الإيرادات المجمعة للشركة عن السنة المنتهية في 31 ديسمبر 2025 قيمة 62,495,144,197 (6.24951e+10) جنيه مصري [TMGH-TMGH_FY2025_results_summary_ar-p1-01].\n* **ربحية السهم (EPS) لسنة 2025:** بلغت 6.98 جنيه مصري للسهم [TMGH-TMGH_FY2025_results_summary_ar-p1-11].\n* **معدل نمو الإيرادات:** غير قابل للحساب؛ نظراً لأن رقم إيرادات عام 2024 يعتبر غير محدد/غامض (AMBIGUOUS) [TMGH-TMGH_FY2025_results_summary_ar-p1-02].\n* **صافي أرباح عام 2025:** غير محدد/غامض (AMBIGUOUS) [TMGH-TMGH_FY2025_results_summary_ar-p1-09] بسبب عدم وضوح الفواصل والأرقام في النص المكتنز، وبالتالي تم استبعاده من أي حسابات مالية أو مقارنات هامش الربح.\n\n---\n\n### 3. الميزانية العمومية والمركز المالي (Balance Sheet)\n* **البيانات المتاحة:** لا تتوفر أي بيانات أو أدلة ضمن المرفقات تتعلق بالميزانية العمومية (مثل إجمالي الأصول، التزامات الشركة، الديون، أو حقوق الملكية).\n\n---\n\n### 4. جودة البيانات والمخاطر (Data Quality & Risks)\n\n#### أ. جودة البيانات (Data Quality Issues):\n1. **غموض إيرادات 2024:** تم وضع علامة (AMBIGUOUS) على إيرادات عام 2024 [TMGH-TMGH_FY2025_results_summary_ar-p1-02] لعدم وجود الفواصل الألفية بوضوح وتعارض استخراج القراءة الضوئية (OCR).\n2. **غموض صافي ربح 2025:** تم وضع علامة (AMBIGUOUS) على صافي ربح العام بعد الضرائب لسنة 2025 [TMGH-TMGH_FY2025_results_summary_ar-p1-09] لعدم وضوح الفواصل الرقمية.\n\n#### ب. مخاطر القيود التحليلية (Analytical Risks):\n* عدم القدرة على تقييم معدلات النمو السنوية للإيرادات أو صافي الأرباح بشكل دقيق بسبب الأرقام الغامضة.\n* غياب بيانات المركز المالي والميزانية العمومية يمنع التقييم الشامل لمستويات المديونية، السيولة، وكفاءة رأس المال للشركة.\n\n---\n\n### 5. ملخص التحليل\nتمتلك الشركة إيرادات مجمعة موثقة لعام 2025 بقيمة 62,495,144,197 جنيه مصري [TMGH-TMGH_FY2025_results_summary_ar-p1-01] وربحية سهم مؤكدة تبلغ 6.98 جنيه مصري [TMGH-TMGH_FY2025_results_summary_ar-p1-11]. ومع ذلك، فإن قيود جودة البيانات المتعلقة بصافي الأرباح وإيرادات المقارنة لسنة 2024 تفرض عدم إمكانية احتساب معدلات النمو أو هامش الأرباح.\n\n*(ملاحظة: هذا التحليل مخصص لوكيل اتخاذ القرار لربطه بأهداف المستثمر ومدى تحمله للمخاطر دون تقديم توصية مباشرة بالبيع أو الشراء أو الاحتفاظ).*",
+    "investor": "Here is the investor-suitability assessment based on the provided investor profile and current portfolio position:\n\n---\n\n### 1. Investment Goal & Horizon\n* **Goal:** Capital growth to purchase an apartment.\n* **Time Horizon:** Medium-term (3 to 5 years).\n* **Suitability Assessment:** A 3–5 year horizon allows for moderate exposure to growth assets (such as equities or balanced funds) during the initial years. However, because real estate purchases require a fixed, lump-sum payout at a specific time, the investment strategy must transition toward capital preservation and higher liquidity as the target date approaches to protect accumulated capital from market downturns.\n\n---\n\n### 2. Liquidity Needs & Cash Capacity\n* **Emergency Fund:** The investor maintains a separate emergency fund, meaning the portfolio's assets do not need to cover unexpected living expenses.\n* **Commitment Capacity:** \n  * **Uncommitted Cash:** **60,000.00 EGP** is fully available to deploy toward the investment objective.\n  * Because short-term emergency liquidity is already covered externally, a substantial portion of this EGP 60,000 cash balance could reasonably be committed to investment vehicles matching the 3–5 year timeframe.\n\n---\n\n### 3. Risk Profile (Loss Willingness & Capacity)\n* **Risk Tolerance (Willingness):** Medium.\n* **Risk Capacity (Ability):** Medium.\n* **Suitability Assessment:** The investor can tolerate moderate short-to-medium-term market fluctuations, but cannot absorb significant or permanent loss of capital given the medium financial capacity and the tangible objective (apartment purchase). Portfolios with extreme volatility or high downside risk are unsuitable.\n\n---\n\n### 4. Current Portfolio Concentration & Allocation\n* **Current Value Breakdown:**\n  * **Cash:** 60,000.00 EGP (**78.43%** of total portfolio)\n  * **TMGH Holdings:** 200 shares @ 82.50 EGP = 16,500.00 EGP (**21.57%** of total portfolio)\n  * **Total Portfolio Value:** 76,500.00 EGP\n* **Concentration Profile:**\n  * **Overall Asset Class:** Highly conservative at present, dominated by cash (~78.4%).\n  * **Equity Single-Stock Risk:** 100% of the invested equity portion is concentrated in a single stock (TMGH). While equity represents only ~21.6% of overall portfolio value, single-stock exposure carries firm-specific risk that is not diversified across the asset class.\n\n---\n\n### 5. What the Portfolio Structurally Allows\n* **Available Free Cash:** EGP 60,000.00 is available for allocation without compromising emergency reserves.\n* **Liquidatable Assets:** 200 shares of TMGH (market value: EGP 16,500.00) are fully liquid and accessible if rebalancing or reallocation is desired."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 58.613,
+      "input_tokens": 811,
+      "output_tokens": 2513,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 91.343,
+      "input_tokens": 803,
+      "output_tokens": 1479,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 61.854,
+      "input_tokens": 2723,
+      "output_tokens": 3274,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 211.827
 }

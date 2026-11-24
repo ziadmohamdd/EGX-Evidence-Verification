@@ -1,8 +1,167 @@
 {
   "case_id": "dev_003",
   "condition": "D",
-  "status": "error",
-  "error": "GoogleAPIError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")",
-  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 4328, in _generate\n    response: GenerateContentResponse = self.client.models.generate_content(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\models.py\", line 6204, in generate_content\n    response = self._generate_content_with_continuation(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\models.py\", line 6045, in _generate_content_with_continuation\n    response = self._generate_content(\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\models.py\", line 4573, in _generate_content\n    response = self._api_client.request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\_api_client.py\", line 2374, in request\n    response = self._request(http_request, http_options, stream=False)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\_api_client.py\", line 2148, in _request\n    return retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 470, in __call__\n    do = self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 371, in iter\n    result = action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 413, in exc_check\n    raise retry_exc.reraise()\n          ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 184, in reraise\n    raise self.last_attempt.result()\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 473, in __call__\n    result = fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\_api_client.py\", line 2127, in _request_once\n    errors.APIError.raise_for_response(response)\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\errors.py\", line 187, in raise_for_response\n    cls.raise_error(response.status_code, response_json, response)\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\errors.py\", line 218, in raise_error\n    raise ServerError(status_code, response_json, response)\ngoogle.genai.errors.ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\runner.py\", line 64, in run\n    state, caller = run_case(case, CONDITIONS[name], llm, fee_rate)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\pipeline.py\", line 93, in run_case\n    state = build_graph(condition, caller, fee_rate).invoke({\"case\": case})\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\main.py\", line 4025, in invoke\n    for chunk in self.stream(\n                 ^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\main.py\", line 3084, in stream\n    for _ in runner.tick(\n             ^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\_runner.py\", line 210, in tick\n    run_with_retry(\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\_retry.py\", line 637, in run_with_retry\n    return task.proc.invoke(task.input, config)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\_internal\\_runnable.py\", line 794, in invoke\n    input = context.run(step.invoke, input, config, **kwargs)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\_internal\\_runnable.py\", line 479, in invoke\n    ret = self.func(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\pipeline.py\", line 42, in decide\n    rec = agents.multi_agent_decide(caller, s[\"case\"], s[\"reports\"])\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\agents.py\", line 106, in multi_agent_decide\n    return caller.structured(\"decision_agent\", [\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 135, in structured\n    out = self.llm.with_structured_output(schema, include_raw=True).invoke(messages)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 84, in invoke\n    return chat._run(lambda m: m.with_structured_output(schema, **kwargs).invoke(messages))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 74, in _run\n    raise error\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 66, in _run\n    out = call(model)\n          ^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 84, in <lambda>\n    return chat._run(lambda m: m.with_structured_output(schema, **kwargs).invoke(messages))\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\runnables\\base.py\", line 3473, in invoke\n    input_ = context.run(step.invoke, input_, config, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\runnables\\base.py\", line 4206, in invoke\n    key: future.result()\n         ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 456, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\runnables\\base.py\", line 4189, in _invoke_step\n    return context.run(\n           ^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\runnables\\base.py\", line 6001, in invoke\n    return self.bound.invoke(\n           ^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\vendor\\TradingAgents\\tradingagents\\llm_clients\\google_client.py\", line 31, in invoke\n    return normalize_content(super().invoke(input, config, **kwargs))\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 3715, in invoke\n    return super().invoke(input, config, stop=stop, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 529, in invoke\n    self.generate_prompt(\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 1920, in generate_prompt\n    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 1727, in generate\n    self._generate_with_cache(\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 2065, in _generate_with_cache\n    result = self._generate(\n             ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 4334, in _generate\n    _handle_server_error(e)\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 359, in _handle_server_error\n    raise GoogleAPIError(\nlangchain_google_genai.chat_models.GoogleAPIError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\nDuring task with name 'decide' and id 'abbe0ace-5f30-594a-a28e-f2c00ae29b33'\n",
-  "seconds": 315.323
+  "status": "ok",
+  "proposed": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's total portfolio value is 59,795.00 EGP, consisting of 15,000.00 EGP cash (25.09%), 1,500 EFID shares worth 30,600.00 EGP (51.17%), and 100 ETEL shares worth 14,195.00 EGP (23.74%). The investor requires 10% liquidity (~5,979.50 EGP) within 1 year, which is fully covered by the 15,000.00 EGP cash balance. Given the investor's low financial capacity to withstand losses and the portfolio's existing high concentration in equities (~74.91%), deploying additional cash into stocks is unsuitable. Both holdings show robust fundamental growth: EFID reported FY2025 consolidated revenue of 20915100000 EGP, EFID generated FY2025 consolidated net profit of 2695300000 EGP, EFID recorded total equity of 5724530000 EGP as of 31 December 2025, and EFID posted FY2025 basic and diluted EPS of 2.18 EGP. ETEL achieved FY2025 operating revenues of 106673000000 EGP, ETEL achieved FY2025 net profit of 22578100000 EGP, ETEL reported total equity of 63687800000 EGP at year-end 2025, and ETEL reported basic and diluted earnings per share of 11.93 EGP for FY2025. Retaining cash protects capital while satisfying short-term liquidity needs.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915100000.0,
+        "statement": "EFID reported FY2025 consolidated revenue of 20915100000 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695300000.0,
+        "statement": "EFID generated FY2025 consolidated net profit of 2695300000 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+        "stated_value": 5724530000.0,
+        "statement": "EFID recorded total equity of 5724530000 EGP as of 31 December 2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID posted FY2025 basic and diluted EPS of 2.18 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106673000000.0,
+        "statement": "ETEL achieved FY2025 operating revenues of 106673000000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578100000.0,
+        "statement": "ETEL achieved FY2025 net profit of 22578100000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687800000.0,
+        "statement": "ETEL reported total equity of 63687800000 EGP at year-end 2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL reported basic and diluted earnings per share of 11.93 EGP for FY2025."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Absence of detailed debt metrics and current ratio components in the provided evidence limits complete solvency analysis.",
+      "Lack of explicit dividend payout history prevents direct confirmation of cash yield for the income goal."
+    ]
+  },
+  "final": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's total portfolio value is 59,795.00 EGP, consisting of 15,000.00 EGP cash (25.09%), 1,500 EFID shares worth 30,600.00 EGP (51.17%), and 100 ETEL shares worth 14,195.00 EGP (23.74%). The investor requires 10% liquidity (~5,979.50 EGP) within 1 year, which is fully covered by the 15,000.00 EGP cash balance. Given the investor's low financial capacity to withstand losses and the portfolio's existing high concentration in equities (~74.91%), deploying additional cash into stocks is unsuitable. Both holdings show robust fundamental growth: EFID reported FY2025 consolidated revenue of 20915100000 EGP, EFID generated FY2025 consolidated net profit of 2695300000 EGP, EFID recorded total equity of 5724530000 EGP as of 31 December 2025, and EFID posted FY2025 basic and diluted EPS of 2.18 EGP. ETEL achieved FY2025 operating revenues of 106673000000 EGP, ETEL achieved FY2025 net profit of 22578100000 EGP, ETEL reported total equity of 63687800000 EGP at year-end 2025, and ETEL reported basic and diluted earnings per share of 11.93 EGP for FY2025. Retaining cash protects capital while satisfying short-term liquidity needs.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915100000.0,
+        "statement": "EFID reported FY2025 consolidated revenue of 20915100000 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695300000.0,
+        "statement": "EFID generated FY2025 consolidated net profit of 2695300000 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+        "stated_value": 5724530000.0,
+        "statement": "EFID recorded total equity of 5724530000 EGP as of 31 December 2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID posted FY2025 basic and diluted EPS of 2.18 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106673000000.0,
+        "statement": "ETEL achieved FY2025 operating revenues of 106673000000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578100000.0,
+        "statement": "ETEL achieved FY2025 net profit of 22578100000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687800000.0,
+        "statement": "ETEL reported total equity of 63687800000 EGP at year-end 2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL reported basic and diluted earnings per share of 11.93 EGP for FY2025."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Absence of detailed debt metrics and current ratio components in the provided evidence limits complete solvency analysis.",
+      "Lack of explicit dividend payout history prevents direct confirmation of cash yield for the income goal."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": {
+    "financial": "### 1. Portfolio Overview & Context Analysis\n\n* **Portfolio Value & Allocation:**\n  * **Cash:** 15,000.00 EGP (~25.09% of total portfolio)\n  * **Edita Food Industries (EFID):** 1,500 shares at 20.40 EGP = 30,600.00 EGP (~51.18% of total portfolio)\n  * **Telecom Egypt (ETEL):** 100 shares at 141.95 EGP = 14,195.00 EGP (~23.74% of total portfolio)\n  * **Total Portfolio Value:** 59,795.00 EGP\n* **Liquidity & Profile Alignment:**\n  * The investor requires up to 10% liquidity within one year (~5,979.50 EGP). The current uninvested cash balance of 15,000.00 EGP exceeds this liquidity requirement without needing asset liquidations.\n  * The investor has a medium willingness but low financial ability to withstand losses, making balance sheet strength and earnings stability key considerations.\n\n---\n\n### 2. Company Analysis: Edita Food Industries (EFID)\n\n* **Profitability:**\n  * **Revenue:** Consolidated FY2025 revenue reached 2.09151e+10 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01] (up from 16,146,545,699 EGP in FY2024).\n  * **Net Profit:** FY2025 net profit reached 2.6953e+09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] (up from 1,606,727,698 EGP in FY2024), representing a net profit margin of ~12.89%.\n  * **Earnings Per Share (EPS):** Basic and diluted EPS for FY2025 stood at 2.18 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] (up from 1.09 EGP in FY2024).\n  * **Return on Equity (ROE):** Based on FY2025 total equity of 5.72453e+09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39], ROE is ~47.08%.\n* **Growth:**\n  * Year-over-year revenue growth was ~29.54%.\n  * Year-over-year net profit growth was ~67.75%.\n  * Earnings per share doubled YoY (+100.00%).\n* **Balance Sheet & Financial Structure:**\n  * Total equity expanded from 4,055,484,719 EGP in FY2024 to 5.72453e+09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39] in FY2025 (+41.16%).\n\n---\n\n### 3. Company Analysis: Telecom Egypt (ETEL)\n\n* **Profitability:**\n  * **Operating Revenue:** FY2025 revenue was 1.06673e+11 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01] (106,672,946 thousand L.E., up from 81,677,812 thousand L.E. in FY2024).\n  * **Net Profit:** Net profit for FY2025 reached 2.25781e+10 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] (22,578,063 thousand L.E., up from 10,111,328 thousand L.E. in FY2024), delivering a net profit margin of ~21.17%.\n  * **Earnings Per Share (EPS):** Basic and diluted EPS for FY2025 was 11.93 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] (up from 4.79 EGP in FY2024).\n  * **Return on Equity (ROE):** Based on total equity of 6.36878e+10 L.E. [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] (63,687,826 thousand L.E.), ROE stands at ~35.45%.\n* **Growth:**\n  * Year-over-year revenue growth was ~30.60%.\n  * Year-over-year net profit growth was ~123.29%.\n  * Earnings per share increased by ~149.06% YoY.\n* **Balance Sheet & Financial Structure:**\n  * Total equity grew from 45,937,991 thousand L.E. in FY2024 to 6.36878e+10 L.E. [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] in FY2025 (+38.64%).\n\n---\n\n### 4. Data Quality, Risks & Limitations\n\n* **Data Quality:**\n  * All figures provided are verified against official consolidated financial statements prepared under Egyptian Accounting Standards (EAS).\n  * ETEL metrics are reported in thousands of L.E. (`L.E. (000)`), whereas EFID metrics are reported in absolute EGP.\n* **Information Limitations & Risks:**\n  * **Balance Sheet Completeness:** Detailed balance sheet items (e.g., total debt, cash reserves, total assets, current liabilities) are not provided in the evidence for either company, limiting debt-to-equity and liquidity ratio calculations.\n  * **Dividend Policy Data:** Cash dividend payout histories for EFID and ETEL are not included in the provided evidence, which prevents direct verification of income generation capabilities for the investor's income goal.\n\n*(Note: In accordance with protocol, no portfolio recommendations or action steps are provided here; the decision agent will formulate action decisions based on this evaluation).*",
+    "investor": "Here is the suitability assessment based on your risk profile, timeline, and current portfolio structure:\n\n---\n\n### **1. Total Portfolio Valuation & Breakdown**\n* **Cash:** 15,000.00 EGP (25.09%)\n* **ETEL:** 100 shares × 141.95 EGP = 14,195.00 EGP (23.74%)\n* **EFID:** 1,500 shares × 20.40 EGP = 30,600.00 EGP (51.17%)\n* **Total Portfolio Value:** **59,795.00 EGP**\n\n---\n\n### **2. Investor Profile Assessment**\n\n* **Goal & Horizon (3–5 Years):** \n  A medium-term horizon with a goal of steady growth and income suits a balanced strategy. It allows sufficient time to ride out short-term market fluctuations, provided the risk profile of the assets matches your capacity.\n\n* **Liquidity Needs:**\n  You require 10% of your total portfolio within 1 year (~**5,979.50 EGP**). \n\n* **Loss Willingness vs. Capacity:**\n  While your **willingness** to accept loss is medium, your **financial capacity** to withstand losses is **low**. In suitability standards, **capacity overrides willingness**. A drawdown in equity markets would directly impact your financial standing, meaning your overall portfolio currently carries higher risk than your financial condition safely permits.\n\n* **Concentration Risk:**\n  * **High Single-Stock Exposure:** Over 51% of your wealth is concentrated in a single asset (EFID), and nearly 75% of your wealth is allocated across just two equities. \n  * This high concentration creates significant individual stock risk, which does not align well with a low capacity for loss.\n\n---\n\n### **3. Cash Allocation & Portfolio Flexibility**\n\n* **Available Free Cash:**\n  * You currently hold **15,000.00 EGP** in uncommitted cash.\n  * Reserving **~5,980.00 EGP** to satisfy your 1-year liquidity requirement leaves approximately **9,020.50 EGP** of free cash that could reasonably be committed toward medium-term income or growth investments.\n\n* **What the Portfolio Allows:**\n  * **Free Liquidity:** You have immediate access to 15,000.00 EGP cash without needing to touch your equity positions.\n  * **Rebalancing Capacity:** Both equity holdings (ETEL and EFID) are liquid market positions. If you choose to realign the portfolio with your low loss capacity, portions of these positions can be liquidated to reduce concentration risk and increase allocation to lower-volatility or income-generating instruments."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 33.954,
+      "input_tokens": 1340,
+      "output_tokens": 3548,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 21.417,
+      "input_tokens": 1332,
+      "output_tokens": 1794,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 74.275,
+      "input_tokens": 3654,
+      "output_tokens": 6641,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 129.663
 }

@@ -1,8 +1,147 @@
 {
   "case_id": "dev_002",
   "condition": "D",
-  "status": "error",
-  "error": "GoogleAPIError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")",
-  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 4328, in _generate\n    response: GenerateContentResponse = self.client.models.generate_content(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\models.py\", line 6204, in generate_content\n    response = self._generate_content_with_continuation(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\models.py\", line 6045, in _generate_content_with_continuation\n    response = self._generate_content(\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\models.py\", line 4573, in _generate_content\n    response = self._api_client.request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\_api_client.py\", line 2374, in request\n    response = self._request(http_request, http_options, stream=False)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\_api_client.py\", line 2148, in _request\n    return retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 470, in __call__\n    do = self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 371, in iter\n    result = action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 413, in exc_check\n    raise retry_exc.reraise()\n          ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 184, in reraise\n    raise self.last_attempt.result()\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 473, in __call__\n    result = fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\_api_client.py\", line 2127, in _request_once\n    errors.APIError.raise_for_response(response)\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\errors.py\", line 187, in raise_for_response\n    cls.raise_error(response.status_code, response_json, response)\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\google\\genai\\errors.py\", line 218, in raise_error\n    raise ServerError(status_code, response_json, response)\ngoogle.genai.errors.ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\runner.py\", line 64, in run\n    state, caller = run_case(case, CONDITIONS[name], llm, fee_rate)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\pipeline.py\", line 93, in run_case\n    state = build_graph(condition, caller, fee_rate).invoke({\"case\": case})\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\main.py\", line 4025, in invoke\n    for chunk in self.stream(\n                 ^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\main.py\", line 3084, in stream\n    for _ in runner.tick(\n             ^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\_runner.py\", line 210, in tick\n    run_with_retry(\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\pregel\\_retry.py\", line 637, in run_with_retry\n    return task.proc.invoke(task.input, config)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\_internal\\_runnable.py\", line 794, in invoke\n    input = context.run(step.invoke, input, config, **kwargs)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langgraph\\_internal\\_runnable.py\", line 479, in invoke\n    ret = self.func(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\pipeline.py\", line 38, in analysts\n    return {\"reports\": agents.multi_agent_reports(caller, s[\"case\"])}\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\agents.py\", line 100, in multi_agent_reports\n    \"financial\": caller.text(\"financial_analyst\", [SystemMessage(FINANCIAL_SYSTEM), HumanMessage(ctx)]),\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 126, in text\n    msg = self.llm.invoke(messages)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 77, in invoke\n    return self._run(lambda m: m.invoke(messages))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 74, in _run\n    raise error\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 66, in _run\n    out = call(model)\n          ^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\src\\egx_guide\\llm.py\", line 77, in <lambda>\n    return self._run(lambda m: m.invoke(messages))\n                               ^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\vendor\\TradingAgents\\tradingagents\\llm_clients\\google_client.py\", line 31, in invoke\n    return normalize_content(super().invoke(input, config, **kwargs))\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 3715, in invoke\n    return super().invoke(input, config, stop=stop, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 529, in invoke\n    self.generate_prompt(\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 1920, in generate_prompt\n    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 1727, in generate\n    self._generate_with_cache(\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 2065, in _generate_with_cache\n    result = self._generate(\n             ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 4334, in _generate\n    _handle_server_error(e)\n  File \"C:\\Users\\Asus\\Desktop\\Multiagent trading\\.venv\\Lib\\site-packages\\langchain_google_genai\\chat_models.py\", line 359, in _handle_server_error\n    raise GoogleAPIError(\nlangchain_google_genai.chat_models.GoogleAPIError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\nDuring task with name 'analysts' and id 'd32d8dc3-99cf-1307-7e3a-4504e93442a6'\n",
-  "seconds": 67.025
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 1200,
+    "explanation": "We recommend buying 1,200 shares of Talaat Moustafa Group Holding (TMGH) at 82.50 EGP per share, totaling 99,000.00 EGP and leaving 1,000.00 EGP in cash. TMGH displays strong financial performance, with consolidated gross profit expanding from 14,002,196,445 LE in 2024 to 20,855,400,384 LE in 2025, and EPS increasing from 4.38 LE in 2024 to 6.98 LE in 2025. Consolidated net profit for 2025 reached 18,201,981,482 LE on total equity of 157,708,140,765 LE, yielding a ROE of approximately 11.54%. At 82.50 EGP per share, TMGH trades at a P/E ratio of ~11.82x based on 2025 EPS. This growth allocation aligns with the investor's 10+ year horizon and high loss tolerance. The 2024 restated net profit figure (TMGH-TMGH_FY2025_consolidated_en-p7-56) is unreadable due to an auditor's stamp, preventing net profit YoY growth calculation, but EPS growth provides strong guidance.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+        "stated_value": 14002196445.0,
+        "statement": "TMGH displays strong financial performance, with consolidated gross profit expanding from 14,002,196,445 LE in 2024 to 20,855,400,384 LE in 2025, and EPS increasing from 4.38 LE in 2024 to 6.98 LE in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "TMGH displays strong financial performance, with consolidated gross profit expanding from 14,002,196,445 LE in 2024 to 20,855,400,384 LE in 2025, and EPS increasing from 4.38 LE in 2024 to 6.98 LE in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "TMGH displays strong financial performance, with consolidated gross profit expanding from 14,002,196,445 LE in 2024 to 20,855,400,384 LE in 2025, and EPS increasing from 4.38 LE in 2024 to 6.98 LE in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH displays strong financial performance, with consolidated gross profit expanding from 14,002,196,445 LE in 2024 to 20,855,400,384 LE in 2025, and EPS increasing from 4.38 LE in 2024 to 6.98 LE in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Consolidated net profit for 2025 reached 18,201,981,482 LE on total equity of 157,708,140,765 LE, yielding a ROE of approximately 11.54%."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Consolidated net profit for 2025 reached 18,201,981,482 LE on total equity of 157,708,140,765 LE, yielding a ROE of approximately 11.54%."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "Net profit year-over-year growth cannot be calculated because 2024 net profit figure is ambiguous due to an unreadable auditor's stamp.",
+      "Lack of detailed cash flow statement and total debt/liability disclosures prevents assessment of leverage and cash flow metrics."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 1200,
+    "explanation": "We recommend buying 1,200 shares of Talaat Moustafa Group Holding (TMGH) at 82.50 EGP per share, totaling 99,000.00 EGP and leaving 1,000.00 EGP in cash. TMGH displays strong financial performance, with consolidated gross profit expanding from 14,002,196,445 LE in 2024 to 20,855,400,384 LE in 2025, and EPS increasing from 4.38 LE in 2024 to 6.98 LE in 2025. Consolidated net profit for 2025 reached 18,201,981,482 LE on total equity of 157,708,140,765 LE, yielding a ROE of approximately 11.54%. At 82.50 EGP per share, TMGH trades at a P/E ratio of ~11.82x based on 2025 EPS. This growth allocation aligns with the investor's 10+ year horizon and high loss tolerance. The 2024 restated net profit figure (TMGH-TMGH_FY2025_consolidated_en-p7-56) is unreadable due to an auditor's stamp, preventing net profit YoY growth calculation, but EPS growth provides strong guidance.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+        "stated_value": 14002196445.0,
+        "statement": "TMGH displays strong financial performance, with consolidated gross profit expanding from 14,002,196,445 LE in 2024 to 20,855,400,384 LE in 2025, and EPS increasing from 4.38 LE in 2024 to 6.98 LE in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "TMGH displays strong financial performance, with consolidated gross profit expanding from 14,002,196,445 LE in 2024 to 20,855,400,384 LE in 2025, and EPS increasing from 4.38 LE in 2024 to 6.98 LE in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "TMGH displays strong financial performance, with consolidated gross profit expanding from 14,002,196,445 LE in 2024 to 20,855,400,384 LE in 2025, and EPS increasing from 4.38 LE in 2024 to 6.98 LE in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH displays strong financial performance, with consolidated gross profit expanding from 14,002,196,445 LE in 2024 to 20,855,400,384 LE in 2025, and EPS increasing from 4.38 LE in 2024 to 6.98 LE in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Consolidated net profit for 2025 reached 18,201,981,482 LE on total equity of 157,708,140,765 LE, yielding a ROE of approximately 11.54%."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Consolidated net profit for 2025 reached 18,201,981,482 LE on total equity of 157,708,140,765 LE, yielding a ROE of approximately 11.54%."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "Net profit year-over-year growth cannot be calculated because 2024 net profit figure is ambiguous due to an unreadable auditor's stamp.",
+      "Lack of detailed cash flow statement and total debt/liability disclosures prevents assessment of leverage and cash flow metrics."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 1000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 1200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": {
+    "financial": "### Financial Analysis: Talaat Moustafa Group Holding (TMGH)\n\n---\n\n### 1. Profitability Analysis\n* **Gross Profit:** TMGH reported consolidated gross profit of 20,855,400,384 LE (2.08554e+10 LE) in 2025 [TMGH-TMGH_FY2025_consolidated_en-p7-19], up from 14,002,196,445 LE (1.40022e+10 LE) in 2024 (Restated) [TMGH-TMGH_FY2025_consolidated_en-p7-20].\n* **Net Profit:** Consolidated net profit for 2025 reached 18,201,981,482 LE (1.8202e+10 LE) [TMGH-TMGH_FY2025_consolidated_en-p7-55].\n* **Earnings per Share (EPS):** Consolidated EPS for 2025 was 6.98 LE [TMGH-TMGH_FY2025_consolidated_en-p7-61], compared to 4.38 LE in 2024 (Restated) [TMGH-TMGH_FY2025_consolidated_en-p7-62].\n* **Return on Equity (ROE):** Based on total consolidated equity of 157,708,140,765 LE (1.57708e+11 LE) as of 31 December 2025 [TMGH-TMGH_FY2025_consolidated_en-p5-67] and 2025 net profit of 18,201,981,482 LE [TMGH-TMGH_FY2025_consolidated_en-p7-55], the return on ending equity for 2025 is approximately **11.54%**.\n\n---\n\n### 2. Growth Analysis\n* **Gross Profit Growth:** Consolidated gross profit increased by **48.94%** year-over-year, growing from 14,002,196,445 LE [TMGH-TMGH_FY2025_consolidated_en-p7-20] to 20,855,400,384 LE [TMGH-TMGH_FY2025_consolidated_en-p7-19].\n* **EPS Growth:** Earnings per share expanded by **59.36%** year-over-year, increasing from 4.38 LE [TMGH-TMGH_FY2025_consolidated_en-p7-62] to 6.98 LE [TMGH-TMGH_FY2025_consolidated_en-p7-61].\n* **Net Profit Growth:** Year-over-year Net Profit growth **cannot be calculated** directly from the net profit line because the 2024 Net Profit figure is **AMBIGUOUS** [TMGH-TMGH_FY2025_consolidated_en-p7-56] (unreadable due to an auditor's stamp).\n\n---\n\n### 3. Balance Sheet & Valuation Metrics\n* **Total Equity:** Consolidated total equity stood at 157,708,140,765 LE (1.57708e+11 LE) as of 31 December 2025 [TMGH-TMGH_FY2025_consolidated_en-p5-67].\n* **Price-to-Earnings (P/E) Multiple:** At the cutoff price of 82.50 EGP per share and 2025 EPS of 6.98 LE [TMGH-TMGH_FY2025_consolidated_en-p7-61], TMGH trades at a trailing P/E ratio of approximately **11.82x**.\n\n---\n\n### 4. Data Quality & Limitations\n* **AMBIGUOUS Data Flag:** The consolidated net profit for 2024 (Restated) [TMGH-TMGH_FY2025_consolidated_en-p7-56] is unreadable due to being obscured by an auditor's stamp. This figure has been flagged and excluded from growth rate calculations.\n* **Omitted Financial Data:** The provided evidence set lacks data regarding total assets, total debt/liabilities, operating cash flows, and revenue. Consequently, leverage ratios (e.g., Debt/Equity), liquidity ratios, and cash conversion metrics cannot be assessed from the available disclosures.",
+    "investor": "### Investor Suitability & Portfolio Analysis\n\n#### 1. Investment Horizon & Objectives\n* **Goal & Horizon:** The primary objective is long-term wealth accumulation over a horizon of 10+ years. \n* **Suitability Implications:** A decade-plus timeframe strongly supports an allocation toward capital-growth instruments (such as equities), as short-to-medium-term price volatility will have ample time to smooth out over extended compounding periods.\n\n#### 2. Liquidity Profile & Needs\n* **Planned Cash Outflows:** None. The investor reports no planned withdrawals.\n* **Suitability Implications:** Minimal near-term liquidity demands mean the portfolio does not need to carry a high allocation to liquid or cash-equivalent instruments solely to fund income or consumption needs.\n\n#### 3. Loss Risk Tolerance & Capacity\n* **Willingness to Accept Losses:** High.\n* **Capacity to Absorb Losses:** High.\n* **Suitability Implications:** Both psychological tolerance and financial capacity align to accommodate higher-risk, higher-volatility growth assets capable of experiencing interim drawdowns in pursuit of higher long-term capital gains.\n\n#### 4. Current Portfolio Concentration & Available Resources\n* **Current Holdings:** None (0% equity exposure).\n* **Current Concentration:** Extreme cash concentration (100% in cash). While this carries zero equity volatility risk, it leaves the portfolio exposed to purchasing-power risk (inflation drag) and uninvested relative to the investor's long-term growth objectives.\n* **Sellable Assets:** None. There are no existing positions to liquidate or reallocate from.\n* **Available Free Cash:** **100,000.00 EGP** in unencumbered, liquid capital.\n\n#### 5. Deployment Capacity\n* **Reasonable Commitment:** Given the 10+ year time horizon, high risk capacity/tolerance, and absence of planned withdrawals, a major portion of the 100,000.00 EGP balance could reasonably be committed to long-term risk assets (reserving only whatever minimal emergency cash buffer the investor deems prudent for unexpected personal expenses)."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 22.71,
+      "input_tokens": 1073,
+      "output_tokens": 3858,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 11.238,
+      "input_tokens": 1065,
+      "output_tokens": 1081,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 23.125,
+      "input_tokens": 2767,
+      "output_tokens": 4159,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 57.084
 }
