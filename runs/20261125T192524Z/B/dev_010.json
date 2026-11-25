@@ -1,0 +1,115 @@
+{
+  "case_id": "dev_010",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 500,
+    "explanation": "The profit belonging to Talaat Moustafa's own shareholders (\"Shareholders of the Parent Company (consolidated)\") grew from 9,025,066,065 LE in 2024 (restated) to 14,383,890,306 LE in 2025, an increase of 5,358,824,241 LE, or approximately +59.38% year-over-year. These figures are taken directly from the verified consolidated reports (evidence IDs [TMGH-TMGH_FY2025_consolidated_en-p7-57] and [TMGH-TMGH_FY2025_consolidated_en-p7-58]), all in base units (LE), with no figures marked AMBIGUOUS used in the calculation.\n\nPortfolio analysis at the 2026-11-18 cutoff: Cash = 30,000.00 EGP; TMGH holding = 500 shares × 82.50 EGP = 41,250.00 EGP; total portfolio value = 71,250.00 EGP. TMGH already represents ~57.89% of the total portfolio.\n\nThe diversification rule states: \"after a buy, no single company may be more than half of the portfolio's total value (cash plus holdings at the given prices). This limit has no exceptions, whatever the investor's profile; buy fewer shares instead.\" Because TMGH already exceeds the 50% threshold, any additional purchase of TMGH shares would further violate this rule and is mathematically impossible without first reducing the existing holding. The strong profit growth notwithstanding, adding to the position is not justified under the current portfolio structure.\n\nGiven the investor's long-term growth horizon and risk profile, the compliant action is to maintain the existing holding. No buy is permitted under the diversification constraint; hold preserves the current position while keeping cash available for other opportunities or the emergency fund.\n\nUncertainty & risks: This analysis relies solely on the provided evidence snapshot (cutoff 2026-11-18) and the diversification rule. Future performance, dividend changes, or market movements are not modeled. The 50% concentration limit is a strict portfolio‑level constraint with no exceptions; investors should regularly re‑balance to avoid unintended over‑exposure.",
+    "claims": [
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-57]",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2025 = 14,383,890,306 LE"
+      },
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-58]",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2024 (Restated) = 9,025,066,065 LE"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Diversification rule prevents any additional TMGH purchase without selling existing shares.",
+      "All figures are as‑printed in the consolidated reports; no adjustments for accounting policies or later events are applied.",
+      "Investor's emergency fund and cash‑flow needs outside the 30,000 EGP stated are assumed separate."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The proposed hold was blocked by the portfolio checks (hold must not carry a share count). No change to the portfolio is recommended.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "Blocked recommendation: hold 500 TMGH"
+    ]
+  },
+  "blocked": true,
+  "violations": [
+    {
+      "rule": "no_shares_without_trade",
+      "detail": "hold must not carry a share count"
+    }
+  ],
+  "proposed_portfolio": null,
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-57]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-58]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"9,025,066,065\", which is 'Shareholders of the Parent Company (consolidated)' (9.02507e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"14,383,890,306\", which is 'Shareholders of the Parent Company (consolidated)' (1.43839e+10), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"14,383,890,306\", which is 'Shareholders of the Parent Company (consolidated)' (1.43839e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"9,025,066,065\", which is 'Shareholders of the Parent Company (consolidated)' (9.02507e+09), but it is not listed in claims"
+      }
+    ],
+    "dropped": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-58"
+    ],
+    "withdrawn": [
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-57]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-58]"
+    ]
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 388.4,
+      "input_tokens": 1890,
+      "output_tokens": 8386,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 60.981,
+      "input_tokens": 3048,
+      "output_tokens": 8566,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 449.385
+}

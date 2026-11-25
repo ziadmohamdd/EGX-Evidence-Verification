@@ -1,0 +1,68 @@
+{
+  "case_id": "dev_009",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "All financial figures in the provided evidence are marked AMBIGUOUS, meaning they cannot be used in calculations per the given rules. The data covers only the nine months ended 30 September 2026, while the investor specifically requests full-year 2026 earnings per share and a price-to-earnings ratio. No reliable EPS, full-year profit, or non-ambiguous revenue figures are available. Without EPS, the P/E ratio cannot be calculated, and it is not possible to assess whether the share at 76.21 EGP is cheap enough to buy. The evidence is therefore insufficient for a responsible decision.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "limitations": [
+      "All figures marked AMBIGUOUS and excluded from calculations",
+      "Only nine-month data provided; full-year 2026 results not in evidence",
+      "No verifiable EPS or net profit figures in base units to derive earnings or P/E ratio",
+      "Cannot apply portfolio diversification rule or make a buy/hold/sell recommendation without reliable valuation data"
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "All financial figures in the provided evidence are marked AMBIGUOUS, meaning they cannot be used in calculations per the given rules. The data covers only the nine months ended 30 September 2026, while the investor specifically requests full-year 2026 earnings per share and a price-to-earnings ratio. No reliable EPS, full-year profit, or non-ambiguous revenue figures are available. Without EPS, the P/E ratio cannot be calculated, and it is not possible to assess whether the share at 76.21 EGP is cheap enough to buy. The evidence is therefore insufficient for a responsible decision.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "limitations": [
+      "All figures marked AMBIGUOUS and excluded from calculations",
+      "Only nine-month data provided; full-year 2026 results not in evidence",
+      "No verifiable EPS or net profit figures in base units to derive earnings or P/E ratio",
+      "Cannot apply portfolio diversification rule or make a buy/hold/sell recommendation without reliable valuation data"
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 352.477,
+      "input_tokens": 1579,
+      "output_tokens": 2356,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 352.48
+}

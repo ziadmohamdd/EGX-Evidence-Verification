@@ -1,0 +1,132 @@
+{
+  "case_id": "dev_009",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "### Investor Profile & Question\nThe investor seeks income/growth from an exporter with a 3–5 year horizon, medium risk tolerance, and 30,000 EGP cash (no current holdings). They ask for full-year 2026 EPS, the P/E ratio, and whether ABUK is cheap enough to buy at 76.21 EGP/share (cutoff 2026-11-18).\n\n### Evidence Review\n- **Revenue rows** (9M2026 and 9M2025) and **net-profit rows** (9M2026 and 9M2025) are all marked **AMBIGUOUS**. The printed numbers are: revenue = 31,488 / 16,578 / 6,090 / 7,964 / 3,911 (nine periods); net profit = 12,970 / 6,396 / 2,958 / 1,828 (with a '%103' and '6062' column). The page-unit line claims 'مليون جنيه' (million pounds), but the margin notes that the page actually shows units ['مليار', 'مليار', ..., 'مليون'] (billion/million mixed). Because these figures are explicitly marked AMBIGUOUS, they **must not be used in calculations** (Rule: \"Figures marked AMBIGUOUS must not be used in calculations. List them in `unused_figures\").\n- **EPS rows** (9M2026 and 9M2025) are marked **verified**, with printed values 8.74 and 4.28, and the column header reads \"نصيب السهم الأساسي في الأرباح (جنيه)\" (Basic earnings per share in pounds). However, each EPS row carries the unit line \"unit: مليون جنيه\" (million pounds), which creates a direct contradiction: 8.74 million pounds per share is nonsensical, while 8.74 pounds per share is typical. The evidence does not resolve this unit conflict.\n- The report covers only nine months (ended 30 September 2026). No full-year 2026 income statement, no full-year guidance, and no prior full-year comparative data are provided in the evidence.\n\n### Why Full-Year EPS & P/E Cannot Be Calculated\n1. **No full-year figures**: The evidence provides only nine-month data. Annualizing the nine-month EPS (e.g., 8.74 × 12/9 = 11.65) would be an assumption unsupported by the report; the rules forbid using outside knowledge or later events, and the nine-month figures themselves are unreliable due to the AMBIGUOUS profit/revenue data.\n2. **Unit ambiguity on EPS**: The verified EPS values cannot be confidently converted to base units (EGP per share) because the row unit says \"million pounds\" while the header says \"pounds.\" Without clarity, the figures cannot be used in a P/E calculation.\n3. **AMBIGUOUS profit/revenue figures excluded**: The core inputs needed to verify or derive EPS (net profit, revenue) are excluded from use. Consequently, there is no reliable base to estimate full-year earnings.\n4. **P/E ratio**: Requires full-year EPS and current share price (76.21 EGP). Since full-year EPS cannot be derived, the P/E ratio cannot be calculated.\n\n### Buy Feasibility (Secondary)\nThe diversification rule states: after a buy, no single company may exceed 50% of the portfolio's total value (cash + holdings at given prices). With 30,000 EGP cash and ABUK at 76.21 EGP/share, buying up to **196 shares** (≈14,937 EGP) would keep ABUK at ≤49.79% of the portfolio. A buy is numerically possible, but it does not address the core problem: the share cannot be valued responsibly from the given evidence.\n\n### Conclusion & Recommendation\nThe evidence is insufficient to calculate full-year 2026 EPS, the P/E ratio, or to judge whether the share is cheap enough to buy. The AMBIGUOUS tags on revenue and net-profit figures prevent any profit-based valuation; the verified EPS are limited to nine months and suffer from a unit contradiction. No responsible decision on a buy, hold, or sell can be made.\n\n**What is missing**: (1) Clear confirmation that EPS figures are in pounds (not million pounds), (2) full-year 2026 or full-year 2025 income-statement data, or (3) a stated full-year earnings guidance from the company. Without this, any P/E or cheapness assessment would be speculative.\n\n**Recommendation**: `insufficient_evidence`. The investor should wait for a full-year report or a clarification of the EPS units before considering a position. Keeping cash pending better information is the prudent action given the medium risk tolerance and the need for a 3–5 year horizon.\n\n**Uncertainty & Risks**: All figures carry the noted ambiguities. Using outside data, assuming quarterly uniformity, or annualizing nine-month results would violate the evidence-only rule. The share price of 76.21 EGP may reflect market expectations not captured in the partial, ambiguous report.\n\n`unused_figures`: [ABUK-ABUK_9M2026_results-p2-01, ABUK-ABUK_9M2026_results-p2-02, ABUK-ABUK_9M2026_results-p2-25, ABUK-ABUK_9M2026_results-p2-26]`",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Evidence only covers nine months",
+      "Revenue and net-profit figures are AMBIGUOUS",
+      "EPS unit conflict (million pounds vs. pounds)",
+      "No full-year data or guidance provided"
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "### Investor Profile & Question\nThe investor seeks income/growth from an exporter with a 3–5 year horizon, medium risk tolerance, and 30,000 EGP cash (no current holdings). They ask for full-year 2026 EPS, the P/E ratio, and whether ABUK is cheap enough to buy at 76.21 EGP/share (cutoff 2026-11-18).\n\n### Evidence Review\n- **Revenue and net-profit rows** (9M2026 and 9M2025, rows p2-01, p2-02, p2-25, p2-26) are each explicitly marked **AMBIGUOUS** in the report. Per the rules, figures marked AMBIGUOUS must not be used in calculations. These are listed in `unused_figures` below.\n[removed: figure could not be verified] [removed: figure could not be verified] The evidence does not resolve this unit conflict. Per the guideline \"Do not use ambiguous figures,\" and because the figures cannot be confidently converted to base units (EGP per share) without unsupported assumption, they are **not** used in any calculation or claim.\n- The report covers only nine months (ended 30 September 2026). No full-year 2026 income statement, no full-year 2025 comparative data, and no full-year guidance are provided.\n\n### Why Full-Year EPS & P/E Cannot Be Calculated\n1. **No full-year figures**: The evidence provides only nine-month data. Annualizing would be an assumption unsupported by the report; the rules forbid using outside knowledge or later events.\n2. [removed: figure could not be verified] pounds). Without clarity, they cannot be used in a P/E calculation.\n3. **AMBIGUOUS profit/revenue figures excluded**: The core inputs needed to verify or derive EPS are excluded from use.\n4. **P/E ratio**: Requires full-year EPS and current share price (76.21 EGP). Since full-year EPS cannot be derived, the P/E ratio cannot be calculated.\n\n### Buy Feasibility (Secondary)\nThe diversification rule states: after a buy, no single company may exceed 50% of the portfolio's total value (cash + holdings at given prices). With 30,000 EGP cash and ABUK at 76.21 EGP/share, buying up to 196 shares (≈14,937 EGP) would keep ABUK at ≤49.79% of the portfolio. A buy is numerically possible, but it does not address the core problem: the share cannot be valued responsibly from the given evidence.\n\n### Conclusion & Recommendation\nThe evidence is insufficient to calculate full-year 2026 EPS, the P/E ratio, or to judge whether the share is cheap enough to buy. The AMBIGUOUS tags on revenue and net-profit figures prevent any profit-based valuation. The verified EPS figures are limited to nine months and suffer from a unit contradiction that cannot be resolved using only the given evidence. No responsible decision on a buy, hold, or sell can be made.\n\n**What is missing**: (1) Clear confirmation that EPS figures are in pounds (not million pounds), (2) full-year 2026 or full-year 2025 income-statement data, or (3) a stated full-year earnings guidance from the company. Without this, any P/E or cheapness assessment would be speculative.\n\n**Recommendation**: `insufficient_evidence`. The investor should wait for a full-year report or a clarification of the EPS units before considering a position. Keeping cash pending better information is the prudent action given the medium risk tolerance and the need for a 3–5 year horizon.\n\n**Uncertainty & Risks**: All figures carry the noted ambiguities. Using outside data, assuming quarterly uniformity, or annualizing nine-month results would violate the evidence-only rule. The share price of 76.21 EGP may reflect market expectations not captured in the partial, ambiguous report.\n\n**unused_figures**: [ABUK-ABUK_9M2026_results-p2-01, ABUK-ABUK_9M2026_results-p2-02, ABUK-ABUK_9M2026_results-p2-25, ABUK-ABUK_9M2026_results-p2-26, ABUK-ABUK_9M2026_results-p2-31, ABUK-ABUK_9M2026_results-p2-32]\n\n**limitations**: [\n  \"Evidence only covers nine months\",\n  \"Revenue and net-profit figures are AMBIGUOUS\",\n  \"EPS unit conflict (verified rows show unit: مليون جنيه vs. header: جنيه)\",\n  \"No full-year data or guidance provided\"\n]",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "limitations": [
+      "Evidence only covers nine months",
+      "Revenue and net-profit figures are AMBIGUOUS",
+      "EPS unit conflict (verified rows show unit: مليون جنيه vs. header: جنيه)",
+      "No full-year data or guidance provided",
+      "These figures could not be verified and were not used: نصيب السهم الأساسي في الأرباح (جنيه), نصيب السهم الأساسي في الأرباح (جنيه). Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"8.74\", which is 'نصيب السهم الأساسي في الأرباح (جنيه)' (8.74), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.28\", which is 'نصيب السهم الأساسي في الأرباح (جنيه)' (4.28), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"8.74\", which is 'نصيب السهم الأساسي في الأرباح (جنيه)' (8.74), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"8.74\", which is 'نصيب السهم الأساسي في الأرباح (جنيه)' (8.74), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"8.74\", which is 'نصيب السهم الأساسي في الأرباح (جنيه)' (8.74), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.28\", which is 'نصيب السهم الأساسي في الأرباح (جنيه)' (4.28), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"8.74\", which is 'نصيب السهم الأساسي في الأرباح (جنيه)' (8.74), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"8.74\", which is 'نصيب السهم الأساسي في الأرباح (جنيه)' (8.74), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.28\", which is 'نصيب السهم الأساسي في الأرباح (جنيه)' (4.28), but it is not listed in claims"
+      }
+    ],
+    "dropped": [
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 51.853,
+      "input_tokens": 1579,
+      "output_tokens": 7726,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 389.801,
+      "input_tokens": 3405,
+      "output_tokens": 6836,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 441.658
+}

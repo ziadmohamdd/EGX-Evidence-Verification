@@ -1,0 +1,73 @@
+{
+  "case_id": "dev_005",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The provided financial evidence for ABUK is entirely marked AMBIGUOUS, meaning none of the reported figures (revenue, net profit, EPS, etc.) may be used in calculations. All six ABUK evidence rows (p2-01, p2-02, p2-25, p2-26, p2-31, p2-32) are listed as unused figures. No financial data is provided for COMI, and the investor's stated goal—to \"add a fertilizer exporter for diversification\"—cannot be mapped to either ABUK or COMI without outside knowledge, which is prohibited. The sector classification of the discussed companies, the identity of the fertilizer exporter among them, and usable financial metrics for either company are all missing. Consequently, the portfolio diversification constraint (no single company > 50% of total value after a buy), valuation assessments, and suitability for the 5‑year horizon cannot be responsibly evaluated. The only hard data available are the cash balance (40,000 EGP), the existing COMI holding (200 shares @ 128.00 EGP = 25,600 EGP), and the quoted prices (ABUK 76.21 EGP, COMI 128.00 EGP), but these are insufficient to determine a valid buy, hold, or sell action that meets the investor's goal and diversification rule.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01 (AMBIGUOUS: revenues, nine months to 30 Sep 2026)",
+      "ABUK-ABUK_9M2026_results-p2-02 (AMBIGUOUS: revenues, nine months to 30 Sep 2025)",
+      "ABUK-ABUK_9M2026_results-p2-25 (AMBIGUOUS: net profit, nine months to 30 Sep 2026)",
+      "ABUK-ABUK_9M2026_results-p2-26 (AMBIGUOUS: net profit, nine months to 30 Sep 2025)",
+      "ABUK-ABUK_9M2026_results-p2-31 (AMBIGUOUS: basic EPS, nine months to 30 Sep 2026)",
+      "ABUK-ABUK_9M2026_results-p2-32 (AMBIGUOUS: basic EPS, nine months to 30 Sep 2025)"
+    ],
+    "limitations": [
+      "All ABUK financial figures are AMBIGUOUS and excluded from calculations.",
+      "No COMI financials or sector information are provided.",
+      "The \"fertilizer exporter\" goal cannot be matched to a specific ticker without prohibited outside knowledge.",
+      "Portfolio diversification and single‑company concentration limits cannot be verified without usable valuation data for a potential new holding."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The provided financial evidence for ABUK is entirely marked AMBIGUOUS, meaning none of the reported figures (revenue, net profit, EPS, etc.) may be used in calculations. All six ABUK evidence rows (p2-01, p2-02, p2-25, p2-26, p2-31, p2-32) are listed as unused figures. No financial data is provided for COMI, and the investor's stated goal—to \"add a fertilizer exporter for diversification\"—cannot be mapped to either ABUK or COMI without outside knowledge, which is prohibited. The sector classification of the discussed companies, the identity of the fertilizer exporter among them, and usable financial metrics for either company are all missing. Consequently, the portfolio diversification constraint (no single company > 50% of total value after a buy), valuation assessments, and suitability for the 5‑year horizon cannot be responsibly evaluated. The only hard data available are the cash balance (40,000 EGP), the existing COMI holding (200 shares @ 128.00 EGP = 25,600 EGP), and the quoted prices (ABUK 76.21 EGP, COMI 128.00 EGP), but these are insufficient to determine a valid buy, hold, or sell action that meets the investor's goal and diversification rule.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01 (AMBIGUOUS: revenues, nine months to 30 Sep 2026)",
+      "ABUK-ABUK_9M2026_results-p2-02 (AMBIGUOUS: revenues, nine months to 30 Sep 2025)",
+      "ABUK-ABUK_9M2026_results-p2-25 (AMBIGUOUS: net profit, nine months to 30 Sep 2026)",
+      "ABUK-ABUK_9M2026_results-p2-26 (AMBIGUOUS: net profit, nine months to 30 Sep 2025)",
+      "ABUK-ABUK_9M2026_results-p2-31 (AMBIGUOUS: basic EPS, nine months to 30 Sep 2026)",
+      "ABUK-ABUK_9M2026_results-p2-32 (AMBIGUOUS: basic EPS, nine months to 30 Sep 2025)"
+    ],
+    "limitations": [
+      "All ABUK financial figures are AMBIGUOUS and excluded from calculations.",
+      "No COMI financials or sector information are provided.",
+      "The \"fertilizer exporter\" goal cannot be matched to a specific ticker without prohibited outside knowledge.",
+      "Portfolio diversification and single‑company concentration limits cannot be verified without usable valuation data for a potential new holding."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 38.954,
+      "input_tokens": 1561,
+      "output_tokens": 4514,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 38.956
+}

@@ -1,0 +1,167 @@
+{
+  "case_id": "dev_011",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 1960,
+    "explanation": "The investor has a long-term growth horizon (7+ years), medium risk tolerance, and 80,000 EGP in cash with no current holdings. The comparison of the four listed companies (ETEL, COMI, EFID, TMGH) on net profit growth (2024→2025) and price-to-earnings (P/E) ratio is based solely on the provided evidence and prices at the 2026-11-18 cutoff.\n\n**Net profit growth (2024→2025) in whole EGP:**\n- ETEL: 2025 NP = 22,578,063,000 EGP; 2024 NP = 10,111,328,000 EGP → +123.3% growth.\n- COMI: 2025 NP = 82,258,815,000 EGP; 2024 NP = 55,256,732,000 EGP → +48.9% growth.\n- EFID: 2025 NP = 2,695,301,670 EGP; 2024 NP = 1,606,727,698 EGP → +67.8% growth.\n- TMGH: 2025 NP = 18,201,981,482 EGP; 2024 NP = 12,769,517,325 EGP → +42.5% growth.\n\n**P/E ratio (using 2025 EPS and market prices):**\n- EFID: Price 20.40 EGP / EPS 2.18 EGP = **9.36** (calculable, reliable unit EGP).\n- TMGH: Price 82.50 EGP / EPS 6.98 LE = **11.82** (calculable, reliable unit LE).\n- ETEL: Price 141.95 EGP / EPS ambiguous (unit L.E.(000)) → P/E **not calculable** from evidence.\n- COMI: Price 128.00 EGP / EPS ambiguous (unit EGP thousands) → P/E **not calculable** from evidence.\n\n**Diversification constraint:** After a buy, no single company may exceed 50% of the portfolio's total value (cash + holdings at given prices). With 80,000 EGP cash, the maximum allowable value for any one position is 40,000 EGP.\n- EFID at 20.40 EGP/share: max 1,960 shares = 39,984 EGP (49.98% of portfolio), leaving 40,016 EGP cash.\n- TMGH at 82.50 EGP/share: max 484 shares = 39,930 EGP (49.91%), leaving 40,070 EGP cash.\n- ETEL/COMI also feasible under the limit, but their P/E ratios are unavailable.\n\n**Unused figures (ambiguous units, per rules):**\n- ETEL Basic and diluted EPS (unit L.E.(000)) – affects P/E calculation for ETEL.\n- COMI Basic EPS (unit \"All amounts are shown in EGP thousands\") – affects P/E calculation for COMI. These figures are listed in `unused_figures` and excluded from P/E conclusions.\n\n**Recommendation:** **Buy EFID**. EFID offers the lowest calculable P/E (9.36) among the evidence-covered companies, solid net profit growth (67.8%), and a share price (20.40 EGP) that fits the diversification constraint comfortably. Purchasing 1,960 shares uses 39,984 EGP, leaving 40,016 EGP in cash, resulting in a portfolio where EFID represents 49.98% and cash 50.02%, satisfying the 50% concentration limit. The stock's low P/E and growth profile align with the investor's long-term growth goal and medium risk tolerance. Risks include reliance on a single position (offset by the cash buffer) and the inherent uncertainty of Egyptian listed company performance, which is not guaranteed. No outside knowledge about these companies or later events was used; all figures derive exclusively from the provided evidence.}",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL Net profit for the year 2025 in whole EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL Net profit for the year 2024 in whole EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI Net profit for the year 2025 in whole EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI Net profit for the year 2024 in whole EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit for the year 2025 in whole EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID Net profit for the year 2024 in whole EGP"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH Net profit for the year 2025 in whole EGP (LE)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 12769517325.0,
+        "statement": "TMGH Net profit for the year 2024 in whole EGP (LE, Restated)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID Basic and diluted EPS 2025 in EGP"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH EPS 2025 in LE"
+      }
+    ],
+    "unused_figures": [
+      "ETEL Basic and diluted earning per share for the year (L.E. / Share) with unit L.E.(000) – ambiguous unit for EPS, excluded from P/E calculation.",
+      "COMI Basic earnings per share with unit \"All amounts are shown in EGP thousands\" – ambiguous unit for EPS, excluded from P/E calculation."
+    ],
+    "limitations": [
+      "All analysis uses only the provided evidence and prices; no outside knowledge about company fundamentals, management, or later events was applied.",
+      "P/E ratios for ETEL and COMI could not be calculated due to ambiguous EPS units; conclusions on valuation are therefore incomplete for those two companies.",
+      "The diversification rule (max 50% per position) was applied strictly; buying the maximum allowable shares for any company leaves roughly half the portfolio in cash.",
+      "Figures marked AMBIGUOUS in the evidence were excluded from calculations and listed in unused_figures as required."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 1960,
+    "explanation": "The investor has a long-term growth horizon (7+ years), medium risk tolerance, and 80,000 EGP in cash with no current holdings. The comparison of the four listed companies (ETEL, COMI, EFID, TMGH) on net profit growth (2024→2025) and price-to-earnings (P/E) ratio is based solely on the provided evidence and prices at the 2026-11-18 cutoff.\n\n**Net profit growth (2024→2025) in whole EGP:**\n- ETEL: 2025 NP = 22,578,063,000 EGP; 2024 NP = 10,111,328,000 EGP → +123.3% growth.\n- COMI: 2025 NP = 82,258,815,000 EGP; 2024 NP = 55,256,732,000 EGP → +48.9% growth.\n- EFID: 2025 NP = 2,695,301,670 EGP; 2024 NP = 1,606,727,698 EGP → +67.8% growth.\n- TMGH: 2025 NP = 18,201,981,482 EGP; 2024 NP = 12,769,517,325 EGP → +42.5% growth.\n\n**P/E ratio (using 2025 EPS and market prices):**\n- EFID: Price 20.40 EGP / EPS 2.18 EGP = **9.36** (calculable, reliable unit EGP).\n- TMGH: Price 82.50 EGP / EPS 6.98 LE = **11.82** (calculable, reliable unit LE).\n- ETEL: Price 141.95 EGP / EPS ambiguous (unit L.E.(000)) → P/E **not calculable** from evidence.\n- COMI: Price 128.00 EGP / EPS ambiguous (unit EGP thousands) → P/E **not calculable** from evidence.\n\n**Diversification constraint:** After a buy, no single company may exceed 50% of the portfolio's total value (cash + holdings at given prices). With 80,000 EGP cash, the maximum allowable value for any one position is 40,000 EGP.\n- EFID at 20.40 EGP/share: max 1,960 shares = 39,984 EGP (49.98% of portfolio), leaving 40,016 EGP cash.\n- TMGH at 82.50 EGP/share: max 484 shares = 39,930 EGP (49.91%), leaving 40,070 EGP cash.\n- ETEL/COMI also feasible under the limit, but their P/E ratios are unavailable.\n\n**Unused figures (ambiguous units, per rules):**\n- ETEL Basic and diluted EPS (unit L.E.(000)) – affects P/E calculation for ETEL.\n- COMI Basic EPS (unit \"All amounts are shown in EGP thousands\") – affects P/E calculation for COMI. These figures are listed in `unused_figures` and excluded from P/E conclusions.\n\n**Recommendation:** **Buy EFID**. EFID offers the lowest calculable P/E (9.36) among the evidence-covered companies, solid net profit growth (67.8%), and a share price (20.40 EGP) that fits the diversification constraint comfortably. Purchasing 1,960 shares uses 39,984 EGP, leaving 40,016 EGP in cash, resulting in a portfolio where EFID represents 49.98% and cash 50.02%, satisfying the 50% concentration limit. The stock's low P/E and growth profile align with the investor's long-term growth goal and medium risk tolerance. Risks include reliance on a single position (offset by the cash buffer) and the inherent uncertainty of Egyptian listed company performance, which is not guaranteed. No outside knowledge about these companies or later events was used; all figures derive exclusively from the provided evidence.}",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL Net profit for the year 2025 in whole EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL Net profit for the year 2024 in whole EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI Net profit for the year 2025 in whole EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI Net profit for the year 2024 in whole EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit for the year 2025 in whole EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID Net profit for the year 2024 in whole EGP"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH Net profit for the year 2025 in whole EGP (LE)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 12769517325.0,
+        "statement": "TMGH Net profit for the year 2024 in whole EGP (LE, Restated)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID Basic and diluted EPS 2025 in EGP"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH EPS 2025 in LE"
+      }
+    ],
+    "unused_figures": [
+      "ETEL Basic and diluted earning per share for the year (L.E. / Share) with unit L.E.(000) – ambiguous unit for EPS, excluded from P/E calculation.",
+      "COMI Basic earnings per share with unit \"All amounts are shown in EGP thousands\" – ambiguous unit for EPS, excluded from P/E calculation."
+    ],
+    "limitations": [
+      "All analysis uses only the provided evidence and prices; no outside knowledge about company fundamentals, management, or later events was applied.",
+      "P/E ratios for ETEL and COMI could not be calculated due to ambiguous EPS units; conclusions on valuation are therefore incomplete for those two companies.",
+      "The diversification rule (max 50% per position) was applied strictly; buying the maximum allowable shares for any company leaves roughly half the portfolio in cash.",
+      "Figures marked AMBIGUOUS in the evidence were excluded from calculations and listed in unused_figures as required."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40016.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1960
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 429.043,
+      "input_tokens": 2415,
+      "output_tokens": 15099,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 429.046
+}

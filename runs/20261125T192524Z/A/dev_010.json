@@ -1,0 +1,63 @@
+{
+  "case_id": "dev_010",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "### Profit growth analysis\nThe investor asks how much the profit belonging to Talaat Moustafa's own shareholders grew in 2025 compared with 2024, and whether this justifies adding to the TMGH position.\n\n**Evidence reviewed:**\n- [TMGH-TMGH_FY2025_consolidated_en-p7-57] Shareholders of the Parent Company (consolidated) | period 2025 | as printed: \"14,383,890,306 | 9,025,066,065\" LE\n- [TMGH-TMGH_FY2025_consolidated_en-p7-58] Shareholders of the Parent Company (consolidated) | period 2024 (Restated) | as printed: \"14,383,890,306 | 9,025,066,065\" LE\n\n**Ambiguity & unused figures:**\nBoth rows print *identical* two-column figures (14,383,890,306 and 9,025,066,065 LE). The instruction says \"use the column for the period stated,\" but the printed text does not disambiguate which column corresponds to 2025 versus the restated 2024 figure. Because the same pair appears under both period labels, the column‑to‑period mapping cannot be reliably determined from the evidence alone. Per the rules, figures marked AMBIGUOUS must not be used in calculations. These two rows are therefore listed as unused figures, and the growth conclusion is affected: the absolute and percentage growth in shareholders' profit cannot be confirmed.\n\n**Portfolio diversification check (per rules):**\n- Cash: 30,000.00 EGP\n- TMGH holdings: 500 shares × 82.50 EGP = 41,250.00 EGP\n- Total portfolio value: 71,250.00 EGP\n- TMGH current weight: 41,250 / 71,250 = 57.88% > 50% diversification limit\n- The rule states: \"after a buy, no single company may be more than half of the portfolio's total value… This limit has no exceptions… buy fewer shares instead.\" A buy of additional TMGH shares would increase the weight beyond 57.88%, violating the rule. A hold action maintains the current over‑50% weight, and the rules do not provide an exception for existing concentrations when initiating a new action. To comply, the investor would first need to sell TMGH shares to bring the weight ≤ 50%, then could consider a smaller buy—but the single‑action recommendation must stand on its own.\n\n**Investor profile & question:**\n- Goal: long‑term growth, 5‑10 year horizon, high loss willingness, medium ability to withstand losses.\n- The profit‑growth question is central to justifying an add‑to‑position decision, but the evidence does not allow a reliable calculation of that growth.\n\n**Conclusion:**\nBecause the key financial figure (shareholders' profit for 2025 vs. 2024) is ambiguous and cannot be used in calculations, and because adding to the TMGH position would breach the portfolio diversification rule without first rebalancing via a sell, a responsible decision cannot be made on the provided evidence alone.\n\n**Recommendation:** Choose `insufficient_evidence`. The missing information is the determinable 2024 (restated) shareholders' profit figure, and the portfolio constraint prevents a compliant buy of TMGH without an accompanying sell.\n\n**Unused figures (AMBIGUOUS):**\n- TMGH‑TMGH_FY2025_consolidated_en‑p7‑57: Shareholders of the Parent Company (consolidated), period 2025, value 14,383,890,306 LE (column‑to‑period mapping unclear)\n- TMGH‑TMGH_FY2025_consolidated_en‑p7‑58: Shareholders of the Parent Company (consolidated), period 2024 (Restated), value 14,383,890,306 LE (same ambiguity; growth conclusion affected)\n\n**Risks & uncertainty stated honestly:** The analysis relies on evidence printed in the report only; no outside data or later events are used. The identical printing for both periods creates uncertainty about which number is which year's figure, and the portfolio already exceeds the 50% single‑company limit, meaning any additional TMGH exposure must be preceded by a reduction in existing holdings. This guidance is not a guarantee of returns.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-57: Shareholders of the Parent Company (consolidated) period 2025, value 14383890306 LE (ambiguous column mapping)",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-58: Shareholders of the Parent Company (consolidated) period 2024 (Restated), value 14383890306 LE (same ambiguity; growth conclusion affected)"
+    ],
+    "limitations": [
+      "All figures are taken exactly as printed; no outside market data or subsequent filings are considered.",
+      "The diversification limit (no single company > 50% of cash + holdings at given prices) is enforced per the rules; existing concentrations are not exempted for new action recommendations.",
+      "The recommendation `insufficient_evidence` reflects both the ambiguous financial evidence and the portfolio constraint; it does not imply a bearish or bullish view on TMGH."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "### Profit growth analysis\nThe investor asks how much the profit belonging to Talaat Moustafa's own shareholders grew in 2025 compared with 2024, and whether this justifies adding to the TMGH position.\n\n**Evidence reviewed:**\n- [TMGH-TMGH_FY2025_consolidated_en-p7-57] Shareholders of the Parent Company (consolidated) | period 2025 | as printed: \"14,383,890,306 | 9,025,066,065\" LE\n- [TMGH-TMGH_FY2025_consolidated_en-p7-58] Shareholders of the Parent Company (consolidated) | period 2024 (Restated) | as printed: \"14,383,890,306 | 9,025,066,065\" LE\n\n**Ambiguity & unused figures:**\nBoth rows print *identical* two-column figures (14,383,890,306 and 9,025,066,065 LE). The instruction says \"use the column for the period stated,\" but the printed text does not disambiguate which column corresponds to 2025 versus the restated 2024 figure. Because the same pair appears under both period labels, the column‑to‑period mapping cannot be reliably determined from the evidence alone. Per the rules, figures marked AMBIGUOUS must not be used in calculations. These two rows are therefore listed as unused figures, and the growth conclusion is affected: the absolute and percentage growth in shareholders' profit cannot be confirmed.\n\n**Portfolio diversification check (per rules):**\n- Cash: 30,000.00 EGP\n- TMGH holdings: 500 shares × 82.50 EGP = 41,250.00 EGP\n- Total portfolio value: 71,250.00 EGP\n- TMGH current weight: 41,250 / 71,250 = 57.88% > 50% diversification limit\n- The rule states: \"after a buy, no single company may be more than half of the portfolio's total value… This limit has no exceptions… buy fewer shares instead.\" A buy of additional TMGH shares would increase the weight beyond 57.88%, violating the rule. A hold action maintains the current over‑50% weight, and the rules do not provide an exception for existing concentrations when initiating a new action. To comply, the investor would first need to sell TMGH shares to bring the weight ≤ 50%, then could consider a smaller buy—but the single‑action recommendation must stand on its own.\n\n**Investor profile & question:**\n- Goal: long‑term growth, 5‑10 year horizon, high loss willingness, medium ability to withstand losses.\n- The profit‑growth question is central to justifying an add‑to‑position decision, but the evidence does not allow a reliable calculation of that growth.\n\n**Conclusion:**\nBecause the key financial figure (shareholders' profit for 2025 vs. 2024) is ambiguous and cannot be used in calculations, and because adding to the TMGH position would breach the portfolio diversification rule without first rebalancing via a sell, a responsible decision cannot be made on the provided evidence alone.\n\n**Recommendation:** Choose `insufficient_evidence`. The missing information is the determinable 2024 (restated) shareholders' profit figure, and the portfolio constraint prevents a compliant buy of TMGH without an accompanying sell.\n\n**Unused figures (AMBIGUOUS):**\n- TMGH‑TMGH_FY2025_consolidated_en‑p7‑57: Shareholders of the Parent Company (consolidated), period 2025, value 14,383,890,306 LE (column‑to‑period mapping unclear)\n- TMGH‑TMGH_FY2025_consolidated_en‑p7‑58: Shareholders of the Parent Company (consolidated), period 2024 (Restated), value 14,383,890,306 LE (same ambiguity; growth conclusion affected)\n\n**Risks & uncertainty stated honestly:** The analysis relies on evidence printed in the report only; no outside data or later events are used. The identical printing for both periods creates uncertainty about which number is which year's figure, and the portfolio already exceeds the 50% single‑company limit, meaning any additional TMGH exposure must be preceded by a reduction in existing holdings. This guidance is not a guarantee of returns.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-57: Shareholders of the Parent Company (consolidated) period 2025, value 14383890306 LE (ambiguous column mapping)",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-58: Shareholders of the Parent Company (consolidated) period 2024 (Restated), value 14383890306 LE (same ambiguity; growth conclusion affected)"
+    ],
+    "limitations": [
+      "All figures are taken exactly as printed; no outside market data or subsequent filings are considered.",
+      "The diversification limit (no single company > 50% of cash + holdings at given prices) is enforced per the rules; existing concentrations are not exempted for new action recommendations.",
+      "The recommendation `insufficient_evidence` reflects both the ambiguous financial evidence and the portfolio constraint; it does not imply a bearish or bullish view on TMGH."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 112.849,
+      "input_tokens": 1890,
+      "output_tokens": 15385,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 112.851
+}

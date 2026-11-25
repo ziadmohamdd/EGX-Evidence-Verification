@@ -1,0 +1,75 @@
+{
+  "case_id": "dev_005",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's goal is to add a fertilizer exporter for diversification, but the provided evidence contains no information identifying which of the discussed companies (ABUK or COMI) operates as a fertilizer exporter, nor any sector-specific data. All revenue and net profit figures for ABUK (evidence rows ABUK-ABUK_9M2026_results-p2-01, p2-02, p2-25, p2-26) are marked AMBIGUOUS and must not be used in calculations. This affects any assessment of ABUK's financial performance or suitability for the stated goal. The EPS figures (p2-31, p2-32) are marked verified but carry a unit declaration of 'مليون جنيه' (million EGP) that conflicts with the requirement to express figures in base units (whole EGP), introducing further uncertainty. No evidence links the given tickers to the fertilizer export activity required for diversification, and outside knowledge about company sectors is prohibited per the rules. With the critical piece of evidence—sector identification for the investment goal—missing, a responsible decision cannot be made. The diversification constraint (no single company > 50% of portfolio total value of 65,600 EGP) and available cash (40,000 EGP) are noted, but they do not resolve the lack of goal-aligned evidence. Therefore, the evidence is insufficient for a responsible recommendation.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Revenue and net profit for ABUK are AMBIGUOUS and excluded from all calculations.",
+      "EPS figures have unit ambiguity ('مليون جنيه' vs. base EGP) and are not relied upon due to goal mismatch.",
+      "No evidence identifies ABUK or COMI as a fertilizer exporter; sector information is required for the stated goal.",
+      "Outside knowledge about company activities is prohibited; decision must rest solely on provided evidence."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's goal is to add a fertilizer exporter for diversification, but the provided evidence contains no information identifying which of the discussed companies (ABUK or COMI) operates as a fertilizer exporter, nor any sector-specific data. All revenue and net profit figures for ABUK (evidence rows ABUK-ABUK_9M2026_results-p2-01, p2-02, p2-25, p2-26) are marked AMBIGUOUS and must not be used in calculations. This affects any assessment of ABUK's financial performance or suitability for the stated goal. The EPS figures (p2-31, p2-32) are marked verified but carry a unit declaration of 'مليون جنيه' (million EGP) that conflicts with the requirement to express figures in base units (whole EGP), introducing further uncertainty. No evidence links the given tickers to the fertilizer export activity required for diversification, and outside knowledge about company sectors is prohibited per the rules. With the critical piece of evidence—sector identification for the investment goal—missing, a responsible decision cannot be made. The diversification constraint (no single company > 50% of portfolio total value of 65,600 EGP) and available cash (40,000 EGP) are noted, but they do not resolve the lack of goal-aligned evidence. Therefore, the evidence is insufficient for a responsible recommendation.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Revenue and net profit for ABUK are AMBIGUOUS and excluded from all calculations.",
+      "EPS figures have unit ambiguity ('مليون جنيه' vs. base EGP) and are not relied upon due to goal mismatch.",
+      "No evidence identifies ABUK or COMI as a fertilizer exporter; sector information is required for the stated goal.",
+      "Outside knowledge about company activities is prohibited; decision must rest solely on provided evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 739.362,
+      "input_tokens": 1561,
+      "output_tokens": 8438,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 739.365
+}

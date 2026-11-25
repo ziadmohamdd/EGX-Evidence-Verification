@@ -1,0 +1,120 @@
+{
+  "case_id": "dev_002",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "Based on the provided evidence for TMGH (Ticker: TMGH) as of the 2026-11-18 cutoff, and the investor's profile (long-term wealth building, 10+ year horizon, high risk tolerance, no planned liquidity needs, current cash 100,000 EGP, no holdings), the available financial data is insufficient to support a responsible buy, hold, or sell decision.\n\nKey evidence extracted (all figures in base LE units, as printed):\n- Gross profit (consolidated) period 2025: 20,855,400,384 LE [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-19]\n- Gross profit (consolidated) period 2024 Restated: 14,002,196,445 LE [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-20]\n- Net profit for the year (consolidated) period 2025: 18,201,981,482 LE [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-55]\n- Total equity (consolidated) period 31 December 2025: 157,708,140,765 LE [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p5-67]\n- Earnings per Share (consolidated) period 2025: 6.98 LE [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-61]\n- Earnings per Share (consolidated) period 2024 Restated: 6.98 LE [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-62]\n\nUnused figures: The net profit for the year (consolidated) period 2024 Restated is marked AMBIGUOUS [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-56] because auditor's stamp covered digits, rendering the figure unusable. This affects any conclusions about year-over-year net profit growth, earnings trend analysis, or sustainable profitability comparisons between 2024 and 2025.\n\nCalculated metric (using only verified given figures): FY2025 EPS of 6.98 LE and market price 82.50 EGP imply a price-to-earnings (P/E) ratio of approximately 11.82. Gross profit increased notably from 2024 to 2025, and total equity grew from 129,879,813,693 LE to 157,708,140,765 LE (approx. 21.4% rise). However, the evidence set is limited to a few line items from the consolidated annual report; it does not include revenue, operating expenses, cash flow, debt levels, or any comparative industry data. Without revenue, the sustainability of the reported net profit and gross margin cannot be fully assessed. The ambiguous net profit for 2024 further restricts year-over-year performance evaluation.\n\nGiven the paucity of financial data and the explicit ambiguity in a core profitability figure, the evidence does not meet the threshold for a responsible investment decision under the stated rules. A responsible decision requires more comprehensive information, such as full income statement and cash flow data, reliable year-over-year comparables, and valuation context beyond the minimal P/E derived here.\n\nConsequently, the recommendation is: insufficient_evidence.\n\nGuidance, not guarantee: This is investment guidance based solely on the supplied evidence and does not guarantee returns. Investors should conduct thorough due diligence, consider diversification, and be aware of risks including financial reporting ambiguities, market volatility, and company-specific factors not captured in the limited evidence set.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "TMGH Gross profit (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+        "stated_value": 14002196445.0,
+        "statement": "TMGH Gross profit (consolidated) period 2024 Restated"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH Net profit for the year (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "TMGH Total equity (consolidated) period 31 December 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH Earnings per Share (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 6.98,
+        "statement": "TMGH Earnings per Share (consolidated) period 2024 Restated"
+      }
+    ],
+    "unused_figures": [
+      "TMGH Net profit for the year (consolidated) period 2024 Restated: AMBIGUOUS (evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-56; digits covered by auditor's stamp, cannot be used for year-over-year profit analysis or growth calculations)"
+    ],
+    "limitations": [
+      "Evidence provides only selected line items; full income statement, cash flow, and debt data are absent.",
+      "Year-over-year net profit comparison is compromised by the AMBIGUOUS 2024 restated figure.",
+      "No revenue, margin sustainability, or comparative valuation data are available within the given rules.",
+      "Any buy decision would be highly concentrated; diversification limit (≤50% of portfolio) would restrict TMGH purchase to ≤606 shares (≈49,995 EGP) with 100,000 EGP cash, but the evidence does not justify such a position."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "Based on the provided evidence for TMGH (Ticker: TMGH) as of the 2026-11-18 cutoff, and the investor's profile (long-term wealth building, 10+ year horizon, high risk tolerance, no planned liquidity needs, current cash 100,000 EGP, no holdings), the available financial data is insufficient to support a responsible buy, hold, or sell decision.\n\nKey evidence extracted (all figures in base LE units, as printed):\n- Gross profit (consolidated) period 2025: 20,855,400,384 LE [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-19]\n- Gross profit (consolidated) period 2024 Restated: 14,002,196,445 LE [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-20]\n- Net profit for the year (consolidated) period 2025: 18,201,981,482 LE [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-55]\n- Total equity (consolidated) period 31 December 2025: 157,708,140,765 LE [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p5-67]\n- Earnings per Share (consolidated) period 2025: 6.98 LE [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-61]\n- Earnings per Share (consolidated) period 2024 Restated: 6.98 LE [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-62]\n\nUnused figures: The net profit for the year (consolidated) period 2024 Restated is marked AMBIGUOUS [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-56] because auditor's stamp covered digits, rendering the figure unusable. This affects any conclusions about year-over-year net profit growth, earnings trend analysis, or sustainable profitability comparisons between 2024 and 2025.\n\nCalculated metric (using only verified given figures): FY2025 EPS of 6.98 LE and market price 82.50 EGP imply a price-to-earnings (P/E) ratio of approximately 11.82. Gross profit increased notably from 2024 to 2025, and total equity grew from 129,879,813,693 LE to 157,708,140,765 LE (approx. 21.4% rise). However, the evidence set is limited to a few line items from the consolidated annual report; it does not include revenue, operating expenses, cash flow, debt levels, or any comparative industry data. Without revenue, the sustainability of the reported net profit and gross margin cannot be fully assessed. The ambiguous net profit for 2024 further restricts year-over-year performance evaluation.\n\nGiven the paucity of financial data and the explicit ambiguity in a core profitability figure, the evidence does not meet the threshold for a responsible investment decision under the stated rules. A responsible decision requires more comprehensive information, such as full income statement and cash flow data, reliable year-over-year comparables, and valuation context beyond the minimal P/E derived here.\n\nConsequently, the recommendation is: insufficient_evidence.\n\nGuidance, not guarantee: This is investment guidance based solely on the supplied evidence and does not guarantee returns. Investors should conduct thorough due diligence, consider diversification, and be aware of risks including financial reporting ambiguities, market volatility, and company-specific factors not captured in the limited evidence set.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "TMGH Gross profit (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+        "stated_value": 14002196445.0,
+        "statement": "TMGH Gross profit (consolidated) period 2024 Restated"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH Net profit for the year (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "TMGH Total equity (consolidated) period 31 December 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH Earnings per Share (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 6.98,
+        "statement": "TMGH Earnings per Share (consolidated) period 2024 Restated"
+      }
+    ],
+    "unused_figures": [
+      "TMGH Net profit for the year (consolidated) period 2024 Restated: AMBIGUOUS (evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-56; digits covered by auditor's stamp, cannot be used for year-over-year profit analysis or growth calculations)"
+    ],
+    "limitations": [
+      "Evidence provides only selected line items; full income statement, cash flow, and debt data are absent.",
+      "Year-over-year net profit comparison is compromised by the AMBIGUOUS 2024 restated figure.",
+      "No revenue, margin sustainability, or comparative valuation data are available within the given rules.",
+      "Any buy decision would be highly concentrated; diversification limit (≤50% of portfolio) would restrict TMGH purchase to ≤606 shares (≈49,995 EGP) with 100,000 EGP cash, but the evidence does not justify such a position."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 100000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 790.132,
+      "input_tokens": 1295,
+      "output_tokens": 13045,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 790.135
+}

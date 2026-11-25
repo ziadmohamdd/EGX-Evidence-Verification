@@ -1,0 +1,119 @@
+{
+  "case_id": "dev_001",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "ETEL",
+    "shares": 80,
+    "explanation": "Investor profile: Goal is to grow savings for a child's university fees over a 5-7 year horizon. Liquidity needs are met by a separate emergency fund. Willingness to accept losses: medium; financial ability to withstand losses: medium.\n\nCurrent portfolio: Cash balance of 20,000.00 EGP. Holdings: 300 shares of ETEL at the cutoff price of 141.95 EGP per share, valued at 300 × 141.95 = 42,585.00 EGP. Total portfolio value = 20,000.00 + 42,585.00 = 62,585.00 EGP. ETEL therefore represents 42,585.00 / 62,585.00 ≈ 68.04% of the portfolio.\n\nFinancial evidence (ETEL FY2025 consolidated, all figures converted from L.E. (000) to whole Egyptian Pounds by multiplying by 1,000):\n- Operating revenues (period 31/12/2025): 106,672,946 × 1,000 = 106,672,946,000 EGP (evidence_id: ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01).\n- Gross Profit (period 31/12/2025): 44,839,110 × 1,000 = 44,839,110,000 EGP (p6-05).\n- Net profit for the year (period 31/12/2025): 22,578,063 × 1,000 = 22,578,063,000 EGP (p6-35).\n- Total Assets (consolidated, period 31/12/2025): 225,882,527 × 1,000 = 225,882,527,000 EGP (p5-31).\n- Total Equity (consolidated, period 31/12/2025): 63,687,826 × 1,000 = 63,687,826,000 EGP (p5-45).\n\nFrom these, key derived metrics (all in whole EGP):\n- Gross margin: 44,839,110,000 / 106,672,946,000 ≈ 42.0%.\n- Net margin: 22,578,063,000 / 106,672,946,000 ≈ 21.2%.\n- Revenue growth FY2025 vs FY2024: (106,672,946,000 - 81,677,812,000) / 81,677,812,000 ≈ 30.6% increase (FY2024 revenue 81,677,812,000 EGP from p6-02).\n- Debt = Total Assets - Total Equity = 225,882,527,000 - 63,687,826,000 = 162,194,701,000 EGP.\n- Debt-to-Equity ratio: ~2.55, indicating high leverage.\n- Basic and diluted earning per share (EPS) for the year is printed as 11.93 L.E./Share (p6-55) and 4.79 L.E./Share (p6-56) with unit L.E.(000). This unit is ambiguous for a per-share figure; converting 11.93 as L.E.(000) would yield 11,930 L.E. per share, which is inconsistent with the market price of 141.95 EGP and typical EPS ranges. Therefore, EPS is not used in valuation ratios; the P/E ratio is not calculated from this figure. (See unused_figures below.)\n\nPortfolio diversification rule: The rules state: \"Keep the portfolio diversified: after a buy, no single company may be more than half of the portfolio's total value (cash plus holdings at the given prices). This limit has no exceptions, whatever the investor's profile; buy fewer shares instead.\" The current portfolio has ETEL at 68.04%, which exceeds the 50% threshold.\n\nEvaluation of actions:\n- **buy**: Any additional purchase of ETEL shares using the 20,000 EGP cash would increase the ETEL allocation beyond 68.04%, violating the 50% diversification limit. No other listed companies have provided evidence, so a buy into another asset is not supported by the given data.\n- **hold**: Maintaining the current 300 ETEL shares leaves the portfolio at 68.04% ETEL, which breaches the diversification rule's 50% cap. While the rule's specific \"after a buy\" constraint does not apply to a hold action, the overarching instruction \"Keep the portfolio diversified\" is violated.\n- **sell**: Reducing the ETEL holding can bring the allocation within the 50% limit. To achieve ETEL ≤ 50% of the total portfolio value (62,585 EGP), the ETEL value must be ≤ 31,292.5 EGP. Current ETEL value is 42,585 EGP. Minimum shares to sell: (42,585 - 31,292.5) / 141.95 ≈ 79.53. Selling 80 shares results in 220 shares remaining, ETEL value = 220 × 141.95 = 31,229 EGP (49.90% of portfolio), and cash increases to 31,356 EGP. This complies with the diversification rule.\n- **keep_cash**: If this means retaining the current composition, it remains non-diversified. If it means liquidating all ETEL into cash, the portfolio would be 100% cash, which may not support the 5-7 year growth objective for university fees given the investor's medium risk tolerance and the evidence of ETEL's growth potential.\n- **insufficient_evidence**: While the investor's cost basis, exact university fees timeline, and dividend history are not provided, the available evidence is sufficient to assess the current allocation and the company's financial health, allowing a responsible rebalancing decision.\n\nGiven the diversification constraint and the investor's medium risk tolerance with a 5-7 year horizon for a specific savings goal, the recommended action is to reduce the ETEL position to a level that respects the 50% portfolio limit.\n\n**Recommendation: sell** (sell at least 80 shares of ETEL).\n\nAfter selling 80 shares, the portfolio would consist of:\n- Cash: 31,356.00 EGP (increased from 20,000.00 EGP)\n- ETEL: 220 shares × 141.95 EGP = 31,229.00 EGP\n- Total portfolio: 62,585.00 EGP\n- ETEL allocation: 31,229.00 / 62,585.00 ≈ 49.90% (within the 50% diversification limit).\n\nThis rebalancing reduces concentration risk while maintaining a meaningful equity exposure aligned with the growth objective for university fees. The remaining 220 shares still provide exposure to ETEL's demonstrated revenue growth and profitability, and the increased cash buffer offers greater liquidity as the university fees date approaches.\n\n**Unused figures and ambiguous conclusions:**\n- ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55 and p6-56: Basic and diluted earning per share for the year reported as 11.93 and 4.79 with unit L.E.(000). The unit \"L.E.(000)\" implies the figures are in thousands of pounds, but EPS is a per-share metric and should not be expressed in thousands in this context. Interpreting 11.93 as 11,930 L.E. per share is unrealistic given the share price of 141.95 EGP and typical EPS ranges for listed companies. Consequently, the EPS figures have not been used in any calculations, including the P/E ratio. The conclusions affected are any reliance on EPS for valuation or earnings quality assessment; the analysis instead focuses on total net profit and margins derived from the absolute profit figures.\n\n**Uncertainty and risks statement:**\nThis guidance is based solely on the evidence provided as of the 2026-11-18 cutoff and the investor's stated profile. It does not constitute a guarantee of returns. The Egyptian listed company ETEL's financial health, as shown, includes strong revenue growth (≈30.6% year-over-year), healthy gross and net margins (~42% and ~21% respectively), but also high leverage (debt-to-equity ~2.55). Individual stock investing carries company-specific risks, including operational, regulatory, and market risks. The portfolio rebalancing recommended here reduces concentration risk but does not eliminate market risk; the value of ETEL shares and the cash position can fluctuate. The investor should monitor the remaining ETEL holding and the cash buffer relative to the upcoming university fees expenditure, and consider periodic rebalancing as the horizon shortens.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues (period 31/12/2025)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+        "stated_value": 44839110000.0,
+        "statement": "Gross Profit (period 31/12/2025)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for the year (period 31/12/2025)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total Assets (consolidated, period 31/12/2025)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "Total Equity (consolidated, period 31/12/2025)"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55: Basic and diluted earning per share 11.93, unit L.E.(000). Ambiguous because EPS per share should not be in thousands; 11.93 would imply 11,930 L.E. per share, inconsistent with share price 141.95 EGP and typical EPS ranges. Not used in calculations.",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56: Basic and diluted earning per share 4.79, unit L.E.(000). Same ambiguity as p6-55; not used in calculations."
+    ],
+    "limitations": [
+      "Guidance is based solely on evidence printed in the report as of 2026-11-18; no outside knowledge or later events were used.",
+      "All financial figures are converted from the reported L.E. (000) unit to whole Egyptian Pounds by multiplying by 1,000.",
+      "The EPS figures are marked ambiguous due to unit conflict and have been excluded from all ratio calculations.",
+      "The diversification 50% limit is applied to the portfolio composition after the recommended sell action; the current holding alone exceeds this threshold.",
+      "This is guidance, not a guarantee of returns. Market risks and individual company risks apply."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "ETEL",
+    "shares": 80,
+    "explanation": "Investor profile: Goal is to grow savings for a child's university fees over a 5-7 year horizon. Liquidity needs are met by a separate emergency fund. Willingness to accept losses: medium; financial ability to withstand losses: medium.\n\nCurrent portfolio: Cash balance of 20,000.00 EGP. Holdings: 300 shares of ETEL at the cutoff price of 141.95 EGP per share, valued at 300 × 141.95 = 42,585.00 EGP. Total portfolio value = 20,000.00 + 42,585.00 = 62,585.00 EGP. ETEL therefore represents 42,585.00 / 62,585.00 ≈ 68.04% of the portfolio.\n\nFinancial evidence (ETEL FY2025 consolidated, all figures converted from L.E. (000) to whole Egyptian Pounds by multiplying by 1,000):\n- Operating revenues (period 31/12/2025): 106,672,946 × 1,000 = 106,672,946,000 EGP (evidence_id: ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01).\n- Gross Profit (period 31/12/2025): 44,839,110 × 1,000 = 44,839,110,000 EGP (p6-05).\n- Net profit for the year (period 31/12/2025): 22,578,063 × 1,000 = 22,578,063,000 EGP (p6-35).\n- Total Assets (consolidated, period 31/12/2025): 225,882,527 × 1,000 = 225,882,527,000 EGP (p5-31).\n- Total Equity (consolidated, period 31/12/2025): 63,687,826 × 1,000 = 63,687,826,000 EGP (p5-45).\n\nFrom these, key derived metrics (all in whole EGP):\n- Gross margin: 44,839,110,000 / 106,672,946,000 ≈ 42.0%.\n- Net margin: 22,578,063,000 / 106,672,946,000 ≈ 21.2%.\n- Revenue growth FY2025 vs FY2024: (106,672,946,000 - 81,677,812,000) / 81,677,812,000 ≈ 30.6% increase (FY2024 revenue 81,677,812,000 EGP from p6-02).\n- Debt = Total Assets - Total Equity = 225,882,527,000 - 63,687,826,000 = 162,194,701,000 EGP.\n- Debt-to-Equity ratio: ~2.55, indicating high leverage.\n- Basic and diluted earning per share (EPS) for the year is printed as 11.93 L.E./Share (p6-55) and 4.79 L.E./Share (p6-56) with unit L.E.(000). This unit is ambiguous for a per-share figure; converting 11.93 as L.E.(000) would yield 11,930 L.E. per share, which is inconsistent with the market price of 141.95 EGP and typical EPS ranges. Therefore, EPS is not used in valuation ratios; the P/E ratio is not calculated from this figure. (See unused_figures below.)\n\nPortfolio diversification rule: The rules state: \"Keep the portfolio diversified: after a buy, no single company may be more than half of the portfolio's total value (cash plus holdings at the given prices). This limit has no exceptions, whatever the investor's profile; buy fewer shares instead.\" The current portfolio has ETEL at 68.04%, which exceeds the 50% threshold.\n\nEvaluation of actions:\n- **buy**: Any additional purchase of ETEL shares using the 20,000 EGP cash would increase the ETEL allocation beyond 68.04%, violating the 50% diversification limit. No other listed companies have provided evidence, so a buy into another asset is not supported by the given data.\n- **hold**: Maintaining the current 300 ETEL shares leaves the portfolio at 68.04% ETEL, which breaches the diversification rule's 50% cap. While the rule's specific \"after a buy\" constraint does not apply to a hold action, the overarching instruction \"Keep the portfolio diversified\" is violated.\n- **sell**: Reducing the ETEL holding can bring the allocation within the 50% limit. To achieve ETEL ≤ 50% of the total portfolio value (62,585 EGP), the ETEL value must be ≤ 31,292.5 EGP. Current ETEL value is 42,585 EGP. Minimum shares to sell: (42,585 - 31,292.5) / 141.95 ≈ 79.53. Selling 80 shares results in 220 shares remaining, ETEL value = 220 × 141.95 = 31,229 EGP (49.90% of portfolio), and cash increases to 31,356 EGP. This complies with the diversification rule.\n- **keep_cash**: If this means retaining the current composition, it remains non-diversified. If it means liquidating all ETEL into cash, the portfolio would be 100% cash, which may not support the 5-7 year growth objective for university fees given the investor's medium risk tolerance and the evidence of ETEL's growth potential.\n- **insufficient_evidence**: While the investor's cost basis, exact university fees timeline, and dividend history are not provided, the available evidence is sufficient to assess the current allocation and the company's financial health, allowing a responsible rebalancing decision.\n\nGiven the diversification constraint and the investor's medium risk tolerance with a 5-7 year horizon for a specific savings goal, the recommended action is to reduce the ETEL position to a level that respects the 50% portfolio limit.\n\n**Recommendation: sell** (sell at least 80 shares of ETEL).\n\nAfter selling 80 shares, the portfolio would consist of:\n- Cash: 31,356.00 EGP (increased from 20,000.00 EGP)\n- ETEL: 220 shares × 141.95 EGP = 31,229.00 EGP\n- Total portfolio: 62,585.00 EGP\n- ETEL allocation: 31,229.00 / 62,585.00 ≈ 49.90% (within the 50% diversification limit).\n\nThis rebalancing reduces concentration risk while maintaining a meaningful equity exposure aligned with the growth objective for university fees. The remaining 220 shares still provide exposure to ETEL's demonstrated revenue growth and profitability, and the increased cash buffer offers greater liquidity as the university fees date approaches.\n\n**Unused figures and ambiguous conclusions:**\n- ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55 and p6-56: Basic and diluted earning per share for the year reported as 11.93 and 4.79 with unit L.E.(000). The unit \"L.E.(000)\" implies the figures are in thousands of pounds, but EPS is a per-share metric and should not be expressed in thousands in this context. Interpreting 11.93 as 11,930 L.E. per share is unrealistic given the share price of 141.95 EGP and typical EPS ranges for listed companies. Consequently, the EPS figures have not been used in any calculations, including the P/E ratio. The conclusions affected are any reliance on EPS for valuation or earnings quality assessment; the analysis instead focuses on total net profit and margins derived from the absolute profit figures.\n\n**Uncertainty and risks statement:**\nThis guidance is based solely on the evidence provided as of the 2026-11-18 cutoff and the investor's stated profile. It does not constitute a guarantee of returns. The Egyptian listed company ETEL's financial health, as shown, includes strong revenue growth (≈30.6% year-over-year), healthy gross and net margins (~42% and ~21% respectively), but also high leverage (debt-to-equity ~2.55). Individual stock investing carries company-specific risks, including operational, regulatory, and market risks. The portfolio rebalancing recommended here reduces concentration risk but does not eliminate market risk; the value of ETEL shares and the cash position can fluctuate. The investor should monitor the remaining ETEL holding and the cash buffer relative to the upcoming university fees expenditure, and consider periodic rebalancing as the horizon shortens.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues (period 31/12/2025)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+        "stated_value": 44839110000.0,
+        "statement": "Gross Profit (period 31/12/2025)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for the year (period 31/12/2025)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total Assets (consolidated, period 31/12/2025)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "Total Equity (consolidated, period 31/12/2025)"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55: Basic and diluted earning per share 11.93, unit L.E.(000). Ambiguous because EPS per share should not be in thousands; 11.93 would imply 11,930 L.E. per share, inconsistent with share price 141.95 EGP and typical EPS ranges. Not used in calculations.",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56: Basic and diluted earning per share 4.79, unit L.E.(000). Same ambiguity as p6-55; not used in calculations."
+    ],
+    "limitations": [
+      "Guidance is based solely on evidence printed in the report as of 2026-11-18; no outside knowledge or later events were used.",
+      "All financial figures are converted from the reported L.E. (000) unit to whole Egyptian Pounds by multiplying by 1,000.",
+      "The EPS figures are marked ambiguous due to unit conflict and have been excluded from all ratio calculations.",
+      "The diversification 50% limit is applied to the portfolio composition after the recommended sell action; the current holding alone exceeds this threshold.",
+      "This is guidance, not a guarantee of returns. Market risks and individual company risks apply."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 31356.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 220
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 177.713,
+      "input_tokens": 1704,
+      "output_tokens": 30886,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 177.718
+}

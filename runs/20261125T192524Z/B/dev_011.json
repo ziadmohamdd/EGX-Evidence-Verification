@@ -1,0 +1,80 @@
+{
+  "case_id": "dev_011",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The evidence provided contains financial figures for net profit and earnings per share for 2024 and 2025, but for every company and metric the printed text presents two numbers side by side without clear column headers indicating which number corresponds to the stated period. For example, [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] (period 31/12/2025) and [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] (period 31/12/2024) both print \"Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)\", making it impossible to reliably assign the two values to the correct year. The same ambiguity affects COMI net profit and basic EPS (p5-33/p5-34, p5-39/p5-40), EFID net profit and EPS (p6-30/p6-31, p6-38/p6-39), and TMGH net profit and EPS (p7-55/p7-62, p7-61/p7-64). Because the 2024 versus 2025 figures cannot be distinguished from the evidence, net profit growth calculations and price-to-earnings (P/E) ratio computations cannot be performed. Consequently, I am unable to compare the companies on the requested metrics or to select one for a buy decision using the available 80,000 EGP cash.\n\nUnused figures (marked AMBIGUOUS and not used in calculations):\n- ETEL Net profit for the year (period 31/12/2025 and 31/12/2024) – evidence IDs p6-35, p6-36\n- ETEL Basic and diluted earning per share for the year (period 31/12/2025 and 31/12/2024) – evidence IDs p6-55, p6-56\n- COMI Net profit for the year (period Dec. 31, 2025 and 2024) – evidence IDs p5-33, p5-34\n- COMI Basic earnings per share (period Dec. 31, 2025 and 2024) – evidence IDs p5-39, p5-40\n- EFID Net profit for the year (consolidated) (period 31 December 2025 and 2024) – evidence IDs p6-30, p6-31\n- EFID Basic and Diluted earnings per share (consolidated) (period 31 December 2025 and 2024) – evidence IDs p6-38, p6-39\n- TMGH Net profit for the year (consolidated) (period 2025 and 2024 Restated) – evidence IDs p7-55, p7-62\n- TMGH Earnings per Share (consolidated) (period 2025 and 2024 Restated) – evidence IDs p7-61, p7-62\n\nGiven the insufficient evidence, a responsible action is to keep cash (keep_cash) pending clearer financial data. This guidance is not a guarantee of returns; investment decisions carry risk, and the ability to determine growth or valuation ratios from the provided data is limited by the ambiguous presentation of period-specific figures.",
+    "claims": [],
+    "unused_figures": [
+      "ETEL Net profit for the year (period 31/12/2025 and 31/12/2024) – evidence IDs p6-35, p6-36",
+      "ETEL Basic and diluted earning per share for the year (period 31/12/2025 and 31/12/2024) – evidence IDs p6-55, p6-56",
+      "COMI Net profit for the year (period Dec. 31, 2025 and 2024) – evidence IDs p5-33, p5-34",
+      "COMI Basic earnings per share (period Dec. 31, 2025 and 2024) – evidence IDs p5-39, p5-40",
+      "EFID Net profit for the year (consolidated) (period 31 December 2025 and 2024) – evidence IDs p6-30, p6-31",
+      "EFID Basic and Diluted earnings per share (consolidated) (period 31 December 2025 and 2024) – evidence IDs p6-38, p6-39",
+      "TMGH Net profit for the year (consolidated) (period 2025 and 2024 Restated) – evidence IDs p7-55, p7-62",
+      "TMGH Earnings per Share (consolidated) (period 2025 and 2024 Restated) – evidence IDs p7-61, p7-62"
+    ],
+    "limitations": [
+      "No outside knowledge about these companies or later events may be used.",
+      "After a buy, no single company may exceed 50% of the portfolio's total value (cash + holdings at given prices).",
+      "A buy must fit the available cash of 80,000 EGP.",
+      "Figures marked AMBIGUOUS must not be used in calculations.",
+      "This is guidance, not a guarantee of returns. Market risk, company-specific risk, and data ambiguity apply."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The evidence provided contains financial figures for net profit and earnings per share for 2024 and 2025, but for every company and metric the printed text presents two numbers side by side without clear column headers indicating which number corresponds to the stated period. For example, [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] (period 31/12/2025) and [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] (period 31/12/2024) both print \"Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)\", making it impossible to reliably assign the two values to the correct year. The same ambiguity affects COMI net profit and basic EPS (p5-33/p5-34, p5-39/p5-40), EFID net profit and EPS (p6-30/p6-31, p6-38/p6-39), and TMGH net profit and EPS (p7-55/p7-62, p7-61/p7-64). Because the 2024 versus 2025 figures cannot be distinguished from the evidence, net profit growth calculations and price-to-earnings (P/E) ratio computations cannot be performed. Consequently, I am unable to compare the companies on the requested metrics or to select one for a buy decision using the available 80,000 EGP cash.\n\nUnused figures (marked AMBIGUOUS and not used in calculations):\n- ETEL Net profit for the year (period 31/12/2025 and 31/12/2024) – evidence IDs p6-35, p6-36\n- ETEL Basic and diluted earning per share for the year (period 31/12/2025 and 31/12/2024) – evidence IDs p6-55, p6-56\n- COMI Net profit for the year (period Dec. 31, 2025 and 2024) – evidence IDs p5-33, p5-34\n- COMI Basic earnings per share (period Dec. 31, 2025 and 2024) – evidence IDs p5-39, p5-40\n- EFID Net profit for the year (consolidated) (period 31 December 2025 and 2024) – evidence IDs p6-30, p6-31\n- EFID Basic and Diluted earnings per share (consolidated) (period 31 December 2025 and 2024) – evidence IDs p6-38, p6-39\n- TMGH Net profit for the year (consolidated) (period 2025 and 2024 Restated) – evidence IDs p7-55, p7-62\n- TMGH Earnings per Share (consolidated) (period 2025 and 2024 Restated) – evidence IDs p7-61, p7-62\n\nGiven the insufficient evidence, a responsible action is to keep cash (keep_cash) pending clearer financial data. This guidance is not a guarantee of returns; investment decisions carry risk, and the ability to determine growth or valuation ratios from the provided data is limited by the ambiguous presentation of period-specific figures.",
+    "claims": [],
+    "unused_figures": [
+      "ETEL Net profit for the year (period 31/12/2025 and 31/12/2024) – evidence IDs p6-35, p6-36",
+      "ETEL Basic and diluted earning per share for the year (period 31/12/2025 and 31/12/2024) – evidence IDs p6-55, p6-56",
+      "COMI Net profit for the year (period Dec. 31, 2025 and 2024) – evidence IDs p5-33, p5-34",
+      "COMI Basic earnings per share (period Dec. 31, 2025 and 2024) – evidence IDs p5-39, p5-40",
+      "EFID Net profit for the year (consolidated) (period 31 December 2025 and 2024) – evidence IDs p6-30, p6-31",
+      "EFID Basic and Diluted earnings per share (consolidated) (period 31 December 2025 and 2024) – evidence IDs p6-38, p6-39",
+      "TMGH Net profit for the year (consolidated) (period 2025 and 2024 Restated) – evidence IDs p7-55, p7-62",
+      "TMGH Earnings per Share (consolidated) (period 2025 and 2024 Restated) – evidence IDs p7-61, p7-62"
+    ],
+    "limitations": [
+      "No outside knowledge about these companies or later events may be used.",
+      "After a buy, no single company may exceed 50% of the portfolio's total value (cash + holdings at given prices).",
+      "A buy must fit the available cash of 80,000 EGP.",
+      "Figures marked AMBIGUOUS must not be used in calculations.",
+      "This is guidance, not a guarantee of returns. Market risk, company-specific risk, and data ambiguity apply."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 80000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 48.904,
+      "input_tokens": 2415,
+      "output_tokens": 9714,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 48.908
+}
