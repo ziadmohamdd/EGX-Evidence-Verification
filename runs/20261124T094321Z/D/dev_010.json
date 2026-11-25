@@ -1,0 +1,125 @@
+{
+  "case_id": "dev_010",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "Profit attributable to shareholders of the parent company grew by 5,358,824,241 LE or 59.38%, rising from 9,025,066,065 LE in restated FY2024 to 14,383,890,306 LE in FY2025. Earnings per share similarly grew from 4.38 LE to 6.98 LE (+59.36%). While this demonstrates strong earnings performance, adding to your position is not recommended. TMGH already accounts for 57.89% of your total portfolio value (41,250 EGP out of 71,250 EGP), and purchasing more shares would create excessive single-stock concentration for an investor with medium financial capacity to absorb losses. Furthermore, essential information regarding revenue, operating cash flows, total liabilities, and market valuation metrics is missing from the evidence. Therefore, holding the current 500-share position while keeping cash reserves intact is the prudent action.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Net profit attributable to shareholders of the parent company reached 14,383,890,306 LE in FY2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Net profit attributable to shareholders of the parent company was 9,025,066,065 LE in restated FY2024."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Earnings per share increased to 6.98 LE in FY2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "Earnings per share stood at 4.38 LE in restated FY2024."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Absence of revenue, cash flow, and debt disclosures to evaluate complete balance sheet and liquidity health.",
+      "Lack of valuation metrics (such as P/E or P/B ratios at the current price of 82.50 EGP) to determine if earnings growth is already priced in.",
+      "Comparisons rely on restated FY2024 numbers from FY2025 comparative disclosures."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "Profit attributable to shareholders of the parent company grew by 5,358,824,241 LE or 59.38%, rising from 9,025,066,065 LE in restated FY2024 to 14,383,890,306 LE in FY2025. Earnings per share similarly grew from 4.38 LE to 6.98 LE (+59.36%). While this demonstrates strong earnings performance, adding to your position is not recommended. TMGH already accounts for 57.89% of your total portfolio value (41,250 EGP out of 71,250 EGP), and purchasing more shares would create excessive single-stock concentration for an investor with medium financial capacity to absorb losses. Furthermore, essential information regarding revenue, operating cash flows, total liabilities, and market valuation metrics is missing from the evidence. Therefore, holding the current 500-share position while keeping cash reserves intact is the prudent action.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Net profit attributable to shareholders of the parent company reached 14,383,890,306 LE in FY2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Net profit attributable to shareholders of the parent company was 9,025,066,065 LE in restated FY2024."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Earnings per share increased to 6.98 LE in FY2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "Earnings per share stood at 4.38 LE in restated FY2024."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Absence of revenue, cash flow, and debt disclosures to evaluate complete balance sheet and liquidity health.",
+      "Lack of valuation metrics (such as P/E or P/B ratios at the current price of 82.50 EGP) to determine if earnings growth is already priced in.",
+      "Comparisons rely on restated FY2024 numbers from FY2025 comparative disclosures."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": {
+    "financial": "### Profitability and Growth Analysis\n\n#### Net Profit Attributable to Parent Company Shareholders\n* **FY2025:** 14,383,890,306 LE (1.43839e+10 LE) [TMGH-TMGH_FY2025_consolidated_en-p7-57]\n* **FY2024 (Restated):** 9,025,066,065 LE (9.02507e+09 LE) [TMGH-TMGH_FY2025_consolidated_en-p7-58]\n* **Absolute Growth:** 5,358,824,241 LE\n* **Percentage Growth:** +59.38%\n\nThe profit attributable to shareholders of the parent company grew by **59.38%** (or **5,358,824,241 LE**) in FY2025 compared to the restated FY2024 figure.\n\n#### Supporting Earnings Metrics\n* **Earnings Per Share (EPS):**\n  * FY2025: 6.98 LE [TMGH-TMGH_FY2025_consolidated_en-p7-61]\n  * FY2024 (Restated): 4.38 LE [TMGH-TMGH_FY2025_consolidated_en-p7-62]\n  * Growth: +59.36%\n* **Consolidated Net Profit (Total):**\n  * FY2025: 18,201,981,482 LE (1.8202e+10 LE) [TMGH-TMGH_FY2025_consolidated_en-p7-55]\n  * FY2024 (Restated): 12,769,517,325 LE (1.27695e+10 LE) [TMGH-TMGH_FY2025_consolidated_en-p7-56]\n  * Growth: +42.54%\n* **Gross Profit:**\n  * FY2025: 20,855,400,384 LE (2.08554e+10 LE) [TMGH-TMGH_FY2025_consolidated_en-p7-19]\n  * FY2024 (Restated): 14,002,196,445 LE (1.40022e+10 LE) [TMGH-TMGH_FY2025_consolidated_en-p7-20]\n  * Growth: +48.94%\n* **Profit Before Tax:**\n  * FY2025: 23,653,557,143 LE (2.36536e+10 LE) [TMGH-TMGH_FY2025_consolidated_en-p7-49]\n  * FY2024 (Restated): 16,490,175,692 LE (1.64902e+10 LE) [TMGH-TMGH_FY2025_consolidated_en-p7-50]\n  * Growth: +43.44%\n\n---\n\n### Balance Sheet & Financial Position\n\n* **Total Equity:**\n  * 31 December 2025: 157,708,140,765 LE (1.57708e+11 LE) [TMGH-TMGH_FY2025_consolidated_en-p5-67]\n  * 31 December 2024 (Restated): 129,879,813,693 LE (1.2988e+11 LE) [TMGH-TMGH_FY2025_consolidated_en-p5-68]\n  * Growth: +21.43%\n\nTotal equity expanded by 27,828,327,072 LE (+21.43%), indicating ongoing capital base accumulation.\n\n---\n\n### Key Risks & Analytical Considerations\n\n1. **Information Gaps:** The provided evidence lacks details regarding total revenues, operating expenses, cash flows, total liabilities/debt breakdown, and valuation ratios (e.g., P/E ratio at the current share price of 82.50 EGP).\n2. **Restatement Impact:** 2024 figures were restated in the FY2025 comparative disclosures (e.g., FY2024 Parent Shareholder Net Profit [TMGH-TMGH_FY2025_consolidated_en-p7-58] and Total Equity [TMGH-TMGH_FY2025_consolidated_en-p5-68]), reflecting accounting adjustments that should be monitored across future reporting periods.\n3. **Single-Year Horizon:** A single-year comparative growth rate (+59.38%) provides strong operational momentum, but long-term assessment over 5–10 years requires tracking sustained revenue execution, cash flow generation, and debt leverage.\n\n---\n\n### Data Quality Assessment\n\n* All figures cited in the provided evidence are **verified** and un-ambiguous.\n* FY2024 figures are explicitly marked as restated in the financial statement line items.\n\n---\n\n### Analyst Note on Actionability\n\nAs a financial analyst, I provide the objective analysis of the company's financial results based strictly on the available evidence. I do not issue buy, sell, hold, or position-adjustment recommendations; investment decisions and allocation actions are managed by the decision agent.",
+    "investor": "### Investor Suitability Assessment\n\n* **Investment Horizon:** 5–10 years (Long-term growth goal). This timeframe supports equity-based capital appreciation strategies.\n* **Liquidity Needs:** Low from this portfolio. Because you maintain a separate emergency fund, portfolio cash is not required for short-term living expenses or unexpected liquidity needs.\n* **Loss Risk Profile:** \n  * *Willingness to Accept Losses:* High.\n  * *Financial Capacity to Absorb Losses:* Medium. \n  * *Implied Constraint:* While you have a high psychological tolerance for volatility, your medium financial capacity means risk exposure must still be controlled to avoid capital impairment.\n* **Current Portfolio Structure & Concentration:**\n  * **TMGH Holdings:** 500 shares @ 82.50 EGP = **41,250.00 EGP** (57.89% of total portfolio).\n  * **Cash:** **30,000.00 EGP** (42.11% of total portfolio).\n  * **Total Portfolio Value:** **71,250.00 EGP**.\n  * *Concentration Assessment:* The portfolio is currently concentrated in a single equity holding (TMGH), balanced by a large uncommitted cash reserve.\n* **Portfolio Allowances & Commitability:**\n  * *Free Cash Available:* All **30,000.00 EGP** in the portfolio can reasonably be committed to investment strategies, given that your emergency liquidity needs are covered separately.\n  * *Existing Assets Available:* You hold **500 shares of TMGH** which are fully liquid and can be retained or liquidated depending on allocation decisions.\n\n---\n\n### Profit Growth Calculation & Action Constraint\n\n* **Parent Company Shareholders' Net Profit:**\n  * **2024 (Restated):** 9,025,066,065 LE\n  * **2025:** 14,383,890,306 LE\n  * **Absolute Increase:** 5,358,824,241 LE\n  * **Percentage Growth:** **59.38%**\n\n* **Investment Action & Financial Analysis:** \n  In accordance with my role as an investor-suitability analyst, I do not perform detailed financial analysis on individual company fundamentals, nor do I provide investment recommendations or decide whether to add to, hold, or sell a position. The decision to commit additional capital should consider your existing single-stock concentration (57.89%) alongside your medium financial capacity for loss."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 27.067,
+      "input_tokens": 1775,
+      "output_tokens": 3592,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 9.602,
+      "input_tokens": 1767,
+      "output_tokens": 1737,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 25.116,
+      "input_tokens": 3826,
+      "output_tokens": 5594,
+      "error": null,
+      "model": "google:gemini-3.5-flash",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 61.79
+}
