@@ -1,0 +1,67 @@
+{
+  "case_id": "dev_012",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asks for the percentage growth of Edita's net profit in 2025 versus 2024, with a plan to buy more if growth exceeds 50%. The only net‑profit figures in the evidence (EFID‑EFID_FY2025_EAS_consolidated_signed_en-p6-30 and p6‑31) are marked AMBIGUOUS because the 2025 value is covered by a stamp on the scanned page, rendering the figures unreliable for calculation. Consequently, we cannot determine the actual net‑profit growth, nor can we assess whether it exceeds the 50% threshold. Other figures (revenue, earnings per share) are not relevant to the net‑profit growth question. Because the necessary evidence is missing/ambiguous, a responsible decision cannot be made.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31"
+    ],
+    "limitations": [
+      "Net profit figures are ambiguous; 2025 value is obscured, so growth cannot be calculated.",
+      "No reliable net‑profit data available to evaluate the >50% growth condition."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asks for the percentage growth of Edita's net profit in 2025 versus 2024, with a plan to buy more if growth exceeds 50%. The only net‑profit figures in the evidence (EFID‑EFID_FY2025_EAS_consolidated_signed_en-p6-30 and p6‑31) are marked AMBIGUOUS because the 2025 value is covered by a stamp on the scanned page, rendering the figures unreliable for calculation. Consequently, we cannot determine the actual net‑profit growth, nor can we assess whether it exceeds the 50% threshold. Other figures (revenue, earnings per share) are not relevant to the net‑profit growth question. Because the necessary evidence is missing/ambiguous, a responsible decision cannot be made.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31"
+    ],
+    "limitations": [
+      "Net profit figures are ambiguous; 2025 value is obscured, so growth cannot be calculated.",
+      "No reliable net‑profit data available to evaluate the >50% growth condition."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 11.222,
+      "input_tokens": 1913,
+      "output_tokens": 1192,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 11.225
+}

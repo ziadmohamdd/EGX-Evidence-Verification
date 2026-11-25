@@ -1,0 +1,82 @@
+{
+  "case_id": "dev_010",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The profit figures belonging to the parent shareholders are ambiguous because the rows [p7-57] and [p7-58] for 'Shareholders of the Parent Company (consolidated)' print identical column pairs despite being labelled for different periods (2025 vs. 2024 Restated). Per the decision rules, figures marked AMBIGUOUS must not be used in calculations. Consequently, the absolute growth (5,358,824,241 EGP) and the percentage growth (~59.4%) cannot be reliably determined from the given evidence. Without a reliable growth figure, it is not possible to assess whether the profit increase justifies adding to the TMGH position. Furthermore, the suitability analyst highlighted that the existing TMGH holding represents about 58% of the portfolio and the investor has medium loss capacity, meaning additional exposure to a single stock increases risk. Given the ambiguous financial data and the concentration‑risk considerations, there is insufficient evidence to support a buy decision.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-58"
+    ],
+    "limitations": [
+      "Ambiguous column interpretation in the Shareholders of the Parent Company rows prevents a reliable growth calculation.",
+      "High existing concentration in TMGH (≈58% of portfolio) and the investor's medium loss capacity affect the risk assessment of adding to the position."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The profit figures belonging to the parent shareholders are ambiguous because the rows [p7-57] and [p7-58] for 'Shareholders of the Parent Company (consolidated)' print identical column pairs despite being labelled for different periods (2025 vs. 2024 Restated). Per the decision rules, figures marked AMBIGUOUS must not be used in calculations. Consequently, the absolute growth (5,358,824,241 EGP) and the percentage growth (~59.4%) cannot be reliably determined from the given evidence. Without a reliable growth figure, it is not possible to assess whether the profit increase justifies adding to the TMGH position. Furthermore, the suitability analyst highlighted that the existing TMGH holding represents about 58% of the portfolio and the investor has medium loss capacity, meaning additional exposure to a single stock increases risk. Given the ambiguous financial data and the concentration‑risk considerations, there is insufficient evidence to support a buy decision.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-58"
+    ],
+    "limitations": [
+      "Ambiguous column interpretation in the Shareholders of the Parent Company rows prevents a reliable growth calculation.",
+      "High existing concentration in TMGH (≈58% of portfolio) and the investor's medium loss capacity affect the risk assessment of adding to the position."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Evidence Analysis: Profit Belonging to Talaat Moustafa's Own Shareholders**\n\nThe figure most directly representing \"profit belonging to Talaat Moustafa's own shareholders\" is the \"Shareholders of the Parent Company (consolidated)\" line item.\n\n- **[TMGH-TMGH_FY2025_consolidated_en-p7-57]** TMGH | Shareholders of the Parent Company (consolidated) | period 2025 | verified | as printed: `\"Shareholders of the Parent Company | | 14,383,890,306 | 9,025,066,065 | unit: LE\"`  \n  *Interpretation:* The first value (14,383,890,306) is taken as the 2025 figure; the second (9,025,066,065) as the 2024 Restated figure, by analogy with the EPS row where distinct values clearly mark the two periods.\n\n- **[TMGH-TMGH_FY2025_consolidated_en-p7-58]** TMGH | Shareholders of the Parent Company (consolidated) | period 2024 (Restated) | verified | as printed: `\"Shareholders of the Parent Company | | 14,383,890,306 | 9,025,066,065 | unit: LE\"`  \n  *Note:* This row prints the identical column pair to p7-57, which raises a data‑quality ambiguity (see below).\n\n- **[TMGH-TMGH_FY2025_consolidated_en-p7-61]** TMGH | Earnings per Share (consolidated) | period 2025 | verified | as printed: `\"Earnings per Share | (39) | 6.98 | 4.38 | unit: LE\"`  \n  *Note:* The distinct values (6.98 and 4.38) for the two periods confirm the standard column order (first = current period, second = comparative period), supporting the interpretation used above.\n\n- **[TMGH-TMGH_FY2025_consolidated_en-p7-55]** TMGH | Net profit for the year (consolidated) | period 2025 | verified | as printed: `\"Net profit for the year | | 18,201,981,482 | 12,769,517,325 | unit: LE\"`  \n- **[TMGH-TMGH_FY2025_consolidated_en-p7-56]** TMGH | Net profit for the year (consolidated) | period 2024 (Restated) | verified | as printed: `\"Net profit for the year | | 18,201,981,482 | 12,769,517,325 | unit: LE\"`  \n- **[TMGH-TMGH_FY2025_consolidated_en-p7-49]** TMGH | Gross profit (consolidated) | period 2025 | verified | as printed: `\"Gross profit | | 20,855,400,384 | 14,002,196,445 | unit: LE\"`  \n- **[TMGH-TMGH_FY2025_consolidated_en-p7-50]** TMGH | Gross profit (consolidated) | period 2024 (Restated) | verified | as printed: `\"Gross profit | | 20,855,400,384 | 14,002,196,445 | unit: LE\"`  \n- **[TMGH-TMGH_FY2025_consolidated_en-p5-67]** TMGH | Total equity (consolidated) | period 31 December 2025 | verified | as printed: `\"Total equity | 157,708,140,765 | 129,879,813,693 | unit: LE\"`  \n- **[TMGH-TMGH_FY2025_consolidated_en-p5-68]** TMGH | Total equity (consolidated) | period 31 December 2024 (Restated) | verified | as printed: `\"Total equity | 157,708,140,765 | 129,879,813,693 | unit: LE\"`  \n\n**Ambiguity Flag:**  \nThe rows [p7-57] and [p7-58] for \"Shareholders of the Parent Company\" print *identical* column pairs despite being labeled for different periods. The same identical‑pair pattern appears across [p7-49]/[p7-50] (gross profit), [p7-55]/[p7-56] (net profit), and [p5-67]/[p5-68] (total equity). While the EPS row [p7-61]/[p7-62] demonstrates that the two numbers are intended to represent distinct periods (2025 vs. 2024 Restated), the repeated identical pairing across multiple line items flags an ambiguity in column interpretation that should be resolved against the original PDF before relying on exact figures for further computation. Per instructions, I flag this ambiguity and do not compute derived ratios or metrics dependent on this figure beyond the raw difference stated below.\n\n**Growth Calculation (with ambiguity caveat):**  \nUsing the values cited above, the profit belonging to the parent shareholders grew from [p7-58] 9,025,066,065 EGP in 2024 (Restated) to [p7-57] 14,383,890,306 EGP in 2025.  \nNominal growth = 14,383,890,306 − 9,025,066,065 = **5,358,824,241 EGP**.\n\n**Decision‑Agent Note:**  \nThe investor question’s second part (“and does that justify adding to my position?”) requires a recommendation. Per instructions, I do not recommend an action; the decision agent determines position adjustments based on all factors including the investor profile, current portfolio, and this analysis.",
+    "investor": "**Investor-Suitability Assessment**\n\n**1. Horizon & Goal Alignment**  \n- Stated horizon: 5–10 years.  \n- Goal: long-term growth.  \n- *Assessment:* The horizon comfortably matches a long-term growth strategy. No time‑pressure constraints are evident.\n\n**2. Liquidity Needs**  \n- Investor maintains a separate emergency fund.  \n- Current portfolio liquidity:  \n  - Cash: 30,000.00 EGP  \n  - TMGH holdings: 500 shares × 82.50 EGP = 41,250.00 EGP  \n  - Total readily liquid assets: ~71,250 EGP  \n- *Assessment:* Since emergency funds are separate, the full liquidity buffer is available for investment without conflicting with liquidity needs.\n\n**3. Loss Willingness & Capacity**  \n- Willingness to accept losses: high.  \n- Financial ability to withstand losses: medium.  \n- *Assessment:* The investor can tolerate volatility psychologically but has limited capital resilience. Position sizing should reflect this medium loss capacity, avoiding over‑exposure relative to total investable assets.\n\n**4. Current Concentration**  \n- TMGH position: 500 shares = 41,250 EGP.  \n- Cash: 30,000 EGP.  \n- Combined portfolio value (as stated): 71,250 EGP.  \n- TMGH represents ~58% of the disclosed portfolio.  \n- *Assessment:* This is a high concentration for a portfolio with medium loss capacity. Diversification would reduce downside risk.\n\n**5. Cash Commitment Capacity**  \n- 30,000.00 EGP cash is free and available for commitment.  \n- Given the high existing concentration and medium loss capacity, committing additional cash to TMGH or a similarly concentrated single‑stock exposure would increase risk. A more suitable use of new cash would be diversification or a smaller, measured allocation.\n\n**Portfolio Allowances**  \n- **What can be sold:** The 500 TMGH shares can be sold, realizing approximately 41,250 EGP at the cutoff price.  \n- **What cash is free:** 30,000.00 EGP is already in cash and freely available for new commitments, subject to the suitability constraints above.\n\n---\n\n**Investor Question: Profit Growth & Position Addition**\n\n*Factual figures from the evidence (as printed, unit: LE, i.e., whole pounds):*  \n- Shareholders of the Parent Company (consolidated), period 2025: **14,383,890,306 LE**  \n- Shareholders of the Parent Company (consolidated), period 2024 (restated): **9,025,066,065 LE**  \n- Absolute growth: **5,358,824,241 LE**  \n- Percentage growth: **~59.4%**  \n\n*Constraint note:* As an investor‑suitability analyst, I am instructed **not to analyse company financials and not to pick an action**. Determining whether this profit growth justifies adding to the TMGH position involves financial analysis and an investment recommendation, which falls outside my scope. The suitability assessment above considers your profile and portfolio structure, but the decision on position sizing based on financial performance is not provided."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 56.453,
+      "input_tokens": 1664,
+      "output_tokens": 10013,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 37.076,
+      "input_tokens": 1658,
+      "output_tokens": 4997,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 17.625,
+      "input_tokens": 4785,
+      "output_tokens": 2231,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 111.157
+}

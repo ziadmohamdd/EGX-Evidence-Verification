@@ -23,6 +23,7 @@ class Model:
 
     def with_structured_output(self, schema, include_raw=False, **kw):
         outer = self
+        self.structured_kw = kw
 
         class Runnable:
             def invoke(self, messages):
@@ -88,3 +89,12 @@ def test_parse_model_spec_keeps_colons_in_model_names():
     assert parse_model_spec("openrouter:nvidia/nemotron-3.5-super-vl:free") == ("openrouter", "nvidia/nemotron-3.5-super-vl:free")
     with pytest.raises(ValueError):
         parse_model_spec("no-provider")
+
+
+def test_nvidia_uses_json_schema_output_other_providers_keep_the_default():
+    # NVIDIA's function-calling mode cuts string fields at 1,024 characters
+    nv, g = Model("nv"), Model("g")
+    Caller(FallbackChat([("nvidia:nemotron", nv)])).structured("s", [], Answer)
+    Caller(FallbackChat([("google:gemini", g)])).structured("s", [], Answer)
+    assert nv.structured_kw == {"method": "json_schema"}
+    assert g.structured_kw == {}

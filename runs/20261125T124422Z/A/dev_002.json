@@ -1,0 +1,49 @@
+{
+  "case_id": "dev_002",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 1212,
+    "explanation": "The investor has a long‑term horizon, high risk tolerance, and no current holdings. Based on the 2025 consolidated results for TMGH, the stock appears attractively valued: earnings per share (EPS) of 6.98 LE (evidence p7‑61) and a share price of 82.50 EGP imply a price‑to‑earnings ratio of about 11.8×. Net profit for 2025 was 18,201,981,482 LE (evidence p7‑55), and total equity stood at 157,708,140,765 LE (evidence p5‑67), giving return on equity of roughly 11.5 %. Gross profit for 2025 was 20,855,400,384 LE (evidence p7‑19). These figures support a positive outlook for long‑term wealth building. The 2024 restated net profit (evidence p7‑56) is marked AMBIGUOUS because digits are covered by an auditor’s stamp; it has been excluded from the analysis (listed in unused_figures). All relied‑upon figures are taken directly from the verified rows and are expressed in base pounds as required. The purchase of 1,212 shares uses 99,990 EGP of the 100,000 EGP cash balance, leaving a small cash residual. Investment is in",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 1212,
+    "explanation": "The investor has a long‑term horizon, high risk tolerance, and no current holdings. Based on the 2025 consolidated results for TMGH, the stock appears attractively valued: earnings per share (EPS) of 6.98 LE (evidence p7‑61) and a share price of 82.50 EGP imply a price‑to‑earnings ratio of about 11.8×. Net profit for 2025 was 18,201,981,482 LE (evidence p7‑55), and total equity stood at 157,708,140,765 LE (evidence p5‑67), giving return on equity of roughly 11.5 %. Gross profit for 2025 was 20,855,400,384 LE (evidence p7‑19). These figures support a positive outlook for long‑term wealth building. The 2024 restated net profit (evidence p7‑56) is marked AMBIGUOUS because digits are covered by an auditor’s stamp; it has been excluded from the analysis (listed in unused_figures). All relied‑upon figures are taken directly from the verified rows and are expressed in base pounds as required. The purchase of 1,212 shares uses 99,990 EGP of the 100,000 EGP cash balance, leaving a small cash residual. Investment is in",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 1212
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 10.371,
+      "input_tokens": 1916,
+      "output_tokens": 1470,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 10.373
+}

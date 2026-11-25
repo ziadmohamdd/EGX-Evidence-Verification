@@ -1,0 +1,142 @@
+{
+  "case_id": "dev_001",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor already holds 300 shares of ETEL. The FY2025 consolidated results show solid growth: operating revenues rose to ~106.7 bn EGP (from ~81.7 bn in 2024) and net profit more than doubled to ~22.6 bn EGP. Reported basic/diluted EPS for 2025 is 11.93 L.E. per share, giving a price‑to‑earnings ratio of about 11.9 (share price 141.95 ÷ 11.93). This P/E is moderate and the company’s profitability trend supports retaining the holding for the 5‑7‑year horizon. No compelling signal to increase or reduce the position based solely on the provided evidence. The decision to hold preserves the existing exposure while the child’s university savings grow over the medium term. Uncertainty remains because the analysis is limited to historic financials; no dividend, cash‑flow, or forward‑looking guidance is provided.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 11.93,
+        "statement": "EPS for 2025 is 11.93 L.E. per share, supporting a P/E of ~11.9."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for 2025 was 22.578 bn EGP (22,578,063 × 1,000 EGP)."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "Financial figures are presented in L.E. (000); conversion to base units was applied.",
+      "EPS unit is marked L.E.(000) – treated as L.E. per share for P/E calculation, introducing ambiguity.",
+      "No information on dividends, cash flow, debt servicing, or forward guidance is available.",
+      "Macro‑economic or sector‑specific context is outside the provided evidence set.",
+      "Investor’s future cash‑flow needs (university fees) are not modeled against projected returns."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor already holds 300 shares of ETEL. The FY2025 consolidated results show solid growth: operating revenues rose to ~106.7 bn EGP (from ~81.7 bn in 2024) and net profit more than doubled to ~22.6 bn EGP. These figures are derived from the reported financial statements (operating revenues 106,672,946 × 1,000 EGP and net profit 22,578,063 × 1,000 EGP). No dividend, cash‑flow, or forward‑looking guidance is provided, and the reported earnings‑per‑share are marked with a unit of L.E.(000), making the per‑share value ambiguous; therefore a price‑to‑earnings ratio is not calculated here. Given the medium‑term horizon (5‑7 years), the investor’s medium risk tolerance, and the need to keep a separate emergency fund, retaining the existing holding is appropriate. There is no compelling signal to increase or reduce the position based solely on the available evidence.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues for 2025 were 106,672,946 × 1,000 EGP (≈106.7 bn EGP)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "Operating revenues for 2024 were 81,677,812 × 1,000 EGP (≈81.7 bn EGP)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for 2025 was 22,578,063 × 1,000 EGP (≈22.6 bn EGP)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit for 2024 was 10,111,328 × 1,000 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "All financial figures are presented in L.E.(000); conversion to base units was applied.",
+      "The EPS row is marked L.E.(000), introducing ambiguity about whether the values are per‑share or thousands of pounds; therefore P/E ratio is not computed.",
+      "No information on dividends, cash‑flow statements, debt levels, or forward‑looking guidance is available.",
+      "Macro‑economic or sector‑specific context is outside the provided evidence set.",
+      "The investor’s future university‑fee cash‑flow needs are not modeled against projected returns."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "rule": "value_mismatch",
+        "detail": "stated 11.93 but evidence 'Basic and diluted earning per share for the year (L.E. / Share) (15)' is 4.79 [Basic and diluted earning per share for the year (L.E. / Share) (15) 11.93 4.79 | unit: L.E.(000)]"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"106.7 bn\", which is 'Operating revenues (5)' (1.06673e+11), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"81.7 bn\", which is 'Operating revenues (5)' (8.16778e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"11.93\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (11.93), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"11.93\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (11.93), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ]
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 27.007,
+      "input_tokens": 2325,
+      "output_tokens": 3311,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 22.453,
+      "input_tokens": 3449,
+      "output_tokens": 3621,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 49.462
+}

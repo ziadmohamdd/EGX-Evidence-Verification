@@ -1,0 +1,135 @@
+{
+  "case_id": "dev_003",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor’s portfolio consists of 100 ETEL shares (price 141.95 EGP) and 1,500 EFID shares (price 20.40 EGP), with 15,000 EGP cash. Current market values: ETEL = 14,195 EGP, EFID = 30,600 EGP; total portfolio ≈ 59,795 EGP. The investor may need 10 % of the money within a year (≈ 5,980 EGP), which is already covered by the existing cash buffer, so no forced liquidation is required.  Financial evidence from the 2025 reports shows both companies are profitable: EFID reported revenue of 20,915,072,432 EGP, net profit of 2,695,301,670 EGP, total equity of 5,724,525,864 EGP and EPS of 2.18 EGP; ETEL reported operating revenue of 106,672,946,000 EGP, net profit of 22,578,063,000 EGP and EPS of 11.93 EGP.  Using these earnings and the current share prices gives approximate P/E ratios of about 11.9× for ETEL and 9.4× for EFID, indicating reasonable valuations for steady growth with income.  Given the investor’s 3‑5‑year horizon, medium risk tolerance but low capacity to absorb losses, and the already sufficientCash",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID revenue for FY2025 was 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID net profit for FY2025 was 2,695,301,670 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+        "stated_value": 5724525864.0,
+        "statement": "EFID total equity as of 31 Dec 2025 was 5,724,525,864 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for FY2025 was 2.18 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL operating revenue for FY2025 was 106,672,946,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit for FY2025 was 22,578,063,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS for FY2025 was 11.93 EGP per share."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "No dividend‑per‑share data are provided, so income component is inferred only from EPS.",
+      "Financial figures are based on a single fiscal year (2025); trends over the 3‑5‑year horizon are not captured.",
+      "No volatility or risk metrics (e.g., beta, price‑range) are available to quantify the low‑capacity‑to‑absorb‑losses constraint.",
+      "P/E calculations use trailing EPS and current market prices; they do not guarantee future performance."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor’s portfolio consists of 100 ETEL shares (price 141.95 EGP) and 1,500 EFID shares (price 20.40 EGP), with 15,000 EGP cash. Current market values: ETEL = 14,195 EGP, EFID = 30,600 EGP; total portfolio ≈ 59,795 EGP. The investor may need 10 % of the money within a year (≈ 5,980 EGP), which is already covered by the existing cash buffer, so no forced liquidation is required.  Financial evidence from the 2025 reports shows both companies are profitable: EFID reported revenue of 20,915,072,432 EGP, net profit of 2,695,301,670 EGP, total equity of 5,724,525,864 EGP and EPS of 2.18 EGP; ETEL reported operating revenue of 106,672,946,000 EGP, net profit of 22,578,063,000 EGP and EPS of 11.93 EGP.  Using these earnings and the current share prices gives approximate P/E ratios of about 11.9× for ETEL and 9.4× for EFID, indicating reasonable valuations for steady growth with income.  Given the investor’s 3‑5‑year horizon, medium risk tolerance but low capacity to absorb losses, and the already sufficientCash",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID revenue for FY2025 was 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID net profit for FY2025 was 2,695,301,670 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+        "stated_value": 5724525864.0,
+        "statement": "EFID total equity as of 31 Dec 2025 was 5,724,525,864 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for FY2025 was 2.18 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL operating revenue for FY2025 was 106,672,946,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit for FY2025 was 22,578,063,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS for FY2025 was 11.93 EGP per share."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "No dividend‑per‑share data are provided, so income component is inferred only from EPS.",
+      "Financial figures are based on a single fiscal year (2025); trends over the 3‑5‑year horizon are not captured.",
+      "No volatility or risk metrics (e.g., beta, price‑range) are available to quantify the low‑capacity‑to‑absorb‑losses constraint.",
+      "P/E calculations use trailing EPS and current market prices; they do not guarantee future performance."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 33.479,
+      "input_tokens": 2123,
+      "output_tokens": 4833,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 33.481
+}

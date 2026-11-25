@@ -1,0 +1,156 @@
+{
+  "case_id": "dev_007",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor needs 10,000 EGP in cash within three months for a family wedding. The current portfolio holds 1,000 EGP cash and 200 shares of EFID. The suitability analyst calculated that liquidating the EFID position at the cutoff price of 20.40 EGP/share would yield 4,080 EGP, giving total liquidity of 5,080 EGP – leaving a shortfall of about 4,920 EGP. The financial analyst’s evidence set provides EFID revenue, net profit and EPS figures, but the revenue figures for 2025 and 2024 are identical (20,915,072,432 EGP) and are marked AMBIGUOUS; they cannot be used for trend analysis or valuation. No balance‑sheet data, cash‑flow statements, or market‑price verification are included in the evidence list. The given share price (20.40 EGP) and the investor’s cash balance (1,000 EGP) are part of the scenario setup, not the authoritative evidence list, so they cannot be independently verified from the evidence. Because the evidence does not provide a reliable basis to determine whether the portfolio can meet the 10,0",
+    "claims": [
+      {
+        "evidence_id": "investor_goal",
+        "stated_value": 10000.0,
+        "statement": "Investor needs 10,000 EGP in cash within 3 months for a family wedding."
+      },
+      {
+        "evidence_id": "user_cash",
+        "stated_value": 1000.0,
+        "statement": "Investor currently has 1,000.00 EGP cash."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02"
+    ],
+    "limitations": [
+      "Revenue figures are ambiguous (identical across fiscal years) and cannot support valuation or trend assessment.",
+      "No balance‑sheet, cash‑flow, or market‑price verification evidence is provided.",
+      "The share price of 20.40 EGP and the investor’s cash balance are taken from the scenario setup, not from the evidence list, so their reliability cannot be confirmed from the evidence alone.",
+      "Insufficient evidence to determine if the portfolio can meet the 10,000 EGP cash need within three months."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor needs 10,000 EGP in cash within three months for a family wedding. The current portfolio consists of 1,000 EGP cash and 200 shares of EFID. At the cutoff price of 20.40 EGP per share, liquidating the entire EFID holding would yield 4,080 EGP, giving total liquidity of 5,080 EGP – still a shortfall of about 4,920 EGP. [removed: figure could not be verified] [removed: figure could not be verified] No balance‑sheet, cash‑flow statement, dividend policy, or market‑price verification evidence is provided in the evidence list. Consequently, there is no Reli­",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39"
+    ],
+    "limitations": [
+      "These figures could not be verified and were not used: Revenue (consolidated), Net profit for the year (consolidated), Basic and Diluted earnings per share (consolidated), Basic and Diluted earnings per share (consolidated). Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 1000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "investor_goal",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "user_cash",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"20,915,072,432\", which is 'Revenue (consolidated)' (2.09151e+10), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"2,695,301,670\", which is 'Net profit for the year (consolidated)' (2.6953e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"2.18\", which is 'Basic and Diluted earnings per share (consolidated)' (2.18), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"1.09\", which is 'Basic and Diluted earnings per share (consolidated)' (1.09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"20,915,072,432\", which is 'Revenue (consolidated)' (2.09151e+10), but it is not listed in claims"
+      }
+    ],
+    "dropped": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39"
+    ],
+    "withdrawn": [
+      "investor_goal",
+      "user_cash"
+    ]
+  },
+  "reports": {
+    "financial": "**Portfolio Position (as at 2026-11-18 cutoff)**\n- Cash: 1,000.00 EGP [user profile]\n- EFID holdings: 200 shares; market price at cutoff: 20.40 EGP/share (given in scenario setup)\n- Current market value of EFID shares: 200 × 20.40 = 4,080 EGP (computed from cutoff price; not an evidence figure)\n- Total current liquidity: 5,080 EGP\n- Cash needed within 3 months: 10,000 EGP\n- Liquidity shortfall: ~4,920 EGP (or ~5,920 EGP if EFID shares must be liquidated; no action recommended)\n\n**EFID Company Evidence Analysis**\nAll figures below are taken directly from the verified evidence as printed; units are EGP.\n\n- Revenue (consolidated), period 31 December 2025: 20,915,072,432 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]\n- Revenue (consolidated), period 31 December 2024: 20,915,072,432 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02]\n  → **AMBIGUOUS**: Identical revenue figures reported for two consecutive fiscal years. Per instructions, I will not compute year-on-year revenue growth or rely on these figures for trend analysis without clarification.\n- Net profit for the year (consolidated), period 31 December 2025: 2,695,301,670 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]\n- Net profit for the year (consolidated), period 31 December 2024: 1,606,727,698 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31]\n  → Shows an absolute increase; EPS rose from 1.09 EGP to 2.18 EGP year-over-year, consistent with the net profit movement.\n- Basic and Diluted earnings per share (consolidated), period 31 December 2025: 2.18 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38]\n- Basic and Diluted earnings per share (consolidated), period 31 December 2024: 1.09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39]\n\n**Data Quality & Risks (evidence-only)**\n- The duplicate revenue figure [p6-01] and [p6-02] is the principal data quality concern. It may reflect a reporting error, restatement, or PDF extraction artifact. Without resolution, any assessment of business momentum or valuation based on revenue trends is uncertain.\n- No balance sheet items (assets, liabilities, equity, cash flow) are provided in the evidence set. Consequently, leverage, liquidity, and solvency of EFID cannot be evaluated from this evidence alone.\n- Reported net profit and EPS improved meaningfully year-over-year, but the ambiguous revenue stagnation limits confidence in the sustainability of underlying performance.\n- The investor’s profile specifies low willingness/ability to absorb losses and a urgent 3-month cash need of 10,000 EGP. Current portfolio liquidity (1,000 EGP) falls substantially short, and EFID shares (4,080 EGP at cutoff) carry market price risk with no balance sheet data to gauge downside protection.\n\n**Evidence-Only Summary**\n- Portfolio total liquidity: 5,080 EGP against a 10,000 EGP need in 3 months.\n- EFID reported significant net profit growth (1,606,727,698 EGP → 2,695,301,670 EGP) and EPS improvement (1.09 EGP → 2.18 EGP), but revenue figures are ambiguous (identical across years).\n- No balance sheet data is available; risk profile of EFID cannot be fully determined from the evidence provided.\n- Per system instructions, no actionable recommendation (buy, sell, hold) is provided. The decision agent will determine next steps based on this analysis.",
+    "investor": "**Suitability Assessment**\n\n**Horizon & Liquidity Need**\n- Goal requires **10,000 EGP in cash within 3 months**.\n- Investment horizon is **3 months**, matching the liability timeline.\n- Current liquidity: **1,000.00 EGP cash** already available.\n- Additional cash needed: **9,000 EGP**.\n\n**Portfolio Composition & What It Allows**\n- Holding: **200 shares of EFID** at the cutoff price of **20.40 EGP/share**.\n- Current market value of EFID position: 200 × 20.40 = **4,080 EGP**.\n- If liquidated at the cutoff price, the portfolio would yield **4,080 EGP cash** (no transaction costs modeled).\n- Total cash available if the position is sold: **1,000 + 4,080 = 5,080 EGP**.\n- **Liquidity gap**: **10,000 – 5,080 = 4,920 EGP** short of the target, even after full liquidation.\n\n**Loss Willingness & Capacity**\n- Willingness to accept losses: **low**.\n- Financial ability to withstand losses: **low**.\n- Selling the EFID position at the current price realizes exactly 4,080 EGP with no gain or loss relative to the cutoff price. However, if the share price declines between now and the 3-month horizon, selling would lock in a loss. Given the low tolerance and the fact that liquidation still leaves a ~4,920 EGP shortfall, the equity position alone cannot meet the cash need without exposing the investor to downside risk or requiring additional funds.\n\n**Current Concentration**\n- The portfolio holds **100% of equity exposure in a single stock (EFID)**, with no other listed securities or diversified holdings noted. The position is small in absolute terms (4,080 EGP) but undiversified.\n\n**Portfolio Constraints (What the Data Allows)**\n- The EFID financial evidence (revenue ~20.9 billion EGP, net profit ~2.7 billion EGP, EPS 2.18 EGP) is **not relevant** to the investor’s liquidity suitability; per instructions, company financials are not analyzed for this assessment. The only actionable figures are the share price (20.40 EGP), share count (200), and cash balance (1,000 EGP).\n- No other assets, accounts, or cash sources are indicated in the profile.\n\n**Summary of Suitability Findings**\n- The portfolio can provide at most **5,080 EGP in liquidity** within the 3-month window, leaving a **~4,920 EGP gap** to the 10,000 EGP target.\n- With low loss willingness and capacity, liquidating the EFID position avoids further market risk but does not fully satisfy the cash need.\n- The shortfall implies the investor would need **additional cash resources** (e.g., savings, other accounts, or external funding) to meet the wedding goal, or must accept that the current portfolio alone is insufficient.\n\n*Note: No specific action (e.g., \"sell\" or \"hold\") is recommended. The assessment simply outlines the portfolio’s liquidity capacity, the gap to the goal, and the suitability factors as requested.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 41.978,
+      "input_tokens": 1027,
+      "output_tokens": 5006,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 17.63,
+      "input_tokens": 1021,
+      "output_tokens": 2946,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 37.489,
+      "input_tokens": 3683,
+      "output_tokens": 5686,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 17.053,
+      "input_tokens": 2707,
+      "output_tokens": 2492,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 114.153
+}

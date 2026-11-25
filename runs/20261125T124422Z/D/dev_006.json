@@ -1,0 +1,116 @@
+{
+  "case_id": "dev_006",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "لا تتوفر بيانات كافية لاتخاذ قرار استثماري مسؤول بشأن شركة TMGH. الاستنتاجات الرئيسية affected by figures marked AMBIGUOUS: الإيرادات عن الفترة 31 ديسمبر 2024 ([p1-02]) وربح العام بعد الضرائب ([p1-09])، ولا يجوز استخدامهما في أي حسابات. الإيرادات عن الفترة 31 ديسمبر 2025 ([p1-01]) مُدرَجَة كمُدرَكة ولكن وجود نفس السلسلة النصية في[p1-02] ومخاوف من سلامة OCR تُثير شكوكاً حول دقتها، كما أن القيمة المطلقة (~62.5 مليار جنيه) تبدو غير معتادة لشركة مصرية واحدة، مما يستوجب الحذر. كما أن البيانات المالية المتوفرة لا تشمل أي عناصر من قائمة المركز المالي، ولا تتوفر معلومات عن التدفقات النقدية أو الاستدامة، مما يمنع تقييم الصحة المالية أو trajector النمو. EPS المُدرَج (7 جنيه whole) مُدرَج كمرجعية، ولكن بدون بيانات الإيرادات أو الأرباح الصافية أو المركز المالي لا يمكن تحديد مدى ملاءمة السهم لهدف المدخرات apartment خلال horizon 3-5 سنوات مع تحمل المخاطر المتوسط. بناءً على ذلك، لا يمكن التوصية بشراء أو الاحتفاظ أو البيع بأسهم TMGH استناداً إلى الأدلة المتوفرة. يبقى المستثمر في وضعه الحالي (نقد 60,000 جنيه + 200 سهم TMGH) خ",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا يمكن الاعتماد على figure الإيرادات 2025 بسبب مخاوف OCR وعدم تطابقها مع البيانات الأخرى",
+      "غياب بيانات قائمة المركز المالي وتدفقات النقد",
+      "عدم توفر نمو موثوق أو هوامش ربح بسبب figures ambiguous"
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "لا تتوفر بيانات كافية لاتخاذ قرار استثماري مسؤول بشأن شركة TMGH. الاستنتاجات الرئيسية affected by figures marked AMBIGUOUS: الإيرادات عن الفترة 31 ديسمبر 2024 ([p1-02]) وربح العام بعد الضرائب ([p1-09])، ولا يجوز استخدامهما في أي حسابات. [removed: figure could not be verified] بالإضافة إلى ذلك، لا تتوفر أي بيانات من قائمة المركز المالي، ولا معلومات عن التدفقات النقدية أو الهوامش، مما يمنع تقييم الصحة المالية أو trajector النمو. بناءً على ذلك، لا يمكن التوصية بشراء أو بيع أو الاحتفاظ بأسهم TMGH استناداً إلى الأدلة المتوفرة، ويبقى المستثمر في وضعه الحالي (نقد 60,000 جنيه + 200 سهم TMGH) مع الحذر من عدم اليقين في البيانات المالية.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا يمكن الاعتماد على figure الإيرادات 2025 بسبب مخاوف OCR وعدم تطابقها مع البيانات الأخرى",
+      "غياب بيانات قائمة المركز المالي وتدفقات النقد",
+      "عدم توفر نمو موثوق أو هوامش ربح بسبب figures ambiguous",
+      "عدم وجود معلومات عن الاستدامة أو القدرة على تحقيق الأرباح المستقبلية",
+      "These figures could not be verified and were not used: الإيرادات (consolidated). Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 60000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"62.5 مليار\", which is 'الإيرادات (consolidated)' (6.24951e+10), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"62.5 مليار\", which is 'الإيرادات (consolidated)' (6.24951e+10), but it is not listed in claims"
+      }
+    ],
+    "dropped": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-01"
+    ],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "**Analysis of TMGH based on provided evidence (cut‑off: 2026‑11‑18)**  \n\n**Profitability**  \n- [TMGH-TMGH_FY2025_results_summary_ar-p1-11] Earnings per share (consolidated), period 31 Dec 2025: **7 EGP** whole pounds (printed 6.98 EGP); **4 EGP** whole pounds (printed 4.37 EGP); **60 EGP** whole pounds (printed 59.6 EGP). [verified]  \n- [TMGH-TMGH_FY2025_results_summary_ar-p1-09] Profit after taxes (consolidated), period 31 Dec 2025: AMBIGUOUS. Printed \"١٨٠٢٠١,٩٨١٠٤٨٢\" with unclear separators. **Do not compute with this figure.**\n\n**Revenue and Growth**  \n- [TMGH-TMGH_FY2025_results_summary_ar-p1-01] Consolidated revenues, period 31 Dec 2025: **62,495,144,197 EGP** (whole pounds). [verified]  \n- [TMGH-TMGH_FY2025_results_summary_ar-p1-02] Consolidated revenues, period 31 Dec 2024: AMBIGUOUS. Printed \"٦٢,٤٩٥,١٤٤,١٩٧ | ٤٢٠٦٧٠٠٢٨٣٠٢٨٨ | %٤٦\". OCR issue noted: long number without the thousands separators used elsewhere on the page. **Do not compute with this figure.** Growth rate cannot be reliably calculated from the available data.\n\n**Balance Sheet**  \n- No balance‑sheet line items are provided in the evidence. Only income‑statement items (revenue, profit after tax, EPS) are available.\n\n**Risks and Data Quality**  \n- Two figures are explicitly flagged AMBIGUOUS: [p1-02] and [p1-09].  \n- [p1-01] carries a \"verified\" tag, but its printed string is identical to the AMBIGUOUS [p1-02], raising questions about OCR consistency and data integrity across periods.  \n- The unit is stated as \"العملة بالجنية المصرى\" (EGP) without a (000) multiplier, implying absolute Egyptian pounds. However, the revenue figure of ~62.5 billion EGP appears disproportionately high for a single listed Egyptian company, which—combined with the OCR concerns—warrants caution.  \n- Extractor notes highlight uncertainty in number formatting, particularly for [p1-09] and [p1-02].\n\n**Data Quality Summary**  \n- Of the four key figures referenced, two are ambiguous and should be excluded from quantitative analysis.  \n- One verified figure exists but is potentially affected by the same formatting issues evident in the ambiguous entries.  \n- Insufficient data are available to assess the company's balance‑sheet health, cash‑flow sustainability, or long‑term growth trajectory.\n\n**(No investment recommendation is provided, per instructions. The decision agent will use this evidence‑based analysis.)**",
+    "investor": "**Suitability Assessment**\n\n**Horizon (3–5 years):**  \nThis is a medium-term horizon aligned with a specific savings goal (apartment down payment). For such a target, capital preservation typically takes priority as the purchase date approaches, but the investor’s medium loss willingness permits some growth exposure. Suitability leans toward a majority allocation in liquid, low-volatility assets, with a smaller portion allowed in growth-oriented investments depending on the target amount and timeline.\n\n**Liquidity Needs:**  \nThe investor confirms a separate emergency fund, so the current portfolio (60,000 EGP cash + TMGH holdings) is fully earmarked for the apartment goal. Both components are liquid: cash is immediately available; the 200 TMGH shares (valued at 82.50 EGP/share = 16,500 EGP) can be sold with T+2 settlement in the Egyptian market. No liquidity constraints arise from the portfolio structure.\n\n**Loss Willingness & Capacity:**  \nBoth are rated medium. The investor can tolerate moderate portfolio fluctuations but is not seeking high risk. A balanced approach is suitable, though the 3–5 year goal window means large losses near the purchase date could impact the target. The allocation should reflect a risk level that keeps the down-payment objective achievable.\n\n**Current Concentration:**  \n- Portfolio total value: ~76,500 EGP (60,000 EGP cash + 16,500 EGP TMGH)  \n- TMGH represents ~21.6% of the portfolio; cash ~78.4%  \n- Single-stock exposure exists (TMGH only). Given the medium risk profile and specific savings goal, diversification across uncorrelated assets would be more suitable, but the current concentration is not extreme and could be maintained or adjusted based on the investor’s preference for simplicity vs. diversification.\n\n**How Much Cash Could Reasonably Be Committed:**  \nGiven the horizon and goal nature, a substantial portion of the funds is typically kept in cash or cash equivalents to protect the down-payment target. The investor’s medium loss willingness could allow a smaller, diversified growth allocation, but the exact split depends on the target apartment price and other savings. The current 60,000 EGP cash position provides a solid base; the 16,500 EGP in TMGH could remain or be reallocated, considering the single-stock risk.\n\n**What the Portfolio Allows:**  \n- **Cash:** 60,000 EGP is free and immediately liquid.  \n- **TMGH holdings:** 200 shares, valued at 16,500 EGP at the cutoff price of 82.50 EGP/share. These can be fully or partially sold for liquidity (T+2 settlement). No other illiquid assets are noted. The portfolio currently allows full liquidation of the equity position or selective sales to shift allocation toward cash or other assets."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 73.408,
+      "input_tokens": 860,
+      "output_tokens": 12049,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 26.274,
+      "input_tokens": 854,
+      "output_tokens": 3208,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 20.628,
+      "input_tokens": 3115,
+      "output_tokens": 2674,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 17.181,
+      "input_tokens": 2370,
+      "output_tokens": 2784,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 137.494
+}

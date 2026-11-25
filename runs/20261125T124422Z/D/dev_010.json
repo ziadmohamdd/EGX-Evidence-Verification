@@ -1,0 +1,117 @@
+{
+  "case_id": "dev_010",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked how much the profit belonging to Talaat Moustafa's own shareholders grew in 2025 compared with 2024, and whether this justifies adding to the TMGH position. The evidence for shareholders' profit shows 2025 figure of 14,383,890,306 LE and a restated 2024 figure of 9,025,066,065 LE. However, the evidence analysis flags these restated 2024 figures as ambiguous because the same identical paired figures appear across all income‑statement rows on page 7, indicating a data‑quality issue that prevents confirming that the 2024 restated value is distinct from the 2025 figure. Per the instructions, ambiguous figures must not be used in calculations. Consequently, the profit growth cannot be reliably determined from the provided evidence. Without a valid growth figure, there is insufficient evidence to support an action (buy, sell, or increase the position). The investor’s profile (long‑term growth horizon, high loss willingness, medium loss capacity) and the current concentration (~57.9% of the port‑​",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked how much the profit belonging to Talaat Moustafa's own shareholders grew in 2025 compared with 2024, and whether this justifies adding to the TMGH position. [removed: figure could not be verified] However, these restated 2024 figures are flagged as ambiguous because the same identical paired figures appear across all income‑statement rows on page 7, indicating a data‑quality problem that prevents confirming that the 2024 restated value is distinct from the 2025 figure. Per the instructions, ambiguous figures must not be used in calculations. Consequently, the profit growth cannot be reliably determined from the provided evidence. Without a valid growth figure, there is insufficient evidence to support an action (buy, sell, or increase the position). The investor’s",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-58"
+    ],
+    "limitations": [
+      "Ambiguous restated 2024 shareholders’ profit figures prevent reliable growth calculation.",
+      "Data‑quality issue on page 7 undermines comparability of 2024 and 2025 figures.",
+      "These figures could not be verified and were not used: Shareholders of the Parent Company (consolidated), Shareholders of the Parent Company (consolidated). Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"14,383,890,306\", which is 'Shareholders of the Parent Company (consolidated)' (1.43839e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"9,025,066,065\", which is 'Shareholders of the Parent Company (consolidated)' (9.02507e+09), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"14,383,890,306\", which is 'Shareholders of the Parent Company (consolidated)' (1.43839e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"9,025,066,065\", which is 'Shareholders of the Parent Company (consolidated)' (9.02507e+09), but it is not listed in claims"
+      }
+    ],
+    "dropped": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-58"
+    ],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "**Evidence analysis for \"profit belonging to Talaat Moustafa's own shareholders\"**\n\n- [TMGH-TMGH_FY2025_consolidated_en-p7-57] TMGH | Shareholders of the Parent Company (consolidated) | period 2025 | as printed: `14,383,890,306` LE  \n- [TMGH-TMGH_FY2025_consolidated_en-p7-58] TMGH | Shareholders of the Parent Company (consolidated) | period 2024 (Restated) | as printed: `9,025,066,065` LE  \n\n**Ambiguity flag:**  \nBoth rows print identical paired figures (`14,383,890,306 | 9,025,066,065`). The same identical pairs appear across all income‑statement rows on page 7 (net profit, gross profit, profit before tax, EPS), and total equity on page 5 shows different restated figures (`157,708,140,765` vs `129,879,813,693`). This indicates a data‑quality issue where the 2024 Restated figures cannot be confirmed as distinct from the 2025 figures based solely on the printed evidence. Per instructions, **no growth calculation is performed with ambiguous figures**.\n\n**Growth question:**  \nThe numerical difference between the two printed values is `14,383,890,306 - 9,025,066,065 = 5,358,824,241` LE, but because the restated 2024 figure is ambiguous, this difference cannot be asserted as valid growth.\n\n**Position‑addition question:**  \nPer the analysis guidelines, I do not recommend an action; the decision agent evaluates this against the investor's profile and horizon using the evidence provided.",
+    "investor": "**Suitability Assessment**\n\n**1. Horizon & Goal Match**  \nThe investor’s 5–10 year horizon aligns with the stated long-term growth objective. A multi-year horizon supports holding equities through typical market cycles, and there is no temporal conflict with the profile.\n\n**2. Liquidity Needs**  \nThe investor maintains a separate emergency fund outside the portfolio. The portfolio holds 30,000 EGP in cash, which provides additional immediate liquidity without forcing equity sales. This satisfies the profile’s liquidity requirement, though the investor should ensure the emergency fund and portfolio cash are not overlapping in function.\n\n**3. Loss Willingness & Capacity**  \n- Willingness to accept losses: *high*  \n- Financial ability to withstand losses: *medium*  \nThe portfolio’s current risk profile reflects this tension. The investor is comfortable with downside risk, but the medium loss capacity means the position size relative to total assets should be monitored. Large unrealized declines could materially impact the portfolio’s value.\n\n**4. Current Concentration**  \n- TMGH holdings: 500 shares × 82.50 EGP = **41,250 EGP**  \n- Cash: **30,000 EGP**  \n- Total portfolio value: **71,250 EGP**  \n- TMGH concentration: **~57.9%** of the portfolio  \nThis is a notably concentrated position in a single stock. For an investor with medium loss capacity, such concentration elevates idiosyncratic risk. The high willingness to accept losses may mitigate concern, but the analyst should flag that a significant portion of capital is exposed to one company’s performance.\n\n**5. Cash Commitment Capacity & Portfolio Allowances**  \n- **Free cash:** 30,000 EGP – immediately available for new commitments or to bolster liquidity.  \n- **Salable assets:** The 500 TMGH shares have a market value of ~41,250 EGP at the 2026-11-18 cutoff and can be sold for cash. No other holdings are reported.  \n- **Reasonable commitment:** The investor could commit some or all of the 30,000 EGP cash to additional positions (e.g., increasing TMGH exposure or diversifying), or keep it as a buffer. Any new commitment would alter the current concentration level; selling TMGH shares would reduce concentration but also reduce exposure to the stock the investor already holds.\n\n**Profit Figures (from consolidated evidence, unit: LE as printed)**  \n- Shareholders of the Parent Company (consolidated), period 2025: **14,383,890,306 LE**  \n- Shareholders of the Parent Company (consolidated), period 2024 (Restated): **9,025,066,065 LE**  \nThe reported figures show an increase of 5,358,824,241 LE from 2024 to 2025. Per the analyst role constraints, I do not analyse the financial implications or assess whether this growth justifies any action on the position.\n\n**Investment Justification Note**  \nPer guidelines, I do not pick an action or use financial data to recommend adding to or reducing the position. The suitability assessment above focuses on how the investor’s profile aligns with the existing portfolio structure and what the portfolio permits in terms of liquidity and reallocation."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 27.589,
+      "input_tokens": 1664,
+      "output_tokens": 4465,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 40.929,
+      "input_tokens": 1658,
+      "output_tokens": 5769,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 13.04,
+      "input_tokens": 3754,
+      "output_tokens": 1408,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 8.431,
+      "input_tokens": 3083,
+      "output_tokens": 1279,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 89.993
+}

@@ -95,6 +95,11 @@ def test_text_scale_error_is_caught():
     # showing the conversion is fine; the converted result is what must be cited
     shown = "Profit was 55,123 × 1,000,000 = 55,123,000,000 pounds."
     assert text_rules(rec_with(claim("e1", 55_123e6), explanation=shown)) == []
+    for tagged in ["Profit was 55,123 (EGP mn) = 55,123,000,000 pounds.",
+                   "Profit was 55,123 L.E. (000,000), i.e. 55,123,000,000 pounds."]:
+        assert text_rules(rec_with(claim("e1", 55_123e6), explanation=tagged)) == []
+    # a bracket without a unit does not excuse the scale
+    assert text_rules(rec_with(explanation="Net profit was 55,123 (approx.) pounds.")) == ["text_value_mismatch"]
 
 
 def test_percentages_ratios_and_small_numbers_are_not_figures():

@@ -1,0 +1,98 @@
+{
+  "case_id": "dev_004",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 196,
+    "explanation": "The investor needs approximately 30,000 EGP within 6 months for liquidity, but holds only 5,000 EGP in cash. The portfolio's equity is entirely in COMI (1,000 shares @ 128 EGP/share = 128,000 EGP). Selling 196 shares at the cutoff price of 128 EGP yields 25,088 EGP; combined with the existing 5,000 EGP cash gives 30,088 EGP, satisfying the liquidity need. After the sale, 804 shares (~102,912 EGP) remain invested. This partial liquidation reduces concentration risk while preserving a residual equity position. However, the financial evidence for COMI contains several ambiguities (see unused figures below) that prevent reliable assessment of dividend sustainability, valuation ratios, or risk metrics. Consequently, the recommendation is driven solely by the liquidity requirement and the given share price; no assessment of income generation or capital‑preservation safety can be made from the provided data. The investor should be aware that the remaining holding still exposes them to market risk, and that no divid‑",
+    "claims": [],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p4-54"
+    ],
+    "limitations": [
+      "No dividend or income‑distribution data are provided; income potential cannot be evaluated.",
+      "EPS figures are flagged as ambiguous (unit mis‑application); P/E or dividend‑cover ratios cannot be computed.",
+      "Net‑profit figures across statements diverge (82.3 bn vs 152.6 bn), so profitability trends are unreliable.",
+      "Identical net‑profit values for 2024/2025 raise comparability concerns.",
+      "No information on transaction costs, bid‑ask spreads, or market impact is available.",
+      "The investor’s low loss tolerance and capital‑preservation goal conflict with remaining equity exposure after the sale.",
+      "Price data are given at a single cutoff point; no volatility or forward‑looking guidance is included."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 196,
+    "explanation": "The investor needs approximately 30,000 EGP within 6 months for liquidity, but holds only 5,000 EGP in cash. The portfolio's equity is entirely in COMI (1,000 shares @ 128 EGP/share = 128,000 EGP). Selling 196 shares at the cutoff price of 128 EGP yields 25,088 EGP; combined with the existing 5,000 EGP cash gives 30,088 EGP, satisfying the liquidity need. After the sale, 804 shares (~102,912 EGP) remain invested. This partial liquidation reduces concentration risk while preserving a residual equity position. However, the financial evidence for COMI contains several ambiguities (see unused figures below) that prevent reliable assessment of dividend sustainability, valuation ratios, or risk metrics. Consequently, the recommendation is driven solely by the liquidity requirement and the given share price; no assessment of income generation or capital‑preservation safety can be made from the provided data. The investor should be aware that the remaining holding still exposes them to market risk, and that no divid‑",
+    "claims": [],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p4-54"
+    ],
+    "limitations": [
+      "No dividend or income‑distribution data are provided; income potential cannot be evaluated.",
+      "EPS figures are flagged as ambiguous (unit mis‑application); P/E or dividend‑cover ratios cannot be computed.",
+      "Net‑profit figures across statements diverge (82.3 bn vs 152.6 bn), so profitability trends are unreliable.",
+      "Identical net‑profit values for 2024/2025 raise comparability concerns.",
+      "No information on transaction costs, bid‑ask spreads, or market impact is available.",
+      "The investor’s low loss tolerance and capital‑preservation goal conflict with remaining equity exposure after the sale.",
+      "Price data are given at a single cutoff point; no volatility or forward‑looking guidance is included."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30088.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 804
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Portfolio Overview (as of 2026-11-18)**\n- Cash: 5,000.00 EGP\n- COMI holdings: 1,000 shares @ 128.00 EGP/share = 128,000.00 EGP\n- Total portfolio value: 133,000.00 EGP\n- Liquidity need: ~30,000 EGP within 6 months\n- Investor goals: preserve capital, draw income, low risk tolerance, short horizon (1–3 years)\n\n**Evidence Analysis**  \nAll figures below are cited by their `[evidence_id]` and converted to whole pounds where the unit is explicitly EGP thousands (×1,000). Figures with ambiguous units or cross-statement inconsistencies are flagged and not computed.\n\n1. **Net interest income** – period Dec. 31, 2025  \n   `[COMI-COMI_FY2025_consolidated_condensed_en-p5-05]`: 107,699,631 (EGP thousands) → **107,699,631,000 EGP** whole pounds.  \n   *Second figure (91,064,222) represents the prior period; only the 2025 column is used per instruction.*\n\n2. **Net profit for the year** – period Dec. 31, 2025  \n   `[COMI-COMI_FY2025_consolidated_condensed_en-p5-33]`: 82,258,815 (EGP thousands) → **82,258,815,000 EGP** whole pounds.  \n   *A second figure (55,256,732) appears in the same row; ambiguity flagged (see below).*\n\n3. **Net profit for the year** – period Dec. 31, 2024  \n   `[COMI-COMI_FY2025_consolidated_condensed_en-p5-34]`: 82,258,815 and 55,256,732 (EGP thousands) → **82,258,815,000** and **55,256,732,000 EGP** whole pounds.  \n   *Ambiguity flagged: the 2025 net profit figure (82.26bn) is identical to one of the 2024 figures, raising comparability concerns. No growth rate or trend is computed from these figures.*\n\n4. **Basic EPS** – period Dec. 31, 2025  \n   `[COMI-COMI_FY2025_consolidated_condensed_en-p5-39]`: 18.25 and 14.72.  \n   *Report unit stated as “EGP thousands,” which would imply 18,250 EGP per share—implausible given the ~128 EGP share price. **Ambiguity flagged:** the unit does not plausibly apply; whole pounds conversion is not computed. Printed values only are cited.*\n\n5. **Due to customers (consolidated)** – period Dec. 31, 2025  \n   `[COMI-COMI_FY2025_consolidated_condensed_en-p4-28]`: 1,110,395,693 (EGP thousands) → **1,110,395,693,000 EGP** whole pounds.\n\n6. **Total equity and net profit for the year (consolidated)** – period Dec. 31, 2025  \n   `[COMI-COMI_FY2025_consolidated_condensed_en-p4-54]`: 231,486,342 and 152,636,277 (EGP thousands) → **231,486,342,000 EGP** (equity) and **152,636,277,000 EGP** (net profit) whole pounds.  \n   *Ambiguity flagged: the net profit here (152.64bn) differs significantly from the income‑statement net profit of 82.26bn [p5-33]. Possible scope differences (e.g., attributable vs. consolidated) are not explained; cross‑line computation is avoided.*\n\n7. **Basic EPS** – period Dec. 31, 2024  \n   `[COMI-COMI_FY2025_consolidated_condensed_en-p5-40]`: 18.25 and 14.72.  \n   *Same unit ambiguity as [p5-39]; flagged, not computed.*\n\n**Data Quality & Risk Assessment (evidence‑only)**\n- **Profitability**: High absolute net interest income (107.7bn EGP) and net profit (82.3bn EGP per [p5-33]), but internal consistency is compromised by the [p5-34]/[p4-54] discrepancies and the EPS unit ambiguity. No dividend or earnings‑per‑share reliability can be assessed from the given data.\n- **Balance sheet**: Customer deposits of ~1.11 trillion EGP and equity of ~231 billion EGP indicate a large financial institution, but leverage, asset quality, or capital adequacy metrics are absent from the evidence.\n- **Risks**: Unit errors/ambiguities in EPS rows, net profit divergence across statements, and identical net‑profit figures for 2024/2025 limit confidence in trend analysis. No forward‑looking information, dividend policy, or volatility data is provided.\n- **Data quality**: Evidence rows are marked “verified,” but the EPS unit labeling and multi‑figure rows without clear column headers introduce interpretive uncertainty. Per instruction, no ratios (P/E, ROE, etc.) are computed using ambiguous figures.\n\n**Alignment with Investor Profile**\n- **Capital preservation**: The evidence shows substantial profitability and a large, verified balance sheet, but the identified data ambiguities and absence of risk metrics prevent a meaningful assessment of preservation safety. The low‑risk profile of the investor cannot be matched against the disclosed figures alone.\n- **Income generation**: No dividend or income‑distribution data appear in the evidence. High profits *could* support dividends, but this is unconfirmed.\n- **Liquidity needs (30,000 EGP within 6 months)**: The portfolio totals 133,000 EGP (128,000 EGP in COMI shares + 5,000 EGP cash). Meeting the 30,000 EGP need would require realizing approximately 234 COMI shares (at 128.00 EGP each), reducing the holding to ~766 shares. No evidence on transaction costs, bid‑ask spreads, or market impact is provided; the cash position would shift accordingly.\n- **Horizon (1–3 years)**: All financial evidence is historical (FY2025, period ending Dec. 31, 2025). No forward‑looking statements, earnings forecasts, or market‑condition data are included. The short‑term liquidity need (6 months) aligns with the portfolio’s liquidity profile, but the longer‑term capital‑preservation and income goals cannot be evaluated from the given evidence.\n\n**Conclusion on Evidence**\nThe provided financial data for COMI reports significant profitability and a large balance sheet, but contains multiple ambiguities: unit misapplication in EPS rows, net‑profit figure inconsistencies across statements, and identical profit figures for 2024/2025. These flags mean that derived metrics (growth rates, valuation ratios, dividend cover) cannot be reliably computed. The evidence does not supply dividend information, risk indicators, or forward guidance. Consequently, no actionable conclusion regarding portfolio adjustment can be derived from the evidence alone, consistent with the instruction to neither recommend an action nor compute with ambiguous figures. The decision agent will rely on this analysis alongside any additional data.",
+    "investor": "**Suitability Assessment**\n\n**Horizon (1–3 years):**  \nYour investment horizon is short-to-medium term, which aligns with a capital-preservation and near-term income goal. However, a 1–3 year horizon provides limited time to recover from market downturns, making the portfolio sensitive to timing risk, especially if equities are held near the point of needed liquidation.\n\n**Liquidity Needs (30,000 EGP within 6 months):**  \n- Current free cash: **5,000 EGP**  \n- Shortfall: **25,000 EGP**  \n- The portfolio cannot meet this need from cash alone. Liquidating a portion of the COMI position would be required to bridge the gap (detailed below).\n\n**Loss Willingness & Capacity (both low):**  \n- You have minimal tolerance and ability to withstand losses.  \n- The portfolio’s current equity exposure is fully concentrated in a single stock, meaning any price decline directly erodes capital with no offsetting diversification. This conflicts strongly with your stated low loss profile and capital-preservation objective.\n\n**Current Concentration:**  \n- **100% of equity allocation** is in COMI (1,000 shares × 128 EGP/share = **128,000 EGP**).  \n- No other holdings or asset classes are noted. This lack of diversification heightens unsystematic risk and is misaligned with a retirement-income preservation goal where capital stability is prioritised.\n\n**Cash Commitment Capacity:**  \n- Limited to the existing **5,000 EGP** cash position.  \n- Any additional commitment would require converting part of the COMI holding to cash, which would reduce both market exposure and any income the position may generate (income characteristics not analysed here).\n\n**What the Portfolio Allows (what can be sold / what cash is free):**  \n- **Immediate free cash:** 5,000 EGP  \n- **COMI holding:** 1,000 shares with a market value of **128,000 EGP** at the cutoff price (128 EGP/share).  \n- **Partial liquidation to meet the 30,000 EGP need:** Selling approximately **195 shares** at 128 EGP/share generates ~24,960 EGP. Combined with the 5,000 EGP cash, this yields ~29,960 EGP, sufficient to cover the ~30,000 EGP need within 6 months.  \n- **Remaining position after partial sale:** ~805 shares (~103,040 EGP) would be retained.  \n- **Full liquidation:** 1,000 shares would produce 128,000 EGP in cash, fully liquidating the equity position.  \n- No other assets, cash reserves, or income streams are noted in the current portfolio structure.\n\n**Suitability Observations (without recommendation):**  \n- The investor’s liquidity need (30,000 EGP in 6 months) is structurally misaligned with the portfolio’s current composition: only 5,000 EGP is free cash, and the entire equity allocation (128,000 EGP) is concentrated in a single stock with low loss tolerance.  \n- The concentration risk and low loss capacity conflict with the goal of preserving capital and drawing income in retirement.  \n- Accessing the needed liquidity would require selling COMI shares, which would reduce exposure, potentially realise gains or losses (not analysed), and diminish the income-generating capacity of the portfolio.  \n- The portfolio, as structured, does not simultaneously satisfy the short-term liquidity need, the low-loss/preservation objective, and the retirement-income goal without a material change to the holding structure.  \n\n*No company financials have been analysed for investment merit, and no specific action (e.g., \"sell X shares\") has been prescribed. The above assesses suitability dimensions and portfolio capabilities solely on the provided data.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 85.789,
+      "input_tokens": 1143,
+      "output_tokens": 12225,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 19.803,
+      "input_tokens": 1137,
+      "output_tokens": 3415,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 26.477,
+      "input_tokens": 4755,
+      "output_tokens": 3678,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 132.072
+}

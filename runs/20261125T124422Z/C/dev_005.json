@@ -1,0 +1,90 @@
+{
+  "case_id": "dev_005",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The evidence presented does not allow a responsible investment decision. The ABUK financial figures for revenue and net profit are flagged AMBIGUOUS because the page unit conflict (nine entries in billions, one in million) makes their scale unreliable; these figures cannot be used for profitability, growth, or valuation analysis (unused_figures: ABUK-ABUK_9M2026_results-p2-01, p2-02, p2-25, p2-26). The EPS figures (p2-31, p2-32) are marked verified but suffer a unit‑label mismatch (row says ‘جنيه’, printed unit says ‘مليون جنيه’) and should not be used to compute ratios without clarification. No financial evidence is provided for COMI beyond the share price, nor for any other fertilizer‑export company. The investor’s goal to add a fertilizer exporter for diversification therefore cannot be evaluated against the given data. Additionally, the portfolio consists of 200 COMI shares (value 25,600 EGP) and 40,000 EGP cash, but without fundamentals for COMI or alternative fertilizer exporters, any buy, sell, or hold",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "ABUK revenue and net‑profit figures are ambiguous in scale and must not be used for any calculation.",
+      "EPS figures have a unit‑label mismatch and are only reference values.",
+      "No financial data exist for COMI fundamentals or any other fertilizer‑export firm.",
+      "Insufficient evidence to assess diversification benefit, valuation, or risk of a new fertilizer‑exporter holding."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The evidence presented does not allow a responsible investment decision. The ABUK financial figures for revenue and net profit are flagged AMBIGUOUS because the page unit conflict (nine entries in billions, one in million) makes their scale unreliable; these figures cannot be used for profitability, growth, or valuation analysis (unused_figures: ABUK-ABUK_9M2026_results-p2-01, p2-02, p2-25, p2-26). The EPS figures (p2-31, p2-32) are marked verified but suffer a unit‑label mismatch (row says ‘جنيه’, printed unit says ‘مليون جنيه’) and should not be used to compute ratios without clarification. No financial evidence is provided for COMI beyond the share price, nor for any other fertilizer‑export company. The investor’s goal to add a fertilizer exporter for diversification therefore cannot be evaluated against the given data. Additionally, the portfolio consists of 200 COMI shares (value 25,600 EGP) and 40,000 EGP cash, but without fundamentals for COMI or alternative fertilizer exporters, any buy, sell, or hold",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "ABUK revenue and net‑profit figures are ambiguous in scale and must not be used for any calculation.",
+      "EPS figures have a unit‑label mismatch and are only reference values.",
+      "No financial data exist for COMI fundamentals or any other fertilizer‑export firm.",
+      "Insufficient evidence to assess diversification benefit, valuation, or risk of a new fertilizer‑exporter holding."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Portfolio Snapshot (as of cutoff 2026-11-18)**\n- Cash: 40,000.00 EGP [user profile]\n- COMI holdings: 200 shares @ 128.00 EGP/share = 25,600.00 EGP [user profile, cutoff price]\n- Total portfolio value: 65,600.00 EGP\n- ABUK share price (cutoff): 76.21 EGP [user profile, cutoff price]\n\n**ABUK Financial Evidence Analysis**\nAll ABUK figures below are taken directly as printed. Each is flagged per its classification in the evidence metadata.\n\n| Evidence ID | Line Item | Period | Printed Value(s) | Unit as Printed | Classification | Notes |\n|-------------|-----------|--------|------------------|-----------------|----------------|-------|\n| [ABUK-ABUK_9M2026_results-p2-01] | إيرادات النشاط (Revenue) | 9M ending 30 Sep 2026 | ٣١٤٨٨ | مليون جنيه (relied upon), page shows 9× 'مليار' + 1× 'مليون' | **AMBIGUOUS** | Nine entries on page labelled 'بillion', one as 'million'. Table unit line claims 'مليون جنيه', but mixed page units make the scale unreliable. **Do not compute with this figure.** |\n| [ABUK-ABUK_9M2026_results-p2-02] | إيرادات النشاط (Revenue) | 9M ending 30 Sep 2025 | ٣١٤٨٨ | مليون جنيه (relied upon), same page-unit issue | **AMBIGUOUS** | Identical printed values to 9M2026 row; same unit ambiguity. **Do not compute with this figure.** |\n| [ABUK-ABUK_9M2026_results-p2-25] | صافي ربح الفترة (Net Profit) | 9M ending 30 Sep 2026 | ١٢٩٧٠ | مليون جنيه (relied upon), same page-unit issue | **AMBIGUOUS** | Printed with five additional numbers (٦٣٩٦, %١٠٣, ٢٩٥٨, ١٨٢٨, ٦٠٦₂); unit ambiguity applies to all. **Do not compute with this figure.** |\n| [ABUK-ABUK_9M2026_results-p2-26] | صافي ربح الفترة (Net Profit) | 9M ending 30 Sep 2025 | ١٢٩٧٠ | مليون جنيه (relied upon), same page-unit issue | **AMBIGUOUS** | Identical printed values to 9M2026 net profit row; unit ambiguity applies. **Do not compute with this figure.** |\n| [ABUK-ABUK_9M2026_results-p2-31] | نصيب السهم الأساسي في الأرباح (EPS) | 9M ending 30 Sep 2026 | ٨،٧٤ | unit stated: مليون جنيه; row label: جنيه | **verified** | Value 8.74 cited; however, the row label specifies \"جنيه\" per share, while the printed unit says \"مليون جنيه\". This discrepancy is noted but the row is marked verified. **Use only as a reference EPS figure; do not derive ratios without confirming the unit convention.** |\n| [ABUK-ABUK_9M2026_results-p2-32] | نصيب السهم الأساسي في الأرباح (EPS) | 9M ending 30 Sep 2025 | ٤،٢٨ | unit stated: مليون جنيه; row label: جنيه | **verified** | Value 4.28 cited; same unit-label mismatch as above. **Do not compute P/E or growth ratios with these figures without additional unit clarification.** |\n\n**Key Data Quality Flags**\n- All revenue and net-profit rows are **AMBIGUOUS** due to a page-level unit conflict: the table unit line declares \"مليون جنيه\" (million EGP), but nine of ten displayed entries carry the unit \"مليار\" (billion). Relying on the table unit line is insufficient given the printed page evidence.\n- EPS rows are marked **verified** but exhibit a label/unit mismatch (row says \"جنيه\", printed unit says \"مليون جنيه\"). The numeric values 8.74 and 4.28 are retained for reference only.\n- No growth rates, margins, or valuation multiples can be reliably computed from the ambiguous figures. **Do not compute with AMBIGUOUS evidence** per instructions.\n\n**Portfolio Context & Constraints (as given)**\n- Investor goal: add a fertilizer exporter for diversification.\n- Horizon: 5 years; liquidity needs: separate emergency fund; loss willingness/ability: medium.\n- Current holdings: COMI 200 shares (price 128.00 EGP → 25,600 EGP) + 40,000 EGP cash.\n- No financial evidence for COMI or any other fertilizer/exporter firm is provided in the evidence set.\n\n**Decision Boundary**\nPer instructions: \"Do not recommend an action; the decision agent does that. Use only the evidence given.\" \n- The provided evidence does not permit a reliable assessment of ABUK's profitability, growth, or balance‑sheet health.\n- No evidence is given for COMI fundamentals or the broader fertilizer‑export sector.\n- Any allocation decision would require complete, unambiguous financial data for target securities and a sector‑level analysis, which is outside the scope of the given evidence.\n\n**Conclusion (neutral, evidence‑only statement)**\nBased strictly on the evidence presented: \n- ABUK's reported revenue and net profit for 9M2026/9M2025 are ambiguous in scale and cannot be used for profitability or growth analysis. \n- ABUK's verified EPS figures (8.74 and 4.28) are available but affected by a unit‑label mismatch; they should not be used to compute valuation ratios without clarification. \n- The current portfolio consists of 200 COMI shares (value 25,600 EGP) and 40,000 EGP cash, with no financial data on COMI or other fertilizer exporters in the evidence set. \n- No actionable recommendation can be derived from this evidence alone; the decision agent should await complete, unambiguous financials and sector data before adjusting the portfolio.",
+    "investor": "**Investor-Suitability Assessment (No Action Recommendation, No Company-Financial Analysis)**\n\n### Horizon Alignment\n- **Stated horizon:** 5 years.  \n- **Suitability:** A 5-year horizon is compatible with moderate-risk equity exposure. It allows enough time to ride typical market cycles while keeping the investment goal within a reasonable timeframe. The medium loss capacity aligns with this horizon, as there is time to recover from short-term volatility, but not enough to justify aggressive, long-duration risk-taking.\n\n### Liquidity Needs & Emergency Fund\n- **Stated need:** Keeps a separate emergency fund.  \n- **Portfolio liquidity:** Total liquid resources = 40,000.00 EGP cash + 200 shares COMI (price 128.00 EGP) = **65,600.00 EGP** total portfolio value.  \n- **Suitability consideration:** Any new commitment must respect the emergency-fund separation. The 40,000 EGP cash position should be treated as the primary liquidity buffer. New investments should be sized so that the emergency reserve remains intact and untouched. The COMI holding is also liquidizable, but selling it would reduce diversification and may trigger transaction costs or tax events; therefore, new commitments are best funded from the free cash portion, preserving the existing holding if desired.\n\n### Loss Willingness & Capacity\n- **Stated willingness:** Medium.  \n- **Stated financial ability to withstand losses:** Medium.  \n- **Suitability:** A medium loss capacity implies a preference for capital preservation with some growth, but an intolerance for large, permanent drawdowns. Position sizing for any new holding should reflect this: typically, a single new position in a concentrated sector (fertilizer exporters) would be sized to represent a modest fraction of the total portfolio (e.g., 10–25% of investable assets), ensuring that even a significant decline in that holding would not materially threaten the overall portfolio or the emergency fund.\n\n### Current Concentration\n- **Current holdings:** COMI: 200 shares (value 25,600.00 EGP at 128.00 EGP/share).  \n- **Cash:** 40,000.00 EGP.  \n- **Concentration analysis:** The portfolio is currently 100% exposed to a single stock (COMI) plus cash. The investor’s goal is to \"add a fertilizer exporter for diversification.\" Adding another fertilizer-exposed equity would *increase* sector concentration unless the new holding has low correlation to COMI or operates in a different sub-region/segment. Suitability for diversification depends on the new asset’s correlation to COMI and its weight relative to the existing position. The existing concentration also means the portfolio’s risk profile is currently driven by one company’s performance; any new addition should be evaluated for its impact on overall sector exposure.\n\n### Cash Reasonably Commitable\n- **Free cash:** 40,000.00 EGP (explicitly separate from the COMI holding).  \n- **Emergency-fund constraint:** To respect the stated liquidity need, only the portion of this cash that does not impinge on the emergency reserve should be considered commitable. Given the medium loss capacity and 5-year horizon, a reasonable approach would be to commit a portion (e.g., 20–30% of the free cash, or 8,000–12,000 EGP) to the new holding, leaving the remainder as a liquid buffer. The exact amount would depend on the target position size and the investor’s comfort with using cash versus liquidating part of the COMI holding (which would alter concentration).\n\n### What the Portfolio Allows\n- **Sellable:** The 200 COMI shares can be sold at the cutoff price of 128.00 EGP/share, realizing approximately 25,600.00 EGP (before fees/taxes). Partial sales are possible.\n- **Free cash:** 40,000.00 EGP is immediately available and unencumbered by existing positions, subject to the emergency-fund constraint noted above.\n- **No other holdings or constraints** are indicated in the profile; all capital is either in cash or the single COMI equity position.\n\n### Summary of Suitability Findings (No Action Taken)\n- The 5-year horizon and medium loss capacity are compatible with a modest, diversified equity addition to the fertilizer sector, provided sector concentration is monitored.\n- The emergency-fund requirement means new investments should be funded from the 40,000.00 EGP cash pool without touching the reserve, and position size should be limited to avoid overconcentration.\n- The portfolio is currently highly concentrated in COMI; any new fertilizer exporter should be assessed for diversification benefit (low correlation, complementary risk profile) and weighted accordingly.\n- The free cash of 40,000.00 EGP offers reasonable capacity for a new commitment, sized to preserve liquidity and respect the medium loss capacity.\n\n*No analysis of the ABUK financial data provided in the evidence was performed, and no buy/sell recommendation is made.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 34.207,
+      "input_tokens": 1335,
+      "output_tokens": 4305,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 19.679,
+      "input_tokens": 1329,
+      "output_tokens": 3114,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 8.676,
+      "input_tokens": 4790,
+      "output_tokens": 1401,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 62.566
+}

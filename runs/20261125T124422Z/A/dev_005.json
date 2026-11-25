@@ -1,0 +1,71 @@
+{
+  "case_id": "dev_005",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor aims to add a fertilizer exporter for diversification over a 5‑year horizon, with medium risk tolerance and an existing holding of 200 shares of COMI. The only listed fertilizer‑related company in the evidence is ABUK, but all its financial figures (revenues, net profit, EPS) are marked AMBIGUOUS because the printed numbers could be in millions or billions of pounds, and the guidance explicitly says such figures must not be used in calculations. No financial data for COMI (the current holding) are provided, so we cannot assess its future prospects either. Because the core evidence needed to value ABUK or evaluate COMI is unavailable and ambiguous, a responsible decision cannot be made on the basis of the given data. Therefore the recommendation is insufficient_evidence. The investor should keep the existing cash position (40,000 EGP) and wait for clearer financial statements or additional information before buying or selling any shares.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "limitations": [
+      "All ABUK financial figures are AMBIGUOUS and cannot be used for valuation or ratio analysis.",
+      "No financial metrics or forward guidance for COMI are provided.",
+      "Without reliable figures, any buy/hold/sell recommendation would be speculative and contrary to the rule against using ambiguous data."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor aims to add a fertilizer exporter for diversification over a 5‑year horizon, with medium risk tolerance and an existing holding of 200 shares of COMI. The only listed fertilizer‑related company in the evidence is ABUK, but all its financial figures (revenues, net profit, EPS) are marked AMBIGUOUS because the printed numbers could be in millions or billions of pounds, and the guidance explicitly says such figures must not be used in calculations. No financial data for COMI (the current holding) are provided, so we cannot assess its future prospects either. Because the core evidence needed to value ABUK or evaluate COMI is unavailable and ambiguous, a responsible decision cannot be made on the basis of the given data. Therefore the recommendation is insufficient_evidence. The investor should keep the existing cash position (40,000 EGP) and wait for clearer financial statements or additional information before buying or selling any shares.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "limitations": [
+      "All ABUK financial figures are AMBIGUOUS and cannot be used for valuation or ratio analysis.",
+      "No financial metrics or forward guidance for COMI are provided.",
+      "Without reliable figures, any buy/hold/sell recommendation would be speculative and contrary to the rule against using ambiguous data."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 11.725,
+      "input_tokens": 2182,
+      "output_tokens": 1612,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 11.728
+}

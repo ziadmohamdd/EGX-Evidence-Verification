@@ -1,0 +1,159 @@
+{
+  "case_id": "dev_008",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The friend's claim that Telecom Egypt earned 225.9 billion EGP net profit in 2025 is incorrect. The verified financial evidence (ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑35) shows 2025 net profit = 22,578,063 (L.E. 000) = 22,578,063,000 EGP, and 2024 net profit (p6‑36) = 10,111,328 (L.E. 000) = 10,111,328,000 EGP. The profit ratio is about 2.23×, not >10×. The 225.9 billion figure corresponds to total assets (p5‑31), not net profit. Allocating the entire 50,000 EGP cash into additional ETEL shares would raise the single‑stock weight from the current ~30 % to well over 40 % of the total portfolio, exceeding the investor’s medium risk tolerance and compromising the retirement‑savings goal. The suitability assessment therefore does not support a full‑cash deployment into ETEL. The investor should keep the cash liquid and consider a smaller, diversified allocation if desired. The EPS figures (p6‑55, p6‑56) are ambiguous (unit L.E. 000 per share) and have been excluded from any calculation.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL 2025 net profit = 22,578,063,000 EGP, refuting the friend's 225.9 billion claim."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL 2024 net profit = 10,111,328,000 EGP, used to calculate the 2.23× profit ratio."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "Decision based solely on the provided evidence and prices up to the 2026‑11‑18 cutoff; later events or market changes are not considered.",
+      "The investor’s medium risk tolerance and 5‑year horizon are taken into account, but no guarantee of returns is implied."
+    ]
+  },
+  "final": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "[removed: figure could not be verified] [removed: figure could not be verified] [removed: figure could not be verified] [removed: figure could not be verified] The profit ratio is about 2.23×, not >10×. [removed: figure could not be verified] Allocating the entire 50,000 EGP cash into additional ETEL shares would raise the single‑stock weight from the current ~30 % to well over 99 % of the total portfolio, far exceeding the investor’s medium risk tolerance and compromising the retirement‑savings goal. The suitability assessment therefore does not support a full‑cash deployment into ETEL. The investor should keep the cash liquid (a separate emergency fund is maintained) and consider a smaller, diversified allocation if desired. The EPS figures (p6‑55, p6‑56) are ambiguous (unit L.E. 000 per share) and have been excluded;",
+    "claims": [],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "Decision based solely on the provided evidence and prices up to the 2026‑11‑18 cutoff; later events or market changes are not considered.",
+      "The investor’s medium risk tolerance, 5‑year horizon, and the need to keep a separate emergency fund are taken into account, but no guarantee of returns is implied.",
+      "These figures could not be verified and were not used: Total Assets (consolidated), Net profit for the year, Net profit for the year. Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 50000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 150
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"225.9 billion\", which is 'Total Assets (consolidated)' (2.25883e+11), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"22,578,063\" but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"10,111,328\" but evidence 'Net profit for the year' is 1.01113e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"225.9 billion\", which is 'Total Assets (consolidated)' (2.25883e+11), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"225.9 billion\", which is 'Total Assets (consolidated)' (2.25883e+11), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"22,578,063\" but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"10,111,328\" but evidence 'Net profit for the year' is 1.01113e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"225.9 billion\", which is 'Total Assets (consolidated)' (2.25883e+11), but it is not listed in claims"
+      }
+    ],
+    "dropped": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36"
+    ],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "**Evidence Analysis (all figures converted to whole Egyptian pounds EGP, using reported unit L.E.(000) = thousands of pounds)**\n\n- **[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]** Net profit for the year, period 31/12/2025: as printed \"22 578 063\" → **22,578,063,000 EGP**\n- **[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36]** Net profit for the year, period 31/12/2024: as printed \"10 111 328\" → **10,111,328,000 EGP**\n- **[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]** Operating revenues, period 31/12/2025: as printed \"106 672 946\" → **106,672,946,000 EGP**\n- **[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02]** Operating revenues, period 31/12/2024: as printed \"81 677 812\" → **81,677,812,000 EGP**\n- **[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31]** Total Assets (consolidated), period 31/12/2025: as printed \"225 882 527\" → **225,882,527,000 EGP** (prior year 197,952,788,000 EGP)\n- **[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]** Total Equity (consolidated), period 31/12/2025: as printed \"63 687 826\" → **63,687,826,000 EGP** (prior year 45,937,991,000 EGP)\n- **[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55]** Basic and diluted EPS, period 31/12/2025: as printed \"11.93\", unit stated L.E.(000) → **AMBIGUOUS**: EPS per‑share metrics are not normally expressed in thousands; conversion to whole pounds is uncertain. Flagged as ambiguous; no computation performed.\n- **[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56]** Basic and diluted EPS, period 31/12/2024: as printed \"4.79\", unit stated L.E.(000) → **AMBIGUOUS** for same reason.\n\n**Friend's claim assessment**\n- Claim: \"Telecom Egypt made a net profit of 225.9 billion pounds in 2025, more than ten times its 2024 profit.\"\n- Evidence shows 2025 net profit = **22.578 billion EGP** ([ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]), not 225.9 billion. The figure 225.9 billion closely matches **total assets** for 2025 ([ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31]: 225.882 billion EGP), suggesting the friend likely confused net profit with total assets.\n- Ratio of 2025 net profit to 2024 net profit: 22,578,063,000 ÷ 10,111,328,000 ≈ **2.23×**, not \"more than ten times.\" The 2025 profit is roughly double the 2024 profit.\n\n**Data quality flags**\n- EPS figures ([ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] and [p6-56]) carry unit L.E.(000) but represent per‑share amounts; this discrepancy is flagged as ambiguous. No division or multiplication should be applied to these values.\n- All other figures are internally consistent within the reported unit and periods.\n\n**No investment action is recommended here.** The decision agent will act on any portfolio adjustments based on full analysis.",
+    "investor": "**Suitability Assessment**\n\n| Factor | Investor Profile | Assessment |\n|---|---|---|\n| **Horizon** | 5 years | Medium-term. Equities can be appropriate, but 5 years is not long enough to fully ride out severe market downturns without impacting the retirement‑savings goal. |\n| **Liquidity needs** | Keeps a separate emergency fund | The 50,000.00 EGP cash buffer should remain distinct from emergency reserves. Any investment allocation should not compromise this separation. |\n| **Willingness to accept losses** | Medium | Can tolerate moderate price fluctuations, but capital preservation is still a priority. Extreme volatility or large single‑stock losses would be uncomfortable. |\n| **Financial ability to withstand losses** | Medium | A significant drop in portfolio value would affect the investor’s near‑term financial comfort. Risk‑taking capacity is limited to moderate exposure. |\n| **Current concentration** | Holdings: 150 ETEL shares; Cash: 50,000.00 EGP | At the cutoff price of 141.95 EGP/share, the ETEL position is worth ~21,292.50 EGP. Total portfolio value ≈ 71,292.50 EGP, meaning ETEL represents ~29.9% of the portfolio. This is a notable single‑stock weight. |\n| **Cash reasonably commit** | 50,000.00 EGP free cash | Given the medium loss capacity and existing ~30% ETEL concentration, allocating the entire 50k into more ETEL would push single‑stock exposure well above 40% of the total portfolio, increasing idiosyncratic risk beyond what the profile suggests is appropriate. A smaller, diversified allocation would better align with the stated risk tolerance. |\n\n**What the Portfolio Allows**\n- **Cash:** 50,000.00 EGP is fully liquid and free to reallocate or keep as-is.\n- **Holdings:** 150 ETEL shares are priced at 141.95 EGP/share at the cutoff, valuing the position at ~21,292.50 EGP. These shares can be sold on market hours for cash if needed. No other holdings are listed.\n\n**Friend’s Claim – Fact‑Check (using provided evidence)**\n- ETEL FY2025 Net profit (period 31/12/2025): 22,578,063 (L.E. 000) = **22,578,063,000 EGP** (~22.58 billion EGP)\n- ETEL FY2024 Net profit (period 31/12/2024): 10,111,328 (L.E. 000) = **10,111,328,000 EGP** (~10.11 billion EGP)\n- Friend’s statement: “225.9 billion pounds in 2025, more than ten times its 2024 profit.”\n- **Verification:** The printed net profit for 2025 is 22.58 billion EGP, not 225.9 billion. The claim overstates the figure by a factor of ~10 (likely a unit‑misread of “L.E. (000)” or a decimal‑place error). The actual 2025/2024 profit ratio is 22.58 / 10.11 ≈ **2.23 times**, not “more than ten times.” The evidence does not support the friend’s numerical claim.\n\n**Response to the Investor Question**\n- *“Is that right?”* No. Based on the verified financial evidence, Telecom Egypt’s 2025 net profit was approximately 22.58 billion EGP, and it was about 2.2 times (not over 10 times) the 2024 profit. The 225.9 billion figure is inconsistent with the reported data.\n- *“Should I put all my cash into more Telecom Egypt shares?”* The suitability assessment indicates that the investor has a 5‑year horizon, medium loss willingness/capacity, and currently holds nearly 30% of the portfolio in ETEL. Committing the full 50,000.00 EGP cash into additional ETEL shares would significantly increase concentration risk in a single stock, which conflicts with the investor’s risk profile and the goal of topping up retirement savings over a moderate term. The exaggerated profit claim further highlights the risk of making large allocations based on informal tips without independent verification. The portfolio already provides 50,000.00 EGP in free cash and ETEL shares readily sellable at ~141.95 EGP/share; any new allocation should consider diversification and the investor’s stated medium risk tolerance. No specific action is recommended or endorsed."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 39.751,
+      "input_tokens": 1298,
+      "output_tokens": 6169,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 35.24,
+      "input_tokens": 1292,
+      "output_tokens": 5918,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 15.268,
+      "input_tokens": 4347,
+      "output_tokens": 2081,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 28.581,
+      "input_tokens": 3363,
+      "output_tokens": 3084,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 118.844
+}

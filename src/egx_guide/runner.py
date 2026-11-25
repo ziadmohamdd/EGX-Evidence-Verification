@@ -6,6 +6,10 @@ Usage:
 
 Each run gets its own folder with a manifest (model, conditions, fee rate,
 code version) so results can be traced. Failures are saved too, never dropped.
+
+``--resume runs/<run>`` continues a run in its folder: answers already saved as ok
+are kept, missing or failed ones are run again. Separate processes can resume the
+same folder with different ``--conditions`` to run conditions side by side.
 """
 
 from __future__ import annotations
@@ -47,20 +51,42 @@ def record_for(state, caller, seconds: float) -> dict:
     }
 
 
+def _is_ok(path: Path) -> bool:
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("status") == "ok"
+    except (OSError, ValueError):
+        return False
+
+
 def run(cases: list[Case], conditions: list[str], llm, out: Path, model_info: dict, fee_rate: float,
-        view: str = "converted") -> Path:
-    run_dir = out / datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    run_dir.mkdir(parents=True)
-    (run_dir / "manifest.json").write_text(json.dumps({
+        view: str = "converted", resume: Path | None = None) -> Path:
+    now = datetime.now(timezone.utc)
+    manifest = {
         "code_version": __version__, "model": model_info, "conditions": conditions,
         "fee_rate": fee_rate, "evidence_view": view, "cases": [c.case_id for c in cases],
-        "started": datetime.now(timezone.utc).isoformat(),
-    }, indent=2), encoding="utf-8")
+        "started": now.isoformat(),
+    }
+    if resume is None:
+        run_dir = out / now.strftime("%Y%m%dT%H%M%SZ")
+        run_dir.mkdir(parents=True)
+    else:
+        run_dir = resume
+        run_dir.mkdir(parents=True, exist_ok=True)
+        path = run_dir / "manifest.json"
+        if path.exists():
+            old = json.loads(path.read_text(encoding="utf-8"))
+            if (old.get("model"), old.get("evidence_view"), old.get("fee_rate")) != (model_info, view, fee_rate):
+                raise SystemExit(f"{run_dir}: model, evidence view or fee rate differ from the saved run")
+            manifest = {**old, "conditions": sorted(set(old["conditions"]) | set(conditions)),
+                        "resumed": [*old.get("resumed", []), now.isoformat()]}
+    (run_dir / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
 
     for name in conditions:
         cond_dir = run_dir / name
-        cond_dir.mkdir()
+        cond_dir.mkdir(exist_ok=True)
         for case in cases:
+            if resume is not None and _is_ok(cond_dir / f"{case.case_id}.json"):
+                continue
             start = time.perf_counter()
             try:
                 state, caller = run_case(case, CONDITIONS[name], llm, fee_rate, view)
@@ -91,13 +117,15 @@ def main(argv=None):
                     help="how agents see figures: 'converted' (value in pounds next to the printed line) "
                          "or 'printed' (only the printed line; agents apply the unit themselves)")
     ap.add_argument("--out", type=Path, default=Path("runs"))
+    ap.add_argument("--resume", type=Path, metavar="RUN_DIR",
+                    help="continue this run folder: keep ok answers, run missing or failed ones")
     a = ap.parse_args(argv)
 
-    from .llm import make_fallback_chat
+    from .llm import STRUCTURED_METHOD, make_fallback_chat
     llm = make_fallback_chat([f"{a.provider}:{a.model}", *a.fallback], a.base_url, temperature=a.temperature)
     info = {"provider": a.provider, "model": a.model, "base_url": a.base_url, "temperature": a.temperature,
-            "fallback": a.fallback}
-    print(run(load_cases(a.cases), a.conditions, llm, a.out, info, a.fee_rate, a.evidence_view))
+            "fallback": a.fallback, "structured_method": STRUCTURED_METHOD.get(a.provider, "default")}
+    print(run(load_cases(a.cases), a.conditions, llm, a.out, info, a.fee_rate, a.evidence_view, a.resume))
 
 
 if __name__ == "__main__":

@@ -136,3 +136,24 @@ def test_runner_records_evidence_view(case, tmp_path):
     run_dir = run([case], ["A"], ScriptedModel(script=[buy()]), tmp_path, {"provider": "scripted"},
                   fee_rate=0.0, view="printed")
     assert json.loads((run_dir / "manifest.json").read_text())["evidence_view"] == "printed"
+
+
+def test_resume_keeps_ok_answers_and_reruns_failed_ones(case, tmp_path):
+    info = {"provider": "scripted"}
+    run_dir = run([case], ["A", "B"], ScriptedModel(script=[buy()]), tmp_path, info, fee_rate=0.0)
+    first_a = (run_dir / "A" / "synthetic_001.json").read_text(encoding="utf-8")
+    llm = ScriptedModel(script=[buy(shares=50)])  # one answer: only B (the failed one) may use it
+    assert run([case], ["A", "B"], llm, tmp_path, info, fee_rate=0.0, resume=run_dir) == run_dir
+    assert (run_dir / "A" / "synthetic_001.json").read_text(encoding="utf-8") == first_a
+    b = json.loads((run_dir / "B" / "synthetic_001.json").read_text(encoding="utf-8"))
+    assert b["status"] == "ok" and b["final"]["shares"] == 50
+    assert len(json.loads((run_dir / "manifest.json").read_text())["resumed"]) == 1
+
+
+def test_resume_adds_conditions_and_refuses_a_different_model(case, tmp_path):
+    run_dir = tmp_path / "shared"
+    run([case], ["A"], ScriptedModel(script=[buy()]), tmp_path, {"provider": "scripted"}, 0.0, resume=run_dir)
+    run([case], ["C"], ScriptedModel(script=[buy()]), tmp_path, {"provider": "scripted"}, 0.0, resume=run_dir)
+    assert json.loads((run_dir / "manifest.json").read_text())["conditions"] == ["A", "C"]
+    with pytest.raises(SystemExit, match="differ"):
+        run([case], ["B"], ScriptedModel(script=[buy()]), tmp_path, {"provider": "other"}, 0.0, resume=run_dir)

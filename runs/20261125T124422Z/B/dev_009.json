@@ -1,0 +1,82 @@
+{
+  "case_id": "dev_009",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor wants a full‑year 2026 earnings‑per‑share (EPS) and P/E ratio for ABUK to decide whether to buy. The only directly verified figure is the nine‑months‑ended‑September‑2026 basic EPS of 8.74 EGP (rows [ABUK‑ABUK_9M2026_results‑p2‑31] and [‑p2‑32]). All other reported figures – revenues and net profit for both nine‑month periods – are marked AMBIGUOUS and may not be used in calculations (they are listed as unused_figures below). No full‑year EPS, guidance, or quarter‑by‑quarter data are provided. Because the nine‑month EPS cannot be simply annualised without unverified assumptions, and the ambiguous profit/revenue figures cannot be employed, there is insufficient reliable evidence to compute a full‑year 2026 EPS or a meaningful P/E ratio. Consequently a responsible buy/sell recommendation cannot be made. The investor should keep cash until more complete data are available.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Verified nine‑months‑ended‑September‑2026 basic EPS = 8.74 EGP per share."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "All revenue and net‑profit figures are AMBIGUOUS and may not be used in any calculation.",
+      "Only nine‑month EPS is verified; no full‑year or quarterly data are given.",
+      "Annualising the nine‑month EPS would rely on unstated assumptions about the remaining quarter.",
+      "Share price of 76.21 EGP is current as of the 2026‑11‑18 cutoff, but without a reliable EPS the P/E cannot be determined."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor wants a full‑year 2026 earnings‑per‑share (EPS) and P/E ratio for ABUK to decide whether to buy. The only directly verified figure is the nine‑months‑ended‑September‑2026 basic EPS of 8.74 EGP (rows [ABUK‑ABUK_9M2026_results‑p2‑31] and [‑p2‑32]). All other reported figures – revenues and net profit for both nine‑month periods – are marked AMBIGUOUS and may not be used in calculations (they are listed as unused_figures below). No full‑year EPS, guidance, or quarter‑by‑quarter data are provided. Because the nine‑month EPS cannot be simply annualised without unverified assumptions, and the ambiguous profit/revenue figures cannot be employed, there is insufficient reliable evidence to compute a full‑year 2026 EPS or a meaningful P/E ratio. Consequently a responsible buy/sell recommendation cannot be made. The investor should keep cash until more complete data are available.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Verified nine‑months‑ended‑September‑2026 basic EPS = 8.74 EGP per share."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "All revenue and net‑profit figures are AMBIGUOUS and may not be used in any calculation.",
+      "Only nine‑month EPS is verified; no full‑year or quarterly data are given.",
+      "Annualising the nine‑month EPS would rely on unstated assumptions about the remaining quarter.",
+      "Share price of 76.21 EGP is current as of the 2026‑11‑18 cutoff, but without a reliable EPS the P/E cannot be determined."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 39.962,
+      "input_tokens": 2200,
+      "output_tokens": 4322,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 39.965
+}

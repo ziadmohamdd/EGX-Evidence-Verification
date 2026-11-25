@@ -1,0 +1,49 @@
+{
+  "case_id": "dev_001",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The analysis uses the FY2025 consolidated figures supplied in the evidence. Operating revenues rose to 106,672,946,000 EGP (from 81,677,812,000 EGP in 2024); gross profit increased to 44,839,110,000 EGP (from 30,492,762,000 EGP); net profit more than doubled to 22,578,063,000 EGP (from 10,111,328,000 EGP). Return on equity is approximately 35.5% and net‑profit margin about 21.2%, indicating strong profitability. Total assets stand at 225,882,527,000 EGP with total equity of 63,687,826,000 EGP, giving a debt‑to‑equity ratio of roughly 2.5, which reflects moderate‑high leverage. The earnings‑per‑share figure (11.93 / 4.79) has been excluded from the calculations because its unit is printed as L.E.(000), creating ambiguity about whether the number is in thousands of pounds; using it would distort the P/E ratio and any valuation conclusion. Given the 5‑7‑year horizon, the investor’s medium risk tolerance, and the need to preserve liquidity for university fees, the most responsible action is to maintain thecurrent",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The analysis uses the FY2025 consolidated figures supplied in the evidence. Operating revenues rose to 106,672,946,000 EGP (from 81,677,812,000 EGP in 2024); gross profit increased to 44,839,110,000 EGP (from 30,492,762,000 EGP); net profit more than doubled to 22,578,063,000 EGP (from 10,111,328,000 EGP). Return on equity is approximately 35.5% and net‑profit margin about 21.2%, indicating strong profitability. Total assets stand at 225,882,527,000 EGP with total equity of 63,687,826,000 EGP, giving a debt‑to‑equity ratio of roughly 2.5, which reflects moderate‑high leverage. The earnings‑per‑share figure (11.93 / 4.79) has been excluded from the calculations because its unit is printed as L.E.(000), creating ambiguity about whether the number is in thousands of pounds; using it would distort the P/E ratio and any valuation conclusion. Given the 5‑7‑year horizon, the investor’s medium risk tolerance, and the need to preserve liquidity for university fees, the most responsible action is to maintain thecurrent",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 38.365,
+      "input_tokens": 2325,
+      "output_tokens": 4378,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 38.369
+}

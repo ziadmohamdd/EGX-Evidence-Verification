@@ -1,0 +1,61 @@
+{
+  "case_id": "dev_012",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked by how much Edita's net profit grew in 2025 compared with 2024, with a plan to buy more if growth exceeded 50%. The only net‑profit figures for the two years are marked AMBIGUOUS (evidence IDs EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑30 and p6‑31) because the 2025 value is covered by a stamp on the scanned page, making the figures unreliable. Consequently, we cannot calculate the actual percentage change in net profit. The earnings‑per‑share data (2.18 EGP in 2025 vs 1.09 EGP in 2024) suggest more than 50 % growth, but per the rules ambiguous figures may not be used in calculations. Because the required net‑profit growth cannot be verified, a responsible decision cannot be made on the basis of the provided evidence.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31"
+    ],
+    "limitations": [
+      "Net profit figures for 2025 and 2024 are ambiguous and cannot be used to compute growth.",
+      "Earnings‑per‑share values are available but are not a direct measure of net‑profit growth and are therefore not relied upon for the >50 % threshold."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked by how much Edita's net profit grew in 2025 compared with 2024, with a plan to buy more if growth exceeded 50%. The only net‑profit figures for the two years are marked AMBIGUOUS (evidence IDs EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑30 and p6‑31) because the 2025 value is covered by a stamp on the scanned page, making the figures unreliable. Consequently, we cannot calculate the actual percentage change in net profit. The earnings‑per‑share data (2.18 EGP in 2025 vs 1.09 EGP in 2024) suggest more than 50 % growth, but per the rules ambiguous figures may not be used in calculations. Because the required net‑profit growth cannot be verified, a responsible decision cannot be made on the basis of the provided evidence.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31"
+    ],
+    "limitations": [
+      "Net profit figures for 2025 and 2024 are ambiguous and cannot be used to compute growth.",
+      "Earnings‑per‑share values are available but are not a direct measure of net‑profit growth and are therefore not relied upon for the >50 % threshold."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 6.482,
+      "input_tokens": 1913,
+      "output_tokens": 1213,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 6.484
+}

@@ -1,0 +1,75 @@
+{
+  "case_id": "dev_005",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor aims to add a fertilizer exporter for diversification, but the provided evidence does not contain usable financial figures. All reported revenue and net‑profit figures for ABUK are marked AMBIGUOUS because the unit line on the PDF is inconsistent ('مليار' vs 'مليون'), and the instructions forbid using AMBIGUOUS figures in calculations. The two rows labelled 'verified' (earnings per share) also carry a unit of 'مليون جنيه' (million EGP), making their values uncertain. No reliable data on profitability, dividends, or export activity are available, and there is no evidence linking ABUK or COMI to fertilizer export operations. Consequently, we cannot assess risk, expected returns, or whether a purchase fits the investor’s 5‑year horizon and medium loss‑tolerance profile. The recommendation is therefore insufficient_evidence. Investors should keep their current holdings and cash buffer until clearer, non‑ambiguous financial information is available.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "All revenue and profit figures for ABUK are AMBIGUOUS and cannot be used in any calculation.",
+      "The 'verified' EPS rows also list units of million EGP, creating ambiguity.",
+      "No evidence confirms that either ABUK or COMI operates as a fertilizer exporter.",
+      "Insufficient data to evaluate dividend policy, volatility, or alignment with the investor’s 5‑year horizon and risk tolerance."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor aims to add a fertilizer exporter for diversification, but the provided evidence does not contain usable financial figures. All reported revenue and net‑profit figures for ABUK are marked AMBIGUOUS because the unit line on the PDF is inconsistent ('مليار' vs 'مليون'), and the instructions forbid using AMBIGUOUS figures in calculations. The two rows labelled 'verified' (earnings per share) also carry a unit of 'مليون جنيه' (million EGP), making their values uncertain. No reliable data on profitability, dividends, or export activity are available, and there is no evidence linking ABUK or COMI to fertilizer export operations. Consequently, we cannot assess risk, expected returns, or whether a purchase fits the investor’s 5‑year horizon and medium loss‑tolerance profile. The recommendation is therefore insufficient_evidence. Investors should keep their current holdings and cash buffer until clearer, non‑ambiguous financial information is available.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "All revenue and profit figures for ABUK are AMBIGUOUS and cannot be used in any calculation.",
+      "The 'verified' EPS rows also list units of million EGP, creating ambiguity.",
+      "No evidence confirms that either ABUK or COMI operates as a fertilizer exporter.",
+      "Insufficient data to evaluate dividend policy, volatility, or alignment with the investor’s 5‑year horizon and risk tolerance."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 11.301,
+      "input_tokens": 2182,
+      "output_tokens": 1644,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 11.304
+}

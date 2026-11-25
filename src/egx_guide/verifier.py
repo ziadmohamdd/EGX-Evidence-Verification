@@ -36,6 +36,11 @@ _TEXT_NUMBER = re.compile(
     re.IGNORECASE)
 # "22,578,063 × 1,000" is the agent showing the unit conversion, not a scale error.
 _TIMES_UNIT = re.compile(r"\s*[×xX*]\s*1(?:[,\s]?000){1,3}(?!\d)")
+# A printed figure followed by its unit tag, e.g. "22,578,063 (000 L.E.) = 22,578,063,000":
+# the agent is quoting the report and showing the conversion, not stating a wrong scale.
+_UNIT_TAG = re.compile(
+    r"\s*(?:(?:L\.?\s?E\.?|EGP|ج\.?\s?م\.?)\s*)?\((?=[^)]{0,20}?(?:000|mn|million|thousand|bn|billion|ألف|مليون|مليار))"
+    r"[^)]{0,20}\)", re.IGNORECASE)
 _DIGIT_MAP = str.maketrans({**{chr(0x0660 + i): str(i) for i in range(10)},
                             **{chr(0x06F0 + i): str(i) for i in range(10)}, "٫": ".", "٬": "", ",": ""})
 
@@ -141,8 +146,8 @@ def text_findings(text: str, values: dict[str, float], cited: set[str],
             continue
         if t.whole_digits < 4 and not t.scaled:
             continue  # short plain numbers (prices like 82.50, share counts) match by chance
-        if _TIMES_UNIT.match(text, t.end):
-            continue
+        if _TIMES_UNIT.match(text, t.end) or _UNIT_TAG.match(text, t.end):
+            continue  # the agent is showing the unit arithmetic
         for i, v in values.items():
             if abs(v) < EXACT_BELOW:
                 continue

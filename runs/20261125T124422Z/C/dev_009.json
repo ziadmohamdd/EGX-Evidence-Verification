@@ -1,0 +1,89 @@
+{
+  "case_id": "dev_009",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked for a full‑year 2026 earnings‑per‑share (EPS) and price‑to‑earnings (P/E) ratio for ABUK, and whether the share is cheap enough to buy. The only available financial data are nine‑month figures ending 30 September 2026 (and the comparable nine‑month 2025 period). All revenue and net‑profit rows (Evidence IDs ABUK‑ABUK_9M2026_results‑p2‑01, ‑02, ‑25, ‑26) are flagged AMBIGUOUS because the page‑wide unit line lists nine units of ‘مليار’ (billion) and only one of ‘مليون’ (million), making the stated unit uncertain. The EPS rows (Evidence IDs ABUK‑ABUK_9M2026_results‑p2‑31, ‑32) have a contradictory unit: the row header says ‘جنيه’ (EGP per share) but the page‑wide unit line says ‘مليون جنيه’, rendering the EPS figure (e.g., 8.74) irreconcilable with the given share price of 76.21 EGP and with normal EPS reporting. Per the guidelines, AMBIGUOUS figures must not be used in calculations. No full‑year income statement, guidance, share‑count data, or adjusted EPS figure is provided. Consequently, a ",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "limitations": [
+      "Only nine‑month data are available; no full‑year income statement or guidance.",
+      "Revenue and net‑profit figures are AMBIGUOUS due to unit mismatch ('مليار' vs. 'مليون').",
+      "EPS figures are AMBIGUOUS because the row header ('جنيه') conflicts with the page unit line ('مليون جنيه').",
+      "No share‑count or adjusted EPS data is present, preventing annualisation or P/E calculation."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked for a full‑year 2026 earnings‑per‑share (EPS) and price‑to‑earnings (P/E) ratio for ABUK, and whether the share is cheap enough to buy. The only available financial data are nine‑month figures ending 30 September 2026 (and the comparable nine‑month 2025 period). All revenue and net‑profit rows (Evidence IDs ABUK‑ABUK_9M2026_results‑p2‑01, ‑02, ‑25, ‑26) are flagged AMBIGUOUS because the page‑wide unit line lists nine units of ‘مليار’ (billion) and only one of ‘مليون’ (million), making the stated unit uncertain. The EPS rows (Evidence IDs ABUK‑ABUK_9M2026_results‑p2‑31, ‑32) have a contradictory unit: the row header says ‘جنيه’ (EGP per share) but the page‑wide unit line says ‘مليون جنيه’, rendering the EPS figure (e.g., 8.74) irreconcilable with the given share price of 76.21 EGP and with normal EPS reporting. Per the guidelines, AMBIGUOUS figures must not be used in calculations. No full‑year income statement, guidance, share‑count data, or adjusted EPS figure is provided. Consequently, a ",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "limitations": [
+      "Only nine‑month data are available; no full‑year income statement or guidance.",
+      "Revenue and net‑profit figures are AMBIGUOUS due to unit mismatch ('مليار' vs. 'مليون').",
+      "EPS figures are AMBIGUOUS because the row header ('جنيه') conflicts with the page unit line ('مليون جنيه').",
+      "No share‑count or adjusted EPS data is present, preventing annualisation or P/E calculation."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Evidence Analysis (all figures converted from Arabic‑Indic digits; units applied as printed, ambiguities flagged per guidelines)**\n\n| Evidence ID | Row Description | Printed Values (converted) | Unit as Printed | Ambiguity Flag |\n|---|---|---|---|---|\n| [ABUK‑ABUK_9M2026_results‑p2‑01] | ABUK – إيرادات النشاط (Revenue), 9M ending 30 Sep 2026 | 31 488 | مليون جنيه (per table unit line) | **AMBIGUOUS** – page shows 9 units of 'مليار' (billion) and 1 of 'مليون' (million); reliance on 'مليون جنيه' line is uncertain. |\n| [ABUK‑ABUK_9M2026_results‑p2‑02] | ABUK – إيرادات النشاط (Revenue), 9M ending 30 Sep 2025 | 31 488 | مليون جنيه | **AMBIGUOUS** – same page‑unit issue as p2‑01. |\n| [ABUK‑ABUK_9M2026_results‑p2‑25] | ABUK – صافي ربح الفترة (Net profit), 9M ending 30 Sep 2026 | 12 970 | مليون جنيه | **AMBIGUOUS** – same page‑unit issue; five additional figures (%١٠٣, ٢٩٥٨, ١٨٢٨, ٦٠٦₂) whose meaning/units are unclear. |\n| [ABUK‑ABUK_9M2026_results‑p2‑26] | ABUK – صافي ربح الفترة (Net profit), 9M ending 30 Sep 2025 | 12 970 | مليون جنيه | **AMBIGUOUS** – same page‑unit issue as p2‑25. |\n| [ABUK‑ABUK_9M2026_results‑p2‑31] | ABUK – نصيب السهم الأساسي في الأرباح (EPS), 9M ending 30 Sep 2026 | 8.74, 4.28, %١٠٤, 199, 1.23, 662 | **مليون جنيه** (contradicts row header \"(جنيه)\") | **AMBIGUOUS** – row header explicitly states \"جنيه\" (EGP per share), but the page‑wide unit line says \"مليون جنيه\". An EPS of 8.74 million EGP is inconsistent with the given share price of 76.21 EGP. **Do not compute with this figure.** |\n| [ABUK‑ABUK_9M2026_results‑p2‑32] | ABUK – نصيب السهم الأساسي في الأرباح (EPS), 9M ending 30 Sep 2025 | 8.74, 4.28, %١٠٤, 199, 1.23, 662 | **مليون جنيه** (contradicts row header \"(جنيه)\") | **AMBIGUOUS** – identical unit/header contradiction as p2‑31. |\n\n**Key figures cited in whole pounds (EGP) where units are unambiguous:** None – all relevant figures carry the above ambiguities.\n\n---\n\n### Why full‑year 2026 EPS and P/E cannot be calculated from the given evidence\n\n1. **Only nine‑month data is provided.** The report covers the period ending 30 September 2026; no full‑year income statement, guidance, or prior full‑year actuals appear in the evidence.\n2. **EPS unit is contradictory and flagged AMBIGUOUS.** The row \"نصيب السهم الأساسي في الأرباح (جنيه)\" lists a per‑share amount, but the accompanying unit line reads \"مليون جنيه\". This makes the EPS figure (e.g., 8.74) irreconcilable with the share price of 76.21 EGP and with standard EPS reporting. Per instructions, AMBIGUOUS figures must not be used in computation.\n3. **Revenue and net‑profit figures are also AMBIGUOUS** due to the page‑wide unit mismatch ('مليار' vs. 'مليون'), preventing reliable derivation of a full‑year EPS via simple annualisation or scaling.\n4. **No full‑year earnings data, share count, or adjusted EPS guidance is present** in the supplied excerpts.\n\nConsequently, the price‑to‑earnings ratio (P/E = share price / EPS) cannot be computed from the evidence. The current share price at cutoff is 76.21 EGP (given), but without a verified EPS figure, any P/E calculation would be speculative and outside the permitted use of the data.\n\n**No action recommendation is provided** (as per instructions; the decision agent determines that). The share's \"cheapness\" relative to earnings cannot be assessed from the available, ambiguous nine‑month data.",
+    "investor": "**Suitability Assessment**\n\n- **Horizon (3–5 years):** A medium-term horizon is compatible with equity holding, but an exporter’s performance is often tied to currency movements, global demand, and commodity cycles. The investor should expect periodic volatility and ensure the horizon allows holding through downturns without forced selling.\n\n- **Liquidity needs:** The investor holds 30,000.00 EGP in cash and maintains a separate emergency fund. The full 30,000 EGP is free to commit without touching emergency savings, but a prudent allocation should preserve the emergency fund’s purpose (typically 3–6 months of expenses) and keep a liquidity buffer for unexpected cash needs.\n\n- **Willingness to accept losses & financial ability to withstand losses (both medium):** The investor can tolerate moderate declines but has limited capacity to absorb material losses without affecting overall financial stability. Position sizing should be calibrated so that a significant drop in the holding does not impair the emergency fund or the broader portfolio.\n\n- **Current concentration:** The portfolio has no existing holdings. Adding ABUK would introduce single-stock, single-sector (export), and single-currency (EGP) concentration. Diversification across sectors, geographies, or instrument types would reduce this risk, especially given the medium loss capacity.\n\n- **Cash that could reasonably be committed:** With 30,000 EGP cash and no other holdings, a reasonable commitment range is 10%–30% of cash (3,000–9,000 EGP), translating at 76.21 EGP/share to roughly 40–118 shares. The full 30,000 EGP could be deployed only if the investor is comfortable with the resulting concentration and potential loss impact on the portfolio.\n\n- **Portfolio allowances (what can be sold / free cash):** No holdings exist, so there are no sales to generate cash. The entire 30,000.00 EGP is free to invest, subject to the emergency fund being preserved as stated.\n\n**Note on the requested financial analysis:** I’m unable to work out full-year 2026 earnings per share, calculate a price-to-earnings ratio, or assess whether the share is “cheap enough to buy.” My role constraints explicitly prohibit analyzing company financials and providing actionable recommendations or valuations. I can, however, continue to help structure the investment around the investor’s profile, discuss general risk considerations for exporter equities, or assist with allocation frameworks that respect the stated suitability criteria."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 39.046,
+      "input_tokens": 1353,
+      "output_tokens": 5845,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 18.746,
+      "input_tokens": 1347,
+      "output_tokens": 2603,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 7.138,
+      "input_tokens": 3915,
+      "output_tokens": 1162,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 64.933
+}

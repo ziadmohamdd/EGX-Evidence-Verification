@@ -1,0 +1,128 @@
+{
+  "case_id": "dev_011",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 3921,
+    "explanation": "The investor has 80,000 EGP cash, no existing holdings, and a 7+ year horizon with moderate risk tolerance. Using the authoritative evidence, net‑profit growth (2024→2025) and P/E ratios are available for three of the four named companies. ETEL figures are entirely ambiguous (two numbers printed without clear period labels; unit L.E.(000) applied to EPS) and are excluded from computation. COMI’s net‑profit growth is strong (~48.87%) but its EPS (18.25) is flagged as ambiguous (unit note 'EGP thousands') and its P/E cannot be reliably used. EFID and TMGH have clear, unambiguous figures. EFID shows the highest net‑profit growth at ~67.75% (2025 NP 2,695,301,670 EGP vs 2024 NP 1,606,727,698 EGP) and a P/E of ~9.36 (share price 20.40 EGP ÷ EPS 2.18 EGP/share). TMGH growth is ~42.54% with a P/E of ~11.82. Because EFID combines the strongest growth with a reasonable valuation and all its figures are unambiguous, it best fits the investor’s long‑term growth goal and medium risk tolerance. The purchase uses the full ",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID net profit for the year 2025 = 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID net profit for the year 2024 = 1,606,727,698 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic & diluted EPS 2025 = 2.18 EGP/share"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40"
+    ],
+    "limitations": [
+      "ETEL net‑profit and EPS are ambiguous; no computable growth or P/E.",
+      "COMI EPS is flagged ambiguous (unit note); P/E of ~7.01 not relied upon.",
+      "No evidence provided for CIB or Edita; comparison limited to EFID, TMGH, COMI, ETEL.",
+      "Share prices are taken from the investor‑provided cutoff (2026‑11‑18) and are not validated by the evidence set.",
+      "All figures are in base units (EGP/LE) as required; no scaling applied beyond the explicit unit conversions stated in the evidence."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 3921,
+    "explanation": "The investor has 80,000 EGP cash, no existing holdings, and a 7+ year horizon with moderate risk tolerance. Using the authoritative evidence, net‑profit growth (2024→2025) and P/E ratios are available for three of the four named companies. ETEL figures are entirely ambiguous (two numbers printed without clear period labels; unit L.E.(000) applied to EPS) and are excluded from computation. COMI’s net‑profit growth is strong (~48.87%) but its EPS (18.25) is flagged as ambiguous (unit note 'EGP thousands') and its P/E cannot be reliably used. EFID and TMGH have clear, unambiguous figures. EFID shows the highest net‑profit growth at ~67.75% (2025 NP 2,695,301,670 EGP vs 2024 NP 1,606,727,698 EGP) and a P/E of ~9.36 (share price 20.40 EGP ÷ EPS 2.18 EGP/share). TMGH growth is ~42.54% with a P/E of ~11.82. Because EFID combines the strongest growth with a reasonable valuation and all its figures are unambiguous, it best fits the investor’s long‑term growth goal and medium risk tolerance. The purchase uses the full ",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID net profit for the year 2025 = 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID net profit for the year 2024 = 1,606,727,698 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic & diluted EPS 2025 = 2.18 EGP/share"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40"
+    ],
+    "limitations": [
+      "ETEL net‑profit and EPS are ambiguous; no computable growth or P/E.",
+      "COMI EPS is flagged ambiguous (unit note); P/E of ~7.01 not relied upon.",
+      "No evidence provided for CIB or Edita; comparison limited to EFID, TMGH, COMI, ETEL.",
+      "Share prices are taken from the investor‑provided cutoff (2026‑11‑18) and are not validated by the evidence set.",
+      "All figures are in base units (EGP/LE) as required; no scaling applied beyond the explicit unit conversions stated in the evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 11.6,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 3921
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Analysis of Net Profit Growth (2024→2025) and P/E Ratios – Based Solely on Provided Evidence**\n\n### 1. Extracted Figures (converted to whole pounds EGP/LE where units allow, ambiguous figures flagged)\n\n| Company | Figure | Period | Value (whole pounds) | Evidence ID | Unit & Notes |\n|---------|--------|--------|----------------------|-------------|--------------|\n| **ETEL** | Net profit for the year | 31/12/2025 | 22,578,063,000* | [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] | *Ambiguous: printed \"22 578 063 10 111 328\" with unit L.E.(000); two numbers side‑by‑side without clear period separation. **Do not compute with this figure.** |\n| **ETEL** | Net profit for the year | 31/12/2024 | 10,111,328,000* | [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] | *Same ambiguity as above. **Do not compute with this figure.** |\n| **ETEL** | Basic & diluted EPS | 31/12/2025 | 11.93* L.E./Share | [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] | *Ambiguous: unit printed as L.E.(000); two numbers \"11.93 4.79\" without clear period mapping. **Do not compute with this figure.** |\n| **ETEL** | Basic & diluted EPS | 31/12/2024 | 4.79* L.E./Share | [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56] | *Same ambiguity as above. **Do not compute with this figure.** |\n| **COMI** | Net profit for the year | 31/12/2025 | 82,258,815,000 EGP | [COMI-COMI_FY2025_consolidated_condensed_en-p5-33] | Unit: \"All amounts are shown in EGP thousands\". Converted: 82,258,815 × 1,000. |\n| **COMI** | Net profit for the year | 31/12/2024 | 55,256,732,000 EGP | [COMI-COMI_FY2025_consolidated_condensed_en-p5-34] | Same unit conversion. |\n| **COMI** | Basic EPS | 31/12/2025 | 18.25* EGP/share | [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] | *Unit ambiguity: printed \"unit: (All amounts are shown in EGP thousands)\" – likely a mis‑placement; EPS is likely in EGP. **Flagged as ambiguous; P/E computation using this figure carries this flag.** |\n| **COMI** | Basic EPS | 31/12/2024 | 14.72* EGP/share | [COMI-COMI_FY2025_consolidated_condensed_en-p5-40] | Same unit flag. |\n| **EFID** | Net profit for the year (consolidated) | 31/12/2025 | 2,695,301,670 EGP | [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] | Unit: EGP. No ambiguity. |\n| **EFID** | Net profit for the year (consolidated) | 31/12/2024 | 1,606,727,698 EGP | [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31] | Same unit. |\n| **EFID** | Basic & diluted EPS (consolidated) | 31/12/2025 | 2.18 EGP/share | [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] | Unit: EGP. No ambiguity. |\n| **EFID** | Basic & diluted EPS (consolidated) | 31/12/2024 | 1.09 EGP/share | [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39] | Same unit. |\n| **TMGH** | Net profit for the year (consolidated) | 2025 | 18,201,981,482 LE | [TMGH-TMGH_FY2025_consolidated_en-p7-55] | Unit: LE (EGP). No ambiguity. |\n| **TMGH** | Net profit for the year (consolidated) | 2024 (Restated) | 12,769,517,325 LE | [TMGH-TMGH_FY2025_consolidated_en-p7-55] (second figure in printed row) | Same unit. |\n| **TMGH** | Earnings per Share (consolidated) | 2025 | 6.98 LE/share | [TMGH-TMGH_FY2025_consolidated_en-p7-61] | Unit: LE. No ambiguity. |\n| **TMGH** | Earnings per Share (consolidated) | 2024 (Restated) | 4.38 LE/share | [TMGH-TMGH_FY2025_consolidated_en-p7-62] | Same unit. |\n\n*Figures marked with * are **AMBIGUOUS** per the instruction \"Flag AMBIGUOUS figures and do not compute with them.\" No growth or P/E calculations are performed using these figures.*\n\n### 2. Net Profit Growth (2024 → 2025) – Using Unambiguous Figures Only\n\n| Company | NP 2025 (whole pounds) | NP 2024 (whole pounds) | Growth % | Evidence IDs |\n|---------|------------------------|------------------------|----------|--------------|\n| **COMI** | 82,258,815,000 EGP | 55,256,732,000 EGP | **(82,258,815,000 − 55,256,732,000) / 55,256,732,000 ≈ 48.87%** | [p5-33], [p5-34] |\n| **EFID** | 2,695,301,670 EGP | 1,606,727,698 EGP | **(2,695,301,670 − 1,606,727,698) / 1,606,727,698 ≈ 67.75%** | [p6-30], [p6-31] |\n| **TMGH** | 18,201,981,482 LE | 12,769,517,325 LE | **(18,201,981,482 − 12,769,517,325) / 12,769,517,325 ≈ 42.54%** | [p7-55] |\n| **ETEL** | – | – | **Not computable** – NP figures are ambiguous ([p6-35], [p6-36]). | – |\n\n### 3. Price‑to‑Earnings (P/E) Ratios – Using Unambiguous EPS and User‑Provided Cut‑off Prices\n\n*Note: Cut‑off share prices (provided by investor at 2026‑11‑18) are used here for P/E calculation; they are not from the evidence set but are the prices at which the investor may transact.*\n\n| Company | Share Price (EGP) | EPS 2025 (whole currency/unit) | P/E Ratio | Evidence ID (EPS) | Notes |\n|---------|-------------------|--------------------------------|-----------|-------------------|-------|\n| **EFID** | 20.40 | 2.18 EGP/share | **20.40 / 2.18 ≈ 9.36** | [p6-38] | EPS unit EGP (clear). |\n| **TMGH** | 82.50 | 6.98 LE/share | **82.50 / 6.98 ≈ 11.82** | [p7-61] | EPS unit LE (clear, = EGP). |\n| **COMI** | 128.00 | 18.25* EGP/share | **128.00 / 18.25 ≈ 7.01** (flagged) | [p5-39] | EPS unit flagged as ambiguous (printed \"EGP thousands\"); P/E computed assuming EPS in EGP. **Do not rely on this P/E without resolving the unit ambiguity.** |\n| **ETEL** | 141.95 | – | **Not computable** – EPS figures are ambiguous ([p6-55], [p6-56]). | – | – |\n\n### 4. Summary of Comparative Evidence\n\n- **Net Profit Growth (2024→2025):** \n  - EFID shows the highest growth at ~67.75%, followed by TMGH at ~42.54%, then COMI at ~48.87%. ETEL growth cannot be determined from evidence.\n- **P/E Ratios (lower = relatively cheaper earnings):**\n  - COMI: ~7.01 (unit ambiguity flagged)\n  - EFID: ~9.36\n  - TMGH: ~11.82\n  - ETEL: not computable.\n- **CIB:** No evidence provided for Commercial International Bank (CIB) in the evidence set. Comparison covers ETEL, COMI, EFID, and TMGH only.\n\n### 5. Important Flags & Data‑Quality Notes\n\n- **ETEL:** Net profit and EPS figures are ambiguous (two numbers printed without clear period labels; unit L.E.(000) applied to EPS is atypical). **Do not compute growth or P/E for ETEL from this evidence.**\n- **COMI EPS:** Unit note \"All amounts are shown in EGP thousands\" appears on the EPS row, which is likely a formatting carry‑over from the financial‑statement section. The EPS value (18.25) is almost certainly in EGP (consistent with typical P/E of ~7 for a price of 128 EGP). **This figure is flagged as ambiguous; P/E of 7.01 should be treated with caution.**\n- **All other figures** have clear units (EGP, LE/EGP thousands) and are used without ambiguity for growth and P/E calculations as shown.\n\n### 6. Decision Guidance (Do Not Recommend Action)\n\nThe evidence presented allows a quantitative comparison of net profit growth and P/E ratios for three of the four named companies (ETEL data is too ambiguous for computation). No actionable recommendation (e.g., \"buy X\") is provided here, per the instruction that the decision agent determines the action. An investor matching the given profile (7+ year horizon, medium loss tolerance, separate emergency fund) may wish to weigh the growth profiles and valuation metrics above, keeping in mind the data‑quality flags, especially for COMI's P/E and the complete unavailability of ETEL computable figures.",
+    "investor": "**Investor-Suitability Assessment**\n\n**Profile Alignment**\n- **Horizon (7+ years) & Goal (long-term growth):** Compatible with a meaningful equity allocation. A multi-year horizon allows riding market cycles and supports growth-oriented assets.\n- **Liquidity needs (separate emergency fund):** The investor already maintains cash reserves outside the investment portfolio. Only excess cash beyond this buffer should be committed to market positions.\n- **Loss willingness/capacity (both medium):** Indicates a moderate risk tolerance. The portfolio can tolerate moderate volatility, but position sizing should preserve enough stability to withstand drawn-down periods without forced liquidation.\n- **Current concentration:** No existing holdings. The portfolio is unencumbered, with full flexibility to build a new allocation from scratch.\n- **Cash commit-ability:** 80,000.00 EGP is fully free and can be allocated to investments. No proceeds from sales are needed, as there are no holdings to liquidate.\n\n**Portfolio Allowances (at cutoff 2026-11-18)**\n- **Free cash:** 80,000.00 EGP (all cash, no holdings pledged or restricted).\n- **Salable assets:** None currently held; therefore, no forced sales or tax considerations apply.\n- **Capacity to add exposure:** Full. The entire cash balance is available for deployment into eligible instruments, subject to the risk-profile constraints above.\n\n**Constraint-Adherent Response**\nPer my role instructions, I am unable to:\n- Analyze company financials (including net profit growth, P/E ratios, or year-over-year comparisons).\n- Pick, rank, or recommend a specific stock or asset for purchase.\n\nIf you would like a suitability-framework-compliant review of asset-class options (e.g., equity vs. fixed income vs. diversified funds) that align with the profile above, or a discussion of how a proposed allocation would interact with the 80,000 EGP cash position and medium risk tolerance, I can prepare that without referencing specific company fundamentals or making a buy call."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 86.761,
+      "input_tokens": 2189,
+      "output_tokens": 12895,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 12.625,
+      "input_tokens": 2183,
+      "output_tokens": 1736,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 23.957,
+      "input_tokens": 6299,
+      "output_tokens": 2679,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 123.345
+}

@@ -1,0 +1,94 @@
+{
+  "case_id": "dev_007",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor needs 10,000 EGP in cash within 3 months for a family wedding. Current holdings: 200 shares of EFID at the cutoff price of 20.40 EGP per share, giving a market value of 200 × 20.40 = 4,080 EGP. Adding the existing cash of 1,000 EGP yields a total liquidity of 5,080 EGP, which falls short of the 10,000 EGP target. Given the investor's low willingness and ability to withstand losses, the only action available within the portfolio is to sell the entire EFID position to realise cash now. The proceeds (4,080 EGP) combined with the existing 1,000 EGP provide 5,080 EGP, leaving a shortfall of 4,920 EGP that must be covered by other means (e.g., additional savings, borrowing, or liquidating other assets not listed). The evidence on revenue and earnings (see unused figures below) is long‑term profitability data and does not directly inform a 3‑month cash‑needs decision; therefore it is not used in the calculation. Price movements over the next three months are uncertain and no outside information may be引用",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "Net profit for the year 2025 is 2,695,301,670 EGP (used only to note that long‑term profitability data is not relevant to the 3‑month cash need)."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "Basic and diluted EPS of 2.18 EGP for 2025 is cited but not used in the liquidity assessment."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39"
+    ],
+    "limitations": [
+      "Selling all 200 EFID shares yields only 4,080 EGP, still leaving a cash shortfall of ~4,920 EGP relative to the 10,000 EGP goal.",
+      "The market price of EFID may change over the next three months; the realised cash could be higher or lower than 4,080 EGP.",
+      "No information is provided on transaction costs, bid‑ask spreads, or taxes that could further reduce the cash received.",
+      "The investor’s low risk tolerance means any price decline between now and sale would be undesirable, but the need for cash outweighs that concern.",
+      "No other assets or income sources are described; the recommendation assumes the investor can supplement the shortfall from outside the portfolio."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor needs 10,000 EGP in cash within 3 months for a family wedding. Current holdings: 200 shares of EFID at the cutoff price of 20.40 EGP per share, giving a market value of 200 × 20.40 = 4,080 EGP. Adding the existing cash of 1,000 EGP yields a total liquidity of 5,080 EGP, which falls short of the 10,000 EGP target. Given the investor's low willingness and ability to withstand losses, the only action available within the portfolio is to sell the entire EFID position to realise cash now. The proceeds (4,080 EGP) combined with the existing 1,000 EGP provide 5,080 EGP, leaving a shortfall of 4,920 EGP that must be covered by other means (e.g., additional savings, borrowing, or liquidating other assets not listed). The evidence on revenue and earnings (see unused figures below) is long‑term profitability data and does not directly inform a 3‑month cash‑needs decision; therefore it is not used in the calculation. Price movements over the next three months are uncertain and no outside information may be引用",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "Net profit for the year 2025 is 2,695,301,670 EGP (used only to note that long‑term profitability data is not relevant to the 3‑month cash need)."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "Basic and diluted EPS of 2.18 EGP for 2025 is cited but not used in the liquidity assessment."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39"
+    ],
+    "limitations": [
+      "Selling all 200 EFID shares yields only 4,080 EGP, still leaving a cash shortfall of ~4,920 EGP relative to the 10,000 EGP goal.",
+      "The market price of EFID may change over the next three months; the realised cash could be higher or lower than 4,080 EGP.",
+      "No information is provided on transaction costs, bid‑ask spreads, or taxes that could further reduce the cash received.",
+      "The investor’s low risk tolerance means any price decline between now and sale would be undesirable, but the need for cash outweighs that concern.",
+      "No other assets or income sources are described; the recommendation assumes the investor can supplement the shortfall from outside the portfolio."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 5080.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 44.83,
+      "input_tokens": 1874,
+      "output_tokens": 2665,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 44.832
+}

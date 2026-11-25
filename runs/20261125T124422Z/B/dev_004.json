@@ -1,0 +1,65 @@
+{
+  "case_id": "dev_004",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor needs about 30,000 EGP within six months, but currently holds only 5,000 EGP in cash and 1,000 shares of COMI (market price 128 EGP per share, total 128,000 EGP). The provided evidence includes COMI's FY2025 consolidated financials (net interest income, net profit, basic EPS, due‑to‑customers, total equity) but does not contain any information on dividends, historical price volatility, transaction costs, tax effects, or the investor’s cost basis for the COMI holding. Without data on how COMI generates income (e.g., dividend yield) or on the risk of further price movement, it is not possible to assess whether selling shares would preserve capital, provide the needed liquidity, or align with the investor’s low‑risk, retirement‑income goals. Consequently, there is insufficient evidence to support a responsible buy, hold, or sell decision.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "No dividend or income data from COMI",
+      "No price history or volatility information",
+      "No details on transaction costs, taxes, or the investor’s cost basis",
+      "Financial figures are in EGP thousands and must be scaled, but they do not directly address the investor’s liquidity or income needs"
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor needs about 30,000 EGP within six months, but currently holds only 5,000 EGP in cash and 1,000 shares of COMI (market price 128 EGP per share, total 128,000 EGP). The provided evidence includes COMI's FY2025 consolidated financials (net interest income, net profit, basic EPS, due‑to‑customers, total equity) but does not contain any information on dividends, historical price volatility, transaction costs, tax effects, or the investor’s cost basis for the COMI holding. Without data on how COMI generates income (e.g., dividend yield) or on the risk of further price movement, it is not possible to assess whether selling shares would preserve capital, provide the needed liquidity, or align with the investor’s low‑risk, retirement‑income goals. Consequently, there is insufficient evidence to support a responsible buy, hold, or sell decision.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "No dividend or income data from COMI",
+      "No price history or volatility information",
+      "No details on transaction costs, taxes, or the investor’s cost basis",
+      "Financial figures are in EGP thousands and must be scaled, but they do not directly address the investor’s liquidity or income needs"
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 5000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 23.058,
+      "input_tokens": 1990,
+      "output_tokens": 3515,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 23.061
+}

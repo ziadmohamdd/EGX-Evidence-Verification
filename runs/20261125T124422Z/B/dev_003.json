@@ -1,0 +1,95 @@
+{
+  "case_id": "dev_003",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor holds 100 shares of ETEL and 1500 shares of EFID, with a cash buffer of 15,000 EGP. The total portfolio value is about 59,795 EGP (ETEL 14,195 EGP + EFID 30,600 EGP). The investor’s goal is steady growth with some income over a 3‑5‑year horizon and a need for possible liquidity of 10% of the portfolio within a year; the existing cash already covers that liquidity requirement. Using the reported earnings‑per‑share (EPS) figures, the price‑to‑earnings ratios are approximately 11.9× for ETEL (price 141.95 EGP / EPS 11.93 EGP) and 9.4× for EFID (price 20.40 EGP / EPS 2.18 EGP), both in the moderate range and suggesting reasonable valuations for a growth‑with‑income profile. The EPS for EFID is reported in EGP (clear unit). The ETEL EPS is reported with unit “L.E.(000)”, which is ambiguous for a per‑share metric; therefore the 11.93 figure is used with caution. No dividend information is provided in the evidence, so income reliance is limited to price appreciation. Given the investor’s low capacity to",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS for the year is 11.93 EGP (evidence_id ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55)."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for the year is 2.18 EGP (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38)."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55"
+    ],
+    "limitations": [
+      "No dividend data are provided, so income component is inferred only from price appreciation.",
+      "EPS for ETEL carries an ambiguous unit (L.E.(000)), introducing uncertainty in the P/E calculation.",
+      "All figures are as of the 2025 fiscal year and may not reflect recent market movements beyond the cutoff date.",
+      "The analysis uses only the supplied evidence; no external macro‑economic or sector information is considered."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor holds 100 shares of ETEL and 1500 shares of EFID, with a cash buffer of 15,000 EGP. The total portfolio value is about 59,795 EGP (ETEL 14,195 EGP + EFID 30,600 EGP). The investor’s goal is steady growth with some income over a 3‑5‑year horizon and a need for possible liquidity of 10% of the portfolio within a year; the existing cash already covers that liquidity requirement. Using the reported earnings‑per‑share (EPS) figures, the price‑to‑earnings ratios are approximately 11.9× for ETEL (price 141.95 EGP / EPS 11.93 EGP) and 9.4× for EFID (price 20.40 EGP / EPS 2.18 EGP), both in the moderate range and suggesting reasonable valuations for a growth‑with‑income profile. The EPS for EFID is reported in EGP (clear unit). The ETEL EPS is reported with unit “L.E.(000)”, which is ambiguous for a per‑share metric; therefore the 11.93 figure is used with caution. No dividend information is provided in the evidence, so income reliance is limited to price appreciation. Given the investor’s low capacity to",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS for the year is 11.93 EGP (evidence_id ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55)."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for the year is 2.18 EGP (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38)."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55"
+    ],
+    "limitations": [
+      "No dividend data are provided, so income component is inferred only from price appreciation.",
+      "EPS for ETEL carries an ambiguous unit (L.E.(000)), introducing uncertainty in the P/E calculation.",
+      "All figures are as of the 2025 fiscal year and may not reflect recent market movements beyond the cutoff date.",
+      "The analysis uses only the supplied evidence; no external macro‑economic or sector information is considered."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 22.713,
+      "input_tokens": 2123,
+      "output_tokens": 2861,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 22.715
+}

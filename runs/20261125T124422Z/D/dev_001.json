@@ -1,0 +1,104 @@
+{
+  "case_id": "dev_001",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "ETEL",
+    "shares": 150,
+    "explanation": "The investor currently holds 300 shares of ETEL, representing about 68% of the total portfolio (62,585 EGP). The financial evidence for ETEL contains several AMBIGUOUS figures: operating revenues (p6-01, p6-02), gross profit (p6-05, p6-06), net profit (p6-35, p6-36), and EPS (p6-55, p6-56). Per instructions, these figures cannot be reliably extracted or computed, so any valuation or growth analysis based on them is excluded from the decision. The only concrete data used are the market price (141.95 EGP per share) and the investor's stated profile (5–7‑year horizon for university fees, medium loss willingness and capacity, need for liquidity). Given the high concentration in a single stock and the known future liability, a suitability‑consistent approach is to reduce exposure while preserving some upside and increasing the cash buffer. Selling 150 shares (half the holding) will generate approximately 150 × 141.95 = 21,292.5 EGP, adding to the existing 20,000 EGP cash for a total of about 41,292.5 EGP liquidity",
+    "claims": [],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "Ambiguous financial figures prevent reliable assessment of profitability, revenue growth, or valuation multiples.",
+      "No current‑asset/current‑liability data are provided, so short‑term liquidity cannot be evaluated.",
+      "The decision relies solely on the given share price and portfolio structure; any fundamental analysis is omitted due to evidence ambiguities.",
+      "Selling half the position reduces but does not eliminate concentration risk; the remaining 150 shares still expose the portfolio to ETEL‑specific volatility."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "ETEL",
+    "shares": 150,
+    "explanation": "The investor currently holds 300 shares of ETEL, representing about 68% of the total portfolio (62,585 EGP). The financial evidence for ETEL contains several AMBIGUOUS figures: operating revenues (p6-01, p6-02), gross profit (p6-05, p6-06), net profit (p6-35, p6-36), and EPS (p6-55, p6-56). Per instructions, these figures cannot be reliably extracted or computed, so any valuation or growth analysis based on them is excluded from the decision. The only concrete data used are the market price (141.95 EGP per share) and the investor's stated profile (5–7‑year horizon for university fees, medium loss willingness and capacity, need for liquidity). Given the high concentration in a single stock and the known future liability, a suitability‑consistent approach is to reduce exposure while preserving some upside and increasing the cash buffer. Selling 150 shares (half the holding) will generate approximately 150 × 141.95 = 21,292.5 EGP, adding to the existing 20,000 EGP cash for a total of about 41,292.5 EGP liquidity",
+    "claims": [],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "Ambiguous financial figures prevent reliable assessment of profitability, revenue growth, or valuation multiples.",
+      "No current‑asset/current‑liability data are provided, so short‑term liquidity cannot be evaluated.",
+      "The decision relies solely on the given share price and portfolio structure; any fundamental analysis is omitted due to evidence ambiguities.",
+      "Selling half the position reduces but does not eliminate concentration risk; the remaining 150 shares still expose the portfolio to ETEL‑specific volatility."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 41292.5,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 150
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "**Analysis of ETEL Financial Evidence (Cutoff: 2026-11-18)**  \n*Per instructions: analysis of company evidence only; no action recommendation provided.*\n\n### Profitability\n- **Net profit for the year 2025**: [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] as printed `\"22 578 063 10 111 328\"` (unit: L.E.(000)). **AMBIGUOUS** – the printed string contains two numbers without clear column separation, and the identical string appears for the 2024 period [p6-36]. The 2025 figure cannot be reliably extracted for computation.  \n- **Basic and diluted EPS 2025**: [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] as printed `\"11.93 4.79\"` (unit: L.E.(000)). **AMBIGUOUS** – the unit is specified as L.E.(000), which would imply EPS of 11,930 L.E. per share, inconsistent with the market price of 141.95 EGP and typical EPS scales. The values are likely in L.E. per share, but per instructions, figures with mismatched/erroneous units are not computed.  \n- **Net profit for the year 2024**: [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] same ambiguous string; same flag applies.  \n- **EPS 2024**: [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56] same unit discrepancy; same flag.\n\n### Growth (Revenue Trend)\n- **Operating revenues 2025**: [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01] as printed `\"106 672 946 81 677 812\"` (unit: L.E.(000)). **AMBIGUOUS** – the string merges what appears to be two periods; no year-over-year revenue figure can be reliably isolated.  \n- **Operating revenues 2024**: [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02] identical printed string; **AMBIGUOUS** for the same reason.  \n- **Gross Profit 2025**: [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05] as printed `\"44 839 110 30 492 762\"` (unit: L.E.(000)). **AMBIGUOUS** – two numbers merged; period-specific value unclear.  \n- **Gross Profit 2024**: [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06] identical string; **AMBIGUOUS**.\n\n*Note: All figures above are in L.E.(000) per the report's unit line. Where conversion to whole pounds is attempted, the printed number is multiplied by 1,000 (e.g., `\"225 882 527\"` → 225,882,527,000 EGP). No computed growth rates are presented due to the above ambiguities.*\n\n### Balance Sheet (as of 31/12/2025)\n- **Total Assets**: [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31] as printed `\"225 882 527 | 197 952 788\"` (unit: L.E. (000)). For the stated period 31/12/2025, the first column value is **225,882,527** (000 L.E.) = **225,882,527,000 EGP**. The second column (197,952,788) likely represents the prior period.  \n- **Total Equity**: [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] as printed `\"63 687 826 | 45 937 991\"` (unit: L.E. (000)). For 31/12/2025: **63,687,826** (000 L.E.) = **63,687,826,000 EGP**. The second column (45,937,991) likely prior period.  \n- **Implied Total Debt (2025)**: Derived as Total Assets minus Total Equity: (225,882,527 − 63,687,826) thousand L.E. = **162,194,701** thousand L.E. = **162,194,701,000 EGP**. *Note: This simple difference assumes the reported assets and equity capture the majority of liabilities; the full liability composition should be verified from the complete statement.*  \n- **Debt-to-Equity (2025)**: ~2.55x (162,194,701 / 63,687,826), indicating moderate to high leverage. *Caution: Net profit figures are ambiguous, so interest coverage and retained earnings quality cannot be reliably assessed from the evidence provided.*\n\n### Risks (as Evidenced)\n- **Leverage risk**: The implied debt load is substantial relative to equity. Without clear profitability trends (see above), the company's ability to service debt is uncertain.  \n- **Liquidity risk**: No current-asset/current-liability rows are included in the extracted evidence; short-term liquidity position cannot be evaluated from this evidence subset.  \n- **Profitability uncertainty**: Ambiguous net profit and EPS figures prevent assessment of sustainable earnings, a key driver of default risk.\n\n### Data Quality Summary\n- **AMBIGUOUS figures flagged** (per instructions, not computed with):  \n  - [p6-01], [p6-02] operating revenues (duplicated period strings)  \n  - [p6-05], [p6-06] gross profit (duplicated period strings)  \n  - [p6-35], [p6-36] net profit (duplicated period strings)  \n  - [p6-55], [p6-56] EPS (unit L.E.(000) is quantitatively implausible; likely a labeling error)  \n- **Unit consistency**: All balance sheet and profit figures carry unit L.E.(000) or L.E. (000), meaning the printed integers are in thousands of Egyptian Pounds. Conversion to whole pounds requires multiplying by 1,000.  \n- **Missing data**: Rows for current assets, current liabilities, cash flow, and segment breakdowns are not present in the evidence excerpt; any risk or ratio analysis is limited to the provided lines.\n\n### Compliance Note\n- No action recommendation (buy/hold/sell) is provided, as the decision agent determines portfolio actions. This analysis uses only the cited evidence and flags all ambiguous/unit-issue figures per the given constraints.",
+    "investor": "**Investor-Suitability Assessment (No Action/Financial Analysis Provided)**\n\n### Investor Profile Summary\n- **Goal:** Savings for a child's university fees (known future liability in 5–7 years).\n- **Horizon:** 5–7 years (medium term; aligns with the liability timing).\n- **Liquidity needs:** Maintains a separate emergency fund (portfolio cash position should be evaluated against this habit).\n- **Loss willingness/capacity:** Medium – can tolerate moderate volatility but not extreme drawdowns, especially with a near-term goal.\n- **Time horizon vs. goal:** The 5–7 year window is compatible with moderate growth assets, but the certainty of a future cash need (university fees) introduces a sequencing risk if too much exposure is in volatile, illiquid, or concentrated positions.\n\n### Current Portfolio Composition (at 2026-11-18 cutoff)\n- **Cash:** 20,000.00 EGP (free liquidity).\n- **Holdings:** 300 shares ETEL at 141.95 EGP/share.\n- **ETEL market value:** 300 × 141.95 = **42,585.00 EGP**.\n- **Total portfolio value:** **62,585.00 EGP**.\n- **Cash proportion:** ~32.0% of total portfolio.\n- **Invested proportion:** ~68.0% in a single equity position (ETEL).\n\n### What the Portfolio Allows\n- **Sellable:** The 300 ETEL shares can be liquidated for approximately **42,585 EGP** at the cutoff price. Assuming standard T+2 settlement, this would convert to cash shortly after execution.\n- **Free cash:** **20,000.00 EGP** is already liquid and available. Note that the investor reports keeping a separate emergency fund; the 20,000 EGP may be partially or fully allocated to that purpose, but as presented it is the free liquidity within this portfolio.\n\n### Suitability Assessment Across Key Dimensions\n\n1. **Horizon (5–7 years) vs. Goal**\n   - The horizon is sufficient for growth assets but is anchored by a specific future liability (university fees). A portfolio heavily weighted in a single stock introduces timing risk: if a significant downturn occurs in the 12–24 months before fees are needed, the required lump sum may not be available without locking in losses or delaying enrollment. The current 68% concentration in one stock is notable for a goal with a fixed drawdate.\n\n2. **Liquidity Needs**\n   - The portfolio holds 20,000 EGP in cash, which the investor states is separate from an emergency fund. If this cash is already earmarked for that purpose, the effective liquidity for the university goal is reduced. If not, the 20,000 EGP provides a base liquid buffer, but the illiquidity of a concentrated equity position (relative to a diversified fund or cash equivalents) should be weighed against the need to access capital in 5–7 years.\n\n3. **Loss Willingness & Capacity (Medium)**\n   - Medium loss willingness means the investor can accept some portfolio volatility, but medium financial ability to withstand losses means large drawdowns could impact the university funding goal. A 30%–40% decline in ETEL (e.g., to ~94 EGP/share) would reduce the holdings to ~28,200 EGP, a ~14,385 EGP loss representing ~23% of the total portfolio. Whether this is acceptable depends on the fee amount and the investor's comfort with topping up from other sources.\n\n4. **Current Concentration**\n   - The portfolio is 100% exposed to ETEL equity risk, with no diversification across sectors, geographies, or asset classes. For a 5–7 year goal with medium loss capacity, concentration in a single stock is generally assessed as **higher than typical suitability** unless the investor has a strong conviction, additional income, or offsetting risks not reflected in the profile. The cash portion (32%) mitigates some risk but does not address the single-stock exposure.\n\n5. **How Much Cash Could Reasonably Be Committed**\n   - Given the 5–7 year horizon, medium loss capacity, and a known future liability, a suitability framework would typically suggest maintaining a cash/cash-equivalent buffer sufficient to cover a portion of the anticipated university fees, with the remainder allocated to diversified growth assets. \n   - With the current total of ~62,585 EGP, and no fee amount provided, a reasonable approach under the stated constraints would be to: \n     - Preserve a cash buffer that aligns with the emergency-fund habit and provides downside protection near the liability date.\n     - Reduce concentration by diversifying the equity portion (e.g., across sectors or via broad-market instruments) if committing additional cash to growth assets.\n     - The exact commit-able amount cannot be quantified without the university-fee estimate, but the current 20,000 EGP cash and the 42,585 EGP from ETEL liquidation represent the total liquidity available for reallocation.\n\n### Constraints Fulfilled\n- **No company financial analysis** has been performed beyond identifying the share price and holding count necessary for liquidity and value assessment. The ETEL financial evidence (revenues, profits, EPS) has not been interpreted or used as a basis for recommendation.\n- **No action has been picked** (no buy, sell, or hold recommendation).\n- The assessment focuses exclusively on the investor’s profile dimensions, portfolio structure, and the implications of liquidity, concentration, horizon, and loss capacity as requested."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 58.134,
+      "input_tokens": 1478,
+      "output_tokens": 8894,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 29.12,
+      "input_tokens": 1472,
+      "output_tokens": 3383,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 22.747,
+      "input_tokens": 5317,
+      "output_tokens": 3183,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 110.005
+}

@@ -48,6 +48,12 @@ def parse_model_spec(spec: str) -> tuple[str, str]:
     return provider, model
 
 
+# Structured-output method per provider, where the default is not usable. NVIDIA's endpoint cuts
+# every string field of a function call at 1,024 characters (explanations ended mid-sentence);
+# its json_schema mode does not.
+STRUCTURED_METHOD = {"nvidia": "json_schema"}
+
+
 class FallbackChat:
     """Chat model that tries each (label, model) in order on temporary provider errors."""
 
@@ -63,7 +69,7 @@ class FallbackChat:
         error = None
         for label, model in self.models:
             try:
-                out = call(model)
+                out = call(label, model)
                 self.last_used = label
                 return out
             except Exception as exc:
@@ -74,15 +80,21 @@ class FallbackChat:
         raise error
 
     def invoke(self, messages):
-        return self._run(lambda m: m.invoke(messages))
+        return self._run(lambda _, m: m.invoke(messages))
 
     def with_structured_output(self, schema, **kwargs):
         chat = self
 
         class _Structured:
             def invoke(self, messages):
-                return chat._run(lambda m: m.with_structured_output(schema, **kwargs).invoke(messages))
+                return chat._run(lambda label, m: m.with_structured_output(
+                    schema, **_method_for(label, kwargs)).invoke(messages))
         return _Structured()
+
+
+def _method_for(label: str, kwargs: dict) -> dict:
+    method = STRUCTURED_METHOD.get(label.partition(":")[0])
+    return {"method": method, **kwargs} if method and "method" not in kwargs else kwargs
 
 
 def make_fallback_chat(specs: list[str], base_url: str | None = None, **kwargs) -> FallbackChat:

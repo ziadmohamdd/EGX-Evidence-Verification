@@ -1,0 +1,81 @@
+{
+  "case_id": "dev_006",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "TMGH",
+    "shares": 200,
+    "explanation": "بناءً على تحليل الأدلة المالية وتقارير الملاءمة، تبين أن البيانات المالية لشركة TMGH تحتوي على Figures غامضة (AMBIGUOUS) تتعلق بالإيرادات لعام 2024 وربح العام بعد الضرائب، مما يجعل من غير الموثوق به حساب هوامش الربحية أو نمو الإيرادات. كما أن المحفظة konzentriert بالكامل على سهم واحد، مما يتعارض مع تحمل المستثمر للمخاطر المتوسطة والأفق الزمني لشراء شقة خلال 3-5 سنوات. ونظرًا لضعف البيانات وعدم اليقين بشأن القيمة الحقيقية للسهم، يُنصح ببيع holdings الحالية TMGH وتحويل العائدات إلى نقد لتعزيز السيولة وحماية هدف الشراء. العائد من البيع يقدر بـ 200 سهم × 82.50 جنيه = 16,500 جنيه، مما يزيد النقد المتاح إلى 76,500 جنيه. وتُركت figures الغير موثوق بها دون استخدامها في أي حسابات.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا تتوفر بيانات الميزانية (الأصول، الخصوم، حقوق الملكية) في الأدلة المقدمة.",
+      "وحدة الإيرادات غير واضحة (هل هي آلاف أو ملايين الجنيهات)، مما يؤثر على تفسير الحجم الحقيقي للإيرادات.",
+      "لا يمكن حساب نمو الإيرادات السنوية الموثوق به بسبب تشابه الأرقام الغامضة بين عامي 2024 و2025.",
+      "لا تتوفر معلومات عن عدد الأسهم الإجمالي، مما يمنع حساب الربحية الإجمالية للشركة."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "TMGH",
+    "shares": 200,
+    "explanation": "بناءً على تحليل الأدلة المالية وتقارير الملاءمة، تبين أن البيانات المالية لشركة TMGH تحتوي على Figures غامضة (AMBIGUOUS) تتعلق بالإيرادات لعام 2024 وربح العام بعد الضرائب، مما يجعل من غير الموثوق به حساب هوامش الربحية أو نمو الإيرادات. كما أن المحفظة konzentriert بالكامل على سهم واحد، مما يتعارض مع تحمل المستثمر للمخاطر المتوسطة والأفق الزمني لشراء شقة خلال 3-5 سنوات. ونظرًا لضعف البيانات وعدم اليقين بشأن القيمة الحقيقية للسهم، يُنصح ببيع holdings الحالية TMGH وتحويل العائدات إلى نقد لتعزيز السيولة وحماية هدف الشراء. العائد من البيع يقدر بـ 200 سهم × 82.50 جنيه = 16,500 جنيه، مما يزيد النقد المتاح إلى 76,500 جنيه. وتُركت figures الغير موثوق بها دون استخدامها في أي حسابات.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا تتوفر بيانات الميزانية (الأصول، الخصوم، حقوق الملكية) في الأدلة المقدمة.",
+      "وحدة الإيرادات غير واضحة (هل هي آلاف أو ملايين الجنيهات)، مما يؤثر على تفسير الحجم الحقيقي للإيرادات.",
+      "لا يمكن حساب نمو الإيرادات السنوية الموثوق به بسبب تشابه الأرقام الغامضة بين عامي 2024 و2025.",
+      "لا تتوفر معلومات عن عدد الأسهم الإجمالي، مما يمنع حساب الربحية الإجمالية للشركة."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 76500.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Evidence Analysis & Data Interpretation**\n\nEvery figure below is cited by its evidence ID, converted to whole Egyptian pounds (EGP) where possible, and flagged per the instructions. Arabic-Indic digits have been transcribed to Western digits; any uncertainty is noted.\n\n| Evidence ID | Line Item | Period | Status | Printed Value (Arabic→Western) | Whole‑Pound Value | Notes |\n|-------------|-----------|--------|--------|--------------------------------|-------------------|-------|\n| [TMGH‑TMGH_FY2025_results_summary_ar‑p1‑01] | الإيرادات (consolidated) | ٣١ ديسمبر ٢٠٢٥ | verified | الإيرادات \\| ٦٢,٤٩٥,١٤٤,١٩٧ \\| … | **62,495,144,197 EGP** | Unit stated as \"العملة بالجنية المصرى\" with no (000) or (million) modifier. Taken as EGP. OCR on the page uses thousands separators (commas) here, consistent with the print layout. |\n| [TMGH‑TMGH_FY2025_results_summary_ar‑p1‑02] | الإيرادات (consolidated) | ٣١ ديسمبر ٢٠٢٤ | **AMBIGUOUS** | الإيرادات \\| ٦٢,٤٩٥,١٤٤,١٩٧ \\| … | *Unreliable* | Extractor marked uncertain; note: \"OCR: long number without the thousands separators used elsewhere on the page\". The same printed numeral appears for both years, but the OCR quality difference means the 2024 figure cannot be taken as a clean comparator. **Do not compute year‑on‑year growth with this figure.** |\n| [TMGH‑TMGH_FY2025_results_summary_ar‑p1‑09] | ربح العام بعد الضرائب (consolidated) | ٣١ ديسمبر ٢٠٢٥ | **AMBIGUOUS** | * ربح \\| العام بعد الضرائب \\| ١٨٠٢٠١,٩٨١٠٤٨٢ \\| … | *Unreliable* | Number unclear: separators ambiguous. Could represent ~180 M EGP or ~1.8 B EGP depending on decimal/thousands placement. **Do not compute with this figure.** |\n| [TMGH‑TMGH_FY2025_results_summary_ar‑p1‑11] | نصيب السهم فى الأرباح (consolidated) | ٣١ ديسمبر ٢٠٢٥ | verified | نصيب \\| السهم \\| فى الأرباح \\| ٦,٩٨ \\| … | **6.98 EGP (verified EPS)** | Also printed \"٤،٣٧\" and \"`٥٩،٦\", but the verified EPS for 2025 is 6.98 EGP per share. Rounded to whole pounds: **7 EGP**. |\n\n**Profitability**\n- The only verified profitability metric is EPS of **6.98 EGP** (≈7 EGP) for FY2025 [p1‑11]. This implies each ordinary share earned ~7 EGP profit after taxes, but the absolute profit figure is unavailable because [p1‑09] is ambiguous.\n- Revenue for FY2025 is **62.5 billion EGP** [p1‑01], but without a clear unit indicator (thousands/millions not stated) and with the ambiguous profit figure, the implied profit margin cannot be reliably calculated.\n\n**Growth**\n- Year‑on‑year revenue growth is suggested by a printed **%٤٦** alongside the revenue line in [p1‑01]/[p1‑02], but [p1‑02] is AMBIGUOUS and the revenue numbers are not cleanly comparable. **No reliable growth rate can be derived from the evidence.**\n\n**Balance Sheet**\n- No balance‑sheet data (assets, liabilities, equity, cash flow) is provided in the evidence set. Leverage, liquidity, and operational efficiency cannot be assessed from this snippet.\n\n**Risks & Data Quality**\n- **Two of four key figures are AMBIGUOUS** ([p1‑02], [p1‑09]) due to OCR/separator issues. Computing ratios, growth, or valuation metrics with these figures would be speculative.\n- The revenue figure of 62.5 billion EGP [p1‑01] is large for a single listed company; if the report conventionally uses (000) or (million) elsewhere on the page, the actual scale is uncertain. The unit line \"العملة بالجنية المصرى\" offers no multiplier clue.\n- EPS is verified, but without the total share count, total profit is not computable.\n- Lack of multi‑year clean data limits trend analysis.\n\n**Investor Profile Alignment (Analysis Only, No Recommendation)**\n- **Goal:** Accumulate savings for a apartment purchase over 3–5 years.\n- **Horizon:** Medium term; capital preservation is prioritized, though the investor has \"medium\" willingness/ability to withstand losses.\n- **Liquidity:** Separate emergency fund is held; the portfolio’s 60,000 EGP cash provides a buffer.\n- **Current holdings:** 200 TMGH shares at the cutoff price of 82.50 EGP = **16,500 EGP** market value. Combined with cash, the total portfolio is ~76,500 EGP. The TMGH position represents roughly **22%** of the portfolio by value.\n- **Evidence‑based considerations for the decision agent:**\n  - The ambiguous financials introduce significant uncertainty about TMGH’s true earnings power, valuation trajectory, and risk profile. For a 3–5‑year savings goal, such opacity conflicts with the need for predictable capital growth and preservation.\n  - The verified EPS of ~7 EGP suggests modest per‑share profitability, but the ambiguous profit‑after‑taxes figure means the company’s net income could be materially higher or lower.\n  - With no balance‑sheet data and unreliable revenue comparatives, the stock’s growth sustainability and dividend potential are unclear.\n  - The portfolio’s single‑stock exposure to a company with data‑quality concerns may be inconsistent with a medium‑risk, medium‑horizon savings objective, especially when a substantial cash buffer already exists.\n  - A decision agent would likely weigh the need for cleaner financial data (e.g., audited annual report, investor relations releases) against the current portfolio composition before adjusting the TMGH holding.\n\n**Conclusion (Framework for Decision Agent)**\nThe evidence presents a verified EPS of 6.98 EGP [p1‑11] but is hampered by two AMBIGUOUS figures ([p1‑02], [p1‑09]) and an unreported unit scale for revenue. No balance‑sheet information is provided. Given the investor’s 3–5‑year horizon for apartment savings, medium risk tolerance, and existing emergency fund, the decision agent should consider whether the current TMGH exposure’s data‑quality risks align with the goal of capital preservation and modest growth. Any portfolio adjustment would require supplemental, audited financials to resolve the ambiguous figures and assess true valuation. No action is recommended herein; the decision agent is to use this analysis as input alongside the investor’s full circumstances.",
+    "investor": "**Investor Suitability Assessment**\n\n**Horizon (3–5 years):**  \nThe 3–5 year horizon is compatible with moderate risk, but the goal is time-bound and specific (apartment down payment). For a fixed-duration savings target, capital preservation typically takes priority over growth-seeking exposure, especially when loss capacity is only medium.\n\n**Liquidity Needs:**  \nThe investor confirms a separate emergency fund. The portfolio itself holds ~76,500 EGP in liquid assets:  \n- Cash: 60,000.00 EGP (fully free)  \n- TMGH: 200 shares × 82.50 EGP = 16,500 EGP (liquid via sale, no noted restrictions)  \nThese funds are available for the apartment goal without touching the emergency buffer.\n\n**Loss Willingness & Capacity (both rated medium):**  \nMedium loss willingness/capacity means the investor can tolerate moderate volatility but not significant principal risk, particularly for a goal with a defined timeline. A substantial decline in the holding’s value could delay or compromise the apartment purchase, making the current concentration noteworthy.\n\n**Current Concentration:**  \nThe portfolio is 100% exposed to a single stock (TMGH). For an investor with medium loss capacity and a 3–5 year savings goal, such concentration is generally considered misaligned, as it ties the savings target to the performance of one issuer rather than diversifying risk.\n\n**Cash Reasonably Commit-able:**  \nTotal liquidity available: ~76,500 EGP. Given the medium loss capacity and goal timing, a meaningful portion of this amount would typically be held in cash or cash-equivalents to protect the down-payment target. The exact allocation is a personal decision, but the current all-equity-in-one-stock structure limits flexibility for risk-controlled commitment.\n\n**What the Portfolio Allows:**  \n- Sale of TMGH shares: proceeds ~16,500 EGP (200 shares × 82.50 EGP), assuming standard market execution.  \n- Cash of 60,000.00 EGP is already free and liquid.  \n- No other holdings, locks, or reported restrictions are noted in the profile.  \n- Financial analysis of TMGH (revenue, profit, EPS figures in the evidence) is outside the scope of this assessment per instructions; only the share price and count are used for liquidity purposes.\n\n**Suitability Observations (no action recommended):**  \nThe investor’s medium loss capacity and fixed 3–5 year horizon for a down payment create a suitability tension with the current 100% TMGH equity position. The portfolio provides sufficient liquidity for the goal, but the concentration risk and goal-timing mismatch are the primary suitability considerations. Any reallocation would need to weigh the desire for potential growth against the need to preserve capital for the apartment purchase within the stated horizon."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 58.516,
+      "input_tokens": 860,
+      "output_tokens": 9007,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 18.548,
+      "input_tokens": 854,
+      "output_tokens": 3182,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 24.817,
+      "input_tokens": 3973,
+      "output_tokens": 3573,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 101.885
+}

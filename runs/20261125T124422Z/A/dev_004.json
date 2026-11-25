@@ -1,0 +1,71 @@
+{
+  "case_id": "dev_004",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 235,
+    "explanation": "The investor needs approximately 30,000 EGP within six months for liquidity, has a low tolerance for loss, and currently holds 1,000 shares of COMI valued at 128 EGP per share (total 128,000 EGP). Selling 235 shares at the cutoff price of 128 EGP generates about 30,080 EGP (235 × 128), meeting the immediate cash requirement while leaving 765 shares (≈97,920 EGP) in the portfolio to preserve ongoing exposure to the bank. The decision respects the low risk profile: the investor retains a substantial holding, avoids converting the entire position to cash, and the proceeds address the 6‑month liquidity need. COMI's reported net profit for 2025 of 82,258,815,000 EGP (evidence ID COMI‑COMI_FY2025_consolidated_condensed_en‑p5‑33) shows the company is profitable, but the recommendation relies primarily on the share‑price liquidity and the investor's cash flow requirement, not on dividend or income projections. Market price may fluctuate between now and the 6‑month horizon, so the investor should monitor the position.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI's net profit for 2025 was 82,258,815,000 EGP, indicating profitability."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Share price may change before the 6‑month horizon, affecting the actual cash obtained.",
+      "No dividend or income projection is provided; the recommendation addresses liquidity only.",
+      "The investor’s low risk tolerance means any further market decline could reduce the value of the remaining COMI holding.",
+      "All figures are based on the 2025 annual report and the cutoff price of 128 EGP per share; no later data are used."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 235,
+    "explanation": "The investor needs approximately 30,000 EGP within six months for liquidity, has a low tolerance for loss, and currently holds 1,000 shares of COMI valued at 128 EGP per share (total 128,000 EGP). Selling 235 shares at the cutoff price of 128 EGP generates about 30,080 EGP (235 × 128), meeting the immediate cash requirement while leaving 765 shares (≈97,920 EGP) in the portfolio to preserve ongoing exposure to the bank. The decision respects the low risk profile: the investor retains a substantial holding, avoids converting the entire position to cash, and the proceeds address the 6‑month liquidity need. COMI's reported net profit for 2025 of 82,258,815,000 EGP (evidence ID COMI‑COMI_FY2025_consolidated_condensed_en‑p5‑33) shows the company is profitable, but the recommendation relies primarily on the share‑price liquidity and the investor's cash flow requirement, not on dividend or income projections. Market price may fluctuate between now and the 6‑month horizon, so the investor should monitor the position.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI's net profit for 2025 was 82,258,815,000 EGP, indicating profitability."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Share price may change before the 6‑month horizon, affecting the actual cash obtained.",
+      "No dividend or income projection is provided; the recommendation addresses liquidity only.",
+      "The investor’s low risk tolerance means any further market decline could reduce the value of the remaining COMI holding.",
+      "All figures are based on the 2025 annual report and the cutoff price of 128 EGP per share; no later data are used."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 35080.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 765
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 21.684,
+      "input_tokens": 1990,
+      "output_tokens": 2958,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 21.686
+}
