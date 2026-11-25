@@ -1,0 +1,103 @@
+{
+  "case_id": "dev_009",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The evidence does not provide full‑year 2026 earnings per share. The report only covers the nine months ended 30 September 2026; there are no figures for the fourth quarter (October–December 2026) or full‑year totals. Consequently, a full‑year EPS and a full‑year price‑to‑earnings ratio cannot be calculated. The nine‑month verified EPS of 8.74 EGP (evidence_id ABUK-ABUK_9M2026_results-p2-31) yields a nine‑month P/E of about 8.72 (76.21 ÷ 8.74), but this is not a full‑year P/E and cannot be used to judge whether the share is cheap enough to buy. Additionally, four rows of revenue and net‑profit figures are marked AMBIGUOUS (evidence_ids p2‑01, p2‑02, p2‑25, p2‑26) and have been excluded from any calculation. Because the evidence is insufficient to determine full‑year earnings or a meaningful valuation, a responsible decision cannot be made; the appropriate action is to withhold a recommendation until full‑year data are available.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Nine‑month verified EPS (ABUK-ABUK_9M2026_results-p2-31) = 8.74 EGP per share"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "No full‑year 2026 earnings data; only nine‑month EPS is available.",
+      "Four revenue and net‑profit rows are AMBIGUOUS and cannot be used in calculations.",
+      "Cannot compute a full‑year P/E ratio or assess valuation adequacy.",
+      "Investment decision is limited by missing quarterly data."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The evidence does not provide full‑year 2026 earnings per share. The report only covers the nine months ended 30 September 2026; there are no figures for the fourth quarter (October–December 2026) or full‑year totals. Consequently, a full‑year EPS and a full‑year price‑to‑earnings ratio cannot be calculated. The nine‑month verified EPS of 8.74 EGP (evidence_id ABUK-ABUK_9M2026_results-p2-31) yields a nine‑month P/E of about 8.72 (76.21 ÷ 8.74), but this is not a full‑year P/E and cannot be used to judge whether the share is cheap enough to buy. Additionally, four rows of revenue and net‑profit figures are marked AMBIGUOUS (evidence_ids p2‑01, p2‑02, p2‑25, p2‑26) and have been excluded from any calculation. Because the evidence is insufficient to determine full‑year earnings or a meaningful valuation, a responsible decision cannot be made; the appropriate action is to withhold a recommendation until full‑year data are available.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Nine‑month verified EPS (ABUK-ABUK_9M2026_results-p2-31) = 8.74 EGP per share"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "No full‑year 2026 earnings data; only nine‑month EPS is available.",
+      "Four revenue and net‑profit rows are AMBIGUOUS and cannot be used in calculations.",
+      "Cannot compute a full‑year P/E ratio or assess valuation adequacy.",
+      "Investment decision is limited by missing quarterly data."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "**Nine‑month EPS from the report (verified rows)**\n- [ABUK-ABUK_9M2026_results-p2-31]: Basic EPS for the nine months ended 30 September 2026 = **8.74 EGP** (verified; printed as \"٨،٧٤\" EGP per share).\n- [ABUK-ABUK_9M2026_results-p2-32]: Basic EPS for the nine months ended 30 September 2025 = **4.28 EGP** (verified; printed as \"٤،٢٨\" EGP per share).\n\n**AMBIGUOUS figures (not to be computed with)**\n- [ABUK-ABUK_9M2026_results-p2-01]: Revenue (nine months ended 30 September 2026) – AMBIGUOUS; page shows mixed ['بillion', 'مليون'] units, relying on table unit line 'Million جنيه'.\n- [ABUK-ABUK_9M2026_results-p2-02]: Revenue (nine months ended 30 September 2025) – AMBIGUOUS; same unit discrepancy.\n- [ABUK-ABUK_9M2026_results-p2-25]: Net profit (nine months ended 30 September 2026) – AMBIGUOUS; same unit discrepancy.\n- [ABUK-ABUK_9M2026_results-p2-26]: Net profit (nine months ended 30 September 2025) – AMBIGUOUS; same unit discrepancy.\n\n**Full‑year 2026 EPS**\nThe report covers only the nine months ended 30 September 2026. No data for the fourth quarter (October–December 2026) or full‑year figures are provided in the evidence. Therefore, a full‑year 2026 earnings per share **cannot be determined** from the given evidence. Any annualisation would rely on unsupported assumptions and is contrary to the instruction to use only the evidence given.\n\n**Price‑to‑earnings ratio (nine‑month basis)**\n- Share price at cutoff: **76.21 EGP** (provided by user/investor profile).\n- Using the nine‑month EPS of 8.74 EGP [ABUK-ABUK_9M2026_results-p2-31], the nine‑month P/E ratio is approximately **76.21 ÷ 8.74 ≈ 8.72**.\n- **Important caveat:** This P/E is based on nine‑month trailing earnings and is **not a full‑year P/E**. Full‑year P/E requires full‑year EPS, which is unavailable in the evidence.\n\n**No action recommendation is provided**, per the instruction; the decision agent will assess suitability based on the figures above and the investor's profile.",
+    "investor": "**Investor Suitability Assessment**\n\n- **Horizon (3–5 years):** The investor’s medium-term horizon is compatible with an equity allocation aimed at income and growth from an exporter. A 3–5 year holding period typically allows sufficient time to capture cyclical upside and dividend growth while mitigating short-term volatility, aligning with the profile’s objectives.\n\n- **Liquidity Needs:** The investor maintains a separate emergency fund. Current liquid holdings stand at **30,000.00 EGP** in cash. The amount reasonably commitable to new positions depends on the status of that emergency fund: if it is fully funded and distinct, the full 30,000 EGP could be allocated; otherwise, the commitable amount should be calibrated to preserve the emergency buffer.\n\n- **Loss Willingness and Capacity:** Rated **medium** for both willingness and financial ability to withstand losses. This suggests the investor can tolerate moderate portfolio volatility (e.g., 10–20% drawdowns) without compromising financial stability, which is consistent with a growth-and-income strategy in an exporter exposure.\n\n- **Current Concentration:** The portfolio holds **no securities**—only cash. There is no existing concentration risk. Introducing a single-exporter position would add sector- and currency-specific risks, but the absence of current holdings means the portfolio can accommodate a new allocation from a diversification standpoint.\n\n- **Cash Reasonably Committable:** **30,000.00 EGP** is available for commitment, reduced only by the amount earmarked for the separate emergency fund. Assuming the emergency fund is sufficiently funded and segregated, the full cash balance is potentially commitable; the exact portion should be determined by the investor’s liquidity comfort level.\n\n- **Portfolio Allowances:** \n  - *What can be sold:* No holdings exist, so no liquidation is possible.\n  - *What cash is free:* 30,000.00 EGP is free cash, pending the investor’s emergency-fund allocation.\n\n- **Regarding the Abu Qir (ABUK) inquiry:** Per my role constraints, I do **not** analyse company financials (such as computing full-year earnings per share, price-to-earnings ratios, or valuation adequacy) and I do **not** pick or recommend actions (e.g., whether to buy). I can only note that the ABUK share price at the information cutoff was **76.21 EGP**, and that any allocation decision would be based on the investor’s suitability profile—horizon, liquidity, loss capacity, concentration, and available cash—rather than on the specific financial metrics requested."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 37.473,
+      "input_tokens": 1353,
+      "output_tokens": 6008,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 33.047,
+      "input_tokens": 1347,
+      "output_tokens": 4706,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 11.814,
+      "input_tokens": 3389,
+      "output_tokens": 1709,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 82.338
+}

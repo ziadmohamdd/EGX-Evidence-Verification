@@ -1,0 +1,92 @@
+{
+  "case_id": "dev_012",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked by how much Edita (EFID) net profit grew in 2025 compared with 2024, and to buy more if growth exceeded 50%. The 2024 net profit is verified at 2,695,301,670 EGP (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31). However, the 2025 net profit figure is marked AMBIGUOUS (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30); the scanned page has a stamp covering the 2025 data, making that figure unreliable. Because the 2025 figure cannot be verified, the net profit growth rate from 2024 to 2025 cannot be computed, and it is impossible to determine whether growth exceeded the 50% threshold. Therefore, the evidence is insufficient to support a responsible buy/hold/sell decision based on the investor's condition.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 2695301670.0,
+        "statement": "2024 net profit verified at 2,695,301,670 EGP"
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "The 2025 net profit figure is ambiguous and cannot be used in any calculation; growth rate cannot be determined.",
+      "No other period‑specific net profit data for 2025 is provided in verifiable form."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked by how much Edita (EFID) net profit grew in 2025 compared with 2024, and to buy more if growth exceeded 50%. The 2024 net profit is verified at 2,695,301,670 EGP (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31). However, the 2025 net profit figure is marked AMBIGUOUS (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30); the scanned page has a stamp covering the 2025 data, making that figure unreliable. Because the 2025 figure cannot be verified, the net profit growth rate from 2024 to 2025 cannot be computed, and it is impossible to determine whether growth exceeded the 50% threshold. Therefore, the evidence is insufficient to support a responsible buy/hold/sell decision based on the investor's condition.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 2695301670.0,
+        "statement": "2024 net profit verified at 2,695,301,670 EGP"
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "The 2025 net profit figure is ambiguous and cannot be used in any calculation; growth rate cannot be determined.",
+      "No other period‑specific net profit data for 2025 is provided in verifiable form."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Evidence Analysis:**\n\n- **[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31]** – EFID | Net profit for the year (consolidated) | period 31 December 2024 | verified | as printed: `\"Net profit for the year | | 2 695 301 670 | 1 606 727 698 | unit: EGP\"`. The first figure (2,695,301,670 EGP) corresponds to the 2024 net profit; the second (1,606,727,698 EGP) is the 2023 comparative. This figure is **verified**.\n\n- **[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]** – EFID | Net profit for the year (consolidated) | period 31 December 2025 | **AMBIGUOUS** | as printed: `\"Net profit for the year | | 2 695 301 670 | 1 606 727 698 | unit: EGP\"` | note: `\"unreadable: the 2025 figure is covered by a stamp on the scanned page\"`. Although the same numbers appear printed, the explicit ambiguity flag and the note confirming the 2025 figure is obscured mean this row **cannot be used as a reliable 2025 figure**.\n\n**Growth Calculation:**  \nThe 2024 net profit is verified at **2,695,301,670 EGP** ([EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31]). The 2025 net profit figure is **AMBIGUOUS** per [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]; the value is unreadable due to a stamp covering the 2025 data. Because the 2025 figure cannot be verified from the given evidence, the net profit growth rate from 2024 to 2025 **cannot be computed**.",
+    "investor": "**Investor-Suitability Assessment**\n\n**Horizon (3 years)**  \nA 3-year horizon is consistent with a medium-term growth objective. It allows for equity-market exposure but requires that the portfolio’s risk profile aligns with the investor’s ability to stay invested through moderate volatility. Given the “medium” loss willingness and capacity, a blended approach (some growth assets with downside protection) may be appropriate, but the final allocation should not over-extend the time horizon relative to the risk taken.\n\n**Liquidity Needs**  \nThe investor maintains a separate emergency fund, which is the recommended practice. The current liquid resources available for investment beyond the emergency reserve are:\n- Cash: 10,000.00 EGP\n- EFID shares: 1,000 shares (marketable equity)\n\nThese funds are free to be committed to investments, provided the emergency reserve remains untouched.\n\n**Loss Willingness & Capacity**  \nBoth are rated medium. The investor can tolerate moderate fluctuations in account value but likely prefers to avoid significant or sustained drawdowns. The portfolio’s current structure should reflect this by limiting exposure to single-stock idiosyncratic risk and ensuring any growth assets have a compatible risk-return profile.\n\n**Current Concentration**  \n- Holdings: 1,000 shares of EFID  \n- Share price at cutoff: 20.40 EGP  \n- Market value of EFID position: 20,400.00 EGP  \n- Cash: 10,000.00 EGP  \n- **Total portfolio value: ~30,400.00 EGP**  \n- **Concentration:** The entire equity exposure is in a single stock (EFID), representing ~67% of the total portfolio value. This is a high concentration for a medium-loss-capacity investor and should be weighed against diversification benefits.\n\n**Cash That Could Reasonably Be Committed**  \n- Immediate free cash: 10,000.00 EGP  \n- The EFID shares are liquid and can be sold, but doing so would change the exposure profile rather than add new investable cash beyond the existing 10,000 EGP. Any new commitment should consider whether the investor wishes to maintain, reduce, or rebalance the EFID position.\n\n**Portfolio Allowances**  \n- **What can be sold:** The 1,000 EFID shares are freely marketable at the quoted price of 20.40 EGP.  \n- **What cash is free:** 10,000.00 EGP is immediately available and unencumbered (emergency fund is separate).  \n- No other assets, restrictions, or pending transactions are noted.\n\n**Compliance with Instructions**  \n- I have not analysed the company’s financial statements, revenue, net profit, or EPS figures provided in the evidence.  \n- I have not made a buy/sell/hold recommendation, nor interpreted the “buy more if >50% growth” condition.  \n- The assessment focuses exclusively on suitability dimensions as specified: horizon, liquidity, loss willingness/capacity, concentration, commitable cash, and portfolio allowances."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 27.671,
+      "input_tokens": 1066,
+      "output_tokens": 3965,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 21.036,
+      "input_tokens": 1060,
+      "output_tokens": 2904,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 10.681,
+      "input_tokens": 3100,
+      "output_tokens": 1642,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 59.39
+}

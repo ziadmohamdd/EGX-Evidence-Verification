@@ -1,0 +1,88 @@
+{
+  "case_id": "dev_006",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "بناءً على الأدلة المتوفرة، لا يمكن اتخاذ قرار استثماري مسؤول (شراء، الاحتفاظ، بيع، أو الاحتفاظ بالنقد) لأن البيانات المالية غير الكاملة لا تسمح بتقييم ملاءمة المحفظة لهدف المستثمر (ادخار شقة خلال 3-5 سنوات). الأرقام الموثقة هي إيرادات FY2025 البالغة ٦٢,٤٩٥,١٤٤,١٩٧ جنيه مصري وإرباح السهم ٦.٩٨ جنيه، ولكن figure ربح العام بعد الضرائب (p1-09) مصنّف AMBIGUOUS بسبب مشاكل OCR وفواصل الأرقام، وإيرادات FY2024 (p1-02) أيضاً AMBIGUOUS ولا يمكن استخدامها للمقارنة بين الفترات. lacking data such as الأرباح الصافية، توزيعات الأرباح، تدفقات النقد، وموقف الدين، لا يمكن قياس الاستدامة أو إمكانيات النمو أو المخاطر المستقبلية. لذلك، يوصى بعدم اتخاذ أي إجراء استثماري حتى تتوفر بيانات مالية مدققة ومكتملة.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا توجد بيانات عن الأرباح الصافية بعد الضرائب، لذا لا يمكن اشتقاق EPS موثوق أو تقييم ربحية السهم.",
+      "لا تتوفر معلومات عن توزيعات الأرباح أو التدفقات النقدية أو المركز المالي.",
+      "رقم إيرادات FY2024 ambiguous ولا يمكن استخدامه للمقارنة بين الفترات.",
+      "السعر الحالي للسهم ٨٢.٥٠ جنيه مصري، ولكن بدون بيانات عن التقلبات المستقبلية أو ظروف السوق.",
+      "ملف المستثمر يتضمن صندوق طوارئ منفصل، لكن التقييم ما إذا كان التعرض للسهم الواحد TMGH يتوافق مع تحمل المخاطر المتوسط وأفق 3-5 سنوات يبقى غير ممكن بسبب نقص البيانات."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "بناءً على الأدلة المتوفرة، لا يمكن اتخاذ قرار استثماري مسؤول (شراء، الاحتفاظ، بيع، أو الاحتفاظ بالنقد) لأن البيانات المالية غير الكاملة لا تسمح بتقييم ملاءمة المحفظة لهدف المستثمر (ادخار شقة خلال 3-5 سنوات). الأرقام الموثقة هي إيرادات FY2025 البالغة ٦٢,٤٩٥,١٤٤,١٩٧ جنيه مصري وإرباح السهم ٦.٩٨ جنيه، ولكن figure ربح العام بعد الضرائب (p1-09) مصنّف AMBIGUOUS بسبب مشاكل OCR وفواصل الأرقام، وإيرادات FY2024 (p1-02) أيضاً AMBIGUOUS ولا يمكن استخدامها للمقارنة بين الفترات. lacking data such as الأرباح الصافية، توزيعات الأرباح، تدفقات النقد، وموقف الدين، لا يمكن قياس الاستدامة أو إمكانيات النمو أو المخاطر المستقبلية. لذلك، يوصى بعدم اتخاذ أي إجراء استثماري حتى تتوفر بيانات مالية مدققة ومكتملة.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا توجد بيانات عن الأرباح الصافية بعد الضرائب، لذا لا يمكن اشتقاق EPS موثوق أو تقييم ربحية السهم.",
+      "لا تتوفر معلومات عن توزيعات الأرباح أو التدفقات النقدية أو المركز المالي.",
+      "رقم إيرادات FY2024 ambiguous ولا يمكن استخدامه للمقارنة بين الفترات.",
+      "السعر الحالي للسهم ٨٢.٥٠ جنيه مصري، ولكن بدون بيانات عن التقلبات المستقبلية أو ظروف السوق.",
+      "ملف المستثمر يتضمن صندوق طوارئ منفصل، لكن التقييم ما إذا كان التعرض للسهم الواحد TMGH يتوافق مع تحمل المخاطر المتوسط وأفق 3-5 سنوات يبقى غير ممكن بسبب نقص البيانات."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 60000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Analysis of TMGH Financial Evidence (as of 2026-11-18 cutoff)**\n\n### Verifiable Figures\n- **Revenue (FY2025, consolidated):** [TMGH-TMGH_FY2025_results_summary_ar-p1-01] = **62,495,144,197 EGP** (period ٣١ ديسمبر ٢٠٢٥; verified; unit: العملة بالجنية المصرى, interpreted as actual pounds per the \"no (000)\" directive)\n- **Earnings per share (FY2025, consolidated):** [TMGH-TMGH_FY2025_results_summary_ar-p1-11] = **6.98 EGP** (period ٣١ ديسمبر ٢٠٢٥; verified; unit: العملة بالجنية المصرى)\n\n### AMBIGUOUS Figures (excluded from computation)\n- **Revenue (FY2024, consolidated):** [TMGH-TMGH_FY2025_results_summary_ar-p1-02] = **AMBIGUOUS**. Printed number matches the FY2025 figure (\"٦٢,٤٩٥,١٤٤,١٩٧\"), but the extractor flagged uncertainty and OCR notes indicate a long number without thousands separators used elsewhere on the page. **Do not use for growth comparisons or trend analysis.**\n- **Profit after tax (FY2025, consolidated):** [TMGH-TMGH_FY2025_results_summary_ar-p1-09] = **AMBIGUOUS**. Printed value \"١٨٠٢٠١,٩٨١٠٤٨٢\" has unclear separators; the extractor marked it uncertain. **Do not use for profitability assessment or EPS derivation.**\n\n### Data Quality Assessment\n- Only two of the four extracted rows are verified; the other two are flagged AMBIGUOUS due to OCR/separator issues.\n- The verified EPS (6.98 EGP) allows a basic P/E proxy of ~11.8x against the cutoff market price of 82.50 EGP, but any ratio calculation should be treated cautiously given the missing profit-after-tax figure.\n- Revenue scale (≈62.5 billion EGP) is large for an Egyptian listed company; without the FY2024 figure or net-profit data, cross-period assessment is not possible.\n\n### Relation to Investor Profile (observations only, no recommendation)\n- **Horizon (3–5 years):** The portfolio consists of 60,000 EGP cash and 200 TMGH shares (≈16,500 EGP at 82.50 EGP/share), totaling ≈76,500 EGP. The ambiguous profit data limits assessment of dividend sustainability or capital-appreciation potential over the stated horizon.\n- **Liquidity needs:** Cash buffer of 60,000 EGP is separate from the equity holding; the investor already maintains a dedicated emergency fund per profile.\n- **Risk tolerance (medium):** TMGH’s verified EPS of 6.98 EGP and the ambiguous profit figure mean residual earnings risk is uncertain. The 2024 revenue figure is unavailable, so year-over-year growth cannot be quantified from the given evidence.\n- **Decision scope:** The evidence provided does not contain a complete profitability, growth, or balance‑sheet profile. Any portfolio adjustment would require additional verified data (e.g., audited financials, cash‑flow statements, dividend history, and debt position).\n\n**Per instructions: No action recommendation is provided. The decision agent should consider the above analysis alongside any additional risk‑management or asset‑allocation criteria.**",
+    "investor": "**Suitability Assessment**\n\n**Investor Profile Summary**\n- **Goal:** Capital accumulation for a down-payment apartment purchase\n- **Horizon:** 3–5 years (medium-term, goal-oriented)\n- **Liquidity:** Separate emergency fund in place; this portfolio is not the primary liquidity backstop\n- **Loss willingness / capacity:** Both rated medium\n\n**Current Portfolio Composition**\n- **Cash:** 60,000.00 EGP (fully liquid, freely available)\n- **TMGH shares:** 200 shares × 82.50 EGP = **16,500.00 EGP** (market value at cutoff)\n- **Total portfolio value:** 76,500.00 EGP\n- **Cash proportion:** ~78.4%\n- **Non-cash proportion:** ~21.6%, concentrated entirely in a single stock\n\n**What the Portfolio Allows**\n- **Cash:** 60,000.00 EGP is immediately available; no restrictions or lock-ups.\n- **TMGH shares:** 200 shares can be sold on market hours; Egyptian settlement is typically T+2. Proceeds become cash after settlement. Current market price is 82.50 EGP/share, so a full sale would yield ~16,500.00 EGP in free cash.\n- **No other holdings or instruments** are listed; the portfolio is cash + one equity position.\n\n**Suitability Cross-Check (no financial analysis of TMGH)**\n\n| Suitability Factor | Assessment | Notes |\n|--------------------|------------|-------|\n| **Horizon (3–5 yr) vs portfolio** | Partially mismatched | A 3–5 year horizon for a down-payment typically favors capital preservation and low volatility. Holding a single listed stock introduces market-timing and price-fluctuation risk, especially if the purchase date is fixed. The medium horizon could accommodate some risk, but the concentration raises the probability of a shortfall if the stock declines near the purchase date. |\n| **Liquidity needs** | Well-supported | Separate emergency fund means this portfolio’s liquidity is discretionary. 60,000 EGP cash is freely available; shares can be liquidated with T+2 settlement. No urgent liquidity pressure is indicated. |\n| **Loss willingness / capacity (both medium)** | Moderately compatible | Medium loss tolerance allows for equity exposure, but medium loss capacity suggests the portfolio should not be heavily weighted into volatile single-stock positions. A 20% TMGH decline would erase ~3,300 EGP (~4.3% of total portfolio), which is manageable but represents a meaningful hit to a savings goal with a fixed deadline. |\n| **Current concentration** | **Significant mismatch** | 100% of the non-cash allocation is in one Egyptian equity. For a medium-term savings goal with medium loss capacity, concentration risk is the primary suitability concern. Diversification across asset classes or maturities would better align with the profile. |\n| **Cash that could reasonably be committed** | Not applicable to change | The investor asked about suitability, not new commitments. The existing 60,000 EGP cash is already liquid and could be reallocated, but no action is prescribed. |\n\n**Key Takeaways (no action recommended)**\n- The portfolio’s cash portion (60,000 EGP) fully meets the investor’s stated liquidity needs and provides a stable base.\n- The TMGH position represents a relatively small but undiversified equity exposure. For a 3–5 year savings goal with a fixed target (apartment purchase), concentrating non-cash assets in a single stock introduces avoidable risk given the medium loss willingness/capacity.\n- The portfolio *allows* selling the TMGH shares at any time for ~16,500.00 EGP in cash after T+2 settlement, and the 60,000.00 EGP cash is free to remain as-is or be moved into other instruments consistent with the investor’s horizon and risk profile.\n- No analysis of TMGH’s reported revenues, profits, or EPS has been performed or used in this assessment, per instructions. Suitability is based solely on the investor’s profile and portfolio structure.\n\n**Bottom fit:** The portfolio is *partially* suited. The cash position is well-aligned with the goal and liquidity profile, but the single-stock equity holding is the main suitability gap. Rebalancing toward diversified, shorter-duration or capital-preserving instruments would better match the 3–5 year down-payment horizon and medium loss capacity, without altering the available cash buffer."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 24.132,
+      "input_tokens": 860,
+      "output_tokens": 4043,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 15.698,
+      "input_tokens": 854,
+      "output_tokens": 2559,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 15.002,
+      "input_tokens": 3503,
+      "output_tokens": 2630,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 54.834
+}

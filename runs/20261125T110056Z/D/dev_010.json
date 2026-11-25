@@ -1,0 +1,104 @@
+{
+  "case_id": "dev_010",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "The evidence shows that profit belonging to Talaat Moustafa's own shareholders (Shareholders of the Parent Company, consolidated) grew from 9,025,066,065 EGP in 2024 (restated) to 14,383,890,306 EGP in 2025, an absolute increase of 5,358,824,241 EGP (~59.38% growth). While the growth is substantial, the investor's profile and current portfolio indicate that adding to the TMGH position would increase the already high concentration (TMGH represents ~58% of the total portfolio value of ~71,250 EGP). The investor has medium financial ability to withstand losses, and increasing exposure to a single equity conflicts with the suitability guidance that recommends modest position sizing when loss capacity is medium. The available cash of 30,000 EGP could purchase additional shares, but doing so would further concentrate risk without a compensating reduction in the existing holding. Therefore, the most appropriate action consistent with the investor's long‑term growth goal, loss‑capacity constraint, and concentrationリス",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) profit for 2025 was 14,383,890,306 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) profit for 2024 (restated) was 9,025,066,065 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "High current concentration in TMGH (~58% of portfolio) and medium loss‑bearing capacity make additional equity exposure unsuitable despite high willingness to accept losses.",
+      "The profit growth figures are reliable (no ambiguous marks), but they alone do not justify increasing position size given portfolio risk constraints."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "The evidence shows that profit belonging to Talaat Moustafa's own shareholders (Shareholders of the Parent Company, consolidated) grew from 9,025,066,065 EGP in 2024 (restated) to 14,383,890,306 EGP in 2025, an absolute increase of 5,358,824,241 EGP (~59.38% growth). While the growth is substantial, the investor's profile and current portfolio indicate that adding to the TMGH position would increase the already high concentration (TMGH represents ~58% of the total portfolio value of ~71,250 EGP). The investor has medium financial ability to withstand losses, and increasing exposure to a single equity conflicts with the suitability guidance that recommends modest position sizing when loss capacity is medium. The available cash of 30,000 EGP could purchase additional shares, but doing so would further concentrate risk without a compensating reduction in the existing holding. Therefore, the most appropriate action consistent with the investor's long‑term growth goal, loss‑capacity constraint, and concentrationリス",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) profit for 2025 was 14,383,890,306 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) profit for 2024 (restated) was 9,025,066,065 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "High current concentration in TMGH (~58% of portfolio) and medium loss‑bearing capacity make additional equity exposure unsuitable despite high willingness to accept losses.",
+      "The profit growth figures are reliable (no ambiguous marks), but they alone do not justify increasing position size given portfolio risk constraints."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "**Profit belonging to Talaat Moustafa's own shareholders (Shareholders of the Parent Company, consolidated):**\n\n- Period 2025: **14,383,890,306 EGP** [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-57]  \n- Period 2024 (Restated): **9,025,066,065 EGP** [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-58]\n\n**Growth calculation (based solely on the evidence):**  \n- Absolute growth: 14,383,890,306 − 9,025,066,065 = **5,358,824,241 EGP**  \n- Growth rate: (5,358,824,241 ÷ 9,025,066,065) × 100 ≈ **59.38%**\n\n**Data quality note:** All figures are printed as whole pounds with explicit unit `LE`. The 2024 column is marked \"Restated,\" which is standard in annual reporting but does not introduce ambiguity in the values themselves. No figures are flagged as ambiguous for computation.\n\n**On the investor question:** The evidence shows a year-over-year increase of ~59.38% in profit attributable to the parent company's shareholders. Per the instructions, I do not interpret whether this justifies adjusting your position; the decision agent handles actionability based on your full profile and goals.",
+    "investor": "**Profit Growth (from provided evidence)**\n- Shareholders of the Parent Company (consolidated), period 2025: 14,383,890,306 LE  \n- Period 2024 (Restated): 9,025,066,065 LE  \n- Absolute growth: 14,383,890,306 − 9,025,066,065 = **5,358,824,241 LE**  \n\n*Note: These figures are extracted directly from the verified consolidated statements. As a suitability analyst, I report the factual data but do not interpret its investment significance or implications.*\n\n---\n\n### Investor-Suitability Assessment\nThe following evaluates fit based on the stated profile and current portfolio, without analysing company financials for investment merit or picking an action.\n\n| **Criterion** | **Profile / Portfolio** | **Suitability Note** |\n|---------------|------------------------|----------------------|\n| **Goal & Horizon** | Long-term growth; 5–10 year horizon | The horizon aligns with a long-term growth objective. No time-pressure liquidity constraints are indicated. |\n| **Liquidity Needs** | Keeps a separate emergency fund; current cash: 30,000.00 EGP | Current liquid resources: cash (30,000 EGP) + TMGH position (500 shares × 82.50 EGP = 41,250 EGP) = **71,250 EGP** total if sold. The profile’s separate emergency fund means this liquidity should remain untouched for new commitments; the 30,000 EGP and TMGH holding are portfolio-allocated cash/equity. |\n| **Loss Willingness & Capacity** | Willingness: high; Financial ability to withstand losses: **medium** | This is the key constraint. High willingness paired with medium ability typically calls for conservative position sizing. Large drawdowns may exceed the investor’s loss-bearing capacity despite the psychological willingness. |\n| **Current Concentration** | TMGH: 500 shares; cash: 30,000 EGP; total portfolio ≈ 71,250 EGP | TMGH represents ~58% of the portfolio (41,250 / 71,250). This is a high concentration in a single equity, which is generally unsuitable when loss capacity is rated medium, regardless of high willingness. |\n| **Cash Reasonably Commit-able** | With medium loss capacity, new equity commitments are typically best kept modest relative to the liquid buffer. The existing 30,000 EGP cash over and above the emergency fund could support a small incremental position, but any addition should respect the ~58% current concentration and not further impair loss-bearing ability. |\n\n### What the Portfolio Allows\n- **Salable assets:** The 500 TMGH shares can be sold at the cutoff price of 82.50 EGP/share, yielding **41,250 EGP** in cash.\n- **Free cash:** The 30,000.00 EGP cash balance is unrestricted and immediately available.\n- **No other holdings** are listed, so the portfolio consists of cash + this single equity position.\n\n### On the Investor Question\nThe profit belonging to Talaat Moustafa's own shareholders grew by **5,358,824,241 LE** in 2025 versus the restated 2024 figure. Whether adding to the position is suitable depends on the investor’s profile and portfolio concentration—as assessed above—not on the financial growth itself. Per my role parameters, I do not analyse company financials for investment justification nor do I pick or recommend actions. Suitability is determined by alignment of the investor’s horizon, liquidity needs, loss capacity, and concentration with the portfolio’s structure, as outlined."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 28.235,
+      "input_tokens": 1664,
+      "output_tokens": 5113,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 39.215,
+      "input_tokens": 1658,
+      "output_tokens": 5086,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 8.765,
+      "input_tokens": 3724,
+      "output_tokens": 1467,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 76.219
+}

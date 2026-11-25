@@ -1,0 +1,63 @@
+{
+  "case_id": "dev_004",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 196,
+    "explanation": "The investor needs about 30,000 EGP within 6 months for income in retirement. The current portfolio has 5,000 EGP cash and 1,000 COMI shares valued at 128.00 EGP per share (total 128,000 EGP). To meet the liquidity need, the investor must convert part of the equity holding into cash. Selling 196 shares at the cutoff price of 128.00 EGP yields 196 × 128 = 25,088 EGP. Adding the existing 5,000 EGP cash gives a total of 30,088 EGP, which satisfies the 30,000 EGP requirement within the 6‑month horizon. The remaining 804 COMI shares retain exposure to the bank; COMI shows positive net profit and net interest income in its 2025 results, indicating profitability, but the stock price can still fluctuate, so the remaining equity position should be monitored given the investor’s low risk tolerance. This recommendation relies solely on the given share price and the cash‑need calculation; other financial figures (net profit, interest income, etc.) are not used in the liquidity decision but are provided as evidence of the",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "Based only on the stated share price and liquidity requirement; does not account for transaction costs, taxes, or possible price impact.",
+      "Assumes the share price of 128.00 EGP remains valid at the time of sale.",
+      "Investor’s low willingness to accept losses means the remaining 804 shares still carry market risk."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 196,
+    "explanation": "The investor needs about 30,000 EGP within 6 months for income in retirement. The current portfolio has 5,000 EGP cash and 1,000 COMI shares valued at 128.00 EGP per share (total 128,000 EGP). To meet the liquidity need, the investor must convert part of the equity holding into cash. Selling 196 shares at the cutoff price of 128.00 EGP yields 196 × 128 = 25,088 EGP. Adding the existing 5,000 EGP cash gives a total of 30,088 EGP, which satisfies the 30,000 EGP requirement within the 6‑month horizon. The remaining 804 COMI shares retain exposure to the bank; COMI shows positive net profit and net interest income in its 2025 results, indicating profitability, but the stock price can still fluctuate, so the remaining equity position should be monitored given the investor’s low risk tolerance. This recommendation relies solely on the given share price and the cash‑need calculation; other financial figures (net profit, interest income, etc.) are not used in the liquidity decision but are provided as evidence of the",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "Based only on the stated share price and liquidity requirement; does not account for transaction costs, taxes, or possible price impact.",
+      "Assumes the share price of 128.00 EGP remains valid at the time of sale.",
+      "Investor’s low willingness to accept losses means the remaining 804 shares still carry market risk."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30088.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 804
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 17.712,
+      "input_tokens": 1943,
+      "output_tokens": 3077,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 17.714
+}

@@ -1,0 +1,104 @@
+{
+  "case_id": "dev_001",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The evidence set contains several critical ambiguities that prevent a responsible valuation or performance assessment of ETEL. Key figures are ambiguous: operating revenues (evidence_ids p6-01, p6-02), gross profit (p6-05, p6-06), net profit for the year (p6-35, p6-36), and basic/diluted EPS (p6-55, p6-56) all appear as dual‑number rows without clear column headers and, in the case of EPS, a unit conflict (L.E.(000) vs L.E./Share). Identical printed strings across 2025 and 2024 further raise data‑quality concerns. While total assets and total equity (p5‑31, p5‑45) are reported with clear side‑by‑side columns, these balance‑sheet figures alone are insufficient to compute profitability ratios, growth rates, or a meaningful price‑to‑earnings analysis. Without reliable revenue, profit, or EPS data, it is not possible to evaluate whether the current holding is over‑ or under‑valued, nor to assess the company’s growth trajectory or risk profile relative to the investor’s 5–7‑year university‑fee goal and medium risk",
+    "claims": [],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "Column‑order ambiguity in multi‑period rows makes it impossible to assign 2025 vs 2024 values for operating revenues, gross profit, and net profit.",
+      "EPS unit conflict (printed L.E.(000) versus label L.E./Share) prevents reliable earnings‑per‑share calculations.",
+      "Identical printed strings for revenues and gross profit across periods suggest possible transcription errors.",
+      "No segment, cash‑flow, or liability detail beyond the provided rows; therefore balance‑sheet ratios beyond equity‑to‑assets are not computable."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The evidence set contains several critical ambiguities that prevent a responsible valuation or performance assessment of ETEL. Key figures are ambiguous: operating revenues (evidence_ids p6-01, p6-02), gross profit (p6-05, p6-06), net profit for the year (p6-35, p6-36), and basic/diluted EPS (p6-55, p6-56) all appear as dual‑number rows without clear column headers and, in the case of EPS, a unit conflict (L.E.(000) vs L.E./Share). Identical printed strings across 2025 and 2024 further raise data‑quality concerns. While total assets and total equity (p5‑31, p5‑45) are reported with clear side‑by‑side columns, these balance‑sheet figures alone are insufficient to compute profitability ratios, growth rates, or a meaningful price‑to‑earnings analysis. Without reliable revenue, profit, or EPS data, it is not possible to evaluate whether the current holding is over‑ or under‑valued, nor to assess the company’s growth trajectory or risk profile relative to the investor’s 5–7‑year university‑fee goal and medium risk",
+    "claims": [],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "Column‑order ambiguity in multi‑period rows makes it impossible to assign 2025 vs 2024 values for operating revenues, gross profit, and net profit.",
+      "EPS unit conflict (printed L.E.(000) versus label L.E./Share) prevents reliable earnings‑per‑share calculations.",
+      "Identical printed strings for revenues and gross profit across periods suggest possible transcription errors.",
+      "No segment, cash‑flow, or liability detail beyond the provided rows; therefore balance‑sheet ratios beyond equity‑to‑assets are not computable."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "**Evidence‑Only Analysis: ETEL (FY2025 Consolidated EAS)**  \n*All figures are cited per their [evidence_id] and converted to whole Egyptian pounds (L.E.) applying the stated units. Figures flagged as ambiguous are not used in computed ratios or growth rates.*\n\n---\n\n### 1. Profitability\n- **Net profit for the year**  \n  - [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] period 31/12/2025: printed \"22 578 063 10 111 328\" unit L.E.(000) → whole pounds: **22,578,063,000** and **10,111,328,000**. *Ambiguous which column corresponds to 2025 vs 2024.*  \n  - [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] period 31/12/2024: identical print; same ambiguity.  \n- **Basic and diluted EPS**  \n  - [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] period 31/12/2025: printed \"11.93 4.79\" unit L.E.(000). *Unit conflict: if L.E.(000) applies, EPS would be 11,930 and 4,790 L.E./share—unrealistic given the 141.95 EGP share price. Most likely the numbers are in L.E./share directly (11.93 and 4.79), but the printed unit renders this ambiguous.*  \n  - [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56] period 31/12/2024: same print.  \n- **Gross Profit**  \n  - [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05] period 31/12/2025: printed \"44 839 110 30 492 762\" unit L.E.(000) → whole pounds: **44,839,110,000** and **30,492,762,000**. *Ambiguous column ordering.*  \n  - [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06] period 31/12/2024: identical print.\n\n### 2. Growth (Revenue & Assets)\n- **Operating revenues**  \n  - [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01] period 31/12/2025: printed \"106 672 946 81 677 812\" unit L.E.(000) → whole pounds: **106,672,946,000** and **81,677,812,000**. *Ambiguous which is 2025 vs 2024; same printed string appears for [p6-02] (2024 period), raising data‑quality concerns.*  \n  - [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02] period 31/12/2024: identical print.  \n- **Total Assets (consolidated)**  \n  - [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31] period 31/12/2025: printed \"225 882 527 | 197 952 788\" unit L.E. (000) → whole pounds: **225,882,527,000** (2025) and **197,952,788,000** (2024). *Clear side‑by‑side columns; year‑over‑year growth ≈ 14.1%.*  \n- **Total Equity (consolidated)**  \n  - [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] period 31/12/2025: printed \"63 687 826 | 45 937 991\" unit L.E. (000) → whole pounds: **63,687,826,000** (2025) and **45,937,991,000** (2024).\n\n### 3. Balance‑Sheet Ratios (using unambiguous figures only)\n- **Equity‑to‑Assets ratio (2025):** 63,687,826,000 / 225,882,527,000 ≈ **28.2%**.  \n- **Equity‑to‑Assets ratio (2024):** 45,937,991,000 / 197,952,788,000 ≈ **23.2%*.*  \n  *Note: These calculations use the clearly separated columns from [p5-31] and [p5-45]; ambiguous revenue/gross‑profit figures are excluded.*\n\n### 4. Risks & Data Quality Flags\n1. **Column‑order ambiguity** in multi‑period rows ([p6-01]/[p6-02], [p6-05]/[p6-06], [p6-35]/[p6-36]): two numbers printed without explicit column headers; cannot reliably assign 2025 vs 2024 values.  \n2. **Identical printed strings** for operating revenues and gross profit across 2025 and 2024 evidences ([p6-01] matches [p6-02]; [p6-05] matches [p6-06]), suggesting possible transcription or reporting errors.  \n3. **EPS unit conflict** ([p6-55]/[p6-56]): printed unit \"L.E.(000)\" contradicts the label \"L.E./Share\"; the numerical values (11.93, 4.79) are consistent with standard EPS interpretation, but the unit ambiguity must be resolved before any P/E or earnings‑power analysis.  \n4. **No explicit segment or line‑item breakdowns** beyond the rows provided; working capital, liabilities, and cash‑flow data are not in the evidence set.\n\n### 5. Summary of Evidence‑Only Findings\n- **Profitability:** Net profit and EPS figures are presented with ambiguous column ordering and unit conflicts; gross profit suffers the same ambiguity.  \n- **Growth:** Operating revenues are ambiguous due to dual‑number prints and cross‑year identical strings; total assets and equity show clear year‑over‑year increases (≈14% asset growth, equity rising from ~23% to ~28% of assets).  \n- **Balance Sheet:** Total assets and equity are reliably reported for both periods; liquidity and solvency ratios can be tentatively calculated using these lines only.  \n- **Data Quality:** Three major flags—column‑order ambiguity, duplicate prints across periods, and EPS unit conflict—limit the computability of profitability‑based metrics. Any ratio involving operating revenues, gross profit, or net profit should be withheld until the column mapping and unit designations are verified.\n\n*No actionable recommendation is provided herein, per instructions. The decision agent may use this evidence summary together with the investor’s profile and horizon to determine portfolio adjustments.*",
+    "investor": "**Investor-suitability assessment (no financial analysis of ETEL, no action recommended)**\n\n**Horizon (5–7 years)**  \nThe horizon is medium-term and aligns with a growth-oriented but not aggressive allocation. Because the savings target a specific future liability (university fees), the timeline suggests a gradual shift toward capital preservation as the date approaches, rather than maintaining full equity exposure throughout the period.\n\n**Liquidity needs**  \nThe investor already maintains a separate emergency fund. The portfolio therefore contains one liquid component: 20,000.00 EGP in cash, which is fully available for the university goal or other needs without affecting the emergency buffer.\n\n**Willingness to accept losses & financial ability to withstand losses**  \nBoth are rated medium. The investor can tolerate some value fluctuation but is not comfortable with significant or prolonged drawdowns. This risk profile favors balanced or slowly de-risked allocations over concentrated or highly volatile positions.\n\n**Current concentration**  \n- ETEL: 300 shares × 141.95 EGP/share = ~42,585 EGP  \n- Cash: 20,000.00 EGP  \n- Approximate total portfolio value: ~62,585 EGP  \n- ETEL represents roughly 68% of the portfolio.  \nFor an investor with medium risk tolerance and a defined 5–7 year spending goal, this level of single-stock concentration is notable. It exposes the savings goal to company-specific risk beyond the stated risk profile.\n\n**Cash that could reasonably be committed**  \n- 20,000.00 EGP is immediately free and liquid.  \n- The ETEL holding is sellable and would generate approximately 42,585 EGP in cash upon execution (subject to normal market conditions and any transaction costs).  \n- If the investor were to commit cash toward the university goal, the existing 20,000 EGP could be allocated directly, while the ETEL position could be liquidated and reinvested (or held) based on diversification preferences.\n\n**What the portfolio allows**  \n- The 300 ETEL shares are marketable equity and can be sold for cash on the exchange; liquidity is typical for listed shares under normal conditions.  \n- The 20,000.00 EGP cash balance is fully free and available for reallocation or direct use toward the savings goal.  \n- No other holdings, restricted assets, or illiquid positions are reported.\n\n**Suitability summary (without recommendation)**  \nThe portfolio’s structure—heavy concentration in a single stock alongside a meaningful cash balance—does not fully align with the investor’s medium risk tolerance and a specific 5–7 year liability. The available cash and potential liquidity from ETEL provide flexibility, but the concentration risk and the nature of the goal suggest that any allocation decisions should consider diversification and a potential glide-path toward more stable assets as the university date nears. No specific action is implied or recommended."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 51.664,
+      "input_tokens": 1478,
+      "output_tokens": 9268,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 19.979,
+      "input_tokens": 1472,
+      "output_tokens": 3330,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 20.963,
+      "input_tokens": 4782,
+      "output_tokens": 2510,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 92.61
+}

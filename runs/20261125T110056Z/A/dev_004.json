@@ -1,0 +1,49 @@
+{
+  "case_id": "dev_004",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 196,
+    "explanation": "The investor needs about 30,000 EGP within six months for liquidity but currently holds only 5,000 EGP in cash. With a low willingness to accept losses and a 1‑3‑year horizon, the priority is to meet the cash need while preserving as much capital as possible. The portfolio contains 1,000 shares of COMI priced at 128.00 EGP per share (given at the cutoff). Selling 196 shares at the market price yields 196 × 128 = 25,088 EGP, which combined with the existing 5,000 EGP cash gives approximately 30,088 EGP—sufficient to cover the 30,000 EGP requirement within the six‑month window. After the sale the investor will retain 804 shares (≈ 102,912 EGP at the current price), maintaining a substantial equity position consistent with a retirement‑income focus. The decision relies solely on the provided price and liquidity need; no financial figures from the COMI statements are required for this liquidity‑driven action. No ambiguous figures were encountered. Potential risks include short‑term price fluctuation of COMI and a",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 196,
+    "explanation": "The investor needs about 30,000 EGP within six months for liquidity but currently holds only 5,000 EGP in cash. With a low willingness to accept losses and a 1‑3‑year horizon, the priority is to meet the cash need while preserving as much capital as possible. The portfolio contains 1,000 shares of COMI priced at 128.00 EGP per share (given at the cutoff). Selling 196 shares at the market price yields 196 × 128 = 25,088 EGP, which combined with the existing 5,000 EGP cash gives approximately 30,088 EGP—sufficient to cover the 30,000 EGP requirement within the six‑month window. After the sale the investor will retain 804 shares (≈ 102,912 EGP at the current price), maintaining a substantial equity position consistent with a retirement‑income focus. The decision relies solely on the provided price and liquidity need; no financial figures from the COMI statements are required for this liquidity‑driven action. No ambiguous figures were encountered. Potential risks include short‑term price fluctuation of COMI and a",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30088.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 804
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 17.087,
+      "input_tokens": 1943,
+      "output_tokens": 2354,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 17.089
+}

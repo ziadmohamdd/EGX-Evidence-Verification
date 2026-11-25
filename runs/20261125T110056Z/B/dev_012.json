@@ -1,0 +1,65 @@
+{
+  "case_id": "dev_012",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The net profit figures for 2025 and 2024 are both marked AMBIGUOUS because the 2025 value is covered by a stamp on the scanned page, rendering them unreliable for any calculation. As a result, the growth in Edita's net profit compared with the prior year cannot be determined, and it is unknown whether the increase exceeds 50%. Without a reliable net‑profit figure, a responsible investment decision cannot be made based on the provided evidence. Therefore, the recommendation is to keep cash and avoid purchasing additional shares until clear profit data are available.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31"
+    ],
+    "limitations": [
+      "Net profit figures are ambiguous and cannot be used in calculations; no alternative net‑profit data are provided in the evidence."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The net profit figures for 2025 and 2024 are both marked AMBIGUOUS because the 2025 value is covered by a stamp on the scanned page, rendering them unreliable for any calculation. As a result, the growth in Edita's net profit compared with the prior year cannot be determined, and it is unknown whether the increase exceeds 50%. Without a reliable net‑profit figure, a responsible investment decision cannot be made based on the provided evidence. Therefore, the recommendation is to keep cash and avoid purchasing additional shares until clear profit data are available.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31"
+    ],
+    "limitations": [
+      "Net profit figures are ambiguous and cannot be used in calculations; no alternative net‑profit data are provided in the evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 6.135,
+      "input_tokens": 1866,
+      "output_tokens": 1024,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 6.137
+}

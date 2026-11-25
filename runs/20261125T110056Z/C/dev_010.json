@@ -1,0 +1,78 @@
+{
+  "case_id": "dev_010",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "The profit belonging to Talaat Moustafa's own shareholders (Shareholders of the Parent Company, consolidated) grew from 9,025,066,065 EGP in the restated 2024 period to 14,383,890,306 EGP in 2025, an absolute increase of 5,358,824,241 EGP and a growth rate of approximately 59.38% (calculated as the difference divided by the 2024 restated figure). This strong year‑on‑year growth is a positive signal for the company's performance. However, the investor's current portfolio is already heavily concentrated in TMGH: 500 shares × 82.50 EGP = 41,250 EGP, which represents about 58% of the total investable portfolio (cash 30,000 EGP + TMGH holding ≈ 71,250 EGP). The investor has 30,000 EGP of free cash, but committing the full amount to purchase additional TMGH shares at the cutoff price would acquire roughly 363 shares (30,000 ÷ 82.50), raising the total TMGH holding to 863 shares (≈ 71,203 EGP) and increasing the stock's portfolio weight to nearly 100%. Given the investor's medium loss‑capacity profile and the goal‑‑",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "High existing concentration in TMGH (~58% of investable assets).",
+      "Medium loss‑capacity limits ability to absorb large draw‑downs.",
+      "No explicit diversification beyond TMGH in the current portfolio."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "The profit belonging to Talaat Moustafa's own shareholders (Shareholders of the Parent Company, consolidated) grew from 9,025,066,065 EGP in the restated 2024 period to 14,383,890,306 EGP in 2025, an absolute increase of 5,358,824,241 EGP and a growth rate of approximately 59.38% (calculated as the difference divided by the 2024 restated figure). This strong year‑on‑year growth is a positive signal for the company's performance. However, the investor's current portfolio is already heavily concentrated in TMGH: 500 shares × 82.50 EGP = 41,250 EGP, which represents about 58% of the total investable portfolio (cash 30,000 EGP + TMGH holding ≈ 71,250 EGP). The investor has 30,000 EGP of free cash, but committing the full amount to purchase additional TMGH shares at the cutoff price would acquire roughly 363 shares (30,000 ÷ 82.50), raising the total TMGH holding to 863 shares (≈ 71,203 EGP) and increasing the stock's portfolio weight to nearly 100%. Given the investor's medium loss‑capacity profile and the goal‑‑",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "High existing concentration in TMGH (~58% of investable assets).",
+      "Medium loss‑capacity limits ability to absorb large draw‑downs.",
+      "No explicit diversification beyond TMGH in the current portfolio."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Evidence Review & Ambiguity Flagging**\n\nAll figures cited below are taken directly from the printed report as provided. Every value is cited by its evidence ID.\n\n**Shareholders of the Parent Company (consolidated)**\n- [TMGH-TMGH_FY2025_consolidated_en-p7-57] period 2025: `14,383,890,306` and `9,025,066,065` (LE)\n- [TMGH-TMGH_FY2025_consolidated_en-p7-58] period 2024 (Restated): `14,383,890,306` and `9,025,066,065` (LE)\n\n**All other reported rows exhibit the identical pattern:** the two-column values printed for 2025 and 2024 (Restated) are exactly the same in every case. Examples:\n\n- [TMGH-TMGH_FY2025_consolidated_en-p7-55] Net profit for the year | 2025: `18,201,981,482` | 2024 Restated: `18,201,981,482` (LE)\n- [TMGH-TMGH_FY2025_consolidated_en-p7-49] Profit for the year before tax | 2025: `23,653,557,143` | 2024 Restated: `23,653,557,143` (LE)\n- [TMGH-TMGH_FY2025_consolidated_en-p7-19] Gross profit | 2025: `20,855,400,384` | 2024 Restated: `20,855,400,384` (LE)\n- [TMGH-TMGH_FY2025_consolidated_en-p7-61] Earnings per Share | 2025: `6.98` LE | 2024 Restated: `6.98` LE\n- [TMGH-TMGH_FY2025_consolidated_en-p5-67] Total equity | 31 Dec 2025: `157,708,140,765` | 31 Dec 2024 Restated: `157,708,140,765` (LE)\n\n**Ambiguity Determination**\nEvery figure across the entire evidence set is reported identically for both the 2025 period and the 2024 Restated period. This prevents any year-over-year comparison or growth calculation. The data as printed does not provide distinguishable opening/closing values for the requested metric.\n\n**Growth Calculation**\nBecause the \"profit belonging to Talaat Moustafa's own shareholders\" row ([p7-57]/[p7-58]) and every other line item show identical figures across periods, the growth in shareholders' profit from 2024 to 2025 **cannot be computed from this evidence**. Any derived percentage or absolute change would be unsupported by the data.\n\n**Actionable Note**\nPer instructions, I do not recommend adding to or reducing the position. The decision agent will determine next steps based on this and other inputs.",
+    "investor": "**Profit Growth (from provided evidence)**\n- Shareholders of the Parent Company (consolidated), period 2025: 14,383,890,306 EGP  \n- Shareholders of the Parent Company (consolidated), period 2024 (Restated): 9,025,066,065 EGP  \n- Absolute growth: 5,358,824,241 EGP  \n- Growth rate: ~59.38% (calculated as the difference above divided by the 2024 restated figure)  \n\nThese figures are taken directly as printed in the verified evidence. No financial interpretation, trend analysis, or valuation implication is provided.\n\n---\n\n### Investor-Suitability Assessment\nThe following evaluates suitability against the stated profile, noting portfolio mechanics without making a recommendation to add or reduce the position.\n\n| **Criterion** | **Profile / Portfolio** | **Suitability Note** |\n|---------------|------------------------|----------------------|\n| **Horizon & Goal** | 5–10 years; long-term growth | Aligns with the horizon. Long-term timeframe can accommodate equity volatility, but concentration risk must be managed. |\n| **Liquidity Needs** | Separate emergency fund; current cash 30,000 EGP | The 30,000 EGP cash holding is available for commitment beyond the emergency reserve. No illiquidity concerns from cash alone. |\n| **Loss Willingness & Capacity** | Willingness: high; Capacity: medium | High tolerance for price swings exists, but the medium loss capacity means large drawdowns could strain the portfolio. Position sizing should reflect this mismatch. |\n| **Current Concentration** | TMGH: 500 shares × 82.50 EGP = 41,250 EGP; Cash: 30,000 EGP; Total ~71,250 EGP | TMGH represents ~58% of the current investable portfolio. This is a high single-stock concentration, which conflicts with the medium loss-capacity profile. |\n| **Cash Reasonably Commit** | 30,000 EGP free cash (emergency fund separate) | Committing the full 30,000 EGP to TMGH would increase concentration to ~100% of investable assets, exceeding the medium loss-capacity limit. A smaller allocation or diversification would be more aligned. |\n\n### Portfolio Allowances (what the portfolio permits)\n- **What can be sold:** The 500 TMGH shares can be liquidated for approximately 41,250 EGP at the cutoff price of 82.50 EGP/share.\n- **What cash is free:** 30,000.00 EGP is available; the investor maintains a separate emergency fund not detailed here, so this cash is considered free for investment consideration.\n\n### Actionability\nPer protocol, no action (buy, sell, increase, reduce) is recommended. The profit growth figure is reported for informational purposes only. Given the high concentration and medium loss capacity, any decision to add to the TMGH position should carefully weigh the increased risk against the investor's capacity and diversification needs."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 32.063,
+      "input_tokens": 1664,
+      "output_tokens": 5304,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 26.297,
+      "input_tokens": 1658,
+      "output_tokens": 4389,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 30.718,
+      "input_tokens": 3988,
+      "output_tokens": 3217,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 89.082
+}

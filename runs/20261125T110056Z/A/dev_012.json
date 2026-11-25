@@ -1,0 +1,57 @@
+{
+  "case_id": "dev_012",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor asked by how much Edita's net profit grew in 2025 compared with 2024, and to buy more if growth exceeded 50%. The only verified net‑profit figure is for 2024: 1,606,727,698 EGP (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31). The 2025 net‑profit figure (2,695,301,670 EGP) appears on the same page but is marked AMBIGUOUS because the 2025 number is covered by a stamp on the scanned page (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30). Per the rules, AMBIGUOUS figures must not be used in calculations. Consequently, there is no reliable 2025 net‑profit figure with which to compute the year‑on‑year growth, and it is impossible to determine whether the growth exceeds 50%. The evidence is therefore insufficient to support a buy, hold, sell, or keep_cash decision based on the stated criterion.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "2025 net profit is ambiguous and cannot be used; only 2024 verified profit is available."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor asked by how much Edita's net profit grew in 2025 compared with 2024, and to buy more if growth exceeded 50%. The only verified net‑profit figure is for 2024: 1,606,727,698 EGP (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31). The 2025 net‑profit figure (2,695,301,670 EGP) appears on the same page but is marked AMBIGUOUS because the 2025 number is covered by a stamp on the scanned page (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30). Per the rules, AMBIGUOUS figures must not be used in calculations. Consequently, there is no reliable 2025 net‑profit figure with which to compute the year‑on‑year growth, and it is impossible to determine whether the growth exceeds 50%. The evidence is therefore insufficient to support a buy, hold, sell, or keep_cash decision based on the stated criterion.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "2025 net profit is ambiguous and cannot be used; only 2024 verified profit is available."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 11.652,
+      "input_tokens": 1866,
+      "output_tokens": 1359,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 11.654
+}

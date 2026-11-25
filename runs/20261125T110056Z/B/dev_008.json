@@ -1,0 +1,145 @@
+{
+  "case_id": "dev_008",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The friend's claim that Telecom Egypt made a net profit of 225.9 billion pounds in 2025 is incorrect. According to the audited financial statements (evidence IDs ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35 and p6-36), the net profit for the year 2025 was 22,578,063 × 1,000 L.E. = 22,578,063,000 L.E. (≈22.6 billion L.E.), and for 2024 it was 10,111,328 × 1,000 L.E. = 10,111,328,000 L.E. (≈10.1 billion L.E.). Thus the 2025 profit is about 2.2 times the 2024 profit, not more than ten times, and far below 225.9 billion pounds. The basic/diluted EPS figures (evidence IDs p6-55 and p6-56) are marked ambiguous because the printed unit L.E.(000) would imply an unrealistic EPS of ~11,930 L.E. per share, so they have been excluded from calculations.  The available evidence shows the company is profitable, but the evidence does not justify allocating the entire cash reserve (50,000 EGP) into a single stock.  Concentrating all cash in ETEL would expose the portfolio to significant idiosyncratic risk, contrary to the‑in‑in",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The friend's claim that Telecom Egypt made a net profit of 225.9 billion pounds in 2025 is incorrect. According to the audited financial statements (evidence ID ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35), the net profit for the year 2025 was 22 578 063 × 1,000 L.E. = 22 578 063 000 L.E. (≈22.6 billion L.E.). For 2024 (evidence ID p6-36) the net profit was 10 111 328 × 1,000 L.E. = 10 111 328 000 L.E. (≈10.1 billion L.E.). Thus the 2025 profit is about 2.2 times the 2024 profit, not more than ten times, and far below 225.9 billion pounds. Operating revenues for 2025 were 106 672 946 × 1,000 L.E. (≈106.7 bn L.E.) and for 2024 were 81 677 812 × 1,000 L.E. (≈81.7 bn L.E.). Total assets at end‑2025 were 225 882 527 × 1,000 L.E. (≈225.9 bn L.E.) and total equity was 63 687 826 × 1,000 L.E. (≈63.7 bn L.E.). The basic/diluted EPS figures (evidence IDs p6‑55 and p6‑56) are marked AMBIGUOUS because the printed unit L.E.(000) would imply an unrealistic EPS of ~11,930 L.E. per share; they have been excluded from all cál",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for the year 2025 was 22 578 063 × 1,000 L.E. = 22 578 063 000 L.E."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit for the year 2024 was 10 111 328 × 1,000 L.E. = 10 111 328 000 L.E."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues 2025 were 106 672 946 × 1,000 L.E. (≈106.7 bn L.E.)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "Operating revenues 2024 were 81 677 812 × 1,000 L.E. (≈81.7 bn L.E.)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total assets at end‑2025 were 225 882 527 × 1,000 L.E. (≈225.9 bn L.E.)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "Total equity at end‑2025 was 63 687 826 × 1,000 L.E. (≈63.7 bn L.E.)"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "Financial data are based on the 2025 audited consolidated statements; no forecast or forward‑looking information is provided.",
+      "The EPS figures are ambiguous because of the L.E.(000) unit and have been excluded from valuation calculations.",
+      "Investor portfolio concentration risk: allocating the entire cash reserve (50 000 EGP) into a single stock (ETEL) would expose the portfolio to significant idiosyncratic risk, contrary to the investor’s medium risk tolerance and 5‑year retirement horizon.",
+      "Price used (141.95 EGP per share) is the cutoff price; actual execution price may differ.",
+      "No transaction costs, taxes, or market impact are modelled."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 50000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 150
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"225.9 billion\", which is 'Total Assets (consolidated)' (2.25883e+11), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"22,578,063\" but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"22,578,063,000\", which is 'Net profit for the year' (2.25781e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"22.6 billion\", which is 'Net profit for the year' (2.25781e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"10,111,328\" but evidence 'Net profit for the year' is 1.01113e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"10,111,328,000\", which is 'Net profit for the year' (1.01113e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"10.1 billion\", which is 'Net profit for the year' (1.01113e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"225.9 billion\", which is 'Total Assets (consolidated)' (2.25883e+11), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 22.521,
+      "input_tokens": 2098,
+      "output_tokens": 3157,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 363.475,
+      "input_tokens": 3306,
+      "output_tokens": 3926,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 385.999
+}

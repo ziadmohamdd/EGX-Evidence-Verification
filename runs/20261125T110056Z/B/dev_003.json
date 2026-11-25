@@ -1,0 +1,96 @@
+{
+  "case_id": "dev_003",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "none",
+    "shares": 0,
+    "explanation": "The investor’s portfolio consists of 100 ETEL shares (value ~14,195 EGP) and 1,500 EFID shares (value ~30,600 EGP), with total holdings worth ~44,795 EGP and 15,000 EGP cash, giving a total portfolio of ~59,795 EGP. The investor may need 10% of the money within a year (~5,980 EGP), so some liquidity is required but not necessarily by reducing equity positions.  EFID reported revenue of 20,915,072,432 EGP, net profit of 2,695,301,670 EGP, EPS of 2.18 EGP, and total equity of 5,724,525,864 EGP.  ETEL reported operating revenues of 106,672,946,000 EGP, net profit of 22,578,063,000 EGP, and total equity of 63,687,826,000 EGP.  Based on these figures, both companies show healthy profitability (net‑profit margins ~13 % for EFID, ~21 % for ETEL) and reasonable price‑to‑earnings ratios (≈9.4 for EFID, ≈12 for ETEL if the EPS are taken at face value).  The investor’s goal of steady growth with some income over a 3‑5‑year horizon is compatible with holding these fundamentally sound listed companies, while keeping the 1",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID revenue for FY2025 was 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for FY2025 was 2.18 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+        "stated_value": 5724525864.0,
+        "statement": "EFID total equity as of 31 Dec 2025 was 5,724,525,864 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID net profit for FY2025 was 2,695,301,670 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL operating revenues for FY2025 were 106,672,946,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit for FY2025 was 22,578,063,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL total equity as of 31 Dec 2025 was 63,687,826,000 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55"
+    ],
+    "limitations": [
+      "No dividend or cash‑flow data are provided, so income component cannot be directly assessed.",
+      "The ETEL EPS figure (unit L.E.(000)) is treated as ambiguous and therefore excluded from valuation ratios.",
+      "Price movements after the cutoff date are unknown; the recommendation is based solely on the stated evidence and current prices.",
+      "The investor’s low financial ability to withstand losses means any equity exposure carries risk, especially if market conditions deteriorate."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The proposed hold was blocked by the portfolio checks (cannot hold NONE: the investor owns none). No change to the portfolio is recommended.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "Blocked recommendation: hold 0 none"
+    ]
+  },
+  "blocked": true,
+  "violations": [
+    {
+      "rule": "hold_unowned",
+      "detail": "cannot hold NONE: the investor owns none"
+    }
+  ],
+  "proposed_portfolio": null,
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 25.528,
+      "input_tokens": 2076,
+      "output_tokens": 3871,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 25.53
+}

@@ -1,0 +1,118 @@
+{
+  "case_id": "dev_001",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor already holds 300 shares of ETEL, currently valued at 300 × 141.95 = 42,585 EGP, with 20,000 EGP cash, giving a total portfolio of about 62,585 EGP. The available evidence shows that for the year ending 31/12/2025 ETEL reported a net profit of 22,578,063,000 EGP (22,578,063 thousand L.E.) and total equity of 63,687,826,000 EGP, indicating profitability and a solid balance‑sheet base. However, the evidence does not provide dividend information, growth trends (revenues were reported as flat at 106,672,946,000 EGP for both 2024 and 2025), or any valuation metrics beyond the share price. The basic/diluted EPS of 11.93 L.E./share is marked AMBIGUOUS because the printed unit says L.E.(000), making the per‑share earnings unclear; therefore this figure cannot be used in calculations. No outside information about the company’s future prospects, sector outlook, or dividend policy is available. Given the medium risk tolerance, a 5‑7‑year horizon, and the lack of decisive evidence to suggest buying more ortr",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL reported a net profit for the year 2025 of 22,578,063,000 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "No dividend or cash‑flow data are provided; reliance on profit alone is limited.",
+      "EPS figure is ambiguous (unit L.E.(000)) and has been excluded from valuation calculations.",
+      "Revenue and profit figures are flat across 2024‑2025, offering no clear growth signal.",
+      "No market‑price trend, P/E ratio, or analyst forecasts can be derived from the given evidence."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor already holds 300 shares of ETEL, currently valued at 300 × 141.95 = 42,585 EGP, with 20,000 EGP cash, giving a total portfolio of about 62,585 EGP. The available evidence shows that for the year ending 31/12/2025 ETEL reported a net profit of 22,578,063,000 EGP, total equity of 63,687,826,000 EGP, and operating revenues of 106,672,946,000 EGP, indicating profitability and a solid balance‑sheet base. However, the evidence does not provide dividend information, cash‑flow details, or any growth trends beyond the flat revenue figure (revenues were the same in 2024 and 2025). The basic/diluted earning per share (EPS) figures are marked AMBIGUOUS because the printed unit says L.E.(000), making the per‑share earnings unclear; therefore these EPS figures have been excluded from any calculations. No outside information about the company’s future prospects, sector outlook, or dividend policy is available. Given the investor’s medium risk tolerance, a 5‑7‑year horizon, and the lack of decisive evidence to‑",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL reported a net profit for the year 2025 of 22,578,063,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL's total equity (consolidated) as of 31/12/2025 is 63,687,826,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL's operating revenues for the year ending 31/12/2025 are 106,672,946,000 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "No dividend or cash‑flow data are provided; reliance on profit alone is limited.",
+      "Revenue figures are flat across 2024‑2025, offering no clear growth signal.",
+      "EPS figures are ambiguous (unit L.E.(000)) and have been excluded from valuation calculations.",
+      "No market‑price trend, P/E ratio, or analyst forecasts can be derived from the given evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"63,687,826,000\", which is 'Total Equity (consolidated)' (6.36878e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"106,672,946,000\", which is 'Operating revenues (5)' (1.06673e+11), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"11.93\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (11.93), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 20.335,
+      "input_tokens": 2278,
+      "output_tokens": 2867,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 11.261,
+      "input_tokens": 3213,
+      "output_tokens": 2476,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 31.599
+}

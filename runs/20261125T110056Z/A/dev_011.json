@@ -1,0 +1,70 @@
+{
+  "case_id": "dev_011",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "none",
+    "shares": 0,
+    "explanation": "The investor asked to compare Telecom Egypt (ETEL), CIB, Edita, and Talaat Moustafa (TMGH) on net‑profit growth (2024→2025) and on price‑to‑earnings ratio, and to select one stock to buy with 80,000 EGP cash. The provided evidence contains financial data for ETEL, TMGH, COMI, and EFID, but it does not include separate, clearly identified figures for CIB (Commercial International Bank) or for a company named Edita. Moreover, the earnings‑per‑share (EPS) rows for ETEL and COMI carry the unit ‘L.E.(000)’ and ‘EGP thousands’, respectively; converting these to whole pounds yields EPS values that make the P/E ratio calculations either absurdly low or highly ambiguous. Because the evidence does not cover the two named companies (CIB, Edita) and the EPS units introduce uncertainty that prevents a reliable P/E comparison, the material is insufficient for a responsible decision. Therefore I cannot recommend a purchase.",
+    "claims": [],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-62"
+    ],
+    "limitations": [
+      "No financial data for CIB or Edita are present in the evidence set.",
+      "EPS unit ambiguity (L.E.(000) for ETEL, EGP thousands for COMI) makes P/E ratio calculations unreliable.",
+      "Inability to compute a meaningful P/E comparison for the four requested companies."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "none",
+    "shares": 0,
+    "explanation": "The investor asked to compare Telecom Egypt (ETEL), CIB, Edita, and Talaat Moustafa (TMGH) on net‑profit growth (2024→2025) and on price‑to‑earnings ratio, and to select one stock to buy with 80,000 EGP cash. The provided evidence contains financial data for ETEL, TMGH, COMI, and EFID, but it does not include separate, clearly identified figures for CIB (Commercial International Bank) or for a company named Edita. Moreover, the earnings‑per‑share (EPS) rows for ETEL and COMI carry the unit ‘L.E.(000)’ and ‘EGP thousands’, respectively; converting these to whole pounds yields EPS values that make the P/E ratio calculations either absurdly low or highly ambiguous. Because the evidence does not cover the two named companies (CIB, Edita) and the EPS units introduce uncertainty that prevents a reliable P/E comparison, the material is insufficient for a responsible decision. Therefore I cannot recommend a purchase.",
+    "claims": [],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-62"
+    ],
+    "limitations": [
+      "No financial data for CIB or Edita are present in the evidence set.",
+      "EPS unit ambiguity (L.E.(000) for ETEL, EGP thousands for COMI) makes P/E ratio calculations unreliable.",
+      "Inability to compute a meaningful P/E comparison for the four requested companies."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 80000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 31.232,
+      "input_tokens": 2989,
+      "output_tokens": 5698,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 31.235
+}

@@ -1,0 +1,62 @@
+{
+  "case_id": "dev_009",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The investor asked for the full‑year 2026 earnings per share (EPS) and the resulting price‑to‑earnings (P/E) ratio to judge whether ABUK is cheap enough to buy. The only available earnings data are the nine‑months‑ended‑30‑September‑2026 figures. The report provides a verified basic EPS of 8.74 EGP for 9M2026 (evidence_id ABUK‑ABUK_9M2026_results‑p2‑31), but there is no data for the final quarter (October‑December 2026) and no guidance on how to annualise the nine‑month result. Consequently we cannot calculate a full‑year EPS or a P/E ratio. The revenue and net‑profit rows are marked AMBIGUOUS and have been listed as unused_figures; they cannot be used in any calculation. Because the necessary figures to derive a full‑year EPS and P/E are missing, a responsible recommendation cannot be made. This response follows the rule set: no outside knowledge is used, only the supplied evidence, and the limitation is explicitly stated.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Only nine‑month EPS is available; no full‑year or quarterly data for Q4 2026.",
+      "Revenue and net‑profit figures are AMBIGUOUS and have been excluded from calculations.",
+      "No information on seasonality or typical Q4 contribution, so annualisation cannot be reliably performed."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The investor asked for the full‑year 2026 earnings per share (EPS) and the resulting price‑to‑earnings (P/E) ratio to judge whether ABUK is cheap enough to buy. The only available earnings data are the nine‑months‑ended‑30‑September‑2026 figures. The report provides a verified basic EPS of 8.74 EGP for 9M2026 (evidence_id ABUK‑ABUK_9M2026_results‑p2‑31), but there is no data for the final quarter (October‑December 2026) and no guidance on how to annualise the nine‑month result. Consequently we cannot calculate a full‑year EPS or a P/E ratio. The revenue and net‑profit rows are marked AMBIGUOUS and have been listed as unused_figures; they cannot be used in any calculation. Because the necessary figures to derive a full‑year EPS and P/E are missing, a responsible recommendation cannot be made. This response follows the rule set: no outside knowledge is used, only the supplied evidence, and the limitation is explicitly stated.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Only nine‑month EPS is available; no full‑year or quarterly data for Q4 2026.",
+      "Revenue and net‑profit figures are AMBIGUOUS and have been excluded from calculations.",
+      "No information on seasonality or typical Q4 contribution, so annualisation cannot be reliably performed."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 21.142,
+      "input_tokens": 2153,
+      "output_tokens": 2807,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 21.144
+}

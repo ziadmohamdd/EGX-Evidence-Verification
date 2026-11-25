@@ -1,0 +1,92 @@
+{
+  "case_id": "dev_005",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "none",
+    "shares": 0,
+    "explanation": "The evidence provided for ABUK contains multiple AMBIGUOUS figures and a unit conflict in the verified EPS rows, making it impossible to reliably compute profitability, growth, or valuation metrics. Revenue and net‑profit rows (p2‑01, p2‑02, p2‑25, p2‑26) are flagged AMBIGUOUS because the PDF page displays mixed billion/million units while the table unit line states 'مليون جنيه'. The two EPS rows (p2‑31, p2‑32) are marked verified but contain a contradiction: the internal label reads '(جنيه)' (pounds) while the trailing unit line says 'مليون جنيه' (million pounds). Taking the million‑unit label literally yields implausible EPS values, and the Arabic label suggests per‑share figures of ~8.74 EGP and ~4.28 EGP, but the conflict remains unresolved. Because all core financial figures are ambiguous or contradictory, no reliable ratio (P/E, margin, growth) can be derived. Consequently, there is insufficient evidence to support a buy, hold, or sell recommendation for ABUK, or to assess its suitability as a fertil‑ex",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "All revenue and net‑profit figures are AMBIGUOUS; cannot be used in calculations.",
+      "EPS figures suffer from a unit conflict; cannot be taken at face value.",
+      "No balance‑sheet data are provided.",
+      "Percentage rows lack clear labels and are ambiguous.",
+      "No COMI financials are supplied, limiting sector‑diversification assessment."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "none",
+    "shares": 0,
+    "explanation": "The evidence provided for ABUK contains multiple AMBIGUOUS figures and a unit conflict in the verified EPS rows, making it impossible to reliably compute profitability, growth, or valuation metrics. Revenue and net‑profit rows (p2‑01, p2‑02, p2‑25, p2‑26) are flagged AMBIGUOUS because the PDF page displays mixed billion/million units while the table unit line states 'مليون جنيه'. The two EPS rows (p2‑31, p2‑32) are marked verified but contain a contradiction: the internal label reads '(جنيه)' (pounds) while the trailing unit line says 'مليون جنيه' (million pounds). Taking the million‑unit label literally yields implausible EPS values, and the Arabic label suggests per‑share figures of ~8.74 EGP and ~4.28 EGP, but the conflict remains unresolved. Because all core financial figures are ambiguous or contradictory, no reliable ratio (P/E, margin, growth) can be derived. Consequently, there is insufficient evidence to support a buy, hold, or sell recommendation for ABUK, or to assess its suitability as a fertil‑ex",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "All revenue and net‑profit figures are AMBIGUOUS; cannot be used in calculations.",
+      "EPS figures suffer from a unit conflict; cannot be taken at face value.",
+      "No balance‑sheet data are provided.",
+      "Percentage rows lack clear labels and are ambiguous.",
+      "No COMI financials are supplied, limiting sector‑diversification assessment."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Evidence Analysis (ABUK only; no COMI financials provided)**\n\n### 1. [ABUK-ABUK_9M2026_results-p2-01]  \n- **As printed:** \"إيرادات النشاط | ٣١٤٨٨ | ١٦٥٧٨ | ٦٠٩٠ | ٧٩٦٤ | ٣٩١١ | %٠١٠٤ | unit: مليون جنيه\"  \n- **AMBIGUOUS:** Yes (page shows mixed units `['مليار', 'مليون']`; reliance on table unit line `'مليون جنيه'` noted but flagged ambiguous)  \n- **Figures in whole EGP** (applying `مليون جنيه` = million EGP): 31,488,000,000 ; 16,578,000,000 ; 6,090,000,000 ; 7,964,000,000 ; 3,911,000,000 EGP  \n- **Note:** The five numeric values likely represent revenue across sub-periods/segments for 9M ended 30 Sep 2026, but the mixed unit display prevents definitive identification of the column for the stated period.\n\n### 2. [ABUK-ABUK_9M2026_results-p2-02]  \n- **As printed:** \"إيرادات النشاط | ٣١٤٨٨ | ١٦٥٧٨ | ٦٠٩٠ | ٧٩٦٤ | ٣٩١١ | %٠١٠٤ | unit: مليون جنيه\"  \n- **AMBIGUOUS:** Yes (same unit ambiguity as p2-01, for 9M ended 30 Sep 2025)  \n- **Figures in whole EGP:** 31,488,000,000 ; 16,578,000,000 ; 6,090,000,000 ; 7,964,000,000 ; 3,911,000,000 EGP  \n- **Note:** Identical printed values to p2-01; period-specific column assignment remains unclear.\n\n### 3. [ABUK-ABUK_9M2026_results-p2-25]  \n- **As printed:** \"صافي ربح الفترة | ١٢٩٧٠ | ٦٣٩٦ | %١٠٣ | ٢٩٥٨ | ١٨٢٨ | ٦٠٦٢ | unit: مليون جنيه\"  \n- **AMBIGUOUS:** Yes (same unit ambiguity)  \n- **Figures in whole EGP:** 12,970,000,000 ; 6,396,000,000 ; (percentage %١٠٣ not computed) ; 2,958,000,000 ; 1,828,000,000 ; 606,200,000 EGP  \n- **Note:** Net profit for 9M ended 30 Sep 2026; AMBIGUOUS flag means these figures must not be used for margin or growth calculations.\n\n### 4. [ABUK-ABUK_9M2026_results-p2-26]  \n- **As printed:** \"صافي ربح الفترة | ١٢٩٧٠ | ٦٣٩٦ | %١٠٣ | ٢٩٥٨ | ١٨٢٨ | ٦٠٦٢ | unit: مليون جنيه\"  \n- **AMBIGUOUS:** Yes (for 9M ended 30 Sep 2025)  \n- **Figures in whole EGP:** same as p2-25 but for the 2025 comparative period.\n\n### 5. [ABUK-ABUK_9M2026_results-p2-31]  \n- **As printed:** \"نصيب السهم الأساسي في الأرباح ) جنيه ( | ٨،٧٤ | ٤،٢٨ | %١٠٤ | ١٩٩ | ١،٢٣ | ٦٦٢ | unit: مليون جنيه\"  \n- **Verified:** Yes (per evidence tag)  \n- **Unit declared:** `مليون جنيه` (million EGP) per the table unit line, though the Arabic label inside the row reads `\"(جنيه)\"` (pounds)  \n- **Figures in whole EGP** applying stated unit `مليون`: 8,740,000 ; 4,280,000 ; 199,000,000 ; 1,230,000 ; 662,000,000 EGP  \n- **Data quality note:** The internal label `\"(جنيه)\"` strongly suggests the EPS values are 8.74 EGP and 4.28 EGP per share (consistent with the cutoff ABUK price of 76.21 EGP). The trailing `\"unit: مليون جنيه\"` is likely a PDF extraction artifact; taking it literally yields implausible EPS (e.g., 8.74 million EGP per share). This conflict is the most significant data quality risk in the evidence set.\n\n### 6. [ABUK-ABUK_9M2026_results-p2-32]  \n- **As printed:** \"نصيب السهم الأساسي في الأرباح ) جنيه ( | ٨،٧٤ | ٤،٢٨ | %١٠٤ | ١٩٩ | ١،٢٣ | ٦٦٢ | unit: مليون جنيه\"  \n- **Verified:** Yes (for 9M ended 30 Sep 2025)  \n- **Figures in whole EGP** applying stated unit `مليون`: 8,740,000 ; 4,280,000 ; 199,000,000 ; 1,230,000 ; 662,000,000 EGP  \n- **Same data quality note** as p2-31, for the 2025 comparative period.\n\n---\n\n### Analysis Summary\n\n**Profitability**  \n- The two EPS rows (p2-31, p2-32) are the only verified figures, but the unit conflict between the label `\"(جنيه)\"` and the trailing `\"unit: مليون جنيه\"` creates a critical ambiguity. If the label is authoritative, 9M2026 EPS ≈ 8.74 EGP/share, giving a P/E ≈ 76.21 / 8.74 ≈ 8.7x at the cutoff price. If the `مليون` unit is taken literally, EPS becomes 8.74 million EGP/share, which is financially implausible.  \n- Net profit and revenue figures (p2-01/02, p2-25/26) are **AMBIGUOUS**; therefore, net profit margin, operating margin, and all derived profitability ratios cannot be computed from the evidence provided.  \n- Percentage figures (`%٠١٠٤`, `%١٠٣`, `%١٠٤`) appear across rows but their meaning (tax rate, growth rate, etc.) is not clarified; they remain ambiguous and are not used in any computation.\n\n**Growth**  \n- Revenue comparison between 9M2026 and 9M2025 is printed but both periods are AMBIGUOUS; any growth rate would inherit this uncertainty and is unreliable.  \n- EPS growth, if the label unit is assumed, would be (8.74 − 4.28) / 4.28 ≈ 106% increase, but this depends on resolving the unit conflict.\n\n**Balance Sheet**  \n- No evidence rows pertaining to the balance sheet (assets, liabilities, equity) are included. The analysis of balance sheet strength, leverage, or liquidity cannot be performed.\n\n**Risks & Data Quality**  \n- **Unit Ambiguity:** Four of six evidence items are explicitly AMBIGUOUS because the page displays mixed units (billion and million) while the table unit line states `\"مليون جنيه\"`. This directly affects revenue and net profit, the core metrics for profitability analysis.  \n- **Unit Conflict in Verified Rows:** The two EPS rows are marked verified but contain a contradiction: the internal text labels earnings `\"in pounds\"`, yet the unit line specifies `\"million pounds\"`. This is the paramount data quality risk, as it impacts per-share metrics and valuation.  \n- **Missing Period Context:** The revenue and net profit rows show multiple side-by-side numeric values without clear column headers for the stated period, making isolation of a single figure difficult.  \n- **Percentage Interpretability:** The percentage rows lack descriptive labels; their numerical meaning (e.g., 10.4% vs 104%, year-over-year change vs tax rate) is uncertain.\n\n**Portfolio Context (information only; no recommendation)**  \n- Current holdings: 200 shares COMI at 128.00 EGP (market value 25,600 EGP) + 40,000 EGP cash.  \n- ABUK share price at cutoff: 76.21 EGP.  \n- The evidence concerns ABUK (consistent with a fertilizer-exporter diversification goal). No COMI financials are provided.  \n- Given the data quality issues identified, any assessment of ABUK as a fertilizer exporter for diversification would require resolved, clean financial statements. The current evidence does not support reliable evaluation of profitability, growth, or balance sheet metrics.\n\n**Conclusion per Instructions**  \nNo actionable investment recommendation is provided, as the decision agent handles portfolio actions. The analysis above isolates the usable facts, flags all ambiguities, and highlights data quality risks that must be resolved before the decision agent can evaluate the portfolio addition or retention. All figures are cited with their evidence IDs and values in whole Egyptian pounds as directed; AMBIGUOUS figures are explicitly flagged and no computations are performed with them.",
+    "investor": "**Investor-suitability assessment (information cutoff: 2026-11-18)**\n\n### 1. Horizon: 5 years\n- A 5-year horizon is compatible with medium-risk investing. It allows enough time to absorb moderate volatility without forced liquidation, aligning with the investor’s loss‑capacity profile.\n\n### 2. Liquidity needs: emergency fund kept separate\n- The portfolio shows 40,000.00 EGP in cash. With a separate emergency fund already in place, this cash is investable surplus and does not impinge on liquidity requirements.\n\n### 3. Willingness to accept losses & financial ability to withstand losses: both medium\n- The investor can tolerate moderate declines (roughly 10–15% on a new position) but should avoid overconcentration or high‑volatility exposures. The 5-year horizon supports recovery if losses materialise.\n\n### 4. Current concentration\n- **COMI holding:** 200 shares × 128.00 EGP = **25,600 EGP**\n- **Cash:** 40,000.00 EGP\n- **Total portfolio value:** 65,600 EGP\n- **COMI represents ~39% of the portfolio.** The stated goal is to “add a fertilizer exporter for diversification.” Whether this increases or reduces sector concentration depends on the nature of the new holding relative to COMI. If COMI is also a fertilizer play, concentration risk may rise; if the new exposure is in a different sub‑sector/region, diversification is enhanced.\n\n### 5. How much cash could reasonably be committed\n- Given medium loss capacity, a 5-year horizon, and no pressure on emergency liquidity, a **meaningful but not overcommitted** allocation would typically draw from the 40,000 EGP free cash. A reasonable range, without analysing specific asset risk metrics, is **40–60% of free cash** (i.e., 16,000–24,000 EGP), leaving a liquidity buffer and preserving flexibility. The 200 COMI shares could also be partially or fully liquidated (up to 25,600 EGP) if rebalancing is desired, though this would reduce the existing position.\n\n### 6. What the portfolio allows (can sell / free cash)\n- **Free cash:** 40,000.00 EGP (investable, emergency fund separate)\n- **Sellable holdings:** COMI 200 shares at the cutoff price of 128.00 EGP/share = **up to 25,600 EGP** in proceeds\n- **Tradable symbol noted:** ABUK is priced at 76.21 EGP/share at the cutoff. It is not currently held, so purchasing it would be a new allocation. *Per instructions, I am not analysing ABUK’s financials or recommending a trade.*\n\n### 7. Suitability summary\n- The investor’s profile (5-year horizon, medium loss willingness/capacity, separate emergency fund) supports a **moderate‑sized new position** in a fertilizer exporter, funded from the 40,000 EGP cash reserve, while maintaining enough liquidity for emergencies and the existing COMI holding. The existing ~39% concentration in COMI should be weighed against the diversification goal of the new holding. The assessment above outlines fit across the requested dimensions without analysing company financials or prescribing a specific action.\n\n*Per the analyst role constraints: no company‑financial analysis is provided, and no buy/sell action is recommended. The investor should use this suitability framework to decide on allocation size, asset selection, and timing.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 103.239,
+      "input_tokens": 1335,
+      "output_tokens": 14869,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 28.052,
+      "input_tokens": 1329,
+      "output_tokens": 4095,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 15.66,
+      "input_tokens": 5259,
+      "output_tokens": 1384,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 146.954
+}

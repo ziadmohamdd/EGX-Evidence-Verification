@@ -92,6 +92,9 @@ def test_text_scale_error_is_caught():
     assert text_rules(rec_with(explanation="Net profit was 55,123 pounds.")) == ["text_value_mismatch"]
     assert text_rules(rec_with(explanation="Net profit was 55.1 million.")) == ["text_value_mismatch"]
     assert text_rules(rec_with(explanation="The price is 55.12 EGP.")) == []  # a price, not 55.1 bn
+    # showing the conversion is fine; the converted result is what must be cited
+    shown = "Profit was 55,123 × 1,000,000 = 55,123,000,000 pounds."
+    assert text_rules(rec_with(claim("e1", 55_123e6), explanation=shown)) == []
 
 
 def test_percentages_ratios_and_small_numbers_are_not_figures():

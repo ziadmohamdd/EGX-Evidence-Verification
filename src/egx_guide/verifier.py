@@ -34,6 +34,8 @@ _TEXT_NUMBER = re.compile(
     r"(?<![\w.,٫٬])(\d[\d,٬]*(?:[.٫]\d+)?(?:[eE][+-]?\d+)?)"
     r"(?:(\s*[%٪])|\s*(" + "|".join(sorted(map(re.escape, SCALE_WORDS), key=len, reverse=True)) + r")(?!\w))?",
     re.IGNORECASE)
+# "22,578,063 × 1,000" is the agent showing the unit conversion, not a scale error.
+_TIMES_UNIT = re.compile(r"\s*[×xX*]\s*1(?:[,\s]?000){1,3}(?!\d)")
 _DIGIT_MAP = str.maketrans({**{chr(0x0660 + i): str(i) for i in range(10)},
                             **{chr(0x06F0 + i): str(i) for i in range(10)}, "٫": ".", "٬": "", ",": ""})
 
@@ -138,6 +140,8 @@ def check_text(
             continue
         if t.whole_digits < 4 and not t.scaled:
             continue  # short plain numbers (prices like 82.50, share counts) match by chance
+        if _TIMES_UNIT.match(rec.explanation, t.end):
+            continue
         for e in usable:
             if abs(e.value) < EXACT_BELOW:
                 continue

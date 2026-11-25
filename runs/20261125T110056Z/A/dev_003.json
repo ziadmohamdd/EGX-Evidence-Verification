@@ -1,0 +1,47 @@
+{
+  "case_id": "dev_003",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "none",
+    "shares": 0,
+    "explanation": "The investor’s portfolio consists of ETEL (100 shares) and EFID (1500 shares) with a cash buffer of 15,000 EGP. Based on the FY2025 reported figures, ETEL shows higher operating revenue (106.7 bn EGP) and net profit (22.6 bn EGP) than EFID (20.9 bn revenue, 2.7 bn net profit). ETEL’s total equity (63.7 bn EGP) is also larger. Calculated net‑profit margins are 21.2 % for ETEL and 12.9 % for EFID, and return‑on‑equity ratios are 35.4 % and 47.1 % respectively, indicating ETEL’s stronger profitability on a relative basis. The price‑to‑earnings metric cannot be reliably computed because the EPS data are ambiguous (see unused figures). The investor’s goal of steady growth with some income, a 3‑5‑year horizon, and a need for 10 % liquidity within a year is compatible with holding the existing positions: the current cash already covers more than the required 10 % liquidity (15,000 EGP ≈ 25 % of the total portfolio value ≈ 59,795 EGP). No new purchases are warranted given the modest cash buffer and the ambiguous EPS;",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The proposed hold was blocked by the portfolio checks (cannot hold NONE: the investor owns none). No change to the portfolio is recommended.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "Blocked recommendation: hold 0 none"
+    ]
+  },
+  "blocked": true,
+  "violations": [
+    {
+      "rule": "hold_unowned",
+      "detail": "cannot hold NONE: the investor owns none"
+    }
+  ],
+  "proposed_portfolio": null,
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 33.189,
+      "input_tokens": 2076,
+      "output_tokens": 4064,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 33.191
+}

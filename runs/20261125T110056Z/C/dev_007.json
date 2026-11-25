@@ -1,0 +1,88 @@
+{
+  "case_id": "dev_007",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor needs 10,000 EGP in cash within 3 months for a family wedding. The current portfolio consists of 1,000 EGP cash and 200 EFID shares priced at 20.40 EGP/share, yielding a maximum liquidation value of 5,080 EGP (1,000 + 200*20.40). This leaves a shortfall of approximately 4,920 EGP, meaning the portfolio alone cannot meet the cash requirement. The evidence set provides only top‑line revenue, net profit, and EPS for EFID, with the revenue figure for 2024 and 2025 being identical and flagged as AMBIGUOUS; it does not include dividend policy, cash‑flow data, price history, or any information on the investor’s ability to obtain external funding. Given the low risk tolerance and the lack of data on future share price movements, dividend payments, or other liquidity sources, there is insufficient evidence to support a responsible recommendation to buy, hold, sell, or keep the current holdings in order to meet the 10,000 EGP need. Additional information such as the investor’s cost basis in EFID, expected ",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02"
+    ],
+    "limitations": [
+      "Revenue figure is ambiguous (identical for 2024 and 2025) and cannot be used for reliability assessment.",
+      "No dividend or cash‑flow information is provided, so distributable cash from profit is unknown.",
+      "No market price history or volatility data; the given cut‑off price of 20.40 EGP may not reflect future price.",
+      "No information on the investor’s cost basis or other assets/liabilities.",
+      "No data on external funding options or the ability to adjust the wedding budget/horizon."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor needs 10,000 EGP in cash within 3 months for a family wedding. The current portfolio consists of 1,000 EGP cash and 200 EFID shares priced at 20.40 EGP/share, yielding a maximum liquidation value of 5,080 EGP (1,000 + 200*20.40). This leaves a shortfall of approximately 4,920 EGP, meaning the portfolio alone cannot meet the cash requirement. The evidence set provides only top‑line revenue, net profit, and EPS for EFID, with the revenue figure for 2024 and 2025 being identical and flagged as AMBIGUOUS; it does not include dividend policy, cash‑flow data, price history, or any information on the investor’s ability to obtain external funding. Given the low risk tolerance and the lack of data on future share price movements, dividend payments, or other liquidity sources, there is insufficient evidence to support a responsible recommendation to buy, hold, sell, or keep the current holdings in order to meet the 10,000 EGP need. Additional information such as the investor’s cost basis in EFID, expected ",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02"
+    ],
+    "limitations": [
+      "Revenue figure is ambiguous (identical for 2024 and 2025) and cannot be used for reliability assessment.",
+      "No dividend or cash‑flow information is provided, so distributable cash from profit is unknown.",
+      "No market price history or volatility data; the given cut‑off price of 20.40 EGP may not reflect future price.",
+      "No information on the investor’s cost basis or other assets/liabilities.",
+      "No data on external funding options or the ability to adjust the wedding budget/horizon."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 1000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Investor Position & Liquidity Needs (from prompt)**\n- Goal: 10,000 EGP cash within 3 months\n- Current cash: 1,000 EGP\n- Holdings: 200 shares EFID\n- Cut-off price EFID: 20.40 EGP/share (given; not from evidence set)\n- Portfolio liquidation value (if sold at cut-off price): 200 × 20.40 = 4,080 EGP + 1,000 EGP cash = **5,080 EGP total**\n- **Liquidity shortfall**: at least **4,920 EGP** to meet the 10,000 EGP need, assuming immediate sale at the stated cut-off price.\n\n*Note: The following analysis uses only the evidence provided. No dividend policy, cash-flow, or balance-sheet data beyond the income-statement excerpts is available.*\n\n---\n\n### Evidence Analysis: Profitability & Growth\nAll figures below are in **EGP (whole pounds)**, as the report's unit line states `unit: EGP`.\n\n| Metric | 2025 | 2024 | Evidence |\n|--------|------|------|----------|\n| Revenue (consolidated) | 20,915,072,432 | 20,915,072,432 | [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01], [p6-02] |\n| Net profit for the year (consolidated) | 2,695,301,670 | 1,606,727,698 | [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30], [p6-31] |\n| Basic and Diluted EPS (consolidated) | 2.18 EGP | 1.09 EGP | [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38], [p6-39] |\n\n**Growth observation**: Net profit increased by ~68% (1.6B → 2.7B) year-over-year, and EPS doubled (1.09 → 2.18 EGP). Revenue is reported identically for both periods.\n\n**AMBIGUOUS FIGURE FLAG**: Revenue is exactly the same in 2024 and 2025 (20,915,072,432 EGP). This is flagged as ambiguous—it may reflect a reporting artifact, accounting policy change, or data-quality issue. No computation (e.g., growth rate) should be performed with this figure until resolved.\n\n---\n\n### Data Quality & Missing Evidence\n- **Unit clarification**: All figures are in full EGP (not thousands/millions), as printed.\n- **Scope limited**: Evidence provides only top-line revenue, net profit, and EPS. No cost-of-goods-sold, operating expenses, cash-flow, assets/liabilities, dividend history, or balance-sheet items are included.\n- **No dividend information**: EPS is given, but dividend per share, payout ratio, or cash-dividend policy is not. Inability to assess cash return to shareholders.\n- **No market-price history**: Only the cut-off price (20.40 EGP) is provided; no trend, volume, or liquidity data.\n- **No related-party or segment breakdowns**: Cannot assess business-segment performance or risk concentration.\n\n---\n\n### Liquidity Feasibility Assessment (evidence + given data)\n- **Maximum immediate cash from portfolio**: 5,080 EGP (1,000 cash + 200 EFID shares at 20.40 EGP).\n- **Shortfall to meet 10,000 EGP need**: ≥ 4,920 EGP.\n- **Evidence-based considerations**: \n  - EFID generated 2.7B EGP net profit in 2025, but without dividend or cash-flow data, it is unclear how much of this profit translates to distributable cash.\n  - The ambiguous revenue figure prevents reliable trend analysis or sustainability assessment.\n  - Low risk tolerance means price depreciation of EFID between now and the wedding date could further reduce available cash if the portfolio is held.\n  - No evidence supports whether EFID’s profit growth is sustainable, whether it typically pays dividends, or if the share price is volatile.\n\n---\n\n### Decision Framework (no action recommended per instructions)\nThe decision agent must weigh:\n1. **Can the 10,000 EGP need be met within 3 months using only the portfolio?** Based on current data: no—the portfolio provides at most 5,080 EGP, leaving a ~4,920 EGP gap.\n2. **What external actions might be needed?** Selling additional assets, securing a short-term loan, or adjusting the wedding budget/timing. These fall outside the evidence scope.\n3. **Risk of holding EFID**: Low loss willingness suggests price risk is a concern; no evidence supports price stability or downside protection.\n4. **Data reliability**: The ambiguous revenue figure reduces confidence in the robustness of the reported profitability trend.\n\n**Per protocol: No action is recommended here. The decision agent should consider the liquidity gap, the ambiguous financial data, the investor’s low risk tolerance, and the need for 10,000 EGP in cash within 3 months, using any additional information beyond this evidence set.**",
+    "investor": "**Investor-suitability assessment**\n\n- **Horizon:** The 3-month horizon matches the wedding timeline, but the portfolio’s liquidity capacity is fundamentally insufficient for the cash requirement.\n- **Liquidity needs:** Requires 10,000 EGP in cash within 3 months. Current cash: 1,000 EGP. EFID holding: 200 shares × 20.40 EGP = 4,080 EGP. Combined liquidable assets: 5,080 EGP. This covers only ~51% of the needed amount, leaving a shortfall of ~4,920 EGP.\n- **Loss willingness and capacity:** Low. The investor has limited ability to withstand losses. Any conversion of EFID to cash should be evaluated against the investor’s (unspecified) cost basis; selling at the cutoff price of 20.40 EGP could result in a gain or loss depending on acquisition cost, and the low capacity prioritises capital preservation.\n- **Current concentration:** 100% exposure to EFID plus cash. High concentration in a single equity increases risk, especially when that asset must be liquidated to meet a non-negotiable cash need.\n- **What the portfolio allows:** The only saleable asset is the 200 EFID shares, convertible to ~4,080 EGP cash. The existing 1,000 EGP cash is already free. No other holdings or reserves are indicated. The portfolio can therefore commit a maximum of approximately 5,080 EGP in cash if EFID is fully liquidated.\n- **Cash that could reasonably be committed:** Given the shortfall, the current portfolio alone cannot meet the 10,000 EGP need. The investor may need to explore external funding, extend the horizon, or accept that only a partial amount can be sourced from present holdings. With low loss willingness, any partial sale should be executed cautiously, ideally at or near the 20.40 EGP market price.\n\n*Per instructions: EFID company financials (revenue, net profit, EPS) have not been analysed, and no specific action (e.g., \"sell\" or \"hold\") is recommended. The assessment outlines suitability constraints and portfolio liquidity capabilities to inform the investor’s decision.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 28.803,
+      "input_tokens": 1027,
+      "output_tokens": 4090,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 19.486,
+      "input_tokens": 1021,
+      "output_tokens": 3704,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 22.267,
+      "input_tokens": 3581,
+      "output_tokens": 3363,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 70.559
+}

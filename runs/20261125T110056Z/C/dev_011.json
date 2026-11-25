@@ -1,0 +1,136 @@
+{
+  "case_id": "dev_011",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 3921,
+    "explanation": "Recommendation: buy EFID (Edita Pharma) with 3,921 shares using the 80,000 EGP cash. Evidence: EFID's net profit grew from 1,606,727,698 EGP in 2024 to 2,695,301,670 EGP in 2025, a +67.8% increase (evidence IDs EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑30 and p6‑31). 2025 basic/diluted EPS = 2.18 EGP (evidence ID EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑38). Using the market price of 20.40 EGP (given cutoff), the implied P/E ratio is 20.40 / 2.18 ≈ 9.36, indicating the stock is relatively cheap versus earnings. The investor's long‑term growth goal (7+ years), medium risk tolerance, and available cash make EFID suitable: strong earnings growth, low P/E, and the purchase of 3,921 shares (cost 79,968.48 EGP) leaves a small cash buffer. Key ambiguities excluded: ETEL's net profit and EPS are ambiguous (identical printed text for 2025/2024), so growth and P/E cannot be computed. COMI's EPS unit is ambiguous (stated in EGP thousands), so its P/E is uncertain and not used. Limitations: All figures derived",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID 2025 net profit for the year = 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID 2024 net profit for the year = 1,606,727,698 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID 2025 basic and diluted EPS = 2.18 EGP"
+      },
+      {
+        "evidence_id": "given_price_EFID",
+        "stated_value": 20.4,
+        "statement": "Market price per share for EFID at cutoff 2026-11-18 = 20.40 EGP"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39"
+    ],
+    "limitations": [
+      "ETEL net profit and EPS are ambiguous (identical printed text for 2025/2024), so growth and P/E cannot be computed.",
+      "COMI EPS unit ambiguity (EGP thousands) makes its P/E ratio uncertain and it is not used in the decision.",
+      "Market price for EFID is taken from the cutoff given in the prompt, not from the evidence list.",
+      "All financial figures are taken solely from the provided evidence; no outside knowledge or later events are considered.",
+      "The decision assumes the investor's medium risk tolerance and long‑term horizon; other factors (balance‑sheet, dividends, macro‑economic) are not evaluated."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 3921,
+    "explanation": "Recommendation: buy EFID (Edita Pharma) with 3,921 shares using the 80,000 EGP cash. Evidence: EFID's net profit grew from 1,606,727,698 EGP in 2024 to 2,695,301,670 EGP in 2025, a +67.8% increase (evidence IDs EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑30 and p6‑31). 2025 basic/diluted EPS = 2.18 EGP (evidence ID EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑38). Using the market price of 20.40 EGP (given cutoff), the implied P/E ratio is 20.40 / 2.18 ≈ 9.36, indicating the stock is relatively cheap versus earnings. The investor's long‑term growth goal (7+ years), medium risk tolerance, and available cash make EFID suitable: strong earnings growth, low P/E, and the purchase of 3,921 shares (cost 79,968.48 EGP) leaves a small cash buffer. Key ambiguities excluded: ETEL's net profit and EPS are ambiguous (identical printed text for 2025/2024), so growth and P/E cannot be computed. COMI's EPS unit is ambiguous (stated in EGP thousands), so its P/E is uncertain and not used. Limitations: All figures derived",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID 2025 net profit for the year = 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID 2024 net profit for the year = 1,606,727,698 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID 2025 basic and diluted EPS = 2.18 EGP"
+      },
+      {
+        "evidence_id": "given_price_EFID",
+        "stated_value": 20.4,
+        "statement": "Market price per share for EFID at cutoff 2026-11-18 = 20.40 EGP"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39"
+    ],
+    "limitations": [
+      "ETEL net profit and EPS are ambiguous (identical printed text for 2025/2024), so growth and P/E cannot be computed.",
+      "COMI EPS unit ambiguity (EGP thousands) makes its P/E ratio uncertain and it is not used in the decision.",
+      "Market price for EFID is taken from the cutoff given in the prompt, not from the evidence list.",
+      "All financial figures are taken solely from the provided evidence; no outside knowledge or later events are considered.",
+      "The decision assumes the investor's medium risk tolerance and long‑term horizon; other factors (balance‑sheet, dividends, macro‑economic) are not evaluated."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 11.6,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 3921
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Analysis of Net Profit Growth (2024 → 2025) and Price-to-Earnings (P/E) Ratios**  \n*All figures cited per [evidence_id]. Units applied as printed. Ambiguous figures flagged; no computation performed with them.*\n\n---\n\n### 1. Telecom Egypt (ETEL)\n- **Net profit for the year**  \n  - [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] period 31/12/2025: printed \"22 578 063 10 111 328\" | unit: L.E.(000)  \n  - [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] period 31/12/2024: *identical* printed text \"22 578 063 10 111 328\" | unit: L.E.(000)  \n  - **AMBIGUOUS**: The exact same printed line appears for both 2025 and 2024 periods. The first number (22,578,063) and second (10,111,328) cannot be reliably assigned to their respective years. **Net profit growth cannot be computed.**  \n- **Basic/diluted EPS (L.E. / Share)**  \n  - [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] period 31/12/2025: \"11.93 4.79\" | unit: L.E.(000)  \n  - [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56] period 31/12/2024: *identical* \"11.93 4.79\" | unit: L.E.(000)  \n  - **AMBIGUOUS**: Unit L.E.(000) is inappropriate for an per-share metric; the two numbers (11.93, 4.79) are not clearly mapped to 2025/2024. **P/E ratio cannot be computed.**  \n- **Market price**: 141.95 EGP (given cutoff).\n\n### 2. Commercial International Bank (COMI)\n- **Net profit for the year**  \n  - [COMI-COMI_FY2025_consolidated_condensed_en-p5-33] period Dec. 31, 2025: \"82,258,815 | 55,256,732\" | unit: (All amounts in EGP thousands)  \n  - [COMI-COMI_FY2025_consolidated_condensed_en-p5-34] period Dec. 31, 2024: same structure.  \n  - 2025 NP = 82,258,815 × 1,000 = 82,258,815,000 EGP; 2024 NP = 55,256,732 × 1,000 = 55,256,732,000 EGP.  \n  - **Growth**: (82,258,815 − 55,256,732) / 55,256,732 ≈ **+48.9%** (in EGP thousands).  \n- **Basic EPS**  \n  - [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] period Dec. 31, 2025: \"18.25 | 14.72\" | unit: (All amounts in EGP thousands)  \n  - **AMBIGUOUS**: The statement-wide unit \"EGP thousands\" conflicts with EPS being a per-share figure. If 18.25 is the 2025 EPS in EGP, P/E would be computed; if it implies 18,250 EGP, the ratio collapses. The unit ambiguity flags this figure.  \n- **Market price**: 128.00 EGP (given cutoff).  \n  - *If EPS 2025 = 18.25 EGP, implied P/E = 128.00 / 18.25 ≈ 7.01 (subject to unit ambiguity).*\n\n### 3. Edita Pharma (EFID)\n- **Net profit for the year (consolidated)**  \n  - [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] period 31 December 2025: \"2 695 301 670 | 1 606 727 698\" | unit: EGP  \n  - [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31] period 31 December 2024: same structure.  \n  - 2025 NP = 2,695,301,670 EGP; 2024 NP = 1,606,727,698 EGP.  \n  - **Growth**: (2,695,301,670 − 1,606,727,698) / 1,606,727,698 ≈ **+67.8%**.  \n- **Basic and diluted EPS (consolidated)**  \n  - [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] period 31 December 2025: \"2.18 | 1.09\" | unit: EGP  \n  - [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39] period 31 December 2024: same structure.  \n  - 2025 EPS = 2.18 EGP; 2024 EPS = 1.09 EGP.  \n- **Market price**: 20.40 EGP (given cutoff).  \n  - **Implied P/E (2025)**: 20.40 / 2.18 ≈ **9.36**.\n\n### 4. Talaat Moustafa Group (TMGH)\n- **Net profit for the year (consolidated)**  \n  - [TMGH-TMGH_FY2025_consolidated_en-p7-55] period 2025: \"18,201,981,482 | 12,769,517,325\" | unit: LE  \n  - [TMGH-TMGH_FY2025_consolidated_en-p7-62] period 2024 (Restated): same figures.  \n  - 2025 NP = 18,201,981,482 LE; 2024 NP (restated) = 12,769,517,325 LE.  \n  - **Growth**: (18,201,981,482 − 12,769,517,325) / 12,769,517,325 ≈ **+42.5%**.  \n- **Earnings per Share (consolidated)**  \n  - [TMGH-TMGH_FY2025_consolidated_en-p7-61] period 2025: \"6.98 | 4.38\" | unit: LE  \n  - [TMGH-TMGH_FY2025_consolidated_en-p7-62] period 2024 (Restated): same.  \n  - 2025 EPS = 6.98 LE; 2024 EPS = 4.38 LE.  \n- **Market price**: 82.50 EGP (given cutoff).  \n  - **Implied P/E (2025)**: 82.50 / 6.98 ≈ **11.82** (note: price in EGP, EPS in LE; ratio assumes parity or is indicative).\n\n---\n\n### Data Quality & Ambiguity Summary\n| Company | Net Profit Growth | EPS / P/E | Key Flags |\n|---------|-------------------|-----------|-----------|\n| **ETEL** | **Ambiguous** – identical printed text for 2025 & 2024 periods ([p6-35], [p6-36]); growth not computable. | **Ambiguous** – unit L.E.(000) for EPS ([p6-55], [p6-56]); two numbers unclear per year. | Do not compute with these figures. |\n| **COMI** | Clear growth +48.9% (EGP thousands) ([p5-33], [p5-34]). | **Ambiguous** – EPS unit conflict: statement claims \"EGP thousands\" ([p5-39]), but EPS is per-share. P/E ratio validity uncertain. | Unit ambiguity on EPS. |\n| **EFID** | Clear growth +67.8% (EGP) ([p6-30], [p6-31]). | Clear EPS 2.18 EGP (2025) ([p6-38]); P/E ≈ 9.36. | None. |\n| **TMGH** | Clear growth +42.5% (LE) ([p7-55], [p7-62]). | Clear EPS 6.98 LE (2025) ([p7-61]); P/E ≈ 11.82. | None, but note currency mismatch (price EGP, EPS LE) if strict. |\n\n### Conclusion (analysis only; no recommendation)\n- **Net profit growth** (2024 → 2025): EFID leads at ~67.8%, COMI at ~48.9%, TMGH at ~42.5%, ETEL cannot be determined due to ambiguous reporting.  \n- **Implied P/E ratios** (using given market prices): EFID ~9.36, TMGH ~11.82, COMI ~7.01 (subject to unit ambiguity), ETEL not computable.  \n- All figures are derived solely from the cited evidence. The decision agent should consider these metrics alongside risk, balance‑sheet health, and the investor’s medium‑loss‑willingness profile.\n\n*No investment action is recommended here; the decision agent will act on the full analysis.*",
+    "investor": "**Investor Suitability Assessment**\n\n- **Horizon & Goal:** Your 7+ year horizon aligns well with a long-term growth objective, allowing time to ride market cycles and compound returns.\n- **Liquidity Needs:** You maintain a separate emergency fund, so the 80,000.00 EGP cash balance is discretionary and can be committed to investments without compromising liquidity safety.\n- **Loss Willingness & Capacity:** Both are rated medium. This suggests a moderate risk tolerance: you can accept some volatility, but should avoid overconcentration or positions that could materially impact your overall financial stability if they decline.\n- **Current Concentration:** Your portfolio holds no equities, giving you full flexibility to build a diversified position from scratch.\n- **Cash Commitable:** 80,000.00 EGP is fully available for investment, subject to your chosen allocation strategy.\n\n**Portfolio Allowances (at cutoff 2026-11-18)**\n- **Free cash:** 80,000.00 EGP (no restrictions, no outstanding margin or pending settlements).\n- **Salable holdings:** None currently held.\n- **Share-quantity reference (prices for illustration only, not recommendations):**\n  - COMI at 128.00 EGP: ~624 shares could be purchased.\n  - EFID at 20.40 EGP: ~3,921 shares could be purchased.\n  - ETEL at 141.95 EGP: ~563 shares could be purchased.\n  - TMGH at 82.50 EGP: ~970 shares could be purchased.\n\n**Compliance Note**\nPer my role as an investor-suitability analyst, I am constrained from analysing company financials, calculating valuation ratios (such as P/E), or making specific buy/hold/sell recommendations. The comparison of net profit growth, P/E multiples, or a decision on which stock to purchase with your cash falls outside the scope of this assessment. Any investment choice should be based on your own due diligence, risk assessment, and, if needed, guidance from a qualified financial adviser."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 68.999,
+      "input_tokens": 2189,
+      "output_tokens": 11570,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 18.802,
+      "input_tokens": 2183,
+      "output_tokens": 3239,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 38.813,
+      "input_tokens": 6005,
+      "output_tokens": 6283,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 126.616
+}

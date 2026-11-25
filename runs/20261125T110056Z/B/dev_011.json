@@ -1,0 +1,165 @@
+{
+  "case_id": "dev_011",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 3921,
+    "explanation": "The investor seeks long‑term growth with medium risk. Using the 2024‑2025 net‑profit figures and earnings‑per‑share data supplied, the four listed companies show the following growth and valuation metrics (P/E = price per share ÷ EPS).  Net‑profit growth (2024→2025): EFID +67.8 % (2,695,301,670 EGP vs 1,606,727,698 EGP); TMGH +42.5 %; COMI +48.9 %; ETEL +123.3 % (but its EPS is in L.E.(000) making the P/E unreliable).  P/E ratios (price ÷ EPS, using the EPS figure that is not marked ambiguous): EFID 9.36 (20.40 EGP ÷ 2.18 EGP); TMGH 11.82 (82.50 EGP ÷ 6.98 EGP); COMI 0.007 (128 EGP ÷ 18,250 EGP – EPS treated as ambiguous); ETEL 0.012 (141.95 EGP ÷ 11,930 EGP – EPS ambiguous).  Because EFID has the highest net‑profit growth among the companies with a clear, non‑ambiguous EPS and a reasonable P/E of about 9.4, it is the most compelling choice for long‑term growth within the investor’s cash limit.  The purchase of 3,921 EFID shares costs 79,968.40 EGP, leaving a small cash buffer.  Figures from ETEL and COMI EPS",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 3921,
+    "explanation": "The investor seeks long‑term growth with medium risk over a 7+ year horizon. Using the 2024‑2025 net‑profit figures and earnings‑per‑share data from the evidence, the four listed companies (excluding CIB, for which no evidence is provided) show the following net‑profit growth and valuation metrics (P/E = price per share ÷ EPS, with EPS in base units).  [removed: figure could not be verified]  [removed: figure could not be verified]  EFID offers the highest net‑profit growth among the companies with a clear,non",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID net profit for the year 2025 = 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID net profit for the year 2024 = 1,606,727,698 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS 2025 = 2.18 EGP per share"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH EPS 2025 = 6.98 LE per share"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year 2025 = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year 2024 = 55,256,732,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55"
+    ],
+    "limitations": [
+      "No financial evidence for CIB was provided; therefore CIB cannot be included in the comparison.",
+      "ETEL’s EPS is reported in L.E.(000) and is treated as ambiguous; its P/E ratio is excluded from the valuation analysis.",
+      "All P/E calculations use the price per share at the 2026‑11‑18 cutoff and the EPS figures as printed; any change in price or EPS would alter the ratios.",
+      "The recommendation assumes the investor can purchase whole shares at the given prices and that cash remaining after the purchase will be kept as a small buffer.",
+      "These figures could not be verified and were not used: Basic, Net profit for the year, Net profit for the year, Net profit for the year (consolidated). Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 11.6,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 3921
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"2,695,301,670\", which is 'Net profit for the year (consolidated)' (2.6953e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"1,606,727,698\", which is 'Net profit for the year (consolidated)' (1.60673e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"2.18\", which is 'Basic and Diluted earnings per share (consolidated)' (2.18), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"6.98\", which is 'Earnings per Share (consolidated)' (6.98), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"18,250\" but evidence 'Net profit for the year (consolidated)' is 1.8202e+10 [Net profit for the year | | 18,201,981,482 | 12,769,517,325 | unit: LE] (looks like a scale error by 1e+06)"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "rule": "value_mismatch",
+        "detail": "stated 1.27695e+10 but evidence 'Net profit for the year (consolidated)' is 1.8202e+10 [Net profit for the year | | 18,201,981,482 | 12,769,517,325 | unit: LE]"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "rule": "value_mismatch",
+        "detail": "stated 18,250 but evidence 'Basic' is 18.25 [| Basic | | 18.25 | 14.72 | | unit: (All amounts are shown in EGP thousands)] (looks like a scale error by 0.001)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"22,578,063,000\", which is 'Net profit for the year' (2.25781e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"10,111,328,000\", which is 'Net profit for the year' (1.01113e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"18,250\" but evidence 'Net profit for the year (consolidated)' is 1.8202e+10 [Net profit for the year | | 18,201,981,482 | 12,769,517,325 | unit: LE] (looks like a scale error by 1e+06)"
+      }
+    ],
+    "dropped": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55"
+    ],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 34.094,
+      "input_tokens": 2989,
+      "output_tokens": 5477,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 46.183,
+      "input_tokens": 3954,
+      "output_tokens": 7517,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 80.281
+}

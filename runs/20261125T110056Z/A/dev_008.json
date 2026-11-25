@@ -1,0 +1,81 @@
+{
+  "case_id": "dev_008",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The friend's claim that Telecom Egypt (ETEL) made a net profit of 225.9 billion pounds in 2025 is **not supported** by the evidence. The reported net profit for the year ending 31/12/2025 is 22,578,063 thousand L.E. (≈ 22.6 billion L.E.), and for 2024 it is 10,111,328 thousand L.E. (≈ 10.1 billion L.E.). The ratio between the two years is about 2.2, not more than ten times. The price‑to‑earnings ratio based on the 2025 EPS of 11.93 L.E. per share and the current share price of 141.95 L.E. is roughly 12, which is moderate but does not by itself justify deploying all available cash into the stock. The investor’s profile (5‑year horizon, medium risk tolerance, need for liquidity) suggests maintaining a diversified portfolio rather than concentrating remaining cash in a single equity. Therefore, the recommended action is to **hold** the existing ETEL position and keep the cash reserve for other opportunities or to replenish the emergency fund.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for the year 2025 is 22,578,063 thousand L.E. (≈ 22.6 billion L.E.), refuting the friend's 225.9 billion claim."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit for the year 2024 is 10,111,328 thousand L.E. (≈ 10.1 billion L.E.), showing the profit more than doubled, not increased tenfold."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Financial figures are historical and do not guarantee future performance.",
+      "No data on dividends, cash flow, or forward‑looking guidance are provided.",
+      "The EPS unit is printed as L.E.(000); the values are treated as L.E. per share for P/E calculation.",
+      "Investor’s risk tolerance and liquidity needs are not reflected in the company’s reported metrics alone."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The friend's claim that Telecom Egypt (ETEL) made a net profit of 225.9 billion pounds in 2025 is **not supported** by the evidence. The reported net profit for the year ending 31/12/2025 is 22,578,063 thousand L.E. (≈ 22.6 billion L.E.), and for 2024 it is 10,111,328 thousand L.E. (≈ 10.1 billion L.E.). The ratio between the two years is about 2.2, not more than ten times. The price‑to‑earnings ratio based on the 2025 EPS of 11.93 L.E. per share and the current share price of 141.95 L.E. is roughly 12, which is moderate but does not by itself justify deploying all available cash into the stock. The investor’s profile (5‑year horizon, medium risk tolerance, need for liquidity) suggests maintaining a diversified portfolio rather than concentrating remaining cash in a single equity. Therefore, the recommended action is to **hold** the existing ETEL position and keep the cash reserve for other opportunities or to replenish the emergency fund.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for the year 2025 is 22,578,063 thousand L.E. (≈ 22.6 billion L.E.), refuting the friend's 225.9 billion claim."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit for the year 2024 is 10,111,328 thousand L.E. (≈ 10.1 billion L.E.), showing the profit more than doubled, not increased tenfold."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Financial figures are historical and do not guarantee future performance.",
+      "No data on dividends, cash flow, or forward‑looking guidance are provided.",
+      "The EPS unit is printed as L.E.(000); the values are treated as L.E. per share for P/E calculation.",
+      "Investor’s risk tolerance and liquidity needs are not reflected in the company’s reported metrics alone."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 50000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 150
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 28.138,
+      "input_tokens": 2098,
+      "output_tokens": 3294,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 28.14
+}

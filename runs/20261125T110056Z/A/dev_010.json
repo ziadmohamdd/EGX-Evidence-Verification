@@ -1,0 +1,79 @@
+{
+  "case_id": "dev_010",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 363,
+    "explanation": "The profit belonging to TMGH's own shareholders (Shareholders of the Parent Company) grew from 9,025,066,065 EGP in 2024 (restated) to 14,383,890,306 EGP in 2025, an increase of 5,358,824,241 EGP, or about 59.4% year‑over‑year. This strong growth, together with the current share price of 82.50 EGP and the 2025 EPS of 6.98 EGP, implies a price‑to‑earnings ratio of roughly 11.8, which is modest for a company with such growth. The investor has a long‑term growth goal, high willingness to accept losses and medium ability to withstand losses, and already holds 500 TMGH shares (value 41,250 EGP) plus 30,000 EGP cash. Adding to the position is therefore justified. With 30,000 EGP cash the investor can purchase up to 363 shares (363 × 82.50 = 29,947.50 EGP), leaving a small cash buffer while increasing the holding to 863 shares (≈71,197.5 EGP) and maintaining diversification. The decision is based on the reported profit growth and valuation; other risks such as market volatility and the restated 2024 figures shouldbe",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company profit attributable to TMGH in 2025 was 14,383,890,306 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company profit attributable to TMGH in 2024 (restated) was 9,025,066,065 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The 2024 shareholders profit is restated; comparability may be affected.",
+      "Only two fiscal years are available; longer‑term trend not assessed.",
+      "Price‑to‑earnings ratio uses EPS from the same report; market conditions may change."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 363,
+    "explanation": "The profit belonging to TMGH's own shareholders (Shareholders of the Parent Company) grew from 9,025,066,065 EGP in 2024 (restated) to 14,383,890,306 EGP in 2025, an increase of 5,358,824,241 EGP, or about 59.4% year‑over‑year. This strong growth, together with the current share price of 82.50 EGP and the 2025 EPS of 6.98 EGP, implies a price‑to‑earnings ratio of roughly 11.8, which is modest for a company with such growth. The investor has a long‑term growth goal, high willingness to accept losses and medium ability to withstand losses, and already holds 500 TMGH shares (value 41,250 EGP) plus 30,000 EGP cash. Adding to the position is therefore justified. With 30,000 EGP cash the investor can purchase up to 363 shares (363 × 82.50 = 29,947.50 EGP), leaving a small cash buffer while increasing the holding to 863 shares (≈71,197.5 EGP) and maintaining diversification. The decision is based on the reported profit growth and valuation; other risks such as market volatility and the restated 2024 figures shouldbe",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company profit attributable to TMGH in 2025 was 14,383,890,306 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company profit attributable to TMGH in 2024 (restated) was 9,025,066,065 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The 2024 shareholders profit is restated; comparability may be affected.",
+      "Only two fiscal years are available; longer‑term trend not assessed.",
+      "Price‑to‑earnings ratio uses EPS from the same report; market conditions may change."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 52.5,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 863
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 360.276,
+      "input_tokens": 2464,
+      "output_tokens": 3399,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 360.278
+}

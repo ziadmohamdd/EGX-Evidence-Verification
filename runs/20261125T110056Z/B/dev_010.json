@@ -1,0 +1,117 @@
+{
+  "case_id": "dev_010",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 363,
+    "explanation": "The profit belonging to TMGH's shareholders (net profit for the year) rose from 12,769,517,325 EGP in 2024 (restated) to 18,201,981,482 EGP in 2025, an increase of 5,432,464,157 EGP, or about 42.5% year‑over‑year. This strong growth supports the case for adding to a long‑term position, especially for an investor with a 5‑10‑year horizon and high risk tolerance. The stock is trading at 82.50 EGP per share, giving a price‑to‑earnings ratio of roughly 82.50 / 6.98 ≈ 11.8, which is modest relative to the profit‑growth rate. The investor has 30,000 EGP in cash; purchasing 363 shares costs 363 × 82.50 = 29,947.50 EGP, leaving a small cash buffer. The recommendation to buy aligns with the goal of long‑term growth while staying within the available cash and the investor's risk profile.  Limitations: the net‑profit figures are taken directly from the consolidated statements and may include one‑off items not reflected in recurring earnings; no data on dividends, capital expenditures, or debt‑service capacity are used. ",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year 2025 was 18,201,981,482 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+        "stated_value": 12769517325.0,
+        "statement": "Net profit for the year 2024 (restated) was 12,769,517,325 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 363,
+    "explanation": "The profit belonging to TMGH's shareholders (Shareholders of the Parent Company) rose from 9,025,066,065 EGP in 2024 (restated) to 14,383,890,306 EGP in 2025, an increase of 5,358,824,241 EGP, or about 59.3% year‑over‑year. Earnings per Share (EPS) also grew from 4.38 EGP in 2024 to 6.98 EGP in 2025. With the share price at 82.50 EGP, the resulting price‑to‑earnings ratio is roughly 82.50 / 6.98 ≈ 11.8, which is modest relative to the strong profit‑growth rate. The investor has 30,000 EGP in cash; purchasing 363 shares costs 363 × 82.50 = 29,947.50 EGP, leaving a small cash buffer of 52.50 EGP. This addition aligns with the goal of long‑term growth, the investor’s high risk tolerance, and the 5‑10‑year horizon. The substantial growth in shareholders’ profit and the low P/E support increasing the position, while the investor already holds an emergency fund separate from the portfolio.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year 2025 was 18,201,981,482 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+        "stated_value": 12769517325.0,
+        "statement": "Net profit for the year 2024 (restated) was 12,769,517,325 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) 2025 was 14,383,890,306 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) 2024 (restated) was 9,025,066,065 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Earnings per Share (consolidated) 2025 was 6.98 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "Earnings per Share (consolidated) 2024 (restated) was 4.38 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Net‑profit and shareholders‑of‑parent figures are taken from consolidated statements and may include one‑off items not reflected in recurring earnings.",
+      "No data on dividends, capital expenditures, debt‑service capacity, or cash‑flow are used in this analysis.",
+      "Price‑to‑earnings ratio is based on trailing EPS and assumes earnings remain stable; forward earnings could differ.",
+      "The recommendation to buy 363 shares uses the full available cash after the transaction, leaving only a minimal buffer; any unexpected liquidity need could affect the portfolio."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 52.5,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 863
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"6.98\", which is 'Earnings per Share (consolidated)' (6.98), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 12.367,
+      "input_tokens": 2464,
+      "output_tokens": 2319,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 12.967,
+      "input_tokens": 3161,
+      "output_tokens": 2327,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 25.337
+}

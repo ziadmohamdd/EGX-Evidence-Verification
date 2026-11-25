@@ -1,0 +1,107 @@
+{
+  "case_id": "dev_007",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor needs 10,000 EGP in cash within 3 months for a family wedding and has low willingness to accept losses. Current portfolio: 1,000 EGP cash + 200 EFID shares. At the cutoff price of 20.40 EGP per share, the 200 shares are worth 4,080 EGP. Selling all shares would bring total cash to 5,080 EGP (1,000 + 4,080), which still falls short of the 10,000 EGP target by 4,920 EGP. However, converting the equity holding into cash immediately reduces exposure to possible market fluctuations over the remaining 3‑month horizon, aligning with the investor's low risk tolerance. The company's reported FY2025 net profit of 2,695,301,670 EGP and EPS of 2.18 EGP demonstrate profitability, but such annual figures do not guarantee short‑term liquidity or price stability; therefore they are not central to the decision. The 2024 revenue and net‑profit rows (evidence_ids p6‑02 and p6‑31) show the same values as 2025, which is ambiguous; consequently they are listed as unused and not relied upon. Limitations: only a single‑",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31"
+    ],
+    "limitations": [
+      "Share price may change between now and the 3‑month horizon, affecting actual cash received.",
+      "Selling the entire holding leaves a cash gap of ~4,920 EGP; the investor will need additional savings or borrowing to meet the wedding‑fund target.",
+      "No information is provided about the investor's other assets, income, or ability to obtain short‑term credit.",
+      "The analysis uses only the evidence and prices given; no outside market data or post‑cutoff events are considered."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor needs 10,000 EGP in cash within 3 months for a family wedding and has low willingness to accept losses. Current portfolio: 1,000 EGP cash + 200 EFID shares. At the cutoff price of 20.40 EGP per share, selling all 200 shares yields 4,080 EGP, bringing total cash to 5,080 EGP (1,000 + 4,080). This still falls short of the 10,000 EGP target by 4,920 EGP, so the investor will need additional savings or borrowing beyond the portfolio. Converting the equity holding into cash immediately reduces exposure to possible market fluctuations over the remaining 3‑month horizon, aligning with the investor's low risk tolerance. The company's reported FY2025 net profit of 2,695,301,670 EGP (evidence_id EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑30) and Basic and Diluted EPS of 2.18 EGP (evidence_id EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑38) demonstrate profitability, but such annual figures do not guarantee short‑term liquidity or price stability; therefore they are not central to the decision. The 20",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "The company's net profit for the year FY2025 was 2,695,301,670 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "Basic and Diluted EPS for FY2025 was 2.18 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "EFID-price-at-cutoff"
+    ],
+    "limitations": [
+      "Share price may change between now and the 3‑month horizon, affecting actual cash received.",
+      "Selling the entire holding leaves a cash gap of ~4,920 EGP; the investor will need additional savings or borrowing to meet the wedding‑fund target.",
+      "No information is provided about the investor's other assets, income, or ability to obtain short‑term credit.",
+      "The analysis uses only the evidence and prices given; no outside market data or post‑cutoff events are considered.",
+      "These figures could not be verified and were not used: EFID-price-at-cutoff. Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 5080.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"2,695,301,670\", which is 'Net profit for the year (consolidated)' (2.6953e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"2.18\", which is 'Basic and Diluted earnings per share (consolidated)' (2.18), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "EFID-price-at-cutoff",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      }
+    ],
+    "dropped": [
+      "EFID-price-at-cutoff"
+    ],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 20.1,
+      "input_tokens": 1827,
+      "output_tokens": 3840,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 364.948,
+      "input_tokens": 2582,
+      "output_tokens": 4053,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 385.051
+}

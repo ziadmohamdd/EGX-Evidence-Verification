@@ -1,0 +1,119 @@
+{
+  "case_id": "dev_002",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 1212,
+    "explanation": "The investor has a long‑term horizon, high risk tolerance, and no current holdings. Using the available evidence: TMGH's EPS for 2025 is 6.98 LE (evidence_id TMGH‑TMGH_FY2025_consolidated_en‑p7‑61), giving a price‑to‑earnings ratio of about 82.50 / 6.98 ≈ 11.8, which is modest for a profitable firm. Net profit for 2025 is 18,201,981,482 LE (p7‑55) and total equity as of 31 Dec 2025 is 157,708,140,765 LE (p5‑67), indicating a strong financial base. Gross profit for 2025 is 20,855,400,384 LE (p7‑19). These figures support the view that TMGH is a reasonably valued, profitable company suitable for long‑term wealth building. The investor’s 100,000 EGP cash can purchase 1,212 shares at 82.50 EGP each (total cost 99,990 EGP), leaving a small cash residue. The ambiguous 2024 net‑profit figure (p7‑56) has been listed as unused and not employed in the valuation. Overall, given the evidence and the investor’s profile, a buy action is recommended. As always, this is guidance not a guarantee; market risks and limited data",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 1212,
+    "explanation": "The investor has a long‑term horizon, high risk tolerance, and no current holdings. Using the available verified evidence: TMGH's earnings per share (EPS) for 2025 is 6.98 LE (p7‑61), giving a price‑to‑earnings ratio of about 82.50 / 6.98 ≈ 11.8, which is modest for a profitable firm. Net profit for 2025 is 18,201,981,482 LE (p7‑55), demonstrating strong profitability. Total equity as of 31 December 2025 is 157,708,140,765 LE (p5‑67), indicating a solid financial base. Gross profit for 2025 is 20,855,400,384 LE (p7‑19), further confirming revenue‑generating capacity. These figures support the view that TMGH is a reasonably valued, profitable company suitable for long‑term wealth building. The investor’s 100,000 EGP cash can purchase 1,212 shares at 82.50 EGP each (total cost 99,990 EGP), leaving a small cash residue of 10 EGP. The 2024 restated net‑profit figure (p7‑56) is ambiguous (digits covered by an auditor’s stamp) and has been listed as unused; it is not employed in any calculation or valuation. As a P",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH's earnings per share (EPS) for 2025 is 6.98 LE (p7‑61)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year 2025 is 18,201,981,482 LE (p7‑55)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity as of 31 December 2025 is 157,708,140,765 LE (p5‑67)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "Gross profit for 2025 is 20,855,400,384 LE (p7‑19)"
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "Evidence cutoff 2026‑11‑18; later events not considered.",
+      "Only listed figures are used; other financial metrics are unavailable.",
+      "Market price may fluctuate; the calculated P/E ratio is based on the cutoff price only.",
+      "The ambiguous 2024 net‑profit figure is excluded from any analysis.",
+      "This is investment guidance, not a guarantee of returns; investors should consider broader market risks."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 1212
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"6.98\", which is 'Earnings per Share (consolidated)' (6.98), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"6.98\", which is 'Earnings per Share (consolidated)' (6.98), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"18,201,981,482\", which is 'Net profit for the year (consolidated)' (1.8202e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"157,708,140,765\", which is 'Total equity (consolidated)' (1.57708e+11), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"20,855,400,384\", which is 'Gross profit (consolidated)' (2.08554e+10), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 9.301,
+      "input_tokens": 1869,
+      "output_tokens": 1509,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 10.326,
+      "input_tokens": 2726,
+      "output_tokens": 2173,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 19.63
+}

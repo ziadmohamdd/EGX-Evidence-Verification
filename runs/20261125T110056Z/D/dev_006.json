@@ -1,0 +1,92 @@
+{
+  "case_id": "dev_006",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "بناءً على الأدلة المتوفرة، لا يمكن تقييم الوضع المالي لشركة TMGH بشكل موثوق لأسباب رئيسية: 1) figures الخاصة بالإيرادات والأرباح بعد الضرائب تحمل علامات AMBIGUOUS بسبب عدم وضفففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففف",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا توجد بيانات ميزانية عمومية، ولا يمكن تحديد الرافعة المالية أو السيولة.",
+      "وحدات القياس غير واضحة (آلاف جنيه أم جنيهات حقيقية) للإيرادات والأرباح.",
+      "EPS figures متعددة القيم unclear metric، ولا يمكن استخدامها لحساب ratios موثوق.",
+      "لا يمكن إجراء مقارنة نمو الإيرادات بين الفترتين نظراً لتكرار الرقم نفسه في FY2024 مع ambiguity."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "بناءً على الأدلة المتوفرة، لا يمكن تقييم الوضع المالي لشركة TMGH بشكل موثوق لأسباب رئيسية: 1) figures الخاصة بالإيرادات والأرباح بعد الضرائب تحمل علامات AMBIGUOUS بسبب عدم وضفففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففففف",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا توجد بيانات ميزانية عمومية، ولا يمكن تحديد الرافعة المالية أو السيولة.",
+      "وحدات القياس غير واضحة (آلاف جنيه أم جنيهات حقيقية) للإيرادات والأرباح.",
+      "EPS figures متعددة القيم unclear metric، ولا يمكن استخدامها لحساب ratios موثوق.",
+      "لا يمكن إجراء مقارنة نمو الإيرادات بين الفترتين نظراً لتكرار الرقم نفسه في FY2024 مع ambiguity."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 60000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "**Analysis of TMGH Evidence (as of 2026-11-18)**\n\n### 1. Profitability\n- **Revenue (FY2025):** [TMGH-TMGH_FY2025_results_summary_ar-p1-01] reports consolidated revenue of **62,495,144,197 EGP** for the period ending 31 December 2025. The figure is marked *verified*, but the accompanying unit line (\"workة بالجنية المصرى\") and the presence of a second number (**4,206,700,283,0288**) alongside a **%46** entry create ambiguity regarding scale (actual EGP vs. EGP in thousands). Per the note on [p1-02], thousands separators used elsewhere on the page are missing in the OCR output, so the exact denomination cannot be confirmed without further verification.\n- **Earnings per Share (FY2025):** [TMGH-TMGH_FY2025_results_summary_ar-p1-11] reports *verified* EPS figures: **6.98 EGP** and **4.37 EGP** (and a third value **59.6**, whose metric is unclear). These are the only profitability metrics that can be taken at face value. Using the share price of 82.50 EGP, the implied P/E ratio ranges from ~11.8 (based on 6.98 EPS) to ~18.9 (based on 4.37 EPS), but this computation relies on the verified EPS and the given price.\n- **Profit After Taxes (FY2025):** [TMGH-TMGH_FY2025_results_summary_ar-p1-09] reports **180201,9810482 EGP**, but this figure is marked **AMBIGUOUS** due to unclear separators (\"١٨٠٢٠١,٩٨١٠٤٨٢\"). Per instructions, this figure **must not be used** for any calculation or ratio.\n\n### 2. Growth\n- **Revenue Growth (FY2025 vs. FY2024):** [TMGH-TMGH_FY2025_results_summary_ar-p1-02] gives consolidated revenue for FY2024 as the same printed number **62,495,144,197 EGP**, but it is explicitly flagged **AMBIGUOUS** with the note: \"OCR: long number without the thousands separators used elsewhere on the page.\" Because the FY2024 figure cannot be reliably extracted or scaled, **any year‑over‑year growth comparison is impossible** with the given evidence.\n\n### 3. Balance Sheet\n- No balance‑sheet items (assets, liabilities, equity, cash flow) appear in the provided evidence. The evidence set contains only income‑statement–type rows (revenue, profit after taxes, EPS). Consequently, leverage, liquidity, and capital‑structure risks cannot be assessed from this data alone.\n\n### 4. Risks & Data Quality\n- **OCR/extractor uncertainties:** Three of the four evidence rows carry ambiguity flags. The revenue figure for both FY2025 and FY2024 suffers from missing thousands separators; the profit‑after‑taxes figure has opaque digit grouping; the EPS row is the sole *verified* item but includes multiple values whose precise meaning (basic vs. diluted, continuing vs. discontinued) is not annotated.\n- **Scale ambiguity:** Without confirmation whether revenue and profit figures are in EGP or EGP (000), any margin, ratio, or growth metric is unreliable.\n- **Incomplete disclosure:** The absence of balance‑sheet data and segment information limits the scope of risk identification.\n\n### 5. Summary of Usable Evidence\n| Item | Evidence ID | Value (as printed) | Status |\n|------|-------------|-------------------|--------|\n| Revenue FY2025 | [p1-01] | 62,495,144,197 EGP | Verified, scale ambiguous |\n| Revenue FY2024 | [p1-02] | 62,495,144,197 EGP | **AMBIGUOUS** – do not compute growth |\n| Profit After Taxes FY2025 | [p1-09] | 180201,9810482 EGP | **AMBIGUOUS** – do not compute with |\n| EPS FY2025 | [p1-11] | 6.98 EGP; 4.37 EGP; 59.6 (unclear metric) | Verified – usable for P/E context only |\n\n### Final Note\nBased strictly on the supplied evidence, TMGH's reported profitability can only be referenced through the verified EPS of 6.98 or 4.37 EGP. Revenue and profit‑after‑taxes figures carry data‑quality flags that prevent reliable scaling, growth analysis, or ratio computation. No balance‑sheet information is provided. Any portfolio decision regarding the 200 TMGH shares (currently valued at 82.50 EGP/share, representing 16,500 EGP of the 76,500 EGP total portfolio) must account for these limitations. The decision agent should weigh the verified EPS against the ambiguous financial disclosures and the investor’s 3–5‑year horizon, medium risk tolerance, and liquidity profile.",
+    "investor": "**Investor-Suitability Assessment**\n\n### Profile Overview\n- **Goal:** Accumulate savings for an apartment purchase (capital-intensive, time‑bound objective).\n- **Horizon:** 3–5 years (medium term; enough time to ride moderate volatility but capital preservation is important given the specific savings target).\n- **Liquidity:** Separate emergency fund is in place; this portfolio is free to allocate toward the goal.\n- **Loss appetite/capacity:** Medium on both counts—can tolerate some value fluctuation, but a significant drawdown could impact the apartment timeline.\n\n### Portfolio Snapshot (as of cutoff)\n- **Cash:** 60,000.00 EGP (fully liquid).\n- **Holdings:** 200 shares of TMGH at 82.50 EGP/share = **16,500.00 EGP**.\n- **Total portfolio value:** 76,500.00 EGP.\n- **Stock concentration:** TMGH represents ~21.6% of the total portfolio; cash ~78.4%.\n\n### Suitability Factors\n\n| Factor | Assessment |\n|--------|------------|\n| **Horizon vs. portfolio** | A 3–5 year horizon suits moderate‑risk investing. The goal (apartment purchase) typically requires the capital intact or with limited volatility. The current mix of cash and a single equity has enough time to absorb moderate swings, but the single‑stock exposure introduces idiosyncratic risk that may not align with a medium‑term savings goal. |\n| **Liquidity needs** | Emergency fund is separate, so this portfolio can be used for the goal without compromising liquidity. Both the cash holding and the TMGH shares are readily sellable on market days, providing immediate access to funds if needed. |\n| **Loss willingness & capacity (medium)** | A medium risk tolerance allows for some portfolio fluctuation, but a concentrated position in one stock can produce outsized moves (positive or negative). The 16,500 EGP equity leg could decline meaningfully without a diversified buffer. |\n| **Current concentration** | Holding 100% of the equity leg in one Egyptian stock (TMGH) is a high‑concentration bet for a medium‑risk, medium‑horizon profile. If TMGH were to underperform or the sector face headwinds, the portfolio’s ability to support the apartment goal could be materially affected. |\n| **Cash that could reasonably be committed** | The full 60,000 EGP cash is free to allocate. Given the goal and risk profile, a prudent approach would be to: <br>• Keep a portion (e.g., 20–30k) highly liquid for near‑term needs or opportunistic deployment.<br>• Commit the remainder to a diversified vehicle (e.g., broad‑market ETF, bond fund) that matches the 3–5 year horizon, rather than leaving it concentrated in a single stock. <br>• The exact commitment amount depends on the investor’s comfort with volatility and the target apartment price/timeline, but the medium loss capacity suggests avoiding full‑cash exposure to a single equity. |\n\n### What the Portfolio Allows\n- **Sellable:** The 200 TMGH shares can be sold on any trading day at prevailing market price, converting to cash instantly (subject to standard settlement).\n- **Free cash:** 60,000.00 EGP is already liquid and unencumbered.\n- **No other illiquid assets** are noted in the current profile.\n\n### Notes on Provided Financial Evidence\nPer instructions, company‑specific financials (revenue, profit margins, EPS, etc.) have not been analysed or used to derive a recommendation. The given price per share (82.50 EGP) and holding quantity are the only portfolio‑relevant data used in this assessment.\n\n### Decision Framework (no action recommended)\nThe suitability assessment suggests that the current concentration in a single stock is higher than what a medium‑risk, medium‑horizon investor saving for a specific purchase typically suits. The portfolio’s liquidity is adequate, and the separate emergency fund removes pressure on this capital. A re‑allocation that reduces single‑stock exposure—while maintaining enough growth potential for a 3–5 year horizon—would better align with the stated profile. The investor can choose how much of the 60,000 EGP cash to commit, and whether to hold, reduce, or increase the TMGH position, keeping in mind the goal’s time frame and risk tolerance."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 34.029,
+      "input_tokens": 860,
+      "output_tokens": 4921,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 24.267,
+      "input_tokens": 854,
+      "output_tokens": 3142,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 15.254,
+      "input_tokens": 3892,
+      "output_tokens": 2809,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 73.554
+}

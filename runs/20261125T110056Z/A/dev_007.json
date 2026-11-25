@@ -1,0 +1,68 @@
+{
+  "case_id": "dev_007",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor needs 10,000 EGP in cash within 3 months for a family wedding. Current cash is 1,000 EGP and they hold 200 shares of EFID priced at 20.40 EGP per share, giving a market value of 4,080 EGP. Selling all 200 shares would raise 4,080 EGP, bringing total available cash to 5,080 EGP (1,000 + 4,080). This still leaves a shortfall of about 4,920 EGP to meet the 10,000 EGP target, so the investor would need to find additional cash sources or consider partial selling combined with other assets. Given the low willingness and ability to withstand losses, converting the equity holding to cash now locks in the current price and avoids potential further decline, but does not fully satisfy the cash need. The recommendation is to sell the entire EFID holding to maximise immediate liquidity within the 3‑month horizon, while acknowledging the remaining gap.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39"
+    ],
+    "limitations": [
+      "No information on transaction costs, taxes, or market impact when selling the shares.",
+      "The revenue and net‑profit figures for 2024 and 2025 are printed identically, making them ambiguous; they are not used in the liquidity analysis.",
+      "The investor’s future cash flow needs beyond the 3‑month horizon are not considered.",
+      "The recommendation assumes the share price of 20.40 EGP remains stable and that the investor can execute the sale immediately."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor needs 10,000 EGP in cash within 3 months for a family wedding. Current cash is 1,000 EGP and they hold 200 shares of EFID priced at 20.40 EGP per share, giving a market value of 4,080 EGP. Selling all 200 shares would raise 4,080 EGP, bringing total available cash to 5,080 EGP (1,000 + 4,080). This still leaves a shortfall of about 4,920 EGP to meet the 10,000 EGP target, so the investor would need to find additional cash sources or consider partial selling combined with other assets. Given the low willingness and ability to withstand losses, converting the equity holding to cash now locks in the current price and avoids potential further decline, but does not fully satisfy the cash need. The recommendation is to sell the entire EFID holding to maximise immediate liquidity within the 3‑month horizon, while acknowledging the remaining gap.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39"
+    ],
+    "limitations": [
+      "No information on transaction costs, taxes, or market impact when selling the shares.",
+      "The revenue and net‑profit figures for 2024 and 2025 are printed identically, making them ambiguous; they are not used in the liquidity analysis.",
+      "The investor’s future cash flow needs beyond the 3‑month horizon are not considered.",
+      "The recommendation assumes the share price of 20.40 EGP remains stable and that the investor can execute the sale immediately."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 5080.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 24.748,
+      "input_tokens": 1827,
+      "output_tokens": 2107,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 24.75
+}

@@ -1,0 +1,50 @@
+{
+  "case_id": "dev_009",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The investor asked for full‑year 2026 earnings per share and a P/E ratio for Abu Qir (ABUK). The only available earnings data are the nine‑month EPS figures (verified) printed with the unit line ‘مليون جنيه’ (million pounds). To obtain a full‑year EPS we would need to annualise the nine‑month figure by multiplying by 12/9, giving ≈11.65 million EGP per share. However this assumes the same profit in the remaining quarter, which is not supported by the evidence. The resulting P/E would be 76.21 EGP ÷ 11,650,000 EGP ≈ 0.0000065, a value that is not meaningful in normal valuation terms. If the EPS unit were intended as pounds (rather than million), the P/E would be about 6.5, but we are instructed to apply the printed unit line ‘مليون جنيه’. Because the report provides only nine‑month data and the unit‑interpretation creates significant uncertainty, we cannot reliably compute a full‑year EPS or a meaningful P/E ratio. Therefore the evidence is insufficient for a responsible buy/hold/sell decision. The figures not",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The investor asked for full‑year 2026 earnings per share and a P/E ratio for Abu Qir (ABUK). The only available earnings data are the nine‑month EPS figures (verified) printed with the unit line ‘مليون جنيه’ (million pounds). To obtain a full‑year EPS we would need to annualise the nine‑month figure by multiplying by 12/9, giving ≈11.65 million EGP per share. However this assumes the same profit in the remaining quarter, which is not supported by the evidence. The resulting P/E would be 76.21 EGP ÷ 11,650,000 EGP ≈ 0.0000065, a value that is not meaningful in normal valuation terms. If the EPS unit were intended as pounds (rather than million), the P/E would be about 6.5, but we are instructed to apply the printed unit line ‘مليون جنيه’. Because the report provides only nine‑month data and the unit‑interpretation creates significant uncertainty, we cannot reliably compute a full‑year EPS or a meaningful P/E ratio. Therefore the evidence is insufficient for a responsible buy/hold/sell decision. The figures not",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 20.224,
+      "input_tokens": 2153,
+      "output_tokens": 3259,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 20.227
+}
