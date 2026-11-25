@@ -1,12 +1,18 @@
 """The evidence verifier: the experimental intervention (on in B and D, off in A and C).
 
-Each FigureClaim is checked against the frozen evidence. On failure the agent
-gets one chance to revise (via ``revise``). Claims that still fail are removed
-from the recommendation, listed as unused figures, and disclosed as a limitation.
+Each FigureClaim is checked against the frozen evidence, and so is every figure
+written in the explanation: a number there that matches an evidence figure must be
+cited in `claims`, and a number that matches one only at the wrong scale is a
+mismatch. Without the text check an agent could pass by citing nothing while still
+stating figures. On failure the agent gets one chance to revise (via ``revise``).
+What still fails is removed from the recommendation (claims, and the sentences that
+state an unchecked figure), listed as unused figures, and disclosed as a limitation.
+Figures cited before the revision but not after are recorded as withdrawn.
 """
 
 from __future__ import annotations
 
+import re
 from collections.abc import Callable
 from dataclasses import dataclass, field
 
@@ -15,6 +21,21 @@ from .models import EvidenceItem, EvidenceStatus, FigureClaim, Recommendation
 DEFAULT_REL_TOL = 0.005  # 0.5%: allows rounding in prose, not wrong digits or scale
 
 REMOVED = "[removed: figure could not be verified]"
+
+# Text figures smaller than this (per-share values, ratios) are matched only exactly, so a
+# P/E of 11.9 is not mistaken for an EPS of 11.93. Larger amounts are matched within rel_tol.
+EXACT_BELOW = 1e6
+SCALE_WORDS = {
+    "thousand": 1e3, "k": 1e3, "million": 1e6, "mn": 1e6, "m": 1e6,
+    "billion": 1e9, "bn": 1e9, "b": 1e9, "trillion": 1e12, "tn": 1e12,
+    "ألف": 1e3, "آلاف": 1e3, "مليون": 1e6, "ملايين": 1e6, "مليار": 1e9, "مليارات": 1e9,
+}
+_TEXT_NUMBER = re.compile(
+    r"(?<![\w.,٫٬])(\d[\d,٬]*(?:[.٫]\d+)?(?:[eE][+-]?\d+)?)"
+    r"(?:(\s*[%٪])|\s*(" + "|".join(sorted(map(re.escape, SCALE_WORDS), key=len, reverse=True)) + r")(?!\w))?",
+    re.IGNORECASE)
+_DIGIT_MAP = str.maketrans({**{chr(0x0660 + i): str(i) for i in range(10)},
+                            **{chr(0x06F0 + i): str(i) for i in range(10)}, "٫": ".", "٬": "", ",": ""})
 
 
 @dataclass(frozen=True)
@@ -30,6 +51,7 @@ class VerifierReport:
     revised: bool = False
     after_revision: list[ClaimFailure] = field(default_factory=list)
     dropped: list[str] = field(default_factory=list)
+    withdrawn: list[str] = field(default_factory=list)  # cited before the revision, not after
 
 
 def check_claims(
@@ -61,12 +83,101 @@ def check_claims(
     return failures
 
 
+@dataclass(frozen=True)
+class TextFigure:
+    raw: str
+    value: float
+    start: int
+    end: int
+    whole_digits: int  # digits before the decimal point
+    scaled: bool       # written with a scale word ('million', 'bn', 'مليار')
+
+
+def text_figures(text: str) -> list[TextFigure]:
+    """Numbers written in prose, with 'million'/'bn'/'مليون' applied. Percentages are skipped."""
+    out = []
+    for m in _TEXT_NUMBER.finditer(text):
+        if m.group(2):
+            continue
+        num = m.group(1).translate(_DIGIT_MAP)
+        try:
+            value = float(num)
+        except ValueError:
+            continue
+        if m.group(3):
+            value *= SCALE_WORDS[m.group(3).lower()]
+        whole = re.split(r"[.eE]", num)[0]
+        out.append(TextFigure(m.group(0), value, m.start(), m.end(), len(whole), bool(m.group(3))))
+    return out
+
+
+def _matches(stated: float, value: float, rel_tol: float) -> bool:
+    if abs(value) < EXACT_BELOW:
+        return abs(stated - value) < 1e-9
+    return abs(stated - value) <= rel_tol * abs(value)
+
+
+def check_text(
+    rec: Recommendation,
+    evidence: dict[str, EvidenceItem],
+    rel_tol: float = DEFAULT_REL_TOL,
+) -> list[tuple[ClaimFailure, TextFigure]]:
+    """Figures in the explanation that match evidence but are not cited, or match only at the wrong scale."""
+    cited = {c.evidence_id for c in rec.claims}
+    usable = [e for e in evidence.values() if e.value is not None and e.status is not EvidenceStatus.AMBIGUOUS]
+    found = []
+    for t in text_figures(rec.explanation):
+        hits = [e for e in usable if _matches(t.value, e.value, rel_tol)]
+        if hits:
+            if not any(e.evidence_id in cited for e in hits):
+                e = hits[0]
+                found.append((ClaimFailure(
+                    e.evidence_id, "uncited_figure",
+                    f"the explanation states \"{t.raw}\", which is '{e.label}' ({e.value:,.6g}), "
+                    f"but it is not listed in claims"), t))
+            continue
+        if t.whole_digits < 4 and not t.scaled:
+            continue  # short plain numbers (prices like 82.50, share counts) match by chance
+        for e in usable:
+            if abs(e.value) < EXACT_BELOW:
+                continue
+            f = next((f for f in (1e3, 1e6, 1e9, 1e-3, 1e-6, 1e-9)
+                      if abs(t.value * f - e.value) <= rel_tol * abs(e.value)), None)
+            if f is not None:
+                found.append((ClaimFailure(
+                    e.evidence_id, "text_value_mismatch",
+                    f"the explanation states \"{t.raw}\" but evidence '{e.label}' is {e.value:,.6g} "
+                    f"[{e.source_text}] (looks like a scale error by {f:g})"), t))
+                break
+    return found
+
+
+_SENTENCE_END = re.compile(r"[.!?؟](?=\s|$)|\n")
+
+
+def _remove_sentences(text: str, spans: list[tuple[int, int]]) -> str:
+    """Replace each sentence containing one of the spans with REMOVED."""
+    ranges = set()
+    for start, end in spans:
+        before = [m.end() for m in _SENTENCE_END.finditer(text, 0, start)]
+        s0 = before[-1] if before else 0
+        after = _SENTENCE_END.search(text, end)
+        ranges.add((s0, after.end() if after else len(text)))
+    for s0, s1 in sorted(ranges, reverse=True):
+        chunk = text[s0:s1]
+        lead = chunk[:len(chunk) - len(chunk.lstrip())]
+        text = text[:s0] + lead + REMOVED + text[s1:]
+    return text
+
+
 def feedback_text(failures: list[ClaimFailure]) -> str:
     lines = ["The evidence check found problems with these figures:"]
     lines += [f"- {f.evidence_id}: {f.rule}: {f.detail}" for f in failures]
     lines.append(
         "Revise the recommendation. Correct each figure from the evidence, or stop relying on it, "
         "list it in unused_figures and say in the explanation which conclusions are affected. "
+        "Every figure from the evidence that the explanation states must be listed in claims; "
+        "removing a figure from claims while still stating it does not fix it. "
         "Do not use ambiguous figures.")
     return "\n".join(lines)
 
@@ -79,13 +190,19 @@ def run_verifier(
 ) -> tuple[Recommendation, VerifierReport]:
     """Check, allow one revision, then drop what still fails ("fix then flag")."""
     store = {e.evidence_id: e for e in evidence}
-    report = VerifierReport(first_pass=check_claims(rec.claims, store, rel_tol))
+
+    def check(r: Recommendation) -> list[ClaimFailure]:
+        return check_claims(r.claims, store, rel_tol) + [f for f, _ in check_text(r, store, rel_tol)]
+
+    report = VerifierReport(first_pass=check(rec))
     if not report.first_pass:
         return rec, report
 
+    cited_before = {c.evidence_id for c in rec.claims}
     rec = revise(rec, feedback_text(report.first_pass))
     report.revised = True
-    report.after_revision = check_claims(rec.claims, store, rel_tol)
+    report.withdrawn = sorted(cited_before - {c.evidence_id for c in rec.claims})
+    report.after_revision = check(rec)
     if not report.after_revision:
         return rec, report
 
@@ -97,6 +214,10 @@ def run_verifier(
                 explanation = explanation.replace(c.statement, REMOVED)
         else:
             kept.append(c)
+    # Whatever the text still states without a kept claim behind it is removed too.
+    left = check_text(rec.model_copy(update={"claims": kept, "explanation": explanation}), store, rel_tol)
+    explanation = _remove_sentences(explanation, [(t.start, t.end) for _, t in left])
+    bad |= {f.evidence_id for f, _ in left}
     report.dropped = sorted(bad)
     labels = ", ".join(store[i].label if i in store else i for i in report.dropped)
     rec = rec.model_copy(update={

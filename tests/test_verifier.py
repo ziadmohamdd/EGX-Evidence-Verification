@@ -62,3 +62,69 @@ def test_failed_revision_drops_and_discloses():
     assert out.unused_figures == ["e2"]
     assert sentence not in out.explanation and REMOVED in out.explanation
     assert "Total deposits" in out.limitations[-1]
+
+
+# ------------------------------------------------- figures written in the explanation
+
+EPS = EvidenceItem(evidence_id="e3", company="COMI", document="FY2024.pdf", page=5, label="EPS",
+                   source_text="Earnings per share 4.38", value=4.38, period="FY2024")
+STORE3 = {**STORE, "e3": EPS}
+
+
+def text_rules(rec):
+    from egx_guide.verifier import check_text
+    return [f.rule for f, _ in check_text(rec, STORE3)]
+
+
+def test_cited_text_figure_passes_rounded_or_exact():
+    for text in ("Profit was 55.1 billion.", "Profit was EGP 55,123,000,000.", "Profit was 55,123 million."):
+        assert text_rules(rec_with(claim("e1", 55_123e6), explanation=text)) == []
+
+
+def test_uncited_text_figure_is_caught_in_english_and_arabic():
+    assert text_rules(rec_with(explanation="Profit was 55.1 billion.")) == ["uncited_figure"]
+    assert text_rules(rec_with(explanation="بلغ صافي الربح ٥٥٫١ مليار جنيه.")) == ["uncited_figure"]
+    assert text_rules(rec_with(explanation="EPS was 4.38 pounds.")) == ["uncited_figure"]
+    assert text_rules(rec_with(explanation="Profit rose to 5.5123e10 EGP.")) == ["uncited_figure"]
+
+
+def test_text_scale_error_is_caught():
+    assert text_rules(rec_with(explanation="Net profit was 55,123 pounds.")) == ["text_value_mismatch"]
+    assert text_rules(rec_with(explanation="Net profit was 55.1 million.")) == ["text_value_mismatch"]
+    assert text_rules(rec_with(explanation="The price is 55.12 EGP.")) == []  # a price, not 55.1 bn
+
+
+def test_percentages_ratios_and_small_numbers_are_not_figures():
+    # 55.1% is a percentage; a P/E of 4.4 is not the EPS of 4.38; 2024 and 300 shares match nothing
+    text = "Margin was 55.1%. The P/E is 4.4. Buy 300 shares in 2024."
+    assert text_rules(rec_with(explanation=text)) == []
+
+
+def test_citing_nothing_does_not_pass_the_verifier():
+    """The loophole: a revision drops every claim but still states the figure in its text."""
+    sentence = "Profit reached 55,123,000,000 pounds."
+    bad = rec_with(claim("e1", 55_123), explanation=f"Strong year. {sentence} Hold.")
+    no_claims = rec_with(explanation=f"Strong year. {sentence} Hold.")
+    out, report = run_verifier(bad, EVIDENCE, revise=lambda r, fb: no_claims)
+    assert report.revised and report.withdrawn == ["e1"]
+    assert [f.rule for f in report.after_revision] == ["uncited_figure"]
+    assert report.dropped == ["e1"] and out.unused_figures == ["e1"]
+    assert sentence not in out.explanation and REMOVED in out.explanation
+    assert out.explanation.startswith("Strong year.") and out.explanation.endswith("Hold.")
+
+
+def test_dropped_claim_takes_its_text_figure_with_it():
+    """The claim's statement is not verbatim in the text, so the figure is found by value."""
+    bad = rec_with(claim("e1", 55_123, "profit 55,123"), explanation="Profit was 55.1 billion. Hold.")
+    out, report = run_verifier(bad, EVIDENCE, revise=lambda r, fb: r)
+    assert report.dropped == ["e1"] and out.claims == []
+    assert "55.1 billion" not in out.explanation and out.explanation.endswith("Hold.")
+
+
+def test_uncited_text_figure_triggers_a_revision_that_can_fix_it():
+    uncited = rec_with(explanation="Profit was 55.1 billion.")
+    fixed = rec_with(claim("e1", 55_123e6), explanation="Profit was 55.1 billion.")
+    seen = []
+    out, report = run_verifier(uncited, EVIDENCE, revise=lambda r, fb: seen.append(fb) or fixed)
+    assert out == fixed and report.after_revision == [] and report.withdrawn == []
+    assert "not listed in claims" in seen[0]

@@ -203,7 +203,8 @@ def score_record(rec: dict, ref: ReferenceAnswer | None, rel_tol: float = SCORE_
         n_violations=len(rec.get("violations") or []),
         blocked=bool(rec.get("blocked")),
         verifier_revised=bool(verifier.get("revised")),
-        verifier_dropped=len(verifier.get("dropped") or []),
+        # figures removed by the verifier, plus figures the agent withdrew in its revision
+        verifier_dropped=len(set(verifier.get("dropped") or []) | set(verifier.get("withdrawn") or [])),
     )
 
 

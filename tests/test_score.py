@@ -84,6 +84,12 @@ def test_proposed_is_scored_separately_from_final():
     assert s.verifier_revised and s.verifier_dropped == 0
 
 
+def test_withdrawn_figures_count_as_dropped():
+    s = score_record(record(final=rec(), proposed=rec([("np", 1_250)]),
+                            verifier={"dropped": ["np"], "withdrawn": ["np", "rev"], "revised": True}), REF)
+    assert s.verifier_dropped == 2  # np once, plus rev withdrawn by the revision
+
+
 def test_missing_reference_and_errors_are_kept_but_not_scored():
     s = score_record(record(rec([("np", 1)]), case_id="other"), None)
     assert s.scored is False and s.reason == "no_reference"
