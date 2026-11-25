@@ -121,6 +121,8 @@ def test_deciding_prompts_carry_the_one_stock_limit(case, name):
     deciding = llm.seen[-1][0].content  # system prompt of the call that made the recommendation
     assert "no single company may be more than half of the portfolio" in deciding
     assert "no exceptions" in deciding
+    # hold/keep_cash/insufficient_evidence with a share count is blocked by the portfolio check
+    assert "For hold, keep_cash and insufficient_evidence set `shares` to 0" in deciding
 
 
 def test_printed_view_hides_converted_values(case):
