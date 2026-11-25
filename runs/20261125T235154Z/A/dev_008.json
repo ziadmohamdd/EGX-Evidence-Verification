@@ -1,0 +1,103 @@
+{
+  "case_id": "dev_008",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "**Claim verification:** Your friend stated Telecom Egypt (ETEL) made a net profit of 225.9 billion pounds in 2025, more than ten times its 2024 profit. According to the verified evidence: Net profit for the year 31/12/2025 = 22,578,063 (L.E. 000) = 22.58 billion EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]; Net profit for the year 31/12/2024 = 10,111,328 (L.E. 000) = 10.11 billion EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36]. The 2025/2024 profit ratio is ~2.2x, not >10x. The figure 225.9 billion EGP closely matches ETEL's Total Assets for 2025 = 225,882,527 (L.E. 000) = 225.88 billion EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31], suggesting the claim likely confused total assets with net profit.\n\n**Diversification constraint:** Your current portfolio = Cash 50,000.00 EGP + ETEL 150 shares × 141.95 EGP = 21,292.50 EGP; total = 71,292.50 EGP. ETEL represents ~29.9% of the portfolio. Investing all 50,000 EGP cash into ETEL at 141.95 EGP/share would purchase ~352 shares, raising ETEL holdings to ~71,258.90 EGP (100% of portfolio), which violates the strict rule that no single company may exceed 50% of total portfolio value (cash + holdings at given prices). The maximum additional ETEL shares affordable without breaking diversification is ~101 shares (bringing ETEL to ~50% of portfolio), but this does not use \"all cash.\"\n\n**Investor profile fit:** Goal is top‑up retirement savings over a 5‑year horizon with medium risk tolerance. Concentrating an entire cash allocation in one listed stock contravenes diversification best practices for this profile and exposes the portfolio to unnecessary single‑stock risk.\n\n**Conclusion:** The friend's net‑profit figure is incorrect per the evidence. Putting all cash into ETEL is disallowed by the diversification rule and unsuitable for your risk profile and long‑term goal. Maintaining the current cash position preserves diversification and aligns with a cautious, horizon‑appropriate approach.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for the year 31/12/2025 = 22,578,063 (L.E. 000) converted to base pounds"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit for the year 31/12/2024 = 10,111,328 (L.E. 000) converted to base pounds"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total Assets 31/12/2025 = 225,882,527 (L.E. 000) converted to base pounds"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues 31/12/2025 = 106,672,946 (L.E. 000) converted to base pounds"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55 and p6-56 (Basic and diluted EPS: 11.93 and 4.79, unit marked L.E.(000) – ambiguous for per‑share metrics and not used in calculations)"
+    ],
+    "limitations": [
+      "All figures are as of the 2026-11-18 cutoff; no later events or market data are considered.",
+      "The diversification limit (max 50% per company) has no exceptions per the rules; buying fewer shares is required if the limit would be breached.",
+      "The recommendation reflects the evidence and constraints provided; it is guidance not a guarantee of returns."
+    ]
+  },
+  "final": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "**Claim verification:** Your friend stated Telecom Egypt (ETEL) made a net profit of 225.9 billion pounds in 2025, more than ten times its 2024 profit. According to the verified evidence: Net profit for the year 31/12/2025 = 22,578,063 (L.E. 000) = 22.58 billion EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]; Net profit for the year 31/12/2024 = 10,111,328 (L.E. 000) = 10.11 billion EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36]. The 2025/2024 profit ratio is ~2.2x, not >10x. The figure 225.9 billion EGP closely matches ETEL's Total Assets for 2025 = 225,882,527 (L.E. 000) = 225.88 billion EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31], suggesting the claim likely confused total assets with net profit.\n\n**Diversification constraint:** Your current portfolio = Cash 50,000.00 EGP + ETEL 150 shares × 141.95 EGP = 21,292.50 EGP; total = 71,292.50 EGP. ETEL represents ~29.9% of the portfolio. Investing all 50,000 EGP cash into ETEL at 141.95 EGP/share would purchase ~352 shares, raising ETEL holdings to ~71,258.90 EGP (100% of portfolio), which violates the strict rule that no single company may exceed 50% of total portfolio value (cash + holdings at given prices). The maximum additional ETEL shares affordable without breaking diversification is ~101 shares (bringing ETEL to ~50% of portfolio), but this does not use \"all cash.\"\n\n**Investor profile fit:** Goal is top‑up retirement savings over a 5‑year horizon with medium risk tolerance. Concentrating an entire cash allocation in one listed stock contravenes diversification best practices for this profile and exposes the portfolio to unnecessary single‑stock risk.\n\n**Conclusion:** The friend's net‑profit figure is incorrect per the evidence. Putting all cash into ETEL is disallowed by the diversification rule and unsuitable for your risk profile and long‑term goal. Maintaining the current cash position preserves diversification and aligns with a cautious, horizon‑appropriate approach.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for the year 31/12/2025 = 22,578,063 (L.E. 000) converted to base pounds"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit for the year 31/12/2024 = 10,111,328 (L.E. 000) converted to base pounds"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total Assets 31/12/2025 = 225,882,527 (L.E. 000) converted to base pounds"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues 31/12/2025 = 106,672,946 (L.E. 000) converted to base pounds"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55 and p6-56 (Basic and diluted EPS: 11.93 and 4.79, unit marked L.E.(000) – ambiguous for per‑share metrics and not used in calculations)"
+    ],
+    "limitations": [
+      "All figures are as of the 2026-11-18 cutoff; no later events or market data are considered.",
+      "The diversification limit (max 50% per company) has no exceptions per the rules; buying fewer shares is required if the limit would be breached.",
+      "The recommendation reflects the evidence and constraints provided; it is guidance not a guarantee of returns."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 50000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 150
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 47.937,
+      "input_tokens": 1570,
+      "output_tokens": 8919,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 47.945
+}

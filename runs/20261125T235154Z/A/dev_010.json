@@ -1,0 +1,75 @@
+{
+  "case_id": "dev_010",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "TMGH",
+    "shares": 69,
+    "explanation": "**Profit growth belonging to Talaat Moustafa's own shareholders (FY2025 vs FY2024 restated)**   - From evidence [TMGH-TMGH_FY2025_consolidated_en-p7-57]: Shareholders of the Parent Company (consolidated) period 2025 = 14,383,890,306 LE.   - From evidence [TMGH-TMGH_FY2025_consolidated_en-p7-58]: Shareholders of the Parent Company (consolidated) period 2024 (Restated) = 9,025,066,065 LE.   - Both figures are in base LE units (not millions), verified, and no figures are marked AMBIGUOUS.   - Absolute growth = 14,383,890,306 – 9,025,066,065 = 5,358,824,241 LE.   - Percentage growth = (5,358,824,241 / 9,025,066,065) × 100 ≈ 59.38%.   This represents a substantial increase in profit attributable to the parent company's shareholders.\n\n**Investor's current portfolio (prices at cutoff 2026-11-18)**   - Cash: 30,000.00 EGP.   - Holdings: TMGH 500 shares × 82.50 EGP/share = 41,250.00 EGP.   - Total portfolio value = 30,000 + 41,250 = 71,250.00 EGP.   - TMGH weight = 41,250 / 71,250 ≈ 57.9% of the portfolio.\n\n**Diversification constraint**   - The guidelines state: \"Keep the portfolio diversified: after a buy, no single company may be more than half of the portfolio's total value (cash plus holdings at the given prices). This limit has no exceptions, whatever the investor's profile; buy fewer shares instead.\"   - The portfolio is already above the 50% threshold (57.9% TMGH). Any additional buy would further violate the rule; even a hold action leaves the portfolio at 57.9% TMGH, which is non‑compliant.   - To bring the portfolio into compliance, TMGH exposure must be reduced so that its value is ≤ 50% of the total (≤ 35,625 EGP).\n\n**Does the profit growth justify adding to the position?**   - The 59.38% growth in shareholders' profit is positive for long‑term fundamentals. However, the portfolio is already over‑concentrated in TMGH. Adding more TMGH shares would increase concentration beyond the permitted 50% limit, conflicting with the diversification requirement that carries no exceptions. Therefore, adding to the position is not justified under the current portfolio structure.\n\n**Recommendation**   - To meet the diversification rule, the investor should reduce the TMGH holding. Selling 69 shares at 82.50 EGP each (total 5,692.5 EGP) leaves 431 shares, bringing TMGH to approximately 49.9% of the total portfolio value (35,557.5 EGP out of 71,250 EGP). This action reduces the position rather than adding to it, but it is necessary to comply with the hard diversification constraint. If the investor wishes to increase exposure later, they would first need to reduce the existing TMGH holding below the 50% threshold.\n\n**Uncertainty & risks** – All figures are drawn from the provided evidence (cut‑off 2026‑11‑18). No outside knowledge or later events are used. Profit growth is based on reported consolidated results. The 5‑10 year horizon, market fluctuations, and changes in the company's financial position are not captured in this guidance. The diversification rule is a strict constraint with no exceptions per the given instructions.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2024 Restated"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The portfolio is already 57.9% TMGH, exceeding the 50% diversification limit; any buy would violate the rule. The recommendation to sell 69 shares addresses compliance but reduces the position as requested."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "TMGH",
+    "shares": 69,
+    "explanation": "**Profit growth belonging to Talaat Moustafa's own shareholders (FY2025 vs FY2024 restated)**   - From evidence [TMGH-TMGH_FY2025_consolidated_en-p7-57]: Shareholders of the Parent Company (consolidated) period 2025 = 14,383,890,306 LE.   - From evidence [TMGH-TMGH_FY2025_consolidated_en-p7-58]: Shareholders of the Parent Company (consolidated) period 2024 (Restated) = 9,025,066,065 LE.   - Both figures are in base LE units (not millions), verified, and no figures are marked AMBIGUOUS.   - Absolute growth = 14,383,890,306 – 9,025,066,065 = 5,358,824,241 LE.   - Percentage growth = (5,358,824,241 / 9,025,066,065) × 100 ≈ 59.38%.   This represents a substantial increase in profit attributable to the parent company's shareholders.\n\n**Investor's current portfolio (prices at cutoff 2026-11-18)**   - Cash: 30,000.00 EGP.   - Holdings: TMGH 500 shares × 82.50 EGP/share = 41,250.00 EGP.   - Total portfolio value = 30,000 + 41,250 = 71,250.00 EGP.   - TMGH weight = 41,250 / 71,250 ≈ 57.9% of the portfolio.\n\n**Diversification constraint**   - The guidelines state: \"Keep the portfolio diversified: after a buy, no single company may be more than half of the portfolio's total value (cash plus holdings at the given prices). This limit has no exceptions, whatever the investor's profile; buy fewer shares instead.\"   - The portfolio is already above the 50% threshold (57.9% TMGH). Any additional buy would further violate the rule; even a hold action leaves the portfolio at 57.9% TMGH, which is non‑compliant.   - To bring the portfolio into compliance, TMGH exposure must be reduced so that its value is ≤ 50% of the total (≤ 35,625 EGP).\n\n**Does the profit growth justify adding to the position?**   - The 59.38% growth in shareholders' profit is positive for long‑term fundamentals. However, the portfolio is already over‑concentrated in TMGH. Adding more TMGH shares would increase concentration beyond the permitted 50% limit, conflicting with the diversification requirement that carries no exceptions. Therefore, adding to the position is not justified under the current portfolio structure.\n\n**Recommendation**   - To meet the diversification rule, the investor should reduce the TMGH holding. Selling 69 shares at 82.50 EGP each (total 5,692.5 EGP) leaves 431 shares, bringing TMGH to approximately 49.9% of the total portfolio value (35,557.5 EGP out of 71,250 EGP). This action reduces the position rather than adding to it, but it is necessary to comply with the hard diversification constraint. If the investor wishes to increase exposure later, they would first need to reduce the existing TMGH holding below the 50% threshold.\n\n**Uncertainty & risks** – All figures are drawn from the provided evidence (cut‑off 2026‑11‑18). No outside knowledge or later events are used. Profit growth is based on reported consolidated results. The 5‑10 year horizon, market fluctuations, and changes in the company's financial position are not captured in this guidance. The diversification rule is a strict constraint with no exceptions per the given instructions.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2024 Restated"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The portfolio is already 57.9% TMGH, exceeding the 50% diversification limit; any buy would violate the rule. The recommendation to sell 69 shares addresses compliance but reduces the position as requested."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 35692.5,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 431
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 71.572,
+      "input_tokens": 1936,
+      "output_tokens": 14850,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 71.578
+}

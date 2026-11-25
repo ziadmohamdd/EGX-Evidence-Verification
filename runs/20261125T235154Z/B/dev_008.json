@@ -1,0 +1,181 @@
+{
+  "case_id": "dev_008",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "**Friend's claim is incorrect.** The evidence shows ETEL's net profit for FY2025 was 22,578,063 thousand L.E. (≈22.58 billion L.E.), not 225.9 billion. FY2024 net profit was 10,111,328 thousand L.E. (≈10.11 billion L.E.). The profit ratio is 22.58 / 10.11 ≈ 2.23 times, not 'more than ten times'. Operating revenues were 106,672,946 thousand L.E. (≈106.67 billion L.E.) in 2025 and 81,677,812 thousand L.E. (≈81.68 billion L.E.) in 2024.\n\n**Portfolio diversification constraint:** Current holdings: 150 ETEL shares × 141.95 EGP = 21,292.5 EGP. Cash = 50,000 EGP. Total portfolio = 71,292.5 EGP. The 50% single‑company limit allows holdings to reach at most 35,646.25 EGP, meaning a maximum of 101 additional ETEL shares (cost 14,336.95 EGP) could be bought without exceeding the limit; buying more would violate the rule. Putting all 50,000 EGP into ETEL would concentrate >70% of the portfolio in one stock, breaching the diversification requirement regardless of risk profile.\n\n**Investor profile:** Goal is to top up retirement savings with a 5‑year horizon, medium risk tolerance, and a separate emergency fund. Concentrating additional cash into a single listed stock—especially on a misinformed premise—conflicts with the need for diversification and the medium‑ability‑to‑withstand‑losses stance.\n\n**Unused/ambiguous figures:** Basic and diluted EPS (11.93 and 4.79) are printed with unit L.E.(000), which is inconsistent with per‑share earnings and were excluded from calculations.\n\n**Recommendation:** keep_cash. The existing 150 ETEL shares may be held, but all available cash should remain liquid (or be deployed into diversified instruments) given the misinformation, the 50% concentration limit, and the investor’s medium‑risk, 5‑year retirement‑savings goal. This preserves liquidity, respects diversification, and avoids over‑exposure to a single stock based on incorrect data.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063.0,
+        "statement": "ETEL Net profit for the year FY2025 = 22,578,063 thousand L.E. = 22,578,063,000 L.E."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328.0,
+        "statement": "ETEL Net profit for the year FY2024 = 10,111,328 thousand L.E. = 10,111,328,000 L.E."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946.0,
+        "statement": "ETEL Operating revenues FY2025 = 106,672,946 thousand L.E. = 106,672,946,000 L.E."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812.0,
+        "statement": "ETEL Operating revenues FY2024 = 81,677,812 thousand L.E. = 81,677,812,000 L.E."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55: Basic and diluted EPS 11.93 (unit L.E.(000) ambiguous for per‑share metric)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56: Basic and diluted EPS 4.79 (same unit ambiguity)"
+    ],
+    "limitations": [
+      "All figures are as of the 2026-11-18 cutoff; no later events or market data are considered.",
+      "The 50% portfolio concentration limit is applied strictly; no exceptions are made per the rules.",
+      "The recommendation is guidance only and not a guarantee of returns."
+    ]
+  },
+  "final": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "**Friend's claim is incorrect.** The evidence shows ETEL's net profit for FY2025 was 22,578,063 thousand L.E. (= 22,578,063,000 L.E. [removed: figure could not be verified] FY2024 net profit was 10,111,328 thousand L.E. (= 10,111,328,000 L.E.). The profit ratio is 22,578,063,000 / 10,111,328,000 ≈ 2.23 times, not 'more than ten times'. Operating revenues were 106,672,946 thousand L.E. (= 106,672,946,000 L.E.) in 2025 and 81,677,812 thousand L.E. (= 81,677,812,000 L.E.) in 2024.\n\n**Portfolio diversification constraint:** Current holdings: 150 ETEL shares × 141.95 EGP = 21,292.5 EGP. Cash = 50,000 EGP. Total portfolio value = 71,292.5 EGP. The 50% single-company limit allows holdings to reach at most 35,646.25 EGP, meaning a maximum of 101 additional ETEL shares (cost 14,336.95 EGP) could be bought without exceeding the limit; buying 102 shares would push ETEL to ~50.18% of the portfolio, breaching the rule. Committing all 50,000 EGP to ETEL would acquire ~352 shares, making ETEL ≈79.3% of the portfolio—violating the 50% limit regardless of risk profile.\n\n**Investor profile:** Goal is to top up retirement savings with a 5‑year horizon, medium risk tolerance, and a separate emergency fund. Concentrating additional cash into a single listed stock—especially on a misinformed premise—conflicts with the need for diversification and the medium‑ability‑to‑withstand‑losses stance. The existing 150 ETEL shares may be retained, but all available cash should remain liquid (or be deployed into diversified instruments) given the misinformation, the strict 50% concentration limit, and the investor’s medium‑risk, 5‑year retirement‑savings goal. This preserves liquidity, respects diversification, and avoids over‑exposure to a single stock based on incorrect data.\n\n[removed: figure could not be verified]\n\n**Recommendation:** keep_cash. The existing 150 ETEL shares may be held, but all available cash should remain liquid (kept_cash) given the misinformation, the 50% concentration limit, and the investor’s medium‑risk, 5‑year retirement‑savings goal. This preserves liquidity, respects diversification, and avoids over‑exposure to a single stock based on incorrect data.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL Net profit for the year FY2025 = 22,578,063 thousand L.E. = 22,578,063,000 L.E. (base units)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL Net profit for the year FY2024 = 10,111,328 thousand L.E. = 10,111,328,000 L.E. (base units)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL Operating revenues FY2025 = 106,672,946 thousand L.E. = 106,672,946,000 L.E. (base units)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "ETEL Operating revenues FY2024 = 81,677,812 thousand L.E. = 81,677,812,000 L.E. (base units)"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55: Basic and diluted earning per share 11.93 (unit L.E.(000) ambiguous for per‑share metric; must not be used per rules)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56: Basic and diluted earning per share 4.79 (same unit ambiguity; must not be used per rules)"
+    ],
+    "limitations": [
+      "All figures are as of the 2026-11-18 cutoff; no later events or market data are considered.",
+      "The 50% portfolio concentration limit is applied strictly; no exceptions are made per the rules.",
+      "The recommendation is guidance only and not a guarantee of returns.",
+      "Figures marked AMBIGUOUS (EPS) and those requiring unit conversion (L.E.(000) to base units) have been handled as specified; any remaining ambiguity is noted.",
+      "These figures could not be verified and were not used: Total Assets (consolidated), Basic and diluted earning per share for the year (L.E. / Share) (15), Basic and diluted earning per share for the year (L.E. / Share) (15). Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 50000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 150
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "value_mismatch",
+        "detail": "stated 2.25781e+07 but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "rule": "value_mismatch",
+        "detail": "stated 1.01113e+07 but evidence 'Net profit for the year' is 1.01113e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "rule": "value_mismatch",
+        "detail": "stated 1.06673e+08 but evidence 'Operating revenues (5)' is 1.06673e+11 [Operating revenues (5) 106 672 946 81 677 812 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "rule": "value_mismatch",
+        "detail": "stated 8.16778e+07 but evidence 'Operating revenues (5)' is 8.16778e+10 [Operating revenues (5) 106 672 946 81 677 812 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"225.9 billion\", which is 'Total Assets (consolidated)' (2.25883e+11), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"11.93\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (11.93), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.79\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (4.79), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"225.9 billion\", which is 'Total Assets (consolidated)' (2.25883e+11), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"11.93\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (11.93), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.79\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (4.79), but it is not listed in claims"
+      }
+    ],
+    "dropped": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 54.409,
+      "input_tokens": 1570,
+      "output_tokens": 10156,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 62.271,
+      "input_tokens": 3571,
+      "output_tokens": 15392,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 116.691
+}

@@ -101,7 +101,7 @@ The prompt rules only say a buy must fit the available cash; they say nothing ab
 **The rule added afterwards, and its check.** The agents' rules now say that after a buy no single company may be more than half of the portfolio's value. Nemotron was rerun (A and B, printed figures) on the 7 cases where buys had gone over 50%:
 - **First version, with an exception** "if the investor's profile clearly supports it" (`runs/20261125T162311Z`): 3 of 4 buys stopped at exactly 50%. The fourth (A, dev_011) used the exception to put the whole portfolio into Edita, giving a "medium" willingness to accept losses as the reason. So the exception was removed (commit 0ea1490).
 - **Strict version, no exception** (`runs/20261125T192524Z`): no buy over 50%. The same A dev_011 answer now buys 1,960 Edita shares, exactly 50% (before: 3,921 shares, 100%). Nemotron made fewer buys overall in this run (1 in 14 answers) and chose "insufficient evidence" more often, which fits its caution in section 4.
-- **A separate, older fault showed up again:** two B answers chose hold or keep cash and still gave a share count (500 TMGH, 150 ETEL). The portfolio check blocks such answers. It is not caused by the new rule; the same block appears in the earlier runs.
+- **A separate, older fault showed up again:** two B answers chose hold or keep cash and still gave a share count (500 TMGH, 150 ETEL). The portfolio check blocks such answers. It is not caused by the new rule; the same block appears in the earlier runs. A rule was added that `shares` is 0 for hold, keep cash and insufficient evidence (commit edf599d). Rerun on the two cases (dev_008, dev_010; A and B, `runs/20261125T235154Z`): no answer blocked, B dev_010 now gives "hold TMGH" without a share count.
 
 The 50% limit matches the scoring's concentration measure.
 
@@ -130,4 +130,4 @@ Gemini's C on the harder cases has only 1 scored answer; the free quota ran out.
   - hand-checked reference values;
   - the 30 test cases;
   - freezing the prompts;
-  - the rule on how much to put into one stock is now in place and strict (section 5); hold or keep cash with a share count still gets blocked.
+  - the rule on how much to put into one stock is now in place and strict, and hold or keep cash no longer carries a share count (section 5).

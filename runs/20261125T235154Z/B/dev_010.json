@@ -1,0 +1,81 @@
+{
+  "case_id": "dev_010",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "The profit belonging to Talaat Moustafa's own shareholders (i.e., 'Shareholders of the Parent Company' in the consolidated statements) grew from 9,025,066,065 LE in FY2024 (restated) to 14,383,890,306 LE in FY2025, an increase of 5,358,824,241 LE, or approximately 59.4% year‑over‑year growth. This strong growth is supported by the following evidence: [TMGH-TMGH_FY2025_consolidated_en-p7-57] (2025: 14,383,890,306 LE), [TMGH-TMGH_FY2025_consolidated_en-p7-58] (2024 restated: 9,025,066,065 LE). No figures in the provided evidence are marked AMBIGUOUS, and all values used are in base LE as printed.\n\nHowever, the diversification rule imposes a strict 50% cap: after any buy, no single company may exceed half the portfolio's total value (cash plus holdings at given prices). The investor's current portfolio consists of 30,000.00 EGP cash and 500 TMGH shares at 82.50 EGP/share (value 41,250 EGP), giving a total of 71,250 EGP. TMGH already represents 41,250 / 71,250 ≈ 57.89% of the portfolio, which is above the 50% limit. Because the rule has no exceptions and any additional purchase of TMGH shares would further increase this concentration, adding to the position is not justified under the current portfolio structure, regardless of the positive profit trend.\n\nGiven the investor's long‑term growth horizon and high risk tolerance, the fundamentals are encouraging, but the portfolio concentration risk outweighs the benefit of increasing the TMGH holding. The responsible action is to maintain the existing holding without increasing it.\n\n**Uncertainty & risks**: This guidance relies solely on the supplied evidence and prices up to the 2026‑11‑18 cutoff. Future financial performance, market conditions, and company‑specific events are not considered. The diversification constraint is absolute per the rules; breaching it would violate the portfolio‑management framework. Investors should monitor TMGH's fundamentals and rebalance if the concentration threshold is exceeded through market movements or other actions.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2024 (Restated)"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Diversification rule already breached at current allocation; no buy of TMGH shares permissible without first reducing the holding. All figures taken from evidence as printed in base LE; no outside knowledge applied."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "The profit belonging to Talaat Moustafa's own shareholders (i.e., 'Shareholders of the Parent Company' in the consolidated statements) grew from 9,025,066,065 LE in FY2024 (restated) to 14,383,890,306 LE in FY2025, an increase of 5,358,824,241 LE, or approximately 59.4% year‑over‑year growth. This strong growth is supported by the following evidence: [TMGH-TMGH_FY2025_consolidated_en-p7-57] (2025: 14,383,890,306 LE), [TMGH-TMGH_FY2025_consolidated_en-p7-58] (2024 restated: 9,025,066,065 LE). No figures in the provided evidence are marked AMBIGUOUS, and all values used are in base LE as printed.\n\nHowever, the diversification rule imposes a strict 50% cap: after any buy, no single company may exceed half the portfolio's total value (cash plus holdings at given prices). The investor's current portfolio consists of 30,000.00 EGP cash and 500 TMGH shares at 82.50 EGP/share (value 41,250 EGP), giving a total of 71,250 EGP. TMGH already represents 41,250 / 71,250 ≈ 57.89% of the portfolio, which is above the 50% limit. Because the rule has no exceptions and any additional purchase of TMGH shares would further increase this concentration, adding to the position is not justified under the current portfolio structure, regardless of the positive profit trend.\n\nGiven the investor's long‑term growth horizon and high risk tolerance, the fundamentals are encouraging, but the portfolio concentration risk outweighs the benefit of increasing the TMGH holding. The responsible action is to maintain the existing holding without increasing it.\n\n**Uncertainty & risks**: This guidance relies solely on the supplied evidence and prices up to the 2026‑11‑18 cutoff. Future financial performance, market conditions, and company‑specific events are not considered. The diversification constraint is absolute per the rules; breaching it would violate the portfolio‑management framework. Investors should monitor TMGH's fundamentals and rebalance if the concentration threshold is exceeded through market movements or other actions.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2024 (Restated)"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Diversification rule already breached at current allocation; no buy of TMGH shares permissible without first reducing the holding. All figures taken from evidence as printed in base LE; no outside knowledge applied."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 48.604,
+      "input_tokens": 1936,
+      "output_tokens": 10857,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 48.609
+}
