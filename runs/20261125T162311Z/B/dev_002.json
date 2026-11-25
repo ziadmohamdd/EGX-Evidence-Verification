@@ -1,0 +1,111 @@
+{
+  "case_id": "dev_002",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 606,
+    "explanation": "Recommendation: buy 606 shares of TMGH at 82.50 EGP per share, using 49,995 EGP of the investor's 100,000 EGP cash, and retain 50,005 EGP in cash.\n\nExplanation: Based solely on the verified 2025 consolidated evidence for TMGH and the given share price of 82.50 EGP, the following metrics are derived in base units (LE):\n- Earnings per Share (EPS) for period 2025: 6.98 LE (evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-61). Price-to-earnings ratio = 82.50 / 6.98 ≈ 11.82.\n- Net profit for the year 2025: 18,201,981,482 LE (evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-55). Total equity as of 31 December 2025: 157,708,140,765 LE (evidence_id: TMGH-TMGH_FY2025_consolidated_en-p5-67). Return on equity (ROE) = 18,201,981,482 / 157,708,140,765 ≈ 11.54%.\n- Gross profit for period 2025: 20,855,400,384 LE (evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-19).\n\nThe investor profile specifies a long-term wealth-building horizon of 10+ years, no planned withdrawals, and high willingness and ability to withstand losses. These characteristics support a meaningful equity allocation over a decade. To adhere to the diversification rule—no single company should exceed 50% of the portfolio's total value (cash plus holdings at given prices)—the allocation is set at 606 shares of TMGH at 82.50 EGP per share, costing 49,995 EGP. This leaves 50,005 EGP in cash. The resulting portfolio total value is 100,000 EGP, with TMGH representing 49,995 / 100,000 = 49.995% of the portfolio, satisfying the diversification constraint (≤50%).\n\nUnused figures:\n- TMGH Net profit for the year 2024 restated (evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-56) is marked AMBIGUOUS (as printed: digits covered by an auditor's stamp). This figure is listed in unused_figures and excluded from all calculations.\n\nConclusions affected: Any assessment of year-over-year change in net profit or direct comparison between 2024 and 2025 performance relying on the 2024 figure is affected. The recommendation relies exclusively on the verified 2025 figures and the derived P/E and ROE metrics.\n\nUncertainty and risks: This guidance is based exclusively on the provided evidence and price as of the 2026-11-18 cutoff. No outside knowledge about TMGH, its sector, or later events is used. The analysis covers only one fiscal year's data; therefore, sustainability of profits, debt levels, dividend policy, growth trajectory, and broader Egyptian market risks are not assessed. Investment returns are not guaranteed, and the portfolio's value may fluctuate. The investor should monitor holdings and be prepared for potential losses, consistent with the stated high risk tolerance.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "Gross profit (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity (consolidated) period 31 December 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Earnings per Share (consolidated) period 2025"
+      }
+    ],
+    "unused_figures": [
+      "TMGH Net profit for the year 2024 restated (evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-56) - AMBIGUOUS; digits covered by auditor's stamp"
+    ],
+    "limitations": [
+      "Single-year financial data only; no multi-year trends, cash flow, or debt analysis.",
+      "No sector or macroeconomic context (per rules, outside knowledge is excluded).",
+      "AMBIGUOUS 2024 net profit figure prevents reliable year-over-year performance comparison.",
+      "Portfolio concentration at ~50% in one stock; while within the diversification threshold, it leaves limited room for further diversification within the provided evidence set."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 606,
+    "explanation": "Recommendation: buy 606 shares of TMGH at 82.50 EGP per share, using 49,995 EGP of the investor's 100,000 EGP cash, and retain 50,005 EGP in cash.\n\nExplanation: Based solely on the verified 2025 consolidated evidence for TMGH and the given share price of 82.50 EGP, the following metrics are derived in base units (LE):\n- Earnings per Share (EPS) for period 2025: 6.98 LE (evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-61). Price-to-earnings ratio = 82.50 / 6.98 ≈ 11.82.\n- Net profit for the year 2025: 18,201,981,482 LE (evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-55). Total equity as of 31 December 2025: 157,708,140,765 LE (evidence_id: TMGH-TMGH_FY2025_consolidated_en-p5-67). Return on equity (ROE) = 18,201,981,482 / 157,708,140,765 ≈ 11.54%.\n- Gross profit for period 2025: 20,855,400,384 LE (evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-19).\n\nThe investor profile specifies a long-term wealth-building horizon of 10+ years, no planned withdrawals, and high willingness and ability to withstand losses. These characteristics support a meaningful equity allocation over a decade. To adhere to the diversification rule—no single company should exceed 50% of the portfolio's total value (cash plus holdings at given prices)—the allocation is set at 606 shares of TMGH at 82.50 EGP per share, costing 49,995 EGP. This leaves 50,005 EGP in cash. The resulting portfolio total value is 100,000 EGP, with TMGH representing 49,995 / 100,000 = 49.995% of the portfolio, satisfying the diversification constraint (≤50%).\n\nUnused figures:\n- TMGH Net profit for the year 2024 restated (evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-56) is marked AMBIGUOUS (as printed: digits covered by an auditor's stamp). This figure is listed in unused_figures and excluded from all calculations.\n\nConclusions affected: Any assessment of year-over-year change in net profit or direct comparison between 2024 and 2025 performance relying on the 2024 figure is affected. The recommendation relies exclusively on the verified 2025 figures and the derived P/E and ROE metrics.\n\nUncertainty and risks: This guidance is based exclusively on the provided evidence and price as of the 2026-11-18 cutoff. No outside knowledge about TMGH, its sector, or later events is used. The analysis covers only one fiscal year's data; therefore, sustainability of profits, debt levels, dividend policy, growth trajectory, and broader Egyptian market risks are not assessed. Investment returns are not guaranteed, and the portfolio's value may fluctuate. The investor should monitor holdings and be prepared for potential losses, consistent with the stated high risk tolerance.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "Gross profit (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity (consolidated) period 31 December 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Earnings per Share (consolidated) period 2025"
+      }
+    ],
+    "unused_figures": [
+      "TMGH Net profit for the year 2024 restated (evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-56) - AMBIGUOUS; digits covered by auditor's stamp"
+    ],
+    "limitations": [
+      "Single-year financial data only; no multi-year trends, cash flow, or debt analysis.",
+      "No sector or macroeconomic context (per rules, outside knowledge is excluded).",
+      "AMBIGUOUS 2024 net profit figure prevents reliable year-over-year performance comparison.",
+      "Portfolio concentration at ~50% in one stock; while within the diversification threshold, it leaves limited room for further diversification within the provided evidence set."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 50005.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 606
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 87.428,
+      "input_tokens": 1298,
+      "output_tokens": 14007,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 87.431
+}

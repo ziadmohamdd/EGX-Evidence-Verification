@@ -1,0 +1,62 @@
+{
+  "case_id": "dev_008",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 150,
+    "explanation": "The friend's claim is incorrect. According to the verified ETEL FY2025 consolidated financial evidence (rows p6-35 and p6-36, unit: L.E.(000)), the net profit for the year 2025 was 22,578,063 (in thousands of EGP) = 22,578,063,000 EGP, and for 2024 it was 10,111,328 (in thousands of EGP) = 10,111,328,000 EGP. The ratio of 2025 to 2024 net profit is approximately 2.23 times, not 'more than ten times'. The figure 225.9 billion EGP actually matches ETEL's total assets (225,882,527 in L.E.(000) from row p5-31), not net profit. Using the net profit figures above, the friend's statement is unsupported by the evidence.\n\nThe investor's current portfolio consists of 50,000 EGP cash and 150 ETEL shares (value 150 × 141.95 = 21,292.5 EGP), giving a total portfolio value of 71,292.5 EGP. A valid diversification rule applies: after any buy, no single company may exceed 50% of the portfolio's total value (cash plus holdings at given prices), unless the investor's profile clearly supports it. The investor's profile targets top‑up retirement savings with a 5‑year horizon and medium risk tolerance; concentrating all 50,000 EGP cash into ETEL would raise ETEL's portfolio share to ~100%, violating the diversification rule and the moderate risk mandate. A limited buy could add at most ~101 shares (spending ~14,337 EGP) to keep ETEL just under 50%, but given the misinformation from the friend, such concentration is unadvisable.\n\nRecommendation: **hold**. Maintain the existing 150‑share position. The evidence does not support the friend's profit claim, and putting all cash into ETEL would breach diversification guidelines and conflict with the investor's medium‑risk, 5‑year retirement goal. Any future additions should respect the 50% portfolio cap and be based on verified financial data, not anecdotal claims.\n\nUncertainty & risks: This guidance relies solely on the provided evidence (cut‑off 2026‑11‑18) and does not predict future price movements. Egyptian listed companies are subject to regulatory, macroeconomic, and sector‑specific risks. Investors should maintain an emergency fund separate from investment capital, as stated in the profile.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063.0,
+        "statement": "ETEL Net profit for the year 2025 = 22,578,063 (L.E. 000) = 22,578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328.0,
+        "statement": "ETEL Net profit for the year 2024 = 10,111,328 (L.E. 000) = 10,111,328,000 EGP"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "All figures are in Egyptian pounds (EGP) and converted from L.E.(000) to whole pounds as required. No outside knowledge about ETEL or later events was used.",
+      "The diversification rule (max 50% per position) was applied based on the investor's moderate risk profile; the profile does not clearly support exceeding this threshold.",
+      "The friend's claim of 225.9 billion EGP net profit is contradicted by the evidence; the figure 225.9 billion actually corresponds to total assets, not net profit."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The proposed hold was blocked by the portfolio checks (hold must not carry a share count). No change to the portfolio is recommended.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "Blocked recommendation: hold 150 ETEL"
+    ]
+  },
+  "blocked": true,
+  "violations": [
+    {
+      "rule": "no_shares_without_trade",
+      "detail": "hold must not carry a share count"
+    }
+  ],
+  "proposed_portfolio": null,
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 53.478,
+      "input_tokens": 1527,
+      "output_tokens": 8710,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 53.48
+}

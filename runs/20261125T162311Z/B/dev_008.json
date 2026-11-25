@@ -1,0 +1,197 @@
+{
+  "case_id": "dev_008",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "### Analysis of the friend's claim\nThe evidence provided does **not** support the claim that Telecom Egypt (ETEL) made a net profit of 225.9 billion EGP in 2025, nor that this was \"more than ten times\" its 2024 profit. Using only the verified figures from the ETEL FY2025 consolidated report (all values in L.E. (000)):\n- **Net profit for the year 31/12/2025** (evidence_id: ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35): 22,578,063 (L.E. 000) = **22,578,063,000 EGP** (~22.58 billion EGP).\n- **Net profit for the year 31/12/2024** (evidence_id: ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36): 10,111,328 (L.E. 000) = **10,111,328,000 EGP** (~10.11 billion EGP).\n- **Profit ratio 2025/2024**: 22.58 / 10.11 ≈ **2.23 times**, not more than 10 times.\nThe friend’s figure of 225.9 billion EGP is roughly 10× the actual reported net profit, and the year‑on‑year increase is about a factor of 2.2, not >10.\n\n### Portfolio context\n- **Current cash**: 50,000.00 EGP.\n- **Current holding**: 150 ETEL shares × 141.95 EGP/share = **21,292.50 EGP**.\n- **Total portfolio value (cash + holdings)**: **71,292.50 EGP**.\n- **ETEL’s current portfolio weight**: 21,292.50 / 71,292.50 ≈ **29.9%**.\n\n### Diversification constraint\nThe guidelines require that after any buy, no single company may exceed **50% of the total portfolio value** (cash + holdings at given prices), unless the investor’s profile clearly supports a higher concentration. The investor’s profile seeks to \"top up retirement savings\" over a **5‑year horizon** with **medium willingness/ability to withstand losses**. This is a moderate profile; concentrating risk in one Egyptian listed stock is inconsistent with typical retirement‑saving objectives and the stated diversification rule.\n\nIf all 50,000 EGP cash were deployed into ETEL at 141.95 EGP/share:\n- Shares purchasable: floor(50,000 / 141.95) = **352 shares** costing 49,968.40 EGP.\n- New ETEL holding: 150 + 352 = **503 shares** worth ≈ 71,399.85 EGP.\n- New portfolio total: ~71,413.45 EGP (cash residual ≈ 13.60 EGP).\n- ETEL would represent **~99.98%** of the portfolio, grossly violating the 50% concentration limit and exposing the retirement savings to unnecessary single‑stock risk.\n\nEven a smaller purchase would increase ETEL’s weight. The maximum additional shares that keep ETEL ≤ 50% of the portfolio is ~101 shares (costing ~14,336.95 EGP), raising ETEL to ~35,629.45 EGP (≈49.98% of the portfolio). This would still concentrate nearly half the portfolio in one stock, which the moderate‑risk, 5‑year retirement profile does not clearly support.\n\n### Ambiguous figures\n- **Basic and diluted EPS** (evidence_ids: ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55, p6-56): printed with unit \"L.E.(000)\" but values 11.93 and 4.79 are per‑share amounts in pounds, not thousands. The unit‑value mismatch makes these figures **AMBIGUOUS** and they have **not** been used in any calculations. Their exclusion does not affect the core conclusions about net profit, portfolio weight, or the recommendation.\n\n### Recommendation\n**keep_cash** – Maintain the current cash position and existing ETEL holding. Do not deploy all cash into additional ETEL shares, as this would violate the diversification rule and contradict the investor’s moderate‑risk, retirement‑saving profile. If the investor wishes to increase ETEL exposure, it should be done cautiously, keeping the position within the 50% portfolio limit (e.g., adding no more than ~101 shares) and only after acknowledging the increased concentration risk. The friend’s profit figures are unsupported by the evidence.\n\n**Uncertainty & risks**: This guidance uses only the provided evidence and prices as of the 2026‑11‑18 cutoff. Future company performance, market conditions, and dividend changes are not modelled. All figures are in Egyptian pounds (EGP) and subject to reporting revisions. Investors should consider broader portfolio diversification and consult a qualified adviser for personalised retirement planning.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063.0,
+        "statement": "Net profit for the year 31/12/2025, in L.E. (000), converted to whole pounds: 22,578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328.0,
+        "statement": "Net profit for the year 31/12/2024, in L.E. (000), converted to whole pounds: 10,111,328,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946.0,
+        "statement": "Operating revenues 31/12/2025, in L.E. (000), converted to whole pounds: 106,672,946,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812.0,
+        "statement": "Operating revenues 31/12/2024, in L.E. (000), converted to whole pounds: 81,677,812,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527.0,
+        "statement": "Total Assets 31/12/2025, in L.E. (000), converted to whole pounds: 225,882,527,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826.0,
+        "statement": "Total Equity 31/12/2025, in L.E. (000), converted to whole pounds: 63,687,826,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55 (EPS 11.93, unit L.E.(000)) and ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56 (EPS 4.79, unit L.E.(000)): the unit \"L.E.(000)\" is inconsistent with EPS being quoted per share in pounds; these figures are AMBIGUOUS and excluded from calculations."
+    ],
+    "limitations": [
+      "All financial figures are derived solely from the printed evidence as of the 2026‑11‑18 cutoff; no later data or external market information is used.",
+      "The diversification rule (max 50% per position) is applied as stated; the investor’s moderate risk profile for a 5‑year retirement horizon is noted but does not automatically justify concentrations above 50%.",
+      "EPS and any other figures marked AMBIGUOUS are explicitly excluded from quantitative use."
+    ]
+  },
+  "final": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "### Analysis of the friend's claim\nThe evidence provided does **not** support the claim that Telecom Egypt (ETEL) made a net profit of 225.9 billion EGP in 2025, nor that this was \"more than ten times\" its 2024 profit. Using only the verified figures from the ETEL FY2025 consolidated report (all values in L.E. (000), converted to whole pounds as required):\n- **Net profit for the year 31/12/2025** (evidence_id: ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35): 22,578,063 (L.E. (000)) = **22,578,063,000 EGP** (~22.58 billion EGP).\n- **Net profit for the year 31/12/2024** (evidence_id: ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36): 10,111,328 (L.E. (000)) = **10,111,328,000 EGP** (~10.11 billion EGP).\n- **Profit ratio 2025/2024**: 22.58 / 10.11 ≈ **2.23 times**, not more than 10 times.\nThe friend’s figure of 225.9 billion EGP is roughly 10× the actual reported net profit, and the year‑on‑year increase is about a factor of 2.2, not >10.\n\n### Portfolio context\n- **Current cash**: 50,000.00 EGP.\n- **Current holding**: 150 ETEL shares × 141.95 EGP/share = **21,292.50 EGP**.\n- **Total portfolio value (cash + holdings)**: **71,292.50 EGP**.\n- **ETEL’s current portfolio weight**: 21,292.50 / 71,292.50 ≈ **29.9%**.\n\n### Diversification constraint\nThe guidelines require that after any buy, no single company may exceed **50% of the total portfolio value** (cash + holdings at given prices), unless the investor’s profile clearly supports a higher concentration. The investor’s profile seeks to \"top up retirement savings\" over a **5‑year horizon** with **medium willingness/ability to withstand losses**. This is a moderate profile; concentrating risk in one Egyptian listed stock is inconsistent with typical retirement‑saving objectives and the stated diversification rule.\n\nIf all 50,000 EGP cash were deployed into ETEL at 141.95 EGP/share:\n- Shares purchasable: floor(50,000 / 141.95) = **352 shares** costing 49,968.40 EGP.\n- New ETEL holding: 150 + 352 = **503 shares** worth ≈ 71,399.85 EGP.\n- New portfolio total: ~71,413.45 EGP (cash residual ≈ 13.60 EGP).\n- ETEL would represent **~99.98%** of the portfolio, grossly violating the 50% concentration limit and exposing the retirement savings to unnecessary single‑stock risk.\n\nEven a smaller purchase would increase ETEL’s weight. The maximum additional shares that keep ETEL ≤ 50% of the portfolio is ~101 shares (costing ~14,336.95 EGP), raising ETEL to ~35,629.45 EGP (≈49.98% of the portfolio). This would still concentrate nearly half the portfolio in one stock, which the moderate‑risk, 5‑year retirement profile does **not** clearly support.\n\n### Ambiguous figures\n[removed: figure could not be verified] The unit‑value mismatch makes these figures **AMBIGUOUS** and they have **not** been used in any calculations. Their exclusion does not affect the core conclusions about net profit, portfolio weight, or the recommendation.\n\n### Recommendation\n**keep_cash** – Maintain the current cash position and existing ETEL holding. Do not deploy all cash into additional ETEL shares, as this would violate the diversification rule and contradict the investor’s moderate‑risk, retirement‑saving profile. The friend’s profit figures are unsupported by the evidence. If the investor wishes to increase ETEL exposure, it should be done cautiously, keeping the position within the 50% portfolio limit (e.g., adding no more than ~101 shares) and only after acknowledging the increased concentration risk.\n\n**Uncertainty & risks**: This guidance uses only the provided evidence and prices as of the 2026‑11‑18 cutoff. Future company performance, market conditions, and dividend changes are not modelled. All figures are in Egyptian pounds (EGP) and subject to reporting revisions. Investors should consider broader portfolio diversification and consult a qualified adviser for personalised retirement planning.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for the year 31/12/2025, in whole pounds: 22,578,063,000 EGP (evidence number 22,578,063 in L.E. (000))"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit for the year 31/12/2024, in whole pounds: 10,111,328,000 EGP (evidence number 10,111,328 in L.E. (000))"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues 31/12/2025, in whole pounds: 106,672,946,000 EGP (evidence number 106,672,946 in L.E. (000))"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "Operating revenues 31/12/2024, in whole pounds: 81,677,812,000 EGP (evidence number 81,677,812 in L.E. (000))"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total Assets 31/12/2025, in whole pounds: 225,882,527,000 EGP (evidence number 225,882,527 in L.E. (000))"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "Total Equity 31/12/2025, in whole pounds: 63,687,826,000 EGP (evidence number 63,687,826 in L.E. (000))"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55 (EPS 11.93, unit L.E.(000)) and ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56 (EPS 4.79, unit L.E.(000)): the unit \"L.E.(000)\" is inconsistent with EPS being quoted per share in pounds; these figures are AMBIGUOUS and excluded from calculations.",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "All financial figures are derived solely from the printed evidence as of the 2026‑11‑18 cutoff; no later data or external market information is used.",
+      "The diversification rule (max 50% per position) is applied as stated; the investor’s moderate risk profile for a 5‑year retirement horizon is noted but does not automatically justify concentrations above 50%.",
+      "EPS and any other figures marked AMBIGUOUS are explicitly excluded from quantitative use.",
+      "The friend’s profit claim is refuted by the evidence; any investment decision based on that claim would be unsupported.",
+      "These figures could not be verified and were not used: Basic and diluted earning per share for the year (L.E. / Share) (15), Basic and diluted earning per share for the year (L.E. / Share) (15). Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 50000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 150
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "value_mismatch",
+        "detail": "stated 2.25781e+07 but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "rule": "value_mismatch",
+        "detail": "stated 1.01113e+07 but evidence 'Net profit for the year' is 1.01113e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "rule": "value_mismatch",
+        "detail": "stated 1.06673e+08 but evidence 'Operating revenues (5)' is 1.06673e+11 [Operating revenues (5) 106 672 946 81 677 812 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "rule": "value_mismatch",
+        "detail": "stated 8.16778e+07 but evidence 'Operating revenues (5)' is 8.16778e+10 [Operating revenues (5) 106 672 946 81 677 812 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "rule": "value_mismatch",
+        "detail": "stated 2.25883e+08 but evidence 'Total Assets (consolidated)' is 2.25883e+11 [Total Assets | | 225 882 527 | 197 952 788 | unit: L.E. (000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "rule": "value_mismatch",
+        "detail": "stated 6.36878e+07 but evidence 'Total Equity (consolidated)' is 6.36878e+10 [Total Equity | | 63 687 826 | 45 937 991 | unit: L.E. (000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"11.93\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (11.93), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.79\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (4.79), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"11.93\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (11.93), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.79\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (4.79), but it is not listed in claims"
+      }
+    ],
+    "dropped": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 394.516,
+      "input_tokens": 1527,
+      "output_tokens": 8027,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 87.019,
+      "input_tokens": 4647,
+      "output_tokens": 14105,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 481.542
+}

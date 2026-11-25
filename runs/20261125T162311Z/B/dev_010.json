@@ -1,0 +1,69 @@
+{
+  "case_id": "dev_010",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 500,
+    "explanation": "### Profit growth belonging to Talaat Moustafa's own shareholders (2025 vs 2024)\n- **Figure used**: \"Shareholders of the Parent Company (consolidated)\" is the line most directly matching \"profit belonging to ... own shareholders.\"\n- **2025**: 14,383,890,306 LE ([TMGH-TMGH_FY2025_consolidated_en-p7-57])\n- **2024 (Restated)**: 9,025,066,065 LE ([TMGH-TMGH_FY2025_consolidated_en-p7-58])\n- **Absolute growth**: 14,383,890,306 - 9,025,066,065 = **5,358,824,241 LE**\n- **Growth rate**: ~59.4% increase in profit attributable to the parent company's own shareholders.\n\n### Portfolio context at the 2026-11-18 cutoff\n- **Cash**: 30,000.00 EGP\n- **Current holding**: 500 TMGH shares @ 82.50 EGP = 41,250.00 EGP\n- **Total portfolio value**: 71,250.00 EGP (cash + holdings at given prices)\n- **TMGH's current portfolio weight**: 41,250 / 71,250 ≈ **57.9%**\n\n### Does the growth justify adding to the position?\n- The ~59% year-on-year growth in shareholders' profit is a strong fundamental positive and supports the case for maintaining or increasing exposure to TMGH from a business-performance perspective.\n- **However**, the diversification rule states: *after a buy, no single company should be more than half of the portfolio's total value (cash plus holdings at the given prices).* Only go above that if the investor's profile clearly supports it, and the reason must be explained.\n- The investor's profile: long-term growth horizon (5‑10 years), high willingness to accept losses, but **medium** financial ability to withstand losses. While the long horizon and high risk tolerance could support a concentrated growth position, the medium loss‑withstanding capacity suggests caution against excessive concentration.\n- Critically, the investor's **current** TMGH allocation already exceeds the 50% threshold (57.9%). Any additional buy would increase this weight further (e.g., buying 100 more shares at 82.50 EGP would raise TMGH to ~69.5% of the portfolio). The guidelines do not provide an automatic pass for exceeding 50% merely because the investor has a long horizon or high loss willingness; an explicit profile justification is required.\n- Given the existing concentration and the medium ability to withstand losses, adding to the position without reducing other holdings or rebalancing would move the portfolio further away from the stated diversification guideline without a clear, explicit profile signal supporting such concentration.\n\n### Recommendation\n- **Hold** the existing TMGH position.\n- Rationale: The profit growth is fundamentally supportive, but the portfolio is already meaningfully concentrated in TMGH. Holding maintains current exposure while avoiding the concentration risk that an additional buy would introduce. If the investor wishes to increase TMGH exposure, this would require either (a) reducing other holdings to free cash for a purchase that keeps TMGH ≤50% of the portfolio, or (b) an explicit acknowledgment in the investment policy that the profile supports a concentrated position beyond the 50% rule. Without such adjustments or a clear profile justification, the responsible action is to hold.\n\n**Uncertainty & risks**: This guidance uses only the provided evidence and price snapshot (cut‑off 2026‑11‑18). It does not incorporate later company announcements, macro‑economic shifts, or changes in the investor's personal circumstances. Past profit growth does not guarantee future returns. The Egyptian listed‑company market, sector‑specific risks, and liquidity conditions may affect TMGH's performance over the 5‑10 year horizon. Investors should consider this as guidance, not a guarantee, and monitor the position against their overall portfolio risk tolerance.}",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2024 (Restated)"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "All figures are from the 2025 annual report as printed at the 2026‑11‑18 cutoff; no later data are included.",
+      "The diversification guideline and recommendation assume the price of 82.50 EGP per share and the cash/holding values exactly as given; any change in price or cash balance would alter the portfolio weight calculations.",
+      "The investor's profile is interpreted strictly as given; other unspoken risk tolerances or financial goals are not factored in.",
+      "No figures in the provided evidence are explicitly marked AMBIGUOUS, but reliance is placed only on the two Shareholders‑of‑the‑Parent‑Company lines identified above."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The proposed hold was blocked by the portfolio checks (hold must not carry a share count). No change to the portfolio is recommended.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "Blocked recommendation: hold 500 TMGH"
+    ]
+  },
+  "blocked": true,
+  "violations": [
+    {
+      "rule": "no_shares_without_trade",
+      "detail": "hold must not carry a share count"
+    }
+  ],
+  "proposed_portfolio": null,
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 56.379,
+      "input_tokens": 1893,
+      "output_tokens": 7992,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 56.384
+}

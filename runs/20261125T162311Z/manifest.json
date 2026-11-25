@@ -1,0 +1,31 @@
+{
+  "code_version": "0.1.0",
+  "model": {
+    "provider": "nvidia",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "base_url": null,
+    "temperature": 0.0,
+    "fallback": [],
+    "structured_method": "json_schema"
+  },
+  "conditions": [
+    "A",
+    "B"
+  ],
+  "fee_rate": 0.0,
+  "evidence_view": "printed",
+  "cases": [
+    "dev_001",
+    "dev_002",
+    "dev_005",
+    "dev_008",
+    "dev_009",
+    "dev_010",
+    "dev_011"
+  ],
+  "started": "2026-11-25T16:23:21.893165+00:00",
+  "resumed": [
+    "2026-11-25T16:23:29.921405+00:00",
+    "2026-11-25T17:15:34.247772+00:00"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "case_id": "dev_009",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asks for a full‑year 2026 earnings‑per‑share (EPS) and price‑to‑earnings (P/E) calculation for Abu Qir (ABUK), based on a report that only covers the nine months ending 30 September 2026. The evidence provided has several critical limitations that prevent a responsible valuation:\n\n1. **AMBIGUOUS figures cannot be used.** The revenue rows (p2‑01, p2‑02) and net‑profit rows (p2‑25, p2‑26) are all marked AMBIGUOUS. Per the rules, these figures must not appear in calculations. They are listed in `unused_figures` below.\n\n2. **EPS figures have unit ambiguity.** The EPS rows (p2‑31, p2‑32) are marked \"verified\", but their stated unit is \"Million جنيه\". Converting the printed values (e.g., ٨،٧٤) to base units (whole pounds) would yield 8,740,000 EGP per share, which is not meaningful for EPS. Moreover, the EPS data cover only nine months, not the full year.\n\n3. **No full‑year data.** The report provides only 9M2026 and 9M2025 figures. There is no full‑year 2026 guidance, no prior full‑year result, and no basis in the evidence to reliably annualize the nine‑month EPS (a simple 4/3 multiplication would be an unsupported assumption).\n\n4. **P/E ratio cannot be calculated.** Without a dependable full‑year EPS, the P/E ratio (price ÷ EPS) cannot be derived. The market price at the cutoff is 76.21 EGP, but this cannot be meaningfully compared to earnings.\n\nBecause the evidence is insufficient to calculate full‑year 2026 EPS or a P/E ratio, no responsible buy, hold, or sell recommendation can be made on the basis of this data alone.\n\n**`unused_figures`**:\n- [ABUK‑ABUK_9M2026_results-p2-01]: Revenue 9M2026, AMBIGUOUS\n- [ABUK‑ABUK_9M2026_results-p2-02]: Revenue 9M2025, AMBIGUOUS\n- [ABUK‑ABUK_9M2026_results-p2-25]: Net profit 9M2026, AMBIGUOUS\n- [ABUK‑ABUK_9M2026_results-p2-26]: Net profit 9M2025, AMBIGUOUS\n- [ABUK‑ABUK_9M2026_results-p2-31]: EPS 9M2026, verified but unit \"Million جنيه\" makes base‑unit conversion unreliable\n- [ABUK‑ABUK_9M2026_results-p2-32]: EPS 9M2025, verified but unit \"Million جنيه\" makes base‑unit conversion unreliable\n\n**`claims`**: No financial figures from the evidence were used in calculations; therefore `claims` is empty.\n\n**Recommendation rationale**: The investor’s profile (income + growth, 3‑5‑year horizon, medium risk tolerance, separate emergency fund) suggests a long‑term holding strategy, but without a reliable valuation the share cannot be assessed as cheap or expensive. The prudent course is to keep the cash reserve intact and await the full‑year 2026 report or additional audited data before considering a position. This avoids over‑reliance on partial, ambiguous figures and respects the portfolio‑diversification rule (cash remains 100 % of the portfolio until a defensible buy decision is possible).",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "limitations": [
+      "Evidence covers only nine months; full‑year data is absent.",
+      "Revenue and net‑profit figures are AMBIGUOUS and excluded from calculations.",
+      "EPS figures carry a \"Million جنيه\" unit that does not translate to meaningful base‑unit EPS values.",
+      "No basis for annualizing nine‑month EPS is provided in the evidence."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asks for a full‑year 2026 earnings‑per‑share (EPS) and price‑to‑earnings (P/E) calculation for Abu Qir (ABUK), based on a report that only covers the nine months ending 30 September 2026. The evidence provided has several critical limitations that prevent a responsible valuation:\n\n1. **AMBIGUOUS figures cannot be used.** The revenue rows (p2‑01, p2‑02) and net‑profit rows (p2‑25, p2‑26) are all marked AMBIGUOUS. Per the rules, these figures must not appear in calculations. They are listed in `unused_figures` below.\n\n2. **EPS figures have unit ambiguity.** The EPS rows (p2‑31, p2‑32) are marked \"verified\", but their stated unit is \"Million جنيه\". Converting the printed values (e.g., ٨،٧٤) to base units (whole pounds) would yield 8,740,000 EGP per share, which is not meaningful for EPS. Moreover, the EPS data cover only nine months, not the full year.\n\n3. **No full‑year data.** The report provides only 9M2026 and 9M2025 figures. There is no full‑year 2026 guidance, no prior full‑year result, and no basis in the evidence to reliably annualize the nine‑month EPS (a simple 4/3 multiplication would be an unsupported assumption).\n\n4. **P/E ratio cannot be calculated.** Without a dependable full‑year EPS, the P/E ratio (price ÷ EPS) cannot be derived. The market price at the cutoff is 76.21 EGP, but this cannot be meaningfully compared to earnings.\n\nBecause the evidence is insufficient to calculate full‑year 2026 EPS or a P/E ratio, no responsible buy, hold, or sell recommendation can be made on the basis of this data alone.\n\n**`unused_figures`**:\n- [ABUK‑ABUK_9M2026_results-p2-01]: Revenue 9M2026, AMBIGUOUS\n- [ABUK‑ABUK_9M2026_results-p2-02]: Revenue 9M2025, AMBIGUOUS\n- [ABUK‑ABUK_9M2026_results-p2-25]: Net profit 9M2026, AMBIGUOUS\n- [ABUK‑ABUK_9M2026_results-p2-26]: Net profit 9M2025, AMBIGUOUS\n- [ABUK‑ABUK_9M2026_results-p2-31]: EPS 9M2026, verified but unit \"Million جنيه\" makes base‑unit conversion unreliable\n- [ABUK‑ABUK_9M2026_results-p2-32]: EPS 9M2025, verified but unit \"Million جنيه\" makes base‑unit conversion unreliable\n\n**`claims`**: No financial figures from the evidence were used in calculations; therefore `claims` is empty.\n\n**Recommendation rationale**: The investor’s profile (income + growth, 3‑5‑year horizon, medium risk tolerance, separate emergency fund) suggests a long‑term holding strategy, but without a reliable valuation the share cannot be assessed as cheap or expensive. The prudent course is to keep the cash reserve intact and await the full‑year 2026 report or additional audited data before considering a position. This avoids over‑reliance on partial, ambiguous figures and respects the portfolio‑diversification rule (cash remains 100 % of the portfolio until a defensible buy decision is possible).",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "limitations": [
+      "Evidence covers only nine months; full‑year data is absent.",
+      "Revenue and net‑profit figures are AMBIGUOUS and excluded from calculations.",
+      "EPS figures carry a \"Million جنيه\" unit that does not translate to meaningful base‑unit EPS values.",
+      "No basis for annualizing nine‑month EPS is provided in the evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 395.491,
+      "input_tokens": 1582,
+      "output_tokens": 7413,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 395.493
+}

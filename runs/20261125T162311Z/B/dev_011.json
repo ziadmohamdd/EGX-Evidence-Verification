@@ -1,0 +1,197 @@
+{
+  "case_id": "dev_011",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 1960,
+    "explanation": "The investor has 80,000 EGP cash, no existing holdings, and a long-term growth horizon of 7+ years with medium risk tolerance. The evidence provides net profit and earnings-per-share data for four listed companies: ETEL (Telecom Egypt), COMI, EFID, and TMGH (Talaat Moustafa). CIB and Edita are not covered by the provided evidence; the comparison below therefore focuses on the four companies with data.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL Net profit for the year period 31/12/2025; unit L.E.(000) → 22,578,063 thousand EGP = 22,578,063,000 EGP whole pounds"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL Net profit for the year period 31/12/2024; unit L.E.(000) → 10,111,328 thousand EGP = 10,111,328,000 EGP whole pounds"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI Net profit for the year period Dec. 31, 2025; unit EGP thousands → 82,258,815 thousand EGP = 82,258,815,000 EGP whole pounds"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI Net profit for the year period Dec. 31, 2024; unit EGP thousands → 55,256,732 thousand EGP = 55,256,732,000 EGP whole pounds"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit for the year period 31 December 2025; unit EGP → 2,695,301,670 EGP whole pounds"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID Net profit for the year period 31 December 2024; unit EGP → 1,606,727,698 EGP whole pounds"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH Net profit for the year period 2025; unit LE → 18,201,981,482 LE whole pounds"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 12769517325.0,
+        "statement": "TMGH Net profit for the year period 2024 (Restated); unit LE → 12,769,517,325 LE whole pounds"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID Basic and diluted earnings per share period 31 December 2025; unit EGP → 2.18 EGP per share (reliable for P/E)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH Earnings per Share period 2025; unit LE → 6.98 LE per share (reliable for P/E)"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55: Basic and diluted earning per share 2025; unit L.E.(000) – ambiguous; EPS in thousands of pounds per share is not interpretable.",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56: Basic and diluted earning per share 2024; unit L.E.(000) – ambiguous; same issue.",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39: Basic EPS 2025; unit EGP thousands – ambiguous; EPS in thousands of pounds per share is not interpretable.",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40: Basic EPS 2024; unit EGP thousands – ambiguous; same issue."
+    ],
+    "limitations": [
+      "ETEL and COMI P/E ratios cannot be calculated because their EPS figures carry ambiguous units (L.E.(000) and EGP thousands), so those conclusions are affected and those figures are listed in unused_figures.",
+      "The evidence does not explicitly name CIB or Edita; the comparison covers only ETEL, COMI, EFID, and TMGH.",
+      "Net profit growth figures assume the first printed number corresponds to 2025 and the second to 2024, as per the side‑by‑side column layout.",
+      "All figures are derived solely from the printed evidence and given share prices; no outside market data or later events are used."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 1960,
+    "explanation": "Analysis summary (net profit growth 2024→2025 and P/E ratios based on 2025 EPS and current share prices at cutoff 2026-11-18):\n\n- Telecom Egypt (ETEL): Net profit increased from ~10.11bn to ~22.58bn EGP (+123.3%). However, its EPS figures carry ambiguous units (L.E.(000)), so P/E cannot be calculated from the given evidence.\n- COMI: Net profit increased from ~55.26bn to ~82.26bn EGP (+48.9%). Basic EPS figures carry ambiguous units (EGP thousands), so P/E cannot be calculated.\n- EFID: Net profit increased from ~1.61bn to ~2.70bn EGP (+67.8%). 2025 EPS = 2.18 EGP/share. With share price 20.40 EGP, P/E ≈ 9.36.\n[removed: figure could not be verified] 2025 EPS = 6.98 LE/share. With share price 82.50 LE, P/E ≈ 11.82.\n\nCIB and Edita are not covered by the provided evidence; therefore, no comparison can be made for these two companies.\n\nRecommendation rationale:\n- EFID offers the most complete and interpretable valuation metric among the four: a calculable P/E of ~9.36 combined with solid net profit growth of ~68%. The EPS is reported in EGP (not thousands/millions), making the ratio reliable for the given evidence.\n- TMGH also has a calculable P/E (~11.82) but with lower growth (~42.5%) and a higher P/E, suggesting relatively richer valuation.\n- ETEL shows the highest growth (~123%) but its P/E is uninterpretable due to ambiguous EPS, introducing significant uncertainty for valuation-based decisions.\n- COMI has moderate growth (~49%) and uninterpretable P/E for the same reason.\n- The investor’s long-term 7+ year horizon and medium risk tolerance support a value-oriented approach; the low P/E of EFID may indicate relatively attractive entry, though it does not guarantee future outperformance.\n- Portfolio diversification: allocating up to 40,000 EGP of the 80,000 EGP cash into EFID (1960 shares × 20.40 EGP = 39,984 EGP) results in the holding representing ~49.98% of the total portfolio value (80,000 EGP cash), keeping the single-stock exposure at or just below the 50% threshold. The remaining ~40,016 EGP stays in cash, maintaining liquidity and further diversification. If the investor wishes to spread the equity allocation across multiple companies, the 40,000 EGP portion could be divided, but per the single-action instruction, a buy of EFID is recommended.\n\nHonest statement of uncertainty and risks:\n- The analysis is based solely on the printed evidence as of the 2026-11-18 cutoff; no later events, macroeconomic shifts, or company-specific developments beyond the reported figures are considered.\n- EPS and net profit figures are historical and may not persist; P/E ratios are based on a single year and may change.\n- Egyptian listed companies are subject to market, regulatory, and currency risks.\n- The ambiguous EPS for ETEL and COMI means their valuations cannot be assessed from this evidence alone.\n- Past net profit growth does not assure future performance.\n- This guidance is not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL Net profit for the year period 31/12/2025; unit L.E.(000) → 22,578,063 thousand EGP = 22,578,063,000 EGP whole pounds"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL Net profit for the year period 31/12/2024; unit L.E.(000) → 10,111,328 thousand EGP = 10,111,328,000 EGP whole pounds"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI Net profit for the year period Dec. 31, 2025; unit EGP thousands → 82,258,815 thousand EGP = 82,258,815,000 EGP whole pounds"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI Net profit for the year period Dec. 31, 2024; unit EGP thousands → 55,256,732 thousand EGP = 55,256,732,000 EGP whole pounds"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit for the year period 31 December 2025; unit EGP → 2,695,301,670 EGP whole pounds"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID Net profit for the year period 31 December 2024; unit EGP → 1,606,727,698 EGP whole pounds"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID Basic and diluted earnings per share period 31 December 2025; unit EGP → 2.18 EGP per share (reliable for P/E)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH Earnings per Share period 2025; unit LE → 6.98 LE per share (reliable for P/E)"
+      }
+    ],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39: Basic EPS 2025; unit EGP thousands – ambiguous; EPS in thousands of pounds per share is not interpretable.",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40: Basic EPS 2024; unit EGP thousands – ambiguous; same issue.",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55: Basic and diluted earning per share 2025; unit L.E.(000) – ambiguous; EPS in thousands of pounds per share is not interpretable.",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56: Basic and diluted earning per share 2024; unit L.E.(000) – ambiguous; same issue.",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55"
+    ],
+    "limitations": [
+      "CIB and Edita are not included in the provided evidence; the comparison and recommendation focus exclusively on ETEL, COMI, EFID, and TMGH.",
+      "ETEL and COMI EPS figures carry ambiguous units (L.E.(000) and EGP thousands), preventing P/E ratio calculation for these two firms; conclusions relying on P/E for ETEL and COMI are affected.",
+      "Net profit growth figures assume the first printed number corresponds to 2025 and the second to 2024, as per the side‑by‑side column layout.",
+      "All figures are derived solely from the printed evidence and given share prices; no outside market data or later events are used.",
+      "P/E ratios are calculated using 2025 EPS and current share prices at the 2026-11-18 cutoff; future EPS may differ materially.",
+      "The diversification rule caps single‑stock exposure at ~50% of the portfolio's total value (cash plus holdings at given prices); the EFID purchase achieves ~49.98%, keeping exposure at the threshold.",
+      "The investor's medium risk tolerance and 7+ year horizon support the recommendation, but Egyptian market risks (regulatory, economic, currency) and the historical nature of the figures must be acknowledged.",
+      "These figures could not be verified and were not used: Net profit for the year (consolidated). Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40016.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1960
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "rule": "value_mismatch",
+        "detail": "stated 1.27695e+10 but evidence 'Earnings per Share (consolidated)' is 4.38 [Earnings per Share | (39) | 6.98 | 4.38 | unit: LE]"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "rule": "value_mismatch",
+        "detail": "stated 1.27695e+10 but evidence 'Net profit for the year (consolidated)' is 1.8202e+10 [Net profit for the year | | 18,201,981,482 | 12,769,517,325 | unit: LE]"
+      }
+    ],
+    "dropped": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55"
+    ],
+    "withdrawn": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-62"
+    ]
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 112.746,
+      "input_tokens": 2418,
+      "output_tokens": 18491,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 164.216,
+      "input_tokens": 4148,
+      "output_tokens": 23252,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 276.966
+}

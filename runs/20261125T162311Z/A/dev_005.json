@@ -1,0 +1,73 @@
+{
+  "case_id": "dev_005",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's goal is to add a fertilizer exporter to the portfolio for diversification over a 5‑year horizon. The current portfolio consists of 40,000 EGP cash and 200 shares of COMI (price 128.00 EGP), valued at 25,600 EGP, giving a total portfolio value of 65,600 EGP (COMI represents ~39% of the portfolio, below the 50% diversification limit).\n\nHowever, all provided financial evidence is for ABUK and is explicitly marked **AMBIGUOUS**. The printed rows contain revenue, net profit, and EPS figures for 9M2026 and 9M2025, but each row's note states that the page shows multiple units ['مليار', 'مليار', …, 'مليون'] and that reliance on the 'مليون جنيه' unit line is ambiguous. Per the instructions, figures marked AMBIGUOUS must not be used in calculations and must be listed in `unused_figures`. Consequently, no reliable revenue, profit, or valuation data can be extracted from the evidence to assess ABUK's suitability, profitability, or growth prospects.\n\nThe only usable data points are the market prices (ABUK 76.21 EGP, COMI 128.00 EGP) and the current holdings/cash. Without fundamental financial figures in a verifiable unit, any recommendation to buy, hold, or sell would be speculative and irresponsible given the investor's medium risk tolerance and the need for diversification evidence.\n\n**What is missing:** Reliable, unambiguous financial statements for ABUK (or any alternative fertilizer exporter) with clear period‑specific figures in base units (EGP, not millions), including at minimum revenue, net profit, and EPS trends over a comparable horizon. Alternatively, evidence for other listed fertilizer exporters would be needed to evaluate the diversification goal.\n\n**Recommendation:** Choose `insufficient_evidence`. The evidence provided does not support a responsible buy/hold/sell decision. The investor should maintain the current position in COMI (or keep cash) until adequate financial data is available, and should not initiate a new position in ABUK based on this report.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "limitations": [
+      "All key financial figures from the evidence are AMBIGUOUS and excluded from calculations.",
+      "No financial data is available for any fertilizer exporter other than the ambiguous ABUK rows.",
+      "Portfolio diversification assessment cannot be performed on fundamentals; only current market values and holdings are known.",
+      "Outside knowledge about company operations, exporter status, or later events is prohibited and would not change the insufficient‑evidence conclusion."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's goal is to add a fertilizer exporter to the portfolio for diversification over a 5‑year horizon. The current portfolio consists of 40,000 EGP cash and 200 shares of COMI (price 128.00 EGP), valued at 25,600 EGP, giving a total portfolio value of 65,600 EGP (COMI represents ~39% of the portfolio, below the 50% diversification limit).\n\nHowever, all provided financial evidence is for ABUK and is explicitly marked **AMBIGUOUS**. The printed rows contain revenue, net profit, and EPS figures for 9M2026 and 9M2025, but each row's note states that the page shows multiple units ['مليار', 'مليار', …, 'مليون'] and that reliance on the 'مليون جنيه' unit line is ambiguous. Per the instructions, figures marked AMBIGUOUS must not be used in calculations and must be listed in `unused_figures`. Consequently, no reliable revenue, profit, or valuation data can be extracted from the evidence to assess ABUK's suitability, profitability, or growth prospects.\n\nThe only usable data points are the market prices (ABUK 76.21 EGP, COMI 128.00 EGP) and the current holdings/cash. Without fundamental financial figures in a verifiable unit, any recommendation to buy, hold, or sell would be speculative and irresponsible given the investor's medium risk tolerance and the need for diversification evidence.\n\n**What is missing:** Reliable, unambiguous financial statements for ABUK (or any alternative fertilizer exporter) with clear period‑specific figures in base units (EGP, not millions), including at minimum revenue, net profit, and EPS trends over a comparable horizon. Alternatively, evidence for other listed fertilizer exporters would be needed to evaluate the diversification goal.\n\n**Recommendation:** Choose `insufficient_evidence`. The evidence provided does not support a responsible buy/hold/sell decision. The investor should maintain the current position in COMI (or keep cash) until adequate financial data is available, and should not initiate a new position in ABUK based on this report.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "limitations": [
+      "All key financial figures from the evidence are AMBIGUOUS and excluded from calculations.",
+      "No financial data is available for any fertilizer exporter other than the ambiguous ABUK rows.",
+      "Portfolio diversification assessment cannot be performed on fundamentals; only current market values and holdings are known.",
+      "Outside knowledge about company operations, exporter status, or later events is prohibited and would not change the insufficient‑evidence conclusion."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 709.575,
+      "input_tokens": 1564,
+      "output_tokens": 4033,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 709.58
+}

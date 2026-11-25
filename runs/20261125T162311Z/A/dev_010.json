@@ -1,0 +1,87 @@
+{
+  "case_id": "dev_010",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 500,
+    "explanation": "### Profit belonging to shareholders growth\n- **Shareholders of the Parent Company (consolidated), period 2025**: 14,383,890,306 LE [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-57]\n- **Shareholders of the Parent Company (consolidated), period 2024 (Restated)**: 9,025,066,065 LE [evidence_id: TMGH-TMGH_FY2025_consolidated_en-p7-58]\n- **Absolute growth**: 14,383,890,306 – 9,025,066,065 = **5,358,824,241 LE**\n- **Growth rate**: 5,358,824,241 / 9,025,066,065 ≈ **59.38%**\n- **EPS growth**: from 4.38 LE (2024) to 6.98 LE (2025), a consistent ~59.4% increase, corroborating the shareholders' profit growth.\n\n### Portfolio position and diversification\n- **Current TMGH holding**: 500 shares × 82.50 EGP = **41,250 EGP**\n- **Cash available**: **30,000 EGP**\n- **Total portfolio value (cash + holdings at given prices)**: 30,000 + 41,250 = **71,250 EGP**\n- **TMGH weight in portfolio**: 41,250 / 71,250 ≈ **57.89%** (already exceeds the 50% diversification threshold)\n- **Impact of any additional buy**: Deploying the 30,000 EGP cash at 82.50 EGP/share would purchase up to 363 shares (costing 29,947.50 EGP), raising TMGH shares to 863 and TMGH portfolio weight to ~99.9% of total value. Any purchase, even a single share, would increase TMGH weight to ~58.01%.\n\n### Diversification rule assessment\nThe rule states: \"after a buy, no single company should be more than half of the portfolio's total value (cash plus holdings at the given prices). Only go above that if the investor's profile clearly supports it, and say why in the explanation.\"\n- The investor's profile: long-term growth goal, 5–10 year horizon, **high willingness to accept losses**, but **medium ability to withstand losses**.\n- While the profile supports growth and loss tolerance, the **medium ability to withstand losses** and the **already-elevated concentration** (57.89% without any new purchase) mean the profile does **not clearly, unambiguously support** increasing concentration further. The rule's intent is to limit single-company risk, and the evidence does not provide a valuation margin or forward‑looking metric that would override this constraint.\n\n### Conclusion on the investor's question\nThe profit belonging to Talaat Moustafa's own shareholders grew by **~59.4%** in 2025 versus the restated 2024 figure, a strong operational result. However, this growth is already reflected in the current share price (82.50 EGP) and the existing holding size. Adding to the position would substantially increase portfolio concentration beyond the 50% diversification limit without clear profile justification, given the medium loss‑withstand ability and the already‑high weight of TMGH.\n\n### Recommendation\n**Hold** the existing 500‑share position. The robust profit growth is noted, but it does not, on its own, justify adding to a position that is already above the diversification threshold and would face heightened concentration risk without clear profile support. The investor may monitor TMGH for future entry points if portfolio diversification can be restructured (e.g., via cash deployment into other assets not discussed here), but with the evidence and constraints provided, maintaining the current holding is the responsible course.\n\n### Uncertainty and risks (as required)\n- The 2024 figures are restated; any further restatement could adjust the calculated growth.\n- No forward‑looking earnings, dividend, or macroeconomic data are provided; return potential beyond the reported profit growth is uncertain.\n- Portfolio concentration risk is already present (TMGH >50% of portfolio); adding increases downside exposure, especially given the medium ability to withstand losses.\n- The price of 82.50 EGP per share is taken as given; no outside valuation analysis or market comparatives are applied per the rules.\n- This guidance is not a guarantee of returns; past profit growth does not assure future performance.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2024 (Restated)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Earnings per Share (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "Earnings per Share (consolidated) period 2024 (Restated)"
+      },
+      {
+        "evidence_id": "given_price",
+        "stated_value": 82.5,
+        "statement": "TMGH price per share at cutoff"
+      },
+      {
+        "evidence_id": "given_cash",
+        "stated_value": 30000.0,
+        "statement": "Investor cash at cutoff"
+      },
+      {
+        "evidence_id": "given_holdings",
+        "stated_value": 500.0,
+        "statement": "TMGH shares held by investor"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "All figures rely on the printed evidence as of the 2026-11-18 cutoff; no later events or outside market data are used.",
+      "The diversification rule and recommendation are based strictly on the given cash, holdings, and prices; deploying cash into other assets not described here is outside the scope of this analysis.",
+      "EPS and profit growth calculations use the first column (period 2025) and second column (period 2024 Restated) as printed; alternative column interpretations would change the growth magnitude."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The proposed hold was blocked by the portfolio checks (hold must not carry a share count). No change to the portfolio is recommended.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "Blocked recommendation: hold 500 TMGH"
+    ]
+  },
+  "blocked": true,
+  "violations": [
+    {
+      "rule": "no_shares_without_trade",
+      "detail": "hold must not carry a share count"
+    }
+  ],
+  "proposed_portfolio": null,
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 738.074,
+      "input_tokens": 1893,
+      "output_tokens": 10053,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 738.076
+}
