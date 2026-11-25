@@ -1,0 +1,70 @@
+{
+  "case_id": "dev_012",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor's decision hinges on whether Edita's net profit grew by more than 50% in 2025 versus 2024. The evidence for net profit for the year (consolidated) period 31 December 2025 (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30) is marked AMBIGUOUS because the 2025 figure is covered by a stamp on the scanned page, rendering it unreliable. The 2024 figure (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31) is verified, but without a reliable 2025 figure the year‑on‑year growth percentage cannot be calculated. Consequently, the condition 'growth by more than 50%' cannot be assessed based on the given evidence. Per the rules, AMBIGUOUS figures must not be used in calculations; the ambiguous figure is listed as unused and its exclusion directly affects the growth assessment. Because the necessary financial data to answer the investor's question is missing, there is insufficient evidence to support a buy, hold, sell, or keep_cash recommendation. The recommendation is therefore 'insuﬃ",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor's decision hinges on whether Edita's net profit grew by more than 50% in 2025 versus 2024. The evidence for net profit for the year (consolidated) period 31 December 2025 (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30) is marked AMBIGUOUS because the 2025 figure is covered by a stamp on the scanned page, rendering it unreliable. The 2024 figure (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31) is verified, but without a reliable 2025 figure the year‑on‑year growth percentage cannot be calculated. Consequently, the condition 'growth by more than 50%' cannot be assessed based on the given evidence. Per the rules, AMBIGUOUS figures must not be used in calculations; the ambiguous figure is listed as unused and its exclusion directly affects the growth assessment. Because the necessary financial data to answer the investor's question is missing, there is insufficient evidence to support a buy, hold, sell, or keep_cash recommendation. The recommendation is therefore 'insuﬃ",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] Net profit for the year (consolidated) period 31 December 2025: AMBIGUOUS; as printed \"2 695 301 670 | 1 606 727 698\" EGP. Note: the 2025 figure is covered by a stamp on the scanned page, making it unreliable for computation.\n\n[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31] Net profit for the year (consolidated) period 31 December 2024: verified; as printed \"2 695 301 670 | 1 606 727 698\" EGP.\n\n**Growth calculation:** The 2025 net profit figure is flagged AMBIGUOUS and must not be computed with per evidence instructions. The 2024 figure is verified but paired with the same pair of numbers in the printed extract; without a reliable 2025 figure, the year‑on‑year growth percentage cannot be determined from the given evidence. Consequently, the condition of \"growth by more than 50%\" cannot be assessed based on this data alone.",
+    "investor": "**Investor-Suitability Assessment**\n\n**1. Horizon & Goal Alignment**\n- Stated horizon: 3 years. This is a medium-term horizon, compatible with a growth-oriented savings strategy but requiring moderate volatility control.\n- Goal: grow savings. A 3-year horizon typically allows exposure to growth assets, but the investor's loss constraints shape the permissible risk set.\n\n**2. Liquidity Needs**\n- Investor profile: \"keeps a separate emergency fund.\" \n- Current portfolio cash: 10,000.00 EGP. This aligns with the emergency-fund requirement and is immediately available.\n- Holdings (EFID: 1,000 shares) are liquidatable at the cutoff price of 20.40 EGP/share, yielding ~20,400 EGP in proceeds if sold.\n\n**3. Loss Willingness & Capacity**\n- Willingness to accept losses: medium.\n- Financial ability to withstand losses: medium.\n- This implies a moderate risk tolerance: the portfolio can experience moderate downturns without threatening the investor's financial stability, but large drawdowns would be uncomfortable.\n\n**4. Current Concentration**\n- Cash: 10,000 EGP (≈32.9% of total portfolio value).\n- EFID shares: 1,000 × 20.40 = 20,400 EGP (≈67.1% of total portfolio value).\n- The portfolio is heavily concentrated in a single equity (EFID). This concentrates both market risk and company-specific risk, which may be at odds with a \"medium\" loss-capacity profile over a 3-year horizon.\n\n**5. Cash Commitable & Reasonable Allocation**\n- Free cash: 10,000.00 EGP (already designated as the emergency fund per profile).\n- Additional cash that could reasonably be committed: given the medium loss capacity and existing ~67% concentration in one stock, any new commitment would ideally be diversified or sized conservatively (e.g., ≤20–30% of free cash) to avoid exacerbating concentration risk. The full 10,000 EGP is already allocated to the emergency mandate, so incremental commitments would come from outside this reserve or require rebalancing the EFID position.\n\n**Portfolio Allowances (what can be sold / what cash is free)**\n- **EFID holdings (1,000 shares):** Can be sold at the cutoff price of 20.40 EGP/share, realizing approximately 20,400.00 EGP in cash.\n- **Free cash:** 10,000.00 EGP is immediately available and designated for the investor's separate emergency fund.\n- **Total liquidable value:** ~30,400.00 EGP (cash + market value of EFID shares at cutoff).\n\n**Note on Constraints**\nPer the given instructions, I am not analysing company financials (including net profit growth calculations) and am not picking or recommending any action (e.g., buying more EFID). The above assessment focuses solely on suitability dimensions and portfolio liquidity/structure as framed."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 24.276,
+      "input_tokens": 1066,
+      "output_tokens": 4709,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 14.349,
+      "input_tokens": 1060,
+      "output_tokens": 3118,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 8.79,
+      "input_tokens": 2877,
+      "output_tokens": 1556,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 47.419
+}

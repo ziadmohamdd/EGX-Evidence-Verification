@@ -1,0 +1,83 @@
+{
+  "case_id": "dev_009",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 393,
+    "explanation": "The investor has 30,000 EGP cash and the share price at cutoff is 76.21 EGP, allowing purchase of 393 shares (cost ~29,944 EGP, leaving ~56 EGP liquidity).  From the report, the verified nine‑month EPS (9M2026) is 8.74 EGP per share (evidence ABUK‑ABUK_9M2026_results‑p2‑31).  Assuming the nine‑month profit trend continues linearly, the estimated full‑year 2026 EPS = 8.74 × (12/9) ≈ 11.65 EGP.  Using the market price of 76.21 EGP, the implied price‑to‑earnings ratio is about 76.21 / 11.65 ≈ 6.5, which is low.  The share therefore appears cheap on a P/E basis, supporting a buy for an investor seeking income/growth from an exporter with a 3‑5‑year horizon and medium risk tolerance.  Caveats: the nine‑month EPS is the only verified figure; revenue and net‑profit figures are AMBIGUOUS and have not been used.  The annualisation assumes a straight‑line profit pattern through Q4, which may not hold.  No dividend or cash‑flow data are provided, and the P/E calculation relies on an estimated full‑year EPS.  Market risk",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Nine‑month EPS (9M2026) = 8.74 EGP per share (verified)."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Revenue and net‑profit figures are AMBIGUOUS and have been excluded from calculations.",
+      "Full‑year EPS is estimated by linear annualisation of the nine‑month verified EPS; actual full‑year result may differ.",
+      "No dividend or cash‑flow information is available; the recommendation is based solely on P/E.",
+      "Price‑to‑earnings ratio uses the market price at the 2026‑11‑18 cutoff and the estimated EPS; actual P/E may vary.",
+      "Investor’s medium risk tolerance and need for income/growth are considered, but other factors (gearing, currency, macro‑economic events) are not modelled."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 393,
+    "explanation": "The investor has 30,000 EGP cash and the share price at cutoff is 76.21 EGP, allowing purchase of 393 shares (cost ~29,944 EGP, leaving ~56 EGP liquidity).  From the report, the verified nine‑month EPS (9M2026) is 8.74 EGP per share (evidence ABUK‑ABUK_9M2026_results‑p2‑31).  Assuming the nine‑month profit trend continues linearly, the estimated full‑year 2026 EPS = 8.74 × (12/9) ≈ 11.65 EGP.  Using the market price of 76.21 EGP, the implied price‑to‑earnings ratio is about 76.21 / 11.65 ≈ 6.5, which is low.  The share therefore appears cheap on a P/E basis, supporting a buy for an investor seeking income/growth from an exporter with a 3‑5‑year horizon and medium risk tolerance.  Caveats: the nine‑month EPS is the only verified figure; revenue and net‑profit figures are AMBIGUOUS and have not been used.  The annualisation assumes a straight‑line profit pattern through Q4, which may not hold.  No dividend or cash‑flow data are provided, and the P/E calculation relies on an estimated full‑year EPS.  Market risk",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Nine‑month EPS (9M2026) = 8.74 EGP per share (verified)."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Revenue and net‑profit figures are AMBIGUOUS and have been excluded from calculations.",
+      "Full‑year EPS is estimated by linear annualisation of the nine‑month verified EPS; actual full‑year result may differ.",
+      "No dividend or cash‑flow information is available; the recommendation is based solely on P/E.",
+      "Price‑to‑earnings ratio uses the market price at the 2026‑11‑18 cutoff and the estimated EPS; actual P/E may vary.",
+      "Investor’s medium risk tolerance and need for income/growth are considered, but other factors (gearing, currency, macro‑economic events) are not modelled."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 49.47,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ABUK",
+        "shares": 393
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 13.041,
+      "input_tokens": 2153,
+      "output_tokens": 2774,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 13.043
+}

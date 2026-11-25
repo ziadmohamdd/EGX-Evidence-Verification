@@ -1,0 +1,75 @@
+{
+  "case_id": "dev_010",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "The investor asks how much profit belonging to Talaat Moustafa's own shareholders grew in 2025 versus 2024 and whether this justifies adding to the TMGH position. The financial analyst flags a data‑quality ambiguity: every profit‑related line (net profit, profit before tax, gross profit, EPS, and the “Shareholders of the Parent Company” line) prints identical figures for the 2025 and 2024 (Restated) columns. Because the same identical pairing appears across all core profitability measures, year‑over‑year growth cannot be reliably calculated from the given evidence. Per instructions, ambiguous figures must not be used in calculations. Consequently, there is no reliable profit‑growth figure to support a decision to increase the holding. Additionally, the suitability analyst notes that the current TMGH position (500 shares ≈ 41,250 EGP) represents about 57.9% of the investor’s total capital (≈71,250 EGP), which is a high concentration for a portfolio with medium loss‑withstanding capacity. Any further commitment",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "The investor asks how much profit belonging to Talaat Moustafa's own shareholders grew in 2025 versus 2024 and whether this justifies adding to the TMGH position. The financial analyst flags a data‑quality ambiguity: every profit‑related line (net profit, profit before tax, gross profit, EPS, and the “Shareholders of the Parent Company” line) prints identical figures for the 2025 and 2024 (Restated) columns. Because the same identical pairing appears across all core profitability measures, year‑over‑year growth cannot be reliably calculated from the given evidence. Per instructions, ambiguous figures must not be used in calculations. Consequently, there is no reliable profit‑growth figure to support a decision to increase the holding. Additionally, the suitability analyst notes that the current TMGH position (500 shares ≈ 41,250 EGP) represents about 57.9% of the investor’s total capital (≈71,250 EGP), which is a high concentration for a portfolio with medium loss‑withstanding capacity. Any further commitment",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": {
+    "financial": "**Relevant Evidence for \"Profit Belonging to Talaat Moustafa's Own Shareholders\"**\nThe line item \"Shareholders of the Parent Company (consolidated)\" represents the net profit attributable to the parent company's shareholders.\n\n- [TMGH-TMGH_FY2025_consolidated_en-p7-57] Shareholders of the Parent Company (consolidated) | period 2025: **14,383,890,306** LE (and **9,025,066,065** LE)  \n- [TMGH-TMGH_FY2025_consolidated_en-p7-58] Shareholders of the Parent Company (consolidated) | period 2024 (Restated): **14,383,890,306** LE (and **9,025,066,065** LE)  \n\n**Additional profit-related figures (all showing identical 2025/2024 Restated pairs):**\n- [TMGH-TMGH_FY2025_consolidated_en-p7-55] Net profit for the year (consolidated) | period 2025: **18,201,981,482** LE | period 2024: **12,769,517,325** LE  \n- [TMGH-TMGH_FY2025_consolidated_en-p7-56] Net profit for the year (consolidated) | period 2024 (Restated): **18,201,981,482** LE | period 2024: **12,769,517,325** LE  \n- [TMGH-TMGH_FY2025_consolidated_en-p7-49] Profit for the year before tax (consolidated) | period 2025: **23,653,557,143** LE | period 2024: **16,490,175,692** LE  \n- [TMGH-TMGH_FY2025_consolidated_en-p7-50] Profit for the year before tax (consolidated) | period 2024 (Restated): **23,653,557,143** LE | period 2024: **16,490,175,692** LE  \n- [TMGH-TMGH_FY2025_consolidated_en-p7-19] Gross profit (consolidated) | period 2025: **20,855,400,384** LE | period 2024: **14,002,196,445** LE  \n- [TMGH-TMGH_FY2025_consolidated_en-p7-20] Gross profit (consolidated) | period 2024 (Restated): **20,855,400,384** LE | period 2024: **14,002,196,445** LE  \n- [TMGH-TMGH_FY2025_consolidated_en-p7-61] Earnings per Share (consolidated) | period 2025: **6.98** LE | period 2024: **4.38** LE  \n- [TMGH-TMGH_FY2025_consolidated_en-p7-62] Earnings per Share (consolidated) | period 2024 (Restated): **6.98** LE | period 2024: **4.38** LE  \n- [TMGH-TMGH_FY2025_consolidated_en-p5-67] Total equity (consolidated) | 31 Dec 2025: **157,708,140,765** LE | 31 Dec 2024: **129,879,813,693** LE  \n- [TMGH-TMGH_FY2025_consolidated_en-p5-68] Total equity (consolidated) | 31 Dec 2024 (Restated): **157,708,140,765** LE | 31 Dec 2024: **129,879,813,693** LE  \n\n**Ambiguity Flag**  \nEvery profit-related row (net profit, profit before tax, gross profit, EPS, and the \"Shareholders of the Parent Company\" line) prints **identical figures** for the \"period 2025\" and \"period 2024 (Restated)\" columns. This includes the exact same paired values across all metrics. Such duplication is a data quality ambiguity: it is implausible for all core profitability measures to show zero year-over-year change, and the identical printing suggests a report-extraction artifact rather than actual financial data. Per instructions, I do not compute growth with ambiguous figures.\n\n**Growth Calculation (illustrative only, not reliable)**  \nUsing the printed \"Shareholders of the Parent Company\" figures: 14,383,890,306 LE (2025) minus 14,383,890,306 LE (2024 Restated) = **0 LE growth (0%)**. However, because the same identical pairing appears across every profit and equity line item, this result is **not** representative of actual performance. No reliable growth percentage can be asserted from the given evidence.\n\n**Regarding Position Addition**  \nPer instructions, I do not recommend an action. The decision agent will assess whether adding to the TMGH position is justified based on the full evidence suite and your investor profile (long-term growth horizon, high loss willingness, separate emergency fund, etc.).",
+    "investor": "**Investor-Suitability Assessment**\n\n**Horizon & Goal Alignment**  \n- Stated horizon: 5–10 years; goal: long-term growth.  \n- This timeframe supports equity exposure, including single-stock positions, provided volatility tolerance matches the investor's loss capacity.\n\n**Liquidity Needs**  \n- Investor maintains a separate emergency fund.  \n- Current liquidity: 30,000.00 EGP cash.  \n- This amount is considered available for investment commitments, on the basis that the emergency fund is fully funded and distinct from operating capital.\n\n**Loss Willingness & Capacity**  \n- Willingness to accept losses: high.  \n- Financial ability to withstand losses: medium.  \n- This combination calls for conservative position sizing. A medium loss capacity means the portfolio should be structured so that a significant decline in any single holding does not materially threaten the overall capital base or the separate emergency fund.\n\n**Current Concentration & Portfolio Composition**  \n- Holdings: 500 shares of TMGH at the cutoff price of 82.50 EGP = 41,250.00 EGP market value.  \n- Cash: 30,000.00 EGP.  \n- Total capital assessed: ~71,250.00 EGP.  \n- TMGH represents approximately 57.9% of total capital. This is a high concentration level for a single equity within a portfolio whose loss‑withstanding capacity is rated medium.\n\n**Portfolio Allowances**  \n- **Saleable assets:** The 500 TMGH shares can be liquidated on market.  \n- **Free cash:** 30,000.00 EGP is currently uninvested.  \n- **Reasonable additional cash commitment:** Given the medium loss capacity and the existing ~58% concentration in one stock, any new commitment should be sized so that the combined TMGH exposure remains within a level the investor could absorb a meaningful decline in without compromising the emergency fund or essential liquidity. A typical suitability approach for a medium‑capacity investor with high concentration would limit new investable amounts to a range that preserves diversification benefits (e.g., committing only an amount that would keep the single‑stock allocation below a threshold such as 30–40% of total capital, though the exact limit depends on the investor's full financial picture beyond the provided data).  \n- **No other assets or liabilities are stated** in the profile; all decisions should reference the 30,000.00 EGP free cash and the 500‑share TMGH holding.\n\n**Prohibited Analyses (per instructions)**  \n- I will not calculate year‑over‑year profit growth for TMGH, nor will I interpret the Shareholders‑of‑the‑Parent‑Company figures provided in the evidence.  \n- I will not recommend whether adding to the TMGH position is \"justified\" or provide any action‑oriented guidance. suitability is assessed solely through the lens of horizon, liquidity, loss capacity, concentration, and commit‑able cash as outlined above."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 37.29,
+      "input_tokens": 1664,
+      "output_tokens": 7978,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 17.819,
+      "input_tokens": 1658,
+      "output_tokens": 3071,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 351.343,
+      "input_tokens": 4552,
+      "output_tokens": 2162,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 406.456
+}

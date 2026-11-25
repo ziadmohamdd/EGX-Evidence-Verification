@@ -1,0 +1,71 @@
+{
+  "case_id": "dev_005",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor aims to add a fertilizer exporter for diversification, but the provided evidence contains no data on any fertilizer exporter company beyond ambiguous ABUK financial figures. All ABUK figures (revenue, net profit, EPS) are marked AMBIGUOUS and cannot be used in calculations. There are no price, valuation, or financial figures for a fertilizer exporter, nor any information on the investor's current holding COMI beyond the share price. Without reliable financial data or company specifics, a responsible recommendation cannot be made.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "limitations": [
+      "No financial data for any fertilizer exporter company.",
+      "All ABUK figures are ambiguous (unit uncertainty) and must be excluded from analysis.",
+      "No information on COMI's performance or outlook beyond the given price."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor aims to add a fertilizer exporter for diversification, but the provided evidence contains no data on any fertilizer exporter company beyond ambiguous ABUK financial figures. All ABUK figures (revenue, net profit, EPS) are marked AMBIGUOUS and cannot be used in calculations. There are no price, valuation, or financial figures for a fertilizer exporter, nor any information on the investor's current holding COMI beyond the share price. Without reliable financial data or company specifics, a responsible recommendation cannot be made.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "limitations": [
+      "No financial data for any fertilizer exporter company.",
+      "All ABUK figures are ambiguous (unit uncertainty) and must be excluded from analysis.",
+      "No information on COMI's performance or outlook beyond the given price."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 6.077,
+      "input_tokens": 2135,
+      "output_tokens": 977,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 6.079
+}

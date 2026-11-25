@@ -1,0 +1,113 @@
+{
+  "case_id": "dev_006",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "بناءً على الأدلة المتاحة، لا يمكن اتخاذ قرار شراء أو بيع TMGH بثقة تامة. الرقم الوحيد الموثوق به هو ربحية السهم (EPS) البالغة 7 جنيهات للفترة المالية 2025، مما يشير إلى ربحية إيجابية لكل سهم، في حين أن الإيرادات المعلنة ضخمة (62.5 مليار جنيه) ولكن وحدتها غير مؤكدة تماماً (ما إذا كانت بالألف جنيه أم بالجنيه)، كما أن ربحية الفترة بعد الضرائب غير موثوقة بسبب علامات الاستفهام على الفواصل العددية. ولا يمكن حساب نمو الإيرادات السنوي لأن إيرادات العام السابق غير موثوقة. ومن ناحية المستثمر، فإن الحصة الحالية تمثل حوالي 21.6% من المحفظة الإجمالية، والمستثمر يسعى لتنمية مدخرات لشراء شقة خلال 3-5 سنوات مع تحمل مخاطر متوسط. بالنظر إلى محدودية البيانات الموثوقة وعدم وجود مؤشرات واضحة حول الربحية الإجمالية والنمو، فإن الإجراء الأكثر تحفظاً هو الإبقاء على الوضع الراهن (Hold) مع مراقبة التطورات المالية المستقبلية، وتجنب زيادة التعرض للسهم حتى تتوفر بيانات مالية مدققة بالكامل.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+        "stated_value": 62495144197.0,
+        "statement": "الإيرادات الموثقة للسنة المالية 2025 تبلغ 62,495,144,197 جنيه مصري (وحدة الجنيه دون مؤشر آلاف)، وهي المرة الوحيدة من الأرقام الموثقة في الأدلة."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 7.0,
+        "statement": "ربحية السهم (EPS) للسنة المالية 2025 تبلغ 6.98 جنيه، وقد تم تقريبها إلى 7 جنيهات كقيمة كلية للجنيه."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا يمكن الاعتماد على إيرادات عام 2024 وحسابات الربحية بعد الضرائب بسبب علامات الغموض في OCR وفواصل الأرقام، مما يمنع حساب الهوامش أو معدلات النمو.",
+      "وحدة الإيرادات (هل هي جنيه أم ألف جنيه) غير مؤكدة رغم غياب علامة (000)، وقد يؤثر ذلك بشكل كبير في تحليل النسب.",
+      "لا تتوفر بيانات الميزانية العمومية (الأصول، الخصوم، رأس المال) من الأدلة المقدمة.",
+      "لا توجد معلومات عن عدد الأسهم القائمة لحساب الربحية الإجمالية."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "بناءً على الأدلة المتاحة، لا يمكن اتخاذ قرار شراء أو بيع TMGH بثقة تامة. الرقم الوحيد الموثوق به هو ربحية السهم (EPS) البالغة 7 جنيهات للفترة المالية 2025، مما يشير إلى ربحية إيجابية لكل سهم، في حين أن الإيرادات المعلنة ضخمة (62.5 مليار جنيه) ولكن وحدتها غير مؤكدة تماماً (ما إذا كانت بالألف جنيه أم بالجنيه)، كما أن ربحية الفترة بعد الضرائب غير موثوقة بسبب علامات الاستفهام على الفواصل العددية. ولا يمكن حساب نمو الإيرادات السنوي لأن إيرادات العام السابق غير موثوقة. ومن ناحية المستثمر، فإن الحصة الحالية تمثل حوالي 21.6% من المحفظة الإجمالية، والمستثمر يسعى لتنمية مدخرات لشراء شقة خلال 3-5 سنوات مع تحمل مخاطر متوسط. بالنظر إلى محدودية البيانات الموثوقة وعدم وجود مؤشرات واضحة حول الربحية الإجمالية والنمو، فإن الإجراء الأكثر تحفظاً هو الإبقاء على الوضع الراهن (Hold) مع مراقبة التطورات المالية المستقبلية، وتجنب زيادة التعرض للسهم حتى تتوفر بيانات مالية مدققة بالكامل.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+        "stated_value": 62495144197.0,
+        "statement": "الإيرادات الموثقة للسنة المالية 2025 تبلغ 62,495,144,197 جنيه مصري (وحدة الجنيه دون مؤشر آلاف)، وهي المرة الوحيدة من الأرقام الموثقة في الأدلة."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 7.0,
+        "statement": "ربحية السهم (EPS) للسنة المالية 2025 تبلغ 6.98 جنيه، وقد تم تقريبها إلى 7 جنيهات كقيمة كلية للجنيه."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا يمكن الاعتماد على إيرادات عام 2024 وحسابات الربحية بعد الضرائب بسبب علامات الغموض في OCR وفواصل الأرقام، مما يمنع حساب الهوامش أو معدلات النمو.",
+      "وحدة الإيرادات (هل هي جنيه أم ألف جنيه) غير مؤكدة رغم غياب علامة (000)، وقد يؤثر ذلك بشكل كبير في تحليل النسب.",
+      "لا تتوفر بيانات الميزانية العمومية (الأصول، الخصوم، رأس المال) من الأدلة المقدمة.",
+      "لا توجد معلومات عن عدد الأسهم القائمة لحساب الربحية الإجمالية."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 60000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": {
+    "financial": "**Analysis of TMGH Financial Evidence (Cut‑off: 2026‑11‑18)**  \n\n### 1. Revenue (Consolidated)\n- **[TMGH‑TMGH_FY2025_results_summary_ar‑p1‑01]** FY2025 revenue: **62,495,144,197 EGP** [verified].  \n  *Unit line: “العملة بالجنية المصرى” without (000) indicator → interpreted as EGP. Whole‑pound value: **62495144197**.*  \n- **[TMGH‑TMGH_FY2025_results_summary_ar‑p1‑02]** FY2024 revenue: **AMBIGUOUS**.  \n  *Printed identically to FY2025 (62,495,144,197 EGP), but the extractor flagged uncertainty: OCR lacked the thousands separators used elsewhere on the page. **Do not compute with.** Whole‑pound value not assigned due to ambiguity.*\n\n### 2. Profit After Taxes\n- **[TMGH‑TMGH_FY2025_results_summary_ar‑p1‑09]** FY2025 profit after taxes: **AMBIGUOUS**.  \n  *Printed number: “١٨٠٢٠١,٩٨١٠٤٨٢” with unclear separators; extractor marked uncertain. **Do not compute with.** Whole‑pound value unreliable.*\n\n### 3. Earnings Per Share (EPS)\n- **[TMGH‑TMGH_FY2025_results_summary_ar‑p1‑11]** FY2025 EPS: **6.98 EGP** [verified].  \n  *Rounded to whole pound: **7 EGP** (per instruction to give every figure in whole pounds).*\n\n### 4. Portfolio Context (from investor profile, not part of the evidence report)\n- TMGH share price at cutoff: **82.50 EGP**.  \n- Holdings: 200 shares → **16,500 EGP**.  \n- Cash: **60,000 EGP**.  \n- Total portfolio value: **76,500 EGP**.\n\n---\n\n### Profitability\n- The **only verifiable profitability metric** from the evidence is EPS of **7 EGP** (rounded) for FY2025 ([p1‑11]). This confirms positive per‑share profit but does not provide aggregate profit without total shares outstanding (which is not in the evidence).  \n- Revenue of **~62.5 billion EGP** ([p1‑01]) is verified, but the absence of an explicit (000) unit marker leaves open whether the figure is in EGP or thousands of EGP; the stated unit “workة بالجنية المصرى” is taken at face value.  \n- Profit after taxes ([p1‑09]) is ambiguous and cannot be used for margin or profitability ratios.\n\n### Growth\n- **Year‑on‑year revenue growth cannot be computed** because FY2024 revenue ([p1‑02]) is AMBIGUOUS. The printed identical figure for both years is flagged as OCR‑reliant and uncertain, so any growth derivation would be unsupported.\n\n### Balance Sheet\n- No balance‑sheet items (assets, liabilities, equity) appear in the provided evidence excerpts. Only income‑statement lines (revenue, profit after taxes, EPS) are present.\n\n### Risks & Data Quality\n- **AMBIGUOUS figures**: Two of four key metrics ([p1‑02], [p1‑09]) are marked uncertain due to OCR issues, unclear thousands/decimal separators, and potential cross‑year duplication without verification. Computing ratios or growth with these carries a high risk of misleading conclusions.  \n- **Unit ambiguity**: [p1‑01] revenue lacks an explicit (000) indicator; if the intended unit were thousands of EGP, revenue would be 62.5 million EGP, drastically altering margin analysis. The verified status helps but does not fully resolve the scale question.  \n- **Verified data**: [p1‑01] revenue and [p1‑11] EPS are the only figures marked verified, providing limited but reliable anchors.\n\n### Data‑Quality Summary\n| Figure | Period | Status | Note |\n|--------|--------|--------|------|\n| Revenue | FY2025 | Verified | 62,495,144,197 EGP ([p1‑01]) |\n| Revenue | FY2024 | AMBIGUOUS | OCR uncertainty ([p1‑02]) |\n| Profit after taxes | FY2025 | AMBIGUOUS | Unclear separators ([p1‑09]) |\n| EPS | FY2025 | Verified | 6.98 EGP → 7 EGP ([p1‑11]) |\n\n### Action\nPer instructions, **no recommendation** (buy/hold/sell) is provided. The decision agent will determine portfolio actions based on this analysis and the investor’s profile (3‑5‑year horizon for apartment savings, medium risk tolerance, medium loss‑withstanding ability, separate emergency fund). The evidence, with its data‑quality limitations, suggests caution and the potential need for additional audited financials before adjusting TMGH exposure.",
+    "investor": "**Investor-Suitability Assessment**\n\n**Horizon (3–5 years)**  \nThe investor’s goal is saving for an apartment over a medium term of 3–5 years. This horizon can typically accommodate some growth-oriented exposure, but the proximity to a specific capital-intensive goal means preservation of value as the target date approaches becomes increasingly relevant. The current mix of cash and a single equity holding reflects a balanced but concentrated setup for this timeframe.\n\n**Liquidity Needs**  \nThe investor holds a separate emergency fund, so this portfolio is not required to serve as a liquidity buffer. Both the cash position (60,000 EGP) and the TMGH equity holding are readily liquidatable in the market without reported restrictions.\n\n**Willingness & Ability to Accept Losses**  \nBoth are rated medium. A medium loss willingness means the investor can tolerate moderate portfolio value declines, and the financial ability supports withstanding short-term downturns. The portfolio’s single‑stock concentration (TMGH) adds idiosyncratic risk; a significant move in that name could test the “medium” tolerance band, even if the overall portfolio decline remains moderate.\n\n**Current Concentration**  \n- **TMGH holding:** 200 shares × 82.50 EGP/share = **16,500 EGP**  \n- **Cash:** **60,000 EGP**  \n- **Total portfolio value:** **76,500 EGP**  \n- **TMGH weight:** ~21.6% of the total portfolio  \n\nThis represents a moderately concentrated equity position. Diversification across additional names or asset classes could broaden risk exposure in line with the medium loss profile.\n\n**Cash Committable & Portfolio Allowances**  \n- **Free cash:** 60,000 EGP – fully liquid, no restrictions noted.  \n- **TMGH position:** Can be sold for approximately **16,500 EGP** at the cutoff price of 82.50 EGP/share. Settlement would follow standard market conventions (typically T+2), but the full nominal value is available upon sale.  \n- **Reasonable cash commitment:** Given the 3–5 year horizon and the apartment‑purchase goal, the investor may wish to align the committed cash portion with the anticipated timing of the down‑payment. The full 60,000 EGP is free to reallocate or keep liquid, but the suitability assessment notes the available liquidity without prescribing a specific split.  \n\n**What the Portfolio Allows**  \n- Full liquidation of TMGH for ~16,500 EGP.  \n- Full access to 60,000 EGP cash.  \n- No other holdings or constraints are reported.  \n\n**Note:** I have not analysed TMGH’s company financials (revenue, profit, EPS figures provided in the evidence) beyond noting the share price and share count. I have also not recommended a specific action (buy, sell, or hold). All figures are given in whole Egyptian pounds (EGP) as of the 2026‑11‑18 cutoff."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 86.046,
+      "input_tokens": 860,
+      "output_tokens": 13403,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 27.421,
+      "input_tokens": 854,
+      "output_tokens": 3925,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 13.102,
+      "input_tokens": 3578,
+      "output_tokens": 1852,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 126.572
+}

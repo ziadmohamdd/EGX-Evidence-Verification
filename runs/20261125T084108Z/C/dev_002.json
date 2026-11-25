@@ -1,0 +1,126 @@
+{
+  "case_id": "dev_002",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 1212,
+    "explanation": "The investor has a long‑term wealth‑building horizon (10+ years), high risk tolerance, and 100,000 EGP in cash with no existing holdings. TMGH’s 2025 consolidated net profit is verified at 18,201,981,482 LE (evidence_id p7‑55), and EPS for 2025 is 6.98 LE (p7‑61), implying a P/E ratio of about 11.82 given the cutoff price of 82.50 EGP per share. Gross profit rose strongly year‑over‑year (20,855,400,384 LE in 2025 vs 14,002,196,445 LE in 2024 restated) and total equity stands at 157,708,140,765 LE (p5‑67), indicating a solid balance‑sheet base. The investor’s profile fully supports an equity allocation, and the available cash can purchase 1,212 shares (1,212 × 82.50 = 99,990 EGP), leaving a small cash residual of 10 EGP. This position aligns with the long‑term growth objective while respecting the investor’s high loss‑willingness and capacity.  Key limitations: the 2024 restated net profit (p7‑56) is flagged AMBIGUOUS because an auditor’s stamp covers digits; this figure is excluded from all calculations. No 2",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "2025 consolidated net profit of 18,201,981,482 LE supports the company’s profitability and underpins the investment case."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "EPS of 6.98 LE per share (p7‑61) yields an implied P/E of ~11.82 at the 82.50 EGP share price."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "2025 gross profit of 20,855,400,384 LE shows strong revenue‑generation capacity."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity of 157,708,140,765 LE (p5‑67) reflects a substantial equity base, supporting long‑term stability."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "The 2024 restated net profit (p7‑56) is AMBIGUOUS; any metric relying on that figure is excluded, limiting year‑over‑year trend analysis.",
+      "Only selected income‑statement and equity line items are provided; full balance‑sheet details (assets, liabilities, cash flow) are absent, so leverage and liquidity analysis cannot be performed.",
+      "The identical printed text for gross‑profit rows (p7‑19 and p7‑20) introduces minor uncertainty about column ordering, though values are treated as verified per their period labels.",
+      "Share price of 82.50 EGP is taken from the case’s price reference; no later market data or external valuation models are applied."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 1212,
+    "explanation": "The investor has a long‑term wealth‑building horizon (10+ years), high risk tolerance, and 100,000 EGP in cash with no existing holdings. TMGH’s 2025 consolidated net profit is verified at 18,201,981,482 LE (evidence_id p7‑55), and EPS for 2025 is 6.98 LE (p7‑61), implying a P/E ratio of about 11.82 given the cutoff price of 82.50 EGP per share. Gross profit rose strongly year‑over‑year (20,855,400,384 LE in 2025 vs 14,002,196,445 LE in 2024 restated) and total equity stands at 157,708,140,765 LE (p5‑67), indicating a solid balance‑sheet base. The investor’s profile fully supports an equity allocation, and the available cash can purchase 1,212 shares (1,212 × 82.50 = 99,990 EGP), leaving a small cash residual of 10 EGP. This position aligns with the long‑term growth objective while respecting the investor’s high loss‑willingness and capacity.  Key limitations: the 2024 restated net profit (p7‑56) is flagged AMBIGUOUS because an auditor’s stamp covers digits; this figure is excluded from all calculations. No 2",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "2025 consolidated net profit of 18,201,981,482 LE supports the company’s profitability and underpins the investment case."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "EPS of 6.98 LE per share (p7‑61) yields an implied P/E of ~11.82 at the 82.50 EGP share price."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "2025 gross profit of 20,855,400,384 LE shows strong revenue‑generation capacity."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity of 157,708,140,765 LE (p5‑67) reflects a substantial equity base, supporting long‑term stability."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "The 2024 restated net profit (p7‑56) is AMBIGUOUS; any metric relying on that figure is excluded, limiting year‑over‑year trend analysis.",
+      "Only selected income‑statement and equity line items are provided; full balance‑sheet details (assets, liabilities, cash flow) are absent, so leverage and liquidity analysis cannot be performed.",
+      "The identical printed text for gross‑profit rows (p7‑19 and p7‑20) introduces minor uncertainty about column ordering, though values are treated as verified per their period labels.",
+      "Share price of 82.50 EGP is taken from the case’s price reference; no later market data or external valuation models are applied."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 1212
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Evidence Citations (values in whole Egyptian Pounds, LE, unless noted)**\n\n- [TMGH-TMGH_FY2025_consolidated_en-p7-19]: Gross profit (consolidated), period 2025: **20,855,400,384** LE.  \n  *Note: Printed text is identical to [p7-20]; value assigned per stated period 2025.*\n\n- [TMGH-TMGH_FY2025_consolidated_en-p7-20]: Gross profit (consolidated), period 2024 (Restated): **14,002,196,445** LE.  \n  *Note: Printed text matches [p7-19]; value assigned per stated period 2024 Restated.*\n\n- [TMGH-TMGH_FY2025_consolidated_en-p7-55]: Net profit for the year (consolidated), period 2025: **18,201,981,482** LE.  \n  *Verified; no ambiguity flag.*\n\n- [TMGH-TMGH_FY2025_consolidated_en-p7-56]: Net profit for the year (consolidated), period 2024 (Restated): **AMBIGUOUS**.  \n  *As printed: \"18,201,981,482 | 12,769,517,325 | unit: LE\" with note: \"unreadable: digits covered by an auditor's stamp\". This figure must **not** be used in any computation.*\n\n- [TMGH-TMGH_FY2025_consolidated_en-p5-67]: Total equity (consolidated), period 31 December 2025: **157,708,140,765** LE.  \n  *The paired figure 129,879,813,693 LE is the 2024 comparative; period stated is 2025.*\n\n- [TMGH-TMGH_FY2025_consolidated_en-p7-61]: Earnings per Share (consolidated), period 2025: **6.98** LE per share.  \n  *Verified.*\n\n- [TMGH-TMGH_FY2025_consolidated_en-p7-62]: Earnings per Share (consolidated), period 2024 (Restated): **4.38** LE per share.  \n  *Verified.*\n\n---\n\n### Analysis Using Only the Evidence\n\n**Profitability**\n- 2025 Net profit: **18,201,981,482** LE [p7-55]. This is the only verified annual net profit figure available.\n- 2024 Restated Net profit: **AMBIGUOUS** [p7-56]; excluded from all calculations due to auditor stamp covering digits.\n- 2025 Gross profit: **20,855,400,384** LE [p7-19]; 2024 Restated Gross profit: **14,002,196,445** LE [p7-20]. If the column assignment (first number = stated period) is correct, gross profit increased by approximately **48.9%** year-over-year. *Caveat: [p7-19] and [p7-20] exhibit identical printed text, which may reflect a PDF extraction artifact; values are assigned per the stated period labels.*\n- 2025 EPS: **6.98** LE [p7-61]; 2024 Restated EPS: **4.38** LE [p7-62]. This implies an EPS growth of roughly **59.4%** year-over-year, computed from evidence.\n\n**Growth**\n- EPS growth is well-supported: from 4.38 LE to 6.98 LE [p7-61, p7-62].\n- Total equity growth: 31 Dec 2025 total equity = **157,708,140,765** LE [p5-67]; 2024 comparative = **129,879,813,693** LE. This represents an increase of approximately **21.4%** in equity base.\n- Net profit YoY growth cannot be computed because the 2024 restated figure is ambiguous [p7-56].\n\n**Balance Sheet**\n- Total equity (2025): **157,708,140,765** LE [p5-67]. This denotes a substantial equity base for the company.\n- No other balance sheet line items (assets, liabilities, cash, etc.) are provided in the evidence set; therefore, leverage, liquidity, or asset-quality analysis is not possible from this evidence alone.\n\n**Risks & Data Quality**\n- **AMBIGUOUS figure**: [p7-56] Net profit 2024 Restated is flagged as ambiguous due to an auditor's stamp covering digits. Any ratio or growth metric relying on 2024 net profit is compromised.\n- The identical printed text for gross profit rows [p7-19] and [p7-20] introduces minor uncertainty regarding exact column ordering, but the values are treated as verified per their period labels.\n- All other figures are marked \"verified\" as printed.\n- The 2025 net profit margin (net/gross) is approximately 87.1% [18,201,981,482 / 20,855,400,384], which is high and may reflect the company's cost structure or accounting classification; no industry benchmark is provided.\n\n**Derived Metric (from evidence only)**\n- Share price at cutoff: **82.50** EGP.  \n  EPS 2025: **6.98** LE [p7-61] → implied P/E ratio = 82.50 / 6.98 ≈ **11.82** times.  \n  *This is a pure calculation from given evidence; no action or valuation judgment is attached.*\n\n---\n\n### Conclusion (Neutral Statement)\nThe evidence presents a 2025 profitability picture with verified net profit of **18.2 billion** LE, strong EPS growth from 4.38 LE to 6.98 LE, and a significant equity base of **157.7 billion** LE. However, the 2024 restated net profit is ambiguous and excluded from computations, limiting year-over-year trend analysis. The gross profit increase is notable but accompanied by a PDF extraction ambiguity. No recommendation to buy, hold, or sell TMGH shares is provided here; the decision agent will act based on the full investor profile and any additional analysis beyond this evidence set.",
+    "investor": "**Suitability Assessment (Profile vs. Portfolio)**\n\n| Dimension | Investor Profile | Suitability Implication |\n|---|---|---|\n| **Horizon** | 10+ years, long-term wealth building | Supports allocation to growth-oriented, less liquid, or volatile assets where compounding over a decade can smooth short-term fluctuations. |\n| **Liquidity Needs** | No withdrawals planned | Full capacity to commit capital to assets with longer settlement periods or lock‑up features without impacting living standards. |\n| **Loss Willingness & Capacity** | High willingness; high financial ability to withstand losses | Supports material exposure to equities, emerging‑market instruments, or strategies with periodic drawdowns. Risk‑adjusted allocations can be sized meaningfully. |\n| **Current Concentration** | None (100% cash) | No existing concentration risk; portfolio is entirely flexible for new allocations. |\n| **Cash Committable** | 100,000.00 EGP cash, no holdings | 100,000.00 EGP is fully free and can be committed to new positions. No assets need to be liquidated. |\n\n**Portfolio Capabilities (at cutoff: 2026‑11‑18)**\n- **What can be sold:** Nothing; the portfolio holds no securities or other assets.\n- **What cash is free:** 100,000.00 EGP is fully available for investment, margin, or as a cash buffer if desired.\n- **Price reference noted:** TMGH is quoted at 82.50 EGP per share at the cutoff, but the provided financial evidence (gross profit, net profit, equity, EPS) is not being analysed or valued as part of this suitability assessment, per instructions.\n\n**Compliance Note**\n- No analysis of the TMGH financial statements (profit, equity, EPS figures) is included or implied.\n- No investment action (buy, sell, hold, rebalance, etc.) is recommended or prescribed.\n- The assessment above isolates how the investor’s stated profile aligns with the current portfolio structure and cash availability, without referencing the company‑specific evidence beyond the quoted share price."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 49.826,
+      "input_tokens": 1069,
+      "output_tokens": 7537,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 9.623,
+      "input_tokens": 1063,
+      "output_tokens": 1569,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 350.209,
+      "input_tokens": 3942,
+      "output_tokens": 2113,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 409.661
+}

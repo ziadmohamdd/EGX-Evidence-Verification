@@ -1,0 +1,90 @@
+{
+  "case_id": "dev_009",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The investor asked for a full‑year 2026 earnings‑per‑share (EPS) and price‑to‑earnings (P/E) ratio to assess whether ABUK is cheap enough to buy. The only EPS figure available in the evidence is the nine‑month (9M) EPS of 8.74 EGP, which is marked **verified** (evidence_id p2‑31). However, the report provides no full‑year EPS, and annualising the 9M figure would require assumptions about the remaining three months that are not present in the evidence. Moreover, the revenue and net‑profit figures for 9M (evidence_ids p2‑01, p2‑02, p2‑25, p2‑26) are flagged **AMBIGUOUS** because of a unit conflict on the source pages; these cannot be used to estimate full‑year net profit or to validate any annualisation. Because full‑year EPS cannot be derived from the supplied evidence, a P/E ratio (price divided by EPS) cannot be reliably calculated. Without a meaningful P/E (or any full‑year earnings metric) the decision whether the share is ‘cheap’ is not supported by the evidence. Therefore the evidence is insufficient to‑",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "No full‑year EPS is provided; the 9M EPS of 8.74 EGP cannot be safely annualised without external assumptions.",
+      "Revenue and net‑profit figures for 9M are AMBIGUOUS (unit conflict) and are excluded from any calculation.",
+      "The price per share (76.21 EGP) is given, but without a reliable EPS the P/E ratio cannot be computed.",
+      "The investor’s profile and cash availability (30,000 EGP) are noted, but a buy decision cannot be justified on the basis of the current evidence."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The investor asked for a full‑year 2026 earnings‑per‑share (EPS) and price‑to‑earnings (P/E) ratio to assess whether ABUK is cheap enough to buy. The only EPS figure available in the evidence is the nine‑month (9M) EPS of 8.74 EGP, which is marked **verified** (evidence_id p2‑31). However, the report provides no full‑year EPS, and annualising the 9M figure would require assumptions about the remaining three months that are not present in the evidence. Moreover, the revenue and net‑profit figures for 9M (evidence_ids p2‑01, p2‑02, p2‑25, p2‑26) are flagged **AMBIGUOUS** because of a unit conflict on the source pages; these cannot be used to estimate full‑year net profit or to validate any annualisation. Because full‑year EPS cannot be derived from the supplied evidence, a P/E ratio (price divided by EPS) cannot be reliably calculated. Without a meaningful P/E (or any full‑year earnings metric) the decision whether the share is ‘cheap’ is not supported by the evidence. Therefore the evidence is insufficient to‑",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "No full‑year EPS is provided; the 9M EPS of 8.74 EGP cannot be safely annualised without external assumptions.",
+      "Revenue and net‑profit figures for 9M are AMBIGUOUS (unit conflict) and are excluded from any calculation.",
+      "The price per share (76.21 EGP) is given, but without a reliable EPS the P/E ratio cannot be computed.",
+      "The investor’s profile and cash availability (30,000 EGP) are noted, but a buy decision cannot be justified on the basis of the current evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": {
+    "financial": "**Evidence figures cited as requested:**\n\n- [ABUK-ABUK_9M2026_results-p2-01] ABUK 9M Revenue (ended 30 Sep 2026): **31,488** (unit printed as \"مليون جنيه\", but page shows unit conflict ['مليار',...,'مليون']; evidence note flags this as **AMBIGUOUS** – not used for computation).  \n- [ABUK-ABUK_9M2026_results-p2-02] ABUK 9M Revenue (ended 30 Sep 2025): **31,488** (same AMBIGUOUS unit conflict as printed).  \n- [ABUK-ABUK_9M2026_results-p2-25] ABUK 9M Net Profit (ended 30 Sep 2026): **12,970** (unit printed as \"مليون جنيه\", page unit conflict; evidence note flags **AMBIGUOUS** – not used for computation).  \n- [ABUK-ABUK_9M2026_results-p2-26] ABUK 9M Net Profit (ended 30 Sep 2025): **12,970** (same AMBIGUOUS unit conflict as printed).  \n- [ABUK-ABUK_9M2026_results-p2-31] ABUK EPS (9M ended 30 Sep 2026): **8.74** (row title \"نصيب السهم الأساسي في الأرباح ) جنيه (\"; unit printed as \"مليون جنيه\" but conflicts with per-share metric; evidence marks this row as **verified**).  \n- [ABUK-ABUK_9M2026_results-p2-32] ABUK EPS (9M ended 30 Sep 2025): **8.74** (same verified status as printed).  \n\n**Full-year 2026 earnings per share:**  \nThe evidence provides only nine-month (9M) data. Full-year 2026 EPS is **not stated** in the report excerpt. The 9M EPS figure of 8.74 EGP [evidence_id p2-31] is available and marked verified, but annualising it to a full-year figure would require assumptions about the remaining three months of 2026 that are not in the evidence. Moreover, the 9M revenue and net profit figures [p2-01, p2-02, p2-25, p2-26] are flagged **AMBIGUOUS** due to unit conflicts, so they cannot be reliably used to derive or estimate full-year net profit.  \n\n**Price-to-earnings ratio:**  \nA P/E ratio for full-year 2026 cannot be calculated because full-year EPS is not provided. A P/E based on the 9M EPS of 8.74 EGP and the cutoff price of 76.21 EGP would yield 76.21 / 8.74 ≈ **8.72**, but this is a 9M annualised figure and not a full-year P/E. Given the AMBIGUOUS status of the underlying revenue and net profit data, any such computation would rely on figures explicitly flagged as unsuitable for calculation.  \n\n**No recommendation action is given** (as instructed; the decision agent determines action). All figures are cited with their evidence IDs, and AMBIGUOUS figures are flagged and excluded from computation.",
+    "investor": "I can't fulfil this request as stated. My role as an investor-suitability analyst explicitly prohibits company financial analysis, EPS projections, P/E calculations, or any valuation/buy recommendations. I'm also instructed not to pick an action.\n\nWhat I can do is assess how this investor's profile aligns with a potential ABUK position, based on the non-financial criteria you've provided:\n\n- **Horizon:** 3–5 years matches a medium-term holding period, which can suit ABUK if the investor is comfortable waiting out cycles.\n- **Liquidity:** You hold 30,000 EGP cash and maintain a separate emergency fund, so new commitment would come from that reserve. I can note how much might reasonably be allocated without touching emergency capital.\n- **Loss willingness/capacity:** Medium willingness and medium financial ability to withstand losses suggests a position size that limits downside exposure, consistent with a diversified approach rather than a concentrated bet.\n- **Current concentration:** Your portfolio has no holdings and 30,000 EGP in cash, so there's no existing concentration risk, but also no diversification beyond cash.\n- **Commitible cash:** Up to 30,000 EGP could be considered for allocation, depending on how much you wish to keep liquid and your target position size relative to that total.\n\nI cannot project full-year 2026 EPS, derive a P/E ratio, or evaluate whether the share is \"cheap.\" If you'd like, I can reframe the discussion around suitability frameworks—position sizing given your cash, risk tolerance, and horizon—or answer questions that stay within the allowed scope."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 33.831,
+      "input_tokens": 1353,
+      "output_tokens": 6746,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 7.534,
+      "input_tokens": 1347,
+      "output_tokens": 1493,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 7.561,
+      "input_tokens": 3328,
+      "output_tokens": 1434,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 48.929
+}

@@ -1,0 +1,84 @@
+{
+  "case_id": "dev_004",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 196,
+    "explanation": "The investor needs about 30,000 EGP within six months for liquidity. Current cash is 5,000 EGP, so an additional 25,000 EGP is required. At the cutoff price of 128.00 EGP per COMI share, selling 196 shares yields 25,088 EGP (196 × 128), bringing total cash to ~30,088 EGP, satisfying the near‑term need. The remaining 804 COMI shares (1000 – 196) stay in the portfolio, preserving exposure to any future income (e.g., dividends or capital appreciation) while reducing market risk given the investor's low risk tolerance. The decision is based solely on the liquidity shortfall and the available share price; no dividend or earnings‑per‑share data are used because the basic EPS figures are ambiguous (unit listed as EGP thousands, implying a value of ~18,250 EGP per share, which is not realistic). Figures not used: basic EPS (evidence_ids COMI‑COMI_FY2025_consolidated_condensed_en-p5-39 and COMI‑COMI_FY2025_consolidated_condensed_en-p5-40). All financial figures cited are converted from EGP thousands to whole pounds as",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "Net profit for the year 2025 is 82,258,815 thousand EGP, i.e. 82,258,815,000 EGP in base units."
+      }
+    ],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40"
+    ],
+    "limitations": [
+      "No dividend information is provided; income potential cannot be quantified from the given evidence.",
+      "The basic EPS figures are ambiguous (unit listed as EGP thousands) and have been excluded from calculations.",
+      "Share price may fluctuate between now and the 6‑month horizon, affecting the actual cash obtained.",
+      "The investor’s low risk tolerance means any sale locks in the current price; a future price drop would represent a loss.",
+      "Only the net profit figure for FY2025 is used; other line items (net interest income, due to customers, total equity) are not needed for the liquidity decision."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 196,
+    "explanation": "The investor needs about 30,000 EGP within six months for liquidity. Current cash is 5,000 EGP, so an additional 25,000 EGP is required. At the cutoff price of 128.00 EGP per COMI share, selling 196 shares yields 25,088 EGP (196 × 128), bringing total cash to ~30,088 EGP, satisfying the near‑term need. The remaining 804 COMI shares (1000 – 196) stay in the portfolio, preserving exposure to any future income (e.g., dividends or capital appreciation) while reducing market risk given the investor's low risk tolerance. The decision is based solely on the liquidity shortfall and the available share price; no dividend or earnings‑per‑share data are used because the basic EPS figures are ambiguous (unit listed as EGP thousands, implying a value of ~18,250 EGP per share, which is not realistic). Figures not used: basic EPS (evidence_ids COMI‑COMI_FY2025_consolidated_condensed_en-p5-39 and COMI‑COMI_FY2025_consolidated_condensed_en-p5-40). All financial figures cited are converted from EGP thousands to whole pounds as",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "Net profit for the year 2025 is 82,258,815 thousand EGP, i.e. 82,258,815,000 EGP in base units."
+      }
+    ],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40"
+    ],
+    "limitations": [
+      "No dividend information is provided; income potential cannot be quantified from the given evidence.",
+      "The basic EPS figures are ambiguous (unit listed as EGP thousands) and have been excluded from calculations.",
+      "Share price may fluctuate between now and the 6‑month horizon, affecting the actual cash obtained.",
+      "The investor’s low risk tolerance means any sale locks in the current price; a future price drop would represent a loss.",
+      "Only the net profit figure for FY2025 is used; other line items (net interest income, due to customers, total equity) are not needed for the liquidity decision."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30088.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 804
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 14.438,
+      "input_tokens": 1943,
+      "output_tokens": 2600,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 14.44
+}

@@ -1,0 +1,88 @@
+{
+  "case_id": "dev_003",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 800,
+    "explanation": "Investor profile: steady growth with some income, 3‑5‑year horizon, may need 10% of capital within a year, medium loss willingness but low financial ability to withstand losses. Current portfolio: EFID 51.2% (1,500 shares × 20.40 EGP = 30,600 EGP), ETEL 23.7% (100 shares × 141.95 EGP = 14,195 EGP), cash 25.1% (15,000 EGP). Liquidity need (10% of portfolio ≈ 5,980 EGP) is already covered by the cash buffer. The primary risk is the high single‑stock concentration in EFID, which is unsuitable for an investor with low loss capacity. Ambiguous‑unit figures have been excluded from calculations: EFID total equity (evidence_id EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p5‑39, unit “None”) and ETEL basic/diluted EPS (evidence_id ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑55, unit L.E.(000)). Consequently, no P/E or ROE ratios are used; the decision is based on concentration and liquidity considerations. Selling 800 EFID shares (at the cutoff price 20.40 EGP) reduces the EFID holding to 700 shares (value 14,280 EGP). The",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55"
+    ],
+    "limitations": [
+      "No valuation ratios (P/E, ROE) are computed because the relevant EPS and equity figures have ambiguous units and have been excluded.",
+      "The recommendation relies on portfolio concentration and liquidity metrics rather than on earnings‑based valuation.",
+      "All figures are taken exactly as printed in the evidence; no external market data or later events are considered."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 800,
+    "explanation": "Investor profile: steady growth with some income, 3‑5‑year horizon, may need 10% of capital within a year, medium loss willingness but low financial ability to withstand losses. Current portfolio: EFID 51.2% (1,500 shares × 20.40 EGP = 30,600 EGP), ETEL 23.7% (100 shares × 141.95 EGP = 14,195 EGP), cash 25.1% (15,000 EGP). Liquidity need (10% of portfolio ≈ 5,980 EGP) is already covered by the cash buffer. The primary risk is the high single‑stock concentration in EFID, which is unsuitable for an investor with low loss capacity. Ambiguous‑unit figures have been excluded from calculations: EFID total equity (evidence_id EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p5‑39, unit “None”) and ETEL basic/diluted EPS (evidence_id ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑55, unit L.E.(000)). Consequently, no P/E or ROE ratios are used; the decision is based on concentration and liquidity considerations. Selling 800 EFID shares (at the cutoff price 20.40 EGP) reduces the EFID holding to 700 shares (value 14,280 EGP). The",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55"
+    ],
+    "limitations": [
+      "No valuation ratios (P/E, ROE) are computed because the relevant EPS and equity figures have ambiguous units and have been excluded.",
+      "The recommendation relies on portfolio concentration and liquidity metrics rather than on earnings‑based valuation.",
+      "All figures are taken exactly as printed in the evidence; no external market data or later events are considered."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 31320.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 700
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Evidence‑Based Portfolio Analysis (as of 2026‑11‑18)**\n\nAll figures are cited per their source evidence. Units are applied as printed; where unit ambiguity is flagged, no computation involving that figure is performed.\n\n### 1. EFID (Egyptian Financial Investments & Development) – FY2025\n- **Revenue** (consolidated, 31 Dec 2025): **20,915,072,432 EGP** [evidence_id EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑01]\n- **Net profit for the year** (consolidated, 31 Dec 2025): **2,695,301,670 EGP** [evidence_id EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑30]\n- **Total equity** (31 Dec 2025): **5,724,525,864** [unit printed as “None”; flagged as ambiguous – not used for ratio calculations] [evidence_id EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p5‑39]\n- **Basic and diluted EPS** (31 Dec 2025): **2.18 EGP** [evidence_id EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑38]\n\n### 2. ETEL (Egyptian Telecommunications) – FY2025\n- **Operating revenues** (31/12/2025): **106,672,946 (L.E. 000)** → **106,672,946,000 EGP** [evidence_id ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑01]  \n  *Note: printed as “106 672 946 81 677 812”; the first value corresponds to 2025. Formatting ambiguity flagged.*\n- **Total equity** (consolidated, 31/12/2025): **63,687,826 (L.E. 000)** → **63,687,826,000 EGP** [evidence_id ETEL‑ETEL_FY2025_EAS_consolidated_en‑p5‑45]\n- **Net profit for the year** (31/12/2025): **22,578,063 (L.E. 000)** → **22,578,063,000 EGP** [evidence_id ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑35]\n- **Basic and diluted EPS** (L.E. / Share, 31/12/2025): **11.93** [unit printed as “L.E. (000)”; flagged as ambiguous – the implied 11,930 L.E./share is implausible; not used for P/E calculations] [evidence_id ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑55]\n\n### 3. Portfolio Snapshot (market values at cutoff prices)\n- **ETEL holdings**: 100 shares × 141.95 EGP = **14,195 EGP**\n- **EFID holdings**: 1,500 shares × 20.40 EGP = **30,600 EGP**\n- **Cash**: **15,000 EGP**\n- **Total current portfolio value**: **59,795 EGP**\n- **Liquidity need (10% within 1 year)**: ~**5,980 EGP** required in the near term.\n\n### 4. Key Risks & Data‑Quality Flags\n| Issue | Evidence | Impact |\n|-------|----------|--------|\n| EFID total‑equity unit “None” | [EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p5‑39] | Ambiguous; ROE/debt ratios cannot be computed from this figure. |\n| ETEL EPS unit “L.E. (000)” | [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑55] | If taken literally, EPS ≈ 11,930 L.E./share – implausible; ratio metrics excluded. |\n| ETEL revenue/earnings multi‑number formatting | [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑01] & [‑p6‑35] | Two side‑by-side values; first column assumed 2025, but formatting warrants caution. |\n| EFID EPS only one period value visible | [EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑38] | “30” preceding the EPS values may be a row number; EPS 2.18 taken as 2025. |\n\n### 5. Compliance Note\n- All figures are presented **exactly as cited**; no external data or assumptions beyond the evidence are applied.\n- **No action recommendation** is provided (per instructions). The decision agent will determine portfolio adjustments based on the analysis above, the investor’s profile (3‑5‑year horizon, steady growth + income, low loss‑absorption capacity, near‑term 10% liquidity need), and the evidence‑derived metrics.\n- Computations involving ambiguous‑unit figures (EFID total equity, ETEL EPS) have been omitted to avoid spurious results.",
+    "investor": "**Portfolio Snapshot (as of 2026-11-18)**\n- **Cash:** 15,000.00 EGP (fully liquid)\n- **ETEL:** 100 shares × 141.95 EGP = 14,195 EGP\n- **EFID:** 1,500 shares × 20.40 EGP = 30,600 EGP\n- **Total portfolio value:** 59,795 EGP\n- **Allocation:** EFID ~51.2%, ETEL ~23.7%, Cash ~25.1%\n\n---\n\n### 1. Horizon (3–5 years)\nThe horizon is compatible with holding equities, but the portfolio’s risk profile must align with the need for steady growth over this period without excessive drawdowns. No action required on horizon fit alone, but it sets the timeframe for evaluating liquidity and risk exposure.\n\n### 2. Liquidity Needs (10% within a year)\n- 10% of total portfolio = ~5,980 EGP.\n- **Current cash (15,000 EGP) already covers this need outright.**\n- Both listed holdings are tradeable at the cutoff prices, meaning ETEL (14,195 EGP) and EFID (30,600 EGP) can be converted to cash on the market if needed. The portfolio has sufficient liquidity flexibility to meet the 10% requirement without forced selling at a loss.\n\n### 3. Loss Willingness (Medium) vs. Financial Ability to Withstand Losses (Low)\n- **Key conflict:** The investor is willing to accept medium losses but has *low* financial capacity to absorb them. This typically dictates a more conservative allocation than \"medium\" willingness alone might suggest.\n- The portfolio’s current structure places over half its value (EFID) in a single stock. For an investor with low loss capacity, such concentration increases the risk of a meaningful portfolio decline from a single-name event.\n- The 3–5 year horizon could accommodate some equity risk, but the low loss capacity suggests the portfolio should not rely on high volatility for growth.\n\n### 4. Current Concentration\n- **EFID:** ~51.2% of portfolio\n- **ETEL:** ~23.7% of portfolio\n- **Cash:** ~25.1%\n- EFID’s weight exceeds typical single-stock limits for low-loss-capacity profiles. ETEL adds further sector/industry exposure depending on market classification. The concentration profile is heavier on the EFID side than would generally suit a low-loss-capacity investor, even with medium willingness.\n\n### 5. Cash Commitment Capacity\n- **15,000 EGP is freely available** and already sufficient to cover the stated liquidity need.\n- Additional cash could be committed if the investor seeks to increase exposure, but given the low loss capacity, any new commitment should prioritize capital preservation or diversified instruments. The current cash buffer provides flexibility without forcing risk.\n\n### 6. Portfolio Allowances (What Can Be Sold / What Is Free)\n- **Cash:** 15,000 EGP fully free; can be kept liquid, deployed, or used to offset sales of holdings.\n- **ETEL:** 100 shares realizable for ~14,195 EGP. Sale would reduce equity concentration and increase cash liquidity.\n- **EFID:** 1,500 shares realizable for ~30,600 EGP. Sale would significantly reduce the portfolio’s single-stock concentration and free substantial capital.\n- **Total sellable equity value:** ~44,795 EGP. Both holdings are priced and tradeable at the information cutoff.\n\n### 7. Suitability Assessment (No Action Picked)\n- The portfolio’s **loss capacity is the primary constraint**. With low ability to withstand losses, the current ~51% exposure to EFID is a notable risk factor, regardless of medium loss willingness.\n- The **liquidity need is comfortably met** by existing cash, and both holdings are saleable if liquidity pressures arise later.\n- The **3–5 year horizon** allows for equity exposure, but the risk profile should likely be adjusted toward reduced single-stock concentration and a larger cash or defensive allocation if the investor’s priority is capital protection.\n- The portfolio **allows** for rebalancing toward cash or reduced concentration without impairing the liquidity need, and the cash position provides a foundation for either staying the course or making gradual adjustments.\n\n*No analysis of the underlying company financials (revenue, profit, equity figures) has been performed, and no specific action (e.g., \"sell X,\" \"buy Y\") is recommended. The above assesses suitability dimensions and portfolio mechanics only.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 25.475,
+      "input_tokens": 1276,
+      "output_tokens": 5276,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 19.781,
+      "input_tokens": 1270,
+      "output_tokens": 3432,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 32.775,
+      "input_tokens": 4488,
+      "output_tokens": 5590,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 78.034
+}

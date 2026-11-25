@@ -1,0 +1,105 @@
+{
+  "case_id": "dev_003",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's portfolio consists of ETEL and EFID equities with a cash buffer of 15,000 EGP, which already satisfies the 10% liquidity need (~5,980 EGP) within a year. However, all eight items of financial evidence provided are flagged as AMBIGUOUS because each contains paired numerical values for the stated period without clear column mapping and with inconsistent units. Consequently, no reliable figures for revenue, net profit, total equity, or earnings per share can be derived. Without trustworthy financial metrics, it is not possible to assess steady growth, income potential, or downside risk over the 3–5‑year horizon, nor to compute any profitability or growth ratios. Therefore, a responsible decision cannot be made on the basis of the current evidence. The missing information is a set of financial statements with unambiguous period columns and consistent units (EGP or L.E.(000) as appropriate).",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55"
+    ],
+    "limitations": [
+      "All financial figures from the evidence are ambiguous; period column and unit assignment cannot be verified.",
+      "No reliable profitability, growth, or balance‑sheet metrics can be derived.",
+      "Investor's liquidity need is met by cash, but risk and income characteristics cannot be evaluated."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's portfolio consists of ETEL and EFID equities with a cash buffer of 15,000 EGP, which already satisfies the 10% liquidity need (~5,980 EGP) within a year. However, all eight items of financial evidence provided are flagged as AMBIGUOUS because each contains paired numerical values for the stated period without clear column mapping and with inconsistent units. Consequently, no reliable figures for revenue, net profit, total equity, or earnings per share can be derived. Without trustworthy financial metrics, it is not possible to assess steady growth, income potential, or downside risk over the 3–5‑year horizon, nor to compute any profitability or growth ratios. Therefore, a responsible decision cannot be made on the basis of the current evidence. The missing information is a set of financial statements with unambiguous period columns and consistent units (EGP or L.E.(000) as appropriate).",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55"
+    ],
+    "limitations": [
+      "All financial figures from the evidence are ambiguous; period column and unit assignment cannot be verified.",
+      "No reliable profitability, growth, or balance‑sheet metrics can be derived.",
+      "Investor's liquidity need is met by cash, but risk and income characteristics cannot be evaluated."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": {
+    "financial": "**Portfolio Snapshot (as of 2026-11-18 cutoff)**\n- Cash: 15,000.00 EGP\n- ETEL: 100 shares × 141.95 EGP/share = 14,195.00 EGP\n- EFID: 1,500 shares × 20.40 EGP/share = 30,600.00 EGP\n- **Total portfolio value: 59,795.00 EGP**\n- 10% liquidity need (within ~1 year): ~5,980.00 EGP\n- Loss profile: medium willingness, low financial ability to withstand losses\n\nAll subsequent analysis draws strictly from the evidence listed below. No financial ratios, growth rates, or valuation metrics are computed from the evidence due to pervasive ambiguities flagged.\n\n---\n\n### Evidence Analysis & Ambiguity Flags\n\nEvery figure is cited as printed. Where the printed row contains multiple side‑by‑side values for stated periods, the column mapping to \"period 31 December 2025\" is not explicitly distinguished in the source text. Per instructions, **all such figures are flagged as AMBIGUOUS and will not be used for computation.**\n\n1. **[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]**  \n   EFID | Revenue (consolidated) | period 31 December 2025 | verified | as printed: `\"Revenue | | 20 915 072 432 | 16 146 545 699 | unit: EGP\"`  \n   → **Two numerical values in EGP.** Column for 2025 vs. prior period ambiguous. **FLAGGED AS AMBIGUOUS.** Revenue cannot be reliably assigned.\n\n2. **[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]**  \n   EFID | Net profit for the year (consolidated) | period 31 December 2025 | verified | as printed: `\"Net profit for the year | | 2 695 301 670 | 1 606 727 698 | unit: EGP\"`  \n   → **Two numerical values in EGP.** Column ambiguity. **FLAGGED AS AMBIGUOUS.** Net profit cannot be reliably assigned.\n\n3. **[EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39]**  \n   EFID | Total equity | period 31 December 2025 | verified | as printed: `\"Total equity | | 5 724 525 864 | 4 055 484 719 | unit: None\"`  \n   → **Two numerical values; unit \"None\" (interpretation unclear—full EGP or otherwise).** Column ambiguity. **FLAGGED AS AMBIGUOUS.** Total equity cannot be reliably assigned.\n\n4. **[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]**  \n   ETEL | Operating revenues (5) | period 31/12/2025 | verified | as printed: `\"Operating revenues (5) 106 672 946 81 677 812 | unit: L.E.(000)\"`  \n   → **Two numerical values in L.E.(000)** (i.e., thousands of Egyptian Pounds). Column ambiguity. **FLAGGED AS AMBIGUOUS.** If the first value is 2025, revenue = 106,672,946,000 EGP; if the second, 81,677,812,000 EGP. Neither can be confirmed.\n\n5. **[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]**  \n   ETEL | Total Equity (consolidated) | period 31/12/2025 | verified | as printed: `\"Total Equity | | 63 687 826 | 45 937 991 | unit: L.E. (000)\"`  \n   → **Two numerical values in L.E.(000).** Column ambiguity. **FLAGGED AS AMBIGUOUS.** Full‑EGP equivalents would be in the hundreds of millions/billions, but assignment is uncertain.\n\n6. **[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]**  \n   ETEL | Net profit for the year | period 31/12/2025 | verified | as printed: `\"Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)\"`  \n   → **Two numerical values in L.E.(000).** Column ambiguity. **FLAGGED AS AMBIGUOUS.** Net profit figure cannot be reliably assigned.\n\n7. **[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38]**  \n   EFID | Basic and Diluted earnings per share (consolidated) | period 31 December 2025 | verified | as printed: `\"Basic and Diluted earnings per share | 30 | 2.18 | 1.09 | unit: EGP\"`  \n   → **Values: \"30\" (unexplained label/number), 2.18 EGP, 1.09 EGP.** The \"30\" may represent shares‑million or a row identifier; its meaning is ambiguous. The two EPS values have column mapping ambiguity for 2025 vs. prior year. **FLAGGED AS AMBIGUOUS.** EPS cannot be reliably assigned.\n\n8. **[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55]**  \n   ETEL | Basic and diluted earning per share for the year (L.E. / Share) (15) | period 31/12/2025 | verified | as printed: `\"Basic and diluted earning per share for the year (L.E. / Share) (15) 11.93 4.79 | unit: L.E.(000)\"`  \n   → **Values: 11.93 and 4.79.** Unit declared as \"L.E.(000)\" conflicts with the label \"L.E. / Share.\" Column ambiguity for 2025 assignment. **FLAGGED AS AMBIGUOUS.** EPS figure cannot be reliably assigned.\n\n---\n\n### Data Quality Summary\n- **All eight evidence items contain paired numerical values** for what is stated as a single period (31 December 2025), without explicit column headers identifying which column corresponds to 2025.\n- **Unit inconsistencies:** EFID total equity reports unit \"None\"; ETEL operating revenues, net profit, and EPS report \"L.E.(000)\" alongside labels implying full EGP or L.E./share.\n- **Consequence:** Profitability (net margin), growth (revenue/EPS trends), and balance sheet (equity size/quality) metrics **cannot be derived** from the evidence as presented. Any computed ratio would rest on unverified column assignments and unit interpretations.\n\n### Investor‑Profile Context (factual only, no recommendation)\n- The portfolio holds ~48% in EFID shares, ~24% in ETEL shares, and ~25% cash, based on cutoff prices.\n- The stated liquidity need (~5,980 EGP) could be met by selling a portion of either holding, but the ambiguous financial evidence prevents assessment of which asset offers steadier growth/income characteristics or lower downside risk over a 3–5‑year horizon.\n- Low capacity to withstand losses suggests any position sizing or exit strategy should prioritize capital preservation, but the current evidence does not allow quantification of volatility, dividend history, or earnings stability for either company.\n\n**No actionable recommendation is provided here.** The decision agent should seek un-ambiguified financial statements (with clear period columns and consistent units) before portfolio adjustments are considered.",
+    "investor": "**Portfolio Snapshot (as of 2026-11-18)**\n- Cash: 15,000.00 EGP\n- ETEL: 100 shares × 141.95 EGP = 14,195.00 EGP\n- EFID: 1,500 shares × 20.40 EGP = 30,600.00 EGP\n- **Total portfolio value: 59,795.00 EGP**\n\n**Suitability Assessment**\n\n| Investor Dimension | Profile | Portfolio Alignment / Notes |\n|--------------------|---------|-----------------------------|\n| **Horizon** | 3–5 years (medium-term) | Equity holdings can suit this horizon, but the low loss capacity requires that downside risk be monitored over this period. |\n| **Liquidity needs** | May need 10% of capital within 1 year | 10% of total = ~5,980 EGP. Cash on hand (15,000 EGP) already covers this need without requiring sale of holdings. |\n| **Willingness to accept losses** | Medium | The portfolio’s current composition can experience medium volatility, but the next dimension limits how much loss can be tolerated. |\n| **Financial ability to withstand losses** | Low | Even a moderate decline (e.g., ~20% drop) would erase roughly 12,000 EGP of capital, significantly impacting the portfolio. The current allocation is undiversified (two equities + cash), which concentrates risk. |\n| **Goal: steady growth with some income** | Equities provide growth potential and some may pay dividends, but the income component depends on the specific stocks’ dividend policies, which are not assessed here. |\n\n**Portfolio Flexibility – What Can Be Sold / What Cash Is Free**\n- **Cash (15,000 EGP):** Fully free and immediately available. It alone satisfies the 10% liquidity need within a year.\n- **ETEL shares (100 units):** Listed equity; can be sold on market days, typically T+2 settlement. Proceeds would add to cash but reduce exposure to the growth component.\n- **EFID shares (1,500 units):** Listed equity; similarly sellable, but represents the largest single holding (~51% of total portfolio value).\n- **No explicit restrictions** are indicated, but transaction costs, bid-ask spreads, and any applicable capital gains tax on sale would reduce net proceeds. The financial evidence provided (revenue, net profit, EPS) is noted for context but is not analysed as part of this suitability assessment.\n\n**Key Suitability Observations**\n- The investor’s liquidity need for 10% within a year is already met by the cash buffer, meaning no immediate pressure to liquidate positions.\n- The low loss capacity combined with undirected equity concentration means the portfolio’s current risk profile may feel uncomfortable if either stock experiences a sharp decline. The “medium” loss willingness does not override the “low” capacity to absorb losses.\n- The 3–5 year horizon is compatible with holding equities, but the low loss capacity suggests a tilt toward capital preservation or diversification if the investor prefers reduced volatility.\n- The goal of “steady growth with some income” could be served by the existing holdings, but the current setup offers no built-in income floor (e.g., bonds, money-market instruments) and relies entirely on equity performance and any dividends the companies may distribute.\n\n**No action or specific recommendation is provided.** The assessment above outlines how the portfolio aligns with (or diverges from) the investor’s profile, what assets are liquid or free, and where the main suitability considerations lie."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 31.346,
+      "input_tokens": 1276,
+      "output_tokens": 6467,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 16.347,
+      "input_tokens": 1270,
+      "output_tokens": 3115,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 6.929,
+      "input_tokens": 4808,
+      "output_tokens": 1292,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 54.626
+}

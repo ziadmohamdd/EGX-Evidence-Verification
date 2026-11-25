@@ -1,0 +1,86 @@
+{
+  "case_id": "dev_010",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "The profit belonging to Talaat Moustafa's own shareholders' growth from 2024 to 2025 cannot be determined because the relevant evidence items are ambiguous. The figures for 'Shareholders of the Parent Company' (p7-57, p7-58) and 'Net profit for the year' (p7-55, p7-56) are printed identically for both periods, making it impossible to reliably assign values to 2025 versus 2024 (Restated). Per the instructions, ambiguous figures must not be used in calculations. Consequently, there is insufficient evidence to assess whether the profit growth justifies adding to the TMGH position. The decision is therefore based on insufficient evidence rather than a buy, hold, sell, or keep_cash action.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-58"
+    ],
+    "limitations": [
+      "Ambiguous financial figures prevent any reliable calculation of profit growth from 2024 to 2025.",
+      "Without a determinable growth figure, the justification for increasing the position cannot be evaluated."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "The profit belonging to Talaat Moustafa's own shareholders' growth from 2024 to 2025 cannot be determined because the relevant evidence items are ambiguous. The figures for 'Shareholders of the Parent Company' (p7-57, p7-58) and 'Net profit for the year' (p7-55, p7-56) are printed identically for both periods, making it impossible to reliably assign values to 2025 versus 2024 (Restated). Per the instructions, ambiguous figures must not be used in calculations. Consequently, there is insufficient evidence to assess whether the profit growth justifies adding to the TMGH position. The decision is therefore based on insufficient evidence rather than a buy, hold, sell, or keep_cash action.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-58"
+    ],
+    "limitations": [
+      "Ambiguous financial figures prevent any reliable calculation of profit growth from 2024 to 2025.",
+      "Without a determinable growth figure, the justification for increasing the position cannot be evaluated."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "Investor question: How much did the profit belonging to Talaat Moustafa's own shareholders grow in 2025 compared with 2024, and does that justify adding to my position?\n\n**Evidence analysis (company evidence only):**\n\n- [TMGH-TMGH_FY2025_consolidated_en-p7-57] TMGH | Shareholders of the Parent Company (consolidated) | period 2025 | as printed: 14,383,890,306 LE (alongside 9,025,066,065 LE)  \n- [TMGH-TMGH_FY2025_consolidated_en-p7-58] TMGH | Shareholders of the Parent Company (consolidated) | period 2024 (Restated) | as printed: 14,383,890,306 LE (alongside 9,025,066,065 LE)  \n- [TMGH-TMGH_FY2025_consolidated_en-p7-55] TMGH | Net profit for the year (consolidated) | period 2025 | as printed: 18,201,981,482 LE (alongside 12,769,517,325 LE)  \n- [TMGH-TMGH_FY2025_consolidated_en-p7-56] TMGH | Net profit for the year (consolidated) | period 2024 (Restated) | as printed: 18,201,981,482 LE (alongside 12,769,517,325 LE)  \n\n**Ambiguity flag:**  \nThe evidence items p7-57 and p7-58 print the exact same textual line (\"Shareholders of the Parent Company | | 14,383,890,306 | 9,025,066,065 | unit: LE\") for periods 2025 and 2024 (Restated). Similarly, p7-55 and p7-56 print the identical line for Net profit. This means the two column values cannot be reliably assigned to the stated periods. Per instructions, ambiguous figures must be flagged and **not computed with**.\n\n**Growth calculation:**  \nDue to the above ambiguities, the profit belonging to Talaat Moustafa's own shareholders' growth from 2024 to 2025 cannot be determined from the given evidence. The raw figures are reported with their IDs above, but no growth rate or comparative conclusion can be reliably derived.\n\n**Position addition:**  \nNo recommendation on adding to the TMGH position is provided, as per the decision agent's role, and only the given evidence is used.",
+    "investor": "**Investor‑suitability assessment**\n\n| Dimension | Assessment |\n|-----------|------------|\n| **Horizon & goal** | The 5–10 year horizon aligns with the stated long‑term growth objective. No temporal mismatch is evident. |\n| **Liquidity needs** | The investor maintains a separate emergency fund. The current cash balance is 30,000 EGP. Suitability depends on whether this amount already fulfills the emergency‑fund requirement; if so, it is available for commitment. |\n| **Loss willingness & capacity** | Willingness to accept losses is rated *high*, but the financial ability to withstand losses is *medium*. This combination calls for modest position sizing and diversification to prevent a single adverse move from materially damaging the portfolio. |\n| **Current concentration** | 500 TMGH shares × 82.50 EGP = 41,250 EGP. Combined with 30,000 EGP cash, the total portfolio is ~71,250 EGP. TMGH represents approximately **58%** of the portfolio. This is a high single‑stock concentration, which conflicts with the *medium* loss‑capacity profile and increases vulnerability to firm‑specific volatility. |\n| **Cash that could reasonably be committed** | 30,000 EGP is free cash. The TMGH position is liquid (listed equity) and could be sold to free an additional ~41,250 EGP if rebalancing is desired, but any new commitment must respect the existing concentration and loss‑capacity constraints. |\n| **Portfolio allowances** | • **What can be sold:** 500 TMGH shares (≈41,250 EGP at the 82.50 EGP cutoff price).<br>• **What cash is free:** 30,000 EGP.<br>• No other holdings are reported, so the portfolio consists of cash + this single equity position. |\n\n**Note on the investor question:** Per the instructions, I am prohibited from analysing the company financials (e.g., calculating profit growth from the provided TMGH statements) and from picking or recommending an action (such as whether adding to the position is justified). Accordingly, I have not computed the shareholders’ profit growth nor offered a buy/sell/hold determination based on the financial evidence. The assessment above focuses exclusively on how the investor’s profile and current portfolio structure suit the indicated objectives and constraints."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 49.573,
+      "input_tokens": 1664,
+      "output_tokens": 10067,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 15.634,
+      "input_tokens": 1658,
+      "output_tokens": 3134,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 5.195,
+      "input_tokens": 3672,
+      "output_tokens": 1099,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 70.405
+}

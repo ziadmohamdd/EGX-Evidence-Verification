@@ -1,0 +1,94 @@
+{
+  "case_id": "dev_007",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor needs 10,000 EGP in cash within three months for a family wedding. The current portfolio consists of 1,000 EGP cash and 200 shares of EFID. At the 2026‑11‑18 cutoff the market price is 20.40 EGP per share, so the existing holding is worth 200 × 20.40 = 4,080 EGP. Selling all 200 shares would therefore generate 4,080 EGP in cash, bringing total liquid assets to 1,000 + 4,080 = 5,080 EGP. This still falls short of the 10,000 EGP target by 4,920 EGP. The recommendation is therefore to sell the entire EFID holding (200 shares) to maximise immediate cash, while acknowledging that additional cash will need to be sourced elsewhere (e.g., other assets, borrowing, or further savings). The decision is based on the investor’s low risk tolerance and short horizon; selling avoids market exposure over the next three months.  Financial figures cited: the number of shares (200) and the per‑share price (20.40 EGP) are taken from the investor’s profile and the price sheet provided; the cash balances (1,000 EGP)are",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "Revenue for FY2025 (period 31 Dec 2025) is 20,915,072,432 EGP (used only for context, not in liquidity calculation)."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "Net profit for FY2025 (period 31 Dec 2025) is 2,695,301,670 EGP (not directly relevant to the 3‑month cash need)."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "Basic/Diluted EPS for FY2025 is 2.18 EGP (provided for completeness)."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38"
+    ],
+    "limitations": [
+      "Even after selling all 200 EFID shares the investor will have only 5,080 EGP cash, still 4,920 EGP short of the 10,000 EGP needed within three months; additional funding sources are required.",
+      "The share price of 20.40 EGP is taken from the cutoff snapshot and may change before the sale executes.",
+      "No other holdings or income streams are described; the analysis assumes the investor can liquidate only the EFID position.",
+      "The recommendation does not guarantee that the wedding funding target will be met; it merely maximises immediate cash from the existing portfolio."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor needs 10,000 EGP in cash within three months for a family wedding. The current portfolio consists of 1,000 EGP cash and 200 shares of EFID. At the 2026‑11‑18 cutoff the market price is 20.40 EGP per share, so the existing holding is worth 200 × 20.40 = 4,080 EGP. Selling all 200 shares would therefore generate 4,080 EGP in cash, bringing total liquid assets to 1,000 + 4,080 = 5,080 EGP. This still falls short of the 10,000 EGP target by 4,920 EGP. The recommendation is therefore to sell the entire EFID holding (200 shares) to maximise immediate cash, while acknowledging that additional cash will need to be sourced elsewhere (e.g., other assets, borrowing, or further savings). The decision is based on the investor’s low risk tolerance and short horizon; selling avoids market exposure over the next three months.  Financial figures cited: the number of shares (200) and the per‑share price (20.40 EGP) are taken from the investor’s profile and the price sheet provided; the cash balances (1,000 EGP)are",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "Revenue for FY2025 (period 31 Dec 2025) is 20,915,072,432 EGP (used only for context, not in liquidity calculation)."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "Net profit for FY2025 (period 31 Dec 2025) is 2,695,301,670 EGP (not directly relevant to the 3‑month cash need)."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "Basic/Diluted EPS for FY2025 is 2.18 EGP (provided for completeness)."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38"
+    ],
+    "limitations": [
+      "Even after selling all 200 EFID shares the investor will have only 5,080 EGP cash, still 4,920 EGP short of the 10,000 EGP needed within three months; additional funding sources are required.",
+      "The share price of 20.40 EGP is taken from the cutoff snapshot and may change before the sale executes.",
+      "No other holdings or income streams are described; the analysis assumes the investor can liquidate only the EFID position.",
+      "The recommendation does not guarantee that the wedding funding target will be met; it merely maximises immediate cash from the existing portfolio."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 5080.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 14.071,
+      "input_tokens": 1827,
+      "output_tokens": 2731,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 14.073
+}

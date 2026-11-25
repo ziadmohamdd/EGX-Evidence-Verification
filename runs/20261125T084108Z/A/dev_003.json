@@ -1,0 +1,52 @@
+{
+  "case_id": "dev_003",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "none",
+    "shares": 0,
+    "explanation": "The investor's portfolio consists of 100 ETEL shares (market value ~14,195 EGP) and 1500 EFID shares (market value ~30,600 EGP), with 15,000 EGP cash, totalling ~59,795 EGP. The investment horizon is 3‑5 years and the investor may need 10 % of the money within a year; the existing cash already covers that liquidity need (≈5,980 EGP).  Using the reported earnings‑per‑share figures, EFID has an EPS of 2.18 EGP (evidence_id: EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑38) and ETEL has an EPS of 11.93 L.E./share (evidence_id: ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑55).  Dividing the current share prices (20.40 EGP for EFID, 141.95 EGP for ETEL) by these EPS gives approximate P/E ratios of about 9.4 and 11.9 respectively, indicating the stocks are not obviously over‑valued.  However, the evidence does not include dividend information, payout ratios, or any measure of volatility or risk beyond the reported profitability.  The investor has a medium willingness to accept losses but a low financial ability to‑with",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "No dividend or income data are provided, so the ‘some income’ objective cannot be directly assessed.",
+      "No market‑price history, sector benchmarks, or macro‑economic context is available.",
+      "The EPS for ETEL is reported with a unit of L.E.(000) which may be a typographical error; the figure 11.93 is taken at face value.",
+      "Insufficient information to calculate sustainable growth rates, cash flow, or debt levels."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The proposed hold was blocked by the portfolio checks (cannot hold NONE: the investor owns none). No change to the portfolio is recommended.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "Blocked recommendation: hold 0 none"
+    ]
+  },
+  "blocked": true,
+  "violations": [
+    {
+      "rule": "hold_unowned",
+      "detail": "cannot hold NONE: the investor owns none"
+    }
+  ],
+  "proposed_portfolio": null,
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 702.898,
+      "input_tokens": 2076,
+      "output_tokens": 2900,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 702.9
+}

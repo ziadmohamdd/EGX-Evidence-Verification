@@ -1,0 +1,52 @@
+{
+  "case_id": "dev_011",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked to compare Telecom Egypt, CIB, Edita and Talaat Moustafa on net‑profit growth (2024→2025) and price‑to‑earnings ratio, and to select one to buy with 80,000 EGP cash. The provided evidence contains financial figures for four listed tickers: ETEL (Telecom Egypt), TMGH (Talaat Moustafa), COMI and EFID. No evidence is given for CIB or for a company identified as Edita; therefore we cannot compute the requested metrics for all four firms. While we can calculate growth and P/E for the available companies (ETEL, TMGH, COMI, EFID), doing so would not satisfy the comparison asked for. Consequently, there is insufficient evidence to responsibly recommend a purchase among the four named companies.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "No financial data for CIB or Edita are present in the evidence set.",
+      "Mapping of tickers COMI and EFID to Edita or CIB cannot be assumed without outside knowledge, which is prohibited.",
+      "All figures are taken directly as printed; unit conversions (e.g., L.E. (000)) have been applied, but any ambiguity in the source rows is noted."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked to compare Telecom Egypt, CIB, Edita and Talaat Moustafa on net‑profit growth (2024→2025) and price‑to‑earnings ratio, and to select one to buy with 80,000 EGP cash. The provided evidence contains financial figures for four listed tickers: ETEL (Telecom Egypt), TMGH (Talaat Moustafa), COMI and EFID. No evidence is given for CIB or for a company identified as Edita; therefore we cannot compute the requested metrics for all four firms. While we can calculate growth and P/E for the available companies (ETEL, TMGH, COMI, EFID), doing so would not satisfy the comparison asked for. Consequently, there is insufficient evidence to responsibly recommend a purchase among the four named companies.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "No financial data for CIB or Edita are present in the evidence set.",
+      "Mapping of tickers COMI and EFID to Edita or CIB cannot be assumed without outside knowledge, which is prohibited.",
+      "All figures are taken directly as printed; unit conversions (e.g., L.E. (000)) have been applied, but any ambiguity in the source rows is noted."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 80000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 13.587,
+      "input_tokens": 2989,
+      "output_tokens": 2731,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 13.59
+}

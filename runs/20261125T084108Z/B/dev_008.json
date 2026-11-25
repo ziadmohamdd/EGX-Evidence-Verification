@@ -1,0 +1,54 @@
+{
+  "case_id": "dev_008",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The friend's claim that Telecom Egypt made a net profit of 225.9 billion pounds in 2025, more than ten times its 2024 profit, is not supported by the evidence. The reported net profit for the year 2025 is 22 578 063  thousand L.E. (i.e., 22.578 billion L.E.) and for 2024 is 10 111 328  thousand L.E. (i.e., 10.111 billion L.E.). This is roughly a 2.2‑fold increase, not >10×, and the 225.9 billion figure is an order of magnitude too high. The basic/diluted earnings per share are printed as 11.93 L.E. (2025) and 4.79 L.E. (2024) with a unit of L.E.(000), which is ambiguous; therefore a reliable P/E ratio cannot be calculated from the given data. The current market price is 141.95 EGP per share, giving a holding value of 150 × 141.95 = 21 292.5 EGP alongside 50 000 EGP cash. Given the investor’s medium risk tolerance, a 5‑year horizon, and the need for diversification, putting all available cash into additional ETEL shares would concentrate risk in a single Egyptian listed company. The responsible course is to 유지",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The friend's claim that Telecom Egypt made a net profit of 225.9 billion pounds in 2025, more than ten times its 2024 profit, is not supported by the evidence. The reported net profit for the year 2025 is 22 578 063  thousand L.E. (i.e., 22.578 billion L.E.) and for 2024 is 10 111 328  thousand L.E. (i.e., 10.111 billion L.E.). This is roughly a 2.2‑fold increase, not >10×, and the 225.9 billion figure is an order of magnitude too high. The basic/diluted earnings per share are printed as 11.93 L.E. (2025) and 4.79 L.E. (2024) with a unit of L.E.(000), which is ambiguous; therefore a reliable P/E ratio cannot be calculated from the given data. The current market price is 141.95 EGP per share, giving a holding value of 150 × 141.95 = 21 292.5 EGP alongside 50 000 EGP cash. Given the investor’s medium risk tolerance, a 5‑year horizon, and the need for diversification, putting all available cash into additional ETEL shares would concentrate risk in a single Egyptian listed company. The responsible course is to 유지",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 50000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 150
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 16.425,
+      "input_tokens": 2098,
+      "output_tokens": 2836,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 16.428
+}

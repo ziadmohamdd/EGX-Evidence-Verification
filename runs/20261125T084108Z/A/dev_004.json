@@ -1,0 +1,49 @@
+{
+  "case_id": "dev_004",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 235,
+    "explanation": "The investor needs about 30,000 EGP within six months and currently holds only 5,000 EGP in cash. With COMI shares priced at 128.00 EGP, selling 235 shares will generate 235 × 128 = 30,080 EGP, meeting the liquidity need while leaving 765 shares (≈98,040 EGP) in the portfolio. The investor’s low risk tolerance and short horizon (1‑3 years) favour reducing exposure just enough to cover the upcoming cash requirement rather than liquidating the entire holding. After the sale the portfolio will consist of roughly 35,080 EGP cash and 98,040 EGP in COMI shares, preserving the majority of the investment for potential income and capital preservation. No financial metrics from the company reports (net profit, EPS, etc.) are required for this decision; the recommendation rests on the share price and the investor’s cash‑flow need.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 235,
+    "explanation": "The investor needs about 30,000 EGP within six months and currently holds only 5,000 EGP in cash. With COMI shares priced at 128.00 EGP, selling 235 shares will generate 235 × 128 = 30,080 EGP, meeting the liquidity need while leaving 765 shares (≈98,040 EGP) in the portfolio. The investor’s low risk tolerance and short horizon (1‑3 years) favour reducing exposure just enough to cover the upcoming cash requirement rather than liquidating the entire holding. After the sale the portfolio will consist of roughly 35,080 EGP cash and 98,040 EGP in COMI shares, preserving the majority of the investment for potential income and capital preservation. No financial metrics from the company reports (net profit, EPS, etc.) are required for this decision; the recommendation rests on the share price and the investor’s cash‑flow need.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 35080.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 765
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 10.671,
+      "input_tokens": 1943,
+      "output_tokens": 2274,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 10.673
+}

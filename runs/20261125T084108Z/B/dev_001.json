@@ -1,0 +1,54 @@
+{
+  "case_id": "dev_001",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor currently holds 300 shares of ETEL priced at 141.95 EGP each, giving a market value of about 42,585 EGP. Combined with 20,000 EGP cash, the total portfolio is roughly 62,585 EGP. The available financial evidence for ETEL shows that for the year ending 31/12/2025 the company reported basic and diluted earnings per share (EPS) of 11.93 L.E. (scaled from the printed 11.93 L.E.(000) to 11,930 L.E. in base units) and a net profit of 22,578,063 thousand L.E. (22,578,063,000 L.E.). The price‑to‑earnings ratio based on these figures is approximately 141.95 / 11.93 ≈ 11.9, which is moderate and suggests the stock is not obviously over‑priced relative to its earnings. However, the operating revenues and gross profit remained essentially unchanged between 2024 and 2025 (both 106,672,946 thousand L.E. and 44,839,110 thousand L.E. respectively), indicating no growth in the observed period. The balance sheet shows total assets of 225,882,527 thousand L.E. and total equity of 63,687,826 thousand L.E., implying‑",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor currently holds 300 shares of ETEL priced at 141.95 EGP each, giving a market value of about 42,585 EGP. Combined with 20,000 EGP cash, the total portfolio is roughly 62,585 EGP. The available financial evidence for ETEL shows that for the year ending 31/12/2025 the company reported basic and diluted earnings per share (EPS) of 11.93 L.E. (scaled from the printed 11.93 L.E.(000) to 11,930 L.E. in base units) and a net profit of 22,578,063 thousand L.E. (22,578,063,000 L.E.). The price‑to‑earnings ratio based on these figures is approximately 141.95 / 11.93 ≈ 11.9, which is moderate and suggests the stock is not obviously over‑priced relative to its earnings. However, the operating revenues and gross profit remained essentially unchanged between 2024 and 2025 (both 106,672,946 thousand L.E. and 44,839,110 thousand L.E. respectively), indicating no growth in the observed period. The balance sheet shows total assets of 225,882,527 thousand L.E. and total equity of 63,687,826 thousand L.E., implying‑",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 20.725,
+      "input_tokens": 2278,
+      "output_tokens": 2865,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 20.727
+}

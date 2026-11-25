@@ -1,0 +1,105 @@
+{
+  "case_id": "dev_002",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 1212,
+    "explanation": "The investor has a long‑term wealth‑building horizon, high risk tolerance, and no current holdings. Based on the available evidence for TMGH: net profit for 2025 was EGP 18,201,981,482, earnings per share (EPS) 6.98 LE, gross profit EGP 20,855,400,384, and total equity EGP 157,708,140,765 as of 31 Dec 2025. Using the quoted share price of 82.50 EGP, the price‑to‑earnings ratio works out to roughly 11.8 (82.50 ÷ 6.98), which is modest for a profitable firm with strong equity. These figures suggest the company is generating substantial earnings and has a solid balance‑sheet, supporting a buy case for a long‑term holder willing to accept volatility. The investor can purchase 1,212 shares (100,000 EGP ÷ 82.50 ≈ 1,212), costing 99,990 EGP, leaving a small cash residual.  Unused figures: the 2024 restated net profit (evidence_id TMGH‑TMGH_FY2025_consolidated_en‑p7‑56) is marked AMBIGUOUS and has been excluded from the calculations.  Limitations: only a snapshot of profitability and balance‑sheet data is provided;no",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year 2025 was EGP 18,201,981,482."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "EPS for 2025 was 6.98 LE, used to compute a P/E ratio of about 11.8."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "Gross profit for 2025 was EGP 20,855,400,384, indicating strong revenue‑generation capacity."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity as of 31 Dec 2025 was EGP 157,708,140,765, reflecting a solid net‑asset base."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "Evidence provides only a single‑year profit, EPS, gross profit and equity figure; no cash‑flow, revenue growth, or forward‑looking guidance.",
+      "The AMBIGUOUS 2024 restated net profit has been excluded.",
+      "No information on market conditions, sector dynamics, or dividend policy is included.",
+      "Recommendation is based on snapshot data and assumes the investor’s high risk tolerance and long horizon."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 1212,
+    "explanation": "The investor has a long‑term wealth‑building horizon, high risk tolerance, and no current holdings. Based on the available evidence for TMGH: net profit for 2025 was EGP 18,201,981,482, earnings per share (EPS) 6.98 LE, gross profit EGP 20,855,400,384, and total equity EGP 157,708,140,765 as of 31 Dec 2025. Using the quoted share price of 82.50 EGP, the price‑to‑earnings ratio works out to roughly 11.8 (82.50 ÷ 6.98), which is modest for a profitable firm with strong equity. These figures suggest the company is generating substantial earnings and has a solid balance‑sheet, supporting a buy case for a long‑term holder willing to accept volatility. The investor can purchase 1,212 shares (100,000 EGP ÷ 82.50 ≈ 1,212), costing 99,990 EGP, leaving a small cash residual.  Unused figures: the 2024 restated net profit (evidence_id TMGH‑TMGH_FY2025_consolidated_en‑p7‑56) is marked AMBIGUOUS and has been excluded from the calculations.  Limitations: only a snapshot of profitability and balance‑sheet data is provided;no",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year 2025 was EGP 18,201,981,482."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "EPS for 2025 was 6.98 LE, used to compute a P/E ratio of about 11.8."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "Gross profit for 2025 was EGP 20,855,400,384, indicating strong revenue‑generation capacity."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity as of 31 Dec 2025 was EGP 157,708,140,765, reflecting a solid net‑asset base."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "Evidence provides only a single‑year profit, EPS, gross profit and equity figure; no cash‑flow, revenue growth, or forward‑looking guidance.",
+      "The AMBIGUOUS 2024 restated net profit has been excluded.",
+      "No information on market conditions, sector dynamics, or dividend policy is included.",
+      "Recommendation is based on snapshot data and assumes the investor’s high risk tolerance and long horizon."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 1212
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 11.777,
+      "input_tokens": 1869,
+      "output_tokens": 1954,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 11.779
+}

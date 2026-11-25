@@ -1,0 +1,101 @@
+{
+  "case_id": "dev_010",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 363,
+    "explanation": "The profit belonging to Talaat Moustafa's own shareholders (Shareholders of the Parent Company, consolidated) grew from 9,025,066,065 EGP in the restated 2024 period to 14,383,890,306 EGP in 2025, an increase of 5,358,824,241 EGP, or roughly 59.4% growth. This strong year‑on‑year increase, together with the 2025 earnings per share of 6.98 EGP (giving a price‑to‑earnings ratio of about 11.8 based on the market price of 82.50 EGP), suggests healthy profitability and a reasonably valued stock. The investor has a high risk tolerance and a 5‑10‑year horizon, so adding to the position can capture the upside from continued earnings growth. With 30,000 EGP in cash, the investor can purchase up to 363 shares (363 × 82.50 = 29,947.50 EGP), leaving a small cash balance. This would increase the TMGH holding from 500 to 863 shares, aligning the portfolio with the positive profit trend while maintaining diversification within the available cash.  Limitations: The analysis relies on only two fiscal years of consolidateddata",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) profit in 2025 was 14,383,890,306 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) profit in restated 2024 was 9,025,066,065 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "2025 earnings per share was 6.98 EGP, used to estimate a P/E ratio of ~11.8."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "2024 earnings per share was 4.38 EGP, shown for context."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Only two fiscal years of consolidated data are provided; no longer trend or forward guidance.",
+      "Figures are restated for 2024; comparability may be affected by accounting changes.",
+      "No macro‑economic or sector‑specific information is included.",
+      "Recommendation is based solely on the given evidence and current price; other risks (market, liquidity, company‑specific) are not assessed."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 363,
+    "explanation": "The profit belonging to Talaat Moustafa's own shareholders (Shareholders of the Parent Company, consolidated) grew from 9,025,066,065 EGP in the restated 2024 period to 14,383,890,306 EGP in 2025, an increase of 5,358,824,241 EGP, or roughly 59.4% growth. This strong year‑on‑year increase, together with the 2025 earnings per share of 6.98 EGP (giving a price‑to‑earnings ratio of about 11.8 based on the market price of 82.50 EGP), suggests healthy profitability and a reasonably valued stock. The investor has a high risk tolerance and a 5‑10‑year horizon, so adding to the position can capture the upside from continued earnings growth. With 30,000 EGP in cash, the investor can purchase up to 363 shares (363 × 82.50 = 29,947.50 EGP), leaving a small cash balance. This would increase the TMGH holding from 500 to 863 shares, aligning the portfolio with the positive profit trend while maintaining diversification within the available cash.  Limitations: The analysis relies on only two fiscal years of consolidateddata",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) profit in 2025 was 14,383,890,306 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) profit in restated 2024 was 9,025,066,065 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "2025 earnings per share was 6.98 EGP, used to estimate a P/E ratio of ~11.8."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "2024 earnings per share was 4.38 EGP, shown for context."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Only two fiscal years of consolidated data are provided; no longer trend or forward guidance.",
+      "Figures are restated for 2024; comparability may be affected by accounting changes.",
+      "No macro‑economic or sector‑specific information is included.",
+      "Recommendation is based solely on the given evidence and current price; other risks (market, liquidity, company‑specific) are not assessed."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 52.5,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 863
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 18.749,
+      "input_tokens": 2464,
+      "output_tokens": 2684,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 18.751
+}

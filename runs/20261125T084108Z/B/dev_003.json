@@ -1,0 +1,52 @@
+{
+  "case_id": "dev_003",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "none",
+    "shares": 0,
+    "explanation": "The investor holds 100 ETEL shares and 1500 EFID shares with a total market value of about 44,795 EGP plus 15,000 EGP cash (overall ~59,795 EGP). Goal: steady growth with some income over 3‑5 years, but may need 10 % of the money within a year and has low capacity to absorb losses.  • EFID: using the reported Basic/Diluted EPS of 2.18 EGP (evidence_id EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑38) and the current price of 20.40 EGP, the P/E ratio is about 9.4, suggesting the stock is relatively cheap versus earnings.  • EFID’s revenue (20.9 bn EGP) and net profit (2.7 bn EGP) (evidence_ids …‑p6‑01 and …‑p6‑30) show solid profitability and equity (5.7 bn EGP).  • ETEL: the reported Basic/Diluted EPS of 11.93 / 4.79 L.E. (evidence_id ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑55) is marked AMBIGUOUS because the unit is L.E.(000), which would imply earnings per share in the thousands of pounds—an unrealistic figure.  Consequently we cannot compute a reliable P/E for ETEL, and its high price (141.95 EGP) coupled",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The proposed hold was blocked by the portfolio checks (cannot hold NONE: the investor owns none). No change to the portfolio is recommended.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "Blocked recommendation: hold 0 none"
+    ]
+  },
+  "blocked": true,
+  "violations": [
+    {
+      "rule": "hold_unowned",
+      "detail": "cannot hold NONE: the investor owns none"
+    }
+  ],
+  "proposed_portfolio": null,
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 25.043,
+      "input_tokens": 2076,
+      "output_tokens": 3693,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 25.046
+}

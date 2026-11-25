@@ -1,0 +1,91 @@
+{
+  "case_id": "dev_009",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The investor asked for the full‑year 2026 earnings per share (EPS) and the resulting price‑to‑earnings (P/E) ratio for ABUK. The only reported EPS figures are for the nine months ended 30 September 2026 (verified, 8.74 EGP per share) and the comparable nine months of 2025 (4.28 EGP). No full‑year EPS or profit guidance is provided in the evidence. While one could naively annualise the nine‑month EPS by multiplying by 12/9, such an assumption is not supported by the data and would introduce uncertainty that the rules require us to disclose. Because the evidence does not contain a reliable full‑year EPS figure, a responsible decision cannot be made on the basis of the given information alone. Therefore the recommendation is **insufficient_evidence**.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "The verified nine‑months‑to‑September‑2026 basic EPS is 8.74 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "The verified nine‑months‑to‑September‑2025 basic EPS is 4.28 EGP per share."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "No full‑year 2026 EPS or profit data are presented; only nine‑month figures are available.",
+      "The revenue rows are marked AMBIGUOUS and were not used in any calculation.",
+      "Annualising the nine‑month EPS assumes a straight‑line profit pattern for the remaining quarter, which is an unverified assumption.",
+      "The price per share (76.21 EGP) is used only as context; without a confirmed full‑year EPS a P/E ratio cannot be reliably computed."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The investor asked for the full‑year 2026 earnings per share (EPS) and the resulting price‑to‑earnings (P/E) ratio for ABUK. The only reported EPS figures are for the nine months ended 30 September 2026 (verified, 8.74 EGP per share) and the comparable nine months of 2025 (4.28 EGP). No full‑year EPS or profit guidance is provided in the evidence. While one could naively annualise the nine‑month EPS by multiplying by 12/9, such an assumption is not supported by the data and would introduce uncertainty that the rules require us to disclose. Because the evidence does not contain a reliable full‑year EPS figure, a responsible decision cannot be made on the basis of the given information alone. Therefore the recommendation is **insufficient_evidence**.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "The verified nine‑months‑to‑September‑2026 basic EPS is 8.74 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "The verified nine‑months‑to‑September‑2025 basic EPS is 4.28 EGP per share."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "No full‑year 2026 EPS or profit data are presented; only nine‑month figures are available.",
+      "The revenue rows are marked AMBIGUOUS and were not used in any calculation.",
+      "Annualising the nine‑month EPS assumes a straight‑line profit pattern for the remaining quarter, which is an unverified assumption.",
+      "The price per share (76.21 EGP) is used only as context; without a confirmed full‑year EPS a P/E ratio cannot be reliably computed."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 13.644,
+      "input_tokens": 2153,
+      "output_tokens": 2157,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 13.646
+}

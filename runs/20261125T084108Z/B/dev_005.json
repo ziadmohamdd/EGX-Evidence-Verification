@@ -1,0 +1,72 @@
+{
+  "case_id": "dev_005",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor aims to add a fertilizer exporter for diversification over a 5‑year horizon, with medium risk tolerance and an existing emergency fund. The current portfolio consists of 40,000 EGP cash and 200 shares of COMI (price 128 EGP, total 25,600 EGP), giving a portfolio value of 65,600 EGP. The price of ABUK is 76.21 EGP per share, so a purchase would use most of the cash. However, all reported financial figures for ABUK (revenue, net profit, etc.) are marked AMBIGUOUS in the evidence and cannot be used in any calculation. The only figures not marked ambiguous are the verified earnings‑per‑share rows, but these alone are insufficient to assess the company’s valuation, profitability, debt level, or outlook. Because the evidence does not provide reliable financial data, it is not possible to responsibly decide whether to buy, hold, or sell ABUK shares. The appropriate course, given the missing information, is to remain in cash and keep the existing COMI holding. No outside knowledge about these companies (",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "All ABUK financial figures are AMBIGUOUS and excluded from calculations.",
+      "Verified per‑share earnings are available but do not provide enough context for a full valuation.",
+      "No data on COMI’s fundamentals beyond the current share price."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor aims to add a fertilizer exporter for diversification over a 5‑year horizon, with medium risk tolerance and an existing emergency fund. The current portfolio consists of 40,000 EGP cash and 200 shares of COMI (price 128 EGP, total 25,600 EGP), giving a portfolio value of 65,600 EGP. The price of ABUK is 76.21 EGP per share, so a purchase would use most of the cash. However, all reported financial figures for ABUK (revenue, net profit, etc.) are marked AMBIGUOUS in the evidence and cannot be used in any calculation. The only figures not marked ambiguous are the verified earnings‑per‑share rows, but these alone are insufficient to assess the company’s valuation, profitability, debt level, or outlook. Because the evidence does not provide reliable financial data, it is not possible to responsibly decide whether to buy, hold, or sell ABUK shares. The appropriate course, given the missing information, is to remain in cash and keep the existing COMI holding. No outside knowledge about these companies (",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "All ABUK financial figures are AMBIGUOUS and excluded from calculations.",
+      "Verified per‑share earnings are available but do not provide enough context for a full valuation.",
+      "No data on COMI’s fundamentals beyond the current share price."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 11.864,
+      "input_tokens": 2135,
+      "output_tokens": 2094,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 11.867
+}

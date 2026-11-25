@@ -1,0 +1,85 @@
+{
+  "case_id": "dev_012",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor’s decision hinges on whether Edita's net profit grew by more than 50% from 2024 to 2025. The evidence contains a verified 2024 net profit of 1,606,727,698 EGP (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31). However, the 2025 net profit figure (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30) is marked AMBIGUOUS and is noted as unreadable because a stamp covers the value on the scanned page. Per the rules, ambiguous figures must not be used in calculations. Consequently, the net‑profit growth rate from 2024 to 2025 cannot be determined, and it is impossible to assess whether the growth exceeds the 50% threshold that would trigger a buy. Because the essential figure is missing, the evidence is insufficient to support a responsible buy decision.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "The 2025 net profit figure is ambiguous and cannot be relied upon.",
+      "Growth calculation is therefore indeterminable from the provided evidence."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor’s decision hinges on whether Edita's net profit grew by more than 50% from 2024 to 2025. The evidence contains a verified 2024 net profit of 1,606,727,698 EGP (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31). However, the 2025 net profit figure (evidence_id EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30) is marked AMBIGUOUS and is noted as unreadable because a stamp covers the value on the scanned page. Per the rules, ambiguous figures must not be used in calculations. Consequently, the net‑profit growth rate from 2024 to 2025 cannot be determined, and it is impossible to assess whether the growth exceeds the 50% threshold that would trigger a buy. Because the essential figure is missing, the evidence is insufficient to support a responsible buy decision.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "The 2025 net profit figure is ambiguous and cannot be relied upon.",
+      "Growth calculation is therefore indeterminable from the provided evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": {
+    "financial": "**Evidence analysis for EFID net profit growth (2024 → 2025):**\n\n- **[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]** Net profit for the year (consolidated), period 31 December 2025: AMBIGUOUS. As printed: `\"Net profit for the year | | 2 695 301 670 | 1 606 727 698 | unit: EGP\"` with note: *\"unreadable: the 2025 figure is covered by a stamp on the scanned page\"*. The 2025 figure cannot be relied upon per data-quality flag.\n\n- **[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31]** Net profit for the year (consolidated), period 31 December 2024: verified. As printed: `\"Net profit for the year | | 2 695 301 670 | 1 606 727 698 | unit: EGP\"`. The verified 2024 figure is 1,606,727,698 EGP (first column per the period label; second column would be 2023, not requested here).\n\n- **Growth calculation:** The 2025 net profit figure is AMBIGUOUS and explicitly noted as unreadable due to a stamp covering the 2025 value. Per instructions, ambiguous figures must not be used in computation. Therefore, the net profit growth rate from 2024 to 2025 **cannot be determined** from the provided evidence. The 2024 verified net profit (1,606,727,698 EGP) is available, but without a verifiable 2025 figure, any percentage growth (including the >50% threshold referenced in the investor question) cannot be computed.\n\n- **Data quality flag:** [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] is flagged AMBIGUOUS; do not compute with its figures.\n\n**Summary for decision agent:** The evidence does not provide a reliable 2025 net profit figure. The 2024 verified net profit is 1,606,727,698 EGP. Growth rate vs. 2024 is indeterminable from this report.",
+    "investor": "**Investor-Suitability Assessment**\n\n**Horizon (3 years):**  \nA 3-year horizon is medium-term. With a *medium* willingness and ability to withstand losses, the portfolio can accommodate moderate-growth assets, but should avoid high-volatility exposures without diversification. The horizon is compatible with balanced equity or fixed-income allocations, but concentration risk must be monitored.\n\n**Liquidity Needs:**  \nThe investor maintains a separate emergency fund, so the current liquid resources (10,000.00 EGP cash + EFID holdings) are discretionary. EFID is listed with a published price of 20.40 EGP/share, making the 1,000-share position readily sellable for approximately 20,400.00 EGP. Total liquidity available for commitment is therefore ~30,400.00 EGP if the position is fully realized, or 10,000.00 EGP if cash alone is used.\n\n**Loss Willingness & Capacity (both rated medium):**  \nA medium loss tolerance combined with a medium financial ability to absorb losses suggests a need for controlled exposure. A single-stock concentration paired with a 3-year horizon warrants caution; downturns in the holding could significantly impact the portfolio's ability to recover within the timeframe without additional capital infusion.\n\n**Current Concentration:**  \nThe equity portfolio is 100% allocated to EFID (1,000 shares). Combined with 10,000.00 EGP cash, the position is heavily concentrated in one issuer. This conflicts with the medium loss capacity and 3-year horizon, as adverse movement in EFID would represent a large portion of total portfolio value.\n\n**Cash That Could Reasonably Be Committed:**  \n- Free cash: 10,000.00 EGP  \n- Additional liquidity from selling EFID: ~20,400.00 EGP (1,000 shares × 20.40 EGP)  \n- Total potentially commitable: ~30,400.00 EGP, though committing the full amount while maintaining a concentrated EFID exposure would increase risk inconsistency with the profile. A more aligned approach would diversify the newly committed portion across uncorrelated assets.\n\n**Portfolio Allowances:**  \n- **What can be sold:** The full EFID holding (1,000 shares) at the cutoff price of 20.40 EGP/share, yielding ~20,400.00 EGP in cash.  \n- **What cash is free:** 10,000.00 EGP, already segregated from the emergency fund.  \n- No transfer restrictions, lock-ups, or pledged amounts are indicated.\n\n**Note on Financial Analysis & Action Selection:**  \nPer instructions, I am not analysing company financials (including net profit growth, revenue figures, or EPS) and I am not picking or recommending any action. The investor's question regarding Edita's net profit growth and the conditional \"buy more if >50%\" trigger falls outside this assessment scope."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 38.806,
+      "input_tokens": 1066,
+      "output_tokens": 7492,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 17.205,
+      "input_tokens": 1060,
+      "output_tokens": 2552,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 7.863,
+      "input_tokens": 3140,
+      "output_tokens": 1172,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 63.878
+}

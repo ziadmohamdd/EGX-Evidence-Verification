@@ -1,0 +1,155 @@
+{
+  "case_id": "dev_011",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ETEL",
+    "shares": 563,
+    "explanation": "**Analysis of net‑profit growth (2024→2025) and price‑to‑earnings (P/E) ratios** (all figures taken from the supplied evidence; prices are those quoted at the 2026‑11‑18 cutoff).  Net profit growth and EPS are derived from the verified annual reports; P/E = share price ÷ basic/diluted EPS for 2025.  The calculations below use the figures in base units (EGP).  PEG = P/E ÷ growth% (lower PEG = relatively cheaper growth).  The investor has EGP 80,000 cash, a 7+‑year horizon, and a medium risk tolerance, so a stock with strong growth at a low valuation is appropriate.  **Net‑profit growth**: ETEL 123 % (2025 EGP 22,578,063,000 vs 2024 EGP 10,111,328,000).  **P/E (2025)**: 141.95 ÷ 11.93 ≈ 11.9.  **PEG**: 11.9 ÷ 123 ≈ 0.097.  **Comparators**: COMI growth 49 %, P/E ≈ 7.0, PEG ≈ 0.14; EFID growth 68 %, P/E ≈ 9.4, PEG ≈ 0.14; TMGH growth 43 %, P/E ≈ 11.8, PEG ≈ 0.27.  ETEL therefore offers the highest growth together with the lowest PEG, indicating the most attractive risk‑adjusted value among the four.  With EGP 80,",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit 2025 = 22,578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL net profit 2024 = 10,111,328,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic/diluted EPS 2025 = 11.93 L.E."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic/diluted EPS 2024 = 4.79 L.E."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit 2025 = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit 2024 = 55,256,732,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "COMI basic EPS 2025 = 18.25 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+        "stated_value": 14.72,
+        "statement": "COMI basic EPS 2024 = 14.72 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID net profit 2025 = 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID net profit 2024 = 1,606,727,698 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic/diluted EPS 2025 = 2.18 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic/diluted EPS 2024 = 1.09 EGP"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH net profit 2025 = 18,201,981,482 LE"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 12769517325.0,
+        "statement": "TMGH net profit 2024 = 12,769,517,325 LE"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH EPS 2025 = 6.98 LE"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "TMGH EPS 2024 = 4.38 LE"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Prices per share are taken from the cutoff snapshot (128.00 EGP for COMI, 20.40 EGP for EFID, 141.95 EGP for ETEL, 82.50 EGP for TMGH); they are not derived from the evidence rows.",
+      "All growth rates and PEG ratios are calculated from the single‑year figures provided; they do not incorporate cash‑flow, debt, or macro‑economic factors.",
+      "The recommendation assumes the investor can purchase whole shares; fractional share purchases are not considered.",
+      "No transaction costs, taxes, or market impact are modelled."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ETEL",
+    "shares": 563,
+    "explanation": "### Analysis of net‑profit growth (2024→2025) and price‑to‑earnings (P/E) ratios (all figures taken from the supplied evidence; prices are those quoted at the 2026‑11‑18 cutoff). Net profit growth and EPS are derived from the verified annual reports; P/E = share price ÷ basic/diluted EPS for 2025. PEG = P/E ÷ growth% (lower PEG = relatively cheaper growth). The investor has EGP 80,000 cash, a 7+‑year horizon, and a medium risk tolerance, so a stock with strong growth at a low valuation is appropriate.  **Net‑profit growth**: ETEL 123 % (2025 EGP 22,578,063,000 vs 2024 EGP 10,111,328,000). **P/E (2025)**: 141.95 ÷ 11.93 ≈ 11.9. **PEG**: 11.9 ÷ 123 ≈ 0.097.  **Comparators** (calculated from the same evidence): COMI growth 49 %, P/E ≈ 7.0, PEG ≈ 0.14; EFID growth 68 %, P/E ≈ 9.4, PEG ≈ 0.14; TMGH growth 43 %, P/E ≈ 11.8, PEG ≈ 0.27. ETEL therefore offers the highest growth together with the lowest PEG, indicating the most attractive risk‑adjusted value among the four.  With EGP 80,000 the investor can purchase 5",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": []
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 82.15,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 563
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "rule": "value_mismatch",
+        "detail": "stated 1.27695e+10 but evidence 'Earnings per Share (consolidated)' is 4.38 [Earnings per Share | (39) | 6.98 | 4.38 | unit: LE]"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 32.285,
+      "input_tokens": 2989,
+      "output_tokens": 6035,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 25.916,
+      "input_tokens": 4996,
+      "output_tokens": 4884,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 58.204
+}
