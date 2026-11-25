@@ -119,7 +119,8 @@ def test_deciding_prompts_carry_the_one_stock_limit(case, name):
     llm = ScriptedModel(script=[buy()])
     run_case(case, CONDITIONS[name], llm)
     deciding = llm.seen[-1][0].content  # system prompt of the call that made the recommendation
-    assert "no single company should be more than half of the portfolio" in deciding
+    assert "no single company may be more than half of the portfolio" in deciding
+    assert "no exceptions" in deciding
 
 
 def test_printed_view_hides_converted_values(case):
