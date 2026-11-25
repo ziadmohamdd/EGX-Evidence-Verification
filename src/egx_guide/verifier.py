@@ -119,41 +119,60 @@ def _matches(stated: float, value: float, rel_tol: float) -> bool:
     return abs(stated - value) <= rel_tol * abs(value)
 
 
+@dataclass(frozen=True)
+class TextFinding:
+    evidence_id: str
+    rule: str          # "uncited_figure" or "text_value_mismatch"
+    figure: TextFigure
+    value: float       # the evidence (or reference) value it matched
+    scale: float | None = None  # for a mismatch: the factor that would make it match
+
+
+def text_findings(text: str, values: dict[str, float], cited: set[str],
+                  rel_tol: float = DEFAULT_REL_TOL) -> list[TextFinding]:
+    """Figures in `text` that match one of `values` (by evidence_id) but are not in `cited`,
+    or match one only at the wrong scale. Shared by the verifier and the scorer."""
+    found = []
+    for t in text_figures(text):
+        hits = [i for i, v in values.items() if _matches(t.value, v, rel_tol)]
+        if hits:
+            if not any(i in cited for i in hits):
+                found.append(TextFinding(hits[0], "uncited_figure", t, values[hits[0]]))
+            continue
+        if t.whole_digits < 4 and not t.scaled:
+            continue  # short plain numbers (prices like 82.50, share counts) match by chance
+        if _TIMES_UNIT.match(text, t.end):
+            continue
+        for i, v in values.items():
+            if abs(v) < EXACT_BELOW:
+                continue
+            f = next((f for f in (1e3, 1e6, 1e9, 1e-3, 1e-6, 1e-9)
+                      if abs(t.value * f - v) <= rel_tol * abs(v)), None)
+            if f is not None:
+                found.append(TextFinding(i, "text_value_mismatch", t, v, f))
+                break
+    return found
+
+
 def check_text(
     rec: Recommendation,
     evidence: dict[str, EvidenceItem],
     rel_tol: float = DEFAULT_REL_TOL,
 ) -> list[tuple[ClaimFailure, TextFigure]]:
     """Figures in the explanation that match evidence but are not cited, or match only at the wrong scale."""
-    cited = {c.evidence_id for c in rec.claims}
-    usable = [e for e in evidence.values() if e.value is not None and e.status is not EvidenceStatus.AMBIGUOUS]
-    found = []
-    for t in text_figures(rec.explanation):
-        hits = [e for e in usable if _matches(t.value, e.value, rel_tol)]
-        if hits:
-            if not any(e.evidence_id in cited for e in hits):
-                e = hits[0]
-                found.append((ClaimFailure(
-                    e.evidence_id, "uncited_figure",
-                    f"the explanation states \"{t.raw}\", which is '{e.label}' ({e.value:,.6g}), "
-                    f"but it is not listed in claims"), t))
-            continue
-        if t.whole_digits < 4 and not t.scaled:
-            continue  # short plain numbers (prices like 82.50, share counts) match by chance
-        if _TIMES_UNIT.match(rec.explanation, t.end):
-            continue
-        for e in usable:
-            if abs(e.value) < EXACT_BELOW:
-                continue
-            f = next((f for f in (1e3, 1e6, 1e9, 1e-3, 1e-6, 1e-9)
-                      if abs(t.value * f - e.value) <= rel_tol * abs(e.value)), None)
-            if f is not None:
-                found.append((ClaimFailure(
-                    e.evidence_id, "text_value_mismatch",
-                    f"the explanation states \"{t.raw}\" but evidence '{e.label}' is {e.value:,.6g} "
-                    f"[{e.source_text}] (looks like a scale error by {f:g})"), t))
-                break
-    return found
+    values = {e.evidence_id: e.value for e in evidence.values()
+              if e.value is not None and e.status is not EvidenceStatus.AMBIGUOUS}
+    out = []
+    for f in text_findings(rec.explanation, values, {c.evidence_id for c in rec.claims}, rel_tol):
+        e, t = evidence[f.evidence_id], f.figure
+        if f.rule == "uncited_figure":
+            detail = (f"the explanation states \"{t.raw}\", which is '{e.label}' ({e.value:,.6g}), "
+                      "but it is not listed in claims")
+        else:
+            detail = (f"the explanation states \"{t.raw}\" but evidence '{e.label}' is {e.value:,.6g} "
+                      f"[{e.source_text}] (looks like a scale error by {f.scale:g})")
+        out.append((ClaimFailure(e.evidence_id, f.rule, detail), t))
+    return out
 
 
 _SENTENCE_END = re.compile(r"[.!?؟](?=\s|$)|\n")

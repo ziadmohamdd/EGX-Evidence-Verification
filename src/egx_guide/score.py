@@ -12,6 +12,13 @@ system cannot look precise just by citing nothing. Both the agent's first
 recommendation (``proposed``) and the one shown to the investor (``final``)
 are scored, so the verifier's effect can be seen directly.
 
+Figures can also reach the investor in the explanation text without being cited.
+Each explanation is read for numbers that match a usable reference figure but are
+not in `claims` (uncited), or match one only at the wrong scale (a wrong figure).
+Two decision measures sit beside the action check: decisions that cite no figure
+at all, and buys that leave more than half the portfolio in one stock
+(``--cases`` is needed for the prices).
+
 The metric definitions here are a working draft; the paper's primary endpoints
 are not locked yet.
 
@@ -30,9 +37,12 @@ from pathlib import Path
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
-from .models import Action
+from .models import Action, Case
+from .verifier import text_findings
 
 SCORE_REL_TOL = 0.005  # 0.5%: rounding in prose is fine; wrong digits or scale are not
+CONCENTRATION_LIMIT = 0.5  # a buy leaving more than this share of the portfolio in one stock
+DECISIVE = {Action.BUY, Action.SELL, Action.HOLD}
 
 
 # --------------------------------------------------------------------------
@@ -101,6 +111,8 @@ class RecScore:
     claims: list[ScoredClaim]
     usable_reference_figures: int
     covered: int  # distinct usable figures cited correctly
+    text_uncited: list[dict] = field(default_factory=list)      # reference figures stated but not cited
+    text_wrong_scale: list[dict] = field(default_factory=list)  # numbers off a reference figure by 1e3/1e6/1e9
 
     @property
     def n_claims(self) -> int:
@@ -131,6 +143,7 @@ class RecScore:
             "n_claims": self.n_claims, "n_correct": self.n_correct, "n_incorrect": self.n_incorrect,
             "claim_precision": self.claim_precision, "coverage": self.coverage,
             "claims": [{**asdict(c), "verdict": c.verdict.value} for c in self.claims],
+            "text_uncited": self.text_uncited, "text_wrong_scale": self.text_wrong_scale,
         }
 
 
@@ -149,6 +162,9 @@ class RecordScore:
     blocked: bool = False
     verifier_revised: bool = False
     verifier_dropped: int = 0
+    no_figure_decision: bool = False   # buy/sell/hold that cites no figure
+    concentration: float | None = None  # after a buy: share of the portfolio in that stock
+    concentrated_buy: bool = False
     extra: dict = field(default_factory=dict)
 
     def as_dict(self) -> dict:
@@ -178,10 +194,28 @@ def score_recommendation(rec: dict, ref: ReferenceAnswer, rel_tol: float = SCORE
     claims = [judge_claim(c["evidence_id"], float(c["stated_value"]), ref, rel_tol) for c in rec.get("claims", [])]
     usable = {k for k, f in ref.figures.items() if f.usable}
     covered = {c.evidence_id for c in claims if c.verdict is ClaimVerdict.CORRECT} & usable
-    return RecScore(claims, len(usable), len(covered))
+    values = {k: f.value for k, f in ref.figures.items() if f.usable and f.value is not None}
+    found = text_findings(rec.get("explanation") or "", values, {c.evidence_id for c in claims}, rel_tol)
+    as_row = lambda f: {"evidence_id": f.evidence_id, "text": f.figure.raw, "reference_value": f.value,
+                        "scale_error": f.scale}
+    return RecScore(claims, len(usable), len(covered),
+                    [as_row(f) for f in found if f.rule == "uncited_figure"],
+                    [as_row(f) for f in found if f.rule == "text_value_mismatch"])
 
 
-def score_record(rec: dict, ref: ReferenceAnswer | None, rel_tol: float = SCORE_REL_TOL) -> RecordScore:
+def concentration_after(rec: dict, case: Case) -> float | None:
+    """Share of the portfolio in the bought stock after a buy, at the case prices."""
+    final, after = rec["final"], rec.get("proposed_portfolio")
+    if rec.get("blocked") or final["action"] != Action.BUY.value or not after or not final.get("ticker"):
+        return None
+    prices = {t.upper(): p for t, p in case.prices.items()}
+    worth = {h["ticker"].upper(): h["shares"] * prices.get(h["ticker"].upper(), 0.0) for h in after["holdings"]}
+    total = after["cash"] + sum(worth.values())
+    return worth.get(final["ticker"].upper(), 0.0) / total if total else None
+
+
+def score_record(rec: dict, ref: ReferenceAnswer | None, rel_tol: float = SCORE_REL_TOL,
+                 case: Case | None = None) -> RecordScore:
     base = RecordScore(case_id=rec["case_id"], condition=rec["condition"], scored=False)
     if rec.get("status") != "ok":
         base.reason = "run_error"
@@ -193,10 +227,12 @@ def score_record(rec: dict, ref: ReferenceAnswer | None, rel_tol: float = SCORE_
     final = rec["final"]
     action = Action(final["action"])
     verifier = rec.get("verifier") or {}
+    final_score = score_recommendation(final, ref, rel_tol)
+    weight = concentration_after(rec, case) if case else None
     return RecordScore(
         case_id=rec["case_id"], condition=rec["condition"], scored=True,
         proposed=score_recommendation(rec.get("proposed") or final, ref, rel_tol),
-        final=score_recommendation(final, ref, rel_tol),
+        final=final_score,
         action=action.value,
         action_acceptable=action in ref.acceptable_actions,
         insufficient_evidence=action is Action.INSUFFICIENT_EVIDENCE,
@@ -205,6 +241,9 @@ def score_record(rec: dict, ref: ReferenceAnswer | None, rel_tol: float = SCORE_
         verifier_revised=bool(verifier.get("revised")),
         # figures removed by the verifier, plus figures the agent withdrew in its revision
         verifier_dropped=len(set(verifier.get("dropped") or []) | set(verifier.get("withdrawn") or [])),
+        no_figure_decision=action in DECISIVE and final_score.n_claims == 0,
+        concentration=weight,
+        concentrated_buy=weight is not None and weight > CONCENTRATION_LIMIT,
     )
 
 
@@ -213,11 +252,12 @@ def score_record(rec: dict, ref: ReferenceAnswer | None, rel_tol: float = SCORE_
 # --------------------------------------------------------------------------
 
 
-def score_run(run_dir: Path, refs: dict[str, ReferenceAnswer], rel_tol: float = SCORE_REL_TOL) -> list[RecordScore]:
+def score_run(run_dir: Path, refs: dict[str, ReferenceAnswer], rel_tol: float = SCORE_REL_TOL,
+              cases: dict[str, Case] | None = None) -> list[RecordScore]:
     rows = []
     for f in sorted(run_dir.glob("*/*.json")):
         rec = json.loads(f.read_text(encoding="utf-8"))
-        rows.append(score_record(rec, refs.get(rec["case_id"]), rel_tol))
+        rows.append(score_record(rec, refs.get(rec["case_id"]), rel_tol, (cases or {}).get(rec["case_id"])))
     if not rows:
         raise SystemExit(f"no run records under {run_dir}")
     return rows
@@ -266,6 +306,14 @@ def summarise(rows: list[RecordScore]) -> list[dict]:
             "blocked": sum(r.blocked for r in ok),
             "verifier_revised": sum(r.verifier_revised for r in ok),
             "verifier_dropped": sum(r.verifier_dropped for r in ok),
+            # figures in the text, and decision quality beyond the action type
+            "text_uncited": sum(len(r.final.text_uncited) for r in ok),
+            "text_wrong_scale": sum(len(r.final.text_wrong_scale) for r in ok),
+            "share_with_unchecked_text": _rate(
+                sum(bool(r.final.text_uncited or r.final.text_wrong_scale) for r in ok), len(ok)),
+            "proposed_text_uncited": sum(len(r.proposed.text_uncited) for r in ok),
+            "no_figure_decisions": sum(r.no_figure_decision for r in ok),
+            "concentrated_buys": sum(r.concentrated_buy for r in ok),
         })
     return out
 
@@ -276,6 +324,8 @@ TABLE_COLUMNS = [
     ("proposed_incorrect_claim_rate", "…before verifier"),
     ("share_with_incorrect_claim", "Recs with a wrong claim"), ("mean_coverage", "Coverage"),
     ("action_acceptable_rate", "Acceptable action"), ("portfolio_violations", "Portfolio violations"),
+    ("text_uncited", "Uncited figures in text"), ("text_wrong_scale", "Wrong-scale figures in text"),
+    ("no_figure_decisions", "Decisions citing no figure"), ("concentrated_buys", "Buys >50% in one stock"),
 ]
 
 
@@ -299,9 +349,14 @@ def main(argv=None):
     ap.add_argument("run_dir", type=Path)
     ap.add_argument("--references", type=Path, required=True)
     ap.add_argument("--rel-tol", type=float, default=SCORE_REL_TOL)
+    ap.add_argument("--cases", type=Path, help="case folder, for the prices behind the concentration measure")
     a = ap.parse_args(argv)
 
-    rows = score_run(a.run_dir, load_references(a.references), a.rel_tol)
+    cases = None
+    if a.cases:
+        cases = {c.case_id: c for c in (Case.model_validate_json(f.read_text(encoding="utf-8"))
+                                        for f in sorted(a.cases.glob("*.json")))}
+    rows = score_run(a.run_dir, load_references(a.references), a.rel_tol, cases)
     summary = summarise(rows)
     (a.run_dir / "scores.json").write_text(json.dumps({
         "rel_tol": a.rel_tol, "references": str(a.references),

@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 import pytest
 
@@ -12,6 +13,8 @@ from egx_guide.score import (
     score_run,
     summarise,
 )
+
+CASES_DIR = Path(__file__).parent / "fixtures" / "cases"
 
 REF = ReferenceAnswer.model_validate({
     "case_id": "c1",
@@ -137,3 +140,46 @@ def test_end_to_end_on_a_run_folder(tmp_path, capsys):
     assert out["summary"][0]["condition"] == "A" and len(out["records"]) == 1
     assert (run_dir / "summary.csv").exists()
     assert "| A |" in capsys.readouterr().out
+
+
+# ------------------------------------------- text figures and decision measures
+
+
+def with_text(r, text):
+    return {**r, "explanation": text}
+
+
+def test_uncited_and_wrong_scale_figures_in_text_are_counted():
+    final = with_text(rec([("eq", 9_000e6)]), "Profit was 1.25 billion; equity 9 billion; profit again 1,250 pounds.")
+    s = score_record(record(final), REF)
+    assert [t["evidence_id"] for t in s.final.text_uncited] == ["np"]
+    assert [t["evidence_id"] for t in s.final.text_wrong_scale] == ["np"]
+    assert s.final.text_wrong_scale[0]["scale_error"] == 1e6
+
+
+def test_cited_text_figures_are_not_counted():
+    s = score_record(record(with_text(rec([("np", 1_250e6)]), "Profit was 1.25 billion.")), REF)
+    assert s.final.text_uncited == [] and s.final.text_wrong_scale == []
+
+
+def test_decision_without_figures_is_flagged_but_refusal_is_not():
+    assert score_record(record(rec(action="hold")), REF).no_figure_decision
+    assert not score_record(record(rec(action="keep_cash")), REF).no_figure_decision
+    assert not score_record(record(rec([("np", 1_250e6)], action="hold")), REF).no_figure_decision
+
+
+def test_concentrated_buy_uses_the_portfolio_after_the_trade():
+    from egx_guide.models import Case
+    case = Case.model_validate_json(next((CASES_DIR).glob("*.json")).read_text(encoding="utf-8"))
+    ticker = next(iter(case.prices))
+    price = case.prices[ticker]
+
+    def buy(shares, cash):
+        r = record(rec(action="buy", ticker=ticker, shares=shares))
+        r["proposed_portfolio"] = {"cash": cash, "currency": "EGP", "holdings": [{"ticker": ticker, "shares": shares}]}
+        return score_record(r, REF, case=case)
+
+    big, small = buy(100, 10.0), buy(10, 100 * price)
+    assert big.concentrated_buy and big.concentration > 0.99
+    assert not small.concentrated_buy and small.concentration < 0.1
+    assert score_record(record(rec(action="hold")), REF, case=case).concentration is None
