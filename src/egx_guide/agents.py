@@ -37,6 +37,7 @@ RULES = """Rules:
 - Use only the evidence and prices given. Do not use outside knowledge about these companies or later events.
 - Valid actions: buy, hold, sell (reduce an existing holding), keep_cash, insufficient_evidence.
 - Never sell shares the investor does not own or more than they hold. A buy must fit the available cash.
+- Keep the portfolio diversified: after a buy, no single company should be more than half of the portfolio's total value (cash plus holdings at the given prices). Only go above that if the investor's profile clearly supports it, and say why in the explanation.
 - hold means keeping a stock the investor already owns: set `ticker` to that company. If they own none of the companies discussed, do not choose hold; choose keep_cash, buy, or insufficient_evidence.
 - Every financial figure you rely on must appear in `claims` with its evidence_id and the value in base units (not millions).
 - Figures marked AMBIGUOUS must not be used in calculations. List them in `unused_figures` and say in the explanation which conclusions are affected.

@@ -113,6 +113,15 @@ def test_prompt_marks_ambiguous_evidence(case):
     assert "AMBIGUOUS" in prompt and "SYNB-FY24-rev" in prompt
 
 
+@pytest.mark.parametrize("name", ["A", "B", "C", "D"])
+def test_deciding_prompts_carry_the_one_stock_limit(case, name):
+    # the limit matches the scorer's concentration measure (CONCENTRATION_LIMIT = 0.5)
+    llm = ScriptedModel(script=[buy()])
+    run_case(case, CONDITIONS[name], llm)
+    deciding = llm.seen[-1][0].content  # system prompt of the call that made the recommendation
+    assert "no single company should be more than half of the portfolio" in deciding
+
+
 def test_printed_view_hides_converted_values(case):
     from egx_guide.agents import render_case
     converted, printed = render_case(case), render_case(case, "printed")
