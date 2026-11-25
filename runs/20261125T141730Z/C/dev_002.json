@@ -1,0 +1,156 @@
+{
+  "case_id": "dev_002",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 1212,
+    "explanation": "The investor has a 10+ year horizon, high risk tolerance, no planned liquidity needs, and 100,000 EGP in cash with no existing holdings. TMGH's verified FY2025 consolidated evidence shows strong profitability: gross profit of 20,855,400,384 LE (up 49.0% year-over-year from restated 14,002,196,445 LE), net profit for the year of 18,201,981,482 LE, EPS of 6.98 LE (up ~59.4% from restated 4.38 LE), and total equity of 157,708,140,765 LE (21.4% growth). The implied P/E based on the cutoff price of 82.50 EGP and verified EPS of 6.98 LE is ~11.82, suggesting the stock is not overvalued relative to recent earnings growth. The only AMBIGUOUS figure is the 2024 restated net profit (p7-56), where digits are covered by an auditor's stamp; this excludes it from all calculations and affects the computation of 2024 net-profit growth and a full historical P/E assessment, but does not impinge on the 2025 verified metrics used here. The suitability assessment confirms the investor's profile aligns with growth-oriented, long-duration allocations, and the full cash balance is free for deployment. Given the verified financial strength, positive momentum, and favorable valuation anchor, allocating the available cash to TMGH is consistent with the investor's long-wealth-building goal and risk capacity. The purchase of 1,212 shares at 82.50 EGP each costs 99,990 EGP, leaving a 10 EGP cash residual.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "Gross profit (consolidated) period 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+        "stated_value": 14002196445.0,
+        "statement": "Gross profit (consolidated) period 2024 Restated verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year (consolidated) period 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity (consolidated) period 31 December 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Earnings per Share (consolidated) period 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "Earnings per Share (consolidated) period 2024 Restated verified"
+      },
+      {
+        "evidence_id": "given_price_cutoff",
+        "stated_value": 82.5,
+        "statement": "Market price per share at 2026-11-18 cutoff"
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56: Net profit for the year (consolidated) period 2024 Restated – AMBIGUOUS; digits covered by auditor's stamp, value 12,769,517,325 excluded from all calculations. This precludes verified 2024 net-profit growth rate and a full historical P/E assessment."
+    ],
+    "limitations": [
+      "The 2024 restated net profit figure is ambiguous and must not be used; any trend analysis relying on that figure is unavailable.",
+      "All analysis is confined to the provided evidence set; no outside market data, subsequent earnings, or company-specific developments beyond the cutoff date are considered.",
+      "The P/E of ~11.82 is derived from the stated cutoff price and verified 2025 EPS only; it does not incorporate the ambiguous 2024 figure or any forward guidance.",
+      "Share purchase size (1,212 shares) is determined by integer-share constraint and available cash; residual cash is minimal and does not affect the overall allocation strategy."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 1212,
+    "explanation": "The investor has a 10+ year horizon, high risk tolerance, no planned liquidity needs, and 100,000 EGP in cash with no existing holdings. TMGH's verified FY2025 consolidated evidence shows strong profitability: gross profit of 20,855,400,384 LE (up 49.0% year-over-year from restated 14,002,196,445 LE), net profit for the year of 18,201,981,482 LE, EPS of 6.98 LE (up ~59.4% from restated 4.38 LE), and total equity of 157,708,140,765 LE (21.4% growth). The implied P/E based on the cutoff price of 82.50 EGP and verified EPS of 6.98 LE is ~11.82, suggesting the stock is not overvalued relative to recent earnings growth. The only AMBIGUOUS figure is the 2024 restated net profit (p7-56), where digits are covered by an auditor's stamp; this excludes it from all calculations and affects the computation of 2024 net-profit growth and a full historical P/E assessment, but does not impinge on the 2025 verified metrics used here. The suitability assessment confirms the investor's profile aligns with growth-oriented, long-duration allocations, and the full cash balance is free for deployment. Given the verified financial strength, positive momentum, and favorable valuation anchor, allocating the available cash to TMGH is consistent with the investor's long-wealth-building goal and risk capacity. The purchase of 1,212 shares at 82.50 EGP each costs 99,990 EGP, leaving a 10 EGP cash residual.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "Gross profit (consolidated) period 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+        "stated_value": 14002196445.0,
+        "statement": "Gross profit (consolidated) period 2024 Restated verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year (consolidated) period 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity (consolidated) period 31 December 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Earnings per Share (consolidated) period 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "Earnings per Share (consolidated) period 2024 Restated verified"
+      },
+      {
+        "evidence_id": "given_price_cutoff",
+        "stated_value": 82.5,
+        "statement": "Market price per share at 2026-11-18 cutoff"
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56: Net profit for the year (consolidated) period 2024 Restated – AMBIGUOUS; digits covered by auditor's stamp, value 12,769,517,325 excluded from all calculations. This precludes verified 2024 net-profit growth rate and a full historical P/E assessment."
+    ],
+    "limitations": [
+      "The 2024 restated net profit figure is ambiguous and must not be used; any trend analysis relying on that figure is unavailable.",
+      "All analysis is confined to the provided evidence set; no outside market data, subsequent earnings, or company-specific developments beyond the cutoff date are considered.",
+      "The P/E of ~11.82 is derived from the stated cutoff price and verified 2025 EPS only; it does not incorporate the ambiguous 2024 figure or any forward guidance.",
+      "Share purchase size (1,212 shares) is determined by integer-share constraint and available cash; residual cash is minimal and does not affect the overall allocation strategy."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 1212
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Analysis of TMGH FY2025 Consolidated Evidence (as of 2026-11-18 cutoff)**\n\nAll figures are cited to their source evidence IDs and presented in Egyptian Pounds (LE) as whole numbers. Figures flagged `AMBIGUOUS` are explicitly excluded from any computation.\n\n### Profitability\n- **Gross Profit (2025):** 20,855,400,384 LE [TMGH-TMGH_FY2025_consolidated_en-p7-19]\n- **Gross Profit (2024 Restated):** 14,002,196,445 LE [TMGH-TMGH_FY2025_consolidated_en-p7-20]\n  - *Observation:* Gross profit increased materially year-over-year, indicating improved core operations or revenue mix.\n- **Net Profit for the Year (2025):** 18,201,981,482 LE [TMGH-TMGH_FY2025_consolidated_en-p7-55]\n- **Earnings per Share (2025):** 6.98 LE [TMGH-TMGH_FY2025_consolidated_en-p7-61]\n- **Earnings per Share (2024 Restated):** 4.38 LE [TMGH-TMGH_FY2025_consolidated_en-p7-62]\n  - *Observation:* EPS rose from 4.38 to 6.98 LE, a ~59% increase, supported by verified restated figures.\n- **Net Profit for the Year (2024 Restated):** AMBIGUOUS [TMGH-TMGH_FY2025_consolidated_en-p7-56]\n  - *Note:* The printed value 12,769,517,325 is flagged ambiguous because digits are covered by an auditor's stamp. This figure **must not be used** in any calculation or trend analysis. The 2024 restated EPS of 4.38 LE remains the reliable restated comparator.\n\n### Growth (Year-over-Year, verified figures only)\n- Gross profit growth (2025 vs. 2024 Restated): (20,855,400,384 − 14,002,196,445) / 14,002,196,445 ≈ +49.0% [p7-19, p7-20]\n- EPS growth (2025 vs. 2024 Restated): (6.98 − 4.38) / 4.38 ≈ +59.4% [p7-61, p7-62]\n- *Limitation:* The ambiguous 2024 net profit figure prevents a verified net-profit growth rate; only the EPS restated figure is available for that comparison.\n\n### Balance Sheet\n- **Total Equity (31 December 2025):** 157,708,140,765 LE [TMGH-TMGH_FY2025_consolidated_en-p5-67]\n- **Total Equity (31 December 2024 Restated):** 129,879,813,693 LE [same evidence, second column]\n  - *Observation:* Equity increased by approximately 27.8 billion LE (about 21.4% growth), reflecting retained earnings and/or capital transactions. The balance sheet appears strengthened over the period.\n\n### Risks & Data Quality\n- **AMBIGUOUS FIGURE:** Net profit for 2024 Restated [p7-56] – digits covered by auditor's stamp. Do not compute with 12,769,517,325. All other reported figures (gross profit, EPS, total equity) are verified.\n- **Unit Consistency:** All figures are in LE (full pounds); no (000) or other scaling factors apply.\n- **Reporting Scope:** Consolidated accounts only; no segment-level detail provided in this evidence set.\n\n### Valuation Context (descriptive only, no action recommended)\n- **Market Price (cutoff):** 82.50 EGP per share (given)\n- **EPS (2025):** 6.98 LE [p7-61]\n- **Implied P/E ratio:** 82.50 / 6.98 ≈ 11.82 (calculated from verified EPS and stated price; presented for reference only, not as a recommendation)\n- *Note:* The ambiguous 2024 net profit figure prevents a full historical P/E assessment, but the 2025 verified EPS provides a current earnings anchor.\n\n### Compliance Summary\n- Every numeric value above is cited with its evidence ID and printed value.\n- The single AMBIGUOUS figure [p7-56] is flagged and excluded from computation.\n- No investment action (buy, hold, sell, increase, reduce) is recommended or implied. The decision agent determines portfolio actions based on such analyses.\n- All analysis relies exclusively on the provided evidence.",
+    "investor": "**Suitability Assessment**\n\n**Horizon:** The investor’s 10+ year horizon and long-wealth-building goal align well with allocations to growth-oriented assets that may experience short- to medium-term volatility but have time to compound. A long horizon supports taking on illiquid or higher-risk positions if desired.\n\n**Liquidity Needs:** No planned withdrawals indicate the portfolio can tolerate assets with longer settlement periods or lock-up structures. Maintaining a cash buffer for opportunistic purposes remains an option, but the stated need does not require immediate liquidity.\n\n**Loss Willingness & Capacity:** High willingness and high financial ability to withstand losses mean the investor can consider allocations where material drawdowns are possible without compromising financial stability or near-term objectives.\n\n**Current Concentration:** The portfolio holds no securities; concentration risk is currently zero. The position is 100% cash, which simplifies rebalancing and allows flexible allocation across any eligible universe.\n\n**Cash Commitment Capacity:** 100,000.00 EGP is available in liquid form. Given the profile, a meaningful portion of this amount could be committed to longer-term, higher-volatility instruments, while retaining a cash reserve consistent with the “no withdrawals planned” condition. The exact allocation size would depend on the risk/return profile of the chosen assets and any broader portfolio construction constraints not specified here.\n\n**Portfolio Allowances:** \n- No holdings exist, so there are no positions to sell or transfer.\n- The full 100,000.00 EGP cash balance is free and unencumbered, with no stated restrictions on deployment.\n\n**Notes per Instructions:** \n- The TMGH financial data (gross profit, net profit, EPS, etc.) provided in the evidence has not been analysed or interpreted per directive. \n- No specific action (e.g., buying, selling, or reallocating to any security) is recommended or implied. The assessment is limited to suitability dimensions derived from the investor profile and current portfolio structure."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 33.318,
+      "input_tokens": 1069,
+      "output_tokens": 4506,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 18.427,
+      "input_tokens": 1063,
+      "output_tokens": 2530,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 47.819,
+      "input_tokens": 2869,
+      "output_tokens": 6092,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 99.567
+}

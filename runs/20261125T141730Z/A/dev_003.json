@@ -1,0 +1,151 @@
+{
+  "case_id": "dev_003",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's profile calls for steady growth with some income over a 3-5 year horizon, but requires 10% of the portfolio in liquidity within a year and has low ability to withstand losses (medium willingness, low financial capacity). The current portfolio consists of 100 ETEL shares (price 141.95 EGP) and 1500 EFID shares (price 20.40 EGP), totaling ~59,795 EGP in holdings plus 15,000 EGP cash. The evidence provides audited FY2025 financial snapshots for both companies, but these are historical figures without forward-looking data, dividend policy, volatility metrics, or macroeconomic context for Egyptian listed firms.\n\nKey limitations:\n- The ETEL Basic and diluted EPS (11.93) is reported with unit \"L.E.(000)\", which is inconsistent with the stated share price (141.95 EGP) and standard per-share reporting; any P/E ratio or valuation derived from this figure is unreliable.\n- EFID Total equity is reported with unit \"None\", leaving ambiguity about whether the figure (5,724,525,864) is in absolute EGP or another denomination.\n- The evidence contains no information on recent price trends, dividend yields, liquidity conditions, sector performance, or the investor's cost basis to assess gains/losses.\n- The investor's need to liquidate ~6,000 EGP within a year and low loss tolerance means any recommendation must consider price stability and income potential, which the static financial data alone cannot address.\n\nBecause the evidence is insufficient to evaluate suitability for the investor's liquidity timeline, risk capacity, or income goals, and because using the ambiguous EPS and equity figures would produce misleading conclusions, a responsible decision cannot be made from the given data alone.\n\nMissing information required: dividend history/policy for ETEL and EFID, recent 12-month price volatility, Egyptian market benchmarks, analyst outlook, and the investor's original purchase prices to determine unrealized gains/losses.\n\nTherefore, the only responsible action under the provided rules is to recognize insufficient evidence and await more current, forward-looking data before adjusting the portfolio.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID Revenue (consolidated) period 31 December 2025, unit: EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit for the year (consolidated) period 31 December 2025, unit: EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+        "stated_value": 5724525864.0,
+        "statement": "EFID Total equity period 31 December 2025, unit: None (assumed EGP direct)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL Operating revenues period 31/12/2025, unit: L.E.(000) converted to whole EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL Total Equity period 31/12/2025, unit: L.E.(000) converted to whole EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL Net profit for the year period 31/12/2025, unit: L.E.(000) converted to whole EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID Basic and Diluted earnings per share period 31 December 2025, unit: EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL Basic and diluted earning per share for the year period 31/12/2025, unit: L.E.(000) (ambiguous, see unused_figures)"
+      }
+    ],
+    "unused_figures": [
+      "ETEL Basic and diluted earning per share for the year (unit: L.E.(000)) - ambiguous because EPS reported in thousands of EGP is inconsistent with the share price of 141.95 EGP and typical per-share metrics; P/E or income-based conclusions relying on this figure are unreliable.",
+      "EFID Total equity unit \"None\" - ambiguous whether values are in absolute EGP or another unit; assumed EGP direct for internal analysis but noted as a source of uncertainty."
+    ],
+    "limitations": [
+      "No forward-looking information, dividend data, or market context provided.",
+      "Ambiguous units for EPS and total equity prevent reliable valuation calculations.",
+      "Investor's cost basis, recent price trends, and Egyptian macroeconomic factors are unknown.",
+      "Liquidity need (10% within 1 year) and low loss tolerance cannot be evaluated against static historical financials alone."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's profile calls for steady growth with some income over a 3-5 year horizon, but requires 10% of the portfolio in liquidity within a year and has low ability to withstand losses (medium willingness, low financial capacity). The current portfolio consists of 100 ETEL shares (price 141.95 EGP) and 1500 EFID shares (price 20.40 EGP), totaling ~59,795 EGP in holdings plus 15,000 EGP cash. The evidence provides audited FY2025 financial snapshots for both companies, but these are historical figures without forward-looking data, dividend policy, volatility metrics, or macroeconomic context for Egyptian listed firms.\n\nKey limitations:\n- The ETEL Basic and diluted EPS (11.93) is reported with unit \"L.E.(000)\", which is inconsistent with the stated share price (141.95 EGP) and standard per-share reporting; any P/E ratio or valuation derived from this figure is unreliable.\n- EFID Total equity is reported with unit \"None\", leaving ambiguity about whether the figure (5,724,525,864) is in absolute EGP or another denomination.\n- The evidence contains no information on recent price trends, dividend yields, liquidity conditions, sector performance, or the investor's cost basis to assess gains/losses.\n- The investor's need to liquidate ~6,000 EGP within a year and low loss tolerance means any recommendation must consider price stability and income potential, which the static financial data alone cannot address.\n\nBecause the evidence is insufficient to evaluate suitability for the investor's liquidity timeline, risk capacity, or income goals, and because using the ambiguous EPS and equity figures would produce misleading conclusions, a responsible decision cannot be made from the given data alone.\n\nMissing information required: dividend history/policy for ETEL and EFID, recent 12-month price volatility, Egyptian market benchmarks, analyst outlook, and the investor's original purchase prices to determine unrealized gains/losses.\n\nTherefore, the only responsible action under the provided rules is to recognize insufficient evidence and await more current, forward-looking data before adjusting the portfolio.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID Revenue (consolidated) period 31 December 2025, unit: EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit for the year (consolidated) period 31 December 2025, unit: EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+        "stated_value": 5724525864.0,
+        "statement": "EFID Total equity period 31 December 2025, unit: None (assumed EGP direct)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL Operating revenues period 31/12/2025, unit: L.E.(000) converted to whole EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL Total Equity period 31/12/2025, unit: L.E.(000) converted to whole EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL Net profit for the year period 31/12/2025, unit: L.E.(000) converted to whole EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID Basic and Diluted earnings per share period 31 December 2025, unit: EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL Basic and diluted earning per share for the year period 31/12/2025, unit: L.E.(000) (ambiguous, see unused_figures)"
+      }
+    ],
+    "unused_figures": [
+      "ETEL Basic and diluted earning per share for the year (unit: L.E.(000)) - ambiguous because EPS reported in thousands of EGP is inconsistent with the share price of 141.95 EGP and typical per-share metrics; P/E or income-based conclusions relying on this figure are unreliable.",
+      "EFID Total equity unit \"None\" - ambiguous whether values are in absolute EGP or another unit; assumed EGP direct for internal analysis but noted as a source of uncertainty."
+    ],
+    "limitations": [
+      "No forward-looking information, dividend data, or market context provided.",
+      "Ambiguous units for EPS and total equity prevent reliable valuation calculations.",
+      "Investor's cost basis, recent price trends, and Egyptian macroeconomic factors are unknown.",
+      "Liquidity need (10% within 1 year) and low loss tolerance cannot be evaluated against static historical financials alone."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 64.809,
+      "input_tokens": 1450,
+      "output_tokens": 8661,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 64.811
+}

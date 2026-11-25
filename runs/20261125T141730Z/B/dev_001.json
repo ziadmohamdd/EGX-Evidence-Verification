@@ -1,0 +1,257 @@
+{
+  "case_id": "dev_001",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 300,
+    "explanation": "Based on the verified FY2025 financial evidence for ETEL (period ending 31/12/2025), the company shows strong top‑line and bottom‑line growth: operating revenues 106,672,946,000 EGP (up from 81,677,812,000 EGP in 2024, +30.6%); gross profit 44,839,110,000 EGP (up from 30,492,762,000 EGP, +47.0%); net profit for the year 22,578,063,000 EGP (up from 10,111,328,000 EGP, +123.3%). Gross margin improved to ~42.0% and net margin to ~21.2% from revenues. Total equity strengthened to 63,687,826,000 EGP (from 45,937,991,000 EGP), and total assets grew to 225,882,527,000 EGP (from 197,952,788,000 EGP), indicating a healthier balance sheet with retained earnings.  \n\nThe EPS figures carry a unit label of L.E.(000), which would imply 11,930 L.E. per share – clearly implausible given the market price of 141.95 EGP. Therefore these EPS rows are listed as unused figures; any P/E‑based valuation conclusion is affected and considered unreliable without clarification. If one were to treat the EPS as whole L.E. (a common reporting convention), the trailing P/E would be ~11.9×, which is modest but would require accepting the unit discrepancy.  \n\nThe investor’s profile: 5‑7‑year horizon for a child’s university fees, medium risk tolerance, medium ability to withstand losses, and a separate emergency fund already in place. Current holdings: 300 ETEL shares (~42,585 EGP at 141.95 EGP/share) plus 20,000 EGP cash.  \n\nGiven the evidence of improving profitability, revenue expansion, and balance‑sheet growth, with no fundamental deterioration signaled in the data, a **hold** recommendation maintains exposure to a company demonstrating solid growth while preserving the investor’s cash liquidity. No evidence suggests selling, and adding to the position would increase concentration in a single Egyptian‑listed stock without clearer undervaluation signals from the limited two‑year data provided.  \n\nUncertainty & risks (stated honestly, using only the given evidence): only two fiscal years are available, no dividend or cash‑flow details are provided, and Egyptian macro‑economic or regulatory risks are outside the scope of this evidence. The EPS unit ambiguity limits precise valuation, but the overall profit trajectory is positive. This guidance is not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues (period 31/12/2025), unit L.E.(000) → 106,672,946 thousand EGP = 106,672,946,000 EGP"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05]",
+        "stated_value": 44839110000.0,
+        "statement": "Gross Profit (period 31/12/2025), unit L.E.(000) → 44,839,110 thousand EGP = 44,839,110,000 EGP"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31]",
+        "stated_value": 225882527000.0,
+        "statement": "Total Assets (consolidated, period 31/12/2025), unit L.E.(000) → 225,882,527 thousand EGP = 225,882,527,000 EGP"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]",
+        "stated_value": 63687826000.0,
+        "statement": "Total Equity (consolidated, period 31/12/2025), unit L.E.(000) → 63,687,826 thousand EGP = 63,687,826,000 EGP"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for the year (period 31/12/2025), unit L.E.(000) → 22,578,063 thousand EGP = 22,578,063,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55: Basic and diluted earning per share for the year (period 31/12/2025). Unit printed as L.E.(000) makes the value 11.93 interpret as 11,930 L.E./share, which is implausible given the market price of 141.95 EGP. Conclusion affected: P/E ratio calculation.",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56: Basic and diluted earning per share for the year (period 31/12/2024). Same unit ambiguity; conclusion affected: P/E ratio calculation."
+    ],
+    "limitations": [
+      "Only two fiscal years of data are provided; no dividend, cash‑flow, or forward‑guidance information. Egyptian market risks (regulatory, currency, political) are not covered by the evidence. The EPS unit conflict means any P/E‑based valuation is uncertain without external clarification."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The proposed hold was blocked by the portfolio checks (hold must not carry a share count). No change to the portfolio is recommended.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "Blocked recommendation: hold 300 ETEL"
+    ]
+  },
+  "blocked": true,
+  "violations": [
+    {
+      "rule": "no_shares_without_trade",
+      "detail": "hold must not carry a share count"
+    }
+  ],
+  "proposed_portfolio": null,
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"106,672,946,000\", which is 'Operating revenues (5)' (1.06673e+11), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"81,677,812,000\", which is 'Operating revenues (5)' (8.16778e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"44,839,110,000\", which is 'Gross Profit' (4.48391e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"30,492,762,000\", which is 'Gross Profit' (3.04928e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"22,578,063,000\", which is 'Net profit for the year' (2.25781e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"10,111,328,000\", which is 'Net profit for the year' (1.01113e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"63,687,826,000\", which is 'Total Equity (consolidated)' (6.36878e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"225,882,527,000\", which is 'Total Assets (consolidated)' (2.25883e+11), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"106,672,946,000\", which is 'Operating revenues (5)' (1.06673e+11), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"81,677,812,000\", which is 'Operating revenues (5)' (8.16778e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"44,839,110,000\", which is 'Gross Profit' (4.48391e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"30,492,762,000\", which is 'Gross Profit' (3.04928e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"22,578,063,000\", which is 'Net profit for the year' (2.25781e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"10,111,328,000\", which is 'Net profit for the year' (1.01113e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"63,687,826,000\", which is 'Total Equity (consolidated)' (6.36878e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"225,882,527,000\", which is 'Total Assets (consolidated)' (2.25883e+11), but it is not listed in claims"
+      }
+    ],
+    "dropped": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31]",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02]",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05]",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06]",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36]"
+    ],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 108.378,
+      "input_tokens": 1652,
+      "output_tokens": 12883,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 93.911,
+      "input_tokens": 4123,
+      "output_tokens": 10388,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 202.295
+}

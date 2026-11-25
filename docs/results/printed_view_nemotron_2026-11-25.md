@@ -1,5 +1,7 @@
 # Printed-figures view on Nemotron, 25 November 2026
 
+> **Note added 25 November:** the Nemotron answers in this part had their explanations cut at 1,024 characters by NVIDIA's service, so figures in the text are undercounted here. See the full-length rerun in `full_length_nemotron_2026-11-25.md` (Part 8 of the combined report), which replaces these Nemotron results.
+
 This run tests whether the agents make more figure mistakes when they have to read the figures themselves. In the original setup ("converted view"), each figure is shown already converted to whole pounds next to its printed line, so the agents only copy it. In the new **printed view** (`--evidence-view printed`), they see only the line as printed in the report and the page's unit (for example "L.E. (000)"). They must pick the right column and apply the unit themselves. The verifier and the scorer still compare against the converted value.
 
 | | Converted view | Printed view |

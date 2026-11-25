@@ -1,0 +1,168 @@
+{
+  "case_id": "dev_002",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "Based on the provided evidence and investor profile, a responsible buy/sell decision cannot be made. The evidence set is limited to selected line items (gross profit, net profit, EPS, total equity) and lacks critical data for long-term valuation and sustainability assessment. The FY2024 net profit figure is AMBIGUOUS and must be excluded, further constraining year-over-year analysis. Key missing elements include revenue, operating profit, cash flow, debt/liability structure, dividend history, share count verification, and sector/comparable context. Without these, any P/E ratio, growth rate, or financial health assessment would be incomplete and potentially misleading over a 10+ year horizon. The investor's high risk tolerance and long horizon could support equity exposure, but this evidence alone does not justify a specific TMGH position.\n\nUnused figures:\n- [TMGH-TMGH_FY2025_consolidated_en-p7-56] Net profit for the year (consolidated) FY 2024 (Restated) – AMBIGUOUS; digits covered by auditor's stamp. Any conclusions relying on 2024 net profit growth or comparables are affected.\n\nMissing evidence needed for a responsible decision:\n- Revenue figures for FY2025 and FY2024\n- Operating profit / EBIT\n- Cash flow from operations and free cash flow\n- Total assets and current/non-current liabilities breakdown\n- Number of shares outstanding (to verify EPS computation and calculate total earnings)\n- Dividend history and payout policy\n- Sector benchmarks and competitive position data\n- Any debt maturity schedule or interest cover metrics\n\nHonest uncertainty statement: The verified FY2025 data shows net profit of 18,201,981,482 EGP, EPS 6.98 LE, total equity 157,708,140,765 EGP, and gross profit growth from 14,002,196,445 EGP (FY2024 restated) to 20,855,400,384 EGP (FY2025). At the cutoff price of 82.50 EGP, this implies a P/E of ~11.8x based on verified data alone. However, the ambiguous 2024 net profit, restated comparables, and absence of revenue/cash flow data introduce material data-quality risks. This is guidance not a guarantee of returns; independent full-scope financial analysis is strongly recommended before committing capital.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "Gross profit (consolidated) FY 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+        "stated_value": 14002196445.0,
+        "statement": "Gross profit (consolidated) FY 2024 Restated verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year (consolidated) FY 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity (consolidated) 31 Dec 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 698.0,
+        "statement": "EPS (consolidated) FY 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 698.0,
+        "statement": "EPS (consolidated) FY 2024 Restated verified"
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56 (AMBIGUOUS net profit FY 2024 Restated)"
+    ],
+    "limitations": [
+      "Evidence scope restricted to selected line items; revenue, cash flow, assets beyond equity, liabilities, and share count not provided",
+      "FY2024 net profit figure is AMBIGUOUS and excluded from all calculations",
+      "No sector, competitive, or qualitative business data included",
+      "Cannot compute sustainable earnings growth, cash generation, or debt service capacity over a 10+ year horizon"
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "With the corrected evidence, the verified FY2025 figures are: gross profit 20,855,400,384 EGP (p7-19); net profit for the year 18,201,981,482 EGP (p7-55); total equity 157,708,140,765 EGP 31 Dec 2025 (p5-67); EPS 6.98 EGP FY 2025 (p7-61). The FY2024 restated gross profit was 14,002,196,445 EGP (p7-20), and the restated EPS is 4.38 EGP (p7-62). The FY2024 restated net profit figure (p7-56) is AMBIGUOUS (digits covered by auditor's stamp) and is excluded from all calculations, as noted in unused_figures.\n\nUsing the cutoff price of 82.50 EGP and the verified EPS of 6.98 EGP, the implied P/E ratio is approximately 11.8x. Return on equity (ROE) based on net profit and total equity is approximately 11.5%. Gross profit increased year-over-year from 14,002,196,445 EGP (FY2024 restated) to 20,855,400,384 EGP (FY2025), showing growth.\n\nHowever, critical data for a responsible 10+ year long-term wealth-building assessment is missing: revenue figures for FY2025 and FY2024, operating profit/EBIT, cash flow from operations and free cash flow, breakdown of total assets and current/non-current liabilities, number of shares outstanding (to verify EPS computation and calculate total earnings), dividend history and payout policy, sector benchmarks and competitive position, and debt maturity schedule or interest cover metrics. The AMBIGUOUS FY2024 net profit exclusion further limits year-over-year comparability. Without these elements, any P/E, growth rate, or sustainability assessment would be incomplete and potentially misleading over the stated horizon.\n\nGiven the investor's long horizon, high risk tolerance, and no planned withdrawals, equity exposure could be suitable in a diversified portfolio, but this evidence set is insufficient to justify a specific TMGH position size, timing, or hold decision. Any conclusions relying on revenue, cash flow, debt structure, or sustainable earnings growth are affected and cannot be supported.\n\nUnused figures:\n- TMGH-TMGH_FY2025_consolidated_en-p7-56 (AMBIGUOUS net profit for the year consolidated FY 2024 Restated; digits covered by auditor's stamp; any conclusions relying on 2024 net profit growth or comparables are affected).\n\nLimitations:\n- Evidence scope restricted to selected line items; revenue, cash flow, assets beyond equity, liabilities breakdown, and share count not provided\n- FY2024 net profit figure is AMBIGUOUS and excluded from all calculations\n- No sector, competitive, or qualitative business data included\n- Cannot compute sustainable earnings growth, cash generation, or debt service capacity over a 10+ year horizon\n- EPS figures provided without number of shares outstanding, limiting total earnings verification and P/E reliability",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "Gross profit (consolidated) FY 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+        "stated_value": 14002196445.0,
+        "statement": "Gross profit (consolidated) FY 2024 Restated verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year (consolidated) FY 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity (consolidated) 31 Dec 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "EPS (consolidated) FY 2025 verified"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "EPS (consolidated) FY 2024 Restated verified"
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56 (AMBIGUOUS net profit FY 2024 Restated)"
+    ],
+    "limitations": [
+      "Evidence scope restricted to selected line items; revenue, cash flow, assets beyond equity, liabilities breakdown, and share count not provided",
+      "FY2024 net profit figure is AMBIGUOUS and excluded from all calculations",
+      "No sector, competitive, or qualitative business data included",
+      "Cannot compute sustainable earnings growth, cash generation, or debt service capacity over a 10+ year horizon",
+      "EPS figures provided without number of shares outstanding, limiting total earnings verification and P/E reliability"
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 100000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "rule": "value_mismatch",
+        "detail": "stated 698 but evidence 'Earnings per Share (consolidated)' is 6.98 [Earnings per Share | (39) | 6.98 | 4.38 | unit: LE]"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "rule": "value_mismatch",
+        "detail": "stated 698 but evidence 'Earnings per Share (consolidated)' is 4.38 [Earnings per Share | (39) | 6.98 | 4.38 | unit: LE]"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "**Analysis Based Solely on Provided Evidence**\n\n**Profitability**\n- Gross profit (consolidated) FY 2025: 20,855,400,384 EGP [TMGH-TMGH_FY2025_consolidated_en-p7-19]\n- Gross profit (consolidated) FY 2024 (Restated): 14,002,196,445 EGP [TMGH-TMGH_FY2025_consolidated_en-p7-20]\n- Net profit for the year (consolidated) FY 2025: 18,201,981,482 EGP [TMGH-TMGH_FY2025_consolidated_en-p7-55]\n- Net profit for the year (consolidated) FY 2024 (Restated): AMBIGUOUS [TMGH-TMGH_FY2025_consolidated_en-p7-56]; the printed value \"18,201,981,482 | 12,769,517,325\" is unreadable due to an auditor's stamp covering digits. **This figure must not be used in any quantitative computation.**\n- Earnings Per Share (consolidated) FY 2025: 6.98 LE [TMGH-TMGH_FY2025_consolidated_en-p7-61]\n- Earnings Per Share (consolidated) FY 2024 (Restated): 6.98 LE [TMGH-TMGH_FY2025_consolidated_en-p7-62]; verified but identical to the 2025 EPS, which may reflect a restatement artifact.\n\n**Growth**\n- Gross profit increased from 14,002,196,445 EGP (2024 restated) [p7-20] to 20,855,400,384 EGP (2025) [p7-19], indicating a substantial rise. No growth rate is computed here to avoid reliance on restated comparables; the raw verified figures are presented as above.\n\n**Balance Sheet**\n- Total equity (consolidated) as at 31 December 2025: 157,708,140,765 EGP [TMGH-TMGH_FY2025_consolidated_en-p5-67]\n- The paired figure 129,879,813,693 EGP in the same evidence row likely represents a prior period (2024 or beginning-of-year), as printed alongside the 2025 total equity figure.\n\n**Risks & Data Quality**\n- **AMBIGUOUS figure**: [TMGH-TMGH_FY2025_consolidated_en-p7-56] must be excluded from all calculations due to unreadable digits from an auditor's stamp.\n- Restated figures: Both gross profit [p7-20] and EPS [p7-62] for 2024 are marked as restated. The 2024 restated EPS of 6.98 LE matches the 2025 EPS, which may indicate no operational change or a data presentation restatement.\n- Limited evidence scope: The provided rows cover only selected line items (gross profit, net profit, EPS, total equity). Revenue, assets, liabilities, and cash flow data are not included in this evidence set, restricting a full balance sheet or cash flow analysis.\n- Column interpretation: Several evidence rows display two numeric columns for consecutive years. Where the period is explicitly stated (e.g., \"period 2025\"), the first column is taken as the reported period, but users should verify original report headers for absolute certainty.\n\n**Investor Profile Considerations (analysis only, no recommendation)**\n- The investor pursues long-term wealth building over a 10+ year horizon with high risk tolerance and no planned liquidity needs. The evidence shows strong 2025 profitability (net profit ~18.2 billion EGP, EPS 6.98 LE) and a substantial equity base (157.7 billion EGP). The verified 2025 EPS of 6.98 LE and the market price of 82.50 EGP imply a price-to-earnings ratio of approximately 11.8x based on verified data alone. However, the ambiguous 2024 net profit and restated comparables introduce data quality uncertainties that would need resolution before robust long-term modeling. The evidence snippet does not provide sufficient detail on revenue trends, cash generation, or debt structure to fully assess sustainability or valuation resilience over a decade.\n\n*A decision agent would evaluate the above factors against your investor profile to formulate a portfolio action.*",
+    "investor": "**Investor-Suitability Assessment**\n\n**1. Horizon & Liquidity**\n- The investor has a 10+ year horizon and no planned withdrawals. This profile comfortably supports a high allocation to growth-oriented assets that require time to compound and recover from volatility. The absence of near-term liquidity needs means the full investment amount can be committed without maintaining a conservative cash buffer for living expenses.\n\n**2. Loss Willingness & Capacity**\n- Both willingness and financial ability to withstand losses are rated high. This confirms that a significant equity or risk‑asset allocation is suitable, including positions that may experience substantial short‑term drawdowns without compromising the investor’s financial stability.\n\n**3. Current Concentration**\n- The portfolio holds no marketable securities; it consists entirely of 100,000.00 EGP in cash. There is no existing concentration risk, and the portfolio is open to building a diversified or focused exposure depending on the investor’s strategy preferences.\n\n**4. Cash Commitment Capacity**\n- **Free cash:** 100,000.00 EGP (all cash is unencumbered and available for investment).\n- **Salable assets:** None currently held; nothing can be sold.\n- **Share‑price context (fact only):** At the cutoff price of 82.50 EGP per TMGH share, the full cash balance could purchase approximately 1,212 shares (100,000 ÷ 82.50 ≈ 1,212.12). This calculation is provided solely to illustrate the portfolio’s purchasing capacity at the quoted price; it does not imply suitability or a recommendation to hold TMGH.\n\n**5. Portfolio What‑It-Allows Summary**\n- All 100,000.00 EGP is free to be committed to new positions.\n- No existing holdings can be liquidated.\n- The investor may allocate the cash across any permitted asset class (equities, funds, bonds, alternatives, etc.) in line with their stated objectives and risk profile.\n\n**Note:** This assessment is limited to suitability dimensions and portfolio capacity as defined by the investor profile and current holdings. No company financials have been analysed for investment merit, and no specific action (e.g., buying, selling, or rebalancing) is recommended or implied."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 74.073,
+      "input_tokens": 1069,
+      "output_tokens": 11663,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 22.794,
+      "input_tokens": 1063,
+      "output_tokens": 2065,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 37.092,
+      "input_tokens": 2843,
+      "output_tokens": 4394,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 58.692,
+      "input_tokens": 2680,
+      "output_tokens": 8049,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 192.656
+}

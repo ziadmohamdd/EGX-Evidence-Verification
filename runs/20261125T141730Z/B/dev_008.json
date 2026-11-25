@@ -1,0 +1,194 @@
+{
+  "case_id": "dev_008",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "### 1. Friend's claim assessment\n- Evidence [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] shows Net profit for the year 2025: 22,578,063 (in L.E. 000) → base unit: **22,578,063,000 EGP** (~22.58 billion EGP).\n- Evidence [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] shows Net profit for the year 2024: 10,111,328 (in L.E. 000) → base unit: **10,111,328,000 EGP** (~10.11 billion EGP).\n- Ratio 2025/2024 = 22.58 / 10.11 ≈ **2.23 times**. The claim of \"more than ten times\" is **incorrect**.\n- The stated 225.9 billion EGP is approximately **10× the actual 22.58 billion**, likely arising from misinterpreting the \"L.E. (000)\" unit (i.e., reading the number without the thousands multiplier) or misplacing a decimal.\n- Operating revenues: 2025 = 106,672,946,000 EGP; 2024 = 81,677,812,000 EGP. Growth ≈ 30.6%, not the 10× profit growth claimed.\n\n### 2. Ambiguous figures and unused data\n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] and [p6-56] report Basic and diluted EPS as 11.93 and 4.79 with unit **\"L.E.(000)\"**. The designation \"L.E.(000)\" for an EPS figure is ambiguous (whether the numbers are in L.E. per share or thousands of L.E. per share). Per rules, AMBIGUOUS figures must not be used in calculations.\n- These EPS figures are listed in **unused_figures** below. Any P/E ratio, earnings yield, or valuation relying on them is excluded from the analysis.\n\n### 3. Investment decision — should all cash be put into more ETEL shares?\n- **Investor profile**: Goal = top up retirement savings; horizon = 5 years; liquidity needs = separate emergency fund; willingness/ability to withstand losses = medium.\n- **Current holdings**: 150 ETEL shares (value ≈ 150 × 141.95 = **21,292.50 EGP**) plus **50,000 EGP** cash.\n- **Evidence provided**: FY2025 consolidated financials (revenues, net profit, total assets, total equity) and current market price 141.95 EGP/share. No dividend data, no forward-looking expectations, no valuation multiples beyond what can be crudely derived (and EPS is ambiguous).\n- **What the evidence shows**: Solid year-on-year growth in revenues (+30.6%) and net profit (+123.4%). The company is profitable and growing, but the evidence does not include:\n   * Reliable EPS in base units (to assess P/E or earnings yield).\n   * Dividend history or expected payout policy.\n   * Valuation context (historical P/E ranges, price-to-book, etc.).\n   * Information on share price volatility or risk metrics for the 5-year horizon.\n- **Risk considerations**: Allocating the entire 50,000 EGP cash position into a single listed stock (ETEL) concentrates risk in one company. This may not align with the investor's medium risk tolerance and 5-year retirement goal, especially given the need to preserve capital over a medium term and the proven risk of acting on the friend's factually incorrect profit figure.\n- **Conclusion on the decision**: The provided evidence and price data are **not sufficient** to support a responsible decision to allocate all cash into additional ETEL shares. The investor's goal, horizon, and risk profile, combined with the missing valuation and dividend information and the ambiguous EPS, mean that a concentrated all-cash buy cannot be justified on the given evidence alone.\n\n### 4. What is missing for a responsible decision\n- EPS values clarified in base units (L.E. per share, not L.E. 000) to enable P/E or earnings-yield analysis.\n- Dividend history or expected payout information for ETEL.\n- Valuation metrics (e.g., historical price ranges, P/B, analyst estimates — restricted to outside knowledge, but the absence of any derivable valuation from the given data is the gap).\n- Guidance on position sizing for a retirement-oriented portfolio with medium risk tolerance.\n\n### Recommendation\n**insufficient_evidence**. The evidence does not provide a responsible basis to recommend putting all 50,000 EGP cash into more Telecom Egypt shares. The investor should keep the cash separate, avoid concentrating it in a single stock based on this evidence, and seek additional financial data (particularly reliable EPS, dividend, and valuation information) before making a new allocation. The friend's net profit claim is contradicted by the evidence (actual ~22.6 billion EGP in 2025, not 225.9 billion, and 2025/2024 profit growth is ~2.2×, not >10×).",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063.0,
+        "statement": "Net profit for the year 2025 (L.E. 000 unit per printed report, p.6, verified period 31/12/2025). Base unit value: 22,578,063,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328.0,
+        "statement": "Net profit for the year 2024 (L.E. 000 unit per printed report, p.6, verified period 31/12/2024). Base unit value: 10,111,328,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946.0,
+        "statement": "Operating revenues 2025 (L.E. 000 unit per printed report, p.6, verified period 31/12/2025). Base unit value: 106,672,946,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812.0,
+        "statement": "Operating revenues 2024 (L.E. 000 unit per printed report, p.6, verified period 31/12/2024). Base unit value: 81,677,812,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527.0,
+        "statement": "Total Assets 2025 (L.E. 000 unit per printed report, p.5, verified period 31/12/2025). Base unit value: 225,882,527,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826.0,
+        "statement": "Total Equity 2025 (L.E. 000 unit per printed report, p.5, verified period 31/12/2025). Base unit value: 63,687,826,000 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55: Basic and diluted earning per share for the year (L.E. / Share) (15), printed value 11.93, unit L.E.(000) — AMBIGUOUS; not used in any calculations.",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56: Basic and diluted earning per share for the year (L.E. / Share) (15), printed value 4.79, unit L.E.(000) — AMBIGUOUS; not used in any calculations."
+    ],
+    "limitations": [
+      "All financial figures derived from printed report rows; unit multipliers (L.E. 000) applied by the analyst. No outside knowledge about ETEL, Egyptian telecom sector, or later events was used.\n- The EPS unit \"L.E.(000)\" is ambiguous per the report's own printing; these figures are excluded from valuation calculations per the given rules.\n- The investor's risk profile (medium tolerance, 5-year horizon) and the need for diversification are discussed, but no outside market or sector data was invoked; the recommendation rests on the provided evidence and the stated investor situation.\n- The friend's net profit claim (225.9 billion EGP) is directly refuted by the evidence (22.58 billion EGP). Acting on such misinformation is cautioned against.\n- This guidance is not a guarantee of returns; it reflects the evidence and situation as of the 2026-11-18 cutoff."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "### 1. Friend's claim assessment\n[removed: figure could not be verified] 000 unit per printed report, p.6, verified period 31/12/2025). [removed: figure could not be verified]\n[removed: figure could not be verified] 000 unit per printed report, p.6, verified period 31/12/2024). [removed: figure could not be verified]\n- Ratio 2025/2024 = 22.58 / 10.11 ≈ **2.23 times**. The claim of \"more than ten times\" is **incorrect**.\n- Operating revenues: 2025 = 106,672,946,000 EGP; 2024 = 81,677,812,000 EGP. Growth ≈ 30.6%, not the 10× profit growth claimed.\n[removed: figure could not be verified] (000)\" unit (i.e., reading the number without the thousands multiplier) or misplacing a decimal.\n\n### 2. Ambiguous figures and unused data\n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] and [p6-56] report Basic and diluted EPS as 11.93 and 4.79 with unit **\"L.E.(000)\"**. The designation \"L.E.(000)\" for an EPS figure is ambiguous (whether the numbers are in L.E. per share or thousands of L.E. per share). Per rules, AMBIGUOUS figures must not be used in calculations. These are listed in **unused_figures** below. Any P/E ratio, earnings yield, or valuation relying on them is excluded from the analysis.\n- Unused figures: ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55: Basic and diluted earning per share for the year (L.E. / Share) (15), printed value 11.93, unit L.E.(000) — AMBIGUOUS; not used in any calculations. ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56: Basic and diluted earning per share for the year (L.E. / Share) (15), printed value 4.79, unit L.E.(000) — AMBIGUOUS; not used in any calculations.\n\n### 3. Investment decision — should all cash be put into more ETEL shares?\n- **Investor profile**: Goal = top up retirement savings; horizon = 5 years; liquidity needs = separate emergency fund; willingness/ability to withstand losses = medium.\n- **Current holdings**: 150 ETEL shares (value ≈ 150 × 141.95 = **21,292.50 EGP**) plus **50,000 EGP** cash.\n- **Evidence provided**: FY2025 consolidated financials (revenues, net profit, total assets, total equity) and current market price 141.95 EGP/share. No dividend data, no forward-looking expectations, no valuation multiples beyond what can be crudely derived (and EPS is ambiguous).\n[removed: figure could not be verified] The company is profitable and growing, but the evidence does not include:\n   * Reliable EPS in base units (to assess P/E or earnings yield).\n   * Dividend history or expected payout policy.\n   * Valuation context (historical P/E ranges, price-to-book, etc.).\n   * Information on share price volatility or risk metrics for the 5-year horizon.\n- **Risk considerations**: Allocating the entire 50,000 EGP cash position into a single listed stock (ETEL) concentrates risk in one company. This may not align with the investor's medium risk tolerance and 5-year retirement goal, especially given the need to preserve capital over a medium term and the proven risk of acting on the friend's factually incorrect profit figure.\n- **Conclusion on the decision**: The provided evidence and price data are **not sufficient** to support a responsible decision to allocate all cash into additional ETEL shares. The investor's goal, horizon, and risk profile, combined with the missing valuation and dividend information and the ambiguous EPS, mean that a concentrated all-cash buy cannot be justified on the given evidence alone.\n\n### 4. What is missing for a responsible decision\n- EPS values clarified in base units (L.E. per share, not L.E. 000) to enable P/E or earnings-yield analysis.\n- Dividend history or expected payout information for ETEL.\n- Valuation metrics (e.g., historical price ranges, P/B, analyst estimates — restricted to outside knowledge, but the absence of any derivable valuation from the given data is the gap).\n- Guidance on position sizing for a retirement-oriented portfolio with medium risk tolerance.\n\n### Recommendation\n**insufficient_evidence**. The evidence does not provide a responsible basis to recommend putting all 50,000 EGP cash into more Telecom Egypt shares. The investor should keep the cash separate, avoid concentrating it in a single stock based on this evidence, and seek additional financial data (particularly reliable EPS, dividend, and valuation information) before making a new allocation. [removed: figure could not be verified]",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues 2025 (L.E. 000 unit per printed report, p.6, verified period 31/12/2025). Base unit value: 106,672,946,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "Operating revenues 2024 (L.E. 000 unit per printed report, p.6, verified period 31/12/2024). Base unit value: 81,677,812,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total Assets 2025 (L.E. 000 unit per printed report, p.5, verified period 31/12/2025). Base unit value: 225,882,527,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "Total Equity 2025 (L.E. 000 unit per printed report, p.5, verified period 31/12/2025). Base unit value: 63,687,826,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "Basic and diluted earning per share for the year (L.E. / Share) (15), printed value 11.93, unit L.E.(000) — AMBIGUOUS; not used in any calculations. Cannot be reliably converted to base units."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "Basic and diluted earning per share for the year (L.E. / Share) (15), printed value 4.79, unit L.E.(000) — AMBIGUOUS; not used in any calculations. Cannot be reliably converted to base units."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55: Basic and diluted earning per share for the year (L.E. / Share) (15), printed value 11.93, unit L.E.(000) — AMBIGUOUS; not used in any calculations.",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56: Basic and diluted earning per share for the year (L.E. / Share) (15), printed value 4.79, unit L.E.(000) — AMBIGUOUS; not used in any calculations."
+    ],
+    "limitations": [
+      "All financial figures derived from printed report rows; unit multipliers (L.E. 000) applied correctly to base units (whole pounds). Previous analysis had scale errors by 1000, which are now corrected.\n- The EPS figures (p6-55, p6-56) have unit \"L.E.(000)\" for a per-share metric, creating ambiguity per the report's own printing; these are excluded from all valuation calculations per the given rules.\n- No dividend data, no forward-looking expectations, no historical valuation multiples (P/E, P/B) derivable from the provided evidence.\n- The investor's risk profile (medium tolerance, 5-year horizon) and need for diversification are discussed, but no outside market or sector data was invoked; the recommendation rests on the provided evidence and the stated investor situation.\n- The friend's net profit claim (225.9 billion EGP) is directly refuted by the evidence (22.58 billion EGP in 2025). Acting on such misinformation is cautioned against.\n- This guidance is not a guarantee of returns; it reflects the evidence and situation as of the 2026-11-18 cutoff.\n- Position sizing for a retirement-oriented portfolio with the given risk tolerance cannot be responsibly determined from the evidence alone.",
+      "These figures could not be verified and were not used: Net profit for the year, Net profit for the year. Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 50000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 150
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "value_mismatch",
+        "detail": "stated 2.25781e+07 but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "rule": "value_mismatch",
+        "detail": "stated 1.01113e+07 but evidence 'Net profit for the year' is 1.01113e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "rule": "value_mismatch",
+        "detail": "stated 1.06673e+08 but evidence 'Operating revenues (5)' is 1.06673e+11 [Operating revenues (5) 106 672 946 81 677 812 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "rule": "value_mismatch",
+        "detail": "stated 8.16778e+07 but evidence 'Operating revenues (5)' is 8.16778e+10 [Operating revenues (5) 106 672 946 81 677 812 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "rule": "value_mismatch",
+        "detail": "stated 2.25883e+08 but evidence 'Total Assets (consolidated)' is 2.25883e+11 [Total Assets | | 225 882 527 | 197 952 788 | unit: L.E. (000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "rule": "value_mismatch",
+        "detail": "stated 6.36878e+07 but evidence 'Total Equity (consolidated)' is 6.36878e+10 [Total Equity | | 63 687 826 | 45 937 991 | unit: L.E. (000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"11.93\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (11.93), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.79\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (4.79), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"22,578,063\" but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"10,111,328\" but evidence 'Net profit for the year' is 1.01113e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      }
+    ],
+    "dropped": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36"
+    ],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 124.163,
+      "input_tokens": 1472,
+      "output_tokens": 16424,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 96.99,
+      "input_tokens": 4824,
+      "output_tokens": 14132,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 221.158
+}

@@ -1,0 +1,59 @@
+{
+  "case_id": "dev_007",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's goal is to raise 10,000 EGP in cash within 3 months for a family wedding. Their current portfolio consists of 1,000.00 EGP cash and 200 shares of EFID, priced at 20.40 EGP per share at the cutoff. The total portfolio value is therefore 1,000 + (200 × 20.40) = 5,080 EGP. Even if the investor liquidates the entire EFID holding, they would receive only 4,080 EGP in proceeds, adding to the existing 1,000 EGP cash for a total of 5,080 EGP—still a shortfall of at least 4,920 EGP (and a total shortfall of 5,920 EGP relative to the 10,000 EGP target). Given the investor's low willingness and financial ability to withstand losses, holding or trading EFID shares over a 3‑month horizon is misaligned with the need for reliable, low‑risk liquidity.\n\nThe provided evidence comprises EFID's FY2025 consolidated financial statements (revenue, net profit, and EPS for periods ending 31 December 2025 and 2024). These figures are historical, audited, and do not address the investor's short‑term liquidity need, the stock's price volatility over the next 3 months, transaction costs, bid‑ask spreads, or the investor's capacity to meet the 10,000 EGP cash requirement. The evidence also does not indicate whether selling EFID shares would reliably produce the needed cash within the horizon, nor does it provide any projection or guarantee of near‑term liquidity. Notably, the revenue figures show identical values for 2025 and 2024 (20,915,072,432 EGP and 16,146,545,699 EGP respectively, as printed), which raises data‑consistency questions, though these are not explicitly marked AMBIGUOUS; however, this does not resolve the core liquidity shortfall.\n\nBecause the given evidence and prices do not provide a responsible basis to recommend buying, holding, or selling EFID shares as a means to meet the 10,000 EGP cash need—especially under the investor's low‑risk, low‑loss‑tolerance profile—the decision cannot be supported on the available information. Key missing elements include: the investor's total assets and other liquid resources; expected transaction costs and market liquidity for EFID; projected stock‑price movement or dividend income over 3 months; tax implications of selling; and whether the investor can supplement funds from other sources.\n\nTherefore, based on the evidence and prices provided, there is insufficient information to make a responsible recommendation. The appropriate action under the given rules is `insufficient_evidence`.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "No outside knowledge about EFID or later events may be used.",
+      "All figures relied upon must appear in `claims` with evidence_id and base‑unit values; none are relied upon here.",
+      "Figures marked AMBIGUOUS are excluded; none are marked as such, but the revenue/NP figures are considered irrelevant to the liquidity decision.",
+      "The recommendation is guidance only, not a guarantee of returns, and uncertainty/risks are stated honestly."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's goal is to raise 10,000 EGP in cash within 3 months for a family wedding. Their current portfolio consists of 1,000.00 EGP cash and 200 shares of EFID, priced at 20.40 EGP per share at the cutoff. The total portfolio value is therefore 1,000 + (200 × 20.40) = 5,080 EGP. Even if the investor liquidates the entire EFID holding, they would receive only 4,080 EGP in proceeds, adding to the existing 1,000 EGP cash for a total of 5,080 EGP—still a shortfall of at least 4,920 EGP (and a total shortfall of 5,920 EGP relative to the 10,000 EGP target). Given the investor's low willingness and financial ability to withstand losses, holding or trading EFID shares over a 3‑month horizon is misaligned with the need for reliable, low‑risk liquidity.\n\nThe provided evidence comprises EFID's FY2025 consolidated financial statements (revenue, net profit, and EPS for periods ending 31 December 2025 and 2024). These figures are historical, audited, and do not address the investor's short‑term liquidity need, the stock's price volatility over the next 3 months, transaction costs, bid‑ask spreads, or the investor's capacity to meet the 10,000 EGP cash requirement. The evidence also does not indicate whether selling EFID shares would reliably produce the needed cash within the horizon, nor does it provide any projection or guarantee of near‑term liquidity. Notably, the revenue figures show identical values for 2025 and 2024 (20,915,072,432 EGP and 16,146,545,699 EGP respectively, as printed), which raises data‑consistency questions, though these are not explicitly marked AMBIGUOUS; however, this does not resolve the core liquidity shortfall.\n\nBecause the given evidence and prices do not provide a responsible basis to recommend buying, holding, or selling EFID shares as a means to meet the 10,000 EGP cash need—especially under the investor's low‑risk, low‑loss‑tolerance profile—the decision cannot be supported on the available information. Key missing elements include: the investor's total assets and other liquid resources; expected transaction costs and market liquidity for EFID; projected stock‑price movement or dividend income over 3 months; tax implications of selling; and whether the investor can supplement funds from other sources.\n\nTherefore, based on the evidence and prices provided, there is insufficient information to make a responsible recommendation. The appropriate action under the given rules is `insufficient_evidence`.",
+    "claims": [],
+    "unused_figures": [],
+    "limitations": [
+      "No outside knowledge about EFID or later events may be used.",
+      "All figures relied upon must appear in `claims` with evidence_id and base‑unit values; none are relied upon here.",
+      "Figures marked AMBIGUOUS are excluded; none are marked as such, but the revenue/NP figures are considered irrelevant to the liquidity decision.",
+      "The recommendation is guidance only, not a guarantee of returns, and uncertainty/risks are stated honestly."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 1000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 385.086,
+      "input_tokens": 1201,
+      "output_tokens": 5109,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 385.088
+}

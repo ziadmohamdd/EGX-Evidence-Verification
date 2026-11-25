@@ -1,0 +1,110 @@
+{
+  "case_id": "dev_012",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "Evidence verification and analysis:\n- The financial analyst's verified figures match the evidence list: 2024 net profit = 1 606 727 698 EGP (from [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31], verified, second column). EPS 2025 = 2.18 EGP, EPS 2024 = 1.09 EGP (from [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] and [p6-39], both verified). The EPS growth calculation (2.18−1.09)/1.09 = 100% is mathematically correct.\n- However, [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] is explicitly flagged AMBIGUOUS because the 2025 net profit figure is covered by a stamp on the scanned page. Per guidelines, AMBIGUOUS figures must not be used in calculations and must be listed in unused_figures.\n- The investor's decision criterion hinges on whether Edita's net profit grew by more than 50% in 2025 vs 2024. Direct net profit growth calculation is impossible because the 2025 net profit figure is unavailable (AMBIGUOUS). The analyst's EPS-based 100% growth inference relies on the unverified assumption that the weighted average number of shares outstanding remained constant between 2024 and 2025—a detail not provided in the evidence. Without this, EPS growth does not equate to net profit growth.\n- Unused figures: [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]. Affected conclusions: calculation of Edita's net profit growth 2025 vs 2024, and the consequent buy condition (>50% growth).\n- Missing evidence: the actual 2025 net profit figure (obscured by stamp), and the weighted average number of shares outstanding for 2024 and 2025 to convert EPS to total net profit.\n- Uncertainty and risks: The 2025 net profit is unreadable, so any growth claim is speculative. EPS growth may not reflect net profit performance. Additionally, the portfolio holds ~67% in a single stock (EFID), the investor has medium risk tolerance and a 3-year horizon, and increasing exposure would amplify concentration risk relative to the goal of growing savings.\n- Because the evidence cannot responsibly confirm the investor's >50% net profit growth criterion, a responsible decision cannot be made on the provided data.\n\nRecommendation: insufficient_evidence.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "2024 net profit (verified, second column in printed pair)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EPS 2025 (verified)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EPS 2024 (verified)"
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "2025 net profit figure is AMBIGUOUS and excluded from computation; share counts not provided to convert EPS to net profit; EPS growth inference relies on unstated assumption of constant share count."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "Evidence verification and analysis:\n- The financial analyst's verified figures match the evidence list: 2024 net profit = 1 606 727 698 EGP (from [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31], verified, second column). EPS 2025 = 2.18 EGP, EPS 2024 = 1.09 EGP (from [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] and [p6-39], both verified). The EPS growth calculation (2.18−1.09)/1.09 = 100% is mathematically correct.\n- However, [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] is explicitly flagged AMBIGUOUS because the 2025 net profit figure is covered by a stamp on the scanned page. Per guidelines, AMBIGUOUS figures must not be used in calculations and must be listed in unused_figures.\n- The investor's decision criterion hinges on whether Edita's net profit grew by more than 50% in 2025 vs 2024. Direct net profit growth calculation is impossible because the 2025 net profit figure is unavailable (AMBIGUOUS). The analyst's EPS-based 100% growth inference relies on the unverified assumption that the weighted average number of shares outstanding remained constant between 2024 and 2025—a detail not provided in the evidence. Without this, EPS growth does not equate to net profit growth.\n- Unused figures: [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]. Affected conclusions: calculation of Edita's net profit growth 2025 vs 2024, and the consequent buy condition (>50% growth).\n- Missing evidence: the actual 2025 net profit figure (obscured by stamp), and the weighted average number of shares outstanding for 2024 and 2025 to convert EPS to total net profit.\n- Uncertainty and risks: The 2025 net profit is unreadable, so any growth claim is speculative. EPS growth may not reflect net profit performance. Additionally, the portfolio holds ~67% in a single stock (EFID), the investor has medium risk tolerance and a 3-year horizon, and increasing exposure would amplify concentration risk relative to the goal of growing savings.\n- Because the evidence cannot responsibly confirm the investor's >50% net profit growth criterion, a responsible decision cannot be made on the provided data.\n\nRecommendation: insufficient_evidence.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "2024 net profit (verified, second column in printed pair)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EPS 2025 (verified)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EPS 2024 (verified)"
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "2025 net profit figure is AMBIGUOUS and excluded from computation; share counts not provided to convert EPS to net profit; EPS growth inference relies on unstated assumption of constant share count."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Evidence Analysis & Growth Calculation**\n\n**Net Profit Figures**\n- [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31] *verified* – period 31 December 2024. As printed: \"Net profit for the year | | 2 695 301 670 | 1 606 727 698 | unit: EGP\". The 2024 net profit figure is **1 606 727 698 EGP** (the second column in the printed pair, corresponding to the verified 2024 period).\n- [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] *AMBIGUOUS* – period 31 December 2025. As printed: \"Net profit for the year | | 2 695 301 670 | 1 606 727 698 | unit: EGP\", with note: \"unreadable: the 2025 figure is covered by a stamp on the scanned page\". **The 2025 net profit figure is ambiguous and cannot be used in computation** per guidelines.\n\n**Earnings Per Share (Verified, not ambiguous)**\n- [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] *verified* – period 31 December 2025. As printed: \"Basic and Diluted earnings per share | 30 | 2.18 | 1.09 | unit: EGP\". **EPS 2025 = 2.18 EGP**.\n- [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39] *verified* – period 31 December 2024. As printed: \"Basic and Diluted earnings per share | 30 | 2.18 | 1.09 | unit: EGP\". **EPS 2024 = 1.09 EGP**.\n\n**Growth Inference (using verified EPS only)**\n- EPS growth = (2.18 − 1.09) / 1.09 = **1.00 = 100% increase**.\n- If the weighted average number of shares outstanding remained constant between 2024 and 2025, this 100% EPS growth implies a **100% growth in net profit**, which exceeds the investor's 50% threshold for additional purchase.\n- **Caveat**: The 2025 net profit figure [p6-30] is flagged AMBIGUOUS and is explicitly excluded from computation. The EPS-based growth inference relies on the verified EPS data and the assumption of constant share count, which is not directly provided in the evidence.\n\n**Data Quality Flag**\n- The 2025 net profit figure is AMBIGUOUS due to a stamp obscuring the value on the scanned page. No computational steps should be performed with this figure. All other figures cited are verified.\n\n**Summary for Investor Question**\n- Direct net profit growth calculation from the period-end figures is not possible because the 2025 net profit [p6-30] is ambiguous. \n- Based on the verified EPS [p6-38, p6-39], net profit appears to have grown by **100%** (from 1.09× to 2.18× EPS), which is **more than 50%**. \n- The decision on whether to buy more rests with the decision agent; the evidence shows EPS growth exceeding the investor's 50% criterion, subject to the ambiguous net profit caveat.",
+    "investor": "**Investor-suitability assessment**\n\n1. **Horizon (3 years)** – A short-to-medium term horizon. Equity exposure should be evaluated for volatility alignment, as 3 years may not be sufficient to ride out significant market drawdowns without affecting the goal of growing savings.\n\n2. **Liquidity needs** – The investor maintains a separate emergency fund. The current 10,000.00 EGP cash holding should be confirmed as serving that purpose; if not, additional liquidity planning may be required.\n\n3. **Loss willingness and capacity** – Rated medium for both willingness and financial ability to withstand losses. This suggests a moderate risk tolerance: the portfolio can experience moderate volatility, but large or sustained losses may challenge the investor’s comfort or objectives.\n\n4. **Current concentration** – The portfolio holds 1,000 shares of EFID at the cutoff price of 20.40 EGP, valued at 20,400 EGP. Combined with 10,000.00 EGP cash, total portfolio value is 30,400 EGP. EFID represents approximately 67% of the portfolio, indicating high single-stock concentration relative to the goal of growing savings and the moderate loss capacity.\n\n5. **Cash that could reasonably be committed** – 10,000.00 EGP is currently free (cash balance). Given the separate emergency fund designation and moderate loss capacity, any additional commitment should account for the existing concentration risk and the need to preserve liquidity. The EFID shares are marketable and can be sold to convert to cash if needed.\n\n**Portfolio allowances**  \n- **What can be sold:** The 1,000 EFID shares (≈20,400 EGP value at the 20.40 EGP/share cutoff price).  \n- **What cash is free:** 10,000.00 EGP.  \n- No other assets or cash positions are reported.\n\nPer my role parameters, I do not analyse company financials (e.g., net profit growth rates) nor do I pick investment actions or recommend buying/selling."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 45.14,
+      "input_tokens": 1066,
+      "output_tokens": 8228,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 25.857,
+      "input_tokens": 1060,
+      "output_tokens": 4387,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 480.958,
+      "input_tokens": 2581,
+      "output_tokens": 9224,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 551.958
+}

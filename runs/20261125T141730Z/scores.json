@@ -1,0 +1,4760 @@
+{
+  "rel_tol": 0.005,
+  "references": "data\\references\\cases",
+  "summary": [
+    {
+      "condition": "A",
+      "records": 12,
+      "scored": 12,
+      "run_errors": 0,
+      "no_reference": 0,
+      "claims": 46,
+      "incorrect_claims": 11,
+      "incorrect_claim_rate": 0.2391304347826087,
+      "share_with_incorrect_claim": 0.25,
+      "wrong_value": 6,
+      "ambiguous_used": 1,
+      "unknown_evidence": 4,
+      "scale_errors": 4,
+      "mean_coverage": 0.3732638888888889,
+      "proposed_incorrect_claim_rate": 0.2391304347826087,
+      "action_acceptable_rate": 0.4166666666666667,
+      "insufficient_evidence_rate": 0.8333333333333334,
+      "portfolio_violations": 0,
+      "blocked": 0,
+      "verifier_revised": 0,
+      "verifier_dropped": 0,
+      "text_uncited": 17,
+      "text_wrong_scale": 1,
+      "share_with_unchecked_text": 0.5,
+      "proposed_text_uncited": 17,
+      "no_figure_decisions": 0,
+      "concentrated_buys": 2
+    },
+    {
+      "condition": "B",
+      "records": 12,
+      "scored": 12,
+      "run_errors": 0,
+      "no_reference": 0,
+      "claims": 38,
+      "incorrect_claims": 0,
+      "incorrect_claim_rate": 0.0,
+      "share_with_incorrect_claim": 0.0,
+      "wrong_value": 0,
+      "ambiguous_used": 0,
+      "unknown_evidence": 0,
+      "scale_errors": 0,
+      "mean_coverage": 0.48055555555555557,
+      "proposed_incorrect_claim_rate": 0.32608695652173914,
+      "action_acceptable_rate": 0.5,
+      "insufficient_evidence_rate": 0.75,
+      "portfolio_violations": 1,
+      "blocked": 1,
+      "verifier_revised": 9,
+      "verifier_dropped": 39,
+      "text_uncited": 0,
+      "text_wrong_scale": 0,
+      "share_with_unchecked_text": 0.0,
+      "proposed_text_uncited": 33,
+      "no_figure_decisions": 2,
+      "concentrated_buys": 2
+    },
+    {
+      "condition": "C",
+      "records": 12,
+      "scored": 12,
+      "run_errors": 0,
+      "no_reference": 0,
+      "claims": 36,
+      "incorrect_claims": 15,
+      "incorrect_claim_rate": 0.4166666666666667,
+      "share_with_incorrect_claim": 0.25,
+      "wrong_value": 14,
+      "ambiguous_used": 0,
+      "unknown_evidence": 1,
+      "scale_errors": 4,
+      "mean_coverage": 0.3069444444444444,
+      "proposed_incorrect_claim_rate": 0.4166666666666667,
+      "action_acceptable_rate": 0.3333333333333333,
+      "insufficient_evidence_rate": 0.8333333333333334,
+      "portfolio_violations": 0,
+      "blocked": 0,
+      "verifier_revised": 0,
+      "verifier_dropped": 0,
+      "text_uncited": 11,
+      "text_wrong_scale": 1,
+      "share_with_unchecked_text": 0.3333333333333333,
+      "proposed_text_uncited": 11,
+      "no_figure_decisions": 0,
+      "concentrated_buys": 1
+    },
+    {
+      "condition": "D",
+      "records": 12,
+      "scored": 12,
+      "run_errors": 0,
+      "no_reference": 0,
+      "claims": 26,
+      "incorrect_claims": 0,
+      "incorrect_claim_rate": 0.0,
+      "share_with_incorrect_claim": 0.0,
+      "wrong_value": 0,
+      "ambiguous_used": 0,
+      "unknown_evidence": 0,
+      "scale_errors": 0,
+      "mean_coverage": 0.3586805555555555,
+      "proposed_incorrect_claim_rate": 0.42105263157894735,
+      "action_acceptable_rate": 0.5833333333333334,
+      "insufficient_evidence_rate": 0.5833333333333334,
+      "portfolio_violations": 0,
+      "blocked": 0,
+      "verifier_revised": 7,
+      "verifier_dropped": 22,
+      "text_uncited": 0,
+      "text_wrong_scale": 0,
+      "share_with_unchecked_text": 0.0,
+      "proposed_text_uncited": 26,
+      "no_figure_decisions": 1,
+      "concentrated_buys": 1
+    }
+  ],
+  "records": [
+    {
+      "case_id": "dev_001",
+      "condition": "A",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 10,
+        "n_correct": 10,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+            "stated_value": 106672946000.0,
+            "reference_value": 106672946000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+            "stated_value": 81677812000.0,
+            "reference_value": 81677812000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+            "stated_value": 44839110000.0,
+            "reference_value": 44839110000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+            "stated_value": 30492762000.0,
+            "reference_value": 30492762000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+            "stated_value": 225882527000.0,
+            "reference_value": 225882527000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+            "stated_value": 63687826000.0,
+            "reference_value": 63687826000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+            "stated_value": 22578063000.0,
+            "reference_value": 22578063000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+            "stated_value": 10111328000.0,
+            "reference_value": 10111328000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "stated_value": 11.93,
+            "reference_value": 11.93,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "stated_value": 4.79,
+            "reference_value": 4.79,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 10,
+        "n_correct": 10,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+            "stated_value": 106672946000.0,
+            "reference_value": 106672946000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+            "stated_value": 81677812000.0,
+            "reference_value": 81677812000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+            "stated_value": 44839110000.0,
+            "reference_value": 44839110000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+            "stated_value": 30492762000.0,
+            "reference_value": 30492762000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+            "stated_value": 225882527000.0,
+            "reference_value": 225882527000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+            "stated_value": 63687826000.0,
+            "reference_value": 63687826000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+            "stated_value": 22578063000.0,
+            "reference_value": 22578063000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+            "stated_value": 10111328000.0,
+            "reference_value": 10111328000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "stated_value": 11.93,
+            "reference_value": 11.93,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "stated_value": 4.79,
+            "reference_value": 4.79,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_002",
+      "condition": "A",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": true,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 7,
+        "n_correct": 4,
+        "n_incorrect": 3,
+        "claim_precision": 0.5714285714285714,
+        "coverage": 0.6666666666666666,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+            "stated_value": 20855400384.0,
+            "reference_value": 20855400384.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+            "stated_value": 20855400384.0,
+            "reference_value": 14002196445.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "stated_value": 18201981482.0,
+            "reference_value": 18201981482.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+            "stated_value": 18201981482.0,
+            "reference_value": 12769517325.0,
+            "verdict": "ambiguous_used",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+            "stated_value": 157708140765.0,
+            "reference_value": 157708140765.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+            "stated_value": 6.98,
+            "reference_value": 4.38,
+            "verdict": "wrong_value",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 7,
+        "n_correct": 4,
+        "n_incorrect": 3,
+        "claim_precision": 0.5714285714285714,
+        "coverage": 0.6666666666666666,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+            "stated_value": 20855400384.0,
+            "reference_value": 20855400384.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+            "stated_value": 20855400384.0,
+            "reference_value": 14002196445.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "stated_value": 18201981482.0,
+            "reference_value": 18201981482.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+            "stated_value": 18201981482.0,
+            "reference_value": 12769517325.0,
+            "verdict": "ambiguous_used",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+            "stated_value": 157708140765.0,
+            "reference_value": 157708140765.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+            "stated_value": 6.98,
+            "reference_value": 4.38,
+            "verdict": "wrong_value",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_003",
+      "condition": "A",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 8,
+        "n_correct": 8,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+            "stated_value": 20915072432.0,
+            "reference_value": 20915072432.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+            "stated_value": 2695301670.0,
+            "reference_value": 2695301670.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+            "stated_value": 5724525864.0,
+            "reference_value": 5724525864.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+            "stated_value": 106672946000.0,
+            "reference_value": 106672946000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+            "stated_value": 63687826000.0,
+            "reference_value": 63687826000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+            "stated_value": 22578063000.0,
+            "reference_value": 22578063000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "stated_value": 2.18,
+            "reference_value": 2.18,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "stated_value": 11.93,
+            "reference_value": 11.93,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 8,
+        "n_correct": 8,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+            "stated_value": 20915072432.0,
+            "reference_value": 20915072432.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+            "stated_value": 2695301670.0,
+            "reference_value": 2695301670.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+            "stated_value": 5724525864.0,
+            "reference_value": 5724525864.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+            "stated_value": 106672946000.0,
+            "reference_value": 106672946000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+            "stated_value": 63687826000.0,
+            "reference_value": 63687826000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+            "stated_value": 22578063000.0,
+            "reference_value": 22578063000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "stated_value": 2.18,
+            "reference_value": 2.18,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "stated_value": 11.93,
+            "reference_value": 11.93,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_004",
+      "condition": "A",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 4,
+        "n_correct": 0,
+        "n_incorrect": 4,
+        "claim_precision": 0.0,
+        "coverage": 0.0,
+        "claims": [
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+            "stated_value": 107699631.0,
+            "reference_value": 107699631000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+            "stated_value": 82258815.0,
+            "reference_value": 82258815000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+            "stated_value": 1110395693.0,
+            "reference_value": 1110395693000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+            "stated_value": 231486342.0,
+            "reference_value": 231486342000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+            "text": "18.25",
+            "reference_value": 18.25,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+            "text": "14.72",
+            "reference_value": 14.72,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": [
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+            "text": "55,256,732",
+            "reference_value": 55256732000.0,
+            "scale_error": 1000.0
+          }
+        ]
+      },
+      "final": {
+        "n_claims": 4,
+        "n_correct": 0,
+        "n_incorrect": 4,
+        "claim_precision": 0.0,
+        "coverage": 0.0,
+        "claims": [
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+            "stated_value": 107699631.0,
+            "reference_value": 107699631000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+            "stated_value": 82258815.0,
+            "reference_value": 82258815000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+            "stated_value": 1110395693.0,
+            "reference_value": 1110395693000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+            "stated_value": 231486342.0,
+            "reference_value": 231486342000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+            "text": "18.25",
+            "reference_value": 18.25,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+            "text": "14.72",
+            "reference_value": 14.72,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": [
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+            "text": "55,256,732",
+            "reference_value": 55256732000.0,
+            "scale_error": 1000.0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "dev_005",
+      "condition": "A",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_006",
+      "condition": "A",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 2,
+        "n_correct": 2,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+            "stated_value": 62495144197.0,
+            "reference_value": 62495144197.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 2,
+        "n_correct": 2,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+            "stated_value": 62495144197.0,
+            "reference_value": 62495144197.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_007",
+      "condition": "A",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+            "text": "20,915,072,432",
+            "reference_value": 20915072432.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+            "text": "16,146,545,699",
+            "reference_value": 16146545699.0,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+            "text": "20,915,072,432",
+            "reference_value": 20915072432.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+            "text": "16,146,545,699",
+            "reference_value": 16146545699.0,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_008",
+      "condition": "A",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 2,
+        "n_correct": 2,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.25,
+        "claims": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+            "stated_value": 22578063000.0,
+            "reference_value": 22578063000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+            "stated_value": 10111328000.0,
+            "reference_value": 10111328000.0,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+            "text": "225.9 billion",
+            "reference_value": 225882527000.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "text": "11.93",
+            "reference_value": 11.93,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 2,
+        "n_correct": 2,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.25,
+        "claims": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+            "stated_value": 22578063000.0,
+            "reference_value": 22578063000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+            "stated_value": 10111328000.0,
+            "reference_value": 10111328000.0,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+            "text": "225.9 billion",
+            "reference_value": 225882527000.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "text": "11.93",
+            "reference_value": 11.93,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_009",
+      "condition": "A",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": true,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_010",
+      "condition": "A",
+      "scored": true,
+      "reason": null,
+      "action": "buy",
+      "action_acceptable": true,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": 0.9992631578947369,
+      "concentrated_buy": true,
+      "extra": {},
+      "proposed": {
+        "n_claims": 4,
+        "n_correct": 0,
+        "n_incorrect": 4,
+        "claim_precision": 0.0,
+        "coverage": 0.0,
+        "claims": [
+          {
+            "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-57]",
+            "stated_value": 14383890306.0,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-58]",
+            "stated_value": 9025066065.0,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-61]",
+            "stated_value": 6.98,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-62]",
+            "stated_value": 4.38,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+            "text": "9,025,066,065",
+            "reference_value": 9025066065.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+            "text": "14,383,890,306",
+            "reference_value": 14383890306.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+            "text": "14,383,890,306",
+            "reference_value": 14383890306.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+            "text": "9,025,066,065",
+            "reference_value": 9025066065.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+            "text": "9,025,066,065",
+            "reference_value": 9025066065.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+            "text": "4.38",
+            "reference_value": 4.38,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "text": "6.98",
+            "reference_value": 6.98,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 4,
+        "n_correct": 0,
+        "n_incorrect": 4,
+        "claim_precision": 0.0,
+        "coverage": 0.0,
+        "claims": [
+          {
+            "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-57]",
+            "stated_value": 14383890306.0,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-58]",
+            "stated_value": 9025066065.0,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-61]",
+            "stated_value": 6.98,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-62]",
+            "stated_value": 4.38,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+            "text": "9,025,066,065",
+            "reference_value": 9025066065.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+            "text": "14,383,890,306",
+            "reference_value": 14383890306.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+            "text": "14,383,890,306",
+            "reference_value": 14383890306.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+            "text": "9,025,066,065",
+            "reference_value": 9025066065.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+            "text": "9,025,066,065",
+            "reference_value": 9025066065.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+            "text": "4.38",
+            "reference_value": 4.38,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "text": "6.98",
+            "reference_value": 6.98,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_011",
+      "condition": "A",
+      "scored": true,
+      "reason": null,
+      "action": "buy",
+      "action_acceptable": true,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": 1.0,
+      "concentrated_buy": true,
+      "extra": {},
+      "proposed": {
+        "n_claims": 9,
+        "n_correct": 9,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.5625,
+        "claims": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+            "stated_value": 2695301670.0,
+            "reference_value": 2695301670.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+            "stated_value": 1606727698.0,
+            "reference_value": 1606727698.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "stated_value": 2.18,
+            "reference_value": 2.18,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+            "stated_value": 82258815000.0,
+            "reference_value": 82258815000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+            "stated_value": 55256732000.0,
+            "reference_value": 55256732000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+            "stated_value": 18.25,
+            "reference_value": 18.25,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "stated_value": 18201981482.0,
+            "reference_value": 18201981482.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "stated_value": 11.93,
+            "reference_value": 11.93,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "text": "4.79",
+            "reference_value": 4.79,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "text": "4.79",
+            "reference_value": 4.79,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 9,
+        "n_correct": 9,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.5625,
+        "claims": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+            "stated_value": 2695301670.0,
+            "reference_value": 2695301670.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+            "stated_value": 1606727698.0,
+            "reference_value": 1606727698.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "stated_value": 2.18,
+            "reference_value": 2.18,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+            "stated_value": 82258815000.0,
+            "reference_value": 82258815000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+            "stated_value": 55256732000.0,
+            "reference_value": 55256732000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+            "stated_value": 18.25,
+            "reference_value": 18.25,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "stated_value": 18201981482.0,
+            "reference_value": 18201981482.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "stated_value": 11.93,
+            "reference_value": 11.93,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "text": "4.79",
+            "reference_value": 4.79,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "text": "4.79",
+            "reference_value": 4.79,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_012",
+      "condition": "A",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": true,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "text": "2.18",
+            "reference_value": 2.18,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+            "text": "1.09",
+            "reference_value": 1.09,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "text": "2.18",
+            "reference_value": 2.18,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+            "text": "1.09",
+            "reference_value": 1.09,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_001",
+      "condition": "B",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 1,
+      "blocked": true,
+      "verifier_revised": true,
+      "verifier_dropped": 16,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 5,
+        "n_correct": 0,
+        "n_incorrect": 5,
+        "claim_precision": 0.0,
+        "coverage": 0.0,
+        "claims": [
+          {
+            "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]",
+            "stated_value": 106672946000.0,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05]",
+            "stated_value": 44839110000.0,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31]",
+            "stated_value": 225882527000.0,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]",
+            "stated_value": 63687826000.0,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]",
+            "stated_value": 22578063000.0,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+            "text": "106,672,946,000",
+            "reference_value": 106672946000.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+            "text": "81,677,812,000",
+            "reference_value": 81677812000.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+            "text": "44,839,110,000",
+            "reference_value": 44839110000.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+            "text": "30,492,762,000",
+            "reference_value": 30492762000.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+            "text": "22,578,063,000",
+            "reference_value": 22578063000.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+            "text": "10,111,328,000",
+            "reference_value": 10111328000.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+            "text": "63,687,826,000",
+            "reference_value": 63687826000.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+            "text": "225,882,527,000",
+            "reference_value": 225882527000.0,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_002",
+      "condition": "B",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": true,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 4,
+        "n_correct": 4,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.6666666666666666,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+            "stated_value": 20855400384.0,
+            "reference_value": 20855400384.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "stated_value": 18201981482.0,
+            "reference_value": 18201981482.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+            "stated_value": 157708140765.0,
+            "reference_value": 157708140765.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 4,
+        "n_correct": 4,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.6666666666666666,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+            "stated_value": 20855400384.0,
+            "reference_value": 20855400384.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "stated_value": 18201981482.0,
+            "reference_value": 18201981482.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+            "stated_value": 157708140765.0,
+            "reference_value": 157708140765.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_003",
+      "condition": "B",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": true,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 6,
+        "n_correct": 6,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.75,
+        "claims": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+            "stated_value": 20915072432.0,
+            "reference_value": 20915072432.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+            "stated_value": 2695301670.0,
+            "reference_value": 2695301670.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+            "stated_value": 5724525864.0,
+            "reference_value": 5724525864.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+            "stated_value": 106672946000.0,
+            "reference_value": 106672946000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+            "stated_value": 63687826000.0,
+            "reference_value": 63687826000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+            "stated_value": 22578063000.0,
+            "reference_value": 22578063000.0,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "text": "2.18",
+            "reference_value": 2.18,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "text": "2.18",
+            "reference_value": 2.18,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 7,
+        "n_correct": 7,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.875,
+        "claims": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+            "stated_value": 20915072432.0,
+            "reference_value": 20915072432.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+            "stated_value": 2695301670.0,
+            "reference_value": 2695301670.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+            "stated_value": 5724525864.0,
+            "reference_value": 5724525864.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "stated_value": 2.18,
+            "reference_value": 2.18,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+            "stated_value": 106672946000.0,
+            "reference_value": 106672946000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+            "stated_value": 63687826000.0,
+            "reference_value": 63687826000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+            "stated_value": 22578063000.0,
+            "reference_value": 22578063000.0,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_004",
+      "condition": "B",
+      "scored": true,
+      "reason": null,
+      "action": "sell",
+      "action_acceptable": true,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": true,
+      "verifier_dropped": 7,
+      "no_figure_decision": true,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 5,
+        "n_correct": 4,
+        "n_incorrect": 1,
+        "claim_precision": 0.8,
+        "coverage": 0.5714285714285714,
+        "claims": [
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+            "stated_value": 107699631000.0,
+            "reference_value": 107699631000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+            "stated_value": 82258815000.0,
+            "reference_value": 82258815000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+            "stated_value": 82258815000.0,
+            "reference_value": 55256732000.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+            "stated_value": 1110395693000.0,
+            "reference_value": 1110395693000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+            "stated_value": 231486342000.0,
+            "reference_value": 231486342000.0,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+            "text": "18.25",
+            "reference_value": 18.25,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+            "text": "18.25",
+            "reference_value": 18.25,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+            "text": "14.72",
+            "reference_value": 14.72,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_005",
+      "condition": "B",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 2,
+        "n_correct": 2,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+            "stated_value": 8.74,
+            "reference_value": 8.74,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+            "stated_value": 4.28,
+            "reference_value": 4.28,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 2,
+        "n_correct": 2,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+            "stated_value": 8.74,
+            "reference_value": 8.74,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+            "stated_value": 4.28,
+            "reference_value": 4.28,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_006",
+      "condition": "B",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": true,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+            "text": "62,495,144,197",
+            "reference_value": 62495144197.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "text": "6.98",
+            "reference_value": 6.98,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "text": "6.98",
+            "reference_value": 6.98,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 2,
+        "n_correct": 2,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+            "stated_value": 62495144197.0,
+            "reference_value": 62495144197.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_007",
+      "condition": "B",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": true,
+      "verifier_dropped": 5,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+            "text": "20,915,072,432",
+            "reference_value": 20915072432.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+            "text": "2,695,301,670",
+            "reference_value": 2695301670.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "text": "2.18",
+            "reference_value": 2.18,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+            "text": "20,915,072,432",
+            "reference_value": 20915072432.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+            "text": "2,695,301,670",
+            "reference_value": 2695301670.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+            "text": "1,606,727,698",
+            "reference_value": 1606727698.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "text": "2.18",
+            "reference_value": 2.18,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+            "text": "1.09",
+            "reference_value": 1.09,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_008",
+      "condition": "B",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": true,
+      "verifier_dropped": 2,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 6,
+        "n_correct": 0,
+        "n_incorrect": 6,
+        "claim_precision": 0.0,
+        "coverage": 0.0,
+        "claims": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+            "stated_value": 22578063.0,
+            "reference_value": 22578063000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+            "stated_value": 10111328.0,
+            "reference_value": 10111328000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+            "stated_value": 106672946.0,
+            "reference_value": 106672946000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+            "stated_value": 81677812.0,
+            "reference_value": 81677812000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+            "stated_value": 225882527.0,
+            "reference_value": 225882527000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+            "stated_value": 63687826.0,
+            "reference_value": 63687826000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "text": "11.93",
+            "reference_value": 11.93,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "text": "4.79",
+            "reference_value": 4.79,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 6,
+        "n_correct": 6,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.75,
+        "claims": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+            "stated_value": 106672946000.0,
+            "reference_value": 106672946000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+            "stated_value": 81677812000.0,
+            "reference_value": 81677812000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+            "stated_value": 225882527000.0,
+            "reference_value": 225882527000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+            "stated_value": 63687826000.0,
+            "reference_value": 63687826000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "stated_value": 11.93,
+            "reference_value": 11.93,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "stated_value": 4.79,
+            "reference_value": 4.79,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_009",
+      "condition": "B",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": true,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_010",
+      "condition": "B",
+      "scored": true,
+      "reason": null,
+      "action": "buy",
+      "action_acceptable": true,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": true,
+      "verifier_dropped": 8,
+      "no_figure_decision": true,
+      "concentration": 0.9992631578947369,
+      "concentrated_buy": true,
+      "extra": {},
+      "proposed": {
+        "n_claims": 2,
+        "n_correct": 0,
+        "n_incorrect": 2,
+        "claim_precision": 0.0,
+        "coverage": 0.0,
+        "claims": [
+          {
+            "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-57]",
+            "stated_value": 14383890306.0,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-58]",
+            "stated_value": 9025066065.0,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+            "text": "9,025,066,065",
+            "reference_value": 9025066065.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+            "text": "14,383,890,306",
+            "reference_value": 14383890306.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+            "text": "4.38",
+            "reference_value": 4.38,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "text": "6.98",
+            "reference_value": 6.98,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_011",
+      "condition": "B",
+      "scored": true,
+      "reason": null,
+      "action": "buy",
+      "action_acceptable": true,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": true,
+      "verifier_dropped": 1,
+      "no_figure_decision": false,
+      "concentration": 0.9998549999999999,
+      "concentrated_buy": true,
+      "extra": {},
+      "proposed": {
+        "n_claims": 16,
+        "n_correct": 15,
+        "n_incorrect": 1,
+        "claim_precision": 0.9375,
+        "coverage": 0.9375,
+        "claims": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+            "stated_value": 22578063000.0,
+            "reference_value": 22578063000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+            "stated_value": 10111328000.0,
+            "reference_value": 10111328000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "stated_value": 11.93,
+            "reference_value": 11.93,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "stated_value": 4.79,
+            "reference_value": 4.79,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+            "stated_value": 82258815000.0,
+            "reference_value": 82258815000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+            "stated_value": 55256732000.0,
+            "reference_value": 55256732000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+            "stated_value": 18.25,
+            "reference_value": 18.25,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+            "stated_value": 14.72,
+            "reference_value": 14.72,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+            "stated_value": 2695301670.0,
+            "reference_value": 2695301670.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+            "stated_value": 1606727698.0,
+            "reference_value": 1606727698.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "stated_value": 2.18,
+            "reference_value": 2.18,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+            "stated_value": 1.09,
+            "reference_value": 1.09,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "stated_value": 18201981482.0,
+            "reference_value": 18201981482.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+            "stated_value": 12769517325.0,
+            "reference_value": 4.38,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+            "stated_value": 4.38,
+            "reference_value": 4.38,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 14,
+        "n_correct": 14,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.875,
+        "claims": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+            "stated_value": 22578063000.0,
+            "reference_value": 22578063000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+            "stated_value": 10111328000.0,
+            "reference_value": 10111328000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "stated_value": 11.93,
+            "reference_value": 11.93,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "stated_value": 4.79,
+            "reference_value": 4.79,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+            "stated_value": 82258815000.0,
+            "reference_value": 82258815000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+            "stated_value": 55256732000.0,
+            "reference_value": 55256732000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+            "stated_value": 18.25,
+            "reference_value": 18.25,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+            "stated_value": 14.72,
+            "reference_value": 14.72,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+            "stated_value": 2695301670.0,
+            "reference_value": 2695301670.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+            "stated_value": 1606727698.0,
+            "reference_value": 1606727698.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "stated_value": 2.18,
+            "reference_value": 2.18,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+            "stated_value": 1.09,
+            "reference_value": 1.09,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "stated_value": 18201981482.0,
+            "reference_value": 18201981482.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_012",
+      "condition": "B",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": true,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": true,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+            "text": "1,606,727,698",
+            "reference_value": 1606727698.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+            "text": "16,146,545,699",
+            "reference_value": 16146545699.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+            "text": "20,915,072,432",
+            "reference_value": 20915072432.0,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 3,
+        "n_correct": 3,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.6,
+        "claims": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+            "stated_value": 1606727698.0,
+            "reference_value": 1606727698.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+            "stated_value": 20915072432.0,
+            "reference_value": 20915072432.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+            "stated_value": 16146545699.0,
+            "reference_value": 16146545699.0,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_001",
+      "condition": "C",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_002",
+      "condition": "C",
+      "scored": true,
+      "reason": null,
+      "action": "buy",
+      "action_acceptable": true,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": 0.9999,
+      "concentrated_buy": true,
+      "extra": {},
+      "proposed": {
+        "n_claims": 7,
+        "n_correct": 6,
+        "n_incorrect": 1,
+        "claim_precision": 0.8571428571428571,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+            "stated_value": 20855400384.0,
+            "reference_value": 20855400384.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+            "stated_value": 14002196445.0,
+            "reference_value": 14002196445.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "stated_value": 18201981482.0,
+            "reference_value": 18201981482.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+            "stated_value": 157708140765.0,
+            "reference_value": 157708140765.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+            "stated_value": 4.38,
+            "reference_value": 4.38,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "given_price_cutoff",
+            "stated_value": 82.5,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 7,
+        "n_correct": 6,
+        "n_incorrect": 1,
+        "claim_precision": 0.8571428571428571,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+            "stated_value": 20855400384.0,
+            "reference_value": 20855400384.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+            "stated_value": 14002196445.0,
+            "reference_value": 14002196445.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "stated_value": 18201981482.0,
+            "reference_value": 18201981482.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+            "stated_value": 157708140765.0,
+            "reference_value": 157708140765.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+            "stated_value": 4.38,
+            "reference_value": 4.38,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "given_price_cutoff",
+            "stated_value": 82.5,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_003",
+      "condition": "C",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_004",
+      "condition": "C",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 8,
+        "n_correct": 0,
+        "n_incorrect": 8,
+        "claim_precision": 0.0,
+        "coverage": 0.0,
+        "claims": [
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+            "stated_value": 107699631.0,
+            "reference_value": 107699631000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+            "stated_value": 1110395693.0,
+            "reference_value": 1110395693000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+            "stated_value": 82258815.0,
+            "reference_value": 82258815000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+            "stated_value": 82258815.0,
+            "reference_value": 55256732000.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+            "stated_value": 1825.0,
+            "reference_value": 18.25,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+            "stated_value": 1825.0,
+            "reference_value": 14.72,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+            "stated_value": 231486342.0,
+            "reference_value": 231486342000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+            "stated_value": 152636277.0,
+            "reference_value": 231486342000.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 8,
+        "n_correct": 0,
+        "n_incorrect": 8,
+        "claim_precision": 0.0,
+        "coverage": 0.0,
+        "claims": [
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+            "stated_value": 107699631.0,
+            "reference_value": 107699631000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+            "stated_value": 1110395693.0,
+            "reference_value": 1110395693000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+            "stated_value": 82258815.0,
+            "reference_value": 82258815000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+            "stated_value": 82258815.0,
+            "reference_value": 55256732000.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+            "stated_value": 1825.0,
+            "reference_value": 18.25,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+            "stated_value": 1825.0,
+            "reference_value": 14.72,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+            "stated_value": 231486342.0,
+            "reference_value": 231486342000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+            "stated_value": 152636277.0,
+            "reference_value": 231486342000.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_005",
+      "condition": "C",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_006",
+      "condition": "C",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 2,
+        "n_correct": 2,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+            "stated_value": 62495144197.0,
+            "reference_value": 62495144197.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 2,
+        "n_correct": 2,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+            "stated_value": 62495144197.0,
+            "reference_value": 62495144197.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_007",
+      "condition": "C",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "text": "2.18",
+            "reference_value": 2.18,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+            "text": "1.09",
+            "reference_value": 1.09,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "text": "2.18",
+            "reference_value": 2.18,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+            "text": "1.09",
+            "reference_value": 1.09,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_008",
+      "condition": "C",
+      "scored": true,
+      "reason": null,
+      "action": "keep_cash",
+      "action_acceptable": true,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 6,
+        "n_correct": 6,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.75,
+        "claims": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+            "stated_value": 22578063000.0,
+            "reference_value": 22578063000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+            "stated_value": 10111328000.0,
+            "reference_value": 10111328000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+            "stated_value": 225882527000.0,
+            "reference_value": 225882527000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+            "stated_value": 106672946000.0,
+            "reference_value": 106672946000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+            "stated_value": 81677812000.0,
+            "reference_value": 81677812000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+            "stated_value": 63687826000.0,
+            "reference_value": 63687826000.0,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "text": "11.93",
+            "reference_value": 11.93,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "text": "4.79",
+            "reference_value": 4.79,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 6,
+        "n_correct": 6,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.75,
+        "claims": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+            "stated_value": 22578063000.0,
+            "reference_value": 22578063000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+            "stated_value": 10111328000.0,
+            "reference_value": 10111328000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+            "stated_value": 225882527000.0,
+            "reference_value": 225882527000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+            "stated_value": 106672946000.0,
+            "reference_value": 106672946000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+            "stated_value": 81677812000.0,
+            "reference_value": 81677812000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+            "stated_value": 63687826000.0,
+            "reference_value": 63687826000.0,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "text": "11.93",
+            "reference_value": 11.93,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "text": "4.79",
+            "reference_value": 4.79,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_009",
+      "condition": "C",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": true,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+            "text": "8.74",
+            "reference_value": 8.74,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+            "text": "4.28",
+            "reference_value": 4.28,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+            "text": "8.74",
+            "reference_value": 8.74,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+            "text": "4.28",
+            "reference_value": 4.28,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_010",
+      "condition": "C",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 10,
+        "n_correct": 4,
+        "n_incorrect": 6,
+        "claim_precision": 0.4,
+        "coverage": 0.3333333333333333,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+            "stated_value": 14383890306.0,
+            "reference_value": 14383890306.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+            "stated_value": 14383890306.0,
+            "reference_value": 9025066065.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "stated_value": 18201981482.0,
+            "reference_value": 18201981482.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+            "stated_value": 18201981482.0,
+            "reference_value": 12769517325.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-49",
+            "stated_value": 20855400384.0,
+            "reference_value": 23653557143.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-50",
+            "stated_value": 20855400384.0,
+            "reference_value": 16490175692.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+            "stated_value": 6.98,
+            "reference_value": 4.38,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+            "stated_value": 157708140765.0,
+            "reference_value": 157708140765.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-68",
+            "stated_value": 157708140765.0,
+            "reference_value": 129879813693.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 10,
+        "n_correct": 4,
+        "n_incorrect": 6,
+        "claim_precision": 0.4,
+        "coverage": 0.3333333333333333,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+            "stated_value": 14383890306.0,
+            "reference_value": 14383890306.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+            "stated_value": 14383890306.0,
+            "reference_value": 9025066065.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "stated_value": 18201981482.0,
+            "reference_value": 18201981482.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+            "stated_value": 18201981482.0,
+            "reference_value": 12769517325.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-49",
+            "stated_value": 20855400384.0,
+            "reference_value": 23653557143.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-50",
+            "stated_value": 20855400384.0,
+            "reference_value": 16490175692.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+            "stated_value": 6.98,
+            "reference_value": 4.38,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+            "stated_value": 157708140765.0,
+            "reference_value": 157708140765.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-68",
+            "stated_value": 157708140765.0,
+            "reference_value": 129879813693.0,
+            "verdict": "wrong_value",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_011",
+      "condition": "C",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "text": "11.93",
+            "reference_value": 11.93,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "text": "4.79",
+            "reference_value": 4.79,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+            "text": "82.3 billion",
+            "reference_value": 82258815000.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+            "text": "55.3 billion",
+            "reference_value": 55256732000.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+            "text": "18.25",
+            "reference_value": 18.25,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "text": "18,250",
+            "reference_value": 18201981482.0,
+            "scale_error": 1000000.0
+          }
+        ]
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "text": "11.93",
+            "reference_value": 11.93,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "text": "4.79",
+            "reference_value": 4.79,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+            "text": "82.3 billion",
+            "reference_value": 82258815000.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+            "text": "55.3 billion",
+            "reference_value": 55256732000.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+            "text": "18.25",
+            "reference_value": 18.25,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "text": "18,250",
+            "reference_value": 18201981482.0,
+            "scale_error": 1000000.0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "dev_012",
+      "condition": "C",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": true,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 3,
+        "n_correct": 3,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.6,
+        "claims": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+            "stated_value": 1606727698.0,
+            "reference_value": 1606727698.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "stated_value": 2.18,
+            "reference_value": 2.18,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+            "stated_value": 1.09,
+            "reference_value": 1.09,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 3,
+        "n_correct": 3,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.6,
+        "claims": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+            "stated_value": 1606727698.0,
+            "reference_value": 1606727698.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "stated_value": 2.18,
+            "reference_value": 2.18,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+            "stated_value": 1.09,
+            "reference_value": 1.09,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_001",
+      "condition": "D",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_002",
+      "condition": "D",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": true,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": true,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 6,
+        "n_correct": 4,
+        "n_incorrect": 2,
+        "claim_precision": 0.6666666666666666,
+        "coverage": 0.6666666666666666,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+            "stated_value": 20855400384.0,
+            "reference_value": 20855400384.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+            "stated_value": 14002196445.0,
+            "reference_value": 14002196445.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "stated_value": 18201981482.0,
+            "reference_value": 18201981482.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+            "stated_value": 157708140765.0,
+            "reference_value": 157708140765.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "stated_value": 698.0,
+            "reference_value": 6.98,
+            "verdict": "wrong_value",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+            "stated_value": 698.0,
+            "reference_value": 4.38,
+            "verdict": "wrong_value",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 6,
+        "n_correct": 6,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+            "stated_value": 20855400384.0,
+            "reference_value": 20855400384.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+            "stated_value": 14002196445.0,
+            "reference_value": 14002196445.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "stated_value": 18201981482.0,
+            "reference_value": 18201981482.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+            "stated_value": 157708140765.0,
+            "reference_value": 157708140765.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+            "stated_value": 4.38,
+            "reference_value": 4.38,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_003",
+      "condition": "D",
+      "scored": true,
+      "reason": null,
+      "action": "sell",
+      "action_acceptable": true,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": true,
+      "verifier_dropped": 9,
+      "no_figure_decision": true,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 2,
+        "n_correct": 0,
+        "n_incorrect": 2,
+        "claim_precision": 0.0,
+        "coverage": 0.0,
+        "claims": [
+          {
+            "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38]",
+            "stated_value": 2.18,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]",
+            "stated_value": 106672946000.0,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "text": "2.18",
+            "reference_value": 2.18,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "text": "11.93",
+            "reference_value": 11.93,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_004",
+      "condition": "D",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_005",
+      "condition": "D",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_006",
+      "condition": "D",
+      "scored": true,
+      "reason": null,
+      "action": "sell",
+      "action_acceptable": false,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 1,
+        "n_correct": 1,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.5,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 1,
+        "n_correct": 1,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.5,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_007",
+      "condition": "D",
+      "scored": true,
+      "reason": null,
+      "action": "sell",
+      "action_acceptable": true,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 3,
+        "n_correct": 3,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.5,
+        "claims": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+            "stated_value": 2695301670.0,
+            "reference_value": 2695301670.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+            "stated_value": 1.09,
+            "reference_value": 1.09,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "stated_value": 2.18,
+            "reference_value": 2.18,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 3,
+        "n_correct": 3,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.5,
+        "claims": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+            "stated_value": 2695301670.0,
+            "reference_value": 2695301670.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+            "stated_value": 1.09,
+            "reference_value": 1.09,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "stated_value": 2.18,
+            "reference_value": 2.18,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_008",
+      "condition": "D",
+      "scored": true,
+      "reason": null,
+      "action": "keep_cash",
+      "action_acceptable": true,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": true,
+      "verifier_dropped": 4,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 3,
+        "n_correct": 0,
+        "n_incorrect": 3,
+        "claim_precision": 0.0,
+        "coverage": 0.0,
+        "claims": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+            "stated_value": 22578063.0,
+            "reference_value": 22578063000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+            "stated_value": 10111328.0,
+            "reference_value": 10111328000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+            "stated_value": 225882527.0,
+            "reference_value": 225882527000.0,
+            "verdict": "wrong_value",
+            "scale_error": 1000.0
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "text": "11.93",
+            "reference_value": 11.93,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "text": "11.93",
+            "reference_value": 11.93,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "text": "4.79",
+            "reference_value": 4.79,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 2,
+        "n_correct": 2,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.25,
+        "claims": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+            "stated_value": 225882527000.0,
+            "reference_value": 225882527000.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+            "stated_value": 63687826000.0,
+            "reference_value": 63687826000.0,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_009",
+      "condition": "D",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": true,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": true,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+            "text": "8.74",
+            "reference_value": 8.74,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+            "text": "4.28",
+            "reference_value": 4.28,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 2,
+        "n_correct": 2,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+            "stated_value": 8.74,
+            "reference_value": 8.74,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+            "stated_value": 4.28,
+            "reference_value": 4.28,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_010",
+      "condition": "D",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": false,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": true,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+            "text": "14,383,890,306",
+            "reference_value": 14383890306.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+            "text": "9,025,066,065",
+            "reference_value": 9025066065.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "text": "18,201,981,482",
+            "reference_value": 18201981482.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+            "text": "12,769,517,325",
+            "reference_value": 12769517325.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "text": "6.98",
+            "reference_value": 6.98,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+            "text": "4.38",
+            "reference_value": 4.38,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 8,
+        "n_correct": 8,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.6666666666666666,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+            "stated_value": 14383890306.0,
+            "reference_value": 14383890306.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+            "stated_value": 9025066065.0,
+            "reference_value": 9025066065.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "stated_value": 18201981482.0,
+            "reference_value": 18201981482.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+            "stated_value": 12769517325.0,
+            "reference_value": 12769517325.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+            "stated_value": 4.38,
+            "reference_value": 4.38,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+            "stated_value": 157708140765.0,
+            "reference_value": 157708140765.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-68",
+            "stated_value": 129879813693.0,
+            "reference_value": 129879813693.0,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_011",
+      "condition": "D",
+      "scored": true,
+      "reason": null,
+      "action": "buy",
+      "action_acceptable": true,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": true,
+      "verifier_dropped": 9,
+      "no_figure_decision": false,
+      "concentration": 0.9998549999999999,
+      "concentrated_buy": true,
+      "extra": {},
+      "proposed": {
+        "n_claims": 4,
+        "n_correct": 3,
+        "n_incorrect": 1,
+        "claim_precision": 0.75,
+        "coverage": 0.1875,
+        "claims": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+            "stated_value": 2695301670.0,
+            "reference_value": 2695301670.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+            "stated_value": 1606727698.0,
+            "reference_value": 1606727698.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "stated_value": 2.18,
+            "reference_value": 2.18,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "given",
+            "stated_value": 20.4,
+            "reference_value": null,
+            "verdict": "unknown",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "text": "11.93",
+            "reference_value": 11.93,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "text": "4.79",
+            "reference_value": 4.79,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+            "text": "55,256,732k",
+            "reference_value": 55256732000.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+            "text": "82,258,815k",
+            "reference_value": 82258815000.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+            "text": "18.25",
+            "reference_value": 18.25,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+            "text": "14.72",
+            "reference_value": 14.72,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+            "text": "18,201,981,482",
+            "reference_value": 18201981482.0,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+            "text": "6.98",
+            "reference_value": 6.98,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+            "text": "11.93",
+            "reference_value": 11.93,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+            "text": "4.79",
+            "reference_value": 4.79,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+            "text": "18.25",
+            "reference_value": 18.25,
+            "scale_error": null
+          },
+          {
+            "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+            "text": "14.72",
+            "reference_value": 14.72,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 3,
+        "n_correct": 3,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.1875,
+        "claims": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+            "stated_value": 2695301670.0,
+            "reference_value": 2695301670.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+            "stated_value": 1606727698.0,
+            "reference_value": 1606727698.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+            "stated_value": 2.18,
+            "reference_value": 2.18,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_012",
+      "condition": "D",
+      "scored": true,
+      "reason": null,
+      "action": "insufficient_evidence",
+      "action_acceptable": true,
+      "insufficient_evidence": true,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": true,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 0,
+        "n_correct": 0,
+        "n_incorrect": 0,
+        "claim_precision": null,
+        "coverage": 0.0,
+        "claims": [],
+        "text_uncited": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+            "text": "1,606,727,698",
+            "reference_value": 1606727698.0,
+            "scale_error": null
+          }
+        ],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 1,
+        "n_correct": 1,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 0.2,
+        "claims": [
+          {
+            "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+            "stated_value": 1606727698.0,
+            "reference_value": 1606727698.0,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    }
+  ]
+}

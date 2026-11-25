@@ -1,0 +1,179 @@
+{
+  "case_id": "dev_010",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The evidence provided contains a systematic data-quality issue that prevents reliable year-over-year profit-growth computation. Every consolidated-income-row presents identical numerical pairs under 'period 2025' and 'period 2024 (Restated)' labels. Specifically: [TMGH-TMGH_FY2025_consolidated_en-p7-57] and [p7-58] show the same pair (14,383,890,306 and 9,025,066,065 LE) for shareholders' profit; [p7-55] and [p7-56] show identical net-profit pairs (18,201,981,482 and 12,769,517,325 LE); [p7-61] and [p7-62] show identical EPS pairs (6.98 and 4.38 LE); and [p5-67]/[p5-68] show identical total-equity pairs. Because the values are duplicated across period labels, no unambiguous figure can be isolated for 2025 versus 2024, making the magnitude of profit growth belonging to Talaat Moustafa's shareholders incalculable from this evidence. Per the rules, all ambiguous figures are listed as unused and no calculations are performed with them.  What is missing is a non-ambiguous, verifiable year-over-year profit figure (or restated comparatives) for shareholders' profit.  Additionally, the investor's portfolio is heavily concentrated in TMGH (500 shares @ 82.50 EGP = ~41,250 EGP, representing ~58% of the ~71,250 EGP total investable assets), while the investor has medium capacity to withstand losses. Any decision to add to the position would need to address this concentration risk, but the primary blocker here is the inability to confirm profit growth from the supplied evidence.  State uncertainty honestly: the reported figures do not support a responsible assessment of whether 2025 profit growth justifies increasing exposure.  This is guidance, not a guarantee of returns.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+      "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+      "TMGH-TMGH_FY2025_consolidated_en-p5-68"
+    ],
+    "limitations": [
+      "Evidence rows contain duplicated value pairs across 2025 and 2024 (Restated) period labels, preventing year-over-year profit-growth derivation. No external data, ratios, or later-period figures may be used. The investor's concentration risk and loss-capacity constraint are noted but secondary to the evidence insufficiency."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The evidence provided for TMGH's consolidated financial statements contains duplicated numerical pairs across the 'period 2025' and 'period 2024 (Restated)' labels for key profit and equity figures. Specifically: [TMGH-TMGH_FY2025_consolidated_en-p7-57]/[p7-58] show identical Shareholders of the Parent Company values; [p7-55]/[p7-56] show identical Net profit for the year values; [p7-61]/[p7-62] show identical EPS pairs (6.98 and 4.38 LE); and [p5-67]/[p5-68] show identical Total equity pairs. Because the same values appear under both period labels, no unambiguous year-over-year comparison can be derived from this evidence. The profit belonging to Shareholders of the Parent Company and the Net profit for the year cannot be reliably isolated for 2025 versus 2024, making the magnitude of profit growth incalculable.  Additionally, the investor's current portfolio holds 500 shares of TMGH at 82.50 EGP each, totaling ~41,250 EGP, which represents approximately 58% of the ~71,250 EGP total investable assets (30,000 EGP cash + 41,250 EGP TMGH holding). Given the investor's medium capacity to withstand losses and a long-term growth horizon, increasing exposure to a single concentrated position without clear visibility on year-over-year profit growth would introduce significant risk. Per the rules, all figures affected by the duplication are listed in unused_figures, and no calculations of profit growth are performed with them. The evidence is insufficient to determine whether 2025 profit growth justifies adding to the TMGH position. This recommendation is guidance only and not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2024 (Restated)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+        "stated_value": 12769517325.0,
+        "statement": "Net profit for the year (consolidated) period 2024 (Restated)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Earnings per Share (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "Earnings per Share (consolidated) period 2024 (Restated)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity period 31 December 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-68",
+        "stated_value": 129879813693.0,
+        "statement": "Total equity period 31 December 2024 (Restated)"
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+      "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+      "TMGH-TMGH_FY2025_consolidated_en-p5-68"
+    ],
+    "limitations": [
+      "Evidence rows contain duplicated value pairs across 2025 and 2024 (Restated) period labels, preventing year-over-year profit-growth derivation. No external data, ratios, or later-period figures may be used. The investor's concentration risk (58% of assets in TMGH) and medium loss-capacity constraint are noted. All figures listed in unused_figures are ambiguous for year-over-year growth calculations due to the duplication issue."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"14,383,890,306\", which is 'Shareholders of the Parent Company (consolidated)' (1.43839e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"9,025,066,065\", which is 'Shareholders of the Parent Company (consolidated)' (9.02507e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"18,201,981,482\", which is 'Net profit for the year (consolidated)' (1.8202e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"12,769,517,325\", which is 'Net profit for the year (consolidated)' (1.27695e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"6.98\", which is 'Earnings per Share (consolidated)' (6.98), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.38\", which is 'Earnings per Share (consolidated)' (4.38), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "**Analysis of TMGH Shareholder Profit Growth (2025 vs 2024) – Evidence-Only Review**\n\n### Relevant Evidence Figures (cited with IDs and values)\n- **[TMGH-TMGH_FY2025_consolidated_en-p7-57]** Shareholders of the Parent Company (consolidated), period 2025: reported as **14,383,890,306 LE** (adjacent column: **9,025,066,065 LE**).  \n- **[TMGH-TMGH_FY2025_consolidated_en-p7-58]** Shareholders of the Parent Company (consolidated), period 2024 (Restated): reported as **14,383,890,306 LE** (adjacent column: **9,025,066,065 LE**).  \n- **[TMGH-TMGH_FY2025_consolidated_en-p7-55]** Net profit for the year (consolidated), period 2025: **18,201,981,482 LE** | period 2024 (Restated): **12,769,517,325 LE**.  \n- **[TMGH-TMGH_FY2025_consolidated_en-p7-56]** Net profit for the year (consolidated), period 2024 (Restated): **18,201,981,482 LE** | **12,769,517,325 LE**.  \n- **[TMGH-TMGH_FY2025_consolidated_en-p7-61]** Earnings per Share (consolidated), period 2025: **6.98 LE** | period 2024 (Restated): **4.38 LE**.  \n- **[TMGH-TMGH_FY2025_consolidated_en-p7-62]** Earnings per Share (consolidated), period 2024 (Restated): **6.98 LE** | **4.38 LE**.  \n- **[TMGH-TMGH_FY2025_consolidated_en-p5-67]** Total equity (consolidated), 31 Dec 2025: **157,708,140,765 LE** | 31 Dec 2024 (Restated): **129,879,813,693 LE**.  \n- **[TMGH-TMGH_FY2025_consolidated_en-p5-68]** Total equity (consolidated), 31 Dec 2024 (Restated): **157,708,140,765 LE** | **129,879,813,693 LE**.\n\n### Ambiguity Flags – Data Quality Concern\nPer instructions, every ambiguous figure is flagged and no computation is performed with them.\n\n- **Flag 1:** [TMGH-TMGH_FY2025_consolidated_en-p7-57] and [TMGH-TMGH_FY2025_consolidated_en-p7-58] print the *identical* pair of values (14,383,890,306 and 9,025,066,065) under labels \"period 2025\" and \"period 2024 (Restated)\" respectively. This prevents identification of year-over-year change in shareholders' profit from these rows.  \n- **Flag 2:** [TMGH-TMGH_FY2025_consolidated_en-p7-55] and [TMGH-TMGH_FY2025_consolidated_en-p7-56] similarly print the identical pair (18,201,981,482 and 12,769,517,325) for both periods, despite different period labels. The net profit growth figure cannot be reliably derived.  \n- **Flag 3:** [TMGH-TMGH_FY2025_consolidated_en-p7-61] and [TMGH-TMGH_FY2025_consolidated_en-p7-62] report the identical EPS pair (6.98 and 4.38 LE) across periods, rendering EPS growth computation ambiguous.  \n- **Flag 4:** [TMGH-TMGH_FY2025_consolidated_en-p5-67] and [TMGH-TMGH_FY2025_consolidated_en-p5-68] exhibit the same structural ambiguity for total equity, though these are balance‑sheet items rather than profit.\n\n**Systematic observation:** Every row in the supplied evidence contains two evidence IDs that reproduce the exact same numerical pair, differentiated only by the period label. This is a data‑quality issue that undermines horizontal period‑over‑period comparison as presented.\n\n### Growth Computability Assessment\nThe evidence does not provide a non‑ambiguous, verifiable year‑over‑year profit figure belonging to Talaat Moustafa's shareholders. Because the reported values for \"Shareholders of the Parent Company,\" \"Net profit for the year,\" and \"Earnings per Share\" are duplicated across the 2025 and 2024 (Restated) period labels, the magnitude of profit growth in 2025 compared with 2024 **cannot be computed from the given evidence**. Any calculated percentage change would be unsupported and potentially misleading.\n\n### Compliance with Constraints\n- Every figure is cited as `[evidence_id]` with its value in whole Egyptian pounds (LE).  \n- All ambiguous figures are flagged; no computations are performed with them.  \n- No action recommendation is provided—the decision agent determines position adjustment.  \n- Only the supplied evidence is used; no external data, ratios, or assumptions are introduced.\n\n**Investor note:** The current portfolio holds 500 TMGH shares at the cutoff price of 82.50 EGP (total market value ~41,250 EGP), with 30,000 EGP cash reserved for emergencies. The analysis above addresses the profit‑growth question solely through the lens of the provided consolidated report evidence.",
+    "investor": "**Investor-Suitability Assessment**\n\n### Profile Match\n- **Goal / Horizon:** The investor’s 5–10 year horizon and long-term growth goal are well-aligned. A multi-year horizon supports riding out market cycles and realizing growth objectives.\n- **Liquidity Needs:** The investor explicitly maintains a separate emergency fund. This indicates that investment capital is distinct from liquidity reserves, which is a sound practice.\n- **Loss Willingness vs. Capacity:** Willingness to accept losses is rated *high*, but the financial ability to withstand losses is *medium*. This mismatch means the investor can psychologically tolerate downturns but should avoid exposure that could materially impair their overall financial stability.\n- **Current Concentration:** The portfolio holds 500 shares of TMGH at the cutoff price of 82.50 EGP, totaling 41,250 EGP, alongside 30,000 EGP cash. The combined portfolio is 71,250 EGP, with approximately 58% allocated to a single security. This represents a high concentration risk, especially given the medium loss-capacity constraint.\n\n### Portfolio Allowances (at cutoff: 2026-11-18)\n- **Salable assets:** The 500 TMGH shares can be sold for ~41,250 EGP.\n- **Free cash:** 30,000 EGP is available, presumed to be in addition to the separately maintained emergency fund.\n- **No other holdings** are listed; cash and TMGH equity constitute the entire disclosed portfolio.\n\n### Reasonable Cash Commitment\nGiven the medium loss-capacity and heavy existing concentration in TMGH, any new commitment should be measured. A conservative approach would limit new investment to a portion of the 30,000 EGP cash that does not further increase single-stock exposure beyond a diversified allocation (e.g., not committing more than 20–30% of total investable assets to one position). The full 30,000 EGP could be committed only if the investor simultaneously diversifies into uncorrelated assets, thereby reducing concentration risk. Given the current 58% TMGH weighting, adding more without diversification would likely be unsuitable under the stated loss-capacity constraint.\n\n### Profit Growth (Belonging to Shareholders)\nPer the provided evidence:\n- Shareholders of the Parent Company (consolidated), period 2025: **14,383,890,306 LE**\n- Shareholders of the Parent Company (consolidated), period 2024 (Restated): **9,025,066,065 LE**\n- Absolute growth: **14,383,890,306 – 9,025,066,065 = 5,358,824,241 LE**\n- Percentage growth: ~59.4% year-over-year\n\n*Note: This figure is reported neutrally from the source evidence. No analysis or recommendation regarding the investment decision is provided.*\n\n### Suitability Summary\nThe investor’s profile supports a long-term, growth-oriented strategy, but the current portfolio is heavily concentrated in one stock with medium loss‑capacity. Any additional commitment to TMGH (or any single position) should be evaluated against diversification needs and the medium loss‑capacity constraint. The existing 30,000 EGP cash can be committed, but doing so while maintaining or increasing single‑stock concentration would likely fall outside the suitability parameters defined by the investor’s risk profile."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 47.086,
+      "input_tokens": 1664,
+      "output_tokens": 6914,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 21.277,
+      "input_tokens": 1658,
+      "output_tokens": 3082,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 28.928,
+      "input_tokens": 4067,
+      "output_tokens": 3363,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 51.184,
+      "input_tokens": 3172,
+      "output_tokens": 8000,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 148.479
+}

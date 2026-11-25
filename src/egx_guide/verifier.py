@@ -41,6 +41,24 @@ _TIMES_UNIT = re.compile(r"\s*[×xX*]\s*1(?:[,\s]?000){1,3}(?!\d)")
 _UNIT_TAG = re.compile(
     r"\s*(?:(?:L\.?\s?E\.?|EGP|ج\.?\s?م\.?)\s*)?\((?=[^)]{0,20}?(?:000|mn|million|thousand|bn|billion|ألف|مليون|مليار))"
     r"[^)]{0,20}\)", re.IGNORECASE)
+# The agent quoting a printed figure with its unit is not a scale error: "printed 82,258,815
+# → 82,258,815,000 EGP", "107,699,631 EGP thousands", "22,578,063 L.E. 000", "from 106,672,946
+# in L.E.(000)". Checked within the same clause after the number, or "printed" just before it.
+_SHOWN_ARROW = re.compile(r"[\s*]*(?:→|⇒|->|=)[\s*]*\d")
+_THOUSANDS_MARK = re.compile(r"\(\s*['’]?0{3}|(?<![\d,])0{3}(?![\d,])|['’]000|thousands?\b|ألف|آلاف", re.IGNORECASE)
+_CLAUSE_END = re.compile(r"[;\n]|\.\s+(?=[A-Z])")  # a sentence end, but not "L.E. (000)"
+_PRINTED_BEFORE = re.compile(r"(?:printed|as printed|مطبوع)[^.;\n]{0,30}$", re.IGNORECASE)
+
+
+def _shows_unit(text: str, start: int, end: int) -> bool:
+    """True if the number at text[start:end] is quoted as printed, with its unit or conversion."""
+    if _SHOWN_ARROW.match(text, end) or _PRINTED_BEFORE.search(text[max(0, start - 40):start]):
+        return True
+    after = text[end:end + 70]
+    stop = _CLAUSE_END.search(after)
+    return bool(_THOUSANDS_MARK.search(after[:stop.start()] if stop else after))
+
+
 _DIGIT_MAP = str.maketrans({**{chr(0x0660 + i): str(i) for i in range(10)},
                             **{chr(0x06F0 + i): str(i) for i in range(10)}, "٫": ".", "٬": "", ",": ""})
 
@@ -146,7 +164,7 @@ def text_findings(text: str, values: dict[str, float], cited: set[str],
             continue
         if t.whole_digits < 4 and not t.scaled:
             continue  # short plain numbers (prices like 82.50, share counts) match by chance
-        if _TIMES_UNIT.match(text, t.end) or _UNIT_TAG.match(text, t.end):
+        if _TIMES_UNIT.match(text, t.end) or _UNIT_TAG.match(text, t.end) or _shows_unit(text, t.start, t.end):
             continue  # the agent is showing the unit arithmetic
         for i, v in values.items():
             if abs(v) < EXACT_BELOW:

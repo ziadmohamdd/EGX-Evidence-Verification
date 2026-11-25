@@ -1,0 +1,175 @@
+{
+  "case_id": "dev_010",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 363,
+    "explanation": "The profit belonging to Talaat Moustafa's own shareholders (\"Shareholders of the Parent Company (consolidated)\") grew from 9,025,066,065 LE in FY2024 (restated) to 14,383,890,306 LE in FY2025, an increase of 5,358,824,241 LE, or approximately 59.38% year‑over‑year growth. This is consistent with the Earnings per Share growth from 4.38 LE to 6.98 LE (per [p7‑61] and [p7‑62]), which also reflects a ~59% increase. At the cutoff price of 82.50 EGP per share, the implied P/E ratio based on 2025 EPS is approximately 11.8x.\n\nThe investor’s profile targets long‑term growth over a 5‑10‑year horizon, has a high willingness to accept losses and a medium ability to withstand them, maintains a separate emergency fund, and currently holds 500 TMGH shares (value ~41,250 EGP) with 30,000 EGP available in cash. The strong, verified growth in shareholder‑attributable profit supports the case for maintaining and increasing exposure to TMGH for the stated growth objective.\n\nGiven the available cash of 30,000 EGP, the investor can purchase up to 363 additional shares at 82.50 EGP each (total cost 29,947.50 EGP), leaving a small cash remainder. This would increase the TMGH holding to 863 shares.\n\n**Key limitations & uncertainties**: The analysis rests solely on the FY2025 consolidated figures provided. No data on the company’s debt position, cash‑flow trends, dividend policy, macro‑economic risks, or sector‑wide valuation multiples is included. The P/E of ~11.8x is derived from the given price and EPS but cannot be fully assessed without comparative benchmarks. All conclusions are based exclusively on the printed evidence; outside knowledge or later events have not been used.",
+    "claims": [
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-57]",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-58]",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2024 (Restated)"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "No figures in the provided evidence are marked AMBIGUOUS; all used values are explicit and verifiable from the source PDFs.",
+      "Decision is based only on FY2025 consolidated data; missing balance‑sheet, cash‑flow, and forward‑guidance information means valuation and risk assessment are partial.",
+      "The \"Shareholders of the Parent Company\" row is interpreted as the profit belonging to own shareholders for the year, consistent with the question’s phrasing and its placement alongside net‑profit and EPS figures on page 7."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 363,
+    "explanation": "[removed: figure could not be verified] [removed: figure could not be verified] At the cutoff price of 82.50 EGP per share, the implied P/E ratio based on 2025 EPS is approximately 11.8x.\n\nThe investor’s profile targets long‑term growth over a 5‑10‑year horizon, has a high willingness to accept losses and a medium ability to withstand them, maintains a separate emergency fund, and currently holds 500 TMGH shares (value ~41,250 EGP) with 30,000 EGP available in cash. The strong, verified growth in shareholder‑attributable profit supports the case for maintaining and increasing exposure to TMGH for the stated growth objective.\n\nGiven the available cash of 30,000 EGP, the investor can purchase up to 363 additional shares at 82.50 EGP each (total cost 29,947.50 EGP), leaving a small cash remainder of 52.50 EGP. This would increase the TMGH holding to 863 shares.\n\n**Key limitations & uncertainties**: The analysis rests solely on the FY2025 consolidated figures provided. No data on the company’s debt position, cash‑flow trends, dividend policy, macro‑economic risks, or sector‑wide valuation multiples is included. The P/E of ~11.8x is derived from the given price and EPS but cannot be fully assessed without comparative benchmarks. All conclusions are based exclusively on the printed evidence; outside knowledge or later events have not been used. This is guidance, not a guarantee of returns.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-57]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-58]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-61]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-62]"
+    ],
+    "limitations": [
+      "No figures in the provided evidence are marked AMBIGUOUS; all used values are explicit and verifiable from the source PDFs.",
+      "Decision is based only on FY2025 consolidated data; missing balance‑sheet, cash‑flow, dividend policy, and macro‑economic risk data means valuation and risk assessment are partial.",
+      "The P/E ratio of ~11.8x is derived from the given price and 2025 EPS but cannot be fully assessed without comparative benchmarks or sector‑wide data.",
+      "The 'Shareholders of the Parent Company' row is interpreted as the profit belonging to own shareholders for the year, consistent with the question's phrasing and its placement alongside net‑profit and EPS figures on page 7.",
+      "These figures could not be verified and were not used: Shareholders of the Parent Company (consolidated), Shareholders of the Parent Company (consolidated), Earnings per Share (consolidated), Earnings per Share (consolidated), [TMGH-TMGH_FY2025_consolidated_en-p7-57], [TMGH-TMGH_FY2025_consolidated_en-p7-58], [TMGH-TMGH_FY2025_consolidated_en-p7-61], [TMGH-TMGH_FY2025_consolidated_en-p7-62]. Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 52.5,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 863
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-57]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-58]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"9,025,066,065\", which is 'Shareholders of the Parent Company (consolidated)' (9.02507e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"14,383,890,306\", which is 'Shareholders of the Parent Company (consolidated)' (1.43839e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.38\", which is 'Earnings per Share (consolidated)' (4.38), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"6.98\", which is 'Earnings per Share (consolidated)' (6.98), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-57]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-58]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-61]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-62]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"9,025,066,065\", which is 'Shareholders of the Parent Company (consolidated)' (9.02507e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"14,383,890,306\", which is 'Shareholders of the Parent Company (consolidated)' (1.43839e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.38\", which is 'Earnings per Share (consolidated)' (4.38), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"6.98\", which is 'Earnings per Share (consolidated)' (6.98), but it is not listed in claims"
+      }
+    ],
+    "dropped": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-57]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-58]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-61]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-62]"
+    ],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 45.748,
+      "input_tokens": 1838,
+      "output_tokens": 7147,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 68.815,
+      "input_tokens": 3088,
+      "output_tokens": 9754,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 114.567
+}

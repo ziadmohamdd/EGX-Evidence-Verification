@@ -1,0 +1,157 @@
+{
+  "case_id": "dev_011",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "COMI",
+    "shares": 625,
+    "explanation": "Investor profile: long‑term growth horizon (7+ years), medium risk tolerance, medium ability to withstand losses, no current holdings, cash = 80,000 EGP. Prices at cutoff: COMI = 128.00 EGP, EFID = 20.40 EGP, ETEL = 141.95 EGP, TMGH = 82.50 EGP.\n\n**Unused figures (AMBIGUOUS)**   - ETEL Net profit for year 2025 (evidence_id ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑35): printed \"22 578 063\" with unit L.E.(000), but the identical string appears for the 2024 period (evidence_id ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑36), making it impossible to distinguish 2024 from 2025.  These figures are excluded from all growth calculations; conclusions involving ETEL net‑profit growth are affected.\n  - ETEL EPS unit listed as L.E.(000) with values 11.93 / 4.79; treated as L.E. per share given the magnitudes, but noted as a unit discrepancy.\n\n**Claims (figures relied upon, in whole base units)**\n  1. EFID Net profit 2025 – EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑30: 2 695 301 670 EGP (unit EGP).\n  2. EFID Net profit 2024 – EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑31: 1 606 727 698 EGP.\n  3. EFID Basic/Diluted EPS 2025 – EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑38: 2.18 EGP per share.\n  4. COMI Net profit 2025 – COMI‑COMI_FY2025_consolidated_condensed_en‑p5‑33: 82 258 815 000 EGP (converted from EGP thousands).\n  5. COMI Net profit 2024 – COMI‑COMI_FY2025_consolidated_condensed_en‑p5‑34: 55 256 732 000 EGP.\n  6. COMI Basic EPS 2025 – COMI‑COMI_FY2025_consolidated_condensed_en‑p5‑39: 18.25 EGP per share.\n  7. TMGH Net profit 2025 – TMGH‑TMGH_FY2025_consolidated_en‑p7‑55: 18 201 981 482 LE (LE = EGP).\n  8. TMGH Net profit 2024 – same PDF row, second column: 12 769 517 325 LE.\n  9. TMGH EPS 2025 – TMGH‑TMGH_FY2025_consolidated_en‑p7‑61: 6.98 LE per share.\n  10. ETEL EPS 2025 – ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑55: 11.93 L.E. per share (unit ambiguity noted).\n\n**Comparison of net‑profit growth (2024→2025) and P/E ratios (price ÷ 2025 EPS)**\n  • **COMI**: Net‑profit growth = (82 258 815 000 − 55 256 732 000) / 55 256 732 000 ≈ +48.9 %. P/E = 128.00 / 18.25 ≈ 7.01.\n  • **EFID**: Net‑profit growth = (2 695 301 670 − 1 606 727 698) / 1 606 727 698 ≈ +67.8 %. P/E = 20.40 / 2.18 ≈ 9.36.\n  • **TMGH**: Net‑profit growth = (18 201 981 482 − 12 769 517 325) / 12 769 517 325 ≈ +42.5 %. P/E = 82.50 / 6.98 ≈ 11.82.\n  • **ETEL**: Net‑profit figures ambiguous (see unused figures); EPS growth available (11.93 / 4.79 ≈ 149 % increase) but P/E = 141.95 / 11.93 ≈ 11.90. Excluded from the growth ranking.\n\n**Ranking summary** (based on reliable data):\n  - Net‑profit growth: EFID (67.8 %) > COMI (48.9 %) > TMGH (42.5 %).\n  - P/E valuation (lower may indicate better entry point): COMI (7.01) < EFID (9.36) < TMGH (11.82) ≈ ETEL (11.90, growth unavailable).\n\n**Recommendation rationale** (using only the evidence and prices given):\n  The investor seeks long‑term growth over 7+ years with medium risk tolerance. COMI offers the most attractive combination of solid net‑profit growth (+48.9 %) and the lowest P/E ratio (7.01) among the three companies with unambiguous figures. A lower P/E provides a margin of safety for capital deployed over a multi‑year horizon, while the growth trajectory supports appreciation. EFID shows the highest growth (+67.8 %) but at a higher multiple (P/E ≈ 9.36), which leaves less room for error if growth moderates. TMGH sits in the middle on both metrics. Given the evidence‑only constraints and the investor's profile, COMI presents the most balanced risk‑return profile for a single‑stock allocation of the 80,000 EGP cash.\n  With 80,000 EGP at 128.00 EGP per share, the investor can purchase 625 shares of COMI (exactly using the full cash amount).\n\n**Uncertainty & risks**: This analysis relies solely on the provided evidence and snapshot prices; it does not incorporate sector dynamics, macro‑economic factors, or future performance. Net‑profit growth is historical and may not persist. EPS and P/E calculations assume the printed units are correctly interpreted (EGP per share for EPS, EGP thousands for COMI net profit). The ambiguous ETEL net‑profit data limits a full four‑company comparison. Past performance is not a guarantee of future returns. Investors should consider diversification and consult a financial adviser.\n",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit 2025, whole EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID Net profit 2024, whole EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID Basic/Diluted EPS 2025, EGP per share"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI Net profit 2025, converted from EGP thousands to whole EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI Net profit 2024, converted from EGP thousands to whole EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "COMI Basic EPS 2025, EGP per share"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH Net profit 2025, whole LE (EGP)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH EPS 2025, LE per share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL EPS 2025, L.E. per share (unit ambiguity noted)"
+      }
+    ],
+    "unused_figures": [
+      "ETEL Net profit 2025 (evidence_id ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35): printed \"22 578 063\" with unit L.E.(000), identical to the 2024 period, making the year assignment ambiguous.",
+      "ETEL Net profit 2024 (evidence_id ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36): same ambiguous printed string, excluded from growth calculations."
+    ],
+    "limitations": [
+      "All figures are derived exclusively from the printed evidence and cutoff prices; no external data or later events are used.",
+      "ETEL net‑profit growth cannot be computed reliably; the company is therefore excluded from the growth ranking.",
+      "EPS unit labels (e.g., L.E.(000) for ETEL, EGP thousands for COMI EPS) contain apparent printing inconsistencies and are interpreted as per‑share amounts in the base currency.",
+      "This is guidance, not a guarantee of returns; market conditions, company‑specific risks, and the investor’s full financial situation should be evaluated independently."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "COMI",
+    "shares": 625,
+    "explanation": "Investor profile: long‑term growth horizon (7+ years), medium risk tolerance, medium ability to withstand losses, no current holdings, cash = 80,000 EGP. Prices at cutoff: COMI = 128.00 EGP, EFID = 20.40 EGP, ETEL = 141.95 EGP, TMGH = 82.50 EGP.\n\n**Unused figures (AMBIGUOUS)**   - ETEL Net profit for year 2025 (evidence_id ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑35): printed \"22 578 063\" with unit L.E.(000), but the identical string appears for the 2024 period (evidence_id ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑36), making it impossible to distinguish 2024 from 2025.  These figures are excluded from all growth calculations; conclusions involving ETEL net‑profit growth are affected.\n  - ETEL EPS unit listed as L.E.(000) with values 11.93 / 4.79; treated as L.E. per share given the magnitudes, but noted as a unit discrepancy.\n\n**Claims (figures relied upon, in whole base units)**\n  1. EFID Net profit 2025 – EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑30: 2 695 301 670 EGP (unit EGP).\n  2. EFID Net profit 2024 – EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑31: 1 606 727 698 EGP.\n  3. EFID Basic/Diluted EPS 2025 – EFID‑EFID_FY2025_EAS_consolidated_signed_en‑p6‑38: 2.18 EGP per share.\n  4. COMI Net profit 2025 – COMI‑COMI_FY2025_consolidated_condensed_en‑p5‑33: 82 258 815 000 EGP (converted from EGP thousands).\n  5. COMI Net profit 2024 – COMI‑COMI_FY2025_consolidated_condensed_en‑p5‑34: 55 256 732 000 EGP.\n  6. COMI Basic EPS 2025 – COMI‑COMI_FY2025_consolidated_condensed_en‑p5‑39: 18.25 EGP per share.\n  7. TMGH Net profit 2025 – TMGH‑TMGH_FY2025_consolidated_en‑p7‑55: 18 201 981 482 LE (LE = EGP).\n  8. TMGH Net profit 2024 – same PDF row, second column: 12 769 517 325 LE.\n  9. TMGH EPS 2025 – TMGH‑TMGH_FY2025_consolidated_en‑p7‑61: 6.98 LE per share.\n  10. ETEL EPS 2025 – ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑55: 11.93 L.E. per share (unit ambiguity noted).\n\n**Comparison of net‑profit growth (2024→2025) and P/E ratios (price ÷ 2025 EPS)**\n  • **COMI**: Net‑profit growth = (82 258 815 000 − 55 256 732 000) / 55 256 732 000 ≈ +48.9 %. P/E = 128.00 / 18.25 ≈ 7.01.\n  • **EFID**: Net‑profit growth = (2 695 301 670 − 1 606 727 698) / 1 606 727 698 ≈ +67.8 %. P/E = 20.40 / 2.18 ≈ 9.36.\n  • **TMGH**: Net‑profit growth = (18 201 981 482 − 12 769 517 325) / 12 769 517 325 ≈ +42.5 %. P/E = 82.50 / 6.98 ≈ 11.82.\n  • **ETEL**: Net‑profit figures ambiguous (see unused figures); EPS growth available (11.93 / 4.79 ≈ 149 % increase) but P/E = 141.95 / 11.93 ≈ 11.90. Excluded from the growth ranking.\n\n**Ranking summary** (based on reliable data):\n  - Net‑profit growth: EFID (67.8 %) > COMI (48.9 %) > TMGH (42.5 %).\n  - P/E valuation (lower may indicate better entry point): COMI (7.01) < EFID (9.36) < TMGH (11.82) ≈ ETEL (11.90, growth unavailable).\n\n**Recommendation rationale** (using only the evidence and prices given):\n  The investor seeks long‑term growth over 7+ years with medium risk tolerance. COMI offers the most attractive combination of solid net‑profit growth (+48.9 %) and the lowest P/E ratio (7.01) among the three companies with unambiguous figures. A lower P/E provides a margin of safety for capital deployed over a multi‑year horizon, while the growth trajectory supports appreciation. EFID shows the highest growth (+67.8 %) but at a higher multiple (P/E ≈ 9.36), which leaves less room for error if growth moderates. TMGH sits in the middle on both metrics. Given the evidence‑only constraints and the investor's profile, COMI presents the most balanced risk‑return profile for a single‑stock allocation of the 80,000 EGP cash.\n  With 80,000 EGP at 128.00 EGP per share, the investor can purchase 625 shares of COMI (exactly using the full cash amount).\n\n**Uncertainty & risks**: This analysis relies solely on the provided evidence and snapshot prices; it does not incorporate sector dynamics, macro‑economic factors, or future performance. Net‑profit growth is historical and may not persist. EPS and P/E calculations assume the printed units are correctly interpreted (EGP per share for EPS, EGP thousands for COMI net profit). The ambiguous ETEL net‑profit data limits a full four‑company comparison. Past performance is not a guarantee of future returns. Investors should consider diversification and consult a financial adviser.\n",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit 2025, whole EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID Net profit 2024, whole EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID Basic/Diluted EPS 2025, EGP per share"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI Net profit 2025, converted from EGP thousands to whole EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI Net profit 2024, converted from EGP thousands to whole EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "COMI Basic EPS 2025, EGP per share"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH Net profit 2025, whole LE (EGP)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH EPS 2025, LE per share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL EPS 2025, L.E. per share (unit ambiguity noted)"
+      }
+    ],
+    "unused_figures": [
+      "ETEL Net profit 2025 (evidence_id ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35): printed \"22 578 063\" with unit L.E.(000), identical to the 2024 period, making the year assignment ambiguous.",
+      "ETEL Net profit 2024 (evidence_id ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36): same ambiguous printed string, excluded from growth calculations."
+    ],
+    "limitations": [
+      "All figures are derived exclusively from the printed evidence and cutoff prices; no external data or later events are used.",
+      "ETEL net‑profit growth cannot be computed reliably; the company is therefore excluded from the growth ranking.",
+      "EPS unit labels (e.g., L.E.(000) for ETEL, EGP thousands for COMI EPS) contain apparent printing inconsistencies and are interpreted as per‑share amounts in the base currency.",
+      "This is guidance, not a guarantee of returns; market conditions, company‑specific risks, and the investor’s full financial situation should be evaluated independently."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 0.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 625
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 801.263,
+      "input_tokens": 2363,
+      "output_tokens": 19313,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 801.267
+}

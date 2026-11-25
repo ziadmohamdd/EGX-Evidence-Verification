@@ -6,15 +6,22 @@ Evaluating evidence verification in multi-agent investment recommendations using
 
 ## At a glance
 
-| | Gemini 3.5 Flash | Nemotron Lightning |
+| | Gemini 3.5 Flash (Part 1) | Nemotron Lightning, full length (Part 8) |
 |---|---|---|
+| Figures shown to the agents | already in pounds | as printed (agents apply the unit) |
 | Cases × conditions | 7 × 4 = 28 runs | 12 × 4 = 48 runs |
-| Figures cited | 130 | 76 |
-| Wrong figures before the verifier | 0 | 2 (1 in A, 1 in B) |
-| Verifier catches | 0 | 3 (in B: 1 bad ID, then 2 scale errors) |
-| Wrong figures in final answers | 0 | 1 (in A, which has no verifier) |
+| Figures cited in final answers | 130 | 146 |
+| Wrong figures in first drafts, with verifier (B / D) | 0 / 0 | 33% / 42% |
+| Wrong figures in final answers, with verifier (B / D) | 0 / 0 | 0 / 0 |
+| Wrong figures in final answers, without verifier (A / C) | 0 / 0 | 11 / 15 |
+| Uncited figures in the text (A / B / C / D) | 0 / 0 / 0 / 0 | 17 / 0 / 11 / 0 |
+| Acceptable action (A / B / C / D) | 86% / 100% / 71% / 86% | 42% / 50% / 33% / 58% |
+| Buys leaving over half the portfolio in one stock | 8 | 6 |
 
-On the 5 harder cases (Part 5): Gemini cited 105 figures with 0 wrong (16 of 20 runs; its C ran out of free quota); Nemotron cited 35 with 1 wrong (in A). The verifier caught nothing on these cases for either model.
+- **Gemini** copies every figure correctly when the figures are already in pounds, so the verifier has nothing to catch. Its run with the printed figures is next.
+- **Nemotron**, given the printed figures and room to write, gets a quarter to two fifths of its first-draft figures wrong (units, wrong year column, made-up IDs). The verifier stops all of them; without it, 26 wrong figures reach the investor. Nemotron is also very cautious: it chooses "insufficient evidence" in most cases.
+- **Both models** often put nearly all the investor's cash into one stock (Part 8, section 5).
+- **Parts 4–7** used Nemotron answers cut at 1,024 characters by NVIDIA's service. They are kept for the record; Part 8 replaces their Nemotron results.
 
 ## Contents
 
@@ -23,6 +30,9 @@ On the 5 harder cases (Part 5): Gemini cited 105 figures with 0 wrong (16 of 20 
 3. [Five harder cases added to test the verifier](#part-3-five-harder-cases-added-24-november-2026)
 4. [Second model: Nemotron Lightning on all 12 cases](#part-4-second-model-nemotron-lightning-on-all-12-cases-24-november-2026)
 5. [The 5 harder cases: Gemini vs Nemotron](#part-5-the-5-harder-cases-gemini-vs-nemotron-25-november-2026)
+6. [Printed figures on Nemotron](#part-6-printed-figures-view-on-nemotron-25-november-2026)
+7. [The fixed verifier on Nemotron](#part-7-fixed-verifier-on-nemotron-printed-view-25-november-2026)
+8. [New measures, the hold rule, and full-length Nemotron answers](#part-8-new-measures-the-hold-rule-and-full-length-nemotron-answers-25-november-2026)
 
 The same report as a PDF is built locally and not kept on GitHub. The parts also exist as separate files in this folder.
 
@@ -389,6 +399,8 @@ In the first run, the agents copied every figure correctly, so the verifier neve
 
 ## Part 4: Second model: Nemotron Lightning on all 12 cases, 24 November 2026
 
+> **Note added 25 November:** the Nemotron answers in this part had their explanations cut at 1,024 characters by NVIDIA's service, so figures in the text are undercounted here. See the full-length rerun in `full_length_nemotron_2026-11-25.md` (Part 8 of the combined report), which replaces these Nemotron results.
+
 Run folder: `runs/20261124T095853Z`. Model: `nvidia/nemotron-3.5-lightning-30b-a3b`, free through NVIDIA's API, temperature 0, no backup models. It ran all 12 practice cases (the first 7 plus the 5 harder ones) under all four conditions: **48 runs, no failures**. This is a development run; the reference values are still the report reader's own, not hand-checked.
 
 Why a second model: `gemini-3.5-flash` copied every figure correctly in every run, so the verifier never had anything to catch. Nemotron Lightning is a smaller, weaker model, and it did make figure mistakes.
@@ -469,6 +481,8 @@ All four conditions chose acceptable actions in 9 of 12 cases (75%), against 71�
 
 ## Part 5: The 5 harder cases: Gemini vs Nemotron, 25 November 2026
 
+> **Note added 25 November:** the Nemotron answers in this part had their explanations cut at 1,024 characters by NVIDIA's service, so figures in the text are undercounted here. See the full-length rerun in `full_length_nemotron_2026-11-25.md` (Part 8 of the combined report), which replaces these Nemotron results.
+
 The 5 harder cases (dev_008 to dev_012) were built to tempt the agents into the figure mistakes the verifier exists to catch. This file compares the two free models on them.
 
 | | Gemini 3.5 Flash | Nemotron Lightning |
@@ -537,3 +551,252 @@ No condition of either model used the unreadable 2025 profit. All said "insuffic
 3. **The differences between the models are coverage and evidence, not accuracy.** Gemini cites 83–85% of the usable figures; Nemotron cites 7–32%. A weak model rarely states wrong numbers; it just states fewer numbers.
 4. **Scoring blind spot:** a buy of almost all the investor's cash into one stock they already hold (Gemini B, dev_008) scores as acceptable, because only the type of action is checked. A size or concentration check in the scoring would catch this.
 5. **For the paper:** to show a verifier effect, the experiment probably needs either many more cases, or a setting where figures are less pre-digested. Right now the agents get every value already in whole pounds next to its printed line, which makes copying easy.
+
+---
+
+## Part 6: Printed-figures view on Nemotron, 25 November 2026
+
+> **Note added 25 November:** the Nemotron answers in this part had their explanations cut at 1,024 characters by NVIDIA's service, so figures in the text are undercounted here. See the full-length rerun in `full_length_nemotron_2026-11-25.md` (Part 8 of the combined report), which replaces these Nemotron results.
+
+This run tests whether the agents make more figure mistakes when they have to read the figures themselves. In the original setup ("converted view"), each figure is shown already converted to whole pounds next to its printed line, so the agents only copy it. In the new **printed view** (`--evidence-view printed`), they see only the line as printed in the report and the page's unit (for example "L.E. (000)"). They must pick the right column and apply the unit themselves. The verifier and the scorer still compare against the converted value.
+
+| | Converted view | Printed view |
+|---|---|---|
+| Run folder | `runs/20261124T095853Z` | `runs/20261125T084108Z` |
+| Model | Nemotron 3.5 Lightning (NVIDIA free) | same |
+| Cases | all 12 (dev_001–012), A–D | same |
+| Runs that worked | 48 of 48 | 48 of 48 |
+
+Reference values are still the reader's own, not hand-checked.
+
+### Results
+
+| | A conv. | A printed | B conv. | B printed | C conv. | C printed | D conv. | D printed |
+|---|---|---|---|---|---|---|---|---|
+| Figures in final answers | 24 | 23 | 16 | 10 | 24 | 15 | 12 | 15 |
+| Wrong figures before the verifier | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 0 |
+| Wrong figures in the final answer | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| Coverage of usable figures | 27% | 30% | 22% | 20% | 37% | 17% | 11% | 22% |
+| Acceptable action | 9 of 12 | 8 of 12 | 9 of 12 | 10 of 12 | 9 of 12 | 8 of 12 | 9 of 12 | 6 of 12 |
+| Verifier revisions | – | – | 1 | 1 | – | – | 0 | 0 |
+
+A = single agent, B = single agent + verifier, C = team, D = team + verifier.
+
+### What happened
+
+**1. Nemotron applied the units correctly.** Of the 77 correct figures it proposed in the printed view, 40 needed a unit conversion (for example thousands to pounds) and it got every one right. There were **no scale errors** in the printed view. Making the agents read the printed figures didn't produce the mistakes we hoped the verifier would catch.
+
+**2. The two wrong figures were citation mix-ups, not unit errors.**
+- **B, dev_011:** it put Talaat Moustafa's net profit (12,769,517,325) under the ID of Talaat Moustafa's earnings per share (4.38 EGP). **The verifier caught it** ("value_mismatch") and asked for one revision.
+- **C, dev_011:** it cited the EFID share price under an ID it made up (`given_price_EFID`). C has no verifier, so this stayed in the final answer.
+
+**3. A loophole in the verifier (important).** In B, dev_011, the revision fixed the problem by removing **all 16 figures** from the `claims` list, so the verifier found nothing left to check and passed it. But the written explanation still states the figures: "ETEL 123% (2025 EGP 22,578,063,000 vs 2024 EGP 10,111,328,000)", P/E values, and so on. The verifier only checks figures listed in `claims`, not numbers written in the text. A weak model can "pass" the verifier by citing nothing. The figures in this text happen to be right, but nothing checked them.
+
+**4. Fewer figures and more refusals.** In the printed view Nemotron cited fewer figures in B and C and chose "insufficient evidence" more often. D fell to 6 of 12 acceptable actions: it refused on normal cases like dev_001, dev_004 and dev_007, where a buy, hold or sell was expected.
+
+**5. The old problem repeats.** In A and B on dev_003, it answered "hold" with no ticker, the portfolio check blocked it, and the answer became "insufficient evidence". The same thing happened in the converted view.
+
+### What this means
+
+- For Nemotron, the printed view **didn't create unit or column mistakes**. Reading the figures was not the hard part; deciding what to cite was.
+- The verifier caught one real mistake (B, dev_011), its second catch so far after B, dev_003 in the converted view.
+- **The verifier needs two fixes before the final runs:**
+  1. Check numbers written in the explanation, not only the `claims` list. Any number in the text that matches no cited claim is flagged.
+  2. Count a revision that removes all figures as a drop, so "cite nothing" doesn't count as a fix.
+- The scoring should also report "decisions with no figures cited" (already on the list): Nemotron's printed-view D gave 7 of 12 answers with no figures at all.
+- Gemini's run on the printed view comes next, as the free quota allows. It will show whether a stronger model makes unit mistakes when reading the printed figures.
+
+---
+
+## Part 7: Fixed verifier on Nemotron (printed view), 25 November 2026
+
+> **Note added 25 November:** the Nemotron answers in this part had their explanations cut at 1,024 characters by NVIDIA's service, so figures in the text are undercounted here. See the full-length rerun in `full_length_nemotron_2026-11-25.md` (Part 8 of the combined report), which replaces these Nemotron results.
+
+The first run with the printed figures (`runs/20261125T084108Z`, see `printed_view_nemotron_2026-11-25.md`) showed a loophole: the verifier only checked the figures in the `claims` list. A revision could remove every claim and still state the figures in the explanation, and nothing checked them.
+
+### What changed in the verifier (commit 64180bf)
+
+- **It also checks the figures written in the explanation.**
+  - **Uncited figure:** the text states a number that matches an evidence figure, but that figure isn't in `claims`.
+  - **Text scale mismatch:** the text states a number that matches an evidence figure only at the wrong scale (×1,000, ×1,000,000 or ×1,000,000,000).
+  - Rounding is allowed (0.5%), so "22.6 billion" counts as 22,578,063,000.
+  - Arabic digits, Arabic scale words (مليار, مليون) and numbers like 1.6e9 are read.
+- **Some numbers aren't treated as evidence figures:**
+  - percentages;
+  - numbers under 1,000,000, which must match exactly, so a P/E of 11.9 isn't mistaken for an EPS of 11.93;
+  - short plain numbers in the scale check, such as a 82.50 EGP share price;
+  - the agent showing its unit arithmetic ("22,578,063 × 1,000 = 22,578,063,000"). This last one was added after this run, because it caused one false alarm here.
+- **If a figure still fails after the one revision,** the sentence that states it is replaced with "[removed: figure could not be verified]" and listed as a limitation.
+- **Figures cited before the revision but not after are recorded as withdrawn.** The scorer counts them as dropped, so citing nothing no longer counts as a fix.
+
+Before the rerun, the new check was replayed on answers already collected, with no model calls:
+- **Gemini:** 0 of 44 answers would have been flagged. Gemini cites every figure it writes.
+- **Nemotron:** 27 of 48 answers (converted view) and 16 of 48 (printed view) would have been flagged.
+
+### The rerun
+
+Same setup as the first printed-view run (Nemotron 3.5 Lightning, NVIDIA free, 12 cases × A–D, printed view), with the fixed verifier: `runs/20261125T110056Z`, 48 of 48 runs worked.
+
+| | A | B | C | D |
+|---|---|---|---|---|
+| Cited figures in final answers | 14 | 28 | 19 | 12 |
+| Wrong cited figures in final answers | 0 | 0 | 2 | 0 |
+| **Uncited evidence figures in the final text** | **6** (in 5 answers) | **0** | **17** (in 6 answers) | **0** |
+| Uncited figures in the text before the verifier | 11 | 24 | 17 | 9 |
+| Answers the verifier sent back for revision | – | 6 of 12 | – | 4 of 12 |
+| Answers with figures removed after the revision | – | 2 | – | 1 |
+| Coverage of usable figures | 17% | 29% | 23% | 16% |
+| Acceptable action | 9 of 12 | 10 of 12 | 7 of 12 | 7 of 12 |
+
+A = single agent, B = single agent + verifier, C = team, D = team + verifier. Reference values are still the reader's own, not hand-checked. Different runs of the same model give somewhat different answers, so small differences between runs (for example in acceptable actions) are not meaningful on 12 cases.
+
+### What the verifier did
+
+**1. It made the agents cite what they write.** The single agent (B) first wrote 24 evidence figures without citing them, and the team (D) wrote 9. After the verifier, both final answers have none, because the revisions added the missing claims. That's why B cites twice as many figures as A (28 vs 14) and has the highest coverage. Without a verifier, A and C still reach the investor with 6 and 17 unchecked figures.
+
+**2. It caught the per-share trap, its first catch of a real unit error.** In B, dev_011, the agent applied the "EGP thousands" unit to earnings per share. It wrote CIB's EPS as 18,250 EGP instead of 18.25, and Telecom Egypt's as 11,930 instead of 11.93, which gave P/E ratios of 0.007 and 0.012. The verifier flagged it. The revision still got it wrong, so those figures were removed, and the final answer (buy EFID) has 6 cited figures, all correct.
+
+**3. It removed a made-up evidence ID** (B, dev_007).
+
+**4. Without a verifier, the team made two citation mistakes that reached the final answer:**
+- **C, dev_011:** the EFID share price was cited under a made-up ID.
+- **C, dev_012:** EFID's 2025 profit (2,695,301,670) was cited under the ID of the 2024 profit, which is the wrong period.
+
+**5. One false alarm, now fixed.** In B, dev_008, the agent showed its arithmetic ("22,578,063 × 1,000 L.E. = 22,578,063,000"), and the check read "22,578,063" as a scale error. The only cost was one extra revision. The check now ignores a number followed by "× 1,000"; the change is in the code and has tests.
+
+**6. Unit handling:** 39 of the correct cited figures needed a unit conversion, and all 39 were right. The only unit error was the per-share one in point 2.
+
+### Still open
+
+- **The scoring counts only cited figures.** Uncited figures in the text are counted here by a separate script (`check_text`), not by `egx_guide.score`. For the paper, "wrong or unchecked figures reaching the investor" should include them. The next step is to add this to the scorer.
+- **"Hold" with no company** (dev_003) is still blocked by the portfolio check in A, B and C. It's a prompt issue, not a verifier issue.
+- **Gemini's printed-view run** with this verifier comes next, as the free quota allows.
+
+---
+
+## Part 8: New measures, the hold rule, and full-length Nemotron answers (25 November 2026)
+
+This part covers four things done on 25 November:
+- new measures in the scoring;
+- a prompt rule for "hold";
+- a fault found in every earlier Nemotron run: its explanations were cut at 1,024 characters;
+- a full rerun of Nemotron with that fault fixed.
+
+The full-length rerun (`runs/20261125T141730Z`) replaces the earlier Nemotron runs as Nemotron's result.
+
+### 1. New measures in the scoring
+
+Until now the scoring only checked the figures listed in `claims` and the type of action. Four measures were added (commit e0f90fd):
+
+- **Uncited figures in the text:** the explanation states a figure from the evidence, but it isn't in `claims`. The investor reads it, but nothing checked it.
+- **Wrong-scale figures in the text:** the explanation states a number that matches an evidence figure only at ×1,000, ×1,000,000 or ×1,000,000,000.
+  - Quoting the printed number with its unit, as in "printed 82,258,815 → 82,258,815,000 EGP" or "107,699,631 EGP thousands", is not counted. That is the agent showing its work.
+- **Decisions citing no figure:** a buy, sell or hold that cites no figure at all. "Insufficient evidence" and "keep cash" don't count.
+- **Buys over 50% in one stock:** after the buy, more than half the investor's portfolio is in that company, at the case prices.
+
+All runs were rescored with these measures (table in section 6).
+
+### 2. The hold rule
+
+In earlier runs, the agents sometimes chose "hold" for a company the investor didn't own. The portfolio check then blocked the answer (dev_003 in A, B and C). The agents' rules now say:
+
+> hold means keeping a stock the investor already owns: set `ticker` to that company. If they own none of the companies discussed, do not choose hold.
+
+Rerun with the rule (`runs/20261125T124422Z`): **no answer was blocked** in any condition. dev_003 now gets "hold ETEL" (an owned stock) in A and B and "sell EFID" in C and D.
+
+### 3. The fault: Nemotron's explanations were cut at 1,024 characters
+
+While checking the hold-rule run, one explanation was found to end in the middle of a number ("ETEL operating revenues 106,672,"). It was exactly 1,024 characters long. So were 226 others across all the Nemotron runs (first drafts and final answers); in the hold-rule run, 22 of the 48 final answers were cut.
+
+- **Cause:** NVIDIA's service. In function-calling mode (how the program asked for a structured answer), it cuts every text field at 1,024 characters. A test with a requested 2,500-character essay came back at exactly 1,024. The same request in NVIDIA's json_schema mode came back complete (4,159 characters).
+- **Gemini was not affected.** No Gemini answer is cut.
+- **Fix (commit 9c02dba):** Nemotron now uses json_schema mode, and the run manifest records which mode was used.
+- **Cost of the fix:** in this mode Nemotron reasons much longer before answering. A model call now writes about 8,000 tokens on average instead of about 4,300, and takes about 2.3 minutes instead of about 40 seconds. The full run took about 1¾ hours with the four conditions running side by side, still free.
+- **Dropped connections:** 4 answers (one per condition) lost their connection after 17–19 minutes. A new `--resume` option reran just those answers in the same run folder, so all 48 finished.
+
+**What this means for the earlier results:** Parts 4–7 report Nemotron runs with cut explanations. Their figure counts in the text are too low, and the conclusion "no unit errors with the printed figures" (Part 6) does not hold for full-length answers (section 4).
+
+### 4. Full-length Nemotron run
+
+Same setup as Part 7: Nemotron 3.5 Lightning, NVIDIA free, 12 cases × A–D, printed figures, fixed verifier, plus the hold rule. Run `runs/20261125T141730Z`, 48 of 48 answers.
+
+| | A | B | C | D |
+|---|---|---|---|---|
+| Figures cited in final answers | 46 | 38 | 36 | 26 |
+| Wrong cited figures in final answers | **11 (24%)** | **0** | **15 (42%)** | **0** |
+| Wrong cited figures before the verifier | 24% | 33% | 42% | 42% |
+| Answers with at least one wrong figure | 3 of 12 | 0 | 3 of 12 | 0 |
+| Uncited evidence figures in the final text | 17 | 0 | 11 | 0 |
+| Wrong-scale figures in the final text | 1 | 0 | 1 | 0 |
+| Coverage of usable figures | 37% | 48% | 31% | 36% |
+| Answers sent back by the verifier | – | 9 of 12 | – | 7 of 12 |
+| Acceptable action | 5 of 12 | 6 of 12 | 4 of 12 | 7 of 12 |
+| "Insufficient evidence" chosen | 10 of 12 | 9 of 12 | 10 of 12 | 7 of 12 |
+| Buys over 50% in one stock | 2 | 2 | 1 | 1 |
+
+A = single agent, B = single agent + verifier, C = team, D = team + verifier. Reference values are still the reader's own, not hand-checked.
+
+#### The figure mistakes
+
+With room to write, Nemotron cites two to three times as many figures as before, and gets many wrong:
+- **Forgetting the unit (×1,000):** the printed number copied as pounds, for example CIB's net interest income given as 107,699,631 EGP instead of 107,699,631,000 (the page is in thousands). There were 17 such figures in the first drafts across the four conditions (A 4, B 6, C 4, D 3).
+- **The wrong year's column:** a row printed with 2025 and 2024 side by side, and the 2025 value cited as 2024. For example, Talaat Moustafa's 2024 profit was given as 18,201,981,482 (the 2025 figure), and 2024 EPS as 6.98 instead of 4.38.
+- **Per-share figures scaled wrongly:** CIB's EPS of 18.25 given as 1,825.
+- **Made-up evidence IDs**, and **one figure marked unreadable used anyway** (A).
+
+#### What the verifier did
+
+1. **No wrong figure reached the investor with the verifier.** 33% of B's first-draft figures and 42% of D's were wrong, and 0% of their final ones. Without a verifier, A and C passed on 11 and 15 wrong figures.
+2. **No unchecked figures in the text with the verifier.** B's first drafts had 33 uncited evidence figures in the text, and D's 26. The final answers have none. A and C still show 17 and 11.
+3. **It often had to remove text rather than fix it.** Nemotron's single revision often didn't add the missing claims, so the verifier removed the sentences:
+   - B: 14 sentences removed in 4 answers;
+   - D: 17 sentences removed in 3 answers.
+
+   Some of these removals came from false alarms (point 4).
+4. **False alarms, now fixed.** During the run, the scale check still flagged numbers the agent quoted with their unit ("22,578,063 L.E. (000) = 22,578,063,000"). In B dev_008 and D dev_008, this led to correct sentences being removed. The check now treats a number as quoted, not wrong, if any of these hold:
+   - the unit follows it in the same clause;
+   - an arrow or "=" leads to the converted value;
+   - "printed" comes just before it.
+
+   It has tests built from these real sentences. On rescoring, 18 of the 20 scale flags in the final texts went away. The 2 left are also quotes: in one, the agent itself rejects the ×1,000 reading of EPS as "unrealistic".
+
+#### The cost: very cautious decisions
+
+In this mode Nemotron chooses "insufficient evidence" in 7–10 of 12 answers per condition, often where a decision was expected. So acceptable actions fall to 33–58%, from 50–92% in the cut runs.
+- **This is the model's own caution, not the verifier's.** The verifier changed the action in only one answer (B dev_001, hold → insufficient evidence). A and C, which have no verifier, are the most cautious.
+- **It counts against Nemotron as the decision-maker for the paper.** With room to reason and write, it cites more figures and also refuses more often.
+
+### 5. Concentration: buys that put almost everything into one stock
+
+The new concentration measure shows something the action check could not see. Both models often spend all the investor's free cash on one company, leaving 99–100% of the portfolio in it:
+- **Gemini:** 6 of its 12 single-agent (A) answers across both Gemini runs.
+- **Nemotron:** 1–3 per condition in most runs.
+
+The prompt rules only say a buy must fit the available cash; they say nothing about how much should go into one stock. For the paper, this is a second finding, separate from the figures: the guide's decisions need a diversification rule, and the evaluation needs this measure.
+
+### 6. All runs rescored with the new measures
+
+Cells give A / B / C / D. "Cut" marks runs whose Nemotron explanations stopped at 1,024 characters.
+
+| Run | Figures cited | Wrong cited figures | Uncited figures in text | Wrong-scale figures in text | Acceptable action | Buys >50% in one stock |
+|---|---|---|---|---|---|---|
+| Gemini, 7 cases, figures in pounds | 34 / 31 / 32 / 33 | 0 / 0 / 0 / 0 | 0 / 0 / 0 / 0 | 0 / 0 / 0 / 0 | 86% / 100% / 71% / 86% | 3 / 3 / 1 / 1 |
+| Gemini, 5 harder cases, figures in pounds | 33 / 36 / 2 / 34 | 0 / 0 / 0 / 0 | 0 / 0 / 0 / 0 | 0 / 0 / 0 / 0 | 100% / 100% / 100% / 100% | 3 / 2 / 0 / 1 |
+| Nemotron, figures in pounds (cut) | 24 / 16 / 24 / 12 | 1 / 0 / 0 / 0 | 16 / 14 / 12 / 15 | 0 / 0 / 0 / 0 | 75% / 75% / 75% / 75% | 3 / 3 / 2 / 1 |
+| Nemotron, printed, old verifier (cut) | 23 / 10 / 15 / 15 | 0 / 0 / 1 / 0 | 4 / 20 / 3 / 5 | 0 / 0 / 0 / 0 | 67% / 83% / 67% / 50% | 3 / 3 / 2 / 2 |
+| Nemotron, printed, fixed verifier (cut) | 14 / 28 / 19 / 12 | 0 / 0 / 2 / 0 | 6 / 0 / 17 / 0 | 0 / 0 / 0 / 0 | 75% / 83% / 58% / 58% | 2 / 3 / 2 / 2 |
+| Nemotron, printed, hold rule (cut) | 20 / 25 / 21 / 10 | 3 / 0 / 5 / 0 | 24 / 0 / 5 / 0 | 0 / 0 / 1 / 0 | 92% / 83% / 67% / 50% | 5 / 3 / 2 / 2 |
+| **Nemotron, printed, full length** | 46 / 38 / 36 / 26 | **11 / 0 / 15 / 0** | **17 / 0 / 11 / 0** | 1 / 0 / 1 / 0 | 42% / 50% / 33% / 58% | 2 / 2 / 1 / 1 |
+
+Gemini's C on the harder cases has only 1 scored answer; the free quota ran out.
+
+### 7. Where this leaves the study
+
+- **The verifier now has clear work to do, on Nemotron.** With full-length answers and the printed figures, a quarter to two fifths of Nemotron's first-draft figures are wrong (24–42% by condition). The verifier stopped all of them, in both the single agent (B) and the team (D). This is the main comparison the paper needs (A vs B, C vs D), although on a weaker model and only 12 cases.
+- **Gemini still makes no figure mistakes** on the figures already in pounds. Its run with the printed figures (next, as the free quota allows) is the test of whether a stronger model also falls into the unit traps.
+- **Nemotron is a poor decision-maker in this mode.** It is too cautious. If it stays in the study, it is best as a second model for the figure results, not for the decision results.
+- **Still open:**
+  - hand-checked reference values;
+  - the 30 test cases;
+  - freezing the prompts;
+  - a rule on how much to put into one stock (section 5), to decide before the prompts are frozen.

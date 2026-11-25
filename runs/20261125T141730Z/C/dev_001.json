@@ -1,0 +1,100 @@
+{
+  "case_id": "dev_001",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "Recommendation: insufficient_evidence. The evidence provided contains severe data-quality flaws that prevent a responsible investment decision for the investor's portfolio (ETEL 300 shares + 20,000 EGP cash) given the 5–7 year university-fee goal and medium risk tolerance. Per the evidence list and financial analyst report, the following figures are flagged as AMBIGUOUS (identical printed strings across different period evidences), making year-on-year comparison unreliable: operating revenues (p6-01/[p6-02]), gross profit (p6-05/[p6-06]), net profit for the year (p6-35/[p6-36]), and EPS (p6-55/[p6-56]) with its anomalous \"L.E. (000)\" unit yielding implausible per-share values given the ETEL share price of 141.95 EGP. While total assets (p5-31) and total equity (p5-45) do not exhibit observed cross-period string duplication and are relatively more reliable, they are insufficient on their own to assess profitability trends, valuation, or whether holding ETEL aligns with the investor's growth objective and medium risk profile. The combination of these ambiguities means any calculation of growth rates, profit margins, or P/E ratios would be speculative. The suitability analyst correctly notes concentration risk (ETEL ~68% of portfolio) and the investor's liquidity/horizon alignment, but without reliable financial fundamentals, no buy, hold, or sell action can be responsibly justified. Missing evidence: period-specific, verified income-statement figures clearly separated by fiscal year, and a clarified EPS unit consistent with standard reporting practices. This is guidance, not a guarantee of returns; uncertainty and data-quality risks are stated honestly above.",
+    "claims": [],
+    "unused_figures": [
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01] | 31/12/2025 | Operating revenues | \"106 672 946 81 677 812\" | L.E.(000) | 106,672,946,000 | Ambiguous: identical string in [p6-02], year assignment unclear",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02] | 31/12/2024 | Operating revenues | \"106 672 946 81 677 812\" | L.E.(000) | 81,677,812,000* | Ambiguous: identical to [p6-01], cannot distinguish 2024 from 2025",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05] | 31/12/2025 | Gross profit | \"44 839 110 30 492 762\" | L.E.(000) | 44,839,110,000 | Ambiguous: identical string in [p6-06], gross profit trend unclear",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06] | 31/12/2024 | Gross profit | \"44 839 110 30 492 762\" | L.E.(000) | 30,492,762,000* | Ambiguous: identical to [p6-05], cannot isolate single-period figure",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] | 31/12/2025 | Net profit for the year | \"22 578 063 10 111 328\" | L.E.(000) | 22,578,063,000 | Ambiguous: identical string in [p6-36], net profit comparison across years unreliable",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] | 31/12/2024 | Net profit for the year | \"22 578 063 10 111 328\" | L.E.(000) | 10,111,328,000* | Ambiguous: identical to [p6-35], year assignment uncertain",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] | 31/12/2025 | EPS (L.E./Share) | \"11.93 4.79\" | L.E.(000) | 11,930* | Ambiguous: unit anomalous; implausible with share price 141.95 EGP (P/E ~0.012)",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56] | 31/12/2024 | EPS (L.E./Share) | \"11.93 4.79\" | L.E.(000) | 4,790* | Ambiguous: same as [p6-55], unit inconsistency undermines earnings-power assessment"
+    ],
+    "limitations": [
+      "All income-statement figures (operating revenues, gross profit, net profit) carry duplicate printed strings across 2025 and 2024 evidences, violating distinct-period reporting. No reliable year-on-year growth or margin calculations can be performed.",
+      "EPS figures use a \"L.E. (000)\" unit that, when applied as instructed, yields per-share values thousands of times too high relative to the market price, flagging the row as ambiguous and preventing P/E or earnings-power analysis.",
+      "Total assets and total equity (p5-31, p5-45) lack observed cross-period string duplication and are presented in whole pounds (225,882,527,000 L.E. and 63,687,826,000 L.E. respectively), but balance-sheet data alone are insufficient to support a buy/hold/sell decision for a 5–7 year growth goal.",
+      "No cash-flow statement, current-asset breakdown, or debt-line-item verification is provided in the evidence set, limiting liquidity and solvency assessment beyond the investor's stated separate emergency fund and 20,000 EGP cash holding.",
+      "Any conclusion regarding portfolio action would be speculative given the data-quality flags; therefore, insufficient_evidence is the responsible choice."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "Recommendation: insufficient_evidence. The evidence provided contains severe data-quality flaws that prevent a responsible investment decision for the investor's portfolio (ETEL 300 shares + 20,000 EGP cash) given the 5–7 year university-fee goal and medium risk tolerance. Per the evidence list and financial analyst report, the following figures are flagged as AMBIGUOUS (identical printed strings across different period evidences), making year-on-year comparison unreliable: operating revenues (p6-01/[p6-02]), gross profit (p6-05/[p6-06]), net profit for the year (p6-35/[p6-36]), and EPS (p6-55/[p6-56]) with its anomalous \"L.E. (000)\" unit yielding implausible per-share values given the ETEL share price of 141.95 EGP. While total assets (p5-31) and total equity (p5-45) do not exhibit observed cross-period string duplication and are relatively more reliable, they are insufficient on their own to assess profitability trends, valuation, or whether holding ETEL aligns with the investor's growth objective and medium risk profile. The combination of these ambiguities means any calculation of growth rates, profit margins, or P/E ratios would be speculative. The suitability analyst correctly notes concentration risk (ETEL ~68% of portfolio) and the investor's liquidity/horizon alignment, but without reliable financial fundamentals, no buy, hold, or sell action can be responsibly justified. Missing evidence: period-specific, verified income-statement figures clearly separated by fiscal year, and a clarified EPS unit consistent with standard reporting practices. This is guidance, not a guarantee of returns; uncertainty and data-quality risks are stated honestly above.",
+    "claims": [],
+    "unused_figures": [
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01] | 31/12/2025 | Operating revenues | \"106 672 946 81 677 812\" | L.E.(000) | 106,672,946,000 | Ambiguous: identical string in [p6-02], year assignment unclear",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02] | 31/12/2024 | Operating revenues | \"106 672 946 81 677 812\" | L.E.(000) | 81,677,812,000* | Ambiguous: identical to [p6-01], cannot distinguish 2024 from 2025",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05] | 31/12/2025 | Gross profit | \"44 839 110 30 492 762\" | L.E.(000) | 44,839,110,000 | Ambiguous: identical string in [p6-06], gross profit trend unclear",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06] | 31/12/2024 | Gross profit | \"44 839 110 30 492 762\" | L.E.(000) | 30,492,762,000* | Ambiguous: identical to [p6-05], cannot isolate single-period figure",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] | 31/12/2025 | Net profit for the year | \"22 578 063 10 111 328\" | L.E.(000) | 22,578,063,000 | Ambiguous: identical string in [p6-36], net profit comparison across years unreliable",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] | 31/12/2024 | Net profit for the year | \"22 578 063 10 111 328\" | L.E.(000) | 10,111,328,000* | Ambiguous: identical to [p6-35], year assignment uncertain",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] | 31/12/2025 | EPS (L.E./Share) | \"11.93 4.79\" | L.E.(000) | 11,930* | Ambiguous: unit anomalous; implausible with share price 141.95 EGP (P/E ~0.012)",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56] | 31/12/2024 | EPS (L.E./Share) | \"11.93 4.79\" | L.E.(000) | 4,790* | Ambiguous: same as [p6-55], unit inconsistency undermines earnings-power assessment"
+    ],
+    "limitations": [
+      "All income-statement figures (operating revenues, gross profit, net profit) carry duplicate printed strings across 2025 and 2024 evidences, violating distinct-period reporting. No reliable year-on-year growth or margin calculations can be performed.",
+      "EPS figures use a \"L.E. (000)\" unit that, when applied as instructed, yields per-share values thousands of times too high relative to the market price, flagging the row as ambiguous and preventing P/E or earnings-power analysis.",
+      "Total assets and total equity (p5-31, p5-45) lack observed cross-period string duplication and are presented in whole pounds (225,882,527,000 L.E. and 63,687,826,000 L.E. respectively), but balance-sheet data alone are insufficient to support a buy/hold/sell decision for a 5–7 year growth goal.",
+      "No cash-flow statement, current-asset breakdown, or debt-line-item verification is provided in the evidence set, limiting liquidity and solvency assessment beyond the investor's stated separate emergency fund and 20,000 EGP cash holding.",
+      "Any conclusion regarding portfolio action would be speculative given the data-quality flags; therefore, insufficient_evidence is the responsible choice."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Analysis of ETEL FY2025 Consolidated Financial Evidence (as of 2026-11-18)**  \n*All figures converted to whole Egyptian pounds (L.E.) applying the stated unit \"L.E. (000)\" = thousands of pounds. Each figure is cited with its evidence ID. Where printed strings are identical across different period evidences, the figure is flagged as AMBIGUOUS and has not been used in computed ratios.*\n\n---\n\n### **Profitability**\n- **Operating revenues (31/12/2025):** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01] 106,672,946,000 L.E.  \n  *Flag: The same printed string \"106 672 946 81 677 812\" appears in [p6-02] for period 31/12/2024, making it unclear which number corresponds to 2024 vs. 2023. Year-on-year revenue growth cannot be reliably computed from this evidence alone.*\n- **Gross profit (31/12/2025):** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05] 44,839,110,000 L.E.  \n  *Flag: Identical printed string \"44 839 110 30 492 762\" appears in [p6-06] for period 31/12/2024. Gross profit trend is ambiguous.*\n- **Net profit for the year (31/12/2025):** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] 22,578,063,000 L.E.  \n  *Flag: Identical printed string \"22 578 063 10 111 328\" appears in [p6-36] for period 31/12/2024. Net profit comparison across years is ambiguous.*\n- **Net profit for the year (31/12/2024):** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] 10,111,328,000 L.E.  \n  *Flag: See above; identical to [p6-35], creating uncertainty about which value belongs to 2024.*\n\n*No profit margin ratios (e.g., net margin, gross margin) are computed here due to the above ambiguities and the inability to confidently isolate single-period figures.*\n\n---\n\n### **Growth**\n- Revenue and profit growth rates cannot be reliably calculated. The duplicate printed strings across period evidences ([p6-01]/[p6-02], [p6-05]/[p6-06], [p6-35]/[p6-36]) mean that the same numerical strings are attributed to different fiscal years, violating the principle of distinct period reporting. Any growth calculation would be speculative and is therefore withheld.\n\n---\n\n### **Balance Sheet**\n- **Total assets (consolidated, 31/12/2025):** [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31] 225,882,527,000 L.E.  \n  *Note: Printed as \"225 882 527 | 197 952 788\"; the first number is taken as the 2025 figure, the second as 2024. No duplicate printed string across different period IDs was observed for this row, so the period assignment is relatively more reliable than the income-statement rows.*\n- **Total equity (consolidated, 31/12/2025):** [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] 63,687,826,000 L.E.  \n  *Printed as \"63 687 826 | 45 937 991\"; first number = 2025, second = 2024. No cross-period duplicate observed.*\n- **Implied liabilities (2025):** Derived as Total Assets – Total Equity = 225,882,527,000 – 63,687,826,000 = **162,194,701,000 L.E.**  \n  *Caveat: This derivation uses the two balance-sheet figures above, which are the only evidence items without confirmed cross-period string duplication. The resulting liability figure should be treated as an indicative residual, not an independently verified line item.*\n\n*No debt-to-equity or debt-to-assets ratios are formally computed per the instruction to avoid computation with potentially ambiguous figures. The raw figures suggest a significant equity base relative to assets, but the data quality issues above limit definitive risk assessment.*\n\n---\n\n### **Risks (Data‑Quality–Focused)**\n- **Cross-period string duplication:** Three major line items (operating revenues, gross profit, net profit) carry identical printed strings in evidences for different periods. This is the primary data‑quality risk, as it prevents reliable year‑on‑year comparison or trend analysis.\n- **EPS unit anomaly:** [p6-55] and [p6-56] report \"Basic and diluted earning per share for the year (L.E. / Share) (15)\" with printed values \"11.93 4.79\" and unit \"L.E. (000)\". Applying the unit as instructed (thousands) yields EPS of 11,930 and 4,790 L.E./share, which is implausible given the ETEL share price of 141.95 L.E. (P/E would be ~0.012). The unit \"L.E. (000)\" for an EPS row is inconsistent with standard financial reporting and is flagged as ambiguous. No P/E or earnings‑power ratio is computed using these figures.\n- **Liquidity & cash position:** The evidence set does not include a cash‑flow statement or current‑asset breakdown beyond total assets and equity. The investor’s separate emergency fund and the portfolio’s 20,000 EGP cash holding are noted but not analyzed against company data, per the constraint to use only the given evidence.\n\n---\n\n### **Data‑Quality Summary**\n| Evidence ID | Period | Figure Type | Printed Value | Unit | Whole‑Pound Value | Ambiguity Flag |\n|-------------|--------|-------------|---------------|------|-------------------|----------------|\n| [p6-01] | 31/12/2025 | Operating revenues | 106 672 946 81 677 812 | L.E.(000) | 106,672,946,000 | **Yes** – same string in [p6-02] |\n| [p6-02] | 31/12/2024 | Operating revenues | 106 672 946 81 677 812 | L.E.(000) | 81,677,812,000* | **Yes** – identical to [p6-01] |\n| [p6-05] | 31/12/2025 | Gross profit | 44 839 110 30 492 762 | L.E.(000) | 44,839,110,000 | **Yes** – same string in [p6-06] |\n| [p6-06] | 31/12/2024 | Gross profit | 44 839 110 30 492 762 | L.E.(000) | 30,492,762,000* | **Yes** – identical to [p6-05] |\n| [p5-31] | 31/12/2025 | Total assets | 225 882 527 | L.E.(000) | 225,882,527,000 | No duplicate observed |\n| [p5-45] | 31/12/2025 | Total equity | 63 687 826 | L.E.(000) | 63,687,826,000 | No duplicate observed |\n| [p6-35] | 31/12/2025 | Net profit | 22 578 063 10 111 328 | L.E.(000) | 22,578,063,000 | **Yes** – same string in [p6-36] |\n| [p6-36] | 31/12/2024 | Net profit | 22 578 063 10 111 328 | L.E.(000) | 10,111,328,000* | **Yes** – identical to [p6-35] |\n| [p6-55] | 31/12/2025 | EPS (L.E./Share) | 11.93 4.79 | L.E.(000) | 11,930* (if unit applied) | **Yes** – unit anomalous; implausible with share price |\n| [p6-56] | 31/12/2024 | EPS (L.E./Share) | 11.93 4.79 | L.E.(000) | 4,790* (if unit applied) | **Yes** – same as [p6-55] |\n\n*Values marked with an asterisk are derived by applying the \"L.E. (000)\" unit as instructed, but are flagged as ambiguous due to the reasons stated.*\n\n---\n\n**Final note:** The evidence provided contains significant data‑quality flags, primarily duplicate printed strings across fiscal periods and an anomalous EPS unit. No actionable recommendation regarding the portfolio (ETEL 300 shares + 20,000 EGP cash) is offered here, per the instruction that the decision agent handles such actions. The analysis above relies solely on the cited evidence and flags all figures that cannot be used in computation without further clarification.",
+    "investor": "**Suitability Assessment (structural only; no financial analysis of ETEL statements, no action recommended)**\n\n**1. Horizon (5–7 years)**  \nThe investor’s goal (child’s university fees) and stated horizon align with a medium‑term framework. This horizon can support moderate equity exposure, but capital preservation should gain priority as the target date approaches.\n\n**2. Liquidity needs**  \nThe investor maintains a separate emergency fund (taken as given). The portfolio holds 20,000.00 EGP in cash, which is immediately liquid. ETEL shares (300 units) can be liquidated for approximately 42,585 EGP at the cutoff price, bringing total liquidable assets to ~62,585 EGP.\n\n**3. Willingness to accept losses & financial ability**  \nBoth rated medium. This suggests a balanced risk profile: the investor can tolerate moderate downturns but does not have a high capacity for significant erosion of capital. Suitability therefore favors diversification and avoidance of concentrated risk.\n\n**4. Current concentration**  \nThe portfolio is heavily concentrated in a single position: ETEL 300 shares represent roughly 68% of the total portfolio value (~62,585 EGP), with cash at ~32%. Given the medium loss willingness/capacity and the 5–7 year horizon, this concentration is a notable structural factor.\n\n**5. Cash that could reasonably be committed**  \nWith 20,000.00 EGP already free and no other outflows specified, any additional commitment should be evaluated against the existing concentration risk and the need to maintain liquidity as the university-fee date nears. No specific commitment amount is prescribed.\n\n**What the portfolio allows**\n- **Cash:** 20,000.00 EGP is free and liquid.\n- **ETEL holdings:** 300 shares × 141.95 EGP/share = ~42,585 EGP total market value. These shares can be sold on the market for cash.\n- **Total portfolio value:** ~62,585 EGP (cash + ETEL).\n- No other assets, liabilities, or holdings are stated.\n\n**Important boundaries**  \n- I am not analysing the ETEL financial statements (revenue, profit, asset, or EPS figures provided in the evidence).  \n- I am not recommending buying, selling, or holding any position. The assessment above is purely suitability‑focused on horizon, liquidity, loss capacity, concentration, and commit‑able cash."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 98.237,
+      "input_tokens": 1478,
+      "output_tokens": 14690,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 22.91,
+      "input_tokens": 1472,
+      "output_tokens": 2713,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 52.164,
+      "input_tokens": 4727,
+      "output_tokens": 6816,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 173.316
+}

@@ -1,5 +1,7 @@
 # Second model: Nemotron Lightning on all 12 cases, 24 November 2026
 
+> **Note added 25 November:** the Nemotron answers in this part had their explanations cut at 1,024 characters by NVIDIA's service, so figures in the text are undercounted here. See the full-length rerun in `full_length_nemotron_2026-11-25.md` (Part 8 of the combined report), which replaces these Nemotron results.
+
 Run folder: `runs/20261124T095853Z`. Model: `nvidia/nemotron-3.5-lightning-30b-a3b`, free through NVIDIA's API, temperature 0, no backup models. It ran all 12 practice cases (the first 7 plus the 5 harder ones) under all four conditions: **48 runs, no failures**. This is a development run; the reference values are still the report reader's own, not hand-checked.
 
 Why a second model: `gemini-3.5-flash` copied every figure correctly in every run, so the verifier never had anything to catch. Nemotron Lightning is a smaller, weaker model, and it did make figure mistakes.

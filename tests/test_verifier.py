@@ -98,6 +98,17 @@ def test_text_scale_error_is_caught():
     for tagged in ["Profit was 55,123 (EGP mn) = 55,123,000,000 pounds.",
                    "Profit was 55,123 L.E. (000,000), i.e. 55,123,000,000 pounds."]:
         assert text_rules(rec_with(claim("e1", 55_123e6), explanation=tagged)) == []
+    # quoting the printed figure with its unit, from real Nemotron answers
+    for quoted in ["Net profit: printed 55,123 → 55,123,000,000 EGP.",
+                   "Net profit was **55,123** L.E. (000) = **55,123,000,000 EGP**.",
+                   "Net profit (from 55,123 in L.E.(000)) is reported.",
+                   "Printed values 55,123 and 41,000 EGP thousands are clear.",
+                   "Net profit is 55,123 L.E. 000 (55.1 billion L.E.).",
+                   "Figures 55,123 and 41,002 with unit \"All amounts are shown in EGP thousands\"."]:
+        assert text_rules(rec_with(claim("e1", 55_123e6), explanation=quoted)) == [], quoted
+    # the unit of a different clause does not excuse it
+    assert text_rules(rec_with(explanation="Net profit was 55,123 pounds; other rows are in EGP thousands.")) \
+        == ["text_value_mismatch"]
     # a bracket without a unit does not excuse the scale
     assert text_rules(rec_with(explanation="Net profit was 55,123 (approx.) pounds.")) == ["text_value_mismatch"]
 

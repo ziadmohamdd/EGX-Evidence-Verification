@@ -1,0 +1,90 @@
+{
+  "case_id": "dev_003",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The evidence provided contains several figures marked as AMBIGUOUS that prevent reliable calculation of valuation ratios (P/E, ROE, earnings yield) necessary to support a buy/hold/sell decision. Per the rules, these figures must not be used in calculations and are listed below. Without valid financial metrics, a responsible decision cannot be derived from the evidence alone. The investor's profile (3–5 year horizon, 10% liquidity need within one year, medium willingness but low loss capacity) and portfolio structure (74.9% equity in two listed stocks, 25.1% cash) are noted, but the ambiguous units undermine any ratio-based assessment of the holdings. No outside knowledge or later events are used. All figures cited are from the authoritative evidence list; where base-unit conversions are required (e.g., ETEL L.E.(000) → EGP), they are acknowledged but not relied upon for ratio calculations due to the flags.",
+    "claims": [],
+    "unused_figures": [
+      "EFID Total equity [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39]: unit stated as 'None' – cannot confirm if figures are EGP, L.E., or other denomination. Affects any balance-sheet ratio (e.g., ROE) that depends on equity magnitude.",
+      "ETEL Basic and diluted earning per share [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55]: unit declared as 'L.E.(000)' conflicts with the metric 'L.E. / Share'. The values 11.93 and 4.79 are likely correct EPS in EGP per share, but the ambiguous unit means they must not be divided/multiplied by 1,000 or used in per-share calculations without clarification. Affects P/E and earnings-yield analysis.",
+      "EFID Basic and Diluted earnings per share line [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38]: '30' appears preceding the EPS values (2.18 and 1.09 EGP). The meaning is unclear (shares outstanding millions, section code, etc.). Do not use for P/E calculations or share-count derivations. Affects any valuation ratio involving EFID EPS."
+    ],
+    "limitations": [
+      "Historical financial figures for EFID and ETEL are partially unavailable for ratio work due to the ambiguous units above. Revenue and net-profit totals in whole EGP (after L.E.(000)→EGP conversion) are provided, but the equity-unit ambiguity and EPS flags preclude reliable P/E, PEG, or return-on-equity calculations.",
+      "No forward-looking valuation data, target prices, or earnings guidance is in the evidence list; decisions cannot be based on valuation relative to fundamentals.",
+      "The investor's low loss capacity means a ~20%+ equity-market decline would materially erode the portfolio and threaten the 1-year liquidity buffer, but without valid per-share earnings or price-to-earnings metrics, the margin of safety or overvaluation/undervaluation cannot be assessed from the given evidence."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The evidence provided contains several figures marked as AMBIGUOUS that prevent reliable calculation of valuation ratios (P/E, ROE, earnings yield) necessary to support a buy/hold/sell decision. Per the rules, these figures must not be used in calculations and are listed below. Without valid financial metrics, a responsible decision cannot be derived from the evidence alone. The investor's profile (3–5 year horizon, 10% liquidity need within one year, medium willingness but low loss capacity) and portfolio structure (74.9% equity in two listed stocks, 25.1% cash) are noted, but the ambiguous units undermine any ratio-based assessment of the holdings. No outside knowledge or later events are used. All figures cited are from the authoritative evidence list; where base-unit conversions are required (e.g., ETEL L.E.(000) → EGP), they are acknowledged but not relied upon for ratio calculations due to the flags.",
+    "claims": [],
+    "unused_figures": [
+      "EFID Total equity [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39]: unit stated as 'None' – cannot confirm if figures are EGP, L.E., or other denomination. Affects any balance-sheet ratio (e.g., ROE) that depends on equity magnitude.",
+      "ETEL Basic and diluted earning per share [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55]: unit declared as 'L.E.(000)' conflicts with the metric 'L.E. / Share'. The values 11.93 and 4.79 are likely correct EPS in EGP per share, but the ambiguous unit means they must not be divided/multiplied by 1,000 or used in per-share calculations without clarification. Affects P/E and earnings-yield analysis.",
+      "EFID Basic and Diluted earnings per share line [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38]: '30' appears preceding the EPS values (2.18 and 1.09 EGP). The meaning is unclear (shares outstanding millions, section code, etc.). Do not use for P/E calculations or share-count derivations. Affects any valuation ratio involving EFID EPS."
+    ],
+    "limitations": [
+      "Historical financial figures for EFID and ETEL are partially unavailable for ratio work due to the ambiguous units above. Revenue and net-profit totals in whole EGP (after L.E.(000)→EGP conversion) are provided, but the equity-unit ambiguity and EPS flags preclude reliable P/E, PEG, or return-on-equity calculations.",
+      "No forward-looking valuation data, target prices, or earnings guidance is in the evidence list; decisions cannot be based on valuation relative to fundamentals.",
+      "The investor's low loss capacity means a ~20%+ equity-market decline would materially erode the portfolio and threaten the 1-year liquidity buffer, but without valid per-share earnings or price-to-earnings metrics, the margin of safety or overvaluation/undervaluation cannot be assessed from the given evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Portfolio Snapshot (as of 2026-11-18 cutoff)**\n- Cash: 15,000 EGP [given]\n- ETEL: 100 shares @ 141.95 EGP/share = 14,195 EGP [cutoff price provided]\n- EFID: 1,500 shares @ 20.40 EGP/share = 30,600 EGP [cutoff price provided]\n- **Total portfolio value: 59,795 EGP**\n- Liquidity need (10% of portfolio): ~5,980 EGP, fully covered by cash holdings alone.\n\n*Note: Share prices and share counts are as provided at the information cutoff; all financial figures below derive from the evidence list.*\n\n---\n\n### EFID (Evidence IDs referenced throughout)\n- **Revenue (consolidated), FY2025**: 20,915,072,432 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]\n- **Revenue (consolidated), FY2024**: 16,146,545,699 EGP [same]\n- **Net profit for the year (consolidated), FY2025**: 2,695,301,670 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]\n- **Net profit for the year (consolidated), FY2024**: 1,606,727,698 EGP [same]\n- **Total equity, FY2025**: 5,724,525,864 (unit stated as *None*) [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39] → *ambiguous unit; value presented in whole pounds as reported, but cannot confirm EGP or other denomination.*\n- **Basic and Diluted earnings per share, FY2025**: 2.18 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38]; FY2024: 1.09 EGP. *Note: \"30\" appears preceding the EPS values; ambiguous whether this denotes shares outstanding (millions), a section code, or other—do not use for ratio calculations without clarification.*\n\n**EFID descriptive performance**: Revenue increased from ~16.1bn to ~20.9bn EGP year-over-year; net profit increased from ~1.6bn to ~2.7bn EGP year-over-year.\n\n---\n\n### ETEL (Evidence IDs referenced throughout)\n- **Operating revenues (5), FY2025**: as printed 106,672,946 (unit: L.E.(000)) → **106,672,946,000 EGP** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]\n- **Operating revenues (5), FY2024**: as printed 81,677,812 (unit: L.E.(000)) → **81,677,812,000 EGP** [same]\n- **Net profit for the year, FY2025**: as printed 22,578,063 (unit: L.E.(000)) → **22,578,063,000 EGP** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]\n- **Net profit for the year, FY2024**: as printed 10,111,328 (unit: L.E.(000)) → **10,111,328,000 EGP** [same]\n- **Total Equity (consolidated), FY2025**: as printed 63,687,826 (unit: L.E.(000)) → **63,687,826,000 EGP** [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]\n- **Total Equity (consolidated), FY2024**: as printed 45,937,991 (unit: L.E.(000)) → **45,937,991,000 EGP** [same]\n- **Basic and diluted earning per share for the year, FY2025**: 11.93 (unit: L.E.(000)) [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55]; FY2024: 4.79. *Flag: unit declared as L.E.(000) conflicts with the metric \"L.E. / Share\"; the values are almost certainly in L.E. per share, but the report's unit declaration is ambiguous—do not treat as \"per 1,000 shares.\"*\n\n**ETEL descriptive performance**: Operating revenues increased from ~81.7bn to ~106.7bn EGP year-over-year; net profit increased from ~10.1bn to ~22.6bn EGP year-over-year; total equity grew from ~45.9bn to ~63.7bn EGP year-over-year.\n\n---\n\n### Data Quality Flags (ambiguous figures; not computed with)\n1. **EFID Total equity unit: \"None\"** [p5-39] → cannot confirm if figures are EGP, L.E., or other denomination; treat with caution in any balance-sheet analysis.\n2. **ETEL EPS unit: \"L.E.(000)\"** [p6-55] → inconsistent with \"Basic and diluted earning per share (L.E. / Share)\" description; the values 11.93 and 4.79 are likely correct EPS in EGP per share, but the stated unit is ambiguous—do not divide or multiply by 1,000.\n3. **EFID EPS line: \"30\"** preceding 2.18 and 1.09 [p6-38] → unclear meaning; do not use for P/E calculations or share-count derivations.\n4. **All ETEL income-statement figures** are in L.E.(000); the whole-pound conversions (×1,000) are provided above and cited. Omitting the conversion would misrepresent the scale of the figures.\n\n---\n\n### Descriptive Performance Summary (no computed ratios or actions)\n- Both EFID and ETEL show year-over-year growth in revenue, net profit, and (for ETEL) total equity.\n- EFID: Revenue ~20.9bn EGP, net profit ~2.7bn EGP, equity ~5.7bn EGP (unit ambiguous).\n- ETEL: Revenue ~106.7bn EGP, net profit ~22.6bn EGP, equity ~63.7bn EGP.\n- Share prices at cutoff: EFID 20.40 EGP, ETEL 141.95 EGP. Portfolio liquidity needs (~5,980 EGP) are fully met by cash (15,000 EGP), leaving holdings intact for the 3–5 year horizon if desired.\n\n**No investment recommendation is provided here.** The evidence above is offered for the decision agent to assess against the investor's profile, horizon, liquidity needs, and risk tolerance. All figures are cited, ambiguous units are flagged, and no computations are performed with flagged data.",
+    "investor": "**Portfolio Valuation (at cutoff prices)**\n- Cash: 15,000.00 EGP\n- ETEL: 100 shares × 141.95 EGP = 14,195.00 EGP\n- EFID: 1,500 shares × 20.40 EGP = 30,600.00 EGP\n- **Total current value: 59,795.00 EGP**\n\n---\n\n### 1. Horizon Assessment\n- Stated horizon: 3–5 years (medium term).\n- This horizon typically supports some equity exposure, but the concurrent 1-year liquidity need creates a structural tension. A pure 3–5 year horizon would allow cycling through market cycles; the 1-year cash requirement forces a near-term liquidity constraint that may require a more conservative near-term allocation.\n\n### 2. Liquidity Needs Assessment\n- 10% of total portfolio ≈ 5,980 EGP needed within one year.\n- **Current free cash (15,000 EGP) already covers this need with approximately 9,020 EGP of buffer.**\n- Both ETEL and EFID are listed equities with typical T+2 settlement, so either holding can be converted to cash to meet the need, but sale proceeds will reflect market price at the time of liquidation. The existing cash position eliminates forced selling pressure.\n\n### 3. Loss Willingness vs. Capacity\n- **Willingness to accept losses: medium**\n- **Financial ability to withstand losses: low**\n- This is the binding constraint. Even though the investor is psychologically willing to accept medium losses, the low capacity means the portfolio’s downside risk must be tightly controlled. A market decline of ~20%+ on the equity portion (44,795 EGP) would erode capital materially and could threaten the 1-year liquidity buffer if sales occur in a down market. The portfolio structure should prioritize capital preservation over return potential.\n\n### 4. Current Concentration\n- Equity allocation: 44,795 EGP (74.9% of total portfolio).\n- Cash: 15,000 EGP (25.1%).\n- The portfolio holds only two listed equities (ETEL and EFID), creating single-stock concentration risk. No sector, geographic, or asset-class diversification is evident. Given the low loss capacity, this concentration is a significant risk factor; a downturn or idiosyncratic event in either issuer would have an outsized impact relative to the investor’s capacity to absorb it.\n\n### 5. Reasonable Cash Commitment\n- Given the 1-year liquidity need and low loss capacity, **new commitments should be small relative to the total portfolio**.\n- The existing 25.1% cash buffer is already aligned with the liquidity need. Any additional commitment into listed equities or other assets should be limited to an amount where a meaningful price decline (e.g., 15–25%) would not compromise the 1-year cash requirement or the investor’s overall financial stability. Without quantified risk tolerance, the prudent upper bound is modest: likely no more than 5–10% of the total portfolio in new risk assets, held with the understanding that the full position could decline materially.\n\n### 6. What the Portfolio Allows (Liquidability & Free Cash)\n- **Free cash: 15,000.00 EGP** – immediately available with no settlement delay.\n- **ETEL (100 shares):** Can be sold on market; estimated proceeds ~14,195 EGP (subject to market price at sale, typical T+2 settlement).\n- **EFID (1,500 shares):** Can be sold on market; estimated proceeds ~30,600 EGP (subject to market price at sale, typical T+2 settlement).\n- No illiquid assets, locks, pledges, or restrictions are indicated in the provided data. Both holdings are freely tradeable, and either or both can be liquidated to meet the 1-year cash need without structural impediments. However, given the low loss capacity, selling should be timed to avoid crystallizing losses if a downturn is underway.\n\n---\n\n**Summary for Suitability:** The portfolio’s current cash position comfortably covers the 1-year liquidity need, but the equity concentration (74.9% in two stocks) and low loss capacity create a mismatch with the medium loss willingness. The 3–5 year horizon is compatible with equities only if near-term downside is limited. The portfolio *allows* liquidation of either holding or use of free cash to meet liquidity needs, but new commitments should be approached cautiously, with size limited by the low loss-capacity constraint rather than the medium willingness. No company financials have been analysed for valuation or outlook; the assessment rests solely on the investor’s profile and the portfolio’s structural features."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 71.681,
+      "input_tokens": 1276,
+      "output_tokens": 10547,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 41.476,
+      "input_tokens": 1270,
+      "output_tokens": 3542,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 738.497,
+      "input_tokens": 4286,
+      "output_tokens": 6189,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 851.657
+}

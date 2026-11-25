@@ -1,0 +1,171 @@
+{
+  "case_id": "dev_001",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "Investor profile: Goal is growing savings for a child's university fees over a 5–7 year horizon, with a separate emergency fund and medium willingness/ability to withstand losses. Current portfolio: 20,000 EGP cash + 300 ETEL shares (≈42,585 EGP at 141.95 EGP/share), total ≈62,585 EGP.\n\nEvidence summary (all figures converted to whole Egyptian pounds, base units):\n- Operating revenues 31/12/2025 (p6-01): 106,672,946,000 EGP (from 106,672,946 in L.E.(000))\n- Operating revenues 31/12/2024 (p6-02): 81,677,812,000 EGP\n- Gross Profit 31/12/2025 (p6-05): 44,839,110,000 EGP\n- Gross Profit 31/12/2024 (p6-06): 30,492,762,000 EGP\n- Net profit 31/12/2025 (p6-35): 22,578,063,000 EGP\n- Net profit 31/12/2024 (p6-36): 10,111,328,000 EGP\n- EPS 31/12/2025 (p6-55): 11.93 L.E./share; EPS 31/12/2024 (p6-56): 4.79 L.E./share\n- Total Assets 31/12/2025 (p5-31): 225,882,527,000 EGP; Total Equity 31/12/2025 (p5-45): 63,687,826,000 EGP\n\nKey derived metrics from evidence: Revenue grew ~30.6% YoY, gross profit ~47.0% YoY, net profit ~123.3% YoY, EPS ~150.1% YoY. Share price 141.95 EGP yields P/E ~12.0 based on 2025 EPS and ~29.6 based on 2024 EPS. Total debt (assets minus equity) ≈162.2 billion EGP, giving a debt‑to‑equity ratio of ~2.55.\n\nUnused figures / ambiguity notes: The operating revenues, gross profit, and net profit rows each printed two numbers side‑by‑side (e.g., \"106 672 946 81 677 812\") with the unit L.E.(000). I assigned the first number to the period stated in the row’s column (2025 or 2024) based on the row’s period label. If the conventional order were reversed, the calculated growth rates and P/E ratios would differ materially; these figures are therefore listed in `unused_figures` with the note that their assignment relies on the period‑column guidance, and any conclusions dependent on exact growth magnitudes are affected.\n\nWhy the recommendation is `insufficient_evidence`:\n- The evidence provides only one year of historical financials (FY2025) and no forward-looking data, dividend information, cash‑flow details, or guidance.\n- No information is given on share‑price volatility, historical trading ranges, or the company’s competitive position (outside knowledge is prohibited per the rules).\n- The investor’s goal is a specific, time‑bound liability (university fees) in 5–7 years. A responsible decision for such a goal typically requires assessing the probability of capital preservation, income (dividends), and alignment with the investor’s medium risk tolerance and ability to withstand losses—none of which can be evaluated from the supplied snapshots alone.\n- While the FY2025 results show strong profit growth and a P/E of ~12 based on latest EPS, this alone does not indicate whether the current price is appropriate, whether dividends will be paid, or how the stock might behave over the 5–7 year horizon. Concentrating a goal‑specific portfolio in a single stock without diversification data or risk metrics is not supportable.\n- Consequently, there is insufficient evidence to responsibly choose buy, hold, sell, or keep_cash for this investor’s situation. A more comprehensive analysis—including dividend history, cash‑flow sustainability, valuation relative to peers (within allowed bounds), and a diversified asset‑allocation strategy tuned to the 5–7 year university‑fee timeline—would be needed before an actionable recommendation.\n\nUncertainty and risks stated honestly: The analysis relies entirely on the printed figures and the cutoff price of 141.95 EGP. Past performance is not indicative of future returns. University‑fee timing, exact fee amounts, and the investor’s full financial picture (other assets, liabilities, inflation expectations) are unknown. Equities can decline significantly in the years preceding a needed withdrawal, potentially jeopardising the goal. No guarantee of returns is provided.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues (31/12/2025) = 106,672,946,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "Operating revenues (31/12/2024) = 81,677,812,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+        "stated_value": 44839110000.0,
+        "statement": "Gross Profit (31/12/2025) = 44,839,110,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+        "stated_value": 30492762000.0,
+        "statement": "Gross Profit (31/12/2024) = 30,492,762,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total Assets (31/12/2025) = 225,882,527,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "Total Equity (31/12/2025) = 63,687,826,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for the year (31/12/2025) = 22,578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit for the year (31/12/2024) = 10,111,328,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "Basic and diluted EPS (31/12/2025) = 11.93 L.E./share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "Basic and diluted EPS (31/12/2024) = 4.79 L.E./share"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01 (operating revenues row contains dual-period numbers; assignment to 2025/2024 relies on period‑column guidance; if order were reversed, YoY growth calculations would change)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05 (gross profit row contains dual-period numbers; same assignment ambiguity affects gross‑margin and growth‑rate conclusions)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35 (net profit row contains dual-period numbers; same assignment ambiguity affects profitability and EPS‑based metrics)"
+    ],
+    "limitations": [
+      "No dividend data, no cash‑flow statement, no forward guidance.",
+      "Only one year of historical financials provided; no multi‑year trends or sustainability assessment.",
+      "Share‑price volatility, historical price ranges, and industry‑wide context are unavailable (outside knowledge prohibited).",
+      "Investor’s exact university‑fee timing and amount, other assets/liabilities, and inflation expectations are not provided.",
+      "Recommendation confined strictly to the given evidence and price; any action (buy/hold/sell/keep_cash) would be speculative given the 5–7 year goal and medium risk profile."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "Investor profile: Goal is growing savings for a child's university fees over a 5–7 year horizon, with a separate emergency fund and medium willingness/ability to withstand losses. Current portfolio: 20,000 EGP cash + 300 ETEL shares (≈42,585 EGP at 141.95 EGP/share), total ≈62,585 EGP.\n\nEvidence summary (all figures converted to whole Egyptian pounds, base units):\n- Operating revenues 31/12/2025 (p6-01): 106,672,946,000 EGP (from 106,672,946 in L.E.(000))\n- Operating revenues 31/12/2024 (p6-02): 81,677,812,000 EGP\n- Gross Profit 31/12/2025 (p6-05): 44,839,110,000 EGP\n- Gross Profit 31/12/2024 (p6-06): 30,492,762,000 EGP\n- Net profit 31/12/2025 (p6-35): 22,578,063,000 EGP\n- Net profit 31/12/2024 (p6-36): 10,111,328,000 EGP\n- EPS 31/12/2025 (p6-55): 11.93 L.E./share; EPS 31/12/2024 (p6-56): 4.79 L.E./share\n- Total Assets 31/12/2025 (p5-31): 225,882,527,000 EGP; Total Equity 31/12/2025 (p5-45): 63,687,826,000 EGP\n\nKey derived metrics from evidence: Revenue grew ~30.6% YoY, gross profit ~47.0% YoY, net profit ~123.3% YoY, EPS ~150.1% YoY. Share price 141.95 EGP yields P/E ~12.0 based on 2025 EPS and ~29.6 based on 2024 EPS. Total debt (assets minus equity) ≈162.2 billion EGP, giving a debt‑to‑equity ratio of ~2.55.\n\nUnused figures / ambiguity notes: The operating revenues, gross profit, and net profit rows each printed two numbers side‑by‑side (e.g., \"106 672 946 81 677 812\") with the unit L.E.(000). I assigned the first number to the period stated in the row’s column (2025 or 2024) based on the row’s period label. If the conventional order were reversed, the calculated growth rates and P/E ratios would differ materially; these figures are therefore listed in `unused_figures` with the note that their assignment relies on the period‑column guidance, and any conclusions dependent on exact growth magnitudes are affected.\n\nWhy the recommendation is `insufficient_evidence`:\n- The evidence provides only one year of historical financials (FY2025) and no forward-looking data, dividend information, cash‑flow details, or guidance.\n- No information is given on share‑price volatility, historical trading ranges, or the company’s competitive position (outside knowledge is prohibited per the rules).\n- The investor’s goal is a specific, time‑bound liability (university fees) in 5–7 years. A responsible decision for such a goal typically requires assessing the probability of capital preservation, income (dividends), and alignment with the investor’s medium risk tolerance and ability to withstand losses—none of which can be evaluated from the supplied snapshots alone.\n- While the FY2025 results show strong profit growth and a P/E of ~12 based on latest EPS, this alone does not indicate whether the current price is appropriate, whether dividends will be paid, or how the stock might behave over the 5–7 year horizon. Concentrating a goal‑specific portfolio in a single stock without diversification data or risk metrics is not supportable.\n- Consequently, there is insufficient evidence to responsibly choose buy, hold, sell, or keep_cash for this investor’s situation. A more comprehensive analysis—including dividend history, cash‑flow sustainability, valuation relative to peers (within allowed bounds), and a diversified asset‑allocation strategy tuned to the 5–7 year university‑fee timeline—would be needed before an actionable recommendation.\n\nUncertainty and risks stated honestly: The analysis relies entirely on the printed figures and the cutoff price of 141.95 EGP. Past performance is not indicative of future returns. University‑fee timing, exact fee amounts, and the investor’s full financial picture (other assets, liabilities, inflation expectations) are unknown. Equities can decline significantly in the years preceding a needed withdrawal, potentially jeopardising the goal. No guarantee of returns is provided.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues (31/12/2025) = 106,672,946,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "Operating revenues (31/12/2024) = 81,677,812,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+        "stated_value": 44839110000.0,
+        "statement": "Gross Profit (31/12/2025) = 44,839,110,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+        "stated_value": 30492762000.0,
+        "statement": "Gross Profit (31/12/2024) = 30,492,762,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total Assets (31/12/2025) = 225,882,527,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "Total Equity (31/12/2025) = 63,687,826,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for the year (31/12/2025) = 22,578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit for the year (31/12/2024) = 10,111,328,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "Basic and diluted EPS (31/12/2025) = 11.93 L.E./share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "Basic and diluted EPS (31/12/2024) = 4.79 L.E./share"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01 (operating revenues row contains dual-period numbers; assignment to 2025/2024 relies on period‑column guidance; if order were reversed, YoY growth calculations would change)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05 (gross profit row contains dual-period numbers; same assignment ambiguity affects gross‑margin and growth‑rate conclusions)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35 (net profit row contains dual-period numbers; same assignment ambiguity affects profitability and EPS‑based metrics)"
+    ],
+    "limitations": [
+      "No dividend data, no cash‑flow statement, no forward guidance.",
+      "Only one year of historical financials provided; no multi‑year trends or sustainability assessment.",
+      "Share‑price volatility, historical price ranges, and industry‑wide context are unavailable (outside knowledge prohibited).",
+      "Investor’s exact university‑fee timing and amount, other assets/liabilities, and inflation expectations are not provided.",
+      "Recommendation confined strictly to the given evidence and price; any action (buy/hold/sell/keep_cash) would be speculative given the 5–7 year goal and medium risk profile."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 108.33,
+      "input_tokens": 1652,
+      "output_tokens": 15695,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 108.335
+}

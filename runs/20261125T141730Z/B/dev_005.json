@@ -1,0 +1,97 @@
+{
+  "case_id": "dev_005",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's goal is to add a fertilizer exporter for diversification over a 5‑year horizon. The current portfolio holds COMI (200 shares) and has 40,000 EGP in cash. Prices at cutoff are ABUK: 76.21 EGP and COMI: 128.00 EGP. The only financial evidence provided concerns ABUK: revenue and net‑profit figures are all marked AMBIGUOUS (the printed numbers could be in millions or billions of EGP, and the unit‑line note introduces further uncertainty). The EPS figures are marked \"verified\" (8.74 EGP for 9M2026 and 4.28 EGP for 9M2025), but EPS alone does not reveal the company's sector or business activity. Critically, the evidence contains **no information about whether ABUK or COMI operate in the fertilizer‑export sector**, nor does it provide any data on other listed fertilizer exporters. Without sector classification, we cannot determine if buying ABUK, adding to COMI, or purchasing another stock fulfills the stated diversification goal. Consequently, no responsible buy, hold, or sell decision can be made from the given evidence alone. The AMBIGUOUS revenue and net‑profit figures (listed below) cannot be used in any valuation or comparison. The verified EPS is noted but is insufficient to infer the required sector exposure.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Naseb el share al a'rab (EGP) for 9M2026, verified, per row label 'in EGP' (despite 'unit: Million جنيه' note on the page)."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Naseb el share al a'rab (EGP) for 9M2025, verified, per row label 'in EGP'."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01: Revenues 9M2026 (AMBIGUOUS, unit uncertain)",
+      "ABUK-ABUK_9M2026_results-p2-02: Revenues 9M2025 (AMBIGUOUS, unit uncertain)",
+      "ABUK-ABUK_9M2026_results-p2-25: Net profit 9M2026 (AMBIGUOUS, unit uncertain)",
+      "ABUK-ABUK_9M2026_results-p2-26: Net profit 9M2025 (AMBIGUOUS, unit uncertain)"
+    ],
+    "limitations": [
+      "No sector information for ABUK or COMI; cannot confirm fertilizer‑export activity.",
+      "No financial data for any other listed fertilizer exporter.",
+      "AMBIGUOUS financial figures preclude any quantitative valuation or performance comparison.",
+      "Investor's medium loss‑willingness and 5‑year horizon cannot be matched to a specific holding without sector‑specific evidence."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's goal is to add a fertilizer exporter for diversification over a 5‑year horizon. The current portfolio holds COMI (200 shares) and has 40,000 EGP in cash. Prices at cutoff are ABUK: 76.21 EGP and COMI: 128.00 EGP. The only financial evidence provided concerns ABUK: revenue and net‑profit figures are all marked AMBIGUOUS (the printed numbers could be in millions or billions of EGP, and the unit‑line note introduces further uncertainty). The EPS figures are marked \"verified\" (8.74 EGP for 9M2026 and 4.28 EGP for 9M2025), but EPS alone does not reveal the company's sector or business activity. Critically, the evidence contains **no information about whether ABUK or COMI operate in the fertilizer‑export sector**, nor does it provide any data on other listed fertilizer exporters. Without sector classification, we cannot determine if buying ABUK, adding to COMI, or purchasing another stock fulfills the stated diversification goal. Consequently, no responsible buy, hold, or sell decision can be made from the given evidence alone. The AMBIGUOUS revenue and net‑profit figures (listed below) cannot be used in any valuation or comparison. The verified EPS is noted but is insufficient to infer the required sector exposure.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Naseb el share al a'rab (EGP) for 9M2026, verified, per row label 'in EGP' (despite 'unit: Million جنيه' note on the page)."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Naseb el share al a'rab (EGP) for 9M2025, verified, per row label 'in EGP'."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01: Revenues 9M2026 (AMBIGUOUS, unit uncertain)",
+      "ABUK-ABUK_9M2026_results-p2-02: Revenues 9M2025 (AMBIGUOUS, unit uncertain)",
+      "ABUK-ABUK_9M2026_results-p2-25: Net profit 9M2026 (AMBIGUOUS, unit uncertain)",
+      "ABUK-ABUK_9M2026_results-p2-26: Net profit 9M2025 (AMBIGUOUS, unit uncertain)"
+    ],
+    "limitations": [
+      "No sector information for ABUK or COMI; cannot confirm fertilizer‑export activity.",
+      "No financial data for any other listed fertilizer exporter.",
+      "AMBIGUOUS financial figures preclude any quantitative valuation or performance comparison.",
+      "Investor's medium loss‑willingness and 5‑year horizon cannot be matched to a specific holding without sector‑specific evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 48.638,
+      "input_tokens": 1509,
+      "output_tokens": 5368,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 48.641
+}

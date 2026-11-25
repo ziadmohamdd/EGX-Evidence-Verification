@@ -1,5 +1,7 @@
 # Fixed verifier on Nemotron (printed view), 25 November 2026
 
+> **Note added 25 November:** the Nemotron answers in this part had their explanations cut at 1,024 characters by NVIDIA's service, so figures in the text are undercounted here. See the full-length rerun in `full_length_nemotron_2026-11-25.md` (Part 8 of the combined report), which replaces these Nemotron results.
+
 The first run with the printed figures (`runs/20261125T084108Z`, see `printed_view_nemotron_2026-11-25.md`) showed a loophole: the verifier only checked the figures in the `claims` list. A revision could remove every claim and still state the figures in the explanation, and nothing checked them.
 
 ## What changed in the verifier (commit 64180bf)

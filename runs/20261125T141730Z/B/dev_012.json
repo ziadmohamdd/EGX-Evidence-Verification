@@ -1,0 +1,104 @@
+{
+  "case_id": "dev_012",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asks by how much Edita (EFID) net profit grew in 2025 compared with 2024, stating they will buy more if growth exceeded 50%.  \n\nFrom the evidence:\n- Net profit for the year (consolidated) for period 31 December 2024 is verified and printed as 1,606,727,698 EGP (evidence_id: EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31). This is the only verifiable net profit figure for the two-year comparison.\n- Net profit for the year for period 31 December 2025 is marked AMBIGUOUS (evidence_id: EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30). The printed figure 2,695,301,670 EGP is noted as unreadable because the 2025 figure is covered by a stamp on the scanned page. Per the rules, figures marked AMBIGUOUS must not be used in calculations.\n\nBecause the 2025 net profit figure cannot be used, the net profit growth rate cannot be calculated. The condition 'buy more if it grew by more than 50%' therefore cannot be verified or refuted based on the provided evidence.  \n\nAdditional note: Revenue figures are verified and show growth from 16,146,545,699 EGP (2024) to 20,915,072,432 EGP (2025), approximately 29.7%, but the investor's question specifically concerns net profit, not revenue.\n\nUnused figures: [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] Net profit for the year 2025 (2,695,301,670 EGP) – AMBIGUOUS, excluded from all calculations. This directly affects the conclusion on whether net profit grew by more than 50%, and thus the buy decision.\n\nGiven the missing verified 2025 net profit, there is insufficient evidence to responsibly determine the growth percentage or to recommend a buy, hold, sell, or keep_cash action based on the investor's criterion. The prudent course, consistent with the investor's medium risk tolerance and 3-year horizon, is to await clearer financial data.  \n\nThis is guidance, not a guarantee of returns. Uncertainty regarding the 2025 net profit figure introduces significant risk to any decision based on the >50% growth trigger.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30: Net profit for the year 2,695,301,670 EGP (AMBIGUOUS)"
+    ],
+    "limitations": [
+      "2025 net profit figure is AMBIGUOUS and cannot be used; without it, net profit growth % is indeterminable."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asks by how much Edita (EFID) net profit grew in 2025 compared with 2024, stating they will buy more if growth exceeded 50%.\n\nFrom the evidence:\n- Net profit for the year (consolidated) for period 31 December 2024 is verified and printed as 1,606,727,698 EGP (evidence_id: EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31). This figure is relied upon and listed in claims.\n- Net profit for the year for period 31 December 2025 is marked AMBIGUOUS (evidence_id: EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30). The printed figure 2,695,301,670 EGP is noted as unreadable because the 2025 figure is covered by a stamp on the scanned page. Per the mandatory rules, figures marked AMBIGUOUS must not be used in calculations. This figure is listed in unused_figures and excluded from all growth calculations.\n\nBecause the 2025 net profit figure cannot be used, the net profit growth rate cannot be calculated. The condition 'buy more if it grew by more than 50%' therefore cannot be verified or refuted based on the provided evidence.\n\nFor context, revenue figures are verified: revenue (consolidated) for 2025 was 20,915,072,432 EGP (evidence_id: EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01) and for 2024 was 16,146,545,699 EGP (evidence_id: EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02), representing approximately 29.7% growth. However, the investor's question specifically concerns net profit, not revenue.\n\nUnused figures: [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30: Net profit for the year 2,695,301,670 EGP (AMBIGUOUS)] – this directly affects the conclusion on whether net profit grew by more than 50%, and thus the buy decision.\n\nGiven the missing verified 2025 net profit, there is insufficient evidence to responsibly determine the growth percentage or to recommend a buy, hold, sell, or keep_cash action based on the investor's criterion. The prudent course, consistent with the investor's medium risk tolerance and 3-year horizon, is to await clearer financial data.\n\nThis is guidance, not a guarantee of returns. Uncertainty regarding the 2025 net profit figure introduces significant risk to any decision based on the >50% growth trigger.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "Net profit for the year 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "Revenue (consolidated) 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "Revenue (consolidated) 2024"
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30: Net profit for the year 2,695,301,670 EGP (AMBIGUOUS, excluded per rules)"
+    ],
+    "limitations": [
+      "2025 net profit figure is AMBIGUOUS and cannot be used; without it, net profit growth % is indeterminable."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"1,606,727,698\", which is 'Net profit for the year (consolidated)' (1.60673e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"16,146,545,699\", which is 'Revenue (consolidated)' (1.61465e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"20,915,072,432\", which is 'Revenue (consolidated)' (2.09151e+10), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 49.132,
+      "input_tokens": 1240,
+      "output_tokens": 7128,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 75.967,
+      "input_tokens": 2316,
+      "output_tokens": 12725,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 125.102
+}

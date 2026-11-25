@@ -1,0 +1,66 @@
+{
+  "case_id": "dev_009",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "All provided financial figures for ABUK are marked AMBIGUOUS in the evidence and must not be used in calculations. The listed rows (evidence_ids: ABUK-ABUK_9M2026_results-p2-01, p2-02, p2-25, p2-26, p2-31, p2-32) contain revenues, net profits, and EPS for the nine months ending 30 September 2026 and 2025, but their unit assignments are ambiguous (the PDF pages display mixed 'مليار' and 'مليون' labels, and the reliance on 'مليون جنيه' is itself flagged as ambiguous). Because these figures are excluded, no reliable EPS, full-year earnings, or P/E ratio can be derived from the given evidence. Only 9-month data is available, and no full-year 2026 earnings or annualisation method is provided. The market price of 76.21 EGP therefore has no earnings basis for valuation in this analysis. Without valid EPS or P/E, it is impossible to assess whether the share is cheap enough to buy. A responsible decision requires audited full-year EPS data and a verified P/E calculation, which are absent here.\n\nUnused figures (all marked AMBIGUOUS):\n- ABUK-ABUK_9M2026_results-p2-01 (Revenues 9M2026)\n- ABUK-ABUK_9M2026_results-p2-02 (Revenues 9M2025)\n- ABUK-ABUK_9M2026_results-p2-25 (Net profit 9M2026)\n- ABUK-ABUK_9M2026_results-p2-26 (Net profit 9M2025)\n- ABUK-ABUK_9M2026_results-p2-31 (EPS 9M2026)\n- ABUK-ABUK_9M2026_results-p2-32 (EPS 9M2025)\n\nConclusion affected: Full-year 2026 EPS, P/E ratio, and buy/hold assessment cannot be reliably computed.\n\nRisk & uncertainty statement: This guidance is based strictly on the supplied evidence cutoff (2026-11-18). The absence of clear, non-ambiguous financial metrics means any investment decision would rely on outside data or assumptions not permitted here. Investors should seek complete audited annual reports, verify EPS and P/E from official sources, and consider their medium risk tolerance and 3–5 year horizon before deploying capital.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "limitations": [
+      "All financial figures are AMBIGUOUS and excluded from calculation.",
+      "Only 9-month data is present; no full-year 2026 earnings are provided.",
+      "No outside knowledge or later events may be used to fill gaps."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "All provided financial figures for ABUK are marked AMBIGUOUS in the evidence and must not be used in calculations. The listed rows (evidence_ids: ABUK-ABUK_9M2026_results-p2-01, p2-02, p2-25, p2-26, p2-31, p2-32) contain revenues, net profits, and EPS for the nine months ending 30 September 2026 and 2025, but their unit assignments are ambiguous (the PDF pages display mixed 'مليار' and 'مليون' labels, and the reliance on 'مليون جنيه' is itself flagged as ambiguous). Because these figures are excluded, no reliable EPS, full-year earnings, or P/E ratio can be derived from the given evidence. Only 9-month data is available, and no full-year 2026 earnings or annualisation method is provided. The market price of 76.21 EGP therefore has no earnings basis for valuation in this analysis. Without valid EPS or P/E, it is impossible to assess whether the share is cheap enough to buy. A responsible decision requires audited full-year EPS data and a verified P/E calculation, which are absent here.\n\nUnused figures (all marked AMBIGUOUS):\n- ABUK-ABUK_9M2026_results-p2-01 (Revenues 9M2026)\n- ABUK-ABUK_9M2026_results-p2-02 (Revenues 9M2025)\n- ABUK-ABUK_9M2026_results-p2-25 (Net profit 9M2026)\n- ABUK-ABUK_9M2026_results-p2-26 (Net profit 9M2025)\n- ABUK-ABUK_9M2026_results-p2-31 (EPS 9M2026)\n- ABUK-ABUK_9M2026_results-p2-32 (EPS 9M2025)\n\nConclusion affected: Full-year 2026 EPS, P/E ratio, and buy/hold assessment cannot be reliably computed.\n\nRisk & uncertainty statement: This guidance is based strictly on the supplied evidence cutoff (2026-11-18). The absence of clear, non-ambiguous financial metrics means any investment decision would rely on outside data or assumptions not permitted here. Investors should seek complete audited annual reports, verify EPS and P/E from official sources, and consider their medium risk tolerance and 3–5 year horizon before deploying capital.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-31",
+      "ABUK-ABUK_9M2026_results-p2-32"
+    ],
+    "limitations": [
+      "All financial figures are AMBIGUOUS and excluded from calculation.",
+      "Only 9-month data is present; no full-year 2026 earnings are provided.",
+      "No outside knowledge or later events may be used to fill gaps."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 367.265,
+      "input_tokens": 1527,
+      "output_tokens": 3886,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 367.267
+}

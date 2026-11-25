@@ -1,5 +1,7 @@
 # The 5 harder cases: Gemini vs Nemotron, 25 November 2026
 
+> **Note added 25 November:** the Nemotron answers in this part had their explanations cut at 1,024 characters by NVIDIA's service, so figures in the text are undercounted here. See the full-length rerun in `full_length_nemotron_2026-11-25.md` (Part 8 of the combined report), which replaces these Nemotron results.
+
 The 5 harder cases (dev_008 to dev_012) were built to tempt the agents into the figure mistakes the verifier exists to catch. This file compares the two free models on them.
 
 | | Gemini 3.5 Flash | Nemotron Lightning |

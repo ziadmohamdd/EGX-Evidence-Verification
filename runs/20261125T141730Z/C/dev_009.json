@@ -1,0 +1,89 @@
+{
+  "case_id": "dev_009",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor request requires a full-year 2026 earnings per share (EPS) and price-to-earnings (P/E) ratio to assess whether ABUK is \"cheap enough to buy.\" The provided evidence does not support this calculation for the following reasons:\n\n- **AMBIGUOUS figures**: All reported EPS, net profit, and revenue rows from the nine-month report are flagged AMBIGUOUS. The row labels specify values in EGP (or absolute amounts), but the table unit line is `مليون جنيه` (million EGP), and the printed page itself displays a mix of `مليار` (billion) and `مليون` (million) units. Per instructions, these figures must not be used in calculations.\n  - [ABUK-ABUK_9M2026_results-p2-31]: Basic EPS 9M 2026 = 8.74 (AMBIGUOUS)\n  - [ABUK-ABUK_9M2026_results-p2-32]: Basic EPS 9M 2025 = 4.28 (AMBIGUOUS)\n  - [ABUK-ABUK_9M2026_results-p2-25]: Net profit 9M 2026 = 12,970 (AMBIGUOUS)\n  - [ABUK-ABUK_9M2026_results-p2-26]: Net profit 9M 2025 = 12,970 (AMBIGUOUS)\n  - [ABUK-ABUK_9M2026_results-p2-01, p2-02]: Revenue 9M 2026 and 9M 2025 (AMBIGUOUS)\n\n- **Data period limitation**: Evidence covers only the nine months ended 30 September 2026. No full-year 2026 income‑statement data, no annual guidance, and no historical full‑year figures are included.\n\n- **Invalid annualization**: Multiplying the 9M EPS by 4/3 to estimate full-year EPS would rely on AMBIGUOUS figures and would not reflect actual full-year earnings without confirmation of seasonality or guidance—neither of which is provided.\n\n- **P/E undefined**: The market price at cutoff is 76.21 EGP, but without a verified full-year EPS, the price‑to‑earnings ratio cannot be calculated.\n\n- **Conclusions affected**: Full-year 2026 EPS cannot be derived; P/E ratio is undefined; therefore, no assessment of whether the share is \"cheap enough to buy\" can be drawn from the evidence alone.\n\nThe investor profile (3–5 year horizon, income/growth goal, medium loss willingness, 30,000 EGP cash with separate emergency fund) is noted, but the decision cannot responsibly proceed without reliable EPS/P/E data. Given the missing and AMBIGUOUS evidence, the responsible action is to withhold a buy/hold/sell recommendation.\n\n**Recommendation**: insufficient_evidence. No outside knowledge, assumptions, or later‑event data were used. All figures relied upon are from the authoritative evidence list; where evidence is ambiguous or missing, it is explicitly stated and excluded.",
+    "claims": [],
+    "unused_figures": [
+      "[ABUK-ABUK_9M2026_results-p2-31]: Basic EPS 9M 2026 printed as 8.74 EGM, AMBIGUOUS due to row label in EGP vs. table unit 'مليون جنيه' (million EGP). Excluded from all calculations.",
+      "[ABUK-ABUK_9M2026_results-p2-32]: Basic EPS 9M 2025 printed as 4.28 EGP, AMBIGUOUS for same unit conflict. Excluded.",
+      "[ABUK-ABUK_9M2026_results-p2-25]: Net profit 9M 2026 printed as 12,970, AMBIGUOUS due to mixed page units ('مليار'/'مليون'). Excluded.",
+      "[ABUK-ABUK_9M2026_results-p2-26]: Net profit 9M 2025 printed as 12,970, AMBIGUOUS for same reason. Excluded.",
+      "[ABUK-ABUK_9M2026_results-p2-01, p2-02]: Revenue figures for 9M 2026 and 9M 2025, AMBIGUOUS due to page-unit conflict. Excluded."
+    ],
+    "limitations": [
+      "Evidence covers only 9M 2026; no full-year or annual guidance data.",
+      "All key valuation figures (EPS, net profit, revenue) are AMBIGUOUS because of unit conflicts between row labels and table/ page unit lines.",
+      "Annualizing 9M data or using printed per‑share figures without resolved units is invalid per the given rules.",
+      "P/E ratio cannot be computed without a verified EPS.",
+      "No conclusion on valuation ('cheap enough to buy') is supportable from the evidence alone."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor request requires a full-year 2026 earnings per share (EPS) and price-to-earnings (P/E) ratio to assess whether ABUK is \"cheap enough to buy.\" The provided evidence does not support this calculation for the following reasons:\n\n- **AMBIGUOUS figures**: All reported EPS, net profit, and revenue rows from the nine-month report are flagged AMBIGUOUS. The row labels specify values in EGP (or absolute amounts), but the table unit line is `مليون جنيه` (million EGP), and the printed page itself displays a mix of `مليار` (billion) and `مليون` (million) units. Per instructions, these figures must not be used in calculations.\n  - [ABUK-ABUK_9M2026_results-p2-31]: Basic EPS 9M 2026 = 8.74 (AMBIGUOUS)\n  - [ABUK-ABUK_9M2026_results-p2-32]: Basic EPS 9M 2025 = 4.28 (AMBIGUOUS)\n  - [ABUK-ABUK_9M2026_results-p2-25]: Net profit 9M 2026 = 12,970 (AMBIGUOUS)\n  - [ABUK-ABUK_9M2026_results-p2-26]: Net profit 9M 2025 = 12,970 (AMBIGUOUS)\n  - [ABUK-ABUK_9M2026_results-p2-01, p2-02]: Revenue 9M 2026 and 9M 2025 (AMBIGUOUS)\n\n- **Data period limitation**: Evidence covers only the nine months ended 30 September 2026. No full-year 2026 income‑statement data, no annual guidance, and no historical full‑year figures are included.\n\n- **Invalid annualization**: Multiplying the 9M EPS by 4/3 to estimate full-year EPS would rely on AMBIGUOUS figures and would not reflect actual full-year earnings without confirmation of seasonality or guidance—neither of which is provided.\n\n- **P/E undefined**: The market price at cutoff is 76.21 EGP, but without a verified full-year EPS, the price‑to‑earnings ratio cannot be calculated.\n\n- **Conclusions affected**: Full-year 2026 EPS cannot be derived; P/E ratio is undefined; therefore, no assessment of whether the share is \"cheap enough to buy\" can be drawn from the evidence alone.\n\nThe investor profile (3–5 year horizon, income/growth goal, medium loss willingness, 30,000 EGP cash with separate emergency fund) is noted, but the decision cannot responsibly proceed without reliable EPS/P/E data. Given the missing and AMBIGUOUS evidence, the responsible action is to withhold a buy/hold/sell recommendation.\n\n**Recommendation**: insufficient_evidence. No outside knowledge, assumptions, or later‑event data were used. All figures relied upon are from the authoritative evidence list; where evidence is ambiguous or missing, it is explicitly stated and excluded.",
+    "claims": [],
+    "unused_figures": [
+      "[ABUK-ABUK_9M2026_results-p2-31]: Basic EPS 9M 2026 printed as 8.74 EGM, AMBIGUOUS due to row label in EGP vs. table unit 'مليون جنيه' (million EGP). Excluded from all calculations.",
+      "[ABUK-ABUK_9M2026_results-p2-32]: Basic EPS 9M 2025 printed as 4.28 EGP, AMBIGUOUS for same unit conflict. Excluded.",
+      "[ABUK-ABUK_9M2026_results-p2-25]: Net profit 9M 2026 printed as 12,970, AMBIGUOUS due to mixed page units ('مليار'/'مليون'). Excluded.",
+      "[ABUK-ABUK_9M2026_results-p2-26]: Net profit 9M 2025 printed as 12,970, AMBIGUOUS for same reason. Excluded.",
+      "[ABUK-ABUK_9M2026_results-p2-01, p2-02]: Revenue figures for 9M 2026 and 9M 2025, AMBIGUOUS due to page-unit conflict. Excluded."
+    ],
+    "limitations": [
+      "Evidence covers only 9M 2026; no full-year or annual guidance data.",
+      "All key valuation figures (EPS, net profit, revenue) are AMBIGUOUS because of unit conflicts between row labels and table/ page unit lines.",
+      "Annualizing 9M data or using printed per‑share figures without resolved units is invalid per the given rules.",
+      "P/E ratio cannot be computed without a verified EPS.",
+      "No conclusion on valuation ('cheap enough to buy') is supportable from the evidence alone."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Evidence extraction and citation**\n\n- [ABUK-ABUK_9M2026_results-p2-31]: Basic EPS for the nine months ended 30 September 2026 = **8.74** (as printed).  \n  *Flagged AMBIGUOUS*: The row is labeled \"نصيب السهم الأساسي في الأرباح (جنيه)\" (Basic earnings per share in EGP), but the table unit line is `'مليون جنيه'` (million EGP), creating a unit conflict for a per-share figure. Per instructions, this figure is AMBIGUOUS and may not be used for computation.\n\n- [ABUK-ABUK_9M2026_results-p2-32]: Basic EPS for the nine months ended 30 September 2025 = **4.28** (as printed).  \n  *Flagged AMBIGUOUS*: Same unit conflict as above (row label in EGP vs. table unit in millions of EGP). May not be used for computation.\n\n- [ABUK-ABUK_9M2026_results-p2-25]: Net profit for the nine months ended 30 September 2026 = **12,970** (as printed, in the table's unit).  \n  *Flagged AMBIGUOUS*: The page note indicates the sheet shows units `['مليار', ..., 'مليون']`, and the reliance is on `'مليون جنيه'`, but the mix of printed digits and page-level unit notation makes the exact magnitude ambiguous. May not be used for computation.\n\n- [ABUK-ABUK_9M2026_results-p2-26]: Net profit for the nine months ended 30 September 2025 = **12,970** (as printed, same unit ambiguity).  \n  *Flagged AMBIGUOUS*: Same reason as above.\n\n- [ABUK-ABUK_9M2026_results-p2-01, p2-02]: Revenue figures for 9M 2026 and 9M 2025 are also AMBIGUOUS due to the same page-unit conflict and are not required for EPS derivation.\n\n**Key limitations for your request**\n\n1. **Data period**: All provided figures cover the nine months ended 30 September 2026. No full-year 2026 income‑statement data, no annual guidance, and no historical full‑year figures are included in the evidence.\n\n2. **Unit ambiguities**: The EPS rows carry a label of \"per share in EGP\" but the accompanying table unit line is `'مليون جنيه'`. The net‑profit and revenue rows similarly have ambiguous unit assignments across the page. Per your instructions, I flag these as AMBIGUOUS and **do not compute with them**.\n\n3. **Insufficient data for full-year EPS or P/E**: \n   - Full‑year 2026 EPS cannot be derived from the 9M data alone, especially since the 9M EPS figures themselves are AMBIGUOUS regarding unit.\n   - Annualizing the 9M EPS (e.g., multiplying by 4/3) would involve using an AMBIGUOUS figure and would not reflect actual full-year earnings without confirmation of seasonality or guidance—neither of which is provided.\n   - Consequently, the price‑to‑earnings ratio (P/E = share price / EPS) cannot be calculated from the given evidence. The market price at cutoff is **76.21 EGP** (as stated by you), but without a verified full‑year EPS, P/E is undefined here.\n\n4. **No investment recommendation**: Per your constraints, I do not recommend buying, holding, or selling ABUK shares. The decision agent handles actionability.\n\n**Summary of what can be stated from the evidence only**\n- ABUK's reported 9M 2026 basic EPS is printed as **8.74** but is AMBIGUOUS due to a unit conflict (row label: EGP; table unit: million EGP).\n- ABUK's reported 9M 2025 basic EPS is printed as **4.28** and is similarly AMBIGUOUS.\n- Full‑year 2026 EPS and P/E ratio cannot be determined from the provided evidence.\n- No actionable conclusion (e.g., \"cheap enough to buy\") can be drawn; this is outside the scope of the evidence‑only analysis.",
+    "investor": "**Investor-Suitability Assessment**\n\n**Profile Alignment**\n- **Horizon (3–5 years):** Matches a medium-term equity holding period. Allows time to ride typical exporter-cycle volatility without forced liquidation.\n- **Liquidity needs:** Investor maintains a separate emergency fund. With 30,000 EGP in cash currently held, a portion can be allocated to new positions while preserving liquidity buffers.\n- **Loss willingness & capacity (both medium):** Indicates a tolerance for moderate drawdowns, provided the position size respects the investor's overall financial comfort zone.\n- **Current concentration:** No existing holdings. A new position in a single exporter would represent 100% of equity exposure unless additional diversification is sought later.\n- **Cash reasonably commitable:** Given the need to keep the emergency fund intact, a prudent commitment range is 10–20% of available cash, i.e., **3,000–6,000 EGP**. This keeps the majority of the 30,000 EGP cash reserve untouched for emergencies.\n\n**Portfolio Allowances (per current data)**\n- **What can be sold:** No holdings exist; no liquidation decisions are needed.\n- **What cash is free:** The full 30,000 EGP is currently free of investment commitments, subject to the emergency-fund constraint noted above.\n\n**Role Constraint Note**\nPer my instructions, I do not analyse company financials, calculate valuation metrics (EPS, P/E, etc.), or make buy/hold/sell recommendations. Therefore, I cannot derive a full-year 2026 earnings per share, compute a price-to-earnings ratio, or assess whether the share is \"cheap enough to buy.\" Those steps fall outside the scope of this suitability assessment."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 26.582,
+      "input_tokens": 1353,
+      "output_tokens": 4273,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 12.794,
+      "input_tokens": 1347,
+      "output_tokens": 1642,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 709.983,
+      "input_tokens": 2927,
+      "output_tokens": 4297,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 749.361
+}

@@ -1,0 +1,174 @@
+{
+  "case_id": "dev_004",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "### Investor profile and portfolio overview\n- Goal: preserve capital and draw income in retirement; horizon 1–3 years; liquidity need: ~30,000 EGP within 6 months; low loss willingness and capacity.\n- Current portfolio: cash 5,000.00 EGP; COMI 1,000 shares at 128.00 EGP/share (total 128,000.00 EGP); portfolio value 133,000.00 EGP.\n- Liquidity shortfall: free cash covers only 5,000 EGP (16.7%) of the 30,000 EGP need within 6 months. The remaining value is 100% concentrated in the single COMI equity position.\n\n### Financial evidence ambiguities (unused figures)\nPer the financial analyst report, the following figures from the authoritative evidence list are flagged as AMBIGUOUS and must not be used in calculations. They are listed in `unused_figures` with their evidence_ids and the specific ambiguity:\n\n1. **[COMI-COMI_FY2025_consolidated_condensed_en-p5-05]** Net interest income for period Dec. 31, 2025: the printed value 107,699,631 EGP thousands is clear, but the row prefix \"6\" has an unspecified meaning (likely a period code or row number). This ambiguity affects any profitability trend analysis.\n\n2. **[COMI-COMI_FY2025_consolidated_condensed_en-p4-28]** Due to customers (consolidated), period Dec. 31, 2025: printed values 1,110,395,693 and 972,595,958 EGP thousands. The prefix \"26\" is ambiguous in meaning; the monetary values are usable but the row identification is uncertain.\n\n3. **[COMI-COMI_FY2025_consolidated_condensed_en-p5-33, p5-34]** Net profit for the year: both periods Dec. 31, 2025 and Dec. 31, 2024 report identical 82,258,815 EGP thousands. The analysts flag this as ambiguous—identical figures may indicate a restatement, error, or stagnation—and these values must not be used for year‑on‑year growth computation.\n\n4. **[COMI-COMI_FY2025_consolidated_condensed_en-p5-39, p5-40]** Basic EPS: 18.25 EGP thousands for both periods. The unit \"EGP thousands\" for EPS is flagged as implausible and ambiguous; these figures cannot support reliable per‑share profitability assessment.\n\n5. **[COMI-COMI_FY2025_consolidated_condensed_en-p5-33/34 vs. p4-54]** Net profit for the year discrepancy: income‑statement rows (p5‑33/34) report 82,258,815,000 EGP for 2025, while the summary equity row (p4‑54) reports 152,636,277,000 EGP for the same period. The analysts flag this as ambiguous, indicating possible consolidation or classification differences; the reliable net profit figure is uncertain.\n\n6. **[COMI-COMI_FY2025_consolidated_condensed_en-p4-54]** \"Total equity and net profit for the year\" single row: combines 231,486,342 and 152,636,277 EGP thousands without clear separation of the two metrics. The analysts flag this as ambiguous, increasing the risk of misinterpretation of equity vs. net profit components.\n\n### Suitability assessment summary\n- The suitability analyst confirms the portfolio is misaligned: a short‑to‑medium horizon (1–3 years) with a dual goal of capital preservation and income generation, low loss tolerance, and a 30,000 EGP liquidity need within 6 months cannot be met from the 5,000 EGP free cash alone. The 100% concentration in COMI creates undiversified risk inconsistent with the investor's stated financial ability to withstand losses.\n- Selling a portion of COMI (≈234 shares at 128.00 EGP) could generate the needed ~30,000 EGP, but this would reduce the equity holding, introduce market‑price risk at odds with the preservation goal, and the evidence does not provide dividend income, price volatility, bid‑ask spreads, or transaction‑cost data to evaluate the trade‑off.\n- The COMI financial evidence, while extensive, contains the above critical ambiguities that prevent a reliable assessment of the company's true profitability, sustainability, or valuation. Without reliable financial metrics, any decision to buy, hold, or sell COMI is speculative.\n\n### Why the evidence is insufficient for a responsible decision\n- The financial data contains multiple unresolvable inconsistencies (duplicate net‑profit figures across years, EPS unit mismatch, combined metric rows, ambiguous row prefixes). These prevent calculation of meaningful profitability, growth, or valuation metrics.\n- The investor's liquidity need (30,000 EGP / 6 months) and risk profile (preserve capital, low loss tolerance) are in direct tension with the portfolio's structure (cash‑poor, single‑stock concentrated) and the lack of data on COMI's income generation (dividends), price stability, or liquidation terms.\n- No evidence is provided for market‑price volatility, dividend history, settlement timelines, transaction costs, or macro‑economic factors affecting COMI or the Egyptian listed‑company sector.\n- The cutoff price of 128.00 EGP/share is given, but without data on bid‑ask spreads, execution costs, or price trends, the actual proceeds from any sale cannot be reliably estimated.\n\n### Missing evidence for a responsible recommendation\n- A reliable, single net‑profit figure for COMI (resolving the p5‑33/34 vs. p4‑54 discrepancy).\n- Valid EPS in EGP (not EGP thousands) to assess per‑share profitability.\n- Dividend or income‑generation history/data for COMI.\n- Market‑price volatility, bid‑ask spread, or transaction‑cost estimates for COMI shares.\n- Clear separation of equity and net‑profit components in the balance‑sheet summary.\n- Any liquidity or settlement‑timeline details for COMI share sales.\n\n### Conclusion\nGiven the extensive data‑quality ambiguities in the COMI financial statements and the fundamental misalignment between the portfolio's concentration/liquidity structure and the investor's short horizon, preservation goal, and liquidity need, there is insufficient reliable evidence to support a responsible buy, hold, sell, or keep_cash action. The prudent course, per the stated rules, is to acknowledge the evidence gap and refrain from taking a position‑changing decision based on the current data.\n\n**Recommendation: insufficient_evidence**. No action (buy, hold, sell, or keep_cash) can be justified with the authoritative evidence provided. The investor should seek clarified financial statements, dividend data, and liquidity terms for COMI before re‑evaluating the portfolio.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107699631.0,
+        "statement": "Net interest income for period Dec. 31, 2025, in EGP thousands (value used; prefix \"6\" ambiguity listed in unused_figures)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+        "stated_value": 1110395693.0,
+        "statement": "Due to customers (consolidated) for period Dec. 31, 2025, in EGP thousands (value used; prefix \"26\" ambiguity listed in unused_figures)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815.0,
+        "statement": "Net profit for the year for period Dec. 31, 2025, in EGP thousands (ambiguous: identical to 2024 figure, listed in unused_figures)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 82258815.0,
+        "statement": "Net profit for the year for period Dec. 31, 2024, in EGP thousands (identical to 2025, listed in unused_figures)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 1825.0,
+        "statement": "Basic EPS for period Dec. 31, 2025, in EGP thousands (unit ambiguity, listed in unused_figures)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+        "stated_value": 1825.0,
+        "statement": "Basic EPS for period Dec. 31, 2024, in EGP thousands (unit ambiguity, listed in unused_figures)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+        "stated_value": 231486342.0,
+        "statement": "Total equity (first component) for period Dec. 31, 2025, in EGP thousands (combined‑metric ambiguity, listed in unused_figures)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+        "stated_value": 152636277.0,
+        "statement": "Net profit for the year (second component) for period Dec. 31, 2025, in EGP thousands (discrepancy with p5‑33/34, listed in unused_figures)"
+      }
+    ],
+    "unused_figures": [
+      "p5-05 prefix \"6\": meaning not specified in printed evidence; affects net interest income period identification.",
+      "p4-28 prefix \"26\": meaning not specified in printed evidence; affects Due to customers row identification.",
+      "p5-33/p5-34 identical net profit for 2024 and 2025: cannot be used for year‑on‑year growth computation.",
+      "p5-39/p5-40 Basic EPS in EGP thousands: 18.25 EGP thousands = 18,250 EGP, but unit is implausible for Egyptian‑listed stocks; unreliable for per‑share analysis.",
+      "p5‑33/34 vs. p4‑54 net profit discrepancy: 82.3 billion EGP (income‑statement) vs. 152.6 billion EGP (summary equity row) for 2025; reconciliation not possible with given evidence.",
+      "p4‑54 \"Total equity and net profit for the year\" single row: combines two distinct metrics without clear separation, increasing misinterpretation risk."
+    ],
+    "limitations": [
+      "All figures are as printed in the evidence list at the 2026‑11‑18 cutoff; no outside knowledge or later events were used.",
+      "The 128.00 EGP/share price is the only market price provided; no bid‑ask spread, volume, or transaction‑cost data are available.",
+      "The investor's liquidity need (30,000 EGP within 6 months) and risk profile (preserve capital, low loss tolerance) are not resolvable with the current evidence set."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "### Investor profile and portfolio overview\n- Goal: preserve capital and draw income in retirement; horizon 1–3 years; liquidity need: ~30,000 EGP within 6 months; low loss willingness and capacity.\n- Current portfolio: cash 5,000.00 EGP; COMI 1,000 shares at 128.00 EGP/share (total 128,000.00 EGP); portfolio value 133,000.00 EGP.\n- Liquidity shortfall: free cash covers only 5,000 EGP (16.7%) of the 30,000 EGP need within 6 months. The remaining value is 100% concentrated in the single COMI equity position.\n\n### Financial evidence ambiguities (unused figures)\nPer the financial analyst report, the following figures from the authoritative evidence list are flagged as AMBIGUOUS and must not be used in calculations. They are listed in `unused_figures` with their evidence_ids and the specific ambiguity:\n\n1. **[COMI-COMI_FY2025_consolidated_condensed_en-p5-05]** Net interest income for period Dec. 31, 2025: the printed value 107,699,631 EGP thousands is clear, but the row prefix \"6\" has an unspecified meaning (likely a period code or row number). This ambiguity affects any profitability trend analysis.\n\n2. **[COMI-COMI_FY2025_consolidated_condensed_en-p4-28]** Due to customers (consolidated), period Dec. 31, 2025: printed values 1,110,395,693 and 972,595,958 EGP thousands. The prefix \"26\" is ambiguous in meaning; the monetary values are usable but the row identification is uncertain.\n\n3. **[COMI-COMI_FY2025_consolidated_condensed_en-p5-33, p5-34]** Net profit for the year: both periods Dec. 31, 2025 and Dec. 31, 2024 report identical 82,258,815 EGP thousands. The analysts flag this as ambiguous—identical figures may indicate a restatement, error, or stagnation—and these values must not be used for year‑on‑year growth computation.\n\n4. **[COMI-COMI_FY2025_consolidated_condensed_en-p5-39, p5-40]** Basic EPS: 18.25 EGP thousands for both periods. The unit \"EGP thousands\" for EPS is flagged as implausible and ambiguous; these figures cannot support reliable per‑share profitability assessment.\n\n5. **[COMI-COMI_FY2025_consolidated_condensed_en-p5-33/34 vs. p4-54]** Net profit for the year discrepancy: income‑statement rows (p5‑33/34) report 82,258,815,000 EGP for 2025, while the summary equity row (p4‑54) reports 152,636,277,000 EGP for the same period. The analysts flag this as ambiguous, indicating possible consolidation or classification differences; the reliable net profit figure is uncertain.\n\n6. **[COMI-COMI_FY2025_consolidated_condensed_en-p4-54]** \"Total equity and net profit for the year\" single row: combines 231,486,342 and 152,636,277 EGP thousands without clear separation of the two metrics. The analysts flag this as ambiguous, increasing the risk of misinterpretation of equity vs. net profit components.\n\n### Suitability assessment summary\n- The suitability analyst confirms the portfolio is misaligned: a short‑to‑medium horizon (1–3 years) with a dual goal of capital preservation and income generation, low loss tolerance, and a 30,000 EGP liquidity need within 6 months cannot be met from the 5,000 EGP free cash alone. The 100% concentration in COMI creates undiversified risk inconsistent with the investor's stated financial ability to withstand losses.\n- Selling a portion of COMI (≈234 shares at 128.00 EGP) could generate the needed ~30,000 EGP, but this would reduce the equity holding, introduce market‑price risk at odds with the preservation goal, and the evidence does not provide dividend income, price volatility, bid‑ask spreads, or transaction‑cost data to evaluate the trade‑off.\n- The COMI financial evidence, while extensive, contains the above critical ambiguities that prevent a reliable assessment of the company's true profitability, sustainability, or valuation. Without reliable financial metrics, any decision to buy, hold, or sell COMI is speculative.\n\n### Why the evidence is insufficient for a responsible decision\n- The financial data contains multiple unresolvable inconsistencies (duplicate net‑profit figures across years, EPS unit mismatch, combined metric rows, ambiguous row prefixes). These prevent calculation of meaningful profitability, growth, or valuation metrics.\n- The investor's liquidity need (30,000 EGP / 6 months) and risk profile (preserve capital, low loss tolerance) are in direct tension with the portfolio's structure (cash‑poor, single‑stock concentrated) and the lack of data on COMI's income generation (dividends), price stability, or liquidation terms.\n- No evidence is provided for market‑price volatility, dividend history, settlement timelines, transaction costs, or macro‑economic factors affecting COMI or the Egyptian listed‑company sector.\n- The cutoff price of 128.00 EGP/share is given, but without data on bid‑ask spreads, execution costs, or price trends, the actual proceeds from any sale cannot be reliably estimated.\n\n### Missing evidence for a responsible recommendation\n- A reliable, single net‑profit figure for COMI (resolving the p5‑33/34 vs. p4‑54 discrepancy).\n- Valid EPS in EGP (not EGP thousands) to assess per‑share profitability.\n- Dividend or income‑generation history/data for COMI.\n- Market‑price volatility, bid‑ask spread, or transaction‑cost estimates for COMI shares.\n- Clear separation of equity and net‑profit components in the balance‑sheet summary.\n- Any liquidity or settlement‑timeline details for COMI share sales.\n\n### Conclusion\nGiven the extensive data‑quality ambiguities in the COMI financial statements and the fundamental misalignment between the portfolio's concentration/liquidity structure and the investor's short horizon, preservation goal, and liquidity need, there is insufficient reliable evidence to support a responsible buy, hold, sell, or keep_cash action. The prudent course, per the stated rules, is to acknowledge the evidence gap and refrain from taking a position‑changing decision based on the current data.\n\n**Recommendation: insufficient_evidence**. No action (buy, hold, sell, or keep_cash) can be justified with the authoritative evidence provided. The investor should seek clarified financial statements, dividend data, and liquidity terms for COMI before re‑evaluating the portfolio.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107699631.0,
+        "statement": "Net interest income for period Dec. 31, 2025, in EGP thousands (value used; prefix \"6\" ambiguity listed in unused_figures)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+        "stated_value": 1110395693.0,
+        "statement": "Due to customers (consolidated) for period Dec. 31, 2025, in EGP thousands (value used; prefix \"26\" ambiguity listed in unused_figures)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815.0,
+        "statement": "Net profit for the year for period Dec. 31, 2025, in EGP thousands (ambiguous: identical to 2024 figure, listed in unused_figures)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 82258815.0,
+        "statement": "Net profit for the year for period Dec. 31, 2024, in EGP thousands (identical to 2025, listed in unused_figures)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 1825.0,
+        "statement": "Basic EPS for period Dec. 31, 2025, in EGP thousands (unit ambiguity, listed in unused_figures)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+        "stated_value": 1825.0,
+        "statement": "Basic EPS for period Dec. 31, 2024, in EGP thousands (unit ambiguity, listed in unused_figures)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+        "stated_value": 231486342.0,
+        "statement": "Total equity (first component) for period Dec. 31, 2025, in EGP thousands (combined‑metric ambiguity, listed in unused_figures)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+        "stated_value": 152636277.0,
+        "statement": "Net profit for the year (second component) for period Dec. 31, 2025, in EGP thousands (discrepancy with p5‑33/34, listed in unused_figures)"
+      }
+    ],
+    "unused_figures": [
+      "p5-05 prefix \"6\": meaning not specified in printed evidence; affects net interest income period identification.",
+      "p4-28 prefix \"26\": meaning not specified in printed evidence; affects Due to customers row identification.",
+      "p5-33/p5-34 identical net profit for 2024 and 2025: cannot be used for year‑on‑year growth computation.",
+      "p5-39/p5-40 Basic EPS in EGP thousands: 18.25 EGP thousands = 18,250 EGP, but unit is implausible for Egyptian‑listed stocks; unreliable for per‑share analysis.",
+      "p5‑33/34 vs. p4‑54 net profit discrepancy: 82.3 billion EGP (income‑statement) vs. 152.6 billion EGP (summary equity row) for 2025; reconciliation not possible with given evidence.",
+      "p4‑54 \"Total equity and net profit for the year\" single row: combines two distinct metrics without clear separation, increasing misinterpretation risk."
+    ],
+    "limitations": [
+      "All figures are as printed in the evidence list at the 2026‑11‑18 cutoff; no outside knowledge or later events were used.",
+      "The 128.00 EGP/share price is the only market price provided; no bid‑ask spread, volume, or transaction‑cost data are available.",
+      "The investor's liquidity need (30,000 EGP within 6 months) and risk profile (preserve capital, low loss tolerance) are not resolvable with the current evidence set."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 5000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Evidence Figures (converted to whole Egyptian Pounds, EGP; unit \"EGP thousands\" → multiplied by 1,000)**\n\n- **Net interest income, period Dec. 31, 2025**: 107,699,631,000 EGP  \n  [COMI-COMI_FY2025_consolidated_condensed_en-p5-05]  \n  *Note: Row includes ambiguous \"6\" prefix; the value for the stated period is 107,699,631 EGP thousands.*\n\n- **Net interest income, prior period (implied Dec. 31, 2024)**: 91,064,222,000 EGP  \n  [COMI-COMI_FY2025_consolidated_condensed_en-p5-05]  \n  *Same row; used for year‑on‑year comparison.*\n\n- **Net profit for the year, period Dec. 31, 2025**: 82,258,815,000 EGP  \n  [COMI-COMI_FY2025_consolidated_condensed_en-p5-33]\n\n- **Net profit for the year, period Dec. 31, 2024**: 82,258,815,000 EGP  \n  [COMI-COMI_FY2025_consolidated_condensed_en-p5-34]  \n  *Flag: identical to 2025 figure; ambiguous year‑on‑year growth.*\n\n- **Basic EPS, period Dec. 31, 2025**: 18,250 EGP (converted from 18.25 EGP thousands)  \n  [COMI-COMI_FY2025_consolidated_condensed_en-p5-39]  \n  *Flag: EPS unit stated as EGP thousands is implausible; likely misapplication.*\n\n- **Basic EPS, period Dec. 31, 2024**: 18,250 EGP (converted from 18.25 EGP thousands)  \n  [COMI-COMI_FY2025_consolidated_condensed_en-p5-40]  \n  *Same ambiguity as p5-39.*\n\n- **Due to customers (consolidated), period Dec. 31, 2025**: 1,110,395,693,000 EGP  \n  [COMI-COMI_FY2025_consolidated_condensed_en-p4-28]  \n  *Note: Row includes ambiguous \"26\" prefix; values represent 2025 and prior period.*\n\n- **Total equity and net profit for the year, period Dec. 31, 2025**:  \n  - Total equity: 231,486,342,000 EGP  \n  - Net profit for the year: 152,636,277,000 EGP  \n  [COMI-COMI_FY2025_consolidated_condensed_en-p4-54]  \n  *Flag: \"Total equity and net profit for the year\" combines two metrics in one row; net profit figure here differs from p5-33/34.*\n\n**Ambiguities Flagged (computation with these figures avoided)**\n\n1. **\"6\" in p5-05 and \"26\" in p4-28**: Likely period codes or row numbers; exact meaning not specified in printed evidence.  \n2. **Identical net profit for 2024 and 2025** [p5-33, p5-34]: May indicate restatement, error, or stagnation; not used for growth computation.  \n3. **Basic EPS in EGP thousands** [p5-39, p5-40]: 18.25 EGP thousands = 18,250 EGP, but typical Egyptian‑listed stock EPS are in EGP; ambiguity prevents reliable per‑share analysis.  \n4. **Discrepancy in net profit for the year** [p5-33/34 vs. p4-54]: 82.3 billion EGP (income‑statement rows) vs. 152.6 billion EGP (summary equity row) for 2025; suggests possible consolidation or classification differences.  \n5. **\"Total equity and net profit for the year\" single row** [p4-54]: Combines two distinct metrics without clear separation, increasing risk of misinterpretation.\n\n**Analysis Using Only Provided Evidence**\n\n*Profitability*  \n- Net interest income rose from 91,064,222 EGP thousands (prior period) to 107,699,631 EGP thousands in 2025 [p5-05], an increase of approximately 16.6 billion EGP.  \n- Net profit for the year was reported as 82,258,815,000 EGP for both 2024 and 2025 [p5-33, p5-34]; year‑on‑year growth is ambiguous due to the identical figures. The alternative net‑profit figure from p4-54 (152,636,277,000 EGP) would imply significant growth, but the discrepancy with p5-33/34 prevents confirmation.  \n- Basic EPS of 18,250 EGP is reported for both years [p5-39, p5-40], but the EGP‑thousands unit renders this figure unreliable for per‑share profitability assessment.\n\n*Growth*  \n- The only explicit growth metric in the evidence is the ~18.3% increase in net interest income [p5-05].  \n- Overall net‑profit growth cannot be determined reliably because of the duplicate 2024/2025 figures and the p4‑54/p5‑33/34 discrepancy. No other period‑over‑period comparisons are provided.\n\n*Balance Sheet*  \n- Due to customers (a primary liability) totaled 1,110,395,693,000 EGP as of Dec. 31, 2025 [p4-28], indicating a very large customer‑deposit base. The \"26\" prefix in the row is ambiguous but the monetary value is clear.  \n- Total equity stood at 231,486,342,000 EGP as of the same date [p4-54]. The combined “equity and net profit” label and the net‑profit discrepancy with p5‑33/34 introduce uncertainty about the equity figure’s composition and reliability.  \n- No other balance‑sheet items (assets, other liabilities, capital adequacy ratios) are present in the extracted evidence.\n\n*Risks (derived solely from evidence)*  \n- **Liability concentration**: Due to customers comprise a substantial portion of the balance sheet, exposing the institution to mass‑withdrawal risk, though maturity or concentration details are absent.  \n- **Earnings stability**: Flat reported net profit across two years [p5-33, p5-34] could signal saturated growth or an accounting artifact; the conflicting 152.6 billion EGP figure [p4-54] increases uncertainty.  \n- **Data reliability**: Multiple ambiguities (duplicate figures, unit mismatch for EPS, row prefixes, combined metric labels) reduce confidence in precise financial assessment.  \n- **No evidence provided** for market‑price volatility, dividend history, liquidity terms, or macro‑economic factors affecting the institution.\n\n*Data Quality*  \n- Duplicate net‑profit values across two reporting years [p5-33, p5-34] represent a primary quality concern.  \n- Basic EPS reported in EGP thousands [p5-39, p5-40] conflicts with industry norms and plausible EPS ranges for Egyptian equities.  \n- Net profit for the year differs between income‑statement rows [p5-33/34] and a summary equity row [p4-54], indicating possible consolidation or classification inconsistencies.  \n- Row prefixes (“6”, “26”) and the label “Total equity and net profit for the year” add interpretive layers beyond the printed numbers.  \n- Overall, the financial data should be verified against full, uncondensed statements before reliance for investment decisions.\n\n**Portfolio Context (observational only, no recommendation)**\n\n- Current holdings: Cash 5,000.00 EGP; COMI 1,000 shares at 128.00 EGP/share = 128,000.00 EGP; total portfolio value 133,000.00 EGP.  \n- The investor requires approximately 30,000 EGP within 6 months. Selling a portion of the COMI holding (roughly 234 shares at the stated price) would generate the needed amount, but evidence does not provide price volatility, bid‑ask spreads, transaction costs, or dividend income data, all of which are relevant for capital preservation and income generation under the stated low‑risk, low‑loss‑tolerance profile.  \n- COMI’s financial evidence shows a large, systemically significant financial institution with billions of EGP in equity, liabilities, and net profit, but the data quality ambiguities flagged above introduce uncertainty about the reliability of using this holding to meet the investor’s liquidity and income needs.",
+    "investor": "**Suitability Assessment**\n\n**Horizon (1–3 years)**  \nThe investor’s horizon is short-to-medium term, which generally aligns with a capital-preservation goal. However, the dual objective of \"preserve capital *and* draw income in retirement\" introduces a tension: a 1–3 year horizon is typically too short to rely on equity-based income generation without exposing principal to market risk. The profile’s emphasis on preservation suggests a need for stability over yield during this period.\n\n**Liquidity Needs (30,000 EGP within 6 months)**  \nThe portfolio holds only **5,000 EGP in free cash**. The remaining value is concentrated in a single equity position (COMI). Meeting the 30,000 EGP need within 6 months would require liquidating a portion of the COMI holding, as free cash covers just 16.7% of the requirement. The portfolio does not currently provide the needed liquidity without converting the equity position.\n\n**Loss Willingness & Capacity (both low)**  \nThe investor has minimal appetite and ability to absorb losses. Any market movement against the COMI position, or a forced liquidation at an unfavourable price, would directly conflict with the stated goal of capital preservation. The short horizon further limits the time available to recover from any downturn.\n\n**Current Concentration**  \nThe equity allocation is **100% concentrated in COMI** (1,000 shares × 128.00 EGP = 128,000 EGP; total portfolio value ≈ 133,000 EGP). For an investor with low loss willingness/capacity and a short horizon, such concentration is a significant misfit. It creates undiversified risk with no built-in buffer against sector- or company-specific declines.\n\n**Cash That Could Reasonably Be Committed**  \n- **Free cash:** 5,000 EGP (immediately available).  \n- **Salable asset:** The 1,000 COMI shares could be liquidated for approximately 128,000 EGP gross, subject to market pricing, settlement timelines, and transaction costs. This could fully cover the 30,000 EGP need, but would reduce the portfolio to cash-only and eliminate any remaining equity exposure.\n\n**Portfolio What It Allows**  \n- Immediate access to 5,000 EGP cash.  \n- Ability to sell the COMI holding (1,000 shares) in the market, realizing whatever the prevailing price is at the time of sale.  \n- No other assets or cash reserves are noted.  \n- *Per instructions, the COMI financial statements provided in the evidence (net interest income, net profit, equity figures, etc.) are not analysed for this suitability assessment.*\n\n**Key Observations (no action recommended)**  \n- The portfolio’s structure (heavily concentrated in a single listed equity with minimal cash) does not align with the investor’s short horizon, liquidity timeline, and low loss tolerance.  \n- The liquidity need (30,000 EGP / 6 months) cannot be met from free cash alone; it would require partial or full realization of the COMI position, which introduces market-price risk at odds with the preservation goal.  \n- The concentration risk is inconsistent with the investor’s stated financial ability to withstand losses.  \n- Suitability would improve if the portfolio were rebalanced toward shorter-duration, lower-volatility instruments with more predictable cash flows, but no specific reallocation is prescribed here."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 74.402,
+      "input_tokens": 1143,
+      "output_tokens": 13245,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 18.607,
+      "input_tokens": 1137,
+      "output_tokens": 3109,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 79.524,
+      "input_tokens": 4309,
+      "output_tokens": 12135,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 172.535
+}
