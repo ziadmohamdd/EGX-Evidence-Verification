@@ -111,3 +111,28 @@ def test_prompt_marks_ambiguous_evidence(case):
     run_case(case, CONDITIONS["A"], llm)
     prompt = llm.seen[0][-1].content
     assert "AMBIGUOUS" in prompt and "SYNB-FY24-rev" in prompt
+
+
+def test_printed_view_hides_converted_values(case):
+    from egx_guide.agents import render_case
+    converted, printed = render_case(case), render_case(case, "printed")
+    assert "1.25e+09" in converted and "1.25e+09" not in printed and "value " not in printed
+    assert "Net profit 1,250 (EGP millions)" in printed and "Apply the" in printed
+    assert "AMBIGUOUS" in printed  # status still shown
+    with pytest.raises(ValueError):
+        render_case(case, "raw")
+
+
+@pytest.mark.parametrize("name", ["A", "B", "C", "D"])
+def test_printed_view_reaches_every_prompt(case, name):
+    llm = ScriptedModel(script=[buy(value=1250), buy()])  # B and D revise once
+    run_case(case, CONDITIONS[name], llm, view="printed")
+    prompts = [m[-1].content for m in llm.seen]
+    assert prompts and all("as printed:" in p for p in prompts)
+    assert "1.25e+09" not in prompts[0]  # only the verifier's feedback may quote the converted value
+
+
+def test_runner_records_evidence_view(case, tmp_path):
+    run_dir = run([case], ["A"], ScriptedModel(script=[buy()]), tmp_path, {"provider": "scripted"},
+                  fee_rate=0.0, view="printed")
+    assert json.loads((run_dir / "manifest.json").read_text())["evidence_view"] == "printed"

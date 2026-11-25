@@ -31,23 +31,24 @@ class State(TypedDict, total=False):
     blocked: bool
 
 
-def build_graph(condition: Condition, caller: Caller, fee_rate: float = 0.0):
+def build_graph(condition: Condition, caller: Caller, fee_rate: float = 0.0,
+                view: agents.EvidenceView = "converted"):
     role = "decision_agent" if condition.multi_agent else "single_agent"
 
     def analysts(s: State) -> State:
-        return {"reports": agents.multi_agent_reports(caller, s["case"])}
+        return {"reports": agents.multi_agent_reports(caller, s["case"], view)}
 
     def decide(s: State) -> State:
         if condition.multi_agent:
-            rec = agents.multi_agent_decide(caller, s["case"], s["reports"])
+            rec = agents.multi_agent_decide(caller, s["case"], s["reports"], view)
         else:
-            rec = agents.single_agent_decide(caller, s["case"])
+            rec = agents.single_agent_decide(caller, s["case"], view)
         return {"proposed": rec, "verified": rec, "verifier_report": None}
 
     def verify(s: State) -> State:
         rec, report = run_verifier(
             s["proposed"], s["case"].evidence,
-            revise=lambda r, fb: agents.revise(caller, s["case"], r, fb, role))
+            revise=lambda r, fb: agents.revise(caller, s["case"], r, fb, role, view))
         return {"verified": rec, "verifier_report": report}
 
     def check(s: State) -> State:
@@ -87,8 +88,9 @@ def build_graph(condition: Condition, caller: Caller, fee_rate: float = 0.0):
     return g.compile()
 
 
-def run_case(case: Case, condition: Condition, llm: Any, fee_rate: float = 0.0) -> tuple[State, Caller]:
+def run_case(case: Case, condition: Condition, llm: Any, fee_rate: float = 0.0,
+             view: agents.EvidenceView = "converted") -> tuple[State, Caller]:
     """Run one case under one condition with a fresh graph and no shared memory."""
     caller = Caller(llm)
-    state = build_graph(condition, caller, fee_rate).invoke({"case": case})
+    state = build_graph(condition, caller, fee_rate, view).invoke({"case": case})
     return state, caller

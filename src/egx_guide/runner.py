@@ -20,6 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import __version__
+from .agents import EVIDENCE_VIEWS
 from .models import CONDITIONS, Case
 from .pipeline import run_case
 
@@ -46,12 +47,13 @@ def record_for(state, caller, seconds: float) -> dict:
     }
 
 
-def run(cases: list[Case], conditions: list[str], llm, out: Path, model_info: dict, fee_rate: float) -> Path:
+def run(cases: list[Case], conditions: list[str], llm, out: Path, model_info: dict, fee_rate: float,
+        view: str = "converted") -> Path:
     run_dir = out / datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     run_dir.mkdir(parents=True)
     (run_dir / "manifest.json").write_text(json.dumps({
         "code_version": __version__, "model": model_info, "conditions": conditions,
-        "fee_rate": fee_rate, "cases": [c.case_id for c in cases],
+        "fee_rate": fee_rate, "evidence_view": view, "cases": [c.case_id for c in cases],
         "started": datetime.now(timezone.utc).isoformat(),
     }, indent=2), encoding="utf-8")
 
@@ -61,7 +63,7 @@ def run(cases: list[Case], conditions: list[str], llm, out: Path, model_info: di
         for case in cases:
             start = time.perf_counter()
             try:
-                state, caller = run_case(case, CONDITIONS[name], llm, fee_rate)
+                state, caller = run_case(case, CONDITIONS[name], llm, fee_rate, view)
                 rec = {"status": "ok", **record_for(state, caller, time.perf_counter() - start)}
             except Exception as exc:  # keep failures as data
                 rec = {"status": "error", "error": repr(exc), "traceback": traceback.format_exc(),
@@ -85,6 +87,9 @@ def main(argv=None):
     ap.add_argument("--fallback", action="append", default=[], metavar="PROVIDER:MODEL",
                     help="development only: model to use when the main one is overloaded; "
                          "final runs must use one model for every condition")
+    ap.add_argument("--evidence-view", choices=EVIDENCE_VIEWS, default="converted",
+                    help="how agents see figures: 'converted' (value in pounds next to the printed line) "
+                         "or 'printed' (only the printed line; agents apply the unit themselves)")
     ap.add_argument("--out", type=Path, default=Path("runs"))
     a = ap.parse_args(argv)
 
@@ -92,7 +97,7 @@ def main(argv=None):
     llm = make_fallback_chat([f"{a.provider}:{a.model}", *a.fallback], a.base_url, temperature=a.temperature)
     info = {"provider": a.provider, "model": a.model, "base_url": a.base_url, "temperature": a.temperature,
             "fallback": a.fallback}
-    print(run(load_cases(a.cases), a.conditions, llm, a.out, info, a.fee_rate))
+    print(run(load_cases(a.cases), a.conditions, llm, a.out, info, a.fee_rate, a.evidence_view))
 
 
 if __name__ == "__main__":

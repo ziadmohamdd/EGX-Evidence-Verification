@@ -10,12 +10,28 @@ Prompts are development drafts. Freeze them before final test runs.
 
 from __future__ import annotations
 
+from typing import Literal
+
 from langchain_core.messages import HumanMessage, SystemMessage
 
 from .llm import Caller
 from .models import Case, Recommendation
 
 LANGUAGE = {"en": "English", "ar": "Arabic"}
+
+# How the agents see each figure. "converted": the reader's value in whole pounds next to the
+# printed line (the agents only have to copy it). "printed": only the line as printed in the
+# report with its unit line, so the agents must pick the right column and apply the unit
+# themselves, as an agent reading the report directly would. The verifier and the scorer
+# always compare against the converted value.
+EvidenceView = Literal["converted", "printed"]
+EVIDENCE_VIEWS = ("converted", "printed")
+
+PRINTED_NOTE = (
+    "Evidence is shown as printed in the report: the row, its columns, and the page's unit line. "
+    "A row may show several periods side by side; use the column for the period stated. Apply the "
+    "unit yourself (for example 'L.E. (000)' means thousands of pounds) and give every figure in "
+    "`claims` in whole pounds.")
 
 RULES = """Rules:
 - Use only the evidence and prices given. Do not use outside knowledge about these companies or later events.
@@ -27,15 +43,21 @@ RULES = """Rules:
 - This is guidance, not a guarantee of returns. State uncertainty and risks honestly."""
 
 
-def render_case(case: Case) -> str:
+def render_case(case: Case, view: EvidenceView = "converted") -> str:
+    if view not in EVIDENCE_VIEWS:
+        raise ValueError(f"unknown evidence view {view!r}")
     p, b = case.profile, case.portfolio
     held = ", ".join(f"{h.ticker}: {h.shares} shares" for h in b.holdings) or "none"
     prices = ", ".join(f"{t}: {v:,.2f} {b.currency}" for t, v in case.prices.items())
-    ev = []
+    ev = [PRINTED_NOTE] if view == "printed" else []
     for e in case.evidence:
         status = "AMBIGUOUS" if e.status == "ambiguous" else "verified"
-        value = "unresolved" if e.value is None else f"{e.value:,.6g}"
         note = f" | note: {e.note}" if e.note else ""
+        if view == "printed":
+            ev.append(f"- [{e.evidence_id}] {e.company} | {e.label} | period {e.period} | {status} | "
+                      f"as printed: \"{e.source_text}\" ({e.document}, p.{e.page}){note}")
+            continue
+        value = "unresolved" if e.value is None else f"{e.value:,.6g}"
         ev.append(f"- [{e.evidence_id}] {e.company} | {e.label} | period {e.period} | value {value} "
                   f"{e.currency or ''} | {status} | source: \"{e.source_text}\" ({e.document}, p.{e.page}){note}")
     return f"""Information cutoff: {case.information_cutoff}
@@ -69,10 +91,10 @@ Analyse the company evidence and the investor's situation, then give one recomme
 {RULES}"""
 
 
-def single_agent_decide(caller: Caller, case: Case) -> Recommendation:
+def single_agent_decide(caller: Caller, case: Case, view: EvidenceView = "converted") -> Recommendation:
     return caller.structured("single_agent", [
         SystemMessage(SINGLE_SYSTEM),
-        HumanMessage(f"{render_case(case)}\n\n{_lang(case)}"),
+        HumanMessage(f"{render_case(case, view)}\n\n{_lang(case)}"),
     ], Recommendation)
 
 
@@ -94,18 +116,19 @@ Check the analysts' figures against the evidence list; the evidence list is auth
 {RULES}"""
 
 
-def multi_agent_reports(caller: Caller, case: Case) -> dict[str, str]:
-    ctx = render_case(case)
+def multi_agent_reports(caller: Caller, case: Case, view: EvidenceView = "converted") -> dict[str, str]:
+    ctx = render_case(case, view)
     return {
         "financial": caller.text("financial_analyst", [SystemMessage(FINANCIAL_SYSTEM), HumanMessage(ctx)]),
         "investor": caller.text("investor_analyst", [SystemMessage(INVESTOR_SYSTEM), HumanMessage(ctx)]),
     }
 
 
-def multi_agent_decide(caller: Caller, case: Case, reports: dict[str, str]) -> Recommendation:
+def multi_agent_decide(caller: Caller, case: Case, reports: dict[str, str],
+                       view: EvidenceView = "converted") -> Recommendation:
     return caller.structured("decision_agent", [
         SystemMessage(DECISION_SYSTEM),
-        HumanMessage(f"{render_case(case)}\n\nFinancial analyst report:\n{reports['financial']}\n\n"
+        HumanMessage(f"{render_case(case, view)}\n\nFinancial analyst report:\n{reports['financial']}\n\n"
                      f"Suitability analyst report:\n{reports['investor']}\n\n{_lang(case)}"),
     ], Recommendation)
 
@@ -113,10 +136,11 @@ def multi_agent_decide(caller: Caller, case: Case, reports: dict[str, str]) -> R
 # -------------------------------------------------------------- revision (B, D)
 
 
-def revise(caller: Caller, case: Case, rec: Recommendation, feedback: str, role: str) -> Recommendation:
+def revise(caller: Caller, case: Case, rec: Recommendation, feedback: str, role: str,
+           view: EvidenceView = "converted") -> Recommendation:
     system = DECISION_SYSTEM if role == "decision_agent" else SINGLE_SYSTEM
     return caller.structured(f"{role}_revision", [
         SystemMessage(system),
-        HumanMessage(f"{render_case(case)}\n\nYour previous recommendation:\n{rec.model_dump_json(indent=2)}\n\n"
+        HumanMessage(f"{render_case(case, view)}\n\nYour previous recommendation:\n{rec.model_dump_json(indent=2)}\n\n"
                      f"{feedback}\n\n{_lang(case)}"),
     ], Recommendation)
