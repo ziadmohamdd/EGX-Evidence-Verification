@@ -162,6 +162,4 @@ The reader's extraction accuracy is reported on its own, using `python -m egx_gu
 
 ## Still to build
 
-- Exporter for the blinded rating sample, plus a rating sheet
-
-Done: the case builder with trap cases (`egx_guide.cases`), per-case aggregation and the statistics in §5, including the case-clustered logistic model (`egx_guide.stats`), error types (`egx_guide.score`), and calls per run (recorded in every run record).
+Nothing. Done: the blinded rating sample, rating sheet, re-rating sample, Cohen's kappa and per-condition summary (`egx_guide.rating`). Agents' role names are replaced with neutral words. The verifier's own note about removed figures stays, because the investor sees it; the key records how many sampled items carry it. Also done: the case builder with trap cases (`egx_guide.cases`), per-case aggregation and the statistics in §5, including the case-clustered logistic model (`egx_guide.stats`), error types (`egx_guide.score`), and calls per run (recorded in every run record).
