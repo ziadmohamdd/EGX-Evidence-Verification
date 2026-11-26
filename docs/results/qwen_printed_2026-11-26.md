@@ -143,7 +143,10 @@ Every number printed in a chosen figure's row now has its own evidence ID: the o
 ## Open items
 
 - **The row's other numbers** now have their own evidence IDs (section 6). The hand-checked reference sheet will need rows for them. The build reports any that are missing.
-- **The Talaat Moustafa % column** (section 6) is now added by hand. Its 15 change-% numbers were read from the page into `data/cases/added_evidence.json`, and each one joins its row with its own ID (e.g. revenue +46%, EPS +59.6%). Only dev_006 changed: it gained 3 such items. Qwen has not been rerun on it yet.
+- **The Talaat Moustafa % column** (section 6) is now added by hand. Its 15 change-% numbers were read from the page into `data/cases/added_evidence.json`, and each one joins its row with its own ID (e.g. revenue +46%, EPS +59.6%). Only dev_006 changed: it gained 3 such items.
+  - **Qwen rerun on dev_006** (A–D, run `runs/20261126T133104Z`): all four answers cite revenue +46%, net profit +43% and EPS +59.6% under their own IDs. There are 0 wrong figures, before and after the verifier, and coverage is 100%.
+  - The two % errors from section 6 are gone, so the only real misreading left on the dev cases is Telecom Egypt's net profit.
+  - The single agent's action changed from hold to buy, and both are acceptable for this case.
 - **Qwen as a study model.** It fits the main comparison best so far, and its free daily allowance covers a full run of the 30 test cases in a day.
 - **The Gemini 3.5 Flash run** on the printed figures is in progress (13 of 48 answers after day 1).
 - **Still open from before:**

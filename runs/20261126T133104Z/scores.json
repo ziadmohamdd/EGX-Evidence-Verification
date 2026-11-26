@@ -1,0 +1,672 @@
+{
+  "rel_tol": 0.005,
+  "references": "data\\references\\cases",
+  "summary": [
+    {
+      "condition": "A",
+      "records": 1,
+      "scored": 1,
+      "run_errors": 0,
+      "no_reference": 0,
+      "claims": 7,
+      "incorrect_claims": 0,
+      "incorrect_claim_rate": 0.0,
+      "share_with_incorrect_claim": 0.0,
+      "wrong_value": 0,
+      "ambiguous_used": 0,
+      "unknown_evidence": 0,
+      "scale_errors": 0,
+      "mean_coverage": 1.0,
+      "proposed_incorrect_claim_rate": 0.0,
+      "action_acceptable_rate": 1.0,
+      "insufficient_evidence_rate": 0.0,
+      "portfolio_violations": 0,
+      "blocked": 0,
+      "verifier_revised": 0,
+      "verifier_dropped": 0,
+      "text_uncited": 0,
+      "text_wrong_scale": 0,
+      "share_with_unchecked_text": 0.0,
+      "proposed_text_uncited": 0,
+      "no_figure_decisions": 0,
+      "concentrated_buys": 0
+    },
+    {
+      "condition": "B",
+      "records": 1,
+      "scored": 1,
+      "run_errors": 0,
+      "no_reference": 0,
+      "claims": 7,
+      "incorrect_claims": 0,
+      "incorrect_claim_rate": 0.0,
+      "share_with_incorrect_claim": 0.0,
+      "wrong_value": 0,
+      "ambiguous_used": 0,
+      "unknown_evidence": 0,
+      "scale_errors": 0,
+      "mean_coverage": 1.0,
+      "proposed_incorrect_claim_rate": 0.0,
+      "action_acceptable_rate": 1.0,
+      "insufficient_evidence_rate": 0.0,
+      "portfolio_violations": 0,
+      "blocked": 0,
+      "verifier_revised": 0,
+      "verifier_dropped": 0,
+      "text_uncited": 0,
+      "text_wrong_scale": 0,
+      "share_with_unchecked_text": 0.0,
+      "proposed_text_uncited": 0,
+      "no_figure_decisions": 0,
+      "concentrated_buys": 0
+    },
+    {
+      "condition": "C",
+      "records": 1,
+      "scored": 1,
+      "run_errors": 0,
+      "no_reference": 0,
+      "claims": 7,
+      "incorrect_claims": 0,
+      "incorrect_claim_rate": 0.0,
+      "share_with_incorrect_claim": 0.0,
+      "wrong_value": 0,
+      "ambiguous_used": 0,
+      "unknown_evidence": 0,
+      "scale_errors": 0,
+      "mean_coverage": 1.0,
+      "proposed_incorrect_claim_rate": 0.0,
+      "action_acceptable_rate": 1.0,
+      "insufficient_evidence_rate": 0.0,
+      "portfolio_violations": 0,
+      "blocked": 0,
+      "verifier_revised": 0,
+      "verifier_dropped": 0,
+      "text_uncited": 0,
+      "text_wrong_scale": 0,
+      "share_with_unchecked_text": 0.0,
+      "proposed_text_uncited": 0,
+      "no_figure_decisions": 0,
+      "concentrated_buys": 0
+    },
+    {
+      "condition": "D",
+      "records": 1,
+      "scored": 1,
+      "run_errors": 0,
+      "no_reference": 0,
+      "claims": 7,
+      "incorrect_claims": 0,
+      "incorrect_claim_rate": 0.0,
+      "share_with_incorrect_claim": 0.0,
+      "wrong_value": 0,
+      "ambiguous_used": 0,
+      "unknown_evidence": 0,
+      "scale_errors": 0,
+      "mean_coverage": 1.0,
+      "proposed_incorrect_claim_rate": 0.0,
+      "action_acceptable_rate": 1.0,
+      "insufficient_evidence_rate": 0.0,
+      "portfolio_violations": 0,
+      "blocked": 0,
+      "verifier_revised": 0,
+      "verifier_dropped": 0,
+      "text_uncited": 0,
+      "text_wrong_scale": 0,
+      "share_with_unchecked_text": 0.0,
+      "proposed_text_uncited": 0,
+      "no_figure_decisions": 0,
+      "concentrated_buys": 0
+    }
+  ],
+  "records": [
+    {
+      "case_id": "dev_006",
+      "condition": "A",
+      "scored": true,
+      "reason": null,
+      "action": "buy",
+      "action_acceptable": true,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": 0.37745098039215685,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 7,
+        "n_correct": 7,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+            "stated_value": 62495144197.0,
+            "reference_value": 62495144197.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg",
+            "stated_value": 46.0,
+            "reference_value": 46.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-10",
+            "stated_value": 12769517326.0,
+            "reference_value": 12769517326.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-09-chg",
+            "stated_value": 43.0,
+            "reference_value": 43.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+            "stated_value": 4.37,
+            "reference_value": 4.37,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg",
+            "stated_value": 59.6,
+            "reference_value": 59.6,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 7,
+        "n_correct": 7,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+            "stated_value": 62495144197.0,
+            "reference_value": 62495144197.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg",
+            "stated_value": 46.0,
+            "reference_value": 46.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-10",
+            "stated_value": 12769517326.0,
+            "reference_value": 12769517326.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-09-chg",
+            "stated_value": 43.0,
+            "reference_value": 43.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+            "stated_value": 4.37,
+            "reference_value": 4.37,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg",
+            "stated_value": 59.6,
+            "reference_value": 59.6,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_006",
+      "condition": "B",
+      "scored": true,
+      "reason": null,
+      "action": "buy",
+      "action_acceptable": true,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": 0.37745098039215685,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 7,
+        "n_correct": 7,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+            "stated_value": 62495144197.0,
+            "reference_value": 62495144197.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg",
+            "stated_value": 46.0,
+            "reference_value": 46.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-10",
+            "stated_value": 12769517326.0,
+            "reference_value": 12769517326.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-09-chg",
+            "stated_value": 43.0,
+            "reference_value": 43.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+            "stated_value": 4.37,
+            "reference_value": 4.37,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg",
+            "stated_value": 59.6,
+            "reference_value": 59.6,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 7,
+        "n_correct": 7,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+            "stated_value": 62495144197.0,
+            "reference_value": 62495144197.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg",
+            "stated_value": 46.0,
+            "reference_value": 46.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-10",
+            "stated_value": 12769517326.0,
+            "reference_value": 12769517326.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-09-chg",
+            "stated_value": 43.0,
+            "reference_value": 43.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+            "stated_value": 4.37,
+            "reference_value": 4.37,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg",
+            "stated_value": 59.6,
+            "reference_value": 59.6,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_006",
+      "condition": "C",
+      "scored": true,
+      "reason": null,
+      "action": "hold",
+      "action_acceptable": true,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 7,
+        "n_correct": 7,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+            "stated_value": 62495144197.0,
+            "reference_value": 62495144197.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg",
+            "stated_value": 46.0,
+            "reference_value": 46.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-09-chg",
+            "stated_value": 43.0,
+            "reference_value": 43.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-10",
+            "stated_value": 12769517326.0,
+            "reference_value": 12769517326.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+            "stated_value": 4.37,
+            "reference_value": 4.37,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg",
+            "stated_value": 59.6,
+            "reference_value": 59.6,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 7,
+        "n_correct": 7,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+            "stated_value": 62495144197.0,
+            "reference_value": 62495144197.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg",
+            "stated_value": 46.0,
+            "reference_value": 46.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-09-chg",
+            "stated_value": 43.0,
+            "reference_value": 43.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-10",
+            "stated_value": 12769517326.0,
+            "reference_value": 12769517326.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+            "stated_value": 4.37,
+            "reference_value": 4.37,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg",
+            "stated_value": 59.6,
+            "reference_value": 59.6,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    },
+    {
+      "case_id": "dev_006",
+      "condition": "D",
+      "scored": true,
+      "reason": null,
+      "action": "hold",
+      "action_acceptable": true,
+      "insufficient_evidence": false,
+      "n_violations": 0,
+      "blocked": false,
+      "verifier_revised": false,
+      "verifier_dropped": 0,
+      "no_figure_decision": false,
+      "concentration": null,
+      "concentrated_buy": false,
+      "extra": {},
+      "proposed": {
+        "n_claims": 7,
+        "n_correct": 7,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+            "stated_value": 4.37,
+            "reference_value": 4.37,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+            "stated_value": 62495144197.0,
+            "reference_value": 62495144197.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg",
+            "stated_value": 46.0,
+            "reference_value": 46.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-09-chg",
+            "stated_value": 43.0,
+            "reference_value": 43.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg",
+            "stated_value": 59.6,
+            "reference_value": 59.6,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-10",
+            "stated_value": 12769517326.0,
+            "reference_value": 12769517326.0,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      },
+      "final": {
+        "n_claims": 7,
+        "n_correct": 7,
+        "n_incorrect": 0,
+        "claim_precision": 1.0,
+        "coverage": 1.0,
+        "claims": [
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+            "stated_value": 6.98,
+            "reference_value": 6.98,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+            "stated_value": 4.37,
+            "reference_value": 4.37,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+            "stated_value": 62495144197.0,
+            "reference_value": 62495144197.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg",
+            "stated_value": 46.0,
+            "reference_value": 46.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-09-chg",
+            "stated_value": 43.0,
+            "reference_value": 43.0,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg",
+            "stated_value": 59.6,
+            "reference_value": 59.6,
+            "verdict": "correct",
+            "scale_error": null
+          },
+          {
+            "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-10",
+            "stated_value": 12769517326.0,
+            "reference_value": 12769517326.0,
+            "verdict": "correct",
+            "scale_error": null
+          }
+        ],
+        "text_uncited": [],
+        "text_wrong_scale": []
+      }
+    }
+  ]
+}
