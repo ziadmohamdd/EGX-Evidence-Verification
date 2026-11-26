@@ -1,0 +1,40 @@
+{
+  "code_version": "0.1.0",
+  "model": {
+    "provider": "openai_compatible",
+    "model": "SovereignEG/Qwen3.8-27B-FP8",
+    "base_url": "https://backend.sovereigneg.com/v1",
+    "temperature": 0.0,
+    "fallback": [],
+    "structured_method": "json_schema"
+  },
+  "conditions": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "fee_rate": 0.0,
+  "evidence_view": "printed",
+  "cases": [
+    "dev_001",
+    "dev_002",
+    "dev_003",
+    "dev_004",
+    "dev_005",
+    "dev_006",
+    "dev_007",
+    "dev_008",
+    "dev_009",
+    "dev_010",
+    "dev_011",
+    "dev_012"
+  ],
+  "started": "2026-11-26T09:45:41.434407+00:00",
+  "resumed": [
+    "2026-11-26T09:45:41.471698+00:00",
+    "2026-11-26T09:45:41.536360+00:00",
+    "2026-11-26T09:45:42.142218+00:00",
+    "2026-11-26T09:48:49.739279+00:00"
+  ]
+}

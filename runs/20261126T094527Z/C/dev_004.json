@@ -1,0 +1,151 @@
+{
+  "case_id": "dev_004",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 196,
+    "explanation": "The investor must access 30,000 EGP within 6 months but holds only 5,000 EGP in cash, creating a 25,000 EGP shortfall. At the current price of 128 EGP per share, selling 196 shares (196 × 128 = 25,088 EGP) closes that gap and brings cash to approximately 30,088 EGP, meeting the stated liquidity requirement. This is the minimum responsible action and is non-negotiable given the 6-month deadline.\n\nBeyond the liquidity need, the portfolio is 96% concentrated in a single equity (1,000 COMI shares = 128,000 EGP out of 133,000 EGP total). For an investor whose primary goal is capital preservation, whose willingness and ability to absorb losses are both low, and whose horizon is only 1–3 years, this concentration is a material risk. A 20–30% drawdown in COMI over the next 12 months would erode 25,000–38,000 EGP of capital—roughly 20–30% of the entire portfolio—which is inconsistent with the stated risk profile. After the 196-share sale, COMI would still represent about 77% of the portfolio (804 shares × 128 = 102,912 EGP out of 133,000 EGP). I recommend the investor consider a further reduction in the COMI position over the coming months and redeploy proceeds into lower-volatility, income-generating instruments (short-term deposits, government bonds, or money-market funds) that better match the 1–3-year horizon and capital-preservation mandate. However, I do not prescribe a specific additional sale size here because the evidence does not include dividend-per-share data, NPL ratios, or regulatory capital-adequacy figures that would allow a more precise risk assessment of the remaining position.\n\nOn the positive side, COMI's FY 2025 fundamentals are strong: net profit grew approximately 49% year-over-year to 82.26 billion EGP, net interest income grew 18.3%, and total equity grew 51.7% to 231.49 billion EGP, outpacing the 14.2% growth in customer deposits. These figures suggest a well-capitalised, profitable institution. However, the absence of NPL data, provision expense, non-interest income breakdown, and dividend information in the evidence means the full risk picture is incomplete. The strong growth does not eliminate the risk of a cyclical or idiosyncratic drawdown, which is the primary concern for a low-loss-tolerance, capital-preservation investor.\n\nRisks and uncertainties: (1) No dividend data is available, so the 'draw income' objective cannot be confirmed as being met by the current holding. (2) The Egyptian banking sector is exposed to interest-rate and FX dynamics; a 1–3-year horizon provides limited time to recover from a rate-cycle reversal. (3) The 196-share sale is timing-sensitive; if the market declines before execution, the realised proceeds will be lower. (4) Transaction costs and bid-ask spreads are not reflected in the 128 EGP price and will slightly reduce net proceeds. (5) This recommendation is guidance, not a guarantee of returns or capital preservation.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year, FY 2025 (Dec 31, 2025), in EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year, FY 2024 (comparative), in EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107699631000.0,
+        "statement": "COMI net interest income, FY 2025 (Dec 31, 2025), in EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 91064222000.0,
+        "statement": "COMI net interest income, FY 2024 (comparative), in EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+        "stated_value": 1110395693000.0,
+        "statement": "COMI due to customers (deposits), FY 2025 (Dec 31, 2025), in EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+        "stated_value": 231486342000.0,
+        "statement": "COMI total equity and net profit for the year, FY 2025 (Dec 31, 2025), in EGP"
+      }
+    ],
+    "unused_figures": [
+      "Basic EPS FY 2025: 18.25 [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] – AMBIGUOUS: the page unit line states 'EGP thousands' but the value is clearly per-share; cannot be used in calculations.",
+      "Basic EPS FY 2024: 14.72 [COMI-COMI_FY2025_consolidated_condensed_en-p5-40] – AMBIGUOUS: same unit-line inconsistency as above; cannot be used in calculations."
+    ],
+    "limitations": [
+      "The trailing P/E ratio (approximately 7×) cited by the financial analyst cannot be independently verified because the EPS figures are marked AMBIGUOUS due to a unit-line inconsistency. This means the 'undervaluation' argument is weakened; the stock may be cheap or may reflect justified sector risk.",
+      "No dividend-per-share, payout ratio, or income-statement line for dividends is present in the evidence. The investor's stated goal to 'draw income' cannot be confirmed or refuted from the data provided.",
+      "No NPL ratio, provision expense, non-interest income, total assets, total loans, or regulatory capital-adequacy ratios (CET1, Tier 1, Total) are available. The balance-sheet and credit-risk picture is incomplete.",
+      "The evidence covers only COMI; no alternative instruments (bonds, deposits, funds) are in the evidence, so I cannot recommend a specific replacement allocation for the proceeds.",
+      "All figures are from a single condensed consolidated report (FY 2025); no quarterly or interim data is available to assess recent momentum or deterioration."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 196,
+    "explanation": "The investor must access 30,000 EGP within 6 months but holds only 5,000 EGP in cash, creating a 25,000 EGP shortfall. At the current price of 128 EGP per share, selling 196 shares (196 × 128 = 25,088 EGP) closes that gap and brings cash to approximately 30,088 EGP, meeting the stated liquidity requirement. This is the minimum responsible action and is non-negotiable given the 6-month deadline.\n\nBeyond the liquidity need, the portfolio is 96% concentrated in a single equity (1,000 COMI shares = 128,000 EGP out of 133,000 EGP total). For an investor whose primary goal is capital preservation, whose willingness and ability to absorb losses are both low, and whose horizon is only 1–3 years, this concentration is a material risk. A 20–30% drawdown in COMI over the next 12 months would erode 25,000–38,000 EGP of capital—roughly 20–30% of the entire portfolio—which is inconsistent with the stated risk profile. After the 196-share sale, COMI would still represent about 77% of the portfolio (804 shares × 128 = 102,912 EGP out of 133,000 EGP). I recommend the investor consider a further reduction in the COMI position over the coming months and redeploy proceeds into lower-volatility, income-generating instruments (short-term deposits, government bonds, or money-market funds) that better match the 1–3-year horizon and capital-preservation mandate. However, I do not prescribe a specific additional sale size here because the evidence does not include dividend-per-share data, NPL ratios, or regulatory capital-adequacy figures that would allow a more precise risk assessment of the remaining position.\n\nOn the positive side, COMI's FY 2025 fundamentals are strong: net profit grew approximately 49% year-over-year to 82.26 billion EGP, net interest income grew 18.3%, and total equity grew 51.7% to 231.49 billion EGP, outpacing the 14.2% growth in customer deposits. These figures suggest a well-capitalised, profitable institution. However, the absence of NPL data, provision expense, non-interest income breakdown, and dividend information in the evidence means the full risk picture is incomplete. The strong growth does not eliminate the risk of a cyclical or idiosyncratic drawdown, which is the primary concern for a low-loss-tolerance, capital-preservation investor.\n\nRisks and uncertainties: (1) No dividend data is available, so the 'draw income' objective cannot be confirmed as being met by the current holding. (2) The Egyptian banking sector is exposed to interest-rate and FX dynamics; a 1–3-year horizon provides limited time to recover from a rate-cycle reversal. (3) The 196-share sale is timing-sensitive; if the market declines before execution, the realised proceeds will be lower. (4) Transaction costs and bid-ask spreads are not reflected in the 128 EGP price and will slightly reduce net proceeds. (5) This recommendation is guidance, not a guarantee of returns or capital preservation.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year, FY 2025 (Dec 31, 2025), in EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year, FY 2024 (comparative), in EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107699631000.0,
+        "statement": "COMI net interest income, FY 2025 (Dec 31, 2025), in EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 91064222000.0,
+        "statement": "COMI net interest income, FY 2024 (comparative), in EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+        "stated_value": 1110395693000.0,
+        "statement": "COMI due to customers (deposits), FY 2025 (Dec 31, 2025), in EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+        "stated_value": 231486342000.0,
+        "statement": "COMI total equity and net profit for the year, FY 2025 (Dec 31, 2025), in EGP"
+      }
+    ],
+    "unused_figures": [
+      "Basic EPS FY 2025: 18.25 [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] – AMBIGUOUS: the page unit line states 'EGP thousands' but the value is clearly per-share; cannot be used in calculations.",
+      "Basic EPS FY 2024: 14.72 [COMI-COMI_FY2025_consolidated_condensed_en-p5-40] – AMBIGUOUS: same unit-line inconsistency as above; cannot be used in calculations."
+    ],
+    "limitations": [
+      "The trailing P/E ratio (approximately 7×) cited by the financial analyst cannot be independently verified because the EPS figures are marked AMBIGUOUS due to a unit-line inconsistency. This means the 'undervaluation' argument is weakened; the stock may be cheap or may reflect justified sector risk.",
+      "No dividend-per-share, payout ratio, or income-statement line for dividends is present in the evidence. The investor's stated goal to 'draw income' cannot be confirmed or refuted from the data provided.",
+      "No NPL ratio, provision expense, non-interest income, total assets, total loans, or regulatory capital-adequacy ratios (CET1, Tier 1, Total) are available. The balance-sheet and credit-risk picture is incomplete.",
+      "The evidence covers only COMI; no alternative instruments (bonds, deposits, funds) are in the evidence, so I cannot recommend a specific replacement allocation for the proceeds.",
+      "All figures are from a single condensed consolidated report (FY 2025); no quarterly or interim data is available to assess recent momentum or deterioration."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 30088.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 804
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n# COMI (Commercial International Bank of Egypt) – Evidence Analysis\n\n## 1. Profitability\n\n| Metric | FY 2025 | FY 2024 | Source |\n|---|---|---|---|\n| Net interest income | 107,699,631,000 EGP | 91,064,222,000 EGP | [COMI-COMI_FY2025_consolidated_condensed_en-p5-05] |\n| Net profit for the year | 82,258,815,000 EGP | 55,256,732,000 EGP | [COMI-COMI_FY2025_consolidated_condensed_en-p5-33] / [COMI-COMI_FY2025_consolidated_condensed_en-p5-34] |\n| Basic EPS | 18.25 EGP/share | 14.72 EGP/share | [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] / [COMI-COMI_FY2025_consolidated_condensed_en-p5-40] |\n\n- Net profit margin on NII (FY 2025): 82,258,815 / 107,699,631 ≈ **76.4 %**, indicating a very high conversion of interest income to bottom-line profit.\n- EPS of 18.25 EGP against a share price of 128.00 EGP implies a trailing P/E of roughly **7.0×**, which is low for a listed Egyptian bank and suggests the market is pricing in sector or macro risk.\n\n## 2. Growth\n\n- **Net interest income growth:** (107,699,631 − 91,064,222) / 91,064,222 ≈ **+18.3 %** YoY [COMI-COMI_FY2025_consolidated_condensed_en-p5-05].\n- **Net profit growth:** (82,258,815 − 55,256,732) / 55,256,732 ≈ **+48.9 %** YoY [COMI-COMI_FY2025_consolidated_condensed_en-p5-33].\n- **EPS growth:** (18.25 − 14.72) / 14.72 ≈ **+24.0 %** YoY [COMI-COMI_FY2025_consolidated_condensed_en-p5-39].\n\nThe profit growth substantially outpaces NII growth, suggesting either cost discipline, a favourable provision release, or non-interest income contribution. No separate provision or non-interest-income line is provided in the evidence, so the driver cannot be isolated.\n\n## 3. Balance Sheet\n\n| Item | FY 2025 | FY 2024 | Source |\n|---|---|---|---|\n| Due to customers (deposits) | 1,110,395,693,000 EGP | 972,595,958,000 EGP | [COMI-COMI_FY2025_consolidated_condensed_en-p4-28] |\n| Total equity (incl. current-year profit) | 231,486,342,000 EGP | 152,636,277,000 EGP | [COMI-COMI_FY2025_consolidated_condensed_en-p4-54] |\n\n- **Deposit growth:** +14.2 % YoY.\n- **Equity growth:** +51.7 % YoY – equity is growing faster than the deposit base, which is supportive of capital adequacy.\n- **Equity-to-deposits ratio:** 231,486,342 / 1,110,395,693 ≈ **20.8 %** (FY 2025) vs. 15.7 % (FY 2024). This is a simplified proxy; the regulatory capital-adequacy ratio (CET1, Tier 1, Total) is not in the evidence and cannot be computed.\n\n## 4. Risks Relevant to This Investor\n\n| Risk factor | Comment |\n|---|---|\n| **Sector / credit risk** | COMI is a bank; earnings are exposed to NPL formation, provisioning cycles, and the Egyptian credit environment. No NPL or provision data is in the evidence. |\n| **Interest-rate / FX risk** | NII is sensitive to CBE policy-rate moves and EGP/USD dynamics. A 1–3-year horizon leaves limited time to ride out a rate-cycle reversal. |\n| **Liquidity / concentration** | The investor holds **1,000 shares × 128.00 EGP = 128,000 EGP** in a single stock, plus 5,000 EGP cash. Total portfolio ≈ 133,000 EGP, of which **96 % is one equity position**. |\n| **Near-term cash need** | The investor must access **30,000 EGP within 6 months**. Only 5,000 EGP is in cash, so roughly **25,000 EGP (≈ 195 shares)** must be sold. Selling into a down market would crystallise a loss. |\n| **Loss tolerance** | Stated willingness and ability to absorb losses are both **low**. A single-stock equity position, even in a profitable bank, can draw down 20–40 % in a stress quarter, which is inconsistent with that profile. |\n| **Income / dividend** | No dividend-per-share or payout-ratio figure appears in the evidence. The \"income\" objective cannot be verified from the data provided. |\n\n## 5. Data-Quality Flags\n\n- **EPS unit inconsistency:** The page unit line reads *\"All amounts are shown in EGP thousands,\"* yet the Basic EPS row prints **18.25** and **14.72** [COMI-COMI_FY2025_consolidated_condensed_en-p5-39]. These are clearly **EGP per share**, not thousands. I have treated them as EGP/share. **AMBIGUOUS** as printed; no computation was performed on the raw \"thousands\" reading.\n- **Duplicate row labels:** Evidence IDs p5-33 (labelled FY 2025) and p5-34 (labelled FY 2024) print the identical row \"82,258,815 | 55,256,732.\" I interpret the first column as FY 2025 and the second as the FY 2024 comparative, consistent with standard income-statement layout. The same applies to the EPS rows (p5-39 / p5-40). **AMBIGUOUS** labelling; no figure was double-counted.\n- **Missing lines:** No total assets, total loans, NPL ratio, provision expense, non-interest income, dividend per share, or regulatory capital ratios are present in the supplied evidence. The balance-sheet picture is therefore **incomplete**.\n- All figures are marked **verified** in the source metadata.\n\n## 6. Summary of Observations (no action recommended)\n\n- COMI delivered strong FY 2025 results: net profit up ≈ 49 % to 82.26 bn EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-33], EPS 18.25 EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-39], and equity growing faster than deposits.\n- The trailing P/E of ~7× is low, but the evidence does not include dividend data, NPL data, or capital-adequacy ratios, so the \"cheapness\" cannot be fully assessed.\n- The investor's profile (capital preservation, 1–3-year horizon, 30,000 EGP liquidity need in 6 months, low loss tolerance) sits in tension with holding a **96 %-concentrated single-bank equity** position. The 195-share sale needed for liquidity would be forced and timing-sensitive.\n- No dividend or income figure is available in the evidence to confirm the \"draw income\" objective is being met.\n\n*This analysis is limited to the evidence supplied. No buy, sell, hold, or rebalancing recommendation is made; that determination is reserved for the decision agent.*",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## 1. Horizon & Goal Alignment\n\nThe investor's stated horizon is **1–3 years** and the goal is **capital preservation with income** in retirement. This is a short-to-medium window in which there is little time to recover from a meaningful drawdown. Any allocation must therefore be weighted heavily toward instruments that return principal on schedule and generate predictable cash flow.\n\n## 2. Liquidity Needs\n\n| Item | Amount (EGP) |\n|---|---|\n| Cash on hand | 5,000 |\n| Required within 6 months | 30,000 |\n| **Shortfall** | **25,000** |\n\nThe 5,000 EGP of free cash covers only about one-sixth of the near-term need. To close the 25,000 EGP gap the investor would have to sell roughly **195 COMI shares** (25,000 ÷ 128 ≈ 195), i.e. about **19.5 %** of the 1,000-share holding. That sale is straightforward—there is no lock-up or restriction noted on the position—so the portfolio *does* allow the investor to meet the liquidity call without external borrowing.\n\nAfter that sale the residual portfolio would be:\n\n- Cash: 5,000 + 25,000 = **30,000 EGP** (the liquidity reserve)\n- COMI: 805 shares × 128 = **103,040 EGP**\n- Total: **≈ 133,040 EGP** (unchanged in value, just re-allocated)\n\n## 3. Loss Willingness & Capacity\n\nBoth are rated **low**. In practical terms:\n\n- The investor cannot absorb a 10–15 % drawdown on the equity sleeve without it materially affecting retirement income.\n- With a 1–3 year horizon, a sharp equity correction would leave insufficient time to wait for a recovery before the next income draw.\n- The financial capacity to replace lost capital is also low, so the margin for error is thin.\n\n## 4. Current Concentration\n\n| Asset | Value (EGP) | % of Portfolio |\n|---|---|---|\n| COMI (1,000 sh × 128) | 128,000 | **96.2 %** |\n| Cash | 5,000 | 3.8 % |\n| **Total** | **133,000** | 100 % |\n\nThe portfolio is **extremely concentrated in a single equity**—a bank stock. Even though COMI is a large, listed Egyptian bank, a single-name position of this size exposes the investor to idiosyncratic risk (regulatory, credit-cycle, or bank-specific events) that a diversified or fixed-income allocation would not. For an investor whose stated priority is capital preservation, a 96 % single-equity weight is well outside a comfortable risk envelope.\n\n## 5. What the Portfolio Allows\n\n- **Free cash:** 5,000 EGP is immediately available with no cost.\n- **Sellable equity:** All 1,000 COMI shares are marketable; selling any portion (e.g. the ~195 shares needed for the liquidity gap, or a larger block) would convert equity into cash at the prevailing price of 128 EGP/share, subject to normal market liquidity and transaction costs.\n- **No other assets** (bonds, deposits, funds) are present, so there is no existing income-generating or capital-preservation sleeve to lean on.\n\n## 6. How Much Cash Could Reasonably Be Committed\n\nGiven the constraints:\n\n1. **Reserve first:** Set aside the full **30,000 EGP** liquidity need (5,000 existing cash + ~25,000 from a partial COMI sale) in a liquid, low-risk instrument (e.g. a short-term deposit or money-market fund) so it is not exposed to market risk during the 6-month window.\n2. **Remaining investable amount:** After the reserve, roughly **103,000 EGP** (the 805 remaining COMI shares) is the pool that could be re-allocated.\n3. **Risk budget:** With low loss tolerance, a 1–3 year horizon, and a capital-preservation mandate, the investor's risk budget for volatile assets is small. A large share of the remaining 103,000 EGP would need to sit in instruments that return principal (short- to medium-term government or high-grade corporate bonds, bank deposits, or similar) to match the horizon and generate the income the investor needs. Only a modest residual portion, if any, would be appropriate for equity or other higher-volatility exposure.\n\n## 7. Key Suitability Gaps to Flag\n\n- **Concentration risk:** 96 % in one stock is inconsistent with a low-loss-tolerance, capital-preservation mandate.\n- **Income gap:** The portfolio currently generates no contractual income (no coupons, no dividends noted in the holdings). The investor's stated need to \"draw income\" is not met by the current structure.\n- **Horizon mismatch:** A single equity is a longer-hold asset; a 1–3 year window with low loss capacity argues for duration-matched, lower-volatility instruments.\n- **Liquidity timing:** The 6-month cash need forces a partial equity sale at an uncertain price, adding execution risk to an already tight risk budget.\n\n---\n\n*This assessment describes what the investor's profile, horizon, liquidity call, and current holdings allow. It does not recommend a specific transaction, security, or allocation.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 34.596,
+      "input_tokens": 1135,
+      "output_tokens": 4641,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 24.545,
+      "input_tokens": 1128,
+      "output_tokens": 2038,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 55.643,
+      "input_tokens": 4699,
+      "output_tokens": 5838,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 114.79
+}

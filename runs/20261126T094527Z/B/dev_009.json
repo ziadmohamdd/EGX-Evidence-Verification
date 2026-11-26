@@ -1,0 +1,121 @@
+{
+  "case_id": "dev_009",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 196,
+    "explanation": "You asked me to annualise the nine-month EPS and compute a P/E, so here is the arithmetic using only the verified figures in the report.\n\n**EPS (verified):**\n- 9 M 2026: 8.74 EGP per share\n- 9 M 2025: 4.28 EGP per share\n- YoY change: +104 %\n\n**Annualised 2026 EPS (simple 12/9 scaling):**\n8.74 × 12 / 9 ≈ 11.65 EGP\nThis assumes Q4 earns at the same run-rate as the first nine months. If Q4 is seasonally weaker (or stronger), the true full-year EPS will differ. Treat 11.65 as a rough midpoint, not a forecast.\n\n**P/E at the 18 Nov 2026 close of 76.21 EGP:**\n76.21 / 11.65 ≈ 6.5×\nEven if Q4 contributes nothing, the trailing-twelve-month P/E on the 9-month figure alone would be 76.21 / 8.74 ≈ 8.7×. Either way the multiple is well below the typical 12–15× range for a profitable Egyptian industrial exporter, which is what you are looking for.\n\n**Why I am comfortable recommending a buy (with caveats):**\n- The 104 % EPS jump year-on-year supports the growth leg of your goal.\n- A P/E in the mid-single digits gives a reasonable margin of safety for a medium-risk, 3–5-year holder.\n- You have a separate emergency fund, so locking ~15,000 EGP in a single position for several years is acceptable.\n\n**What I could NOT verify (and why it matters):**\n- The absolute revenue and net-profit rows on page 2 are flagged AMBIGUOUS (the page mixes 'مليار' and 'مليون' unit labels), so I could not cross-check the EPS against total profit or confirm the revenue base. If the unit is actually 'مليار' rather than 'مليون', the scale of the business is very different, though the per-share EPS (stated in plain EGP) would be unaffected.\n- No dividend line appears in the evidence. You want income as well as growth; I have no way to confirm a payout ratio or dividend yield from what was provided. If Abu Qir pays little or no dividend, the 'income' half of your goal is unmet.\n- No balance-sheet, debt, or export-revenue-mix data is in the evidence, so I cannot assess financial risk or confirm the exporter profile.\n- The annualisation is a mechanical scaling, not a forecast; a weak Q4 or a one-off item in 9M 2026 would change the picture.\n\n**Position sizing:**\n196 shares × 76.21 = 14,937.16 EGP. Remaining cash: 15,062.84 EGP. ABUK would be 49.8 % of the 30,000 EGP portfolio, just under the 50 % single-name cap. I could not buy more without breaching that limit.\n\n**Risks to keep in mind:**\n- You are concentrating nearly half your portfolio in one stock based on nine months of data.\n- The 104 % growth may partly reflect a low 2025 base; sustainability over 3–5 years is unproven.\n- Without dividend data you cannot confirm the income component of your goal.\n- FX, input-cost, and export-market risks are not addressed in the evidence provided.\n\nThis is guidance, not a guarantee. If you can obtain the full-year 2026 results, the dividend announcement, and the balance sheet before the next trading session, re-check the numbers before adding to the position.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "EPS (basic) for the nine months ended 30 Sep 2026 is 8.74 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "EPS (basic) for the nine months ended 30 Sep 2025 is 4.28 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 104.0,
+        "statement": "Year-on-year change in EPS is +104 %."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01 (Revenue 9M 2026 – AMBIGUOUS unit)",
+      "ABUK-ABUK_9M2026_results-p2-02 (Revenue 9M 2025 – AMBIGUOUS unit)",
+      "ABUK-ABUK_9M2026_results-p2-25 (Net profit 9M 2026 – AMBIGUOUS unit)",
+      "ABUK-ABUK_9M2026_results-p2-26 (Net profit 9M 2025 – AMBIGUOUS unit)"
+    ],
+    "limitations": [
+      "Annualised EPS (11.65 EGP) is a mechanical 12/9 scaling of the 9-month figure; it is not a forecast and Q4 actuals may differ materially.",
+      "No dividend or payout-ratio data is available in the evidence, so the 'income' component of the investor's goal cannot be assessed.",
+      "Absolute revenue and net-profit figures are AMBIGUOUS (mixed unit labels on the page) and were excluded from all calculations.",
+      "No balance-sheet, debt, or export-revenue-mix data is provided; financial-leverage and business-model risks are unassessed.",
+      "Only one company is in the evidence; no peer or sector comparison is possible."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 196,
+    "explanation": "You asked me to annualise the nine-month EPS, compute a P/E, and judge whether the share is cheap enough. Here is the arithmetic using only the verified figures in the report.\n\n**Verified EPS (stated in EGP per share):**\n- 9 M 2026: 8.74 EGP\n- 9 M 2025: 4.28 EGP\n- Computed YoY growth: (8.74 − 4.28) / 4.28 ≈ 104 %\n\n**Annualised 2026 EPS (simple 12/9 scaling):**\n8.74 × 12 / 9 ≈ 11.65 EGP\nThis assumes Q4 earns at the same run-rate as the first nine months. If Q4 is seasonally weaker or contains one-off items, the true full-year EPS will differ. Treat 11.65 as a rough midpoint, not a forecast.\n\n**P/E at the 18 Nov 2026 price of 76.21 EGP:**\n- On annualised EPS: 76.21 / 11.65 ≈ 6.5×\n- On the 9-month figure alone (conservative, no Q4 credit): 76.21 / 8.74 ≈ 8.7×\nEither way the multiple is well below the 12–15× range typical for a profitable Egyptian industrial exporter, which is the profile you are seeking.\n\n**Why I am recommending a buy (with important caveats):**\n- The ~104 % EPS jump year-on-year supports the growth leg of your goal.\n- A P/E in the mid-single to low-single digits offers a reasonable margin of safety for a medium-risk, 3–5-year holder.\n- You keep a separate emergency fund, so committing roughly 15,000 EGP to a single position for several years is within your stated liquidity plan.\n\n**What I could NOT verify (and why it matters):**\n- The absolute revenue and net-profit rows on page 2 are flagged AMBIGUOUS (the page mixes 'مليار' and 'مليون' unit labels), so I could not cross-check the EPS against total profit or confirm the revenue base. The per-share EPS (stated in plain EGP) is unaffected by this unit ambiguity, but I cannot confirm the scale of the business.\n- No dividend line appears in the evidence. You want income as well as growth; I have no way to confirm a payout ratio or dividend yield from what was provided. If Abu Qir pays little or no dividend, the 'income' half of your goal is unmet.\n- No balance-sheet, debt, or export-revenue-mix data is in the evidence, so I cannot assess financial-leverage risk or confirm the exporter profile.\n- The annualisation is a mechanical scaling, not a forecast; a weak Q4 or a one-off item in 9M 2026 would change the picture.\n- The 104 % growth may partly reflect a low 2025 base; sustainability over 3–5 years is unproven.\n\n**Position sizing:**\n196 shares × 76.21 = 14,937.16 EGP. Remaining cash: 15,062.84 EGP. ABUK would be 49.8 % of the 30,000 EGP portfolio, just under the 50 % single-name cap. I could not buy more without breaching that limit.\n\n**Risks to keep in mind:**\n- You are concentrating nearly half your portfolio in one stock based on nine months of data.\n- Without dividend data you cannot confirm the income component of your goal.\n- FX, input-cost, and export-market risks are not addressed in the evidence provided.\n- If the full-year 2026 results show a materially weaker Q4, the P/E will be higher than 6.5×.\n\nThis is guidance, not a guarantee of returns. If you can obtain the full-year 2026 results, the dividend announcement, and the balance sheet before adding to the position, re-check the numbers.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Basic EPS for the nine months ended 30 Sep 2026 is 8.74 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Basic EPS for the nine months ended 30 Sep 2025 is 4.28 EGP per share."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01 (Revenue 9M 2026 – AMBIGUOUS unit, mixed مليار/مليون labels)",
+      "ABUK-ABUK_9M2026_results-p2-02 (Revenue 9M 2025 – AMBIGUOUS unit, mixed مليار/مليون labels)",
+      "ABUK-ABUK_9M2026_results-p2-25 (Net profit 9M 2026 – AMBIGUOUS unit, mixed مليار/مليون labels)",
+      "ABUK-ABUK_9M2026_results-p2-26 (Net profit 9M 2025 – AMBIGUOUS unit, mixed مليار/مليون labels)"
+    ],
+    "limitations": [
+      "Annualised EPS (11.65 EGP) is a mechanical 12/9 scaling of the 9-month figure; it is not a forecast and Q4 actuals may differ materially.",
+      "No dividend or payout-ratio data is available in the evidence, so the 'income' component of the investor's goal cannot be assessed.",
+      "Absolute revenue and net-profit figures are AMBIGUOUS (mixed unit labels on the page) and were excluded from all calculations; the scale of the business cannot be confirmed.",
+      "No balance-sheet, debt, or export-revenue-mix data is provided; financial-leverage and business-model risks are unassessed.",
+      "Only one company is in the evidence; no peer or sector comparison is possible.",
+      "The YoY EPS growth (~104 %) is computed from the two verified EPS figures; it is not cited as a separately stated value from the evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15062.84,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ABUK",
+        "shares": 196
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "rule": "value_mismatch",
+        "detail": "stated 104 but evidence 'نصيب السهم الأساسي في الأرباح (جنيه)' is 8.74 [نصيب السهم الأساسي في الأرباح ) جنيه ( | ٨،٧٤ | ٤،٢٨ | %١٠٤ | ١٩٩ | ١،٢٣ | ٦٦٢ | unit: مليون جنيه]"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 36.769,
+      "input_tokens": 1761,
+      "output_tokens": 4191,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 28.914,
+      "input_tokens": 3447,
+      "output_tokens": 3988,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 65.689
+}

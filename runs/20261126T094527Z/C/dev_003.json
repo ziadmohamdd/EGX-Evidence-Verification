@@ -1,0 +1,167 @@
+{
+  "case_id": "dev_003",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 50,
+    "explanation": "Both EFID and ETEL delivered strong FY2025 results: EFID grew revenue ~29.5% and net profit ~67.8%, with a trailing P/E of roughly 9.4× at the 20.40 EGP price; ETEL grew revenue ~30.6% and more than doubled net profit. These fundamentals support continuing to hold both positions over the investor's 3–5-year horizon. However, the portfolio's most pressing structural issue is concentration: EFID already represents 51.2% of total portfolio value (30,600 / 59,795 EGP), which exceeds the 50% single-company limit and is inconsistent with the investor's low financial capacity to withstand losses. A 30% drawdown in EFID alone would erase roughly 9,200 EGP (~15% of the portfolio), a material hit for someone who cannot easily absorb large losses. Selling 50 EFID shares (proceeds ≈ 1,020 EGP) trims the position to 1,450 shares, bringing EFID to ~49.5% of the portfolio and adding to the cash buffer (15,000 → 16,020 EGP), which already covers the 10% liquidity need (~5,980 EGP) with comfortable headroom. This is a modest, conservative rebalancing step: it does not abandon the growth exposure, it keeps the investor in both stocks, and it reduces single-name risk in line with the low-loss-capacity constraint. The 'income' leg of the investor's goal remains unverified because no dividend-per-share data is available in the evidence for either company; this is a gap that should be addressed in future reviews. ETEL's EPS figure is flagged AMBIGUOUS (row label says L.E./Share but page unit says L.E.(000)), so no P/E or valuation conclusion can be drawn for ETEL; the decision to hold ETEL rests on its revenue and profit growth rather than a valuation check. Key risks: only one year of comparative data is available, so the sustainability of the profit jumps is uncertain; no debt, asset, or cash-flow data is provided for either company; both holdings are Egyptian-listed, creating single-market exposure. This recommendation is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue for FY2025 was 20,915,072,432 EGP, up from 16,146,545,699 EGP in FY2024 (+29.5%)."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for FY2025 was 2,695,301,670 EGP, up from 1,606,727,698 EGP in FY2024 (+67.8%)."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for FY2025 was 2.18 EGP (vs 1.09 in FY2024), giving a trailing P/E of approximately 9.4× at the 20.40 EGP cutoff price."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+        "stated_value": 5724525864.0,
+        "statement": "EFID total equity at 31 December 2025 was 5,724,525,864 EGP, up from 4,055,484,719 EGP (+41.2%). Page unit printed as 'None'; treated as EGP based on magnitude consistency with other line items on the same statement."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL operating revenues for FY2025 were 106,672,946,000 EGP (106,672,946 × 1,000 per L.E.(000) unit), up from 81,677,812,000 EGP (+30.6%)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit for FY2025 was 22,578,063,000 EGP (22,578,063 × 1,000 per L.E.(000) unit), up from 10,111,328,000 EGP (+123.3%)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL total equity at 31/12/2025 was 63,687,826,000 EGP (63,687,826 × 1,000 per L.E.(000) unit), up from 45,937,991,000 EGP (+38.6%)."
+      }
+    ],
+    "unused_figures": [
+      "ETEL basic and diluted EPS for FY2025: printed as 11.93 with row label 'L.E. / Share' but page unit 'L.E.(000)' [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55]. The unit conflict makes the figure AMBIGUOUS; it cannot be used to compute a P/E ratio or any valuation metric for ETEL. Consequently, the decision to hold ETEL is based solely on its revenue and profit growth, not on a valuation assessment."
+    ],
+    "limitations": [
+      "Only FY2025 vs FY2024 data is available; no multi-year trend to judge sustainability of the profit growth.",
+      "No total assets, liabilities, debt, or cash-flow data for either company; leverage and solvency cannot be assessed.",
+      "No dividend-per-share or payout-ratio data; the 'income' component of the investor's goal is unverified.",
+      "ETEL EPS is AMBIGUOUS due to a unit conflict; no valuation conclusion can be drawn for ETEL.",
+      "EFID equity page unit is printed as 'None'; inferred as EGP from context.",
+      "Both holdings are Egyptian-listed; no geographic or asset-class diversification is possible within the current evidence set.",
+      "This is guidance based on limited evidence, not a guarantee of future returns."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 50,
+    "explanation": "Both EFID and ETEL delivered strong FY2025 results: EFID grew revenue ~29.5% and net profit ~67.8%, with a trailing P/E of roughly 9.4× at the 20.40 EGP price; ETEL grew revenue ~30.6% and more than doubled net profit. These fundamentals support continuing to hold both positions over the investor's 3–5-year horizon. However, the portfolio's most pressing structural issue is concentration: EFID already represents 51.2% of total portfolio value (30,600 / 59,795 EGP), which exceeds the 50% single-company limit and is inconsistent with the investor's low financial capacity to withstand losses. A 30% drawdown in EFID alone would erase roughly 9,200 EGP (~15% of the portfolio), a material hit for someone who cannot easily absorb large losses. Selling 50 EFID shares (proceeds ≈ 1,020 EGP) trims the position to 1,450 shares, bringing EFID to ~49.5% of the portfolio and adding to the cash buffer (15,000 → 16,020 EGP), which already covers the 10% liquidity need (~5,980 EGP) with comfortable headroom. This is a modest, conservative rebalancing step: it does not abandon the growth exposure, it keeps the investor in both stocks, and it reduces single-name risk in line with the low-loss-capacity constraint. The 'income' leg of the investor's goal remains unverified because no dividend-per-share data is available in the evidence for either company; this is a gap that should be addressed in future reviews. ETEL's EPS figure is flagged AMBIGUOUS (row label says L.E./Share but page unit says L.E.(000)), so no P/E or valuation conclusion can be drawn for ETEL; the decision to hold ETEL rests on its revenue and profit growth rather than a valuation check. Key risks: only one year of comparative data is available, so the sustainability of the profit jumps is uncertain; no debt, asset, or cash-flow data is provided for either company; both holdings are Egyptian-listed, creating single-market exposure. This recommendation is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue for FY2025 was 20,915,072,432 EGP, up from 16,146,545,699 EGP in FY2024 (+29.5%)."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for FY2025 was 2,695,301,670 EGP, up from 1,606,727,698 EGP in FY2024 (+67.8%)."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for FY2025 was 2.18 EGP (vs 1.09 in FY2024), giving a trailing P/E of approximately 9.4× at the 20.40 EGP cutoff price."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+        "stated_value": 5724525864.0,
+        "statement": "EFID total equity at 31 December 2025 was 5,724,525,864 EGP, up from 4,055,484,719 EGP (+41.2%). Page unit printed as 'None'; treated as EGP based on magnitude consistency with other line items on the same statement."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL operating revenues for FY2025 were 106,672,946,000 EGP (106,672,946 × 1,000 per L.E.(000) unit), up from 81,677,812,000 EGP (+30.6%)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit for FY2025 was 22,578,063,000 EGP (22,578,063 × 1,000 per L.E.(000) unit), up from 10,111,328,000 EGP (+123.3%)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL total equity at 31/12/2025 was 63,687,826,000 EGP (63,687,826 × 1,000 per L.E.(000) unit), up from 45,937,991,000 EGP (+38.6%)."
+      }
+    ],
+    "unused_figures": [
+      "ETEL basic and diluted EPS for FY2025: printed as 11.93 with row label 'L.E. / Share' but page unit 'L.E.(000)' [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55]. The unit conflict makes the figure AMBIGUOUS; it cannot be used to compute a P/E ratio or any valuation metric for ETEL. Consequently, the decision to hold ETEL is based solely on its revenue and profit growth, not on a valuation assessment."
+    ],
+    "limitations": [
+      "Only FY2025 vs FY2024 data is available; no multi-year trend to judge sustainability of the profit growth.",
+      "No total assets, liabilities, debt, or cash-flow data for either company; leverage and solvency cannot be assessed.",
+      "No dividend-per-share or payout-ratio data; the 'income' component of the investor's goal is unverified.",
+      "ETEL EPS is AMBIGUOUS due to a unit conflict; no valuation conclusion can be drawn for ETEL.",
+      "EFID equity page unit is printed as 'None'; inferred as EGP from context.",
+      "Both holdings are Egyptian-listed; no geographic or asset-class diversification is possible within the current evidence set.",
+      "This is guidance based on limited evidence, not a guarantee of future returns."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 16020.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1450
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n# Financial Analysis: EFID & ETEL (FY2025)\n\n## 1. EFID – Egyptian Financial Investment Company\n\n### Profitability & Growth\n\n| Metric | FY2025 | FY2024 | Change |\n|---|---|---|---|\n| Revenue | 20,915,072,432 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01] | 16,146,545,699 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01] | +29.5 % |\n| Net profit | 2,695,301,670 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] | 1,606,727,698 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] | +67.8 % |\n| Net margin | 12.9 % | 9.9 % | +3.0 pp |\n| EPS (basic & diluted) | 2.18 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] | 1.09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] | +100 % |\n\n- Revenue grew ~29.5 % y/y; net profit grew ~67.8 %, indicating a meaningful margin expansion (≈ 10 % → ≈ 13 %).\n- At the cutoff price of 20.40 EGP, the trailing P/E is 20.40 / 2.18 ≈ **9.4×** [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38].\n\n### Balance Sheet\n\n| Metric | FY2025 | FY2024 | Change |\n|---|---|---|---|\n| Total equity | 5,724,525,864 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39] | 4,055,484,719 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39] | +41.2 % |\n\n- Equity grew 41.2 %, outpacing profit growth, suggesting retained earnings and/or capital raises.\n- **Data gap:** No total-assets, total-liabilities, or debt figures are provided in the evidence, so leverage and solvency cannot be assessed.\n- **Unit note:** The page unit is printed as \"None\" [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39]. The magnitude is consistent with EGP (same order as revenue and profit on the same statement), so the figures are treated as EGP, but the missing explicit unit is a minor data-quality flag.\n\n### Risks / Observations\n- EFID is a financial-services holding; earnings are sensitive to market cycles, interest-rate moves, and regulatory changes. No segment or risk-disclosure data is in the evidence.\n- No dividend-per-share figure is provided, so the \"income\" component of the investor's goal cannot be verified from this evidence.\n\n---\n\n## 2. ETEL – Egyptian Telecommunications Company\n\n### Profitability & Growth\n\n| Metric | FY2025 | FY2024 | Change |\n|---|---|---|---|\n| Operating revenue | 106,672,946,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01] | 81,677,812,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01] | +30.6 % |\n| Net profit | 22,578,063,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] | 10,111,328,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] | +123.3 % |\n| Net margin | 21.2 % | 12.4 % | +8.8 pp |\n\n- Revenue grew ~30.6 %; net profit more than doubled (+123.3 %), with margin expanding from ≈ 12.4 % to ≈ 21.2 %. This is a very large swing and warrants scrutiny (one-off items, tax effects, or a genuine step-change in cost structure).\n- **⚠ AMBIGUOUS – EPS:** The row is labelled *\"Basic and diluted earning per share for the year (L.E. / Share)\"* with values **11.93** and **4.79**, but the page-level unit line reads **\"L.E.(000)\"** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55]. The row label and the page unit conflict. If the page unit applied, EPS would be 11,930 EGP/share (implausible vs. a 141.95 EGP share price); if the row label applies, EPS is 11.93 EGP/share. **I flag this figure as AMBIGUOUS and do not compute a P/E ratio from it.**\n\n### Balance Sheet\n\n| Metric | FY2025 | FY2024 | Change |\n|---|---|---|---|\n| Total equity | 63,687,826,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] | 45,937,991,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] | +38.6 % |\n\n- Equity grew 38.6 %, broadly in line with the profit surge.\n- **Data gap:** As with EFID, no total-assets, debt, or cash-flow figures are in the evidence. Leverage and capital-expenditure intensity (critical for a telecom) cannot be assessed.\n- No dividend-per-share figure is provided.\n\n### Risks / Observations\n- The 123 % profit jump is unusually large for a mature telecom; without a note on one-off gains, tax credits, or restatements, the sustainability of this margin level is uncertain.\n- Telecom is a regulated, capital-intensive sector; competitive and regulatory risk is inherent but not quantified in the evidence.\n- The EPS unit conflict (above) is a data-quality issue that should be resolved before any valuation work.\n\n---\n\n## 3. Portfolio Snapshot (at cutoff prices)\n\n| Holding | Shares | Price (EGP) | Market Value (EGP) |\n|---|---|---|---|\n| Cash | – | – | 15,000 |\n| ETEL | 100 | 141.95 | 14,195 |\n| EFID | 1,500 | 20.40 | 30,600 |\n| **Total** | | | **59,795** |\n\n- 10 % liquidity need ≈ 5,980 EGP. The 15,000 EGP cash buffer covers this with headroom.\n- EFID represents ≈ 51 % of the portfolio; ETEL ≈ 24 %; cash ≈ 25 %.\n\n---\n\n## 4. Data-Quality & Limitations Summary\n\n| Issue | Detail |\n|---|---|\n| ETEL EPS unit conflict | Row says \"L.E./Share\"; page unit says \"L.E.(000)\" [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55]. **Flagged AMBIGUOUS – not used in calculations.** |\n| EFID equity unit | Printed as \"None\" [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39]; inferred EGP from context. Minor flag. |\n| No debt / asset data | Neither company's total assets, liabilities, or interest-bearing debt are in the evidence. Balance-sheet risk is only partially visible (equity side only). |\n| No dividend data | No DPS or payout-ratio figures for either company; the \"income\" leg of the investor's goal cannot be verified. |\n| No cash-flow statement | Operating, investing, and financing cash flows are absent. |\n| Single-year comparison | Only FY2025 vs FY2024 are available; no 3- or 5-year trend to judge the sustainability of the profit jumps. |\n\n---\n\n## 5. Key Takeaways (evidence-based, no action recommended)\n\n1. **Both companies show strong FY2025 growth.** EFID: revenue +29.5 %, profit +67.8 % [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01; -p6-30]. ETEL: revenue +30.6 %, profit +123.3 % [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01; -p6-35].\n2. **Margin expansion is notable in both**, but ETEL's jump (12.4 % → 21.2 %) is large enough to warrant a check for one-off items before assuming it is repeatable.\n3. **Valuation (EFID only):** At 20.40 EGP and 2.18 EGP EPS, the trailing P/E is ≈ 9.4× [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38]. ETEL's P/E **cannot be computed** due to the AMBIGUOUS EPS unit.\n4. **Balance-sheet visibility is limited** to equity for both names; leverage, asset quality, and cash-generation are not assessable from the evidence provided.\n5. **Income component is unverified:** no dividend data exists in the evidence for either holding.\n6. **Liquidity:** the 15,000 EGP cash position covers the stated 10 % liquidity need (≈ 5,980 EGP) without requiring a sale of either holding.\n\n*This analysis is limited to the eight evidence items supplied. No trading, rebalancing, or buy/sell recommendation is made or implied.*",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## 1. Portfolio Snapshot (at 2026-11-18 prices)\n\n| Item | Value (EGP) | % of Total |\n|---|---|---|\n| Cash | 15,000 | 25.1 % |\n| ETEL – 100 sh × 141.95 | 14,195 | 23.7 % |\n| EFID – 1,500 sh × 20.40 | 30,600 | 51.2 % |\n| **Total** | **59,795** | **100 %** |\n\nThe portfolio is **heavily concentrated in a single equity (EFID, >50 %)**, with a second equity (ETEL) at roughly a quarter and the remainder in cash.\n\n---\n\n## 2. Horizon & Goal Fit\n\n- **3–5 year horizon** is medium-term: long enough to ride out normal equity cycles, but not long enough to absorb a severe, multi-year drawdown in a single concentrated position without pain.\n- **Goal – \"steady growth with some income\"** points toward a balanced tilt (growth + dividend/income), not a pure-growth or pure-income mandate.\n- The current two-equity, no-bond, no-fund structure is a **growth-skewed** allocation; the \"income\" leg of the goal is not explicitly addressed by the holdings as described.\n\n---\n\n## 3. Liquidity Needs\n\n- Stated need: **10 % of total within one year ≈ 5,980 EGP.**\n- Existing cash: **15,000 EGP**, which already covers that need **2.5× over**.\n- **Implication:** The liquidity requirement is fully met by the cash on hand. No shares need to be sold to meet a near-term cash call. The investor has **≈ 9,020 EGP of \"excess\" cash** (15,000 − 5,980) that is not earmarked for the 10 % reserve.\n\n---\n\n## 4. Loss Tolerance vs. Loss Capacity\n\n| Dimension | Level | Practical meaning |\n|---|---|---|\n| **Willingness** (psychological) | Medium | Can accept a moderate drawdown (e.g., 10–20 %) without panic-selling. |\n| **Capacity** (financial) | **Low** | A large loss would materially impair the investor's financial position. |\n\nThis **mismatch** (medium willingness, low capacity) is the single most important constraint. It means:\n\n- The portfolio should **not** be exposed to a scenario where a 30 %+ drawdown in one holding would be financially damaging.\n- The current 51 % single-stock concentration in EFID is **in tension with low loss capacity**: a 30 % drop in EFID alone would erase ≈ 9,180 EGP (≈ 15 % of the whole portfolio), which is a significant hit for someone with low capacity.\n- A more defensive allocation (greater cash / fixed-income / diversified-fund weight) would better match the low capacity, even if the investor *feels* comfortable with medium risk.\n\n---\n\n## 5. Current Concentration & Diversification\n\n- **Two listed equities, one market (Egypt), no bonds, no funds, no other asset classes.**\n- EFID alone is >50 % of the portfolio; the two equities together are ~75 %.\n- For a 3–5 year horizon with low loss capacity, this is a **concentrated, single-market, single-asset-class** structure. Diversification across asset classes (e.g., government bonds, money-market funds, diversified equity funds) would reduce single-name and single-market risk.\n\n---\n\n## 6. What the Portfolio Allows (Liquidity & Flexibility)\n\n- **All three components are liquid:**\n  - 15,000 EGP cash – immediately available.\n  - 100 ETEL shares (≈ 14,195 EGP) – sellable on the exchange.\n  - 1,500 EFID shares (≈ 30,600 EGP) – sellable on the exchange.\n- The investor could, in principle, **free up the entire 59,795 EGP** by selling all holdings, though doing so would eliminate all equity exposure.\n- More realistically, the investor can **rebalance within the existing sleeve** (e.g., trim EFID, add a bond/fund position) without needing external capital.\n\n---\n\n## 7. How Much Could Reasonably Be Committed?\n\n| Bucket | Amount (EGP) | Rationale |\n|---|---|---|\n| **Liquidity reserve (1-yr need)** | 5,980 | Must stay in cash / money-market; not deployable. |\n| **Excess cash (free to deploy)** | 9,020 | Cash above the 10 % reserve. |\n| **Equity sleeve (existing)** | 44,795 | 100 ETEL + 1,500 EFID. Could be partially trimmed to reduce concentration. |\n| **Total investable (if fully liquid)** | 59,795 | Upper bound; not all should be in equities given low loss capacity. |\n\nGiven **low loss capacity**, a reasonable planning assumption is:\n\n- Keep **≥ 10 % (≈ 6,000 EGP)** in cash / money-market for the stated liquidity need.\n- Consider keeping an **additional 10–20 % buffer** (≈ 6,000–12,000 EGP) in low-risk instruments (government bonds, short-duration funds) to cushion against a market drawdown, given the low capacity.\n- That leaves roughly **30,000–40,000 EGP (≈ 50–65 % of the portfolio)** as the \"growth + income\" equity/fund sleeve, which could be diversified beyond the current two names.\n\n---\n\n## 8. Key Suitability Tensions to Flag\n\n1. **Concentration vs. low loss capacity:** 51 % in one stock is aggressive for someone who cannot easily absorb a large loss.\n2. **Income goal vs. current structure:** No explicit income-generating asset (bonds, dividend fund, REIT) is present; the \"some income\" part of the goal is unaddressed.\n3. **Single-market exposure:** Both equities are Egyptian-listed; there is no geographic or currency diversification.\n4. **Horizon vs. volatility:** A 3–5 year window is workable for equities, but the concentrated, single-market structure increases the probability of a drawdown that would be hard to recover from within that window, especially with low capacity.\n\n---\n\n*This assessment describes what the investor's constraints, goals, and current holdings allow. It does not recommend buying, selling, or holding any specific security, and it does not evaluate the fundamental quality of EFID or ETEL.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 47.709,
+      "input_tokens": 1267,
+      "output_tokens": 5770,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 20.869,
+      "input_tokens": 1260,
+      "output_tokens": 2552,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 42.483,
+      "input_tokens": 5619,
+      "output_tokens": 5784,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 111.067
+}

@@ -1,0 +1,123 @@
+{
+  "case_id": "dev_005",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The evidence packet does not support a responsible buy, hold, or sell decision on ABUK for this investor.\n\n**What is available:** Two EPS rows are marked 'verified' (8.74 EGP for 9M-2026 and 4.28 EGP for 9M-2025), implying a +104 % YoY growth rate. However, the financial analyst correctly flags a critical anomaly: the 9M-2026 and 9M-2025 rows print the *identical* six numbers (٨،٧٤ | ٤،٢٨ | %١٠٤ | ١٩٩ | ١،٢٣ | ٦٦٢) in both period columns. This strongly suggests a layout or extraction error, meaning the 'prior-year' comparison—and therefore the +104 % growth claim—cannot be trusted. Even the 'verified' label is undermined by this internal inconsistency.\n\n**What is AMBIGUOUS (excluded from all calculations):** Revenue for both 9M-2026 and 9M-2025, and net profit for both periods. The page carries nine instances of 'مليار' (billion) and one of 'مليون' (million) in its unit headers, creating genuine uncertainty about the scale of every absolute figure. Without reliable revenue and net-profit numbers, margin structure, absolute profit level, and revenue base are all unassessable.\n\n**What is entirely missing:**\n- Balance sheet (debt-to-equity, working capital, leverage)\n- Cash-flow statement (capex, free cash flow, dividend cover)\n- Multi-year earnings history (FY 2023, 2024, 2025) – essential for a 5-year horizon\n- Segmental or export-revenue breakdown – the investor's stated goal is specifically a 'fertilizer *exporter*,' and no evidence confirms ABUK's export share of revenue\n- Dividend history\n- Share-count confirmation\n\n**Why this matters for this investor:** The 5-year horizon requires a multi-year earnings and balance-sheet trend that is absent. Medium loss tolerance (both willingness and capacity) makes the data-quality risk material: entering a position on the basis of a single, internally inconsistent 9-month print is inconsistent with that risk profile. The 'fertilizer exporter' qualifier in the goal cannot be confirmed from the evidence provided.\n\n**What would be needed to proceed:** A clean annual report (FY 2025 or FY 2026) with unambiguous units, a balance sheet, a cash-flow statement, at least three years of income-statement history, and a segmental or export-revenue breakdown. Alternatively, a corrected version of the 9M-2026 report that resolves the identical-value anomaly and the unit-header conflict.\n\nUntil such data is available, the responsible course is to keep the 40,000 EGP in cash and the 200 COMI shares unchanged, and to request the fuller evidence before allocating to ABUK.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS for the nine months ended 30 September 2026 is 8.74 EGP per share. Note: the identical six numbers also appear in the 9M-2025 row (p2-32), raising a material doubt about whether this figure truly represents 2026 or is a duplicated extraction."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK basic EPS for the nine months ended 30 September 2025 is 4.28 EGP per share. Note: identical to the 9M-2026 row, suggesting a layout/extraction error; the YoY comparison is unreliable."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01 (Revenue 9M 2026 – AMBIGUOUS, unit conflict between مليار and مليون)",
+      "ABUK-ABUK_9M2026_results-p2-02 (Revenue 9M 2025 – AMBIGUOUS, unit conflict between مليار and مليون)",
+      "ABUK-ABUK_9M2026_results-p2-25 (Net profit 9M 2026 – AMBIGUOUS, unit conflict between مليار and مليون)",
+      "ABUK-ABUK_9M2026_results-p2-26 (Net profit 9M 2025 – AMBIGUOUS, unit conflict between مليار and مليون)"
+    ],
+    "limitations": [
+      "The two 'verified' EPS rows print identical numbers for both periods, so the +104 % YoY growth figure cannot be relied upon.",
+      "All absolute revenue and net-profit figures are AMBIGUOUS due to conflicting unit headers on the page; no margin, profit-level, or revenue-base analysis is possible.",
+      "No balance-sheet, cash-flow, segmental, dividend, or multi-year data is present in the evidence packet.",
+      "The investor's specific goal of a 'fertilizer exporter' cannot be confirmed because no export-revenue breakdown is provided.",
+      "A 5-year investment horizon cannot be assessed without at least three years of financial history.",
+      "This is guidance based on the limited evidence provided, not a guarantee of future performance."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The evidence packet does not support a responsible buy, hold, or sell decision on ABUK for this investor.\n\n**What is available:** Two EPS rows are marked 'verified' (8.74 EGP for 9M-2026 and 4.28 EGP for 9M-2025), implying a +104 % YoY growth rate. However, the financial analyst correctly flags a critical anomaly: the 9M-2026 and 9M-2025 rows print the *identical* six numbers (٨،٧٤ | ٤،٢٨ | %١٠٤ | ١٩٩ | ١،٢٣ | ٦٦٢) in both period columns. This strongly suggests a layout or extraction error, meaning the 'prior-year' comparison—and therefore the +104 % growth claim—cannot be trusted. Even the 'verified' label is undermined by this internal inconsistency.\n\n**What is AMBIGUOUS (excluded from all calculations):** Revenue for both 9M-2026 and 9M-2025, and net profit for both periods. The page carries nine instances of 'مليار' (billion) and one of 'مليون' (million) in its unit headers, creating genuine uncertainty about the scale of every absolute figure. Without reliable revenue and net-profit numbers, margin structure, absolute profit level, and revenue base are all unassessable.\n\n**What is entirely missing:**\n- Balance sheet (debt-to-equity, working capital, leverage)\n- Cash-flow statement (capex, free cash flow, dividend cover)\n- Multi-year earnings history (FY 2023, 2024, 2025) – essential for a 5-year horizon\n- Segmental or export-revenue breakdown – the investor's stated goal is specifically a 'fertilizer *exporter*,' and no evidence confirms ABUK's export share of revenue\n- Dividend history\n- Share-count confirmation\n\n**Why this matters for this investor:** The 5-year horizon requires a multi-year earnings and balance-sheet trend that is absent. Medium loss tolerance (both willingness and capacity) makes the data-quality risk material: entering a position on the basis of a single, internally inconsistent 9-month print is inconsistent with that risk profile. The 'fertilizer exporter' qualifier in the goal cannot be confirmed from the evidence provided.\n\n**What would be needed to proceed:** A clean annual report (FY 2025 or FY 2026) with unambiguous units, a balance sheet, a cash-flow statement, at least three years of income-statement history, and a segmental or export-revenue breakdown. Alternatively, a corrected version of the 9M-2026 report that resolves the identical-value anomaly and the unit-header conflict.\n\nUntil such data is available, the responsible course is to keep the 40,000 EGP in cash and the 200 COMI shares unchanged, and to request the fuller evidence before allocating to ABUK.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS for the nine months ended 30 September 2026 is 8.74 EGP per share. Note: the identical six numbers also appear in the 9M-2025 row (p2-32), raising a material doubt about whether this figure truly represents 2026 or is a duplicated extraction."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK basic EPS for the nine months ended 30 September 2025 is 4.28 EGP per share. Note: identical to the 9M-2026 row, suggesting a layout/extraction error; the YoY comparison is unreliable."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01 (Revenue 9M 2026 – AMBIGUOUS, unit conflict between مليار and مليون)",
+      "ABUK-ABUK_9M2026_results-p2-02 (Revenue 9M 2025 – AMBIGUOUS, unit conflict between مليار and مليون)",
+      "ABUK-ABUK_9M2026_results-p2-25 (Net profit 9M 2026 – AMBIGUOUS, unit conflict between مليار and مليون)",
+      "ABUK-ABUK_9M2026_results-p2-26 (Net profit 9M 2025 – AMBIGUOUS, unit conflict between مليار and مليون)"
+    ],
+    "limitations": [
+      "The two 'verified' EPS rows print identical numbers for both periods, so the +104 % YoY growth figure cannot be relied upon.",
+      "All absolute revenue and net-profit figures are AMBIGUOUS due to conflicting unit headers on the page; no margin, profit-level, or revenue-base analysis is possible.",
+      "No balance-sheet, cash-flow, segmental, dividend, or multi-year data is present in the evidence packet.",
+      "The investor's specific goal of a 'fertilizer exporter' cannot be confirmed because no export-revenue breakdown is provided.",
+      "A 5-year investment horizon cannot be assessed without at least three years of financial history.",
+      "This is guidance based on the limited evidence provided, not a guarantee of future performance."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n# ABUK (Abu Qir Fertilizers) – Evidence Analysis\n\n## 1. Profitability\n\n| Metric | 9M 2026 | 9M 2025 | Source |\n|---|---|---|---|\n| Basic EPS (EGP/share) | **8.74** | **4.28** | [ABUK-ABUK_9M2026_results-p2-31] |\n| Net profit (L.E.) | **AMBIGUOUS** – cannot use | **AMBIGUOUS** – cannot use | [ABUK-ABUK_9M2026_results-p2-25], [p2-26] |\n| Revenue (L.E.) | **AMBIGUOUS** – cannot use | **AMBIGUOUS** – cannot use | [ABUK-ABUK_9M2026_results-p2-01], [p2-02] |\n\nThe only usable profitability figure is the verified EPS of **8.74 EGP** for 9M 2026 versus **4.28 EGP** for 9M 2025 [ABUK-ABUK_9M2026_results-p2-31]. At the current share price of 76.21 EGP, this implies a trailing-9-month P/E of roughly 8.7× (76.21 / 8.74). However, because the absolute net-profit and revenue lines are flagged AMBIGUOUS, I **cannot** confirm the margin structure, the absolute profit level, or the revenue base that underpins this EPS.\n\n## 2. Growth\n\n- **EPS growth: +104 % YoY** (4.28 → 8.74 EGP) [ABUK-ABUK_9M2026_results-p2-31]. This is the single growth datapoint available.\n- Revenue growth and net-profit growth **cannot be computed** because both the 9M-2026 and 9M-2025 revenue and net-profit rows are AMBIGUOUS [ABUK-ABUK_9M2026_results-p2-01, p2-02, p2-25, p2-26].\n- No multi-year trend (FY 2023, 2024, 2025) is present in the evidence, so a 5-year growth trajectory cannot be assessed.\n\n## 3. Balance Sheet / Liquidity\n\n**No balance-sheet, cash-flow, or leverage data is included in the provided evidence.** Debt-to-equity, working-capital position, and dividend cover are therefore **unassessable** from this packet.\n\n## 4. Risks\n\n| Risk | Detail |\n|---|---|\n| **Data-quality / reporting risk** | 4 of 6 evidence rows are flagged **AMBIGUOUS**. The page carries conflicting unit headers (nine instances of \"مليار\" and one of \"مليون\"); the analyst note states reliance on the table unit line \"مليون جنيه\" [ABUK-ABUK_9M2026_results-p2-01 note]. |\n| **Identical-value anomaly** | The 9M-2026 and 9M-2025 columns for revenue, net profit, **and** EPS print the **same six numbers** in both period rows [p2-01 vs p2-02; p2-25 vs p2-26; p2-31 vs p2-32]. This strongly suggests a layout or extraction error, meaning the \"prior-year\" comparison may be unreliable even for the \"verified\" EPS row. |\n| **Unit ambiguity** | The EPS row header explicitly states the unit as \"جنيه\" (EGP per share), yet the page-level unit line reads \"مليون جنيه.\" I have treated the row-level unit as governing, but the conflict is noted. |\n| **Single-period snapshot** | Only one 9-month report is provided; no annual statements, no segmental (fertiliser vs. other) split, no export-revenue breakdown. For an investor specifically seeking a **fertiliser exporter**, the export share of revenue is unknown. |\n| **No balance-sheet visibility** | Leverage, capex commitments, and dividend sustainability cannot be evaluated. |\n\n## 5. Data-Quality Summary\n\n- **Verified items:** 2 (EPS 9M-2026, EPS 9M-2025) – but both print identical column sets, undermining confidence.\n- **AMBIGUOUS items:** 4 (Revenue ×2, Net profit ×2) – **excluded from all calculations** per protocol.\n- **Missing entirely:** Balance sheet, cash flow, segmental data, dividend history, share count confirmation, export-revenue split.\n- **Net assessment:** The evidence base is **insufficient** to form a reliable fundamental view on ABUK's profitability trajectory, financial health, or export exposure. The single usable datapoint (EPS +104 %) is encouraging but rests on a report whose internal consistency is in question.\n\n## 6. Relevance to the Stated Investor Profile\n\n- **Diversification goal (fertiliser exporter):** ABUK is Egypt's largest fertiliser producer, so the sector fit is plausible. However, the **export share of revenue is not evidenced** in this packet, so the \"exporter\" qualifier cannot be confirmed.\n- **5-year horizon / medium loss tolerance:** A 5-year view requires multi-year earnings and balance-sheet trends that are absent here. Medium loss tolerance makes the data-quality risk material: entering on the basis of a single, partially ambiguous 9-month print is inconsistent with that risk profile.\n- **Liquidity:** ABUK trades at 76.21 EGP; with 40,000 EGP cash available, a position of ~500 shares (~38,105 EGP) is feasible, but sizing is a decision-agent function.\n\n## 7. Analyst Note (no recommendation)\n\nThe evidence packet supports **one verified data point** (EPS 8.74 EGP, +104 % YoY) and **four AMBIGUOUS lines** that I have excluded from analysis. There is **no balance-sheet, cash-flow, segmental, or multi-year data**. The identical-value anomaly across period columns raises a material question about the reliability of even the \"verified\" EPS comparison.\n\n**I do not recommend an action.** The decision agent should weigh whether the single verified EPS datapoint, combined with the sector fit, is sufficient for a medium-risk, 5-year investor, or whether the data gaps (balance sheet, export split, multi-year trend, unit ambiguity) warrant requesting a fuller annual report before any allocation is made.",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## 1. Horizon\n\nA 5-year horizon is well-suited to a fertilizer-exporter holding. Fertilizer demand is tied to agricultural cycles and global commodity prices, which can swing over 1–3-year periods. Five years gives the position room to weather at least one full commodity up/down cycle without forcing a sale at an inopportune moment. The horizon is **adequate** for the stated goal.\n\n## 2. Liquidity Needs\n\nThe investor maintains a **separate emergency fund**, so the 40,000 EGP sitting in the portfolio is not earmarked for short-term obligations. This means the full cash balance is, in principle, free to deploy toward the diversification goal. No liquidity constraint forces the investor to keep a large cash cushion inside this portfolio.\n\n## 3. Loss Willingness and Capacity (both medium)\n\n- **Willingness (medium):** The investor can tolerate a moderate drawdown (e.g., 20–30 % on a position) without panic-selling, but would be uncomfortable with a near-total loss.\n- **Capacity (medium):** The portfolio is small (≈ 65,600 EGP total). A large single-position loss would be felt, but the separate emergency fund means a portfolio drawdown would not create a cash-flow crisis.\n\n**Implication:** A single new position should not consume the entire investable cash. Committing 100 % of the 40,000 EGP to one ticker would concentrate the portfolio's risk in a way that exceeds a \"medium\" tolerance. A partial deployment (roughly half to two-thirds of the cash) keeps the downside within the investor's stated comfort zone while still achieving meaningful diversification.\n\n## 4. Current Concentration\n\n| Item | Value (EGP) | Share of portfolio |\n|---|---|---|\n| COMI – 200 sh × 128.00 | 25,600 | 39 % |\n| Cash | 40,000 | 61 % |\n| **Total** | **65,600** | 100 % |\n\nThe portfolio is effectively a **single-stock-plus-cash** structure. Adding a second, sector-diverse holding (fertilizer export vs. COMI's sector) would reduce single-name concentration and is directly aligned with the stated goal. The 61 % cash weight also means the portfolio is currently under-invested relative to a 5-year horizon.\n\n## 5. What the Portfolio Allows\n\n- **Cash free to deploy:** 40,000 EGP (no emergency-fund encumbrance).\n- **Sellable holdings:** 200 shares of COMI (≈ 25,600 EGP at the 128.00 EGP cutoff price). Selling COMI would free additional capital, but doing so to fund the new position would be a *swap* rather than an *add*, and would not improve diversification (the portfolio would still hold one stock). Keeping COMI and using cash to add the fertilizer name is the structure that actually diversifies.\n- **ABUK reference price:** 76.21 EGP per share (cutoff). For context, 40,000 EGP would purchase roughly 524 shares; 20,000 EGP would purchase roughly 262 shares.\n\n## 6. Reasonable Cash Commitment\n\nGiven medium loss tolerance and the desire to diversify without over-concentrating:\n\n- **Lower bound (~50 % of cash ≈ 20,000 EGP / ~262 ABUK shares):** Achieves a second holding, keeps a 20,000 EGP buffer, and limits a worst-case 50 % drawdown on the new position to ≈ 10,000 EGP (≈ 15 % of total portfolio).\n- **Upper bound (~70 % of cash ≈ 28,000 EGP / ~367 ABUK shares):** Still leaves a 12,000 EGP cushion; a 50 % drawdown would cost ≈ 14,000 EGP (≈ 21 % of total portfolio), which is at the edge of \"medium\" tolerance.\n\nCommitting the full 40,000 EGP to a single new position would push the portfolio to two stocks with no cash buffer, which is more aggressive than the stated medium risk profile warrants.\n\n## 7. Summary of Suitability\n\n| Factor | Verdict |\n|---|---|\n| 5-year horizon vs. fertilizer-exporter cycle | **Suitable** |\n| Liquidity (separate emergency fund) | **No constraint; cash is free** |\n| Medium loss willingness / capacity | **Favours partial, not full, cash deployment** |\n| Current single-stock concentration | **Adding a second, sector-diverse name directly addresses the gap** |\n| Reasonable new-position size | **≈ 20,000 – 28,000 EGP (roughly 260 – 370 shares at the 76.21 EGP cutoff price)** |\n\nThe portfolio structure (cash + one stock) and the investor's profile (5-year horizon, separate emergency fund, medium risk) are **broadly compatible** with adding a fertilizer-exporter holding. The key guardrail is sizing: a partial cash commitment keeps the incremental risk within the investor's stated medium tolerance while still delivering the diversification the goal calls for.\n\n*Note: The ABUK 9M2026 evidence in the file confirms the company's identity and scale as a fertilizer producer/exporter but has not been used here for fundamental or valuation analysis, per the scope of this assessment.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 32.537,
+      "input_tokens": 1476,
+      "output_tokens": 4294,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 21.63,
+      "input_tokens": 1469,
+      "output_tokens": 2733,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 23.276,
+      "input_tokens": 4536,
+      "output_tokens": 3108,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 77.446
+}
