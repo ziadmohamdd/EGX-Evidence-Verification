@@ -52,7 +52,7 @@ A = single agent, B = single agent + verifier, C = team, D = team + verifier. Re
 
 - **It decides well.** It gives an acceptable action in 47 of 48 answers, and it rarely falls back on "insufficient evidence".
 - **It uses the evidence fully.** It cites almost 9 in 10 of the usable figures, about twice as many as the other two models.
-- **Its claims often don't match their evidence.** Between 8% and 22% of the figures in its first drafts are wrong, mostly citation errors rather than misreadings (section 2). With no verifier, 16 (A) and 6 (C) such figures reach the investor.
+- **Its claims often don't match their evidence.** Between 8% and 22% of the figures in its first drafts are wrong, mostly citation errors rather than misreadings (section 2). Once the row's other numbers got their own IDs, this fell to 0–3% (section 6). With no verifier, 16 (A) and 6 (C) such figures reach the investor.
 - **The verifier stops all of them.** B and D end with 0 wrong figures and 0 unchecked figures in the text.
   - B sent back 6 of 12 answers and D 5 of 12.
   - Each time, Qwen's single revision corrected the figures, so no sentence had to be removed. With Nemotron, many sentences had to be removed (Part 8).
@@ -108,12 +108,42 @@ Same model and setup on the dev cases rebuilt with column headings (the only cha
 
 **Conclusion:** the headings make the evidence match what a reader of the page sees, and they stay. But Qwen's "year-column mistakes" were never misreadings. They come from the cases giving an evidence ID only to the chosen period's figure, while the row the agents see also prints other periods. Agents that compare years, as an investor would expect, have no correct ID to cite.
 
+## 6. Rerun with the row's other numbers given their own IDs
+
+Every number printed in a chosen figure's row now has its own evidence ID: the other period, the quarter and the change in % (commit df67322). These extra items are checked like any other cited figure. They do not count toward coverage, which still measures the figures chosen for the case. The dev cases gained 60 such items, and no chosen figure changed. Same model and setup otherwise. Run `runs/20261126T122300Z`, 48 of 48 answers.
+
+| | A | B | C | D |
+|---|---|---|---|---|
+| Figures cited in final answers | 94 | 87 | 81 | 89 |
+| …of them, the row's other numbers under their own ID | 17 | 20 | 21 | 23 |
+| Wrong cited figures in final answers | **3 (3%)** | **0** | **0** | **0** |
+| Wrong cited figures before the verifier | 3% | 1% | 0% | 0% |
+| Answers with at least one wrong figure | 2 of 12 | 0 | 0 | 0 |
+| Uncited evidence figures in the final text | 3 | 0 | 3 | 0 |
+| Coverage of usable figures | 92% | 82% | 80% | 85% |
+| Answers sent back by the verifier | – | 3 of 12 | – | 1 of 12 |
+| Sentences removed by the verifier | – | 0 | – | 0 |
+| Acceptable action | 12 of 12 | 12 of 12 | 12 of 12 | 11 of 12 |
+| Buys over 50% in one stock (flagged) | 0 | 0 | 1 | 0 |
+
+**The citation errors are gone.** Wrong first-draft figures fell from 50 (section 5) to 4. Qwen now cites the 2024 figure, the quarter or the change in % under that number's own ID, 17 to 23 times per condition.
+
+**The 4 that remain:**
+- **2 real misreadings,** the same as in section 5: Telecom Egypt's net profit "22 578 063" read as 578,063 thousand, in A and B (dev_011). B's verifier sent it back and the revision fixed it.
+- **2 changes in %** on Talaat Moustafa's Arabic summary page (A, dev_006): revenue growth 46% and EPS growth 59.6%, cited under the 2025 figures' IDs. The reader did not extract the % column on that page, so these numbers still have no ID of their own.
+
+**What changed for the comparison:**
+- **The verifier now has little to catch from Qwen.** Without a verifier, 3 wrong figures reach the investor in A and none in C. In section 5 the numbers were 21 and 9. The verifier sent back 3 answers in B and 1 in D, mostly for evidence figures written in the text without a citation.
+- **Coverage fell a little** (80–92% against 89–93%). Some claims now cite the row's other numbers instead of the chosen figure.
+- **One buy just over the limit:** the team's buy of Edita in dev_011 leaves EFID at 50.0% after rounding, just above 50%. It was flagged, as designed, and not blocked.
+- **Decisions are unchanged:** 47 of 48 acceptable. The one miss (D, dev_005) is again "insufficient evidence".
+
+**Conclusion:** most of Qwen's earlier "wrong figures" came from how the cases were built, not from the model. With fair IDs, Qwen's first drafts are almost all correct. The verifier's main effect on Qwen is now its uncited-figure check, and real misreadings (Telecom Egypt) are rare. For the paper, this means the verifier's measured benefit depends strongly on how the evidence is presented. Errors made by the reader (scale, spacing, missing columns) remain the main source of wrong figures.
+
 ## Open items
 
-- **How to treat the other numbers printed in a row** (section 5). This needs deciding before the test cases are built. The options:
-  - give them their own evidence IDs;
-  - tell the agents to cite only figures with their own ID;
-  - score these citation errors separately from misreadings.
+- **The row's other numbers** now have their own evidence IDs (section 6). The hand-checked reference sheet will need rows for them. The build reports any that are missing.
+- **The Talaat Moustafa % column** (section 6) is not in the reader's output. It could be added by hand to the evidence, like the column headings.
 - **Qwen as a study model.** It fits the main comparison best so far, and its free daily allowance covers a full run of the 30 test cases in a day.
 - **The Gemini 3.5 Flash run** on the printed figures is in progress (13 of 48 answers after day 1).
 - **Still open from before:**

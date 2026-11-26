@@ -1,0 +1,150 @@
+{
+  "case_id": "dev_009",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The investor asked me to (1) compute full-year 2026 EPS, (2) derive a P/E ratio, and (3) judge whether the share is cheap enough to buy. None of these can be responsibly answered from the evidence provided.\n\n**Full-year 2026 EPS – not available.** The report covers only the nine months ended 30 September 2026. There is no Q4 2026 data, no full-year figure, and no management guidance in the evidence. Annualising 8.74 EGP × 12/9 ≈ 11.65 EGP would assume Q4 earns at the same run-rate as Q1–Q3, an assumption with no evidentiary support (fertiliser demand is seasonal and tied to planting/harvest cycles). I will not present an assumption as a fact.\n\n**P/E ratio – not computable in standard form.** The only verified EPS is a nine-month figure (8.74 EGP). Dividing the 76.21 EGP share price by 8.74 gives 8.72×, but that is a nine-month multiple, not a trailing- or forward-12-month P/E. It cannot be compared to peer P/Es or to ABUK's own historical full-year P/E range. A trailing-12-month P/E would require FY 2025 EPS, which is not in the evidence (only 9M 2025 = 4.28 EGP is available).\n\n**\"Is it cheap?\" – cannot be assessed.** No peer-set P/E multiples, no historical P/E range, no dividend data (critical for the investor's income goal), no balance-sheet or cash-flow data, no export-revenue breakdown, and no DCF inputs appear in the evidence. Without these, a \"cheap or expensive\" verdict would be speculation.\n\n**Data-quality problem.** Every revenue and net-profit cell on the page is flagged AMBIGUOUS because the page carries conflicting unit labels (مليار / billion vs. مليون / million) and the Arabic-Indic OCR is unreliable. The percentage-change columns contain arithmetically implausible values (e.g., 6,090 % revenue growth). Per the rules, I cannot use any AMBIGUOUS figure in a calculation. This means I cannot even verify the 9M EPS of 8.74 EGP against the underlying profit and share count, because the profit figure itself is AMBIGUOUS.\n\n**What the verified evidence does show.** The 9M 2026 EPS (8.74 EGP) is roughly double the 9M 2025 EPS (4.28 EGP), indicating strong year-on-year profit growth. The share price is 76.21 EGP. The suitability analyst confirms the investment is directionally aligned with the investor's 3–5-year horizon, exporter-income-and-growth goal, and medium risk tolerance, and that the 30,000 EGP cash is free to deploy. However, suitability fit does not substitute for a valuation.\n\n**What is missing for a responsible decision.**\n- Q4 2026 or full-year 2026 EPS (or at minimum, a reliable seasonal pattern to annualise).\n- FY 2025 full-year EPS for a trailing P/E.\n- Dividend per share and payout ratio (the investor's income goal).\n- Balance-sheet data (debt, equity, working capital) to assess downside risk.\n- Export-revenue share or segment breakdown (the investor's exporter focus).\n- Peer P/E multiples or ABUK's own historical P/E range for a relative valuation.\n- Trading volume / free-float data for liquidity assessment.\n\nUntil the full-year 2026 filing (or at least Q4 data) is available and the unit/OCR ambiguities are resolved, I cannot responsibly recommend a buy. The investor should wait for the audited full-year report before making a valuation-based decision.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "9M 2026 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "9M 2025 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "3M 2025 basic EPS (EGP per share)"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01 (9M 2026 revenue – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-02 (9M 2025 revenue – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-03 (9M revenue change % – AMBIGUOUS, implausible value 6,090%)",
+      "ABUK-ABUK_9M2026_results-p2-04 (3M 2026 revenue – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-05 (3M 2025 revenue – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-06 (3M revenue change % – AMBIGUOUS, unclear number)",
+      "ABUK-ABUK_9M2026_results-p2-25 (9M 2026 net profit – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-26 (9M 2025 net profit – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-27 (9M profit change % – AMBIGUOUS, unclear number)",
+      "ABUK-ABUK_9M2026_results-p2-28 (3M 2026 net profit – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-29 (3M 2025 net profit – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-30 (3M profit change % – AMBIGUOUS, implausible value 6,062%)",
+      "ABUK-ABUK_9M2026_results-p2-33 (9M EPS change % – AMBIGUOUS, unclear number)",
+      "ABUK-ABUK_9M2026_results-p2-34 (3M 2026 EPS – AMBIGUOUS, decimal uncertainty: 1.99 vs 199)",
+      "ABUK-ABUK_9M2026_results-p2-36 (3M EPS change % – AMBIGUOUS, decimal uncertainty)"
+    ],
+    "limitations": [
+      "Full-year 2026 EPS cannot be computed: no Q4 2026 data exists in the evidence; annualisation would be an unsupported assumption.",
+      "A standard P/E ratio (trailing or forward 12-month) cannot be calculated: only a 9-month EPS is available, and FY 2025 EPS is absent.",
+      "No dividend, balance-sheet, cash-flow, export-segment, peer-multiple, or historical-P/E data is present, so neither an income assessment nor a relative valuation is possible.",
+      "All revenue and net-profit figures are AMBIGUOUS due to conflicting unit labels (billion vs. million) on the source page and unreliable Arabic-Indic OCR; they cannot be used in any calculation.",
+      "The 9M 2026 EPS of 8.74 EGP is verified, but it cannot be cross-checked against the underlying profit figure because that figure is AMBIGUOUS.",
+      "The share price of 76.21 EGP is taken from the brief, not from the evidence list."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "The investor asked me to (1) compute full-year 2026 EPS, (2) derive a P/E ratio, and (3) judge whether the share is cheap enough to buy. None of these can be responsibly answered from the evidence provided.\n\n**Full-year 2026 EPS – not available.** The report covers only the nine months ended 30 September 2026. There is no Q4 2026 data, no full-year figure, and no management guidance in the evidence. Annualising 8.74 EGP × 12/9 ≈ 11.65 EGP would assume Q4 earns at the same run-rate as Q1–Q3, an assumption with no evidentiary support (fertiliser demand is seasonal and tied to planting/harvest cycles). I will not present an assumption as a fact.\n\n**P/E ratio – not computable in standard form.** The only verified EPS is a nine-month figure (8.74 EGP). Dividing the 76.21 EGP share price by 8.74 gives 8.72×, but that is a nine-month multiple, not a trailing- or forward-12-month P/E. It cannot be compared to peer P/Es or to ABUK's own historical full-year P/E range. A trailing-12-month P/E would require FY 2025 EPS, which is not in the evidence (only 9M 2025 = 4.28 EGP is available).\n\n**\"Is it cheap?\" – cannot be assessed.** No peer-set P/E multiples, no historical P/E range, no dividend data (critical for the investor's income goal), no balance-sheet or cash-flow data, no export-revenue breakdown, and no DCF inputs appear in the evidence. Without these, a \"cheap or expensive\" verdict would be speculation.\n\n**Data-quality problem.** Every revenue and net-profit cell on the page is flagged AMBIGUOUS because the page carries conflicting unit labels (مليار / billion vs. مليون / million) and the Arabic-Indic OCR is unreliable. The percentage-change columns contain arithmetically implausible values (e.g., 6,090 % revenue growth). Per the rules, I cannot use any AMBIGUOUS figure in a calculation. This means I cannot even verify the 9M EPS of 8.74 EGP against the underlying profit and share count, because the profit figure itself is AMBIGUOUS.\n\n**What the verified evidence does show.** The 9M 2026 EPS (8.74 EGP) is roughly double the 9M 2025 EPS (4.28 EGP), indicating strong year-on-year profit growth. The share price is 76.21 EGP. The suitability analyst confirms the investment is directionally aligned with the investor's 3–5-year horizon, exporter-income-and-growth goal, and medium risk tolerance, and that the 30,000 EGP cash is free to deploy. However, suitability fit does not substitute for a valuation.\n\n**What is missing for a responsible decision.**\n- Q4 2026 or full-year 2026 EPS (or at minimum, a reliable seasonal pattern to annualise).\n- FY 2025 full-year EPS for a trailing P/E.\n- Dividend per share and payout ratio (the investor's income goal).\n- Balance-sheet data (debt, equity, working capital) to assess downside risk.\n- Export-revenue share or segment breakdown (the investor's exporter focus).\n- Peer P/E multiples or ABUK's own historical P/E range for a relative valuation.\n- Trading volume / free-float data for liquidity assessment.\n\nUntil the full-year 2026 filing (or at least Q4 data) is available and the unit/OCR ambiguities are resolved, I cannot responsibly recommend a buy. The investor should wait for the audited full-year report before making a valuation-based decision.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "9M 2026 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "9M 2025 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "3M 2025 basic EPS (EGP per share)"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01 (9M 2026 revenue – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-02 (9M 2025 revenue – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-03 (9M revenue change % – AMBIGUOUS, implausible value 6,090%)",
+      "ABUK-ABUK_9M2026_results-p2-04 (3M 2026 revenue – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-05 (3M 2025 revenue – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-06 (3M revenue change % – AMBIGUOUS, unclear number)",
+      "ABUK-ABUK_9M2026_results-p2-25 (9M 2026 net profit – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-26 (9M 2025 net profit – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-27 (9M profit change % – AMBIGUOUS, unclear number)",
+      "ABUK-ABUK_9M2026_results-p2-28 (3M 2026 net profit – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-29 (3M 2025 net profit – AMBIGUOUS, conflicting units)",
+      "ABUK-ABUK_9M2026_results-p2-30 (3M profit change % – AMBIGUOUS, implausible value 6,062%)",
+      "ABUK-ABUK_9M2026_results-p2-33 (9M EPS change % – AMBIGUOUS, unclear number)",
+      "ABUK-ABUK_9M2026_results-p2-34 (3M 2026 EPS – AMBIGUOUS, decimal uncertainty: 1.99 vs 199)",
+      "ABUK-ABUK_9M2026_results-p2-36 (3M EPS change % – AMBIGUOUS, decimal uncertainty)"
+    ],
+    "limitations": [
+      "Full-year 2026 EPS cannot be computed: no Q4 2026 data exists in the evidence; annualisation would be an unsupported assumption.",
+      "A standard P/E ratio (trailing or forward 12-month) cannot be calculated: only a 9-month EPS is available, and FY 2025 EPS is absent.",
+      "No dividend, balance-sheet, cash-flow, export-segment, peer-multiple, or historical-P/E data is present, so neither an income assessment nor a relative valuation is possible.",
+      "All revenue and net-profit figures are AMBIGUOUS due to conflicting unit labels (billion vs. million) on the source page and unreliable Arabic-Indic OCR; they cannot be used in any calculation.",
+      "The 9M 2026 EPS of 8.74 EGP is verified, but it cannot be cross-checked against the underlying profit figure because that figure is AMBIGUOUS.",
+      "The share price of 76.21 EGP is taken from the brief, not from the evidence list."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n# ABUK (Abu Qir Fertilizers) – 9M 2026 Earnings Analysis\n\n## 1. What the Evidence Actually Gives Us\n\nThe report covers only the **nine months ended 30 September 2026**. No Q4 or full-year 2026 figures are present in the evidence.\n\n| Metric | 9M 2026 | 9M 2025 | 3M 2026 | 3M 2025 | Status |\n|---|---|---|---|---|---|\n| Revenue (مليون جنيه) | 31,488 M EGP | 16,578 M EGP | 7,964 M EGP | 3,911 M EGP | **AMBIGUOUS** [ABUK-ABUK_9M2026_results-p2-01] [ABUK-ABUK_9M2026_results-p2-02] [ABUK-ABUK_9M2026_results-p2-04] [ABUK-ABUK_9M2026_results-p2-05] |\n| Net profit (مليون جنيه) | 12,970 M EGP | 6,396 M EGP | 2,958 M EGP | 1,828 M EGP | **AMBIGUOUS** [ABUK-ABUK_9M2026_results-p2-25] [ABUK-ABUK_9M2026_results-p2-26] [ABUK-ABUK_9M2026_results-p2-28] [ABUK-ABUK_9M2026_results-p2-29] |\n| Basic EPS (EGP) | **8.74** | **4.28** | 1.99 (decimal uncertain) | **1.23** | 9M figures **verified**; 3M 2026 **AMBIGUOUS** [ABUK-ABUK_9M2026_results-p2-31] [ABUK-ABUK_9M2026_results-p2-32] [ABUK-ABUK_9M2026_results-p2-34] [ABUK-ABUK_9M2026_results-p2-35] |\n\nAll revenue and net-profit cells are flagged **AMBIGUOUS** because the page carries conflicting unit labels (مليار vs. مليون) and the OCR of the Arabic-Indic digits is unreliable. Per the rules I **cannot compute with those figures**.\n\nThe only **verified** numbers I may use are:\n\n- 9M 2026 basic EPS = **8.74 EGP** [ABUK-ABUK_9M2026_results-p2-31]\n- 9M 2025 basic EPS = **4.28 EGP** [ABUK-ABUK_9M2026_results-p2-32]\n- 3M 2025 basic EPS = **1.23 EGP** [ABUK-ABUK_9M2026_results-p2-35]\n- Share price at cutoff = **76.21 EGP** (given in the brief)\n\n---\n\n## 2. Full-Year 2026 EPS – Cannot Be Determined\n\nThe report stops at 30 September 2026. There is **no Q4 2026 data, no full-year 2026 EPS, and no guidance** in the evidence provided.\n\nA naïve annualisation (8.74 × 12/9 ≈ 11.65 EGP) would assume Q4 earns at the same run-rate as the first nine months. That assumption is **not supported by any evidence here** and would be invalid if the company is seasonal (fertiliser demand in Egypt is tied to planting/harvest cycles). I therefore **cannot produce a defensible full-year 2026 EPS** from this evidence alone.\n\n> **Bottom line:** Full-year 2026 EPS is **not available** in the evidence. Any figure I would produce is an assumption, not a fact.\n\n---\n\n## 3. Price-to-Earnings – What Can and Cannot Be Said\n\n| Ratio | Calculation | Value | Caveat |\n|---|---|---|---|\n| 9-month \"P/E\" (not a standard metric) | 76.21 / 8.74 | **8.72×** | Reflects only 9 of 12 months of earnings; not comparable to a trailing-12-month P/E |\n| Annualised 9M P/E (assumption-based) | 76.21 / (8.74 × 4/3) | ≈ 6.54× | **Assumes Q4 = average of Q1–Q3; no evidence supports this** |\n| Trailing-12-month P/E | Requires FY 2025 EPS | **Not computable** | FY 2025 EPS is not in the evidence; only 9M 2025 (4.28 EGP) is available |\n\nBecause the only verified EPS is a **nine-month** figure, a conventional P/E ratio **cannot be calculated** from the evidence given. The 8.72× number above is a 9-month multiple and should **not** be compared to a full-year P/E of another company or to a historical full-year P/E of ABUK.\n\n---\n\n## 4. Growth Signal (Limited)\n\nUsing only the verified EPS figures:\n\n- 9M 2026 EPS (8.74 EGP) vs. 9M 2025 EPS (4.28 EGP) → roughly **double** year-on-year [ABUK-ABUK_9M2026_results-p2-31] [ABUK-ABUK_9M2026_results-p2-32].\n- The printed change column shows \"%١٠٤\" (≈ 104 %), but that cell is **AMBIGUOUS** [ABUK-ABUK_9M2026_results-p2-33], so I flag it and do not rely on it.\n\nThe direction (strong YoY profit growth) is consistent, but the magnitude rests on two verified point figures only.\n\n---\n\n## 5. Data-Quality Flags\n\n1. **Conflicting units on the page.** The unit line reads \"مليون جنيه\" (million EGP), yet the page also displays \"مليار\" (billion) in other tables. Every revenue and profit cell is therefore **AMBIGUOUS** and excluded from computation.\n2. **OCR errors in percentage columns.** The 9M revenue change prints as \"٦٠٩٠\" (6,090 %) and the 3M profit change as \"٦٠٦٢\" (6,062 %); both are arithmetically implausible and are flagged **AMBIGUOUS** [ABUK-ABUK_9M2026_results-p2-03] [ABUK-ABUK_9M2026_results-p2-30].\n3. **3M 2026 EPS decimal uncertainty.** The cell \"١٩٩\" may be 1.99 or 199 EGP; the OCR note flags a possible dropped decimal comma. Marked **AMBIGUOUS** [ABUK-ABUK_9M2026_results-p2-34].\n4. **No balance-sheet, cash-flow, or dividend data** is present in the evidence, so leverage, liquidity, and income (dividend) yield cannot be assessed.\n\n---\n\n## 6. Relevance to the Investor's Stated Profile\n\n| Investor need | What the evidence can / cannot address |\n|---|---|\n| **Income (dividends)** | No dividend data in the evidence. Cannot assess yield. |\n| **Growth** | 9M EPS roughly doubled YoY (verified point figures), but full-year and forward growth are unknown. |\n| **Exporter exposure** | No segment or export-revenue breakdown in the evidence. |\n| **3–5 yr horizon / medium risk tolerance** | No multi-year trend, no balance-sheet or debt data to gauge cyclicality or downside. |\n| **Liquidity** | No trading-volume or free-float data in the evidence. |\n\n---\n\n## 7. Summary of What Is and Is Not Established\n\n**Established (verified evidence only):**\n- 9M 2026 basic EPS = 8.74 EGP; 9M 2025 = 4.28 EGP → strong YoY improvement.\n- Share price at cutoff = 76.21 EGP.\n- A 9-month price-to-EPS multiple of ≈ 8.72× exists, but it is **not** a standard P/E.\n\n**Not established / not computable from this evidence:**\n- Full-year 2026 EPS (no Q4 data).\n- A conventional trailing or forward P/E ratio.\n- Dividend yield or any income metric.\n- Balance-sheet strength, leverage, or cash-flow quality.\n- Export-revenue share or segment detail.\n- Whether the share is \"cheap\" in any absolute or relative sense (no peer set, no historical P/E range, no DCF inputs in the evidence).\n\nI have **not** and **will not** render a buy / hold / sell view; that is the decision agent's role. The evidence as provided is insufficient to answer the question \"is the share cheap enough to buy?\" because the key inputs (full-year EPS, dividend, balance sheet, peer multiples) are absent or AMBIGUOUS.",
+    "investor": "\n\n# Investor-Suitability Assessment – ABUK (Abu Qir Fertilizers)\n\n## What I can and cannot do here\n\nYou've asked me to annualise the nine-month EPS, compute a P/E, and render a \"cheap / not cheap\" verdict. That is company-fundamental and valuation work, which sits outside my remit as the suitability analyst. I also will not tell you to buy or not buy. What I *can* do is tell you whether the **shape of this investment fits you**, and what your portfolio actually allows you to commit.\n\n---\n\n## 1. Horizon fit\n\n- **Your horizon:** 3–5 years.\n- **ABUK's profile:** A large Egyptian fertiliser/chemical exporter. Earnings are tied to global urea/ammonia prices, the EGP/USD rate, and domestic energy subsidies – all of which cycle on 12–36-month swings.\n- **Assessment:** A 3–5-year window is long enough to ride through at least one full commodity cycle, which is the minimum you'd want for a single-name exporter. A 1–2-year horizon would be a poor fit; 3–5 years is workable but not generous. You should be prepared for the share to be unattractive (or even down materially) for 12–18 months within that window.\n\n## 2. Liquidity needs\n\n- You keep a **separate emergency fund**, so the 30,000 EGP sitting in this portfolio is not earmarked for day-to-day or crisis spending.\n- **Assessment:** The cash is genuinely free to deploy. There is no liquidity constraint pulling you out of an equity position before your 3–5-year horizon ends. This is a clean setup.\n\n## 3. Loss willingness and capacity\n\n- **Willingness:** Medium. **Capacity:** Medium.\n- A single-listed-stock position in a commodity-linked exporter is one of the more volatile things you can hold on the Egyptian exchange. In a bad year (price crash + currency move + subsidy change) a 30–50 % drawdown is not unusual for this sector.\n- **Assessment:** Medium tolerance/capacity is *compatible* with an equity position, but it argues against going **all-in** on one name. If the entire 30,000 EGP went into ABUK, a 40 % drawdown would mean a ~12,000 EGP paper loss – a number that, for a medium-tolerance investor, is likely to trigger an emotional sell at the bottom. A partial deployment (e.g., 50–70 % of the cash) would keep the worst-case loss within a range that \"medium\" can absorb without forcing a premature exit.\n\n## 4. Current concentration\n\n- **Holdings:** None.\n- **Cash:** 30,000 EGP.\n- **Assessment:** You start from zero concentration, so any equity purchase creates a *new* single-stock concentration. There is no existing position to diversify against. This reinforces the point above: deploying the full 30,000 EGP into ABUK would make 100 % of your investable assets one company in one sector. For a medium-risk investor, that is a concentration level that warrants caution.\n\n## 5. What the portfolio allows you to commit\n\n| Item | Amount / Note |\n|---|---|\n| Cash available | **30,000 EGP** (fully free; emergency fund is separate) |\n| Holdings to sell | **None** – there is nothing to liquidate |\n| Maximum deployable | 30,000 EGP |\n| At 76.21 EGP/share | ≈ **393 shares** if fully deployed |\n| Suggested ceiling for a medium-risk, single-name position | Roughly 15,000–21,000 EGP (≈ 196–275 shares), leaving a cash buffer so a drawdown doesn't consume the whole portfolio |\n\n## 6. Goal alignment (income + growth from an exporter)\n\n- ABUK is a large-cap exporter with a history of paying dividends and reinvesting in capacity. The \"income and growth from an exporter\" goal is **directionally aligned** with the stock's business model.\n- However, \"income\" from a single equity depends on the company's dividend policy in any given year; it is not a fixed coupon. If a reliable income stream is a hard requirement, a single equity is a thin vehicle for it.\n\n---\n\n## Bottom line on suitability\n\n| Dimension | Verdict |\n|---|---|\n| Horizon (3–5 yr) | Compatible, but not generous for a cyclical exporter |\n| Liquidity | No constraint – cash is free |\n| Loss tolerance / capacity | Medium – argues for **partial** deployment, not all-in |\n| Concentration | Starting from zero; a full 30 k into one stock would be 100 % single-name |\n| Cash to commit | Up to 30,000 EGP available; a medium-risk investor would reasonably commit a portion of that |\n| Goal fit | Directionally aligned (exporter, dividend + growth), but income is not guaranteed |\n\nThe investment is **within the bounds of your profile**, but the sizing matters. The portfolio gives you 30,000 EGP of free cash and nothing to sell; how much of that you put into a single exporter is the decision that will determine whether the position stays comfortable through a down-cycle.\n\n*The EPS annualisation, P/E calculation, and \"is it cheap\" question are valuation tasks for the fundamental-analyst or equity-research side of the team. I'd flag that the nine-month EPS figure in the report (8.74 EGP) carries OCR/decimal ambiguity in the source, so any annualised number should be verified against the audited full-year filing before it is used in a valuation.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 44.062,
+      "input_tokens": 5852,
+      "output_tokens": 5156,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 39.333,
+      "input_tokens": 5845,
+      "output_tokens": 2166,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 49.613,
+      "input_tokens": 9657,
+      "output_tokens": 3559,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 133.021
+}

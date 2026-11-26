@@ -1,0 +1,198 @@
+{
+  "case_id": "dev_003",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "Both holdings show strong fundamental growth, supporting a hold for your 3–5 year horizon.\n\n**EFID (your dominant position – 1,500 shares ≈ 30,600 EGP, ~51% of portfolio):**\n- Revenue grew from 16,146,545,699 EGP (FY2024) to 20,915,072,432 EGP (FY2025), a ~29.5% increase.\n- Net profit grew from 1,606,727,698 EGP to 2,695,301,670 EGP, a ~67.7% increase.\n- EPS doubled from 1.09 EGP to 2.18 EGP.\n- At the current price of 20.40 EGP, the trailing P/E is roughly 9.4×, which is reasonable for a financial-investment company delivering this growth.\n\n**ETEL (100 shares ≈ 14,195 EGP, ~24% of portfolio):**\n- Operating revenue grew from 81,677,812,000 EGP to 106,672,946,000 EGP (~30.6%).\n- Net profit more than doubled from 10,111,328,000 EGP to 22,578,063,000 EGP (~123%).\n- EPS rose from 4.79 EGP to 11.93 EGP (row label states L.E./Share; the table's general unit of L.E.(000) conflicts with this per-share row – I have used the row-label unit, but flag this as a minor data-quality caveat).\n- At 141.95 EGP the trailing P/E is roughly 11.9×.\n\n**Why hold rather than buy or sell:**\n1. *Concentration:* EFID already represents ~51% of your total portfolio value (59,795 EGP). The diversification rule prevents any new purchase that would leave a single company above 50%, and because buying ETEL would convert cash into ETEL while EFID's absolute value stays the same, EFID would still exceed 50%. Therefore no buy is permissible under the rules.\n2. *Liquidity:* You may need ~5,980 EGP (10%) within a year. Your 15,000 EGP cash buffer covers this comfortably, so there is no pressure to sell.\n3. *Growth trajectory:* Both companies delivered double-digit revenue and profit growth in FY2025, consistent with your steady-growth goal. Selling now would lock in a position before the 3–5 year horizon has played out.\n4. *Risk tolerance:* Your low financial ability to withstand losses argues against adding to the already-concentrated EFID position, but it does not mandate selling a company that is growing its earnings at ~68%.\n\n**Risks and caveats:**\n- EFID's >50% weight is a real concentration risk; if the financial sector underperforms, your portfolio would be heavily exposed. Consider whether, in a future rebalancing window, trimming a small portion of EFID to bring it below 50% would better match your low loss-absorption capacity.\n- ETEL is a construction/engineering firm; its earnings are project-driven and can be lumpy year-to-year. The 123% profit jump may not repeat at the same pace.\n- The ETEL EPS unit discrepancy (table says L.E.(000), row says L.E./Share) means I could not independently verify the P/E calculation with full confidence. This does not change the hold recommendation but is noted for transparency.\n- No dividend data was provided in the evidence, so I cannot confirm the ",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue FY2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "EFID consolidated revenue FY2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit FY2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit FY2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS FY2025 (EGP per share)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS FY2024 (EGP per share)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL operating revenues FY2025 (106,672,946 × 1,000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "ETEL operating revenues FY2024 (81,677,812 × 1,000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit FY2025 (22,578,063 × 1,000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL net profit FY2024 (10,111,328 × 1,000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS FY2025 (row label: L.E./Share; table unit L.E.(000) conflicts – used row-label unit)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic and diluted EPS FY2024 (row label: L.E./Share; table unit L.E.(000) conflicts – used row-label unit)"
+      }
+    ],
+    "unused_figures": [
+      "ETEL EPS FY2025 (11.93) and FY2024 (4.79): the table unit line reads 'L.E.(000)' while the row label reads 'L.E. / Share'. I used the row-label unit (11.93 EGP and 4.79 EGP per share) because applying the table unit would yield an implausible 11,930 EGP per share for a stock trading at 141.95 EGP. The P/E estimate for ETEL (~11.9×) therefore carries this unit-interpretation caveat."
+    ],
+    "limitations": [
+      "No dividend or payout-ratio data was provided, so the 'income' component of your goal cannot be assessed from this evidence alone.",
+      "Only two fiscal years (FY2024, FY2025) are available; a longer trend would better confirm sustainability of the growth rates.",
+      "No balance-sheet detail (debt, liquidity, working capital) was provided to assess financial risk.",
+      "No sector or macro context is available to judge whether the growth is company-specific or sector-wide.",
+      "The ETEL EPS unit discrepancy means the ETEL P/E is an approximation."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "Both holdings show strong fundamental growth, supporting a hold for your 3–5 year horizon.\n\n**EFID (your dominant position – 1,500 shares ≈ 30,600 EGP, ~51% of portfolio):**\n- Revenue grew from 16,146,545,699 EGP (FY2024) to 20,915,072,432 EGP (FY2025), a ~29.5% increase.\n- Net profit grew from 1,606,727,698 EGP to 2,695,301,670 EGP, a ~67.7% increase.\n- EPS doubled from 1.09 EGP to 2.18 EGP.\n- At the current price of 20.40 EGP, the trailing P/E is roughly 9.4×, which is reasonable for a financial-investment company delivering this growth.\n\n**ETEL (100 shares ≈ 14,195 EGP, ~24% of portfolio):**\n- Operating revenue grew from 81,677,812,000 EGP to 106,672,946,000 EGP (~30.6%).\n- Net profit more than doubled from 10,111,328,000 EGP to 22,578,063,000 EGP (~123%).\n- EPS rose from 4.79 EGP to 11.93 EGP (row label states L.E./Share; the table's general unit of L.E.(000) conflicts with this per-share row – I have used the row-label unit, but flag this as a minor data-quality caveat).\n- At 141.95 EGP the trailing P/E is roughly 11.9×.\n\n**Why hold rather than buy or sell:**\n1. *Concentration:* EFID already represents ~51% of your total portfolio value (59,795 EGP). The diversification rule prevents any new purchase that would leave a single company above 50%, and because buying ETEL would convert cash into ETEL while EFID's absolute value stays the same, EFID would still exceed 50%. Therefore no buy is permissible under the rules.\n2. *Liquidity:* You may need ~5,980 EGP (10%) within a year. Your 15,000 EGP cash buffer covers this comfortably, so there is no pressure to sell.\n3. *Growth trajectory:* Both companies delivered double-digit revenue and profit growth in FY2025, consistent with your steady-growth goal. Selling now would lock in a position before the 3–5 year horizon has played out.\n4. *Risk tolerance:* Your low financial ability to withstand losses argues against adding to the already-concentrated EFID position, but it does not mandate selling a company that is growing its earnings at ~68%.\n\n**Risks and caveats:**\n- EFID's >50% weight is a real concentration risk; if the financial sector underperforms, your portfolio would be heavily exposed. Consider whether, in a future rebalancing window, trimming a small portion of EFID to bring it below 50% would better match your low loss-absorption capacity.\n- ETEL is a construction/engineering firm; its earnings are project-driven and can be lumpy year-to-year. The 123% profit jump may not repeat at the same pace.\n- The ETEL EPS unit discrepancy (table says L.E.(000), row says L.E./Share) means I could not independently verify the P/E calculation with full confidence. This does not change the hold recommendation but is noted for transparency.\n- No dividend data was provided in the evidence, so I cannot confirm the ",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue FY2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "EFID consolidated revenue FY2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit FY2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit FY2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS FY2025 (EGP per share)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS FY2024 (EGP per share)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL operating revenues FY2025 (106,672,946 × 1,000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "ETEL operating revenues FY2024 (81,677,812 × 1,000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit FY2025 (22,578,063 × 1,000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL net profit FY2024 (10,111,328 × 1,000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS FY2025 (row label: L.E./Share; table unit L.E.(000) conflicts – used row-label unit)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic and diluted EPS FY2024 (row label: L.E./Share; table unit L.E.(000) conflicts – used row-label unit)"
+      }
+    ],
+    "unused_figures": [
+      "ETEL EPS FY2025 (11.93) and FY2024 (4.79): the table unit line reads 'L.E.(000)' while the row label reads 'L.E. / Share'. I used the row-label unit (11.93 EGP and 4.79 EGP per share) because applying the table unit would yield an implausible 11,930 EGP per share for a stock trading at 141.95 EGP. The P/E estimate for ETEL (~11.9×) therefore carries this unit-interpretation caveat."
+    ],
+    "limitations": [
+      "No dividend or payout-ratio data was provided, so the 'income' component of your goal cannot be assessed from this evidence alone.",
+      "Only two fiscal years (FY2024, FY2025) are available; a longer trend would better confirm sustainability of the growth rates.",
+      "No balance-sheet detail (debt, liquidity, working capital) was provided to assess financial risk.",
+      "No sector or macro context is available to judge whether the growth is company-specific or sector-wide.",
+      "The ETEL EPS unit discrepancy means the ETEL P/E is an approximation."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 55.755,
+      "input_tokens": 3570,
+      "output_tokens": 7130,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 55.759
+}

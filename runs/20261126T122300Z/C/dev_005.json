@@ -1,0 +1,155 @@
+{
+  "case_id": "dev_005",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 328,
+    "explanation": "The investor's stated goal is to add a fertilizer exporter for diversification. ABUK (Abu Qir Fertilizers) is a major Egyptian urea/ammonia producer and exporter, directly matching that goal. The only verified financial data available is the 9-month EPS: 8.74 EGP in 9M 2026 versus 4.28 EGP in 9M 2025, a verified year-on-year increase of approximately 104%. This is a strong earnings signal, though it comes from a single reporting window with no multi-year trend to confirm sustainability.\n\nHowever, the evidence base is materially limited. All absolute revenue and net-profit figures are flagged AMBIGUOUS due to a unit conflict on the source page (both 'billion' and 'million' labels appear; the table footer reads 'million EGP'). All percentage-change cells are also AMBIGUOUS due to OCR issues. The 3M 2026 EPS prints as '199' with a likely missing decimal comma and is AMBIGUOUS. No balance-sheet data (assets, equity, debt, cash), no valuation metrics (P/E, P/B), no dividend information, and no segment or export-revenue breakdown are present in the evidence. Consequently, I cannot assess leverage, solvency, dividend capacity, whether the stock is fairly valued at 76.21 EGP, or whether the earnings jump is a one-off commodity-price effect. These gaps mean the decision carries elevated uncertainty.\n\nDespite these limitations, I proceed with a modest buy for the following reasons: (1) the verified EPS doubling is a clear positive signal; (2) the company unambiguously matches the investor's diversification objective; (3) the 5-year horizon is appropriate for a listed equity in a cyclical sector; (4) the investor has a separate emergency fund, so the 40,000 EGP portfolio cash is fully deployable; and (5) the position is sized conservatively to respect medium loss tolerance. I am buying 328 shares at 76.21 EGP (cost ≈ 24,997 EGP), leaving ≈ 15,003 EGP cash. Post-purchase portfolio: ABUK ≈ 38%, COMI ≈ 39%, cash ≈ 23%—no single holding exceeds the 50% concentration limit. A 50% drawdown on ABUK would reduce total portfolio value by roughly 19%, within the investor's medium loss capacity.\n\nKey risks and uncertainties: the earnings growth may not be sustainable (single 9-month window, no multi-year data); the company's balance-sheet strength is unknown; global fertilizer prices, EGP/USD exchange rates, and export-logistics costs are unquantified sensitivities; and the absence of any valuation context means I cannot confirm the stock is attractively priced. The investor should monitor subsequent quarterly results and the company's audited annual statements to validate the earnings trajectory and assess balance-sheet health before considering any additional allocation.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK 9M 2026 basic EPS = 8.74 EGP per share (verified)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK 9M 2025 basic EPS = 4.28 EGP per share (verified)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "ABUK 3M 2025 basic EPS = 1.23 EGP per share (verified)"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01 (9M 2026 revenue, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-02 (9M 2025 revenue, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-03 (9M revenue change %, AMBIGUOUS – OCR)",
+      "ABUK-ABUK_9M2026_results-p2-04 (3M 2026 revenue, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-05 (3M 2025 revenue, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-06 (3M revenue change %, AMBIGUOUS – OCR)",
+      "ABUK-ABUK_9M2026_results-p2-25 (9M 2026 net profit, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-26 (9M 2025 net profit, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-27 (9M net profit change %, AMBIGUOUS – OCR)",
+      "ABUK-ABUK_9M2026_results-p2-28 (3M 2026 net profit, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-29 (3M 2025 net profit, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-30 (3M net profit change %, AMBIGUOUS – OCR)",
+      "ABUK-ABUK_9M2026_results-p2-33 (9M EPS change %, AMBIGUOUS – OCR)",
+      "ABUK-ABUK_9M2026_results-p2-34 (3M 2026 EPS, AMBIGUOUS – missing decimal comma)",
+      "ABUK-ABUK_9M2026_results-p2-36 (3M EPS change %, AMBIGUOUS – OCR)"
+    ],
+    "limitations": [
+      "No balance-sheet data (total assets, equity, debt, working capital, cash) is available; leverage, solvency, and liquidity risk cannot be assessed.",
+      "No valuation metrics (P/E, P/B, EV/EBITDA) or peer comparison are present; the 76.21 EGP share price cannot be judged as cheap or expensive.",
+      "No multi-year earnings trend; the 9M 2026 EPS doubling may reflect a one-off commodity-price spike rather than structural growth.",
+      "No dividend information; income yield cannot be evaluated.",
+      "No segment or export-revenue breakdown; sensitivity to global fertilizer prices, EGP/USD, and logistics costs is unquantified.",
+      "All absolute revenue and net-profit figures are AMBIGUOUS due to a unit conflict (billion vs. million) on the source page; net margin and profit-growth rates cannot be reliably computed.",
+      "The 3M 2026 EPS is AMBIGUOUS (likely 1.99 EGP but unconfirmed); quarter-on-quarter momentum cannot be verified."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 328,
+    "explanation": "The investor's stated goal is to add a fertilizer exporter for diversification. ABUK (Abu Qir Fertilizers) is a major Egyptian urea/ammonia producer and exporter, directly matching that goal. The only verified financial data available is the 9-month EPS: 8.74 EGP in 9M 2026 versus 4.28 EGP in 9M 2025, a verified year-on-year increase of approximately 104%. This is a strong earnings signal, though it comes from a single reporting window with no multi-year trend to confirm sustainability.\n\nHowever, the evidence base is materially limited. All absolute revenue and net-profit figures are flagged AMBIGUOUS due to a unit conflict on the source page (both 'billion' and 'million' labels appear; the table footer reads 'million EGP'). All percentage-change cells are also AMBIGUOUS due to OCR issues. The 3M 2026 EPS prints as '199' with a likely missing decimal comma and is AMBIGUOUS. No balance-sheet data (assets, equity, debt, cash), no valuation metrics (P/E, P/B), no dividend information, and no segment or export-revenue breakdown are present in the evidence. Consequently, I cannot assess leverage, solvency, dividend capacity, whether the stock is fairly valued at 76.21 EGP, or whether the earnings jump is a one-off commodity-price effect. These gaps mean the decision carries elevated uncertainty.\n\nDespite these limitations, I proceed with a modest buy for the following reasons: (1) the verified EPS doubling is a clear positive signal; (2) the company unambiguously matches the investor's diversification objective; (3) the 5-year horizon is appropriate for a listed equity in a cyclical sector; (4) the investor has a separate emergency fund, so the 40,000 EGP portfolio cash is fully deployable; and (5) the position is sized conservatively to respect medium loss tolerance. I am buying 328 shares at 76.21 EGP (cost ≈ 24,997 EGP), leaving ≈ 15,003 EGP cash. Post-purchase portfolio: ABUK ≈ 38%, COMI ≈ 39%, cash ≈ 23%—no single holding exceeds the 50% concentration limit. A 50% drawdown on ABUK would reduce total portfolio value by roughly 19%, within the investor's medium loss capacity.\n\nKey risks and uncertainties: the earnings growth may not be sustainable (single 9-month window, no multi-year data); the company's balance-sheet strength is unknown; global fertilizer prices, EGP/USD exchange rates, and export-logistics costs are unquantified sensitivities; and the absence of any valuation context means I cannot confirm the stock is attractively priced. The investor should monitor subsequent quarterly results and the company's audited annual statements to validate the earnings trajectory and assess balance-sheet health before considering any additional allocation.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK 9M 2026 basic EPS = 8.74 EGP per share (verified)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK 9M 2025 basic EPS = 4.28 EGP per share (verified)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "ABUK 3M 2025 basic EPS = 1.23 EGP per share (verified)"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01 (9M 2026 revenue, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-02 (9M 2025 revenue, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-03 (9M revenue change %, AMBIGUOUS – OCR)",
+      "ABUK-ABUK_9M2026_results-p2-04 (3M 2026 revenue, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-05 (3M 2025 revenue, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-06 (3M revenue change %, AMBIGUOUS – OCR)",
+      "ABUK-ABUK_9M2026_results-p2-25 (9M 2026 net profit, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-26 (9M 2025 net profit, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-27 (9M net profit change %, AMBIGUOUS – OCR)",
+      "ABUK-ABUK_9M2026_results-p2-28 (3M 2026 net profit, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-29 (3M 2025 net profit, AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-30 (3M net profit change %, AMBIGUOUS – OCR)",
+      "ABUK-ABUK_9M2026_results-p2-33 (9M EPS change %, AMBIGUOUS – OCR)",
+      "ABUK-ABUK_9M2026_results-p2-34 (3M 2026 EPS, AMBIGUOUS – missing decimal comma)",
+      "ABUK-ABUK_9M2026_results-p2-36 (3M EPS change %, AMBIGUOUS – OCR)"
+    ],
+    "limitations": [
+      "No balance-sheet data (total assets, equity, debt, working capital, cash) is available; leverage, solvency, and liquidity risk cannot be assessed.",
+      "No valuation metrics (P/E, P/B, EV/EBITDA) or peer comparison are present; the 76.21 EGP share price cannot be judged as cheap or expensive.",
+      "No multi-year earnings trend; the 9M 2026 EPS doubling may reflect a one-off commodity-price spike rather than structural growth.",
+      "No dividend information; income yield cannot be evaluated.",
+      "No segment or export-revenue breakdown; sensitivity to global fertilizer prices, EGP/USD, and logistics costs is unquantified.",
+      "All absolute revenue and net-profit figures are AMBIGUOUS due to a unit conflict (billion vs. million) on the source page; net margin and profit-growth rates cannot be reliably computed.",
+      "The 3M 2026 EPS is AMBIGUOUS (likely 1.99 EGP but unconfirmed); quarter-on-quarter momentum cannot be verified."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15003.12,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      },
+      {
+        "ticker": "ABUK",
+        "shares": 328
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n# ABUK (Abu Qir Fertilizers) – 9M 2026 Earnings Analysis\n\n## 1. Profitability\n\n| Metric | 9M 2026 | 9M 2025 | 3M 2026 | 3M 2025 |\n|---|---|---|---|---|\n| Revenue (M EGP) | 31,488 [AMBIGUOUS] | 16,578 [AMBIGUOUS] | 7,964 [AMBIGUOUS] | 3,911 [AMBIGUOUS] |\n| Net Profit (M EGP) | 12,970 [AMBIGUOUS] | 6,396 [AMBIGUOUS] | 2,958 [AMBIGUOUS] | 1,828 [AMBIGUOUS] |\n| EPS (EGP) | **8.74** | **4.28** | 1.99 [AMBIGUOUS] | **1.23** |\n\n- **EPS (verified):** 9M 2026 EPS of 8.74 EGP [ABUK-ABUK_9M2026_results-p2-31] versus 4.28 EGP in 9M 2025 [ABUK-ABUK_9M2026_results-p2-32]. The verified year-on-year EPS growth is approximately **+104 %** (8.74 / 4.28 − 1).\n- **3M 2025 EPS** of 1.23 EGP [ABUK-ABUK_9M2026_results-p2-35] is verified. The 3M 2026 EPS prints as \"١٩٩\" with a note that a decimal comma may have been dropped, making it **AMBIGUOUS** [ABUK-ABUK_9M2026_results-p2-34]; it is most plausibly 1.99 EGP but cannot be used in computation.\n- **Revenue and net-profit absolute figures** are all flagged **AMBIGUOUS** because the page carries conflicting unit labels (both \"مليار\" and \"مليون\" appear) and the table unit line reads \"مليون جنيه\" [ABUK-ABUK_9M2026_results-p2-01, -02, -25, -26]. I therefore **do not compute** net margins or growth rates from those cells.\n\n## 2. Growth\n\n- The printed 9M revenue change is \"٦٠٩٠\" and the 9M net-profit change is \"%١٠٣\" – both **AMBIGUOUS** [ABUK-ABUK_9M2026_results-p2-03, -27]. The 3M revenue change prints as \"%٠١٠٤\" and the 3M profit change as \"٦٠٦٢\" – also **AMBIGUOUS** [ABUK-ABUK_9M2026_results-p2-06, -30].\n- The only growth figure I can confirm from verified data is the **EPS growth of ≈ +104 %** over nine months (8.74 vs 4.28 EGP).\n- Directionally, every AMBIGUOUS cell points to **strong double-digit growth** in both revenue and profit, but the exact magnitudes cannot be relied upon for modelling.\n\n## 3. Balance Sheet\n\n**No balance-sheet data** (total assets, equity, debt, working capital, cash) is present in the supplied evidence. Liquidity, leverage, and solvency cannot be assessed.\n\n## 4. Risks & Data-Quality Flags\n\n| Issue | Detail |\n|---|---|\n| **Unit conflict** | The same page displays both \"مليار\" (billion) and \"مليون\" (million) as unit labels; the table footer says \"مليون جنيه\" [ABUK-ABUK_9M2026_results-p2-01]. If the true unit is billion, every absolute figure above is 1,000× larger. This is a **material** ambiguity. |\n| **OCR / decimal errors** | Percentage cells such as \"%٠١٠٤\", \"%١٠٣\", \"٦٠٩٠\", \"٦٠٦٢\" are not cleanly parseable [ABUK-ABUK_9M2026_results-p2-06, -27, -30, -33, -36]. The 3M 2026 EPS \"١٩٩\" is missing a decimal comma [ABUK-ABUK_9M2026_results-p2-34]. |\n| **No balance sheet** | No data on debt, equity, or cash position; cannot evaluate financial risk. |\n| **Single-period snapshot** | Only 9M and 3M figures are provided; no full-year trend, no segment split, no dividend information. |\n| **Fertiliser-export exposure** | ABUK is a major Egyptian urea/ammonia producer and exporter. Revenue is sensitive to global fertiliser prices, FX (EGP/USD), and export-logistics costs. None of these sensitivities are quantified in the evidence. |\n\n## 5. Summary of What the Evidence Supports (and Does Not)\n\n**Supported (verified data only):**\n- ABUK's 9M 2026 EPS of 8.74 EGP [ABUK-ABUK_9M2026_results-p2-31] is more than double the 9M 2025 EPS of 4.28 EGP [ABUK-ABUK_9M2026_results-p2-32], indicating a very strong earnings inflection.\n- The company is a large-scale fertiliser producer/exporter, matching the investor's stated diversification goal.\n\n**Not supported / cannot be concluded from this evidence:**\n- Exact revenue and profit levels (unit ambiguity).\n- Net margin, ROE, or any profitability ratio (requires verified absolute figures).\n- Balance-sheet strength, leverage, or dividend capacity.\n- Sustainability of the earnings jump (single 9M window; no multi-year trend).\n- Valuation context (no P/E, P/B, or peer comparison in the evidence).\n\n**Data-quality caveat:** Because the majority of the quantitative cells are AMBIGUOUS, any model built on them carries a high risk of a 1,000× unit error or a misread percentage. I would treat the absolute revenue/profit figures as **unreliable until the original PDF is re-examined or the company's audited financial statements are obtained**.\n\n---\n\n*This is an evidence-only analysis. No buy, sell, hold, or allocation recommendation is made here; that determination is reserved for the decision agent.*",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## 1. Investment Horizon\n\nA **5-year horizon** is adequate for a single-listed-equity position in a cyclical commodity-linked name (fertilizer export). It is long enough to ride through one or two commodity cycles, but short enough that the investor should not be locked into illiquid or highly speculative instruments. A liquid, exchange-listed equity fits this window well.\n\n## 2. Liquidity Needs\n\nThe investor maintains a **separate emergency fund**, so the portfolio itself does not need to serve as a liquidity backstop. This means:\n\n- The 40,000 EGP cash sitting in the portfolio is **fully investable** from a liquidity standpoint.\n- There is no need to reserve a \"portfolio cash buffer\" for emergencies.\n- The 200 COMI shares (25,600 EGP at 128.00) are also **sellable** on the exchange if the investor later needs to rebalance, though the stated goal is to *add* a holding, not to liquidate COMI.\n\n## 3. Loss Willingness and Capacity\n\n| Dimension | Rating | Implication |\n|---|---|---|\n| Willingness to accept losses | **Medium** | The investor is comfortable with moderate drawdowns (e.g., 15–25 % on a position) but would be distressed by a near-total loss. |\n| Financial capacity to absorb losses | **Medium** | The portfolio is small (≈ 65,600 EGP total). A large single-position loss would materially dent net worth. |\n\n**Combined effect:** The investor should avoid concentrating the entire investable amount in one new name. A position that, if it fell 50 %, would remove more than roughly a quarter of total portfolio value would exceed medium tolerance.\n\n## 4. Current Concentration\n\n| Asset | Value (EGP) | % of Portfolio |\n|---|---|---|\n| Cash | 40,000 | 61.0 % |\n| COMI (200 sh × 128.00) | 25,600 | 39.0 % |\n| **Total** | **65,600** | **100 %** |\n\n- The portfolio is **heavily cash-weighted** (61 %) and holds only **one equity** (COMI).\n- Adding ABUK would introduce a second equity and a new sector (fertilizer export), which is a genuine diversification step relative to the current single-name, single-sector exposure.\n- However, a two-equity portfolio with no cash still carries **high single-name risk** in each holding.\n\n## 5. What the Portfolio Allows\n\n- **Free cash:** 40,000 EGP is immediately available; no sale is required to fund a new position.\n- **Sellable equity:** 200 COMI shares (25,600 EGP) could be liquidated if the investor wished to reallocate, but the stated goal is to *add*, not to replace.\n- **No other constraints** (no pledged shares, no margin, no lock-ups noted).\n\n## 6. How Much Cash Could Reasonably Be Committed\n\nGiven medium loss tolerance/capacity and the desire to diversify without over-concentrating:\n\n- **Upper bound:** Committing the full 40,000 EGP to ABUK would leave a two-stock, zero-cash portfolio (≈ 39 % COMI / 61 % ABUK). A 50 % drawdown on ABUK alone would erase ≈ 30 % of total portfolio value—likely beyond medium tolerance.\n- **Comfortable range:** Committing roughly **20,000 – 30,000 EGP** (≈ 50–75 % of the cash) to ABUK would:\n  - Keep a residual cash cushion of 10,000–20,000 EGP for flexibility or future tranches.\n  - Limit the ABUK position to roughly 30–46 % of the post-investment portfolio.\n  - Ensure that even a 50 % loss on the ABUK position would reduce total portfolio value by no more than ≈ 15–23 %, which sits within medium loss capacity.\n- At the current price of 76.21 EGP/share, 20,000 EGP buys ≈ 262 shares and 30,000 EGP buys ≈ 393 shares.\n\n## 7. Suitability Summary\n\n| Factor | Verdict |\n|---|---|\n| Horizon (5 yr) vs. equity holding | **Suitable** – long enough for a listed equity. |\n| Liquidity (separate emergency fund) | **No constraint** – portfolio cash is free to deploy. |\n| Loss tolerance (medium / medium) | **Partially constraining** – argues against an all-in single-position; a partial commitment with residual cash is more appropriate. |\n| Diversification goal | **Met in principle** – adding a fertilizer exporter alongside COMI broadens sector exposure. |\n| Concentration risk after purchase | **Manageable** if the ABUK position is capped at roughly 30–45 % of the total portfolio. |\n| Cash that can reasonably be committed | **≈ 20,000 – 30,000 EGP**, leaving 10,000–20,000 EGP unallocated. |\n\n> **Note:** This assessment addresses *suitability* only. It does not evaluate ABUK's financials, valuation, or prospects, and it does not recommend a specific buy/sell/hold action. The final decision on size, timing, and execution rests with the investor (or their advisor) in light of the full investment case."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 47.007,
+      "input_tokens": 5835,
+      "output_tokens": 3875,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 22.951,
+      "input_tokens": 5828,
+      "output_tokens": 2368,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 52.051,
+      "input_tokens": 8993,
+      "output_tokens": 4778,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 122.015
+}

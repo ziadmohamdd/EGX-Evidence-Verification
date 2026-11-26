@@ -1,0 +1,125 @@
+{
+  "case_id": "dev_009",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "I cannot responsibly calculate the full-year 2026 EPS or a true P/E ratio from the evidence provided, and therefore cannot tell you whether the share is 'cheap enough to buy.' Here is what I can and cannot determine:\n\n**What the evidence supports (verified figures):**\n- 9-month 2026 EPS: 8.74 EGP\n- 9-month 2025 EPS: 4.28 EGP\n- 3-month (Q3) 2025 EPS: 1.23 EGP\n- Current share price: 76.21 EGP\n\nFrom these, the 9-month EPS grew roughly 104% year-on-year (8.74 vs 4.28), which is a strong growth signal. A rough 9-month P/E is 76.21 / 8.74 ≈ 8.7×. However, this is NOT a full-year P/E; it is a partial-period multiple and should not be compared to standard P/E benchmarks.\n\n**Why I cannot give you the full-year P/E you asked for:**\n1. The report covers only nine months (Jan–Sep 2026). There is no Q4 2026 data, no full-year 2026 EPS, and no full-year 2025 EPS in the evidence. I cannot simply multiply 8.74 by 12/9 to 'annualize' because that assumes Q4 will mirror the average of the first three quarters, which is an unsupported assumption.\n2. The Q3 2026 EPS figure (printed as '١٩٩') is flagged AMBIGUOUS (a decimal comma may have been dropped by OCR, so it could be 1.99 or 19.9). Without a reliable Q3 2026 number I cannot even verify the quarterly run-rate.\n3. All absolute revenue and net-profit figures on the page are AMBIGUOUS because the page mixes 'مليار' (billion) and 'مليون' (million) unit labels, making it impossible to confirm whether, for example, 9M2026 revenue is 31,488 million or 31,488 billion EGP. I therefore cannot cross-check the EPS against total profit or share count.\n\n**What is missing for a responsible buy/hold/sell call on your specific goals:**\n- **Income (dividends):** No dividend-per-share or payout-ratio data is provided. Your stated goal is income and growth; without dividend information I cannot assess the income component at all.\n- **Exporter status:** Your goal mentions 'from an exporter.' The evidence contains no description of ABUK's business mix or export revenue share, so I cannot confirm it fits that criterion.\n- **Balance-sheet / risk data:** No debt, liquidity, or asset figures are given. With your medium loss-tolerance and medium financial capacity, I would need at least a sense of leverage and cash position before recommending a concentrated position.\n- **Full-year or forward earnings:** Without Q4 or a full-year figure, any P/E I quote would be a partial-period number, which is misleading for a 3–5-year investment decision.\n\n**What I would need before I could give a buy recommendation:**\n- Full-year 2026 (or at least Q4 2026) EPS, or a management guidance range.\n- Dividend history and current-year dividend guidance.\n- Confirmation of the company's export revenue share.\n- Balance-sheet summary (debt/equity, cash position).\n- Clarification of the unit ambiguity on the income-statement page.\n\n**Risks to note even with the limited data:**\nThe 9-month P/E of ~8.7× looks attractive on the surface, but it is based on only three quarters. If Q4 is seasonally weak (common in some Egyptian industrials), the full-year EPS could be materially lower, pushing the true P/E higher. Conversely, if the growth trend continues, the full-year EPS could be higher. Without Q4 data the uncertainty is wide. Additionally, the AMBIGUOUS unit labels mean I cannot verify the scale of the company's revenue and profit, which limits my ability to assess whether the 8.74 EGP EPS is supported by a solid earnings base or is a one-off.\n\nIn summary: the 9-month growth is encouraging, but the evidence is insufficient to calculate the full-year P/E you requested or to make a responsible buy recommendation for an income-and-growth, medium-risk investor. I recommend waiting for the full-year 2026 results (or at least Q4 data) and dividend announcement before committing capital.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "9-month 2026 basic EPS = 8.74 EGP per share (verified)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "9-month 2025 basic EPS = 4.28 EGP per share (verified)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "Q3 2025 basic EPS = 1.23 EGP per share (verified)"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01: 9M2026 revenue 31,488 (AMBIGUOUS – unit conflict مليار/مليون)",
+      "ABUK-ABUK_9M2026_results-p2-02: 9M2025 revenue 16,578 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-03: 9M revenue change 6,090 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-04: Q3 2026 revenue 7,964 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-05: Q3 2025 revenue 3,911 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-06: Q3 revenue change %0104 (AMBIGUOUS – number unclear)",
+      "ABUK-ABUK_9M2026_results-p2-25: 9M2026 net profit 12,970 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-26: 9M2025 net profit 6,396 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-27: 9M net profit change %103 (AMBIGUOUS – number unclear)",
+      "ABUK-ABUK_9M2026_results-p2-28: Q3 2026 net profit 2,958 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-29: Q3 2025 net profit 1,828 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-30: Q3 net profit change 6,062 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-33: 9M EPS change %104 (AMBIGUOUS – number unclear)",
+      "ABUK-ABUK_9M2026_results-p2-34: Q3 2026 EPS 1.99 (AMBIGUOUS – OCR decimal comma may be dropped)",
+      "ABUK-ABUK_9M2026_results-p2-36: Q3 EPS change 662 (AMBIGUOUS – OCR decimal comma may be dropped)"
+    ],
+    "limitations": [
+      "No Q4 2026 or full-year 2026 data available; full-year EPS and P/E cannot be calculated.",
+      "All absolute revenue and net-profit figures are AMBIGUOUS due to conflicting unit labels (billion vs million) on the same page; they cannot be used in any calculation.",
+      "Q3 2026 EPS (1.99) is AMBIGUOUS due to a possible missing decimal comma; it cannot be used to verify the quarterly run-rate.",
+      "No dividend, payout-ratio, or share-count data is provided, so the income component of the investor's goal cannot be assessed.",
+      "No balance-sheet, leverage, or cash-flow data is provided, limiting risk assessment for a medium-tolerance investor.",
+      "No evidence in the report confirms ABUK's status as an exporter, which is central to the investor's stated goal.",
+      "The 9-month P/E of ~8.7× is a partial-period multiple and should not be compared to standard full-year P/E benchmarks."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "I cannot responsibly calculate the full-year 2026 EPS or a true P/E ratio from the evidence provided, and therefore cannot tell you whether the share is 'cheap enough to buy.' Here is what I can and cannot determine:\n\n**What the evidence supports (verified figures):**\n- 9-month 2026 EPS: 8.74 EGP\n- 9-month 2025 EPS: 4.28 EGP\n- 3-month (Q3) 2025 EPS: 1.23 EGP\n- Current share price: 76.21 EGP\n\nFrom these, the 9-month EPS grew roughly 104% year-on-year (8.74 vs 4.28), which is a strong growth signal. A rough 9-month P/E is 76.21 / 8.74 ≈ 8.7×. However, this is NOT a full-year P/E; it is a partial-period multiple and should not be compared to standard P/E benchmarks.\n\n**Why I cannot give you the full-year P/E you asked for:**\n1. The report covers only nine months (Jan–Sep 2026). There is no Q4 2026 data, no full-year 2026 EPS, and no full-year 2025 EPS in the evidence. I cannot simply multiply 8.74 by 12/9 to 'annualize' because that assumes Q4 will mirror the average of the first three quarters, which is an unsupported assumption.\n2. The Q3 2026 EPS figure (printed as '١٩٩') is flagged AMBIGUOUS (a decimal comma may have been dropped by OCR, so it could be 1.99 or 19.9). Without a reliable Q3 2026 number I cannot even verify the quarterly run-rate.\n3. All absolute revenue and net-profit figures on the page are AMBIGUOUS because the page mixes 'مليار' (billion) and 'مليون' (million) unit labels, making it impossible to confirm whether, for example, 9M2026 revenue is 31,488 million or 31,488 billion EGP. I therefore cannot cross-check the EPS against total profit or share count.\n\n**What is missing for a responsible buy/hold/sell call on your specific goals:**\n- **Income (dividends):** No dividend-per-share or payout-ratio data is provided. Your stated goal is income and growth; without dividend information I cannot assess the income component at all.\n- **Exporter status:** Your goal mentions 'from an exporter.' The evidence contains no description of ABUK's business mix or export revenue share, so I cannot confirm it fits that criterion.\n- **Balance-sheet / risk data:** No debt, liquidity, or asset figures are given. With your medium loss-tolerance and medium financial capacity, I would need at least a sense of leverage and cash position before recommending a concentrated position.\n- **Full-year or forward earnings:** Without Q4 or a full-year figure, any P/E I quote would be a partial-period number, which is misleading for a 3–5-year investment decision.\n\n**What I would need before I could give a buy recommendation:**\n- Full-year 2026 (or at least Q4 2026) EPS, or a management guidance range.\n- Dividend history and current-year dividend guidance.\n- Confirmation of the company's export revenue share.\n- Balance-sheet summary (debt/equity, cash position).\n- Clarification of the unit ambiguity on the income-statement page.\n\n**Risks to note even with the limited data:**\nThe 9-month P/E of ~8.7× looks attractive on the surface, but it is based on only three quarters. If Q4 is seasonally weak (common in some Egyptian industrials), the full-year EPS could be materially lower, pushing the true P/E higher. Conversely, if the growth trend continues, the full-year EPS could be higher. Without Q4 data the uncertainty is wide. Additionally, the AMBIGUOUS unit labels mean I cannot verify the scale of the company's revenue and profit, which limits my ability to assess whether the 8.74 EGP EPS is supported by a solid earnings base or is a one-off.\n\nIn summary: the 9-month growth is encouraging, but the evidence is insufficient to calculate the full-year P/E you requested or to make a responsible buy recommendation for an income-and-growth, medium-risk investor. I recommend waiting for the full-year 2026 results (or at least Q4 data) and dividend announcement before committing capital.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "9-month 2026 basic EPS = 8.74 EGP per share (verified)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "9-month 2025 basic EPS = 4.28 EGP per share (verified)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "Q3 2025 basic EPS = 1.23 EGP per share (verified)"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01: 9M2026 revenue 31,488 (AMBIGUOUS – unit conflict مليار/مليون)",
+      "ABUK-ABUK_9M2026_results-p2-02: 9M2025 revenue 16,578 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-03: 9M revenue change 6,090 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-04: Q3 2026 revenue 7,964 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-05: Q3 2025 revenue 3,911 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-06: Q3 revenue change %0104 (AMBIGUOUS – number unclear)",
+      "ABUK-ABUK_9M2026_results-p2-25: 9M2026 net profit 12,970 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-26: 9M2025 net profit 6,396 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-27: 9M net profit change %103 (AMBIGUOUS – number unclear)",
+      "ABUK-ABUK_9M2026_results-p2-28: Q3 2026 net profit 2,958 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-29: Q3 2025 net profit 1,828 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-30: Q3 net profit change 6,062 (AMBIGUOUS – unit conflict)",
+      "ABUK-ABUK_9M2026_results-p2-33: 9M EPS change %104 (AMBIGUOUS – number unclear)",
+      "ABUK-ABUK_9M2026_results-p2-34: Q3 2026 EPS 1.99 (AMBIGUOUS – OCR decimal comma may be dropped)",
+      "ABUK-ABUK_9M2026_results-p2-36: Q3 EPS change 662 (AMBIGUOUS – OCR decimal comma may be dropped)"
+    ],
+    "limitations": [
+      "No Q4 2026 or full-year 2026 data available; full-year EPS and P/E cannot be calculated.",
+      "All absolute revenue and net-profit figures are AMBIGUOUS due to conflicting unit labels (billion vs million) on the same page; they cannot be used in any calculation.",
+      "Q3 2026 EPS (1.99) is AMBIGUOUS due to a possible missing decimal comma; it cannot be used to verify the quarterly run-rate.",
+      "No dividend, payout-ratio, or share-count data is provided, so the income component of the investor's goal cannot be assessed.",
+      "No balance-sheet, leverage, or cash-flow data is provided, limiting risk assessment for a medium-tolerance investor.",
+      "No evidence in the report confirms ABUK's status as an exporter, which is central to the investor's stated goal.",
+      "The 9-month P/E of ~8.7× is a partial-period multiple and should not be compared to standard full-year P/E benchmarks."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 43.231,
+      "input_tokens": 6120,
+      "output_tokens": 4897,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 43.234
+}

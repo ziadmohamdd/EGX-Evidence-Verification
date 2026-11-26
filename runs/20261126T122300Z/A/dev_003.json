@@ -1,0 +1,210 @@
+{
+  "case_id": "dev_003",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "Both EFID and ETEL show strong fundamental growth in FY2025, and the evidence contains no negative signals that would justify selling. EFID's revenue grew ~29.5% (from 16.15 bn to 20.92 bn EGP), net profit grew ~67.7% (from 1.61 bn to 2.70 bn EGP), and EPS doubled from 1.09 to 2.18 EGP. At the current price of 20.40 EGP, the trailing P/E is roughly 9.4×, which is reasonable for a company growing at this pace. ETEL is similarly impressive: revenue up ~30.6%, net profit more than doubled (10.11 bn → 22.58 bn EGP), EPS rose from 4.79 to 11.93 EGP, giving a P/E of about 11.9× at 141.95 EGP. Both fit the investor's 3-5-year steady-growth-with-income goal.\n\nThe 15,000 EGP cash buffer comfortably covers the stated 10% liquidity need (~5,980 EGP within a year), so there is no pressure to liquidate.\n\nKey risk to flag: EFID already represents 30,600 / 59,795 ≈ 51.2% of the total portfolio, slightly above the 50% diversification ceiling. Because of this, I cannot recommend buying any additional shares of either stock (a buy would leave EFID above half the portfolio). Given the investor's low financial ability to withstand losses, this concentration is the main vulnerability: a 20% drop in EFID would cost roughly 10% of total portfolio value. The investor should be aware of this and consider, in a future rebalancing, trimming a small number of EFID shares to bring the position under 50% and redeploying into ETEL or cash. However, on the evidence available today there is no fundamental reason to sell; the growth trajectory and valuation support holding.\n\nUncertainty: the evidence covers only FY2025 results. I have no data on dividend policy, debt levels, sector outlook, or forward guidance, so the income component of the investor's goal cannot be verified. The ETEL EPS row is labelled 'L.E. / Share' on a page whose general unit is L.E.(000); I have taken the per-share values (11.93 and 4.79) at face value as the row heading specifies, but if the 000 multiplier were applied the P/E calculation would be meaningless, confirming the per-share reading is correct. This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue FY2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "EFID consolidated revenue FY2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit FY2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit FY2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS FY2025 (EGP per share)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS FY2024 (EGP per share)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+        "stated_value": 5724525864.0,
+        "statement": "EFID total equity FY2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL operating revenues FY2025 (L.E. 000 × 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "ETEL operating revenues FY2024 (L.E. 000 × 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit FY2025 (L.E. 000 × 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL net profit FY2024 (L.E. 000 × 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS FY2025 (L.E. per share, per row heading)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic and diluted EPS FY2024 (L.E. per share, per row heading)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL total equity FY2025 (L.E. 000 × 1000)"
+      }
+    ],
+    "unused_figures": [
+      "ETEL EPS row carries the page-level unit 'L.E.(000)' but the row heading explicitly states '(L.E. / Share)'. I used the per-share values (11.93, 4.79) as printed in the row heading. If the 000 multiplier were applied, the resulting P/E would be nonsensical (<0.02×), confirming the per-share reading. No conclusion is materially affected, but the unit discrepancy is noted for transparency."
+    ],
+    "limitations": [
+      "No dividend or payout-ratio data is provided, so the 'income' component of the investor's goal cannot be assessed.",
+      "No debt, cash-flow, or sector-level information is available; the analysis is limited to revenue, profit, equity, and EPS.",
+      "Only one year of comparative data (FY2024 vs FY2025) is available; longer-term trend and cyclicality cannot be evaluated.",
+      "No forward guidance, analyst estimates, or macro context is included in the evidence."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "Both EFID and ETEL show strong fundamental growth in FY2025, and the evidence contains no negative signals that would justify selling. EFID's revenue grew ~29.5% (from 16.15 bn to 20.92 bn EGP), net profit grew ~67.7% (from 1.61 bn to 2.70 bn EGP), and EPS doubled from 1.09 to 2.18 EGP. At the current price of 20.40 EGP, the trailing P/E is roughly 9.4×, which is reasonable for a company growing at this pace. ETEL is similarly impressive: revenue up ~30.6%, net profit more than doubled (10.11 bn → 22.58 bn EGP), EPS rose from 4.79 to 11.93 EGP, giving a P/E of about 11.9× at 141.95 EGP. Both fit the investor's 3-5-year steady-growth-with-income goal.\n\nThe 15,000 EGP cash buffer comfortably covers the stated 10% liquidity need (~5,980 EGP within a year), so there is no pressure to liquidate.\n\nKey risk to flag: EFID already represents 30,600 / 59,795 ≈ 51.2% of the total portfolio, slightly above the 50% diversification ceiling. Because of this, I cannot recommend buying any additional shares of either stock (a buy would leave EFID above half the portfolio). Given the investor's low financial ability to withstand losses, this concentration is the main vulnerability: a 20% drop in EFID would cost roughly 10% of total portfolio value. The investor should be aware of this and consider, in a future rebalancing, trimming a small number of EFID shares to bring the position under 50% and redeploying into ETEL or cash. However, on the evidence available today there is no fundamental reason to sell; the growth trajectory and valuation support holding.\n\nUncertainty: the evidence covers only FY2025 results. I have no data on dividend policy, debt levels, sector outlook, or forward guidance, so the income component of the investor's goal cannot be verified. The ETEL EPS row is labelled 'L.E. / Share' on a page whose general unit is L.E.(000); I have taken the per-share values (11.93 and 4.79) at face value as the row heading specifies, but if the 000 multiplier were applied the P/E calculation would be meaningless, confirming the per-share reading is correct. This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue FY2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "EFID consolidated revenue FY2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit FY2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit FY2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS FY2025 (EGP per share)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS FY2024 (EGP per share)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+        "stated_value": 5724525864.0,
+        "statement": "EFID total equity FY2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL operating revenues FY2025 (L.E. 000 × 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "ETEL operating revenues FY2024 (L.E. 000 × 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit FY2025 (L.E. 000 × 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL net profit FY2024 (L.E. 000 × 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS FY2025 (L.E. per share, per row heading)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic and diluted EPS FY2024 (L.E. per share, per row heading)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL total equity FY2025 (L.E. 000 × 1000)"
+      }
+    ],
+    "unused_figures": [
+      "ETEL EPS row carries the page-level unit 'L.E.(000)' but the row heading explicitly states '(L.E. / Share)'. I used the per-share values (11.93, 4.79) as printed in the row heading. If the 000 multiplier were applied, the resulting P/E would be nonsensical (<0.02×), confirming the per-share reading. No conclusion is materially affected, but the unit discrepancy is noted for transparency."
+    ],
+    "limitations": [
+      "No dividend or payout-ratio data is provided, so the 'income' component of the investor's goal cannot be assessed.",
+      "No debt, cash-flow, or sector-level information is available; the analysis is limited to revenue, profit, equity, and EPS.",
+      "Only one year of comparative data (FY2024 vs FY2025) is available; longer-term trend and cyclicality cannot be evaluated.",
+      "No forward guidance, analyst estimates, or macro context is included in the evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 74.475,
+      "input_tokens": 3570,
+      "output_tokens": 7338,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 74.478
+}

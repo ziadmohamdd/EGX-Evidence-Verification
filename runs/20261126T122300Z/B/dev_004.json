@@ -1,0 +1,138 @@
+{
+  "case_id": "dev_004",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 196,
+    "explanation": "You need approximately 30,000 EGP within 6 months, but you currently hold only 5,000 EGP in cash. To close that 25,000 EGP gap you must sell COMI shares: 25,000 ÷ 128 EGP ≈ 195.3, so 196 shares (196 × 128 = 25,088 EGP) will bring your cash to 30,088 EGP and satisfy the liquidity requirement.\n\nThe remaining 804 COMI shares (≈ 102,912 EGP) are supported by the FY2025 evidence: net profit grew from 55,256,732,000 EGP to 82,258,815,000 EGP (+48.9 %), and total equity rose from 152,636,277,000 EGP to 231,486,342,000 EGP (+51.7 %). These are strong fundamentals for a large Egyptian bank, which is consistent with your capital-preservation and income goals over a 1–3-year horizon.\n\nHowever, I must flag important risks and limitations:\n\n1. Concentration: After the sale, COMI still represents roughly 77 % of your total portfolio (102,912 / 133,000). For an investor with low loss tolerance, this is a significant single-name risk. The evidence provided does not include other listed companies you could diversify into, so I cannot recommend a specific reallocation. You may wish to discuss diversification options with your broker.\n\n2. Income: Your goal includes drawing income, but the evidence contains no dividend-per-share or payout-ratio data. I cannot confirm whether COMI's dividend yield meets your income needs. Please verify the current dividend policy before relying on this stock for retirement income.\n\n3. Valuation: No P/E, P/B, or peer-comparison figures are in the evidence, so I cannot judge whether the 128 EGP share price is attractive or expensive relative to the reported earnings.\n\n4. The basic EPS row (18.25 / 14.72) carries the page-level unit 'EGP thousands,' which would make the values 18,250 and 14,720 EGP per share—clearly inconsistent with a per-share metric. I have therefore excluded the EPS figures from any calculation; this does not affect the sell decision, which is driven by your liquidity need.\n\nIn summary: selling 196 shares is a necessary step to meet your 6-month cash requirement. The remaining COMI position is backed by solid FY2025 growth, but the high concentration and the absence of dividend/valuation data mean you should monitor the position closely and consider diversifying if your broker can identify suitable alternatives. This is guidance, not a guarantee of returns; bank shares remain exposed to interest-rate, credit, and regulatory risks.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year, Dec 31 2025: 82,258,815 thousand EGP = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year, Dec 31 2024: 55,256,732 thousand EGP = 55,256,732,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+        "stated_value": 231486342000.0,
+        "statement": "COMI total equity and net profit for the year, Dec 31 2025: 231,486,342 thousand EGP = 231,486,342,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-55",
+        "stated_value": 152636277000.0,
+        "statement": "COMI total equity and net profit for the year, Dec 31 2024: 152,636,277 thousand EGP = 152,636,277,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "Basic EPS 2025 (18.25) and 2024 (14.72) from evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-39 / p5-40: the page unit 'EGP thousands' would imply 18,250 and 14,720 EGP per share, which is inconsistent with a per-share metric. Excluded from all calculations; this does not affect the sell decision, which is driven by the investor's 30,000 EGP liquidity need.",
+      "Net interest income 2025 (107,699,631,000 EGP) and 2024 (91,064,222,000 EGP) from p5-05/p5-06: noted for context but not directly used in the sell calculation.",
+      "Due to customers 2025 (1,110,395,693,000 EGP) and 2024 (972,595,958,000 EGP) from p4-28/p4-29: noted for context (deposit growth) but not used in the decision calculation."
+    ],
+    "limitations": [
+      "No dividend or payout-ratio data is available in the evidence, so the income component of the investor's goal cannot be verified.",
+      "No valuation multiples (P/E, P/B) or peer comparisons are provided, so the 128 EGP share price cannot be assessed as cheap or expensive.",
+      "No forward guidance, sector outlook, or macroeconomic data is included.",
+      "The evidence covers only COMI; no alternative stocks are available for a diversification recommendation.",
+      "The EPS row's unit is internally inconsistent with the page-level 'EGP thousands' label, so EPS was excluded from analysis."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 196,
+    "explanation": "You need approximately 30,000 EGP within 6 months, but you currently hold only 5,000 EGP in cash. To close that 25,000 EGP gap you must sell COMI shares: 25,000 ÷ 128 EGP ≈ 195.3, so 196 shares (196 × 128 = 25,088 EGP) will bring your cash to 30,088 EGP and satisfy the liquidity requirement.\n\nThe remaining 804 COMI shares (≈ 102,912 EGP) are supported by the FY2025 evidence: net profit grew from 55,256,732,000 EGP to 82,258,815,000 EGP (+48.9 %), and total equity rose from 152,636,277,000 EGP to 231,486,342,000 EGP (+51.7 %). These are strong fundamentals for a large Egyptian bank, which is consistent with your capital-preservation and income goals over a 1–3-year horizon.\n\nHowever, I must flag important risks and limitations:\n\n1. Concentration: After the sale, COMI still represents roughly 77 % of your total portfolio (102,912 / 133,000). For an investor with low loss tolerance, this is a significant single-name risk. The evidence provided does not include other listed companies you could diversify into, so I cannot recommend a specific reallocation. You may wish to discuss diversification options with your broker.\n\n2. Income: Your goal includes drawing income, but the evidence contains no dividend-per-share or payout-ratio data. I cannot confirm whether COMI's dividend yield meets your income needs. Please verify the current dividend policy before relying on this stock for retirement income.\n\n3. Valuation: No P/E, P/B, or peer-comparison figures are in the evidence, so I cannot judge whether the 128 EGP share price is attractive or expensive relative to the reported earnings.\n\n4. The basic EPS row on the income-statement page carries the page-level unit 'EGP thousands,' which would make the per-share values inconsistent (thousands of pounds per share is not a meaningful per-share metric). I have therefore excluded the EPS figures from any calculation. This does not affect the sell decision, which is driven entirely by your 6-month liquidity need.\n\nIn summary: selling 196 shares is a necessary step to meet your 30,000 EGP cash requirement. The remaining COMI position is backed by solid FY2025 growth, but the high concentration and the absence of dividend/valuation data mean you should monitor the position closely and consider diversifying if your broker can identify suitable alternatives. This is guidance, not a guarantee of returns; bank shares remain exposed to interest-rate, credit, and regulatory risks.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year, Dec 31 2025: 82,258,815 thousand EGP = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year, Dec 31 2024: 55,256,732 thousand EGP = 55,256,732,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+        "stated_value": 231486342000.0,
+        "statement": "COMI total equity and net profit for the year, Dec 31 2025: 231,486,342 thousand EGP = 231,486,342,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-55",
+        "stated_value": 152636277000.0,
+        "statement": "COMI total equity and net profit for the year, Dec 31 2024: 152,636,277 thousand EGP = 152,636,277,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "Basic EPS 2025 and 2024 from evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-39 and COMI-COMI_FY2025_consolidated_condensed_en-p5-40: the page-level unit is 'EGP thousands,' which would render the per-share values in thousands of pounds per share—an internally inconsistent unit for a per-share metric. Excluded from all calculations and not relied upon in the explanation. This does not affect the sell decision, which is driven by the investor's 30,000 EGP liquidity need.",
+      "Net interest income 2025 (107,699,631,000 EGP) and 2024 (91,064,222,000 EGP) from evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-05 and p5-06: noted for context (revenue growth) but not used in the decision calculation.",
+      "Due to customers 2025 (1,110,395,693,000 EGP) and 2024 (972,595,958,000 EGP) from evidence COMI-COMI_FY2025_consolidated_condensed_en-p4-28 and p4-29: noted for context (deposit growth) but not used in the decision calculation."
+    ],
+    "limitations": [
+      "No dividend or payout-ratio data is available in the evidence, so the income component of the investor's goal cannot be verified.",
+      "No valuation multiples (P/E, P/B) or peer comparisons are provided, so the 128 EGP share price cannot be assessed as cheap or expensive.",
+      "No forward guidance, sector outlook, or macroeconomic data is included.",
+      "The evidence covers only COMI; no alternative stocks are available for a diversification recommendation.",
+      "The EPS row's unit is internally inconsistent with the page-level 'EGP thousands' label, so EPS was excluded from analysis; this does not affect the sell decision."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 30088.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 804
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"18.25\", which is 'Basic' (18.25), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"14.72\", which is 'Basic' (14.72), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 37.438,
+      "input_tokens": 2082,
+      "output_tokens": 4640,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 17.338,
+      "input_tokens": 3933,
+      "output_tokens": 2455,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 54.78
+}

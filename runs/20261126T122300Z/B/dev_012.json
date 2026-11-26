@@ -1,0 +1,110 @@
+{
+  "case_id": "dev_012",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "Edita's (EFID) consolidated net profit grew from 1,606,727,698 EGP in FY2024 to 2,695,301,670 EGP in FY2025, an increase of 1,088,573,972 EGP or approximately 67.8%. This exceeds your 50% threshold, so your condition for buying more is met. However, I cannot recommend a purchase because of the diversification limit. Your current portfolio is 10,000 EGP cash plus 1,000 EFID shares at 20.40 EGP (20,400 EGP), for a total of 30,400 EGP. EFID already represents 67.1% of your portfolio, well above the 50% cap. Buying even a single additional share would leave EFID above half of total portfolio value, which the rules prohibit. Therefore the responsible action is to hold your existing 1,000 shares and keep the 10,000 EGP cash for now. You could revisit a purchase if you later diversify into other holdings, bringing EFID below the 50% threshold. Note: one evidence entry (p6-30) for the 2025 net profit was marked AMBIGUOUS due to a stamp obscuring the figure; I relied instead on the verified entry (p6-36) showing the same number, so the conclusion is unaffected. Risks: past profit growth does not guarantee future performance; a 3-year horizon with medium loss tolerance means you should monitor the stock periodically and avoid adding to a concentrated position.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for FY2025 (EGP per share)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for FY2024 (EGP per share)"
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30 (AMBIGUOUS: 2025 net profit figure obscured by a stamp; a verified duplicate exists in p6-36, so no conclusion is affected)"
+    ],
+    "limitations": [
+      "The 50% single-company concentration rule prevents any additional EFID purchase at current portfolio composition.",
+      "Only FY2024 and FY2025 annual figures are available; quarterly trends, balance-sheet health, and forward guidance are not in the evidence.",
+      "This is guidance based on the provided data, not a guarantee of future returns."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "Edita's (EFID) consolidated net profit grew from 1,606,727,698 EGP in FY2024 to 2,695,301,670 EGP in FY2025, an increase of 1,088,573,972 EGP or approximately 67.8%. This exceeds your 50% threshold, so your condition for buying more is met. However, I cannot recommend a purchase because of the diversification limit. Your current portfolio is 10,000 EGP cash plus 1,000 EFID shares at 20.40 EGP (20,400 EGP), for a total of 30,400 EGP. EFID already represents 67.1% of your portfolio, well above the 50% cap. Buying even a single additional share would leave EFID above half of total portfolio value, which the rules prohibit. Therefore the responsible action is to hold your existing 1,000 shares and keep the 10,000 EGP cash for now. You could revisit a purchase if you later diversify into other holdings, bringing EFID below the 50% threshold. Note: one evidence entry (p6-30) for the 2025 net profit was marked AMBIGUOUS due to a stamp obscuring the figure; I relied instead on the verified entry (p6-36) showing the same number, so the conclusion is unaffected. Risks: past profit growth does not guarantee future performance; a 3-year horizon with medium loss tolerance means you should monitor the stock periodically and avoid adding to a concentrated position.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for FY2025 (EGP per share)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for FY2024 (EGP per share)"
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30 (AMBIGUOUS: 2025 net profit figure obscured by a stamp; a verified duplicate exists in p6-36, so no conclusion is affected)"
+    ],
+    "limitations": [
+      "The 50% single-company concentration rule prevents any additional EFID purchase at current portfolio composition.",
+      "Only FY2024 and FY2025 annual figures are available; quarterly trends, balance-sheet health, and forward guidance are not in the evidence.",
+      "This is guidance based on the provided data, not a guarantee of future returns."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 33.254,
+      "input_tokens": 1811,
+      "output_tokens": 2722,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 33.257
+}

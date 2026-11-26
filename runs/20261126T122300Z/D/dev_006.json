@@ -1,0 +1,139 @@
+{
+  "case_id": "dev_006",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "التوصية: الإبقاء على حصة TMGH الحالية (200 سهم) دون بيع أو شراء إضافي، مع إبقاء النقدية (60,000 جنيه) كما هي.\n\n**ما يدعم الإبقاء على الحصة:**\n- نمو صافي ربح السهم من 4.37 جنيه (2024) إلى 6.98 جنيه (2025)، أي نمو بنسبة 59.6%، وكلا الرقمين مُتحقَّق منهما في المستند.\n- مكرر الربحية الضمني عند سعر 82.50 جنيه هو نحو 11.8×، وهو مستوى معقول لشركة كبيرة (إيرادات 62.5 مليار جنيه).\n- المستثمر يملك بالفعل 200 سهم، والقيمة السوقية (16,500 جنيه) تمثل 21.6% فقط من إجمالي المحفظة، وهو وزن مناسب لمستوى مخاطر متوسط.\n\n**ما يمنع الشراء الإضافي أو التوصية ببيع:**\n- رقم صافي ربح 2025 مُعلَّم AMBIGUOUS (فواصل غير واضحة)، ورقم إيرادات 2024 مُعلَّم AMBIGUOUS (خطأ OCR). لا يمكن التحقق من نسبة نمو 43% أو 46% بشكل مستقل.\n- لا توجد بيانات ميزانية (ديون، حقوق ملكية، سيولة) ولا بيانات تدفقات نقدية.\n- لا يوجد اتجاه متعدد السنوات (2023، 2022) لتقييم استدامة النمو.\n- المستند «ملخص نتائج» أولي وقد يُعدَّل.\n- لا توجد أي أدلة على استثمارات بديلة يمكن توجيه النقدية إليها، لذا إبقاؤها نقدية هو الخيار الأكثر أماناً في غياب معلومات كافية.\n\n**مخاطر وعدم يقين:**\n- النمو الملاحظ في سنة واحدة فقط ولا يمكن الحكم على استدامته على مدى 3-5 سنوات.\n- غياب بيانات الميزانية يعني عدم معرفة مستوى الديون أو قدرة الشركة على توزيع أرباح.\n- المحفظة تتركز في سهم واحد من حيث التعرض للأسهم (100% من الشريحة الأسهمية في TMGH)، لكن الوزن الإجمالي (21.6%) يحدّ من الأثر.\n- المستهدف (شراء شقة) يتطلب سيولة كبيرة في نهاية الأفق، لذا يُنصح بمراجعة الخطة قبل 12-18 شهراً من تاريخ الشراء المتوقع وتحويل جزء من المحفظة إلى أدوات منخفضة المخاطر.\n\n**ما ينقص لاتخاذ قرار أكثر حزمًا:** بيانات ميزانية، اتجاه 3-5 سنوات، مقارنة مع أقران في القطاع، وتأكيد أرقام النتائج النهائية بعد التدقيق.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "نصيب السهم في الأرباح (مجمّع) – 31 ديسمبر 2025 = 6.98 جنيه"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+        "stated_value": 4.37,
+        "statement": "نصيب السهم في الأرباح (مجمّع) – 31 ديسمبر 2024 = 4.37 جنيه"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+        "stated_value": 62495144197.0,
+        "statement": "الإيرادات (مجمّعة) – 31 ديسمبر 2025 = 62,495,144,197 جنيه"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-10",
+        "stated_value": 12769517326.0,
+        "statement": "ربح العام بعد الضرائب (مجمّع) – 31 ديسمبر 2024 = 12,769,517,326 جنيه"
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02 (إيرادات 2024 – AMBIGUOUS: خطأ OCR في فواصل الأرقام)",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09 (صافي ربح 2025 – AMBIGUOUS: فواصل غير واضحة في الرقم)"
+    ],
+    "limitations": [
+      "لا يمكن التحقق من نسبة نمو الإيرادات (46%) أو صافي الربح (43%) بشكل مستقل بسبب أرقام AMBIGUOUS.",
+      "لا توجد بيانات ميزانية أو تدفقات نقدية أو ديون.",
+      "لا يوجد اتجاه متعدد السنوات لتقييم استدامة النمو.",
+      "لا توجد مقارنة مع أقران أو سياق قطاعي.",
+      "المستند أولي (ملخص نتائج) وقد يُعدَّل بعد التدقيق.",
+      "لا توجد أدلة على استثمارات بديلة لتوجيه النقدية."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "التوصية: الإبقاء على حصة TMGH الحالية (200 سهم) دون بيع أو شراء إضافي، مع إبقاء النقدية (60,000 جنيه) كما هي.\n\n**ما يدعم الإبقاء على الحصة:**\n- نمو صافي ربح السهم من 4.37 جنيه (2024) إلى 6.98 جنيه (2025)، أي نمو بنسبة 59.6%، وكلا الرقمين مُتحقَّق منهما في المستند.\n- مكرر الربحية الضمني عند سعر 82.50 جنيه هو نحو 11.8×، وهو مستوى معقول لشركة كبيرة (إيرادات 62.5 مليار جنيه).\n- المستثمر يملك بالفعل 200 سهم، والقيمة السوقية (16,500 جنيه) تمثل 21.6% فقط من إجمالي المحفظة، وهو وزن مناسب لمستوى مخاطر متوسط.\n\n**ما يمنع الشراء الإضافي أو التوصية ببيع:**\n- رقم صافي ربح 2025 مُعلَّم AMBIGUOUS (فواصل غير واضحة)، ورقم إيرادات 2024 مُعلَّم AMBIGUOUS (خطأ OCR). لا يمكن التحقق من نسبة نمو 43% أو 46% بشكل مستقل.\n- لا توجد بيانات ميزانية (ديون، حقوق ملكية، سيولة) ولا بيانات تدفقات نقدية.\n- لا يوجد اتجاه متعدد السنوات (2023، 2022) لتقييم استدامة النمو.\n- المستند «ملخص نتائج» أولي وقد يُعدَّل.\n- لا توجد أي أدلة على استثمارات بديلة يمكن توجيه النقدية إليها، لذا إبقاؤها نقدية هو الخيار الأكثر أماناً في غياب معلومات كافية.\n\n**مخاطر وعدم يقين:**\n- النمو الملاحظ في سنة واحدة فقط ولا يمكن الحكم على استدامته على مدى 3-5 سنوات.\n- غياب بيانات الميزانية يعني عدم معرفة مستوى الديون أو قدرة الشركة على توزيع أرباح.\n- المحفظة تتركز في سهم واحد من حيث التعرض للأسهم (100% من الشريحة الأسهمية في TMGH)، لكن الوزن الإجمالي (21.6%) يحدّ من الأثر.\n- المستهدف (شراء شقة) يتطلب سيولة كبيرة في نهاية الأفق، لذا يُنصح بمراجعة الخطة قبل 12-18 شهراً من تاريخ الشراء المتوقع وتحويل جزء من المحفظة إلى أدوات منخفضة المخاطر.\n\n**ما ينقص لاتخاذ قرار أكثر حزمًا:** بيانات ميزانية، اتجاه 3-5 سنوات، مقارنة مع أقران في القطاع، وتأكيد أرقام النتائج النهائية بعد التدقيق.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "نصيب السهم في الأرباح (مجمّع) – 31 ديسمبر 2025 = 6.98 جنيه"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+        "stated_value": 4.37,
+        "statement": "نصيب السهم في الأرباح (مجمّع) – 31 ديسمبر 2024 = 4.37 جنيه"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+        "stated_value": 62495144197.0,
+        "statement": "الإيرادات (مجمّعة) – 31 ديسمبر 2025 = 62,495,144,197 جنيه"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-10",
+        "stated_value": 12769517326.0,
+        "statement": "ربح العام بعد الضرائب (مجمّع) – 31 ديسمبر 2024 = 12,769,517,326 جنيه"
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02 (إيرادات 2024 – AMBIGUOUS: خطأ OCR في فواصل الأرقام)",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09 (صافي ربح 2025 – AMBIGUOUS: فواصل غير واضحة في الرقم)"
+    ],
+    "limitations": [
+      "لا يمكن التحقق من نسبة نمو الإيرادات (46%) أو صافي الربح (43%) بشكل مستقل بسبب أرقام AMBIGUOUS.",
+      "لا توجد بيانات ميزانية أو تدفقات نقدية أو ديون.",
+      "لا يوجد اتجاه متعدد السنوات لتقييم استدامة النمو.",
+      "لا توجد مقارنة مع أقران أو سياق قطاعي.",
+      "المستند أولي (ملخص نتائج) وقد يُعدَّل بعد التدقيق.",
+      "لا توجد أدلة على استثمارات بديلة لتوجيه النقدية."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 60000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n# TMGH – FY2025 Earnings: Analyst Evidence Review\n\n## 1. Profitability\n\n| Metric | FY2025 | FY2024 | Source |\n|---|---|---|---|\n| Revenue (consolidated) | 62,495,144,197 EGP | **AMBIGUOUS** – OCR artefact, no reliable separators | [p1-01] / [p1-02] |\n| Net profit after tax (consolidated) | **AMBIGUOUS** – unclear digit separators | 12,769,517,326 EGP | [p1-09] / [p1-10] |\n| EPS (consolidated) | 6.98 EGP | 4.37 EGP | [p1-11] / [p1-12] |\n\n- **EPS growth** is stated in the table as **+59.6 %** [p1-11].\n- **Net-profit growth** is stated as **+43 %** [p1-09/p1-10].\n- **Revenue growth** is stated as **+46 %** [p1-01/p1-02].\n\nBecause the FY2025 net-profit figure is flagged AMBIGUOUS [p1-09] and the FY2024 revenue figure is flagged AMBIGUOUS [p1-02], I **cannot** independently verify the stated growth percentages or compute a net margin for either year. The only fully verified absolute profit figure is FY2024 net profit of 12,769,517,326 EGP [p1-10].\n\n**Implied P/E at the 18 Nov 2026 price of 82.50 EGP:**\n82.50 ÷ 6.98 ≈ **11.8×** FY2025 EPS [p1-11]. This is a rough multiple; it assumes the 6.98 EGP EPS is the final, unaudited figure.\n\n## 2. Growth\n\n- Revenue +46 % and EPS +59.6 % year-on-year are both stated in the summary table [p1-01, p1-11].\n- The 46 % revenue growth is corroborated by the verified FY2025 revenue of 62,495,144,197 EGP [p1-01]; however, the FY2024 base is AMBIGUOUS [p1-02], so the 46 % cannot be independently recomputed.\n- No multi-year trend (FY2023, FY2022) is provided in the evidence, so the sustainability of this growth rate cannot be assessed.\n\n## 3. Balance Sheet / Liquidity\n\n**No balance-sheet, cash-flow, or debt data is present in the supplied evidence.** Leverage, working-capital adequacy, and dividend capacity cannot be evaluated.\n\n## 4. Risks & Data-Quality Flags\n\n| Flag | Detail |\n|---|---|\n| **AMBIGUOUS – FY2024 revenue** [p1-02] | OCR produced a 14-digit string without the thousands separators used elsewhere on the page. The 46 % growth figure rests on this number. |\n| **AMBIGUOUS – FY2025 net profit** [p1-09] | Digit separators are inconsistent (\"١٨٠٢٠١,٩٨١٠٤٨٢\"). The 43 % growth figure and any FY2025 margin calculation depend on this number. |\n| **No balance-sheet data** | No evidence on debt, equity, or cash position. |\n| **Single-period snapshot** | Only FY2025 vs FY2024; no 3- or 5-year trend to judge cyclicality. |\n| **Unaudited / preliminary** | The document is a \"results summary\" (ملخص النتائج); figures may be subject to restatement. |\n\nTwo of the six extracted data points are AMBIGUOUS. I have **not** used either in any computation.\n\n## 5. Portfolio Context (factual, not a recommendation)\n\n- Current holding: 200 × TMGH @ 82.50 EGP = **16,500 EGP** market value.\n- Cash: **60,000 EGP**.\n- Total investable: **76,500 EGP**.\n- Investor horizon: 3–5 years; medium loss tolerance; separate emergency fund in place.\n- The 11.8× implied P/E [p1-11] is a single data point; without a peer set or historical P/E range in the evidence, it cannot be judged as cheap or expensive.\n\n## 6. What the Evidence Does and Does Not Support\n\n**Supported by the evidence:**\n- TMGH reported a strong single-year earnings step-up (EPS 4.37 → 6.98 EGP, +59.6 %) [p1-11, p1-12].\n- Revenue reached 62.5 billion EGP in FY2025 [p1-01].\n- FY2024 net profit was 12.77 billion EGP [p1-10].\n\n**Not supported / not assessable from the evidence:**\n- Exact FY2025 net profit (AMBIGUOUS) [p1-09].\n- Exact FY2024 revenue (AMBIGUOUS) [p1-02].\n- Net margin, ROE, debt levels, dividend yield, or free cash flow.\n- Whether the 46 % / 43 % / 59.6 % growth rates are sustainable over a 3–5-year horizon.\n- Any peer comparison or sector context.\n\n---\n\n*This is an evidence review only. No buy, sell, hold, or rebalancing recommendation is made. The decision agent should weigh the above against the investor's stated goal (apartment purchase in 3–5 years), medium risk tolerance, and the data-quality caveats before acting.*",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## 1. Horizon & Goal Alignment\n\nThe stated goal is **growing savings toward an apartment purchase** over **3–5 years**. This is a *target-date* objective: the capital must be available as a lump sum at a known (or at least bounded) point in time. That makes the last 12–18 months of the horizon a \"de-risking window\" in which the portfolio should be shifting toward liquidity. The first 2–3 years offer more room for moderate growth, but the overall frame is medium-term, not long-term compounding.\n\n## 2. Liquidity Needs\n\n- The investor **maintains a separate emergency fund**, so the 60,000 EGP in the portfolio is *not* serving a liquidity-safety role.\n- The binding liquidity event is the **apartment purchase itself**, which will require a large, one-time cash outflow within the 3–5-year window.\n- Practical implication: the portfolio should be structured so that, as the purchase date approaches, positions can be unwound without forced selling at an inopportune moment.\n\n## 3. Loss Tolerance & Capacity\n\n| Dimension | Rating | Practical read |\n|---|---|---|\n| Willingness to accept losses | **Medium** | Comfortable with moderate drawdowns (e.g., 10–20 % on a position) but not with severe, prolonged losses. |\n| Financial capacity to absorb losses | **Medium** | A large loss would materially delay the apartment goal; the investor cannot simply \"wait it out\" for many years. |\n\nTogether, \"medium / medium\" points to a **balanced-to-conservative** risk posture: some growth-oriented exposure is appropriate, but the bulk of capital should be in lower-volatility instruments, especially as the target date nears.\n\n## 4. Current Concentration\n\n| Asset | Value (EGP) | % of total |\n|---|---|---|\n| Cash | 60,000 | **78.4 %** |\n| TMGH (200 sh × 82.50) | 16,500 | **21.6 %** |\n| **Total** | **76,500** | 100 % |\n\n- The portfolio is **heavily cash-weighted** (≈ 78 %). This is conservative and, for a 3–5-year growth goal, likely leaves growth potential on the table.\n- The equity sleeve is a **single-name position** (TMGH). While it is only ~22 % of the total, it represents **100 % of the equity exposure**, so any adverse move in that one stock is the entire equity risk.\n- There is **no diversification** across sectors, asset classes, or geographies.\n\n## 5. What the Portfolio Allows (Deployable Capital)\n\n- **Free cash:** 60,000 EGP is immediately available with no transaction cost or lock-up.\n- **Sellable equity:** 200 shares of TMGH (≈ 16,500 EGP at the 18 Nov 2026 price) can be liquidated on the Egyptian exchange, subject to normal settlement (T+2). This is a realistic additional source of capital if the investor chooses to exit or trim.\n- **Maximum deployable capital:** up to **76,500 EGP** if the TMGH position were fully sold.\n- **No apparent lock-ups, margin calls, or pledged assets** are indicated in the profile.\n\n## 6. Suitability Summary (what fits this investor)\n\n- **Risk budget:** Medium willingness + medium capacity + a hard target date → the portfolio should sit in the **balanced / moderate** range, tilting more conservative as the apartment purchase date approaches.\n- **Cash is under-deployed:** With 78 % in cash and a 3–5-year runway, a meaningful portion of that cash is idle relative to the growth objective. The investor has the *capacity* to commit more capital to growth-oriented instruments without jeopardising the emergency cushion (which is held separately).\n- **Single-stock concentration:** The TMGH position is small in absolute terms but is the *only* equity holding. Any further equity allocation would benefit from diversification (multiple names, or a fund/ETF) rather than adding to the same single stock.\n- **Liquidity runway:** Because the emergency fund is separate, the investor does not need to keep a large cash buffer *inside* this portfolio. However, the apartment purchase itself is a near-term liquidity need, so a portion of capital should be staged in short-duration, low-risk instruments (e.g., money-market funds, short-term deposits) in the final 12–18 months of the horizon.\n- **Reasonable commitment:** The 60,000 EGP cash is the primary pool that could be allocated. The 16,500 EGP in TMGH is also available if the investor wishes to rebalance. In total, **up to ~76,500 EGP** is realistically deployable, though the investor should retain enough in near-cash form to cover the apartment down-payment / closing costs at the target date.\n\n> **Note:** This assessment describes *what suits* the investor's profile and what the current portfolio permits. It does **not** recommend a specific buy, sell, or hold action, and it does **not** analyse TMGH's financials or prospects. Any allocation decision should be made with a licensed advisor who can confirm the apartment's expected cost, the exact purchase timeline, and the investor's tax position."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 31.936,
+      "input_tokens": 1480,
+      "output_tokens": 3612,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 21.748,
+      "input_tokens": 1473,
+      "output_tokens": 2044,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 49.073,
+      "input_tokens": 4405,
+      "output_tokens": 3923,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 102.769
+}
