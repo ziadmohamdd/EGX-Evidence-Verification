@@ -10,6 +10,10 @@ key), what actions are acceptable, and optionally a trap. The builder:
    their source;
 3. writes the Case the agents see and the ReferenceAnswer the scorer uses.
 
+Column headings (which column is which period) come with each figure when the
+reader copied them. For pages read before the reader did that, a hand-checked
+file (data/cases/column_headings.json) gives each page's headings.
+
 The agents see only figures that have a reference. A figure the reader got
 wrong stays in the evidence as the reader produced it, and the reference holds
 the hand-checked value, so reading errors flow into the experiment and get
@@ -90,8 +94,14 @@ def build_case(
     figures: dict[str, RefFigure],
     prices: dict[str, dict[str, dict]],
     provisional: bool = False,
+    columns: dict[tuple[str, int], str] | None = None,
 ) -> tuple[Case | None, ReferenceAnswer | None, list[str]]:
-    """Returns (case, reference, problems). Case is None when it cannot be built."""
+    """Returns (case, reference, problems). Case is None when it cannot be built.
+
+    ``columns`` maps (document, page) to the page's column headings, for figures the
+    reader stored without them.
+    """
+    columns = columns or {}
     if provisional and spec.split == "test":
         raise ValueError(f"{spec.case_id}: test cases need hand-checked figures, not provisional ones")
     problems: list[str] = []
@@ -113,6 +123,8 @@ def build_case(
         item = next((m for m in matched if m.status is EvidenceStatus.VERIFIED), matched[0])
         if item.evidence_id in ref_figs:
             continue  # two keys landed on the same extracted figure
+        if item.columns is None and (item.document, item.page) in columns:
+            item = item.model_copy(update={"columns": columns[(item.document, item.page)]})
 
         if provisional:  # the reader's own value stands in for the hand-checked one
             fig = fig.model_copy(update={"value": item.value,
@@ -159,10 +171,19 @@ def build_case(
     return case, ref, problems
 
 
+def load_columns(path: Path) -> dict[tuple[str, int], str]:
+    """Hand-checked column headings per (document, page); empty if the file does not exist."""
+    if not path.exists():
+        return {}
+    return {(r["document"], int(r["page"])): r["columns"] for r in json.loads(path.read_text(encoding="utf-8"))}
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--specs", type=Path, default=Path("data/cases/specs"))
     ap.add_argument("--evidence", type=Path, default=Path("data/evidence"))
+    ap.add_argument("--columns", type=Path, default=Path("data/cases/column_headings.json"),
+                    help="hand-checked column headings for pages read without them")
     ap.add_argument("--figures", type=Path, default=Path("data/references/figures.json"))
     ap.add_argument("--prices", type=Path, default=Path("data/cases/prices.json"))
     ap.add_argument("--out", type=Path, default=Path("data"))
@@ -177,12 +198,14 @@ def main(argv=None):
         figures = {f["figure_key"]: RefFigure.model_validate(f)
                    for f in json.loads(a.figures.read_text(encoding="utf-8"))}
     prices = json.loads(a.prices.read_text(encoding="utf-8"))
+    columns = load_columns(a.columns)
 
     all_problems, built = [], 0
     for f in sorted(a.specs.glob("*.json")):
         spec = CaseSpec.model_validate_json(f.read_text(encoding="utf-8"))
         try:
-            case, ref, problems = build_case(spec, items, figures, prices, provisional=a.provisional)
+            case, ref, problems = build_case(spec, items, figures, prices, provisional=a.provisional,
+                                             columns=columns)
         except ValueError as exc:
             all_problems.append(str(exc))
             continue

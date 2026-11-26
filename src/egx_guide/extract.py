@@ -50,13 +50,15 @@ class ExtractedFigure(BaseModel):
 class PageFigures(BaseModel):
     statement: str | None = Field(default=None, description="Statement or table title, e.g. 'Consolidated income statement'")
     unit_line: str | None = Field(default=None, description="Unit line exactly as printed, e.g. 'EGP thousands' or 'بالألف جنيه'")
+    column_headings: str | None = Field(default=None, description="The table's column headings exactly as printed, in "
+                                                                  "order, separated by ' | ', e.g. 'Note | 31/12/2025 | 31/12/2024'")
     figures: list[ExtractedFigure] = Field(default_factory=list)
 
 
 EXTRACT_SYSTEM = """You extract financial figures from one page of an official company report.
 - Extract the numeric line items of the financial tables on this page (at most 60), for every period column.
 - Copy each number exactly as printed in `printed_value`. Do not convert units, digits or signs.
-- Copy the table's unit line exactly in `unit_line`.
+- Copy the table's unit line exactly in `unit_line`, and its column headings (periods, notes) in order in `column_headings`.
 - Give the period of the column each number sits in. If you cannot tell which column a number belongs to, set uncertain=true.
 - Do not invent figures. If the page has no financial table, return an empty list."""
 
@@ -174,6 +176,7 @@ def extract_figures(doc: DocumentRecord, company: str, caller: Caller) -> tuple[
                 evidence_id=eid, company=company, document=Path(doc.path).name, page=page.page,
                 label=fig.label + (f" ({fig.basis})" if fig.basis else ""),
                 source_text=fig.row_text + (f" | unit: {result.unit_line}" if result.unit_line else ""),
+                columns=result.column_headings,
                 value=None if ambiguous else value,
                 scale=scale or 1.0,
                 currency=(None if fig.printed_value.strip().endswith("%") or row_kind(fig, page) == "count"

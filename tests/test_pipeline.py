@@ -145,6 +145,12 @@ def test_printed_view_hides_converted_values(case):
     assert "1.25e+09" in converted and "1.25e+09" not in printed and "value " not in printed
     assert "Net profit 1,250 (EGP millions)" in printed and "Apply the" in printed
     assert "AMBIGUOUS" in printed  # status still shown
+    assert "columns \"" not in printed  # no headings in the fixture: the row is shown alone
+    with_cols = case.model_copy(update={"evidence": [
+        case.evidence[0].model_copy(update={"columns": "Note | 2024 | 2023"}), *case.evidence[1:]]})
+    shown = render_case(with_cols, "printed")
+    assert "as printed: columns \"Note | 2024 | 2023\", row \"" in shown
+    assert "Note | 2024 | 2023" not in render_case(with_cols)  # converted view unchanged
     with pytest.raises(ValueError):
         render_case(case, "raw")
 

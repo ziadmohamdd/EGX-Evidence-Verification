@@ -65,6 +65,22 @@ def test_case_uses_only_chosen_figures_with_true_values_as_reference():
     assert ref.case_id == "dev_001" and [a.value for a in ref.acceptable_actions] == ["hold", "keep_cash"]
 
 
+def test_column_headings_are_added_from_the_hand_checked_file():
+    cols = {(DOC, 5): "Notes | Dec. 31, 2025 | Dec. 31, 2024"}
+    case, _, problems = build_case(spec(), ITEMS, BANK, PRICES, columns=cols)
+    assert problems == []
+    by_id = {e.evidence_id: e for e in case.evidence}
+    assert by_id["e1"].columns == by_id["e2"].columns == "Notes | Dec. 31, 2025 | Dec. 31, 2024"
+    assert by_id["e3"].columns is None  # page 4 has no entry
+    assert ITEMS[0].columns is None  # the reader's output is not changed
+
+
+def test_reader_column_headings_win_over_the_file():
+    items = [ITEMS[0].model_copy(update={"columns": "Note | 2025 | 2024"}), *ITEMS[1:]]
+    case, _, _ = build_case(spec(), items, BANK, PRICES, columns={(DOC, 5): "other"})
+    assert case.evidence[0].columns == "Note | 2025 | 2024"
+
+
 def test_missing_figure_and_unknown_key_are_problems():
     case, ref, problems = build_case(spec(figures=["np25", "eps25", "nope"]), ITEMS, BANK, PRICES)
     assert [e.evidence_id for e in case.evidence] == ["e1"]

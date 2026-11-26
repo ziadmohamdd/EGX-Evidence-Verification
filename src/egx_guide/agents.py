@@ -28,8 +28,9 @@ EvidenceView = Literal["converted", "printed"]
 EVIDENCE_VIEWS = ("converted", "printed")
 
 PRINTED_NOTE = (
-    "Evidence is shown as printed in the report: the row, its columns, and the page's unit line. "
-    "A row may show several periods side by side; use the column for the period stated. Apply the "
+    "Evidence is shown as printed in the report: the table's column headings, the row, and the page's "
+    "unit line. A row may show several periods side by side; the column headings show which column is "
+    "which period, so use the column for the period stated. Apply the "
     "unit yourself (for example 'L.E. (000)' means thousands of pounds) and give every figure in "
     "`claims` in whole pounds.")
 
@@ -57,8 +58,9 @@ def render_case(case: Case, view: EvidenceView = "converted") -> str:
         status = "AMBIGUOUS" if e.status == "ambiguous" else "verified"
         note = f" | note: {e.note}" if e.note else ""
         if view == "printed":
+            cols = f"columns \"{e.columns}\", row " if e.columns else ""
             ev.append(f"- [{e.evidence_id}] {e.company} | {e.label} | period {e.period} | {status} | "
-                      f"as printed: \"{e.source_text}\" ({e.document}, p.{e.page}){note}")
+                      f"as printed: {cols}\"{e.source_text}\" ({e.document}, p.{e.page}){note}")
             continue
         value = "unresolved" if e.value is None else f"{e.value:,.6g}"
         ev.append(f"- [{e.evidence_id}] {e.company} | {e.label} | period {e.period} | value {value} "

@@ -225,7 +225,7 @@ def test_extractor_doubt_and_rtl_layer_are_caught():
 
 def test_extract_figures_end_to_end(tmp_path):
     doc = read_pdf(text_pdf(tmp_path / "COMI FY2024.pdf", [ENGLISH]))
-    extractor = FakeExtractor({1: PageFigures(unit_line="EGP thousands", figures=[
+    extractor = FakeExtractor({1: PageFigures(unit_line="EGP thousands", column_headings="Note | 2024 | 2023", figures=[
         fig("55,123", row="Net profit for the year 55,123 48,900"),
         fig("8?0"),
     ])})
@@ -234,6 +234,7 @@ def test_extract_figures_end_to_end(tmp_path):
     assert good.evidence_id == "COMI-COMI_FY2024-p1-01"
     assert good.status is EvidenceStatus.VERIFIED and good.value == 55_123_000 and good.scale == 1e3
     assert "unit: EGP thousands" in good.source_text
+    assert good.columns == bad.columns == "Note | 2024 | 2023"  # which column is which period
     assert bad.status is EvidenceStatus.AMBIGUOUS and bad.value is None and "illegible" in bad.note
     assert checks[1].grounded is False
     assert "Page 1 text" in extractor.prompts[0]

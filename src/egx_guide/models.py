@@ -71,6 +71,8 @@ class EvidenceItem(_Strict):
     page: int | None = None
     label: str = Field(description="What the figure is, e.g. 'Net profit attributable to shareholders'")
     source_text: str = Field(description="The value as printed, with surrounding context")
+    columns: str | None = Field(default=None, description="The table's column headings as printed, in the order "
+                                                          "of the row's numbers, e.g. 'Note | 31/12/2025 | 31/12/2024'")
     value: float | None = Field(default=None, description="Interpreted value in base units; None if unresolved")
     scale: float = Field(default=1.0, description="Multiplier already applied, e.g. 1e6 for 'EGP millions'")
     currency: str | None = "EGP"
