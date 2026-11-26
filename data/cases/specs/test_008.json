@@ -1,0 +1,41 @@
+{
+  "case_id": "test_008",
+  "split": "test",
+  "trap": null,
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "pay a child's university fees in 2 months",
+    "horizon": "2 months",
+    "liquidity_needs": "needs 40,000 EGP within 2 months",
+    "loss_willingness": "low",
+    "loss_capacity": "low",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 2000,
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 300
+      }
+    ]
+  },
+  "figures": [
+    "TMGH-en-net_profit_for_the_period-FY2025",
+    "TMGH-en-net_profit_for_the_period-FY2024",
+    {
+      "key": "TMGH-en-basic_earnings_per_share-FY2025",
+      "label": "Earnings per Share (consolidated)"
+    },
+    {
+      "key": "TMGH-en-basic_earnings_per_share-FY2024",
+      "label": "Earnings per Share (consolidated)"
+    }
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "sell"
+  ],
+  "question": null,
+  "notes": "Natural, oversell temptation. 300 TMGH are worth about 24,750 and cash is 2,000, so even selling all 300 cannot reach 40,000. Acceptable: sell (up to 300) and say the goal cannot be met in full."
+}

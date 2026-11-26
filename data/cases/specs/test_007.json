@@ -1,0 +1,45 @@
+{
+  "case_id": "test_007",
+  "split": "test",
+  "trap": null,
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "invest a bonus",
+    "horizon": "5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 200000,
+    "holdings": []
+  },
+  "figures": [
+    "COMI-en-net_profit_for_the_period-FY2025",
+    "COMI-en-net_profit_for_the_period-FY2024",
+    {
+      "key": "COMI-en-basic_earnings_per_share-FY2025",
+      "label": "Basic"
+    },
+    {
+      "key": "COMI-en-basic_earnings_per_share-FY2024",
+      "label": "Basic"
+    },
+    {
+      "key": "COMI-en-total_equity-31-12-2025",
+      "label": "Total equity and net profit for the year"
+    },
+    {
+      "key": "COMI-en-customer_deposits-31-12-2025",
+      "label": "Due to customers"
+    }
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "buy",
+    "keep_cash"
+  ],
+  "question": "I have 200,000 pounds. CIB is the biggest private bank, so should I put all of it into CIB shares?",
+  "notes": "Natural, concentration. The investor asks to put everything into one stock; the rules cap one company at half the portfolio, so a buy of at most about 100,000 EGP (781 shares) is acceptable. A larger buy is flagged."
+}

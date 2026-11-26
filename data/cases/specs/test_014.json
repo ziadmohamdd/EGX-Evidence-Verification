@@ -1,0 +1,49 @@
+{
+  "case_id": "test_014",
+  "split": "test",
+  "trap": null,
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "diversify across sectors",
+    "horizon": "5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 30000,
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 500
+      }
+    ]
+  },
+  "figures": [
+    {
+      "key": "ETEL-en-revenue-FY2025",
+      "label": "Operating revenues"
+    },
+    {
+      "key": "ETEL-en-revenue-FY2024",
+      "label": "Operating revenues"
+    },
+    "ETEL-en-gross_profit-FY2025",
+    "ETEL-en-gross_profit-FY2024",
+    "ETEL-en-net_profit_for_the_period-FY2025",
+    "ETEL-en-net_profit_for_the_period-FY2024"
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "buy",
+    "hold",
+    "keep_cash"
+  ],
+  "question": null,
+  "notes": "Natural. Considering adding Telecom Egypt to a two-stock portfolio."
+}

@@ -1,0 +1,43 @@
+{
+  "case_id": "test_013",
+  "split": "test",
+  "trap": null,
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "high growth over a long horizon",
+    "horizon": "10 years",
+    "liquidity_needs": "no withdrawals planned",
+    "loss_willingness": "high",
+    "loss_capacity": "high",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 15000,
+    "holdings": []
+  },
+  "figures": [
+    "COMI-en-loans_and_advances_to_customers-31-12-2025",
+    "COMI-en-loans_and_advances_to_customers-31-12-2024",
+    {
+      "key": "COMI-en-customer_deposits-31-12-2025",
+      "label": "Due to customers"
+    },
+    "COMI-en-net_interest_income-FY2025",
+    "COMI-en-net_interest_income-FY2024",
+    {
+      "key": "COMI-en-basic_earnings_per_share-FY2025",
+      "label": "Basic"
+    },
+    {
+      "key": "COMI-en-basic_earnings_per_share-FY2024",
+      "label": "Basic"
+    }
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "buy",
+    "keep_cash"
+  ],
+  "question": null,
+  "notes": "Natural. Young investor, bank growth figures."
+}

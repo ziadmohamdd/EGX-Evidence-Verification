@@ -1,0 +1,46 @@
+{
+  "case_id": "test_019",
+  "split": "test",
+  "trap": "unreadable",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "grow savings",
+    "horizon": "4 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 20000,
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 100
+      }
+    ]
+  },
+  "figures": [
+    "COMI-en-net_profit_for_the_period-FY2025",
+    "COMI-en-net_profit_for_the_period-FY2024",
+    {
+      "key": "COMI-en-basic_earnings_per_share-FY2025",
+      "label": "Basic"
+    },
+    {
+      "key": "COMI-en-basic_earnings_per_share-FY2024",
+      "label": "Basic"
+    }
+  ],
+  "make_ambiguous": {
+    "COMI-en-net_profit_for_the_period-FY2025": "digits hidden by a fold in the scanned page"
+  },
+  "acceptable_actions": [
+    "hold",
+    "buy",
+    "keep_cash",
+    "insufficient_evidence"
+  ],
+  "question": "How much did CIB's net profit grow in 2025? I will add if it grew by more than 30%.",
+  "notes": "Trap: the 2025 net profit is marked unreadable; growth cannot be computed from it. EPS for both years is readable and can stand in, if the answer says so."
+}

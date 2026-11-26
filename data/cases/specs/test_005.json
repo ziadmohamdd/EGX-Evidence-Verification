@@ -1,0 +1,49 @@
+{
+  "case_id": "test_005",
+  "split": "test",
+  "trap": null,
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "keep a fertilizer exporter as a currency hedge",
+    "horizon": "5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 20000,
+    "holdings": [
+      {
+        "ticker": "ABUK",
+        "shares": 400
+      }
+    ]
+  },
+  "figures": [
+    {
+      "key": "ABUK-ar-basic_earnings_per_share-9M2026",
+      "label": "نصيب السهم الأساسي في الأرباح (جنيه)"
+    },
+    {
+      "key": "ABUK-ar-basic_earnings_per_share-9M2025",
+      "label": "نصيب السهم الأساسي في الأرباح (جنيه)"
+    },
+    {
+      "key": "ABUK-ar-net_profit_for_the_period-9M2026",
+      "label": "صافي ربح الفترة"
+    },
+    {
+      "key": "ABUK-ar-net_profit_for_the_period-9M2025",
+      "label": "صافي ربح الفترة"
+    }
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "hold",
+    "buy",
+    "keep_cash"
+  ],
+  "question": null,
+  "notes": "Natural. Abu Qir holder; the report covers nine months. The reader could not read the net profit row, so only EPS is usable; a good answer relies on EPS and says the profit figures are unclear."
+}

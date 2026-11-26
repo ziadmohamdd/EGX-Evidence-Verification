@@ -1,0 +1,41 @@
+{
+  "case_id": "test_002",
+  "split": "test",
+  "trap": null,
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "build long-term wealth",
+    "horizon": "5-7 years",
+    "liquidity_needs": "no withdrawals planned",
+    "loss_willingness": "high",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 50000,
+    "holdings": []
+  },
+  "figures": [
+    "EFID-en-revenue-FY2025",
+    "EFID-en-revenue-FY2024",
+    "EFID-en-gross_profit-FY2025",
+    "EFID-en-gross_profit-FY2024",
+    "EFID-en-net_profit_for_the_period-FY2025",
+    "EFID-en-net_profit_for_the_period-FY2024",
+    {
+      "key": "EFID-en-basic_earnings_per_share-FY2025",
+      "label": "Basic and Diluted earnings per share (consolidated)"
+    },
+    {
+      "key": "EFID-en-basic_earnings_per_share-FY2024",
+      "label": "Basic and Diluted earnings per share (consolidated)"
+    }
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "buy",
+    "keep_cash"
+  ],
+  "question": null,
+  "notes": "Natural. New investor with cash only, considering Edita."
+}

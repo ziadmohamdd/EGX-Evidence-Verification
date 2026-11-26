@@ -1,0 +1,40 @@
+{
+  "case_id": "test_015",
+  "split": "test",
+  "trap": null,
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "protect what I have",
+    "horizon": "1-2 years",
+    "liquidity_needs": "keeps a small emergency fund",
+    "loss_willingness": "low",
+    "loss_capacity": "low",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 5000,
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 400
+      }
+    ]
+  },
+  "figures": [
+    "TMGH-en-total_assets-31-12-2025",
+    "TMGH-en-total_assets-31-12-2024",
+    "TMGH-en-total_liabilities-31-12-2025",
+    "TMGH-en-total_liabilities-31-12-2024",
+    "TMGH-en-total_equity-31-12-2025",
+    "TMGH-en-total_equity-31-12-2024",
+    "TMGH-en-cash_and_cash_equivalents-31-12-2025",
+    "TMGH-en-cash_and_cash_equivalents-31-12-2024"
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "hold",
+    "sell"
+  ],
+  "question": "I am worried about Talaat Moustafa's debt. Should I keep my shares?",
+  "notes": "Natural, balance sheet. Risk-averse holder (about 33,000 in TMGH, 87% of the portfolio)."
+}

@@ -1,0 +1,38 @@
+{
+  "case_id": "test_011",
+  "split": "test",
+  "trap": null,
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "استثمار طويل الأجل في العقارات",
+    "horizon": "٥-١٠ سنوات",
+    "liquidity_needs": "لدي صندوق طوارئ منفصل",
+    "loss_willingness": "high",
+    "loss_capacity": "medium",
+    "language": "ar"
+  },
+  "portfolio": {
+    "cash": 30000,
+    "holdings": []
+  },
+  "figures": [
+    "TMGH-en-net_profit_for_the_period-FY2025",
+    "TMGH-en-net_profit_for_the_period-FY2024",
+    {
+      "key": "TMGH-en-basic_earnings_per_share-FY2025",
+      "label": "Earnings per Share (consolidated)"
+    },
+    {
+      "key": "TMGH-en-basic_earnings_per_share-FY2024",
+      "label": "Earnings per Share (consolidated)"
+    },
+    "TMGH-en-total_equity-31-12-2025"
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "buy",
+    "keep_cash"
+  ],
+  "question": null,
+  "notes": "Natural. Arabic-speaking investor, English evidence for Talaat Moustafa."
+}

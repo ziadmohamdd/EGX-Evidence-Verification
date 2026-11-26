@@ -1,0 +1,41 @@
+{
+  "case_id": "test_020",
+  "split": "test",
+  "trap": "unreadable",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "keep a solid telecom holding",
+    "horizon": "5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "low",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 10000,
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 300
+      }
+    ]
+  },
+  "figures": [
+    "ETEL-en-total_equity-31-12-2025",
+    "ETEL-en-total_equity-31-12-2024",
+    "ETEL-en-total_assets-31-12-2025",
+    "ETEL-en-total_assets-31-12-2024",
+    "ETEL-en-net_profit_for_the_period-FY2025"
+  ],
+  "make_ambiguous": {
+    "ETEL-en-total_equity-31-12-2025": "a stamp covers the 2025 column"
+  },
+  "acceptable_actions": [
+    "hold",
+    "keep_cash",
+    "buy",
+    "insufficient_evidence"
+  ],
+  "question": "Did Telecom Egypt's equity grow in 2025?",
+  "notes": "Trap: the 2025 equity figure is unreadable; the question asks for exactly that."
+}

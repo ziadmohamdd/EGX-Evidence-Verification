@@ -1,6 +1,6 @@
 # Evaluation plan
 
-**Status:** draft v0.1, 21 November 2026. This settles the items PROJECT_AUDIT_SUMMARY.md §6.3 left open. It gets frozen, together with the code, prompts, cases and reference figures, before the final runs (see §9). After that, any change is recorded as a deviation in §12.
+**Status:** draft v0.2, 26 November 2026 (v0.1: 21 November). The changes since v0.1 are in §12, all made before any test case was run. This settles the items PROJECT_AUDIT_SUMMARY.md §6.3 left open. It gets frozen, together with the code, prompts, cases and reference figures, before the final runs (see §9). After that, any change is recorded as a deviation in §12.
 
 **Research question:** does explicit evidence verification reduce incorrect financial claims and unsupported reasoning in otherwise comparable single-agent and multi-agent investment-recommendation systems?
 
@@ -27,7 +27,7 @@ If a hypothesis isn't supported, that's reported as a result, not hidden.
 
 - **Case:** an investor profile plus a portfolio (holdings and cash), share prices at an information cutoff, and the evidence the agents may use (figures extracted from the official reports).
 - **Run:** one case under one condition, one time. Each case runs under all 4 conditions, **3 times** each.
-- **Size:** **30 test cases × 4 conditions × 3 repeats = 360 runs.** Separately, about 6 **development** cases are used while writing prompts and rules. They never appear in results.
+- **Size:** **30 test cases × 4 conditions × 3 repeats = 360 runs.** Separately, 12 **development** cases are used while writing prompts and rules. They never appear in results.
 
 ## 4. Primary measure
 
@@ -37,6 +37,10 @@ A cited figure is **wrong** if, compared with the hand-checked reference figure:
 - its value differs by more than **0.5%** (`wrong_value`), or
 - the reference marks it unusable but it was used anyway (`ambiguous_used`), or
 - it cites evidence that doesn't exist (`unknown`).
+
+**What counts as usable.** A figure is usable only if the reference sheet gives its value **and** the evidence the agents see shows it as readable. A figure the agents see as unclear can't be relied on, whatever its true value, so citing it counts as `ambiguous_used`.
+
+**The other numbers in a row.** The agents see each figure's whole printed row (e.g. 2025, 2024, the change in %), and every number in it has its own evidence ID. Claims citing these numbers are checked like any other, but coverage counts only the figures chosen for the case.
 
 **Coverage is always reported next to it:** the share of usable reference figures the recommendation cites correctly. A system can't look better just by citing nothing. If the verifier lowers mean coverage by more than **20 percentage points**, the conclusion about H1 is qualified in the paper.
 
@@ -53,7 +57,9 @@ A cited figure is **wrong** if, compared with the hand-checked reference figure:
   - exact McNemar test on per-case majority outcomes
   - a logistic mixed model with a random effect for case, using all 360 runs
   - tolerances of 0.05% and 2% instead of 0.5%
-- **Repeatability:** report how often the 3 repeats of a run disagree, per condition. The development model (Gemini `gemini-4-hydrogen`) ignores the temperature setting, so variation between repeats is expected.
+- **Repeatability:** report how often the 3 repeats of a run disagree, per condition. Some free models ignore the temperature setting, so variation between repeats is expected.
+- **Subgroups (pre-specified, secondary):** the primary comparisons are also reported separately for natural and trap cases, and per trap type as counts. The test set over-samples trap cases (§7), so the natural subgroup is the estimate for ordinary use.
+- **Code:** `python -m egx_guide.stats` computes all of the above except the mixed model, from the scored run folders.
 - **Power, stated honestly:** with 30 paired cases, a large effect (for example 40% → 15%) should show clearly, but a small one may not. Confidence intervals are reported, not just p-values.
 
 ## 6. Secondary measures
@@ -63,7 +69,8 @@ All are reported per condition. Most are already in `egx_guide.score`.
 | Measure | Notes |
 |---|---|
 | Wrong-figure rate | Wrong figures ÷ all cited figures, pooled. Confidence interval from a bootstrap over cases. |
-| Error types | Wrong value, ambiguous used, unknown evidence, scale errors (off by 1,000×). |
+| Error types | Why each wrong figure is wrong, before and after the verifier: **reader error copied** (the agent repeated the evidence, but the reader misread the page), scale (off by 1,000× or more), another number from the same row cited under the wrong ID, a printed row number with no ID, another figure of the case, not in the evidence at all (misread, derived or invented), unusable figure used, unknown ID. |
+| Errors the verifier cannot see | Copied reader errors in the final recommendation. The verifier checks claims against the evidence, not the page, so these pass it. Together with the reader's accuracy (§11), this shows what evidence verification can and cannot guarantee. |
 | Before vs after the verifier | Wrong-figure share in the agent's first recommendation vs the final one, in B and D. This shows the verifier's direct effect. |
 | Coverage | As defined in §4. |
 | Abstention | Share of "insufficient evidence" recommendations. |
@@ -75,10 +82,11 @@ All are reported per condition. Most are already in `egx_guide.score`.
 
 ## 7. Cases
 
-**30 test cases:** 20 natural and 10 trap cases.
+**30 test cases:** 15 natural and 15 trap cases (`data/cases/specs/test_*.json`). Each spec's `notes` says what it tests and why its acceptable actions are acceptable.
 
 - **Natural cases** use the reports as they are: 6 reports from 5 companies (CIB, Telecom Egypt, Talaat Moustafa, Edita, Abu Qir), in English and Arabic, text and scanned.
-- **Trap cases** each contain one known difficulty, about 2 cases per type:
+- **Natural cases** also vary the investor's situation: liquidity needs that force a sale, a sale that can't cover the need (oversell temptation), a request to buy without cash, a request to put everything into one stock (the 50% limit), balance-sheet questions, two-stock portfolios, and Arabic-speaking investors.
+- **Trap cases** each contain one known difficulty: period 1, scale 2, unreadable 2, Arabic-only 1, per-share 1, misleading question 3, annualise 2, near duplicates 2, many figures 1.
 
 | Trap | Example |
 |---|---|
@@ -128,7 +136,7 @@ The final runs use only that tag. Results that look poor are not followed by pro
 **The project spends no money.** Every model is a free option: the Gemini free tier, free OpenRouter models, or a model running locally with Ollama.
 
 - **Development:** free models with automatic fallback (`--fallback`), so work continues when one model is overloaded or out of daily requests. Each call records which model answered.
-- **Final runs:** **one fixed free model** for every condition, with **no fallback**, so conditions stay comparable. It's chosen on the development cases for reliability, valid structured output, and requests available per day. Its exact model ID and the dates of the runs are reported. Candidates: `gemini-4-hydrogen` (20 requests/day), `openrouter:nvidia/nemotron-3.5-super-vl:free` (daily limit to be measured), or a local Ollama model (no limit, but weaker).
+- **Final runs:** **one fixed free model** for every condition, with **no fallback**, so conditions stay comparable. It's chosen on the development cases for reliability, valid structured output, and requests available per day. Its exact model ID and the dates of the runs are reported. Compared on the 12 development cases (printed figures, 26 November 2026): Qwen3.8-27B on SovereignEG's free plan, Gemini 3.5 Flash-Lite, NVIDIA Nemotron 3.5 Lightning, and Gemini 3.5 Flash (about 20 requests a day, too few for 360 runs). The proposal is in §12.
 - **Expected volume:** measured on the first development run, about 1–3 calls per run (A, B: 1–2; C, D: 3–4), so 360 runs is roughly 800 calls. At free-tier limits, the final runs are spread over several days in daily batches. Every run is saved as it finishes, so batches simply continue the next day.
 - **If free limits make 360 runs impossible before the deadline**, the size drops to 30 cases × 2 repeats (240 runs) or 20 cases × 3 repeats, decided before the freeze and logged in §12. The power statement in §5 is updated to match.
 - **Repeatability:** some free models ignore the temperature setting, so the 3 repeats also measure how much answers vary, as §5 already reports.
@@ -142,12 +150,18 @@ The reader's extraction accuracy is reported on its own, using `python -m egx_gu
 
 | Date | Change | Reason | Runs redone? |
 |---|---|---|---|
+| 2026-11-26 | Test set: 15 natural + 15 trap cases instead of 20 + 10; natural and trap cases reported separately (§5, §7). | On the 12 development cases, the candidate models made almost no wrong figures on natural cases, so with 20 natural cases the primary comparison would have little power. Decided before any test case was run. | No test runs yet |
+| 2026-11-26 | Every number printed in a chosen figure's row gets its own evidence ID; these count in the error measures but not in coverage. The printed evidence shows the table's column headings (§4). | Development runs showed most "wrong figures" were correct numbers from the same row (the 2024 column, the change in %) cited under the chosen figure's ID, because they had no ID of their own. | Dev only |
+| 2026-11-26 | A figure is usable only if the evidence the agents see shows it as readable (§4). | Otherwise an agent that guessed an unreadable figure would be scored correct. | Dev cases unchanged |
+| 2026-11-26 | Error types and the "errors the verifier cannot see" measure added (§6). | Separates citation errors, misreadings and copied reader errors, which the verifier handles very differently. | Scoring only |
+| 2026-11-25 | Buys that leave more than 50% of the portfolio in one stock are flagged, not blocked; the prompt states the limit. | A rule broken without being reported would be invisible in the results. | Dev only |
+| 2026-11-26 | **Proposed, to confirm at the freeze:** final model Qwen3.8-27B (SovereignEG free plan, json_schema output), one model, no fallback (§10). Gemini 3.5 Flash-Lite as an exploratory second model. | On the development cases it gave acceptable actions in 47 of 48 answers, cited 80–92% of the usable figures, and its free daily allowance covers a full set of runs in about a day. | – |
 | 2026-11-22 | Final runs use one fixed free model instead of paid Claude (§10). | No budget; the project spends no money | No runs yet |
 | 2026-11-21 | One author does all reference figures and ratings. An AI-assisted check of the sheet against the page images replaces the second author's check, and intra-rater reliability replaces inter-rater agreement (§7, §8). | The work is done by one author | No runs yet |
 
 ## Still to build
 
-- Case builder, including trap cases
-- Per-case aggregation and the statistics in §5
+- The logistic mixed model in §5 (needs the free `statsmodels` package)
 - Exporter for the blinded rating sample, plus a rating sheet
-- Measuring calls per run on the development cases
+
+Done: the case builder with trap cases (`egx_guide.cases`), per-case aggregation and the statistics in §5 (`egx_guide.stats`), error types (`egx_guide.score`), and calls per run (recorded in every run record).

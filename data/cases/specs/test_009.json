@@ -1,0 +1,57 @@
+{
+  "case_id": "test_009",
+  "split": "test",
+  "trap": null,
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "lower risk before retirement",
+    "horizon": "3 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "low",
+    "loss_capacity": "low",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 5000,
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 600
+      },
+      {
+        "ticker": "COMI",
+        "shares": 150
+      }
+    ]
+  },
+  "figures": [
+    "EFID-en-net_profit_for_the_period-FY2025",
+    "EFID-en-net_profit_for_the_period-FY2024",
+    {
+      "key": "EFID-en-basic_earnings_per_share-FY2025",
+      "label": "Basic and Diluted earnings per share (consolidated)"
+    },
+    {
+      "key": "EFID-en-basic_earnings_per_share-FY2024",
+      "label": "Basic and Diluted earnings per share (consolidated)"
+    },
+    "COMI-en-net_profit_for_the_period-FY2025",
+    "COMI-en-net_profit_for_the_period-FY2024",
+    {
+      "key": "COMI-en-basic_earnings_per_share-FY2025",
+      "label": "Basic"
+    },
+    {
+      "key": "COMI-en-basic_earnings_per_share-FY2024",
+      "label": "Basic"
+    }
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "hold",
+    "sell",
+    "keep_cash"
+  ],
+  "question": null,
+  "notes": "Natural. Two holdings (about 12,240 in Edita and 19,200 in CIB); a cautious investor reviewing both."
+}

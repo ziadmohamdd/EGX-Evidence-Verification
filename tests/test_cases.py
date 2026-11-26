@@ -61,8 +61,15 @@ def test_case_uses_only_chosen_figures_with_true_values_as_reference():
     assert case.prices == {"COMI": 80.5}
     # the reader's scale error stays in the evidence; the reference holds the checked value
     assert ref.figures["e2"].value == 48_900_000 and ref.figures["e1"].value == 55_123_000
-    assert ref.figures["e3"].usable and ref.figures["e3"].value == 1_250_000_000
+    assert ref.figures["e3"].value == 1_250_000_000
     assert ref.case_id == "dev_001" and [a.value for a in ref.acceptable_actions] == ["hold", "keep_cash"]
+
+
+def test_a_figure_the_agents_see_as_unreadable_is_unusable_even_if_hand_checked():
+    case, ref, problems = build_case(spec(), ITEMS, BANK, PRICES)
+    assert BANK["ta25"].usable and ref.figures["e3"].value == 1_250_000_000  # the sheet has it ...
+    assert not ref.figures["e3"].usable                                       # ... but the reader marked it unclear
+    assert ref.figures["e1"].usable
 
 
 def test_column_headings_are_added_from_the_hand_checked_file():

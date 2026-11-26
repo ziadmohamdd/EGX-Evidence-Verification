@@ -1,0 +1,45 @@
+{
+  "case_id": "test_029",
+  "split": "test",
+  "trap": "near_duplicates",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "bank income for the long run",
+    "horizon": "7 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 20000,
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 250
+      }
+    ]
+  },
+  "figures": [
+    "COMI-en-net_profit_for_the_period-FY2025",
+    "COMI-en-net_profit_for_the_period-FY2024",
+    {
+      "key": "COMI-en-net_profit_attributable_to_owners_of_the_bank-FY2025",
+      "label": "Bank's shareholders"
+    },
+    {
+      "key": "COMI-en-net_profit_attributable_to_owners_of_the_bank-FY2024",
+      "label": "Bank's shareholders"
+    },
+    "COMI-en-net_interest_income-FY2025",
+    "COMI-en-net_interest_income-FY2024"
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "hold",
+    "buy",
+    "keep_cash"
+  ],
+  "question": "How much profit belongs to CIB's own shareholders, and how did it change from 2024?",
+  "notes": "Trap: total net profit and the bank shareholders' share are close but different; the question asks for the shareholders' share."
+}

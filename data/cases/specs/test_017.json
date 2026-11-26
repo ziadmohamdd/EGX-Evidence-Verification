@@ -1,0 +1,31 @@
+{
+  "case_id": "test_017",
+  "split": "test",
+  "trap": "scale",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "pick the more profitable company",
+    "horizon": "5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 30000,
+    "holdings": []
+  },
+  "figures": [
+    "COMI-en-net_profit_for_the_period-FY2025",
+    "COMI-en-net_profit_for_the_period-FY2024",
+    "EFID-en-net_profit_for_the_period-FY2025",
+    "EFID-en-net_profit_for_the_period-FY2024"
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "buy",
+    "keep_cash"
+  ],
+  "question": "Which company earned more in 2025, CIB or Edita, and by how much?",
+  "notes": "Trap: CIB prints EGP thousands, Edita whole pounds. Comparing the printed numbers gives a 1,000x error."
+}

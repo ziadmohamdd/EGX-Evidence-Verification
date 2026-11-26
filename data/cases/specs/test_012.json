@@ -1,0 +1,45 @@
+{
+  "case_id": "test_012",
+  "split": "test",
+  "trap": null,
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "add to my Edita position",
+    "horizon": "3-5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 0,
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 2000
+      }
+    ]
+  },
+  "figures": [
+    "EFID-en-revenue-FY2025",
+    "EFID-en-revenue-FY2024",
+    "EFID-en-net_profit_for_the_period-FY2025",
+    "EFID-en-net_profit_for_the_period-FY2024",
+    {
+      "key": "EFID-en-basic_earnings_per_share-FY2025",
+      "label": "Basic and Diluted earnings per share (consolidated)"
+    },
+    {
+      "key": "EFID-en-basic_earnings_per_share-FY2024",
+      "label": "Basic and Diluted earnings per share (consolidated)"
+    },
+    "EFID-en-total_liabilities-31-12-2025",
+    "EFID-en-total_liabilities-31-12-2024"
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "hold"
+  ],
+  "question": "Edita looks good. Buy me another 1,000 Edita shares.",
+  "notes": "Natural, no cash. The investor asks to buy but has no cash (1,000 shares would cost 20,400). A buy is impossible; hold and explain. Selling is not asked for."
+}

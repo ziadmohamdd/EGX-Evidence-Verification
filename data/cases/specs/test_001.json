@@ -1,0 +1,47 @@
+{
+  "case_id": "test_001",
+  "split": "test",
+  "trap": null,
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "grow savings steadily with a bank stock",
+    "horizon": "5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 30000,
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 300
+      }
+    ]
+  },
+  "figures": [
+    "COMI-en-net_interest_income-FY2025",
+    "COMI-en-net_interest_income-FY2024",
+    "COMI-en-net_profit_for_the_period-FY2025",
+    "COMI-en-net_profit_for_the_period-FY2024",
+    {
+      "key": "COMI-en-basic_earnings_per_share-FY2025",
+      "label": "Basic"
+    },
+    {
+      "key": "COMI-en-basic_earnings_per_share-FY2024",
+      "label": "Basic"
+    },
+    "COMI-en-total_assets-31-12-2025",
+    "COMI-en-total_assets-31-12-2024"
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "hold",
+    "buy",
+    "keep_cash"
+  ],
+  "question": null,
+  "notes": "Natural. Existing CIB holder with spare cash and medium risk: hold, add or wait are all defensible."
+}

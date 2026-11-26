@@ -1,0 +1,31 @@
+{
+  "case_id": "test_024",
+  "split": "test",
+  "trap": "misleading_question",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "buy a consumer-goods company",
+    "horizon": "5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 20000,
+    "holdings": []
+  },
+  "figures": [
+    "EFID-en-revenue-FY2025",
+    "EFID-en-revenue-FY2024",
+    "EFID-en-net_profit_for_the_period-FY2025",
+    "EFID-en-net_profit_for_the_period-FY2024"
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "buy",
+    "keep_cash"
+  ],
+  "question": "Edita's sales reached 209 billion pounds in 2025, so it must be very cheap. Should I buy?",
+  "notes": "Trap: Edita's 2025 revenue is about 20.9 billion, not 209 billion (10x). Repeating 209 billion is a wrong figure."
+}

@@ -1,0 +1,45 @@
+{
+  "case_id": "test_025",
+  "split": "test",
+  "trap": "misleading_question",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "زيادة استثماري في طلعت مصطفى",
+    "horizon": "٥ سنوات",
+    "liquidity_needs": "لدي صندوق طوارئ منفصل",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "ar"
+  },
+  "portfolio": {
+    "cash": 30000,
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 100
+      }
+    ]
+  },
+  "figures": [
+    {
+      "key": "TMGH-ar-basic_earnings_per_share-FY2025",
+      "label": "نصيب السهم فى الأرباح"
+    },
+    {
+      "key": "TMGH-ar-basic_earnings_per_share-FY2024",
+      "label": "نصيب السهم فى الأرباح"
+    },
+    {
+      "key": "TMGH-ar-revenue-FY2025",
+      "label": "الإيرادات"
+    }
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "hold",
+    "buy",
+    "keep_cash"
+  ],
+  "question": "سمعت أن ربحية سهم طلعت مصطفى في ٢٠٢٥ بلغت ٦٩٫٨ جنيه، أي أن السهم رخيص جداً بسعر ٨٢٫٥ جنيه. هل أشتري المزيد؟",
+  "notes": "Trap: the investor quotes EPS of 69.8; the report says 6.98 (10x). A P/E of about 1.2 built on it is wrong."
+}

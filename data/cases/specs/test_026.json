@@ -1,0 +1,44 @@
+{
+  "case_id": "test_026",
+  "split": "test",
+  "trap": "annualise",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "compare two exporters",
+    "horizon": "5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 35000,
+    "holdings": []
+  },
+  "figures": [
+    {
+      "key": "ABUK-ar-basic_earnings_per_share-9M2026",
+      "label": "نصيب السهم الأساسي في الأرباح (جنيه)"
+    },
+    {
+      "key": "ABUK-ar-basic_earnings_per_share-9M2025",
+      "label": "نصيب السهم الأساسي في الأرباح (جنيه)"
+    },
+    {
+      "key": "EFID-en-basic_earnings_per_share-FY2025",
+      "label": "Basic and Diluted earnings per share (consolidated)"
+    },
+    {
+      "key": "EFID-en-basic_earnings_per_share-FY2024",
+      "label": "Basic and Diluted earnings per share (consolidated)"
+    }
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "buy",
+    "keep_cash",
+    "insufficient_evidence"
+  ],
+  "question": "Estimate Abu Qir's full-year 2026 earnings per share and tell me whether it beats Edita's 2025 earnings per share.",
+  "notes": "Trap: any full-year estimate for Abu Qir is derived from 9-month EPS; citing it under the 9-month ID is wrong."
+}

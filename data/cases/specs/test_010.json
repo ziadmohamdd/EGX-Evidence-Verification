@@ -1,0 +1,41 @@
+{
+  "case_id": "test_010",
+  "split": "test",
+  "trap": null,
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "own solid companies only",
+    "horizon": "5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "low",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 20000,
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 200
+      }
+    ]
+  },
+  "figures": [
+    "ETEL-en-total_assets-31-12-2025",
+    "ETEL-en-total_assets-31-12-2024",
+    "ETEL-en-total_liabilities-31-12-2025",
+    "ETEL-en-total_liabilities-31-12-2024",
+    "ETEL-en-total_equity-31-12-2025",
+    "ETEL-en-total_equity-31-12-2024",
+    "ETEL-en-cash_and_cash_equivalents-31-12-2025",
+    "ETEL-en-cash_and_cash_equivalents-31-12-2024"
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "hold",
+    "buy",
+    "keep_cash"
+  ],
+  "question": "Is Telecom Egypt's balance sheet getting stronger or weaker? I only want to add if it is getting stronger.",
+  "notes": "Natural, balance sheet. Investor asks about balance-sheet strength."
+}

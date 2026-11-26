@@ -1,0 +1,39 @@
+{
+  "case_id": "test_018",
+  "split": "test",
+  "trap": "scale",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "add a bigger company",
+    "horizon": "5-7 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 20000,
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      }
+    ]
+  },
+  "figures": [
+    "ETEL-en-net_profit_for_the_period-FY2025",
+    "ETEL-en-net_profit_for_the_period-FY2024",
+    "ETEL-en-total_equity-31-12-2025",
+    "TMGH-en-net_profit_for_the_period-FY2025",
+    "TMGH-en-net_profit_for_the_period-FY2024",
+    "TMGH-en-total_equity-31-12-2025"
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "buy",
+    "hold",
+    "keep_cash"
+  ],
+  "question": "Is Telecom Egypt bigger than Talaat Moustafa by net profit and by equity?",
+  "notes": "Trap: Telecom Egypt prints EGP thousands, Talaat Moustafa whole pounds."
+}

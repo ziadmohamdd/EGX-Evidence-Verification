@@ -1,0 +1,51 @@
+{
+  "case_id": "test_021",
+  "split": "test",
+  "trap": "arabic_only",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "شراء أسهم شركة عقارات قوية",
+    "horizon": "٥ سنوات",
+    "liquidity_needs": "لدي صندوق طوارئ منفصل",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "ar"
+  },
+  "portfolio": {
+    "cash": 50000,
+    "holdings": []
+  },
+  "figures": [
+    {
+      "key": "TMGH-ar-revenue-FY2025",
+      "label": "الإيرادات"
+    },
+    {
+      "key": "TMGH-ar-revenue-change-FY",
+      "label": "الإيرادات"
+    },
+    {
+      "key": "TMGH-ar-basic_earnings_per_share-FY2025",
+      "label": "نصيب السهم فى الأرباح"
+    },
+    {
+      "key": "TMGH-ar-basic_earnings_per_share-FY2024",
+      "label": "نصيب السهم فى الأرباح"
+    },
+    {
+      "key": "TMGH-ar-basic_earnings_per_share-change-FY",
+      "label": "نصيب السهم فى الأرباح"
+    },
+    {
+      "key": "TMGH-ar-net_profit_for_the_period-FY2024",
+      "label": "ربح العام بعد الضرائب"
+    }
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "buy",
+    "keep_cash"
+  ],
+  "question": null,
+  "notes": "Trap: evidence only from the Arabic summary (Arabic-Indic digits, change in % column). Arabic investor."
+}

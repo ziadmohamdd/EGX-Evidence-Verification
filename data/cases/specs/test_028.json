@@ -1,0 +1,47 @@
+{
+  "case_id": "test_028",
+  "split": "test",
+  "trap": "near_duplicates",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "add to Edita",
+    "horizon": "5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 15000,
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "figures": [
+    "EFID-en-gross_profit-FY2025",
+    "EFID-en-gross_profit-FY2024",
+    "EFID-en-profit_before_tax-FY2025",
+    "EFID-en-profit_before_tax-FY2024",
+    "EFID-en-net_profit_for_the_period-FY2025",
+    "EFID-en-net_profit_for_the_period-FY2024",
+    {
+      "key": "EFID-en-basic_earnings_per_share-FY2025",
+      "label": "Basic and Diluted earnings per share (consolidated)"
+    },
+    {
+      "key": "EFID-en-basic_earnings_per_share-FY2024",
+      "label": "Basic and Diluted earnings per share (consolidated)"
+    }
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "hold",
+    "buy",
+    "keep_cash"
+  ],
+  "question": "By how much did Edita's profit before tax grow in 2025?",
+  "notes": "Trap: three look-alike profit lines for two years each. The question asks for profit before tax."
+}

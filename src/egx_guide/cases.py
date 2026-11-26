@@ -140,8 +140,8 @@ def _with_row_neighbours(case_id: str, chosen: list[EvidenceItem], items: list[E
                     problems.append(f"{case_id}: {nb.evidence_id} ({nb.label!r}, {nb.period}) is printed in the row "
                                     f"of a chosen figure but has no hand-checked value; add it to the reference sheet")
                     continue
-                ref = ReferenceFigure(value=fig.value, usable=fig.usable and fig.value is not None,
-                                      note=fig.note, in_coverage=False)
+                ref = ReferenceFigure(value=fig.value, usable=fig.usable and fig.value is not None
+                                      and nb.status is EvidenceStatus.VERIFIED, note=fig.note, in_coverage=False)
             if nb.columns is None and (nb.document, nb.page) in columns:
                 nb = nb.model_copy(update={"columns": columns[(nb.document, nb.page)]})
             out.append(nb)
@@ -191,7 +191,8 @@ def build_case(
         if provisional:  # the reader's own value stands in for the hand-checked one
             fig = fig.model_copy(update={"value": item.value,
                                          "usable": item.status is EvidenceStatus.VERIFIED and item.value is not None})
-        usable = fig.usable
+        # a figure the agents see as unreadable cannot be relied on, whatever the hand-checked value
+        usable = fig.usable and item.status is EvidenceStatus.VERIFIED
         if key in spec.make_ambiguous:
             item = item.model_copy(update={"status": EvidenceStatus.AMBIGUOUS, "value": None,
                                            "note": f"unreadable: {spec.make_ambiguous[key]}"})
@@ -297,9 +298,12 @@ def main(argv=None):
     prices = json.loads(a.prices.read_text(encoding="utf-8"))
     columns = load_columns(a.columns)
 
-    all_problems, built = [], 0
+    all_problems, built, skipped = [], 0, 0
     for f in sorted(a.specs.glob("*.json")):
         spec = CaseSpec.model_validate_json(f.read_text(encoding="utf-8"))
+        if a.provisional and spec.split == "test":
+            skipped += 1  # test cases are built only from the hand-checked figures
+            continue
         try:
             case, ref, problems = build_case(spec, items, figures, prices, provisional=a.provisional,
                                              columns=columns)
@@ -318,6 +322,8 @@ def main(argv=None):
         built += 1
         print(f"{spec.case_id} ({spec.split}{', trap: ' + spec.trap if spec.trap else ''}): "
               f"{len(case.evidence)} figures, prices {case.prices}")
+    if skipped:
+        print(f"{skipped} test specs skipped: they are built only from the hand-checked figures (no --provisional)")
     print(f"{built} cases built, {len(all_problems)} problems")
     for p in all_problems:
         print("  -", p)

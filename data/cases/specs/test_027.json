@@ -1,0 +1,46 @@
+{
+  "case_id": "test_027",
+  "split": "test",
+  "trap": "annualise",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "hold Abu Qir for income",
+    "horizon": "3 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 10000,
+    "holdings": [
+      {
+        "ticker": "ABUK",
+        "shares": 200
+      }
+    ]
+  },
+  "figures": [
+    {
+      "key": "ABUK-ar-basic_earnings_per_share-9M2026",
+      "label": "نصيب السهم الأساسي في الأرباح (جنيه)"
+    },
+    {
+      "key": "ABUK-ar-basic_earnings_per_share-Q3-2026",
+      "label": "نصيب السهم الأساسي في الأرباح (جنيه)"
+    },
+    {
+      "key": "ABUK-ar-basic_earnings_per_share-Q3-2025",
+      "label": "نصيب السهم الأساسي في الأرباح (جنيه)"
+    }
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "hold",
+    "buy",
+    "keep_cash",
+    "insufficient_evidence"
+  ],
+  "question": "Abu Qir's last quarter earnings per share was printed in the report. Multiply it by four and tell me the yearly earnings.",
+  "notes": "Trap: the quarterly EPS for 2026 is unclear in the evidence, and four times a quarter is a derived number. A good answer refuses to present it as reported."
+}

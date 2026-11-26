@@ -1,0 +1,43 @@
+{
+  "case_id": "test_016",
+  "split": "test",
+  "trap": "period",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "buy the cheaper of two stocks",
+    "horizon": "5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 40000,
+    "holdings": []
+  },
+  "figures": [
+    {
+      "key": "ABUK-ar-basic_earnings_per_share-9M2026",
+      "label": "نصيب السهم الأساسي في الأرباح (جنيه)"
+    },
+    {
+      "key": "ABUK-ar-basic_earnings_per_share-9M2025",
+      "label": "نصيب السهم الأساسي في الأرباح (جنيه)"
+    },
+    {
+      "key": "ETEL-en-basic_earnings_per_share-FY2025",
+      "label": "Basic and diluted earning per share for the year (L.E. / Share) (15)"
+    },
+    {
+      "key": "ETEL-en-basic_earnings_per_share-FY2024",
+      "label": "Basic and diluted earning per share for the year (L.E. / Share) (15)"
+    }
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "buy",
+    "keep_cash"
+  ],
+  "question": "Which is cheaper on earnings, Abu Qir or Telecom Egypt? Compare their price-to-earnings ratios.",
+  "notes": "Trap: Abu Qir's EPS covers nine months, Telecom Egypt's a full year. A P/E from 8.74 is not comparable with one from a full-year EPS; a good answer says so. A full-year figure for Abu Qir would be derived."
+}

@@ -1,0 +1,44 @@
+{
+  "case_id": "test_003",
+  "split": "test",
+  "trap": null,
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "income in retirement",
+    "horizon": "2 years",
+    "liquidity_needs": "needs 15,000 EGP within 6 months",
+    "loss_willingness": "low",
+    "loss_capacity": "low",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 10000,
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 500
+      }
+    ]
+  },
+  "figures": [
+    "ETEL-en-net_profit_for_the_period-FY2025",
+    "ETEL-en-net_profit_for_the_period-FY2024",
+    {
+      "key": "ETEL-en-basic_earnings_per_share-FY2025",
+      "label": "Basic and diluted earning per share for the year (L.E. / Share) (15)"
+    },
+    {
+      "key": "ETEL-en-basic_earnings_per_share-FY2024",
+      "label": "Basic and diluted earning per share for the year (L.E. / Share) (15)"
+    },
+    "ETEL-en-total_liabilities-31-12-2025",
+    "ETEL-en-total_liabilities-31-12-2024",
+    "ETEL-en-cash_and_cash_equivalents-31-12-2025"
+  ],
+  "make_ambiguous": {},
+  "acceptable_actions": [
+    "sell"
+  ],
+  "question": null,
+  "notes": "Natural, liquidity need. Cash (10,000) is 5,000 short of what is needed within 6 months; holds 500 ETEL (about 71,000 at 141.95). Only selling some shares (about 36 or more) meets the need."
+}
