@@ -183,3 +183,28 @@ def test_concentrated_buy_uses_the_portfolio_after_the_trade():
     assert big.concentrated_buy and big.concentration > 0.99
     assert not small.concentrated_buy and small.concentration < 0.1
     assert score_record(record(rec(action="hold")), REF, case=case).concentration is None
+
+
+def test_wrong_claims_are_classified_by_what_they_match():
+    from egx_guide.models import EvidenceItem, EvidenceStatus
+    from egx_guide.score import ErrorType, score_recommendation
+
+    def ev(eid, period, value, row="Net profit | 1,250,000 | 1,000,000 | 25% | unit: EGP thousands", page=5):
+        return EvidenceItem(evidence_id=eid, company="SYNA", document="d.pdf", page=page, label="Net profit",
+                            source_text=row, value=value, scale=1000.0, period=period,
+                            status=EvidenceStatus.VERIFIED)
+    evidence = {e.evidence_id: e for e in [
+        ev("np", "2025", 1_250e6), ev("np24", "2024", 1_000e6),
+        ev("eq", "2025", 9_000e6, row="Total equity | 9,000,000 | 8,000,000 | unit: EGP thousands", page=4),
+        ev("bad", "2025", 7e6, row="Cash | 7,500 | unit: EGP thousands", page=4),  # reader dropped the 500
+    ]}
+    ref = ReferenceAnswer.model_validate({"case_id": "c1", "acceptable_actions": ["hold"], "figures": {
+        "np": {"value": 1_250e6}, "np24": {"value": 1_000e6, "in_coverage": False},
+        "eq": {"value": 9_000e6}, "bad": {"value": 7.5e6}, "rev": {"value": None, "usable": False}}})
+    claims = [("np", 1_000e6), ("np", 25), ("np", 1_250e3), ("np", 9_000e6), ("bad", 7e6), ("np", 77),
+              ("rev", 5), ("nope", 1), ("np", 1_250e6)]
+    s = score_recommendation(rec(claims), ref, evidence=evidence)
+    assert [c.error_type for c in s.claims] == [
+        ErrorType.OTHER_IN_ROW, ErrorType.ROW_NUMBER, ErrorType.SCALE, ErrorType.OTHER_FIGURE,
+        ErrorType.READER_ERROR, ErrorType.NOT_IN_EVIDENCE, ErrorType.AMBIGUOUS_USED, ErrorType.UNKNOWN_ID, None]
+    assert score_recommendation(rec(claims), ref).claims[0].error_type is None  # no evidence, no type

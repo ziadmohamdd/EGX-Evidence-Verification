@@ -38,7 +38,8 @@ from pathlib import Path
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 from .checks import CONCENTRATION_LIMIT
-from .models import Action, Case
+from .models import Action, Case, EvidenceItem
+from .numbers import parse_amount
 from .verifier import text_findings
 
 SCORE_REL_TOL = 0.005  # 0.5%: rounding in prose is fine; wrong digits or scale are not
@@ -100,6 +101,18 @@ class ClaimVerdict(StrEnum):
     UNKNOWN = "unknown"                # cites an evidence_id that does not exist
 
 
+class ErrorType(StrEnum):
+    """Why a cited figure is wrong (needs the case's evidence; see classify_error)."""
+    READER_ERROR = "reader_error_copied"      # the agent copied the evidence, but the reader misread the page
+    SCALE = "scale"                           # off by 1,000x / 1,000,000x / ...
+    OTHER_IN_ROW = "other_number_in_row"      # another number from the same printed row, cited under this ID
+    ROW_NUMBER = "row_number_without_id"      # a number printed in the row that has no evidence ID of its own
+    OTHER_FIGURE = "other_figure_in_case"     # another evidence figure of the case, cited under this ID
+    NOT_IN_EVIDENCE = "not_in_evidence"       # matches nothing in the evidence: misread, invented or derived
+    AMBIGUOUS_USED = "ambiguous_used"
+    UNKNOWN_ID = "unknown_id"
+
+
 @dataclass
 class ScoredClaim:
     evidence_id: str
@@ -107,6 +120,7 @@ class ScoredClaim:
     reference_value: float | None
     verdict: ClaimVerdict
     scale_error: float | None = None  # e.g. 1e6 if the agent dropped "millions"
+    error_type: str | None = None     # an ErrorType value, for wrong claims when the evidence is known
 
 
 @dataclass
@@ -193,8 +207,54 @@ def judge_claim(evidence_id: str, stated: float, ref: ReferenceAnswer, rel_tol: 
     return ScoredClaim(evidence_id, stated, fig.value, ClaimVerdict.WRONG_VALUE, scale)
 
 
-def score_recommendation(rec: dict, ref: ReferenceAnswer, rel_tol: float = SCORE_REL_TOL) -> RecScore:
+def _row_cells(item: EvidenceItem) -> list[float]:
+    """The numbers printed in an evidence item's row, as stated and at the item's scale."""
+    out = []
+    for cell in item.source_text.split(" | unit:")[0].split(" | ")[1:]:
+        cell = cell.replace("%", "").replace("٪", "").replace("`", "").strip()
+        parsed = parse_amount(cell) if cell else None
+        if parsed and not parsed.uncertain and parsed.value is not None:
+            out += [parsed.value, parsed.value * item.scale]
+    return out
+
+
+def classify_error(claim: ScoredClaim, evidence: dict[str, EvidenceItem], ref: ReferenceAnswer,
+                   rel_tol: float) -> str:
+    """Why a wrong claim is wrong. The order matters: the most specific explanation wins."""
+    if claim.verdict is ClaimVerdict.UNKNOWN:
+        return ErrorType.UNKNOWN_ID
+    if claim.verdict is ClaimVerdict.AMBIGUOUS_USED:
+        return ErrorType.AMBIGUOUS_USED
+    stated, item = claim.stated_value, evidence.get(claim.evidence_id)
+    if item is not None and item.value is not None and _close(stated, item.value, rel_tol):
+        return ErrorType.READER_ERROR
+    if claim.scale_error is not None:
+        return ErrorType.SCALE
+    def matches(other: EvidenceItem) -> bool:
+        r = ref.figures.get(other.evidence_id)
+        vals = [v for v in (other.value, r.value if r else None) if v is not None]
+        return any(_close(stated, v, rel_tol) for v in vals)
+    if item is not None:
+        row = item.source_text.split(" | unit:")[0].strip()
+        same_row = [o for o in evidence.values() if o.evidence_id != item.evidence_id
+                    and o.document == item.document and o.page == item.page
+                    and o.source_text.split(" | unit:")[0].strip() == row]
+        if any(matches(o) for o in same_row):
+            return ErrorType.OTHER_IN_ROW
+        if any(_close(stated, v, rel_tol) for v in _row_cells(item)):
+            return ErrorType.ROW_NUMBER
+    if any(matches(o) for o in evidence.values() if o.evidence_id != claim.evidence_id):
+        return ErrorType.OTHER_FIGURE
+    return ErrorType.NOT_IN_EVIDENCE
+
+
+def score_recommendation(rec: dict, ref: ReferenceAnswer, rel_tol: float = SCORE_REL_TOL,
+                         evidence: dict[str, EvidenceItem] | None = None) -> RecScore:
     claims = [judge_claim(c["evidence_id"], float(c["stated_value"]), ref, rel_tol) for c in rec.get("claims", [])]
+    if evidence is not None:
+        for c in claims:
+            if c.verdict is not ClaimVerdict.CORRECT:
+                c.error_type = str(classify_error(c, evidence, ref, rel_tol))
     usable = {k for k, f in ref.figures.items() if f.usable and f.in_coverage}
     covered = {c.evidence_id for c in claims if c.verdict is ClaimVerdict.CORRECT} & usable
     values = {k: f.value for k, f in ref.figures.items() if f.usable and f.value is not None}
@@ -230,11 +290,12 @@ def score_record(rec: dict, ref: ReferenceAnswer | None, rel_tol: float = SCORE_
     final = rec["final"]
     action = Action(final["action"])
     verifier = rec.get("verifier") or {}
-    final_score = score_recommendation(final, ref, rel_tol)
+    evidence = {e.evidence_id: e for e in case.evidence} if case else None
+    final_score = score_recommendation(final, ref, rel_tol, evidence)
     weight = concentration_after(rec, case) if case else None
     return RecordScore(
         case_id=rec["case_id"], condition=rec["condition"], scored=True,
-        proposed=score_recommendation(rec.get("proposed") or final, ref, rel_tol),
+        proposed=score_recommendation(rec.get("proposed") or final, ref, rel_tol, evidence),
         final=final_score,
         action=action.value,
         action_acceptable=action in ref.acceptable_actions,
@@ -317,6 +378,10 @@ def summarise(rows: list[RecordScore]) -> list[dict]:
             "proposed_text_uncited": sum(len(r.proposed.text_uncited) for r in ok),
             "no_figure_decisions": sum(r.no_figure_decision for r in ok),
             "concentrated_buys": sum(r.concentrated_buy for r in ok),
+            # why figures are wrong, before and after the verifier (needs --cases)
+            **{f"err_{t.value}": sum(c.error_type == t.value for r in ok for c in r.final.claims) for t in ErrorType},
+            **{f"proposed_err_{t.value}": sum(c.error_type == t.value for r in ok for c in r.proposed.claims)
+               for t in ErrorType},
         })
     return out
 
