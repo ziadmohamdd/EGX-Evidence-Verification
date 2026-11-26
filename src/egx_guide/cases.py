@@ -44,7 +44,7 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field
 
 from .models import Action, Case, EvidenceItem, EvidenceStatus, InvestorProfile, Portfolio
-from .references import RefFigure, _pages, load_evidence, match_items, template_rows
+from .references import RefFigure, _pages, _same_period, load_evidence, match_items, template_rows
 from .score import ReferenceAnswer, ReferenceFigure
 
 # The last four push the agents toward citing a figure with the wrong value, which is what
@@ -96,10 +96,29 @@ def _row_key(item: EvidenceItem) -> tuple[str, int | None, str]:
     return item.document, item.page, item.source_text.split(" | unit:")[0].strip()
 
 
+def _sheet_row_for(nb: EvidenceItem, chosen_key: str | None, figures: dict[str, RefFigure]) -> RefFigure | None:
+    """The reference-sheet row for a number printed in a chosen figure's row.
+
+    First the row for the same item as the chosen figure in the neighbour's period (the sheet
+    keys are company-lang-item-period, so only the period part differs); labels are not
+    compared, since the reader's label and the sheet's item name often differ. Failing that,
+    any row the usual label matching finds.
+    """
+    chosen = figures.get(chosen_key) if chosen_key else None
+    if chosen and chosen_key.endswith("-" + chosen.period_code):
+        prefix = chosen_key[: -len(chosen.period_code)]
+        same_item = [f for k, f in figures.items()
+                     if k.startswith(prefix) and f.document == nb.document
+                     and k[len(prefix):] == f.period_code and _same_period(f, nb)]
+        if same_item:
+            return same_item[0]
+    return next((f for f in figures.values() if match_items(f, [nb])), None)
+
+
 def _with_row_neighbours(case_id: str, chosen: list[EvidenceItem], items: list[EvidenceItem],
                          figures: dict[str, RefFigure], ref_figs: dict[str, ReferenceFigure],
                          columns: dict[tuple[str, int], str], provisional: bool,
-                         problems: list[str]) -> list[EvidenceItem]:
+                         problems: list[str], chosen_keys: dict[str, str]) -> list[EvidenceItem]:
     """Add every other figure the reader took from a chosen figure's printed row.
 
     The agents see the whole row (e.g. 2025, 2024 and the change in %), so each number in it
@@ -116,7 +135,7 @@ def _with_row_neighbours(case_id: str, chosen: list[EvidenceItem], items: list[E
                 ref = ReferenceFigure(value=nb.value, usable=nb.status is EvidenceStatus.VERIFIED and nb.value is not None,
                                       note="PROVISIONAL: reader output, not hand-checked", in_coverage=False)
             else:
-                fig = next((f for f in figures.values() if match_items(f, [nb])), None)
+                fig = _sheet_row_for(nb, chosen_keys.get(item.evidence_id), figures)
                 if fig is None:
                     problems.append(f"{case_id}: {nb.evidence_id} ({nb.label!r}, {nb.period}) is printed in the row "
                                     f"of a chosen figure but has no hand-checked value; add it to the reference sheet")
@@ -149,6 +168,7 @@ def build_case(
     problems: list[str] = []
     evidence: list[EvidenceItem] = []
     ref_figs: dict[str, ReferenceFigure] = {}
+    chosen_keys: dict[str, str] = {}  # evidence ID -> reference-sheet key
 
     for entry in spec.figures:
         key, label = (entry, None) if isinstance(entry, str) else (entry.key, entry.label)
@@ -177,10 +197,12 @@ def build_case(
                                            "note": f"unreadable: {spec.make_ambiguous[key]}"})
             usable = False
         evidence.append(item)
+        chosen_keys[item.evidence_id] = key
         ref_figs[item.evidence_id] = ReferenceFigure(value=fig.value, usable=usable and fig.value is not None,
                                                      note=fig.note)
 
-    evidence = _with_row_neighbours(spec.case_id, evidence, items, figures, ref_figs, columns, provisional, problems)
+    evidence = _with_row_neighbours(spec.case_id, evidence, items, figures, ref_figs, columns, provisional, problems,
+                                    chosen_keys)
 
     unknown_traps = set(spec.make_ambiguous) - {e if isinstance(e, str) else e.key for e in spec.figures}
     if unknown_traps:

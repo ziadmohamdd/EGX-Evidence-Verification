@@ -51,10 +51,24 @@ def test_sheet_round_trip_keeps_numbers_as_printed(tmp_path):
     ("18.25", "EGP per share", 18.25),
     ("33.4%", "EGP thousands", 33.4),
     ("12,969,606,637", "Egyptian pound", 12_969_606_637),
+    ("٪٤٦", "العملة بالجنية المصرى", 46),
+    ("%(٤)", "", -4),
+    ("٪٥٩,٦", "", 59.6),
 ])
 def test_values_are_computed_from_printed_number_and_unit(printed, unit, value):
     [f], problems = build_figures([row(printed_value=printed, unit_as_printed=unit)])
     assert problems == [] and f.value == pytest.approx(value) and f.usable
+
+
+def test_change_rows_are_read_as_percent_even_without_the_sign():
+    [f], problems = build_figures([row(period_code="change-9M", printed_value="(12)", unit_as_printed="مليون جنيه")])
+    assert problems == [] and f.value == -12
+
+
+def test_template_has_quarter_and_change_rows_where_printed():
+    keys = {r["figure_key"] for r in template_rows()}
+    assert {"ABUK-ar-revenue-Q3-2026", "ABUK-ar-revenue-change-9M", "ABUK-ar-revenue-change-Q3",
+            "TMGH-ar-basic_earnings_per_share-change-FY"} <= keys
 
 
 def test_per_share_row_with_thousands_unit_is_a_problem():

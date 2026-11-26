@@ -113,6 +113,24 @@ def test_neighbours_use_hand_checked_values_or_are_reported():
     assert len(problems) == 1 and "rch" in problems[0] and "reference sheet" in problems[0]
 
 
+def test_neighbours_find_the_sheet_row_of_the_same_item_whatever_their_label():
+    from egx_guide.cases import _sheet_row_for
+    rows = [{"figure_key": f"COMI-en-revenue-{p}", "company": "COMI", "document": DOC, "page": "5",
+             "statement": "income statement", "item": "Revenue", "period_code": p}
+            for p in ("9M2026", "9M2025", "Q3-2026", "Q3-2025", "change-9M", "change-Q3")]
+    figs = template_figures(rows)
+    row = "Sales | 10 | 8 | 4 | 3 | 25% | 33%"
+    def nb(period):
+        return ev("n", "Sales of goods (consolidated)", period, 1.0, row=row)
+    assert _sheet_row_for(nb("three months ended 30 September 2026"), "COMI-en-revenue-9M2026", figs).figure_key \
+        == "COMI-en-revenue-Q3-2026"
+    assert _sheet_row_for(nb("nine months 2025"), "COMI-en-revenue-9M2026", figs).figure_key == "COMI-en-revenue-9M2025"
+    assert _sheet_row_for(nb("فترة التسعة أشهر - التغير (%)"), "COMI-en-revenue-9M2026", figs).figure_key \
+        == "COMI-en-revenue-change-9M"
+    assert _sheet_row_for(nb("فترة الثلاثة أشهر - التغير (%)"), "COMI-en-revenue-9M2026", figs).figure_key \
+        == "COMI-en-revenue-change-Q3"
+
+
 def test_coverage_ignores_neighbours():
     from egx_guide.score import ReferenceAnswer, ReferenceFigure, score_recommendation
     ref = ReferenceAnswer(case_id="x", acceptable_actions=["hold"], figures={

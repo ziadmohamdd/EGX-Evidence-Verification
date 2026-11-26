@@ -77,14 +77,17 @@ REPORTS = [
      {"income statement": ("FY2025", "FY2024"), "balance sheet": ("31-12-2025", "31-12-2024")}),
     ("TMGH", "TMGH_FY2025_results_summary_ar.pdf", COMPANY_ITEMS,
      {"income statement": "1", "balance sheet": "1"},
-     {"income statement": ("FY2025", "FY2024"), "balance sheet": ("31-12-2025", "31-12-2024")}),
+     {"income statement": ("FY2025", "FY2024", "change-FY"), "balance sheet": ("31-12-2025", "31-12-2024")}),
     ("EFID", "EFID_FY2025_EAS_consolidated_signed_en.pdf", COMPANY_ITEMS,
      {"income statement": "6", "balance sheet": "5"},
      {"income statement": ("FY2025", "FY2024"), "balance sheet": ("31-12-2025", "31-12-2024")}),
     ("ABUK", "ABUK_9M2026_results.pdf", COMPANY_ITEMS,
      {"income statement": "", "balance sheet": ""},
-     {"income statement": ("9M2026", "9M2025"), "balance sheet": ("30-09-2026", "31-12-2025")}),
+     {"income statement": ("9M2026", "9M2025", "Q3-2026", "Q3-2025", "change-9M", "change-Q3"),
+      "balance sheet": ("30-09-2026", "31-12-2025")}),
 ]
+# Period codes beyond years: Q3-2026 = the three months Jul-Sep 2026; change-9M / change-Q3 /
+# change-FY = the printed change in % between the two nine-month, three-month or full-year columns.
 
 
 def _slug(s: str) -> str:
@@ -229,7 +232,9 @@ def build_figures(rows: list[dict], require_checked: bool = True) -> tuple[list[
         value = None
         unit = (r.get("unit_as_printed") or "").strip() or None
         if usable:
-            parsed = parse_amount(printed)
+            # a percentage may be printed "46%", "٪٤٦" or "%(4)": read the number without the sign
+            is_pct = "%" in printed or "٪" in printed or r.get("period_code", "").startswith("change")
+            parsed = parse_amount(printed.replace("%", "").replace("٪", "").strip() if is_pct else printed)
             if parsed.uncertain:
                 problems.append(f"{key}: value {printed!r} cannot be read ({parsed.reason}); "
                                 "fix it or mark usable=no with a note")
@@ -239,7 +244,7 @@ def build_figures(rows: list[dict], require_checked: bool = True) -> tuple[list[
                 problems.append(f"{key}: per share figures are in pounds, not {unit!r}; "
                                 "write the unit as 'EGP per share'")
                 continue
-            if printed.endswith("%") or kind == "count":
+            if is_pct or kind == "count":
                 scale = 1.0
             else:
                 scale = detect_scale(unit or "")[0]
@@ -274,7 +279,21 @@ def _years(s: str | None) -> set[str]:
     return set(re.findall(r"(?<!\d)(?:19|20)\d{2}(?!\d)", normalize(s or "")))
 
 
+def _period_kind(s: str | None) -> tuple[bool, str | None]:
+    """(is a change in %, span): span is 'Q3' for three months, '9M' for nine months, else None."""
+    t = normalize(s or "").lower()
+    change = any(w in t for w in ("%", "٪", "تغير", "change"))
+    span = ("Q3" if any(w in t for w in ("الثلاثة", "three", "q3", "3m")) else
+            "9M" if any(w in t for w in ("التسعة", "nine", "9m")) else None)
+    return change, span
+
+
 def _same_period(fig: RefFigure, item: EvidenceItem) -> bool:
+    (f_change, f_span), (i_change, i_span) = _period_kind(fig.period_code), _period_kind(item.period)
+    if f_change != i_change or (f_span and i_span and f_span != i_span):
+        return False
+    if f_change:  # a change in % has no year of its own: the span must agree
+        return f_span == i_span
     want = _years(fig.period_as_printed) or _years(fig.period_code)
     got = _years(item.period)
     if not want or not got:

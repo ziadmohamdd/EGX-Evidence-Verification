@@ -20,7 +20,7 @@ These figures are the **ground truth** for the paper. Every result we report, in
 | `figure_key`, `company`, `document`, `statement`, `item` | already filled | What to look for. Don't change these. |
 | `page` | already filled, or blank | Page where the statement is. Correct it if wrong. Fill it in if blank (Abu Qir). For a range, write `5-6`. |
 | `line_item_as_printed` | you | The row label **exactly as printed**, in the report's language. E.g. `Net profit for the year` or `صافي ربح العام`. |
-| `period_code` | already filled | `FY2025` = full year 2025, `9M2026` = Jan–Sep 2026, `31-12-2025` = balance sheet date. Correct it if the column you read is a different period. |
+| `period_code` | already filled | `FY2025` = full year 2025, `9M2026` = Jan–Sep 2026, `Q3-2026` = the three months Jul–Sep 2026, `31-12-2025` = balance sheet date, `change-9M` / `change-Q3` / `change-FY` = the printed change in % between the two nine-month, three-month or full-year columns. Correct it if the column you read is a different period. |
 | `period_as_printed` | you | The column header as printed, e.g. `Dec. 31, 2025` or `٣١ ديسمبر ٢٠٢٥`. |
 | `printed_value` | you | The number **exactly as printed**: keep commas, brackets and Arabic digits. E.g. `(1,234,567)`, `٥٥٬١٢٣`, `18.25`. |
 | `unit_as_printed` | you | The unit that applies to **this** number, as printed, e.g. `EGP thousands`, `L.E. (000)`, `بالألف جنيه`, `EGP`. See the rules below. |
@@ -39,11 +39,11 @@ These figures are the **ground truth** for the paper. Every result we report, in
 - Look for the unit line on the statement page. It's often in the page header, e.g. CIB's "All amounts are shown in EGP thousands", or in the column header, e.g. `L.E.(000)`.
 - If only a currency is printed with no "thousands" or "millions" (e.g. Edita's `EGP` or Talaat Moustafa's `LE`), write just that currency. It means whole pounds.
 - **Earnings per share** is always in pounds per share, even on a page that says "thousands". Write `EGP per share`.
-- Percentages: copy them with the `%` sign and leave the unit as is.
+- Percentages: copy them with the `%` or `٪` sign, as printed, e.g. `٪٤٦` or `%(٤)`, and leave the unit as is. Rows with a `change-…` period are always read as percentages.
 
 **Negative numbers:** keep the brackets: `(26,645,418,395)`.
 
-**Periods:** the income statement shows a period (a full year, or 9 months), and the balance sheet shows a date. Abu Qir's report covers **9 months** (Jan–Sep 2026). Don't confuse it with a full year. Some reports also show a 3-month column next to the 9- or 12-month one, so make sure you read the right column.
+**Periods:** the income statement shows a period (a full year, or 9 months), and the balance sheet shows a date. Abu Qir's report covers **9 months** (Jan–Sep 2026). Don't confuse it with a full year. Some reports also show a 3-month column next to the 9- or 12-month one, so make sure you read the right column. Abu Qir's and Talaat Moustafa's summary pages also print the 3-month figures and a change-in-% column; these have their own rows (`Q3-…` and `change-…` periods), because the agents see and cite those numbers too.
 
 **Consolidated, not separate.** Use the consolidated (group) statements. They're the documents listed in the sheet.
 
