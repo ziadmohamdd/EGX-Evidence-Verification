@@ -136,7 +136,7 @@ The ground truth is a hand-filled reference sheet with 146 figures. One author r
 - the number exactly as printed;
 - the unit.
 
-Code converts each number to whole pounds with the same rules as the reader. Every row is then compared with the page image in an AI-assisted pass that lists apparent disagreements and never supplies values. The author re-reads the PDF for each listed row and makes the final call. **[after test runs]:** how many rows were flagged, and how many corrected.
+Code converts each number to whole pounds with the same rules as the reader. Every row is then checked in two ways (`egx_guide.sheetcheck`). Plain code tests the author's own values for consistency: the printed change in % against the two period values, assets against liabilities plus equity, a three-month figure against the nine-month one, the two Talaat Moustafa reports against each other, and, on pages with a text layer, whether the number, unit and line item appear on the page. An AI-assisted pass then compares each row with the page image and records whether it agrees and which part looks wrong; it never supplies values, and the tool rejects a note containing a figure. The author re-reads the PDF for each listed row and makes the final call. **[after test runs]:** how many rows were flagged, and how many corrected.
 
 A figure counts as **usable** only if the sheet gives its value *and* the evidence the agents see shows it as readable. A figure the agents see as unclear can't be relied on, whatever its true value.
 

@@ -18,7 +18,7 @@ These figures are the **ground truth** for the paper. Every result we report, in
 | Column | Who | What to write |
 |---|---|---|
 | `figure_key`, `company`, `document`, `statement`, `item` | already filled | What to look for. Don't change these. |
-| `page` | already filled, or blank | Page where the statement is. Correct it if wrong. Fill it in if blank (Abu Qir). For a range, write `5-6`. |
+| `page` | already filled, or blank | Page where the statement is: the PDF viewer's page number, not the number printed at the foot of the page. Correct it if wrong. Fill it in if blank (Abu Qir). For a range, write `5-6`. |
 | `line_item_as_printed` | you | The row label **exactly as printed**, in the report's language. E.g. `Net profit for the year` or `صافي ربح العام`. |
 | `period_code` | already filled | `FY2025` = full year 2025, `9M2026` = Jan–Sep 2026, `Q3-2026` = the three months Jul–Sep 2026, `31-12-2025` = balance sheet date, `change-9M` / `change-Q3` / `change-FY` = the printed change in % between the two nine-month, three-month or full-year columns. Correct it if the column you read is a different period. |
 | `period_as_printed` | you | The column header as printed, e.g. `Dec. 31, 2025` or `٣١ ديسمبر ٢٠٢٥`. |
@@ -61,7 +61,25 @@ These figures are the **ground truth** for the paper. Every result we report, in
 
 ## When you're done
 
-Save the file in `data/references/` under the same name and tell Claude. It will run:
+Save the file in `data/references/` under the same name and tell Claude. You can also send part of it; checking works on whatever rows are filled.
+
+**The check.** Claude runs:
+
+```powershell
+.venv\Scripts\python -m egx_guide.sheetcheck
+```
+
+This uses only your sheet and the PDFs, never system output, and writes `data/references/check/`:
+- `review.html`: each statement page as an image beside the rows you read from it, with the rows that need a second look in yellow and the reason next to each. The "in pounds" column is your printed value times your unit, so a wrong unit shows up there.
+- `flags.json`: the flagged rows, and the counts the paper reports.
+
+Rows are flagged by plain-code checks on your own values: the change in % against the two period values, total assets against liabilities plus equity, gross profit against revenue, a three-month figure larger than the nine-month one, two periods of one item differing more than 20 times, Talaat Moustafa's two reports disagreeing, a unit different from the other rows on the page, and empty columns. On pages with a text layer (CIB, part of Telecom Egypt) it also checks that your number, unit and line item are on that page.
+
+Claude then compares every row with the page image and records its verdict in `data/references/check/ai_notes.json`: *agrees*, *disagrees* or *unclear*, with what looks wrong (value, unit, period, line item, page, usable). A note never contains the right number; the tool refuses one that does. Rerun the command and the verdicts appear in `review.html`.
+
+Open `review.html`, re-read the PDF for each yellow row, and fill in the green columns.
+
+**Building the figures.** Then Claude runs:
 
 ```powershell
 .venv\Scripts\python -m egx_guide.references build --sheet data\references\reference_sheet.xlsx
