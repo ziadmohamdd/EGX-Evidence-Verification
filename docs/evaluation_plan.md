@@ -55,11 +55,11 @@ A cited figure is **wrong** if, compared with the hand-checked reference figure:
   - The two primary comparisons are corrected for multiple testing with the Holm method.
 - **Sensitivity checks:**
   - exact McNemar test on per-case majority outcomes
-  - a logistic mixed model with a random effect for case, using all 360 runs
+  - a logistic model over all 360 runs with runs of the same case correlated (GEE, exchangeable correlation, robust errors). statsmodels has no frequentist logistic mixed model, and GEE is its population-averaged equivalent. If a condition has no wrong figures, the effect is reported as not estimable (separation). The paired tests and the exact McNemar test stay valid in that case, which is one reason they are the primary analysis.
   - tolerances of 0.05% and 2% instead of 0.5%
 - **Repeatability:** report how often the 3 repeats of a run disagree, per condition. Some free models ignore the temperature setting, so variation between repeats is expected.
 - **Subgroups (pre-specified, secondary):** the primary comparisons are also reported separately for natural and trap cases, and per trap type as counts. The test set over-samples trap cases (§7), so the natural subgroup is the estimate for ordinary use.
-- **Code:** `python -m egx_guide.stats` computes all of the above except the mixed model, from the scored run folders.
+- **Code:** `python -m egx_guide.stats` computes all of the above from the run folders (install with `pip install -e .[stats]`).
 - **Power, stated honestly:** with 30 paired cases, a large effect (for example 40% → 15%) should show clearly, but a small one may not. Confidence intervals are reported, not just p-values.
 
 ## 6. Secondary measures
@@ -154,6 +154,7 @@ The reader's extraction accuracy is reported on its own, using `python -m egx_gu
 | 2026-11-26 | Every number printed in a chosen figure's row gets its own evidence ID; these count in the error measures but not in coverage. The printed evidence shows the table's column headings (§4). | Development runs showed most "wrong figures" were correct numbers from the same row (the 2024 column, the change in %) cited under the chosen figure's ID, because they had no ID of their own. | Dev only |
 | 2026-11-26 | A figure is usable only if the evidence the agents see shows it as readable (§4). | Otherwise an agent that guessed an unreadable figure would be scored correct. | Dev cases unchanged |
 | 2026-11-26 | Error types and the "errors the verifier cannot see" measure added (§6). | Separates citation errors, misreadings and copied reader errors, which the verifier handles very differently. | Scoring only |
+| 2026-11-26 | Sensitivity model: GEE logistic with runs grouped by case instead of a logistic mixed model (§5). | statsmodels, the free package used, has no frequentist logistic mixed model; GEE estimates the same effect averaged over cases. | Analysis only |
 | 2026-11-25 | Buys that leave more than 50% of the portfolio in one stock are flagged, not blocked; the prompt states the limit. | A rule broken without being reported would be invisible in the results. | Dev only |
 | 2026-11-26 | Final model: Qwen3.8-27B (SovereignEG free plan, json_schema output), one model, no fallback (§10). Gemini 3.5 Flash-Lite as an exploratory second model. Confirmed by the author on 26 November 2026, together with the 15 + 15 test split. | On the development cases it gave acceptable actions in 47 of 48 answers, cited 80–92% of the usable figures, and its free daily allowance covers a full set of runs in about a day. | – |
 | 2026-11-22 | Final runs use one fixed free model instead of paid Claude (§10). | No budget; the project spends no money | No runs yet |
@@ -161,7 +162,6 @@ The reader's extraction accuracy is reported on its own, using `python -m egx_gu
 
 ## Still to build
 
-- The logistic mixed model in §5 (needs the free `statsmodels` package)
 - Exporter for the blinded rating sample, plus a rating sheet
 
-Done: the case builder with trap cases (`egx_guide.cases`), per-case aggregation and the statistics in §5 (`egx_guide.stats`), error types (`egx_guide.score`), and calls per run (recorded in every run record).
+Done: the case builder with trap cases (`egx_guide.cases`), per-case aggregation and the statistics in §5, including the case-clustered logistic model (`egx_guide.stats`), error types (`egx_guide.score`), and calls per run (recorded in every run record).

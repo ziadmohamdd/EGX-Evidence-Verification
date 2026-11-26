@@ -141,6 +141,57 @@ def repeatability(repeats: list[list[RecordScore]]) -> dict[str, dict]:
     return out
 
 
+def clustered_logistic(repeats: list[list[RecordScore]]) -> dict:
+    """Logistic model of 'final recommendation has a wrong figure' over every scored run, with runs of the same
+    case correlated (GEE, exchangeable correlation, robust errors). statsmodels has no frequentist logistic mixed
+    model; GEE gives the population-averaged equivalent of the plan's random effect for case.
+
+    Fits the verifier effect within the single agent (A, B) and within the team (C, D), and the full model with
+    the interaction. Odds ratios with 95% CIs. A condition with no wrong figures (or only wrong ones) makes an
+    effect not estimable (separation); that is reported instead of a meaningless number.
+    """
+    import math
+    import warnings
+
+    import pandas as pd
+    import statsmodels.api as sm
+    import statsmodels.formula.api as smf
+
+    rows = [{"case": r.case_id, "verifier": int(r.condition in "BD"), "team": int(r.condition in "CD"),
+             "cond": r.condition, "wrong": int(r.final.has_incorrect)}
+            for rows_ in repeats for r in rows_ if r.scored]
+    df = pd.DataFrame(rows)
+
+    def fit(data: pd.DataFrame, formula: str, terms: list[str]) -> dict:
+        by_cond = data.groupby("cond")["wrong"].agg(["sum", "count"])
+        if ((by_cond["sum"] == 0) | (by_cond["sum"] == by_cond["count"])).any():
+            return {"estimable": False, "reason": "a condition has no wrong figures (or only wrong ones): separation",
+                    "wrong_by_condition": {c: f"{int(s)}/{int(n)}" for c, (s, n) in by_cond.iterrows()}}
+        try:
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                res = smf.gee(formula, groups="case", data=data, family=sm.families.Binomial(),
+                              cov_struct=sm.cov_struct.Exchangeable()).fit()
+                ci, pvalues = res.conf_int(), res.pvalues
+        except Exception as exc:  # e.g. too few cases
+            return {"estimable": False, "reason": f"fit failed: {exc}"}
+        if ci.isna().any().any():
+            return {"estimable": False, "reason": "standard errors could not be computed"}
+        out = {"estimable": True, "n_runs": int(res.nobs), "n_cases": int(data["case"].nunique()), "terms": {}}
+        for t in terms:
+            out["terms"][t] = {"odds_ratio": math.exp(res.params[t]), "ci95": (math.exp(ci.loc[t, 0]), math.exp(ci.loc[t, 1])),
+                               "p": float(pvalues[t])}
+        return out
+
+    if df.empty:
+        return {}
+    return {
+        "verifier_in_single_agent (B vs A)": fit(df[df.cond.isin(["A", "B"])], "wrong ~ verifier", ["verifier"]),
+        "verifier_in_team (D vs C)": fit(df[df.cond.isin(["C", "D"])], "wrong ~ verifier", ["verifier"]),
+        "full_model": fit(df, "wrong ~ verifier * team", ["verifier", "team", "verifier:team"]),
+    }
+
+
 def analyse(repeats: list[list[RecordScore]]) -> dict:
     result = {"repeats": len(repeats), "measures": {}}
     for name in MEASURES:
@@ -157,6 +208,7 @@ def analyse(repeats: list[list[RecordScore]]) -> dict:
     result["sensitivity"] = {
         "failed_runs_as_wrong": [compare(failed, a, b) for a, b in PRIMARY],
         "mcnemar_majority": [mcnemar_majority(repeats, a, b) for a, b in PRIMARY],
+        "clustered_logistic": clustered_logistic(repeats),
     }
     result["run_errors"] = {}
     for rows in repeats:
@@ -190,6 +242,14 @@ def markdown(result: dict) -> str:
                      f"p = {_f(r['p_wilcoxon'], False)}")
     for r in result["sensitivity"]["mcnemar_majority"]:
         lines.append(f"- McNemar on majority outcome, {r['comparison']}: p = {r['p_exact']:.3f} ({r})")
+    for name, m in result["sensitivity"].get("clustered_logistic", {}).items():
+        if not m.get("estimable"):
+            lines.append(f"- logistic model (runs grouped by case), {name}: not estimable ({m.get('reason')}"
+                         + (f"; wrong/runs {m['wrong_by_condition']}" if m.get("wrong_by_condition") else "") + ")")
+            continue
+        for t, v in m["terms"].items():
+            lines.append(f"- logistic model (runs grouped by case), {name}, {t}: odds ratio {v['odds_ratio']:.2f} "
+                         f"(95% CI {v['ci95'][0]:.2f} to {v['ci95'][1]:.2f}), p = {v['p']:.3f}")
     for tol, rs in result.get("tolerance", {}).items():
         for r in rs:
             lines.append(f"- tolerance {tol}, {r['comparison']}: {_f(r['mean_difference'])}, "

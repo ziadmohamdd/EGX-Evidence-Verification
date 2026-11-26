@@ -20,6 +20,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
 ocr = ["easyocr>=1.7"]  # free local OCR for Arabic scans (pulls in PyTorch)
+stats = ["scipy>=1.11", "statsmodels>=0.14", "pandas>=2.0"]  # egx_guide.stats
 
 [tool.setuptools.packages.find]
 where = ["src"]

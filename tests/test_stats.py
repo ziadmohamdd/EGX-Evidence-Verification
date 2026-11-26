@@ -56,6 +56,20 @@ def test_mcnemar_and_repeatability():
     assert rep["A"] == {"cases": 4, "disagree": 2} and rep["B"] == {"cases": 4, "disagree": 0}
 
 
+def test_clustered_logistic_estimates_odds_ratios_or_reports_separation():
+    from egx_guide.stats import clustered_logistic
+    a = [1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1]
+    b = [0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0]
+    reps = [repeat({"A": a, "B": b, "C": a[::-1], "D": b[::-1]}),
+            repeat({"A": a[1:] + a[:1], "B": b[1:] + b[:1], "C": a, "D": b})]
+    m = clustered_logistic(reps)["verifier_in_single_agent (B vs A)"]
+    assert m["estimable"] and m["terms"]["verifier"]["odds_ratio"] < 1 and m["n_runs"] == 48
+    lo, hi = m["terms"]["verifier"]["ci95"]
+    assert lo < m["terms"]["verifier"]["odds_ratio"] < hi
+    sep = clustered_logistic([repeat({"A": a, "B": [0] * 12, "C": a, "D": b})])["verifier_in_single_agent (B vs A)"]
+    assert not sep["estimable"] and "separation" in sep["reason"] and sep["wrong_by_condition"]["B"] == "0/12"
+
+
 def test_analyse_reports_every_measure_with_primary_and_interaction():
     reps = [repeat({c: [1, 0, 1, 0, 1] for c in "ABCD"})]
     res = analyse(reps)
