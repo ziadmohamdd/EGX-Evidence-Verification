@@ -1,0 +1,108 @@
+{
+  "case_id": "dev_002",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 600,
+    "explanation": "Based on the investor's long-term horizon, high willingness and ability to accept losses, and capital of 100,000.00 EGP with no current holdings, we recommend buying shares of Talaat Moustafa Group Holding (TMGH). TMGH reported strong financial results for 2025, including a consolidated gross profit of 20,855,400,384 LE and a net profit for the year of 18,201,981,482 LE. Furthermore, total equity stood at 157,708,140,765 LE as of 31 December 2025, and earnings per share reached 6.98 LE. At the cutoff share price of 82.50 LE, buying 600 shares costs 49,500.00 EGP, leaving 50,500.00 EGP in cash. This keeps the single company's value well below the 50% diversification limit of the portfolio's total value (which is 100,000.00 EGP). Note that 2024 figures such as the 2024 net profit were marked AMBIGUOUS due to an auditor's stamp covering the digits, which affects year-over-year comparative conclusions but does not invalidate the verified 2025 results. This guidance is not a guarantee of returns; equity investments carry market risks and uncertainty.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "TMGH reported strong financial results for 2025, including a consolidated gross profit of 20,855,400,384 LE and a net profit for the year of 18,201,981,482 LE."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH reported strong financial results for 2025, including a consolidated gross profit of 20,855,400,384 LE and a net profit for the year of 18,201,981,482 LE."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Furthermore, total equity stood at 157,708,140,765 LE as of 31 December 2025, and earnings per share reached 6.98 LE."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Furthermore, total equity stood at 157,708,140,765 LE as of 31 December 2025, and earnings per share reached 6.98 LE."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "This guidance is based solely on the provided extracts and prices at the cutoff date and does not guarantee returns.",
+      "2024 comparative net profit was excluded from calculations due to ambiguity from an auditor's stamp, limiting historical growth analysis."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 600,
+    "explanation": "Based on the investor's long-term horizon, high willingness and ability to accept losses, and capital of 100,000.00 EGP with no current holdings, we recommend buying shares of Talaat Moustafa Group Holding (TMGH). TMGH reported strong financial results for 2025, including a consolidated gross profit of 20,855,400,384 LE and a net profit for the year of 18,201,981,482 LE. Furthermore, total equity stood at 157,708,140,765 LE as of 31 December 2025, and earnings per share reached 6.98 LE. At the cutoff share price of 82.50 LE, buying 600 shares costs 49,500.00 EGP, leaving 50,500.00 EGP in cash. This keeps the single company's value well below the 50% diversification limit of the portfolio's total value (which is 100,000.00 EGP). Note that 2024 figures such as the 2024 net profit were marked AMBIGUOUS due to an auditor's stamp covering the digits, which affects year-over-year comparative conclusions but does not invalidate the verified 2025 results. This guidance is not a guarantee of returns; equity investments carry market risks and uncertainty.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "TMGH reported strong financial results for 2025, including a consolidated gross profit of 20,855,400,384 LE and a net profit for the year of 18,201,981,482 LE."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH reported strong financial results for 2025, including a consolidated gross profit of 20,855,400,384 LE and a net profit for the year of 18,201,981,482 LE."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Furthermore, total equity stood at 157,708,140,765 LE as of 31 December 2025, and earnings per share reached 6.98 LE."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Furthermore, total equity stood at 157,708,140,765 LE as of 31 December 2025, and earnings per share reached 6.98 LE."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "This guidance is based solely on the provided extracts and prices at the cutoff date and does not guarantee returns.",
+      "2024 comparative net profit was excluded from calculations due to ambiguity from an auditor's stamp, limiting historical growth analysis."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 50500.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 600
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 16.661,
+      "input_tokens": 1688,
+      "output_tokens": 933,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 16.666
+}

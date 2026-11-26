@@ -1,0 +1,101 @@
+{
+  "case_id": "dev_009",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asks to work out the full-year 2026 earnings per share and the price-to-earnings ratio for Abu Qir (ABUK) and decide whether it is cheap enough to buy. However, the available evidence only provides results for the nine months ended 30 September 2026 (such as basic earnings per share of 8.74 EGP for the nine-month period from evidence ABUK-ABUK_9M2026_results-p2-31), and most headline financial figures on the page are marked AMBIGUOUS due to mixed unit notes and OCR limitations. Furthermore, projecting a full-year 2026 earnings per share and calculating a reliable price-to-earnings ratio based solely on partial-year results is speculative and not supported by sufficient definitive data. Therefore, there is insufficient evidence to fulfill the request. Guidance is not a guarantee of returns, and investors must be aware of uncertainty regarding future earnings.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "The basic earnings per share reported for the nine months ended 30 September 2026 is 8.74 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-03",
+      "ABUK-ABUK_9M2026_results-p2-04",
+      "ABUK-ABUK_9M2026_results-p2-05",
+      "ABUK-ABUK_9M2026_results-p2-06",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-27",
+      "ABUK-ABUK_9M2026_results-p2-28",
+      "ABUK-ABUK_9M2026_results-p2-29",
+      "ABUK-ABUK_9M2026_results-p2-30",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "Full-year 2026 earnings cannot be accurately extrapolated from nine-month figures without assuming constant seasonality and stable operational conditions.",
+      "Multiple figures in the primary evidence are marked AMBIGUOUS and cannot be used in computations."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asks to work out the full-year 2026 earnings per share and the price-to-earnings ratio for Abu Qir (ABUK) and decide whether it is cheap enough to buy. However, the available evidence only provides results for the nine months ended 30 September 2026 (such as basic earnings per share of 8.74 EGP for the nine-month period from evidence ABUK-ABUK_9M2026_results-p2-31), and most headline financial figures on the page are marked AMBIGUOUS due to mixed unit notes and OCR limitations. Furthermore, projecting a full-year 2026 earnings per share and calculating a reliable price-to-earnings ratio based solely on partial-year results is speculative and not supported by sufficient definitive data. Therefore, there is insufficient evidence to fulfill the request. Guidance is not a guarantee of returns, and investors must be aware of uncertainty regarding future earnings.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "The basic earnings per share reported for the nine months ended 30 September 2026 is 8.74 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-03",
+      "ABUK-ABUK_9M2026_results-p2-04",
+      "ABUK-ABUK_9M2026_results-p2-05",
+      "ABUK-ABUK_9M2026_results-p2-06",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-27",
+      "ABUK-ABUK_9M2026_results-p2-28",
+      "ABUK-ABUK_9M2026_results-p2-29",
+      "ABUK-ABUK_9M2026_results-p2-30",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "Full-year 2026 earnings cannot be accurately extrapolated from nine-month figures without assuming constant seasonality and stable operational conditions.",
+      "Multiple figures in the primary evidence are marked AMBIGUOUS and cannot be used in computations."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 26.786,
+      "input_tokens": 4968,
+      "output_tokens": 764,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 26.792
+}

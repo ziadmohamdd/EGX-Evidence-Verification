@@ -1,0 +1,151 @@
+{
+  "case_id": "dev_011",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 3921,
+    "explanation": "Investor profile: long-term growth horizon (7+ years), medium risk tolerance, separate emergency fund, sufficient liquidity. Current portfolio: 80,000.00 EGP cash, no holdings.\n\nEvidence analysis (all figures converted to base units as printed, whole pounds):\n- **Net profit growth 2024→2025**:\n  * ETEL: 2025 profit 22,578,063,000 EGP (unit L.E.(000)); 2024 profit 10,111,328,000 EGP; growth +123.30%.\n  * COMI: 2025 profit 82,258,815,000 EGP (unit EGP thousands); 2024 profit 55,256,732,000 EGP; growth +48.87%.\n  * EFID: 2025 profit 2,695,301,670 EGP (unit EGP); 2024 profit 1,606,727,698 EGP; growth +67.75%.\n  * TMGH: 2025 profit 18,201,981,482 LE (unit LE); 2024 profit 12,769,517,325 LE; growth +42.54%.\n- **Price-to-earnings (P/E) ratios** (share price ÷ EPS in base units):\n  * ETEL: price 141.95 EGP; EPS 2025 11.93 (unit L.E.(000) → 11,930 EGP per share); calculated P/E = 0.012. [Unit ambiguity affects this ratio.]\n  * COMI: price 128.00 EGP; EPS 2025 18.25 (unit EGP thousands → 18,250 EGP per share); calculated P/E = 0.007. [Unit ambiguity affects this ratio.]\n  * EFID: price 20.40 EGP; EPS 2025 2.18 EGP (unit clear); P/E = 9.36.\n  * TMGH: price 82.50 LE; EPS 2025 6.98 LE (unit clear); P/E = 11.82.\n- **Missing evidence**: CIB (Commercial International Bank) is not among the provided evidence rows; therefore a full comparison of Telecom Egypt, CIB, Edita, and Talaat Moustafa cannot be completed. Only ETEL, COMI, EFID, and TMGH data are available.\n\n**Unused figures for calculations**: The EPS rows for ETEL (evidence_id ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55/56) and COMI (evidence_id COMI-COMI_FY2025_consolidated_condensed_en-p5-39/40) carry units L.E.(000) and EGP thousands respectively. Applying the printed units yields P/E ratios of 0.012 and 0.007, which are financially implausible and deviate from standard per-share earnings interpretation. Conclusions based on these P/E ratios are uncertain and affected by this unit ambiguity. Net profit growth figures for all companies are used as printed.\n\n**Recommendation**: Given the clear unit consistency for EFID, its solid net profit growth (+67.75%), reasonable P/E of 9.36, and the investor's long-term growth objective with medium risk tolerance, I recommend buying EFID.\n- Shares to purchase: 3,921 (at 20.40 EGP/share = 79,988.40 EGP).\n- Portfolio after buy: cash 80,000.00 EGP + EFID holdings 79,988.40 EGP = 159,988.40 EGP. EFID represents ~50.00% of total portfolio, satisfying the diversification limit (no single company exceeds half).\n\n**Uncertainty & risks**: The P/E ratios for ETEL and COMI are highly sensitive to the unit interpretation. If the 000/thousands multiplier is not applied to EPS (i.e., EPS read as 11.93 and 18.25 L.E./EGP per share), the P/E ratios would be ~11.9 and ~7.0 respectively, materially changing the comparison. All guidance is based strictly on the supplied evidence and prices; no outside knowledge or later events have been used.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL Net profit for the year 31/12/2025 22 578 063 (L.E. 000) = 22,578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL Net profit for the year 31/12/2024 10 111 328 (L.E. 000) = 10,111,328,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI Net profit for the year Dec. 31, 2025 82,258,815 (EGP thousands) = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI Net profit for the year Dec. 31, 2024 55,256,732 (EGP thousands) = 55,256,732,000 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit for the year 31 December 2025 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID Net profit for the year 31 December 2024 1,606,727,698 EGP"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH Net profit for the year 2025 18,201,981,482 LE"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+        "stated_value": 12769517325.0,
+        "statement": "TMGH Net profit for the year 2024 (Restated) 12,769,517,325 LE"
+      }
+    ],
+    "unused_figures": [
+      "ETEL EPS (evidence_id ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55/56) – unit L.E.(000) creates ambiguity for P/E calculation.",
+      "COMI EPS (evidence_id COMI-COMI_FY2025_consolidated_condensed_en-p5-39/40) – unit EGP thousands creates ambiguity for P/E calculation."
+    ],
+    "limitations": [
+      "P/E ratios for ETEL and COMI are affected by unit ambiguity; if interpreted differently (EPS as 11.93 and 18.25 per share), ratios become ~11.9 and ~7.0, altering the comparison.",
+      "CIB evidence is absent from the provided data; comparison across all four requested companies is incomplete.",
+      "All figures are as of the 2026-11-18 cutoff; no later events or outside market knowledge have been applied."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 3921,
+    "explanation": "Investor profile: long-term growth horizon (7+ years), medium risk tolerance, separate emergency fund, sufficient liquidity. Current portfolio: 80,000.00 EGP cash, no holdings.\n\nEvidence analysis (all figures converted to base units as printed, whole pounds):\n- **Net profit growth 2024→2025**:\n  * ETEL: 2025 profit 22,578,063,000 EGP (unit L.E.(000)); 2024 profit 10,111,328,000 EGP; growth +123.30%.\n  * COMI: 2025 profit 82,258,815,000 EGP (unit EGP thousands); 2024 profit 55,256,732,000 EGP; growth +48.87%.\n  * EFID: 2025 profit 2,695,301,670 EGP (unit EGP); 2024 profit 1,606,727,698 EGP; growth +67.75%.\n  * TMGH: 2025 profit 18,201,981,482 LE (unit LE); 2024 profit 12,769,517,325 LE; growth +42.54%.\n- **Price-to-earnings (P/E) ratios** (share price ÷ EPS in base units):\n  * ETEL: price 141.95 EGP; EPS 2025 11.93 (unit L.E.(000) → 11,930 EGP per share); calculated P/E = 0.012. [Unit ambiguity affects this ratio.]\n  * COMI: price 128.00 EGP; EPS 2025 18.25 (unit EGP thousands → 18,250 EGP per share); calculated P/E = 0.007. [Unit ambiguity affects this ratio.]\n  * EFID: price 20.40 EGP; EPS 2025 2.18 EGP (unit clear); P/E = 9.36.\n  * TMGH: price 82.50 LE; EPS 2025 6.98 LE (unit clear); P/E = 11.82.\n- **Missing evidence**: CIB (Commercial International Bank) is not among the provided evidence rows; therefore a full comparison of Telecom Egypt, CIB, Edita, and Talaat Moustafa cannot be completed. Only ETEL, COMI, EFID, and TMGH data are available.\n\n**Unused figures for calculations**: The EPS rows for ETEL (evidence_id ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55/56) and COMI (evidence_id COMI-COMI_FY2025_consolidated_condensed_en-p5-39/40) carry units L.E.(000) and EGP thousands respectively. Applying the printed units yields P/E ratios of 0.012 and 0.007, which are financially implausible and deviate from standard per-share earnings interpretation. Conclusions based on these P/E ratios are uncertain and affected by this unit ambiguity. Net profit growth figures for all companies are used as printed.\n\n**Recommendation**: Given the clear unit consistency for EFID, its solid net profit growth (+67.75%), reasonable P/E of 9.36, and the investor's long-term growth objective with medium risk tolerance, I recommend buying EFID.\n- Shares to purchase: 3,921 (at 20.40 EGP/share = 79,988.40 EGP).\n- Portfolio after buy: cash 80,000.00 EGP + EFID holdings 79,988.40 EGP = 159,988.40 EGP. EFID represents ~50.00% of total portfolio, satisfying the diversification limit (no single company exceeds half).\n\n**Uncertainty & risks**: The P/E ratios for ETEL and COMI are highly sensitive to the unit interpretation. If the 000/thousands multiplier is not applied to EPS (i.e., EPS read as 11.93 and 18.25 L.E./EGP per share), the P/E ratios would be ~11.9 and ~7.0 respectively, materially changing the comparison. All guidance is based strictly on the supplied evidence and prices; no outside knowledge or later events have been used.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL Net profit for the year 31/12/2025 22 578 063 (L.E. 000) = 22,578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL Net profit for the year 31/12/2024 10 111 328 (L.E. 000) = 10,111,328,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI Net profit for the year Dec. 31, 2025 82,258,815 (EGP thousands) = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI Net profit for the year Dec. 31, 2024 55,256,732 (EGP thousands) = 55,256,732,000 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit for the year 31 December 2025 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID Net profit for the year 31 December 2024 1,606,727,698 EGP"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH Net profit for the year 2025 18,201,981,482 LE"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+        "stated_value": 12769517325.0,
+        "statement": "TMGH Net profit for the year 2024 (Restated) 12,769,517,325 LE"
+      }
+    ],
+    "unused_figures": [
+      "ETEL EPS (evidence_id ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55/56) – unit L.E.(000) creates ambiguity for P/E calculation.",
+      "COMI EPS (evidence_id COMI-COMI_FY2025_consolidated_condensed_en-p5-39/40) – unit EGP thousands creates ambiguity for P/E calculation."
+    ],
+    "limitations": [
+      "P/E ratios for ETEL and COMI are affected by unit ambiguity; if interpreted differently (EPS as 11.93 and 18.25 per share), ratios become ~11.9 and ~7.0, altering the comparison.",
+      "CIB evidence is absent from the provided data; comparison across all four requested companies is incomplete.",
+      "All figures are as of the 2026-11-18 cutoff; no later events or outside market knowledge have been applied."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [
+    {
+      "rule": "concentration",
+      "detail": "after the buy EFID is 100.0% of the portfolio, above the 50% limit"
+    }
+  ],
+  "proposed_portfolio": {
+    "cash": 11.6,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 3921
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 504.922,
+      "input_tokens": 3776,
+      "output_tokens": 23353,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 504.927
+}

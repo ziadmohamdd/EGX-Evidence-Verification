@@ -1,0 +1,128 @@
+{
+  "case_id": "dev_003",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor has a medium willingness and low financial ability to withstand losses, with a 3-5 year horizon and potential liquidity needs of 10% of their money within a year. The current portfolio holds 100 shares of ETEL at 141.95 EGP per share (total value 14,195.00 EGP) and 1500 shares of EFID at 20.40 EGP per share (total value 30,600.00 EGP), plus 15,000.00 EGP in cash, resulting in a total portfolio value of 59,795.00 EGP. ETEL's financials for FY2025 show operating revenues of 106,672,946,000 EGP, net profit of 22,578,063,000 EGP, and basic and diluted earnings per share of 11.93 EGP. EFID shows consolidated revenue of 20,915,072,432 EGP, net profit of 2,695,301,670 EGP, and earnings per share of 2.18 EGP. Given the existing positions and the diversification constraint that no single company should exceed half of the portfolio's total value after a buy, and considering the investor's low loss tolerance and short-term liquidity needs, holding the current position in ETEL is appropriate while maintaining sufficient cash.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL's financials for FY2025 show operating revenues of 106,672,946,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL's net profit for FY2025 is 22,578,063,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL's basic and diluted earnings per share is 11.93 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID shows consolidated revenue of 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID shows net profit of 2,695,301,670 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID shows basic and diluted earnings per share of 2.18 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Guidance is based solely on provided historical FY2025 statements and cutoff prices and does not guarantee future returns.",
+      "Potential liquidity needs within a year require keeping adequate cash buffers."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor has a medium willingness and low financial ability to withstand losses, with a 3-5 year horizon and potential liquidity needs of 10% of their money within a year. The current portfolio holds 100 shares of ETEL at 141.95 EGP per share (total value 14,195.00 EGP) and 1500 shares of EFID at 20.40 EGP per share (total value 30,600.00 EGP), plus 15,000.00 EGP in cash, resulting in a total portfolio value of 59,795.00 EGP. ETEL's financials for FY2025 show operating revenues of 106,672,946,000 EGP, net profit of 22,578,063,000 EGP, and basic and diluted earnings per share of 11.93 EGP. EFID shows consolidated revenue of 20,915,072,432 EGP, net profit of 2,695,301,670 EGP, and earnings per share of 2.18 EGP. Given the existing positions and the diversification constraint that no single company should exceed half of the portfolio's total value after a buy, and considering the investor's low loss tolerance and short-term liquidity needs, holding the current position in ETEL is appropriate while maintaining sufficient cash.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL's financials for FY2025 show operating revenues of 106,672,946,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL's net profit for FY2025 is 22,578,063,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL's basic and diluted earnings per share is 11.93 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID shows consolidated revenue of 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID shows net profit of 2,695,301,670 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID shows basic and diluted earnings per share of 2.18 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Guidance is based solely on provided historical FY2025 statements and cutoff prices and does not guarantee future returns.",
+      "Potential liquidity needs within a year require keeping adequate cash buffers."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 5.56,
+      "input_tokens": 3707,
+      "output_tokens": 978,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 5.565
+}

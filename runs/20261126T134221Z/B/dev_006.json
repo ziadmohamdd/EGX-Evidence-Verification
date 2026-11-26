@@ -1,0 +1,90 @@
+{
+  "case_id": "dev_006",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "بالرغم من نمو الإيرادات لتبلغ ٦٢,٤٩٥,١٤٤,١٩٧ جنيه مصري في ٣١ ديسمبر ٢٠٢٥ وارتفاع نصيب السهم في الأرباح ليصل إلى ٦,٩٨ جنيه مصري، إلا أن بعض أرقام صافي الربح اعتبرت غير واضحة (AMBIGUOUS) وتم استبعادها. بناءً على محفظتك الحالية التي تحتوي على ٢٠٠ سهم من TMGH بقيمة ٨٢,٥٠ جنيه للسهم و٦٠,٠٠٠ جنيه كاش، ونظراً لعدم وجود أدلة كافية تدعم الشراء الإضافي في الوقت الحالي وتحقيق التنوع المطلوب، فإن الاحتفاظ بالأسهم الحالية (hold) هو القرار الأنسب.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+        "stated_value": 62495144197.0,
+        "statement": "بلغت الإيرادات ٦٢,٤٩٥,١٤٤,١٩٧ جنيه مصري في ٣١ ديسمبر ٢٠٢٥."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "بلغ نصيب السهم فى الأرباح ٦,٩٨ جنيه مصري في ٣١ ديسمبر ٢٠٢٥."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "هذه الإرشادية مبنية على البيانات المتاحة حتى تاريخ القطع ولا تشكل ضماناً لتحقيق العوائد.",
+      "وجود بعض الأرقام الغامضة في صافي الربح يحد من دقة تحليل النمو الكامل للربحية."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "بالرغم من نمو الإيرادات لتبلغ ٦٢,٤٩٥,١٤٤,١٩٧ جنيه مصري في ٣١ ديسمبر ٢٠٢٥ وارتفاع نصيب السهم في الأرباح ليصل إلى ٦,٩٨ جنيه مصري، إلا أن بعض أرقام صافي الربح اعتبرت غير واضحة (AMBIGUOUS) وتم استبعادها. بناءً على محفظتك الحالية التي تحتوي على ٢٠٠ سهم من TMGH بقيمة ٨٢,٥٠ جنيه للسهم و٦٠,٠٠٠ جنيه كاش، ونظراً لعدم وجود أدلة كافية تدعم الشراء الإضافي في الوقت الحالي وتحقيق التنوع المطلوب، فإن الاحتفاظ بالأسهم الحالية (hold) هو القرار الأنسب.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+        "stated_value": 62495144197.0,
+        "statement": "بلغت الإيرادات ٦٢,٤٩٥,١٤٤,١٩٧ جنيه مصري في ٣١ ديسمبر ٢٠٢٥."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "بلغ نصيب السهم فى الأرباح ٦,٩٨ جنيه مصري في ٣١ ديسمبر ٢٠٢٥."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "هذه الإرشادية مبنية على البيانات المتاحة حتى تاريخ القطع ولا تشكل ضماناً لتحقيق العوائد.",
+      "وجود بعض الأرقام الغامضة في صافي الربح يحد من دقة تحليل النمو الكامل للربحية."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 60000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 11.361,
+      "input_tokens": 2031,
+      "output_tokens": 530,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 11.366
+}

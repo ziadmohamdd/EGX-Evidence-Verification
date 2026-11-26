@@ -1,0 +1,78 @@
+{
+  "case_id": "dev_012",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor wants to know if Edita's net profit grew by more than 50% in 2025 compared with 2024 before buying more shares. However, the 2025 net profit figure in the evidence is marked AMBIGUOUS because it is covered by a stamp on the scanned page, leaving the exact growth rate unverified. Therefore, we cannot rely on the profit growth calculation to buy more shares. Since the investor already owns 1000 shares of EFID, the appropriate action is to hold the existing position until clear and unambiguous figures are available. The portfolio currently consists of 10,000.00 EGP in cash and 1000 shares of EFID valued at 20.40 EGP each (totaling 20,400.00 EGP in holdings, making the portfolio total 30,400.00 EGP). Holding keeps the current exposure without violating the diversification rule.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "The net profit for the year ended 31 December 2024 was 1,606,727,698 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "The 2025 net profit figure is ambiguous due to a stamp covering the text on the scanned page, preventing a definitive growth calculation.",
+      "This guidance is based strictly on the provided financial evidence up to November 2026 and does not guarantee future returns."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor wants to know if Edita's net profit grew by more than 50% in 2025 compared with 2024 before buying more shares. However, the 2025 net profit figure in the evidence is marked AMBIGUOUS because it is covered by a stamp on the scanned page, leaving the exact growth rate unverified. Therefore, we cannot rely on the profit growth calculation to buy more shares. Since the investor already owns 1000 shares of EFID, the appropriate action is to hold the existing position until clear and unambiguous figures are available. The portfolio currently consists of 10,000.00 EGP in cash and 1000 shares of EFID valued at 20.40 EGP each (totaling 20,400.00 EGP in holdings, making the portfolio total 30,400.00 EGP). Holding keeps the current exposure without violating the diversification rule.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "The net profit for the year ended 31 December 2024 was 1,606,727,698 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "The 2025 net profit figure is ambiguous due to a stamp covering the text on the scanned page, preventing a definitive growth calculation.",
+      "This guidance is based strictly on the provided financial evidence up to November 2026 and does not guarantee future returns."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 2.451,
+      "input_tokens": 1859,
+      "output_tokens": 466,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 2.456
+}

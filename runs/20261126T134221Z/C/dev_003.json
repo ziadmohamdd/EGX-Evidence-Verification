@@ -1,0 +1,109 @@
+{
+  "case_id": "dev_003",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "We recommend holding the current position in ETEL and keeping the portfolio balanced. The investor's financial capacity to withstand losses is low, while their willingness is medium, and they have a near-term liquidity need of 10% within a year. The current cash position of 15,000.00 EGP comfortably covers this 10% liquidity requirement (approx. 5,979.50 EGP). Furthermore, EFID currently makes up 51.18% of the total portfolio value, breaching the diversification rule that limits any single company to no more than half of the portfolio's total value after a buy; hence, buying more equities is prohibited. ETEL demonstrated strong financial performance in FY2025 with operating revenues reaching 106,672,946,000 EGP and net profit of 22,578,063,000 EGP. However, due to ambiguity regarding ETEL's per-share figures (flagged as ambiguous under the L.E.(000) unit heading), we do not rely on per-share metrics for calculations. We choose hold on ETEL as the investor already owns it, maintaining stability while respecting risk and liquidity limits.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL operating revenues for FY2025 were 106,672,946,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit for the year reached 22,578,063,000 EGP in FY2025."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "ETEL's earnings per share row is marked ambiguous due to unit table formatting (L.E.(000)).",
+      "Investor has low financial ability to withstand losses, restricting further equity expansion."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "We recommend holding the current position in ETEL and keeping the portfolio balanced. The investor's financial capacity to withstand losses is low, while their willingness is medium, and they have a near-term liquidity need of 10% within a year. The current cash position of 15,000.00 EGP comfortably covers this 10% liquidity requirement (approx. 5,979.50 EGP). Furthermore, EFID currently makes up 51.18% of the total portfolio value, breaching the diversification rule that limits any single company to no more than half of the portfolio's total value after a buy; hence, buying more equities is prohibited. ETEL demonstrated strong financial performance in FY2025 with operating revenues reaching 106,672,946,000 EGP and net profit of 22,578,063,000 EGP. However, due to ambiguity regarding ETEL's per-share figures (flagged as ambiguous under the L.E.(000) unit heading), we do not rely on per-share metrics for calculations. We choose hold on ETEL as the investor already owns it, maintaining stability while respecting risk and liquidity limits.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL operating revenues for FY2025 were 106,672,946,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit for the year reached 22,578,063,000 EGP in FY2025."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "ETEL's earnings per share row is marked ambiguous due to unit table formatting (L.E.(000)).",
+      "Investor has low financial ability to withstand losses, restricting further equity expansion."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "Based on the financial evidence provided for both companies for the fiscal year ended 31 December 2025, here is the financial analysis of your portfolio holdings (EFID and ETEL).\n\n### **1. EFID (Edita Food Industries S.A.E.)**\n* **Profitability & Growth:** \n  * Consolidated revenue for FY2025 reached 20,915,072,432 EGP, compared to 16,146,545,699 EGP in FY2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02].\n  * Consolidated net profit for the year was 2,695,301,670 EGP in FY2025, up from 1,606,727,698 EGP in FY2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31].\n  * Basic and diluted earnings per share (consolidated) increased to 2.18 EGP in FY2025 from 1.09 EGP in FY2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39].\n* **Balance Sheet:**\n  * Total equity at the end of FY2025 stood at 5,724,525,864 EGP, compared to 4,055,484,719 EGP at the end of FY2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39, EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-40].\n* **Price:**\n  * Price per share at the cutoff date is 20.40 EGP.\n\n### **2. ETEL (Telecom Egypt)**\n* **Profitability & Growth:**\n  * Operating revenues for FY2025 were 106,672,946,000 EGP (using unit L.E. (000)), up from 81,677,812,000 EGP in FY2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01, ETEL-ETEL_FY2025_EAS_consolidated_signed_en-p6-02]. \n  * Net profit for the year reached 22,578,063,000 EGP in FY2025, compared to 10,111,328,000 EGP in FY2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35, ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36].\n  * Basic and diluted earnings per share for the year were reported at 11.93 EGP in FY2025 and 4.79 EGP in FY2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55, ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56]. *(Note: The unit line for this specific row references L.E.(000), which is flagged as AMBIGUOUS regarding per-share figures, but the values represent the reported EPS metric).*\n* **Balance Sheet:**\n  * Total equity (consolidated) at the end of FY2025 was 63,687,826,000 EGP, compared to 45,937,991,000 EGP (reclassified) at the end of FY2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45, ETEL-ETEL_FY2025_EAS_consolidated_en-p5-46].\n* **Price:**\n  * Price per share at the cutoff date is 141.95 EGP.\n\n### **Portfolio Context & Risk Considerations:**\n* **Liquidity Needs:** You hold 15,000.00 EGP in cash against potential needs for 10% of your money within a year. Depending on your total portfolio value (cash plus current holdings of 1,500 EFID shares at 20.40 EGP = 30,600 EGP, and 100 ETEL shares at 141.95 EGP = 14,195 EGP, totaling roughly 59,795 EGP), your 15,000.00 EGP cash buffer nearly covers your total portfolio's 10% liquidity requirement (~5,980 EGP). \n* **Data Quality / Ambiguity:** Note that ETEL's earnings per share row falls under a table unit line specifying `L.E.(000)` [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55], which creates ambiguity when interpreting per-share denominations versus thousands.",
+    "investor": "As the investor-suitability analyst on the team, I have evaluated the investor's profile and current portfolio constraints. Here is the assessment of suitability based on the mandated parameters:\n\n### 1. Investment Horizon\n* **Investor Requirement:** 3 to 5 years.\n* **Assessment:** This is a medium-term horizon. It allows sufficient time to ride out short-term market volatility and aligns with a growth-oriented mandate, provided the underlying assets match the timeline.\n\n### 2. Liquidity Needs\n* **Investor Requirement:** May need 10% of the money within a year.\n* **Assessment:** A near-term liquidity requirement of 10% dictates that a portion of the portfolio must remain easily accessible in cash or highly liquid instruments without triggering forced selling penalties or realizing inopportune market losses.\n\n### 3. Loss Willingness and Capacity\n* **Willingness to Accept Losses:** Medium.\n* **Financial Ability to Withstand Losses:** Low.\n* **Assessment:** This represents a critical constraint mismatch. While the investor states a *medium willingness* to accept losses, their *low financial capacity* means that any significant drawdown could severely harm their financial well-being. Therefore, capital preservation and risk management must take precedence over aggressive growth strategies.\n\n### 4. Current Concentration and Portfolio Valuation\n* **Current Cash:** 15,000.00 EGP\n* **Holdings:** \n  * **EFID:** 1,500 shares @ 20.40 EGP = 30,600.00 EGP\n  * **ETEL:** 100 shares @ 141.95 EGP = 14,195.00 EGP\n* **Total Portfolio Value:** 59,795.00 EGP\n* **Concentration Breakdown:**\n  * Cash: ~25.09%\n  * EFID: ~51.18%\n  * ETEL: ~23.74%\n* **Assessment:** The portfolio is heavily concentrated in equities (~74.91% total), with EFID representing over half of the entire portfolio's value. \n\n### 5. Portfolio Flexibility (What Can Be Sold / Free Cash)\n* **Free Cash:** The investor currently holds 15,000.00 EGP in cash. \n* **Liquidity Check:** The investor’s 10% liquidity requirement within a year amounts to approximately 5,979.50 EGP. The current cash buffer of 15,000.00 EGP comfortably covers this 10% requirement without needing to liquidate any equity holdings.\n* **What Can Be Sold:** Both equity holdings (EFID and ETEL) are publicly traded listed shares and can be partially or fully sold if rebalancing or risk reduction is required to align with the investor's low financial capacity for loss. \n* **Cash Commitment Capacity:** Given the existing cash reserves and liquidity needs, additional cash commitments should be carefully measured against the investor's low capacity to absorb losses."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 6.097,
+      "input_tokens": 3431,
+      "output_tokens": 1326,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 5.789,
+      "input_tokens": 3423,
+      "output_tokens": 666,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 12.322,
+      "input_tokens": 5735,
+      "output_tokens": 630,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 24.213
+}

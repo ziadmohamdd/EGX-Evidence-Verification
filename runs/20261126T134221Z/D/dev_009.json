@@ -1,0 +1,128 @@
+{
+  "case_id": "dev_009",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "We cannot compute the full-year 2026 earnings per share or the price-to-earnings ratio because the available report only covers the first nine months of 2026, and key quarterly and full-year figures are marked as ambiguous due to conflicting unit indicators and OCR formatting anomalies. We rely on the verified 9-month basic earnings per share of 8.74 EGP, but this is insufficient to project a full-year figure responsibly without risking inaccurate P/E calculations. Therefore, we issue an insufficient_evidence recommendation until full-year results or unambiguous data are provided.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "For the nine months ended 30 September 2026, the basic earnings per share is 8.74 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-03",
+      "ABUK-ABUK_9M2026_results-p2-04",
+      "ABUK-ABUK_9M2026_results-p2-05",
+      "ABUK-ABUK_9M2026_results-p2-06",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-27",
+      "ABUK-ABUK_9M2026_results-p2-28",
+      "ABUK-ABUK_9M2026_results-p2-29",
+      "ABUK-ABUK_9M2026_results-p2-30",
+      "ABUK-ABUK_9M2026_results-p2-32",
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-35",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "Lacks full-year financial statements for 2026.",
+      "Key figures such as revenues and net profits are ambiguous due to conflicting unit headings.",
+      "Quarterly per-share figures for Q3 2026 contain OCR formatting errors."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "We cannot compute the full-year 2026 earnings per share or the price-to-earnings ratio because the available report only covers the first nine months of 2026, and key quarterly and full-year figures are marked as ambiguous due to conflicting unit indicators and OCR formatting anomalies. We rely on the verified 9-month basic earnings per share of 8.74 EGP, but this is insufficient to project a full-year figure responsibly without risking inaccurate P/E calculations. Therefore, we issue an insufficient_evidence recommendation until full-year results or unambiguous data are provided.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "For the nine months ended 30 September 2026, the basic earnings per share is 8.74 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-03",
+      "ABUK-ABUK_9M2026_results-p2-04",
+      "ABUK-ABUK_9M2026_results-p2-05",
+      "ABUK-ABUK_9M2026_results-p2-06",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-27",
+      "ABUK-ABUK_9M2026_results-p2-28",
+      "ABUK-ABUK_9M2026_results-p2-29",
+      "ABUK-ABUK_9M2026_results-p2-30",
+      "ABUK-ABUK_9M2026_results-p2-32",
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-35",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "Lacks full-year financial statements for 2026.",
+      "Key figures such as revenues and net profits are ambiguous due to conflicting unit headings.",
+      "Quarterly per-share figures for Q3 2026 contain OCR formatting errors."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "Based on the provided evidence for Abu Qir Fertilizers (ABUK), here is the analysis of the company's available metrics and data quality.\n\n### Profitability and Earnings\n* **Basic Earnings Per Share (9M):** \n  * For the nine months ended 30 September 2026, the basic earnings per share is **8.74 EGP** [ABUK-ABUK_9M2026_results-p2-31].\n  * For the nine months ended 30 September 2025, the basic earnings per share is **4.28 EGP** [ABUK-ABUK_9M2026_results-p2-32].\n* **Quarterly Earnings Per Share:**\n  * For the three months ended 30 September 2025, the basic earnings per share is **1.23 EGP** [ABUK-ABUK_9M2026_results-p2-35].\n  * The three months ended 30 September 2026 figure (printed as `199`) is flagged as **AMBIGUOUS** due to an OCR issue where a decimal comma may have been dropped [ABUK-ABUK_9M2026_results-p2-34]. \n\n### Growth and Financial Performance\n* **Net Profit (9M):** Reported at **12,970,000,000 EGP** (12,970 million pounds) for the nine months ended 30 September 2026, compared to **6,396,000,000 EGP** (6,396 million pounds) for the same period in 2025 [ABUK-ABUK_9M2026_results-p2-25, ABUK-ABUK_9M2026_results-p2-26]. Both figures are marked as **AMBIGUOUS** due to conflicting unit indicators on the page [ABUK-ABUK_9M2026_results-p2-25, ABUK-ABUK_9M2026_results-p2-26].\n* **Activity Revenues (9M):** Reported at **31,488,000,000 EGP** (31,488 million pounds) for the nine months ended 30 September 2026, compared to **16,578,000,000 EGP** (16,578 million pounds) for the same period in 2025 [ABUK-ABUK_9M2026_results-p2-01, ABUK-ABUK_9M2026_results-p2-02]. Both figures are marked as **AMBIGUOUS** due to conflicting unit indicators on the page [ABUK-ABUK_9M2026_results-p2-01, ABUK-ABUK_9M2026_results-p2-02].\n\n### Balance Sheet and Risks\n* The provided evidence contains no balance sheet statements, debt metrics, or explicit risk disclosures.\n\n### Data Quality and Limitations\n* **Ambiguous Figures:** Multiple key financial rows (including revenues, net profit, and quarterly/percentage changes) carry unit ambiguities or formatting anomalies (such as multi-unit page headers and dropped decimal marks) [ABUK-ABUK_9M2026_results-p2-01 through ABUK-ABUK_9M2026_results-p2-36]. \n* **Full-Year Projections:** Because the latest report only covers the first nine months of 2026 and lacks a full-year statement or reliable quarterly breakdowns for Q3 2026, **full-year 2026 earnings per share and the price-to-earnings (P/E) ratio cannot be computed** using unverified or ambiguous data.",
+    "investor": "Based on the investor profile and current portfolio data provided, here is the investor-suitability analysis:\n\n*   **Investment Horizon:** 3–5 years. This aligns well with a medium-term equity investment, allowing sufficient time to ride out market volatility and pursue growth and income objectives.\n*   **Liquidity Needs:** Low relative to the portfolio, as the investor maintains a separate emergency fund. This means the capital allocated here does not need to be reserved for short-term cash flow needs.\n*   **Loss Willingness and Capacity:** Medium. The investor is willing to accept moderate losses and has a medium financial ability to withstand them. Highly speculative or extremely volatile positions that risk permanent capital loss would be unsuitable.\n*   **Current Concentration:** The portfolio currently holds zero positions and consists entirely of 30,000.00 EGP in cash. Concentration in any single asset is currently 0%.\n*   **Commitment Capacity:** Up to the full 30,000.00 EGP in cash can reasonably be committed, subject to the investor's desired cash buffer (though an emergency fund is already kept separately). \n*   **Portfolio Allowances:** There are currently no holdings in the portfolio, meaning no assets need to be sold. All 30,000.00 EGP of the cash balance is entirely free for allocation."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 3.176,
+      "input_tokens": 4692,
+      "output_tokens": 895,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 6.255,
+      "input_tokens": 4684,
+      "output_tokens": 288,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 7.138,
+      "input_tokens": 6187,
+      "output_tokens": 738,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 16.575
+}

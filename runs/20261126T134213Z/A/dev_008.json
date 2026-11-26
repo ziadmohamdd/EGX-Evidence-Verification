@@ -1,0 +1,80 @@
+{
+  "case_id": "dev_008",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ETEL",
+    "shares": 101,
+    "explanation": "**Friend's claim assessment:** The claim that Telecom Egypt (ETEL) made a net profit of 225.9 billion EGP in 2025, more than ten times its 2024 profit, is **incorrect** based on the provided evidence. Evidence IDs [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35/49] and [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50/36] report Net profit for the year: 22,578,063 (L.E. (000)) for period 31/12/2025, and 10,111,328 (L.E. (000)) for period 31/12/2024. In base units (whole pounds), these are 22,578,063,000 EGP (~22.58 billion) and 10,111,328,000 EGP (~10.11 billion). The 2025 profit is approximately 2.23 times the 2024 profit, not >10x. The 225.9 billion figure likely conflates net profit with Total Assets (225,882,527 L.E. (000) = ~225.88 billion) or Operating Revenues (~106.67 billion). No financial figure relied upon is marked AMBIGUOUS.\n\n**Portfolio diversification check:** Current holdings: 150 ETEL shares @ 141.95 EGP = 21,292.5 EGP. Cash = 50,000 EGP. Total portfolio value at cutoff = 71,292.5 EGP. ETEL currently represents ~29.9% of the portfolio. The diversification rule states: after any buy, no single company may exceed 50% of total portfolio value (cash + holdings at given prices), with no exceptions. To top up while respecting this limit, the maximum additional ETEL value is 35,646.25 - 21,292.5 = 14,353.75 EGP. At 141.95 EGP/share, this equals **101 shares** (101 × 141.95 = 14,336.95 EGP). Buying all 50,000 EGP into ETEL would raise ETEL's weight to ~70.2%, violating the 50% cap.\n\n**Recommendation:** Buy 101 additional ETEL shares (increasing the holding to 251 shares). This deploys cash toward the 5‑year retirement‑savings goal, keeps ETEL at ~49.98% of the portfolio (just under the 50% limit), and preserves ~35,663 EGP in cash for liquidity and diversification. The decision is based on corrected financial data and portfolio rules, not the friend's misstated profit figure. As with all investments, returns are not guaranteed; medium‑term telecom exposure carries risks including regulatory changes, currency fluctuation, and sector competition. Keep the remaining cash in the emergency‑fund‑compatible allocation.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063.0,
+        "statement": "Net profit for the year, period 31/12/2025, unit: L.E.(000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328.0,
+        "statement": "Net profit for the year, period 31/12/2024, unit: L.E.(000)"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The 50% diversification cap is a strict portfolio‑level constraint; if ETEL price moves significantly, the share count may need adjustment.",
+      "All guidance is based on data up to the 2026-11-18 cutoff and does not incorporate events or reports published thereafter.",
+      "This is not a guarantee of returns; the investor should monitor the position and rebalance if the ETEL weighting drifts beyond the 50% limit."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ETEL",
+    "shares": 101,
+    "explanation": "**Friend's claim assessment:** The claim that Telecom Egypt (ETEL) made a net profit of 225.9 billion EGP in 2025, more than ten times its 2024 profit, is **incorrect** based on the provided evidence. Evidence IDs [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35/49] and [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50/36] report Net profit for the year: 22,578,063 (L.E. (000)) for period 31/12/2025, and 10,111,328 (L.E. (000)) for period 31/12/2024. In base units (whole pounds), these are 22,578,063,000 EGP (~22.58 billion) and 10,111,328,000 EGP (~10.11 billion). The 2025 profit is approximately 2.23 times the 2024 profit, not >10x. The 225.9 billion figure likely conflates net profit with Total Assets (225,882,527 L.E. (000) = ~225.88 billion) or Operating Revenues (~106.67 billion). No financial figure relied upon is marked AMBIGUOUS.\n\n**Portfolio diversification check:** Current holdings: 150 ETEL shares @ 141.95 EGP = 21,292.5 EGP. Cash = 50,000 EGP. Total portfolio value at cutoff = 71,292.5 EGP. ETEL currently represents ~29.9% of the portfolio. The diversification rule states: after any buy, no single company may exceed 50% of total portfolio value (cash + holdings at given prices), with no exceptions. To top up while respecting this limit, the maximum additional ETEL value is 35,646.25 - 21,292.5 = 14,353.75 EGP. At 141.95 EGP/share, this equals **101 shares** (101 × 141.95 = 14,336.95 EGP). Buying all 50,000 EGP into ETEL would raise ETEL's weight to ~70.2%, violating the 50% cap.\n\n**Recommendation:** Buy 101 additional ETEL shares (increasing the holding to 251 shares). This deploys cash toward the 5‑year retirement‑savings goal, keeps ETEL at ~49.98% of the portfolio (just under the 50% limit), and preserves ~35,663 EGP in cash for liquidity and diversification. The decision is based on corrected financial data and portfolio rules, not the friend's misstated profit figure. As with all investments, returns are not guaranteed; medium‑term telecom exposure carries risks including regulatory changes, currency fluctuation, and sector competition. Keep the remaining cash in the emergency‑fund‑compatible allocation.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063.0,
+        "statement": "Net profit for the year, period 31/12/2025, unit: L.E.(000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328.0,
+        "statement": "Net profit for the year, period 31/12/2024, unit: L.E.(000)"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The 50% diversification cap is a strict portfolio‑level constraint; if ETEL price moves significantly, the share count may need adjustment.",
+      "All guidance is based on data up to the 2026-11-18 cutoff and does not incorporate events or reports published thereafter.",
+      "This is not a guarantee of returns; the investor should monitor the position and rebalance if the ETEL weighting drifts beyond the 50% limit."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 35663.05,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 251
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 48.075,
+      "input_tokens": 2470,
+      "output_tokens": 9667,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 48.078
+}

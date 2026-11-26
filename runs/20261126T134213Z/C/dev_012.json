@@ -1,0 +1,101 @@
+{
+  "case_id": "dev_012",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 255,
+    "explanation": "### Net profit growth (verified figures only)\n- Net profit for the year 2025 (verified): [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36] = **2,695,301,670** EGP\n- Net profit for the year 2024 (verified): [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37] = **1,606,727,698** EGP\n- Growth = (2,695,301,670 − 1,606,727,698) / 1,606,727,698 = **~67.75%**, which exceeds the investor's 50% threshold for additional investment.\n\n### AMBIGUOUS figure handling\n- [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] Net profit for the year (consolidated) period 31 December 2025 is marked **AMBIGUOUS** (printed value 2,695,301,670 EGP, but scanned page note: \"unreadable: the 2025 figure is covered by a stamp on the scanned page\"). Per rules, AMBIGUOUS figures must not be used in calculations. The growth computation above relies exclusively on verified figures (p6-36 and p6-37).\n\n### Portfolio valuation at cutoff (2026-11-18)\n- Cash: **10,000.00** EGP\n- EFID holdings: **1,000** shares × **20.40** EGP = **20,400.00** EGP\n- Total portfolio value (cash + holdings at given prices): **30,400.00** EGP\n- EFID single-company exposure: 20,400 / 30,400 ≈ **67.1%** of the portfolio.\n\n### Diversification constraint\n- Rule: \"After a buy, no single company may be more than half of the portfolio's total value (cash plus holdings at the given prices). This limit has no exceptions.\"\n- Currently EFID already exceeds 50% of the portfolio. Any additional purchase of EFID shares would increase this percentage further, making a buy action impermissible under the given constraints, even with \"fewer shares.\"\n\n### Suitability analyst considerations\n- Horizon: 3 years is short‑to‑medium term for a single‑stock equity position; concentration risk is elevated.\n- Liquidity: investor keeps a separate emergency fund; the 10,000 EGP cash position may partially serve that purpose, but the fund size is unspecified.\n- Loss willingness & capacity: both medium; a concentrated single‑stock position introduces idiosyncratic risk that could strain the stated capacity.\n- Concentration: the portfolio is 100% equity exposure in EFID, flagged as a primary structural concern. The suitability report notes that liquidating and reallocating the EFID position would improve diversification only if proceeds are spread across issuers, sectors, or asset classes.\n\n### Recommendation rationale\nAlthough the verified net profit growth of ~67.75% satisfies the investor's condition to buy more, the portfolio diversification rule makes a direct buy of EFID invalid. To align with the diversification principle and the investor's medium risk profile and 3‑year horizon, a partial sale of EFID shares is recommended.\n- Selling **255** shares reduces the EFID holding to **745** shares.\n- At the cutoff price of 20.40 EGP, this generates **5,202.00** EGP in additional cash (new cash balance = 10,000 + 5,202 = **15,202.00** EGP).\n- Remaining EFID value = 745 × 20.40 = **15,198.00** EGP.\n- New total portfolio value remains **30,400.00** EGP; EFID exposure = 15,198 / 30,400 ≈ **49.99%**, satisfying the ≤50% diversification limit.\n- The investor retains a meaningful position in EFID while materially reducing concentration risk, and the freed cash can be considered for diversification into other instruments consistent with the 3‑year goal of growing savings.\n\n### Uncertainty & risks\n- Market price volatility and sector‑specific risks for EFID after the cutoff date.\n- The investor's separate emergency fund size is unknown; the sale increases cash liquidity but the fund's status should be independently verified.\n- Past net profit growth does not guarantee future performance; the recommendation is guidance not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36]",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit for the year (consolidated) period 31 December 2025: 2,695,301,670 EGP (verified)"
+      },
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37]",
+        "stated_value": 1606727698.0,
+        "statement": "EFID Net profit for the year (consolidated) period 31 December 2024: 1,606,727,698 EGP (verified)"
+      }
+    ],
+    "unused_figures": [
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] Net profit for the year (consolidated) period 31 December 2025: 2,695,301,670 EGP (AMBIGUOUS – printed value shown but scanned page note states: \"unreadable: the 2025 figure is covered by a stamp on the scanned page\"; not used in calculations per rules)"
+    ],
+    "limitations": [
+      "The decision is based solely on evidence and prices provided up to the 2026-11-18 cutoff; no outside knowledge or later events were used.\n- AMBIGUOUS figures were excluded from all calculations as required.\n- The diversification limit (≤50% single‑company exposure after any action) was enforced; a buy of EFID was deemed impossible given the current portfolio composition.\n- The recommendation does not constitute a guarantee of returns and explicitly states uncertainty and risks as required."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 255,
+    "explanation": "### Net profit growth (verified figures only)\n- Net profit for the year 2025 (verified): [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36] = **2,695,301,670** EGP\n- Net profit for the year 2024 (verified): [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37] = **1,606,727,698** EGP\n- Growth = (2,695,301,670 − 1,606,727,698) / 1,606,727,698 = **~67.75%**, which exceeds the investor's 50% threshold for additional investment.\n\n### AMBIGUOUS figure handling\n- [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] Net profit for the year (consolidated) period 31 December 2025 is marked **AMBIGUOUS** (printed value 2,695,301,670 EGP, but scanned page note: \"unreadable: the 2025 figure is covered by a stamp on the scanned page\"). Per rules, AMBIGUOUS figures must not be used in calculations. The growth computation above relies exclusively on verified figures (p6-36 and p6-37).\n\n### Portfolio valuation at cutoff (2026-11-18)\n- Cash: **10,000.00** EGP\n- EFID holdings: **1,000** shares × **20.40** EGP = **20,400.00** EGP\n- Total portfolio value (cash + holdings at given prices): **30,400.00** EGP\n- EFID single-company exposure: 20,400 / 30,400 ≈ **67.1%** of the portfolio.\n\n### Diversification constraint\n- Rule: \"After a buy, no single company may be more than half of the portfolio's total value (cash plus holdings at the given prices). This limit has no exceptions.\"\n- Currently EFID already exceeds 50% of the portfolio. Any additional purchase of EFID shares would increase this percentage further, making a buy action impermissible under the given constraints, even with \"fewer shares.\"\n\n### Suitability analyst considerations\n- Horizon: 3 years is short‑to‑medium term for a single‑stock equity position; concentration risk is elevated.\n- Liquidity: investor keeps a separate emergency fund; the 10,000 EGP cash position may partially serve that purpose, but the fund size is unspecified.\n- Loss willingness & capacity: both medium; a concentrated single‑stock position introduces idiosyncratic risk that could strain the stated capacity.\n- Concentration: the portfolio is 100% equity exposure in EFID, flagged as a primary structural concern. The suitability report notes that liquidating and reallocating the EFID position would improve diversification only if proceeds are spread across issuers, sectors, or asset classes.\n\n### Recommendation rationale\nAlthough the verified net profit growth of ~67.75% satisfies the investor's condition to buy more, the portfolio diversification rule makes a direct buy of EFID invalid. To align with the diversification principle and the investor's medium risk profile and 3‑year horizon, a partial sale of EFID shares is recommended.\n- Selling **255** shares reduces the EFID holding to **745** shares.\n- At the cutoff price of 20.40 EGP, this generates **5,202.00** EGP in additional cash (new cash balance = 10,000 + 5,202 = **15,202.00** EGP).\n- Remaining EFID value = 745 × 20.40 = **15,198.00** EGP.\n- New total portfolio value remains **30,400.00** EGP; EFID exposure = 15,198 / 30,400 ≈ **49.99%**, satisfying the ≤50% diversification limit.\n- The investor retains a meaningful position in EFID while materially reducing concentration risk, and the freed cash can be considered for diversification into other instruments consistent with the 3‑year goal of growing savings.\n\n### Uncertainty & risks\n- Market price volatility and sector‑specific risks for EFID after the cutoff date.\n- The investor's separate emergency fund size is unknown; the sale increases cash liquidity but the fund's status should be independently verified.\n- Past net profit growth does not guarantee future performance; the recommendation is guidance not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36]",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit for the year (consolidated) period 31 December 2025: 2,695,301,670 EGP (verified)"
+      },
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37]",
+        "stated_value": 1606727698.0,
+        "statement": "EFID Net profit for the year (consolidated) period 31 December 2024: 1,606,727,698 EGP (verified)"
+      }
+    ],
+    "unused_figures": [
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] Net profit for the year (consolidated) period 31 December 2025: 2,695,301,670 EGP (AMBIGUOUS – printed value shown but scanned page note states: \"unreadable: the 2025 figure is covered by a stamp on the scanned page\"; not used in calculations per rules)"
+    ],
+    "limitations": [
+      "The decision is based solely on evidence and prices provided up to the 2026-11-18 cutoff; no outside knowledge or later events were used.\n- AMBIGUOUS figures were excluded from all calculations as required.\n- The diversification limit (≤50% single‑company exposure after any action) was enforced; a buy of EFID was deemed impossible given the current portfolio composition.\n- The recommendation does not constitute a guarantee of returns and explicitly states uncertainty and risks as required."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15202.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 745
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Net profit figures (whole EGP)**  \n- Net profit for the year 2024: `[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31]` = **1,606,727,698** EGP (verified)  \n- Net profit for the year 2025: `[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]` = **2,695,301,670** EGP (**AMBIGUOUS** – printed value shown, but the scanned page note states: \"unreadable: the 2025 figure is covered by a stamp on the scanned page\")  \n- Net profit for the year 2025 (verified alternative): `[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36]` = **2,695,301,670** EGP (verified; same printed value as p6-30, but officially verified)  \n\n**Growth computation (using verified figures only, as instructed to not compute with AMBIGUOUS figures)**  \n- Growth in net profit = `(2,695,301,670 − 1,606,727,698) / 1,606,727,698`  \n- Absolute growth = **1,088,573,972** EGP  \n- Percentage growth = **~67.75%**  \n\n**Result**  \nThe verified net profit grew by approximately **67.75%** in 2025 compared with 2024. This exceeds the 50% threshold you indicated for additional investment. (No action or recommendation is provided here; the decision agent acts on your instructions.)",
+    "investor": "**Investor‑Suitability Assessment**\n\n**1. Horizon (3 years)**  \nA 3‑year horizon is short‑to‑medium term for equity exposure. With a single‑stock position, the portfolio’s value could fluctuate meaningfully over this period. The suitability of EFID depends on whether the investor can tolerate short‑term volatility without needing to liquidate the position before the horizon expires. If capital is needed precisely at the 3‑year mark, a more stable or diversified allocation may be preferable.\n\n**2. Liquidity Needs (separate emergency fund)**  \n- Current cash: 10,000.00 EGP  \n- EFID holdings: 1,000 shares × 20.40 EGP = 20,400.00 EGP realizable  \n- Total liquidatable assets: ~30,400 EGP  \n\nThe investor states they keep a separate emergency fund. Without knowing its size, we note that the 10,000 EGP cash position may partially or fully serve that purpose. Any commitment from cash should be evaluated *after* confirming that the emergency fund remains fully funded and immediately accessible. If the emergency fund is already separate and fully resourced, the full 10,000 EGP could be considered for investment; otherwise, only the amount above the emergency threshold should be committed.\n\n**3. Loss Willingness & Capacity (both: medium)**  \nMedium willingness and medium financial ability to withstand losses suggest a moderate risk tolerance, but not an aggressive one. A concentrated single‑stock position introduces idiosyncratic risk that could result in losses exceeding the stated capacity, especially if the company or sector faces headwinds. Stress‑testing the portfolio against a significant drawdown (e.g., 20–30%) is advisable to ensure it aligns with the investor’s capacity.\n\n**4. Current Concentration**  \n- Holdings: EFID 1,000 shares (100% of equity exposure)  \n- Cash: 10,000.00 EGP  \n- No other assets or holdings are reported.  \n\nThis represents a highly concentrated position. Diversification across issuers, sectors, or asset classes would better match the investor’s goal of growing savings, 3‑year horizon, and medium loss profile. Concentration risk is the primary structural concern here.\n\n**5. Cash Reasonably Commitable**  \n- Free cash: 10,000.00 EGP (subject to emergency‑fund constraint)  \n- Commitment amount should be the cash balance *minus* the portion earmarked for emergency liquidity.  \n- If the emergency fund is separate and fully funded, up to 10,000 EGP could be allocated, ideally spread across diversified instruments or phased into positions over time to manage timing risk within the 3‑year window.  \n- The EFID position (20,400 EGP current value) could also be liquidated and reallocated, but this would increase concentration unless proceeds are diversified.\n\n**6. Portfolio Allowances (what can be sold / free cash)**  \n- **Salable asset:** EFID 1,000 shares at the cutoff price of 20.40 EGP → ~20,400.00 EGP realizable.  \n- **Free cash:** 10,000.00 EGP (subject to the separate emergency‑fund requirement noted above).  \n- No other holdings, liens, or restrictions are indicated in the profile.\n\n---\n\n**Note on Role Constraints**  \nPer the analyst role instructions, I have not calculated financial metrics (e.g., net‑profit growth percentages) nor made a specific investment action (buy/more/sell). The assessment above focuses exclusively on suitability dimensions—horizon, liquidity, loss capacity, concentration, and commit‑able cash—while noting what the current portfolio permits in terms of liquidation and free cash."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 29.51,
+      "input_tokens": 1560,
+      "output_tokens": 5217,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 19.382,
+      "input_tokens": 1554,
+      "output_tokens": 3961,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 125.671,
+      "input_tokens": 3155,
+      "output_tokens": 19197,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 174.566
+}

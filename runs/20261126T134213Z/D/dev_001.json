@@ -1,0 +1,211 @@
+{
+  "case_id": "dev_001",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "ETEL",
+    "shares": 300,
+    "explanation": "### Portfolio Overview & Concentration Risk\n- Current holdings: 300 ETEL shares @ 141.95 EGP/share = 42,585 EGP.\n- Cash: 20,000 EGP.\n- Total portfolio value: 62,585 EGP.\n- ETEL represents ~68% of the portfolio. The suitability analyst explicitly flags this as high concentration for a medium‑risk profile and a 5–7‑year horizon earmarked for deterministic university fees. A single‑stock exposure of this size introduces material idiosyncratic risk that conflicts with the investor’s medium willingness/capacity to withstand losses and the need to preserve capital for a specific future expense.\n\n### Financial Analyst Evidence Summary (evidence‑only review)\n- Operating revenues FY2025: 106,672,946,000 EGP [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑01]; FY2024: 81,677,812,000 EGP [‑p6‑02]. Revenue rose ~30.8% YoY.\n- Gross profit FY2025: 44,839,110,000 EGP [‑p6‑05]; FY2024: 30,492,762,000 EGP [‑p6‑06]. Gross profit rose ~47.1% YoY.\n- Net profit FY2025: 22,578,063,000 EGP [‑p6‑35]; FY2024: 10,111,328,000 EGP [‑p6‑50]. Net profit more than doubled YoY.\n- Total assets FY2025: 225,882,527,000 EGP [‑p5‑31]; FY2024 Reclassified: 197,952,788,000 EGP [‑p5‑32]. Assets grew ~14.1% YoY.\n- Total equity FY2025: 63,687,826,000 EGP [‑p5‑45]; FY2024 Reclassified: 45,937,991,000 EGP [‑p5‑46]. Equity grew ~38.6% YoY; equity‑to‑assets ratio improved from ~23.2% to ~28.2%.\n- Key risk notes: profit sustainability cannot be confirmed from the evidence alone; leverage is moderate (equity ~28% of assets); liabilities increased alongside assets.\n\n### Ambiguous Figures (unused)\n- [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑55] and [‑p6‑56] report Basic and diluted EPS as 11.93 and 4.79 \"| unit: L.E.(000)\". The unit L.E.(000) is inconsistent with the conventional meaning of EPS (per share). If taken literally, 11.93 L.E.(000) would imply 11,930 L.E. per share, which is implausible at the market price of 141.95 EGP. These figures are flagged as ambiguous and have **not** been used in any calculations or valuation adjustments.\n\n### Recommendation: Sell Full Position\n- **Diversification**: After the sell, the portfolio will hold 100% cash (62,585 EGP). No single company exceeds the 50% portfolio threshold, satisfying the diversification rule without exception.\n- **Suitability alignment**: Eliminating the 68% concentrated ETEL holding removes the material idiosyncratic risk highlighted by the suitability analyst. The proceeds stay as liquid cash, matching the investor’s separate emergency fund structure and the 5–7‑year university‑fee goal. With medium loss willingness/capital‑ability, holding a single stock of this size is misaligned with the goal of preserving earmarked funds.\n- **Financial evidence considered**: ETEL shows strong FY2025 growth and balance‑sheet improvement, but the sustainability of margins and the EPS ambiguity introduce uncertainty. The decision is based on structural portfolio fit and risk alignment, not on past performance guarantees.\n- **Uncertainty & risks**: Future market conditions, the investor’s actual university‑fee timing, and the possibility of ETEL underperforming after sale are not guaranteed. Cash liquidity is preserved, but reinvestment strategy post‑sale should target diversified exposure to better match the medium‑risk, 5–7‑year horizon.\n\n### Claims (evidence figures used in base EGP)\n- [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑01] Operating revenues 31/12/2025: 106,672,946,000 EGP\n- [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑02] Operating revenues 31/12/2024: 81,677,812,000 EGP\n- [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑05] Gross Profit 31/12/2025: 44,839,110,000 EGP\n- [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑06] Gross Profit 31/12/2024: 30,492,762,000 EGP\n- [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑35] Net profit for the year 31/12/2025: 22,578,063,000 EGP\n- [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑50] Net profit for the year 31/12/2024: 10,111,328,000 EGP\n- [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p5‑31] Total Assets (consolidated) 31/12/2025: 225,882,527,000 EGP\n- [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p5‑32] Total Assets (consolidated) 31/12/2024 Reclassified: 197,952,788,000 EGP\n- [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p5‑45] Total Equity (consolidated) 31/12/2025: 63,687,826,000 EGP\n- [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p5‑46] Total Equity (consolidated) 31/12/2024 Reclassified: 45,937,991,000 EGP\n\n### Unused Figures\n- [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑55] – EPS 2025, flagged ambiguous (unit L.E.(000) inconsistent with per‑share meaning).\n- [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑56] – EPS 2024, flagged ambiguous (same unit issue). These are excluded from all calculations and valuation conclusions.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "Operating revenues 31/12/2024"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+        "stated_value": 44839110000.0,
+        "statement": "Gross Profit 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+        "stated_value": 30492762000.0,
+        "statement": "Gross Profit 31/12/2024"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for the year 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit for the year 31/12/2024"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total Assets (consolidated) 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-32",
+        "stated_value": 197952788000.0,
+        "statement": "Total Assets (consolidated) 31/12/2024 Reclassified"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "Total Equity (consolidated) 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-46",
+        "stated_value": 45937991000.0,
+        "statement": "Total Equity (consolidated) 31/12/2024 Reclassified"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "This recommendation is based solely on the evidence, analyst reports, and investor profile provided. It does not constitute a guarantee of returns or future performance.\n- Market risks, company‑specific events, and changes in the investor’s personal circumstances after the cutoff date (2026‑11‑18) are not accounted for.\n- The EPS figures (p6‑55, p6‑56) were flagged ambiguous and excluded; any reliance on per‑share metrics would require clarification beyond this evidence set.\n- The diversification rule was applied strictly: a sell action was chosen to bring the portfolio below the 50% single‑company threshold; a hold would have left concentration at ~68%, which the suitability analyst identified as misaligned with the medium‑risk, university‑fee horizon profile.\n- Outside knowledge about ETEL or events after the cutoff were not used.",
+      "The decision agent's role is to integrate analyst assessments and evidence‑only financial data with the investor’s stated goals and constraints. Responsible decision‑making requires ongoing review as the university‑fee date approaches and as market conditions evolve."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "ETEL",
+    "shares": 300,
+    "explanation": "### Portfolio Overview & Concentration Risk\n- Current holdings: 300 ETEL shares @ 141.95 EGP/share = 42,585 EGP.\n- Cash: 20,000 EGP.\n- Total portfolio value: 62,585 EGP.\n- ETEL represents ~68% of the portfolio. The suitability analyst explicitly flags this as high concentration for a medium‑risk profile and a 5–7‑year horizon earmarked for deterministic university fees. A single‑stock exposure of this size introduces material idiosyncratic risk that conflicts with the investor’s medium willingness/capacity to withstand losses and the need to preserve capital for a specific future expense.\n\n### Financial Analyst Evidence Summary (evidence‑only review)\n- Operating revenues FY2025: 106,672,946,000 EGP [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑01]; FY2024: 81,677,812,000 EGP [‑p6‑02]. Revenue rose ~30.8% YoY.\n- Gross profit FY2025: 44,839,110,000 EGP [‑p6‑05]; FY2024: 30,492,762,000 EGP [‑p6‑06]. Gross profit rose ~47.1% YoY.\n- Net profit FY2025: 22,578,063,000 EGP [‑p6‑35]; FY2024: 10,111,328,000 EGP [‑p6‑50]. Net profit more than doubled YoY.\n- Total assets FY2025: 225,882,527,000 EGP [‑p5‑31]; FY2024 Reclassified: 197,952,788,000 EGP [‑p5‑32]. Assets grew ~14.1% YoY.\n- Total equity FY2025: 63,687,826,000 EGP [‑p5‑45]; FY2024 Reclassified: 45,937,991,000 EGP [‑p5‑46]. Equity grew ~38.6% YoY; equity‑to‑assets ratio improved from ~23.2% to ~28.2%.\n- Key risk notes: profit sustainability cannot be confirmed from the evidence alone; leverage is moderate (equity ~28% of assets); liabilities increased alongside assets.\n\n### Ambiguous Figures (unused)\n- [ETEL‑ETEL_FY2025_EAS_consolidated_en‑p6‑55] and [‑p6‑56] report Basic and diluted earning per share for the year with a unit mismatch (L.E.(000) per share). These figures are flagged as ambiguous in the evidence and have been excluded from all calculations, portfolio analysis, and this recommendation. No conclusions are affected because they were not used.\n\n### Recommendation: Sell Full Position\n- **Diversification**: After the sell, the portfolio will hold 100% cash (62,585 EGP). No single company exceeds the 50% portfolio threshold, satisfying the diversification rule without exception.\n- **Suitability alignment**: Eliminating the 68% concentrated ETEL holding removes the material idiosyncratic risk highlighted by the suitability analyst. The proceeds stay as liquid cash, matching the investor’s separate emergency fund structure and the 5–7‑year university‑fee goal. With medium loss willingness/capital‑ability, holding a single stock of this size is misaligned with the goal of preserving earmarked funds.\n- **Financial evidence considered**: ETEL shows strong FY2025 growth and balance‑sheet improvement, but the sustainability of margins and the EPS ambiguity introduce uncertainty. The decision is based on structural portfolio fit and risk alignment, not on past performance guarantees.\n- **Uncertainty & risks**: Future market conditions, the investor’s actual university‑fee timing, and the possibility of ETEL underperforming after sale are not guaranteed. Cash liquidity is preserved, but reinvestment strategy post‑sale should target diversified exposure to better match the medium‑risk, 5–7‑year horizon.\n\n### Claims (evidence figures used in base EGP)\n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01] Operating revenues 31/12/2025: 106672946000.0 EGP\n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02] Operating revenues 31/12/2024: 81677812000.0 EGP\n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05] Gross Profit 31/12/2025: 44839110000.0 EGP\n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06] Gross Profit 31/12/2024: 30492762000.0 EGP\n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] Net profit for the year 31/12/2025: 22578063000.0 EGP\n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50] Net profit for the year 31/12/2024: 10111328000.0 EGP\n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31] Total Assets (consolidated) 31/12/2025: 225882527000.0 EGP\n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-32] Total Assets (consolidated) 31/12/2024 Reclassified: 197952788000.0 EGP\n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] Total Equity (consolidated) 31/12/2025: 63687826000.0 EGP\n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-46] Total Equity (consolidated) 31/12/2024 Reclassified: 45937991000.0 EGP\n\n### Unused Figures\n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] – EPS 2025, flagged ambiguous (unit L.E.(000) inconsistent with per‑share meaning).\n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56] – EPS 2024, flagged ambiguous (same unit issue). These are excluded from all calculations and valuation conclusions.\n\n### Limitations\n- This recommendation is based solely on the evidence, analyst reports, and investor profile provided. It does not constitute a guarantee of returns or future performance.\n- Market risks, company‑specific events, and changes in the investor’s personal circumstances after the cutoff date (2026‑11‑18) are not accounted for.\n- The EPS figures (p6‑55, p6‑56) were flagged ambiguous and excluded; any reliance on per‑share metrics would require clarification beyond this evidence set.\n- The diversification rule was applied strictly: a sell action was chosen to bring the portfolio below the 50% single‑company threshold; a hold would have left concentration at ~68%, which the suitability analyst identified as misaligned with the medium‑risk, university‑fee horizon profile.\n- Outside knowledge about ETEL or events after the cutoff were not used.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "Operating revenues 31/12/2024"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+        "stated_value": 44839110000.0,
+        "statement": "Gross Profit 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+        "stated_value": 30492762000.0,
+        "statement": "Gross Profit 31/12/2024"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for the year 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit for the year 31/12/2024"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total Assets (consolidated) 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-32",
+        "stated_value": 197952788000.0,
+        "statement": "Total Assets (consolidated) 31/12/2024 Reclassified"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "Total Equity (consolidated) 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-46",
+        "stated_value": 45937991000.0,
+        "statement": "Total Equity (consolidated) 31/12/2024 Reclassified"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "This recommendation is based solely on the evidence, analyst reports, and investor profile provided. It does not constitute a guarantee of returns or future performance.\n- Market risks, company‑specific events, and changes in the investor’s personal circumstances after the cutoff date (2026‑11‑18) are not accounted for.\n- The EPS figures (p6‑55, p6‑56) were flagged ambiguous and excluded; any reliance on per‑share metrics would require clarification beyond this evidence set.\n- The diversification rule was applied strictly: a sell action was chosen to bring the portfolio below the 50% single‑company threshold; a hold would have left concentration at ~68%, which the suitability analyst identified as misaligned with the medium‑risk, university‑fee horizon profile.\n- Outside knowledge about ETEL or events after the cutoff were not used.",
+      "The decision agent's role is to integrate analyst assessments and evidence‑only financial data with the investor’s stated goals and constraints. Responsible decision‑making requires ongoing review as the university‑fee date approaches and as market conditions evolve."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 62585.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"11.93\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (11.93), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.79\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (4.79), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"11.93\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (11.93), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "**Analysis of ETEL (FY2025 Consolidated EAS Financials) – Evidence-Only Review**\n\nAll figures below are converted from the reported unit **L.E. (000)** to whole Egyptian pounds (EGP) as instructed (1 unit = 1,000 EGP). Every cited figure includes its evidence ID and converted value.\n\n---\n\n### **Profitability**\n- **Operating revenues, 31/12/2025:** 106,672,946,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]\n- **Operating revenues, 31/12/2024:** 81,677,812,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02]\n- **Gross profit, 31/12/2025:** 44,839,110,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05]\n- **Gross profit, 31/12/2024:** 30,492,762,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06]\n- **Net profit for the year, 31/12/2025:** 22,578,063,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]\n- **Net profit for the year, 31/12/2024:** 10,111,328,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50]\n\n**Observations (derived from evidence):**  \nRevenue increased by ~30.8% year-on-year (YoY). Gross profit rose ~47.1% YoY. Net profit more than doubled YoY, indicating significant improvement in bottom-line performance.\n\n---\n\n### **Balance Sheet**\n- **Total assets (consolidated), 31/12/2025:** 225,882,527,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31]\n- **Total assets (consolidated), 31/12/2024 Reclassified:** 197,952,788,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-32]\n- **Total equity (consolidated), 31/12/2025:** 63,687,826,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]\n- **Total equity (consolidated), 31/12/2024 Reclassified:** 45,937,991,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-46]\n\n**Observations (derived from evidence):**  \nTotal assets grew ~14.1% YoY. Total equity grew ~38.6% YoY. The equity-to-assets ratio improved from ~23.2% (2024) to ~28.2% (2025), suggesting reduced leverage and strengthened financial position.\n\n---\n\n### **Growth**\n- Revenue CAGR proxy: (106,672,946,000 / 81,677,812,000)^(1/1) – 1 ≈ +30.8% in the single-year comparison.\n- Equity growth: +38.6% YoY.\n- Profit growth: Net profit more than doubled (+123.1% YoY).\n\n---\n\n### **Risks (based solely on evidence)**\n- **Liquidity/leverage:** With equity representing ~28% of assets, the company retains a moderate equity cushion. The absolute increase in assets outpaced equity growth, implying liabilities also increased.\n- **Profit sustainability:** The sharp net profit rise coincides with revenue and gross profit growth; however, without cost-structure details, the durability of margins cannot be confirmed from this evidence alone.\n\n---\n\n### **Data Quality – Flagged Ambiguity**\n- **Earnings per share (EPS):** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] and [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56] report “Basic and diluted earning per share for the year (L.E. / Share) (15) 11.93 4.79 | unit: L.E.(000)”. The unit **L.E.(000)** is inconsistent with the conventional meaning of EPS (per share, not thousands). If taken literally, 11.93 L.E.(000) would imply 11,930 L.E. per share, which is implausible given the market price of 141.95 EGP per share at cutoff. **This figure is flagged as ambiguous and should not be used for per-share calculations or valuation adjustments without clarification.**\n\n---\n\n### **Portfolio Context (evidence only)**\n- Current holdings: 300 ETEL shares. At the cutoff price of 141.95 EGP/share, market value = 300 × 141.95 = **42,585 EGP** (not derived from the financial evidence above).\n- Cash savings: **20,000.00 EGP**.\n- Total current portfolio value: **62,585 EGP**.\n- Investor profile: 5–7 year horizon for child’s university fees; medium willingness/ability to withstand losses; separate emergency fund maintained.\n\n**No recommendation is provided here.** The decision agent will use the above analysis (profitability trends, balance sheet strengthening, identified data quality flag) alongside the investor’s profile and current holdings to determine an appropriate action.",
+    "investor": "**Investor-suitability assessment (no financial analysis of ETEL, no action recommendation)**\n\n### Horizon (5–7 years)\n- The timeline aligns with a medium-term growth posture, but the goal is a deterministic liability (university fees). Suitability depends on how the glidepath is structured: growth orientation early, with gradual capital-preservation focus as the fees date approaches. A 5–7 year horizon can accommodate moderate volatility, but the single‑stock exposure below must be weighed against the need to preserve capital for a specific future expense.\n\n### Liquidity needs\n- You maintain a separate emergency fund, so this portfolio is earmarked exclusively for the university goal. \n- ETEL shares are listed and readily sellable for cash. The 20,000 EGP cash balance is fully liquid. No illiquid assets are noted, so current liquidity matches the goal’s medium-term nature, though the concentration in one equity means liquidity access is tied to that stock’s marketability.\n\n### Loss willingness & capacity (both rated medium)\n- A medium loss tolerance suggests a preference for moderated volatility, not aggressive risk-taking. Medium financial ability to withstand losses means a significant drawdown would be uncomfortable but not catastrophic. These ratings typically suit diversified portfolios (e.g., multi‑asset, broad‑market exposure) rather than a single‑stock position, which can experience idiosyncratic shocks far exceeding the portfolio’s overall loss‑absorbing capacity.\n\n### Current concentration\n- **ETEL holding:** 300 shares × 141.95 EGP = **~42,585 EGP**  \n- **Cash:** 20,000.00 EGP  \n- **Total portfolio value:** ~62,585 EGP  \n- **ETEL represents ~68% of the portfolio.** This is a high concentration for the stated risk profile and horizon. A single‑stock exposure of this size introduces material idiosyncratic risk that may conflict with a medium loss‑willingness/capacity assessment, especially when the funds earmark a specific future expense.\n\n### Cash commitment capacity\n- 20,000 EGP is free and liquid. Any additional commitment should be evaluated against the existing concentration and the 5–7 year horizon. Deploying more cash into a similarly concentrated position would increase risk; diversifying the allocation would better align with the stated loss tolerance and goal‑based timeline.\n\n### What the portfolio allows\n- **Sell ETEL:** 300 shares can be sold to realize approximately 42,585 EGP in cash.  \n- **Hold ETEL:** Shares remain in the portfolio, maintaining the current concentration and market exposure.  \n- **Use cash:** The 20,000 EGP cash balance is fully free for reallocation, holding, or as a buffer toward the university goal.  \n- No other holdings or assets are reported, so portfolio flexibility is limited to the ETEL position and the cash balance.\n\n**Note:** This assessment respects the instruction to avoid analysing the ETEL financial statements (revenues, profits, assets, etc.) and to avoid recommending a specific action. The focus is solely on suitability dimensions and the portfolio’s structural flexibility given the information provided."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 62.407,
+      "input_tokens": 2436,
+      "output_tokens": 7681,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 29.495,
+      "input_tokens": 2430,
+      "output_tokens": 2669,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 102.254,
+      "input_tokens": 4867,
+      "output_tokens": 11912,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 89.625,
+      "input_tokens": 5987,
+      "output_tokens": 12638,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 283.787
+}

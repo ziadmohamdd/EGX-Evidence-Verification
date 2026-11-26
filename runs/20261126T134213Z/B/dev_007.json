@@ -1,0 +1,91 @@
+{
+  "case_id": "dev_007",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor aims to raise 10,000 EGP in cash within 3 months for a family wedding, has a 3‑month horizon, low willingness to accept losses, and low financial ability to withstand losses. Current portfolio: 1,000.00 EGP cash + 200 EFID shares at 20.40 EGP/share = 4,080 EGP holdings, giving a total portfolio value of 5,080 EGP. Even selling all 200 EFID shares would yield only 5,080 EGP in cash total, falling short of the 10,000 EGP need by 4,920 EGP. No valid action (buy, hold, sell, keep_cash) can meet this cash requirement under the given constraints: a buy would use cash, hold/keep_cash leave the cash need entirely unmet, and selling more than 200 shares is prohibited. The evidence provided consists of FY2025 consolidated financial statements for EFID (revenue, net profit, EPS) with several period‑label ambiguities. Specifically, evidence ID p6-02 is labeled period 31 December 2024 but displays the same revenue figure (20,915,072,432 EGP) as p6-01 (period 31 December 2025); evidence IDs p6-37 and p6-31 are labeled period 31 December 2024 but contain net profit data identical to the 31 December 2025 figures from p6-30/p6-36. These ambiguities prevent reliable use of the financial data for projecting 3‑month cash flows, dividend income, or price trajectory. Furthermore, the evidence does not include cash‑flow projections, dividend schedules, market‑liquidity data, or any information on EFID’s performance or price over the next 3 months. Given the investor’s low risk tolerance, the 3‑month horizon, and the cash need exceeding the realizable value of the current holdings without selling more than owned, the available evidence is insufficient to support a responsible recommendation. Missing information required for a responsible decision includes: 3‑month cash‑flow or liquidity outlook for EFID, dividend expectations for the next quarter, the investor’s other assets or income sources (beyond the given portfolio), and any guidance on price stability or volatility over the 3‑month period. Therefore, a responsible decision cannot be made with the evidence provided alone.",
+    "claims": [],
+    "unused_figures": [
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02]: Revenue 20,915,072,432 EGP for period 31 December 2024 (data matches 2025 period from p6-01, creating a period‑label/data mismatch)",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37]: Net profit for the year 2,695,301,670 EGP for period 31 December 2024 (data matches 2025 period from p6-30/p6-36)",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31]: Net profit for the year 1,606,727,698 EGP for period 31 December 2024 (data matches 2025 period from p6-30/p6-36)"
+    ],
+    "limitations": [
+      "All figures are taken from the evidence as printed; no outside knowledge or later events were used.",
+      "The recommendation does not guarantee meeting the investor’s cash need; it reflects that the evidence is insufficient for a responsible decision under the stated constraints.",
+      "Portfolio diversification rule (no single company >50% of total value) is not triggered because the recommended action is insufficient_evidence with no new buys or sells.",
+      "Figures marked AMBIGUOUS (period‑label mismatches) are listed in unused_figures and were not used in any calculations."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "Investor profile: goal to raise 10,000 EGP in cash within 3 months for a family wedding, horizon 3 months, low willingness to accept losses, low financial ability to withstand losses.\n\nCurrent portfolio: 1,000.00 EGP cash + 200 EFID shares at 20.40 EGP/share = 4,080.00 EGP holdings; total portfolio value 5,080.00 EGP.\n\nCash need assessment: Even liquidating all 200 EFID shares at the cutoff price yields 200 × 20.40 = 4,080 EGP, plus the existing 1,000 EGP cash = 5,080 EGP total. This falls short of the 10,000 EGP needed by 4,920 EGP. No valid action (buy, hold, sell, keep_cash) can bridge this gap under the stated constraints: selling more than 200 shares is prohibited, a buy would consume cash rather than generate it, and hold/keep_cash leaves the cash need entirely unmet. The portfolio diversification rule (no single company >50% of total value) is not triggered since no buy/sell is performed.\n\nEvidence review: The provided material consists of EFID's FY2025 consolidated financial statements (revenue, net profit, basic and diluted EPS) as printed. Several evidence IDs exhibit period‑label ambiguities that prevent reliable assignment of figures to a specific fiscal year. For example, evidence ID p6-02 is labeled period 31 December 2024 but its revenue figure matches that of p6-01 (period 31 December 2025); evidence IDs p6-37 and p6-31 are labeled period 31 December 2024 but contain net profit data identical to the 31 December 2025 figures. These mismatches mean the reported figures cannot be confidently tied to either the 2024 or 2025 fiscal year, undermining any attempt to use them for projecting 3‑month cash flows, dividend income, or price trajectory.\n\nFurthermore, the evidence does not include cash‑flow projections, quarterly dividend schedules, market‑liquidity data, or any information on EFID’s performance or price over the next 3 months. The investor’s low risk tolerance, 3‑month horizon, and cash need exceeding the realizable value of current holdings without selling more than owned further constrain viable actions.\n\nMissing information required for a responsible decision: 3‑month cash‑flow or liquidity outlook for EFID, dividend expectations for the next quarter, the investor’s other assets or income sources (beyond the given portfolio), and any guidance on price stability or volatility over the 3‑month period.\n\nConclusion: The available evidence is insufficient to support a responsible recommendation. No action among the valid options can adequately address the investor’s cash need given the constraints and evidence limitations.",
+    "claims": [],
+    "unused_figures": [
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]: Revenue 20,915,072,432 EGP for period 31 December 2025 (not used in calculations; period‑label consistency issue and not cited in claims per evidence check).",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02]: Revenue 20,915,072,432 EGP for period 31 December 2024 (data matches 2025 period from p6-01, creating period‑label/data mismatch – AMBIGUOUS).",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37]: Net profit for the year 2,695,301,670 EGP for period 31 December 2024 (data matches 2025 period from p6-30/p6-36 – AMBIGUOUS).",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31]: Net profit for the year 1,606,727,698 EGP for period 31 December 2024 (data matches 2025 period from p6-30/p6-36 – AMBIGUOUS)."
+    ],
+    "limitations": [
+      "All figures are taken from the evidence as printed; no outside knowledge or later events were used.",
+      "The recommendation does not guarantee meeting the investor’s cash need; it reflects that the evidence is insufficient for a responsible decision under the stated constraints.",
+      "Portfolio diversification rule (no single company >50% of total value) is not triggered because the recommended action is insufficient_evidence with no new buys or sells.",
+      "Figures marked AMBIGUOUS (period‑label mismatches) are listed in unused_figures and were not used in any calculations.",
+      "The investor’s cash need (10,000 EGP) exceeds the maximum realizable cash from the current holdings (5,080 EGP) even upon full liquidation, a constraint that no valid action can override."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 1000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"20,915,072,432\", which is 'Revenue (consolidated)' (2.09151e+10), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 78.705,
+      "input_tokens": 1793,
+      "output_tokens": 14086,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 432.625,
+      "input_tokens": 2925,
+      "output_tokens": 14133,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 511.337
+}

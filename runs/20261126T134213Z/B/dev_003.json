@@ -1,0 +1,343 @@
+{
+  "case_id": "dev_003",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 35,
+    "explanation": "**Portfolio analysis using provided evidence and prices (cutoff 2026-11-18):**\n\n- **Current holdings valued at given prices:**\n  - ETEL: 100 shares × 141.95 EGP = 14,195 EGP\n  - EFID: 1,500 shares × 20.40 EGP = 30,600 EGP\n  - Cash: 15,000 EGP\n  - **Total portfolio value:** 59,795 EGP\n  - **Current composition:** EFID = 51.18%, ETEL = 23.74%, Cash = 25.10%\n\n- **Key evidence figures (converted to whole pounds as required):**\n  - EFID Revenue FY2025: 20,915,072,432 EGP ([EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01])\n  - EFID Net profit FY2025: 2,695,301,670 EGP ([EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30])\n  - EFID Basic/Diluted EPS FY2025: 2.18 EGP ([EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38])\n  - ETEL Operating revenues FY2025: 106,672,946,000 EGP (converted from L.E.(000) 106,672,946) ([ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01])\n  - ETEL Net profit FY2025: 22,578,063,000 EGP (converted from L.E.(000) 22,578,063) ([ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35])\n  - ETEL Total equity FY2025: 63,687,826,000 EGP (converted from L.E.(000) 63,687,826) ([ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45])\n\n- **Diversification constraint:** EFID already exceeds 50% of the total portfolio. The investor has a medium willingness to accept losses but **low financial ability to withstand losses**, making concentration risk particularly unsuitable. The portfolio's liquidity need (10% within a year = ~5,980 EGP) is already met by the 15,000 EGP cash holding (25.1% of portfolio).\n\n- **Recommendation:** Sell 35 shares of EFID. This reduces the EFID holding to 1,465 shares (value 29,886 EGP, 49.98% of portfolio), increases cash to 15,714 EGP (26.28%), and leaves ETEL unchanged. The post-action portfolio satisfies the 50% single-company limit, preserves liquidity, and reduces exposure to a single holding for an investor with low loss tolerance.\n\n- **Unused figures (marked AMBIGUOUS, not used in calculations):**\n  1. **EFID Total equity** (evidence_ids [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39], [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-40]): values 5,724,525,864 and 4,055,484,719 with unit \"None\". The unspecified unit prevents reliable Return on Equity (ROE) calculation, affecting assessment of EFID's efficiency and risk profile.\n  2. **ETEL Basic and diluted earning per share** (evidence_ids [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55], [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56]): values 11.93 and 4.79 with unit \"L.E.(000)\". Interpreting these literally would imply EPS of 11,930 and 4,790 L.E./share, which is inconsistent with the market price of 141.95 EGP; therefore these figures must not be used for P/E or valuation ratios, affecting income-oriented analysis for ETEL.\n\n- **Uncertainty & risks:** This guidance relies solely on the evidence and prices as of the cutoff date. Future financial performance, dividend decisions, and market conditions may materially differ. The investor should monitor concentration risk, consider the low loss-bearing capacity, and may wish to seek personalized advice. This is guidance, not a guarantee of returns.\n",
+    "claims": [
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]",
+        "stated_value": 20915072432.0,
+        "statement": "EFID Revenue FY2025 (EGP)"
+      },
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit FY2025 (EGP)"
+      },
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38]",
+        "stated_value": 2.18,
+        "statement": "EFID EPS FY2025 (EGP per share)"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL Operating revenues FY2025 (EGP, converted from L.E.(000))"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL Net profit FY2025 (EGP, converted from L.E.(000))"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL Total equity FY2025 (EGP, converted from L.E.(000))"
+      }
+    ],
+    "unused_figures": [
+      "EFID Total equity (p5-39, p5-40): unit \"None\" – ambiguous for ROE and equity-based risk assessment.",
+      "ETEL Basic and diluted EPS (p6-55, p6-56): unit \"L.E.(000)\" – would imply EPS ~11,930 L.E./share, inconsistent with share price 141.95 EGP; not used for P/E or valuation."
+    ],
+    "limitations": [
+      "Guidance based exclusively on evidence and prices up to 2026-11-18; no outside knowledge or later events applied.",
+      "Portfolio diversification rule (no single company >50% of total value) enforced post-action; current recommendation brings EFID to 49.98%.",
+      "Liquidity need (10% within a year) covered by cash holding; any future buy must respect the 50% limit and available cash.",
+      "All financial figures provided in base units (whole pounds) as required; no millions or ambiguous units used in core calculations."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 35,
+    "explanation": "**Portfolio analysis using provided evidence and prices (cutoff 2026-11-18):**\n\n- **Current holdings valued at given prices:**\n  - ETEL: 100 shares × 141.95 EGP = 14,195 EGP\n  - EFID: 1,500 shares × 20.40 EGP = 30,600 EGP\n  - Cash: 15,000 EGP\n  - **Total portfolio value:** 59,795 EGP\n  - **Current composition:** EFID = 51.18%, ETEL = 23.74%, Cash = 25.10%\n\n- **Key evidence figures (converted to whole EGP as required, listed in claims):**\n  [removed: figure could not be verified]  [removed: figure could not be verified]  [removed: figure could not be verified]  [removed: figure could not be verified]  [removed: figure could not be verified]  [removed: figure could not be verified]\n- **Diversification constraint:** EFID already exceeds 50% of the total portfolio (51.18%). The portfolio diversification rule (no single company >50% of total value, cash plus holdings at given prices) has no exceptions, whatever the investor's profile. Given the investor's low financial ability to withstand losses, concentration risk in EFID is particularly unsuitable.\n\n- **Recommendation:** Sell 35 shares of EFID. This reduces the EFID holding to 1,465 shares (value 29,886 EGP, 49.98% of portfolio), increases cash to 15,714 EGP (26.28%), and leaves ETEL unchanged. The post-action portfolio satisfies the 50% single-company limit, preserves liquidity (cash now 15,714 EGP, covering the 10% within-a-year need of ~5,980 EGP), and reduces exposure to a single holding for an investor with low loss tolerance.\n\n- **Unused figures (marked AMBIGUOUS or unreliable, not used in calculations):**\n  1. [removed: figure could not be verified] The unspecified unit prevents reliable Return on Equity (ROE) calculation, affecting assessment of EFID's efficiency and risk profile.\n  2. [removed: figure could not be verified] Interpreting these literally would imply EPS of 11,930 and 4,790 L.E./share, which is inconsistent with the market price of 141.95 EGP; therefore these figures must not be used for P/E or valuation ratios, affecting income-oriented analysis for ETEL.\n\n- **Uncertainty & risks:** This guidance relies solely on the evidence and prices as of the cutoff date. Future financial performance, dividend decisions, and market conditions may materially differ. The investor should monitor concentration risk, consider the low loss-bearing capacity, and may wish to seek personalized advice. This is guidance, not a guarantee of returns.",
+    "claims": [],
+    "unused_figures": [
+      "EFID Total equity (p5-39, p5-40): unit \"None\" – ambiguous for ROE and equity-based risk assessment; not used in calculations or valuation.",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-40",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "ETEL Basic and diluted earning per share (p6-55, p6-56): unit \"L.E.(000)\" – value 11.93 implies ~11,930 EGP/share, inconsistent with market price 141.95 EGP; not used for P/E, income, or valuation ratios.",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38]",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]"
+    ],
+    "limitations": [
+      "Guidance based exclusively on evidence and prices up to 2026-11-18; no outside knowledge or later events applied.",
+      "Portfolio diversification rule (no single company >50% of total value) enforced post-action; current recommendation sells 35 shares of EFID to bring it to 49.98%, satisfying the limit.",
+      "Liquidity need (10% within a year ≈ 5,980 EGP) covered by cash holding of 15,000 EGP; any future buy must respect the 50% limit and available cash.",
+      "All financial figures provided in base units (whole EGP) as required; no millions or ambiguous units used in core calculations.",
+      "ETEL EPS figure (p6-55/56) is ambiguous due to unit L.E.(000) and is excluded from income/valuation analysis; EFID Total equity with unit \"None\" is excluded from ROE calculations.",
+      "These figures could not be verified and were not used: Total equity, Total equity, Revenue (consolidated), Net profit for the year (consolidated), Basic and Diluted earnings per share (consolidated), Total Equity (consolidated), Operating revenues (5), Net profit for the year, Basic and diluted earning per share for the year (L.E. / Share) (15), Basic and diluted earning per share for the year (L.E. / Share) (15), [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01], [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30], [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38], [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45], [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01], [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]. Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15714.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1465
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"20,915,072,432\", which is 'Revenue (consolidated)' (2.09151e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"2,695,301,670\", which is 'Net profit for the year (consolidated)' (2.6953e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"2.18\", which is 'Basic and Diluted earnings per share (consolidated)' (2.18), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"106,672,946,000\", which is 'Operating revenues (5)' (1.06673e+11), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"106,672,946\" but evidence 'Operating revenues (5)' is 1.06673e+11 [Operating revenues (5) 106 672 946 81 677 812 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"22,578,063,000\", which is 'Net profit for the year' (2.25781e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"22,578,063\" but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"63,687,826,000\", which is 'Total Equity (consolidated)' (6.36878e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"63,687,826\" but evidence 'Total Equity (consolidated)' is 6.36878e+10 [Total Equity | | 63 687 826 | 45 937 991 | unit: L.E. (000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"5,724,525,864\", which is 'Total equity' (5.72453e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-40",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4,055,484,719\", which is 'Total equity' (4.05548e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"11.93\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (11.93), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.79\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (4.79), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"20,915,072,432\", which is 'Revenue (consolidated)' (2.09151e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"2,695,301,670\", which is 'Net profit for the year (consolidated)' (2.6953e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"2.18\", which is 'Basic and Diluted earnings per share (consolidated)' (2.18), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"106,672,946,000\", which is 'Operating revenues (5)' (1.06673e+11), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"106,672,946\" but evidence 'Operating revenues (5)' is 1.06673e+11 [Operating revenues (5) 106 672 946 81 677 812 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"22,578,063,000\", which is 'Net profit for the year' (2.25781e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"22,578,063\" but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"63,687,826,000\", which is 'Total Equity (consolidated)' (6.36878e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"63,687,826\" but evidence 'Total Equity (consolidated)' is 6.36878e+10 [Total Equity | | 63 687 826 | 45 937 991 | unit: L.E. (000)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"5,724,525,864\", which is 'Total equity' (5.72453e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-40",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4,055,484,719\", which is 'Total equity' (4.05548e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"11.93\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (11.93), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.79\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (4.79), but it is not listed in claims"
+      }
+    ],
+    "dropped": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-40",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38]",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]",
+      "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]"
+    ],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 107.237,
+      "input_tokens": 3590,
+      "output_tokens": 16024,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 90.32,
+      "input_tokens": 6964,
+      "output_tokens": 16799,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 197.566
+}

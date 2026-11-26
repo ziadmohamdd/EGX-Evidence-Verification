@@ -1,0 +1,135 @@
+{
+  "case_id": "dev_005",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 400,
+    "explanation": "We recommend buying 400 shares of Abu Qir Fertilizers (ABUK) at the price of 76.21 EGP per share, utilizing 30,484.00 EGP of the available cash. This achieves the investor's goal of adding a fertilizer exporter for diversification, moving away from a single-stock concentration in COMI. The purchase respects the portfolio constraint that no single company may exceed 50% of the total portfolio value; with 400 shares, ABUK's value will be 30,484.00 EGP out of a total portfolio value of 65,600.00 EGP, representing approximately 46.47% of the portfolio. We rely on verified per-share earnings of 8.74 EGP for the 9-month period ended 30 September 2026 and 4.28 EGP for the 9-month period ended 30 September 2025. Figures relating to total activity revenues and net profit periods are treated as ambiguous and unused due to mixed unit labeling.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Basic earnings per share for the 9-month period ended 30 September 2026 were reported at 8.74 EGP."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Basic earnings per share for the 9-month period ended 30 September 2025 were reported at 4.28 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-03",
+      "ABUK-ABUK_9M2026_results-p2-04",
+      "ABUK-ABUK_9M2026_results-p2-05",
+      "ABUK-ABUK_9M2026_results-p2-06",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-27",
+      "ABUK-ABUK_9M2026_results-p2-28",
+      "ABUK-ABUK_9M2026_results-p2-29",
+      "ABUK-ABUK_9M2026_results-p2-30",
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "Revenue and net profit figures from the ABUK report are ambiguous due to inconsistent unit labeling and cannot be used in calculations.",
+      "No balance sheet data is provided in the company's interim results report."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 400,
+    "explanation": "We recommend buying 400 shares of Abu Qir Fertilizers (ABUK) at the price of 76.21 EGP per share, utilizing 30,484.00 EGP of the available cash. This achieves the investor's goal of adding a fertilizer exporter for diversification, moving away from a single-stock concentration in COMI. The purchase respects the portfolio constraint that no single company may exceed 50% of the total portfolio value; with 400 shares, ABUK's value will be 30,484.00 EGP out of a total portfolio value of 65,600.00 EGP, representing approximately 46.47% of the portfolio. We rely on verified per-share earnings of 8.74 EGP for the 9-month period ended 30 September 2026 and 4.28 EGP for the 9-month period ended 30 September 2025. Figures relating to total activity revenues and net profit periods are treated as ambiguous and unused due to mixed unit labeling.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Basic earnings per share for the 9-month period ended 30 September 2026 were reported at 8.74 EGP."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Basic earnings per share for the 9-month period ended 30 September 2025 were reported at 4.28 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-03",
+      "ABUK-ABUK_9M2026_results-p2-04",
+      "ABUK-ABUK_9M2026_results-p2-05",
+      "ABUK-ABUK_9M2026_results-p2-06",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-27",
+      "ABUK-ABUK_9M2026_results-p2-28",
+      "ABUK-ABUK_9M2026_results-p2-29",
+      "ABUK-ABUK_9M2026_results-p2-30",
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "Revenue and net profit figures from the ABUK report are ambiguous due to inconsistent unit labeling and cannot be used in calculations.",
+      "No balance sheet data is provided in the company's interim results report."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 9516.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      },
+      {
+        "ticker": "ABUK",
+        "shares": 400
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "Based on the provided evidence for Abu Qir Fertilizers (ABUK), here is the analysis covering profitability, growth, balance sheet, risks, and data quality:\n\n*   **Profitability & Growth:** \n    *   Basic earnings per share for the 9-month period ended 30 September 2026 were reported at 8.74 EGP [ABUK-ABUK_9M2026_results-p2-31], compared to 4.28 EGP for the 9-month period ended 30 September 2025 [ABUK-ABUK_9M2026_results-p2-32]. \n    *   Basic earnings per share for the 3-month period ended 30 September 2025 were reported at 1.23 EGP [ABUK-ABUK_9M2026_results-p2-35]. \n    *   Other headline figures—including activity revenues and net profit for the periods—are flagged as AMBIGUOUS due to mixed unit labeling ('مليار' vs 'مليون') and unclear percentage changes [ABUK-ABUK_9M2026_results-p2-01 through ABUK-ABUK_9M2026_results-p2-30], and therefore cannot be reliably computed.\n*   **Balance Sheet:** \n    *   The provided evidence does not contain balance sheet data (such as assets, liabilities, or total equity).\n*   **Risks & Data Quality:** \n    *   Data quality issues are present in the primary results report. Multiple line items suffer from ambiguous unit references across the page, and certain per-share figures and percentage changes lack clear decimal separators or contain conflicting multi-number strings [ABUK-ABUK_9M2026_results-p2-01 through ABUK-ABUK_9M2026_results-p2-36]. \n    *   No specific operational or macroeconomic risks (beyond data ambiguity) are detailed in the text.\n*   **Pricing & Portfolio Context:** \n    *   ABUK share price at the cutoff: 76.21 EGP.\n    *   COMI share price at the cutoff: 128.00 EGP (holding: 200 shares).\n    *   Available Cash: 40,000.00 EGP.",
+    "investor": "Based\n on the investor's profile, current portfolio, and portfolio permissions, here is the suitability analysis:\n\n### **1. Investment Horizon**\n* **Horizon:** 5 years.\n* **Suitability:** This medium-term horizon is appropriate for equity investments, allowing sufficient time to ride out market cycles and volatilities typically associated with the fertilizer and banking sectors.\n\n### **2. Liquidity Needs**\n* **Liquidity Status:** The investor maintains a separate emergency fund.\n* **Suitability:** Because immediate liquidity needs are secured outside the portfolio, the capital within the portfolio can remain fully invested without the risk of forced selling during market downturns.\n\n### **3. Loss Willingness and Capacity**\n* **Risk Profile:** Medium willingness to accept losses and medium financial ability to withstand them.\n* **Suitability:** The investor can tolerate moderate drawdowns, meaning exposure to cyclical equities (such as fertilizer exporters) is acceptable, provided position sizing remains balanced and avoids over-concentration in high-beta assets.\n\n### **4. Current Concentration**\n* **Current Holdings:** 200 shares of COMI (Commercial International Bank) priced at 128.00 EGP per share, resulting in a holding value of **25,600.00 EGP**.\n* **Current Cash:** **40,000.00 EGP**.\n* **Total Portfolio Value:** **65,600.00 EGP**.\n* **Concentration Analysis:** The current portfolio is 100% concentrated in a single banking stock (COMI), which accounts for roughly 39% of total portfolio value, while the remaining 61% is held in uninvested cash. Adding a fertilizer exporter aligns with the investor's stated goal of diversification.\n\n### **5. Portfolio Allowances & Capital Commitment**\n* **Free Cash Available:** **40,000.00 EGP** is readily available in cash to deploy toward new investments without needing to liquidate existing holdings.\n* **Sellable Assets:** The 200 shares of COMI (valued at 25,600.00 EGP) can also be sold if rebalancing or a larger capital reallocation is desired. \n* **Reasonable Commitment:** Up to the full 40,000.00 EGP in free cash can be reasonably committed to establish a position in a fertilizer exporter (such as ABUK, trading at 76.21 EGP per share). Depending on target asset allocation, partial liquidation of COMI shares is also permitted by the portfolio structure if a heavier weight in the new sector is desired."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 2.794,
+      "input_tokens": 4672,
+      "output_tokens": 537,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 2.759,
+      "input_tokens": 4664,
+      "output_tokens": 562,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 6.352,
+      "input_tokens": 6084,
+      "output_tokens": 885,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 11.91
+}

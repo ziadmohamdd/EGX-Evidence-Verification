@@ -1,0 +1,131 @@
+{
+  "case_id": "dev_002",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor profile targets long-term wealth building over a 10+ year horizon with high risk tolerance and no planned liquidity needs. The current portfolio holds 100,000 EGP in cash and no equities. The evidence provides TMGH's FY2025 consolidated results and FY2024 restated figures, but several critical limitations prevent a responsible decision.\n\nVerified figures from the evidence:\n- Gross profit (consolidated) 2025: 20,855,400,384 LE [TMGH-TMGH_FY2025_consolidated_en-p7-19]\n- Gross profit (consolidated) 2024 Restated: 14,002,196,445 LE [TMGH-TMGH_FY2025_consolidated_en-p7-20]\n- Net profit for the year (consolidated) 2025: 18,201,981,482 LE [TMGH-TMGH_FY2025_consolidated_en-p7-55]\n- Total equity 31 December 2025: 157,708,140,765 LE [TMGH-TMGH_FY2025_consolidated_en-p5-67]\n- Total equity 31 December 2024 Restated: 129,879,813,693 LE [TMGH-TMGH_FY2025_consolidated_en-p5-68]\n- Earnings per Share 2025: 6.98 LE [TMGH-TMGH_FY2025_consolidated_en-p7-61]\n- Earnings per Share 2024 Restated: 4.38 LE [TMGH-TMGH_FY2025_consolidated_en-p7-62]\n- Share price at cutoff: 82.50 EGP (implies a calculable P/E of ~11.8 based on 2025 EPS, but without sector benchmarks this ratio is uninterpretable).\n\nUnusable / AMBIGUOUS figure:\n- Net profit for the year (consolidated) 2024 Restated: AMBIGUOUS [TMGH-TMGH_FY2025_consolidated_en-p7-56] – digits are covered by an auditor's stamp and are explicitly marked unusable. This prevents any reliable year‑over‑year net profit growth analysis, EPS trend assessment, or P/E context for 2024.\n\nWhy the evidence is insufficient for a responsible 10+ year decision:\n- Only two fiscal years are provided, and one year's net profit is unusable; no multi‑year trends, dividend history, cash‑flow statements, or debt metrics are included.\n- No sector or market comparatives can be applied (rules prohibit outside knowledge), and the single calculable P/E of ~11.8 lacks any benchmark to judge whether it signals value, growth, or overvaluation.\n- The portfolio diversification rule would cap any single holding at 50% of the total portfolio (cash plus holdings at given prices), which is mathematically feasible but does not address the fundamental lack of evidence supporting a long‑term position in a single listed company.\n- For an investor with no existing holdings and a decade‑long horizon, deploying capital based on this limited, partially uninterpretable dataset would be speculative rather than evidence‑based.\n\nGiven the paucity of reliable data—particularly the ambiguous 2024 net profit and the absence of historical trends, risk metrics, and valuation context—the evidence does not meet the threshold for a responsible buy, hold, or sell recommendation. The prudent course is to retain cash and await more comprehensive financial information.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "Gross profit (consolidated) 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+        "stated_value": 14002196445.0,
+        "statement": "Gross profit (consolidated) 2024 Restated"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year (consolidated) 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity 31 December 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-68",
+        "stated_value": 129879813693.0,
+        "statement": "Total equity 31 December 2024 Restated"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Earnings per Share 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "Earnings per Share 2024 Restated"
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "The 2024 net profit figure is AMBIGUOUS and cannot be used in any calculations; conclusions about year‑over‑year net profit growth, EPS trends, and P/E context for 2024 are affected.",
+      "Only two fiscal years of data are provided; no dividend, cash‑flow, or leverage information is included.",
+      "No sector or market comparatives can be drawn upon per the rules, leaving the calculable P/E of ~11.8 without interpretive benchmarks.",
+      "The portfolio diversification rule would limit any single position to ≤50% of the total portfolio, but this does not remedy the evidentiary gaps for a 10+ year wealth‑building horizon."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor profile targets long-term wealth building over a 10+ year horizon with high risk tolerance and no planned liquidity needs. The current portfolio holds 100,000 EGP in cash and no equities. The evidence provides TMGH's FY2025 consolidated results and FY2024 restated figures, but several critical limitations prevent a responsible decision.\n\nVerified figures from the evidence:\n- Gross profit (consolidated) 2025: 20,855,400,384 LE [TMGH-TMGH_FY2025_consolidated_en-p7-19]\n- Gross profit (consolidated) 2024 Restated: 14,002,196,445 LE [TMGH-TMGH_FY2025_consolidated_en-p7-20]\n- Net profit for the year (consolidated) 2025: 18,201,981,482 LE [TMGH-TMGH_FY2025_consolidated_en-p7-55]\n- Total equity 31 December 2025: 157,708,140,765 LE [TMGH-TMGH_FY2025_consolidated_en-p5-67]\n- Total equity 31 December 2024 Restated: 129,879,813,693 LE [TMGH-TMGH_FY2025_consolidated_en-p5-68]\n- Earnings per Share 2025: 6.98 LE [TMGH-TMGH_FY2025_consolidated_en-p7-61]\n- Earnings per Share 2024 Restated: 4.38 LE [TMGH-TMGH_FY2025_consolidated_en-p7-62]\n- Share price at cutoff: 82.50 EGP (implies a calculable P/E of ~11.8 based on 2025 EPS, but without sector benchmarks this ratio is uninterpretable).\n\nUnusable / AMBIGUOUS figure:\n- Net profit for the year (consolidated) 2024 Restated: AMBIGUOUS [TMGH-TMGH_FY2025_consolidated_en-p7-56] – digits are covered by an auditor's stamp and are explicitly marked unusable. This prevents any reliable year‑over‑year net profit growth analysis, EPS trend assessment, or P/E context for 2024.\n\nWhy the evidence is insufficient for a responsible 10+ year decision:\n- Only two fiscal years are provided, and one year's net profit is unusable; no multi‑year trends, dividend history, cash‑flow statements, or debt metrics are included.\n- No sector or market comparatives can be applied (rules prohibit outside knowledge), and the single calculable P/E of ~11.8 lacks any benchmark to judge whether it signals value, growth, or overvaluation.\n- The portfolio diversification rule would cap any single holding at 50% of the total portfolio (cash plus holdings at given prices), which is mathematically feasible but does not address the fundamental lack of evidence supporting a long‑term position in a single listed company.\n- For an investor with no existing holdings and a decade‑long horizon, deploying capital based on this limited, partially uninterpretable dataset would be speculative rather than evidence‑based.\n\nGiven the paucity of reliable data—particularly the ambiguous 2024 net profit and the absence of historical trends, risk metrics, and valuation context—the evidence does not meet the threshold for a responsible buy, hold, or sell recommendation. The prudent course is to retain cash and await more comprehensive financial information.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "Gross profit (consolidated) 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+        "stated_value": 14002196445.0,
+        "statement": "Gross profit (consolidated) 2024 Restated"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year (consolidated) 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity 31 December 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-68",
+        "stated_value": 129879813693.0,
+        "statement": "Total equity 31 December 2024 Restated"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Earnings per Share 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "Earnings per Share 2024 Restated"
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "The 2024 net profit figure is AMBIGUOUS and cannot be used in any calculations; conclusions about year‑over‑year net profit growth, EPS trends, and P/E context for 2024 are affected.",
+      "Only two fiscal years of data are provided; no dividend, cash‑flow, or leverage information is included.",
+      "No sector or market comparatives can be drawn upon per the rules, leaving the calculable P/E of ~11.8 without interpretive benchmarks.",
+      "The portfolio diversification rule would limit any single position to ≤50% of the total portfolio, but this does not remedy the evidentiary gaps for a 10+ year wealth‑building horizon."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 100000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 54.017,
+      "input_tokens": 1672,
+      "output_tokens": 11088,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 54.02
+}

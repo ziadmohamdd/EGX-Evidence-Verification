@@ -1,0 +1,129 @@
+{
+  "case_id": "dev_002",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 606,
+    "explanation": "Given the investor's long-term horizon, high risk tolerance, and lack of near-term liquidity needs, buying TMGH shares is suitable. TMGH demonstrated strong financial performance in 2025, with gross profit reaching 20,855,400,384 EGP, net profit of 18,201,981,482 EGP, and basic earnings per share of 6.98 EGP. Total equity stood at 157,708,140,765 EGP at the end of 2025. With a share price of 82.50 EGP, purchasing 606 shares requires 50,025.00 EGP, representing exactly 50% of the total portfolio value (100,000.00 EGP cash plus holdings). This complies with the diversification rule that no single company may exceed half of the portfolio's total value. The 2024 restated net profit figure is ambiguous due to an auditor stamp and was not used.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "Gross profit reached 20,855,400,384 EGP in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year 2025 is 18,201,981,482 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Earnings per share was reported at 6.98 EGP for 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity stood at 157,708,140,765 EGP as of 31 December 2025."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "The 2024 restated net profit figure is unreadable and excluded from calculations.",
+      "Share purchases are capped at 50% of total portfolio value to maintain diversification."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 606,
+    "explanation": "Given the investor's long-term horizon, high risk tolerance, and lack of near-term liquidity needs, buying TMGH shares is suitable. TMGH demonstrated strong financial performance in 2025, with gross profit reaching 20,855,400,384 EGP, net profit of 18,201,981,482 EGP, and basic earnings per share of 6.98 EGP. Total equity stood at 157,708,140,765 EGP at the end of 2025. With a share price of 82.50 EGP, purchasing 606 shares requires 50,025.00 EGP, representing exactly 50% of the total portfolio value (100,000.00 EGP cash plus holdings). This complies with the diversification rule that no single company may exceed half of the portfolio's total value. The 2024 restated net profit figure is ambiguous due to an auditor stamp and was not used.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "Gross profit reached 20,855,400,384 EGP in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "Net profit for the year 2025 is 18,201,981,482 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Earnings per share was reported at 6.98 EGP for 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity stood at 157,708,140,765 EGP as of 31 December 2025."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "The 2024 restated net profit figure is unreadable and excluded from calculations.",
+      "Share purchases are capped at 50% of total portfolio value to maintain diversification."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 50005.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 606
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "Based on the provided evidence, here is the financial analysis of Talaat Moustafa Group Holding (TMGH):\n\n### Profitability and Growth\n* **Gross Profit:** Reached 20,855,400,384 EGP in 2025, showing an increase from 14,002,196,445 EGP in 2024 (Restated) [TMGH-TMGH_FY2025_consolidated_en-p7-19, TMGH-TMGH_FY2025_consolidated_en-p7-20].\n* **Net Profit:** The net profit for the year 2025 is 18,201,981,482 EGP [TMGH-TMGH_FY2025_consolidated_en-p7-55]. \n* **Earnings per Share (EPS):** Reported at 6.98 EGP for 2025 and 4.38 EGP for 2024 (Restated) [TMGH-TMGH_FY2025_consolidated_en-p7-61, TMGH-TMGH_FY2025_consolidated_en-p7-62].\n\n### Balance Sheet\n* **Total Equity:** Stood at 157,708,140,765 EGP as of 31 December 2025, up from 129,879,813,693 EGP as of 31 December 2024 (Restated) [TMGH-TMGH_FY2025_consolidated_en-p5-67, TMGH-TMGH_FY2025_consolidated_en-p5-68].\n\n### Risks and Data Quality\n* **Data Quality Issue:** The 2024 (Restated) net profit figure for the year (12,769,517,325 EGP) is flagged as **AMBIGUOUS** because the digits were covered by an auditor's stamp and are unreadable in the report [TMGH-TMGH_FY2025_consolidated_en-p7-56]. Per instructions, this figure has not been used in computations.",
+    "investor": "As the investor-suitability analyst on the investment team, I have evaluated your profile, liquidity parameters, and current portfolio constraints to determine what the portfolio allows:\n\n### **Investor Suitability Assessment**\n\n*   **Investment Horizon:** \n    *   *Status:* Long-term (10+ years). \n    *   *Suitability:* Your extended time horizon strongly suits growth-oriented, equity investments, allowing you to ride out short-term market volatility and economic cycles.\n*   **Liquidity Needs:** \n    *   *Status:* No withdrawals planned. \n    *   *Suitability:* You have a complete lack of near-term liquidity demands. This enables a high-allocation strategy toward illiquid or less liquid growth assets (like equities) without the pressure of forced selling.\n*   **Loss Willingness and Capacity:** \n    *   *Status:* High willingness and high financial ability to withstand losses. \n    *   *Suitability:* You are well-positioned to absorb the inherent downside risks and drawdowns associated with equity markets, making high-beta or growth-focused positions appropriate for your risk profile.\n*   **Current Concentration:** \n    *   *Status:* 100% Cash (100,000.00 EGP) with zero current holdings. \n    *   *Suitability:* Your portfolio currently has zero equity concentration, meaning you carry no single-stock risk, but your capital is fully unexposed to growth assets.\n\n---\n\n### **Portfolio Allowances (What Can Be Done)**\n\n*   **Portfolio Liquidation / Sales:** \n    *   *Status:* There are currently **no holdings** in the portfolio. Therefore, no shares can or need to be sold.\n*   **Free Cash Available for Commitment:** \n    *   *Status:* You hold **100,000.00 EGP** in free cash. \n    *   *Allowance:* Given your share price reference point for TMGH at 82.50 EGP, your available cash theoretically permits the acquisition of up to ~1,212 shares (ignoring transaction fees). Depending on how much of your total liquid capital you wish to allocate, a substantial portion or all of this 100,000.00 EGP can reasonably be committed to the market, fully supported by your high risk capacity and lack of withdrawal needs."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 5.183,
+      "input_tokens": 1412,
+      "output_tokens": 526,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 4.209,
+      "input_tokens": 1404,
+      "output_tokens": 514,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 2.524,
+      "input_tokens": 2764,
+      "output_tokens": 730,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 11.921
+}

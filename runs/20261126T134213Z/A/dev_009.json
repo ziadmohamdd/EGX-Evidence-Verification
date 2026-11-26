@@ -1,0 +1,53 @@
+{
+  "case_id": "dev_009",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "Insufficient evidence for a responsible investment decision.\n\n**Key issues:\n1. All financial figures in the ABUK 9M2026 report are marked AMBIGUOUS** due to unit discrepancies. The printed report shows units of 'مليار' (billion) for the first 9 columns but 'مليون' (million) for the last column, while the unit line at the bottom claims 'مليون جنيه' (million EGP). Per the rules, AMBIGUOUS figures must not be used in calculations.\n\n2. Only 3 entries are marked 'verified': EPS for 9M2026 (8.74 EGP/share), 3M2025 (4.28 EGP/share), and 9M2025 (8.74 EGP/share). Notably, 9M2025 and 9M2026 both show exactly 8.74 EGP EPS, which is suspicious and undermines confidence in the data.\n\n3. **Missing evidence for the required calculations:**\n   - Full-year 2026 EPS: The report covers only 9 months (through Sept 30, 2026). No data is provided for Q4 2026 or full-year guidance.\n   - Reliable EPS figure: Even the 'verified' EPS values carry ambiguity about whether they're in EGP per share or another scale, and the duplicate 8.74 value across two different periods raises data-quality concerns.\n   - P/E ratio calculation: Cannot be computed without a trustworthy full-year EPS estimate.\n\n4. **Conclusions affected by AMBIGUOUS figures:** All revenue figures (e.g., 31,488/16,578 for 9M2026/9M2025), all EPS values from AMBIGUOUS entries, and all percentage-change figures cannot be used. The 'verified' EPS entries are the only potentially usable numbers, but their reliability is questionable given the cross-period duplication.\n\n**Without reliable earnings data, I cannot calculate a P/E ratio or determine if ABUK at 76.21 EGP is cheap.** The evidence does not support a responsible buy/hold/sell decision. A future decision would require a full-year report with clear unit reporting and verified per-share figures.\n\n**Risk statement:** This is guidance, not a guarantee of returns. The Egyptian stock market involves currency, regulatory, and company-specific risks. The investor's medium risk tolerance and 3-5 year horizon are appropriate for equities, but those considerations cannot override the lack of reliable earnings data here.",
+    "claims": [],
+    "unused_figures": [
+      "All revenue figures (p2-01 to p2-06): AMBIGUOUS due to billion/million unit ambiguity on p.2 of ABUK 9M2026 results. All EPS and percentage-change figures (p2-25 to p2-36): AMBIGUOUS for the same reason. The three 'verified' EPS entries (p2-31, p2-32, p2-35) are potentially usable but show 9M2025 and 9M2026 both at 8.74 EGP/share, which is suspicious and their unit scaling is unclear."
+    ],
+    "limitations": [
+      "Cannot sell shares the investor does not own (no holdings currently). Buy would need to keep ABUK ≤ 50% of portfolio (30,000 EGP cash → max 15,000 EGP in ABUK = ~197 shares at 76.21 EGP, but this is moot given insufficient evidence."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "Insufficient evidence for a responsible investment decision.\n\n**Key issues:\n1. All financial figures in the ABUK 9M2026 report are marked AMBIGUOUS** due to unit discrepancies. The printed report shows units of 'مليار' (billion) for the first 9 columns but 'مليون' (million) for the last column, while the unit line at the bottom claims 'مليون جنيه' (million EGP). Per the rules, AMBIGUOUS figures must not be used in calculations.\n\n2. Only 3 entries are marked 'verified': EPS for 9M2026 (8.74 EGP/share), 3M2025 (4.28 EGP/share), and 9M2025 (8.74 EGP/share). Notably, 9M2025 and 9M2026 both show exactly 8.74 EGP EPS, which is suspicious and undermines confidence in the data.\n\n3. **Missing evidence for the required calculations:**\n   - Full-year 2026 EPS: The report covers only 9 months (through Sept 30, 2026). No data is provided for Q4 2026 or full-year guidance.\n   - Reliable EPS figure: Even the 'verified' EPS values carry ambiguity about whether they're in EGP per share or another scale, and the duplicate 8.74 value across two different periods raises data-quality concerns.\n   - P/E ratio calculation: Cannot be computed without a trustworthy full-year EPS estimate.\n\n4. **Conclusions affected by AMBIGUOUS figures:** All revenue figures (e.g., 31,488/16,578 for 9M2026/9M2025), all EPS values from AMBIGUOUS entries, and all percentage-change figures cannot be used. The 'verified' EPS entries are the only potentially usable numbers, but their reliability is questionable given the cross-period duplication.\n\n**Without reliable earnings data, I cannot calculate a P/E ratio or determine if ABUK at 76.21 EGP is cheap.** The evidence does not support a responsible buy/hold/sell decision. A future decision would require a full-year report with clear unit reporting and verified per-share figures.\n\n**Risk statement:** This is guidance, not a guarantee of returns. The Egyptian stock market involves currency, regulatory, and company-specific risks. The investor's medium risk tolerance and 3-5 year horizon are appropriate for equities, but those considerations cannot override the lack of reliable earnings data here.",
+    "claims": [],
+    "unused_figures": [
+      "All revenue figures (p2-01 to p2-06): AMBIGUOUS due to billion/million unit ambiguity on p.2 of ABUK 9M2026 results. All EPS and percentage-change figures (p2-25 to p2-36): AMBIGUOUS for the same reason. The three 'verified' EPS entries (p2-31, p2-32, p2-35) are potentially usable but show 9M2025 and 9M2026 both at 8.74 EGP/share, which is suspicious and their unit scaling is unclear."
+    ],
+    "limitations": [
+      "Cannot sell shares the investor does not own (no holdings currently). Buy would need to keep ABUK ≤ 50% of portfolio (30,000 EGP cash → max 15,000 EGP in ABUK = ~197 shares at 76.21 EGP, but this is moot given insufficient evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 55.962,
+      "input_tokens": 5140,
+      "output_tokens": 6134,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 55.966
+}

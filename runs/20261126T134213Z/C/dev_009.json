@@ -1,0 +1,86 @@
+{
+  "case_id": "dev_009",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The evidence list does not report a full‑year 2026 earnings per share (EPS) for ABUK; the latest report covers only the nine months ended 30 September 2026. While the verified nine‑month trailing EPS of 8.74 EGP/share (evidence_id [p2‑31]) and the cutoff price of 76.21 EGP allow a nine‑month price‑to‑earnings (P/E) ratio of approximately 8.7×, any full‑year EPS or P/E would require an estimate beyond the provided data. The financial analyst’s linear annualisation (8.74 × 12⁄9 ≈ 11.65 EGP, P/E ≈ 6.5×) is explicitly noted as a simple proportional extrapolation with the disclaimer that actual full‑year earnings may seasonally differ and that the evidence contains no full‑year figures.  \n\nFigures marked AMBIGUOUS in the evidence (and therefore excluded from all calculations) include: the change‑percentage rows for revenue ([p2‑06], [p2‑30]) and net profit ([p2‑26]–[p2‑30]), the per‑share change‑percentage rows ([p2‑33], [p2‑34], [p2‑36]), and the revenue/net‑profit rows whose unit layout mixes ‘مليار’ and ‘مليون’ despite reliance on the ‘مليون جنيه’ line. These ambiguous figures affect any calculation that would use quarter‑over‑quarter or year‑over‑year change percentages or multi‑period revenue aggregates.\n\nMissing evidence for a responsible full‑year valuation decision:\n- Full‑year 2026 EPS (only 9M data available).\n- Dividend per share or income‑generation data to support the investor’s income objective.\n- Sector‑average P/E benchmarks or historical ABUK multiples for a ‘cheap enough’ assessment.\n- Q4 2026 or full‑year net‑profit figures.\n\nGiven the absence of full‑year EPS, lack of income data, and the unverified nature of any annualised estimate, the evidence is insufficient to determine whether the share is cheap enough to buy for an investor seeking income and growth over a 3‑5‑year horizon with medium loss tolerance. A responsible decision cannot be made on the requested metrics.",
+    "claims": [],
+    "unused_figures": [
+      "[ABUK-ABUK_9M2026_results-p2-01]–[p2‑06]: Revenue rows with ambiguous change percentages and mixed‑unit layout; not used in any P/E or annualisation calculation.",
+      "[ABUK-ABUK_9M2026_results-p2‑25]–[p2‑30]: Net‑profit period rows and change‑percentage rows (%١٠٣, %٠١٠٤) with unclear OCR output; excluded from EPS and P/E computations.",
+      "[ABUK-ABUK_9M2026_results-p2‑33]–[p2‑36]: Per‑share earnings change‑percentage rows with OCR‑unclear numbers (%١٠٤); not used in any calculation.",
+      "[ABUK-ABUK_9M2026_results-p2‑36]–[p2‑30] etc.: Any other AMBIGUOUS‑marked rows whose figures would alter quarterly/annual comparisons."
+    ],
+    "limitations": [
+      "Full‑year 2026 EPS is not reported; only nine‑month data is authoritative.",
+      "Linear annualisation is an estimate beyond direct evidence and carries seasonal uncertainty.",
+      "No dividend or income‑per‑share data is provided to evaluate the investor’s income goal.",
+      "Sector comparables or historical P/E ranges for ABUK are outside the evidence list and cannot be used."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The evidence list does not report a full‑year 2026 earnings per share (EPS) for ABUK; the latest report covers only the nine months ended 30 September 2026. While the verified nine‑month trailing EPS of 8.74 EGP/share (evidence_id [p2‑31]) and the cutoff price of 76.21 EGP allow a nine‑month price‑to‑earnings (P/E) ratio of approximately 8.7×, any full‑year EPS or P/E would require an estimate beyond the provided data. The financial analyst’s linear annualisation (8.74 × 12⁄9 ≈ 11.65 EGP, P/E ≈ 6.5×) is explicitly noted as a simple proportional extrapolation with the disclaimer that actual full‑year earnings may seasonally differ and that the evidence contains no full‑year figures.  \n\nFigures marked AMBIGUOUS in the evidence (and therefore excluded from all calculations) include: the change‑percentage rows for revenue ([p2‑06], [p2‑30]) and net profit ([p2‑26]–[p2‑30]), the per‑share change‑percentage rows ([p2‑33], [p2‑34], [p2‑36]), and the revenue/net‑profit rows whose unit layout mixes ‘مليار’ and ‘مليون’ despite reliance on the ‘مليون جنيه’ line. These ambiguous figures affect any calculation that would use quarter‑over‑quarter or year‑over‑year change percentages or multi‑period revenue aggregates.\n\nMissing evidence for a responsible full‑year valuation decision:\n- Full‑year 2026 EPS (only 9M data available).\n- Dividend per share or income‑generation data to support the investor’s income objective.\n- Sector‑average P/E benchmarks or historical ABUK multiples for a ‘cheap enough’ assessment.\n- Q4 2026 or full‑year net‑profit figures.\n\nGiven the absence of full‑year EPS, lack of income data, and the unverified nature of any annualised estimate, the evidence is insufficient to determine whether the share is cheap enough to buy for an investor seeking income and growth over a 3‑5‑year horizon with medium loss tolerance. A responsible decision cannot be made on the requested metrics.",
+    "claims": [],
+    "unused_figures": [
+      "[ABUK-ABUK_9M2026_results-p2-01]–[p2‑06]: Revenue rows with ambiguous change percentages and mixed‑unit layout; not used in any P/E or annualisation calculation.",
+      "[ABUK-ABUK_9M2026_results-p2‑25]–[p2‑30]: Net‑profit period rows and change‑percentage rows (%١٠٣, %٠١٠٤) with unclear OCR output; excluded from EPS and P/E computations.",
+      "[ABUK-ABUK_9M2026_results-p2‑33]–[p2‑36]: Per‑share earnings change‑percentage rows with OCR‑unclear numbers (%١٠٤); not used in any calculation.",
+      "[ABUK-ABUK_9M2026_results-p2‑36]–[p2‑30] etc.: Any other AMBIGUOUS‑marked rows whose figures would alter quarterly/annual comparisons."
+    ],
+    "limitations": [
+      "Full‑year 2026 EPS is not reported; only nine‑month data is authoritative.",
+      "Linear annualisation is an estimate beyond direct evidence and carries seasonal uncertainty.",
+      "No dividend or income‑per‑share data is provided to evaluate the investor’s income goal.",
+      "Sector comparables or historical P/E ranges for ABUK are outside the evidence list and cannot be used."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Evidence-based analysis (all figures cited as `[evidence_id]`):**  \n\n### Reported EPS (nine‑month periods, verified)\n- **[ABUK-ABUK_9M2026_results-p2-31]**: Basic earnings per share for the nine months ended 30 September 2026 = **8.74 EGP** per share (row “نصيب السهم الأساسي في الأرباح ) جنيه (”, unit noted as “مليون جنيه” in the table header but the row label and OCR note confirm per‑share EGP; the value `٨،٧٤` is the Arabic numeral 8.74, verified).  \n- **[ABUK-ABUK_9M2026_results-p2-32]**: Basic earnings per share for the nine months ended 30 September 2025 = **4.28 EGP** per share (row same, period “التسعة أشهر المنتهية في ٣٠ سبتمبر ٢٠٢٥”, verified).  \n\n### Share price at cutoff\n- **76.21 EGP** per share (provided in investor profile; not from the PDF evidence but the stated market price at the 2026‑11‑18 cutoff).\n\n### Price‑to‑earnings (P/E) ratio\n- Using the **nine‑month trailing EPS of 8.74 EGP**:  \n  P/E = 76.21 ÷ 8.74 ≈ **8.72** (nine‑month basis).  \n  *Citation: share price as given; EPS from `[p2-31]`.*\n\n- **Full‑year 2026 EPS**: The evidence **does not report a full‑year EPS**. The latest ABUK report covers only the nine months ended 30 September 2026. A literal full‑year figure is absent from the provided data.\n\n- **Linear annualisation (estimate beyond direct evidence)**: If one assumes earnings are roughly evenly distributed across quarters, the full‑year EPS would scale as 8.74 × (12⁄9) ≈ **11.65 EGP**. Corresponding P/E ≈ 76.21 ÷ 11.65 ≈ **6.54**.  \n  *Disclaimer: This is a simple proportional extrapolation; the report contains no full‑year data, and actual full‑year earnings may seasonally differ. The ambiguous change‑percentage rows (`%١٠٤`, `%٠١٠٤`) have not been used in any computation.*\n\n### Flagged ambiguous figures (not used in calculations)\n- **[p2-06], [p2-30]**: Change‑percentage row for EPS shows ` %٠١٠٤` / ` %١٠٣` – the OCR output is unclear (“not a single number”). These are flagged as **AMBIGUOUS** and have been excluded from all computations.  \n- **[p2-01]–[p2-06], [p2-25]–[p2-31]**: Revenue and net‑profit rows show unit “مليون جنيه” (million EGP) but the table header line displays several units (`['مليار', ..., 'مليون']`); the analysis relies on the explicit unit line “مليون جنيه” as noted, but the mixed‑unit layout is noted for transparency.\n\n### Key balances & risks (from evidence, cited)\n- **Revenue (9M 2026)**: `[p2-01]` shows `٣١٤٨٨` (31,488) million EGP for the nine months ended 30 September 2026 (vs. 16,578 million EGP in 9M 2025).  \n- **Net profit (9M 2026)**: `[p2-25]` shows `١٢٩٧٠` (12,970) million EGP for the same period.  \n- **Share count implication**: Dividing net profit by the verified EPS (8.74 EGP) implies roughly 1.48 billion shares outstanding (12,970 million ÷ 8.74 ≈ 1,484 million), consistent with a large‑cap exporter.\n\n### Summary of computable metrics from evidence\n| Metric | Value | Basis |\n|--------|-------|-------|\n| 9M EPS (2026) | 8.74 EGP/share | `[p2-31]`, verified |\n| 9M EPS (2025) | 4.28 EGP/share | `[p2-32]`, verified |\n| P/E (9M trailing) | ~8.72 | Price 76.21 ÷ 8.74 |\n| Full‑year EPS | **Not reported** | Evidence covers only 9M |\n| Annualised EPS (linear estimate) | ~11.65 EGP | 8.74 × 12⁄9 (assumption stated) |\n| P/E (annualised estimate) | ~6.54 | 76.21 ÷ 11.65 |\n\n**No investment recommendation is provided** – the decision agent will act on the computed metrics and the investor’s profile (income/growth, 3‑5‑year horizon, medium loss tolerance). The share’s P/E of ~8.7× on nine‑month earnings and ~6.5× on a linear full‑year estimate should be evaluated against ABUK’s historical multiples, sector averages, and the investor’s income/yield objectives.",
+    "investor": "I can't fulfill this request as stated. My role as an investor-suitability analyst requires me to **avoid analysing company financials and to **not** make buy/hold recommendations or valuation assessments. Calculating full-year EPS, deriving a P/E ratio, or judging whether the share is \"cheap enough\" all fall outside my scope.\n\nI can, however, carry out the investor suitability assessment using the profile and portfolio details you provided. Here's a framework based on what's given:\n\n**Investor Suitability Assessment**\n- **Horizon (3–5 years):** Compatible with a medium-term holding period. Allows time for income accrual and growth realization, though it's on the shorter side for equity cycles.\n- **Liquidity needs:** You maintain a separate emergency fund, and currently hold 30,000 EGP in cash. Any ABUK allocation would come from free cash beyond that buffer.\n- **Loss willingness & capacity:** Both rated medium. This suggests a moderate position size–large enough to generate meaningful income/growth, but small enough that a downturn doesn't threaten your financial stability.\n- **Current concentration:** No existing holdings. Adding ABUK would be a new single-stock position, so diversification considerations would apply.\n- **Cash that could reasonably be committed:** With 30,000 EGP in cash and no other positions, a typical moderate allocation might range from 10–25% of available free cash (i.e., 3,000–7,500 EGP), depending on your overall portfolio size and risk tolerance. At the cutoff price of 76.21 EGP, this would equate to roughly 39–98 shares, though I'm not calculating value or recommending a specific count.\n\nIf you'd like, I can refine the position-sizing discussion, explore how this fits a broader diversified strategy, or adjust the allocation percentage based on a different cash commitment target–all without touching the company's financials or making a valuation call."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 53.289,
+      "input_tokens": 4868,
+      "output_tokens": 7072,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 15.068,
+      "input_tokens": 4862,
+      "output_tokens": 1869,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 73.037,
+      "input_tokens": 6836,
+      "output_tokens": 10974,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 141.397
+}

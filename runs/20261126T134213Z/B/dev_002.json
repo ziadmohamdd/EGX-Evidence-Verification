@@ -1,0 +1,235 @@
+{
+  "case_id": "dev_002",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 606,
+    "explanation": "Investor profile: long-term wealth building, 10+ year horizon, no planned liquidity withdrawals, high willingness and ability to withstand losses. Current portfolio: 100,000.00 EGP cash, no holdings. TMGH price at cutoff: 82.50 EGP per share.\n\nEvidence relied upon (in `claims`):\n- [TMGH-TMGH_FY2025_consolidated_en-p7-61]: Earnings per Share (consolidated) period 2025 = 6.98 LE. This implies a price‑to‑earnings (P/E) ratio of approximately 82.50 / 6.98 ≈ 11.8, based solely on given figures and indicating the company generated positive earnings in 2025.\n\nUnused figures:\n- [TMGH-TMGH_FY2025_consolidated_en-p7-56]: Net profit for the year (consolidated) period 2024 (Restated) = AMBIGUOUS (unreadable: digits covered by auditor's stamp). This figure cannot be used in any calculations. Conclusions affected: any assessment of year‑over‑year net profit growth from 2024 to 2025 is unsupported by the evidence; only gross profit growth and EPS are usable for performance context.\n\nDiversification compliance: Portfolio total value = cash + holdings = 100,000 EGP (the starting cash balance, since any purchase is funded from this pool). The rules state that after a buy, no single company may be more than 50% of the portfolio's total value. Therefore, the maximum amount that may be invested in TMGH is 50,000 EGP. At 82.50 EGP per share, the maximum whole‑number of shares affordable within this limit is floor(50,000 / 82.50) = 606 shares, costing 606 × 82.50 = 49,995 EGP. This leaves 50,005 EGP in cash. The resulting TMGH holding = 49,995 / 100,000 = 49.995% of the portfolio, which satisfies the ≤50% constraint exactly.\n\nRecommendation rationale: The investor’s long‑term wealth‑building goal and high risk tolerance are compatible with establishing a position in TMGH, given the evidence of 2025 profitability (positive EPS, growing gross profit from 14.002 billion LE in 2024 restated to 20.855 billion LE in 2025, and substantial total equity of 157.708 billion LE). However, the evidence base is limited—no revenue, debt, cash‑flow, or dividend data is provided, and the 2024 net profit is ambiguous, preventing a full growth assessment. The purchase of 606 shares respects the strict diversification limit, ensuring portfolio compliance while exposing the investor to TMGH’s business over the 10+ year horizon. The remaining 50,005 EGP in cash provides liquidity and mitigates over‑concentration risk, though it also means that if TMGH appreciates significantly over the decade, the cash portion may underperform a fully invested position.\n\nRisks and uncertainty:  \n- Incomplete financial picture; reliance on only EPS and gross profit figures plus the cutoff price.  \n- Ambiguous 2024 net profit limits reliable trend analysis.  \n- Calculated P/E of ~11.8 lacks industry benchmarks (outside knowledge is prohibited by the rules).  \n- 50% cash allocation caps upside potential if TMGH performs strongly over the decade.  \n- No information on dividends, share buybacks, or liquidity beyond the given price.\n\nAction: Buy 606 shares of TMGH at 82.50 EGP, keeping 50,005 EGP in cash. This complies with all stated rules and aligns with the investor’s profile, while honestly representing the evidence’s scope and limitations.",
+    "claims": [
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-61]",
+        "stated_value": 6.98,
+        "statement": "Earnings per Share (consolidated) period 2025 = 6.98 LE"
+      }
+    ],
+    "unused_figures": [
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-56]: Net profit for the year (consolidated) period 2024 (Restated) = AMBIGUOUS (unreadable: digits covered by auditor's stamp)"
+    ],
+    "limitations": [
+      "The decision is based solely on the provided evidence and cutoff price; no outside knowledge about TMGH or later events was used.",
+      "The diversification rule (≤50% single‑company concentration) was applied strictly, forcing the share quantity down from the cash‑affordable maximum (1,212 shares) to 606 shares.",
+      "The AMBIGUOUS net profit 2024 figure precludes any year‑over‑year net profit growth calculation; all conclusions relying on that growth are noted as affected.",
+      "The price per share (82.50 EGP) was given in the investor profile and used; it does not have an evidence_id from the report PDF but is a required input for the buy calculation."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 606,
+    "explanation": "Investor profile: long-term wealth building, 10+ year horizon, no planned liquidity withdrawals, high willingness and ability to withstand losses. Current portfolio: 100,000.00 EGP cash, no holdings. TMGH price at cutoff: 82.50 EGP per share (given in investor profile).\n\nEvidence relied upon (all figures listed in `claims` with evidence_id and base-unit values):\n- [TMGH-TMGH_FY2025_consolidated_en-p7-61]: [removed: figure could not be verified].\n- [TMGH-TMGH_FY2025_consolidated_en-p7-62]: [removed: figure could not be verified]. [removed: figure could not be verified]\n- [TMGH-TMGH_FY2025_consolidated_en-p7-19]: [removed: figure could not be verified]. [removed: figure could not be verified]\n- [TMGH-TMGH_FY2025_consolidated_en-p5-67]: [removed: figure could not be verified], reflecting a strong equity base.\n- [TMGH-TMGH_FY2025_consolidated_en-p7-55]: [removed: figure could not be verified]. The 2024 net profit figure is AMBIGUOUS (see unused_figures) and is not used in any growth calculation.\n\n[removed: figure could not be verified] No industry benchmarks are provided or used per the rules.\n\nDiversification compliance: The rules require that after a buy, no single company may exceed 50% of the portfolio's total value (cash plus holdings at given prices). Portfolio total value remains 100,000 EGP (cash + holdings). Maximum investable amount in TMGH = 50% × 100,000 = 50,000 EGP. At 82.50 EGP per share, the maximum whole-number of shares affordable within this limit is floor(50,000 / 82.50) = 606 shares, costing 606 × 82.50 = 49,995 EGP. This leaves 50,005 EGP in cash. The resulting TMGH holding = 49,995 / 100,000 = 49.995% of the portfolio, which satisfies the ≤50% constraint exactly.\n\nRationale: The evidence shows a company with growing gross profit, rising EPS, and a large equity base, generating positive net profit in 2025. Combined with the investor's long-term wealth‑building goal, high risk tolerance, and no planned liquidity needs, establishing a position in TMGH is compatible with the profile. The purchase of 606 shares respects the strict diversification limit, ensuring portfolio compliance while exposing the investor to TMGH’s business over the 10+ year horizon. The remaining 50,005 EGP in cash provides liquidity and mitigates over‑concentration risk.\n\nRisks and uncertainty:\n- Incomplete financial picture; the evidence provides only EPS, gross profit, and total equity. No revenue, debt, cash‑flow, or dividend data is available.\n- The 2024 net profit figure is AMBIGUOUS (digits covered by an auditor's stamp); this precludes any reliable year‑over‑year net profit growth analysis. Conclusions relying on that growth are noted as affected.\n- The calculated P/E of ~11.8 lacks industry benchmarks (outside knowledge is prohibited by the rules).\n- The 50% cash allocation caps upside potential if TMGH appreciates strongly over the decade.\n- No information on dividends, share buybacks, or liquidity beyond the given price.\n- Reliance on a single company, even within the 50% limit, concentrates risk in one Egyptian listed stock.\n\nAction: Buy 606 shares of TMGH at 82.50 EGP, keeping 50,005 EGP in cash. This complies with all stated rules and aligns with the investor’s profile, while honestly representing the evidence’s scope and limitations.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+      "[TMGH-TMGH_FY2025_consolidated_en-p5-67]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p5-68]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-19]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-20]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-55]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-56]: Net profit for the year (consolidated) period 2024 (Restated) = AMBIGUOUS (unreadable: digits covered by auditor's stamp)",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-61]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-62]"
+    ],
+    "limitations": [
+      "The decision is based solely on the provided evidence and the given cutoff price; no outside knowledge about TMGH or later events was used.",
+      "The diversification rule (≤50% single‑company concentration) was applied strictly, forcing the share quantity down from the cash‑affordable maximum (1,212 shares) to 606 shares, leaving 50,005 EGP in cash.",
+      "The AMBIGUOUS net profit 2024 figure (p7-56) cannot be used in any calculations; all conclusions relying on year‑over‑year net profit growth are unsupported by the evidence and are explicitly noted as affected.",
+      "The price per share (82.50 EGP) was given in the investor profile and used for the buy calculation; it does not have an evidence_id from the report PDF but is a required input.",
+      "The P/E ratio of ~11.8 is derived only from the given price and 2025 EPS; it lacks industry context and cannot be validated against sector averages without outside knowledge.",
+      "No revenue, debt, cash‑flow, or dividend data is provided in the evidence, limiting the depth of financial assessment.",
+      "The 50% cash allocation after the buy caps potential upside if TMGH performs strongly over the 10+ year horizon, but was required for diversification compliance.",
+      "The recommendation is guidance based on the evidence at the cutoff date (2026-11-18) and does not guarantee returns.",
+      "All financial figures in `claims` are presented in base units (whole pounds or LE as printed), not millions, as required.",
+      "These figures could not be verified and were not used: Total equity (consolidated), Gross profit (consolidated), Gross profit (consolidated), Net profit for the year (consolidated), Earnings per Share (consolidated), Earnings per Share (consolidated), [TMGH-TMGH_FY2025_consolidated_en-p5-67], [TMGH-TMGH_FY2025_consolidated_en-p5-68], [TMGH-TMGH_FY2025_consolidated_en-p7-19], [TMGH-TMGH_FY2025_consolidated_en-p7-20], [TMGH-TMGH_FY2025_consolidated_en-p7-55], [TMGH-TMGH_FY2025_consolidated_en-p7-61], [TMGH-TMGH_FY2025_consolidated_en-p7-62]. Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 50005.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 606
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-61]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"6.98\", which is 'Earnings per Share (consolidated)' (6.98), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"6.98\", which is 'Earnings per Share (consolidated)' (6.98), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"14.002 billion\", which is 'Gross profit (consolidated)' (1.40022e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"20.855 billion\", which is 'Gross profit (consolidated)' (2.08554e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"157.708 billion\", which is 'Total equity (consolidated)' (1.57708e+11), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-61]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-62]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-19]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-20]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p5-67]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p5-68]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[TMGH-TMGH_FY2025_consolidated_en-p7-55]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"6.98\", which is 'Earnings per Share (consolidated)' (6.98), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.38\", which is 'Earnings per Share (consolidated)' (4.38), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.38\", which is 'Earnings per Share (consolidated)' (4.38), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"6.98\", which is 'Earnings per Share (consolidated)' (6.98), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"20,855,400,384\", which is 'Gross profit (consolidated)' (2.08554e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"14,002,196,445\", which is 'Gross profit (consolidated)' (1.40022e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"157,708,140,765\", which is 'Total equity (consolidated)' (1.57708e+11), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"18,201,981,482\", which is 'Net profit for the year (consolidated)' (1.8202e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"6.98\", which is 'Earnings per Share (consolidated)' (6.98), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"6.98\", which is 'Earnings per Share (consolidated)' (6.98), but it is not listed in claims"
+      }
+    ],
+    "dropped": [
+      "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+      "[TMGH-TMGH_FY2025_consolidated_en-p5-67]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p5-68]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-19]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-20]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-55]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-61]",
+      "[TMGH-TMGH_FY2025_consolidated_en-p7-62]"
+    ],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 90.138,
+      "input_tokens": 1672,
+      "output_tokens": 14973,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 72.533,
+      "input_tokens": 3423,
+      "output_tokens": 12553,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 162.68
+}

@@ -1,0 +1,106 @@
+{
+  "case_id": "dev_007",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor requires 10,000 EGP in cash within 3 months for a family wedding and has a low tolerance and ability to withstand losses. The current portfolio holds 1,000.00 EGP in cash and 200 shares of EFID valued at 20.40 EGP per share, totaling 4,080.00 EGP in holdings and an overall portfolio value of 5,080.00 EGP. Because the total portfolio value falls far short of the 10,000 EGP liquidity requirement, and equities carry high market volatility unsuited for a strict 3-month horizon with zero loss tolerance, the investor should liquidate all 200 shares of EFID to raise cash.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue for 2025 was 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for 2025 was 2,695,301,670 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39"
+    ],
+    "limitations": [
+      "Prior year figures and earnings per share figures were omitted from the active calculation claims as they do not alter the urgent short-term liquidity deficit."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor requires 10,000 EGP in cash within 3 months for a family wedding and has a low tolerance and ability to withstand losses. The current portfolio holds 1,000.00 EGP in cash and 200 shares of EFID valued at 20.40 EGP per share, totaling 4,080.00 EGP in holdings and an overall portfolio value of 5,080.00 EGP. Because the total portfolio value falls far short of the 10,000 EGP liquidity requirement, and equities carry high market volatility unsuited for a strict 3-month horizon with zero loss tolerance, the investor should liquidate all 200 shares of EFID to raise cash.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue for 2025 was 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for 2025 was 2,695,301,670 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39"
+    ],
+    "limitations": [
+      "Prior year figures and earnings per share figures were omitted from the active calculation claims as they do not alter the urgent short-term liquidity deficit."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 5080.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "### Financial Analysis of EFID\n\n#### Profitability & Growth\n* **Revenue:** For the period ended 31 December 2025, consolidated revenue reached 20,915,072,432 EGP, compared to 16,146,545,699 EGP for the period ended 31 December 2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02].\n* **Net Profit:** Consolidated net profit for the year ended 31 December 2025 was 2,695,301,670 EGP, up from 1,606,727,698 EGP for the year ended 31 December 2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31].\n* **Earnings Per Share:** Basic and diluted earnings per share were 2.18 EGP for 2025, compared to 1.09 EGP for 2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39].\n\n#### Balance Sheet & Risks\n* The provided evidence contains no balance sheet metrics (such as total assets, liabilities, or liquidity ratios) to evaluate short-term obligations or solvency.\n* No explicit risk factors or data quality issues were noted in the provided evidence.\n\n---\n\n### Portfolio & Investor Profile Alignment\n* **Liquidity & Horizon:** You hold 1,000.00 EGP in cash and 200 shares of EFID at a price of 20.40 EGP per share. Your total portfolio value includes 4,080.00 EGP in EFID stock, bringing your total current portfolio value to 5,080.00 EGP. \n* **Goal Gap:** You require 10,000.00 EGP in cash within 3 months for a family wedding. Your current total portfolio value (5,080.00 EGP) falls significantly short of your 10,000.00 EGP cash requirement, even if the entire holdings of EFID were liquidated at the current share price.\n* **Risk Tolerance:** You have a low willingness and financial ability to accept losses, alongside a very short investment horizon of 3 months.",
+    "investor": "### Investor-Suitability Assessment\n\n#### 1. Horizon\nThe investor has a strict, short-term investment horizon of **3 months**, driven by an upcoming family wedding. \n\n#### 2. Liquidity Needs\nThe investor requires **10,000 EGP** in cash within the next 3 months to fund the family wedding. \n\n#### 3. Loss Willingness and Capacity\n* **Willingness to accept losses:** Low. The investor cannot afford to see the principal erode given the specific, near-term liability (the wedding).\n* **Financial ability to withstand losses:** Low. Because the funds are earmarked for a fixed, short-term expense, any capital loss directly jeopardizes the ability to meet the 10,000 EGP cash requirement.\n\n#### 4. Current Concentration\n* **Cash:** 1,000.00 EGP (approx. 19.7% of total portfolio value)\n* **Holdings:** 200 shares of EFID at 20.40 EGP per share = 4,080.00 EGP (approx. 80.3% of total portfolio value)\n* **Total Portfolio Value:** 5,080.00 EGP\n* **Concentration Risk:** The portfolio is heavily concentrated in a single equity holding (EFID), which exposes the investor to high market volatility—directly conflicting with their low loss tolerance and short horizon.\n\n#### 5. Portfolio Allowances (Free Cash and Liquidation Potential)\n* **Free Cash:** The portfolio currently holds **1,000.00 EGP** in uncommitted cash, which falls significantly short of the 10,000 EGP requirement.\n* **Liquidatable Assets:** The portfolio holds 200 shares of EFID valued at 4,080.00 EGP. \n* **Deficit:** Even if the entire EFID holding is liquidated at the current market price, the total combined portfolio value (Cash + EFID = 5,080.00 EGP) is still well below the 10,000 EGP required for the wedding."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 3.338,
+      "input_tokens": 1548,
+      "output_tokens": 633,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 1.813,
+      "input_tokens": 1540,
+      "output_tokens": 468,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 2.824,
+      "input_tokens": 2961,
+      "output_tokens": 640,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 7.98
+}

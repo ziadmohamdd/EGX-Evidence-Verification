@@ -1,0 +1,87 @@
+{
+  "case_id": "dev_006",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "",
+    "shares": 0,
+    "explanation": "الغموض في البيانات المالية يمنع اتخاذ قرار استثماري مسؤول. الأرقام الغامضة (AMBIGUOUS) هما: [TMGH-TMGH_FY2025_results_summary_ar-p1-02] الإيرادات المجمعة لعام 2024، و [TMGH-TMGH_FY2025_results_summary_ar-p1-09] صافي الربح بعد الضرائب لعام 2025. تؤثر الأرقام الغامضة على تقييم معدل نمو الإيرادات المعلن 46% ومعدل تغير صافي الربح بعد الضرائب 43%. بدون هذه الأرقام الأساسية، لا يمكن الاعتماد على هوامش الربحية أو استدامة نمو EPS. ملف المستثمر يهدف لتنمية مدخرات لشراء شقة خلال horizon 3-5 سنوات، مع تحمل مخاطر متوسط وجود صندوق طوارئ منفصل. المحلل المالي أوصى بانتظار البيانات المالية المدققة والنشرت رسمياً. بناءً على محدودية الأدلة، لا يمكن اتخاذ قرار مسؤول بخصوص مركز TMGH. الأدلة غير كافية.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا يمكن استخدام figure [p1-02] الإيرادات 2024 لأنها AMBIGUOUS بسبب فقدان فواصل الآلاف في OCR",
+      "لا يمكن استخدام figure [p1-09] صافي الربح بعد الضرائب 2025 لأنها AMBIGUOUS بسبب الفواصل غير الواضحة",
+      "لا يمكن حساب هوامش الربحية أو تقييم استدامة نمو EPS بدون الأرقام الأساسية",
+      "المحلل المالي أوصى بانتظار البيانات المالية المدققة قبل اتخاذ أي قرار استثماري"
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "",
+    "shares": 0,
+    "explanation": "الغموض في البيانات المالية يمنع اتخاذ قرار استثماري مسؤول. الأرقام الغامضة (AMBIGUOUS) هما: [TMGH-TMGH_FY2025_results_summary_ar-p1-02] الإيرادات المجمعة لعام 2024، و [TMGH-TMGH_FY2025_results_summary_ar-p1-09] صافي الربح بعد الضرائب لعام 2025. تؤثر الأرقام الغامضة على تقييم معدل نمو الإيرادات المعلن 46% ومعدل تغير صافي الربح بعد الضرائب 43%. بدون هذه الأرقام الأساسية، لا يمكن الاعتماد على هوامش الربحية أو استدامة نمو EPS. ملف المستثمر يهدف لتنمية مدخرات لشراء شقة خلال horizon 3-5 سنوات، مع تحمل مخاطر متوسط وجود صندوق طوارئ منفصل. المحلل المالي أوصى بانتظار البيانات المالية المدققة والنشرت رسمياً. بناءً على محدودية الأدلة، لا يمكن اتخاذ قرار مسؤول بخصوص مركز TMGH. الأدلة غير كافية.",
+    "claims": [],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا يمكن استخدام figure [p1-02] الإيرادات 2024 لأنها AMBIGUOUS بسبب فقدان فواصل الآلاف في OCR",
+      "لا يمكن استخدام figure [p1-09] صافي الربح بعد الضرائب 2025 لأنها AMBIGUOUS بسبب الفواصل غير الواضحة",
+      "لا يمكن حساب هوامش الربحية أو تقييم استدامة نمو EPS بدون الأرقام الأساسية",
+      "المحلل المالي أوصى بانتظار البيانات المالية المدققة قبل اتخاذ أي قرار استثماري"
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 60000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Analysis of TMGH (FY2025) based solely on the provided evidence**\n\n### 1. Revenue (Consolidated)\n- **[TMGH-TMGH_FY2025_results_summary_ar-p1-01]**: Consolidated revenue as of 31 December 2025: **62,495,144,197 EGP** (unit: العملة بالجنية المصرى, no (000) prefix indicated; value taken as printed).  \n- **[TMGH-TMGH_FY2025_results_summary_ar-p1-02]**: Consolidated revenue as of 31 December 2024: **AMBIGUOUS**. The OCR output `٤٢٠٦٧٠٠٢٨٣٠٢٨٨` lacks the thousands separators used elsewhere on the page, making the exact value uncertain. This figure is flagged AMBIGUOUS and **will not be used in any calculations**.  \n- **[TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg]**: Reported revenue change % year‑over‑year: **%46** (printed `٪٤٦`). This is a verified percentage change.\n\n### 2. Profitability (Net profit after taxes)\n- **[TMGH-TMGH_FY2025_results_summary_ar-p1-09]**: Net profit after taxes for 31 December 2025: **AMBIGUOUS**. Printed as `١٨٠٢٠١,٩٨١٠٤٨٢` with unclear separators; extractor marked uncertain. **Not used in calculations**.  \n- **[TMGH-TMGH_FY2025_results_summary_ar-p1-10]**: Net profit after taxes for 31 December 2024: as printed in the period row, value `١٢,٧٦٩,٥١٧،٣٢٦` EGP. Marked verified, but the mixed separator styles (commas and Arabic `،`) introduce format ambiguity. Cited as printed; no computation performed with it due to associated AMBIGUOUS context.  \n- The row for both periods includes a reported change of **%43** (printed `٪٤٣`). Because the underlying absolute figures for at least one period are AMBIGUOUS, this percentage is noted but not relied upon for quantitative assessment.\n\n### 3. Earnings Per Share (EPS)\n- **[TMGH-TMGH_FY2025_results_summary_ar-p1-11]**: EPS for 31 December 2025: **6.98 EGP** (printed `٦,٩٨`). Verified.  \n- **[TMGH-TMGH_FY2025_results_summary_ar-p1-12]**: EPS for 31 December 2024: **4.37 EGP** (printed `٤،٣٧`). Verified.  \n- **[TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg]**: Reported EPS change: **59.6%** (printed `٪٥٩,٦`). Verified by hand from the page.\n\n### 4. Growth Observations (using verified figures only)\n- **Revenue growth**: The report states a **%46** year‑over‑year increase in consolidated revenue ([p1-01-chg]).  \n- **EPS growth**: EPS rose from 4.37 EGP to 6.98 EGP, an increase of approximately **59.7%**, which aligns with the printed **%59.6** change ([p1-11-chg]). Both figures are based on verified EPS data.  \n- **Net profit growth**: The report indicates a **%43** change in net profit after taxes, but given that the 2025 net profit figure ([p1-09]) is AMBIGUOUS, this percentage is not used for quantitative growth analysis.\n\n### 5. Data Quality & Risks\n- **AMBIGUOUS figures identified**:  \n  - [p1-02]: 2024 revenue – OCR lost thousands separators.  \n  - [p1-09]: 2025 net profit after tax – unclear digit/separator grouping.  \n- No balance‑sheet, cash‑flow, or liquidity data are present in the evidence set.  \n- All figures derive from a PDF extraction; the mixed use of Western commas (` , `) and Arabic thousands separators (` `) and Arabic decimal points creates interpretive risk.  \n- **Recommendation**: Any investment decision regarding TMGH should be based on audited, officially published financial statements to resolve the identified ambiguities.\n\n### 6. Portfolio Context (observational only; no action recommended)\n- Current holdings: **200 shares TMGH** at the cutoff price of **82.50 EGP/share** → market value **16,500 EGP**.  \n- Cash holding: **60,000 EGP**.  \n- Total portfolio value: **76,500 EGP**.  \n- Investor profile: Goal = savings growth for apartment purchase; horizon = 3–5 years; liquidity = separate emergency fund; risk tolerance = medium; ability to withstand losses = medium.  \n- The evidence shows TMGH has reported revenue and EPS growth, but data quality issues limit confidence in the exact magnitude of profitability. The decision agent will weigh these factors against the investor’s profile and horizon.\n\n**Summary**: TMGH’s reported FY2025 results indicate revenue growth of %46 and EPS growth of ~59.6% year‑over‑year, based on verified per‑share figures. However, two key figures (2024 revenue and 2025 net profit after tax) are AMBIGUOUS due to OCR separator losses, and no balance‑sheet or cash‑flow data are provided. A decision on the portfolio should await clarified financials and consider the investor’s 3–5‑year horizon, medium risk tolerance, and existing cash position.",
+    "investor": "**Suitability Assessment**\n\n**1. Investment Horizon (3–5 years)**  \nThe goal of saving for an apartment aligns with a medium‑term horizon. A medium loss willingness is compatible with this time frame, but the current portfolio structure is heavily weighted toward cash and a single equity, which tilts toward capital preservation. Any suitability conclusion must keep the 3–5 year window in mind when evaluating exposure.\n\n**2. Liquidity Needs**  \nThe investor already maintains a separate emergency fund. The total portfolio (cash + TMGH holding) can therefore be allocated toward the apartment goal without compromising essential liquidity.  \n- Cash: 60,000 EGP – immediately available.  \n- TMGH holding: 200 shares × 82.50 EGP = ~16,500 EGP – liquid on typical T+2 market settlement, but subject to single‑stock price risk.\n\n**3. Loss Willingness & Financial Ability**  \nBoth rated medium. The portfolio can absorb moderate fluctuations, but the concentration in one stock means a significant decline in TMGH would directly impact the portfolio’s value. The 60,000 EGP cash buffer provides a cushion against forced‑sale pressure.\n\n**4. Current Concentration**  \n- TMGH: 200 shares × 82.50 EGP = **16,500 EGP** (≈21.6% of portfolio)  \n- Cash: **60,000 EGP** (≈78.4% of portfolio)  \nThe portfolio is cash‑dominant with moderate single‑stock equity exposure. No other holdings are reported.\n\n**5. Cash That Could Reasonably Be Committed**  \nGiven the 3–5 year horizon and medium risk profile, a portion of the cash buffer could be allocated to diversified, appropriately timed instruments (e.g., short‑term bonds, money‑market funds) to seek returns while preserving liquidity for the apartment purchase. The current 78.4% cash ratio offers a strong safety margin. A reasonable commitment range, from a suitability standpoint, would be **20–30% of cash (12,000–18,000 EGP)**, leaving sufficient cash for the emergency fund and near‑term needs. The exact amount would depend on the chosen asset’s liquidity profile and the investor’s comfort with modest market exposure. This is an assessment of capacity, not a directive to act.\n\n**What the Portfolio Allows**  \n- Full access to 60,000 EGP cash at any time.  \n- TMGH holdings can be liquidated for approximately 16,500 EGP (subject to market settlement).  \n- No other assets, restrictions, or pledged positions are indicated.  \n- The structure permits increasing equity exposure, reducing cash, or diversifying, but the single‑stock concentration and 3–5 year time frame should factor into any consideration.\n\n**Note:** I have not analysed the TMGH company financial statements (revenue, profit, EPS, etc.) per instructions, and no specific action (buy/sell/hold) is recommended. The above evaluates suitability based on the provided profile and portfolio structure."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 41.874,
+      "input_tokens": 1747,
+      "output_tokens": 7755,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 20.9,
+      "input_tokens": 1741,
+      "output_tokens": 3813,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 402.92,
+      "input_tokens": 4101,
+      "output_tokens": 8101,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 465.698
+}

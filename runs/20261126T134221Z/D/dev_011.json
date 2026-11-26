@@ -1,0 +1,114 @@
+{
+  "case_id": "dev_011",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked to compare the companies on price-to-earnings ratio and net profit growth, and to recommend which one to buy. While net profit growth can be calculated from the provided statements, the price-to-earnings ratios cannot be computed because the share counts, total shares outstanding, or market capitalizations are missing from the evidence, preventing a full valuation and P/E comparison across all four options as requested.",
+    "claims": [],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-62"
+    ],
+    "limitations": [
+      "Missing fundamental denominator parameters (shares outstanding or market capitalization) to compute price-to-earnings ratios."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked to compare the companies on price-to-earnings ratio and net profit growth, and to recommend which one to buy. While net profit growth can be calculated from the provided statements, the price-to-earnings ratios cannot be computed because the share counts, total shares outstanding, or market capitalizations are missing from the evidence, preventing a full valuation and P/E comparison across all four options as requested.",
+    "claims": [],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-62"
+    ],
+    "limitations": [
+      "Missing fundamental denominator parameters (shares outstanding or market capitalization) to compute price-to-earnings ratios."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 80000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "Based on the financial evidence provided for FY2024 and FY2025, here is the analysis of Telecom Egypt (ETEL), Commercial International Bank (COMI), Edita Food Industries (EFID), and Talaat Moustafa Group (TMGH).\n\n### 1. Profitability and Growth (2024 to 2025)\n\n*   **Telecom Egypt (ETEL):**\n    *   Net profit for the year was 22,578,063,000 EGP for 31/12/2025 and 10,111,328,000 EGP for 31/12/2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35, ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36].\n    *   Basic and diluted earnings per share were 11.93 EGP in 2025 and 4.79 EGP in 2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55, ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56].\n*   **Commercial International Bank (COMI):**\n    *   Net profit for the year was 82,258,815,000 EGP for Dec. 31, 2025 and 55,256,732,000 EGP for Dec. 31, 2024 [COMI-COMI_FY2025_consolidated_condensed_en-p5-33, COMI-COMI_FY2025_consolidated_condensed_en-p5-34].\n    *   Basic earnings per share were 18.25 EGP in 2025 and 14.72 EGP in 2024 [COMI-COMI_FY2025_consolidated_condensed_en-p5-39, COMI-COMI_FY2025_consolidated_condensed_en-p5-40].\n*   **Edita Food Industries (EFID):**\n    *   Consolidated net profit for the year was 2,695,301,670 EGP for 31 December 2025 and 1,606,727,698 EGP for 31 December 2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31].\n    *   Basic and diluted earnings per share were 2.18 EGP in 2025 and 1.09 EGP in 2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39].\n*   **Talaat Moustafa Group (TMGH):**\n    *   Consolidated net profit for the year was 18,201,981,482 LE for 2025 and 12,769,517,325 LE for 2024 (Restated) [TMGH-TMGH_FY2025_consolidated_en-p7-55, TMGH-TMGH_FY2025_consolidated_en-p7-56].\n    *   Consolidated gross profit was 20,855,400,384 LE for 2025 and 14,002,196,445 LE for 2024 (Restated) [TMGH-TMGH_FY2025_consolidated_en-p7-19, TMGH-TMGH_FY2025_consolidated_en-p7-20].\n    *   Earnings per share were 6.98 LE in 2025 and 4.38 LE in 2024 (Restated) [TMGH-TMGH_FY2025_consolidated_en-p7-61, TMGH-TMGH_FY2025_consolidated_en-p7-62].\n\n### 2. Price-to-Earnings (P/E) Ratio\n\n*Share prices at cutoff:* COMI: 128.00 EGP, EFID: 20.40 EGP, ETEL: 141.95 EGP, TMGH: 82.50 EGP.  \n*Note: Computing P/E ratios requires share count or direct market capitalization/shares outstanding data which is not provided in the evidence text. Therefore, calculating explicit P/E ratios is omitted due to missing fundamental denominator parameters in the provided evidence set.*\n\n### 3. Balance Sheet, Risks, and Data Quality\n*   The provided evidence focuses strictly on income statements (net profits, gross profits, and earnings per share). Balance sheet metrics (such as total assets, liabilities, or debt levels) and specific risk disclosures are absent from the provided text excerpts. \n*   Data quality for the reported profit figures is verified across all four companies via their respective consolidated financial statements.\n\n*Decision Agent Note: Per team guidelines, no recommendation or action is given regarding which stock to purchase.*",
+    "investor": "As the investment-suitability analyst on the team, I will evaluate your investor profile, portfolio allowances, and constraints. I will not analyze company financials, compare the specific stocks, or recommend an action.\n\n### Investor Suitability Assessment\n\n*   **Investment Horizon:** \n    *   *Assessment:* Your stated horizon is **7+ years**. This is well-suited for long-term equity growth strategies, as it allows sufficient time to ride out short-term market volatility and economic cycles.\n*   **Liquidity Needs:** \n    *   *Assessment:* You maintain a **separate emergency fund**, meaning the capital allocated to this portfolio does not need to be reserved for short-term, unexpected cash requirements. \n*   **Loss Willingness and Capacity:** \n    *   *Assessment:* You report a **medium willingness** and **medium financial ability** to accept losses. This indicates that while you recognize equity investments carry downside risk, your financial structure can absorb moderate drawdowns without threatening your core livelihood. Your portfolio strategy should balance growth ambitions with adequate diversification to avoid excessive risk exposure.\n*   **Current Concentration:** \n    *   *Assessment:* Your portfolio currently holds **zero holdings** and consists entirely of cash. Therefore, your current concentration in any single asset, sector, or stock is 0%. Any initial deployment will establish your baseline sector and stock allocation.\n*   **Cash Available for Commitment:** \n    *   *Assessment:* You hold **80,000.00 EGP** in unencumbered cash. \n*   **Portfolio Allowances:** \n    *   *Assessment:* With no existing holdings to sell, your entire 80,000.00 EGP is free cash. You have complete flexibility to deploy up to this full amount depending on your target asset allocation and minimum lot sizing requirements for the available shares (COMI at 128.00 EGP, EFID at 20.40 EGP, ETEL at 141.95 EGP, and TMGH at 82.50 EGP)."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 7.436,
+      "input_tokens": 3611,
+      "output_tokens": 1308,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 2.15,
+      "input_tokens": 3603,
+      "output_tokens": 443,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 7.832,
+      "input_tokens": 5674,
+      "output_tokens": 681,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 17.423
+}

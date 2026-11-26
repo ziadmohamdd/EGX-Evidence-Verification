@@ -1,0 +1,90 @@
+{
+  "case_id": "dev_012",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "### Net Profit Growth Calculation\n- Verified net profit for FY2025 (31 December 2025): 2,695,301,670 EGP (column \"31 December 2025 EGP\").\n- Verified net profit for FY2024 (31 December 2024): 1,606,727,698 EGP (column \"31 December 2024 EGP\").\n- Growth = (2,695,301,670 - 1,606,727,698) / 1,606,727,698 ≈ 67.75%.\n- This exceeds the investor's 50% threshold, so the condition to buy more is numerically met.\n\n### AMBIGUOUS Figure Handling\n- [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] is marked AMBIGUOUS because the 2025 net profit figure is unreadable (covered by a stamp). This figure is listed in `unused_figures` and was excluded from calculations. The >50% growth conclusion rests on the three verified entries ([p6-36], [p6-37], [p6-31]), which consistently report the same figures.\n\n### Portfolio Diversification Analysis\n- Current holdings: EFID 1,000 shares × 20.40 EGP = 20,400 EGP.\n- Cash: 10,000 EGP.\n- Total portfolio value (cash + holdings at given prices): 30,400 EGP.\n- EFID concentration: 20,400 / 30,400 ≈ 67.1% of the total portfolio.\n- Diversification rule (quoted): \"after a buy, no single company may be more than half of the portfolio's total value (cash plus holdings at the given prices). This limit has no exceptions, whatever the investor's profile; buy fewer shares instead.\"\n- Testing additional buys: even purchasing 0 additional EFID shares leaves the concentration at 67.1% > 50%. Any positive number of shares would further violate the limit. To satisfy the constraint, post-buy EFID value must be ≤ 15,200 EGP, but the existing holding alone is 20,400 EGP. Thus, no compliant additional purchase of EFID shares is possible under the given rules.\n\n### Recommendation\n- The net profit growth condition (>50%) is satisfied, but the diversification rule with no exceptions makes any further purchase of EFID shares impermissible without first reducing the existing concentration.\n- Since the action \"buy\" would violate the absolute diversification limit, and the rule specifically directs \"buy fewer shares instead\" (which is mathematically impossible here without a negative share count), the responsible course is to maintain the existing holding without adding to it.\n- \"hold\" is a valid action because the investor already owns EFID shares; it sets `shares` to 0 and does not trigger the \"after a buy\" constraint. The investor retains the 1,000 EFID shares, aligning with the 3-year savings-growth goal while respecting the diversification ceiling. Risks of concentration are acknowledged, but no compliant buy can be executed given the current portfolio structure and the immutable diversification rule.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit for the year (consolidated) period 31 December 2025 verified"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID Net profit for the year (consolidated) period 31 December 2024 verified"
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30 (AMBIGUOUS: 2025 net profit figure unreadable due to stamp)"
+    ],
+    "limitations": [
+      "The diversification constraint (no company >50% of portfolio) is absolute and currently not met by the existing EFID position (67.1%). Any additional buy would violate this rule with no exceptions. The recommendation to \"hold\" maintains the status quo but does not reduce the existing concentration.",
+      "All figures are given in base units (EGP) as required; no outside knowledge about Edita Food Industries or events after the 2026-11-18 cutoff was used.",
+      "The analysis relies solely on the provided evidence and prices; the AMBIGUOUS tag on [p6-30] necessitated its exclusion, but verified data sufficed for the growth calculation."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "### Net Profit Growth Calculation\n- Verified net profit for FY2025 (31 December 2025): 2,695,301,670 EGP (column \"31 December 2025 EGP\").\n- Verified net profit for FY2024 (31 December 2024): 1,606,727,698 EGP (column \"31 December 2024 EGP\").\n- Growth = (2,695,301,670 - 1,606,727,698) / 1,606,727,698 ≈ 67.75%.\n- This exceeds the investor's 50% threshold, so the condition to buy more is numerically met.\n\n### AMBIGUOUS Figure Handling\n- [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] is marked AMBIGUOUS because the 2025 net profit figure is unreadable (covered by a stamp). This figure is listed in `unused_figures` and was excluded from calculations. The >50% growth conclusion rests on the three verified entries ([p6-36], [p6-37], [p6-31]), which consistently report the same figures.\n\n### Portfolio Diversification Analysis\n- Current holdings: EFID 1,000 shares × 20.40 EGP = 20,400 EGP.\n- Cash: 10,000 EGP.\n- Total portfolio value (cash + holdings at given prices): 30,400 EGP.\n- EFID concentration: 20,400 / 30,400 ≈ 67.1% of the total portfolio.\n- Diversification rule (quoted): \"after a buy, no single company may be more than half of the portfolio's total value (cash plus holdings at the given prices). This limit has no exceptions, whatever the investor's profile; buy fewer shares instead.\"\n- Testing additional buys: even purchasing 0 additional EFID shares leaves the concentration at 67.1% > 50%. Any positive number of shares would further violate the limit. To satisfy the constraint, post-buy EFID value must be ≤ 15,200 EGP, but the existing holding alone is 20,400 EGP. Thus, no compliant additional purchase of EFID shares is possible under the given rules.\n\n### Recommendation\n- The net profit growth condition (>50%) is satisfied, but the diversification rule with no exceptions makes any further purchase of EFID shares impermissible without first reducing the existing concentration.\n- Since the action \"buy\" would violate the absolute diversification limit, and the rule specifically directs \"buy fewer shares instead\" (which is mathematically impossible here without a negative share count), the responsible course is to maintain the existing holding without adding to it.\n- \"hold\" is a valid action because the investor already owns EFID shares; it sets `shares` to 0 and does not trigger the \"after a buy\" constraint. The investor retains the 1,000 EFID shares, aligning with the 3-year savings-growth goal while respecting the diversification ceiling. Risks of concentration are acknowledged, but no compliant buy can be executed given the current portfolio structure and the immutable diversification rule.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit for the year (consolidated) period 31 December 2025 verified"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID Net profit for the year (consolidated) period 31 December 2024 verified"
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30 (AMBIGUOUS: 2025 net profit figure unreadable due to stamp)"
+    ],
+    "limitations": [
+      "The diversification constraint (no company >50% of portfolio) is absolute and currently not met by the existing EFID position (67.1%). Any additional buy would violate this rule with no exceptions. The recommendation to \"hold\" maintains the status quo but does not reduce the existing concentration.",
+      "All figures are given in base units (EGP) as required; no outside knowledge about Edita Food Industries or events after the 2026-11-18 cutoff was used.",
+      "The analysis relies solely on the provided evidence and prices; the AMBIGUOUS tag on [p6-30] necessitated its exclusion, but verified data sufficed for the growth calculation."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 137.228,
+      "input_tokens": 1832,
+      "output_tokens": 19946,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 137.234
+}

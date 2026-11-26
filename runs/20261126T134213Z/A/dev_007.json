@@ -1,0 +1,83 @@
+{
+  "case_id": "dev_007",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor's goal is to raise 10,000 EGP in cash within 3 months for a family wedding. Current liquidity is 1,000 EGP, and the portfolio holds 200 EFID shares. At the cutoff price of 20.40 EGP per share, the holdings are worth 4,080 EGP, giving a total portfolio value of 5,080 EGP. This falls short of the 10,000 EGP target by 4,920 EGP.\n\nGiven the low willingness to accept losses and low financial ability to withstand risks, converting the equity holding to cash is the most consistent action with the investor's liquidity need and risk profile. Selling all 200 EFID shares at the stated price yields 4,080 EGP, bringing total cash to 5,080 EGP. The investor must cover the remaining 4,920 EGP from other savings or income sources; the portfolio alone cannot meet the 3‑month cash goal.\n\nPortfolio diversification: after the sell, the portfolio consists entirely of cash, so no single company exceeds the 50% threshold (the diversification rule applies explicitly to buy actions and is trivially satisfied here).\n\nEvidence relied upon (all figures in base units, whole pounds):\n- [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01] Revenue (consolidated) for period 31 December 2025: 20,915,072,432 EGP.\n- [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] Net profit for the year (consolidated) for period 31 December 2025: 2,695,301,670 EGP.\n\nThese annual profitability figures confirm EFID's financial health but are not directly relevant to a 3‑month cash horizon.\n\nUnused figures (per the AMBIGUOUS rule):\n- [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] Basic and Diluted earnings per share: the row prints \"30 | 2.18 | 1.09 | unit: EGP\" alongside column headings \"Note | 31 December 2025 EGP | 31 December 2024 EGP\". It is unclear whether \"30\" is a note identifier or the EPS value, and 2.18/1.09 are not whole pounds. Per the rules, AMBIGUOUS figures must not be used in calculations. Conclusions affected: any EPS‑based growth assessment, valuation multiple, or dividend‑yield analysis is excluded from this recommendation.\n\nUncertainty and risks: The sale proceeds are based on the cutoff price of 20.40 EGP per share; actual execution price may vary slightly with market conditions, but within the given evidence this is the best estimate. The investor's target of 10,000 EGP cannot be achieved by this portfolio alone; additional funds are required. This guidance is not a guarantee of returns, and the investor should evaluate their full financial picture before proceeding.",
+    "claims": [
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]",
+        "stated_value": 20915072432.0,
+        "statement": "Revenue (consolidated) for period 31 December 2025: 20,915,072,432 EGP"
+      },
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]",
+        "stated_value": 2695301670.0,
+        "statement": "Net profit for the year (consolidated) for period 31 December 2025: 2,695,301,670 EGP"
+      }
+    ],
+    "unused_figures": [
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38]",
+      "Reason: The row \"Basic and Diluted earnings per share\" prints \"30 | 2.18 | 1.09 | unit: EGP\" with column headings \"Note | 31 December 2025 EGP | 31 December 2024 EGP\". The values 2.18 and 1.09 are not whole pounds, and it is ambiguous whether \"30\" is a note reference or the EPS figure. Per the rules, AMBIGUOUS figures must not be used in calculations. Any EPS‑based conclusions (e.g., growth trends, valuation) are therefore not relied upon in this recommendation."
+    ],
+    "limitations": [
+      "The portfolio total (5,080 EGP) is insufficient to meet the investor's 10,000 EGP cash need within 3 months; the shortfall must be addressed from other sources.",
+      "The evidence provided is annual financial data (FY2025) and does not contain short‑term price trends, dividend information, or market liquidity details beyond the given cutoff price of 20.40 EGP.",
+      "The AMBIGUOUS EPS figure is excluded from all calculations; any reliance on per‑share metrics is omitted.",
+      "This is guidance, not a guarantee of returns. The investor should consider their complete financial situation and consult a qualified professional if needed."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor's goal is to raise 10,000 EGP in cash within 3 months for a family wedding. Current liquidity is 1,000 EGP, and the portfolio holds 200 EFID shares. At the cutoff price of 20.40 EGP per share, the holdings are worth 4,080 EGP, giving a total portfolio value of 5,080 EGP. This falls short of the 10,000 EGP target by 4,920 EGP.\n\nGiven the low willingness to accept losses and low financial ability to withstand risks, converting the equity holding to cash is the most consistent action with the investor's liquidity need and risk profile. Selling all 200 EFID shares at the stated price yields 4,080 EGP, bringing total cash to 5,080 EGP. The investor must cover the remaining 4,920 EGP from other savings or income sources; the portfolio alone cannot meet the 3‑month cash goal.\n\nPortfolio diversification: after the sell, the portfolio consists entirely of cash, so no single company exceeds the 50% threshold (the diversification rule applies explicitly to buy actions and is trivially satisfied here).\n\nEvidence relied upon (all figures in base units, whole pounds):\n- [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01] Revenue (consolidated) for period 31 December 2025: 20,915,072,432 EGP.\n- [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] Net profit for the year (consolidated) for period 31 December 2025: 2,695,301,670 EGP.\n\nThese annual profitability figures confirm EFID's financial health but are not directly relevant to a 3‑month cash horizon.\n\nUnused figures (per the AMBIGUOUS rule):\n- [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] Basic and Diluted earnings per share: the row prints \"30 | 2.18 | 1.09 | unit: EGP\" alongside column headings \"Note | 31 December 2025 EGP | 31 December 2024 EGP\". It is unclear whether \"30\" is a note identifier or the EPS value, and 2.18/1.09 are not whole pounds. Per the rules, AMBIGUOUS figures must not be used in calculations. Conclusions affected: any EPS‑based growth assessment, valuation multiple, or dividend‑yield analysis is excluded from this recommendation.\n\nUncertainty and risks: The sale proceeds are based on the cutoff price of 20.40 EGP per share; actual execution price may vary slightly with market conditions, but within the given evidence this is the best estimate. The investor's target of 10,000 EGP cannot be achieved by this portfolio alone; additional funds are required. This guidance is not a guarantee of returns, and the investor should evaluate their full financial picture before proceeding.",
+    "claims": [
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]",
+        "stated_value": 20915072432.0,
+        "statement": "Revenue (consolidated) for period 31 December 2025: 20,915,072,432 EGP"
+      },
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]",
+        "stated_value": 2695301670.0,
+        "statement": "Net profit for the year (consolidated) for period 31 December 2025: 2,695,301,670 EGP"
+      }
+    ],
+    "unused_figures": [
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38]",
+      "Reason: The row \"Basic and Diluted earnings per share\" prints \"30 | 2.18 | 1.09 | unit: EGP\" with column headings \"Note | 31 December 2025 EGP | 31 December 2024 EGP\". The values 2.18 and 1.09 are not whole pounds, and it is ambiguous whether \"30\" is a note reference or the EPS figure. Per the rules, AMBIGUOUS figures must not be used in calculations. Any EPS‑based conclusions (e.g., growth trends, valuation) are therefore not relied upon in this recommendation."
+    ],
+    "limitations": [
+      "The portfolio total (5,080 EGP) is insufficient to meet the investor's 10,000 EGP cash need within 3 months; the shortfall must be addressed from other sources.",
+      "The evidence provided is annual financial data (FY2025) and does not contain short‑term price trends, dividend information, or market liquidity details beyond the given cutoff price of 20.40 EGP.",
+      "The AMBIGUOUS EPS figure is excluded from all calculations; any reliance on per‑share metrics is omitted.",
+      "This is guidance, not a guarantee of returns. The investor should consider their complete financial situation and consult a qualified professional if needed."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 5080.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 81.145,
+      "input_tokens": 1793,
+      "output_tokens": 15772,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 81.148
+}

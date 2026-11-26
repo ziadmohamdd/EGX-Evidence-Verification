@@ -1,0 +1,103 @@
+{
+  "case_id": "dev_010",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The profit belonging to Talaat Moustafa Group Holding's parent company shareholders grew by 5,358,824,241 EGP (from 9,025,066,065 EGP in 2024 to 14,383,890,306 EGP in 2025), representing strong fundamental growth. However, no buy action can be executed because the investor's current holding of 500 TMGH shares at 82.50 EGP per share is valued at 41,250.00 EGP, which already constitutes 57.89% of the total portfolio value (71,250.00 EGP total with 30,000.00 EGP cash). Team rules dictate that after a buy, no single company may be more than half of the portfolio's total value, and this limit has no exceptions. Buying additional shares would increase this concentration rather than reduce it. Therefore, we keep cash.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "For the year 2025, the profit attributable to the shareholders of the parent company was 14,383,890,306 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "For the comparative year 2024 (Restated), the profit attributable to the shareholders of the parent company was 9,025,066,065 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Concentration limit of 50% max per stock prevents any further purchases of TMGH given the existing holding's weight."
+    ]
+  },
+  "final": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The profit belonging to Talaat Moustafa Group Holding's parent company shareholders grew by 5,358,824,241 EGP (from 9,025,066,065 EGP in 2024 to 14,383,890,306 EGP in 2025), representing strong fundamental growth. However, no buy action can be executed because the investor's current holding of 500 TMGH shares at 82.50 EGP per share is valued at 41,250.00 EGP, which already constitutes 57.89% of the total portfolio value (71,250.00 EGP total with 30,000.00 EGP cash). Team rules dictate that after a buy, no single company may be more than half of the portfolio's total value, and this limit has no exceptions. Buying additional shares would increase this concentration rather than reduce it. Therefore, we keep cash.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "For the year 2025, the profit attributable to the shareholders of the parent company was 14,383,890,306 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "For the comparative year 2024 (Restated), the profit attributable to the shareholders of the parent company was 9,025,066,065 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Concentration limit of 50% max per stock prevents any further purchases of TMGH given the existing holding's weight."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "Based on the provided evidence for Talaat Moustafa Group Holding (TMGH), here is the analysis of the profit belonging to the parent company's shareholders and the associated financial data.\n\n### Profitability and Growth Analysis\n* **Shareholders of the Parent Company Profit:** \n  * For the year 2025, the profit attributable to the shareholders of the parent company was **14,383,890,306 EGP** [TMGH-TMGH_FY2025_consolidated_en-p7-57].\n  * For the comparative year 2024 (Restated), it was **9,025,066,065 EGP** [TMGH-TMGH_FY2025_consolidated_en-p7-58].\n* **Other Profitability Metrics (2025 vs. 2024 Restated):**\n  * **Gross Profit:** Increased to **20,855,400,384 EGP** in 2025 from **14,002,196,445 EGP** in 2024 [TMGH-TMGH_FY2025_consolidated_en-p7-19, TMGH-TMGH_FY2025_consolidated_en-p7-20].\n  * **Profit Before Tax:** Increased to **23,653,557,143 EGP** in 2025 from **16,490,175,692 EGP** in 2024 [TMGH-TMGH_FY2025_consolidated_en-p7-49, TMGH-TMGH_FY2025_consolidated_en-p7-50].\n  * **Net Profit for the Year (Total Consolidated):** Rose to **18,201,981,482 EGP** in 2025 from **12,769,517,325 EGP** in 2024 [TMGH-TMGH_FY2025_consolidated_en-p7-55, TMGH-TMGH_FY2025_consolidated_en-p7-56].\n  * **Earnings per Share (Consolidated):** Increased to **6.98 EGP** in 2025 from **4.38 EGP** in 2024 [TMGH-TMGH_FY2025_consolidated_en-p7-61, TMGH-TMGH_FY2025_consolidated_en-p7-62].\n\n### Balance Sheet and Data Quality\n* **Total Equity:** Stood at **157,708,140,765 EGP** as of 31 December 2025, up from **129,879,813,693 EGP** as of 31 December 2024 (Restated) [TMGH-TMGH_FY2025_consolidated_en-p5-67, TMGH-TMGH_FY2025_consolidated_en-p5-68].\n* **Data Quality:** All cited figures are verified consolidated metrics from the FY2025 report with no flagged ambiguities in the provided evidence.\n\n### Decision Agent Note\nPer the team guidelines, I do not provide a recommendation on whether to add to your position or if the growth justifies an investment action; that decision is left to the decision agent.",
+    "investor": "### Investor Suitability Analysis\n\n#### 1. Investment Horizon\n* **Suitability:** The investor has a stated horizon of **5 to 10 years** with a goal of long-term growth. This timeframe is well-suited for equity investments, as it provides an adequate window to ride out short-term market volatility and benefit from compounding returns.\n\n#### 2. Liquidity Needs\n* **Suitability:** The investor maintains a separate emergency fund outside of this portfolio. Consequently, short-term cash flow needs will not force premature liquidation of portfolio assets, supporting a buy-and-hold strategy aligned with the long-term horizon.\n\n#### 3. Loss Willingness and Capacity\n* **Willingness:** **High.** The investor is psychologically comfortable taking on risk and enduring drawdowns in pursuit of long-term growth.\n* **Capacity:** **Medium.** While the investor's willingness is high, their actual financial ability to withstand losses is moderate. This means that while growth assets are appropriate, extreme over-concentration in a single asset could strain their financial resilience if adverse conditions arise.\n\n#### 4. Current Concentration and Portfolio Profile\n* **Current Holdings:** 500 shares of TMGH at a price of 82.50 EGP per share, equating to a market value of **41,250.00 EGP**.\n* **Current Cash:** **30,000.00 EGP**.\n* **Total Portfolio Value:** 71,250.00 EGP.\n* **Concentration Assessment:** The existing equity holding (TMGH) represents approximately **57.89%** of the total portfolio value, with cash making up the remaining **42.11%**. The portfolio is currently heavily weighted toward a single stock.\n\n#### 5. Portfolio Allowances (Cash and Liquidable Assets)\n* **Free Cash:** The investor holds **30,000.00 EGP** in uncommitted cash that can be deployed according to strategy.\n* **Liquidatable Assets:** The entire position of 500 TMGH shares (valued at **41,250.00 EGP**) can be sold if reallocation is desired. \n* **Combined Purchasing Power / Liquidity:** Up to **71,250.00 EGP** is accessible via current cash and total liquidation of current holdings.\n\n---\n\n### Response to Investor's Question Regarding Profit Growth\n\nTo answer your specific question on earnings growth:\n\n* **Profit Belonging to Shareholders of the Parent Company:** \n  * **2025:** 14,383,890,306 LE *(Claim: 14,383,890,306 whole pounds)*\n  * **2024 (Restated):** 9,025,066,065 LE *(Claim: 9,025,066,065 whole pounds)*\n  * **Growth:** The profit belonging to Talaat Moustafa's own shareholders grew by **5,358,824,241 LE** (an increase of approximately **59.38%**) in 2025 compared to 2024.\n\n* **Decision on Adding to Position:** \n  * As an investor-suitability analyst, I do not provide recommendations or judge whether fundamental metrics \"justify\" buying or adding to a position. That decision depends on your personal conviction, valuation views, and how adding to TMGH would further concentrate your portfolio beyond its current 57.89% weight."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 5.609,
+      "input_tokens": 2006,
+      "output_tokens": 824,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 3.573,
+      "input_tokens": 1998,
+      "output_tokens": 781,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 5.029,
+      "input_tokens": 3922,
+      "output_tokens": 526,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 14.217
+}

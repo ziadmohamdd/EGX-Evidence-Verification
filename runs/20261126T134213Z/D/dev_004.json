@@ -1,0 +1,145 @@
+{
+  "case_id": "dev_004",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 481,
+    "explanation": "The investor aims to preserve capital and draw income in retirement, with a 1–3 year horizon and a need for approximately 30,000 EGP within 6 months. Risk tolerance is low, and the ability to withstand losses is low. The current portfolio consists of 5,000 EGP cash and 1,000 shares of COMI at the cutoff price of 128.00 EGP/share, totaling approximately 133,000 EGP, with COMI representing about 96% of the portfolio.\n\nTo meet the 6‑month liquidity need of ~30,000 EGP while respecting the portfolio diversification rule (which mandates that no single company may exceed 50% of the total portfolio value, with no exceptions regardless of profile), the number of COMI shares to sell is calculated as follows. Selling shares at 128.00 EGP yields cash proceeds; the resulting portfolio must have COMI ≤ 50% of total value (133,000 EGP). At 128.00 EGP/share, selling 481 shares yields 481 × 128 = 61,568 EGP in proceeds. Adding the existing 5,000 EGP cash gives a new cash balance of 66,568 EGP, which comfortably covers the ~30,000 EGP need within 6 months. The remaining holding consists of 519 COMI shares, valued at 519 × 128 = 66,432 EGP. The total portfolio value remains 133,000 EGP, and COMI now represents approximately 49.95% of the portfolio, bringing it within the 50% diversification limit.\n\nThe evidence includes COMI’s FY2025 consolidated condensed financials: net interest income grew 18.2% YoY to 107,699,631,000 EGP ([p5-05], [p5-06]), and net profit for the year grew 48.7% YoY to 82,258,815,000 EGP ([p5-33], [p5-34]). Total equity rose to 231,486,342,000 EGP ([p4-54], [p4-55]), while due‑to‑customers increased to 1,110,395,693,000 EGP ([p4-28], [p4-29]), indicating high leverage (approximately 4.8× equity). The evidence does not provide dividend per share, payout ratio, or cash flow data, so income‑generation capacity from COMI cannot be verified. Notably, the Basic EPS rows ([COMI-COMI_FY2025_consolidated_condensed_en-p5-39] and [COMI-COMI_FY2025_consolidated_condensed_en-p5-40]) are printed with the unit label “All amounts are shown in EGP thousands.” If taken literally, EPS would be 18,250 EGP/share and 14,720 EGP/share, which is inconsistent with the 128.00 EGP share price and typical EPS conventions. These figures are flagged as AMBIGUOUS and are listed in unused_figures; they must not be used in any calculations. Their ambiguity affects conclusions regarding dividend yield and P/E ratio modeling; since no dividend data are provided, income generation from COMI remains unverified.\n\nGiven the investor’s low risk tolerance and the suitability assessment’s warning that the previous ~96% concentration in a single security is inconsistent with the profile, reducing COMI to just under 50% aligns the portfolio with the preservation‑of‑capital goal while still retaining a market‑exposure position. The balance‑sheet leverage and absence of risk‑quality disclosures mean capital preservation is not guaranteed, and the share price may fluctuate with interest‑rate and credit cycles. The evidence cutoff is 2026‑11‑18, and no later events or outside knowledge are considered.\n\nRecommendation: sell 481 shares of COMI at the cutoff price of 128.00 EGP. This action meets the 6‑month liquidity need of approximately 30,000 EGP, reduces COMI concentration to ~49.95% of the total portfolio (respecting the 50% diversification limit with no exceptions), and preserves the remaining 519 shares for potential future income, though income sustainability cannot be confirmed from the provided evidence.",
+    "claims": [],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40"
+    ],
+    "limitations": [
+      "The ambiguous EPS figures [p5-39, p5-40] cannot be used for dividend yield or P/E ratio calculations; income generation from COMI is unverified.",
+      "COMI’s balance sheet shows high leverage (due‑to‑customers ~4.8× equity) and no risk‑quality metrics are provided, so capital preservation is not guaranteed.",
+      "The portfolio diversification 50% limit is applied strictly; any action resulting in a single holding >50% of total portfolio value is non‑compliant.",
+      "All figures rely on the evidence list and cutoff price; no outside knowledge or later events are used."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 481,
+    "explanation": "The investor aims to preserve capital and draw income in retirement, with a 1–3 year horizon and a need for approximately 30,000 EGP within 6 months. Risk tolerance is low, and the ability to withstand losses is low. The current portfolio consists of 5,000 EGP cash and 1,000 shares of COMI at the cutoff price of 128.00 EGP/share, totaling approximately 133,000 EGP, with COMI representing about 96% of the portfolio.\n\nTo meet the dual constraints of the 6‑month liquidity need and the mandatory portfolio diversification rule (which requires that no single company may exceed 50% of the total portfolio value, with no exceptions regardless of profile), the number of COMI shares to sell is determined as follows:\n\n- **Liquidity**: Selling 481 shares at 128.00 EGP yields 481 × 128 = 61,568 EGP in proceeds. Adding the existing 5,000 EGP cash gives a new cash balance of 66,568 EGP, which comfortably covers the ~30,000 EGP need within 6 months.\n- **Diversification**: After selling 481 shares, the remaining holding is 519 COMI shares, valued at 519 × 128 = 66,432 EGP. The total portfolio value remains 133,000 EGP (cash + holdings at given prices). COMI now represents 66,432 / 133,000 ≈ 49.95% of the portfolio, bringing it within the 50% limit.\n\nSelling fewer than 481 shares would leave COMI above 50% of the portfolio (e.g., 520 shares yields 50.05%), violating the rule with no exceptions. Therefore, 481 is the minimum shares to sell that satisfies both constraints.\n\nThe evidence includes COMI’s FY2025 consolidated condensed financials: net interest income for Dec. 31, 2025 was 107,699,631,000 EGP ([p5-05]), and net profit for the year was 82,258,815,000 EGP ([p5-33]). Total equity rose to 231,486,342,000 EGP ([p4-54]), and due‑to‑customers increased to 1,110,395,693,000 EGP ([p4-28]), indicating high leverage (approximately 4.8× equity). These figures are listed in `claims` above.\n\nNotably, the Basic EPS rows ([p5-39] and [p5-40]) are printed with the unit label ‘All amounts are shown in EGP thousands.’ If taken literally, EPS would be 18,250 EGP/share and 14,720 EGP/share, which is inconsistent with the 128.00 EGP share price and typical EPS conventions. These figures are flagged as AMBIGUOUS and are listed in `unused_figures`; they must not be used in any calculations. Their ambiguity affects conclusions regarding dividend yield and P/E ratio modeling; since no dividend data are provided, income generation from COMI cannot be verified from the evidence.\n\nGiven the investor’s low risk tolerance and the suitability assessment’s warning that a ~96% concentration in a single security is inconsistent with the profile, reducing COMI to just under 50% aligns the portfolio with the preservation‑of‑capital goal while still retaining a market‑exposure position. The balance‑sheet leverage and absence of risk‑quality disclosures mean capital preservation is not guaranteed, and the share price may fluctuate with interest‑rate and credit cycles. The evidence cutoff is 2026‑11‑18, and no later events or outside knowledge are considered.\n\nRecommendation: sell 481 shares of COMI at the cutoff price of 128.00 EGP. This action meets the 6‑month liquidity need of approximately 30,000 EGP, reduces COMI concentration to ~49.95% of the total portfolio (respecting the 50% diversification limit with no exceptions), and preserves the remaining 519 shares for potential future income, though income sustainability cannot be confirmed from the provided evidence.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107699631000.0,
+        "statement": "Net interest income for Dec. 31, 2025 = 107,699,631,000 EGP (107,699,631 EGP thousands per evidence)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "Net profit for the year for Dec. 31, 2025 = 82,258,815,000 EGP (82,258,815 EGP thousands per evidence)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+        "stated_value": 231486342000.0,
+        "statement": "Total equity and net profit for the year (consolidated) for Dec. 31, 2025 = 231,486,342,000 EGP (231,486,342 EGP thousands per evidence)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+        "stated_value": 1110395693000.0,
+        "statement": "Due to customers (consolidated) for Dec. 31, 2025 = 1,110,395,693,000 EGP (1,110,395,693 EGP thousands per evidence)"
+      }
+    ],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40"
+    ],
+    "limitations": [
+      "The ambiguous EPS figures [p5-39, p5-40] cannot be used for dividend yield, P/E ratio, or income‑sustainability calculations; income generation from COMI is unverified.",
+      "COMI’s balance sheet shows high leverage (due‑to‑customers ~1.11 trillion EGP vs. total equity ~231 billion EGP, roughly 4.8×), and no risk‑quality or cash‑flow metrics are provided, so capital preservation is not guaranteed.",
+      "The portfolio diversification 50% limit is applied strictly; any action resulting in a single holding >50% of total portfolio value is non‑compliant, with no exceptions per the rules.",
+      "All figures rely on the evidence list and cutoff price of 128.00 EGP/share; no outside knowledge or later events are used.",
+      "The recommendation is driven by portfolio‑rebalancing constraints (liquidity need and diversification limit) rather than on verified income or valuation metrics from the financial statements."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 66568.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 519
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"107,699,631,000\", which is 'Net interest income' (1.077e+11), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"82,258,815,000\", which is 'Net profit for the year' (8.22588e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"231,486,342,000\", which is 'Total equity and net profit for the year (consolidated)' (2.31486e+11), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"1,110,395,693,000\", which is 'Due to customers (consolidated)' (1.1104e+12), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "**Investor Profile & Liquidity Need**\n- Goal: Preserve capital + draw income in retirement\n- Horizon: 1–3 years\n- Liquidity need: ~30,000 EGP within 6 months\n- Risk tolerance: Low; ability to withstand losses: low\n- Current portfolio: 5,000 EGP cash + 1,000 COMI shares at 128.00 EGP/share = 128,000 EGP market value; total portfolio value ≈ 133,000 EGP\n\n**COMI FY2025 Consolidated Condensed Financial Evidence (converted to whole EGP; original unit: EGP thousands → multiplied by 1,000)**\n\n| Metric | 2025 | 2024 | Evidence |\n|---|---|---|---|\n| Net interest income | 107,699,631,000 | 91,064,222,000 | [COMI-COMI_FY2025_consolidated_condensed_en-p5-05], [p5-06] |\n| Net profit for the year | 82,258,815,000 | 55,256,732,000 | [p5-33], [p5-34] |\n| Basic EPS | 18.25 | 14.72 | [p5-39], [p5-40] |\n| Due to customers (consolidated) | 1,110,395,693,000 | 972,595,958,000 | [p4-28], [p4-29] |\n| Total equity and net profit for the year | 231,486,342,000 | 152,636,277,000 | [p4-54], [p4-55] |\n\n**Ambiguity Flagged**\n- [p5-39, p5-40] Basic EPS rows are printed with unit label \"All amounts are shown in EGP thousands\". If taken literally, EPS would be 18,250 EGP/share and 14,720 EGP/share, which is inconsistent with the stated share price of 128.00 EGP and typical EPS conventions. This figure is **ambiguous** and will not be used for computation (e.g., dividend yield, P/E ratio).\n\n**Profitability & Growth (from evidence)**\n- Net interest income grew 18.2% YoY (107.70B vs 91.06B) [p5-05, p5-06].\n- Net profit for the year grew 48.7% YoY (82.26B vs 55.26B) [p5-33, p5-34].\n- These figures reflect strong banking-era performance but are derived from consolidated figures that include significant leverage.\n\n**Balance Sheet & Risk Indicators (from evidence)**\n- Due to customers (primary liability) increased from 972.6B to 1,110.4B EGP [p4-28, p4-29], a 14.2% rise, indicating deposit growth or funding expansion.\n- Total equity rose from 152.6B to 231.5B EGP [p4-54, p4-55], while net profit grew substantially, implying a return on equity of roughly 35.5% (82.26B / 231.5B), though banking ROE is typically influenced by leverage and risk-weighted assets not detailed here.\n- No evidence provided on asset quality, credit provisions, interest rate exposure, or market risk metrics. The condensed report omits these, limiting risk assessment scope.\n\n**Data Quality Notes**\n- All figures outside the EPS row respect the stated \"EGP thousands\" unit and have been converted to whole EGP as instructed.\n- The EPS unit inconsistency is the only identified ambiguity; no other row labels or units require flagging.\n- The report provides no dividend per share, payout ratio, or cash flow data, so income-generation capacity from COMI cannot be verified from this evidence alone.\n\n**Relation to Investor Constraints**\n- The investor needs 30,000 EGP within 6 months. The current COMI holding (1,000 shares at 128.00 EGP) is valued at 128,000 EGP. Realizing the liquidity need would require selling approximately 234 shares (30,000 / 128), leaving ~766 shares and preserving ~98,000 EGP of market exposure alongside the 5,000 EGP cash.\n- The investor’s low risk tolerance and capital-preservation goal coincide with a bank stock whose balance sheet shows high leverage (due to customers ~4.8x equity) and whose share price may fluctuate with interest rate and credit cycles. The evidence does not disclose volatility, dividend history, or market correlation.\n- No evidence supports or refutes the sustainability of income generation from COMI. The ambiguous EPS figure precludes any dividend or yield calculation.\n\n**Decision Framework (evidence-only summary; no action recommended)**\n- Liquidity need can be met by partial share realization without full liquidation, based on current market price and holding size.\n- Profitability and balance sheet growth are strong, but high leverage and absence of risk-quality disclosures mean capital preservation is not guaranteed.\n- Income generation in retirement cannot be confirmed from the provided rows; the ambiguous EPS unit prevents dividend modeling.\n- All conclusions are strictly bounded by the cited evidence. The decision agent will weigh these observations against the investor’s full profile and market context.",
+    "investor": "**Suitability Assessment**\n\n**Horizon & Liquidity Needs**  \nThe investor’s stated horizon of 1–3 years aligns with a retirement-income goal, but the need to realise ~30,000 EGP within 6 months is shorter than the full horizon. The portfolio currently holds 5,000 EGP in free cash, leaving a gap of ~25,000 EGP to meet the 6‑month liquidity requirement.\n\n**Loss Willingness & Capacity**  \nBoth willingness and financial ability to withstand losses are assessed as low. This implies a preference for capital preservation and minimal price volatility. The portfolio’s heavy exposure to a single listed equity introduces market‑price risk that conflicts with this profile.\n\n**Current Concentration**  \nThe holdings consist of 1,000 shares of COMI at the cutoff price of 128.00 EGP/share, valued at ~128,000 EGP. Together with 5,000 EGP cash, the total portfolio value is ~133,000 EGP, meaning ~96 % of assets are concentrated in a single security. Such concentration is inconsistent with low loss tolerance and low capacity to absorb declines.\n\n**Cash That Could Be Reasonably Committed / Portfolio Liquidity**  \n- **Free cash:** 5,000 EGP is immediately available and liquid.  \n- **Saleable asset:** The 1,000 COMI shares have a market value of approximately 128,000 EGP at the stated price. These shares can be sold on the market, converting them into cash, but the realised amount will depend on the prevailing price at the time of sale and may be above or below the 128.00 EGP reference price.  \n- **No other holdings or restrictions** are indicated in the portfolio snapshot.  \n\n**What the Portfolio Allows**  \n- The 5,000 EGP cash balance is free and can be deployed or preserved as desired.  \n- The COMI position can be liquidated to access ~128,000 EGP in proceeds, which would more than cover the ~30,000 EGP liquidity need within 6 months, leaving a surplus. However, liquidation would realise whatever market price applies and expose the investor to the full price movement of that single stock.  \n- No explicit constraints on selling the shares are noted, but the action would reduce the portfolio’s remaining exposure to COMI and shift value into cash.\n\n**Compliance Notes**  \n- The assessment above does not analyse the COMI financial evidence provided (net interest income, net profit, equity figures, etc.), per the instruction to avoid company‑financial analysis.  \n- No specific action (e.g., “sell the shares,” “hold,” or “rebalance”) is recommended or picked; the output is limited to suitability evaluation and description of portfolio liquidity features."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 33.18,
+      "input_tokens": 1827,
+      "output_tokens": 4786,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 19.144,
+      "input_tokens": 1821,
+      "output_tokens": 2858,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 478.509,
+      "input_tokens": 4069,
+      "output_tokens": 24956,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 80.941,
+      "input_tokens": 3824,
+      "output_tokens": 10538,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 611.779
+}

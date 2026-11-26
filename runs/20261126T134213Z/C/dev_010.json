@@ -1,0 +1,101 @@
+{
+  "case_id": "dev_010",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "Profit belonging to Talaat Moustafa's own shareholders (Shareholders of the Parent Company, consolidated) grew from 9,025,066,065 LE in 2024 (restated) to 14,383,890,306 LE in 2025, an increase of 5,358,824,241 LE. These figures are drawn from the verified consolidated report (pp.7): [TMGH-TMGH_FY2025_consolidated_en-p7-57] and [TMGH-TMGH_FY2025_consolidated_en-p7-58], both printed with unit: LE (whole pounds, no 000 multiplier).\n\nThe investor's current portfolio at the cutoff: cash 30,000.00 EGP + 500 TMGH shares × 82.50 EGP/share = 41,250.00 EGP holdings. Total portfolio value = 71,250.00 EGP. TMGH weighting = 41,250 / 71,250 ≈ 57.9% of the total.\n\nThe team's diversification rule states: *after a buy, no single company may be more than half of the portfolio's total value (cash plus holdings at the given prices)*. This limit has no exceptions. Since TMGH already represents ~57.9% of the portfolio, any additional purchase of TMGH shares would further increase this weighting, inevitably violating the 50% ceiling. Therefore, adding to the TMGH position via a buy action is not permissible under the team's risk management constraints, irrespective of the reported profit growth.\n\nThe financial analyst's reported growth is substantial, but it does not override the hard diversification limit or the suitability analyst's assessment of high concentration risk relative to the investor's medium loss capacity. Given the investor's long-term growth horizon (5–10 years), high willingness to accept losses, and separate emergency fund, the existing TMGH holding may be retained, but increasing exposure on the basis of 2025 profit growth alone is not justified.\n\nConclusion: The profit growth does not justify adding to the TMGH position. The recommendation is to hold the existing position.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated), period 2025: 14,383,890,306 LE"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated), period 2024 (Restated): 9,025,066,065 LE"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The diversification constraint (no single company >50% of portfolio after a buy) makes any additional TMGH purchase impermissible under the current portfolio structure.",
+      "The analysis relies solely on evidence printed values and the cutoff price; no outside knowledge or later events are used.",
+      "Figures marked AMBIGUOUS were not present in the evidence list; all relied-upon figures are explicit and verified."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "Profit belonging to Talaat Moustafa's own shareholders (Shareholders of the Parent Company, consolidated) grew from 9,025,066,065 LE in 2024 (restated) to 14,383,890,306 LE in 2025, an increase of 5,358,824,241 LE. These figures are drawn from the verified consolidated report (pp.7): [TMGH-TMGH_FY2025_consolidated_en-p7-57] and [TMGH-TMGH_FY2025_consolidated_en-p7-58], both printed with unit: LE (whole pounds, no 000 multiplier).\n\nThe investor's current portfolio at the cutoff: cash 30,000.00 EGP + 500 TMGH shares × 82.50 EGP/share = 41,250.00 EGP holdings. Total portfolio value = 71,250.00 EGP. TMGH weighting = 41,250 / 71,250 ≈ 57.9% of the total.\n\nThe team's diversification rule states: *after a buy, no single company may be more than half of the portfolio's total value (cash plus holdings at the given prices)*. This limit has no exceptions. Since TMGH already represents ~57.9% of the portfolio, any additional purchase of TMGH shares would further increase this weighting, inevitably violating the 50% ceiling. Therefore, adding to the TMGH position via a buy action is not permissible under the team's risk management constraints, irrespective of the reported profit growth.\n\nThe financial analyst's reported growth is substantial, but it does not override the hard diversification limit or the suitability analyst's assessment of high concentration risk relative to the investor's medium loss capacity. Given the investor's long-term growth horizon (5–10 years), high willingness to accept losses, and separate emergency fund, the existing TMGH holding may be retained, but increasing exposure on the basis of 2025 profit growth alone is not justified.\n\nConclusion: The profit growth does not justify adding to the TMGH position. The recommendation is to hold the existing position.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated), period 2025: 14,383,890,306 LE"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated), period 2024 (Restated): 9,025,066,065 LE"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The diversification constraint (no single company >50% of portfolio after a buy) makes any additional TMGH purchase impermissible under the current portfolio structure.",
+      "The analysis relies solely on evidence printed values and the cutoff price; no outside knowledge or later events are used.",
+      "Figures marked AMBIGUOUS were not present in the evidence list; all relied-upon figures are explicit and verified."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Profit Belonging to Talaat Moustafa's Own Shareholders: Growth 2025 vs. 2024**\n\nThe evidence provides the following figures for \"Shareholders of the Parent Company (consolidated),\" which represents the profit attributable to the parent company's own shareholders each year:\n\n- [TMGH-TMGH_FY2025_consolidated_en-p7-57] Shareholders of the Parent Company (consolidated), period 2025: **14,383,890,306 LE**  \n- [TMGH-TMGH_FY2025_consolidated_en-p7-58] Shareholders of the Parent Company (consolidated), period 2024 (Restated): **9,025,066,065 LE**\n\n**Growth in profit belonging to own shareholders:**  \n14,383,890,306 − 9,025,066,065 = **5,358,824,241 LE** (whole pounds)\n\nThe 2024 figure is marked as \"Restated,\" meaning it has been adjusted from any previously reported value; the comparison above uses the restated 2024 figure as provided. The 2025 figure is verified as printed. No unit conversion is needed, as the report specifies `unit: LE` (Egyptian pounds) without a (000) multiplier, so all values are in whole pounds.\n\n**Data quality note:** Both figures are drawn from the same consolidated report (p.7), ensuring consistency in accounting treatment. The difference between total consolidated net profit and the shareholders-of-the-parent-company figure (18,201,981,482 − 14,383,890,306 = 3,818,091,176 LE) likely represents profit attributable to non-controlling interests, confirming the parent-shareholder attribution.\n\n*No recommendation regarding adding to the TMGH position is provided, per instructions.*",
+    "investor": "### Investor Suitability Assessment\n\n**Horizon & Goal Alignment**  \n- Stated horizon: 5–10 years.  \n- Goal: long-term growth.  \n- **Assessment**: The horizon aligns well with a long-term growth objective. The timeframe supports holding through typical market cycles without forced liquidation.\n\n**Liquidity Needs**  \n- Investor maintains a separate emergency fund.  \n- Current cash: 30,000.00 EGP.  \n- **Assessment**: With an emergency fund in place, the available cash can be deployed for investment purposes without compromising liquidity safety nets.\n\n**Loss Willingness vs. Capacity**  \n- Willingness to accept losses: high.  \n- Financial ability to withstand losses: medium.  \n- **Assessment**: There is a mismatch between high willingness and medium capacity. While the investor is psychologically comfortable with volatility, the medium loss capacity suggests the portfolio should not be exposed to excessive single‑name or sector risk. Position sizing and diversification become important to protect capital relative to this capacity.\n\n**Current Concentration & Portfolio Composition**  \n- Holdings: 500 shares of TMGH at the cutoff price of 82.50 EGP/share.  \n- Current market value of TMGH position: 500 × 82.50 = **41,250.00 EGP**.  \n- Total portfolio value (cash + holdings): 30,000.00 + 41,250.00 = **71,250.00 EGP**.  \n- Concentration in TMGH: ~57.9% of the total portfolio.  \n- **Assessment**: This is a high concentration risk, especially given the medium loss capacity. A single‑stock weighting near 60% could significantly impact the portfolio if TMGH experiences adverse price movement. The current setup may be suitable only if the investor accepts elevated idiosyncratic risk and has no need for capital preservation in the near term.\n\n**Cash Commitment Capacity & Portfolio Allowances**  \n- Free cash available: **30,000.00 EGP** (no other liquid assets listed).  \n- What can be sold: The 500 TMGH shares can be liquidated for approximately 41,250.00 EGP, providing immediate cash if needed.  \n- No other holdings, bonds, or alternative assets are noted.  \n- **Assessment**: The investor has moderate cash‑committing power (30k EGP). Any additional commitment to TMGH would increase the already high concentration. Alternatively, the cash could be used to introduce diversification (e.g., other equities, funds, or fixed income) to better align with the medium loss‑capacity constraint.\n\n### Note on Role Constraints\nAs an investor‑suitability analyst, I am instructed **not to analyse company financials** (e.g., profit growth, EPS, equity movements) and **not to pick an action** (e.g., whether to add to the position). The assessment above focuses exclusively on suitability factors: horizon, liquidity, loss willingness/capacity, concentration, and cash commitment capacity, along with what the current portfolio allows to be sold or remains free."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 28.207,
+      "input_tokens": 1972,
+      "output_tokens": 4097,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 19.762,
+      "input_tokens": 1966,
+      "output_tokens": 3315,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 427.255,
+      "input_tokens": 3443,
+      "output_tokens": 14351,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 475.229
+}

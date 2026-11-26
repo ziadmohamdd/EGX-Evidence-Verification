@@ -1,0 +1,84 @@
+{
+  "case_id": "dev_010",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "### Profit growth belonging to Talaat Moustafa's own shareholders\n- From evidence [TMGH-TMGH_FY2025_consolidated_en-p7-57]: Shareholders of the Parent Company (consolidated) for period 2025 = 14,383,890,306 LE\n- From evidence [TMGH-TMGH_FY2025_consolidated_en-p7-58]: Shareholders of the Parent Company (consolidated) for period 2024 (Restated) = 9,025,066,065 LE\n- Growth in 2025 vs 2024 = 14,383,890,306 − 9,025,066,065 = **5,358,824,241 LE**, an increase of **~59.4%** year‑over‑year.\n\n### Portfolio concentration check\n- Current holdings: 500 TMGH shares × 82.50 EGP = 41,250 EGP\n- Cash = 30,000 EGP\n- Total portfolio value = 71,250 EGP\n- TMGH already represents 41,250 / 71,250 ≈ **57.9%** of the portfolio.\n- The diversification rule states: *after a buy, no single company may be more than half (50%) of the portfolio's total value (cash plus holdings at the given prices). This limit has no exceptions.*\n- Because TMGH is already above 50%, any additional purchase would increase this concentration further, making the portfolio non‑compliant with the rule. Therefore, adding to the position is **not permissible** under the given constraints, regardless of the strong profit growth.\n\n### Conclusion on the investor's question\nThe profit belonging to Talaat Moustafa's own shareholders grew by ~59.4% in 2025 compared with 2024, which is a solid fundamental improvement. However, the portfolio is already overweight in TMGH (57.9%), and the diversification limit prohibits any increase to the TMGH holding without first reducing the existing position below 50% of the total portfolio. Under the strict no‑exception diversification rule, adding to the position is not justified at this time.\n\n### Recommendation\n**hold** – maintain the current TMGH holding. No shares are to be bought or sold; `shares` is set to 0. The investor retains exposure to the company's growth while remaining compliant with portfolio diversification requirements. If the investor wishes to increase TMGH exposure in the future, they would first need to reduce the existing holding or rebalance cash/other assets to bring TMGH below the 50% threshold.\n\n**Unused figures:** None. All figures relied upon are explicitly listed in `claims` and are not marked AMBIGUOUS.\n\n**Note:** This guidance is based solely on the provided evidence and prices as of the 2026‑11‑18 cutoff. It is not a guarantee of returns. The investor should consider the high‑risk nature of concentrated equity positions and maintain their separate emergency fund as planned.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2024 (Restated)"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The 50% portfolio concentration limit is a firm rule with no exceptions; any buy recommendation would require reducing the existing TMGH position first.",
+      "All figures are taken from the specified evidence rows and columns; no outside data or later events were used."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "### Profit growth belonging to Talaat Moustafa's own shareholders\n- From evidence [TMGH-TMGH_FY2025_consolidated_en-p7-57]: Shareholders of the Parent Company (consolidated) for period 2025 = 14,383,890,306 LE\n- From evidence [TMGH-TMGH_FY2025_consolidated_en-p7-58]: Shareholders of the Parent Company (consolidated) for period 2024 (Restated) = 9,025,066,065 LE\n- Growth in 2025 vs 2024 = 14,383,890,306 − 9,025,066,065 = **5,358,824,241 LE**, an increase of **~59.4%** year‑over‑year.\n\n### Portfolio concentration check\n- Current holdings: 500 TMGH shares × 82.50 EGP = 41,250 EGP\n- Cash = 30,000 EGP\n- Total portfolio value = 71,250 EGP\n- TMGH already represents 41,250 / 71,250 ≈ **57.9%** of the portfolio.\n- The diversification rule states: *after a buy, no single company may be more than half (50%) of the portfolio's total value (cash plus holdings at the given prices). This limit has no exceptions.*\n- Because TMGH is already above 50%, any additional purchase would increase this concentration further, making the portfolio non‑compliant with the rule. Therefore, adding to the position is **not permissible** under the given constraints, regardless of the strong profit growth.\n\n### Conclusion on the investor's question\nThe profit belonging to Talaat Moustafa's own shareholders grew by ~59.4% in 2025 compared with 2024, which is a solid fundamental improvement. However, the portfolio is already overweight in TMGH (57.9%), and the diversification limit prohibits any increase to the TMGH holding without first reducing the existing position below 50% of the total portfolio. Under the strict no‑exception diversification rule, adding to the position is not justified at this time.\n\n### Recommendation\n**hold** – maintain the current TMGH holding. No shares are to be bought or sold; `shares` is set to 0. The investor retains exposure to the company's growth while remaining compliant with portfolio diversification requirements. If the investor wishes to increase TMGH exposure in the future, they would first need to reduce the existing holding or rebalance cash/other assets to bring TMGH below the 50% threshold.\n\n**Unused figures:** None. All figures relied upon are explicitly listed in `claims` and are not marked AMBIGUOUS.\n\n**Note:** This guidance is based solely on the provided evidence and prices as of the 2026‑11‑18 cutoff. It is not a guarantee of returns. The investor should consider the high‑risk nature of concentrated equity positions and maintain their separate emergency fund as planned.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "Shareholders of the Parent Company (consolidated) period 2024 (Restated)"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The 50% portfolio concentration limit is a firm rule with no exceptions; any buy recommendation would require reducing the existing TMGH position first.",
+      "All figures are taken from the specified evidence rows and columns; no outside data or later events were used."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 725.318,
+      "input_tokens": 2244,
+      "output_tokens": 5589,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 725.323
+}

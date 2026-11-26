@@ -1,0 +1,105 @@
+{
+  "case_id": "dev_006",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "نوصي بالاحتفاظ بالأسهم الحالية وعدم إجراء عمليات شراء جديدة نظراً لوجود أرقام مالية غامضة وعدم توفر معلومات كافية عن الميزانية العمومية للشركة، مما يزيد من المخاطر ويمنع اتخاذ قرار شراء مسؤول. قيمة محفظتك الإجمالية هي ٧٦,٥٠٠ جنيه، منها ٢٠٠ سهم لشركة طلعت مصطفى القابضة بقيمة ١٦,٥٠٠ جنيه (بسعر ٨٢.٥٠ جنيه للسهم) و٦٠,٠٠٠ جنيه كاش. بلغ نصيب السهم في الأرباح ٦.٩٨ جنيه مقارنة بـ ٤.٣٧ جنيه للفترة المقارنة بنسبة نمو ٥٩.٦%.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "بلغ نصيب السهم في الأرباح ٦.٩٨ جنيه للفترة المنتهية في ٣١ ديسمبر ٢٠٢٥."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+        "stated_value": 4.37,
+        "statement": "بلغ نصيب السهم في الأرباح ٤.٣٧ جنيه للفترة المقارنة المنتهية في ٣١ ديسمبر ٢٠٢٤."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا توجد بيانات ميزانية عمومية أو التزامات لتقييم الملاءة المالية بشكل كامل.",
+      "وجود أرقام إيرادات وصافي ربح غامضة."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "نوصي بالاحتفاظ بالأسهم الحالية وعدم إجراء عمليات شراء جديدة نظراً لوجود أرقام مالية غامضة وعدم توفر معلومات كافية عن الميزانية العمومية للشركة، مما يزيد من المخاطر ويمنع اتخاذ قرار شراء مسؤول. قيمة محفظتك الإجمالية هي ٧٦,٥٠٠ جنيه، منها ٢٠٠ سهم لشركة طلعت مصطفى القابضة بقيمة ١٦,٥٠٠ جنيه (بسعر ٨٢.٥٠ جنيه للسهم) و٦٠,٠٠٠ جنيه كاش. بلغ نصيب السهم في الأرباح ٦.٩٨ جنيه مقارنة بـ ٤.٣٧ جنيه للفترة المقارنة بنسبة نمو ٥٩.٦%.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "بلغ نصيب السهم في الأرباح ٦.٩٨ جنيه للفترة المنتهية في ٣١ ديسمبر ٢٠٢٥."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+        "stated_value": 4.37,
+        "statement": "بلغ نصيب السهم في الأرباح ٤.٣٧ جنيه للفترة المقارنة المنتهية في ٣١ ديسمبر ٢٠٢٤."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "لا توجد بيانات ميزانية عمومية أو التزامات لتقييم الملاءة المالية بشكل كامل.",
+      "وجود أرقام إيرادات وصافي ربح غامضة."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 60000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "Based on the provided evidence for TMGH (Talaat Moustafa Group Holding), here is the financial analysis of the company's results for the period ending December 31, 2025, alongside the data quality flags:\n\n### 1. Profitability & Growth\n* **Revenue (Consolidated):** For the period ending 31 December 2025, consolidated revenue was **62,495,144,197 EGP** [TMGH-TMGH_FY2025_results_summary_ar-p1-01], reflecting a growth rate of **46%** [TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg] compared to the previous period. (Note: The comparative revenue figure for 31 December 2024 is marked as AMBIGUOUS due to an unclear long number format [TMGH-TMGH_FY2025_results_summary_ar-p1-02]).\n* **Net Profit After Tax (Consolidated):** For the period ending 31 December 2024, net profit was **12,769,517,326 EGP** [TMGH-TMGH_FY2025_results_summary_ar-p1-10]. The net profit for 31 December 2025 is flagged as AMBIGUOUS due to unclear separators in the reported figure (`١٨٠٢٠١,٩٨١٠٤٨٢`) [TMGH-TMGH_FY2025_results_summary_ar-p1-09], though the reported growth rate shows an increase of **43%** [TMGH-TMGH_FY2025_results_summary_ar-p1-09-chg].\n* **Earnings Per Share (Consolidated):** EPS for the period ending 31 December 2025 was **6.98 EGP**, compared to **4.37 EGP** for the period ending 31 December 2024 [TMGH-TMGH_FY2025_results_summary_ar-p1-11, TMGH-TMGH_FY2025_results_summary_ar-p1-12], representing a growth of **59.6%** [TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg].\n\n### 2. Balance Sheet & Risks\n* The provided evidence contains **no balance sheet data** (such as assets, liabilities, or debt levels) to evaluate leverage or solvency risks. \n\n### 3. Data Quality\n* **AMBIGUOUS figures:** \n  * The 31 December 2024 consolidated revenue figure (`٤٢٠٦٧٠٠٢٨٣٠٢٨٨`) [TMGH-TMGH_FY2025_results_summary_ar-p1-02].\n  * The 31 December 2025 consolidated net profit after tax figure (`١٨٠٢٠١,٩٨١٠٤٨٢`) [TMGH-TMGH_FY2025_results_summary_ar-p1-09].\n  * *Per instructions, these ambiguous figures have been flagged and are not used for computations.*\n\n### Current Portfolio Context\n* **Cash:** 60,000.00 EGP\n* **Holdings:** 200 shares of TMGH at a price of 82.50 EGP per share (Total holding value: 16,500.00 EGP)\n\n*Note: As the financial analyst, I do not provide investment recommendations or advice on what actions to take. The decision agent will determine the next steps based on your portfolio and goals.*",
+    "investor": "Based on the investor profile, portfolio holdings, and market prices at the cutoff date, here is the investor-suitability analysis:\n\n### 1. Investment Horizon\n* **Timeline:** 3 to 5 years.\n* **Suitability:** This falls into a medium-term horizon. While too short for aggressive, highly volatile short-term trading, it allows enough time to weather normal market cycles compared to ultra-short-term or day-to-day liquidity needs. \n\n### 2. Liquidity Needs\n* **Emergency Fund:** The investor maintains a separate emergency fund.\n* **Suitability:** Because immediate liquidity needs are decoupled from the investment portfolio, the capital allocated here does not need to be kept in cash for unexpected day-to-day emergencies and can remain committed to the portfolio's stated goal.\n\n### 3. Loss Willingness and Capacity\n* **Willingness:** Medium.\n* **Financial Capacity:** Medium.\n* **Suitability:** The investor is prepared to accept moderate fluctuations in portfolio value and has the financial standing to absorb moderate drawdowns, but would not be comfortable with a high-risk strategy that threatens a substantial loss of principal.\n\n### 4. Current Portfolio & Concentration Analysis\n* **Cash Position:** 60,000.00 EGP.\n* **Stock Holdings:** 200 shares of TMGH at a price of 82.50 EGP per share, valuing the TMGH holding at 16,500.00 EGP (200 × 82.50 EGP).\n* **Total Portfolio Value:** 76,500.00 EGP (60,000.00 EGP cash + 16,500.00 EGP equities).\n* **Concentration:** Equities (TMGH) make up approximately 21.57% of the total portfolio value, while the remaining 78.43% is held in cash. \n\n### 5. Portfolio Allowances (What Can Be Sold / Free Cash)\n* **Free Cash:** 60,000.00 EGP is currently uninvested and fully available to be committed depending on future allocation decisions.\n* **Liquidatable Assets:** The 200 shares of TMGH (valued at 16,500.00 EGP) can be sold if the investment strategy requires reallocating away from equities."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 4.246,
+      "input_tokens": 1755,
+      "output_tokens": 856,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 2.773,
+      "input_tokens": 1747,
+      "output_tokens": 527,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 2.296,
+      "input_tokens": 3450,
+      "output_tokens": 508,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 9.32
+}

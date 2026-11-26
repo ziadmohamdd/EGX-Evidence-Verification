@@ -1,0 +1,130 @@
+{
+  "case_id": "dev_009",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 196,
+    "explanation": "### Full-year 2026 EPS and P/E calculation\n\nThe Abu Qir (ABUK) 9M2026 report covers only nine months ending 30 September 2026. The only verified earnings-per-share (EPS) figures available are:\n- 9M2026 basic EPS: 8.74 EGP (evidence_id: ABUK-ABUK_9M2026_results-p2-31, verified)\n- 9M2025 basic EPS: 4.28 EGP (evidence_id: ABUK-ABUK_9M2026_results-p2-32, verified)\n\nTo estimate full-year 2026 EPS, the 9M2026 figure is annualised by multiplying by 12/9: 8.74 × (12/9) = 11.65 EGP. This assumes constant quarterly earnings; actual full-year EPS may vary due to seasonal patterns in the export sector.\n\nPrice-to-earnings ratio: current share price 76.21 EGP ÷ 11.65 EGP EPS = 6.54.\n\n### Investment assessment\n- The 9M2026 EPS grew 104% year-on-year (from 4.28 to 8.74 EGP), indicating strong growth momentum.\n- A P/E of 6.54 is low compared to typical Egyptian listed-company P/E ranges (historically 8–15+), suggesting potential value.\n- However, the full-year EPS estimate relies on 9-month data only; Q4 2026 results are unknown, introducing uncertainty.\n- No dividend information appears in the given evidence; the investor's income goal may depend on future dividend declarations.\n- The investor's 3–5 year horizon and medium risk tolerance align with holding the stock for potential growth and income, but the low P/E could reflect market-perceived risks in the export cycle.\n\n### Portfolio diversification\n- Investor starts with 30,000.00 EGP cash and no holdings.\n- Rule: after a buy, no single company may exceed 50% of portfolio total value (cash + holdings at given prices).\n- Maximum shares affordable: 196 × 76.21 EGP = 14,937.16 EGP, which is 49.79% of the 30,000 EGP portfolio (under the 50% limit).\n- 197 shares would yield 50.04%, breaching the limit.\n- Recommendation: purchase 196 shares, leaving 15,062.84 EGP cash.\n\n### Unused AMBIGUOUS figures and their impact\nThe following figures are marked AMBIGUOUS and were excluded from calculations:\n- Revenue figures: 31,488 (9M2026), 16,578 (9M2025), 6,090 (3M2026), 7,964 (3M2025), 3,911 (3M2025) EGP million.\n- Net profit figures: 12,970 (9M2026), 6,396 (9M2025), 2,958 (3M2026), 1,828 (3M2025) EGP million.\n- Percentage-change figures: %٠١٠٤, %١٠٣, %١٠٤ (not single numbers).\n- Per-share figures without clear decimal marks: 199, 1.23, 662 EGP (OCR may have dropped a decimal comma).\n\n**Conclusions affected:** The full-year EPS estimate and P/E ratio rely solely on annualising the verified 9M2026 EPS. Without the revenue, net profit, and percentage-change data, there is no direct way to model Q4 2026 performance or validate the annualisation assumption. The P/E of 6.54 is therefore conditional on the constant-earnings assumption; actual full-year EPS could be meaningfully higher or lower, which would shift the P/E ratio. The strong 104% year-on-year EPS growth (based on verified figures) is reliable, but the investment call's valuation assessment carries this uncertainty.\n\n### Uncertainty and risks (as required)\n- Data limitation: only 9-month results are available; full-year 2026 EPS is an estimate.\n- EPS annualisation assumes uniform quarterly earnings, which may not hold for an exporter subject to seasonal demand, currency fluctuations, and input‑cost cycles.\n- P/E of 6.54 could be too optimistic if Q4 earnings disappoint, or too pessimistic if a strong fourth quarter is typical.\n- No dividend data is provided; income-focused investors should watch for future dividend declarations.\n- Concentration risk: buying 196 shares exposes nearly half the portfolio to one company, though the 50% rule is respected.\n\n**Recommendation:** Buy 196 shares of ABUK at 76.21 EGP. The estimated P/E of 6.54, combined with strong recent EPS growth, supports the share as potentially cheap for an investor with a 3–5 year horizon seeking income and growth from an exporter, within the portfolio‑diversification constraint. The investor should monitor full‑year results and any dividend announcements.\n\n**Explanation written in English as requested.**",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "basic earnings per share, 9 months ending 30 September 2026, verified, in EGP"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "basic earnings per share, 9 months ending 30 September 2025, verified, in EGP"
+      }
+    ],
+    "unused_figures": [
+      "Revenue figures (AMBIGUOUS): 31,488 (9M2026), 16,578 (9M2025), 6,090 (3M2026), 7,964 (3M2025), 3,911 (3M2025) EGP million",
+      "Net profit figures (AMBIGUOUS): 12,970 (9M2026), 6,396 (9M2025), 2,958 (3M2026), 1,828 (3M2025) EGP million",
+      "Percentage-change figures (AMBIGUOUS): %٠١٠٤, %١٠٣, %١٠٤ (not single numbers)",
+      "Per-share figures without clear decimal marks (AMBIGUOUS): 199, 1.23, 662 EGP (decimal comma may have been dropped by OCR)"
+    ],
+    "limitations": [
+      "Full-year 2026 EPS is estimated by annualising 9M2026 EPS (8.74 EGP × 12/9 = 11.65 EGP); actual full-year EPS may differ due to seasonal earnings patterns.",
+      "P/E ratio of 6.54 is based on this estimated EPS; if Q4 2026 earnings deviate from the assumption, the true P/E could be meaningfully higher or lower.",
+      "No dividend information is available from the given evidence; income outcomes depend on future declarations.",
+      "The 50% portfolio concentration limit is respected (196 shares = 49.79% of portfolio), but the position remains a significant single‑stock exposure.",
+      "All figures marked AMBIGUOUS in the evidence were excluded from calculations; conclusions about valuation carry the associated uncertainty."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 196,
+    "explanation": "### Full-year 2026 EPS and P/E calculation\n\nThe Abu Qir (ABUK) 9M2026 report covers only nine months ending 30 September 2026. The only verified earnings-per-share (EPS) figures available are:\n- 9M2026 basic EPS: 8.74 EGP (evidence_id: ABUK-ABUK_9M2026_results-p2-31, verified)\n- 9M2025 basic EPS: 4.28 EGP (evidence_id: ABUK-ABUK_9M2026_results-p2-32, verified)\n\nTo estimate full-year 2026 EPS, the 9M2026 figure is annualised by multiplying by 12/9: 8.74 × (12/9) = 11.65 EGP. This assumes constant quarterly earnings; actual full-year EPS may vary due to seasonal patterns in the export sector.\n\nPrice-to-earnings ratio: current share price 76.21 EGP ÷ 11.65 EGP EPS = 6.54.\n\n### Investment assessment\n- The 9M2026 EPS grew approximately 104% year-on-year (from 4.28 to 8.74 EGP), indicating strong growth momentum based on verified figures.\n- A P/E of 6.54 is low compared to typical Egyptian listed-company P/E ranges (historically 8–15+), suggesting potential value.\n- However, the full-year EPS estimate relies on 9-month data only; Q4 2026 results are unknown, introducing uncertainty.\n- No dividend information appears in the given evidence; the investor's income goal may depend on future dividend declarations.\n- The investor's 3–5 year horizon and medium risk tolerance align with holding the stock for potential growth and income, but the low P/E could reflect market-perceived risks in the export cycle.\n\n### Portfolio diversification\n- Investor starts with 30,000.00 EGP cash and no holdings.\n- Rule: after a buy, no single company may exceed 50% of portfolio total value (cash + holdings at given prices).\n- Maximum shares affordable: 196 × 76.21 EGP = 14,937.16 EGP, which is 49.79% of the 30,000 EGP portfolio (under the 50% limit).\n- 197 shares would yield 50.04%, breaching the limit.\n- Recommendation: purchase 196 shares, leaving 15,062.84 EGP cash.\n\n### Unused AMBIGUOUS figures and their impact\nThe following figures are marked AMBIGUOUS or have OCR uncertainty and were excluded from calculations:\n- Revenue figures (AMBIGUOUS): 31,488 (9M2026), 16,578 (9M2025), 6,090 (3M2026), 7,964 (3M2025), 3,911 (3M2025) EGP million.\n- Net profit figures (AMBIGUOUS): 12,970 (9M2026), 6,396 (9M2025), 2,958 (3M2026), 1,828 (3M2025) EGP million.\n- Percentage-change figures (AMBIGUOUS): %٠١٠٤, %١٠٣, %١٠٤ (not single numbers).\n[removed: figure could not be verified]\n\n**Conclusions affected:** The full-year EPS estimate and P/E ratio rely solely on annualising the verified 9M2026 EPS (8.74 EGP). Without the revenue, net profit, and percentage-change data, there is no direct way to model Q4 2026 performance or validate the annualisation assumption. The P/E of 6.54 is therefore conditional on the constant-earnings assumption; actual full-year EPS could be meaningfully higher or lower, which would shift the P/E ratio. The strong year-on-year EPS growth (based on verified figures) is reliable, but the investment call's valuation assessment carries this uncertainty. [removed: figure could not be verified]\n\n### Uncertainty and risks (as required)\n- Data limitation: only 9-month results are available; full-year 2026 EPS is an estimate.\n- EPS annualisation assumes uniform quarterly earnings, which may not hold for an exporter subject to seasonal demand, currency fluctuations, and input‑cost cycles.\n- P/E of 6.54 could be too optimistic if Q4 earnings disappoint, or too pessimistic if a strong fourth quarter is typical.\n- No dividend data is provided; income-focused investors should watch for future dividend declarations.\n- Concentration risk: buying 196 shares exposes nearly half the portfolio to one company, though the 50% rule is respected.\n- OCR uncertainty on certain per-share figures means the reported EPS values carry a minor interpretation risk.\n\n**Recommendation:** Buy 196 shares of ABUK at 76.21 EGP. The estimated P/E of 6.54, combined with strong recent EPS growth based on verified figures, supports the share as potentially cheap for an investor with a 3–5 year horizon seeking income and growth from an exporter, within the portfolio‑diversification constraint. The investor should monitor full‑year results and any dividend announcements.\n\n**Explanation written in English as requested.**",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "basic earnings per share, 9 months ending 30 September 2026, verified, in EGP"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "basic earnings per share, 9 months ending 30 September 2025, verified, in EGP"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-35",
+      "Net profit figures (AMBIGUOUS): 12,970 (9M2026), 6,396 (9M2025), 2,958 (3M2026), 1,828 (3M2025) EGP million",
+      "Per-share figures without clear decimal marks (AMBIGUOUS/OCR uncertainty): 199, 1.23, 662 EGP (decimal comma may have been dropped by OCR)",
+      "Percentage-change figures (AMBIGUOUS): %٠١٠٤, %١٠٣, %١٠٤ (not single numbers)",
+      "Revenue figures (AMBIGUOUS): 31,488 (9M2026), 16,578 (9M2025), 6,090 (3M2026), 7,964 (3M2025), 3,911 (3M2025) EGP million"
+    ],
+    "limitations": [
+      "Full-year 2026 EPS is estimated by annualising 9M2026 EPS (8.74 EGP × 12/9 = 11.65 EGP); actual full-year EPS may differ due to seasonal earnings patterns.",
+      "P/E ratio of 6.54 is based on this estimated EPS; if Q4 2026 earnings deviate from the assumption, the true P/E could be meaningfully higher or lower.",
+      "No dividend information is available from the given evidence; income outcomes depend on future declarations.",
+      "The 50% portfolio concentration limit is respected (196 shares = 49.79% of portfolio), but the position remains a significant single‑stock exposure.",
+      "All figures marked AMBIGUOUS in the evidence were excluded from calculations; conclusions about valuation carry the associated uncertainty. The per-share figure 1.23 was excluded due to OCR ambiguity and was not used in any calculation or claim.",
+      "These figures could not be verified and were not used: نصيب السهم الأساسي في الأرباح (جنيه). Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15062.84,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ABUK",
+        "shares": 196
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"1.23\", which is 'نصيب السهم الأساسي في الأرباح (جنيه)' (1.23), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"1.23\", which is 'نصيب السهم الأساسي في الأرباح (جنيه)' (1.23), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"1.23\", which is 'نصيب السهم الأساسي في الأرباح (جنيه)' (1.23), but it is not listed in claims"
+      }
+    ],
+    "dropped": [
+      "ABUK-ABUK_9M2026_results-p2-35"
+    ],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 143.089,
+      "input_tokens": 5140,
+      "output_tokens": 21516,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 55.057,
+      "input_tokens": 7175,
+      "output_tokens": 9975,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 198.152
+}

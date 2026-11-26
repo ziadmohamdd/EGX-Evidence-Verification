@@ -1,0 +1,99 @@
+{
+  "case_id": "dev_007",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor has a short-term horizon of 3 months and needs 10,000 EGP in cash for a family wedding, with a low willingness and ability to accept losses. Currently, the investor holds 1,000.00 EGP in cash and 200 shares of EFID. At the current price of 20.40 EGP per share, the 200 shares are worth 4,080.00 EGP, giving a total portfolio value of 5,080.00 EGP. Selling all 200 shares of EFID will raise 4,080.00 EGP, bringing the investor's total cash to 5,080.00 EGP. Although this falls short of the full 10,000 EGP liquidity need, selling protects the investor against potential downside risk over the 3-month horizon given their low risk tolerance, and secures liquidity from their holdings. We cite EFID's consolidated net profit of 2,695,301,670 EGP for 2025 and 1,606,727,698 EGP for 2024, as well as revenues of 20,915,072,432 EGP for 2025 and 16,146,545,699 EGP for 2024, showing strong fundamental performance, but the short-term personal liquidity constraint and low risk tolerance dictate realizing the equity value now. Guidance is not a guarantee of returns, and market prices may fluctuate.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "We cite EFID's consolidated net profit of 2,695,301,670 EGP for 2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "We cite EFID's consolidated net profit of 1,606,727,698 EGP for 2024."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "We cite EFID's revenue of 20,915,072,432 EGP for 2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "We cite EFID's revenue of 16,146,545,699 EGP for 2024."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39"
+    ],
+    "limitations": [
+      "Selling all shares raises only 4,080.00 EGP, which leaves the investor short of the 10,000 EGP total cash needed.",
+      "Stock prices are subject to market volatility and may change."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor has a short-term horizon of 3 months and needs 10,000 EGP in cash for a family wedding, with a low willingness and ability to accept losses. Currently, the investor holds 1,000.00 EGP in cash and 200 shares of EFID. At the current price of 20.40 EGP per share, the 200 shares are worth 4,080.00 EGP, giving a total portfolio value of 5,080.00 EGP. Selling all 200 shares of EFID will raise 4,080.00 EGP, bringing the investor's total cash to 5,080.00 EGP. Although this falls short of the full 10,000 EGP liquidity need, selling protects the investor against potential downside risk over the 3-month horizon given their low risk tolerance, and secures liquidity from their holdings. We cite EFID's consolidated net profit of 2,695,301,670 EGP for 2025 and 1,606,727,698 EGP for 2024, as well as revenues of 20,915,072,432 EGP for 2025 and 16,146,545,699 EGP for 2024, showing strong fundamental performance, but the short-term personal liquidity constraint and low risk tolerance dictate realizing the equity value now. Guidance is not a guarantee of returns, and market prices may fluctuate.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "We cite EFID's consolidated net profit of 2,695,301,670 EGP for 2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "We cite EFID's consolidated net profit of 1,606,727,698 EGP for 2024."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "We cite EFID's revenue of 20,915,072,432 EGP for 2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "We cite EFID's revenue of 16,146,545,699 EGP for 2024."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39"
+    ],
+    "limitations": [
+      "Selling all shares raises only 4,080.00 EGP, which leaves the investor short of the 10,000 EGP total cash needed.",
+      "Stock prices are subject to market volatility and may change."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 5080.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 5.609,
+      "input_tokens": 1824,
+      "output_tokens": 942,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 5.611
+}

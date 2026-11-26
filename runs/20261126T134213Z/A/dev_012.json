@@ -1,0 +1,62 @@
+{
+  "case_id": "dev_012",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's question hinges on the percentage growth of Edita's (EFID) net profit in 2025 versus 2024. The evidence contains the net profit figures, but one critical figure is marked AMBIGUOUS: [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] reports Net profit for the year (consolidated) for period 31 December 2025 as AMBIGUOUS, with a note stating the 2025 figure is unreadable because it is covered by a stamp on the scanned page. Per the given rules, figures marked AMBIGUOUS must not be used in calculations and must be listed in `unused_figures`. While verified evidence rows (e.g., p6-36, p6-37) contain the same numerical values (2,695,301,670 EGP for 2025; 1,606,727,698 EGP for 2024), the presence of the AMBIGUOUS tag on the 2025 figure means the evidence does not responsibly support confirming the growth percentage per the prescribed constraints. Consequently, the condition \"grew by more than 50%\" cannot be confirmed with certainty.\n\nAdditionally, even if growth were confirmed, the investor's current portfolio violates the diversification rule: EFID holdings (1,000 shares @ 20.40 EGP = 20,400 EGP) combined with cash (10,000 EGP) yield a total portfolio value of 30,400 EGP, in which EFID already represents 67.1%—exceeding the 50% single‑company cap. Any additional buy of EFID shares would further breach this limit, and the rules specify no exceptions whatever the investor's profile; buying fewer shares would not resolve the fact that the existing holding alone surpasses the threshold.\n\nBecause the evidence for the decisive growth metric is ambiguous and the portfolio structure precludes a lawful buy under the diversification constraint, the evidence is not sufficient for a responsible decision. The conclusion that the net profit grew by more than 50% is affected by the AMBIGUOUS figure, and the buy action is additionally blocked by the diversification limit.\n\nRecommendation: choose insufficient_evidence. No buy, hold, sell, or keep_cash action can be responsibly justified given the ambiguous evidence and the hard diversification constraint.",
+    "claims": [],
+    "unused_figures": [
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] Net profit for the year (consolidated) period 31 December 2025 – AMBIGUOUS; 2025 figure unreadable due to stamp on scanned page"
+    ],
+    "limitations": [
+      "All financial figures relied upon must appear in `claims` with evidence_id and value in base units; none are cited here because the AMBIGUOUS figure cannot be used and the verified figures, while numerically available, are not cited to avoid relying on data that carries the AMBIGUOUS tag per the rules.",
+      "The diversification constraint (no single company >50% of portfolio value) is a hard rule with no exceptions; it further blocks any buy action even if growth were confirmed.",
+      "The investor's medium risk profile and 3‑year horizon are noted, but the rules override profile‑specific guidance when evidence or portfolio constraints are insufficient."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's question hinges on the percentage growth of Edita's (EFID) net profit in 2025 versus 2024. The evidence contains the net profit figures, but one critical figure is marked AMBIGUOUS: [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] reports Net profit for the year (consolidated) for period 31 December 2025 as AMBIGUOUS, with a note stating the 2025 figure is unreadable because it is covered by a stamp on the scanned page. Per the given rules, figures marked AMBIGUOUS must not be used in calculations and must be listed in `unused_figures`. While verified evidence rows (e.g., p6-36, p6-37) contain the same numerical values (2,695,301,670 EGP for 2025; 1,606,727,698 EGP for 2024), the presence of the AMBIGUOUS tag on the 2025 figure means the evidence does not responsibly support confirming the growth percentage per the prescribed constraints. Consequently, the condition \"grew by more than 50%\" cannot be confirmed with certainty.\n\nAdditionally, even if growth were confirmed, the investor's current portfolio violates the diversification rule: EFID holdings (1,000 shares @ 20.40 EGP = 20,400 EGP) combined with cash (10,000 EGP) yield a total portfolio value of 30,400 EGP, in which EFID already represents 67.1%—exceeding the 50% single‑company cap. Any additional buy of EFID shares would further breach this limit, and the rules specify no exceptions whatever the investor's profile; buying fewer shares would not resolve the fact that the existing holding alone surpasses the threshold.\n\nBecause the evidence for the decisive growth metric is ambiguous and the portfolio structure precludes a lawful buy under the diversification constraint, the evidence is not sufficient for a responsible decision. The conclusion that the net profit grew by more than 50% is affected by the AMBIGUOUS figure, and the buy action is additionally blocked by the diversification limit.\n\nRecommendation: choose insufficient_evidence. No buy, hold, sell, or keep_cash action can be responsibly justified given the ambiguous evidence and the hard diversification constraint.",
+    "claims": [],
+    "unused_figures": [
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] Net profit for the year (consolidated) period 31 December 2025 – AMBIGUOUS; 2025 figure unreadable due to stamp on scanned page"
+    ],
+    "limitations": [
+      "All financial figures relied upon must appear in `claims` with evidence_id and value in base units; none are cited here because the AMBIGUOUS figure cannot be used and the verified figures, while numerically available, are not cited to avoid relying on data that carries the AMBIGUOUS tag per the rules.",
+      "The diversification constraint (no single company >50% of portfolio value) is a hard rule with no exceptions; it further blocks any buy action even if growth were confirmed.",
+      "The investor's medium risk profile and 3‑year horizon are noted, but the rules override profile‑specific guidance when evidence or portfolio constraints are insufficient."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 442.417,
+      "input_tokens": 1832,
+      "output_tokens": 15565,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 442.421
+}

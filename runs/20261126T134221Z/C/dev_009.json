@@ -1,0 +1,104 @@
+{
+  "case_id": "dev_009",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asks to work out the full-year 2026 earnings per share and the price-to-earnings ratio and determine if the share is cheap enough to buy. However, the available financial figures for revenues, net income, and certain quarterly per-share metrics are marked as AMBIGUOUS in the evidence and cannot be used in calculations as per the instructions. Furthermore, the latest report only covers nine months ending September 30, 2026, making a reliable full-year EPS and P/E calculation impossible without relying on ambiguous data. Consequently, there is insufficient evidence to provide a responsible buy recommendation or compute the requested valuation metrics.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-03",
+      "ABUK-ABUK_9M2026_results-p2-04",
+      "ABUK-ABUK_9M2026_results-p2-05",
+      "ABUK-ABUK_9M2026_results-p2-06",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-27",
+      "ABUK-ABUK_9M2026_results-p2-28",
+      "ABUK-ABUK_9M2026_results-p2-29",
+      "ABUK-ABUK_9M2026_results-p2-30",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "Key revenue and net profit figures are marked ambiguous and cannot be used.",
+      "Available results cover only nine months, preventing a direct full-year earnings projection without ambiguity."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asks to work out the full-year 2026 earnings per share and the price-to-earnings ratio and determine if the share is cheap enough to buy. However, the available financial figures for revenues, net income, and certain quarterly per-share metrics are marked as AMBIGUOUS in the evidence and cannot be used in calculations as per the instructions. Furthermore, the latest report only covers nine months ending September 30, 2026, making a reliable full-year EPS and P/E calculation impossible without relying on ambiguous data. Consequently, there is insufficient evidence to provide a responsible buy recommendation or compute the requested valuation metrics.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-03",
+      "ABUK-ABUK_9M2026_results-p2-04",
+      "ABUK-ABUK_9M2026_results-p2-05",
+      "ABUK-ABUK_9M2026_results-p2-06",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-27",
+      "ABUK-ABUK_9M2026_results-p2-28",
+      "ABUK-ABUK_9M2026_results-p2-29",
+      "ABUK-ABUK_9M2026_results-p2-30",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "Key revenue and net profit figures are marked ambiguous and cannot be used.",
+      "Available results cover only nine months, preventing a direct full-year earnings projection without ambiguity."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "Based on the provided evidence for Abu Qir Fertilizers (ABUK), here is the financial analysis regarding the available figures, data quality, and metrics. \n\n### Profitability and Earnings\n* **Basic Earnings Per Share (Nine Months ended September 30, 2026):** Reported as **8.74 EGP** [ABUK-ABUK_9M2026_results-p2-31].\n* **Basic Earnings Per Share (Nine Months ended September 30, 2025):** Reported as **4.28 EGP** [ABUK-ABUK_9M2026_results-p2-32].\n* **Basic Earnings Per Share (Three Months ended September 30, 2025):** Reported as **1.23 EGP** [ABUK-ABUK_9M2026_results-p2-35].\n* **Basic Earnings Per Share (Three Months ended September 30, 2026):** Listed as `199` [ABUK-ABUK_9M2026_results-p2-34], which is flagged with an OCR note indicating a missing decimal mark.\n\n### Data Quality and Limitations\n* **Ambiguous Figures:** Multiple key financial rows and percentage changes (including activity revenues and net period profits for both the nine-month and three-month periods) are flagged as **AMBIGUOUS** due to unit inconsistencies on the page and unclear OCR outputs [ABUK-ABUK_9M2026_results-p2-01 through ABUK-ABUK_9M2026_results-p2-36]. \n* **Full-Year Calculations:** Because instructions state to **do not compute with AMBIGUOUS figures** and the latest available report only covers the nine-month period ending September 30, 2026 [ABUK-ABUK_9M2026_results-p2-01], a full-year 2026 earnings per share and a corresponding price-to-earnings (P/E) ratio cannot be reliably computed or projected from the text. \n\n### Market Price\n* **Share Price (at cutoff):** **76.21 EGP**",
+    "investor": "Based on the provided investor profile and portfolio details, here is the suitability assessment:\n\n*   **Investment Horizon:** The investor has a 3-5 year horizon, which aligns well with medium-term equity investments like exporters, allowing time to ride out market cycles.\n*   **Liquidity Needs:** The investor maintains a separate emergency fund, meaning the portfolio's capital does not need to serve immediate, unexpected liquidity needs.\n*   **Loss Willingness and Capacity:** Both willingness and financial ability to accept losses are rated as medium. This suggests the investor can tolerate moderate drawdowns but should avoid overly speculative or highly leveraged positions.\n*   **Current Concentration:** The portfolio currently holds zero equities and consists entirely of cash (30,000.00 EGP). Therefore, concentration in any single stock is 0%, meaning adding a position would establish the initial holding rather than increase concentration risk.\n*   **Capital Commitment:** The portfolio currently holds 30,000.00 EGP in free cash with no existing holdings available for sale. Consequently, up to the full 30,000.00 EGP in cash could reasonably be committed, depending on desired cash buffers."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 2.53,
+      "input_tokens": 4692,
+      "output_tokens": 499,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 4.891,
+      "input_tokens": 4684,
+      "output_tokens": 251,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 2.767,
+      "input_tokens": 5754,
+      "output_tokens": 595,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 10.193
+}

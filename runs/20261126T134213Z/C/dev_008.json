@@ -1,0 +1,103 @@
+{
+  "case_id": "dev_008",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "keep_cash",
+    "ticker": "cash",
+    "shares": 0,
+    "explanation": "The investor's question rests on a net profit claim of 225.9 billion EGP for ETEL in 2025, stating it is more than ten times the 2024 profit. The authoritative financial evidence directly contradicts this. Per evidence IDs [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] and [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50], ETEL's net profit for FY2025 was 22,578,063 (L.E. 000) = 22,578,063,000 EGP, and for FY2024 was 10,111,328 (L.E. 000) = 10,111,328,000 EGP. The claimed 225.9 billion is approximately ten times the actual figure, and the profit growth is ~2.23×, not >10×. These user-stated figures are ambiguous relative to the evidence and must not be used in calculations (listed in unused_figures below).  The financial analyst's report confirms the discrepancy and states the evidence does not support the profit magnitude or growth multiple described. The suitability analyst's report notes the investor's current ETEL weight is ~29.9% of a ~71,292.50 EGP portfolio (150 shares × 141.95 EGP + 50,000 EGP cash). Deploying the full 50,000 EGP into additional ETEL shares at 141.95 EGP/share would increase the single-stock allocation far beyond the existing ~30% and violate the portfolio diversification rule: after any buy, no single company may exceed 50% of the portfolio's total value (cash plus holdings at given prices). With the existing holding and a 5-year retirement‑savings horizon, medium loss willingness/capacity, and a separate emergency fund, the profile calls for a balanced, diversified approach—not a concentrated bet in one stock. The evidence does not justify investing all cash into ETEL based on an inflated or misread profit figure. Therefore, the responsible action is to keep the cash available, maintain the current diversified posture, and avoid increasing ETEL concentration on the basis of unsupported claims.",
+    "claims": [
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]",
+        "stated_value": 22578063.0,
+        "statement": "ETEL Net profit for the year, period 31/12/2025: 22,578,063 (L.E. 000) → 22,578,063,000 EGP whole pounds"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50]",
+        "stated_value": 10111328.0,
+        "statement": "ETEL Net profit for the year, period 31/12/2024: 10,111,328 (L.E. 000) → 10,111,328,000 EGP whole pounds"
+      }
+    ],
+    "unused_figures": [
+      "225.9 billion EGP net profit claim for ETEL FY2025 – ambiguous relative to evidence (actual ~22.58 billion EGP).",
+      "'More than ten times its 2024 profit' comparison – unsupported; evidence shows ~2.23× growth, not >10×."
+    ],
+    "limitations": [
+      "This is guidance, not a guarantee of returns. All figures are as of the 2026-11-18 cutoff and based solely on the provided evidence and prices. No outside knowledge or later events were used. The diversification rule (max 50% per holding) has no exceptions; buying fewer shares is required if a purchase would exceed it. The investor should maintain a separate emergency fund and ensure any investment aligns with their medium-risk profile and 5‑year horizon."
+    ]
+  },
+  "final": {
+    "action": "keep_cash",
+    "ticker": "cash",
+    "shares": 0,
+    "explanation": "The investor's question rests on a net profit claim of 225.9 billion EGP for ETEL in 2025, stating it is more than ten times the 2024 profit. The authoritative financial evidence directly contradicts this. Per evidence IDs [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] and [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50], ETEL's net profit for FY2025 was 22,578,063 (L.E. 000) = 22,578,063,000 EGP, and for FY2024 was 10,111,328 (L.E. 000) = 10,111,328,000 EGP. The claimed 225.9 billion is approximately ten times the actual figure, and the profit growth is ~2.23×, not >10×. These user-stated figures are ambiguous relative to the evidence and must not be used in calculations (listed in unused_figures below).  The financial analyst's report confirms the discrepancy and states the evidence does not support the profit magnitude or growth multiple described. The suitability analyst's report notes the investor's current ETEL weight is ~29.9% of a ~71,292.50 EGP portfolio (150 shares × 141.95 EGP + 50,000 EGP cash). Deploying the full 50,000 EGP into additional ETEL shares at 141.95 EGP/share would increase the single-stock allocation far beyond the existing ~30% and violate the portfolio diversification rule: after any buy, no single company may exceed 50% of the portfolio's total value (cash plus holdings at given prices). With the existing holding and a 5-year retirement‑savings horizon, medium loss willingness/capacity, and a separate emergency fund, the profile calls for a balanced, diversified approach—not a concentrated bet in one stock. The evidence does not justify investing all cash into ETEL based on an inflated or misread profit figure. Therefore, the responsible action is to keep the cash available, maintain the current diversified posture, and avoid increasing ETEL concentration on the basis of unsupported claims.",
+    "claims": [
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]",
+        "stated_value": 22578063.0,
+        "statement": "ETEL Net profit for the year, period 31/12/2025: 22,578,063 (L.E. 000) → 22,578,063,000 EGP whole pounds"
+      },
+      {
+        "evidence_id": "[ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50]",
+        "stated_value": 10111328.0,
+        "statement": "ETEL Net profit for the year, period 31/12/2024: 10,111,328 (L.E. 000) → 10,111,328,000 EGP whole pounds"
+      }
+    ],
+    "unused_figures": [
+      "225.9 billion EGP net profit claim for ETEL FY2025 – ambiguous relative to evidence (actual ~22.58 billion EGP).",
+      "'More than ten times its 2024 profit' comparison – unsupported; evidence shows ~2.23× growth, not >10×."
+    ],
+    "limitations": [
+      "This is guidance, not a guarantee of returns. All figures are as of the 2026-11-18 cutoff and based solely on the provided evidence and prices. No outside knowledge or later events were used. The diversification rule (max 50% per holding) has no exceptions; buying fewer shares is required if a purchase would exceed it. The investor should maintain a separate emergency fund and ensure any investment aligns with their medium-risk profile and 5‑year horizon."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 50000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 150
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "**Evidence analysis (net profit figures converted to whole pounds):**\n\n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] Net profit for the year, period 31/12/2025: printed value **22,578,063** (L.E. 000) → **22,578,063,000 EGP** whole pounds.  \n- [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50] Net profit for the year, period 31/12/2024: printed value **10,111,328** (L.E. 000) → **10,111,328,000 EGP** whole pounds.  \n\n**Comparison with the claim:**  \n- The claim that ETEL made \"225.9 billion pounds\" in 2025 is **not consistent** with the evidence. The evidence figure of **22,578,063,000 EGP** equals ~22.58 billion EGP, which is exactly one‑tenth of the claimed amount. The discrepancy likely stems from interpreting the “L.E. (000)” unit or misreading the printed thousands‑separator.  \n- The claim that 2025 profit was “more than ten times its 2024 profit” is also **not supported**. The evidence shows 2025 profit (~22.58 billion EGP) is approximately **2.23×** the 2024 profit (~10.11 billion EGP).  \n\n**Data quality note:**  \nAll provided evidence rows include explicit unit labels (L.E. 000 or L.E. per share). No figures within the evidence are ambiguous once the unit is applied. The user’s stated “225.9 billion” and “more than ten times” are ambiguous relative to the evidence and do not match the printed values.\n\n**No investment recommendation is given**—the decision agent handles that based on your full profile and goals. The evidence alone does not support the profit magnitude or growth multiple described.",
+    "investor": "**Investor-Suitability Assessment**\n\n- **Horizon (5 years):** A medium-term horizon can accommodate equity exposure, but single-stock concentration risk is elevated over this period. The profile aligns with a balanced approach rather than a highly concentrated bet.\n- **Liquidity needs:** The investor maintains a separate emergency fund. The 50,000.00 EGP cash holding is noted as available, but any deployment should not impinge on that reserve.\n- **Loss willingness & capacity:** Rated medium both ways. The investor can absorb moderate declines, but risk levels should remain consistent with a diversified posture rather than heightened single-asset exposure.\n- **Current concentration:** \n  - ETEL holding: 150 shares × 141.95 EGP = 21,292.50 EGP\n  - Cash: 50,000.00 EGP\n  - Total portfolio value: ~71,292.50 EGP\n  - ETEL weight: ~29.9% of the portfolio.\n- **Cash reasonably commit:** 50,000.00 EGP is available for investment, contingent on emergency fund integrity and risk-profile consistency. Given the medium loss capacity and existing ~30% single-stock allocation, a proportionate, diversified commitment would better reflect the stated parameters.\n\n**Portfolio Allowances**\n- **Salable assets:** 150 ETEL shares are liquidatable, realizable at the cutoff price for approximately 21,292.50 EGP.\n- **Free cash:** 50,000.00 EGP is currently free of investment commitments, with the emergency fund held separately per the profile.\n- **Total liquidity available:** ~71,292.50 EGP if all positions were converted to cash.\n\n**Response to Investor Question**\n\n- **On the profit figure:** The provided financial evidence reports ETEL’s net profit for the year ending 31/12/2025 as 22,578,063 (in L.E. 000), equivalent to 22,578,063,000 EGP. The figure for 2024 was 10,111,328 (L.E. 000), or 10,111,328,000 EGP. I am unable to verify or comment on the accuracy of the 225.9 billion EGP claim per my instructions against analysing company financials.\n\n- **On investing all cash into more ETEL shares:** The investor’s profile—5-year horizon, medium loss willingness and capacity, and a current ~30% allocation to ETEL—suggests that deploying the full 50,000.00 EGP into additional ETEL shares would significantly increase concentration risk, pushing the single-stock weight well beyond the existing level and potentially exceeding the stated risk parameters. I do not pick an action or recommend a specific investment decision; the suitability of any allocation depends on the investor’s full circumstances, including emergency fund status and diversification objectives."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 22.242,
+      "input_tokens": 2198,
+      "output_tokens": 3477,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 47.033,
+      "input_tokens": 2192,
+      "output_tokens": 5998,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 55.093,
+      "input_tokens": 3687,
+      "output_tokens": 7332,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 124.373
+}

@@ -1,0 +1,100 @@
+{
+  "case_id": "dev_007",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "Given your strict 3-month horizon and urgent requirement for 10,000 EGP in cash for a family wedding, coupled with your low willingness and financial ability to withstand losses, holding equities is entirely unsuitable. Your current portfolio consists of 1,000.00 EGP in cash and 200 shares of EFID. At the market price of 20.40 EGP per share, selling your entire holding of 200 shares yields 4,080.00 EGP. Combining this with your existing cash gives a total available liquidity of 5,080.00 EGP. Selling all 200 shares reduces your EFID holdings to zero, eliminating equity market volatility and securing maximum available liquidity toward your goal, though you will still face a shortfall of 4,920.00 EGP that must be met from external sources.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID generated consolidated revenue of 20,915,072,432 EGP for the year ended 31 December 2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID generated a consolidated net profit of 2,695,301,670 EGP for the year ended 31 December 2025."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The total available portfolio value of 5,080.00 EGP falls significantly short of the 10,000 EGP liquidity requirement.",
+      "Equities are subject to price volatility over the short 3-month horizon, posing a risk to capital preservation."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "Given your strict 3-month horizon and urgent requirement for 10,000 EGP in cash for a family wedding, coupled with your low willingness and financial ability to withstand losses, holding equities is entirely unsuitable. Your current portfolio consists of 1,000.00 EGP in cash and 200 shares of EFID. At the market price of 20.40 EGP per share, selling your entire holding of 200 shares yields 4,080.00 EGP. Combining this with your existing cash gives a total available liquidity of 5,080.00 EGP. Selling all 200 shares reduces your EFID holdings to zero, eliminating equity market volatility and securing maximum available liquidity toward your goal, though you will still face a shortfall of 4,920.00 EGP that must be met from external sources.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID generated consolidated revenue of 20,915,072,432 EGP for the year ended 31 December 2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID generated a consolidated net profit of 2,695,301,670 EGP for the year ended 31 December 2025."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The total available portfolio value of 5,080.00 EGP falls significantly short of the 10,000 EGP liquidity requirement.",
+      "Equities are subject to price volatility over the short 3-month horizon, posing a risk to capital preservation."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 5080.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "Based on the financial evidence provided for Edita Food Industries S.A.E. (EFID) and\n your investor profile, here is the financial analysis:\n\n### **Profitability and Growth**\n* **Revenue (Consolidated):** For the year ended 31 December 2025, EFID generated revenue of 20,915,072,432 EGP, compared to 16,146,545,699 EGP for the period ended 31 December 2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02].\n* **Net Profit (Consolidated):** Net profit for the year ended 31 December 2025 was 2,695,301,670 EGP, up from 1,606,727,698 EGP for the period ended 31 December 2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31].\n* **Earnings Per Share:** Basic and diluted earnings per share were 2.18 EGP for the period ending 31 December 2025, compared to 1.09 EGP for 31 December 2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39].\n\n### **Balance Sheet, Risks, and Data Quality**\n* **Risks & Balance Sheet:** The provided evidence contains statements on revenue and net profit but lacks comprehensive balance sheet data (such as total debt, current liabilities, and quick assets) to fully assess short-term liquidity or solvency risks.\n* **Data Quality:** All cited figures are verified from the consolidated EAS financial statements for FY2025 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]. No ambiguous figures were identified in the provided evidence.\n\n### **Alignment with Investor Profile**\n* **Liquidity and Horizon Constraints:** You require 10,000 EGP in cash within a 3-month horizon for a family wedding. \n* **Current Portfolio Status:** You currently hold 1,000.00 EGP in cash and 200 shares of EFID [Portfolio evidence]. At the cutoff price of 20.40 EGP per share, your 200 EFID shares are valued at 4,080.00 EGP. \n* **Total Portfolio Value:** Combining your cash (1,000.00 EGP) and the market value of your EFID holdings (4,080.00 EGP), your total portfolio equals 5,080.00 EGP. This falls significantly short of your 10,000 EGP liquidity requirement, even if the entire holding were liquidated immediately. \n* **Risk Tolerance:** Your willingness and financial ability to accept losses are low. Holding equities subjects you to market price volatility over your tight 3-month horizon.",
+    "investor": "### Investor Suitability Assessment\n\n#### 1. Horizon\n* **Timeframe:** 3 months. \n* **Implication:** This is a strictly short-term horizon dictated by a specific near-term obligation (a family wedding).\n\n#### 2. Liquidity Needs\n* **Requirement:** The investor needs to raise **10,000 EGP** in cash within the next 3 months.\n* **Implication:** The liquidity requirement is absolute and time-bound. \n\n#### 3. Loss Willingness and Capacity\n* **Willingness to Accept Losses:** Low.\n* **Financial Ability to Withstand Losses:** Low.\n* **Implication:** The investor cannot afford capital erosion or market downturns because a loss on their holdings would directly jeopardize their ability to fund the 10,000 EGP cash requirement for the wedding. High-volatility or equity-heavy exposure conflicts directly with this risk profile over a short horizon.\n\n#### 4. Current Concentration\n* **Cash:** 1,000.00 EGP (approx. 19.6% of total portfolio value).\n* **Equities (EFID):** 200 shares at 20.40 EGP per share = 4,080.00 EGP (approx. 80.4% of total portfolio value).\n* **Total Portfolio Value:** 5,080.00 EGP.\n* **Implication:** The portfolio is currently concentrated in a single equity holding (EFID), exposing the investor's limited capital to single-stock volatility, which misaligns with their low loss tolerance and short horizon.\n\n#### 5. Portfolio Allowances (Cash & Liquidatable Assets)\n* **Free Cash:** 1,000.00 EGP is readily available.\n* **Liquidatable Holdings:** 200 shares of EFID can be sold at the prevailing market price (20.40 EGP per share), yielding a gross liquidation value of 4,080.00 EGP.\n* **Total Accessible Liquidity:** Combined free cash and total liquidation value of the portfolio equals 5,080.00 EGP.\n\n#### 6. Cash Commitment Analysis\n* **Target vs. Available:** The investor requires 10,000 EGP, but the entire current portfolio (cash + total liquidation of EFID holdings) amounts to only 5,080.00 EGP. \n* **Shortfall:** Even if 100% of the existing portfolio is liquidated, there is a shortfall of 4,920.00 EGP relative to the 10,000 EGP target. Therefore, no additional funds can be committed from the current portfolio to bridge the gap, and external sources of funds will be required to meet the full 10,000 EGP wedding expense."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 9.388,
+      "input_tokens": 1548,
+      "output_tokens": 780,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 3.272,
+      "input_tokens": 1540,
+      "output_tokens": 626,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 3.259,
+      "input_tokens": 3267,
+      "output_tokens": 528,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 15.925
+}

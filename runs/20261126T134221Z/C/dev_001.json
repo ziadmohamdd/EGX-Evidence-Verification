@@ -1,0 +1,133 @@
+{
+  "case_id": "dev_001",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor currently holds 300 shares of ETEL valued at 141.95 EGP per share, totaling 42,585.00 EGP, alongside 20,000.00 EGP in cash, resulting in a total portfolio value of 62,585.00 EGP. ETEL's financial statements show strong operational and net income growth for FY2025, with operating revenues increasing to 106,672,946,000 EGP, gross profit rising to 44,839,110,000 EGP, and net profit growing to 22,578,063,000 EGP. Total assets and total equity also expanded to 225,882,527,000 EGP and 63,687,826,000 EGP respectively. However, ETEL already represents approximately 68% of the total portfolio value. According to portfolio diversification rules, after a buy no single company may exceed 50% of the total portfolio value. Buying more shares of ETEL would increase the concentration rather than diversify it. Therefore, a buy action is precluded, and holding the existing position is recommended.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues increased to 106,672,946,000 EGP for the period ending 31/12/2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+        "stated_value": 44839110000.0,
+        "statement": "Gross profit rose to 44,839,110,000 EGP for 2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit grew significantly to 22,578,063,000 EGP for 2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total assets expanded to 225,882,527,000 EGP as of 31/12/2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "Total equity strengthened to 63,687,826,000 EGP as of 31/12/2025."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55"
+    ],
+    "limitations": [
+      "Concentration in ETEL is already above the 50% threshold, preventing further purchases under portfolio rules.",
+      "Qualitative risk factors and detailed market risks are not provided in the evidence."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor currently holds 300 shares of ETEL valued at 141.95 EGP per share, totaling 42,585.00 EGP, alongside 20,000.00 EGP in cash, resulting in a total portfolio value of 62,585.00 EGP. ETEL's financial statements show strong operational and net income growth for FY2025, with operating revenues increasing to 106,672,946,000 EGP, gross profit rising to 44,839,110,000 EGP, and net profit growing to 22,578,063,000 EGP. Total assets and total equity also expanded to 225,882,527,000 EGP and 63,687,826,000 EGP respectively. However, ETEL already represents approximately 68% of the total portfolio value. According to portfolio diversification rules, after a buy no single company may exceed 50% of the total portfolio value. Buying more shares of ETEL would increase the concentration rather than diversify it. Therefore, a buy action is precluded, and holding the existing position is recommended.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "Operating revenues increased to 106,672,946,000 EGP for the period ending 31/12/2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+        "stated_value": 44839110000.0,
+        "statement": "Gross profit rose to 44,839,110,000 EGP for 2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit grew significantly to 22,578,063,000 EGP for 2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total assets expanded to 225,882,527,000 EGP as of 31/12/2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "Total equity strengthened to 63,687,826,000 EGP as of 31/12/2025."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55"
+    ],
+    "limitations": [
+      "Concentration in ETEL is already above the 50% threshold, preventing further purchases under portfolio rules.",
+      "Qualitative risk factors and detailed market risks are not provided in the evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "Based on the provided financial evidence for Telecom Egypt (ETEL) for the year ended 31 December 2025, here is the financial analysis covering profitability, growth, balance sheet, and risks.\n\n### Profitability and Growth\n* **Operating Revenues:** Increased to 106,672,946,000 EGP for the period ending 31/12/2025, compared to 81,677,812,000 EGP for the period ending 31/12/2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01, ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02].\n* **Gross Profit:** Rose to 44,839,110,000 EGP for 2025, up from 30,492,762,000 EGP in 2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05, ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06].\n* **Net Profit:** Grew significantly to 22,578,063,000 EGP for 2025, compared to 10,111,328,000 EGP for 2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35, ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36].\n* **Earnings Per Share (EPS):** Basic and diluted earnings per share for the year reached 11.93 EGP / Share in 2025, compared to 4.79 EGP / Share in 2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55, ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56].\n\n### Balance Sheet\n* **Total Assets:** Expanded to 225,882,527,000 EGP as of 31/12/2025, up from 197,952,788,000 EGP (reclassified) as of 31/12/2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31, ETEL-ETEL_FY2025_EAS_consolidated_en-p5-32].\n* **Total Equity:** Strengthened to 63,687,826,000 EGP as of 31/12/2025, compared to 45,937,991,000 EGP (reclassified) as of 31/12/2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45, ETEL-ETEL_FY2025_EAS_consolidated_en-p5-46].\n\n### Risks and Data Quality\n* **Risks:** The provided evidence contains financial statement figures but does not detail qualitative risk factors (such as market, regulatory, or operational risks). \n* **Data Quality:** Figures are verified from consolidated EAS statements. Note that the unit label for the EPS row reads `L.E.(000)` in the source text [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55], which is anomalous since EPS is typically expressed in absolute currency per share (11.93 EGP and 4.79 EGP); therefore, the EPS unit notation is treated as an ambiguity in the raw text and has not been computed with.",
+    "investor": "As the investor-suitability analyst on the investment team, here is the assessment of the investor's profile and current portfolio characteristics:\n\n### 1. Investment Horizon\n* **Timeline:** 5 to 7 years.\n* **Suitability:** This medium-term horizon provides a reasonable buffer to absorb short-term market volatility and allows for capital growth, aligning well with a goal such as funding a child's university education.\n\n### 2. Liquidity Needs\n* **Emergency Fund:** The investor maintains a separate emergency fund.\n* **Suitability:** Because immediate liquidity needs are addressed outside of this portfolio, capital within this portfolio does not need to be kept highly liquid and can remain committed to the current strategy for the duration of the 5-7 year horizon.\n\n### 3. Loss Willingness and Capacity\n* **Willingness:** Medium.\n* **Capacity:** Medium (supported by the presence of a separate emergency fund).\n* **Suitability:** The investor can tolerate moderate drawdowns in portfolio value and has the financial resilience to withstand them, but would likely be uncomfortable with an aggressive, high-risk allocation that exposes them to severe permanent capital loss.\n\n### 4. Current Portfolio & Concentration\n* **Cash:** 20,000.00 EGP\n* **Holdings:** 300 shares of ETEL at a price of 141.95 EGP per share, equating to a market value of 42,585.00 EGP.\n* **Total Portfolio Value:** 62,585.00 EGP (20,000.00 EGP cash + 42,585.00 EGP in ETEL).\n* **Concentration:** ETEL represents approximately 68% of the total portfolio value, while cash accounts for roughly 32%. This indicates a heavy concentration in a single equity holding.\n\n### 5. Portfolio Flexibility (What Can Be Sold / Free Cash)\n* **Free Cash:** There is 20,000.00 EGP in unallocated cash available to be committed.\n* **Liquidatable Holdings:** The 300 shares of ETEL can be sold on the market at the prevailing price of 141.95 EGP per share to generate up to 42,585.00 EGP in additional liquidity or cash for reallocation."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 3.345,
+      "input_tokens": 2514,
+      "output_tokens": 924,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 2.756,
+      "input_tokens": 2506,
+      "output_tokens": 514,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 6.095,
+      "input_tokens": 4264,
+      "output_tokens": 917,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 12.201
+}

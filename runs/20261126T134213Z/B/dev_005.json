@@ -1,0 +1,98 @@
+{
+  "case_id": "dev_005",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's stated goal is to add a fertilizer exporter for diversification. The provided evidence contains detailed financial data for ABUK and identifies COMI as an existing holding, but it explicitly states no company sectors or business descriptions. Per the rules, outside knowledge about these companies cannot be used, and the evidence itself does not indicate whether ABUK, COMI, or any other mentioned company operates in the fertilizer export sector. Without this critical information, it is impossible to evaluate which action (buy, hold, sell, or keep_cash) would fulfill the diversification objective.   Additionally, all major financial figures for ABUK (revenues, net profit, and percentage changes) are marked `AMBIGUOUS` in the evidence, meaning they cannot be used in any calculations. The only figures not marked `AMBIGUOUS` are three EPS (earnings per share) rows, but these are affected by OCR ambiguity regarding decimal marks, still provide no sector information, and cannot support a valid buy/hold/sell decision for the stated goal. The portfolio diversification rule (no single company exceeding 50% of total portfolio value at given prices) can be mathematically satisfied for a purchase, but the fundamental inability to identify a fertilizer exporter among the available options, combined with the unusable financial evidence, renders a responsible decision unsupportable based solely on the given data.   This is guidance, not a guarantee of returns. The uncertainty stems from missing sector classification and the inability to rely on the majority of the financial figures presented.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-03",
+      "ABUK-ABUK_9M2026_results-p2-04",
+      "ABUK-ABUK_9M2026_results-p2-05",
+      "ABUK-ABUK_9M2026_results-p2-06",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-27",
+      "ABUK-ABUK_9M2026_results-p2-28",
+      "ABUK-ABUK_9M2026_results-p2-29",
+      "ABUK-ABUK_9M2026_results-p2-30",
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "No sector information is provided for ABUK or COMI, so the fertilizer exporter goal cannot be verified.",
+      "All ABUK revenue, net profit, and %-change figures are AMBIGUOUS and excluded from calculations.",
+      "EPS figures have OCR ambiguity (decimal mark) and still do not address the sector goal.",
+      "Outside knowledge about company sectors is prohibited per instructions."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor's stated goal is to add a fertilizer exporter for diversification. The provided evidence contains detailed financial data for ABUK and identifies COMI as an existing holding, but it explicitly states no company sectors or business descriptions. Per the rules, outside knowledge about these companies cannot be used, and the evidence itself does not indicate whether ABUK, COMI, or any other mentioned company operates in the fertilizer export sector. Without this critical information, it is impossible to evaluate which action (buy, hold, sell, or keep_cash) would fulfill the diversification objective.   Additionally, all major financial figures for ABUK (revenues, net profit, and percentage changes) are marked `AMBIGUOUS` in the evidence, meaning they cannot be used in any calculations. The only figures not marked `AMBIGUOUS` are three EPS (earnings per share) rows, but these are affected by OCR ambiguity regarding decimal marks, still provide no sector information, and cannot support a valid buy/hold/sell decision for the stated goal. The portfolio diversification rule (no single company exceeding 50% of total portfolio value at given prices) can be mathematically satisfied for a purchase, but the fundamental inability to identify a fertilizer exporter among the available options, combined with the unusable financial evidence, renders a responsible decision unsupportable based solely on the given data.   This is guidance, not a guarantee of returns. The uncertainty stems from missing sector classification and the inability to rely on the majority of the financial figures presented.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-03",
+      "ABUK-ABUK_9M2026_results-p2-04",
+      "ABUK-ABUK_9M2026_results-p2-05",
+      "ABUK-ABUK_9M2026_results-p2-06",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-27",
+      "ABUK-ABUK_9M2026_results-p2-28",
+      "ABUK-ABUK_9M2026_results-p2-29",
+      "ABUK-ABUK_9M2026_results-p2-30",
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "No sector information is provided for ABUK or COMI, so the fertilizer exporter goal cannot be verified.",
+      "All ABUK revenue, net profit, and %-change figures are AMBIGUOUS and excluded from calculations.",
+      "EPS figures have OCR ambiguity (decimal mark) and still do not address the sector goal.",
+      "Outside knowledge about company sectors is prohibited per instructions."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 406.806,
+      "input_tokens": 5122,
+      "output_tokens": 7720,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 406.811
+}

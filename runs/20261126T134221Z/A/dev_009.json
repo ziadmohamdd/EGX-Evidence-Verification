@@ -1,0 +1,83 @@
+{
+  "case_id": "dev_009",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asks to work out the full-year 2026 earnings per share and the price-to-earnings ratio for Abu Qir (ABUK) and determine if the share is cheap enough to buy. However, the available financial results only cover the nine-month period ending 30 September 2026, and key revenue, net profit, and several per-share figures are marked as AMBIGUOUS in the evidence. Furthermore, projecting full-year 2026 earnings from nine-month data without fourth-quarter figures or official annual guidance introduces unquantifiable uncertainty. Therefore, there is insufficient evidence to reliably calculate full-year 2026 EPS or the P/E ratio, and no buy recommendation can be made.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-03",
+      "ABUK-ABUK_9M2026_results-p2-04",
+      "ABUK-ABUK_9M2026_results-p2-05",
+      "ABUK-ABUK_9M2026_results-p2-06",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-27",
+      "ABUK-ABUK_9M2026_results-p2-28",
+      "ABUK-ABUK_9M2026_results-p2-29",
+      "ABUK-ABUK_9M2026_results-p2-30",
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "Full-year 2026 earnings cannot be accurately determined from nine-month interim reports alone.",
+      "Multiple primary financial figures in the source report are marked as AMBIGUOUS and cannot be used in calculations."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asks to work out the full-year 2026 earnings per share and the price-to-earnings ratio for Abu Qir (ABUK) and determine if the share is cheap enough to buy. However, the available financial results only cover the nine-month period ending 30 September 2026, and key revenue, net profit, and several per-share figures are marked as AMBIGUOUS in the evidence. Furthermore, projecting full-year 2026 earnings from nine-month data without fourth-quarter figures or official annual guidance introduces unquantifiable uncertainty. Therefore, there is insufficient evidence to reliably calculate full-year 2026 EPS or the P/E ratio, and no buy recommendation can be made.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-03",
+      "ABUK-ABUK_9M2026_results-p2-04",
+      "ABUK-ABUK_9M2026_results-p2-05",
+      "ABUK-ABUK_9M2026_results-p2-06",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26",
+      "ABUK-ABUK_9M2026_results-p2-27",
+      "ABUK-ABUK_9M2026_results-p2-28",
+      "ABUK-ABUK_9M2026_results-p2-29",
+      "ABUK-ABUK_9M2026_results-p2-30",
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "Full-year 2026 earnings cannot be accurately determined from nine-month interim reports alone.",
+      "Multiple primary financial figures in the source report are marked as AMBIGUOUS and cannot be used in calculations."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 4.316,
+      "input_tokens": 4968,
+      "output_tokens": 627,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 4.319
+}

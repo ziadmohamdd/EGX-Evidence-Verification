@@ -1,0 +1,111 @@
+{
+  "case_id": "dev_006",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "نظراً لأن المستثمر لديه أفق زمني متوسط المدى (3-5 سنوات) لهدف شراء شقة وقدرة تحمل متوسطة للمخاطر، فإن الاحتفاظ بالأسهم الحالية وعدم إجراء عمليات شراء جديدة يعتبر قراراً مناسباً في ظل وجود أرقام مالية غامضة (مثل ربح العام بعد الضرائب لعام 2025 والإيرادات لعام 2024). تبلغ قيمة أسهم TMGH الحالية 200 سهم بسعر 82.50 جنيه بإجمالي 16,500 جنيه، بينما يبلغ الكاش 60,000 جنيه، مما يجعل إجمالي المحفظة 76,500 جنيه. تم استبعاد أرقام الإيرادات لعام 2024 وربح العام لعام 2025 لكونها غير واضحة. يوصى بالاحتفاظ بالوضع الحالي وتجنب المخاطرة بمزيد من السيولة حتى تتضح البيانات المالية للشركة.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "نصيب السهم فى الأرباح للفترة المنتهية في ٣١ ديسمبر ٢٠٢٥ بلغ ٦,٩٨ جنيه."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+        "stated_value": 4.37,
+        "statement": "نصيب السهم فى الأرباح للفترة المقارنة في ٣١ ديسمبر ٢٠٢٤ بلغ ٤,٣٧ جنيه."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "وجود أرقام غامضة في البيانات المالية المتعلقة بالإيرادات و صافي الربح.",
+      "عدم توفر بيانات الميزانية العمومية ومستويات المديونية تقيد تقييم المخاطر الشاملة."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "نظراً لأن المستثمر لديه أفق زمني متوسط المدى (3-5 سنوات) لهدف شراء شقة وقدرة تحمل متوسطة للمخاطر، فإن الاحتفاظ بالأسهم الحالية وعدم إجراء عمليات شراء جديدة يعتبر قراراً مناسباً في ظل وجود أرقام مالية غامضة (مثل ربح العام بعد الضرائب لعام 2025 والإيرادات لعام 2024). تبلغ قيمة أسهم TMGH الحالية 200 سهم بسعر 82.50 جنيه بإجمالي 16,500 جنيه، بينما يبلغ الكاش 60,000 جنيه، مما يجعل إجمالي المحفظة 76,500 جنيه. تم استبعاد أرقام الإيرادات لعام 2024 وربح العام لعام 2025 لكونها غير واضحة. يوصى بالاحتفاظ بالوضع الحالي وتجنب المخاطرة بمزيد من السيولة حتى تتضح البيانات المالية للشركة.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "نصيب السهم فى الأرباح للفترة المنتهية في ٣١ ديسمبر ٢٠٢٥ بلغ ٦,٩٨ جنيه."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+        "stated_value": 4.37,
+        "statement": "نصيب السهم فى الأرباح للفترة المقارنة في ٣١ ديسمبر ٢٠٢٤ بلغ ٤,٣٧ جنيه."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "وجود أرقام غامضة في البيانات المالية المتعلقة بالإيرادات و صافي الربح.",
+      "عدم توفر بيانات الميزانية العمومية ومستويات المديونية تقيد تقييم المخاطر الشاملة."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 60000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "Based on the provided evidence, here is the financial analysis of Talaat Moustafa Group Holding (TMGH) for the period ending December 31, 2025:\n\n### **Profitability and Growth**\n* **Revenue (Consolidated):** For the period ended 31 December 2025, consolidated revenue was 62,495,144,197 EGP [TMGH-TMGH_FY2025_results_summary_ar-p1-01], representing a verified growth of 46% compared to the previous period [TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg]. (Note: The comparative 2024 revenue figure of 42067002830288 is marked as AMBIGUOUS due to OCR and separator issues [TMGH-TMGH_FY2025_results_summary_ar-p1-02]).\n* **Net Profit After Tax (Consolidated):** The 2024 comparative net profit was verified at 12,769,517,326 EGP [TMGH-TMGH_FY2025_results_summary_ar-p1-10], with a verified growth of 43% [TMGH-TMGH_FY2025_results_summary_ar-p1-09-chg]. (Note: The 2025 net profit figure of 180201,9810482 is flagged as AMBIGUOUS due to unclear formatting and separators [TMGH-TMGH_FY2025_results_summary_ar-p1-09]).\n* **Earnings Per Share (EPS - Consolidated):** EPS for the period ended 31 December 2025 was 6.98 EGP [TMGH-TMGH_FY2025_results_summary_ar-p1-11], compared to 4.37 EGP for 31 December 2024 [TMGH-TMGH_FY2025_results_summary_ar-p1-12], representing a verified increase of 59.6% [TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg].\n\n### **Balance Sheet and Risks**\n* The provided evidence contains no balance sheet data (such as total assets, liabilities, debt levels, or liquidity ratios) for TMGH. Consequently, financial leverage and balance sheet risk cannot be assessed from the given material.\n\n### **Data Quality**\n* Several key figures suffer from data quality issues. Specifically, the 2024 consolidated revenue [TMGH-TMGH_FY2025_results_summary_ar-p1-02] and the 2025 consolidated net profit after tax [TMGH-TMGH_FY2025_results_summary_ar-p1-09] are marked as **AMBIGUOUS** due to OCR errors and irregular separator usage. Per instructions, these figures have been flagged and are excluded from calculations.",
+    "investor": "As the investor-suitability analyst on the team, here is the assessment of the investor's profile, constraints, and current portfolio alignment:\n\n### 1. Investment Horizon\n* **Timeline:** 3–5 years (Goal: saving to buy an apartment).\n* **Suitability:** A 3-to-5-year horizon is medium-term. It allows for some exposure to growth assets, but as the target date approaches, capital preservation becomes increasingly important to protect the down payment for the apartment.\n\n### 2. Liquidity Needs\n* **Status:** The investor maintains a separate emergency fund.\n* **Suitability:** Because immediate liquidity needs are covered outside the portfolio, the capital within this portfolio does not need to be kept strictly in cash and can be allocated toward medium-term goals without the risk of forced selling for daily emergencies.\n\n### 3. Risk Profile (Loss Willingness and Capacity)\n* **Willingness to Accept Losses:** Medium.\n* **Financial Capacity to Withstand Losses:** Medium.\n* **Suitability:** The investor can tolerate moderate market volatility and downturns, but cannot sustain catastrophic losses that would permanently impair their ability to reach their housing goal. A balanced approach avoiding extreme concentration is appropriate.\n\n### 4. Current Portfolio Analysis & Concentration\n* **Holdings:** \n  * 200 shares of TMGH at 82.50 EGP/share = **16,500.00 EGP**\n  * Free Cash = **60,000.00 EGP**\n  * **Total Portfolio Value:** 76,500.00 EGP\n* **Current Concentration:** \n  * Equities (TMGH): ~21.57% of the total portfolio.\n  * Cash: ~78.43% of the total portfolio.\n* **Suitability:** The current equity concentration is relatively modest, with the vast majority of the portfolio held in cash. \n\n### 5. Portfolio Allowances (Liquidity & Action Space)\n* **Free Cash:** 60,000.00 EGP is readily available to be committed according to the investment strategy.\n* **Liquidatable Assets:** The 200 shares of TMGH (valued at 16,500.00 EGP) can be sold if rebalancing or full liquidation is required to meet the 3-5 year housing objective."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 12.555,
+      "input_tokens": 1755,
+      "output_tokens": 705,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 4.073,
+      "input_tokens": 1747,
+      "output_tokens": 521,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 4.405,
+      "input_tokens": 3293,
+      "output_tokens": 571,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 21.04
+}

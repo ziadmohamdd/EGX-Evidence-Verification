@@ -1,0 +1,96 @@
+{
+  "case_id": "dev_003",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor has a medium willingness and low financial ability to withstand losses, with a 3-5 year horizon and potential liquidity needs of 10% of their money within a year (10% of total portfolio value of approximately 237,425 EGP is around 23,743 EGP, which exceeds the current cash of 15,000 EGP). Therefore, preserving liquidity and avoiding aggressive buying is prudent. We hold EFID, which reported consolidated revenues of 20,915,072,432 EGP and a net profit of 2,695,301,670 EGP for 2025, showing solid growth compared to 2024. We do not buy more because no single company may exceed 50% of the portfolio's total value, and we retain cash to accommodate potential liquidity needs.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID reported consolidated revenues of 20,915,072,432 EGP for 2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID reported a net profit of 2,695,301,670 EGP for 2025."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55"
+    ],
+    "limitations": [
+      "Guidance is based strictly on provided historical financial statements up to FY2025 and does not guarantee future performance.",
+      "Potential liquidity needs within a year may strain cash reserves since cash is currently below 10% of the total portfolio value."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor has a medium willingness and low financial ability to withstand losses, with a 3-5 year horizon and potential liquidity needs of 10% of their money within a year (10% of total portfolio value of approximately 237,425 EGP is around 23,743 EGP, which exceeds the current cash of 15,000 EGP). Therefore, preserving liquidity and avoiding aggressive buying is prudent. We hold EFID, which reported consolidated revenues of 20,915,072,432 EGP and a net profit of 2,695,301,670 EGP for 2025, showing solid growth compared to 2024. We do not buy more because no single company may exceed 50% of the portfolio's total value, and we retain cash to accommodate potential liquidity needs.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID reported consolidated revenues of 20,915,072,432 EGP for 2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID reported a net profit of 2,695,301,670 EGP for 2025."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55"
+    ],
+    "limitations": [
+      "Guidance is based strictly on provided historical financial statements up to FY2025 and does not guarantee future performance.",
+      "Potential liquidity needs within a year may strain cash reserves since cash is currently below 10% of the total portfolio value."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 5.555,
+      "input_tokens": 3707,
+      "output_tokens": 687,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 5.557
+}

@@ -1,0 +1,117 @@
+{
+  "case_id": "dev_003",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor's profile requires steady growth with some income, a 3-5 year horizon, low financial ability to withstand losses, and liquidity needs of 10% of the money within a year. The current portfolio holds 15,000.00 EGP in cash, which easily covers the 10% liquidity requirement (approx. 7,479.50 EGP). EFID currently represents 51.2% of total stock holdings (30,600.00 EGP out of 44,795.00 EGP), breaching the diversification rule that no single company may exceed half of the portfolio's total value. Meanwhile, ETEL shows solid financial performance with operating revenues of 106,672,946,000 EGP and net profit of 22,578,063,000 EGP, alongside an EPS of 11.93 EGP. Given the low capacity for losses and the concentration limit in EFID, holding ETEL and maintaining cash is the prudent choice.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL operating revenues reached 106,672,946,000 EGP for FY2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit stood at 22,578,063,000 EGP for FY2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS was 11.93 EGP for FY2025."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Strict financial statement line items are provided without broader risk metrics, debt-to-equity breakdowns, or macroeconomic exposure."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor's profile requires steady growth with some income, a 3-5 year horizon, low financial ability to withstand losses, and liquidity needs of 10% of the money within a year. The current portfolio holds 15,000.00 EGP in cash, which easily covers the 10% liquidity requirement (approx. 7,479.50 EGP). EFID currently represents 51.2% of total stock holdings (30,600.00 EGP out of 44,795.00 EGP), breaching the diversification rule that no single company may exceed half of the portfolio's total value. Meanwhile, ETEL shows solid financial performance with operating revenues of 106,672,946,000 EGP and net profit of 22,578,063,000 EGP, alongside an EPS of 11.93 EGP. Given the low capacity for losses and the concentration limit in EFID, holding ETEL and maintaining cash is the prudent choice.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL operating revenues reached 106,672,946,000 EGP for FY2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit stood at 22,578,063,000 EGP for FY2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS was 11.93 EGP for FY2025."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Strict financial statement line items are provided without broader risk metrics, debt-to-equity breakdowns, or macroeconomic exposure."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "Based on the provided evidence for EFID and ETEL for FY2025, here is the financial analysis covering profitability, growth, balance sheet, risks, and data quality.\n\n### **1. Profitability and Growth**\n* **EFID:**\n  * **Revenue:** Reached 20,915,072,432 EGP for the period ending 31 December 2025, compared to 16,146,545,699 EGP for the period ending 31 December 2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02].\n  * **Net Profit:** Reported at 2,695,301,670 EGP for FY2025, up from 1,606,727,698 EGP for FY2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31].\n  * **Earnings Per Share (EPS):** Basic and diluted EPS was 2.18 EGP for FY2025, compared to 1.09 EGP for FY2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39].\n\n* **ETEL:**\n  * **Operating Revenues:** Reported at 106,672,946,000 EGP (unit: L.E. 000) for FY2025, compared to 81,677,812,000 EGP for FY2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01, ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02]. *(Note: Unit line specifies L.E.(000))* [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01].\n  * **Net Profit:** Stood at 22,578,063,000 EGP for FY2025, compared to 10,111,328,000 EGP for FY2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35, ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36].\n  * **Earnings Per Share (EPS):** Basic and diluted EPS was 11.93 EGP for FY2025, compared to 4.79 EGP for FY2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55, ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56]. *(Note: Although the page unit line prints L.E.(000), per-share metrics are conventionally stated in whole currency units per share as labeled).*\n\n---\n\n### **2. Balance Sheet**\n* **EFID:**\n  * **Total Equity:** Recorded at 5,724,525,864 EGP as of 31 December 2025, up from 4,055,484,719 EGP as of 31 December 2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39, EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-40].\n\n* **ETEL:**\n  * **Total Equity:** Recorded at 63,687,826,000 EGP as of 31 December 2025, compared to 45,937,991,000 EGP (reclassified) as of 31 December 2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45, ETEL-ETEL_FY2025_EAS_consolidated_en-p5-46]. *(Note: Unit line specifies L.E. (000))* [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45].\n\n---\n\n### **3. Risks and Data Quality**\n* **Risks:** The provided evidence contains strictly financial statement line items (revenues, net profit, equity, and EPS) and does not disclose comprehensive risk factors such as liquidity ratios, debt-to-equity breakdowns, or macroeconomic exposure. \n* **Data Quality:** All cited figures are marked as verified in the primary documents. However, unit discrepancies must be handled carefully (e.g., ETEL figures are reported in thousands of local currency `L.E. (000)` [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01], whereas EFID figures are stated in full EGP units [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]).",
+    "investor": "As the investor-suitability analyst on the investment team, here is the assessment of the investor's profile, constraints, and current portfolio alignment:\n\n### 1. Investment Horizon\n* **Profile:** 3–5 years.\n* **Assessment:** This medium-term horizon allows for a reasonable amount of time to ride out short-term market volatility, but it is not long enough to aggressively absorb severe capital losses without jeopardizing the final target. \n\n### 2. Liquidity Needs\n* **Profile:** May need 10% of the money within a year.\n* **Assessment:** Immediate cash needs are low in absolute terms (only 10% required within 12 months), meaning the vast majority of the capital can remain invested, provided there is adequate cash buffer or easily liquidated holdings to meet this near-term requirement.\n\n### 3. Loss Willingness and Capacity\n* **Profile:** Medium willingness to accept losses, but **low financial ability** to withstand them.\n* **Assessment:** This is a crucial risk constraint. Because the financial capacity to absorb losses is low, any strategy must strictly protect the principal and avoid exposing the investor to high-beta or high-risk drawdowns they cannot afford to absorb. \n\n### 4. Goal Alignment\n* **Profile:** Steady growth with some income.\n* **Assessment:** The mandate requires a balanced approach—seeking capital appreciation alongside some income generation—while keeping downside risk tightly managed due to the low financial capacity for loss.\n\n### 5. Current Portfolio Composition & Cash\n* **Cash:** 15,000.00 EGP\n* **Holdings & Valuation (at cutoff prices):**\n  * **ETEL:** 100 shares @ 141.95 EGP = 14,195.00 EGP\n  * **EFID:** 1,500 shares @ 20.40 EGP = 30,600.00 EGP\n  * **Total Portfolio Value:** 59,795.00 EGP (excluding cash) / 74,795.00 EGP (including cash)\n* **Concentration:** \n  * EFID represents approximately 51.2% of total assets (or ~40.9% of total portfolio value including cash).\n  * ETEL represents approximately 23.7% of total assets (or ~19.0% of total portfolio value including cash).\n  * Cash represents approximately 20.1% of total portfolio value.\n\n### 6. Portfolio Allowance (Liquidity and Liquidation)\n* **What can be sold:** Both equity holdings (ETEL and EFID) are listed shares that can be partially or fully liquidated if needed to meet liquidity requirements or rebalance concentration risks.\n* **Free Cash:** The portfolio currently holds 15,000.00 EGP in uncommitted cash, which comfortably covers the 10% liquidity requirement for the upcoming year (10% of total portfolio value including cash is approximately 7,479.50 EGP)."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 3.85,
+      "input_tokens": 3431,
+      "output_tokens": 1304,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 3.009,
+      "input_tokens": 3423,
+      "output_tokens": 667,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 3.8,
+      "input_tokens": 5714,
+      "output_tokens": 598,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 10.666
+}

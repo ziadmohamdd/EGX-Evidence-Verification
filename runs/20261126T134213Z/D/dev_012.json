@@ -1,0 +1,179 @@
+{
+  "case_id": "dev_012",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "Edita Food Industries (EFID) net profit grew from 1,606,727,698 EGP in 2024 to 2,695,301,670 EGP in 2025, an absolute increase of 1,088,573,972 EGP and a percentage increase of approximately 67.75% (using verified evidence [p6-36] and [p6-37]). This exceeds the investor's 50% growth threshold, which would normally trigger a purchase. However, the portfolio diversification rule has no exceptions: the current holding of 1,000 EFID shares represents 20,400.00 EGP (1,000 × 20.40 EGP/share) against total portfolio value of 30,400.00 EGP (cash 10,000.00 EGP + holdings 20,400.00 EGP), i.e., 67.1% of the portfolio. Any purchase of additional EFID shares using the available 10,000.00 EGP cash would increase EFID's proportion above 67.1% (e.g., buying 490 shares at 20.40 EGP yields 1,490 shares worth 30,396.00 EGP, still ~99.99% of the portfolio). The rule 'after a buy, no single company may be more than half of the portfolio's total value' cannot be satisfied for any positive number of EFID shares bought with the existing cash. Even the minimum purchase would breach the 50% cap. Therefore, a buy is not permissible under the stated constraints. Since the investor already owns EFID and the growth condition is met but the purchase is constrained by the absolute diversification limit, the compliant action is to hold the existing position. The AMBIGUOUS figure [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] was excluded from calculations per instructions. All figures relied upon are listed in claims below.",
+    "claims": [
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36]",
+        "stated_value": 2695301670.0,
+        "statement": "EFID Net profit for the year (consolidated) period 31 December 2025, verified, EGP"
+      },
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37]",
+        "stated_value": 1606727698.0,
+        "statement": "EFID Net profit for the year (consolidated) period 31 December 2024, verified, EGP"
+      }
+    ],
+    "unused_figures": [
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]"
+    ],
+    "limitations": [
+      "All figures are derived solely from the provided evidence list and prices at cutoff 2026-11-18; no outside knowledge or later events were used.",
+      "The 50% portfolio concentration limit is applied strictly: after any buy, a single company may not exceed half the total portfolio value (cash + holdings at given prices). This limit has no exceptions.",
+      "The AMBIGUOUS-marked evidence [p6-30] was not used in any calculation, as required.",
+      "Recommendation reflects the constraint that a buy would violate diversification rules; hold is chosen because the investor already owns the discussed asset and the growth threshold is exceeded, but purchase is not actionable under the given portfolio structure."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "[removed: figure could not be verified] [removed: figure could not be verified]\n\nCurrent portfolio: 10,000.00 EGP cash + 1,000 EFID shares × 20.40 EGP/share = 20,400.00 EGP holdings, total 30,400.00 EGP. EFID constitutes 67.1% of the portfolio.\n\nThe investor's condition to buy more is met (growth >50%). However, using the available 10,000.00 EGP cash to purchase additional EFID shares at 20.40 EGP/share: maximum affordable is 490 shares (cost 9,996.00 EGP), resulting in 1,490 shares worth 30,396.00 EGP. Post-buy, EFID would represent 30,396.00 / 30,400.00 ≈ 99.99% of the total portfolio value, breaching the strict diversification rule that 'after a buy, no single company may be more than half of the portfolio's total value'. Even a minimal purchase (1 share) would leave EFID at ~67.18% > 50%. Therefore, no permissible buy exists using the available cash under the given constraints.\n\nSince the investor already holds EFID and the growth condition is satisfied but a purchase is not actionable without violating diversification, the compliant recommendation is to hold the existing position. The AMBIGUOUS-marked figure [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] has been excluded from all calculations per instructions.",
+    "claims": [],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36]",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37]"
+    ],
+    "limitations": [
+      "All figures derived solely from the provided evidence list and prices at cutoff 2026-11-18; no outside knowledge or later events used.",
+      "The AMBIGUOUS-marked evidence [p6-30] was excluded from calculations as required.",
+      "The 50% portfolio concentration limit applies strictly after any buy: no single company may exceed half the total portfolio value (cash + holdings at given prices). This limit has no exceptions; buying additional EFID shares with the existing 10,000.00 EGP cash would violate this rule for any positive number of shares.",
+      "The recommendation reflects that the net profit growth condition (>50%) is met, but no buy is permissible under the diversification constraint; hold is chosen because the investor already owns the discussed asset.",
+      "Current portfolio EFID concentration (67.1%) already exceeds 50%, but the diversification rule specifically constrains post-buy proportions; holding the existing position does not trigger the 'after a buy' constraint.",
+      "These figures could not be verified and were not used: Net profit for the year (consolidated), Net profit for the year (consolidated), [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36], [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37]. Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"1,606,727,698\", which is 'Net profit for the year (consolidated)' (1.60673e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"2,695,301,670\", which is 'Net profit for the year (consolidated)' (2.6953e+09), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37]",
+        "rule": "unknown_evidence",
+        "detail": "no such evidence_id"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"2,695,301,670\", which is 'Net profit for the year (consolidated)' (2.6953e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"1,606,727,698\", which is 'Net profit for the year (consolidated)' (1.60673e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"2,695,301,670\", which is 'Net profit for the year (consolidated)' (2.6953e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"1,606,727,698\", which is 'Net profit for the year (consolidated)' (1.60673e+09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"1,606,727,698\", which is 'Net profit for the year (consolidated)' (1.60673e+09), but it is not listed in claims"
+      }
+    ],
+    "dropped": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36]",
+      "[EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37]"
+    ],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "**Net profit figures from EFID consolidated reports (unit: EGP, whole pounds):**\n\n- **2025 Net profit for the year:** [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36] 2,695,301,670 EGP  \n  (verified; period 31 December 2025; columns \"31 December 2025 EGP | 31 December 2024 EGP\"; row \"Net profit for the year\")\n\n- **2024 Net profit for the year:** [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37] 1,606,727,698 EGP  \n  (verified; period 31 December 2024; same column headings; row \"Net profit for the year\")\n\n**AMBIGUOUS figure flagged:**  \nEvidence [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] is marked **AMBIGUOUS** because the 2025 figure is covered by a stamp on the scanned page; the printed value (2,695,301,670) is not used for computation per instructions.\n\n**Growth calculation (using only verified evidence):**\n\n- Absolute growth = 2,695,301,670 − 1,606,727,698 = **1,088,573,972 EGP**  \n  [computed from [p6-36] and [p6-37]]\n\n- Percentage growth = (1,088,573,972 / 1,606,727,698) × 100 ≈ **67.75%**\n\nThe net profit grew by approximately **67.75%** in 2025 compared with 2024, which exceeds the 50% growth threshold referenced in the investor's criterion.\n\nNo investment action is recommended; the decision agent will evaluate the purchase based on this data alongside the investor's profile and current holdings.",
+    "investor": "**Investor-Suitability Assessment**\n\n**Horizon: 3 years**  \nA 3‑year horizon is consistent with a medium‑term growth objective. It allows sufficient time to absorb typical equity volatility while aligning with the goal of growing savings. The profile’s medium loss capacity is compatible with this horizon, as there is time to recover from moderate drawdowns without forced liquidation.\n\n**Liquidity Needs**  \nThe investor maintains a separate emergency fund outside this portfolio. The current portfolio comprises:\n- Cash: 10,000.00 EGP  \n- Holdings: 1,000 shares of EFID at the cutoff price of 20.40 EGP/share = 20,400.00 EGP  \nTotal liquidatable value: 30,400.00 EGP.  \nThe cash and shares can be sold to convert to cash on short notice, but the investor’s stated practice of keeping a separate emergency fund means this portfolio’s assets are allocated for growth/investment purposes, not as the primary liquidity buffer.\n\n**Willingness to Accept Losses & Financial Ability to Withstand Losses: Medium**  \nBoth willingness and capacity are rated medium. A 3‑year horizon can accommodate moderate price fluctuations, and the investor should be prepared for the possibility of short‑term losses in the equity position. The assessment should ensure that any new commitment does not exceed a level of exposure that would cause significant strain if the holding declined materially.\n\n**Current Concentration**  \nThe equity portion of the portfolio is 100% concentrated in a single issuer (EFID: 1,000 shares). This creates significant idiosyncratic risk relative to the medium loss capacity and the goal of growing savings. A diversified approach would better align with the stated risk profile, though the final decision on concentration rests with the portfolio construction process.\n\n**Cash Reasonably Commitable**  \n- Free cash in the portfolio: 10,000.00 EGP  \n- Liquidable equity: 20,400.00 EGP (EFID shares)  \n- Total liquid assets available: 30,400.00 EGP  \n\nGiven the medium risk profile and 3‑year horizon, the full 10,000.00 EGP cash balance could reasonably be committed to new investments (e.g., additional diversified positions), while the EFID holding could be retained, reduced, or sold depending on rebalancing needs. The portfolio’s structure permits selling the EFID shares at any time to realize cash, and the 10,000.00 EGP cash line is immediately free for deployment. No action is recommended; the suitability note is that the investor has liquidity capacity up to the full portfolio value, subject to maintaining the separate emergency fund and adhering to the medium‑risk commitment level.\n\n**Portfolio Allowances Noted**  \n- What can be sold: The 1,000 EFID shares (convertible to 20,400.00 EGP cash).  \n- What cash is free: 10,000.00 EGP (the stated cash holding; the separate emergency fund is held outside this portfolio).  \n\n*Per instructions, company financials (revenue, net profit, EPS, etc.) have not been analysed, and no investment action (buy/sell/hold) has been recommended.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 49.086,
+      "input_tokens": 1560,
+      "output_tokens": 10369,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 30.099,
+      "input_tokens": 1554,
+      "output_tokens": 3811,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 63.698,
+      "input_tokens": 3106,
+      "output_tokens": 9815,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 58.637,
+      "input_tokens": 3073,
+      "output_tokens": 10170,
+      "error": null,
+      "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 201.525
+}

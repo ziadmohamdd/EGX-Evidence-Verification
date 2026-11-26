@@ -1,0 +1,111 @@
+{
+  "case_id": "dev_008",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The friend's claim that Telecom Egypt made 225.9 billion pounds in net profit in 2025 is incorrect. The reported net profit for the year ended 31/12/2025 is 22,578,063 thousand pounds (or 22.58 billion pounds), compared to 10,111,328 thousand pounds (or 10.11 billion pounds) for 2024. Therefore, the profit more than doubled, not increased tenfold. Putting all available cash into ETEL would violate the portfolio diversification rule that no single company may exceed half of the portfolio's total value after a buy. Given the existing holdings of 150 shares valued at 141.95 EGP each, the current portfolio value is 71,292.50 EGP (21,292.50 EGP in holdings plus 50,000.00 EGP in cash). The maximum allowed value for ETEL in the portfolio is 50% of 71,292.50 EGP, which is 35,646.25 EGP. Since the existing holdings are already worth 21,292.50 EGP, the investor can only buy up to 14,353.75 EGP worth of shares, ruling out buying with all 50,000.00 EGP cash. Furthermore, due to duplicate evidence entries (ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35 and ETEL-ETEL_FY2025_EAS_consolidated_en-p6-49) with identical values, claims are carefully verified. The investor should hold their current position and keep their cash.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "The reported net profit for the year ended 31/12/2025 is 22,578,063 thousand pounds."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "The reported net profit for the year ended 31/12/2024 is 10,111,328 thousand pounds."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-49",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50"
+    ],
+    "limitations": [
+      "Guidance is based strictly on the provided financial statements and cutoff prices and does not guarantee future returns.",
+      "Diversification rules strictly cap single-stock exposure at 50% of total portfolio value."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The friend's claim that Telecom Egypt made 225.9 billion pounds in net profit in 2025 is incorrect and likely confuses net profit with total assets. As shown in the financial statements, Total Assets for the period ended 31/12/2025 are 225,882,527 thousand pounds (or approximately 225.9 billion pounds). Meanwhile, the actual net profit for the year ended 31/12/2025 is 22,578,063 thousand pounds (or 22.58 billion pounds), compared to 10,111,328 thousand pounds (or 10.11 billion pounds) for the year ended 31/12/2024. Therefore, profit more than doubled rather than increasing tenfold. The investor should not put all their cash into Telecom Egypt shares. Putting all cash into ETEL would violate the portfolio diversification rule stating that no single company may exceed half of the portfolio's total value after a buy. With 150 existing shares valued at 141.95 EGP each and 50,000.00 EGP in cash, the total portfolio value is 71,292.50 EGP, meaning the maximum allowed value for ETEL is 35,646.25 EGP. Since existing holdings are already valued at 21,292.50 EGP, the investor can only buy up to 14,353.75 EGP worth of shares, which prevents deploying all 50,000.00 EGP cash. Furthermore, duplicate evidence entries for net profit (ETEL-ETEL_FY2025_EAS_consolidated_en-p6-49 and ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50) and total assets (ETEL-ETEL_FY2025_EAS_consolidated_en-p5-32) are unused figures to avoid redundancy, though their identical values support the verified claims. The investor should hold their current position and keep their cash.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total Assets for the period ended 31/12/2025 are 225,882,527 thousand pounds (or approximately 225.9 billion pounds)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "The actual net profit for the year ended 31/12/2025 is 22,578,063 thousand pounds (or 22.58 billion pounds)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "The reported net profit for the year ended 31/12/2024 is 10,111,328 thousand pounds (or 10.11 billion pounds)."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-32",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-49",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50"
+    ],
+    "limitations": [
+      "Guidance is based strictly on the provided financial statements and cutoff prices and does not guarantee future returns.",
+      "Diversification rules strictly cap single-stock exposure at 50% of total portfolio value."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 50000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 150
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"225.9 billion\", which is 'Total Assets (consolidated)' (2.25883e+11), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 3.03,
+      "input_tokens": 2543,
+      "output_tokens": 773,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 16.017,
+      "input_tokens": 3479,
+      "output_tokens": 1019,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 19.053
+}
