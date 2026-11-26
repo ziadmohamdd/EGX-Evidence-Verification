@@ -896,7 +896,10 @@ For the paper, this is a second kind of error next to wrong figures: **the decis
 
 ### Open items
 
-- **Whether to enforce the limit in code.** The portfolio check could block or flag buys over 50%, as it already blocks selling shares the investor does not own. To decide before the prompts are frozen.
+- **Decided: flag, don't block.** Since this run, the portfolio check flags a buy that leaves more than half the portfolio in one stock: the record gets a `concentration` warning with the share. The answer still goes through.
+  - Blocking would turn the answer into "insufficient evidence", and A–D would then all look the same on this point, hiding the finding above.
+  - Selling shares the investor does not own stays blocked, because it is impossible, not just unwise.
+  - Earlier runs have no warning field; the scorer's "buys over 50%" measure covers them from the saved portfolio.
 - **The suitability analyst's prompt** could also name the limit.
 - **The Gemini 3.5 Flash run** on the printed figures, as its free quota allows (about 20 requests a day; the run needs about 100).
 - **Still open from before:**

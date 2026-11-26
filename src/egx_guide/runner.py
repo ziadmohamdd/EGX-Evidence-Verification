@@ -43,6 +43,7 @@ def record_for(state, caller, seconds: float) -> dict:
         "final": state["final"].model_dump(mode="json"),
         "blocked": state["blocked"],
         "violations": [asdict(v) for v in state["check"].violations],
+        "warnings": [asdict(w) for w in state["check"].warnings],
         "proposed_portfolio": state["check"].proposed.model_dump() if state["check"].proposed else None,
         "verifier": asdict(vr) if vr else None,
         "reports": state.get("reports"),

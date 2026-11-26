@@ -2,6 +2,10 @@
 
 Plain code, no language model. These run in every experimental condition and
 cannot be talked past: an invalid recommendation is blocked whatever its prose says.
+
+Warnings are different: they flag a valid but unwise recommendation (a buy leaving
+more than half the portfolio in one stock) in the record without blocking it, so the
+evaluation can see when an agent breaks the prompt's rule.
 """
 
 from __future__ import annotations
@@ -9,6 +13,8 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 
 from .models import TRADE_ACTIONS, Action, Holding, Portfolio, Recommendation
+
+CONCENTRATION_LIMIT = 0.5  # a buy leaving more than this share of the portfolio in one stock is flagged
 
 
 @dataclass(frozen=True)
@@ -21,6 +27,7 @@ class Violation:
 class CheckResult:
     violations: list[Violation] = field(default_factory=list)
     proposed: Portfolio | None = None  # Proposed Portfolio if the recommendation were followed
+    warnings: list[Violation] = field(default_factory=list)  # flagged, not blocking
 
     @property
     def ok(self) -> bool:
@@ -83,4 +90,18 @@ def check_recommendation(
     others = [h for h in portfolio.holdings if h.ticker.upper() != ticker]
     holdings = others + ([Holding(ticker=ticker, shares=new_held)] if new_held else [])
     proposed = Portfolio(cash=round(new_cash, 2), currency=portfolio.currency, holdings=holdings)
-    return CheckResult([], proposed)
+    warnings = []
+    if rec.action is Action.BUY:
+        weight = weight_of(ticker, proposed, prices)
+        if weight is not None and weight > CONCENTRATION_LIMIT:
+            warnings.append(Violation("concentration", f"after the buy {ticker} is {weight:.1%} of the portfolio, "
+                                                       f"above the {CONCENTRATION_LIMIT:.0%} limit"))
+    return CheckResult([], proposed, warnings)
+
+
+def weight_of(ticker: str, portfolio: Portfolio, prices: dict[str, float]) -> float | None:
+    """Share of the portfolio's value (cash plus holdings at ``prices``) in ``ticker``."""
+    px = {t.upper(): p for t, p in prices.items()}
+    worth = {h.ticker.upper(): h.shares * px.get(h.ticker.upper(), 0.0) for h in portfolio.holdings}
+    total = portfolio.cash + sum(worth.values())
+    return worth.get(ticker.upper(), 0.0) / total if total else None

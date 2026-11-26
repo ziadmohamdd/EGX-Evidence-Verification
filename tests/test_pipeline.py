@@ -106,6 +106,20 @@ def test_runner_writes_records_and_keeps_errors(case, tmp_path):
     assert json.loads((run_dir / "manifest.json").read_text())["conditions"] == ["A", "B"]
 
 
+def test_concentrated_buy_is_kept_and_flagged_in_the_record(case, tmp_path):
+    # 20,000 cash + 200 SYNA at 50 = 30,000; buying 200 more leaves SYNA at 20,000 (66.7%)
+    run_dir = run([case], ["A"], ScriptedModel(script=[buy(shares=200)]), tmp_path, {"provider": "scripted"},
+                  fee_rate=0.0)
+    rec = json.loads((run_dir / "A" / "synthetic_001.json").read_text(encoding="utf-8"))
+    assert rec["status"] == "ok" and not rec["blocked"] and rec["final"]["shares"] == 200
+    assert rec["violations"] == [] and [w["rule"] for w in rec["warnings"]] == ["concentration"]
+
+
+def test_buy_at_half_has_no_warning(case, tmp_path):
+    run_dir = run([case], ["A"], ScriptedModel(script=[buy()]), tmp_path, {"provider": "scripted"}, fee_rate=0.0)
+    assert json.loads((run_dir / "A" / "synthetic_001.json").read_text(encoding="utf-8"))["warnings"] == []
+
+
 def test_prompt_marks_ambiguous_evidence(case):
     llm = ScriptedModel(script=[buy()])
     run_case(case, CONDITIONS["A"], llm)

@@ -37,11 +37,11 @@ from pathlib import Path
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
+from .checks import CONCENTRATION_LIMIT
 from .models import Action, Case
 from .verifier import text_findings
 
 SCORE_REL_TOL = 0.005  # 0.5%: rounding in prose is fine; wrong digits or scale are not
-CONCENTRATION_LIMIT = 0.5  # a buy leaving more than this share of the portfolio in one stock
 DECISIVE = {Action.BUY, Action.SELL, Action.HOLD}
 
 

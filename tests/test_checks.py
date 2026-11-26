@@ -23,6 +23,21 @@ def test_valid_buy_updates_cash_and_holdings():
     assert r.proposed.shares_of("COMI") == 100
 
 
+def test_concentrated_buy_is_flagged_not_blocked():
+    # book: 10,000 cash + 100 COMI at 80 = 18,000
+    r = check_recommendation(rec(Action.BUY, "ETEL", 250), BOOK, PRICES)  # ETEL 10,000 of 18,000 = 55.6%
+    assert r.ok and r.proposed.shares_of("ETEL") == 250
+    assert [w.rule for w in r.warnings] == ["concentration"] and "55.6%" in r.warnings[0].detail
+    assert check_recommendation(rec(Action.BUY, "COMI", 125), BOOK, PRICES).warnings  # 100% COMI
+
+
+def test_buy_at_exactly_half_and_other_actions_are_not_flagged():
+    assert not check_recommendation(rec(Action.BUY, "ETEL", 225), BOOK, PRICES).warnings  # exactly 50%
+    assert not check_recommendation(rec(Action.BUY, "ETEL", 50), BOOK, PRICES).warnings
+    assert not check_recommendation(rec(Action.HOLD, "COMI"), BOOK, PRICES).warnings  # COMI already 44%
+    assert not check_recommendation(rec(Action.SELL, "COMI", 10), BOOK, PRICES).warnings
+
+
 def test_buy_with_fees_must_fit_cash():
     # 125 * 80 = 10,000 exactly; a 1% fee pushes it over.
     assert check_recommendation(rec(Action.BUY, "COMI", 125), BOOK, PRICES).ok
