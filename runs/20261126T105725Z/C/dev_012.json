@@ -1,0 +1,139 @@
+{
+  "case_id": "dev_012",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor's buy trigger is explicitly conditioned on net profit growing by more than 50% in 2025 vs 2024. The 2025 consolidated net-profit figure (2,695,301,670 EGP) is flagged AMBIGUOUS in the evidence because it is partially obscured by a stamp on the scanned page. Per the rules, AMBIGUOUS figures must not be used in calculations, so I cannot compute the net-profit growth rate the investor asked for, and I cannot confirm or deny that the 50% threshold is met.\n\nWhat the verified data does show: EPS more than doubled from 1.09 EGP (FY2024) to 2.18 EGP (FY2025), a 100% increase, and revenue grew roughly 29.5% (16,146,545,699 → 20,915,072,432 EGP). If the share count was unchanged, the EPS jump would be consistent with net-profit growth well above 50%. However, EPS can also move if the share count changed, so it is a directional indicator, not a substitute for the actual profit line. The suitability analyst's 67.8% growth figure relies on the AMBIGUOUS 2025 number and therefore cannot be treated as verified.\n\nBecause the investor's decision rule is tied to a specific, unverified figure, a responsible recommendation cannot be made on the current evidence. The missing piece is a clean, un-stamped copy of the FY2025 consolidated income statement (e.g., from the Egyptian Exchange filing portal or the company's investor-relations page) to confirm the 2025 net-profit line. Once that number is verified, the growth calculation is straightforward: (2025 NP − 1,606,727,698) / 1,606,727,698 × 100.\n\nIn the interim, the investor's existing 1,000 EFID shares (≈ 20,400 EGP at the 20.40 cutoff price) and 10,000 EGP cash remain untouched. No buy, sell, or hold action is taken until the 2025 net-profit figure is confirmed. Note that even if the trigger were met, the suitability analyst flagged that adding more EFID would push single-stock concentration above 70% of the portfolio, which is high for a medium-risk-tolerance, 3-year investor; any future buy would need to respect the 50% single-name cap.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year, 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS, 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS, 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "EFID consolidated revenue, 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue, 31 December 2025"
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30: 2025 consolidated net profit (2,695,301,670 EGP) – AMBIGUOUS (figure covered by a stamp on the scanned page). This is the exact figure needed to compute the net-profit growth rate the investor's buy trigger depends on. Without it, the 50% threshold cannot be confirmed or denied."
+    ],
+    "limitations": [
+      "The 2025 net-profit figure is AMBIGUOUS and was excluded from all calculations; the investor's 50% growth trigger therefore cannot be evaluated.",
+      "EPS growth (100%) is a proxy, not a direct measure of net-profit growth; it could be affected by changes in share count, buybacks, or new issuances not detailed in the provided evidence.",
+      "No share-count data was provided to cross-check whether the EPS doubling implies the same percentage change in total net profit.",
+      "The suitability analyst's 67.8% growth calculation relies on the AMBIGUOUS 2025 figure and is not treated as verified here.",
+      "This is guidance, not a guarantee of returns. Even if the trigger were confirmed, the investor should weigh the concentration risk (EFID already ≈ 67% of portfolio value) before adding to the position."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor's buy trigger is explicitly conditioned on net profit growing by more than 50% in 2025 vs 2024. The 2025 consolidated net-profit figure (2,695,301,670 EGP) is flagged AMBIGUOUS in the evidence because it is partially obscured by a stamp on the scanned page. Per the rules, AMBIGUOUS figures must not be used in calculations, so I cannot compute the net-profit growth rate the investor asked for, and I cannot confirm or deny that the 50% threshold is met.\n\nWhat the verified data does show: EPS more than doubled from 1.09 EGP (FY2024) to 2.18 EGP (FY2025), a 100% increase, and revenue grew roughly 29.5% (16,146,545,699 → 20,915,072,432 EGP). If the share count was unchanged, the EPS jump would be consistent with net-profit growth well above 50%. However, EPS can also move if the share count changed, so it is a directional indicator, not a substitute for the actual profit line. The suitability analyst's 67.8% growth figure relies on the AMBIGUOUS 2025 number and therefore cannot be treated as verified.\n\nBecause the investor's decision rule is tied to a specific, unverified figure, a responsible recommendation cannot be made on the current evidence. The missing piece is a clean, un-stamped copy of the FY2025 consolidated income statement (e.g., from the Egyptian Exchange filing portal or the company's investor-relations page) to confirm the 2025 net-profit line. Once that number is verified, the growth calculation is straightforward: (2025 NP − 1,606,727,698) / 1,606,727,698 × 100.\n\nIn the interim, the investor's existing 1,000 EFID shares (≈ 20,400 EGP at the 20.40 cutoff price) and 10,000 EGP cash remain untouched. No buy, sell, or hold action is taken until the 2025 net-profit figure is confirmed. Note that even if the trigger were met, the suitability analyst flagged that adding more EFID would push single-stock concentration above 70% of the portfolio, which is high for a medium-risk-tolerance, 3-year investor; any future buy would need to respect the 50% single-name cap.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year, 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS, 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS, 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "EFID consolidated revenue, 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue, 31 December 2025"
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30: 2025 consolidated net profit (2,695,301,670 EGP) – AMBIGUOUS (figure covered by a stamp on the scanned page). This is the exact figure needed to compute the net-profit growth rate the investor's buy trigger depends on. Without it, the 50% threshold cannot be confirmed or denied."
+    ],
+    "limitations": [
+      "The 2025 net-profit figure is AMBIGUOUS and was excluded from all calculations; the investor's 50% growth trigger therefore cannot be evaluated.",
+      "EPS growth (100%) is a proxy, not a direct measure of net-profit growth; it could be affected by changes in share count, buybacks, or new issuances not detailed in the provided evidence.",
+      "No share-count data was provided to cross-check whether the EPS doubling implies the same percentage change in total net profit.",
+      "The suitability analyst's 67.8% growth calculation relies on the AMBIGUOUS 2025 figure and is not treated as verified here.",
+      "This is guidance, not a guarantee of returns. Even if the trigger were confirmed, the investor should weigh the concentration risk (EFID already ≈ 67% of portfolio value) before adding to the position."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n## Edita (EFID) – Net Profit Growth 2025 vs 2024\n\n### The figures you need\n\n| Metric | FY 2024 | FY 2025 | Status |\n|---|---|---|---|\n| Net profit (consolidated) | 1,606,727,698 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31] | 2,695,301,670 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] | 2024 **verified**; 2025 **AMBIGUOUS** |\n| Basic & Diluted EPS | 1.09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39] | 2.18 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] | Both **verified** |\n\n### ⚠️ Data-quality flag – 2025 net profit\n\nThe 2025 net-profit figure of 2,695,301,670 EGP is **AMBIGUOUS**: the report notes that *\"the 2025 figure is covered by a stamp on the scanned page\"* [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]. Per my analysis rules I **cannot compute a growth rate using this figure**. I therefore cannot confirm or deny whether net profit grew by more than 50 %.\n\n### What the verified data does tell us\n\n- **EPS more than doubled**, from 1.09 EGP to 2.18 EGP, a 100 % increase [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38][EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39]. If the share count was unchanged year-on-year, this would be consistent with roughly 100 % net-profit growth – well above your 50 % threshold. However, EPS can also move if the share count changed, so it is a directional indicator, not a substitute for the profit line.\n- **Revenue grew ~29.5 %**, from 16,146,545,699 EGP to 20,915,072,432 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02][EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01], suggesting the profit jump (if confirmed) came with meaningful operating leverage.\n\n### Bottom line for your 50 % trigger\n\nI **cannot verify** that net profit grew by more than 50 % because the 2025 profit figure is obscured by a stamp and is therefore AMBIGUOUS. The verified EPS data points in that direction (≈100 % EPS growth), but that is not the same as a confirmed net-profit growth rate.\n\n**Recommended next step before acting on the 50 % rule:** obtain a clean, un-stamped copy of the FY 2025 consolidated income statement (e.g., from the Egyptian Exchange filing portal or the company's investor-relations page) and confirm the 2025 net-profit figure. Once that number is verified, the growth calculation is straightforward:\n\n> Growth % = (2025 NP − 1,606,727,698) / 1,606,727,698 × 100\n\nI have not made a buy/sell recommendation; that is the decision agent's role.",
+    "investor": "\n\n## Answer to Your Question\n\n**Net profit growth, 2024 → 2025:**\n\n| Year | Net profit (consolidated) |\n|---|---|\n| 31 Dec 2024 | 1,606,727,698 EGP *(verified)* |\n| 31 Dec 2025 | 2,695,301,670 EGP *(flagged AMBIGUOUS – figure partially obscured by a stamp on the scanned page)* |\n\nGrowth = (2,695,301,670 − 1,606,727,698) / 1,606,727,698 ≈ **67.8 %**\n\nThat exceeds your 50 % threshold, **but** the 2025 figure carries an ambiguity flag (stamp over the number). Before acting on it, I'd recommend confirming the 2025 net-profit line against a clean copy of the signed report or the company's press release.\n\n---\n\n## Investor-Suitability Snapshot\n\n| Dimension | Assessment |\n|---|---|\n| **Horizon** | 3 years – short-to-medium. Enough time to ride out a single earnings cycle, but not long enough to fully absorb a multi-year drawdown in a single equity. |\n| **Liquidity needs** | You keep a **separate** emergency fund, so the 10,000 EGP cash in this portfolio is not earmarked for emergencies. It is free to deploy. |\n| **Loss willingness** | Medium – you are comfortable with moderate drawdowns but not with large, sustained losses. |\n| **Loss capacity** | Medium – the portfolio is small (≈ 30,400 EGP total), so a 30–40 % drop in the equity holding would mean a real, felt loss. |\n| **Current concentration** | **100 % of the equity sleeve is one name (EFID).** 1,000 sh × 20.40 = 20,400 EGP, which is **≈ 67 % of the whole portfolio** (20,400 / 30,400). Adding more EFID would push single-stock concentration above 70–75 %, which is high for a medium-risk-tolerance, 3-year investor. |\n| **Cash that could reasonably be committed** | The 10,000 EGP cash is unencumbered. Given the concentration point above, committing the **full** 10,000 EGP into the same stock would leave you with essentially a single-asset portfolio. A more balanced approach for your risk profile might be to commit only a portion (e.g., 3,000–5,000 EGP) to EFID and keep the remainder in cash or a diversified instrument, but that is a decision for you. |\n| **What the portfolio allows** | • **Sell:** 1,000 EFID shares (≈ 20,400 EGP at the 20.40 cutoff price). • **Free cash:** 10,000 EGP. • **No other holdings** to rebalance against. |\n\n### Key suitability notes (no action recommended)\n\n- Your 3-year horizon and medium loss tolerance are **compatible** with holding a single equity, but the **concentration** is the main risk factor. Adding more of the same stock amplifies that risk.\n- Because your loss *capacity* is medium and the portfolio is small, a further 20–30 % drop in EFID would erode a meaningful share of your total savings.\n- The 2025 net-profit figure is **not fully verified**; your 50 %-growth trigger rests on a number that the source itself flags as ambiguous.\n- You have no other holdings to diversify into, so any \"buy more\" decision would deepen, not reduce, single-name exposure.\n\nI've laid out what the numbers show and what your portfolio can absorb. The decision on whether and how much to add is yours."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 15.629,
+      "input_tokens": 1241,
+      "output_tokens": 1880,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 16.801,
+      "input_tokens": 1234,
+      "output_tokens": 1946,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 27.045,
+      "input_tokens": 3327,
+      "output_tokens": 3148,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 59.481
+}

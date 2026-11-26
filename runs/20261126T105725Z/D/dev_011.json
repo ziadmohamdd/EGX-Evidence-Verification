@@ -1,0 +1,264 @@
+{
+  "case_id": "dev_011",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 1960,
+    "explanation": "I recommend buying 1,960 shares of EFID (Edita) at 20.40 EGP, totalling 39,984 EGP, leaving 40,016 EGP in cash. This keeps EFID at 49.98% of the 80,000 EGP portfolio, respecting the 50% single-name cap and the suitability analyst's guidance that a medium-risk investor should not go all-in on one name.\n\n**Why EFID over the other three:**\n\n1. **Strongest profit growth.** EFID's consolidated net profit rose from 1,606,727,698 EGP (FY2024) to 2,695,301,670 EGP (FY2025), a +67.8% increase – the highest of the four companies. EPS more than doubled from 1.09 to 2.18 EGP, confirming the growth is per-share and not just a share-count artefact.\n\n2. **Reasonable valuation.** At 20.40 EGP and 2.18 EGP EPS, the trailing P/E is 9.4×. This is above COMI's 7.0× but well below TMGH's 11.8×, and it prices in a growth rate (67.8%) that is roughly 1.4× COMI's (48.9%) and 1.6× TMGH's (42.5%). On a growth-adjusted basis EFID is the most attractively valued.\n\n3. **Clean data.** EFID's figures come from a full signed consolidated EAS statement with no restatements, no condensed-statement caveats, and no internal inconsistencies. COMI's data is from condensed statements; TMGH's 2024 base was restated; ETEL's data is internally inconsistent (see below).\n\n4. **Internal diversification.** EFID is a diversified holding company, which provides a degree of sector diversification within a single ticker – a useful cushion for an investor with medium loss tolerance who is starting from zero holdings.\n\n**Why not the others:**\n- **COMI (CIB):** Lowest P/E (7.0×) and solid 48.9% growth, but it is a pure-play bank (single-sector concentration), the source is a condensed statement, and the ~20% rise in average shares outstanding (implied by the gap between 48.9% profit growth and 23.98% EPS growth) signals ongoing dilution from capital raises. For a 7+ year holder, dilution is a real drag.\n- **TMGH (Talaat Moustafa):** 42.5% growth is respectable, but the 11.8× P/E is the highest of the three usable names, the 2024 comparative was restated (so the true prior-year base is uncertain), and the real-estate/infrastructure sector carries development and regulatory risk that is not visible in the evidence.\n- **ETEL (Telecom Egypt):** Excluded. The FY2025 net-profit line (578,063,000 EGP) implies a 94% collapse from FY2024 (10,111,328,000 EGP), yet the EPS line on the same page shows EPS rising from 4.79 to 11.93 EGP (+149%). A 94% profit drop cannot coexist with a 149% EPS rise without an implausible ~43× reduction in share count. Both the net-profit and EPS figures are flagged AMBIGUOUS and were not used in any calculation. ETEL cannot be responsibly assessed on the evidence provided.\n\n**Position sizing and risk:**\n- 1,960 shares × 20.40 = 39,984 EGP deployed; 40,016 EGP retained as cash.\n- EFID represents 49.98% of the 80,000 EGP portfolio – just under the 50% cap.\n- The remaining 40,016 EGP in cash preserves optionality for a second position (e.g., COMI or TMGH) in a future review, which the suitability analyst recommended for a medium-risk profile.\n- A 20–30% drawdown on the EFID position would cost 8,000–12,000 EGP, well within the investor's stated medium tolerance, and the cash buffer limits total portfolio loss to roughly 12–15%.\n\n**Uncertainties and risks to monitor:**\n- All figures are in EGP; over a 7+ year horizon, EGP depreciation and interest-rate shifts will materially affect real returns, but no FX or rate data is in the evidence set.\n- EFID's absolute profit base (2.7 B EGP) is smaller than COMI's (82.3 B) or TMGH's (18.2 B), so a single bad quarter at a subsidiary could swing results more sharply.\n- The evidence covers only FY2024 and FY2025; a two-year sample is thin for a 7+ year decision. I recommend re-evaluating after the FY2026 results to confirm the growth trajectory is sustainable.\n- This is guidance based on the evidence provided, not a guarantee of future performance.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit FY2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit FY2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS FY2025 (EGP/share)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS FY2024 (EGP/share)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit FY2025"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit FY2024"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "COMI basic EPS FY2025 (EGP/share)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH consolidated net profit FY2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 12769517325.0,
+        "statement": "TMGH consolidated net profit FY2024 (restated)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH EPS FY2025 (EGP/share)"
+      }
+    ],
+    "unused_figures": [
+      "ETEL net profit FY2025 (578,063,000 EGP) – AMBIGUOUS: internally inconsistent with ETEL EPS on the same page",
+      "ETEL net profit FY2024 (10,111,328,000 EGP) – AMBIGUOUS: paired with the inconsistent FY2025 figure",
+      "ETEL basic and diluted EPS FY2025 (11.93 EGP/share) – AMBIGUOUS: contradicts the 94% net-profit decline",
+      "ETEL basic and diluted EPS FY2024 (4.79 EGP/share) – AMBIGUOUS: paired with the inconsistent FY2025 figure"
+    ],
+    "limitations": [
+      "ETEL is excluded from the comparison entirely due to the AMBIGUOUS net-profit and EPS figures; no growth rate or P/E could be computed for it.",
+      "COMI's data is from a condensed consolidated statement, which may omit line items present in full audited accounts.",
+      "TMGH's FY2024 comparative is restated, so the 42.5% growth rate is measured against a revised base.",
+      "No revenue, cash-flow, balance-sheet, or sector-level data is in the evidence set; the comparison is limited to net profit and EPS.",
+      "No FX, interest-rate, or macro data is available to assess real-return risk over the 7+ year horizon.",
+      "Only two fiscal years (FY2024, FY2025) are available; a longer history would strengthen the growth assessment."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 1960,
+    "explanation": "I recommend buying 1,960 shares of EFID (Edita) at 20.40 EGP, totalling 39,984 EGP, leaving 40,016 EGP in cash. This keeps EFID at 49.98% of the 80,000 EGP portfolio, respecting the 50% single-name cap.\n\n**Why EFID over the other three:**\n\n1. **Strongest citable profit growth.** EFID's consolidated net profit rose from 1,606,727,698 EGP (FY2024) to 2,695,301,670 EGP (FY2025), a +67.8% increase – the highest of the four companies. EPS more than doubled from 1.09 to 2.18 EGP (+100%), confirming the growth is per-share and not a share-count artefact.\n\n2. **Reasonable valuation.** At 20.40 EGP and 2.18 EGP EPS, the trailing P/E is 9.4×. This is above COMI's 7.0× but well below TMGH's 11.8×, and it prices in a growth rate (67.8%) that is roughly 1.4× COMI's (48.9%) and well above TMGH's EPS growth (59.4%). On a growth-adjusted basis EFID is the most attractively valued.\n\n3. **Clean data.** EFID's figures come from a full signed consolidated EAS statement with no restatements, no condensed-statement caveats, and no internal inconsistencies.\n\n4. **Internal diversification.** EFID is a diversified holding company, providing sector diversification within a single ticker – a useful cushion for an investor with medium loss tolerance starting from zero holdings.\n\n**Why not the others:**\n- **COMI (CIB):** Lowest P/E (7.0×) and solid 48.9% net-profit growth, but it is a pure-play bank (single-sector concentration), the source is a condensed statement, and the gap between 48.9% profit growth and 24.0% EPS growth (18.25 vs 14.72) implies roughly a 20% rise in average shares outstanding – ongoing dilution from capital raises. For a 7+ year holder, dilution is a real drag.\n- **TMGH (Talaat Moustafa):** EPS grew from 4.38 to 6.98 EGP (+59.4%), which is strong. However, the 11.8× P/E is the highest of the three usable names, the 2024 comparative was restated (column heading reads '2024 (Restated) LE'), and I cannot independently verify the 2024 net-profit base from a separate evidence_id, so the exact net-profit growth rate is uncertain. The real-estate/infrastructure sector also carries development and regulatory risk not visible in the evidence.\n- **ETEL (Telecom Egypt):** Excluded. The FY2025 net-profit line (578,063,000 EGP) implies a ~94% collapse from FY2024 (10,111,328,000 EGP), yet the EPS line on the same page shows EPS rising from 4.79 to 11.93 EGP (+149%). A 94% profit drop cannot coexist with a 149% EPS rise without an implausible ~43× reduction in share count. All four ETEL figures are flagged AMBIGUOUS and were not used in any calculation. ETEL cannot be responsibly assessed on the evidence provided.\n\n**Position sizing and risk:**\n- 1,960 shares × 20.40 = 39,984 EGP deployed; 40,016 EGP retained as cash.\n- EFID represents 49.98% of the 80,000 EGP portfolio – just under the 50% cap.\n- The remaining 40,016 EGP in cash preserves optionality for a second position (e.g., COMI or TMGH) in a future review, appropriate for a medium-risk profile.\n- A 20–30% drawdown on the EFID position would cost 8,000–12,000 EGP, well within the investor's stated medium tolerance, and the cash buffer limits total portfolio loss to roughly 12–15%.\n\n**Uncertainties and risks to monitor:**\n- All figures are in EGP; over a 7+ year horizon, EGP depreciation and interest-rate shifts will materially affect real returns, but no FX or rate data is in the evidence set.\n- EFID's absolute profit base (2.7 B EGP) is smaller than COMI's (82.3 B) or TMGH's (18.2 B), so a single bad quarter at a subsidiary could swing results more sharply.\n- The evidence covers only FY2024 and FY2025; a two-year sample is thin for a 7+ year decision. I recommend re-evaluating after FY2026 results to confirm the growth trajectory is sustainable.\n- TMGH's 2024 net-profit base could not be independently verified from a separate evidence_id (the 2024 figure appears only in the same row as the 2025 figure under a 'Restated' column heading), so TMGH's net-profit growth rate is approximate and the comparison is slightly weakened.\n- This is guidance based on the evidence provided, not a guarantee of future performance.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit FY2025 (EGP)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit FY2024 (EGP)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS FY2025 (EGP/share)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS FY2024 (EGP/share)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit FY2025 (EGP; 82,258,815 × 1,000)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit FY2024 (EGP; 55,256,732 × 1,000)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "COMI basic EPS FY2025 (EGP/share)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+        "stated_value": 14.72,
+        "statement": "COMI basic EPS FY2024 (EGP/share)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH consolidated net profit FY2025 (LE)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH EPS FY2025 (LE/share)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "TMGH EPS FY2024 Restated (LE/share)"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL net profit FY2024 (EGP; 10,111,328 × 1,000) – AMBIGUOUS, not used in calculations"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS FY2025 (EGP/share) – AMBIGUOUS, not used in calculations"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic and diluted EPS FY2024 (EGP/share) – AMBIGUOUS, not used in calculations"
+      }
+    ],
+    "unused_figures": [
+      "ETEL basic and diluted EPS FY2024 (4.79 EGP/share) – AMBIGUOUS: paired with the inconsistent FY2025 figure; not used in any calculation",
+      "ETEL basic and diluted EPS FY2025 (11.93 EGP/share) – AMBIGUOUS: contradicts the implied 94% net-profit decline; not used in any calculation",
+      "ETEL net profit FY2024 (10,111,328,000 EGP) – AMBIGUOUS: paired with the inconsistent FY2025 figure; not used in any calculation",
+      "ETEL net profit FY2025 (578,063,000 EGP) – AMBIGUOUS: internally inconsistent with ETEL EPS on the same page (94% profit drop vs 149% EPS rise); not used in any calculation",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "TMGH net profit FY2024 Restated (12,769,517,325 LE) – appears only in the same row as the FY2025 figure under a '2024 (Restated)' column heading; no separate evidence_id available to cite independently; not used in calculations. Affects: TMGH net-profit growth rate cannot be precisely verified; only EPS growth (59.4%) is used as the citable growth metric for TMGH."
+    ],
+    "limitations": [
+      "ETEL is excluded from the comparison entirely due to the AMBIGUOUS net-profit and EPS figures; no growth rate or P/E could be computed for it.",
+      "COMI's data is from a condensed consolidated statement, which may omit line items present in full audited accounts.",
+      "TMGH's FY2024 comparative is restated and no separate evidence_id exists for the 2024 net-profit figure; the net-profit growth rate is therefore approximate and only the EPS growth (59.4%) is independently verifiable.",
+      "No revenue, cash-flow, balance-sheet, or sector-level data is in the evidence set; the comparison is limited to net profit and EPS.",
+      "No FX, interest-rate, or macro data is available to assess real-return risk over the 7+ year horizon.",
+      "Only two fiscal years (FY2024, FY2025) are available; a longer history would strengthen the growth assessment.",
+      "These figures could not be verified and were not used: Net profit for the year. Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 40016.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1960
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "rule": "value_mismatch",
+        "detail": "stated 1.27695e+10 but evidence 'Net profit for the year (consolidated)' is 1.8202e+10 [Net profit for the year | | 18,201,981,482 | 12,769,517,325 | unit: LE]"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"10,111,328,000\", which is 'Net profit for the year' (1.01113e+10), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"4.79\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (4.79), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"11.93\", which is 'Basic and diluted earning per share for the year (L.E. / Share) (15)' (11.93), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "value_mismatch",
+        "detail": "stated 5.78063e+08 but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)]"
+      }
+    ],
+    "dropped": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35"
+    ],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n# Comparative Analysis: ETEL, COMI (CIB), EFID (Edita), TMGH (Talaat Moustafa)\n\n## 1. Net Profit Growth (FY2024 → FY2025)\n\n| Company | Net Profit FY2024 | Net Profit FY2025 | YoY Growth |\n|---|---|---|---|\n| **COMI (CIB)** | 55,256,732,000 EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-34] | 82,258,815,000 EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-33] | **+48.9 %** |\n| **EFID (Edita)** | 1,606,727,698 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31] | 2,695,301,670 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] | **+67.8 %** |\n| **TMGH (Talaat Moustafa)** | 12,769,517,325 EGP (restated) [TMGH-TMGH_FY2025_consolidated_en-p7-55] | 18,201,981,482 EGP [TMGH-TMGH_FY2025_consolidated_en-p7-55] | **+42.5 %** |\n| **ETEL (Telecom Egypt)** | 10,111,328,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] | 578,063,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] | **⚠ AMBIGUOUS – see below** |\n\n### ⚠ ETEL Data-Quality Flag\nThe printed net-profit line shows a **94 % decline** (10.11 B → 0.58 B EGP), yet the EPS line on the same page shows EPS **rising** from 4.79 to 11.93 EGP/share [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55][ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56]. A 94 % profit drop would require an implausible ~43× reduction in share count to produce a 149 % EPS increase. The two figures are **internally inconsistent**; I therefore flag both the ETEL net-profit and EPS values as **AMBIGUOUS** and do **not** compute a growth rate or P/E from them.\n\n> Note: TMGH's 2024 comparative is labelled **\"Restated\"** [TMGH-TMGH_FY2025_consolidated_en-p7-55], meaning the prior-year figure was revised. The 42.5 % growth is measured against the restated base.\n\n---\n\n## 2. Price-to-Earnings (P/E) at Cutoff Price\n\n| Company | Share Price (EGP) | EPS FY2025 (EGP) | P/E |\n|---|---|---|---|\n| **COMI** | 128.00 | 18.25 [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] | **7.0×** |\n| **EFID** | 20.40 | 2.18 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] | **9.4×** |\n| **TMGH** | 82.50 | 6.98 [TMGH-TMGH_FY2025_consolidated_en-p7-61] | **11.8×** |\n| **ETEL** | 141.95 | 11.93 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] | **⚠ AMBIGUOUS** (≈11.9× if taken at face value, but see flag above) |\n\n---\n\n## 3. Supplementary Profitability Context\n\n- **TMGH gross profit** rose from 14,002,196,445 EGP to 20,855,400,384 EGP (+48.9 %) [TMGH-TMGH_FY2025_consolidated_en-p7-19], indicating the net-profit growth is supported at the top line.\n- **COMI** is a bank; its 48.9 % net-profit growth is consistent with the Egyptian banking cycle and the 23.98 % EPS growth (the gap reflects a ~20 % increase in average shares outstanding, typical of a listed bank's capital raises).\n- **EFID** (a diversified holding company) posted the highest net-profit growth at 67.8 %, with EPS doubling (1.09 → 2.18 EGP) [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38][EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39].\n\n---\n\n## 4. Risk & Data-Quality Observations\n\n| Item | Detail |\n|---|---|\n| **ETEL inconsistency** | Net profit and EPS move in opposite directions; one (or both) figures may be misstated or misread. **Do not rely on ETEL profitability metrics until clarified.** |\n| **TMGH restatement** | 2024 figures were restated, so the \"true\" prior-year base may differ from what was originally reported. |\n| **COMI – condensed statements** | The source is a *condensed* consolidated statement [COMI-COMI_FY2025_consolidated_condensed_en-p5-33], which may omit certain line items present in full audited accounts. |\n| **Sector concentration** | COMI is a pure-play bank; EFID is a diversified holding; TMGH is a real-estate/infrastructure conglomerate; ETEL is a regulated telecom. Risk profiles differ materially. |\n| **Currency / macro** | All figures are in EGP. For a 7+ year horizon, EGP depreciation and interest-rate shifts are material to real returns, but no FX or rate data is in the evidence set. |\n\n---\n\n## 5. Summary for the Decision Agent\n\n| Metric | COMI | EFID | TMGH | ETEL |\n|---|---|---|---|---|\n| Net-profit growth | +48.9 % | **+67.8 %** | +42.5 % | AMBIGUOUS |\n| P/E (trailing) | **7.0×** | 9.4× | 11.8× | AMBIGUOUS |\n| Data quality | Condensed stmts | Clean | Restated 2024 | **Inconsistent** |\n| Absolute profit scale | 82.3 B EGP | 2.7 B EGP | 18.2 B EGP | 0.6 B EGP (unreliable) |\n\n**Key trade-offs visible in the evidence:**\n\n- **COMI** offers the lowest P/E (7.0×) with solid ~49 % profit growth, but it is a single-sector (banking) exposure and the data is from condensed statements.\n- **EFID** shows the strongest profit growth (~68 %) at a moderate 9.4× P/E, but the absolute profit base is smaller and the company is a diversified holding (operating-level detail is not in the evidence).\n- **TMGH** has the largest absolute profit (18.2 B EGP) and ~43 % growth, but trades at the highest P/E (11.8×) and the 2024 base was restated.\n- **ETEL** cannot be reliably assessed on profitability from the evidence provided due to the internal inconsistency flagged above.\n\nI have not made a buy/sell/hold recommendation; that determination is reserved for the decision agent, which should also weigh the investor's 7+ year horizon, medium loss tolerance, and 80,000 EGP cash position against the sector risks and data caveats noted above.",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## Horizon & Goal\n\nA 7+ year horizon aimed at long-term growth is well suited to equity exposure. The investor is not constrained by a near-term spending date, so the full investment window can be used to ride out volatility. This is the primary factor that makes equities (rather than short-duration instruments) an appropriate asset class for the capital in question.\n\n## Liquidity Needs\n\nThe investor maintains a **separate emergency fund**, so the 80,000 EGP sitting in the portfolio is not earmarked for short-term obligations. There is no stated near-term cash call that would force a sale. In practice, this means the entire cash balance is **free to commit** to a longer-holding investment without creating a liquidity gap.\n\n## Loss Willingness & Capacity\n\nBoth willingness and capacity are rated **medium**. In practical terms:\n\n- The investor can tolerate a moderate drawdown (e.g., a 20–30 % dip in a single position) without abandoning the plan, but a total loss of the 80,000 EGP would be difficult to absorb.\n- This argues against concentrating the full amount in a single, high-beta name and favours some degree of diversification or a staged entry, so that no single adverse event wipes out the entire capital base.\n\n## Current Concentration\n\nThe portfolio is **100 % cash; there are no existing holdings**. Consequently:\n\n- There is no existing equity concentration to dilute or rebalance.\n- There is nothing to sell to free up additional capital.\n- The 80,000 EGP is the **entire investable pool**.\n\n## What the Portfolio Allows\n\n| Item | Status |\n|---|---|\n| Cash available to deploy | **80,000 EGP** (fully free) |\n| Holdings that can be sold | **None** – the portfolio is empty |\n| Additional cash that could be released | **None** – no other assets in the portfolio |\n\nThe maximum that could reasonably be committed in one go is 80,000 EGP, but given the medium loss profile, committing the full amount to a single security would push concentration risk beyond what the stated willingness/capacity comfortably supports. A split across two or more positions, or a phased deployment, would keep any single-name loss within the \"medium\" band.\n\n## What I Am Not Doing Here\n\nPer my mandate I have **not** compared the four companies' net-profit growth, calculated P/E ratios, or recommended a specific ticker to buy. Those are company-fundamental and action-selection tasks that fall outside the investor-suitability scope. The comparison and the buy decision should be made by the team members responsible for security analysis and trade recommendation, using the suitability constraints above as the boundary conditions.\n\n**Bottom line for the team:** the investor can deploy up to 80,000 EGP of fully liquid cash into a 7+ year equity position, with no existing holdings to offset, and a medium tolerance that favours diversification over a single-name all-in. Any recommendation should respect those limits."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 54.931,
+      "input_tokens": 2637,
+      "output_tokens": 6715,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 12.126,
+      "input_tokens": 2630,
+      "output_tokens": 1165,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 51.882,
+      "input_tokens": 5576,
+      "output_tokens": 6431,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 70.65,
+      "input_tokens": 5723,
+      "output_tokens": 9258,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 189.597
+}

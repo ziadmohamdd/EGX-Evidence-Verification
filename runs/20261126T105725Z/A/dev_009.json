@@ -1,0 +1,117 @@
+{
+  "case_id": "dev_009",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "I can work through the arithmetic you asked for, but I cannot responsibly tell you whether the share is 'cheap enough to buy' on the evidence provided. Here is what the data does and does not allow.\n\n**What I can calculate (verified EPS figures):**\n- 9-month 2026 basic EPS: 8.74 EGP (verified, p.2)\n- 9-month 2025 basic EPS: 4.28 EGP (verified, p.2)\n- Q3 2026 EPS: 1.99 EGP; Q3 2025 EPS: 1.23 EGP (verified, p.2)\n- Implied H1 2026 EPS: 8.74 − 1.99 = 6.75 EGP\n\n**Full-year 2026 EPS – cannot be determined from this report.** The report covers only nine months. I do not have Q4 2026 results, nor full-year 2025 results from which I could infer a Q4 seasonal pattern. A simple annualisation (8.74 × 12/9 ≈ 11.65 EGP) assumes Q4 earns the same as the average of the first three quarters, which is an unverified assumption. I will not present that as a 'full-year EPS.'\n\n**P/E ratio (rough, annualised):** 76.21 / 11.65 ≈ 6.5×. On a strict 9-month basis: 76.21 / 8.74 ≈ 8.7×. Both are low in absolute terms, but 'cheap' is relative. I have no industry-average P/E, no historical P/E range for ABUK, and no peer set in the evidence to judge whether 6–9× is a discount or a value trap.\n\n**Why I cannot recommend a buy for your specific goals:**\n1. *Income:* You want dividend income. The evidence contains no dividend per share, payout ratio, or dividend history. I cannot assess whether ABUK pays a meaningful yield.\n2. *Growth from an exporter:* The revenue and net-profit rows are marked AMBIGUOUS (the page mixes 'مليار' and 'مليون' unit labels), so I cannot confirm the absolute size or growth rate of revenue or profit. I also have no breakdown of export vs. domestic revenue, so I cannot verify the 'exporter' thesis.\n3. *Risk (medium tolerance, 3–5 yr horizon):* No balance-sheet data (debt, equity, working capital), no cash-flow statement, and no segment or geographic breakdown are provided. I cannot gauge financial resilience.\n4. *Diversification / position sizing:* With 30,000 EGP cash and no existing holdings, a buy is mechanically possible (e.g., 392 shares ≈ 29,874 EGP), but without the fundamental checks above I would be guessing.\n\n**What is missing for a responsible decision:**\n- Full-year 2026 (or at least Q4 2026) results, or full-year 2025 results to establish seasonality.\n- Dividend per share and payout policy.\n- Export-revenue share and key markets.\n- Balance sheet (total debt, equity, current ratio) and operating cash flow.\n- An industry or peer P/E range for context.\n- Clarification of the unit ambiguity on the revenue and profit rows.\n\nUntil those items are available, I would rather flag the gap than label a 6–9× P/E 'cheap' and send you into a position that may not meet your income or risk requirements. This is guidance, not a guarantee; even with full data, a low P/E can reflect market scepticism about sustainability.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "9-month 2026 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "9-month 2025 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 1.99,
+        "statement": "Q3 2026 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 1.23,
+        "statement": "Q3 2025 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 76.21,
+        "statement": "ABUK share price at cutoff (EGP per share)"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01: Revenue 9M 2026 = 31,488 (AMBIGUOUS unit – page mixes مليار and مليون; cannot confirm whether figure is in millions or billions of EGP)",
+      "ABUK-ABUK_9M2026_results-p2-02: Revenue 9M 2025 = 16,578 (AMBIGUOUS unit, same issue)",
+      "ABUK-ABUK_9M2026_results-p2-25: Net profit 9M 2026 = 12,970 (AMBIGUOUS unit, same issue)",
+      "ABUK-ABUK_9M2026_results-p2-26: Net profit 9M 2025 = 6,396 (AMBIGUOUS unit, same issue)"
+    ],
+    "limitations": [
+      "Full-year 2026 EPS cannot be calculated; only 9-month data is available and no Q4 or prior full-year data is provided to infer seasonality.",
+      "Annualised EPS (≈11.65 EGP) and the resulting P/E (≈6.5×) are rough estimates, not verified figures.",
+      "No dividend, balance-sheet, cash-flow, or export-revenue data is present, so the investor's income and exporter-specific goals cannot be assessed.",
+      "The AMBIGUOUS revenue and profit figures prevent confirming the absolute scale or growth rate of the business."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "I can work through the arithmetic you asked for, but I cannot responsibly tell you whether the share is 'cheap enough to buy' on the evidence provided. Here is what the data does and does not allow.\n\n**What I can calculate (verified EPS figures):**\n- 9-month 2026 basic EPS: 8.74 EGP (verified, p.2)\n- 9-month 2025 basic EPS: 4.28 EGP (verified, p.2)\n- Q3 2026 EPS: 1.99 EGP; Q3 2025 EPS: 1.23 EGP (verified, p.2)\n- Implied H1 2026 EPS: 8.74 − 1.99 = 6.75 EGP\n\n**Full-year 2026 EPS – cannot be determined from this report.** The report covers only nine months. I do not have Q4 2026 results, nor full-year 2025 results from which I could infer a Q4 seasonal pattern. A simple annualisation (8.74 × 12/9 ≈ 11.65 EGP) assumes Q4 earns the same as the average of the first three quarters, which is an unverified assumption. I will not present that as a 'full-year EPS.'\n\n**P/E ratio (rough, annualised):** 76.21 / 11.65 ≈ 6.5×. On a strict 9-month basis: 76.21 / 8.74 ≈ 8.7×. Both are low in absolute terms, but 'cheap' is relative. I have no industry-average P/E, no historical P/E range for ABUK, and no peer set in the evidence to judge whether 6–9× is a discount or a value trap.\n\n**Why I cannot recommend a buy for your specific goals:**\n1. *Income:* You want dividend income. The evidence contains no dividend per share, payout ratio, or dividend history. I cannot assess whether ABUK pays a meaningful yield.\n2. *Growth from an exporter:* The revenue and net-profit rows are marked AMBIGUOUS (the page mixes 'مليار' and 'مليون' unit labels), so I cannot confirm the absolute size or growth rate of revenue or profit. I also have no breakdown of export vs. domestic revenue, so I cannot verify the 'exporter' thesis.\n3. *Risk (medium tolerance, 3–5 yr horizon):* No balance-sheet data (debt, equity, working capital), no cash-flow statement, and no segment or geographic breakdown are provided. I cannot gauge financial resilience.\n4. *Diversification / position sizing:* With 30,000 EGP cash and no existing holdings, a buy is mechanically possible (e.g., 392 shares ≈ 29,874 EGP), but without the fundamental checks above I would be guessing.\n\n**What is missing for a responsible decision:**\n- Full-year 2026 (or at least Q4 2026) results, or full-year 2025 results to establish seasonality.\n- Dividend per share and payout policy.\n- Export-revenue share and key markets.\n- Balance sheet (total debt, equity, current ratio) and operating cash flow.\n- An industry or peer P/E range for context.\n- Clarification of the unit ambiguity on the revenue and profit rows.\n\nUntil those items are available, I would rather flag the gap than label a 6–9× P/E 'cheap' and send you into a position that may not meet your income or risk requirements. This is guidance, not a guarantee; even with full data, a low P/E can reflect market scepticism about sustainability.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "9-month 2026 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "9-month 2025 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 1.99,
+        "statement": "Q3 2026 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 1.23,
+        "statement": "Q3 2025 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 76.21,
+        "statement": "ABUK share price at cutoff (EGP per share)"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01: Revenue 9M 2026 = 31,488 (AMBIGUOUS unit – page mixes مليار and مليون; cannot confirm whether figure is in millions or billions of EGP)",
+      "ABUK-ABUK_9M2026_results-p2-02: Revenue 9M 2025 = 16,578 (AMBIGUOUS unit, same issue)",
+      "ABUK-ABUK_9M2026_results-p2-25: Net profit 9M 2026 = 12,970 (AMBIGUOUS unit, same issue)",
+      "ABUK-ABUK_9M2026_results-p2-26: Net profit 9M 2025 = 6,396 (AMBIGUOUS unit, same issue)"
+    ],
+    "limitations": [
+      "Full-year 2026 EPS cannot be calculated; only 9-month data is available and no Q4 or prior full-year data is provided to infer seasonality.",
+      "Annualised EPS (≈11.65 EGP) and the resulting P/E (≈6.5×) are rough estimates, not verified figures.",
+      "No dividend, balance-sheet, cash-flow, or export-revenue data is present, so the investor's income and exporter-specific goals cannot be assessed.",
+      "The AMBIGUOUS revenue and profit figures prevent confirming the absolute scale or growth rate of the business."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 31.686,
+      "input_tokens": 2435,
+      "output_tokens": 4599,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 31.69
+}

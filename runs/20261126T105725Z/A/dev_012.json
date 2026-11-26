@@ -1,0 +1,116 @@
+{
+  "case_id": "dev_012",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "You asked whether Edita's (EFID) net profit grew by more than 50% in 2025 vs 2024, and whether you should buy more if so.\n\n**What the evidence shows:**\n- The 2025 consolidated net profit figure (printed as 2,695,301,670 EGP) is marked AMBIGUOUS because a stamp covers it on the scanned page. I cannot use that figure in any calculation, so I cannot state the exact 2025 net profit or compute a precise net-profit growth rate.\n- However, the verified Basic & Diluted EPS figures are: 1.09 EGP (2024) and 2.18 EGP (2025). That is a 100% increase in per-share earnings, which strongly implies net profit more than doubled, assuming the share count was roughly stable. This comfortably exceeds your 50% threshold.\n- Revenue also grew from 16,146,545,699 EGP (2024) to 20,915,072,432 EGP (2025), a ~29.5% increase, supporting the earnings story.\n\n**Why I recommend HOLD rather than BUY:**\nYour current portfolio is 10,000 EGP cash + 1,000 × 20.40 = 20,400 EGP in EFID, for a total of 30,400 EGP. EFID already represents 67.1% of your portfolio. The diversification rule caps any single company at 50% of total portfolio value after a trade. Because you are already above that cap, buying even one additional share of EFID would violate the limit. You would need to sell at least ~255 shares before you could buy any more, which is not what you asked to do.\n\n**What this means for you:**\n- The growth condition you set (>50%) appears to be met based on the verified EPS data, so the fundamental case for the stock is positive.\n- You should keep your existing 1,000 shares (hold) and leave the 10,000 EGP cash uninvested in EFID for now. You may want to consider diversifying that cash into other listed companies to bring EFID below the 50% cap, which would also open the door to adding more EFID later if you wish.\n\n**Caveats and risks:**\n- The 2025 net profit figure is unreadable in the source document; the EPS-based inference is the best available proxy but is not a direct confirmation of the exact net-profit number.\n- A 100% EPS jump in a single year can reflect one-off items, accounting changes, or a low base in 2024. It does not guarantee the same pace will continue over your 3-year horizon.\n- With medium loss tolerance, a 67% concentration in one stock is a meaningful risk. Consider rebalancing.\n- This is guidance, not a guarantee of future returns.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue for the year ended 31 December 2025 was 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "EFID consolidated revenue for the year ended 31 December 2024 was 16,146,545,699 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2025 was 2.18 EGP per share."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2024 was 1.09 EGP per share."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2024 was 1,606,727,698 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30: 2025 consolidated net profit (printed as 2,695,301,670 EGP) is AMBIGUOUS – the figure is covered by a stamp on the scanned page and cannot be verified. This means I cannot state the exact 2025 net profit or compute a precise net-profit growth percentage. The conclusion about whether growth exceeded 50% relies instead on the verified EPS figures (1.09 → 2.18, a 100% increase), which is a proxy rather than a direct net-profit calculation."
+    ],
+    "limitations": [
+      "The 2025 net profit figure is unreadable in the source; the growth assessment is based on verified EPS, not on the net-profit line item directly.",
+      "EPS growth assumes a stable share count; a large share issuance or buyback between 2024 and 2025 would alter the implied net-profit growth.",
+      "A single year's 100% EPS increase may not be sustainable over a 3-year horizon.",
+      "The investor's portfolio is already 67% concentrated in EFID, exceeding the 50% diversification cap, which prevents any additional purchase."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "You asked whether Edita's (EFID) net profit grew by more than 50% in 2025 vs 2024, and whether you should buy more if so.\n\n**What the evidence shows:**\n- The 2025 consolidated net profit figure (printed as 2,695,301,670 EGP) is marked AMBIGUOUS because a stamp covers it on the scanned page. I cannot use that figure in any calculation, so I cannot state the exact 2025 net profit or compute a precise net-profit growth rate.\n- However, the verified Basic & Diluted EPS figures are: 1.09 EGP (2024) and 2.18 EGP (2025). That is a 100% increase in per-share earnings, which strongly implies net profit more than doubled, assuming the share count was roughly stable. This comfortably exceeds your 50% threshold.\n- Revenue also grew from 16,146,545,699 EGP (2024) to 20,915,072,432 EGP (2025), a ~29.5% increase, supporting the earnings story.\n\n**Why I recommend HOLD rather than BUY:**\nYour current portfolio is 10,000 EGP cash + 1,000 × 20.40 = 20,400 EGP in EFID, for a total of 30,400 EGP. EFID already represents 67.1% of your portfolio. The diversification rule caps any single company at 50% of total portfolio value after a trade. Because you are already above that cap, buying even one additional share of EFID would violate the limit. You would need to sell at least ~255 shares before you could buy any more, which is not what you asked to do.\n\n**What this means for you:**\n- The growth condition you set (>50%) appears to be met based on the verified EPS data, so the fundamental case for the stock is positive.\n- You should keep your existing 1,000 shares (hold) and leave the 10,000 EGP cash uninvested in EFID for now. You may want to consider diversifying that cash into other listed companies to bring EFID below the 50% cap, which would also open the door to adding more EFID later if you wish.\n\n**Caveats and risks:**\n- The 2025 net profit figure is unreadable in the source document; the EPS-based inference is the best available proxy but is not a direct confirmation of the exact net-profit number.\n- A 100% EPS jump in a single year can reflect one-off items, accounting changes, or a low base in 2024. It does not guarantee the same pace will continue over your 3-year horizon.\n- With medium loss tolerance, a 67% concentration in one stock is a meaningful risk. Consider rebalancing.\n- This is guidance, not a guarantee of future returns.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue for the year ended 31 December 2025 was 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "EFID consolidated revenue for the year ended 31 December 2024 was 16,146,545,699 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2025 was 2.18 EGP per share."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2024 was 1.09 EGP per share."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2024 was 1,606,727,698 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30: 2025 consolidated net profit (printed as 2,695,301,670 EGP) is AMBIGUOUS – the figure is covered by a stamp on the scanned page and cannot be verified. This means I cannot state the exact 2025 net profit or compute a precise net-profit growth percentage. The conclusion about whether growth exceeded 50% relies instead on the verified EPS figures (1.09 → 2.18, a 100% increase), which is a proxy rather than a direct net-profit calculation."
+    ],
+    "limitations": [
+      "The 2025 net profit figure is unreadable in the source; the growth assessment is based on verified EPS, not on the net-profit line item directly.",
+      "EPS growth assumes a stable share count; a large share issuance or buyback between 2024 and 2025 would alter the implied net-profit growth.",
+      "A single year's 100% EPS increase may not be sustainable over a 3-year horizon.",
+      "The investor's portfolio is already 67% concentrated in EFID, exceeding the 50% diversification cap, which prevents any additional purchase."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 32.78,
+      "input_tokens": 1509,
+      "output_tokens": 3714,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 32.784
+}

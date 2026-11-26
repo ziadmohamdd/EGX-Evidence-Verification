@@ -1,0 +1,181 @@
+{
+  "case_id": "dev_002",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 606,
+    "explanation": "I recommend buying 606 shares of TMGH at 82.50 EGP (total cost 50,000 EGP), leaving 50,000 EGP in cash. This makes TMGH exactly 50% of the 100,000 EGP portfolio, the maximum permitted by the diversification rule.\n\n**Rationale for the buy:**\n- Strong verified growth: gross profit rose ~48.9% YoY (14.0 bn → 20.9 bn EGP) and EPS rose ~59.4% (4.38 → 6.98 EGP).\n- Reasonable trailing P/E of ~11.8× (82.50 / 6.98), which is not expensive for a company growing at this rate.\n- Large and growing equity base (129.9 bn → 157.7 bn EGP, +21.4%), indicating retained earnings and financial substance.\n- The investor's profile (10+ year horizon, no liquidity needs, high loss tolerance and capacity) is well-suited to an equity position in a growing company.\n- The portfolio is currently 100% cash; deploying half into a fundamentally sound, growing equity is a reasonable first step toward long-term wealth building, while retaining 50% cash for future diversification.\n\n**Why 606 shares (the cap):**\n- The diversification rule limits any single company to no more than 50% of total portfolio value. 606 × 82.50 = 50,000 EGP = exactly 50% of 100,000 EGP. Buying more would breach the rule.\n\n**Key risks and limitations (stated honestly):**\n- Only two fiscal years of data are available; a 10-year investment ideally rests on a longer track record.\n- The FY2024 net-profit figure is AMBIGUOUS (obscured by an auditor's stamp), so net-profit growth cannot be verified. This limits confidence in the earnings trajectory.\n- All FY2024 comparatives are restated; the reason and magnitude of the restatement are not explained in the evidence.\n- The ~87% net-to-gross-profit ratio is unusual and may reflect a holding/investment-company structure or one-off items; without a full P&L breakdown this cannot be confirmed.\n- No data on revenue, operating expenses, debt, cash flow, dividends, or segment mix is available. Leverage and solvency cannot be assessed.\n- This is a single-name position; even at 50% of the portfolio, idiosyncratic risk is significant. The remaining 50% cash should be used to add other positions over time.\n- The P/E is a trailing multiple with no forward estimates; it does not guarantee future returns.\n\n**What is missing for a more confident decision:** multi-year earnings history, full income-statement breakdown, balance-sheet detail (assets, liabilities, debt), cash-flow statement, dividend history, and explanation of the FY2024 restatement. If the investor can obtain these, a deeper analysis would be warranted before adding to the position.\n\nThis is guidance, not a guarantee. The investment carries market, company-specific, and data-quality risks.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "TMGH consolidated gross profit FY2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+        "stated_value": 14002196445.0,
+        "statement": "TMGH consolidated gross profit FY2024 (Restated)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH consolidated net profit FY2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "TMGH total equity 31 Dec 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 129879813693.0,
+        "statement": "TMGH total equity 31 Dec 2024 (Restated)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH EPS FY2025 (EGP per share)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "TMGH EPS FY2024 Restated (EGP per share)"
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56: FY2024 net profit 12,769,517,325 EGP is marked AMBIGUOUS (digits covered by auditor's stamp). It cannot be used in any calculation. This means net-profit YoY growth cannot be computed, and the earnings-growth narrative relies solely on the verified EPS and gross-profit figures."
+    ],
+    "limitations": [
+      "Only two fiscal years of data; no multi-year trend available.",
+      "No revenue, operating-expense, debt, cash-flow, or dividend data.",
+      "FY2024 comparatives are restated; reason and magnitude of restatement unknown.",
+      "FY2024 net profit is AMBIGUOUS; net-profit growth cannot be verified.",
+      "Unusually high net/gross margin (~87%) unexplained; structure unclear.",
+      "No forward estimates or sector/peer comparison available.",
+      "Single-name position; idiosyncratic risk is high even at 50% allocation."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 606,
+    "explanation": "I recommend buying 606 shares of TMGH at 82.50 EGP (total cost 50,000 EGP), leaving 50,000 EGP in cash. This makes TMGH exactly 50% of the 100,000 EGP portfolio, the maximum permitted by the diversification rule.\n\n**Rationale for the buy:**\n- Strong verified growth: gross profit rose ~48.9% YoY (14.0 bn → 20.9 bn EGP) and EPS rose ~59.4% (4.38 → 6.98 EGP).\n- Reasonable trailing P/E of ~11.8× (82.50 / 6.98), which is not expensive for a company growing at this rate.\n- Large equity base of 157.7 bn EGP as of 31 Dec 2025, indicating substantial retained earnings and financial substance. (The 2024 comparative of 129.9 bn EGP is visible in the same table row but is not independently verified as a separate evidence entry, so I do not use it for a growth calculation.)\n- The investor's profile (10+ year horizon, no liquidity needs, high loss tolerance and capacity) is well-suited to an equity position in a growing company.\n- The portfolio is currently 100% cash; deploying half into a fundamentally sound, growing equity is a reasonable first step toward long-term wealth building, while retaining 50% cash for future diversification.\n\n**Why 606 shares (the cap):**\n- The diversification rule limits any single company to no more than 50% of total portfolio value. 606 × 82.50 = 50,000 EGP = exactly 50% of 100,000 EGP. Buying more would breach the rule.\n\n**Key risks and limitations (stated honestly):**\n- Only two fiscal years of data are available; a 10-year investment ideally rests on a longer track record.\n- The FY2024 net-profit figure is AMBIGUOUS (obscured by an auditor's stamp), so net-profit growth cannot be verified. This limits confidence in the earnings trajectory.\n- The FY2024 total-equity comparative (129,879,813,693 EGP) appears in the same table row as the 2025 figure but is not available as a separately verified evidence entry; therefore I cannot confirm the year-over-year equity growth rate. The conclusion about the size of the equity base relies solely on the verified 2025 figure.\n- All FY2024 comparatives are restated; the reason and magnitude of the restatement are not explained in the evidence.\n- The ~87% net-to-gross-profit ratio is unusual and may reflect a holding/investment-company structure or one-off items; without a full P&L breakdown this cannot be confirmed.\n- No data on revenue, operating expenses, debt, cash flow, dividends, or segment mix is available. Leverage and solvency cannot be assessed.\n- This is a single-name position; even at 50% of the portfolio, idiosyncratic risk is significant. The remaining 50% cash should be used to add other positions over time.\n- The P/E is a trailing multiple with no forward estimates; it does not guarantee future returns.\n\n**What is missing for a more confident decision:** multi-year earnings history, full income-statement breakdown, balance-sheet detail (assets, liabilities, debt), cash-flow statement, dividend history, and explanation of the FY2024 restatement. If the investor can obtain these, a deeper analysis would be warranted before adding to the position.\n\nThis is guidance, not a guarantee. The investment carries market, company-specific, and data-quality risks.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "TMGH consolidated gross profit FY2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-20",
+        "stated_value": 14002196445.0,
+        "statement": "TMGH consolidated gross profit FY2024 (Restated)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH consolidated net profit FY2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "TMGH total equity 31 Dec 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH EPS FY2025 (EGP per share)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "TMGH EPS FY2024 Restated (EGP per share)"
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56: FY2024 net profit 12,769,517,325 EGP is marked AMBIGUOUS (digits covered by auditor's stamp). It cannot be used in any calculation. This means net-profit YoY growth cannot be computed, and the earnings-growth narrative relies solely on the verified EPS and gross-profit figures.",
+      "TMGH-TMGH_FY2025_consolidated_en-p5-67 (2024 comparative column): The 31 December 2024 (Restated) total equity figure of 129,879,813,693 EGP appears in the same table row but is not available as a separately verified evidence entry. It cannot be used in calculations. This means the year-over-year equity growth rate cannot be confirmed; the conclusion about the equity base relies solely on the verified 2025 figure of 157,708,140,765 EGP."
+    ],
+    "limitations": [
+      "Only two fiscal years of data; no multi-year trend available.",
+      "No revenue, operating-expense, debt, cash-flow, or dividend data.",
+      "FY2024 comparatives are restated; reason and magnitude of restatement unknown.",
+      "FY2024 net profit is AMBIGUOUS; net-profit growth cannot be verified.",
+      "FY2024 total equity is not independently verified as a separate evidence entry; equity growth rate cannot be confirmed.",
+      "Unusually high net/gross margin (~87%) unexplained; structure unclear.",
+      "No forward estimates or sector/peer comparison available.",
+      "Single-name position; idiosyncratic risk is high even at 50% allocation."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 50005.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 606
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "rule": "value_mismatch",
+        "detail": "stated 1.2988e+11 but evidence 'Total equity (consolidated)' is 1.57708e+11 [Total equity | 157,708,140,765 | 129,879,813,693 | unit: LE]"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n# TMGH – Financial Evidence Analysis (FY2025 Consolidated)\n\n## 1. Profitability\n\n| Metric | FY2025 | FY2024 (Restated) | Source |\n|---|---|---|---|\n| Gross profit | 20,855,400,384 EGP | 14,002,196,445 EGP | [TMGH-TMGH_FY2025_consolidated_en-p7-19], [TMGH-TMGH_FY2025_consolidated_en-p7-20] |\n| Net profit | 18,201,981,482 EGP | 12,769,517,325 EGP ⚠️ | [TMGH-TMGH_FY2025_consolidated_en-p7-55], [TMGH-TMGH_FY2025_consolidated_en-p7-56] |\n| EPS | 6.98 EGP | 4.38 EGP | [TMGH-TMGH_FY2025_consolidated_en-p7-61], [TMGH-TMGH_FY2025_consolidated_en-p7-62] |\n\n> ⚠️ **AMBIGUOUS – do not compute with:** The FY2024 net-profit figure of 12,769,517,325 EGP is printed in the report but is flagged **AMBIGUOUS** because digits are covered by an auditor's stamp [TMGH-TMGH_FY2025_consolidated_en-p7-56]. I have excluded it from all growth calculations below.\n\n**Observations:**\n- Gross profit grew by approximately **48.9 %** year-on-year (20,855,400,384 vs 14,002,196,445 EGP) [TMGH-TMGH_FY2025_consolidated_en-p7-19] [TMGH-TMGH_FY2025_consolidated_en-p7-20].\n- EPS rose from 4.38 to 6.98 EGP, a **~59.4 %** increase [TMGH-TMGH_FY2025_consolidated_en-p7-61] [TMGH-TMGH_FY2025_consolidated_en-p7-62].\n- Net profit as a share of gross profit is roughly **87 %** (18,201,981,482 / 20,855,400,384) [TMGH-TMGH_FY2025_consolidated_en-p7-55] [TMGH-TMGH_FY2025_consolidated_en-p7-19]. This is an unusually high conversion ratio, suggesting very low operating/administrative costs or a significant non-operating income component (e.g., investment income, equity-method earnings). The evidence set does not include an income-statement breakdown, so the driver cannot be confirmed.\n\n## 2. Growth\n\n- **Gross-profit growth (YoY):** ≈ 48.9 % (computed from verified figures only).\n- **EPS growth (YoY):** ≈ 59.4 % (computed from verified figures only).\n- **Net-profit growth (YoY):** **Cannot be computed** – the FY2024 net-profit figure is AMBIGUOUS [TMGH-TMGH_FY2025_consolidated_en-p7-56].\n- **Equity growth (YoY):** Total equity rose from 129,879,813,693 EGP to 157,708,140,765 EGP, an increase of ≈ **21.4 %** [TMGH-TMGH_FY2025_consolidated_en-p5-67].\n\nThe two-year window (FY2024 Restated → FY2025) shows strong top-line and per-share growth, but the absence of a reliable FY2024 net-profit figure limits the depth of the trend analysis.\n\n## 3. Balance Sheet\n\n| Item | 31 Dec 2025 | 31 Dec 2024 (Restated) | Source |\n|---|---|---|---|\n| Total equity | 157,708,140,765 EGP | 129,879,813,693 EGP | [TMGH-TMGH_FY2025_consolidated_en-p5-67] |\n\n- Equity grew by ≈ 27.8 billion EGP in one year, consistent with the large net profit retained.\n- The evidence set does **not** include total assets, total liabilities, debt, or cash, so leverage, liquidity, and solvency cannot be assessed from the data provided.\n\n## 4. Risks & Data-Quality Flags\n\n| # | Flag | Detail |\n|---|---|---|\n| R1 | **AMBIGUOUS figure** | FY2024 net profit (12,769,517,325 EGP) is partially obscured by an auditor's stamp [TMGH-TMGH_FY2025_consolidated_en-p7-56]. Any YoY net-profit growth calculation is unreliable. |\n| R2 | **Restated comparatives** | All FY2024 figures are labelled \"Restated,\" indicating a prior-period adjustment. The nature and magnitude of the restatement are not explained in the evidence provided. |\n| R3 | **Unusually high net/gross margin** | ~87 % of gross profit flows to net profit. Without a full P&L breakdown this could reflect a holding/investment-company structure, but it could also mask one-off items. |\n| R4 | **Limited evidence set** | No revenue, operating-expense, debt, cash-flow, segment, or dividend data is available. The analysis is necessarily narrow. |\n| R5 | **Single-period view** | Only two fiscal years are presented; a 10-year horizon would benefit from a longer earnings and dividend history. |\n\n## 5. Valuation Snapshot (for context only)\n\n- Share price at cutoff: **82.50 EGP**\n- FY2025 EPS: **6.98 EGP** [TMGH-TMGH_FY2025_consolidated_en-p7-61]\n- Implied trailing P/E: 82.50 / 6.98 ≈ **11.8×**\n\nThis is a rough multiple; it does not account for the AMBIGUOUS prior-year figure, the restatement, or the absence of forward estimates.\n\n## 6. Summary of What the Evidence Does and Does Not Support\n\n**Supported by the data:**\n- Strong FY2025 gross-profit and EPS growth (both verified).\n- A large, growing equity base (~157.7 bn EGP).\n- A trailing P/E in the low-teens at the current share price.\n\n**Not supported / cannot be assessed from the data provided:**\n- Reliable net-profit growth trend (AMBIGUOUS FY2024 figure).\n- Leverage, liquidity, or solvency (no balance-sheet detail beyond equity).\n- Revenue quality, customer concentration, or segment mix.\n- Dividend policy or cash-flow generation.\n- The reason for the FY2024 restatement.\n- Any forward-looking or multi-year trend.\n\n---\n\n*Per my role, I have presented the financial evidence, flagged data-quality issues, and identified what can and cannot be concluded. I do not recommend a buy, sell, hold, or any other portfolio action. That determination is reserved for the decision agent, which will weigh this analysis against the investor's 10+ year horizon, high loss tolerance, and current 100,000 EGP cash position.*",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## 1. Horizon & Liquidity\n\n- **Investment horizon:** 10+ years, explicitly stated. This is a long-term wealth-building mandate.\n- **Liquidity needs:** None planned. No withdrawals are expected over the foreseeable period.\n- **Implication:** The full cash balance can be treated as investable without reserving a liquidity buffer. There is no need to hold a portion in cash for near-term obligations.\n\n## 2. Loss Tolerance (Willingness & Capacity)\n\n- **Willingness to accept losses:** High.\n- **Financial capacity to withstand losses:** High.\n- **Implication:** The investor can absorb significant drawdowns without being forced to sell at a loss. This opens the door to higher-volatility, higher-risk-asset allocations that a more loss-averse investor would avoid.\n\n## 3. Current Concentration\n\n- **Holdings:** None. The portfolio is 100 % cash.\n- **Concentration risk:** Nil at present. There is no existing position in any single security, sector, or geography to rebalance away from.\n- **Implication:** Any new position will be the first (and potentially the only) holding, so the investor should be mindful that a single-name or single-sector allocation would create 100 % concentration from day one.\n\n## 4. Cash Available to Commit\n\n| Item | Amount (EGP) |\n|---|---|\n| Cash on hand | 100,000.00 |\n| Cash tied up in holdings | 0.00 |\n| **Total free / commitable cash** | **100,000.00** |\n\n- No holdings exist, so nothing needs to be sold to free up capital.\n- The entire 100,000 EGP is unrestricted and could, in principle, be committed in a single tranche or staged over time.\n- At the cutoff price of **82.50 EGP per share** (TMGH), the full cash balance would purchase approximately **1,212 shares**.\n\n## 5. What the Portfolio Allows (and Does Not)\n\n- **Can be sold:** Nothing. There are no existing securities to liquidate.\n- **Free cash:** The full 100,000 EGP is unencumbered.\n- **Constraints:** None identified beyond the investor's own risk parameters. There are no margin calls, pledged assets, or contractual restrictions noted.\n\n## 6. Suitability Summary\n\n| Dimension | Assessment |\n|---|---|\n| Time horizon | Long (10+ yrs) – supports growth-oriented, higher-volatility assets |\n| Liquidity requirement | None – full capital is deployable |\n| Loss tolerance | High (both willingness and capacity) – permits concentrated or volatile positions |\n| Current concentration | Zero – a blank slate; any new holding becomes the entire portfolio |\n| Commitable capital | 100,000 EGP, all free |\n\n**Key suitability note:** Because the investor starts from zero holdings, the first purchase will define the entire portfolio's risk profile. The long horizon and high loss tolerance are consistent with a growth- or equity-heavy allocation, but the absence of diversification means the investor should be aware that a single position carries idiosyncratic risk that a diversified portfolio would not. Staging the entry (e.g., over several months) or splitting across more than one instrument could mitigate that initial-concentration risk, though the investor's stated tolerance does not strictly require it.\n\n---\n\n*This is a suitability assessment only. No specific security is recommended, no buy/sell/hold action is prescribed, and no company financials have been analysed for investment purposes.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 17.02,
+      "input_tokens": 1253,
+      "output_tokens": 3056,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 7.648,
+      "input_tokens": 1246,
+      "output_tokens": 1184,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 21.731,
+      "input_tokens": 4170,
+      "output_tokens": 3870,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 18.191,
+      "input_tokens": 3283,
+      "output_tokens": 3579,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 64.597
+}

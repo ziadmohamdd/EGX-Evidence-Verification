@@ -1,0 +1,146 @@
+{
+  "case_id": "dev_007",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "Recommendation: Sell all 200 shares of EFID to convert the equity position into cash.\n\n**Why sell, not hold or buy:**\n\n1. **Hard liquidity deadline.** The investor needs 10,000 EGP in cash within 3 months for a family wedding. The current portfolio is worth only 5,080 EGP (1,000 EGP cash + 200 × 20.40 EGP = 4,080 EGP in EFID). Even after selling every share at the cutoff price, the investor is short 4,920 EGP. Holding the shares risks that the 4,080 EGP equity component shrinks further, widening the gap. Converting to cash now locks in the maximum available proceeds.\n\n2. **Horizon mismatch.** A 3-month window is far too short for an equity position to be a reliable source of funds. The FY2025 income-statement evidence (revenue 20,915,072,432 EGP, net profit 2,695,301,670 EGP, EPS 2.18 EGP) shows a profitable and growing company, but annual fundamentals do not predict a 3-month share-price path. Market sentiment, sector news, or macro events over the next quarter can move the price in either direction, and the investor has no ability to 'wait it out' because the wedding date is fixed.\n\n3. **Low loss tolerance and capacity.** The investor states both willingness and ability to absorb losses are low. A 10–15 % drawdown on the 4,080 EGF position (a realistic 3-month equity move) would cost 400–600 EGP, directly reducing wedding funds. Selling eliminates this risk entirely.\n\n4. **Concentration risk.** 80.3 % of the portfolio is in a single stock. Selling removes the concentration and leaves 100 % cash, which is the appropriate asset mix for a 3-month fixed-date expense.\n\n5. **No basis to buy.** The investor has no surplus cash to deploy. The 1,000 EGP cash buffer is already part of the 10,000 EGP wedding budget. Any new purchase would increase the shortfall and add risk the investor cannot afford.\n\n**Important caveat – the funding gap:** Selling all 200 shares at 20.40 EGP yields 4,080 EGP, bringing total cash to 5,080 EGP. This covers only 50.8 % of the 10,000 EGP requirement. The investor must source the remaining 4,920 EGP from outside this portfolio (personal savings, family contribution, a short-term loan, etc.) before the wedding date. This recommendation does not solve the funding gap; it only ensures the portfolio portion is fully liquid and risk-free in the interim.\n\n**Risks and uncertainty:** The sale is subject to normal market liquidity, bid/ask spread, and any applicable transaction charges, so actual proceeds may be slightly below 4,080 EGP. The FY2025 evidence is limited to income-statement lines; no balance-sheet, cash-flow, or dividend data were provided, so the company's solvency and near-term cash-generation capacity could not be assessed. This does not change the recommendation, which is driven by the investor's liquidity need and risk profile rather than a view on EFID's future share price.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "EFID consolidated revenue for the year ended 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted earnings per share for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted earnings per share for the year ended 31 December 2024"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The evidence set contains only income-statement line items (revenue, net profit, EPS). No balance sheet, cash-flow statement, dividend data, or audit opinion is available, so solvency, leverage, and near-term cash-generation capacity cannot be assessed.",
+      "Only two fiscal years (FY2024, FY2025) are provided; multi-year trends, seasonality, and segment-level performance cannot be evaluated.",
+      "The 3-month share-price path for EFID is unpredictable from annual fundamentals; the recommendation is driven by the investor's liquidity need and risk profile, not by a price forecast.",
+      "Actual sale proceeds may differ from 4,080 EGP due to bid/ask spread, market liquidity, and transaction charges.",
+      "The portfolio (5,080 EGP) is insufficient to meet the 10,000 EGP wedding requirement; the 4,920 EGP shortfall must be funded from outside this portfolio."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "Recommendation: Sell all 200 shares of EFID to convert the equity position into cash.\n\n**Why sell, not hold or buy:**\n\n1. **Hard liquidity deadline.** The investor needs 10,000 EGP in cash within 3 months for a family wedding. The current portfolio is worth only 5,080 EGP (1,000 EGP cash + 200 × 20.40 EGP = 4,080 EGP in EFID). Even after selling every share at the cutoff price, the investor is short 4,920 EGP. Holding the shares risks that the 4,080 EGP equity component shrinks further, widening the gap. Converting to cash now locks in the maximum available proceeds.\n\n2. **Horizon mismatch.** A 3-month window is far too short for an equity position to be a reliable source of funds. The FY2025 income-statement evidence (revenue 20,915,072,432 EGP, net profit 2,695,301,670 EGP, EPS 2.18 EGP) shows a profitable and growing company, but annual fundamentals do not predict a 3-month share-price path. Market sentiment, sector news, or macro events over the next quarter can move the price in either direction, and the investor has no ability to 'wait it out' because the wedding date is fixed.\n\n3. **Low loss tolerance and capacity.** The investor states both willingness and ability to absorb losses are low. A 10–15 % drawdown on the 4,080 EGF position (a realistic 3-month equity move) would cost 400–600 EGP, directly reducing wedding funds. Selling eliminates this risk entirely.\n\n4. **Concentration risk.** 80.3 % of the portfolio is in a single stock. Selling removes the concentration and leaves 100 % cash, which is the appropriate asset mix for a 3-month fixed-date expense.\n\n5. **No basis to buy.** The investor has no surplus cash to deploy. The 1,000 EGP cash buffer is already part of the 10,000 EGP wedding budget. Any new purchase would increase the shortfall and add risk the investor cannot afford.\n\n**Important caveat – the funding gap:** Selling all 200 shares at 20.40 EGP yields 4,080 EGP, bringing total cash to 5,080 EGP. This covers only 50.8 % of the 10,000 EGP requirement. The investor must source the remaining 4,920 EGP from outside this portfolio (personal savings, family contribution, a short-term loan, etc.) before the wedding date. This recommendation does not solve the funding gap; it only ensures the portfolio portion is fully liquid and risk-free in the interim.\n\n**Risks and uncertainty:** The sale is subject to normal market liquidity, bid/ask spread, and any applicable transaction charges, so actual proceeds may be slightly below 4,080 EGP. The FY2025 evidence is limited to income-statement lines; no balance-sheet, cash-flow, or dividend data were provided, so the company's solvency and near-term cash-generation capacity could not be assessed. This does not change the recommendation, which is driven by the investor's liquidity need and risk profile rather than a view on EFID's future share price.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "EFID consolidated revenue for the year ended 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted earnings per share for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted earnings per share for the year ended 31 December 2024"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The evidence set contains only income-statement line items (revenue, net profit, EPS). No balance sheet, cash-flow statement, dividend data, or audit opinion is available, so solvency, leverage, and near-term cash-generation capacity cannot be assessed.",
+      "Only two fiscal years (FY2024, FY2025) are provided; multi-year trends, seasonality, and segment-level performance cannot be evaluated.",
+      "The 3-month share-price path for EFID is unpredictable from annual fundamentals; the recommendation is driven by the investor's liquidity need and risk profile, not by a price forecast.",
+      "Actual sale proceeds may differ from 4,080 EGP due to bid/ask spread, market liquidity, and transaction charges.",
+      "The portfolio (5,080 EGP) is insufficient to meet the 10,000 EGP wedding requirement; the 4,920 EGP shortfall must be funded from outside this portfolio."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 5080.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n# EFID – Financial Evidence Analysis (FY2025)\n\n## 1. Profitability\n\n| Metric | FY2025 | FY2024 | YoY Change |\n|---|---|---|---|\n| Revenue | 20,915,072,432 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01] | 16,146,545,699 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02] | +29.5 % |\n| Net profit | 2,695,301,670 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] | 1,606,727,698 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31] | +67.8 % |\n| EPS (basic & diluted) | 2.18 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] | 1.09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39] | +100 % |\n| Implied net margin | ≈ 12.9 % | ≈ 9.9 % | +3.0 pp |\n\n**Read-through:** Both revenue and profit grew strongly, and the margin expanded by roughly three percentage points, indicating the profit growth is not purely volume-driven. EPS doubling is consistent with the net-profit trajectory.\n\n## 2. Growth\n\n- Revenue CAGR over the two-year window: ≈ 29.5 % (single-year comparison only; no earlier years provided).\n- Net-profit growth (+67.8 %) materially outpaced revenue growth (+29.5 %), suggesting operating leverage or a favourable cost/mix shift.\n- **Limitation:** Only two fiscal years are available in the evidence set. A multi-year trend, seasonality, or segment-level growth cannot be assessed.\n\n## 3. Balance Sheet & Liquidity\n\n**No balance-sheet, cash-flow, or dividend data are present in the supplied evidence.** Consequently:\n\n- Total assets, liabilities, equity, debt-to-equity, current ratio, and working capital **cannot be evaluated**.\n- Operating, investing, and financing cash flows **cannot be evaluated**.\n- Dividend policy or payout ratio **cannot be evaluated**.\n\n> ⚠️ **Data-quality flag:** The absence of balance-sheet and cash-flow statements is a material gap. Any assessment of solvency, leverage, or the company's ability to service debt is **not possible** from the evidence provided.\n\n## 4. Risks (evidence-based)\n\n| Risk | Detail |\n|---|---|\n| **Data completeness** | Only the income-statement line items (revenue, net profit, EPS) are supplied. No balance sheet, cash-flow statement, segment notes, related-party disclosures, or audit opinion text are included. |\n| **Time-horizon mismatch** | The investor's horizon is **3 months**. Equity returns over a 3-month window are dominated by market sentiment and idiosyncratic news, not by the annual fundamentals shown here. The FY2025 results (year ended 31 Dec 2025) are already largely \"priced in\" at the 20.40 EGP share price. |\n| **Cash shortfall** | Current portfolio value = 1,000 EGP cash + (200 × 20.40 EGP) = **5,080 EGP**. The stated need is **10,000 EGP**, leaving a **shortfall of ≈ 4,920 EGP** that the portfolio cannot cover even if fully liquidated at the cutoff price. |\n| **Loss tolerance** | The investor reports **low** willingness and **low** ability to absorb losses. Equity price volatility over 3 months can easily exceed the 1,000 EGP cash buffer. |\n| **No dividend evidence** | No dividend per share or payout data is provided, so no near-term income return can be assumed from the holding. |\n\n## 5. Data Quality Summary\n\n- All six evidence items are marked **\"verified\"** and come from the signed FY2025 consolidated EAS report (p. 6).\n- Units are stated as **EGP** (not thousands), so figures are in whole pounds as printed.\n- No figures are flagged as AMBIGUOUS; all values are internally consistent (e.g., EPS × implied share count reconciles with net profit).\n- **Gap:** No balance sheet, cash-flow statement, notes to the financial statements, or audit opinion are included in the evidence set.\n\n## 6. Summary for the Decision Agent\n\nThe FY2025 income-statement evidence shows a profitable, growing company with expanding margins. However, the evidence set is **limited to income-statement lines only**; balance-sheet strength, cash generation, and dividend capacity are **unassessable**. The investor's 3-month horizon, 10,000 EGP cash requirement, and low loss tolerance create a structural mismatch with a 200-share equity position worth 4,080 EGP, which also leaves a ≈ 4,920 EGP funding gap. These constraints and the data gaps are the key inputs for the decision agent; **no action recommendation is made here**.",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## 1. Horizon & Liquidity Need\n\n| Item | Detail |\n|---|---|\n| Investment horizon | **3 months** (family wedding) |\n| Cash required | **10,000 EGP** within that window |\n| Nature of the need | Fixed-date, non-negotiable (a wedding) |\n\nA 3-month horizon is at the very short end of the equity-investment spectrum. Over such a window, a single-listed-share position can move several percentage points in either direction with no reliable way to \"wait it out.\"\n\n## 2. Loss Tolerance & Capacity\n\n- **Willingness to accept losses:** Low\n- **Financial ability to absorb losses:** Low\n\nBoth dimensions point the same way: the investor cannot afford, and does not want, to be exposed to equity price risk in the three months before the wedding. Any drawdown on the shareholding would directly reduce the cash available for the event.\n\n## 3. Current Concentration\n\n| Asset | Value (EGP) | Share of portfolio |\n|---|---|---|\n| Cash | 1,000 | 19.7 % |\n| EFID – 200 sh × 20.40 | 4,080 | 80.3 % |\n| **Total** | **5,080** | **100 %** |\n\nThe portfolio is **100 % concentrated in a single equity** (EFID) with a thin cash buffer. There is no diversification, no fixed-income sleeve, and no other liquid asset to fall back on.\n\n## 4. What the Portfolio Allows\n\n- **Free cash on hand:** 1,000 EGP – immediately available, no transaction cost.\n- **Sellable equity:** 200 shares of EFID. At the 18-Nov-2026 price of 20.40 EGP this represents **4,080 EGP** of gross proceeds, subject to normal market liquidity, bid/ask spread, and any applicable transaction charges. No lock-up, pledge, or restriction is noted in the profile.\n- **Total liquidisable value (worst-case, at current price):** ≈ 5,080 EGP.\n\n## 5. The Cash Gap\n\n| | EGP |\n|---|---|\n| Cash needed for wedding | 10,000 |\n| Cash already held | (1,000) |\n| Proceeds if all EFID shares sold at 20.40 | (4,080) |\n| **Shortfall** | **4,920** |\n\nEven in the most favourable scenario—selling every share at today's price with zero slippage—the portfolio covers only **50.8 %** of the 10,000 EGP requirement. The investor is **4,920 EGP short** and must source that amount from outside this portfolio (savings, family contribution, a short-term loan, etc.).\n\n## 6. How Much Cash Could Reasonably Be Committed to New Investments\n\nGiven:\n\n- a hard 3-month deadline,\n- low loss willingness **and** low loss capacity,\n- a single-stock concentration already at ~80 % of assets,\n- and a cash shortfall that means the investor cannot spare any of the existing 5,080 EGP,\n\n**the amount of portfolio cash that could reasonably be committed to a new investment is effectively zero.** Deploying any portion of the 1,000 EGP cash or the 4,080 EGP equity into a new position would (a) increase the risk of not meeting the 10,000 EGP target and (b) expose the investor to a loss they have stated they cannot absorb.\n\n## 7. Suitability Summary\n\n| Dimension | Assessment |\n|---|---|\n| Horizon vs. asset type | 3 months is **mismatched** with a 100 %-equity, single-name portfolio. |\n| Liquidity adequacy | Portfolio (5,080 EGP) is **insufficient** for the stated 10,000 EGP need. |\n| Loss tolerance / capacity | Both **low**; equity volatility over 3 months is inconsistent with this profile. |\n| Concentration risk | **Extreme** – one stock, no diversification. |\n| Commitment capacity | **Nil** – no surplus cash can be allocated to a new investment without jeopardising the wedding budget. |\n\n> **Note on the EFID financial evidence supplied:** The FY2025 consolidated figures (revenue ≈ 20.9 bn EGP, net profit ≈ 2.7 bn EGP, EPS 2.18 EGP) are noted for completeness but, per the scope of this assessment, are **not** used to form a view on the stock's future price or to justify any buy/hold/sell decision.\n\n---\n\n*This is a suitability and liquidity assessment only. No recommendation to buy, sell, hold, or rebalance is made. The investor should discuss the 4,920 EGP funding gap and the 3-month cash plan with their adviser before the wedding date.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 18.181,
+      "input_tokens": 1206,
+      "output_tokens": 2264,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 16.858,
+      "input_tokens": 1199,
+      "output_tokens": 2014,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 25.564,
+      "input_tokens": 3892,
+      "output_tokens": 3430,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 60.609
+}

@@ -1,0 +1,157 @@
+{
+  "case_id": "dev_008",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ETEL",
+    "shares": 50,
+    "explanation": "Your friend's numbers are wrong on both counts. The audited FY2025 consolidated statement (unit L.E. (000)) shows net profit of 22,578,063 × 1,000 = 22,578,063,000 EGP (≈ 22.6 bn), not 225.9 bn. The FY2024 figure is 10,111,328 × 1,000 = 10,111,328,000 EGP (≈ 10.1 bn). The year-on-year multiple is about 2.2×, not 'more than ten times.' Your friend appears to have misread the thousands-unit figure as if it were already in millions.\n\nThat said, the underlying growth is genuinely strong: revenue rose ~31 % (81.7 bn → 106.7 bn) and net profit more than doubled, with the net margin expanding from roughly 12 % to 21 %. Leverage improved (total liabilities fell from ~3.3× equity to ~2.6×), though a D/E of ~2.55× is still high for a telecom.\n\nWhy not put all 50,000 EGP into ETEL:\n• You already hold 150 shares worth 21,292.50 EGP, about 30 % of the 71,292.50 EGP portfolio. Buying all 50,000 EGP in ETEL would push the single-stock weight to roughly 70 %, far beyond the 50 % diversification cap and well outside what a medium-risk, 5-year-horizon profile comfortably supports.\n• The evidence covers only two fiscal years. The dramatic margin expansion (12 % → 21 %) could include one-off items, FX effects, or a weak-2024 base. There is no 3- or 5-year trend, no operating-cash-flow, capex, dividend, or segment data to confirm the growth is structural.\n• ETEL is a single-country, single-sector, highly leveraged name. A sector-specific or macro shock could produce a 30-50 % drawdown, which sits at the upper edge of your stated loss tolerance.\n\nWhy a modest 50-share buy is still reasonable:\n• The verified growth is substantial and the balance-sheet trajectory is improving.\n• At 141.95 EGP per share, 50 shares cost 7,097.50 EGP, leaving 42,902.50 EGP in cash. The ETEL position rises to 200 shares (28,390 EGP), or about 40 % of the portfolio – a meaningful but not excessive increase, and comfortably under the 50 % cap.\n• Keeping ~43,000 EGP in cash preserves the ability to diversify into other names or wait for a better entry, which is prudent given the limited evidence and your medium risk profile.\n\nRisks and uncertainty: This is guidance, not a guarantee. The two-year data window is the main limitation; if the margin expansion proves to be a one-off, the earnings base could normalise. The high leverage means interest-rate or revenue shocks would hit equity hard. Egyptian-listed equities carry country, currency, and regulatory risk. The 5-year horizon is workable but not long enough to fully absorb a deep single-stock drawdown and recover. Monitor the next annual report for confirmation that the margin and growth are sustainable before considering any further additions.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit for the year FY2025: 22,578,063 (L.E. (000)) = 22,578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL net profit for the year FY2024: 10,111,328 (L.E. (000)) = 10,111,328,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL operating revenues FY2025: 106,672,946 (L.E. (000)) = 106,672,946,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "ETEL operating revenues FY2024: 81,677,812 (L.E. (000)) = 81,677,812,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "ETEL total assets (consolidated) 31/12/2025: 225,882,527 (L.E. (000)) = 225,882,527,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL total equity (consolidated) 31/12/2025: 63,687,826 (L.E. (000)) = 63,687,826,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55 (EPS FY2025: 11.93) – AMBIGUOUS unit: page unit line reads 'L.E.(000)' but the row heading says 'L.E. / Share'. Cannot be used in calculations. Affects the P/E valuation check (141.95 / EPS) that the financial analyst cited as ≈ 11.9×; without a confirmed EPS the stock's relative valuation cannot be independently verified from the evidence.",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56 (EPS FY2024: 4.79) – same AMBIGUOUS unit issue. Affects the year-on-year EPS growth comparison."
+    ],
+    "limitations": [
+      "Only two fiscal years (FY2024, FY2025) are available; no multi-year trend to confirm whether the margin expansion is structural or a one-off.",
+      "No operating cash-flow, capex, dividend, or segment data in the evidence set.",
+      "EPS figures are AMBIGUOUS due to a unit-label conflict, so the P/E ratio and per-share growth rate cannot be independently verified from the evidence.",
+      "Single-country (Egypt), single-sector (telecom) exposure; no diversification within the portfolio beyond ETEL and cash.",
+      "This is guidance based on the provided evidence and is not a guarantee of future returns."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ETEL",
+    "shares": 50,
+    "explanation": "Your friend's numbers are wrong on both counts. The audited FY2025 consolidated statement (unit L.E. (000)) shows net profit of 22,578,063 × 1,000 = 22,578,063,000 EGP (≈ 22.6 bn), not 225.9 bn. The FY2024 figure is 10,111,328 × 1,000 = 10,111,328,000 EGP (≈ 10.1 bn). The year-on-year multiple is about 2.2×, not 'more than ten times.' Your friend appears to have misread the thousands-unit figure as if it were already in millions.\n\nThat said, the underlying growth is genuinely strong: revenue rose ~31 % (81.7 bn → 106.7 bn) and net profit more than doubled, with the net margin expanding from roughly 12 % to 21 %. Leverage improved (total liabilities fell from ~3.3× equity to ~2.6×), though a D/E of ~2.55× is still high for a telecom.\n\nWhy not put all 50,000 EGP into ETEL:\n• You already hold 150 shares worth 21,292.50 EGP, about 30 % of the 71,292.50 EGP portfolio. Buying all 50,000 EGP in ETEL would push the single-stock weight to roughly 70 %, far beyond the 50 % diversification cap and well outside what a medium-risk, 5-year-horizon profile comfortably supports.\n• The evidence covers only two fiscal years. The dramatic margin expansion (12 % → 21 %) could include one-off items, FX effects, or a weak-2024 base. There is no 3- or 5-year trend, no operating-cash-flow, capex, dividend, or segment data to confirm the growth is structural.\n• ETEL is a single-country, single-sector, highly leveraged name. A sector-specific or macro shock could produce a 30-50 % drawdown, which sits at the upper edge of your stated loss tolerance.\n\nWhy a modest 50-share buy is still reasonable:\n• The verified growth is substantial and the balance-sheet trajectory is improving.\n• At 141.95 EGP per share, 50 shares cost 7,097.50 EGP, leaving 42,902.50 EGP in cash. The ETEL position rises to 200 shares (28,390 EGP), or about 40 % of the portfolio – a meaningful but not excessive increase, and comfortably under the 50 % cap.\n• Keeping ~43,000 EGP in cash preserves the ability to diversify into other names or wait for a better entry, which is prudent given the limited evidence and your medium risk profile.\n\nRisks and uncertainty: This is guidance, not a guarantee. The two-year data window is the main limitation; if the margin expansion proves to be a one-off, the earnings base could normalise. The high leverage means interest-rate or revenue shocks would hit equity hard. Egyptian-listed equities carry country, currency, and regulatory risk. The 5-year horizon is workable but not long enough to fully absorb a deep single-stock drawdown and recover. Monitor the next annual report for confirmation that the margin and growth are sustainable before considering any further additions.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit for the year FY2025: 22,578,063 (L.E. (000)) = 22,578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL net profit for the year FY2024: 10,111,328 (L.E. (000)) = 10,111,328,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL operating revenues FY2025: 106,672,946 (L.E. (000)) = 106,672,946,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "ETEL operating revenues FY2024: 81,677,812 (L.E. (000)) = 81,677,812,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "ETEL total assets (consolidated) 31/12/2025: 225,882,527 (L.E. (000)) = 225,882,527,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL total equity (consolidated) 31/12/2025: 63,687,826 (L.E. (000)) = 63,687,826,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55 (EPS FY2025: 11.93) – AMBIGUOUS unit: page unit line reads 'L.E.(000)' but the row heading says 'L.E. / Share'. Cannot be used in calculations. Affects the P/E valuation check (141.95 / EPS) that the financial analyst cited as ≈ 11.9×; without a confirmed EPS the stock's relative valuation cannot be independently verified from the evidence.",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56 (EPS FY2024: 4.79) – same AMBIGUOUS unit issue. Affects the year-on-year EPS growth comparison."
+    ],
+    "limitations": [
+      "Only two fiscal years (FY2024, FY2025) are available; no multi-year trend to confirm whether the margin expansion is structural or a one-off.",
+      "No operating cash-flow, capex, dividend, or segment data in the evidence set.",
+      "EPS figures are AMBIGUOUS due to a unit-label conflict, so the P/E ratio and per-share growth rate cannot be independently verified from the evidence.",
+      "Single-country (Egypt), single-sector (telecom) exposure; no diversification within the portfolio beyond ETEL and cash.",
+      "This is guidance based on the provided evidence and is not a guarantee of future returns."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 42902.5,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n# Telecom Egypt (ETEL) – Evidence Analysis\n\n## 1. Correcting the Friend's Claim\n\nThe friend's statement is **wrong on both counts**.\n\n| Figure | Friend's claim | Actual (from evidence) |\n|---|---|---|\n| 2025 net profit | 225.9 billion EGP | **22,578,063,000 EGP ≈ 22.58 bn EGP** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] (22,578,063 × 1,000, unit L.E.(000)) |\n| 2024 net profit | (implied ≈ 22.6 bn) | **10,111,328,000 EGP ≈ 10.11 bn EGP** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] |\n| Multiple | \"more than ten times\" | **≈ 2.23×** (22,578,063 ÷ 10,111,328) |\n\nThe friend appears to have misread the thousands-unit figure (22,578,063) as if it were already in millions, inflating the number ten-fold. The profit did roughly **double**, not multiply ten-fold.\n\n---\n\n## 2. Profitability & Growth (FY2025 vs FY2024)\n\nAll figures converted from L.E.(000) to whole EGP.\n\n| Metric | FY2025 | FY2024 | Change |\n|---|---|---|---|\n| Operating revenue | 106,672,946,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01] | 81,677,812,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02] | +30.6 % |\n| Net profit | 22,578,063,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35] | 10,111,328,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] | +123.3 % |\n| Net margin (NP ÷ Revenue) | ≈ 21.2 % | ≈ 12.4 % | +8.8 pp |\n| EPS (L.E. / share) | 11.93 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] | 4.79 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56] | +149.1 % |\n\n> **Unit note on EPS:** The page-level unit line reads \"L.E.(000)\", but the row heading explicitly states \"L.E. / Share\" and the values (11.93, 4.79) are clearly per-share EGP, not thousands. I treat them as **11.93 EGP** and **4.79 EGP** per share. Flagged as a minor **AMBIGUOUS** unit label in the printed report; no computation is affected because the per-share values are unambiguous in context.\n\nThe profit jump is substantial and is driven by both top-line growth (~31 %) and a large margin expansion (~12 % → ~21 %).\n\n---\n\n## 3. Balance-Sheet Snapshot (Consolidated)\n\n| Item | 31/12/2025 | 31/12/2024 (reclassified) |\n|---|---|---|\n| Total assets | 225,882,527,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31] | 197,952,788,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31] |\n| Total equity | 63,687,826,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] | 45,937,991,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] |\n| Implied total liabilities (Assets − Equity) | ≈ 162,194,701,000 EGP | ≈ 152,014,797,000 EGP |\n| Debt-to-equity (liabilities ÷ equity) | ≈ **2.55×** | ≈ **3.31×** |\n\n- Equity grew ~38.6 % y/y, outpacing the ~14.1 % asset growth, so leverage **improved** (D/E fell from ~3.3× to ~2.5×).\n- Even so, a D/E of 2.55× is still a **highly leveraged** capital structure for a telecom operator. The company carries roughly 162 bn EGP of liabilities against 64 bn EGP of equity.\n\n---\n\n## 4. Risks & Data-Quality Flags\n\n| # | Item | Detail |\n|---|---|---|\n| R1 | **Leverage** | D/E ≈ 2.55× [computed from p5-31, p5-45]. A downturn in revenue or a rise in interest rates would pressure the already-thin equity cushion. |\n| R2 | **Concentration / single-stock risk** | The investor's entire equity sleeve is ETEL (150 sh × 141.95 = 21,292.50 EGP). Adding the full 50,000 EGP cash would make ETEL ≈ 70 % of the 71,292.50 EGP portfolio. |\n| R3 | **Valuation context** | At 141.95 EGP/share the market is pricing EPS of 11.93 EGP at a P/E of ≈ 11.9×. Whether that is cheap or fair depends on the sustainability of the 21 % margin, which is not yet multi-year evidence. |\n| R4 | **One-year data only** | The evidence set covers FY2025 and FY2024. There is no 3- or 5-year trend to confirm the margin expansion is structural rather than a one-off (e.g., one-time items, FX revaluation, or a base-effect from a weak 2024). |\n| R5 | **AMBIGUOUS unit on EPS row** | Page unit \"L.E.(000)\" conflicts with the row label \"L.E. / Share\". Values used as per-share EGP; no computation affected, but flagged for transparency. |\n| R6 | **No dividend, cash-flow, or segment data** | The evidence provided does not include operating cash flow, capex, dividend policy, or segment breakdown, limiting the depth of the analysis. |\n\n---\n\n## 5. Relevance to the Investor's Profile\n\n- **Goal / horizon:** Top-up retirement savings over 5 years. A single, highly leveraged Egyptian-listed telecom is a concentrated, single-country, single-sector bet.\n- **Risk tolerance:** Medium willingness and medium ability to withstand losses. A 2.55× D/E company in a single emerging market can see share prices swing 30-50 % in a stress scenario; that is at the upper edge of \"medium\" tolerance.\n- **Liquidity:** The investor keeps a separate emergency fund, so the 50,000 EGP cash is not a liquidity buffer. However, deploying 100 % of it into one stock eliminates the ability to diversify or wait for a better entry.\n- **Current exposure:** ETEL is already ~30 % of the portfolio. Adding all 50,000 EGP would push it to ~70 %, a significant concentration step.\n\n---\n\n## 6. Summary of Findings (no action recommendation)\n\n- The friend's \"225.9 bn / 10×\" story is **incorrect**; the verified figures are **22.58 bn EGP** in 2025 vs **10.11 bn EGP** in 2024, a **2.2×** increase [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35, p6-36].\n- The underlying business showed **strong FY2025 growth** (revenue +31 %, net profit +123 %, EPS +149 %) and **improving leverage** (D/E 3.3× → 2.5×).\n- However, the evidence set is **limited to two fiscal years**, the balance sheet remains **highly leveraged**, and the investor's profile (medium risk, 5-year horizon, single-country exposure) raises **concentration and volatility concerns** if the entire cash balance is added to one position.\n- I have **not** been asked to, and do not, recommend a buy, sell, or hold. The decision agent should weigh the above evidence against the investor's full portfolio, diversification policy, and risk limits.",
+    "investor": "\n\n## Fact-check on your friend's numbers\n\nYour friend has misread the figures. The audited consolidated statement (p. 6, unit L.E. (000)) shows:\n\n| | 31/12/2025 | 31/12/2024 |\n|---|---|---|\n| Net profit for the year | 22,578,063 × 1,000 = **≈ 22.6 billion EGP** | 10,111,328 × 1,000 = **≈ 10.1 billion EGP** |\n\n- The 2025 profit is roughly **22.6 billion**, not 225.9 billion. Your friend appears to have shifted a decimal (or dropped the \"thousands\" multiplier).\n- The 2025 figure is about **2.2×** the 2024 figure, not \"more than ten times.\"\n\nSo the headline is directionally right (profit grew substantially) but the magnitude is off by an order of magnitude.\n\n---\n\n## Suitability assessment\n\n### Horizon & goal\nA 5-year horizon aimed at topping up retirement savings is workable for equity exposure, but it is not a long enough runway to absorb a deep single-stock drawdown and recover fully. Medium loss-willingness and medium financial capacity to absorb losses reinforce that a large, undiversified equity position is at the upper edge of what is comfortable.\n\n### Liquidity\nYou keep a separate emergency fund, so the 50,000 EGP cash in this portfolio is not earmarked for short-term bills. That is a point in favour of committing some of it to a longer-holding asset. However, \"free\" does not mean \"all at once into one ticker.\"\n\n### Current concentration\n| Item | Value (EGP) |\n|---|---|\n| Cash | 50,000.00 |\n| ETEL – 150 sh × 141.95 | 21,292.50 |\n| **Total portfolio** | **71,292.50** |\n\nETEL already represents **≈ 30 %** of the portfolio. If the entire 50,000 EGP cash were added to ETEL, the single-stock weight would jump to **≈ 59 %** of a 121,292.50 EGP portfolio. For an investor with medium loss tolerance and a 5-year window, that level of single-name concentration is a significant risk factor: a sector-specific or company-specific shock would dominate the whole portfolio.\n\n### What the portfolio allows\n- **Sellable:** 150 ETEL shares (≈ 21,293 EGP at the cutoff price) – you could reduce or exit the position if you wished to rebalance.\n- **Free cash:** 50,000 EGP – not tied to any near-term obligation given the separate emergency fund.\n- **No other holdings** are listed, so there is no existing diversification to lean on.\n\n### How much cash could reasonably be committed\nGiven medium loss willingness/capacity, a 5-year horizon, and the existing 30 % ETEL weight, committing **all** 50,000 EGP to the same single stock would push concentration well beyond what the stated risk profile comfortably supports. A more measured approach would keep the single-stock share of the total portfolio within a range that a medium-risk investor can tolerate (the team would set that threshold), and would consider whether the remaining cash is better allocated to a broader basket or held in a lower-volatility instrument while the retirement goal is still 5 years out.\n\n---\n\n### Bottom line for your question\n\n1. **The friend's numbers are wrong** – profit was ≈ 22.6 bn, not 225.9 bn, and the year-on-year multiple is ≈ 2.2×, not >10×.\n2. **Putting all 50,000 EGP into more ETEL** would take a single stock from ~30 % to ~59 % of your portfolio. With a 5-year horizon, medium loss tolerance, and no other holdings to offset, that is a concentration step that sits at the aggressive end of what your stated profile supports. The portfolio *allows* you to do it (the cash is free, the shares are liquid), but the suitability profile does not clearly *support* doing it in full.\n\nI'm flagging the fit, not recommending a trade. The next step for the team would be to decide the target single-stock cap and the allocation split for the 50,000 EGP."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 26.935,
+      "input_tokens": 1579,
+      "output_tokens": 4573,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 16.412,
+      "input_tokens": 1572,
+      "output_tokens": 2513,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 58.477,
+      "input_tokens": 5113,
+      "output_tokens": 5169,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 101.83
+}
