@@ -1,0 +1,113 @@
+{
+  "case_id": "dev_001",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "Given the investor's 5-7 year horizon to fund child's university fees and a medium risk profile, holding the current position in ETEL is appropriate. For the year ended 31/12/2025, ETEL reported strong operating revenues of 106,672,946,000 EGP, gross profit of 44,839,110,000 EGP, and a net profit for the year of 22,578,063,000 EGP, showing significant growth compared to the 2024 net profit of 10,111,328,000 EGP. The basic and diluted earnings per share for 2025 reached 11.93 EGP. The current portfolio holds 300 shares of ETEL valued at 141.95 EGP per share, alongside 20,000.00 EGP in cash. We do not buy additional shares because further purchases would risk overexposure relative to the portfolio limit, and keeping cash provides liquidity reserves. This is guidance, not a guarantee of returns; equity investments carry market volatility risks.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "For the year ended 31/12/2025, ETEL reported strong operating revenues of 106,672,946,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+        "stated_value": 44839110000.0,
+        "statement": "gross profit of 44,839,110,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "and a net profit for the year of 22,578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "showing significant growth compared to the 2024 net profit of 10,111,328,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "The basic and diluted earnings per share for 2025 reached 11.93 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45"
+    ],
+    "limitations": [
+      "Past financial performance does not guarantee future results.",
+      "Stock prices fluctuate and may decline, impacting the value of savings for the target horizon."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "Given the investor's 5-7 year horizon to fund child's university fees and a medium risk profile, holding the current position in ETEL is appropriate. For the year ended 31/12/2025, ETEL reported strong operating revenues of 106,672,946,000 EGP, gross profit of 44,839,110,000 EGP, and a net profit for the year of 22,578,063,000 EGP, showing significant growth compared to the 2024 net profit of 10,111,328,000 EGP. The basic and diluted earnings per share for 2025 reached 11.93 EGP. The current portfolio holds 300 shares of ETEL valued at 141.95 EGP per share, alongside 20,000.00 EGP in cash. We do not buy additional shares because further purchases would risk overexposure relative to the portfolio limit, and keeping cash provides liquidity reserves. This is guidance, not a guarantee of returns; equity investments carry market volatility risks.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "For the year ended 31/12/2025, ETEL reported strong operating revenues of 106,672,946,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+        "stated_value": 44839110000.0,
+        "statement": "gross profit of 44,839,110,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "and a net profit for the year of 22,578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "showing significant growth compared to the 2024 net profit of 10,111,328,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "The basic and diluted earnings per share for 2025 reached 11.93 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45"
+    ],
+    "limitations": [
+      "Past financial performance does not guarantee future results.",
+      "Stock prices fluctuate and may decline, impacting the value of savings for the target horizon."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 3.574,
+      "input_tokens": 1799,
+      "output_tokens": 886,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 3.579
+}

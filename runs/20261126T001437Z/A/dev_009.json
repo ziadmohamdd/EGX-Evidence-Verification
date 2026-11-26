@@ -1,0 +1,60 @@
+{
+  "case_id": "dev_009",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "We cannot recommend buying or determine if the share is cheap because the primary financial figures for revenue and net profit are marked AMBIGUOUS due to conflicting unit indicators on page 2 of the report. Furthermore, calculating a reliable full-year 2026 earnings per share and price-to-earnings ratio requires unambiguous income statement data or full-year projections rather than simply annualizing nine-month figures without clear metrics. Therefore, evidence is insufficient to make a responsible decision.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Revenue and net profit figures are ambiguous due to conflicting unit labels in the source report.",
+      "Nine-month results are insufficient to accurately project full-year performance without additional guidance."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "We cannot recommend buying or determine if the share is cheap because the primary financial figures for revenue and net profit are marked AMBIGUOUS due to conflicting unit indicators on page 2 of the report. Furthermore, calculating a reliable full-year 2026 earnings per share and price-to-earnings ratio requires unambiguous income statement data or full-year projections rather than simply annualizing nine-month figures without clear metrics. Therefore, evidence is insufficient to make a responsible decision.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Revenue and net profit figures are ambiguous due to conflicting unit labels in the source report.",
+      "Nine-month results are insufficient to accurately project full-year performance without additional guidance."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 3.082,
+      "input_tokens": 1597,
+      "output_tokens": 294,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 3.086
+}

@@ -1,0 +1,101 @@
+{
+  "case_id": "dev_012",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "We cannot verify Edita's net profit growth for 2025 compared with 2024 because the 2025 net profit figure is marked AMBIGUOUS as it is covered by a stamp on the scanned page. Therefore, we cannot determine if the profit grew by more than 50% to justify buying more shares. However, based on the existing holding of 1000 shares of EFID at the price of 20.40 EGP per share, and keeping in mind the investor profile, we recommend holding the existing position. The 2025 revenue is 20,915,072,432 EGP and 2024 revenue is 16,146,545,699 EGP, showing solid top-line performance, but net profit growth figures are incomplete due to the ambiguous 2025 data.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "The consolidated revenue for the period ending 31 December 2025 is 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "The consolidated revenue for the period ending 31 December 2024 is 16,146,545,699 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "The consolidated net profit for the year ended 31 December 2024 is 1,606,727,698 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "The basic and diluted earnings per share for the period ended 31 December 2025 is 2.18 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "The 2025 net profit figure is covered by a stamp on the scanned page and is unusable, preventing a complete calculation of net profit growth for 2025.",
+      "This guidance is based strictly on the provided documents up to 2026-11-18 and is not a guarantee of returns."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "We cannot verify Edita's net profit growth for 2025 compared with 2024 because the 2025 net profit figure is marked AMBIGUOUS as it is covered by a stamp on the scanned page. Therefore, we cannot determine if the profit grew by more than 50% to justify buying more shares. However, based on the existing holding of 1000 shares of EFID at the price of 20.40 EGP per share, and keeping in mind the investor profile, we recommend holding the existing position. The 2025 revenue is 20,915,072,432 EGP and 2024 revenue is 16,146,545,699 EGP, showing solid top-line performance, but net profit growth figures are incomplete due to the ambiguous 2025 data.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "The consolidated revenue for the period ending 31 December 2025 is 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "The consolidated revenue for the period ending 31 December 2024 is 16,146,545,699 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "The consolidated net profit for the year ended 31 December 2024 is 1,606,727,698 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "The basic and diluted earnings per share for the period ended 31 December 2025 is 2.18 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "The 2025 net profit figure is covered by a stamp on the scanned page and is unusable, preventing a complete calculation of net profit growth for 2025.",
+      "This guidance is based strictly on the provided documents up to 2026-11-18 and is not a guarantee of returns."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 12.833,
+      "input_tokens": 1354,
+      "output_tokens": 761,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 12.836
+}

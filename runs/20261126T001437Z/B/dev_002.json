@@ -1,0 +1,107 @@
+{
+  "case_id": "dev_002",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 600,
+    "explanation": "Given the investor's high risk tolerance, long-term horizon, and capital of 100,000.00 EGP, buying shares in TMGH is recommended. TMGH achieved a consolidated gross profit of 20,855,400,384 LE in 2025 and a consolidated net profit of 18,201,981,482 LE in 2025. Total equity as of 31 December 2025 was 157,708,140,765 LE, and earnings per share was 6.98 LE. At the share price of 82.50 EGP, buying 600 shares costs 49,500.00 EGP, leaving 50,500.00 EGP in cash. This keeps the total value of TMGH holdings at 49,500.00 EGP out of a total portfolio value of 100,000.00 EGP (49.5%), complying strictly with the diversification rule that no single company may exceed 50% of the portfolio. Figure TMGH-TMGH_FY2025_consolidated_en-p7-56 is ambiguous due to an auditor's stamp, which affects the exact comparison of the 2024 restated net profit, but the verified 2025 figures provide sufficient support for a long-term investment decision. This is guidance, not a guarantee of returns, and investing in equities carries market risks.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "TMGH achieved a consolidated gross profit of 20,855,400,384 LE in 2025 and a consolidated net profit of 18,201,981,482 LE in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH achieved a consolidated gross profit of 20,855,400,384 LE in 2025 and a consolidated net profit of 18,201,981,482 LE in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity as of 31 December 2025 was 157,708,140,765 LE, and earnings per share was 6.98 LE."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Total equity as of 31 December 2025 was 157,708,140,765 LE, and earnings per share was 6.98 LE."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "Guidance is based solely on the provided evidence up to November 2018/2026 cutoff and does not guarantee returns.",
+      "Uncertainty remains regarding the exact historical restated 2024 net profit due to an auditor's stamp."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 600,
+    "explanation": "Given the investor's high risk tolerance, long-term horizon, and capital of 100,000.00 EGP, buying shares in TMGH is recommended. TMGH achieved a consolidated gross profit of 20,855,400,384 LE in 2025 and a consolidated net profit of 18,201,981,482 LE in 2025. Total equity as of 31 December 2025 was 157,708,140,765 LE, and earnings per share was 6.98 LE. At the share price of 82.50 EGP, buying 600 shares costs 49,500.00 EGP, leaving 50,500.00 EGP in cash. This keeps the total value of TMGH holdings at 49,500.00 EGP out of a total portfolio value of 100,000.00 EGP (49.5%), complying strictly with the diversification rule that no single company may exceed 50% of the portfolio. Figure TMGH-TMGH_FY2025_consolidated_en-p7-56 is ambiguous due to an auditor's stamp, which affects the exact comparison of the 2024 restated net profit, but the verified 2025 figures provide sufficient support for a long-term investment decision. This is guidance, not a guarantee of returns, and investing in equities carries market risks.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "TMGH achieved a consolidated gross profit of 20,855,400,384 LE in 2025 and a consolidated net profit of 18,201,981,482 LE in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH achieved a consolidated gross profit of 20,855,400,384 LE in 2025 and a consolidated net profit of 18,201,981,482 LE in 2025."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity as of 31 December 2025 was 157,708,140,765 LE, and earnings per share was 6.98 LE."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "Total equity as of 31 December 2025 was 157,708,140,765 LE, and earnings per share was 6.98 LE."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "Guidance is based solely on the provided evidence up to November 2018/2026 cutoff and does not guarantee returns.",
+      "Uncertainty remains regarding the exact historical restated 2024 net profit due to an auditor's stamp."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 50500.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 600
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 3.054,
+      "input_tokens": 1353,
+      "output_tokens": 957,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 3.058
+}

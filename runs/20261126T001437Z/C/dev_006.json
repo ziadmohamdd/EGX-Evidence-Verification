@@ -1,0 +1,94 @@
+{
+  "case_id": "dev_006",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "نظراً لوجود غموض في البيانات المالية الأساسية مثل صافي ربح العام بعد الضرائب للعام المالي 2025 وإيرادات عام 2024، مع وجود أرباح قوية لكل سهم وعائدات جيدة، فإن الاحتفاظ بالأسهم الحالية وعدم إجراء عمليات شراء أو بيع جديدة هو القرار الأنسب لحماية رأس المال مع تحقيق أهداف المستثمر على مدى 3 إلى 5 سنوات لشراء شقة.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "نصيب السهم فى الأرباح بلغ 6.98 جنيه."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "وجود أرقام غامضة وغير واضحة في البيانات المالية لعام 2024 و 2025 يمنع اتخاذ قرار استثماري بالتوسع أو الشراء الإضافي.",
+      "عدم توفر بنود الميزانية العمومية التفصيلية يحد من القدرة على تقييم المخاطر المالية بشكل كامل."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "نظراً لوجود غموض في البيانات المالية الأساسية مثل صافي ربح العام بعد الضرائب للعام المالي 2025 وإيرادات عام 2024، مع وجود أرباح قوية لكل سهم وعائدات جيدة، فإن الاحتفاظ بالأسهم الحالية وعدم إجراء عمليات شراء أو بيع جديدة هو القرار الأنسب لحماية رأس المال مع تحقيق أهداف المستثمر على مدى 3 إلى 5 سنوات لشراء شقة.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "نصيب السهم فى الأرباح بلغ 6.98 جنيه."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09"
+    ],
+    "limitations": [
+      "وجود أرقام غامضة وغير واضحة في البيانات المالية لعام 2024 و 2025 يمنع اتخاذ قرار استثماري بالتوسع أو الشراء الإضافي.",
+      "عدم توفر بنود الميزانية العمومية التفصيلية يحد من القدرة على تقييم المخاطر المالية بشكل كامل."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 60000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "Based on the provided evidence for Talaat Moustafa Group Holding (TMGH) and your investor profile, here is the financial analysis of your holdings and data quality. *(Note: As an investment analyst, I provide the analysis and flag data issues, but I do not make a final buy/sell recommendation).*\n\n### Portfolio Holdings & Current Value\n* **Cash:** 60,000.00 EGP [Investor Profile]\n* **TMGH Shares:** 200 shares at a price of 82.50 EGP per share = 16,500.00 EGP\n* **Total Portfolio Value:** 76,500.00 EGP\n\n---\n\n### Financial Analysis (TMGH FY2025)\n\n#### 1. Profitability & Growth\n* **Consolidated Revenue:** Recorded at **62,495,144,197 EGP** for the period ending December 31, 2025 [TMGH-TMGH_FY2025_results_summary_ar-p1-01]. The report shows a growth rate of **46%** [TMGH-TMGH_FY2025_results_summary_ar-p1-01].\n* **Earnings Per Share (EPS):** Consolidated EPS reached **6.98 EGP** for the period ending December 31, 2025 [TMGH-TMGH_FY2025_results_summary_ar-p1-11], compared to 4.37 EGP in the prior period [TMGH-TMGH_FY2025_results_summary_ar-p1-11].\n\n#### 2. Balance Sheet & Risks\n* *Note:* The provided evidence snippet does not contain specific balance sheet line items (such as total assets, total liabilities, or debt levels) to fully assess leverage or solvency risks.\n\n#### 3. Data Quality & Ambiguities (Critical Caveats)\nPer the strict instructions to flag and avoid computing with ambiguous figures:\n* **2024 Revenue:** The comparative consolidated revenue for December 31, 2024, is **AMBIGUOUS** due to an unclear long number without proper separators (`٤٢٠٦٧٠٠٢٨٣٠٢٨٨`) and extractor uncertainty [TMGH-TMGH_FY2025_results_summary_ar-p1-02]. \n* **2025 Net Profit After Tax:** The consolidated net profit for December 31, 2025, is marked **AMBIGUOUS** due to unclear comma/digit separators (`١٨٠٢٠١,٩٨١٠٤٨٢`) and extractor uncertainty [TMGH-TMGH_FY2025_results_summary_ar-p1-09]. \n\n### Alignment with Investor Profile\n* **Horizon & Goal:** Your 3-5 year horizon to save for an apartment matches a medium-term investment strategy, though equities can experience volatility over this timeframe.\n* **Risk Tolerance:** Your medium willingness and financial ability to withstand losses mean you should be mindful that data ambiguities [TMGH-TMGH_FY2025_results_summary_ar-p1-09] increase analytical risk, as net profit figures cannot be reliably computed or verified from the primary text.",
+    "investor": "As the investor-suitability analyst on the investment team, my assessment focuses strictly on the investor's profile, constraints, and current portfolio structure, without analyzing company financials or recommending an action.\n\n### 1. Investment Horizon\n* **Assessment:** **3 to 5 years.**\n* **Suitability:** This is a medium-term horizon. It is generally sufficient to absorb some market volatility, but because the specific goal is purchasing an apartment, the timeline is relatively rigid compared to retirement or long-term wealth accumulation. As the 3–5 year window approaches its end, the portfolio will need to transition toward capital preservation to ensure the funds are available when needed.\n\n### 2. Liquidity Needs\n* **Assessment:** **Low immediate portfolio liquidity required (Emergency fund is separate).**\n* **Suitability:** Because the investor maintains a separate emergency fund, the capital inside this investment portfolio does not need to be kept in ultra-liquid, short-term cash instruments for day-to-day emergencies. However, capital should remain reasonably accessible so it can be liquidated in 3 to 5 years for the real estate purchase.\n\n### 3. Loss Willingness and Capacity\n* **Assessment:** **Medium willingness and medium financial ability to accept losses.**\n* **Suitability:** The investor can tolerate moderate drawdowns and market fluctuations psychologically and financially, but cannot afford catastrophic losses, as the ultimate goal is a tangible down payment or purchase price for an apartment. High-risk, highly speculative strategies that risk permanent capital destruction are misaligned with this profile.\n\n### 4. Current Concentration and Portfolio Allowance\n* **Current Holdings Breakdown:**\n  * **Cash:** 60,000.00 EGP\n  * **Equities (TMGH):** 200 shares × 82.50 EGP = 16,500.00 EGP\n  * **Total Portfolio Value:** 76,500.00 EGP\n* **Concentration Analysis:** \n  * Cash represents approximately **78.4%** of the portfolio (60,000 EGP).\n  * TMGH shares represent approximately **21.6%** of the portfolio (16,500 EGP).\n* **What the Portfolio Allows:**\n  * **Free Cash:** There is **60,000.00 EGP** in unallocated cash currently sitting in the portfolio that could reasonably be committed, depending on the strategy chosen.\n  * **Liquidatable Assets:** The **200 shares of TMGH** can be sold to raise additional liquidity if required, unlocking their current market value of 16,500.00 EGP. \n  * **Current Concentration State:** The portfolio is currently heavily weighted toward cash, with a minor equity stake."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 4.718,
+      "input_tokens": 856,
+      "output_tokens": 732,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 35.63,
+      "input_tokens": 848,
+      "output_tokens": 599,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 2.921,
+      "input_tokens": 2499,
+      "output_tokens": 376,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 43.274
+}

@@ -1,0 +1,106 @@
+{
+  "case_id": "dev_004",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 235,
+    "explanation": "The investor requires about 30,000 EGP in liquidity within 6 months and currently holds only 5,000 EGP in cash. To cover the 25,000 EGP shortfall safely without violating the low-risk profile and short investment horizon (1-3 years), we must sell a portion of the existing COMI holdings. Selling 235 shares of COMI at 128.00 EGP per share raises 30,080 EGP, which satisfies the liquidity need while reducing extreme portfolio concentration.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107699631000.0,
+        "statement": "Net interest income reached 107,699,631,000 EGP for the period ended Dec. 31, 2025."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "Net profit was recorded at 82,258,815,000 EGP for the period ended Dec. 31, 2025."
+      }
+    ],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p4-54"
+    ],
+    "limitations": [
+      "Transaction costs and market price fluctuations are not factored into the exact share calculation.",
+      "Selling shares creates a taxable event and reduces equity exposure, though this is aligned with the low-risk retirement profile and immediate liquidity needs."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 235,
+    "explanation": "The investor requires about 30,000 EGP in liquidity within 6 months and currently holds only 5,000 EGP in cash. To cover the 25,000 EGP shortfall safely without violating the low-risk profile and short investment horizon (1-3 years), we must sell a portion of the existing COMI holdings. Selling 235 shares of COMI at 128.00 EGP per share raises 30,080 EGP, which satisfies the liquidity need while reducing extreme portfolio concentration.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107699631000.0,
+        "statement": "Net interest income reached 107,699,631,000 EGP for the period ended Dec. 31, 2025."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "Net profit was recorded at 82,258,815,000 EGP for the period ended Dec. 31, 2025."
+      }
+    ],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p4-54"
+    ],
+    "limitations": [
+      "Transaction costs and market price fluctuations are not factored into the exact share calculation.",
+      "Selling shares creates a taxable event and reduces equity exposure, though this is aligned with the low-risk retirement profile and immediate liquidity needs."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 35080.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 765
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "Based on the provided company evidence, here is the analysis of COMI for the period ended December 31, 2025:\n\n### **Profitability & Growth**\n* **Net Interest Income:** Reached 107,699,631,000 EGP for the period ended Dec. 31, 2025, compared to 91,064,222,000 EGP for the prior period [COMI-COMI_FY2025_consolidated_condensed_en-p5-05].\n* **Net Profit:** Recorded at 82,258,815,000 EGP for the period ended Dec. 31, 2025, up from 55,256,732,000 EGP for the period ended Dec. 31, 2024 [COMI-COMI_FY2025_consolidated_condensed_en-p5-33, COMI-COMI_FY2025_consolidated_condensed_en-p5-34].\n* **Basic Earnings:** Reported at 18.25 EGP for the period ended Dec. 31, 2025, compared to 14.72 EGP for the period ended Dec. 31, 2024 [COMI-COMI_FY2025_consolidated_condensed_en-p5-39, COMI-COMI_FY2025_consolidated_condensed_en-p5-40].\n\n### **Balance Sheet**\n* **Customer Deposits:** \"Due to customers\" stood at 1,110,395,693,000 EGP as of Dec. 31, 2025, compared to 972,595,958,000 EGP for the comparative period [COMI-COMI_FY2025_consolidated_condensed_en-p4-28].\n* **Total Equity:** Total equity and net profit for the year reached 231,486,342,000 EGP as of Dec. 31, 2025, compared to 152,636,277,000 EGP for the comparative period [COMI-COMI_FY2025_consolidated_condensed_en-p4-54].\n\n### **Risks & Liquidity Considerations**\n* **Portfolio Value & Liquidity Needs:** The investor holds 1,000 shares of COMI, with a price per share of 128.00 EGP at the cutoff, alongside 5,000.00 EGP in cash. \n* **Short-term Liquidity Gap:** The investor requires about 30,000.00 EGP within 6 months. Current cash (5,000.00 EGP) is insufficient to meet this liquidity need without drawing upon or liquidating a portion of the COMI holdings.\n* **Risk Profile:** The investor has a low willingness and low financial ability to accept losses, with a capital preservation and income goal over a 1-3 year horizon.",
+    "investor": "As the investor-suitability analyst on the investment team, here is the assessment of the investor's profile, current portfolio structure, liquidity position, and constraints:\n\n### 1. Investor Profile & Suitability Assessment\n*   **Goal:** Capital preservation and retirement income. This requires highly stable, low-volatility assets that can reliably generate cash flow without exposing the principal to severe drawdowns.\n*   **Investment Horizon:** 1–3 years. This is a short-to-medium-term horizon, meaning there is very little time to recover from major market downturns.\n*   **Loss Willingness and Capacity:** Both willingness to accept losses and the financial ability to withstand losses are **low**. The investor cannot afford negative shocks to their portfolio principal.\n\n### 2. Current Portfolio & Concentration\n*   **Current Holdings:** 1,000 shares of COMI at a cutoff price of 128.00 EGP per share, valuing the equity holding at **128,000.00 EGP**.\n*   **Current Cash:** **5,000.00 EGP**.\n*   **Total Portfolio Value:** 133,000.00 EGP.\n*   **Concentration:** The portfolio suffers from **extreme concentration risk**, with roughly 96.2% of total portfolio value tied up in a single equity holding (COMI), which contradicts the low-risk tolerance required by a retiree focused on capital preservation.\n\n### 3. Liquidity Needs and Portfolio Allowance\n*   **Short-Term Liquidity Need:** The investor requires **30,000 EGP within 6 months**.\n*   **Free Cash Status:** The current free cash pool of 5,000 EGP falls significantly short (by 25,000 EGP) of covering the 6-month liquidity requirement.\n*   **Portfolio Allowances (What can be sold):** \n    *   The portfolio holds 1,000 shares of COMI valued at 128,000 EGP. \n    *   To meet the 30,000 EGP liquidity requirement within the 6-month timeframe (accounting for the 5,000 EGP available cash), a portion of the COMI holding (approximately 235 shares at the 128.00 EGP price, excluding transaction costs) would need to be liquidated, or the entire holding can be evaluated to realign the portfolio with the low-risk, income-generating retirement mandate.\n\n### 4. Capital Commitment Capacity\n*   Given the short horizon (1-3 years), low loss capacity, and immediate need for retirement income and liquidity, **no additional cash should be committed** to high-risk or equity-heavy assets. Any new capital or freed-up cash should strictly target capital-guarded, highly liquid instruments matching the short horizon."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 7.149,
+      "input_tokens": 1158,
+      "output_tokens": 741,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 2.879,
+      "input_tokens": 1150,
+      "output_tokens": 624,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 3.512,
+      "input_tokens": 2835,
+      "output_tokens": 530,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 13.544
+}

@@ -1,0 +1,96 @@
+{
+  "case_id": "dev_010",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "The profit belonging to Talaat Moustafa Group Holding's own shareholders grew from 9,025,066,065 EGP in 2024 to 14,383,890,306 EGP in 2025. Although this substantial profit growth demonstrates strong operational performance, our portfolio constraints prevent us from buying more shares. Specifically, the investor already owns 500 shares valued at 41,250 EGP against 30,000 EGP in cash, totaling a portfolio value of 71,250 EGP where TMGH constitutes 57.89%. Rule compliance dictates that no single company may exceed half of the portfolio's total value after a buy; since TMGH is already above 50%, no additional shares can be purchased. Therefore, the action is hold.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "For the year 2024 (Restated), the profit belonging to the shareholders of the parent company was 9,025,066,065 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "For the year 2025, the profit belonging to the shareholders of the parent company was 14,383,890,306 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Concentration limit of 50% max per holding restricts any further equity purchases."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "The profit belonging to Talaat Moustafa Group Holding's own shareholders grew from 9,025,066,065 EGP in 2024 to 14,383,890,306 EGP in 2025. Although this substantial profit growth demonstrates strong operational performance, our portfolio constraints prevent us from buying more shares. Specifically, the investor already owns 500 shares valued at 41,250 EGP against 30,000 EGP in cash, totaling a portfolio value of 71,250 EGP where TMGH constitutes 57.89%. Rule compliance dictates that no single company may exceed half of the portfolio's total value after a buy; since TMGH is already above 50%, no additional shares can be purchased. Therefore, the action is hold.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-58",
+        "stated_value": 9025066065.0,
+        "statement": "For the year 2024 (Restated), the profit belonging to the shareholders of the parent company was 9,025,066,065 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-57",
+        "stated_value": 14383890306.0,
+        "statement": "For the year 2025, the profit belonging to the shareholders of the parent company was 14,383,890,306 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Concentration limit of 50% max per holding restricts any further equity purchases."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 500
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "Based on the provided evidence for Talaat Moustafa Group Holding (TMGH), here is the financial analysis regarding the profit belonging to the company's shareholders and the related data.\n\n### Profitability and Growth Analysis\n* **Shareholders of the Parent Company:** \n  * For the year 2025, the profit belonging to the shareholders of the parent company was **14,383,890,306 EGP** [TMGH-TMGH_FY2025_consolidated_en-p7-57].\n  * For the year 2024 (Restated), the profit belonging to the shareholders of the parent company was **9,025,066,065 EGP** [TMGH-TMGH_FY2025_consolidated_en-p7-58]. \n  * *(Note: Computing the exact growth percentage or absolute growth amount is not performed here as explicit difference figures were not provided as standalone single-period cells, and we rely strictly on the stated figures).*\n\n* **Other Profitability Metrics:**\n  * **Gross Profit:** Stated as **20,855,400,384 EGP** for 2025 and **14,002,196,445 EGP** for 2024 (Restated) [TMGH-TMGH_FY2025_consolidated_en-p7-19, TMGH-TMGH_FY2025_consolidated_en-p7-20].\n  * **Profit for the year before tax:** Stated as **23,653,557,143 EGP** for 2025 and **16,490,175,692 EGP** for 2024 (Restated) [TMGH-TMGH_FY2025_consolidated_en-p7-49, TMGH-TMGH_FY2025_consolidated_en-p7-50].\n  * **Net profit for the year (consolidated):** Stated as **18,201,981,482 EGP** for 2025 and **12,769,517,325 EGP** for 2024 (Restated) [TMGH-TMGH_FY2025_consolidated_en-p7-55, TMGH-TMGH_FY2025_consolidated_en-p7-56].\n  * **Earnings per Share:** Stated as **6.98 EGP** for 2025 and **4.38 EGP** for 2024 (Restated) [TMGH-TMGH_FY2025_consolidated_en-p7-61, TMGH-TMGH_FY2025_consolidated_en-p7-62].\n\n### Balance Sheet & Data Quality\n* **Total Equity (consolidated):** Stated as **157,708,140,765 EGP** as of 31 December 2025, and **129,879,813,693 EGP** as of 31 December 2024 (Restated) [TMGH-TMGH_FY2025_consolidated_en-p5-67, TMGH-TMGH_FY2025_consolidated_en-p5-68].\n* **Data Quality:** All cited figures are marked as verified from the consolidated financial statements (`TMGH_FY2025_consolidated_en.pdf`). There are no AMBIGUOUS figures flagged among the extracted data points used above.\n\n### Decision Agent Mandate\nPer our operating guidelines, as a financial analyst I do not recommend an action (such as whether this justifies adding to your position); that decision rests with the decision agent based on your portfolio goals and risk profile.",
+    "investor": "As the investor-suitability analyst on the investment team, I will evaluate your investor profile, current portfolio structure, liquidity, and risk parameters to determine what the portfolio allows, without analyzing company financials or recommending an action.\n\n### 1. Investment Horizon and Goal\n* **Goal:** Long-term growth.\n* **Horizon:** 5 to 10 years. \n* **Suitability Assessment:** Your stated horizon aligns well with equity investments, which typically require a multi-year timeframe to ride out market volatility and capture compounding growth.\n\n### 2. Liquidity Needs and Emergency Provisions\n* **Liquidity Needs:** You maintain a separate emergency fund outside of this portfolio.\n* **Suitability Assessment:** Because your short-term liquidity needs are decoupled from this portfolio, you do not need to hold a high percentage of cash for unexpected personal expenses. This supports a higher allocation to growth-oriented assets.\n\n### 3. Loss Willingness and Financial Capacity\n* **Willingness to Accept Losses:** High.\n* **Financial Ability to Withstand Losses:** Medium.\n* **Suitability Assessment:** While your psychological appetite for volatility and drawdowns is high, your *medium* financial capacity means that a severe downturn could still impact your broader financial standing. Therefore, risk management and position sizing remain important despite your comfort with risk.\n\n### 4. Current Portfolio & Concentration Analysis\n* **Current Holdings:** \n  * TMGH: 500 shares at 82.50 EGP/share = **41,250 EGP**\n* **Current Cash:** **30,000 EGP**\n* **Total Portfolio Value:** 71,250 EGP\n* **Concentration:** Your equity allocation (TMGH) currently represents approximately **57.89%** of your total portfolio value, while cash represents **42.11%**. \n\n### 5. What the Portfolio Allows (Liquidity and Free Cash)\n* **Free Cash:** You currently hold **30,000 EGP** in unallocated cash that could reasonably be committed to the portfolio if desired.\n* **Liquidating Holdings:** You hold 500 shares of TMGH valued at 41,250 EGP, which can be sold if you wish to reallocate capital away from the stock. \n\n*(Note: In accordance with my role, I have refrained from evaluating the profit figures mentioned in your question or providing an opinion on whether adding to your TMGH position is justified.)*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 4.076,
+      "input_tokens": 1699,
+      "output_tokens": 908,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 2.141,
+      "input_tokens": 1691,
+      "output_tokens": 536,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 2.38,
+      "input_tokens": 3455,
+      "output_tokens": 475,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 8.601
+}

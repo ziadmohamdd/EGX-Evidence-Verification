@@ -1,0 +1,116 @@
+{
+  "case_id": "dev_002",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 606,
+    "explanation": "We recommend buying shares of TMGH for the investor, aligning with their long-term horizon of 10+ years, no planned withdrawals, and high willingness and capacity to bear risk. TMGH reported a robust 2025 consolidated net profit of 18,201,981,482 EGP and a 2025 EPS of 6.98 EGP. Total equity as of 31 December 2025 stood at 157,708,140,765 EGP. At the share price of 82.50 EGP, buying 606 shares requires 50,005.00 EGP, which is well within the available 100,000.00 EGP cash. This acquisition leaves the post-trade portfolio holding 50,005.00 EGP in TMGH stock (representing approximately 50.0% of the total portfolio value) and 49,995.00 EGP in cash, strictly adhering to the diversification limit that no single company may exceed half of the portfolio's total value. The 2024 net profit figure was marked ambiguous and was not used in calculations.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH reported a robust 2025 consolidated net profit of 18,201,981,482 EGP and a 2025 EPS of 6.98 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH reported a robust 2025 consolidated net profit of 18,201,981,482 EGP and a 2025 EPS of 6.98 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity as of 31 December 2025 stood at 157,708,140,765 EGP."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "The 2024 consolidated net profit figure is ambiguous due to an auditor's stamp covering the digits and was excluded from calculations."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 606,
+    "explanation": "We recommend buying shares of TMGH for the investor, aligning with their long-term horizon of 10+ years, no planned withdrawals, and high willingness and capacity to bear risk. TMGH reported a robust 2025 consolidated net profit of 18,201,981,482 EGP and a 2025 EPS of 6.98 EGP. Total equity as of 31 December 2025 stood at 157,708,140,765 EGP. At the share price of 82.50 EGP, buying 606 shares requires 50,005.00 EGP, which is well within the available 100,000.00 EGP cash. This acquisition leaves the post-trade portfolio holding 50,005.00 EGP in TMGH stock (representing approximately 50.0% of the total portfolio value) and 49,995.00 EGP in cash, strictly adhering to the diversification limit that no single company may exceed half of the portfolio's total value. The 2024 net profit figure was marked ambiguous and was not used in calculations.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH reported a robust 2025 consolidated net profit of 18,201,981,482 EGP and a 2025 EPS of 6.98 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH reported a robust 2025 consolidated net profit of 18,201,981,482 EGP and a 2025 EPS of 6.98 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "Total equity as of 31 December 2025 stood at 157,708,140,765 EGP."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "The 2024 consolidated net profit figure is ambiguous due to an auditor's stamp covering the digits and was excluded from calculations."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 50005.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 606
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "Based on the financial evidence provided for TMGH, here is the analysis of the company's financials across profitability, growth, balance sheet, risks, and data quality:\n\n### Profitability and Growth\n* **Gross Profit:** For the period 2025, TMGH reported a consolidated gross profit of 20,855,400,384 EGP [TMGH-TMGH_FY2025_consolidated_en-p7-19]. For the 2024 (Restated) period, the gross profit was 14,002,196,445 EGP [TMGH-TMGH_FY2025_consolidated_en-p7-20].\n* **Net Profit:** The consolidated net profit for the year 2025 was 18,201,981,482 EGP [TMGH-TMGH_FY2025_consolidated_en-p7-55]. \n* **Earnings per Share (EPS):** The consolidated EPS for 2025 was 6.98 EGP [TMGH-TMGH_FY2025_consolidated_en-p7-61], while the 20(39) / 2024 (Restated) period is recorded at 4.38 EGP [TMGH-TMGH_FY2025_consolidated_en-p7-62].\n\n### Balance Sheet\n* **Total Equity:** As of 31 December 2025, total consolidated equity stood at 157,708,140,765 EGP, compared to 129,879,813,693 EGP for the prior comparative period [TMGH-TMGH_FY2025_consolidated_en-p5-67].\n\n### Risks and Data Quality\n* **AMBIGUOUS Figures:** The consolidated net profit for the year 2024 (Restated) is flagged as AMBIGUOUS because the digits are covered by an auditor's stamp [TMGH-TMGH_FY2025_consolidated_en-p7-56]. Per instructions, this ambiguous figure has not been used for computations.",
+    "investor": "**Investor-Suitability Assessment**\n\n* **Horizon:** 10+ years. This is a very long-term horizon, which fully accommodates growth-oriented equity investments and allows sufficient time to ride out short-term market volatility or economic cycles.\n* **Liquidity Needs:** No withdrawals planned. The investor has no immediate or near-term liquidity requirements, meaning the entire portfolio can remain fully deployed in risk assets without needing to set aside cash buffers for redemptions.\n* **Loss Willingness and Capacity:** Both willingness to accept losses and financial ability to withstand losses are rated as high. The investor can tolerate significant drawdowns and high return volatility in pursuit of long-term capital appreciation.\n* **Current Concentration:** The portfolio is currently 100% concentrated in cash (100,000.00 EGP) with zero existing holdings (TMGH share price is 82.50 EGP). There is currently no equity exposure or concentration risk in any single security.\n* **Portfolio Allowances (Cash and Sellable Assets):** \n  * **Free Cash:** There is 100,000.00 EGP in unencumbered cash available.\n  * **Sellable Assets:** There are currently no holdings in the portfolio, meaning no assets need to be sold to free up capital. \n  * **Commitment Capacity:** Up to the full 100,000.00 EGP in cash can reasonably be committed to the portfolio, depending on sizing preferences, given the absence of liquidity needs and high loss capacity."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 3.342,
+      "input_tokens": 1077,
+      "output_tokens": 509,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 1.621,
+      "input_tokens": 1069,
+      "output_tokens": 332,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 12.512,
+      "input_tokens": 2230,
+      "output_tokens": 710,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 17.492
+}

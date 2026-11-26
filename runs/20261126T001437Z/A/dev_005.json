@@ -1,0 +1,89 @@
+{
+  "case_id": "dev_005",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 300,
+    "explanation": "The investor wants to add a fertilizer exporter for diversification with a 5-year horizon. Abu Qir Fertilizers (ABUK) is a fertilizer exporter, and its share price is 76.21 EGP. The current portfolio consists of 40,000.00 EGP in cash and 200 shares of COMI valued at 128.00 EGP each (total COMI holding value is 25,600.00 EGP), making the total portfolio value 65,600.00 EGP. Buying 300 shares of ABUK costs 22,863.00 EGP, leaving 17,137.00 EGP in cash. After this purchase, the ABUK holding will be valued at 22,863.00 EGP, representing approximately 34.85% of the total portfolio value, which complies with the diversification rule that no single company may exceed 50%. Figures for revenue and net profit were marked AMBIGUOUS and were not used in calculations; however, basic earnings per share for the nine months ended 30 September 2026 is verified as 8.74 EGP (ABUK-ABUK_9M2026_results-p2-31) and for the period ended 30 September 2025 as 4.28 EGP (ABUK-ABUK_9M2026_results-p2-32). This is guidance, not a guarantee of returns, and investing in equities carries market risks.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Basic earnings per share for the nine months ended 30 September 2026 is 8.74 EGP."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Basic earnings per share for the nine months ended 30 September 2025 is 4.28 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Revenue and net profit figures were marked ambiguous and were not used in the analysis."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 300,
+    "explanation": "The investor wants to add a fertilizer exporter for diversification with a 5-year horizon. Abu Qir Fertilizers (ABUK) is a fertilizer exporter, and its share price is 76.21 EGP. The current portfolio consists of 40,000.00 EGP in cash and 200 shares of COMI valued at 128.00 EGP each (total COMI holding value is 25,600.00 EGP), making the total portfolio value 65,600.00 EGP. Buying 300 shares of ABUK costs 22,863.00 EGP, leaving 17,137.00 EGP in cash. After this purchase, the ABUK holding will be valued at 22,863.00 EGP, representing approximately 34.85% of the total portfolio value, which complies with the diversification rule that no single company may exceed 50%. Figures for revenue and net profit were marked AMBIGUOUS and were not used in calculations; however, basic earnings per share for the nine months ended 30 September 2026 is verified as 8.74 EGP (ABUK-ABUK_9M2026_results-p2-31) and for the period ended 30 September 2025 as 4.28 EGP (ABUK-ABUK_9M2026_results-p2-32). This is guidance, not a guarantee of returns, and investing in equities carries market risks.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Basic earnings per share for the nine months ended 30 September 2026 is 8.74 EGP."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Basic earnings per share for the nine months ended 30 September 2025 is 4.28 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Revenue and net profit figures were marked ambiguous and were not used in the analysis."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 17137.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      },
+      {
+        "ticker": "ABUK",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 6.91,
+      "input_tokens": 1577,
+      "output_tokens": 696,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 6.914
+}

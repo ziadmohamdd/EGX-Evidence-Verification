@@ -1,0 +1,88 @@
+{
+  "case_id": "dev_009",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The available evidence contains ambiguous figures regarding revenues and net profits for the nine-month period ending September 30, 2026, and September 30, 2025, because the page shows multiple conflicting unit lines. While the basic earnings per share figures are verified at 8.74 EGP for the nine months ended September 30, 2026, and 4.28 EGP for the nine months ended September 30, 2025, it is not possible to reliably project full-year 2026 earnings per share or calculate an accurate price-to-earnings ratio without clear and unambiguous financial statements and revenue data. Therefore, there is insufficient evidence to determine whether the share is cheap enough to buy.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "The basic earnings per share for the nine months ended September 30, 2026 is verified at 8.74 EGP."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "The basic earnings per share for the nine months ended September 30, 2025 is verified at 4.28 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "The financial figures for revenues and net profit are marked ambiguous due to conflicting units on the report page.",
+      "Full-year earnings projections cannot be reliably calculated from only nine-month figures without complete and unambiguous historical data."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The available evidence contains ambiguous figures regarding revenues and net profits for the nine-month period ending September 30, 2026, and September 30, 2025, because the page shows multiple conflicting unit lines. While the basic earnings per share figures are verified at 8.74 EGP for the nine months ended September 30, 2026, and 4.28 EGP for the nine months ended September 30, 2025, it is not possible to reliably project full-year 2026 earnings per share or calculate an accurate price-to-earnings ratio without clear and unambiguous financial statements and revenue data. Therefore, there is insufficient evidence to determine whether the share is cheap enough to buy.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "The basic earnings per share for the nine months ended September 30, 2026 is verified at 8.74 EGP."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "The basic earnings per share for the nine months ended September 30, 2025 is verified at 4.28 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "The financial figures for revenues and net profit are marked ambiguous due to conflicting units on the report page.",
+      "Full-year earnings projections cannot be reliably calculated from only nine-month figures without complete and unambiguous historical data."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 3.962,
+      "input_tokens": 1597,
+      "output_tokens": 541,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 3.967
+}

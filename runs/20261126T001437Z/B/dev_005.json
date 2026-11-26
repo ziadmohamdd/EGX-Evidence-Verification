@@ -1,0 +1,97 @@
+{
+  "case_id": "dev_005",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 300,
+    "explanation": "The investor wants to add a fertilizer exporter for diversification, matching ABUK (Abu Qir Fertilizers). The share price of ABUK is 76.21 EGP. The current portfolio holds 200 shares of COMI at 128.00 EGP each (25,600.00 EGP total value) and 40,000.00 EGP in cash, giving a total portfolio value of 65,600.00 EGP. Buying 300 shares of ABUK costs 22,863.00 EGP, leaving 17,137.00 EGP in cash. The new ABUK holding value will be 22,863.00 EGP, which is approximately 34.85% of the total portfolio value, satisfying the diversification rule that no single company exceeds 50%. Figures for revenue and net profit are marked AMBIGUOUS and are placed in unused_figures, so the decision relies on verified earnings per share and the investor's stated goals. Earnings per share for the nine months ended 30 September 2026 is 8.74 EGP, compared to 4.28 EGP for the same period in 2025.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Earnings per share for the nine months ended 30 September 2026 is 8.74 EGP."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Earnings per share for the nine months ended 30 September 2025 is 4.28 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Revenue and net profit figures were marked ambiguous and were not used in the calculations.",
+      "Past performance does not guarantee future returns."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 300,
+    "explanation": "The investor wants to add a fertilizer exporter for diversification, matching ABUK (Abu Qir Fertilizers). The share price of ABUK is 76.21 EGP. The current portfolio holds 200 shares of COMI at 128.00 EGP each (25,600.00 EGP total value) and 40,000.00 EGP in cash, giving a total portfolio value of 65,600.00 EGP. Buying 300 shares of ABUK costs 22,863.00 EGP, leaving 17,137.00 EGP in cash. The new ABUK holding value will be 22,863.00 EGP, which is approximately 34.85% of the total portfolio value, satisfying the diversification rule that no single company exceeds 50%. Figures for revenue and net profit are marked AMBIGUOUS and are placed in unused_figures, so the decision relies on verified earnings per share and the investor's stated goals. Earnings per share for the nine months ended 30 September 2026 is 8.74 EGP, compared to 4.28 EGP for the same period in 2025.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Earnings per share for the nine months ended 30 September 2026 is 8.74 EGP."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Earnings per share for the nine months ended 30 September 2025 is 4.28 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Revenue and net profit figures were marked ambiguous and were not used in the calculations.",
+      "Past performance does not guarantee future returns."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 17137.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      },
+      {
+        "ticker": "ABUK",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 2.264,
+      "input_tokens": 1577,
+      "output_tokens": 637,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 2.268
+}

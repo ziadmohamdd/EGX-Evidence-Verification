@@ -1,0 +1,82 @@
+{
+  "case_id": "dev_007",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor has a short horizon of 3 months and needs 10,000 EGP in cash for a family wedding, with a low willingness and ability to accept losses. The investor currently holds 1,000 EGP in cash and 200 shares of EFID. At the current price of 20.40 EGP per share, selling all 200 shares yields 4,080 EGP. Combined with the 1,000 EGP cash, the total cash becomes 5,080 EGP. While this does not fully meet the 10,000 EGP liquidity need, selling the entire holding liquidates the equity exposure to eliminate downside price risk over the 3-month horizon, aligning with the investor's low risk tolerance. EFID's consolidated net profit for 2025 is 2,695,301,670 EGP and revenue is 20,915,072,432 EGP, but short-term equity price volatility remains a significant risk for a 3-month horizon.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID's consolidated net profit for the year 2025 is 2,695,301,670 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID's consolidated revenue for the year 2025 is 20,915,072,432 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39"
+    ],
+    "limitations": [
+      "Selling all EFID shares only raises 4,080 EGP, which leaves the investor short of the 10,000 EGP liquidity requirement.",
+      "Stock prices can fluctuate and realized proceeds may differ depending on market execution."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor has a short horizon of 3 months and needs 10,000 EGP in cash for a family wedding, with a low willingness and ability to accept losses. The investor currently holds 1,000 EGP in cash and 200 shares of EFID. At the current price of 20.40 EGP per share, selling all 200 shares yields 4,080 EGP. Combined with the 1,000 EGP cash, the total cash becomes 5,080 EGP. While this does not fully meet the 10,000 EGP liquidity need, selling the entire holding liquidates the equity exposure to eliminate downside price risk over the 3-month horizon, aligning with the investor's low risk tolerance. EFID's consolidated net profit for 2025 is 2,695,301,670 EGP and revenue is 20,915,072,432 EGP, but short-term equity price volatility remains a significant risk for a 3-month horizon.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID's consolidated net profit for the year 2025 is 2,695,301,670 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID's consolidated revenue for the year 2025 is 20,915,072,432 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39"
+    ],
+    "limitations": [
+      "Selling all EFID shares only raises 4,080 EGP, which leaves the investor short of the 10,000 EGP liquidity requirement.",
+      "Stock prices can fluctuate and realized proceeds may differ depending on market execution."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 5080.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 11.888,
+      "input_tokens": 1319,
+      "output_tokens": 688,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 11.892
+}

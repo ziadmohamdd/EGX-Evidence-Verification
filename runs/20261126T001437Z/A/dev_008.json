@@ -1,0 +1,77 @@
+{
+  "case_id": "dev_008",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "Your friend's statement is incorrect. Telecom Egypt (ETEL) made a net profit of 22,578,063 thousand pounds (or 22.58 billion pounds) for the year ended 31/12/2025, which is not 225.9 billion pounds. The 2024 net profit was 10,111,328 thousand pounds (or 10.11 billion pounds). While the profit has more than doubled rather than increased tenfold, you should not put all your cash into ETEL. Putting all your cash of 50,000.00 EGP into ETEL would violate the portfolio diversification rule that no single company may exceed 50 percent of the portfolio's total value. Your current portfolio has 50,000.00 EGP in cash and 150 shares of ETEL worth 141.95 EGP each, totaling 21,292.50 EGP, bringing your total portfolio value to 71,292.50 EGP. ETEL currently represents 29.86 percent of your portfolio. Buying more shares would increase this concentration. Therefore, holding your current ETEL position and keeping your cash is a safer approach matching your medium risk tolerance.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Telecom Egypt made a net profit of 22,578,063 thousand pounds for the year ended 31/12/2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "The 2024 net profit was 10,111,328 thousand pounds."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Guidance is based solely on the provided FY2025 financial statements and does not guarantee future returns.",
+      "Stock prices and portfolio valuations are subject to market volatility."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "Your friend's statement is incorrect. Telecom Egypt (ETEL) made a net profit of 22,578,063 thousand pounds (or 22.58 billion pounds) for the year ended 31/12/2025, which is not 225.9 billion pounds. The 2024 net profit was 10,111,328 thousand pounds (or 10.11 billion pounds). While the profit has more than doubled rather than increased tenfold, you should not put all your cash into ETEL. Putting all your cash of 50,000.00 EGP into ETEL would violate the portfolio diversification rule that no single company may exceed 50 percent of the portfolio's total value. Your current portfolio has 50,000.00 EGP in cash and 150 shares of ETEL worth 141.95 EGP each, totaling 21,292.50 EGP, bringing your total portfolio value to 71,292.50 EGP. ETEL currently represents 29.86 percent of your portfolio. Buying more shares would increase this concentration. Therefore, holding your current ETEL position and keeping your cash is a safer approach matching your medium risk tolerance.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Telecom Egypt made a net profit of 22,578,063 thousand pounds for the year ended 31/12/2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "The 2024 net profit was 10,111,328 thousand pounds."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Guidance is based solely on the provided FY2025 financial statements and does not guarantee future returns.",
+      "Stock prices and portfolio valuations are subject to market volatility."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 50000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 150
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 3.177,
+      "input_tokens": 1610,
+      "output_tokens": 579,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 3.181
+}

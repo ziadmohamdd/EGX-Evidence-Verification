@@ -1,0 +1,104 @@
+{
+  "case_id": "dev_004",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 196,
+    "explanation": "The investor has a low risk tolerance, low financial ability to withstand losses, a short 1-3 year horizon, and a specific liquidity need of 30,000 EGP within 6 months. With only 5,000 EGP in cash, there is a liquidity deficit of 25,000 EGP. Selling 196 shares of COMI at 128.00 EGP per share raises approximately 25,008 EGP, which bridges the cash shortfall when combined with existing cash. COMI reported strong fundamentals for the period ended Dec. 31, 2025, including a net profit of 82,258,815,000 EGP and net interest income of 107,699,631,000 EGP, but holding equities entirely violates the low-risk capital preservation goal, and raising the necessary cash requires a partial liquidation.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI reported a net profit for the year ended Dec. 31, 2025, of 82,258,815,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107699631000.0,
+        "statement": "Net interest income for the period ended Dec. 31, 2025, was 107,699,631,000 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Stock prices can fluctuate, meaning the actual cash realized from selling COMI shares may vary slightly depending on market execution.",
+      "Transaction fees and taxes on the sale of shares are not accounted for in the exact gross calculation."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 196,
+    "explanation": "The investor has a low risk tolerance, low financial ability to withstand losses, a short 1-3 year horizon, and a specific liquidity need of 30,000 EGP within 6 months. With only 5,000 EGP in cash, there is a liquidity deficit of 25,000 EGP. Selling 196 shares of COMI at 128.00 EGP per share raises approximately 25,008 EGP, which bridges the cash shortfall when combined with existing cash. COMI reported strong fundamentals for the period ended Dec. 31, 2025, including a net profit of 82,258,815,000 EGP and net interest income of 107,699,631,000 EGP, but holding equities entirely violates the low-risk capital preservation goal, and raising the necessary cash requires a partial liquidation.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI reported a net profit for the year ended Dec. 31, 2025, of 82,258,815,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107699631000.0,
+        "statement": "Net interest income for the period ended Dec. 31, 2025, was 107,699,631,000 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Stock prices can fluctuate, meaning the actual cash realized from selling COMI shares may vary slightly depending on market execution.",
+      "Transaction fees and taxes on the sale of shares are not accounted for in the exact gross calculation."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30088.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 804
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "Based on the provided company evidence for COMI and your investor profile, here is the financial analysis:\n\n### Profitability and Growth\n* **Net Profit:** COMI reported a net profit for the year ended Dec. 31, 2025, of 82,258,815,000 EGP (82,258,815 thousands), up from 55,256,732,000 EGP (55,256,732 thousands) for the period ended Dec. 31, 2024 [COMI-COMI_FY2025_consolidated_condensed_en-p5-33, COMI-COMI_FY2025_consolidated_condensed_en-p5-34].\n* **Net Interest Income:** Net interest income for the period ended Dec. 31, 2025, was 107,699,631,000 EGP (107,699,631 thousands), compared to 91,064,222,000 EGP (91,064,222 thousands) for the previous period [COMI-COMI_FY2025_consolidated_condensed_en-p5-05].\n* **Basic Earnings:** Basic earnings per share were reported as 18.25 EGP for the period ended Dec. 31, 2025, and 14.72 EGP for the period ended Dec. 31, 2024 [COMI-COMI_FY2025_consolidated_condensed_en-p5-39, COMI-COMI_FY2025_consolidated_condensed_en-p5-40].\n\n### Balance Sheet\n* **Total Equity:** Total equity and net profit for the year (consolidated) stood at 231,486,342,000 EGP (231,486,342 thousands) as of Dec. 31, 2025, compared to 152,636,277,000 EGP (152,636,277 thousands) as of Dec. 31, 2024 [COMI-COMI_FY2025_consolidated_condensed_en-p4-54].\n* **Customer Deposits:** Amounts due to customers (consolidated) reached 1,110,395,693,000 EGP (1,110,395,693 thousands) as of Dec. 31, 2025, up from 972,595,958,000 EGP (972,595,958 thousands) as of Dec. 31, 2024 [COMI-COMI_FY2025_consolidated_condensed_en-p4-28].\n\n### Portfolio and Liquidity Context\n* **Current Holdings & Cash:** You currently hold 1,000 shares of COMI (priced at 128.00 EGP per share at the cutoff) alongside 5,000.00 EGP in cash. \n* **Liquidity Gap:** Your profile states you need about 30,000.00 EGP within 6 months. Your current cash (5,000.00 EGP) falls short of this requirement by 25,000.00 EGP. \n* **Risk Tolerance:** Your profile indicates a low willingness and low financial ability to accept losses, with a primary goal of preserving capital and drawing income in retirement over a 1-3 year horizon.",
+    "investor": "As the investment-suitability analyst, I have evaluated your profile against your current portfolio and liquidity constraints. Here is the suitability assessment:\n\n### 1. Investment Horizon\n* **Assessment:** **1-3 years**\n* **Implications:** This is a short-to-medium-term horizon, particularly focused on retirement income and capital preservation. Short horizons leave little time to recover from severe market downturns, making capital preservation paramount.\n\n### 2. Liquidity Needs\n* **Assessment:** **High short-term need (30,000 EGP within 6 months)**\n* **Implications:** You require a specific, near-term cash outlay of 30,000 EGP. Your current free cash stands at only 5,000.00 EGP, meaning there is a direct liquidity deficit of 25,000 EGP that must be sourced within the next 6 months.\n\n### 3. Loss Willingness and Capacity\n* **Assessment:** **Low willingness and low financial capacity**\n* **Implications:** Because your goal is retirement income and capital preservation over a short horizon, you cannot afford nominal losses of your principal. Your low financial capacity means that a downturn in asset values would directly threaten your near-term financial security and your ability to meet living expenses.\n\n### 4. Current Concentration\n* **Assessment:** **100% concentrated in a single equity holding (COMI)**\n* **Implications:** \n  * You hold 1,000 shares of COMI. At the cutoff price of 128.00 EGP per share, your equity holding is valued at **128,000.00 EGP**.\n  * Total portfolio value is **133,000.00 EGP** (128,000 EGP in COMI + 5,000 EGP in cash).\n  * Your portfolio is entirely undiversified, exposing you completely to the price volatility of a single equity asset, which conflicts directly with a low-risk, capital-preservation mandate.\n\n### 5. Portfolio Allowances (Free Cash and Liquidation Capacity)\n* **Free Cash:** You currently have **5,000.00 EGP** in uncommitted cash. This is insufficient to meet your 6-month liquidity requirement of 30,000 EGP.\n* **Sellable Assets:** Your 1,000 shares of COMI (valued at 128,000.00 EGP) can be sold to raise liquidity. \n* **Raising the Required Cash:** To bridge the 25,000 EGP shortfall (30,000 EGP need minus 5,000 EGP free cash), you would need to liquidate approximately **196 shares** of COMI at the 128.00 EGP price (yielding roughly 25,008 EGP gross of transaction fees). \n\n*Note: In accordance with my role, this assessment outlines your constraints, risk profile, and portfolio liquidity parameters, but does not provide a specific recommendation or pick an action.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 6.0,
+      "input_tokens": 1158,
+      "output_tokens": 872,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 3.142,
+      "input_tokens": 1150,
+      "output_tokens": 681,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 2.468,
+      "input_tokens": 3023,
+      "output_tokens": 531,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 11.616
+}

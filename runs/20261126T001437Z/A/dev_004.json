@@ -1,0 +1,89 @@
+{
+  "case_id": "dev_004",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 235,
+    "explanation": "The investor has a high liquidity need of 30,000 EGP within 6 months, but currently holds only 5,000.00 EGP in cash and 1,000 shares of COMI at a price of 128.00 EGP per share, resulting in a total portfolio value of 133,000.00 EGP. To meet the 30,000 EGP liquidity requirement, after utilizing the available 5,000.00 EGP cash, an additional 25,000.00 EGP is needed. Selling 235 shares of COMI at 128.00 EGP per share raises 30,080.00 EGP, covering the 30,000 EGP cash need and leaving 80.00 EGP in extra cash. After the sale, the investor will hold 765 shares of COMI worth 97,920.00 EGP and 35,080.00 EGP in cash (total portfolio 133,000.00 EGP), making COMI represent approximately 73.6 percent of the portfolio, which exceeds the 50 percent diversification limit. However, the sell action itself reduces exposure rather than increasing it, and the immediate liquidity constraint of the investor takes precedence for this transaction, while noting that future rebalancing may be required. Financial evidence shows COMI has strong fundamentals with a net profit for the year ending Dec 31, 2025 of 82,258,815,000 EGP (cited as 82258815000) and basic earnings per share of 18.25 EGP (cited as 18.25), but the investor's low risk tolerance and urgent liquidity needs necessitate raising cash. This is guidance and does not guarantee returns, and equity investments carry market risks.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "Financial evidence shows COMI has strong fundamentals with a net profit for the year ending Dec 31, 2025 of 82,258,815,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "Basic earnings per share for the period ending Dec 31, 2025 is 18.25 EGP."
+      }
+    ],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40"
+    ],
+    "limitations": [
+      "Stock prices can fluctuate, meaning the exact cash realized from selling COMI shares depends on the market execution price at the time.",
+      "This guidance is based strictly on the provided financial statements and cutoff date and does not account for subsequent macroeconomic or market events."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 235,
+    "explanation": "The investor has a high liquidity need of 30,000 EGP within 6 months, but currently holds only 5,000.00 EGP in cash and 1,000 shares of COMI at a price of 128.00 EGP per share, resulting in a total portfolio value of 133,000.00 EGP. To meet the 30,000 EGP liquidity requirement, after utilizing the available 5,000.00 EGP cash, an additional 25,000.00 EGP is needed. Selling 235 shares of COMI at 128.00 EGP per share raises 30,080.00 EGP, covering the 30,000 EGP cash need and leaving 80.00 EGP in extra cash. After the sale, the investor will hold 765 shares of COMI worth 97,920.00 EGP and 35,080.00 EGP in cash (total portfolio 133,000.00 EGP), making COMI represent approximately 73.6 percent of the portfolio, which exceeds the 50 percent diversification limit. However, the sell action itself reduces exposure rather than increasing it, and the immediate liquidity constraint of the investor takes precedence for this transaction, while noting that future rebalancing may be required. Financial evidence shows COMI has strong fundamentals with a net profit for the year ending Dec 31, 2025 of 82,258,815,000 EGP (cited as 82258815000) and basic earnings per share of 18.25 EGP (cited as 18.25), but the investor's low risk tolerance and urgent liquidity needs necessitate raising cash. This is guidance and does not guarantee returns, and equity investments carry market risks.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "Financial evidence shows COMI has strong fundamentals with a net profit for the year ending Dec 31, 2025 of 82,258,815,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "Basic earnings per share for the period ending Dec 31, 2025 is 18.25 EGP."
+      }
+    ],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40"
+    ],
+    "limitations": [
+      "Stock prices can fluctuate, meaning the exact cash realized from selling COMI shares depends on the market execution price at the time.",
+      "This guidance is based strictly on the provided financial statements and cutoff date and does not account for subsequent macroeconomic or market events."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 35080.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 765
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 3.576,
+      "input_tokens": 1434,
+      "output_tokens": 902,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 3.579
+}

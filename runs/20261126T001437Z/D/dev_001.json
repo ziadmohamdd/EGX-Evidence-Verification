@@ -1,0 +1,104 @@
+{
+  "case_id": "dev_001",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The financial analyst report flags all key income statement items—operating revenues, gross profit, net profit, and earnings per share—as well as the balance sheet figures as ambiguous because the source data presents side-by-side numbers without explicit column headers mapping them to specific years. Without unambiguous financial data, it is not possible to perform a reliable fundamental analysis or determine the true valuation and health of ETEL. Therefore, there is insufficient evidence to make a sound investment decision such as buying or selling.",
+    "claims": [],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "All financial statement figures are ambiguous due to unlabelled side-by-side reporting.",
+      "Unable to calculate growth rates, profitability margins, or return ratios without clear period mapping."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The financial analyst report flags all key income statement items—operating revenues, gross profit, net profit, and earnings per share—as well as the balance sheet figures as ambiguous because the source data presents side-by-side numbers without explicit column headers mapping them to specific years. Without unambiguous financial data, it is not possible to perform a reliable fundamental analysis or determine the true valuation and health of ETEL. Therefore, there is insufficient evidence to make a sound investment decision such as buying or selling.",
+    "claims": [],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "All financial statement figures are ambiguous due to unlabelled side-by-side reporting.",
+      "Unable to calculate growth rates, profitability margins, or return ratios without clear period mapping."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "Based on the provided company evidence for ETEL for the financial year ended 31/12/2025 (with comparative periods for 31/12/2024), here is the financial analysis covering profitability, growth, balance sheet, risks, and data quality.\n\n### 1. Profitability and Growth\n* **Operating Revenues:** \n  * For the period ending 31/12/2025, operating revenues are AMBIGUOUS because the text lists two figures side by side without explicit column headers mapping them to specific years: `106 672 946` and `81 677 812` [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]. Similarly, for 31/12/2024, the figures are listed as `106 672 946` and `81 677 812` [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02]. \n* **Gross Profit:** \n  * For the period ending 31/12/2025, gross profit is AMBIGUOUS due to multiple values listed side by side: `44 839 110` and `30 492 762` [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-05]. The same applies to 31/12/2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06].\n* **Net Profit:** \n  * For the period ending 31/12/2025, net profit for the year is AMBIGUOUS due to multiple values listed side by side: `22 578 063` and `10 111 328` [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]. The same applies to 31/12/2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36].\n* **Earnings Per Share (EPS):** \n  * Basic and diluted earnings per share for 31/12/2025 are AMBIGUOUS due to multiple values listed side by side: `11.93` and `4.79` [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55]. The same applies to 31/12/2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56].\n\n### 2. Balance Sheet\n* **Total Assets:** \n  * For the consolidated period ending 31/12/2025, total assets are AMBIGUOUS due to multiple values listed side by side: `225 882 527` thousand EGP and `197 952 788` thousand EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31]. Converted to whole pounds, these are **225,882,527,000 EGP** and **197,952,788,000 EGP**.\n* **Total Equity:** \n  * For the consolidated period ending 31/12/2025, total equity is AMBIGUOUS due to multiple values listed side by side: `63 687 826` thousand EGP and `45 937 991` thousand EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]. Converted to whole pounds, these are **63,687,826,000 EGP** and **45,937,991,000 EGP**.\n\n### 3. Risks and Data Quality\n* **Data Quality Issues:** The primary constraint in this dataset is the presence of unlabelled or multi-value side-by-side reporting for income statement items (Operating Revenues, Gross Profit, Net Profit, and EPS) without clear column headers mapping them explicitly to 2025 versus 2024 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01 through p6-56]. Per instructions, these figures are flagged as AMBIGUOUS and no mathematical computations or growth rates are derived from them. \n* **Balance Sheet Clarity:** While total assets and total equity provide clear numerical values in thousands of pounds [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31, ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45], the presence of dual figures prevents definitive point-in-time cross-sectional period assignment without external context.",
+    "investor": "As the investor-suitability analyst, I have assessed the investor's profile, constraints, and current portfolio structure based on the provided parameters. \n\n### 1. Investment Horizon\n* **Timeline:** 5-7 years.\n* **Suitability:** This medium-to-long-term horizon is well-suited for growth-oriented assets, allowing enough time to ride out short-term market volatility while keeping the target date (university enrollment) firmly in view.\n\n### 2. Liquidity Needs\n* **Emergency Fund:** The investor maintains a separate emergency fund.\n* **Suitability:** Because day-to-day liquidity and unexpected cash shocks are decoupled from this portfolio, the investor has high flexibility to lock up capital in equities or other growth instruments without being forced into inopportune liquidations.\n\n### 3. Loss Willingness and Capacity\n* **Willingness:** Medium.\n* **Financial Capacity:** Medium.\n* **Suitability:** The investor can psychologically and financially tolerate moderate drawdowns, but a portfolio consisting entirely of high-risk or aggressive growth assets would breach their comfort threshold. Asset allocation should balance growth potential with downside mitigation.\n\n### 4. Current Concentration and Portfolio Valuation\n* **Current Cash:** 20,000.00 EGP\n* **Current Holdings:** 300 shares of ETEL at 141.95 EGP per share = 42,585.00 EGP\n* **Total Portfolio Value:** 62,585.00 EGP\n* **Concentration Analysis:** \n  * ETEL holdings represent approximately **68.05%** of the total portfolio value.\n  * Cash represents approximately **31.95%** of the total portfolio value.\n* **Suitability:** The portfolio currently exhibits a high single-stock concentration risk, with over two-thirds of total wealth tied up in a single equity (ETEL). \n\n### 5. Portfolio Flexibility (What Can Be Sold and Free Cash)\n* **Free Cash:** 20,000.00 EGP is immediately available for deployment.\n* **Liquidatable Assets:** The 300 shares of ETEL (valued at 42,585.00 EGP) can be sold entirely or partially to rebalance concentration, realize gains/losses, or raise additional cash if a different asset allocation is desired."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 5.834,
+      "input_tokens": 1523,
+      "output_tokens": 1176,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 6.354,
+      "input_tokens": 1515,
+      "output_tokens": 512,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 2.519,
+      "input_tokens": 3523,
+      "output_tokens": 491,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 14.713
+}

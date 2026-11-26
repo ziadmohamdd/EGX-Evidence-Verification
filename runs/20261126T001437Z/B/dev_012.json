@@ -1,0 +1,117 @@
+{
+  "case_id": "dev_012",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "We cannot verify Edita's net profit growth for 2025 because the 2025 net profit figure is marked as AMBIGUOUS due to a stamp covering the scanned page. Therefore, we cannot determine if net profit grew by more than 50% to justify a purchase based on your condition. The 2025 revenue of 20915072432 EGP and 2024 revenue of 16146545699 EGP show strong top-line growth, and the 2025 basic and diluted earnings per share of 2.18 EGP increased compared to 1.09 EGP in 2024. However, without a verified 2025 net profit figure, we choose to hold your existing 1000 shares of EFID. This decision keeps your current portfolio diversified and maintains cash of 10000.00 EGP.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "The 2025 consolidated revenue was 20915072432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "The 2024 consolidated revenue was 16146545699 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "The verified 2024 net profit for the year was 1606727698 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "The basic and diluted earnings per share for 2025 was 2.18 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "The basic and diluted earnings per share for 2024 was 1.09 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "The 2025 net profit figure is ambiguous and obscured by a stamp, preventing an exact calculation of net profit growth.",
+      "This guidance is based solely on the provided documents and prices at the cutoff date, and does not guarantee future returns."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "We cannot verify Edita's net profit growth for 2025 because the 2025 net profit figure is marked as AMBIGUOUS due to a stamp covering the scanned page. Therefore, we cannot determine if net profit grew by more than 50% to justify a purchase based on your condition. The 2025 revenue of 20915072432 EGP and 2024 revenue of 16146545699 EGP show strong top-line growth, and the 2025 basic and diluted earnings per share of 2.18 EGP increased compared to 1.09 EGP in 2024. However, without a verified 2025 net profit figure, we choose to hold your existing 1000 shares of EFID. This decision keeps your current portfolio diversified and maintains cash of 10000.00 EGP.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "The 2025 consolidated revenue was 20915072432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "The 2024 consolidated revenue was 16146545699 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "The verified 2024 net profit for the year was 1606727698 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "The basic and diluted earnings per share for 2025 was 2.18 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "The basic and diluted earnings per share for 2024 was 1.09 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "The 2025 net profit figure is ambiguous and obscured by a stamp, preventing an exact calculation of net profit growth.",
+      "This guidance is based solely on the provided documents and prices at the cutoff date, and does not guarantee future returns."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 3.565,
+      "input_tokens": 1354,
+      "output_tokens": 802,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 3.569
+}

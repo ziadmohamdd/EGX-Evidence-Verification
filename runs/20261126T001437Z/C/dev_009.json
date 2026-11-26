@@ -1,0 +1,103 @@
+{
+  "case_id": "dev_009",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "We choose insufficient_evidence because the key revenue and net profit figures required to assess profitability and calculate a reliable full-year earnings per share or price-to-earnings ratio are marked AMBIGUOUS due to conflicting unit indicators in the report. Without unambiguous financial data, we cannot responsibly determine valuation or make a buy recommendation.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Basic Earnings Per Share for 9M 2026 is 8.74 EGP."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Basic Earnings Per Share for 9M 2025 is 4.28 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Revenue and net profit figures are ambiguous due to conflicting unit indicators.",
+      "Full-year 2026 earnings per share and P/E ratio cannot be calculated from unambiguous intermediate data."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "We choose insufficient_evidence because the key revenue and net profit figures required to assess profitability and calculate a reliable full-year earnings per share or price-to-earnings ratio are marked AMBIGUOUS due to conflicting unit indicators in the report. Without unambiguous financial data, we cannot responsibly determine valuation or make a buy recommendation.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Basic Earnings Per Share for 9M 2026 is 8.74 EGP."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Basic Earnings Per Share for 9M 2025 is 4.28 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Revenue and net profit figures are ambiguous due to conflicting unit indicators.",
+      "Full-year 2026 earnings per share and P/E ratio cannot be calculated from unambiguous intermediate data."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "Based on the provided evidence, here is the analysis regarding Abu Qir Fertilizers (ABUK):\n\n### Profitability and Earnings Data Quality\n- **Basic Earnings Per Share (9M 2026):** 8.74 EGP [ABUK-ABUK_9M2026_results-p2-31]\n- **Basic Earnings Per Share (9M 2025):** 4.28 EGP [ABUK-ABUK_9M2026_results-p2-32]\n- **Revenue and Net Profit Figures:** The revenue and net profit figures for both 9M 2026 and 9M 2025 are flagged as **AMBIGUOUS** due to conflicting unit indicators on the source page (multiple mentions of 'مليار' vs. table unit line 'مليون جنيه') [ABUK-ABUK_9M2026_results-p2-01, ABUK-ABUK_9M2026_results-p2-02, ABUK-ABUK_9M2026_results-p2-25, ABUK-ABUK_9M2026_results-p2-26]. \n\n### Calculations and Constraints\n- **Full-Year 2026 EPS:** Because the company's latest report only covers nine months and the intermediate net profit figures are ambiguous, computing a reliable full-year 2026 EPS or projecting an annualized figure cannot be accurately performed using unambiguous data. \n- **Price-to-Earnings (P/E) Ratio:** Given that the full-year EPS cannot be computed, a trailing or forward P/E ratio cannot be determined from the provided evidence. \n- **Valuation Assessment:** Per the instructions, financial figures flagged as ambiguous cannot be used for computations, and no investment recommendations or judgments on whether the share is \"cheap enough to buy\" can be provided. \n\n### Market Price at Cutoff\n- **ABUK Share Price:** 76.21 EGP",
+    "investor": "As the investor-suitability analyst on the investment team, here is my assessment of the investor profile and portfolio allowances:\n\n### **Investor Suitability Assessment**\n\n* **Investment Horizon:** \n  The investor has a **3–5 year horizon**, which fits well with a medium-to-long-term equity allocation, allowing enough time to ride out short-term market volatility and capture potential growth and dividend income.\n\n* **Liquidity Needs:** \n  Liquidity needs are low-to-moderate for the investment portfolio because the investor maintains a **separate emergency fund**. This means capital deployed into equities does not need to be prematurely liquidated for unforeseen short-term cash demands.\n\n* **Loss Willingness and Capacity:** \n  Both the willingness to accept losses and the financial ability to withstand losses are rated as **medium**. Consequently, the portfolio should avoid highly speculative, over-leveraged, or overly concentrated bets that could cause severe capital impairment beyond the investor's psychological and financial comfort zone.\n\n* **Current Concentration:** \n  The portfolio is currently **100% in cash (30,000.00 EGP)** with **no existing holdings**. Therefore, there is zero current concentration risk, providing a clean slate for initial deployment.\n\n* **Capital Commitment Capacity:** \n  The investor holds **30,000.00 EGP** in free cash. Given the share price of ABUK at 76.21 EGP, this cash balance allows for the purchase of up to 393 shares (totaling approximately 29,950.53 EGP), assuming fractional limits or brokerage constraints. \n\n* **Portfolio Allowances (What can be sold / Free Cash):** \n  There are **no current holdings to sell**; liquidity is entirely composed of the **30,000.00 EGP** in free cash, which is fully available to be committed depending on the team's deployment strategy and the asset's suitability. \n\n*(Note: In accordance with my mandate, I have excluded any analysis of company financials, earnings calculations, valuation multiples, and buy/sell recommendations.)*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 37.898,
+      "input_tokens": 1321,
+      "output_tokens": 452,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 2.146,
+      "input_tokens": 1313,
+      "output_tokens": 457,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 3.048,
+      "input_tokens": 2542,
+      "output_tokens": 420,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 43.095
+}

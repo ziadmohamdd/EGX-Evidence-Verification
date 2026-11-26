@@ -1,0 +1,82 @@
+{
+  "case_id": "dev_011",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "To compare the companies on a price-to-earnings (P/E) ratio and make a fully informed investment decision, the number of shares outstanding or market capitalization of each company is needed to calculate total earnings or price per share relative to market price. While earnings per share (EPS) and net profit figures are available for Telecom Egypt, CIB, Edita, and Talaat Moustafa, missing share counts prevent accurate P/E calculations based on the given share prices. Therefore, the evidence is insufficient to recommend a specific buy action.",
+    "claims": [],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-62"
+    ],
+    "limitations": [
+      "Lack of share counts or total market capitalization figures prevents calculating price-to-earnings ratios accurately."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "To compare the companies on a price-to-earnings (P/E) ratio and make a fully informed investment decision, the number of shares outstanding or market capitalization of each company is needed to calculate total earnings or price per share relative to market price. While earnings per share (EPS) and net profit figures are available for Telecom Egypt, CIB, Edita, and Talaat Moustafa, missing share counts prevent accurate P/E calculations based on the given share prices. Therefore, the evidence is insufficient to recommend a specific buy action.",
+    "claims": [],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-62"
+    ],
+    "limitations": [
+      "Lack of share counts or total market capitalization figures prevents calculating price-to-earnings ratios accurately."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 80000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 43.324,
+      "input_tokens": 2538,
+      "output_tokens": 654,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 43.328
+}

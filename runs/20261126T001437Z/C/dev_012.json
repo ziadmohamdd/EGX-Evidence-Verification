@@ -1,0 +1,90 @@
+{
+  "case_id": "dev_012",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "We recommend holding the current position in EFID (Edita Food Industries). The investor asks whether net profit grew by more than 50% in 2025 compared with 2024 to decide on buying more. However, the 2025 net profit figure is explicitly marked as AMBIGUOUS because it is covered by a stamp on the scanned document, making it impossible to calculate the exact growth rate. Furthermore, the portfolio is already heavily concentrated in EFID, which currently represents 67.11% of the total portfolio value, exceeding the diversification limit where no single company may exceed 50%. Therefore, buying more EFID is prohibited by concentration rules, and holding the existing position is the appropriate course of action.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "2024 Net Profit (Consolidated) is 1,606,727,698 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "The 2025 consolidated net profit figure is ambiguous and unreadable due to a stamp, preventing the calculation of net profit growth for 2025."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "We recommend holding the current position in EFID (Edita Food Industries). The investor asks whether net profit grew by more than 50% in 2025 compared with 2024 to decide on buying more. However, the 2025 net profit figure is explicitly marked as AMBIGUOUS because it is covered by a stamp on the scanned document, making it impossible to calculate the exact growth rate. Furthermore, the portfolio is already heavily concentrated in EFID, which currently represents 67.11% of the total portfolio value, exceeding the diversification limit where no single company may exceed 50%. Therefore, buying more EFID is prohibited by concentration rules, and holding the existing position is the appropriate course of action.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "2024 Net Profit (Consolidated) is 1,606,727,698 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "The 2025 consolidated net profit figure is ambiguous and unreadable due to a stamp, preventing the calculation of net profit growth for 2025."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "Based on the provided evidence, here is the analysis regarding Edita's net profit for 2025 compared with 2024:\n\n- **2024 Net Profit (Consolidated):** 1,606,727,698 EGP (verified) [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31].\n- **2025 Net Profit (Consolidated):** AMBIGUOUS, because the 2025 figure is covered by a stamp on the scanned page [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]. \n\n**Data Quality and Computation Note:**\nBecause the 2025 net profit figure is flagged as AMBIGUOUS and unreadable due to a stamp, it cannot be used to compute the growth rate or determine whether net profit grew by more than 50% [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30].",
+    "investor": "As the investor-suitability analyst on the team, I have assessed the investor's profile, current portfolio, and constraints. Here is the evaluation:\n\n### 1. Investor Suitability Assessment\n\n*   **Horizon:** \n    *   *Timeline:* 3 years. \n    *   *Suitability:* This is classified as a short-to-medium-term horizon. Equity investments typically carry higher volatility, which requires careful alignment with a 3-year exit or milestone window.\n*   **Liquidity Needs:** \n    *   *Status:* The investor maintains a separate emergency fund. \n    *   *Suitability:* This frees up portfolio capital from needing to serve as an immediate fallback for cash emergencies, allowing for slightly more flexibility, though the short 3-year horizon still limits aggressive duration risk.\n*   **Loss Willingness and Capacity:** \n    *   *Willingness:* Medium. \n    *   *Capacity:* Medium. \n    *   *Suitability:* The investor is prepared for moderate drawdowns both psychologically and financially, but cannot sustain catastrophic permanent loss of capital. Risk-managed exposure is appropriate.\n*   **Current Concentration:** \n    *   *Portfolio Breakdown:* \n        *   Cash: 10,000.00 EGP\n        *   EFID Holdings: 1,000 shares @ 20.40 EGP = 20,400.00 EGP\n        *   Total Portfolio Value: 30,400.00 EGP\n    *   *Concentration Analysis:* The portfolio is heavily concentrated. EFID represents approximately **67.11%** of the total portfolio value (20,400 EGP out of 30,400 EGP), while cash makes up the remaining **32.89%**. Adding more EFID shares would increase single-stock concentration risk well beyond prudent diversification standards.\n\n### 2. Portfolio Allowances (What Can Be Sold / What Cash Is Free)\n\n*   **Free Cash:** The investor currently holds **10,000.00 EGP** in unallocated cash, which is available to be committed if the investor chooses to deploy new funds.\n*   **Liquidation Options:** The existing position of **1,000 shares of EFID** can be sold on the market to raise additional liquidity if portfolio rebalancing is desired, as the entire holding is liquid at the prevailing market price of 20.40 EGP per share.\n\n***\n\n*(Note: As per my mandate, I have not analyzed company financials, addressed the net profit growth question, or recommended any specific buying or selling action.)*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 4.326,
+      "input_tokens": 1078,
+      "output_tokens": 242,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 4.008,
+      "input_tokens": 1070,
+      "output_tokens": 581,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 1.632,
+      "input_tokens": 2213,
+      "output_tokens": 381,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 9.971
+}

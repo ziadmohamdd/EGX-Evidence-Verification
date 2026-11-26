@@ -1,0 +1,152 @@
+{
+  "case_id": "dev_003",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor profile states a low financial ability to withstand losses, and the portfolio concentration rule specifies that no single company may exceed 50 percent of the portfolio's total value after a buy. Currently, EFID holds 1,500 shares valued at 30,600.00 EGP, representing 51.17 percent of the 59,795.00 EGP total portfolio value, violating the diversification limit. To bring EFID's weighting below 50 percent while maintaining adequate liquidity (as 15,000.00 EGP cash covers the 10 percent 1-year liquidity requirement of 5,979.50 EGP), we sell 200 shares of EFID. EFID reported FY2025 revenue of 20,915,072,432 EGP and net profit of 2,695,301,670 EGP, with total equity of 5,724,525,864 EGP. ETEL reported operating revenues of 106,672,946 thousand EGP and net profit of 22,578,063 thousand EGP, with total equity of 63,687,826 thousand EGP.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID reported FY2025 revenue of 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID reported FY2025 net profit of 2,695,301,670 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+        "stated_value": 5724525864.0,
+        "statement": "EFID reported total equity of 5,724,525,864 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL reported operating revenues of 106,672,946 thousand EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL reported net profit of 22,578,063 thousand EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL reported total equity of 63,687,826 thousand EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55"
+    ],
+    "limitations": [
+      "EPS figures are marked ambiguous due to unit labeling discrepancies and are excluded from calculations."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "EFID",
+    "shares": 200,
+    "explanation": "The investor profile states a low financial ability to withstand losses, and the portfolio concentration rule specifies that no single company may exceed 50 percent of the portfolio's total value after a buy. Currently, EFID holds 1,500 shares valued at 30,600.00 EGP, representing 51.17 percent of the 59,795.00 EGP total portfolio value, violating the diversification limit. To bring EFID's weighting below 50 percent while maintaining adequate liquidity (as 15,000.00 EGP cash covers the 10 percent 1-year liquidity requirement of 5,979.50 EGP), we sell 200 shares of EFID. EFID reported FY2025 revenue of 20,915,072,432 EGP and net profit of 2,695,301,670 EGP, with total equity of 5,724,525,864 EGP. ETEL reported operating revenues of 106,672,946 thousand EGP and net profit of 22,578,063 thousand EGP, with total equity of 63,687,826 thousand EGP.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID reported FY2025 revenue of 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID reported FY2025 net profit of 2,695,301,670 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39",
+        "stated_value": 5724525864.0,
+        "statement": "EFID reported total equity of 5,724,525,864 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL reported operating revenues of 106,672,946 thousand EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL reported net profit of 22,578,063 thousand EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL reported total equity of 63,687,826 thousand EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55"
+    ],
+    "limitations": [
+      "EPS figures are marked ambiguous due to unit labeling discrepancies and are excluded from calculations."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 19080.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1300
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "Based on the provided financial evidence for both companies for the period ending 31 December 2025, here is the analysis covering profitability, growth, balance sheet, risks, and data quality.\n\n### **1. EFID Analysis**\n*   **Profitability & Growth:** EFID generated consolidated revenue of 20,915,072,432 EGP for FY2025, up from 16,146,545,699 EGP in the prior period [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01]. Consolidated net profit for the year reached 2,695,301,670 EGP, compared to 1,606,727,698 EGP previously [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]. Basic and diluted earnings per share were 2.18 EGP, up from 1.09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38].\n*   **Balance Sheet:** Total equity stood at 5,724,525,864 EGP at the end of December 2025, rising from 4,055,484,719 EGP in the previous period [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39]. \n*   **Data Quality:** Verified figures from consolidated statements. Note that the unit line for total equity was stated as \"None\" [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-39], but values align directly with the EGP currency standard of the report.\n\n### **2. ETEL Analysis**\n*   **Profitability & Growth:** ETEL reported operating revenues of 106,672,946 thousand EGP (106,672,946,000 EGP) for FY2025, compared to 81,677,812 thousand EGP (81,677,812,000 EGP) previously [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01]. Net profit for the year was 22,578,063 thousand EGP (22,578,063,000 EGP), up from 10,111,328 thousand EGP (10,111,328,000 EGP) [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35]. Basic and diluted earnings per share were 11.93 EGP, up from 4.79 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55].\n*   **Balance Sheet:** Total consolidated equity reached 63,687,826 thousand EGP (63,687,826,000 EGP) at year-end 2025, compared to 45,937,991 thousand EGP (45,937,991,000 EGP) at the end of the prior period [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45].\n*   **Data Quality:** Verified figures. The unit line is explicitly stated as `L.E.(000)` (thousands of pounds) for income statement and balance sheet items [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01, ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]. However, the unit line for the EPS row also repeats `L.E.(000)` despite the figures representing per-share values of 11.93 EGP and 4.79 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55]; therefore, the EPS unit designation is flagged as **AMBIGUOUS** and not used for computation.\n\n### **3. Portfolio Context & Constraints**\n*   **Current Holdings Valuation (at cutoff prices):**\n    *   EFID: 1,500 shares @ 20.40 EGP = 30,600.00 EGP\n    *   ETEL: 100 shares @ 141.95 EGP = 14,195.00 EGP\n    *   Cash: 15,000.00 EGP\n    *   Total Portfolio Value: 59,795.00 EGP\n*   **Liquidity & Risk Profile:** You may need 10% of your money within a year (~5,979.50 EGP), which is well-covered by your 15,000.00 EGP cash holding. However, your profile indicates a *low* financial ability to withstand losses alongside a medium willingness to accept them, targeting steady growth with some income over a 3-5 year horizon. Both companies exhibit strong top-line and bottom-line growth alongside expanding equity bases for FY2025.",
+    "investor": "As the investor-suitability analyst on the investment team, here is the assessment of the investor's profile, current portfolio, liquidity, and risk parameters based on the provided information:\n\n### 1. Investor Horizon\n- **Timeline:** 3–5 years.\n- **Suitability Implication:** This medium-term horizon allows for a blend of growth and income-generating assets, but it restricts exposure to overly volatile, speculative instruments that require a 5+ year recovery window.\n\n### 2. Liquidity Needs\n- **Requirement:** The investor may need 10% of their money within a year.\n- **Suitability Implication:** A portion of the portfolio must remain highly liquid or be easily accessible via short-term cash reserves or liquid holdings without incurring steep realization penalties.\n\n### 3. Loss Willingness and Capacity\n- **Willingness:** Medium (open to accepting some market fluctuations in pursuit of steady growth).\n- **Capacity:** Low (the financial ability to withstand actual losses is restricted).\n- **Suitability Implication:** This creates a mismatch if the portfolio is overly concentrated in high-beta equities. Downside protection is crucial because, while the investor *is willing* to stomach some volatility psychologically, their financial situation has a low tolerance for permanent capital impairment.\n\n### 4. Current Portfolio & Concentration Analysis\n- **Cash:** 15,000.00 EGP\n- **Holdings Valuation (at cutoff prices):**\n  - **EFID:** 1,500 shares @ 20.40 EGP = 30,600.00 EGP\n  - **ETEL:** 100 shares @ 141.95 EGP = 14,195.00 EGP\n  - **Total Holdings Value:** 44,795.00 EGP\n- **Total Portfolio Value:** 59,795.00 EGP (15,000.00 EGP cash + 44,795.00 EGP equities)\n- **Concentration:** \n  - Cash represents ~25.09% of the total portfolio.\n  - EFID represents ~51.17% of the total portfolio.\n  - ETEL represents ~23.74% of the total portfolio.\n\n### 5. Portfolio Allowances (Liquidity & Sellable Assets)\n- **Free Cash:** The investor currently holds 15,000.00 EGP in cash. \n- **1-Year Liquidity Requirement:** 10% of the total portfolio value (59,795.00 EGP) equals approximately 5,979.50 EGP. \n- **Liquidity Coverage:** The existing free cash (15,000.00 EGP) more than fully covers the potential 10% liquidity need (5,979.50 EGP) over the next year without needing to liquidate any equity holdings.\n- **Sellable Assets:** Both EFID (valued at 30,600.00 EGP) and ETEL (valued at 14,195.00 EGP) can be sold in the market if reallocation is deemed appropriate by the team."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 4.456,
+      "input_tokens": 1308,
+      "output_tokens": 1257,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 2.396,
+      "input_tokens": 1300,
+      "output_tokens": 715,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 4.651,
+      "input_tokens": 3591,
+      "output_tokens": 981,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 11.509
+}

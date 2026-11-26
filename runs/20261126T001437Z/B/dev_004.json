@@ -1,0 +1,95 @@
+{
+  "case_id": "dev_004",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 242,
+    "explanation": "The investor needs about 30,000 EGP within 6 months, has low willingness and ability to withstand losses, and holds 5,000 EGP in cash plus 1,000 shares of COMI at 128.00 EGP per share (total portfolio value = 133,000.00 EGP). To meet the liquidity need of 30,000 EGP, the investor lacks sufficient cash and must sell some holdings. Selling 242 shares of COMI at 128.00 EGP raises 30,976.00 EGP, which combined with the existing 5,000 EGP cash covers the 30,000 EGP liquidity requirement while leaving 758 shares of COMI (valued at 97,024.00 EGP) and 5,976.00 EGP in cash. This maintains diversification under the 50% limit and addresses the short-term cash need. Financial figures from the reports show net profit for the year ending Dec 31, 2025 was 82,258,815,000 EGP and net interest income was 107,699,631,000 EGP, reflecting strong underlying performance for COMI (COMI-COMI_FY2025_consolidated_condensed_en-p5-33, COMI-COMI_FY2025_consolidated_condensed_en-p5-05), but the investor's personal liquidity constraints dictate the sale.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "Net profit for the year ending Dec 31, 2025 was 82,258,815,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107699631000.0,
+        "statement": "Net interest income for the period ending Dec. 31, 2025 was 107,699,631,000 EGP."
+      }
+    ],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40"
+    ],
+    "limitations": [
+      "Market prices can fluctuate before execution, affecting the exact cash realized from the share sale.",
+      "Stock investments carry inherent volatility risks despite favorable company earnings."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 242,
+    "explanation": "The investor needs about 30,000 EGP within 6 months, has low willingness and ability to withstand losses, and holds 5,000 EGP in cash plus 1,000 shares of COMI at 128.00 EGP per share (total portfolio value = 133,000.00 EGP). To meet the liquidity need of 30,000 EGP, the investor lacks sufficient cash and must sell some holdings. Selling 242 shares of COMI at 128.00 EGP raises 30,976.00 EGP, which combined with the existing 5,000 EGP cash covers the 30,000 EGP liquidity requirement while leaving 758 shares of COMI (valued at 97,024.00 EGP) and 5,976.00 EGP in cash. This maintains diversification under the 50% limit and addresses the short-term cash need. Financial figures from the reports show net profit for the year ending Dec 31, 2025 was 82,258,815,000 EGP and net interest income was 107,699,631,000 EGP, reflecting strong underlying performance for COMI (COMI-COMI_FY2025_consolidated_condensed_en-p5-33, COMI-COMI_FY2025_consolidated_condensed_en-p5-05), but the investor's personal liquidity constraints dictate the sale.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "Net profit for the year ending Dec 31, 2025 was 82,258,815,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107699631000.0,
+        "statement": "Net interest income for the period ending Dec. 31, 2025 was 107,699,631,000 EGP."
+      }
+    ],
+    "unused_figures": [
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40"
+    ],
+    "limitations": [
+      "Market prices can fluctuate before execution, affecting the exact cash realized from the share sale.",
+      "Stock investments carry inherent volatility risks despite favorable company earnings."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 35976.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 758
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 4.254,
+      "input_tokens": 1434,
+      "output_tokens": 816,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 4.259
+}

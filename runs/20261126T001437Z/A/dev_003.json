@@ -1,0 +1,101 @@
+{
+  "case_id": "dev_003",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "Given the investor profile aiming for steady growth with some income, a 3-5 year horizon, and a low financial ability to withstand losses, the current portfolio is well-balanced and does not warrant selling existing holdings. The investor holds 1500 shares of EFID at a price of 20.40 EGP per share (worth 30,600.00 EGP) and 100 shares of ETEL at a price of 141.95 EGP per share (worth 14,195.00 EGP), alongside 15,000.00 EGP in cash. Total portfolio value is 59,795.00 EGP. ETEL reported strong operating revenues of 106,672,946,000 Egs [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01] and a net profit for the year of 22,578,063,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35], while EFID reported consolidated revenues of 20,915,072,432 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01] and a net profit of 2,695,301,670 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]. The investor may need 10% of their money within a year (approx. 5,979.50 EGP), which is easily covered by the 15,000.00 EGP cash buffer. Therefore, holding the current position in ETEL is recommended without making further purchases that could violate diversification limits or increase downside risk.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL reported strong operating revenues of 106,672,946,000 Egs."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL reported a net profit for the year of 22,578,063,000 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID reported consolidated revenues of 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID reported a net profit of 2,695,301,670 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Past performance as indicated by FY2025 financials does not guarantee future returns.",
+      "Macroeconomic changes in Egypt could affect future equity prices and liquidity."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "Given the investor profile aiming for steady growth with some income, a 3-5 year horizon, and a low financial ability to withstand losses, the current portfolio is well-balanced and does not warrant selling existing holdings. The investor holds 1500 shares of EFID at a price of 20.40 EGP per share (worth 30,600.00 EGP) and 100 shares of ETEL at a price of 141.95 EGP per share (worth 14,195.00 EGP), alongside 15,000.00 EGP in cash. Total portfolio value is 59,795.00 EGP. ETEL reported strong operating revenues of 106,672,946,000 Egs [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01] and a net profit for the year of 22,578,063,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35], while EFID reported consolidated revenues of 20,915,072,432 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01] and a net profit of 2,695,301,670 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]. The investor may need 10% of their money within a year (approx. 5,979.50 EGP), which is easily covered by the 15,000.00 EGP cash buffer. Therefore, holding the current position in ETEL is recommended without making further purchases that could violate diversification limits or increase downside risk.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL reported strong operating revenues of 106,672,946,000 Egs."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL reported a net profit for the year of 22,578,063,000 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID reported consolidated revenues of 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID reported a net profit of 2,695,301,670 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Past performance as indicated by FY2025 financials does not guarantee future returns.",
+      "Macroeconomic changes in Egypt could affect future equity prices and liquidity."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 2.699,
+      "input_tokens": 1584,
+      "output_tokens": 906,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 2.703
+}

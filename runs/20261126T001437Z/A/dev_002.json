@@ -1,0 +1,79 @@
+{
+  "case_id": "dev_002",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 600,
+    "explanation": "Based on the investor profile and financial evidence for Talaat Moustafa Group Holding (TMGH), the company shows strong performance with a consolidated net profit for 2025 of 18,201,981,482 EGP and a 2025 gross profit of 20,855,400,384 EGP. The share price is 82.50 EGP. Buying 600 shares costs 49,500.00 EGP, leaving 50,500.00 EGP in cash. This keeps the single stock value under 50 percent of the total portfolio value (49,500 EGP holdings out of 100,000 EGP total), maintaining diversification rules. Guidance is not a guarantee of returns; investments carry risks. The 2024 net profit figure was marked ambiguous and unused, affecting historical comparison but not the current 2025 profitability assessment.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "The company shows strong performance with a consolidated net profit for 2025 of 18,201,981,482 EGP and a 2025 gross profit of 20,855,400,384 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "The company shows strong performance with a consolidated net profit for 2025 of 18,201,981,482 EGP and a 2025 gross profit of 20,855,400,384 EGP."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "Guidance is based solely on the provided evidence and current prices up to the cutoff date and does not guarantee future returns."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 600,
+    "explanation": "Based on the investor profile and financial evidence for Talaat Moustafa Group Holding (TMGH), the company shows strong performance with a consolidated net profit for 2025 of 18,201,981,482 EGP and a 2025 gross profit of 20,855,400,384 EGP. The share price is 82.50 EGP. Buying 600 shares costs 49,500.00 EGP, leaving 50,500.00 EGP in cash. This keeps the single stock value under 50 percent of the total portfolio value (49,500 EGP holdings out of 100,000 EGP total), maintaining diversification rules. Guidance is not a guarantee of returns; investments carry risks. The 2024 net profit figure was marked ambiguous and unused, affecting historical comparison but not the current 2025 profitability assessment.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+        "stated_value": 20855400384.0,
+        "statement": "The company shows strong performance with a consolidated net profit for 2025 of 18,201,981,482 EGP and a 2025 gross profit of 20,855,400,384 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "The company shows strong performance with a consolidated net profit for 2025 of 18,201,981,482 EGP and a 2025 gross profit of 20,855,400,384 EGP."
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-56"
+    ],
+    "limitations": [
+      "Guidance is based solely on the provided evidence and current prices up to the cutoff date and does not guarantee future returns."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 50500.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 600
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 3.216,
+      "input_tokens": 1353,
+      "output_tokens": 586,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 3.221
+}

@@ -1,0 +1,107 @@
+{
+  "case_id": "dev_003",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "Given the investor's low financial ability to withstand losses and the need for potential liquidity within a year, maintaining the current position is prudent. ETEL showed strong operating revenues of 106,672,946,000 EGP and a net profit of 22,578,063,000 EGP for FY2025. EFID also showed solid performance with revenue of 20,915,072,432 EGP and net profit of 2,695,301,670 EGP. However, since the investor already holds ETEL and EFID, and considering the diversification rule that no single company may exceed half of the total portfolio value after a buy, no further purchases are made. We recommend holding the current ETEL position. This is guidance, not a guarantee of returns; market conditions carry inherent uncertainty.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL showed strong operating revenues of 106,672,946,000 EGP and a net profit of 22,578,063,000 EGP for FY2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL showed strong operating revenues of 106,672,946,000 EGP and a net profit of 22,578,063,000 EGP for FY2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID also showed solid performance with revenue of 20,915,072,432 EGP and net profit of 2,695,301,670 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID also showed solid performance with revenue of 20,915,072,432 EGP and net profit of 2,695,301,670 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Guidance is based on past FY2025 financial statements and does not guarantee future performance.",
+      "Stock prices and liquidity can fluctuate unexpectedly."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "Given the investor's low financial ability to withstand losses and the need for potential liquidity within a year, maintaining the current position is prudent. ETEL showed strong operating revenues of 106,672,946,000 EGP and a net profit of 22,578,063,000 EGP for FY2025. EFID also showed solid performance with revenue of 20,915,072,432 EGP and net profit of 2,695,301,670 EGP. However, since the investor already holds ETEL and EFID, and considering the diversification rule that no single company may exceed half of the total portfolio value after a buy, no further purchases are made. We recommend holding the current ETEL position. This is guidance, not a guarantee of returns; market conditions carry inherent uncertainty.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL showed strong operating revenues of 106,672,946,000 EGP and a net profit of 22,578,063,000 EGP for FY2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL showed strong operating revenues of 106,672,946,000 EGP and a net profit of 22,578,063,000 EGP for FY2025."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID also showed solid performance with revenue of 20,915,072,432 EGP and net profit of 2,695,301,670 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID also showed solid performance with revenue of 20,915,072,432 EGP and net profit of 2,695,301,670 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Guidance is based on past FY2025 financial statements and does not guarantee future performance.",
+      "Stock prices and liquidity can fluctuate unexpectedly."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 100
+      },
+      {
+        "ticker": "EFID",
+        "shares": 1500
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 2.256,
+      "input_tokens": 1584,
+      "output_tokens": 759,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 2.261
+}

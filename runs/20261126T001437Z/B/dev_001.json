@@ -1,0 +1,107 @@
+{
+  "case_id": "dev_001",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "We recommend holding your current position in ETEL. According to the FY2025 financial statements, ETEL reported operating revenues of 106,672,946 thousand EGP and a strong net profit for the year of 22,578,063 thousand EGP, demonstrating substantial growth compared to 2024. The basic and diluted earnings per share for 2025 is 11.93 EGP, and the share price stands at 141.95 EGP. Given your 5-7 year horizon for your child's university fees and moderate risk tolerance, holding your 300 existing shares allows you to benefit from ETEL's fundamental strength without committing additional cash under strict portfolio diversification limits, which dictate that no single stock can exceed 50 percent of the total portfolio value. This guidance carries inherent market uncertainties and is not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL reported operating revenues of 106,672,946 thousand EGP for 2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL reported a net profit for the year of 22,578,063 thousand EGP for 2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "The basic and diluted earnings per share for 2025 is 11.93 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "This guidance is based solely on provided historical financial statements and share prices up to November 2026 and does not guarantee future performance.",
+      "Stock markets involve risk of capital loss, and macroeconomic factors may affect future share prices."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "We recommend holding your current position in ETEL. According to the FY2025 financial statements, ETEL reported operating revenues of 106,672,946 thousand EGP and a strong net profit for the year of 22,578,063 thousand EGP, demonstrating substantial growth compared to 2024. The basic and diluted earnings per share for 2025 is 11.93 EGP, and the share price stands at 141.95 EGP. Given your 5-7 year horizon for your child's university fees and moderate risk tolerance, holding your 300 existing shares allows you to benefit from ETEL's fundamental strength without committing additional cash under strict portfolio diversification limits, which dictate that no single stock can exceed 50 percent of the total portfolio value. This guidance carries inherent market uncertainties and is not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "ETEL reported operating revenues of 106,672,946 thousand EGP for 2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL reported a net profit for the year of 22,578,063 thousand EGP for 2025."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "The basic and diluted earnings per share for 2025 is 11.93 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-06",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56"
+    ],
+    "limitations": [
+      "This guidance is based solely on provided historical financial statements and share prices up to November 2026 and does not guarantee future performance.",
+      "Stock markets involve risk of capital loss, and macroeconomic factors may affect future share prices."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 3.586,
+      "input_tokens": 1799,
+      "output_tokens": 761,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 3.591
+}

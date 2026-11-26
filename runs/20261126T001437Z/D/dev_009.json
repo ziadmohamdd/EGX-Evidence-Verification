@@ -1,0 +1,99 @@
+{
+  "case_id": "dev_009",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asks to work out the full-year 2026 earnings per share and the price-to-earnings ratio for Abu Qir Fertilizers (ABUK) and to determine if the share is cheap enough to buy. However, the provided evidence only covers a nine-month period ended 30 September 2026, and key financial figures such as net profit and revenues are explicitly flagged as AMBIGUOUS due to conflicting unit designations in the source document. Furthermore, basic EPS for the 9-month period is 8.74 EGP, but without full-year 2026 earnings data or unambiguous annual figures, we cannot calculate a full-year EPS or P/E ratio. Therefore, there is insufficient unambiguous evidence to make a responsible buy decision or fulfill the quantitative valuation request.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "The 9M 2026 basic earnings per share is verified as 8.74 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Evidence for revenues and net profit is ambiguous and cannot be used in calculations.",
+      "Full-year 2026 results are missing since the report only covers the first nine months."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asks to work out the full-year 2026 earnings per share and the price-to-earnings ratio for Abu Qir Fertilizers (ABUK) and to determine if the share is cheap enough to buy. However, the provided evidence only covers a nine-month period ended 30 September 2026, and key financial figures such as net profit and revenues are explicitly flagged as AMBIGUOUS due to conflicting unit designations in the source document. Furthermore, basic EPS for the 9-month period is 8.74 EGP, but without full-year 2026 earnings data or unambiguous annual figures, we cannot calculate a full-year EPS or P/E ratio. Therefore, there is insufficient unambiguous evidence to make a responsible buy decision or fulfill the quantitative valuation request.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "The 9M 2026 basic earnings per share is verified as 8.74 EGP."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Evidence for revenues and net profit is ambiguous and cannot be used in calculations.",
+      "Full-year 2026 results are missing since the report only covers the first nine months."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "Based on the company evidence provided, here is the analysis regarding Abu Qir Fertilizers (ABUK) and the specific figures available:\n\n### 1. Profitability & Earnings Per Share (EPS)\n* **9M 2026 Basic Earnings per Share:** Verified as **8.74 EGP** for the nine months ended 30 September 2026 [ABUK-ABUK_9M2026_results-p2-31].\n* **9M 2025 Basic Earnings per Share:** Verified as **4.28 EGP** for the nine months ended 30 September 2025 [ABUK-ABUK_9M2026_results-p2-32].\n* **Full-Year 2026 EPS:** The provided evidence only covers the nine-month period. Because the report does not provide full-year projections or Q4 results, a full-year 2026 earnings per share cannot be calculated from the given evidence. \n\n### 2. Price-to-Earnings (P/E) Ratio\n* **Share Price:** 76.21 EGP (at the cutoff date).\n* **P/E Calculation:** Because the full-year 2026 EPS is unavailable, a full-year P/E ratio cannot be computed. Furthermore, using trailing figures requires complete annual data, and certain underlying financial figures (such as total revenues and net profit) are flagged as **AMBIGUOUS** due to conflicting unit designations on the source page (mixing 'مليار' [billion] and 'مليون' [million]) [ABUK-ABUK_9M2026_results-p2-01, ABUK-ABUK_9M2026_results-p2-25]. Per instructions, ambiguous figures cannot be used in computations.\n\n### 3. Valuation & Investment Decision\n* **Data Quality & Valuation:** While the basic EPS for the 9-month period is verified (8.74 EGP) [ABUK-ABUK_9M2026_results-p2-31], key revenue and net profit metrics carry data quality flags (ambiguous units). \n* **Recommendation:** As an analyst, I do not recommend an action. However, based strictly on the provided evidence, there is insufficient unambiguous data to calculate a full-year 2026 EPS or P/E ratio to determine whether the share is cheap enough to buy.",
+    "investor": "As the investor-suitability analyst on the investment team, here is my assessment of the investor's profile and portfolio constraints regarding a potential investment in ABUK (priced at 76.21 EGP per share as of November 18, 2026):\n\n### 1. Investment Horizon\n* **Suitability:** The investor’s stated horizon is **3 to 5 years**. \n* **Alignment:** This medium-term horizon aligns well with equity investments in established industrial/exporting companies, allowing enough time to ride out short-term market volatility and capture both dividend income and long-term capital growth.\n\n### 2. Liquidity Needs\n* **Suitability:** The investor maintains a **separate emergency fund** and has no immediate short-term cash flow pressures from the portfolio.\n* **Alignment:** This low dependency on portfolio liquidity means the capital can be locked into equities without the risk of being forced to sell during market downturns.\n\n### 3. Loss Willingness and Capacity\n* **Suitability:** Both the willingness to accept losses and the financial ability to withstand them are rated as **medium**.\n* **Alignment:** Because equities—especially individual stocks like ABUK—carry inherent price volatility and downside risk, a medium risk tolerance means the investor should avoid over-allocating their entire net worth into a single name, but can tolerate standard market drawdowns. \n\n### 4. Current Concentration and Portfolio Allowance\n* **Current Holdings:** **None** (0% concentration in equities).\n* **Cash Available:** **30,000.00 EGP** in free cash.\n* **Portfolio Allowance:** Since there are currently no holdings, nothing needs to be sold. The entire portfolio consists of liquid cash. \n\n### 5. Capital Commitment\n* **Amount:** Out of the 30,000.00 EGP total cash available, a reasonable commitment depends on overall diversification rules, but up to the full 30,000.00 EGP *could* technically be deployed if the asset fits the risk profile. At a share price of 76.21 EGP, 30,000.00 EGP would allow for the purchase of approximately 393 shares (ignoring transaction fees). However, given the investor's medium loss tolerance, deploying the entire cash pile into a single stock (ABUK) would create a 100% single-stock concentration risk. \n\n***\n*Note: Per my team mandate, I have assessed the suitability, horizon, liquidity, risk profile, and portfolio allowances above, but I do not analyze company financials, compute valuation multiples, or make a final buy/sell/hold recommendation.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 36.927,
+      "input_tokens": 1321,
+      "output_tokens": 540,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 2.735,
+      "input_tokens": 1313,
+      "output_tokens": 575,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 2.455,
+      "input_tokens": 2748,
+      "output_tokens": 450,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 42.123
+}

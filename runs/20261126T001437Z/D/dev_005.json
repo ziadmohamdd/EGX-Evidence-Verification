@@ -1,0 +1,92 @@
+{
+  "case_id": "dev_005",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor wishes to add a fertilizer exporter for diversification, specifically ABUK. However, key financial figures including activity revenues and net profit for both 2025 and 2026 are marked AMBIGUOUS due to conflicting unit indicators in the source evidence. Furthermore, complete balance sheet data, debt metrics, and cash flow statements are missing, making it impossible to perform a comprehensive financial evaluation or make a responsible investment decision.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Key revenue and net profit figures are ambiguous due to conflicting unit references.",
+      "Lack of balance sheet data, debt metrics, and cash flow statements prevents a thorough financial analysis."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor wishes to add a fertilizer exporter for diversification, specifically ABUK. However, key financial figures including activity revenues and net profit for both 2025 and 2026 are marked AMBIGUOUS due to conflicting unit indicators in the source evidence. Furthermore, complete balance sheet data, debt metrics, and cash flow statements are missing, making it impossible to perform a comprehensive financial evaluation or make a responsible investment decision.",
+    "claims": [],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-01",
+      "ABUK-ABUK_9M2026_results-p2-02",
+      "ABUK-ABUK_9M2026_results-p2-25",
+      "ABUK-ABUK_9M2026_results-p2-26"
+    ],
+    "limitations": [
+      "Key revenue and net profit figures are ambiguous due to conflicting unit references.",
+      "Lack of balance sheet data, debt metrics, and cash flow statements prevents a thorough financial analysis."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 40000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "Based on the provided evidence for Abu Qir Fertilizers (ABUK), here is the financial analysis of the company's performance, growth, and data quality.\n\n### Profitability and Growth\n* **Earnings per Share:** ABUK reported a basic earnings per share of **8.74 EGP** for the nine months ended 30 September 2026 [ABUK-ABUK_9M2026_results-p2-31], compared to **4.28 EGP** for the corresponding period ended 30 September 2025 [ABUK-ABUK_9M2026_results-p2-32].\n\n### Balance Sheet, Risks, and Data Quality\n* **Data Quality Issues:** Several key financial figures are flagged as **AMBIGUOUS** due to conflicting unit indicators on the source page (the page displays a mix of multiple 'billion' ['مليار'] and 'million' ['مليون'] unit references alongside the table unit line of million pounds) [ABUK-ABUK_9M2026_results-p2-01]. \n* **Unreliable Figures:** Because of this ambiguity, figures for Activity Revenues (إيرادات النشاط) [ABUK-ABUK_9M2026_results-p2-01, ABUK-ABUK_9M2026_results-p2-02] and Net Profit for the Period (صافي ربح الفترة) [ABUK-ABUK_9M2026_results-p2-25, ABUK-ABUK_9M2026_results-p2-26] cannot be reliably computed or used for financial evaluation.\n* **Missing Elements:** The provided evidence lacks complete balance sheet data, debt metrics, detailed risk disclosures, and cash flow statements.",
+    "investor": "As the investment-suitability analyst on the team, here is the assessment of the investor’s profile, current portfolio, and constraints:\n\n### 1. Investment Horizon\n* **Suitability:** The investor has a **5-year horizon**, which aligns well with medium-to-long-term equity investments, such as adding a fertilizer exporter (ABUK). This timeframe allows the investor to ride out short-term market volatility inherent in cyclical commodity or export-driven sectors.\n\n### 2. Liquidity Needs\n* **Suitability:** Liquidity needs are low-to-moderate for this portfolio because the investor maintains a **separate emergency fund**. Therefore, capital allocated to the stock market does not need to serve as an immediate cash buffer, supporting a commitment to less liquid equity assets.\n\n### 3. Loss Willingness and Capacity\n* **Suitability:** Both the willingness and financial capacity to accept losses are rated as **medium**. The investor can tolerate moderate drawdowns without facing financial distress, which fits standard equity exposure but implies that highly speculative or heavily leveraged positions should be avoided.\n\n### 4. Current Concentration and Portfolio Allowance\n* **Current Portfolio Breakdown:**\n  * **Cash:** 40,000.00 EGP\n  * **COMI Holdings:** 200 shares × 128.00 EGP = 25,600.00 EGP\n  * **Total Portfolio Value:** 65,600.00 EGP\n* **Concentration Analysis:** Currently, the portfolio is split between cash (approx. 61%) and a single banking holding, COMI (approx. 39%). Adding a fertilizer exporter would fulfill the investor's goal of sector diversification away from banking.\n* **What the Portfolio Allows (Cash & Liquidity):** \n  * **Free Cash:** There is **40,000.00 EGP** in readily available cash that can be committed to new investments without touching the emergency fund.\n  * **Liquidatable Assets:** The 200 shares of COMI are valued at **25,600.00 EGP** and can be sold if the investor chooses to reallocate existing equity weightings, though selling is not strictly necessary given the available free cash.\n\n### 5. Capital Commitment\n* **Suitability:** With **40,000.00 EGP** in free cash and a share price for ABUK at **76.21 EGP**, the investor has the capacity to purchase up to roughly 524 shares entirely out of cash. Depending on their desired asset allocation weights, committing a portion or all of the 40,000.00 EGP cash pile would satisfy the goal of adding a fertilizer exporter while respecting their medium risk profile and maintaining the separate emergency fund."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 11.343,
+      "input_tokens": 1301,
+      "output_tokens": 402,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 2.784,
+      "input_tokens": 1293,
+      "output_tokens": 603,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 2.751,
+      "input_tokens": 2618,
+      "output_tokens": 285,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 16.883
+}

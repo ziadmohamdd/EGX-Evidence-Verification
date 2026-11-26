@@ -1,0 +1,90 @@
+{
+  "case_id": "dev_011",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "To compare the companies on their price-to-earnings (P/E) ratio and make a fully informed recommendation, we need the number of shares or market capitalization values, or explicit P/E figures. While net profits and earnings per share are available, calculating the P/E ratio requires share prices alongside earnings per share or total market data. Therefore, the evidence is insufficient to complete the P/E comparison required by the user.",
+    "claims": [],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-62"
+    ],
+    "limitations": [
+      "P/E ratios cannot be directly calculated or compared without additional market valuation inputs or explicit figures.",
+      "This guidance is based strictly on the provided financial reports and cutoff date prices."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "To compare the companies on their price-to-earnings (P/E) ratio and make a fully informed recommendation, we need the number of shares or market capitalization values, or explicit P/E figures. While net profits and earnings per share are available, calculating the P/E ratio requires share prices alongside earnings per share or total market data. Therefore, the evidence is insufficient to complete the P/E comparison required by the user.",
+    "claims": [],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-19",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+      "TMGH-TMGH_FY2025_consolidated_en-p7-62"
+    ],
+    "limitations": [
+      "P/E ratios cannot be directly calculated or compared without additional market valuation inputs or explicit figures.",
+      "This guidance is based strictly on the provided financial reports and cutoff date prices."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 80000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 5.07,
+      "input_tokens": 2538,
+      "output_tokens": 650,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 5.075
+}

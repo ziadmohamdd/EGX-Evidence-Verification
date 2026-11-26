@@ -1,0 +1,96 @@
+{
+  "case_id": "dev_012",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "We choose hold because the 2025 net profit figure is explicitly marked as ambiguous due to a stamp covering the scanned page, meaning we cannot verify if Edita's net profit grew by more than 50% in 2025 as requested by the investor. We must use the hold action for the stock the investor already owns. Unused figures include the 2025 ambiguous net profit of 2695301670 EGP.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "The consolidated net profit for the period ending 31 December 2024 is verified at 1,606,727,698 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "The 2025 net profit figure is covered by a stamp and marked ambiguous, preventing a direct growth calculation."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "We choose hold because the 2025 net profit figure is explicitly marked as ambiguous due to a stamp covering the scanned page, meaning we cannot verify if Edita's net profit grew by more than 50% in 2025 as requested by the investor. We must use the hold action for the stock the investor already owns. Unused figures include the 2025 ambiguous net profit of 2695301670 EGP.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "The consolidated net profit for the period ending 31 December 2024 is verified at 1,606,727,698 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30"
+    ],
+    "limitations": [
+      "The 2025 net profit figure is covered by a stamp and marked ambiguous, preventing a direct growth calculation."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "Based on the provided evidence for Edita (EFID):\n\n* **Data Quality Issue / Flagged Figure:** The 2025 consolidated net profit figure of 2,695,301,670 EGP is marked as **AMBIGUOUS** because it is covered by a stamp on the scanned page [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30].\n* **Verified Figures:** \n  * The consolidated net profit for the period ending 31 December 2024 is verified at 1,606,727,698 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31].\n  * Basic and diluted earnings per share (consolidated) are reported as 2.18 EGP for 2025 and 1.09 EGP for 2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39].\n  * Consolidated revenue is reported as 20,915,072,432 EGP for 2025 and 16,146,545,699 EGP for 2024 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01, EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02].\n\n**Conclusion:** \nAs per the instructions, because the 2025 net profit figure is AMBIGUOUS, we cannot compute the net profit growth for 2025 compared to 2024.",
+    "investor": "As the investor-suitability analyst on the team, I have assessed the investor's profile, current portfolio, liquidity, and constraints based on the provided parameters. \n\n### **Investor Suitability Assessment**\n\n* **Investment Horizon:** \n  The investor has a **3-year horizon**. This is a relatively short-to-medium-term horizon for equity investments, meaning the portfolio needs to be managed carefully to avoid forced selling during potential market downturns within this window.\n\n* **Liquidity Needs:** \n  The investor maintains a **separate emergency fund**, meaning the capital currently allocated to the portfolio is not required for short-term day-to-day liquidity emergencies. \n\n* **Loss Willingness and Capacity:** \n  Both the willingness to accept losses and the financial ability to withstand losses are rated as **medium**. The investor can tolerate moderate market volatility and drawdowns, but cannot sustain aggressive, high-risk capital destruction.\n\n* **Current Portfolio & Concentration:**\n  * **Current Holdings:** 1,000 shares of EFID. At the cutoff price of 20.40 EGP per share, the equity holding is valued at **20,400 EGP**.\n  * **Current Cash:** **10,000 EGP**.\n  * **Total Portfolio Value:** **30,400 EGP**.\n  * **Concentration Risk:** The portfolio is currently 100% concentrated in a single equity holding (EFID), representing approximately 6712% of the total portfolio value, while cash makes up roughly 3288%. This represents extreme single-stock concentration risk.\n\n* **Portfolio Allowances & Cash Commitment:**\n  * **Free Cash:** There is **10,000 EGP** in uncommitted cash available in the portfolio.\n  * **Liquidation Capacity:** The 1,000 shares of EFID can be sold to raise an additional **20,400 EGP** in liquidity if rebalancing or reallocation is desired. \n  * **Commitment Constraints:** Given the medium risk profile and the already heavy single-stock concentration, committing additional funds or purchasing more EFID shares would sharply increase concentration risk. \n\n***\n\n*Note: Regarding your question about Edita's net profit growth in 2025 compared with 2024, the 2025 net profit figure in the official consolidated report [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] is marked as ambiguous and unreadable because it is covered by a stamp on the scanned page. Therefore, a verified percentage growth calculation cannot be reliably completed from the provided evidence.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 21.46,
+      "input_tokens": 1078,
+      "output_tokens": 432,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 2.587,
+      "input_tokens": 1070,
+      "output_tokens": 580,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 2.559,
+      "input_tokens": 2402,
+      "output_tokens": 326,
+      "error": null,
+      "model": "google:gemini-3.5-flash-lite",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 26.613
+}
