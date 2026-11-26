@@ -14,7 +14,9 @@ key), what actions are acceptable, and optionally a trap. The builder:
 
 Column headings (which column is which period) come with each figure when the
 reader copied them. For pages read before the reader did that, a hand-checked
-file (data/cases/column_headings.json) gives each page's headings.
+file (data/cases/column_headings.json) gives each page's headings. Numbers
+the reader missed in a row it did extract (Talaat Moustafa's change-% column)
+are read by hand from the page into data/cases/added_evidence.json.
 
 The agents see only figures that have a reference. A figure the reader got
 wrong stays in the evidence as the reader produced it, and the reference holds
@@ -220,12 +222,42 @@ def load_columns(path: Path) -> dict[tuple[str, int], str]:
     return {(r["document"], int(r["page"])): r["columns"] for r in json.loads(path.read_text(encoding="utf-8"))}
 
 
+ADDED_NOTE = "read by hand from the page"
+
+
+def load_added_evidence(path: Path, items: list[EvidenceItem]) -> list[EvidenceItem]:
+    """Hand-read figures the reader missed in a row it did extract (e.g. a change-% column).
+
+    Each entry names a reader item in the same row (``row_of``) and gives the period, the
+    number as printed and its value. The new item copies that row's document, page, label and
+    row text, so it becomes the row's neighbour; its ID is the row item's ID plus "-chg" (or
+    "-added" for other columns). Empty if the file does not exist.
+    """
+    if not path.exists():
+        return []
+    by_id = {it.evidence_id: it for it in items}
+    out = []
+    for r in json.loads(path.read_text(encoding="utf-8")):
+        row = by_id.get(r["row_of"])
+        if row is None:
+            raise ValueError(f"{path}: {r['row_of']} is not in the reader's evidence")
+        suffix = "-chg" if "%" in r["period"] else "-added"
+        out.append(row.model_copy(update={
+            "evidence_id": row.evidence_id + suffix, "period": r["period"], "value": float(r["value"]),
+            "scale": 1.0, "currency": None if "%" in r["period"] else row.currency,
+            "status": EvidenceStatus.VERIFIED, "note": f"{ADDED_NOTE} (printed {r['printed']})",
+        }))
+    return out
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--specs", type=Path, default=Path("data/cases/specs"))
     ap.add_argument("--evidence", type=Path, default=Path("data/evidence"))
     ap.add_argument("--columns", type=Path, default=Path("data/cases/column_headings.json"),
                     help="hand-checked column headings for pages read without them")
+    ap.add_argument("--added", type=Path, default=Path("data/cases/added_evidence.json"),
+                    help="hand-read figures the reader missed in rows it extracted")
     ap.add_argument("--figures", type=Path, default=Path("data/references/figures.json"))
     ap.add_argument("--prices", type=Path, default=Path("data/cases/prices.json"))
     ap.add_argument("--out", type=Path, default=Path("data"))
@@ -234,6 +266,7 @@ def main(argv=None):
     a = ap.parse_args(argv)
 
     items = load_evidence(a.evidence)
+    items += load_added_evidence(a.added, items)
     if a.provisional:
         figures = template_figures()
     else:

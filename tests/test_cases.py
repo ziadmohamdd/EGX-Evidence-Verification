@@ -122,6 +122,30 @@ def test_coverage_ignores_neighbours():
     assert s.usable_reference_figures == 1 and s.covered == 1 and s.n_incorrect == 0
 
 
+def test_hand_read_figures_join_their_row_as_neighbours(tmp_path):
+    from egx_guide.cases import load_added_evidence
+    path = tmp_path / "added.json"
+    path.write_text(json.dumps([{"row_of": "r25", "period": "التغير %", "printed": "٪٢٠", "value": 20}]),
+                    encoding="utf-8")
+    added = load_added_evidence(path, NEIGHBOURS[:2])
+    assert [a.evidence_id for a in added] == ["r25-chg"]
+    a = added[0]
+    assert a.value == 20 and a.currency is None and a.status is EvidenceStatus.VERIFIED and "٪٢٠" in a.note
+    assert a.source_text == NEIGHBOURS[0].source_text and NEIGHBOURS[0].evidence_id == "r25"  # reader item unchanged
+    case, ref, problems = build_case(spec(figures=["rev25"]), NEIGHBOURS[:2] + added, REV, PRICES, provisional=True)
+    assert [e.evidence_id for e in case.evidence] == ["r25", "r24", "r25-chg"]
+    assert ref.figures["r25-chg"].value == 20 and not ref.figures["r25-chg"].in_coverage
+
+
+def test_hand_read_figure_must_name_a_reader_row(tmp_path):
+    from egx_guide.cases import load_added_evidence
+    path = tmp_path / "added.json"
+    path.write_text(json.dumps([{"row_of": "nope", "period": "change %", "printed": "5%", "value": 5}]))
+    with pytest.raises(ValueError, match="nope"):
+        load_added_evidence(path, NEIGHBOURS)
+    assert load_added_evidence(tmp_path / "missing.json", NEIGHBOURS) == []
+
+
 def test_missing_figure_and_unknown_key_are_problems():
     case, ref, problems = build_case(spec(figures=["np25", "eps25", "nope"]), ITEMS, BANK, PRICES)
     assert [e.evidence_id for e in case.evidence] == ["e1"]
@@ -192,7 +216,7 @@ def test_cli_writes_case_and_reference(tmp_path):
     (tmp_path / "prices.json").write_text(json.dumps(PRICES))
     main(["--specs", str(tmp_path / "specs"), "--evidence", str(tmp_path / "evidence"),
           "--figures", str(tmp_path / "figures.json"), "--prices", str(tmp_path / "prices.json"),
-          "--out", str(tmp_path / "out")])
+          "--added", str(tmp_path / "none.json"), "--out", str(tmp_path / "out")])
     case = json.loads((tmp_path / "out" / "cases" / "dev" / "dev_001.json").read_text(encoding="utf-8"))
     ref = json.loads((tmp_path / "out" / "references" / "cases" / "dev_001.json").read_text(encoding="utf-8"))
     assert case["case_id"] == "dev_001" and len(case["evidence"]) == 3
