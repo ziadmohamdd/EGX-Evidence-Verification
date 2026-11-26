@@ -93,8 +93,10 @@ def test_parse_model_spec_keeps_colons_in_model_names():
 
 def test_nvidia_uses_json_schema_output_other_providers_keep_the_default():
     # NVIDIA's function-calling mode cuts string fields at 1,024 characters
-    nv, g = Model("nv"), Model("g")
+    nv, g, oc = Model("nv"), Model("g"), Model("oc")
     Caller(FallbackChat([("nvidia:nemotron", nv)])).structured("s", [], Answer)
     Caller(FallbackChat([("google:gemini", g)])).structured("s", [], Answer)
+    Caller(FallbackChat([("openai_compatible:qwen", oc)])).structured("s", [], Answer)
     assert nv.structured_kw == {"method": "json_schema"}
+    assert oc.structured_kw == {"method": "json_schema"}  # Qwen on SovereignEG misnames the tool otherwise
     assert g.structured_kw == {}

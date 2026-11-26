@@ -50,8 +50,9 @@ def parse_model_spec(spec: str) -> tuple[str, str]:
 
 # Structured-output method per provider, where the default is not usable. NVIDIA's endpoint cuts
 # every string field of a function call at 1,024 characters (explanations ended mid-sentence);
-# its json_schema mode does not.
-STRUCTURED_METHOD = {"nvidia": "json_schema"}
+# its json_schema mode does not. On the OpenAI-compatible endpoint used (SovereignEG, Qwen3.8-27B),
+# function calling fails: the model names the tool wrongly ("Recommend"); json_schema works.
+STRUCTURED_METHOD = {"nvidia": "json_schema", "openai_compatible": "json_schema"}
 
 
 class FallbackChat:
