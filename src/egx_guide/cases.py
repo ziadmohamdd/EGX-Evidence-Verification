@@ -8,7 +8,9 @@ key), what actions are acceptable, and optionally a trap. The builder:
    same matching as the reader-accuracy report;
 2. takes share prices for every company involved from the price table, with
    their source;
-3. writes the Case the agents see and the ReferenceAnswer the scorer uses.
+3. adds the other figures printed in each chosen figure's row (other periods, the
+   change in %), so every number the agents see has its own evidence ID;
+4. writes the Case the agents see and the ReferenceAnswer the scorer uses.
 
 Column headings (which column is which period) come with each figure when the
 reader copied them. For pages read before the reader did that, a hand-checked
@@ -88,6 +90,44 @@ def template_figures(rows: list[dict] | None = None) -> dict[str, RefFigure]:
     ) for r in rows}
 
 
+def _row_key(item: EvidenceItem) -> tuple[str, int | None, str]:
+    return item.document, item.page, item.source_text.split(" | unit:")[0].strip()
+
+
+def _with_row_neighbours(case_id: str, chosen: list[EvidenceItem], items: list[EvidenceItem],
+                         figures: dict[str, RefFigure], ref_figs: dict[str, ReferenceFigure],
+                         columns: dict[tuple[str, int], str], provisional: bool,
+                         problems: list[str]) -> list[EvidenceItem]:
+    """Add every other figure the reader took from a chosen figure's printed row.
+
+    The agents see the whole row (e.g. 2025, 2024 and the change in %), so each number in it
+    gets its own evidence ID: an agent comparing periods can then cite what it reads. These
+    neighbours are checked like any figure but do not count toward coverage. Their reference
+    is the reader's value in provisional cases, else the matching hand-checked figure.
+    """
+    out = []
+    for item in chosen:
+        out.append(item)
+        for nb in sorted((it for it in items if _row_key(it) == _row_key(item) and it.evidence_id not in ref_figs),
+                         key=lambda it: it.evidence_id):
+            if provisional:
+                ref = ReferenceFigure(value=nb.value, usable=nb.status is EvidenceStatus.VERIFIED and nb.value is not None,
+                                      note="PROVISIONAL: reader output, not hand-checked", in_coverage=False)
+            else:
+                fig = next((f for f in figures.values() if match_items(f, [nb])), None)
+                if fig is None:
+                    problems.append(f"{case_id}: {nb.evidence_id} ({nb.label!r}, {nb.period}) is printed in the row "
+                                    f"of a chosen figure but has no hand-checked value; add it to the reference sheet")
+                    continue
+                ref = ReferenceFigure(value=fig.value, usable=fig.usable and fig.value is not None,
+                                      note=fig.note, in_coverage=False)
+            if nb.columns is None and (nb.document, nb.page) in columns:
+                nb = nb.model_copy(update={"columns": columns[(nb.document, nb.page)]})
+            out.append(nb)
+            ref_figs[nb.evidence_id] = ref
+    return out
+
+
 def build_case(
     spec: CaseSpec,
     items: list[EvidenceItem],
@@ -137,6 +177,8 @@ def build_case(
         evidence.append(item)
         ref_figs[item.evidence_id] = ReferenceFigure(value=fig.value, usable=usable and fig.value is not None,
                                                      note=fig.note)
+
+    evidence = _with_row_neighbours(spec.case_id, evidence, items, figures, ref_figs, columns, provisional, problems)
 
     unknown_traps = set(spec.make_ambiguous) - {e if isinstance(e, str) else e.key for e in spec.figures}
     if unknown_traps:

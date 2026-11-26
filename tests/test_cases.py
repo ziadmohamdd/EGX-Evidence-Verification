@@ -9,9 +9,9 @@ from egx_guide.references import RefFigure
 DOC = "COMI_FY2025.pdf"
 
 
-def ev(eid, label, period, value, status=EvidenceStatus.VERIFIED, page=5, company="COMI", doc=DOC):
+def ev(eid, label, period, value, status=EvidenceStatus.VERIFIED, page=5, company="COMI", doc=DOC, row=None):
     return EvidenceItem(evidence_id=eid, company=company, document=doc, page=page, label=label,
-                        source_text="row", value=value if status is EvidenceStatus.VERIFIED else None,
+                        source_text=row or f"row of {eid}", value=value if status is EvidenceStatus.VERIFIED else None,
                         period=period, status=status, note=None if status is EvidenceStatus.VERIFIED else "unclear")
 
 
@@ -79,6 +79,47 @@ def test_reader_column_headings_win_over_the_file():
     items = [ITEMS[0].model_copy(update={"columns": "Note | 2025 | 2024"}), *ITEMS[1:]]
     case, _, _ = build_case(spec(), items, BANK, PRICES, columns={(DOC, 5): "other"})
     assert case.evidence[0].columns == "Note | 2025 | 2024"
+
+
+ROW = "Revenue | 6 | 9,000,000 | 7,500,000 | 20%"
+NEIGHBOURS = [
+    ev("r25", "Revenue", "Dec. 31, 2025", 9e9, row=ROW + " | unit: EGP thousands"),
+    ev("r24", "Revenue", "Dec. 31, 2024", 7.5e9, row=ROW + " | unit: EGP thousands"),
+    ev("rch", "Revenue", "change (%)", None, EvidenceStatus.AMBIGUOUS, row=ROW + " | unit: EGP thousands"),
+    ev("o25", "Revenue", "Dec. 31, 2025", 1.0, page=6, row=ROW),  # same text, other page: not a neighbour
+]
+REV = {**BANK, "rev25": fig("rev25", "Revenue", "FY2025", 9e9), "rev24": fig("rev24", "Revenue", "FY2024", 7.5e9)}
+
+
+def test_other_numbers_in_a_chosen_row_get_their_own_ids_outside_coverage():
+    case, ref, problems = build_case(spec(figures=["rev25"]), NEIGHBOURS, REV, PRICES, provisional=True)
+    assert problems == []
+    assert [e.evidence_id for e in case.evidence] == ["r25", "r24", "rch"]  # neighbours right after their figure
+    assert ref.figures["r25"].in_coverage
+    assert ref.figures["r24"].value == 7.5e9 and ref.figures["r24"].usable and not ref.figures["r24"].in_coverage
+    assert not ref.figures["rch"].usable  # an unreadable neighbour stays unusable
+
+
+def test_a_chosen_figure_is_not_demoted_to_a_neighbour():
+    case, ref, _ = build_case(spec(figures=["rev25", "rev24"]), NEIGHBOURS, REV, PRICES, provisional=True)
+    assert [e.evidence_id for e in case.evidence] == ["r25", "rch", "r24"]  # chosen figures keep the spec's order
+    assert ref.figures["r24"].in_coverage and not ref.figures["rch"].in_coverage
+
+
+def test_neighbours_use_hand_checked_values_or_are_reported():
+    case, ref, problems = build_case(spec(figures=["rev25"]), NEIGHBOURS, REV, PRICES)
+    assert ref.figures["r24"].value == 7.5e9 and not ref.figures["r24"].in_coverage  # matched rev24 on the sheet
+    assert "rch" not in ref.figures and [e.evidence_id for e in case.evidence] == ["r25", "r24"]
+    assert len(problems) == 1 and "rch" in problems[0] and "reference sheet" in problems[0]
+
+
+def test_coverage_ignores_neighbours():
+    from egx_guide.score import ReferenceAnswer, ReferenceFigure, score_recommendation
+    ref = ReferenceAnswer(case_id="x", acceptable_actions=["hold"], figures={
+        "r25": ReferenceFigure(value=9e9), "r24": ReferenceFigure(value=7.5e9, in_coverage=False)})
+    s = score_recommendation({"claims": [{"evidence_id": "r25", "stated_value": 9e9},
+                                         {"evidence_id": "r24", "stated_value": 7.5e9}]}, ref)
+    assert s.usable_reference_figures == 1 and s.covered == 1 and s.n_incorrect == 0
 
 
 def test_missing_figure_and_unknown_key_are_problems():

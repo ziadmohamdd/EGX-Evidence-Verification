@@ -56,6 +56,9 @@ class ReferenceFigure(BaseModel):
     value: float | None = Field(description="True value in base units (EGP, not millions); null if unresolvable")
     usable: bool = Field(default=True, description="False if the figure is ambiguous and must not be relied on")
     note: str | None = None
+    in_coverage: bool = Field(default=True, description="False for a figure in the case only because it is printed "
+                                                        "in the same row as a chosen one (another period, a change "
+                                                        "in %): its claims are checked, but coverage ignores it")
 
     @model_validator(mode="after")
     def _usable_needs_value(self):
@@ -192,7 +195,7 @@ def judge_claim(evidence_id: str, stated: float, ref: ReferenceAnswer, rel_tol: 
 
 def score_recommendation(rec: dict, ref: ReferenceAnswer, rel_tol: float = SCORE_REL_TOL) -> RecScore:
     claims = [judge_claim(c["evidence_id"], float(c["stated_value"]), ref, rel_tol) for c in rec.get("claims", [])]
-    usable = {k for k, f in ref.figures.items() if f.usable}
+    usable = {k for k, f in ref.figures.items() if f.usable and f.in_coverage}
     covered = {c.evidence_id for c in claims if c.verdict is ClaimVerdict.CORRECT} & usable
     values = {k: f.value for k, f in ref.figures.items() if f.usable and f.value is not None}
     found = text_findings(rec.get("explanation") or "", values, {c.evidence_id for c in claims}, rel_tol)
