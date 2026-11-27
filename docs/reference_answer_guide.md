@@ -7,9 +7,9 @@ These figures are the **ground truth** for the paper. Every result we report, in
 
 ## How it works (one person)
 
-1. **You fill in** the blue columns for every row, reading straight from the PDF. Put your initials in `prepared_by`.
-2. **Claude checks** every filled row against the page image and lists the rows where the sheet and the page don't seem to match. It never fills in values.
-3. **You re-read the PDF** for each listed row and make the final call. Then fill in the green columns: `checked_by` = your initials plus `+AI` (e.g. `ZM+AI`), `checker_agrees` = `yes` once the row is right, and `checker_note` for anything you corrected.
+1. **Claude filled in** the blue columns on 27 November 2026, reading only the report pages, and confirmed scanned figures against each statement's own totals. `prepared_by` says `Claude (AI)`. The notes say where a total was not printed, where a report contradicts itself, and which line was chosen when two could fit.
+2. **You verify every row** against the PDF. Open `data/references/check/review.html` (made by `python -m egx_guide.sheetcheck`): it shows each page beside the rows read from it. For each row, check the value, unit, period and line item. Then fill in the green columns: `checked_by` = your initials, `checker_agrees` = `yes` once the row is right, and `checker_note` for anything you corrected. Correct a wrong value in `printed_value` itself.
+3. **Rows marked "not reported"** have no value. Check that the figure really isn't printed in that document, and put `yes` in `checker_agrees` with no value.
 
 **Don't look at any system output while filling in the sheet**: nothing in `data/evidence/`, `runs/`, or reader results Claude shows in chat. The reference must be independent of what the system produced, or the comparison means nothing.
 
@@ -75,9 +75,9 @@ This uses only your sheet and the PDFs, never system output, and writes `data/re
 
 Rows are flagged by plain-code checks on your own values: the change in % against the two period values, total assets against liabilities plus equity, gross profit against revenue, a three-month figure larger than the nine-month one, two periods of one item differing more than 20 times, Talaat Moustafa's two reports disagreeing, a unit different from the other rows on the page, and empty columns. On pages with a text layer (CIB, part of Telecom Egypt) it also checks that your number, unit and line item are on that page.
 
-Claude then compares every row with the page image and records its verdict in `data/references/check/ai_notes.json`: *agrees*, *disagrees* or *unclear*, with what looks wrong (value, unit, period, line item, page, usable). A note never contains the right number; the tool refuses one that does. Rerun the command and the verdicts appear in `review.html`.
+The tool can also show an AI reviewer's verdict per row (`data/references/check/ai_notes.json`: *agrees*, *disagrees* or *unclear*, never a value). Since Claude prepared this sheet, it doesn't review its own rows; you verify all of them.
 
-Open `review.html`, re-read the PDF for each yellow row, and fill in the green columns.
+Open `review.html` and verify every row, starting with the yellow ones, then fill in the green columns.
 
 **Building the figures.** Then Claude runs:
 

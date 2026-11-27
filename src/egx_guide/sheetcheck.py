@@ -145,7 +145,7 @@ def sheet_checks(rows: list[dict]) -> dict[str, RowCheck]:
                         f"differs more than {PERIOD_RATIO} times from {period}: check digits and unit")
 
     # balance sheet and income statement identities, per document and period
-    for doc, period in {(d, p) for (d, _, p) in by}:
+    for doc, period in {(d, p) for (d, _, p) in by if p not in CHANGE_PAIRS}:
         assets, liab, equity = (val(doc, i, period) for i in ("Total assets", "Total liabilities", "Total equity"))
         if None not in (assets, liab, equity) and assets and abs(assets - liab - equity) > BALANCE_TOL * abs(assets):
             for i in ("Total assets", "Total liabilities", "Total equity"):

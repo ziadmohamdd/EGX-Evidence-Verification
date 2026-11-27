@@ -131,12 +131,23 @@ The verifier checks claims against the evidence, not against the report itself. 
 
 ## 5. Reference answers
 
-The ground truth is a hand-filled reference sheet with 146 figures. One author reads each figure from the PDF without seeing any system output:
+The ground truth is a reference sheet with 146 figures, prepared from the report pages and verified by hand. For each figure it records:
 - the label and column heading as printed;
 - the number exactly as printed;
 - the unit.
 
-Code converts each number to whole pounds with the same rules as the reader. Every row is then checked in two ways (`egx_guide.sheetcheck`). Plain code tests the author's own values for consistency: the printed change in % against the two period values, assets against liabilities plus equity, a three-month figure against the nine-month one, the two Talaat Moustafa reports against each other, and, on pages with a text layer, whether the number, unit and line item appear on the page. An AI-assisted pass then compares each row with the page image and records whether it agrees and which part looks wrong; it never supplies values, and the tool rejects a note containing a figure. The author re-reads the PDF for each listed row and makes the final call. **[after test runs]:** how many rows were flagged, and how many corrected.
+**Preparation.** Claude (Anthropic), used as an assistant and not one of the systems tested, read every figure from the report pages: the page images, and the PDFs' own text layers where they exist. It never saw the reader's evidence or any system output. Scanned figures were confirmed against the statements' own arithmetic (e.g. total liabilities plus total equity equals total assets) wherever the page prints the parts.
+
+**Checks.** Code converts each number to whole pounds with the same rules as the reader, and tests the values for consistency (`egx_guide.sheetcheck`):
+- the printed change in % against the two period values;
+- assets against liabilities plus equity;
+- a three-month figure against the nine-month one;
+- the two Talaat Moustafa reports against each other;
+- on pages with a text layer, whether the number, unit and line item appear on the page.
+
+**Verification.** The author then verifies every row against the PDF. A figure enters the reference only when the author has confirmed it. **[after verification]:** how many rows the author corrected.
+
+Where a report contradicts itself, the sheet records what that document prints and notes the other value. Talaat Moustafa's Arabic summary, for example, prints its operating income under the label "profit before tax", and its 2024 column differs from the audited statements in the last digit of three figures.
 
 A figure counts as **usable** only if the sheet gives its value *and* the evidence the agents see shows it as readable. A figure the agents see as unclear can't be relied on, whatever its true value.
 
@@ -225,6 +236,6 @@ One cue to the condition can't be hidden. When the verifier removed figures, the
 ## 10. Limitations of the design (to discuss)
 
 - **Few companies.** Five companies and six documents. The development and test cases use the same reports, though with different investors, questions and figures.
-- **One author.** One author prepared the reference figures and does the rating. The AI-assisted check and the intra-rater consistency check reduce, but do not replace, a second person.
+- **One author.** The reference figures were prepared with an AI assistant and verified by one author, who also does the rating. The consistency checks and the intra-rater check reduce, but do not replace, a second person.
 - **Free models only.** Results may differ for larger paid models.
 - **A consistency check, not a truth check.** The verifier checks consistency with the evidence, not truth. Its benefit is bounded by the reader's accuracy, which is why the reader is evaluated separately.

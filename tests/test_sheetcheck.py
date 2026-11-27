@@ -132,3 +132,9 @@ def test_run_writes_review_page_images_and_flags(tmp_path, capsys):
     assert "pages/X_p1.png" in page and "digits differ" in page
     assert (out / "pages" / "X_p1.png").stat().st_size > 1000
     assert run(sheet, reports, out, images=False)["filled_rows"] == 2
+
+
+def test_identities_skip_change_rows():
+    checks = sheet_checks([row(period="change-FY", printed="40%", unit_as_printed=""),
+                           row(item="Gross profit", period="change-FY", printed="49%", unit_as_printed="")])
+    assert all(c.flags == [] for c in checks.values())
