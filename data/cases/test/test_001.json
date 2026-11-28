@@ -1,0 +1,148 @@
+{
+  "case_id": "test_001",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "grow savings steadily with a bank stock",
+    "horizon": "5 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 300
+      }
+    ]
+  },
+  "prices": {
+    "COMI": 128.0
+  },
+  "evidence": [
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Net interest income",
+      "source_text": "| Net interest income | 6 | 107,699,631 | 91,064,222 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 107699631000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-06",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Net interest income",
+      "source_text": "| Net interest income | 6 | 107,699,631 | 91,064,222 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 91064222000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2024",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Net profit for the year",
+      "source_text": "| Net profit for the year | | 82,258,815 | 55,256,732 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 82258815000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Net profit for the year",
+      "source_text": "| Net profit for the year | | 82,258,815 | 55,256,732 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 55256732000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2024",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Basic",
+      "source_text": "| Basic | | 18.25 | 14.72 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 18.25,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Basic",
+      "source_text": "| Basic | | 18.25 | 14.72 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 14.72,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2024",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-24",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 4,
+      "label": "Total assets (consolidated)",
+      "source_text": "Total assets | | 1,442,494,120 | 1,214,973,261 | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 1442494120000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-25",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 4,
+      "label": "Total assets (consolidated)",
+      "source_text": "Total assets | | 1,442,494,120 | 1,214,973,261 | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 1214973261000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2024",
+      "status": "verified",
+      "note": null
+    }
+  ],
+  "question": "What should I do with my portfolio given this information?"
+}

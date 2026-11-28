@@ -1,0 +1,38 @@
+{
+  "case_id": "test_019",
+  "figures": {
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-33": {
+      "value": 82258815000.0,
+      "usable": false,
+      "note": null,
+      "in_coverage": true
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-34": {
+      "value": 55256732000.0,
+      "usable": true,
+      "note": null,
+      "in_coverage": true
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-39": {
+      "value": 18.25,
+      "usable": true,
+      "note": "the row 'Basic' under 'Earnings per share'; diluted is printed below: 18.05 / 14.56",
+      "in_coverage": true
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-40": {
+      "value": 14.72,
+      "usable": true,
+      "note": "the row 'Basic' under 'Earnings per share'; diluted is printed below: 18.05 / 14.56",
+      "in_coverage": true
+    }
+  },
+  "acceptable_actions": [
+    "hold",
+    "buy",
+    "keep_cash",
+    "insufficient_evidence"
+  ],
+  "prepared_by": "reference sheet",
+  "checked_by": null,
+  "notes": "trap: unreadable; Trap: the 2025 net profit is marked unreadable; growth cannot be computed from it. EPS for both years is readable and can stand in, if the answer says so."
+}

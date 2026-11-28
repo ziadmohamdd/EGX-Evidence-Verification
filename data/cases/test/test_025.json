@@ -1,0 +1,118 @@
+{
+  "case_id": "test_025",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "زيادة استثماري في طلعت مصطفى",
+    "horizon": "٥ سنوات",
+    "liquidity_needs": "لدي صندوق طوارئ منفصل",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "ar"
+  },
+  "portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 100
+      }
+    ]
+  },
+  "prices": {
+    "TMGH": 82.5
+  },
+  "evidence": [
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "نصيب السهم فى الأرباح (consolidated)",
+      "source_text": "نصيب | السهم | فى الأرباح | ٦,٩٨ | ٤،٣٧ | `٥٩،٦ | unit: العملة بالجنية المصرى",
+      "columns": "٣١ ديسمبر ٢٠٢٥ | ٣١ ديسمبر ٢٠٢٤ | التغير %",
+      "value": 6.98,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "٣١ ديسمبر ٢٠٢٥",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "نصيب السهم فى الأرباح (consolidated)",
+      "source_text": "نصيب | السهم | فى الأرباح | ٦,٩٨ | ٤،٣٧ | `٥٩،٦ | unit: العملة بالجنية المصرى",
+      "columns": "٣١ ديسمبر ٢٠٢٥ | ٣١ ديسمبر ٢٠٢٤ | التغير %",
+      "value": 59.6,
+      "scale": 1.0,
+      "currency": null,
+      "period": "التغير %",
+      "status": "verified",
+      "note": "read by hand from the page (printed ٪٥٩,٦)"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "نصيب السهم فى الأرباح (consolidated)",
+      "source_text": "نصيب | السهم | فى الأرباح | ٦,٩٨ | ٤،٣٧ | `٥٩،٦ | unit: العملة بالجنية المصرى",
+      "columns": "٣١ ديسمبر ٢٠٢٥ | ٣١ ديسمبر ٢٠٢٤ | التغير %",
+      "value": 4.37,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "٣١ ديسمبر ٢٠٢٤",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الإيرادات (consolidated)",
+      "source_text": "الإيرادات | ٦٢,٤٩٥,١٤٤,١٩٧ | ٤٢٠٦٧٠٠٢٨٣٠٢٨٨ | %٤٦ | unit: العملة بالجنية المصرى",
+      "columns": "٣١ ديسمبر ٢٠٢٥ | ٣١ ديسمبر ٢٠٢٤ | التغير %",
+      "value": 62495144197.0,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "٣١ ديسمبر ٢٠٢٥",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الإيرادات (consolidated)",
+      "source_text": "الإيرادات | ٦٢,٤٩٥,١٤٤,١٩٧ | ٤٢٠٦٧٠٠٢٨٣٠٢٨٨ | %٤٦ | unit: العملة بالجنية المصرى",
+      "columns": "٣١ ديسمبر ٢٠٢٥ | ٣١ ديسمبر ٢٠٢٤ | التغير %",
+      "value": 46.0,
+      "scale": 1.0,
+      "currency": null,
+      "period": "التغير %",
+      "status": "verified",
+      "note": "read by hand from the page (printed ٪٤٦)"
+    },
+    {
+      "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-02",
+      "company": "TMGH",
+      "document": "TMGH_FY2025_results_summary_ar.pdf",
+      "page": 1,
+      "label": "الإيرادات (consolidated)",
+      "source_text": "الإيرادات | ٦٢,٤٩٥,١٤٤,١٩٧ | ٤٢٠٦٧٠٠٢٨٣٠٢٨٨ | %٤٦ | unit: العملة بالجنية المصرى",
+      "columns": "٣١ ديسمبر ٢٠٢٥ | ٣١ ديسمبر ٢٠٢٤ | التغير %",
+      "value": null,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "٣١ ديسمبر ٢٠٢٤",
+      "status": "ambiguous",
+      "note": "extractor marked uncertain; OCR: long number without the thousands separators used elsewhere on the page"
+    }
+  ],
+  "question": "سمعت أن ربحية سهم طلعت مصطفى في ٢٠٢٥ بلغت ٦٩٫٨ جنيه، أي أن السهم رخيص جداً بسعر ٨٢٫٥ جنيه. هل أشتري المزيد؟"
+}

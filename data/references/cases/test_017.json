@@ -1,0 +1,48 @@
+{
+  "case_id": "test_017",
+  "figures": {
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-33": {
+      "value": 82258815000.0,
+      "usable": true,
+      "note": null,
+      "in_coverage": true
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-34": {
+      "value": 55256732000.0,
+      "usable": true,
+      "note": null,
+      "in_coverage": true
+    },
+    "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30": {
+      "value": 2695301670.0,
+      "usable": true,
+      "note": "scanned page; statement totals add up with this figure",
+      "in_coverage": true
+    },
+    "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31": {
+      "value": 1606727698.0,
+      "usable": true,
+      "note": "scanned page; statement totals add up with this figure",
+      "in_coverage": true
+    },
+    "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36": {
+      "value": 2695301670.0,
+      "usable": true,
+      "note": "scanned page; statement totals add up with this figure",
+      "in_coverage": false
+    },
+    "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37": {
+      "value": 1606727698.0,
+      "usable": true,
+      "note": "scanned page; statement totals add up with this figure",
+      "in_coverage": false
+    }
+  },
+  "acceptable_actions": [
+    "buy",
+    "keep_cash"
+  ],
+  "prepared_by": "reference sheet",
+  "checked_by": null,
+  "notes": "trap: scale; Trap: CIB prints EGP thousands, Edita whole pounds. Comparing the printed numbers gives a 1,000x error."
+}

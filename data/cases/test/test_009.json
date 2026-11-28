@@ -1,0 +1,183 @@
+{
+  "case_id": "test_009",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "lower risk before retirement",
+    "horizon": "3 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "low",
+    "loss_capacity": "low",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 5000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 600
+      },
+      {
+        "ticker": "COMI",
+        "shares": 150
+      }
+    ]
+  },
+  "prices": {
+    "COMI": 128.0,
+    "EFID": 20.4
+  },
+  "evidence": [
+    {
+      "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+      "company": "EFID",
+      "document": "EFID_FY2025_EAS_consolidated_signed_en.pdf",
+      "page": 6,
+      "label": "Net profit for the year (consolidated)",
+      "source_text": "Net profit for the year | | 2 695 301 670 | 1 606 727 698 | unit: EGP",
+      "columns": "Note | 31 December 2025 EGP | 31 December 2024 EGP",
+      "value": 2695301670.0,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31 December 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36",
+      "company": "EFID",
+      "document": "EFID_FY2025_EAS_consolidated_signed_en.pdf",
+      "page": 6,
+      "label": "Net profit for the year (consolidated)",
+      "source_text": "Net profit for the year | | 2 695 301 670 | 1 606 727 698 | unit: EGP",
+      "columns": "Note | 31 December 2025 EGP | 31 December 2024 EGP",
+      "value": 2695301670.0,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31 December 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+      "company": "EFID",
+      "document": "EFID_FY2025_EAS_consolidated_signed_en.pdf",
+      "page": 6,
+      "label": "Net profit for the year (consolidated)",
+      "source_text": "Net profit for the year | | 2 695 301 670 | 1 606 727 698 | unit: EGP",
+      "columns": "Note | 31 December 2025 EGP | 31 December 2024 EGP",
+      "value": 1606727698.0,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31 December 2024",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+      "company": "EFID",
+      "document": "EFID_FY2025_EAS_consolidated_signed_en.pdf",
+      "page": 6,
+      "label": "Net profit for the year (consolidated)",
+      "source_text": "Net profit for the year | | 2 695 301 670 | 1 606 727 698 | unit: EGP",
+      "columns": "Note | 31 December 2025 EGP | 31 December 2024 EGP",
+      "value": 1606727698.0,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31 December 2024",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+      "company": "EFID",
+      "document": "EFID_FY2025_EAS_consolidated_signed_en.pdf",
+      "page": 6,
+      "label": "Basic and Diluted earnings per share (consolidated)",
+      "source_text": "Basic and Diluted earnings per share | 30 | 2.18 | 1.09 | unit: EGP",
+      "columns": "Note | 31 December 2025 EGP | 31 December 2024 EGP",
+      "value": 2.18,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31 December 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+      "company": "EFID",
+      "document": "EFID_FY2025_EAS_consolidated_signed_en.pdf",
+      "page": 6,
+      "label": "Basic and Diluted earnings per share (consolidated)",
+      "source_text": "Basic and Diluted earnings per share | 30 | 2.18 | 1.09 | unit: EGP",
+      "columns": "Note | 31 December 2025 EGP | 31 December 2024 EGP",
+      "value": 1.09,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "31 December 2024",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Net profit for the year",
+      "source_text": "| Net profit for the year | | 82,258,815 | 55,256,732 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 82258815000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Net profit for the year",
+      "source_text": "| Net profit for the year | | 82,258,815 | 55,256,732 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 55256732000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2024",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Basic",
+      "source_text": "| Basic | | 18.25 | 14.72 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 18.25,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Basic",
+      "source_text": "| Basic | | 18.25 | 14.72 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 14.72,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2024",
+      "status": "verified",
+      "note": null
+    }
+  ],
+  "question": "What should I do with my portfolio given this information?"
+}

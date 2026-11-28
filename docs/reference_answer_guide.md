@@ -11,6 +11,10 @@ These figures are the **ground truth** for the paper. Every result we report, in
 2. **You verify every row** against the PDF. Open `data/references/check/review.html` (made by `python -m egx_guide.sheetcheck`): it shows each page beside the rows read from it. For each row, check the value, unit, period and line item. Then fill in the green columns: `checked_by` = your initials, `checker_agrees` = `yes` once the row is right, and `checker_note` for anything you corrected. Correct a wrong value in `printed_value` itself.
 3. **Rows marked "not reported"** have no value. Check that the figure really isn't printed in that document, and put `yes` in `checker_agrees` with no value.
 
+**What was actually done (28 November 2026):** the author checked by hand only the 32 red rows (`how_confirmed` = "3 read by eye only"); all agreed. The other rows were not checked by a person (see the plan's deviation log), so `figures.json` is built with `--allow-unchecked`:
+
+    python -m egx_guide.references build --sheet data/references/reference_sheet.xlsx --allow-unchecked
+
 **Don't look at any system output while filling in the sheet**: nothing in `data/evidence/`, `runs/`, or reader results Claude shows in chat. The reference must be independent of what the system produced, or the comparison means nothing.
 
 ## The columns

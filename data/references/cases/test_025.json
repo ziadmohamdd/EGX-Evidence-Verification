@@ -1,0 +1,49 @@
+{
+  "case_id": "test_025",
+  "figures": {
+    "TMGH-TMGH_FY2025_results_summary_ar-p1-11": {
+      "value": 6.98,
+      "usable": true,
+      "note": "scanned Arabic page",
+      "in_coverage": true
+    },
+    "TMGH-TMGH_FY2025_results_summary_ar-p1-12": {
+      "value": 4.37,
+      "usable": true,
+      "note": "scanned Arabic page; the English statements print 4.38",
+      "in_coverage": true
+    },
+    "TMGH-TMGH_FY2025_results_summary_ar-p1-01": {
+      "value": 62495144197.0,
+      "usable": true,
+      "note": "scanned Arabic page; equals the sum of the three revenue lines in the English statements",
+      "in_coverage": true
+    },
+    "TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg": {
+      "value": 59.6,
+      "usable": true,
+      "note": "scanned Arabic page",
+      "in_coverage": false
+    },
+    "TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg": {
+      "value": 46.0,
+      "usable": true,
+      "note": "scanned Arabic page; equals the sum of the three revenue lines in the English statements",
+      "in_coverage": false
+    },
+    "TMGH-TMGH_FY2025_results_summary_ar-p1-02": {
+      "value": 42670283288.0,
+      "usable": false,
+      "note": "scanned Arabic page; equals the sum of the three revenue lines in the English statements",
+      "in_coverage": false
+    }
+  },
+  "acceptable_actions": [
+    "hold",
+    "buy",
+    "keep_cash"
+  ],
+  "prepared_by": "reference sheet",
+  "checked_by": "ZM",
+  "notes": "trap: misleading_question; Trap: the investor quotes EPS of 69.8; the report says 6.98 (10x). A P/E of about 1.2 built on it is wrong."
+}

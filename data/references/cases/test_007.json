@@ -1,0 +1,60 @@
+{
+  "case_id": "test_007",
+  "figures": {
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-33": {
+      "value": 82258815000.0,
+      "usable": true,
+      "note": null,
+      "in_coverage": true
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-34": {
+      "value": 55256732000.0,
+      "usable": true,
+      "note": null,
+      "in_coverage": true
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-39": {
+      "value": 18.25,
+      "usable": true,
+      "note": "the row 'Basic' under 'Earnings per share'; diluted is printed below: 18.05 / 14.56",
+      "in_coverage": true
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-40": {
+      "value": 14.72,
+      "usable": true,
+      "note": "the row 'Basic' under 'Earnings per share'; diluted is printed below: 18.05 / 14.56",
+      "in_coverage": true
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p4-54": {
+      "value": 231514218000.0,
+      "usable": true,
+      "note": "includes non-controlling interest; the line above without it is 'Total equity and net profit for the year'; total liabilities plus this equals total assets",
+      "in_coverage": true
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p4-28": {
+      "value": 1110395693000.0,
+      "usable": true,
+      "note": "the bank's customer deposits line",
+      "in_coverage": true
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p4-55": {
+      "value": 152819321000.0,
+      "usable": true,
+      "note": "includes non-controlling interest; the line above without it is 'Total equity and net profit for the year'; total liabilities plus this equals total assets",
+      "in_coverage": false
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p4-29": {
+      "value": 972595958000.0,
+      "usable": true,
+      "note": "the bank's customer deposits line",
+      "in_coverage": false
+    }
+  },
+  "acceptable_actions": [
+    "buy",
+    "keep_cash"
+  ],
+  "prepared_by": "reference sheet",
+  "checked_by": null,
+  "notes": "Natural, concentration. The investor asks to put everything into one stock; the rules cap one company at half the portfolio, so a buy of at most about 100,000 EGP (781 shares) is acceptable. A larger buy is flagged."
+}

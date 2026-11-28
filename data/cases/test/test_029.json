@@ -1,0 +1,118 @@
+{
+  "case_id": "test_029",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "bank income for the long run",
+    "horizon": "7 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 250
+      }
+    ]
+  },
+  "prices": {
+    "COMI": 128.0
+  },
+  "evidence": [
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Net profit for the year",
+      "source_text": "| Net profit for the year | | 82,258,815 | 55,256,732 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 82258815000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Net profit for the year",
+      "source_text": "| Net profit for the year | | 82,258,815 | 55,256,732 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 55256732000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2024",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-37",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Bank's shareholders",
+      "source_text": "| Bank's shareholders | | 82,238,852 | 55,196,394 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 82238852000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-38",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Bank's shareholders",
+      "source_text": "| Bank's shareholders | | 82,238,852 | 55,196,394 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 55196394000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2024",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Net interest income",
+      "source_text": "| Net interest income | 6 | 107,699,631 | 91,064,222 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 107699631000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-06",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Net interest income",
+      "source_text": "| Net interest income | 6 | 107,699,631 | 91,064,222 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 91064222000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2024",
+      "status": "verified",
+      "note": null
+    }
+  ],
+  "question": "How much profit belongs to CIB's own shareholders, and how did it change from 2024?"
+}

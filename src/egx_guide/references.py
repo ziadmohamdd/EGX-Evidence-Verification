@@ -380,7 +380,8 @@ def main(argv=None):
     b = sub.add_parser("build", help="filled sheet -> figures.json")
     b.add_argument("--sheet", type=Path, required=True)
     b.add_argument("--out", type=Path, default=Path("data/references/figures.json"))
-    b.add_argument("--allow-unchecked", action="store_true", help="development only: include rows not yet checked")
+    b.add_argument("--allow-unchecked", action="store_true", help="include rows no person checked (each figure's checked_by still "
+                        "says which were); record the choice in the plan's deviation log")
     a = sub.add_parser("accuracy", help="compare the report reader's output with the checked figures")
     a.add_argument("--figures", type=Path, default=Path("data/references/figures.json"))
     a.add_argument("--evidence", type=Path, default=Path("data/evidence"))

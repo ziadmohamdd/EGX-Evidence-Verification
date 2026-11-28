@@ -1,0 +1,88 @@
+{
+  "case_id": "test_019",
+  "information_cutoff": "2026-11-18",
+  "profile": {
+    "goal": "grow savings",
+    "horizon": "4 years",
+    "liquidity_needs": "keeps a separate emergency fund",
+    "loss_willingness": "medium",
+    "loss_capacity": "medium",
+    "language": "en"
+  },
+  "portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 100
+      }
+    ]
+  },
+  "prices": {
+    "COMI": 128.0
+  },
+  "evidence": [
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Net profit for the year",
+      "source_text": "| Net profit for the year | | 82,258,815 | 55,256,732 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": null,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2025",
+      "status": "ambiguous",
+      "note": "unreadable: digits hidden by a fold in the scanned page"
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Net profit for the year",
+      "source_text": "| Net profit for the year | | 82,258,815 | 55,256,732 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 55256732000.0,
+      "scale": 1000.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2024",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Basic",
+      "source_text": "| Basic | | 18.25 | 14.72 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 18.25,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2025",
+      "status": "verified",
+      "note": null
+    },
+    {
+      "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+      "company": "COMI",
+      "document": "COMI_FY2025_consolidated_condensed_en.pdf",
+      "page": 5,
+      "label": "Basic",
+      "source_text": "| Basic | | 18.25 | 14.72 | | unit: (All amounts are shown in EGP thousands)",
+      "columns": "Notes | Dec. 31, 2025 | Dec. 31, 2024",
+      "value": 14.72,
+      "scale": 1.0,
+      "currency": "EGP",
+      "period": "Dec. 31, 2024",
+      "status": "verified",
+      "note": null
+    }
+  ],
+  "question": "How much did CIB's net profit grow in 2025? I will add if it grew by more than 30%."
+}

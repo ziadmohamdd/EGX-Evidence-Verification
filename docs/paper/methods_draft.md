@@ -145,7 +145,7 @@ The ground truth is a reference sheet with 146 figures, prepared from the report
 - the two Talaat Moustafa reports against each other;
 - on pages with a text layer, whether the number, unit and line item appear on the page.
 
-**Verification.** The author then verifies every row against the PDF. A figure enters the reference only when the author has confirmed it. **[after verification]:** how many rows the author corrected.
+**Verification.** Each value is confirmed in one of three ways. 28 were copied from the PDF's own text layer, so the digits are the document's. 68 scanned values are confirmed by the report itself: the statement's parts add up to its printed total with that value, or another page of the same report (a chart, a second table) prints the same number. The remaining 32 had nothing in the report to confirm them: scanned earnings per share (Talaat Moustafa, Edita, Abu Qir), Abu Qir's profit before tax, four 2024 values in Talaat Moustafa's Arabic summary that differ from its statements, and every printed change in % (16, all in the two Arabic documents). The author checked these 32 digit by digit against the PDF; all 32 agreed and none was changed. The 96 confirmed values and the 18 figures marked "not reported" were not checked again by a person. The plan said the author would check every row; this change was made before any test run and is listed in the plan's deviation log.
 
 Where a report contradicts itself, the sheet records what that document prints and notes the other value. Talaat Moustafa's Arabic summary, for example, prints its operating income under the label "profit before tax", and its 2024 column differs from the audited statements in the last digit of three figures.
 
@@ -236,6 +236,6 @@ One cue to the condition can't be hidden. When the verifier removed figures, the
 ## 10. Limitations of the design (to discuss)
 
 - **Few companies.** Five companies and six documents. The development and test cases use the same reports, though with different investors, questions and figures.
-- **One author.** The reference figures were prepared with an AI assistant and verified by one author, who also does the rating. The consistency checks and the intra-rater check reduce, but do not replace, a second person.
+- **One author.** The reference figures were prepared with an AI assistant; one author checked by hand the 32 that nothing in the report confirms, and the same author does the rating. A misread line or column among the 96 values confirmed by the report's own text or totals would not have been caught by a person. The consistency checks and the intra-rater check reduce, but do not replace, a second person.
 - **Free models only.** Results may differ for larger paid models.
 - **A consistency check, not a truth check.** The verifier checks consistency with the evidence, not truth. Its benefit is bounded by the reader's accuracy, which is why the reader is evaluated separately.

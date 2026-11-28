@@ -1,0 +1,49 @@
+{
+  "case_id": "test_023",
+  "figures": {
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-33": {
+      "value": 82258815000.0,
+      "usable": true,
+      "note": null,
+      "in_coverage": true
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-34": {
+      "value": 55256732000.0,
+      "usable": true,
+      "note": null,
+      "in_coverage": true
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-39": {
+      "value": 18.25,
+      "usable": true,
+      "note": "the row 'Basic' under 'Earnings per share'; diluted is printed below: 18.05 / 14.56",
+      "in_coverage": true
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-40": {
+      "value": 14.72,
+      "usable": true,
+      "note": "the row 'Basic' under 'Earnings per share'; diluted is printed below: 18.05 / 14.56",
+      "in_coverage": true
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-05": {
+      "value": 107699631000.0,
+      "usable": true,
+      "note": "interest income minus interest expense gives this",
+      "in_coverage": true
+    },
+    "COMI-COMI_FY2025_consolidated_condensed_en-p5-06": {
+      "value": 91064222000.0,
+      "usable": true,
+      "note": "interest income minus interest expense gives this",
+      "in_coverage": false
+    }
+  },
+  "acceptable_actions": [
+    "hold",
+    "buy",
+    "keep_cash"
+  ],
+  "prepared_by": "reference sheet",
+  "checked_by": null,
+  "notes": "trap: misleading_question; Trap: the investor's figure is wrong. About 55 billion is CIB's 2024 net profit; 2025 rose to about 82 billion. A good answer corrects this from the evidence; selling on a false premise is not acceptable."
+}
