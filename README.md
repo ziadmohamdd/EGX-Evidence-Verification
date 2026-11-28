@@ -106,3 +106,9 @@ The hypotheses, main measure, sample size, statistics, case design, human rating
 - Run the reader on real reports and measure how well it extracts against hand-checked figures
 - The 30 test cases, and the filled-in, checked reference sheet
 - Frozen prompts, the fee/lot-size assumptions, and the final model choice
+
+## Architecture map
+
+An interactive map of the codebase, made with [Floorplan](https://github.com/haydenschmitty/floorplan): every subsystem, module and file, with a one-line description and the imports between them.
+
+**[Open the interactive codebase map →](https://ziadmohamdd.github.io/EGX-Evidence-Verification/map/)**
