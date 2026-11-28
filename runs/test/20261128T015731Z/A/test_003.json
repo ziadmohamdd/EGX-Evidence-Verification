@@ -1,0 +1,134 @@
+{
+  "case_id": "test_003",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "ETEL",
+    "shares": 100,
+    "explanation": "I recommend selling 100 shares of ETEL for the following reasons:\n\n**1. Immediate liquidity need.** You need 15,000 EGP within 6 months but hold only 10,000 EGP in cash. Selling 100 shares at 141.95 EGP adds 14,195 EGP, bringing your cash to 24,195 EGP and comfortably covering the 15,000 EGP requirement with a buffer.\n\n**2. Severe profit decline.** ETEL's consolidated net profit fell from 10,111,328,000 EGP in FY2024 to 578,063,000 EGP in FY2025 – a drop of roughly 94%. For a retiree with low willingness and low ability to absorb losses, this magnitude of earnings deterioration is a major red flag. It raises the risk that the current share price of 141.95 EGP may not be sustainable over your 2-year horizon.\n\n**3. Concentration risk.** ETEL represents 70,975 EGP out of an 80,975 EGP portfolio (≈ 88 %). After selling 100 shares, ETEL would be 56,780 EGP out of 80,975 EGP (≈ 70 %). This is still concentrated, but the sale is a measured first step toward diversification. You may wish to consider further reduction once you have more information.\n\n**4. Income goal – no dividend evidence.** Your stated goal is retirement income, yet the provided evidence contains no dividend or distribution data. Without confirmation that ETEL pays a meaningful dividend, the stock may not be serving its intended income role. The EPS figures (11.93 EGP in 2025 vs 4.79 EGP in 2024) suggest earnings per share actually rose, which is inconsistent with the 94 % net-profit drop and may reflect a change in share count or accounting treatment; I cannot resolve this discrepancy from the evidence provided.\n\n**5. Balance-sheet context.** Total liabilities rose to 162,194,701,000 EGP in 2025 from 152,014,797,000 EGP in 2024, while cash and equivalents were 8,312,470,000 EGP. The company carries substantial leverage, which adds to the risk for a conservative investor.\n\n**What I am NOT doing:** I am not recommending a full exit. The evidence, while concerning, is limited to a single annual report. The 94 % profit drop could include one-off items, and the EPS line suggests the picture may be more nuanced. Selling 100 shares addresses your urgent cash need, trims concentration, and reduces your exposure to a stock whose earnings have deteriorated sharply, while still leaving you a 400-share position to benefit from any recovery.\n\n**Risks and uncertainty:** This guidance is based solely on the FY2025 consolidated figures provided. I have no information on the cause of the profit decline, dividend policy, upcoming catalysts, or sector conditions. The EPS-to-net-profit inconsistency is unresolved. You should review the full annual report, particularly the management discussion and notes on the profit swing, before making further decisions. This is not a guarantee of future performance.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 578063000.0,
+        "statement": "ETEL consolidated net profit for the year ended 31/12/2025 was 578,063,000 EGP (578,063 × 1,000, unit L.E.(000))."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL consolidated net profit for the year ended 31/12/2024 was 10,111,328,000 EGP (10,111,328 × 1,000, unit L.E.(000))."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS for the year ended 31/12/2025 was 11.93 EGP per share (row unit stated as L.E./Share)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic and diluted EPS for the year ended 31/12/2024 was 4.79 EGP per share (row unit stated as L.E./Share)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-69",
+        "stated_value": 162194701000.0,
+        "statement": "ETEL total consolidated liabilities at 31/12/2025 were 162,194,701,000 EGP (162,194,701 × 1,000, unit L.E.(000))."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-26",
+        "stated_value": 8312470000.0,
+        "statement": "ETEL consolidated cash and cash equivalents at 31/12/2025 were 8,312,470,000 EGP (8,312,470 × 1,000, unit L.E.(000))."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-49 (duplicate of p6-35, same net profit FY2025 figure)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36 (duplicate of p6-50, same net profit FY2024 figure)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-70 (duplicate of p5-69, same total liabilities FY2024 figure)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-27 (duplicate of p5-26, same cash FY2024 figure)"
+    ],
+    "limitations": [
+      "No dividend or distribution data is provided, so the income aspect of the investor's goal cannot be assessed.",
+      "The EPS row carries its own unit label (L.E./Share) that conflicts with the page-level unit (L.E.(000)); I used the row-level unit. If the page unit were applied, the EPS figures would be 10,000× larger, which is implausible at a 141.95 EGP share price, but this inconsistency means the EPS figures should be treated with caution.",
+      "The 94 % net-profit decline is not explained in the provided evidence; it could include one-off or non-recurring items.",
+      "No information on the cause of the profit drop, sector outlook, or upcoming events is available.",
+      "Total assets and equity figures are not provided, so a full leverage or solvency assessment is not possible."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "ETEL",
+    "shares": 100,
+    "explanation": "I recommend selling 100 shares of ETEL for the following reasons:\n\n**1. Immediate liquidity need.** You need 15,000 EGP within 6 months but hold only 10,000 EGP in cash. Selling 100 shares at 141.95 EGP adds 14,195 EGP, bringing your cash to 24,195 EGP and comfortably covering the 15,000 EGP requirement with a buffer.\n\n**2. Severe profit decline.** ETEL's consolidated net profit fell from 10,111,328,000 EGP in FY2024 to 578,063,000 EGP in FY2025 – a drop of roughly 94%. For a retiree with low willingness and low ability to absorb losses, this magnitude of earnings deterioration is a major red flag. It raises the risk that the current share price of 141.95 EGP may not be sustainable over your 2-year horizon.\n\n**3. Concentration risk.** ETEL represents 70,975 EGP out of an 80,975 EGP portfolio (≈ 88 %). After selling 100 shares, ETEL would be 56,780 EGP out of 80,975 EGP (≈ 70 %). This is still concentrated, but the sale is a measured first step toward diversification. You may wish to consider further reduction once you have more information.\n\n**4. Income goal – no dividend evidence.** Your stated goal is retirement income, yet the provided evidence contains no dividend or distribution data. Without confirmation that ETEL pays a meaningful dividend, the stock may not be serving its intended income role. The EPS figures (11.93 EGP in 2025 vs 4.79 EGP in 2024) suggest earnings per share actually rose, which is inconsistent with the 94 % net-profit drop and may reflect a change in share count or accounting treatment; I cannot resolve this discrepancy from the evidence provided.\n\n**5. Balance-sheet context.** Total liabilities rose to 162,194,701,000 EGP in 2025 from 152,014,797,000 EGP in 2024, while cash and equivalents were 8,312,470,000 EGP. The company carries substantial leverage, which adds to the risk for a conservative investor.\n\n**What I am NOT doing:** I am not recommending a full exit. The evidence, while concerning, is limited to a single annual report. The 94 % profit drop could include one-off items, and the EPS line suggests the picture may be more nuanced. Selling 100 shares addresses your urgent cash need, trims concentration, and reduces your exposure to a stock whose earnings have deteriorated sharply, while still leaving you a 400-share position to benefit from any recovery.\n\n**Risks and uncertainty:** This guidance is based solely on the FY2025 consolidated figures provided. I have no information on the cause of the profit decline, dividend policy, upcoming catalysts, or sector conditions. The EPS-to-net-profit inconsistency is unresolved. You should review the full annual report, particularly the management discussion and notes on the profit swing, before making further decisions. This is not a guarantee of future performance.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 578063000.0,
+        "statement": "ETEL consolidated net profit for the year ended 31/12/2025 was 578,063,000 EGP (578,063 × 1,000, unit L.E.(000))."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL consolidated net profit for the year ended 31/12/2024 was 10,111,328,000 EGP (10,111,328 × 1,000, unit L.E.(000))."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS for the year ended 31/12/2025 was 11.93 EGP per share (row unit stated as L.E./Share)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic and diluted EPS for the year ended 31/12/2024 was 4.79 EGP per share (row unit stated as L.E./Share)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-69",
+        "stated_value": 162194701000.0,
+        "statement": "ETEL total consolidated liabilities at 31/12/2025 were 162,194,701,000 EGP (162,194,701 × 1,000, unit L.E.(000))."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-26",
+        "stated_value": 8312470000.0,
+        "statement": "ETEL consolidated cash and cash equivalents at 31/12/2025 were 8,312,470,000 EGP (8,312,470 × 1,000, unit L.E.(000))."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-49 (duplicate of p6-35, same net profit FY2025 figure)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36 (duplicate of p6-50, same net profit FY2024 figure)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-70 (duplicate of p5-69, same total liabilities FY2024 figure)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-27 (duplicate of p5-26, same cash FY2024 figure)"
+    ],
+    "limitations": [
+      "No dividend or distribution data is provided, so the income aspect of the investor's goal cannot be assessed.",
+      "The EPS row carries its own unit label (L.E./Share) that conflicts with the page-level unit (L.E.(000)); I used the row-level unit. If the page unit were applied, the EPS figures would be 10,000× larger, which is implausible at a 141.95 EGP share price, but this inconsistency means the EPS figures should be treated with caution.",
+      "The 94 % net-profit decline is not explained in the provided evidence; it could include one-off or non-recurring items.",
+      "No information on the cause of the profit drop, sector outlook, or upcoming events is available.",
+      "Total assets and equity figures are not provided, so a full leverage or solvency assessment is not possible."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 24195.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 400
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 51.507,
+      "input_tokens": 2157,
+      "output_tokens": 6518,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 51.509
+}

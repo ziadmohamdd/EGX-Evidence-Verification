@@ -1,0 +1,120 @@
+{
+  "case_id": "test_026",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 229,
+    "explanation": "Estimating Abu Qir's (ABUK) full-year 2026 EPS and comparing it to Edita's (EFID) 2025 EPS:\n\n**ABUK – what we know (verified figures):**\n- 9-month 2026 basic EPS: 8.74 EGP\n- 9-month 2025 basic EPS: 4.28 EGP (roughly a 104% year-on-year increase)\n- Q3 2025 basic EPS: 1.23 EGP\n\n**What we cannot use (AMBIGUOUS):**\n- Q3 2026 EPS (printed as '١٩٩' – a decimal comma may be missing; could be 1.99 or 199)\n- The 9-month change percentage (printed as '%١٠٤' – unclear whether 104% or 1.04%)\n- The Q3 change percentage (printed as '٦٦٢')\n\nBecause the Q3 2026 figure is ambiguous, I cannot isolate Q4 2026 earnings. The most defensible rough estimate for full-year 2026 EPS is a linear extrapolation: 8.74 × (12/9) ≈ 11.65 EGP. This assumes uniform quarterly earnings and will be imprecise if Q4 is seasonally stronger or weaker. The true FY2026 EPS could be meaningfully higher or lower than this.\n\n**EFID – verified figures:**\n- FY 2025 basic & diluted EPS: 2.18 EGP\n- FY 2024 basic & diluted EPS: 1.09 EGP (roughly doubled)\n\n**Comparison:**\nEven the conservative 9-month ABUK figure of 8.74 EGP already exceeds EFID's entire 2025 EPS of 2.18 EGP by a factor of about 4×. Under the linear extrapolation, ABUK's FY2026 EPS (~11.65 EGP) would be roughly 5.3× EFID's FY2025 EPS. So yes, Abu Qir's 2026 EPS will almost certainly beat Edita's 2025 EPS by a wide margin.\n\n**Valuation snapshot at current prices:**\n- ABUK at 76.21 EGP → P/E on 9M basis ≈ 8.7×; annualised ≈ 6.5×\n- EFID at 20.40 EGP → P/E on FY2025 basis ≈ 9.4×\n\n**Why buy ABUK:**\nBoth companies roughly doubled EPS year-on-year, but ABUK's absolute earnings power is far higher and its implied valuation is lower. With a 5-year horizon and medium risk tolerance, ABUK's stronger earnings trajectory and cheaper multiple make it the more attractive of the two exporters on the evidence available. I am buying 229 shares (cost ≈ 17,452 EGP), keeping the position at just under 50% of the 35,000 EGP portfolio to preserve diversification headroom for a possible EFID position later.\n\n**Risks and caveats:**\n- The full-year 2026 EPS estimate is a rough linear extrapolation; actual Q4 results could differ materially.\n- The AMBIGUOUS Q3 2026 figure means I cannot confirm the quarterly run-rate; if Q3 2026 was actually 1.99 EGP (rather than 199), the 9-month figure of 8.74 still stands, but the seasonal pattern would be different.\n- Only one reporting period is available for ABUK (9M 2026) and one for EFID (FY 2025); a longer history would strengthen the comparison.\n- This is guidance, not a guarantee of returns. Earnings growth is not assured, and both stocks carry market, currency, and sector-specific risks.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS for the 9 months ended 30 September 2026 is 8.74 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK basic EPS for the 9 months ended 30 September 2025 is 4.28 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "ABUK basic EPS for the 3 months ended 30 September 2025 is 1.23 EGP per share."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2025 is 2.18 EGP per share."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2024 is 1.09 EGP per share."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-33 (9-month change %, printed '%١٠٤' – ambiguous decimal)",
+      "ABUK-ABUK_9M2026_results-p2-34 (Q3 2026 EPS, printed '١٩٩' – ambiguous decimal)",
+      "ABUK-ABUK_9M2026_results-p2-36 (Q3 change %, printed '٦٦٢' – ambiguous)"
+    ],
+    "limitations": [
+      "Full-year 2026 ABUK EPS is a linear extrapolation (8.74 × 12/9 ≈ 11.65 EGP), not a reported figure; actual Q4 earnings are unknown.",
+      "The AMBIGUOUS Q3 2026 figure prevents confirming the quarterly run-rate and seasonal pattern, so the extrapolation carries meaningful uncertainty.",
+      "Only one reporting period is available for each company; no multi-year trend or balance-sheet data is provided.",
+      "No dividend, debt, or cash-flow information is available to assess total shareholder returns or financial risk."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 229,
+    "explanation": "Estimating Abu Qir's (ABUK) full-year 2026 EPS and comparing it to Edita's (EFID) 2025 EPS:\n\n**ABUK – what we know (verified figures):**\n- 9-month 2026 basic EPS: 8.74 EGP\n- 9-month 2025 basic EPS: 4.28 EGP (roughly a 104% year-on-year increase)\n- Q3 2025 basic EPS: 1.23 EGP\n\n**What we cannot use (AMBIGUOUS):**\n- Q3 2026 EPS (printed as '١٩٩' – a decimal comma may be missing; could be 1.99 or 199)\n- The 9-month change percentage (printed as '%١٠٤' – unclear whether 104% or 1.04%)\n- The Q3 change percentage (printed as '٦٦٢')\n\nBecause the Q3 2026 figure is ambiguous, I cannot isolate Q4 2026 earnings. The most defensible rough estimate for full-year 2026 EPS is a linear extrapolation: 8.74 × (12/9) ≈ 11.65 EGP. This assumes uniform quarterly earnings and will be imprecise if Q4 is seasonally stronger or weaker. The true FY2026 EPS could be meaningfully higher or lower than this.\n\n**EFID – verified figures:**\n- FY 2025 basic & diluted EPS: 2.18 EGP\n- FY 2024 basic & diluted EPS: 1.09 EGP (roughly doubled)\n\n**Comparison:**\nEven the conservative 9-month ABUK figure of 8.74 EGP already exceeds EFID's entire 2025 EPS of 2.18 EGP by a factor of about 4×. Under the linear extrapolation, ABUK's FY2026 EPS (~11.65 EGP) would be roughly 5.3× EFID's FY2025 EPS. So yes, Abu Qir's 2026 EPS will almost certainly beat Edita's 2025 EPS by a wide margin.\n\n**Valuation snapshot at current prices:**\n- ABUK at 76.21 EGP → P/E on 9M basis ≈ 8.7×; annualised ≈ 6.5×\n- EFID at 20.40 EGP → P/E on FY2025 basis ≈ 9.4×\n\n**Why buy ABUK:**\nBoth companies roughly doubled EPS year-on-year, but ABUK's absolute earnings power is far higher and its implied valuation is lower. With a 5-year horizon and medium risk tolerance, ABUK's stronger earnings trajectory and cheaper multiple make it the more attractive of the two exporters on the evidence available. I am buying 229 shares (cost ≈ 17,452 EGP), keeping the position at just under 50% of the 35,000 EGP portfolio to preserve diversification headroom for a possible EFID position later.\n\n**Risks and caveats:**\n- The full-year 2026 EPS estimate is a rough linear extrapolation; actual Q4 results could differ materially.\n- The AMBIGUOUS Q3 2026 figure means I cannot confirm the quarterly run-rate; if Q3 2026 was actually 1.99 EGP (rather than 199), the 9-month figure of 8.74 still stands, but the seasonal pattern would be different.\n- Only one reporting period is available for ABUK (9M 2026) and one for EFID (FY 2025); a longer history would strengthen the comparison.\n- This is guidance, not a guarantee of returns. Earnings growth is not assured, and both stocks carry market, currency, and sector-specific risks.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS for the 9 months ended 30 September 2026 is 8.74 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK basic EPS for the 9 months ended 30 September 2025 is 4.28 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "ABUK basic EPS for the 3 months ended 30 September 2025 is 1.23 EGP per share."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2025 is 2.18 EGP per share."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2024 is 1.09 EGP per share."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-33 (9-month change %, printed '%١٠٤' – ambiguous decimal)",
+      "ABUK-ABUK_9M2026_results-p2-34 (Q3 2026 EPS, printed '١٩٩' – ambiguous decimal)",
+      "ABUK-ABUK_9M2026_results-p2-36 (Q3 change %, printed '٦٦٢' – ambiguous)"
+    ],
+    "limitations": [
+      "Full-year 2026 ABUK EPS is a linear extrapolation (8.74 × 12/9 ≈ 11.65 EGP), not a reported figure; actual Q4 earnings are unknown.",
+      "The AMBIGUOUS Q3 2026 figure prevents confirming the quarterly run-rate and seasonal pattern, so the extrapolation carries meaningful uncertainty.",
+      "Only one reporting period is available for each company; no multi-year trend or balance-sheet data is provided.",
+      "No dividend, debt, or cash-flow information is available to assess total shareholder returns or financial risk."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 17547.91,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ABUK",
+        "shares": 229
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 46.603,
+      "input_tokens": 2511,
+      "output_tokens": 5743,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 46.606
+}

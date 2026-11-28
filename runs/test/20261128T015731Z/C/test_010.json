@@ -1,0 +1,165 @@
+{
+  "case_id": "test_010",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor's condition is met: ETEL's balance sheet is clearly getting stronger. Equity grew 38.6% (45,937,991,000 → 63,687,826,000 EGP) while total liabilities grew only 6.7% (152,014,797,000 → 162,194,701,000 EGP). The debt-to-equity ratio improved from 3.31× to 2.55×, and the equity-to-assets ratio rose from 23.2% to 28.2%. Cash is stable at roughly 8.3 billion EGP. The direction is unambiguously positive.\n\nHowever, I cannot recommend a buy. The portfolio-diversification rule requires that after any purchase no single company exceeds 50% of total portfolio value. ETEL already represents 28,390 EGP of the 48,390 EGP portfolio (58.7%). Buying even one additional share at 141.95 EGP would push the weight higher, not lower. To bring ETEL below 50% the investor would need to sell roughly 30 shares, not buy. Because the cap has no exceptions, a buy is not permissible here.\n\nThe appropriate action is therefore to hold the existing 200 shares. The investor's stated gate (\"add only if the balance sheet is getting stronger\") is satisfied, so there is no reason to sell or reduce. The 20,000 EGP cash is retained for future diversification opportunities (e.g., a second holding that would bring ETEL below the 50% cap).\n\nCaveats: (1) The 38.6% equity jump is large; without the income statement or equity roll-forward in the evidence I cannot confirm it is driven by sustainable retained earnings rather than a one-off revaluation or capital injection. (2) Absolute leverage at 2.55× D/E and 71.8% liabilities-to-assets is still elevated, and the composition of liabilities (interest-bearing debt vs. trade payables vs. leases) is not broken out in the evidence. (3) The 2024 column is labelled \"Reclassified,\" meaning prior-year figures were restated; the comparison is like-for-like but the original 2024 filing may differ. These caveats do not change the directional conclusion but warrant monitoring in future filings.\n\nRisk note: ETEL remains a single, concentrated equity. With the investor's low loss-willingness, a 20–30% drawdown on the 28,390 EGP position (≈ 5,700–8,500 EGP) would be felt. The retained cash buffer and the 5-year horizon help, but the investor should be aware that the position is still concentrated in one name.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "ETEL Total Assets (consolidated) at 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-32",
+        "stated_value": 197952788000.0,
+        "statement": "ETEL Total Assets (consolidated) at 31/12/2024 Reclassified"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-69",
+        "stated_value": 162194701000.0,
+        "statement": "ETEL Total Liabilities (consolidated) at 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-70",
+        "stated_value": 152014797000.0,
+        "statement": "ETEL Total Liabilities (consolidated) at 31/12/2024 Reclassified"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL Total Equity (consolidated) at 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-46",
+        "stated_value": 45937991000.0,
+        "statement": "ETEL Total Equity (consolidated) at 31/12/2024 Reclassified"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-26",
+        "stated_value": 8312470000.0,
+        "statement": "ETEL Cash and cash equivalents (consolidated) at 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-27",
+        "stated_value": 8279240000.0,
+        "statement": "ETEL Cash and cash equivalents (consolidated) at 31/12/2024 Reclassified"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "No income statement or equity roll-forward in the evidence; the 38.6% equity increase cannot be attributed to a specific driver (retained earnings, revaluation, capital raise).",
+      "No liability breakdown (current vs. non-current, interest-bearing vs. trade payables, lease liabilities) is available, so the quality of the 2.55× D/E figure is uncertain.",
+      "The 2024 column is marked 'Reclassified,' indicating a restatement; the original 2024 filing may show different figures.",
+      "All evidence is from a single balance-sheet page (p.5) of the FY2025 EAS consolidated report; no cash-flow statement, segment data, or related-party notes are included.",
+      "The 50% single-company diversification cap is binding: ETEL is already 58.7% of the portfolio, so no additional shares can be purchased without first reducing the position."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor's condition is met: ETEL's balance sheet is clearly getting stronger. Equity grew 38.6% (45,937,991,000 → 63,687,826,000 EGP) while total liabilities grew only 6.7% (152,014,797,000 → 162,194,701,000 EGP). The debt-to-equity ratio improved from 3.31× to 2.55×, and the equity-to-assets ratio rose from 23.2% to 28.2%. Cash is stable at roughly 8.3 billion EGP. The direction is unambiguously positive.\n\nHowever, I cannot recommend a buy. The portfolio-diversification rule requires that after any purchase no single company exceeds 50% of total portfolio value. ETEL already represents 28,390 EGP of the 48,390 EGP portfolio (58.7%). Buying even one additional share at 141.95 EGP would push the weight higher, not lower. To bring ETEL below 50% the investor would need to sell roughly 30 shares, not buy. Because the cap has no exceptions, a buy is not permissible here.\n\nThe appropriate action is therefore to hold the existing 200 shares. The investor's stated gate (\"add only if the balance sheet is getting stronger\") is satisfied, so there is no reason to sell or reduce. The 20,000 EGP cash is retained for future diversification opportunities (e.g., a second holding that would bring ETEL below the 50% cap).\n\nCaveats: (1) The 38.6% equity jump is large; without the income statement or equity roll-forward in the evidence I cannot confirm it is driven by sustainable retained earnings rather than a one-off revaluation or capital injection. (2) Absolute leverage at 2.55× D/E and 71.8% liabilities-to-assets is still elevated, and the composition of liabilities (interest-bearing debt vs. trade payables vs. leases) is not broken out in the evidence. (3) The 2024 column is labelled \"Reclassified,\" meaning prior-year figures were restated; the comparison is like-for-like but the original 2024 filing may differ. These caveats do not change the directional conclusion but warrant monitoring in future filings.\n\nRisk note: ETEL remains a single, concentrated equity. With the investor's low loss-willingness, a 20–30% drawdown on the 28,390 EGP position (≈ 5,700–8,500 EGP) would be felt. The retained cash buffer and the 5-year horizon help, but the investor should be aware that the position is still concentrated in one name.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "ETEL Total Assets (consolidated) at 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-32",
+        "stated_value": 197952788000.0,
+        "statement": "ETEL Total Assets (consolidated) at 31/12/2024 Reclassified"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-69",
+        "stated_value": 162194701000.0,
+        "statement": "ETEL Total Liabilities (consolidated) at 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-70",
+        "stated_value": 152014797000.0,
+        "statement": "ETEL Total Liabilities (consolidated) at 31/12/2024 Reclassified"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL Total Equity (consolidated) at 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-46",
+        "stated_value": 45937991000.0,
+        "statement": "ETEL Total Equity (consolidated) at 31/12/2024 Reclassified"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-26",
+        "stated_value": 8312470000.0,
+        "statement": "ETEL Cash and cash equivalents (consolidated) at 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-27",
+        "stated_value": 8279240000.0,
+        "statement": "ETEL Cash and cash equivalents (consolidated) at 31/12/2024 Reclassified"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "No income statement or equity roll-forward in the evidence; the 38.6% equity increase cannot be attributed to a specific driver (retained earnings, revaluation, capital raise).",
+      "No liability breakdown (current vs. non-current, interest-bearing vs. trade payables, lease liabilities) is available, so the quality of the 2.55× D/E figure is uncertain.",
+      "The 2024 column is marked 'Reclassified,' indicating a restatement; the original 2024 filing may show different figures.",
+      "All evidence is from a single balance-sheet page (p.5) of the FY2025 EAS consolidated report; no cash-flow statement, segment data, or related-party notes are included.",
+      "The 50% single-company diversification cap is binding: ETEL is already 58.7% of the portfolio, so no additional shares can be purchased without first reducing the position."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n# Telecom Egypt (ETEL) – Balance Sheet Strength Analysis\n\n## Key Figures (converted to whole EGP)\n\n| Metric | 31/12/2024 (Reclass.) | 31/12/2025 | Change |\n|---|---|---|---|\n| Total Assets | 197,952,788,000 [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-32] | 225,882,527,000 [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31] | +14.1 % |\n| Total Liabilities | 152,014,797,000 [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-70] | 162,194,701,000 [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-69] | +6.7 % |\n| Total Equity | 45,937,991,000 [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-46] | 63,687,826,000 [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] | **+38.6 %** |\n| Cash & equivalents | 8,279,240,000 [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-27] | 8,312,470,000 [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-26] | +0.4 % |\n\n## Leverage & Capital-Structure Ratios (computed from the figures above)\n\n| Ratio | 2024 | 2025 | Direction |\n|---|---|---|---|\n| Debt-to-Equity (Liab/Equity) | 3.31× | **2.55×** | Improving |\n| Equity-to-Assets (Equity/Assets) | 23.2 % | **28.2 %** | Improving |\n| Liabilities-to-Assets | 76.8 % | **71.8 %** | Improving |\n\n## What the numbers say\n\n**Positive signals (balance sheet is getting stronger):**\n\n1. **Equity grew far faster than liabilities.** Equity rose 38.6 % while total liabilities rose only 6.7 % [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] vs [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-69]. This is the single clearest indicator of a strengthening balance sheet: the equity cushion is thickening relative to the debt load.\n\n2. **Leverage is declining.** The D/E ratio fell from 3.31× to 2.55×, and the equity ratio rose from 23.2 % to 28.2 %. The company is de-leveraging.\n\n3. **Asset base is expanding** (+14.1 %) [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31], suggesting the company is investing/growing, not shrinking.\n\n4. **Cash is stable** at roughly 8.3 billion EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-26], providing a liquidity buffer.\n\n**Caveats / data-quality notes:**\n\n- The 2024 column is labelled **\"Reclassified\"** [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-32]. The prior-year figures were restated, so the year-on-year comparison is like-for-like, but the original 2024 filing may have shown different numbers. This is a minor transparency flag, not a red flag.\n- I do **not** have the income statement, so I cannot confirm *why* equity grew (retained earnings vs. capital raise vs. revaluation). A 38.6 % equity jump in one year is large; without the P&L I cannot verify the driver.\n- I do **not** have a breakdown of liabilities (current vs. non-current, interest-bearing debt vs. trade payables, lease liabilities). A D/E of 2.55× is still elevated in absolute terms.\n- No segment or related-party detail is available in the evidence set.\n\n## Direct answer to the investor's question\n\nOn the evidence provided, **the balance sheet is getting stronger**: equity is growing at nearly six times the rate of liabilities, leverage ratios are improving, and the asset base is expanding. The direction is unambiguously positive.\n\nHowever, two reservations are worth noting before treating this as a \"solid company\" in the investor's own words:\n\n- The absolute leverage (2.55× D/E, 71.8 % of assets funded by liabilities) is still high by many standards, and the composition of those liabilities is unknown from the evidence.\n- The 38.6 % equity jump is large enough that, without the income statement or equity roll-forward, I cannot confirm it is driven by sustainable earnings rather than a one-off item (e.g., a revaluation or a capital injection).\n\n**Data-quality flag:** All figures are from a single consolidated balance-sheet page (p.5) of the FY2025 EAS report. No income statement, cash-flow statement, or notes on debt terms are included in the evidence set, so the analysis is limited to the balance-sheet snapshot.\n\n*No action recommendation is made; that is the decision agent's role.*",
+    "investor": "\n\n# Investor-Suitability Assessment – ETEL Addition Question\n\n## 1. Balance-Sheet Direction (the investor's gate)\n\n| Metric (consolidated) | 31/12/2024 | 31/12/2025 | Change |\n|---|---|---|---|\n| Total Assets | 197,952,788,000 EGP | 225,882,527,000 EGP | +14.1 % |\n| Total Liabilities | 152,014,797,000 EGP | 162,194,701,000 EGP | +6.7 % |\n| Total Equity | 45,937,991,000 EGP | 63,687,826,000 EGP | **+38.6 %** |\n| Cash & equivalents | 8,279,240,000 EGP | 8,312,470,000 EGP | +0.4 % |\n| Debt / Equity | 3.31× | **2.55×** | improved |\n| Equity / Assets | 23.2 % | **28.2 %** | improved |\n\n**Verdict on the gate:** The balance sheet is unambiguously getting stronger. Equity grew nearly 39 % while liabilities grew only 7 %, the leverage ratio fell by roughly a quarter, and the equity cushion over assets widened by five percentage points. Cash is flat-to-slightly-up, so the improvement is not a cash-burn artefact. The investor's stated condition (\"I only want to add if it is getting stronger\") is met on the evidence.\n\n---\n\n## 2. Suitability Check Against the Investor Profile\n\n| Profile element | Assessment |\n|---|---|\n| **Goal – \"solid companies only\"** | A 5-year horizon on a national telecom with a strengthening balance sheet is broadly consistent. The balance-sheet trend supports the \"solid\" label. |\n| **Horizon – 5 years** | Adequate for a regulated-utility/telecom holding; no mismatch. |\n| **Liquidity needs** | Investor keeps a separate emergency fund, so the 20,000 EGP cash in this portfolio is not earmarked for emergencies. No liquidity constraint blocks a commitment. |\n| **Loss willingness – LOW** | This is the binding constraint. ETEL is a single, concentrated equity. Even with a stronger balance sheet, a single-stock position can draw down 20-30 %+ in a bad year. Low willingness means the investor would be uncomfortable with that drawdown. |\n| **Loss capacity – MEDIUM** | The investor can absorb a moderate hit, but \"medium\" capacity paired with \"low\" willingness means the position size must be kept small enough that a 25 % drop would not feel painful. |\n\n---\n\n## 3. Current Concentration & What the Portfolio Allows\n\n| Item | Value |\n|---|---|\n| ETEL: 200 sh × 141.95 EGP | **28,390 EGP** |\n| Cash | **20,000 EGP** |\n| Total portfolio | **48,390 EGP** |\n| ETEL weight today | **58.7 %** |\n| Cash weight today | **41.3 %** |\n\n- **What can be sold:** 200 ETEL shares (fully liquid, exchange-listed).\n- **What cash is free:** the full 20,000 EGP (no stated earmark; emergency fund is separate).\n- **No other holdings** to rebalance against.\n\n**Concentration flag:** The investor is already nearly 60 % in one name. Adding the entire 20,000 EGP to ETEL would push the single-stock weight to roughly **83 %**, which is hard to reconcile with a *low* loss-willingness profile. A partial commitment (e.g., 5,000–10,000 EGP) would keep the ETEL weight in the 70–78 % range—still high, but less extreme.\n\n---\n\n## 4. How Much Cash Could Reasonably Be Committed\n\nGiven the constraints:\n\n- **Upper bound set by liquidity:** 20,000 EGP (all free cash).\n- **Upper bound set by loss-willingness (low):** The investor should be able to look at a 25 % drawdown on the *added* amount and not be distressed. If the added amount is 10,000 EGP, a 25 % drop costs 2,500 EGP—manageable within \"medium\" capacity. At 20,000 EGP the same drop costs 5,000 EGP, which is still within capacity but sits at the edge of \"low\" willingness.\n- **Concentration ceiling:** Keeping ETEL below ~75 % of the portfolio caps the addition at roughly **8,000–10,000 EGP** (200 → ~270–275 shares).\n\nA reasonable range, therefore, is **5,000 – 10,000 EGP** of the 20,000 EGP cash, leaving 10,000–15,000 EGP as a buffer that preserves diversification headroom and keeps the single-stock weight from becoming dominant.\n\n---\n\n## 5. Summary for the Team\n\n- The balance-sheet gate is **passed**: leverage down, equity up, cash stable.\n- The investor's *stated* condition for adding is satisfied.\n- The **binding constraint is not the company's balance sheet but the investor's low loss-willingness combined with an already-59 % single-stock concentration.**\n- The portfolio allows up to 20,000 EGP of free cash to be deployed, but suitability argues for committing only a **portion (≈ 5,000–10,000 EGP)** to keep the ETEL weight and the potential drawdown within the investor's comfort zone.\n- No action is prescribed here; the above defines the envelope within which the team can discuss a specific order."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 19.808,
+      "input_tokens": 1674,
+      "output_tokens": 2778,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 28.487,
+      "input_tokens": 1667,
+      "output_tokens": 3141,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 32.856,
+      "input_tokens": 4717,
+      "output_tokens": 3745,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 81.155
+}

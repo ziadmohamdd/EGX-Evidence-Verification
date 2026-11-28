@@ -1,0 +1,131 @@
+{
+  "case_id": "test_017",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "COMI",
+    "shares": 117,
+    "explanation": "Factual answer: COMI earned more in FY 2025 than EFID. COMI's consolidated net profit was 82,258,815,000 EGP (printed as 82,258,815 in EGP thousands); EFID's consolidated net profit was 2,695,301,670 EGP. The difference is 79,563,513,330 EGP, making COMI's profit roughly 30.5× EFID's. Both companies grew year-on-year (COMI +48.9%, EFID +67.7%).\n\nNaming caveat: The investor asked about 'CIB' and 'Edita,' but the evidence is labelled with tickers COMI and EFID. No document in the evidence set explicitly confirms that COMI = CIB or EFID = Edita. I proceed on the reasonable assumption that the two companies in the evidence set are the ones the investor is asking about, since they are the only data provided in response to this question. If the mapping is incorrect, this recommendation does not apply.\n\nWhy COMI: The investor's stated goal is to 'pick the more profitable company.' On the only profitability metric available (absolute consolidated net profit), COMI is unambiguously higher. I note that without revenue, equity, or margin data we cannot compare profitability ratios (ROE, net margin), so 'more profitable' here means 'earned more in absolute terms.'\n\nSizing: The 50 % diversification cap limits any single holding to at most 15,000 EGP (half of the 30,000 EGP portfolio). At 128 EGP/share, 117 shares cost 14,976 EGP, leaving 5,024 EGP cash. COMI would represent 49.92 % of total portfolio value, within the cap.\n\nRisks and uncertainty: (1) The naming mismatch is unresolved; (2) we have only one year of net profit per company (plus a prior-year comparison) – no revenue, balance-sheet, or cash-flow data to assess sustainability or quality of earnings; (3) a single-stock position in a 30,000 EGP portfolio concentrates all investable capital in one name, which sits at the upper edge of the investor's medium loss tolerance; (4) past profit growth does not guarantee future performance. This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI consolidated net profit for the year ended 31 Dec 2025: 82,258,815 (EGP thousands) = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI consolidated net profit for the year ended 31 Dec 2024: 55,256,732 (EGP thousands) = 55,256,732,000 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for the year ended 31 Dec 2025: 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year ended 31 Dec 2024: 1,606,727,698 EGP"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "No evidence confirms that ticker COMI corresponds to the company the investor calls 'CIB,' or that EFID corresponds to 'Edita.' If the mapping is wrong, the recommendation is inapplicable.",
+      "Only absolute net profit is available; no revenue, equity, or margin figures exist in the evidence to compute profitability ratios (ROE, net margin, ROA).",
+      "Only two fiscal years of data are provided; no multi-year trend, segment breakdown, or forward guidance is available.",
+      "No balance-sheet or cash-flow data to assess financial health, leverage, or earnings quality.",
+      "A single-stock position in a 30,000 EGP portfolio represents 100 % of investable capital in one name, which is at the boundary of the investor's stated medium loss tolerance."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "COMI",
+    "shares": 117,
+    "explanation": "Factual answer: COMI earned more in FY 2025 than EFID. COMI's consolidated net profit was 82,258,815,000 EGP (printed as 82,258,815 in EGP thousands); EFID's consolidated net profit was 2,695,301,670 EGP. The difference is 79,563,513,330 EGP, making COMI's profit roughly 30.5× EFID's. Both companies grew year-on-year (COMI +48.9%, EFID +67.7%).\n\nNaming caveat: The investor asked about 'CIB' and 'Edita,' but the evidence is labelled with tickers COMI and EFID. No document in the evidence set explicitly confirms that COMI = CIB or EFID = Edita. I proceed on the reasonable assumption that the two companies in the evidence set are the ones the investor is asking about, since they are the only data provided in response to this question. If the mapping is incorrect, this recommendation does not apply.\n\nWhy COMI: The investor's stated goal is to 'pick the more profitable company.' On the only profitability metric available (absolute consolidated net profit), COMI is unambiguously higher. I note that without revenue, equity, or margin data we cannot compare profitability ratios (ROE, net margin), so 'more profitable' here means 'earned more in absolute terms.'\n\nSizing: The 50 % diversification cap limits any single holding to at most 15,000 EGP (half of the 30,000 EGP portfolio). At 128 EGP/share, 117 shares cost 14,976 EGP, leaving 5,024 EGP cash. COMI would represent 49.92 % of total portfolio value, within the cap.\n\nRisks and uncertainty: (1) The naming mismatch is unresolved; (2) we have only one year of net profit per company (plus a prior-year comparison) – no revenue, balance-sheet, or cash-flow data to assess sustainability or quality of earnings; (3) a single-stock position in a 30,000 EGP portfolio concentrates all investable capital in one name, which sits at the upper edge of the investor's medium loss tolerance; (4) past profit growth does not guarantee future performance. This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI consolidated net profit for the year ended 31 Dec 2025: 82,258,815 (EGP thousands) = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI consolidated net profit for the year ended 31 Dec 2024: 55,256,732 (EGP thousands) = 55,256,732,000 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for the year ended 31 Dec 2025: 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year ended 31 Dec 2024: 1,606,727,698 EGP"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "No evidence confirms that ticker COMI corresponds to the company the investor calls 'CIB,' or that EFID corresponds to 'Edita.' If the mapping is wrong, the recommendation is inapplicable.",
+      "Only absolute net profit is available; no revenue, equity, or margin figures exist in the evidence to compute profitability ratios (ROE, net margin, ROA).",
+      "Only two fiscal years of data are provided; no multi-year trend, segment breakdown, or forward guidance is available.",
+      "No balance-sheet or cash-flow data to assess financial health, leverage, or earnings quality.",
+      "A single-stock position in a 30,000 EGP portfolio represents 100 % of investable capital in one name, which is at the boundary of the investor's stated medium loss tolerance."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15024.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 117
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n## Profitability Comparison – FY 2025 Net Profit\n\n### ⚠️ Data-Quality / Naming Flag\n\nThe investor's question references **\"CIB\"** and **\"Edita,\"** but the only evidence supplied is for tickers **COMI** and **EFID**. No document in the evidence set confirms that COMI = CIB or EFID = Edita. I will therefore answer strictly on the basis of the two companies for which data is provided (COMI and EFID) and flag the mismatch for the decision agent.\n\n---\n\n### 2025 Net Profit (consolidated)\n\n| Company | FY 2025 Net Profit (as printed) | Unit stated | Converted to whole EGP |\n|---|---|---|---|\n| **COMI** | 82,258,815 [COMI-COMI_FY2025_consolidated_condensed_en-p5-33] | EGP **thousands** | **82,258,815,000 EGP** |\n| **EFID** | 2,695,301,670 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] | EGP (whole) | **2,695,301,670 EGP** |\n\n### 2024 Net Profit (for growth context)\n\n| Company | FY 2024 Net Profit (as printed) | Converted to whole EGP |\n|---|---|---|\n| COMI | 55,256,732 [COMI-COMI_FY2025_consolidated_condensed_en-p5-34] | 55,256,732,000 EGP |\n| EFID | 1,606,727,698 [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37] | 1,606,727,698 EGP |\n\n---\n\n### Answer to the Question\n\n**COMI earned more in FY 2025 than EFID.**\n\n- COMI: 82,258,815,000 EGP\n- EFID: 2,695,301,670 EGP\n- **Difference: 79,563,513,330 EGP** (COMI's profit is roughly **30.5×** EFID's)\n\nBoth companies posted year-on-year profit growth:\n- COMI: +48.9% (55.26 bn → 82.26 bn)\n- EFID: +67.7% (1.61 bn → 2.70 bn)\n\n---\n\n### Caveats for the Decision Agent\n\n1. **Ticker/name mismatch:** The investor asked about \"CIB\" and \"Edita.\" If those are different entities from COMI and EFID, none of the above figures apply and the question cannot be answered from the evidence provided.\n2. **Scale difference:** COMI's profit is an order of magnitude larger, so a raw \"who earned more\" comparison is heavily influenced by company size. For a 5-year, medium-risk investor, a profitability *ratio* (e.g., ROE, net margin) would be more decision-relevant, but the evidence set contains no revenue, equity, or margin figures to compute those.\n3. **No AMBIGUOUS figures** were encountered; all six data points are marked *verified* and internally consistent (the 2025 and 2024 columns appear in the same row for each company).",
+    "investor": "\n\n## Earnings Comparison – FY 2025\n\n| Company | Net profit FY 2025 | Source unit | Converted to whole EGP |\n|---|---|---|---|\n| **CIB (COMI)** | 82,258,815 | EGP thousands | **82,258,815,000 EGP** |\n| **Edita (EFID)** | 2,695,301,670 | EGP (whole) | **2,695,301,670 EGP** |\n\n**CIB earned more in 2025, by 79,563,513,330 EGP** (≈ 30.5× Edita's profit).\n\n---\n\n## Suitability snapshot (context for the decision)\n\n- **Horizon – 5 years:** Comfortable for a single equity position; no near-term forced-sale pressure.\n- **Liquidity needs:** The investor keeps a *separate* emergency fund, so the 30,000 EGP in the portfolio is not earmarked for emergencies.\n- **Loss tolerance / capacity – both medium:** A single-stock position in a 30,000 EGP portfolio means 100 % of investable capital is in one name. A 30–40 % drawdown (plausible for either a bank or a media/consumer company) would put 9,000–12,000 EGP at risk, which is at the upper edge of what \"medium\" capacity comfortably absorbs.\n- **Current concentration:** No existing holdings, so there is no diversification cushion; the entire position would be one ticker.\n- **What can be sold / free cash:** Nothing to sell. The full **30,000 EGP** is free cash available to commit.\n- **Practical sizing note:** At COMI 128 EGP/share the cash buys ≈ 234 shares; at EFID 20.40 EGP/share it buys ≈ 1,470 shares. Either way the position is a single name, which sits at the boundary of the investor's stated medium loss tolerance.\n\n*No action is recommended here; the figures above simply answer the factual question and flag the concentration consideration for the team's next step.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 12.496,
+      "input_tokens": 1236,
+      "output_tokens": 1685,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 10.853,
+      "input_tokens": 1229,
+      "output_tokens": 1221,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 41.398,
+      "input_tokens": 2895,
+      "output_tokens": 4884,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 64.751
+}

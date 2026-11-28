@@ -1,0 +1,157 @@
+{
+  "case_id": "test_003",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "ETEL",
+    "shares": 36,
+    "explanation": "The investor has a firm liquidity need of 15,000 EGP within 6 months but only 10,000 EGP in cash, creating a 5,000 EGP shortfall. Selling 36 ETEL shares at 141.95 EGP yields 5,110.20 EGP, closing the gap and leaving 15,110.20 EGP in cash. This is the minimum mandatory action to meet the time-bound liquidity requirement.\n\nRisk context supporting the sale (and cautioning against adding to the position): ETEL's net profit jumped from 111,328,000 EGP (FY24) to 578,063,000 EGP (FY25), an unusual ~419% increase whose sustainability cannot be verified from the evidence (no revenue, segment, or share-count data). Total consolidated liabilities of 162,194,701,000 EGP against only 8,312,470,000 EGP of company cash indicate a large leverage base. No dividend data is present, so the investor's stated income-in-retirement goal cannot be confirmed as being met by this holding. The portfolio is ~88% concentrated in a single equity, which is a dominant risk for an investor with low loss tolerance, low loss capacity, and a 2-year horizon.\n\nAfter the sale the portfolio is 15,110 EGP cash + 464 ETEL shares (≈65,865 EGP), still ~81% in ETEL. Further diversification would be prudent given the risk profile, but the evidence does not identify specific alternative instruments or provide enough fundamental detail (no dividend yield, no revenue trend, no total assets/equity) to prescribe a precise larger reduction. The investor should consider consulting an adviser about reallocating a portion of the remaining ETEL position into short-duration, low-volatility income instruments within the 2-year horizon.\n\nUncertainty and risks: The single-year profit spike may not repeat; the large liability base could pressure future earnings; the absence of dividend data means the income goal is unverified; a market correction over the 2-year window could erode the remaining 464-share position. This recommendation addresses the immediate liquidity constraint and does not guarantee future returns.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 578063000.0,
+        "statement": "ETEL net profit for the year FY2025: 578,063 (thousand EGP) = 578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 111328000.0,
+        "statement": "ETEL net profit for the year FY2024: 111,328 (thousand EGP) = 111,328,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-69",
+        "stated_value": 162194701000.0,
+        "statement": "ETEL total liabilities (consolidated) 31/12/2025: 162,194,701 (thousand EGP) = 162,194,701,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-26",
+        "stated_value": 8312470000.0,
+        "statement": "ETEL cash and cash equivalents (consolidated) 31/12/2025: 8,312,470 (thousand EGP) = 8,312,470,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "ETEL basic and diluted EPS FY2025 (11.93) and FY2024 (4.79) from evidence p6-55/p6-56: the row is labelled 'L.E./Share' but the table unit line reads 'L.E.(000)', creating a unit conflict. The financial analyst flagged this as a data-quality issue. Although the evidence is marked 'verified', the unit ambiguity means these figures are not used in any calculation. The affected conclusion is the EPS growth rate (+149%) cited by the financial analyst; this does not change the action taken, which is driven by the liquidity shortfall and portfolio concentration rather than the EPS level."
+    ],
+    "limitations": [
+      "No dividend-per-share or payout-ratio data is available in the evidence, so the investor's income-in-retirement goal cannot be verified as being met by ETEL.",
+      "No revenue, total-assets, equity, or current/non-current liability breakdown is provided, so the full leverage and solvency picture cannot be assessed.",
+      "No share-count data is provided; the divergence between net-profit growth (+419%) and EPS growth (+149%) implies a change in shares outstanding, but the driver cannot be confirmed.",
+      "The 2024 balance-sheet comparatives are labelled 'Reclassified,' meaning they are restated figures, not the originally reported numbers.",
+      "No alternative investment instruments are identified in the evidence, so a specific reallocation target cannot be prescribed.",
+      "This is guidance based on limited evidence and is not a guarantee of returns. Market conditions, company-specific events, and macroeconomic factors over the 2-year horizon could materially affect the outcome."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "ETEL",
+    "shares": 36,
+    "explanation": "The investor has a firm liquidity need of 15,000 EGP within 6 months but only 10,000 EGP in cash, creating a 5,000 EGP shortfall. Selling 36 ETEL shares at 141.95 EGP yields 5,110.20 EGP, closing the gap and leaving 15,110.20 EGP in cash. This is the minimum mandatory action to meet the time-bound liquidity requirement.\n\nCorrected financial context: ETEL's net profit rose from 10,111,328,000 EGP (FY2024) to 22,578,063,000 EGP (FY2025), an increase of approximately 123%. While this is a strong growth rate, the sustainability of such a jump cannot be verified from the evidence (no revenue, segment, or share-count data is provided). Total consolidated liabilities of 162,194,701,000 EGP against only 8,312,470,000 EGP of company cash indicate a large leverage base (liabilities are roughly 19.5× company cash). No dividend data is present, so the investor's stated income-in-retirement goal cannot be confirmed as being met by this holding.\n\nThe portfolio is approximately 88% concentrated in a single equity (500 × 141.95 = 70,975 EGP out of 80,975 EGP total). After the 36-share sale, the portfolio is 15,110.20 EGP cash + 464 ETEL shares (≈65,864.80 EGP), still about 81% in ETEL. This concentration is a dominant risk for an investor with low loss tolerance, low loss capacity, and a 2-year horizon. However, the evidence does not identify specific alternative instruments or provide enough fundamental detail (no dividend yield, no revenue trend, no total assets/equity) to prescribe a precise larger reduction. The investor should consider consulting an adviser about reallocating a portion of the remaining ETEL position into short-duration, low-volatility income instruments within the 2-year horizon.\n\nUncertainty and risks: The single-year profit increase of ~123% may not repeat; the large liability base could pressure future earnings; the absence of dividend data means the income goal is unverified; a market correction over the 2-year window could erode the remaining 464-share position. This recommendation addresses the immediate liquidity constraint and does not guarantee future returns.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit for the year FY2025: 22,578,063 (thousand EGP) = 22,578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL net profit for the year FY2024: 10,111,328 (thousand EGP) = 10,111,328,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-69",
+        "stated_value": 162194701000.0,
+        "statement": "ETEL total liabilities (consolidated) 31/12/2025: 162,194,701 (thousand EGP) = 162,194,701,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-26",
+        "stated_value": 8312470000.0,
+        "statement": "ETEL cash and cash equivalents (consolidated) 31/12/2025: 8,312,470 (thousand EGP) = 8,312,470,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "ETEL basic and diluted EPS FY2025 (11.93) and FY2024 (4.79) from evidence p6-55/p6-56: the row label reads 'L.E. / Share' but the table unit line reads 'L.E.(000)', creating a unit conflict. It is unclear whether the figures are 11.93 EGP per share or 11,930 EGP per share. These figures are not used in any calculation. The affected conclusion is the EPS growth rate; without a reliable EPS figure, per-share profitability cannot be assessed independently of the net-profit total."
+    ],
+    "limitations": [
+      "No dividend-per-share or payout-ratio data is available in the evidence, so the investor's income-in-retirement goal cannot be verified as being met by ETEL.",
+      "No revenue, total-assets, equity, or current/non-current liability breakdown is provided, so the full leverage and solvency picture cannot be assessed.",
+      "No share-count data is provided; the relationship between net-profit growth (~123%) and per-share earnings cannot be independently verified due to the ambiguous EPS unit.",
+      "The 2024 balance-sheet comparatives are labelled 'Reclassified,' meaning they are restated figures, not the originally reported numbers.",
+      "No alternative investment instruments are identified in the evidence, so a specific reallocation target cannot be prescribed.",
+      "This is guidance based on limited evidence and is not a guarantee of returns. Market conditions, company-specific events, and macroeconomic factors over the 2-year horizon could materially affect the outcome."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15110.2,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 464
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "value_mismatch",
+        "detail": "stated 5.78063e+08 but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)]"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "rule": "value_mismatch",
+        "detail": "stated 1.11328e+08 but evidence 'Net profit for the year' is 1.01113e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)]"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n# ETEL (Egyptian Telecommunications) – Financial Evidence Analysis\n\n## 1. Profitability\n\n| Metric | FY 2025 | FY 2024 | Source |\n|---|---|---|---|\n| Net profit | 578,063,000 EGP | 111,328,000 EGP | [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35], [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50] |\n| EPS (basic & diluted) | 11.93 EGP/share | 4.79 EGP/share | [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55], [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56] |\n\n- Net profit rose from 111,328,000 EGP to 578,063,000 EGP year-over-year, a very large absolute and percentage increase.\n- EPS more than doubled, from 4.79 to 11.93 EGP per share.\n\n> **Data-quality flag (AMBIGUOUS unit):** The EPS row is labelled \"(L.E. / Share)\" but the table's unit line reads \"L.E.(000).\" The printed values (11.93 / 4.79) are clearly per-share figures, not thousands of pounds. I treat them as EGP per share. The unit line appears to be a table-level formatting artefact that does not apply to this per-share row. **I do not compute with the \"×1,000\" interpretation.**\n\n## 2. Growth\n\n- Net-profit growth FY24→FY25: 111,328,000 → 578,063,000 EGP (≈ +419 %). [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35 / p6-50]\n- EPS growth: 4.79 → 11.93 EGP/share (≈ +149 %). [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55 / p6-56]\n- The large gap between the profit growth rate and the EPS growth rate suggests a change in the effective share count (e.g., a capital increase or share issuance) between the two years. No share-count data is provided in the evidence, so the exact driver **cannot be confirmed** from the evidence given.\n\n## 3. Balance Sheet (Consolidated)\n\n| Item | 31/12/2025 | 31/12/2024 (Reclassified) | Source |\n|---|---|---|---|\n| Cash & cash equivalents | 8,312,470,000 EGP | 8,279,240,000 EGP | [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-26], [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-27] |\n| Total liabilities | 162,194,701,000 EGP | 152,014,797,000 EGP | [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-69], [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-70] |\n\n- Cash is essentially flat year-over-year (+0.4 %).\n- Total liabilities increased by roughly 10.2 bn EGP (+6.7 %).\n- Cash covers only about **5.1 %** of total liabilities (8,312,470 / 162,194,701 in thousands). The company carries a very large liability base relative to its liquid resources.\n- The 2024 balance-sheet column is labelled **\"Reclassified,\"** meaning prior-year comparatives were restated. This is standard but means the 2024 figures are not the originally reported numbers.\n\n## 4. Risks & Observations\n\n- **Leverage / liquidity risk:** Total liabilities of 162.2 bn EGP against 8.3 bn EGP of cash is a substantial gap. No breakdown of current vs. non-current liabilities, no interest-bearing debt detail, and no total-assets figure are provided in the evidence, so the full leverage picture **cannot be assessed** from what is given.\n- **Concentration of profit growth:** The near-5× jump in net profit in a single year is unusual. Without segment or revenue data in the evidence, the sustainability of this level of earnings **cannot be verified**.\n- **Share-count uncertainty:** The divergence between profit growth (+419 %) and EPS growth (+149 %) implies a material change in shares outstanding, but no share-count evidence is supplied.\n- **No dividend data:** The evidence contains no dividend-per-share or payout-ratio figures, which is directly relevant to an income-oriented investor.\n\n## 5. Data-Quality Summary\n\n| Issue | Detail |\n|---|---|\n| EPS unit conflict | Row says \"L.E./Share\"; table unit line says \"L.E.(000).\" Treated as per-share; flagged AMBIGUOUS. |\n| Redundant evidence IDs | Four IDs (p6-35, p6-49, p6-50, p6-36) all reference the same net-profit row. Values are consistent; no conflict. |\n| Reclassified comparatives | 2024 balance-sheet figures are restated; originally reported 2024 numbers are not available here. |\n| Missing data | No revenue, no total assets, no equity, no current/non-current split, no dividend, no share count, no segment detail. |\n\n## 6. Relevance to the Stated Investor Profile (context only – no action recommended)\n\n- **Income goal:** No dividend information is present in the evidence, so the income yield of ETEL **cannot be evaluated** from what is provided.\n- **2-year horizon / low loss tolerance:** The single-year profit spike and the large liability base introduce uncertainty about earnings stability over a 2-year window.\n- **Liquidity need (15,000 EGP within 6 months):** The investor holds 10,000 EGP cash and 500 ETEL shares (500 × 141.95 = 70,975 EGP). Meeting the 15,000 EGP need would require either additional cash inflows or the sale of a portion of the ETEL position. This is a portfolio-liquidity fact, not a company-fundamental issue.\n- **Low ability to withstand losses:** The balance-sheet leverage and the unexplained profit jump are the principal risk factors visible in the evidence.\n\n---\n\n*This analysis is limited to the evidence items listed above. No trading, buy, sell, hold, or rebalancing recommendation is made or implied. The decision agent is responsible for the final action call.*",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## 1. Horizon (2 years)\n\nA two-year window is short for equity exposure. It limits the time available to recover from a meaningful drawdown and makes the portfolio's income goal (retirement income) dependent on near-term, predictable cash flows rather than long-term capital appreciation. Any allocation the investor takes on should be one that can be liquidated or matured within roughly 24 months without forcing a sale at an inopportune price.\n\n## 2. Liquidity Needs\n\n- **Requirement:** 15,000 EGP within 6 months.\n- **Free cash on hand:** 10,000 EGP.\n- **Shortfall:** 5,000 EGP.\n- **What the portfolio allows:** The 500 ETEL shares (≈ 70,975 EGP at 141.95 EGP/share) are the only other asset. Selling roughly **36 shares** (≈ 5,110 EGP) would close the gap. After meeting the liquidity need, the investor would retain approximately **464 ETEL shares (≈ 65,865 EGP)** and **0 EGP cash**.\n\nBecause the liquidity need is firm and time-bound, at least 15,000 EGP of the portfolio is effectively \"locked\" for the next six months and cannot be redeployed into anything illiquid.\n\n## 3. Loss Willingness and Capacity\n\nBoth are stated as **low**. This means:\n\n- The investor cannot tolerate a large percentage drop in portfolio value (e.g., a 20–30 % drawdown on the equity position would represent a loss of 14,000–21,000 EGP, which would erode the retirement-income base).\n- There is no financial cushion beyond this portfolio to absorb a loss, so any capital loss is a permanent reduction in retirement income.\n- Suitability therefore favours instruments with limited downside (short-duration fixed income, money-market instruments, or a heavily de-risked equity sleeve) over concentrated single-stock exposure.\n\n## 4. Current Concentration\n\n| Asset | Value (EGP) | % of Portfolio |\n|---|---|---|\n| Cash | 10,000 | 12.4 % |\n| ETEL (500 sh × 141.95) | 70,975 | 87.6 % |\n| **Total** | **80,975** | **100 %** |\n\nThe portfolio is **~88 % in a single listed equity**. For an investor with low loss tolerance, low loss capacity, and a 2-year horizon, this concentration is the dominant risk factor. A single adverse event (sector shock, company-specific issue, market-wide correction) could impair the entire retirement-income base before the 2-year window closes.\n\n## 5. How Much Cash Could Reasonably Be Committed\n\nAfter reserving the 15,000 EGP liquidity need:\n\n- **Remaining investable value:** ≈ 65,975 EGP (464 ETEL shares + 0 cash).\n- Given the low loss tolerance and the 2-year horizon, a prudent portion of that value should remain in **highly liquid, low-volatility instruments** (e.g., short-term deposits, money-market funds, or short-duration government paper) to (a) provide a buffer against further unexpected cash needs and (b) generate the income the investor is seeking without equity-level volatility.\n- The amount that could be \"committed\" to a new, higher-risk position is therefore **limited**—arguably only a small fraction of the residual 65,975 EGP, and only in instruments that can be exited within the 2-year horizon without material penalty.\n\n## 6. Summary of What the Portfolio Allows\n\n- **Immediately free cash:** 10,000 EGP (can be used toward the 15,000 EGP need or held as a buffer).\n- **Sellable within 6 months:** All 500 ETEL shares are listed and tradeable; selling ~36 shares covers the liquidity shortfall. The remaining ~464 shares can also be sold at any time, subject to market conditions and any applicable settlement periods.\n- **No restricted or illiquid assets** are identified in the current holdings.\n- **No existing fixed-income or dividend-income instruments** are present, so the \"income in retirement\" goal is currently unmet by the portfolio structure.\n\n---\n\n*This assessment describes suitability constraints and portfolio capacity only. It does not recommend a specific transaction, security, or allocation.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 32.414,
+      "input_tokens": 1889,
+      "output_tokens": 3156,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 21.578,
+      "input_tokens": 1882,
+      "output_tokens": 2016,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 43.739,
+      "input_tokens": 4847,
+      "output_tokens": 4742,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 54.712,
+      "input_tokens": 3866,
+      "output_tokens": 6409,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 152.447
+}

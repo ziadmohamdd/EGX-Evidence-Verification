@@ -1,0 +1,161 @@
+{
+  "case_id": "test_009",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 150,
+    "explanation": "The investor's stated goal is to lower risk before retirement, with a 3-year horizon, low willingness to accept losses, and low financial capacity to withstand losses. The current portfolio is 86.3% equities (COMI 52.7%, EFID 33.6%) with only 13.7% cash, which is inconsistent with a de-risking mandate.\n\nSelling all 150 COMI shares (≈19,200 EGP) is the most appropriate single action because:\n\n1. Concentration: COMI is the largest single position at 52.7% of the portfolio. Removing it eliminates the over-concentration and brings the equity share down to 33.6% (EFID only), with cash rising to 66.4%.\n2. Data-quality and assurance gap: COMI's FY2025 report is a condensed consolidated statement (lower assurance than EFID's full signed EAS statements). The EPS unit is flagged AMBIGUOUS (the page-level unit line says 'EGP thousands' but the per-share figures are almost certainly in whole EGP), so no reliable P/E or per-share valuation can be computed. The condensed format also omits balance-sheet detail, share-count disclosure, and full notes, making it harder to assess leverage, liquidity, or dilution risk.\n3. Business-model risk: COMI is exposed to global commodity-price cycles and EGP FX movements. A ~49% profit jump in one year is strong but cyclical; the next year could see a sharp reversal, which a 3-year, low-tolerance investor cannot easily absorb.\n4. Alignment with the de-risking goal: Converting the COMI position to cash directly reduces equity beta, single-name risk, and commodity-cycle exposure, moving the portfolio toward the conservative profile the investor requests.\n\nEFID is retained (600 shares, 33.6% of the post-sale portfolio) because its full audited EAS statements provide higher assurance, its units are unambiguous, and its earnings growth (+67.7% net profit, EPS doubling) is supported by clear data. Keeping a modest equity position preserves some growth potential while the bulk of the portfolio sits in cash.\n\nAfter the sale the portfolio would be: Cash 24,200 EGP (66.4%), EFID 12,240 EGP (33.6%), Total 36,440 EGP. No single holding exceeds 50%.\n\nRisks and uncertainties: Even EFID carries market and credit-cycle risk; the absence of balance-sheet, dividend, and forward-guidance data for both companies means the full risk picture is incomplete. The 3-year horizon is short for equity recovery from a drawdown. This recommendation is guidance, not a guarantee; the investor should monitor EFID's next reporting cycle and consider further de-risking if conditions deteriorate.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year FY2025: 82,258,815 (in EGP thousands) = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year FY2024: 55,256,732 (in EGP thousands) = 55,256,732,000 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID net profit for the year FY2025 (consolidated): 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID net profit for the year FY2024 (consolidated): 1,606,727,698 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS FY2025: 2.18 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS FY2024: 1.09 EGP"
+      }
+    ],
+    "unused_figures": [
+      "COMI basic EPS FY2025: 18.25 [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] – AMBIGUOUS unit (page says 'EGP thousands' but per-share figures are almost certainly whole EGP); not used in any calculation.",
+      "COMI basic EPS FY2024: 14.72 [COMI-COMI_FY2025_consolidated_condensed_en-p5-40] – AMBIGUOUS unit for the same reason; not used in any calculation."
+    ],
+    "limitations": [
+      "No balance-sheet, debt, equity, or cash-flow data is available for either company, so leverage, liquidity, and solvency risk cannot be assessed.",
+      "No dividend history or policy data is provided; income sustainability for a low-risk investor cannot be evaluated.",
+      "No forward guidance or 2026 outlook is available; the sustainability of FY2025 earnings growth is unknown.",
+      "COMI's report is condensed, limiting the depth of risk assessment compared to EFID's full signed EAS statements.",
+      "COMI EPS unit ambiguity means no reliable per-share valuation or P/E ratio can be computed for COMI.",
+      "No information on share-count changes, dilution, or capital structure for COMI.",
+      "The 3-year horizon and low loss tolerance make any equity position inherently risky; even the retained EFID position carries market and credit-cycle risk that cannot be fully quantified with the available evidence."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "COMI",
+    "shares": 150,
+    "explanation": "The investor's stated goal is to lower risk before retirement, with a 3-year horizon, low willingness to accept losses, and low financial capacity to withstand losses. The current portfolio is 86.3% equities (COMI 52.7%, EFID 33.6%) with only 13.7% cash, which is inconsistent with a de-risking mandate.\n\nSelling all 150 COMI shares (≈19,200 EGP) is the most appropriate single action because:\n\n1. Concentration: COMI is the largest single position at 52.7% of the portfolio. Removing it eliminates the over-concentration and brings the equity share down to 33.6% (EFID only), with cash rising to 66.4%.\n2. Data-quality and assurance gap: COMI's FY2025 report is a condensed consolidated statement (lower assurance than EFID's full signed EAS statements). The EPS unit is flagged AMBIGUOUS (the page-level unit line says 'EGP thousands' but the per-share figures are almost certainly in whole EGP), so no reliable P/E or per-share valuation can be computed. The condensed format also omits balance-sheet detail, share-count disclosure, and full notes, making it harder to assess leverage, liquidity, or dilution risk.\n3. Business-model risk: COMI is exposed to global commodity-price cycles and EGP FX movements. A ~49% profit jump in one year is strong but cyclical; the next year could see a sharp reversal, which a 3-year, low-tolerance investor cannot easily absorb.\n4. Alignment with the de-risking goal: Converting the COMI position to cash directly reduces equity beta, single-name risk, and commodity-cycle exposure, moving the portfolio toward the conservative profile the investor requests.\n\nEFID is retained (600 shares, 33.6% of the post-sale portfolio) because its full audited EAS statements provide higher assurance, its units are unambiguous, and its earnings growth (+67.7% net profit, EPS doubling) is supported by clear data. Keeping a modest equity position preserves some growth potential while the bulk of the portfolio sits in cash.\n\nAfter the sale the portfolio would be: Cash 24,200 EGP (66.4%), EFID 12,240 EGP (33.6%), Total 36,440 EGP. No single holding exceeds 50%.\n\nRisks and uncertainties: Even EFID carries market and credit-cycle risk; the absence of balance-sheet, dividend, and forward-guidance data for both companies means the full risk picture is incomplete. The 3-year horizon is short for equity recovery from a drawdown. This recommendation is guidance, not a guarantee; the investor should monitor EFID's next reporting cycle and consider further de-risking if conditions deteriorate.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year FY2025: 82,258,815 (in EGP thousands) = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year FY2024: 55,256,732 (in EGP thousands) = 55,256,732,000 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID net profit for the year FY2025 (consolidated): 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID net profit for the year FY2024 (consolidated): 1,606,727,698 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS FY2025: 2.18 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS FY2024: 1.09 EGP"
+      }
+    ],
+    "unused_figures": [
+      "COMI basic EPS FY2025: 18.25 [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] – AMBIGUOUS unit (page says 'EGP thousands' but per-share figures are almost certainly whole EGP); not used in any calculation.",
+      "COMI basic EPS FY2024: 14.72 [COMI-COMI_FY2025_consolidated_condensed_en-p5-40] – AMBIGUOUS unit for the same reason; not used in any calculation."
+    ],
+    "limitations": [
+      "No balance-sheet, debt, equity, or cash-flow data is available for either company, so leverage, liquidity, and solvency risk cannot be assessed.",
+      "No dividend history or policy data is provided; income sustainability for a low-risk investor cannot be evaluated.",
+      "No forward guidance or 2026 outlook is available; the sustainability of FY2025 earnings growth is unknown.",
+      "COMI's report is condensed, limiting the depth of risk assessment compared to EFID's full signed EAS statements.",
+      "COMI EPS unit ambiguity means no reliable per-share valuation or P/E ratio can be computed for COMI.",
+      "No information on share-count changes, dilution, or capital structure for COMI.",
+      "The 3-year horizon and low loss tolerance make any equity position inherently risky; even the retained EFID position carries market and credit-cycle risk that cannot be fully quantified with the available evidence."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 24200.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 600
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n# Financial Analysis – EFID & COMI (Evidence-Only)\n\n## 1. Profitability & Growth\n\n### EFID (Egyptian Financial Investment & Development Co.)\n\n| Metric | FY 2025 | FY 2024 | YoY Change |\n|---|---|---|---|\n| Net profit (consolidated) | 2,695,301,670 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] | 1,606,727,698 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37] | +67.7 % |\n| Basic & Diluted EPS | 2.18 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] | 1.09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39] | +100 % |\n\n- Net profit nearly doubled year-on-year. EPS exactly doubled, implying the share count was roughly stable.\n- At the current share price of 20.40 EGP, the trailing P/E is approximately 9.4× (20.40 / 2.18). *(Computed from cited figures.)*\n\n### COMI (Commodity International Co.)\n\n| Metric | FY 2025 | FY 2024 | YoY Change |\n|---|---|---|---|\n| Net profit (consolidated) | 82,258,815,000 EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-33] | 55,256,732,000 EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-34] | +48.9 % |\n| Basic EPS | 18.25 EGP/share ⚠️ | 14.72 EGP/share ⚠️ | +24.0 % |\n\n> **⚠️ AMBIGUOUS – COMI EPS unit.** The page-level unit line reads *\"All amounts are shown in EGP thousands\"* [COMI-COMI_FY2025_consolidated_condensed_en-p5-39]. Taken literally, 18.25 would mean 18,250 EGP per share, which is implausible for a stock trading at 128 EGP. The more reasonable reading is that the \"thousands\" qualifier applies to the income-statement line items (net profit) but **not** to the per-share figures, making EPS 18.25 EGP and 14.72 EGP. **I flag this as AMBIGUOUS and do not use the EPS in any further computation.**\n\n- Net profit grew ~49 % YoY. The EPS growth (~24 %) is materially lower than the profit growth, which could indicate new share issuance (dilution) or a one-off item in 2024; the condensed report does not provide enough detail to confirm.\n- At 128.00 EGP per share, the trailing P/E on the (ambiguous) EPS of 18.25 would be ≈ 7.0×. Because the EPS unit is flagged, **this ratio is not reliable**.\n\n## 2. Balance Sheet & Leverage\n\n**No balance-sheet, debt, equity, or cash-flow data is present in the supplied evidence.** I cannot assess:\n\n- Debt-to-equity or interest coverage\n- Current / quick ratios\n- Cash and equivalents vs. short-term obligations\n- Goodwill or intangible-asset concentration\n\nThis is a **significant data gap** for a 3-year, low-loss-tolerance investor.\n\n## 3. Risks Observable from the Evidence\n\n| Risk | EFID | COMI |\n|---|---|---|\n| Sector / business-model risk | Financial-investment firm – earnings are sensitive to equity-market levels, interest rates, and credit spreads. A 67 % profit jump can reverse quickly in a down market. | Commodity-trading / industrial firm – earnings are exposed to global commodity-price swings and FX (EGP) movements. |\n| Earnings volatility | Profit more than doubled in one year; the base effect makes the next year's growth rate uncertain. | ~49 % growth is strong but commodity cycles can produce sharp reversals. |\n| Report quality / audit risk | Full EAS consolidated statements, signed – **higher assurance**. | **Condensed** consolidated report – fewer notes, less detail, lower assurance than a full audited set. |\n| Dilution / share-count risk | EPS doubled in line with profit → share count roughly flat. | EPS grew far less than profit → possible dilution, but the condensed report does not disclose the share count. |\n| Currency / macro risk | Both are EGP-denominated; EGP depreciation affects input costs (COMI) and asset valuations (EFID). | Same. |\n\nNo dividend, buyback, or covenant data is provided, so I cannot assess income sustainability or downside protection.\n\n## 4. Data-Quality Summary\n\n| Item | EFID | COMI |\n|---|---|---|\n| Report type | Full EAS consolidated, signed | **Condensed** consolidated |\n| Unit clarity | EGP (whole pounds) – clear | \"EGP thousands\" on the page; EPS unit **ambiguous** (flagged above) |\n| Periods shown | FY 2025 & FY 2024 | FY 2025 & FY 2024 |\n| Missing for this analysis | Balance sheet, cash flow, segment detail, dividend info | Same, plus share count, full notes |\n\n## 5. Portfolio Context (for the Decision Agent)\n\n| Holding | Shares | Price (EGP) | Market Value (EGP) |\n|---|---|---|---|\n| EFID | 600 | 20.40 | 12,240 |\n| COMI | 150 | 128.00 | 19,200 |\n| Cash | – | – | 5,000 |\n| **Total** | | | **36,440** |\n\n- COMI represents **52.7 %** of the portfolio; EFID **33.6 %**; cash **13.7 %**.\n- The investor's stated profile (pre-retirement, 3-year horizon, low loss tolerance, low ability to absorb losses) is relevant context, but **I do not recommend a buy, sell, hold, or rebalance action**. That determination belongs to the decision agent.\n\n## 6. Key Gaps Before a Decision Can Be Informed\n\n1. **Balance-sheet data** (debt, equity, liquidity) for both companies – absent.\n2. **COMI EPS unit** – must be confirmed with the company or a full audited report before any P/E or earnings-per-share comparison is meaningful.\n3. **Dividend history and policy** – no data supplied; critical for a low-risk, income-oriented investor.\n4. **Forward / guidance data** – none provided; both companies' 2025 results are strong, but the sustainability of that growth is unknown.\n5. **COMI full audited statements** – the condensed report limits the depth of risk assessment.\n\n*All figures above are taken directly from the cited evidence. No external data has been introduced. No trading or allocation recommendation is made.*",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## 1. Horizon & Risk Tolerance\n\n| Factor | Detail |\n|---|---|\n| Time horizon | **3 years** – short for equity exposure; limited time to recover from a drawdown |\n| Stated goal | **Lower risk before retirement** – the portfolio should be de-risking, not adding risk |\n| Willingness to accept losses | **Low** |\n| Financial capacity to absorb losses | **Low** |\n\nThe combination of a short horizon, a de-risking goal, and *both* low willingness and low capacity to bear losses points to a very conservative risk budget. Equity volatility over a 3-year window is difficult to reconcile with this profile.\n\n## 2. Liquidity Needs\n\nThe investor maintains a **separate emergency fund**, so the portfolio itself does not need to double as a liquidity buffer. This means:\n\n- The 5,000 EGP cash sitting in the portfolio is **free** – it is not earmarked for emergencies.\n- There is no constraint forcing the investor to keep a large cash cushion *inside* this portfolio.\n- Conversely, because the emergency fund is separate, the investor is not under pressure to sell equities quickly for living expenses.\n\n## 3. Current Concentration\n\n| Position | Shares | Price (EGP) | Value (EGP) | % of portfolio |\n|---|---|---|---|---|\n| Cash | – | – | 5,000 | 13.7 % |\n| EFID | 600 | 20.40 | 12,240 | 33.6 % |\n| COMI | 150 | 128.00 | 19,200 | 52.7 % |\n| **Total** | | | **36,440** | **100 %** |\n\n- **86.3 % of the portfolio is in two listed equities.** COMI alone is more than half the portfolio.\n- Both holdings are single-name equity positions, so the portfolio carries concentrated company-specific risk *and* general market risk.\n- For an investor whose stated goal is to **lower** risk, this concentration is the dominant mismatch.\n\n## 4. What the Portfolio Allows\n\n- **Cash available now:** 5,000 EGP – immediately deployable or holdable.\n- **Sellable equities:** All 600 EFID shares (≈ 12,240 EGP) and all 150 COMI shares (≈ 19,200 EGP) are listed, liquid positions. In principle the full 31,440 EGP of equity value can be converted to cash.\n- **No locked or restricted assets** are indicated.\n\n## 5. How Much Cash Could Reasonably Be Committed to Risk\n\nGiven:\n\n- Low willingness **and** low capacity to absorb losses,\n- A 3-year horizon with a de-risking objective,\n- A total portfolio of only ≈ 36,440 EGP,\n\nthe investor's **risk budget is very small**. Realistically:\n\n- The 5,000 EGP cash is the only portion that is already \"safe\" and can be held without equity risk.\n- Any additional amount committed to equities or other volatile instruments would be exposed to a 3-year drawdown the investor is unlikely to tolerate or survive financially.\n- A reasonable upper bound for new risk capital is therefore **minimal to none** beyond what is already held; the investor's capacity to absorb a further loss on top of the existing 31,440 EGP equity exposure is constrained.\n\n## 6. Summary of Suitability Gaps\n\n1. **Risk level vs. goal:** The portfolio is 86 % equities while the stated goal is to *lower* risk.\n2. **Concentration:** Over half the portfolio is a single stock (COMI); the other third is a second single stock (EFID).\n3. **Horizon mismatch:** A 3-year window is short for recovering from a significant equity drawdown, and the investor has low capacity to wait it out.\n4. **Loss tolerance:** Both willingness and capacity are low, yet the portfolio's equity share implies a high potential for capital loss.\n5. **Cash is under-deployed relative to the risk profile:** Only 13.7 % is in cash, which is low for a de-risking, low-tolerance investor.\n\nThese observations describe *what fits and what does not* for this investor. They do not constitute a recommendation to buy, sell, or hold any specific security."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 34.626,
+      "input_tokens": 1779,
+      "output_tokens": 3111,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 17.492,
+      "input_tokens": 1772,
+      "output_tokens": 1711,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 30.101,
+      "input_tokens": 4800,
+      "output_tokens": 3497,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 82.223
+}

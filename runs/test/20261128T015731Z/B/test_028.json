@@ -1,0 +1,116 @@
+{
+  "case_id": "test_028",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "Edita's consolidated profit before income tax grew from 2,163,025,380 EGP in FY2024 to 3,703,837,580 EGP in FY2025, an absolute increase of 1,540,812,200 EGP, or roughly 71.2% year-on-year. This is a very strong growth signal, and the net profit and EPS figures (EPS doubled from 1.09 to 2.18 EGP) corroborate the trend. The investor's stated goal is to add to Edita, and the 5-year horizon with a separate emergency fund is compatible with a medium-risk equity position. However, the portfolio-diversification rule blocks a further purchase: the investor already holds 1,000 EFID shares worth 20,400 EGP against a total portfolio of 35,400 EGP (15,000 cash + 20,400 shares), meaning EFID is already ≈ 57.6 % of the portfolio—above the 50 % cap. Buying even one more share would push the concentration higher, so no buy is permissible under the rules. The appropriate action is to hold the existing 1,000 shares. If the investor later adds cash or diversifies into other names, the EFID weight will fall below 50 % and a top-up could be revisited. Risks: the evidence covers only two fiscal years of income-statement lines; there is no balance-sheet, cash-flow, or sector data to assess leverage, working-capital needs, or competitive position. The 71 % PBT growth is impressive but a single-year jump can be driven by one-off items not visible in the excerpts provided. This is guidance, not a guarantee of future returns.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-26",
+        "stated_value": 3703837580.0,
+        "statement": "EFID consolidated profit before income tax for the year ended 31 December 2025 was 3,703,837,580 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-27",
+        "stated_value": 2163025380.0,
+        "statement": "EFID consolidated profit before income tax for the year ended 31 December 2024 was 2,163,025,380 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Only two years of income-statement data are available; no balance sheet, cash-flow statement, or segment breakdown is provided.",
+      "No information on share count changes, dividends, or capital structure to assess whether the PBT growth translates fully to shareholder value.",
+      "No sector or macro context is given to judge whether the 71 % growth is sustainable or partly cyclical."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "Edita's consolidated profit before income tax grew from 2,163,025,380 EGP in FY2024 to 3,703,837,580 EGP in FY2025, an absolute increase of 1,540,812,200 EGP, or roughly 71.2% year-on-year. This is a very strong growth signal, and the basic and diluted EPS figures (doubled from 1.09 EGP to 2.18 EGP) corroborate the trend. The investor's stated goal is to add to Edita, and the 5-year horizon with a separate emergency fund is compatible with a medium-risk equity position. However, the portfolio-diversification rule blocks a further purchase: the investor already holds 1,000 EFID shares worth 20,400 EGP against a total portfolio of 35,400 EGP (15,000 cash + 20,400 shares), meaning EFID is already approximately 57.6% of the portfolio—above the 50% cap. Buying even one more share would push the concentration higher, so no buy is permissible under the rules. The appropriate action is to hold the existing 1,000 shares. If the investor later adds cash or diversifies into other names, the EFID weight will fall below 50% and a top-up could be revisited. Risks: the evidence covers only two fiscal years of income-statement lines; there is no balance-sheet, cash-flow, or sector data to assess leverage, working-capital needs, or competitive position. The 71% PBT growth is impressive but a single-year jump can be driven by one-off items not visible in the excerpts provided. This is guidance, not a guarantee of future returns.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-26",
+        "stated_value": 3703837580.0,
+        "statement": "EFID consolidated profit before income tax for the year ended 31 December 2025 was 3,703,837,580 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-27",
+        "stated_value": 2163025380.0,
+        "statement": "EFID consolidated profit before income tax for the year ended 31 December 2024 was 2,163,025,380 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted earnings per share (consolidated) for the year ended 31 December 2025 was 2.18 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted earnings per share (consolidated) for the year ended 31 December 2024 was 1.09 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Only two years of income-statement data are available; no balance sheet, cash-flow statement, or segment breakdown is provided.",
+      "No information on share count changes, dividends, or capital structure to assess whether the PBT growth translates fully to shareholder value.",
+      "No sector or macro context is given to judge whether the 71% growth is sustainable or partly cyclical."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"1.09\", which is 'Basic and Diluted earnings per share (consolidated)' (1.09), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"2.18\", which is 'Basic and Diluted earnings per share (consolidated)' (2.18), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 26.014,
+      "input_tokens": 2068,
+      "output_tokens": 2249,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 13.444,
+      "input_tokens": 3037,
+      "output_tokens": 1840,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 39.462
+}

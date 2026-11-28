@@ -1,0 +1,102 @@
+{
+  "case_id": "test_019",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "COMI",
+    "shares": 0,
+    "explanation": "You asked about CIB's net-profit growth in 2025, but every piece of evidence supplied in this report is for COMI (your current holding), not for CIB. There is no CIB financial data in the evidence, so I cannot calculate CIB's year-on-year profit growth or confirm whether it exceeded the 30 % threshold you set as a condition for adding to the position. Without CIB-specific figures I cannot responsibly recommend a buy, and I will not substitute COMI's numbers for CIB's.\n\nFor reference, the COMI data that is available shows a 2024 net profit of 55,256,732,000 EGP (verified) and a 2025 figure of 82,258,815,000 EGP that is marked AMBIGUOUS because the scanned page has a fold hiding some digits. Even if the 2025 figure were read as printed, the growth would be roughly 48.9 %, but that is COMI, not CIB, and the 2025 number cannot be fully verified. The basic EPS row (18.25 vs 14.72) is also for COMI and carries the same page-level unit label, which makes the per-share interpretation unclear.\n\nWhat is missing: CIB's consolidated income statement (or at minimum its net-profit line) for FY 2025 and FY 2024, with a legible, verified 2025 figure. Once you can provide that, I can compute the growth rate and tell you whether your 30 % trigger is met. Until then, no action on CIB is warranted, and your existing COMI holding and 20,000 EGP cash remain unchanged.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year, Dec. 31, 2024 (EGP thousands × 1,000)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "COMI basic EPS, Dec. 31, 2025 (as printed; page unit 'EGP thousands' makes per-share interpretation unclear)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+        "stated_value": 14.72,
+        "statement": "COMI basic EPS, Dec. 31, 2024 (as printed; page unit 'EGP thousands' makes per-share interpretation unclear)"
+      }
+    ],
+    "unused_figures": [
+      "COMI net profit for the year, Dec. 31, 2025: 82,258,815 (EGP thousands) – marked AMBIGUOUS because digits are hidden by a fold in the scanned page; cannot be used in any calculation."
+    ],
+    "limitations": [
+      "No CIB financial data was provided; the entire evidence set pertains to COMI.",
+      "The COMI 2025 net-profit figure is AMBIGUOUS and excluded from any calculation.",
+      "The page-level unit 'EGP thousands' applied to the EPS row is inconsistent with a per-share metric, so the EPS values are not used in any growth calculation.",
+      "This is guidance, not a guarantee of returns. Even with complete data, past profit growth does not assure future performance."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "COMI",
+    "shares": 0,
+    "explanation": "You asked about CIB's net-profit growth in 2025, but every piece of evidence supplied in this report is for COMI (your current holding), not for CIB. There is no CIB financial data in the evidence, so I cannot calculate CIB's year-on-year profit growth or confirm whether it exceeded the 30 % threshold you set as a condition for adding to the position. Without CIB-specific figures I cannot responsibly recommend a buy, and I will not substitute COMI's numbers for CIB's.\n\nFor reference, the COMI data that is available shows a 2024 net profit of 55,256,732,000 EGP (verified) and a 2025 figure of 82,258,815,000 EGP that is marked AMBIGUOUS because the scanned page has a fold hiding some digits. Even if the 2025 figure were read as printed, the growth would be roughly 48.9 %, but that is COMI, not CIB, and the 2025 number cannot be fully verified. The basic EPS row (18.25 vs 14.72) is also for COMI and carries the same page-level unit label, which makes the per-share interpretation unclear.\n\nWhat is missing: CIB's consolidated income statement (or at minimum its net-profit line) for FY 2025 and FY 2024, with a legible, verified 2025 figure. Once you can provide that, I can compute the growth rate and tell you whether your 30 % trigger is met. Until then, no action on CIB is warranted, and your existing COMI holding and 20,000 EGP cash remain unchanged.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year, Dec. 31, 2024 (EGP thousands × 1,000)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "COMI basic EPS, Dec. 31, 2025 (as printed; page unit 'EGP thousands' makes per-share interpretation unclear)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+        "stated_value": 14.72,
+        "statement": "COMI basic EPS, Dec. 31, 2024 (as printed; page unit 'EGP thousands' makes per-share interpretation unclear)"
+      }
+    ],
+    "unused_figures": [
+      "COMI net profit for the year, Dec. 31, 2025: 82,258,815 (EGP thousands) – marked AMBIGUOUS because digits are hidden by a fold in the scanned page; cannot be used in any calculation."
+    ],
+    "limitations": [
+      "No CIB financial data was provided; the entire evidence set pertains to COMI.",
+      "The COMI 2025 net-profit figure is AMBIGUOUS and excluded from any calculation.",
+      "The page-level unit 'EGP thousands' applied to the EPS row is inconsistent with a per-share metric, so the EPS values are not used in any growth calculation.",
+      "This is guidance, not a guarantee of returns. Even with complete data, past profit growth does not assure future performance."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 100
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 17.832,
+      "input_tokens": 1177,
+      "output_tokens": 2090,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 17.837
+}

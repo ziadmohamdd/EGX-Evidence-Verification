@@ -1,0 +1,106 @@
+{
+  "case_id": "test_027",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "I cannot perform the calculation you asked for. The Q3 2026 (three months ended 30 Sep 2026) earnings-per-share figure is printed as '١٩٩' in the report, but it is flagged AMBIGUOUS because the OCR may have dropped a decimal comma (it could be 1.99, 19.9, or 199 EGP). Per the rules, I must not use an AMBIGUOUS figure in any calculation, so I cannot multiply it by four to produce a 'yearly earnings' number.\n\nEven if the figure were unambiguous, annualising a single quarter by ×4 is methodologically unreliable: Q3 is not representative of the full year, and seasonal or one-off items can distort it. A more honest annualisation would use the nine-month figure and add a Q4 estimate, which we do not have.\n\nWhat the verified evidence does tell us:\n• 9-month 2026 basic EPS = 8.74 EGP (verified)\n• 9-month 2025 basic EPS = 4.28 EGP (verified)\nThat is roughly a 104 % year-on-year improvement in per-share earnings over the nine months, which is a positive signal for an income-oriented holder.\n\nAt the current price of 76.21 EGP, your 200 shares are worth 15,242 EGP, and you hold 10,000 EGP in cash. Total portfolio ≈ 25,242 EGP. ABUK represents about 60 % of the portfolio, which is above the 50 % diversification cap, but since I am recommending hold (no new buy), the cap is not breached by this action. If you were to add more ABUK, you would need to keep the position under 50 % of total value.\n\nRisks and uncertainty: I have only nine-month data; full-year results, dividend policy, and the Q4 print are unknown. The AMBIGUOUS Q3 figure means I cannot confirm the exact quarterly run-rate. Earnings growth does not guarantee future dividends or share-price appreciation. Your medium loss tolerance and three-year horizon are consistent with holding a blue-chip industrial name for income, but you should monitor the full-year report and any dividend announcement before making further allocation decisions.\n\nBottom line: I cannot give you the 'Q3 × 4' number you requested. The verified nine-month EPS of 8.74 EGP and its strong growth versus 4.28 a year earlier support continuing to hold your 200 shares for income, but I would not add to the position until the full-year results and dividend are confirmed.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "9-month 2026 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "9-month 2025 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "Q3 2025 (three months ended 30 Sep 2025) basic EPS (EGP per share)"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-33 (9M change % – AMBIGUOUS: OCR '%١٠٤' unclear)",
+      "ABUK-ABUK_9M2026_results-p2-34 (Q3 2026 EPS – AMBIGUOUS: '١٩٩' may be missing a decimal; cannot be used in the ×4 calculation)",
+      "ABUK-ABUK_9M2026_results-p2-36 (Q3 change % – AMBIGUOUS: '٦٦٢' OCR unreliable)"
+    ],
+    "limitations": [
+      "The Q3 2026 EPS figure the investor asked to annualise is AMBIGUOUS and therefore excluded from all calculations.",
+      "No full-year or Q4 2026 data is available; the nine-month figure cannot be simply extended to twelve months.",
+      "No dividend information is provided in the evidence, so the income yield cannot be quantified.",
+      "The page unit line reads 'مليون جنيه' (million EGP), but the row heading explicitly states 'جنيه' (EGP) for the per-share line; I have used the row-level unit. If the page unit were to override, the figures would be in millions, which is implausible for a per-share metric."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "I cannot perform the calculation you asked for. The Q3 2026 (three months ended 30 Sep 2026) earnings-per-share figure is printed as '١٩٩' in the report, but it is flagged AMBIGUOUS because the OCR may have dropped a decimal comma (it could be 1.99, 19.9, or 199 EGP). Per the rules, I must not use an AMBIGUOUS figure in any calculation, so I cannot multiply it by four to produce a 'yearly earnings' number.\n\nEven if the figure were unambiguous, annualising a single quarter by ×4 is methodologically unreliable: Q3 is not representative of the full year, and seasonal or one-off items can distort it. A more honest annualisation would use the nine-month figure and add a Q4 estimate, which we do not have.\n\nWhat the verified evidence does tell us:\n• 9-month 2026 basic EPS = 8.74 EGP (verified)\n• 9-month 2025 basic EPS = 4.28 EGP (verified)\nThat is roughly a 104 % year-on-year improvement in per-share earnings over the nine months, which is a positive signal for an income-oriented holder.\n\nAt the current price of 76.21 EGP, your 200 shares are worth 15,242 EGP, and you hold 10,000 EGP in cash. Total portfolio ≈ 25,242 EGP. ABUK represents about 60 % of the portfolio, which is above the 50 % diversification cap, but since I am recommending hold (no new buy), the cap is not breached by this action. If you were to add more ABUK, you would need to keep the position under 50 % of total value.\n\nRisks and uncertainty: I have only nine-month data; full-year results, dividend policy, and the Q4 print are unknown. The AMBIGUOUS Q3 figure means I cannot confirm the exact quarterly run-rate. Earnings growth does not guarantee future dividends or share-price appreciation. Your medium loss tolerance and three-year horizon are consistent with holding a blue-chip industrial name for income, but you should monitor the full-year report and any dividend announcement before making further allocation decisions.\n\nBottom line: I cannot give you the 'Q3 × 4' number you requested. The verified nine-month EPS of 8.74 EGP and its strong growth versus 4.28 a year earlier support continuing to hold your 200 shares for income, but I would not add to the position until the full-year results and dividend are confirmed.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "9-month 2026 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "9-month 2025 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "Q3 2025 (three months ended 30 Sep 2025) basic EPS (EGP per share)"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-33 (9M change % – AMBIGUOUS: OCR '%١٠٤' unclear)",
+      "ABUK-ABUK_9M2026_results-p2-34 (Q3 2026 EPS – AMBIGUOUS: '١٩٩' may be missing a decimal; cannot be used in the ×4 calculation)",
+      "ABUK-ABUK_9M2026_results-p2-36 (Q3 change % – AMBIGUOUS: '٦٦٢' OCR unreliable)"
+    ],
+    "limitations": [
+      "The Q3 2026 EPS figure the investor asked to annualise is AMBIGUOUS and therefore excluded from all calculations.",
+      "No full-year or Q4 2026 data is available; the nine-month figure cannot be simply extended to twelve months.",
+      "No dividend information is provided in the evidence, so the income yield cannot be quantified.",
+      "The page unit line reads 'مليون جنيه' (million EGP), but the row heading explicitly states 'جنيه' (EGP) for the per-share line; I have used the row-level unit. If the page unit were to override, the figures would be in millions, which is implausible for a per-share metric."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ABUK",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 39.02,
+      "input_tokens": 2222,
+      "output_tokens": 4900,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 39.023
+}

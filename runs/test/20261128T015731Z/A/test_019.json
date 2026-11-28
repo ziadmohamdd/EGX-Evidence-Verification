@@ -1,0 +1,62 @@
+{
+  "case_id": "test_019",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "CIB",
+    "shares": 0,
+    "explanation": "You asked about CIB's net profit growth in 2025, but every piece of evidence provided in this report is about COMI (your current holding), not CIB. There is no CIB income statement, EPS, or any other CIB financial data in the materials I was given, so I cannot calculate CIB's profit growth or confirm whether it exceeded the 30 % threshold you set. Without that data I cannot responsibly recommend buying, holding, or selling CIB. If you can supply CIB's FY2025 (and FY2024) net-profit figures, I can re-run the analysis. Note also that even the COMI 2025 net-profit figure in the report is marked AMBIGUOUS (digits obscured by a page fold), so it could not be used in any calculation either way. This is guidance, not a guarantee of returns; please verify all figures from the company's official filings before acting.",
+    "claims": [],
+    "unused_figures": [
+      "COMI Net profit for the year, Dec. 31, 2025: 82,258,815 (EGP thousands) – marked AMBIGUOUS (digits hidden by a fold in the scanned page); cannot be used in any calculation. This is a COMI figure and is irrelevant to the CIB question regardless."
+    ],
+    "limitations": [
+      "No CIB financial data (net profit, EPS, revenue, or any other metric) is present in the provided evidence.",
+      "The only company with data in the evidence set is COMI, which is a different listed entity from CIB.",
+      "The COMI FY2025 net-profit figure is AMBIGUOUS and unusable, so even a COMI-based analysis would be incomplete."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "CIB",
+    "shares": 0,
+    "explanation": "You asked about CIB's net profit growth in 2025, but every piece of evidence provided in this report is about COMI (your current holding), not CIB. There is no CIB income statement, EPS, or any other CIB financial data in the materials I was given, so I cannot calculate CIB's profit growth or confirm whether it exceeded the 30 % threshold you set. Without that data I cannot responsibly recommend buying, holding, or selling CIB. If you can supply CIB's FY2025 (and FY2024) net-profit figures, I can re-run the analysis. Note also that even the COMI 2025 net-profit figure in the report is marked AMBIGUOUS (digits obscured by a page fold), so it could not be used in any calculation either way. This is guidance, not a guarantee of returns; please verify all figures from the company's official filings before acting.",
+    "claims": [],
+    "unused_figures": [
+      "COMI Net profit for the year, Dec. 31, 2025: 82,258,815 (EGP thousands) – marked AMBIGUOUS (digits hidden by a fold in the scanned page); cannot be used in any calculation. This is a COMI figure and is irrelevant to the CIB question regardless."
+    ],
+    "limitations": [
+      "No CIB financial data (net profit, EPS, revenue, or any other metric) is present in the provided evidence.",
+      "The only company with data in the evidence set is COMI, which is a different listed entity from CIB.",
+      "The COMI FY2025 net-profit figure is AMBIGUOUS and unusable, so even a COMI-based analysis would be incomplete."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 100
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 11.577,
+      "input_tokens": 1177,
+      "output_tokens": 1454,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 11.58
+}

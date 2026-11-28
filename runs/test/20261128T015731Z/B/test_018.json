@@ -1,0 +1,142 @@
+{
+  "case_id": "test_018",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "TMGH",
+    "shares": 0,
+    "explanation": "No – Telecom Egypt (ETEL) is NOT bigger than Talaat Moustafa Group Holdings (TMGH) on either metric. Using the FY2025 figures: TMGH's net profit is 18,201,981,482 EGP versus ETEL's 578,063,000 EGP (roughly 31× larger), and TMGH's total equity is 157,708,140,765 EGP versus ETEL's 63,687,826,000 EGP (roughly 2.5× larger). TMGH is the clearly larger company on both counts.\n\nYour stated goal is to 'add a bigger company.' You already hold 200 shares of TMGH, which is the bigger of the two. Buying ETEL would add a smaller company, which does not meet that criterion. There is no evidence in the provided reports that would justify selling your TMGH position or that ETEL offers a superior risk/reward for your 5-7-year horizon and medium loss tolerance. The prudent step is to keep your existing TMGH holding and retain your 20,000 EGP cash until a genuinely larger opportunity (or a better entry point on TMGH) presents itself. This is guidance, not a guarantee; equity markets carry risk and past profitability does not assure future returns.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 578063000.0,
+        "statement": "ETEL net profit for the year 31/12/2025: 578,063 (L.E. 000) = 578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL total equity (consolidated) 31/12/2025: 63,687,826 (L.E. 000) = 63,687,826,000 EGP"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH net profit for the year 2025: 18,201,981,482 LE"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "TMGH total equity (consolidated) 31 December 2025: 157,708,140,765 LE"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The comparison uses only the two companies' FY2025 consolidated figures; no revenue, market-cap, or sector-adjusted metrics are available in the evidence.",
+      "No forward-looking data, dividend history, or valuation multiples are provided, so a full investment case for either stock cannot be built from this evidence alone.",
+      "ETEL's FY2025 net profit (578 M EGP) is dramatically lower than its FY2024 figure (10,111 M EGP), which may indicate a one-off event or accounting change; the cause is not explained in the provided evidence."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ETEL",
+    "shares": 128,
+    "explanation": "Correction to my previous answer: I misread the ETEL income-statement table. The 2025 net-profit figure is 22,578,063 (thousand EGP) = 22,578,063,000 EGP, not 578,063,000 EGP. The '22' in the row is part of the 2025 number, not a separate note reference. This changes the comparison materially.\n\nAnswer to your question – is ETEL bigger than TMGH?\n[removed: figure could not be verified]\n• Total equity (FY2025): ETEL 63,687,826,000 EGP vs TMGH 157,708,140,765 EGP → TMGH is about 2.5× larger.\nSo the answer is mixed: ETEL is bigger by net profit, TMGH is bigger by equity. Neither is unambiguously 'the bigger company.'\n\nWhy I recommend adding ETEL:\nYour stated goal is to 'add a bigger company.' ETEL is the larger of the two by the profit metric, and it sits in a different sector (telecom) from TMGH (diversified holding), so buying it adds genuine diversification. ETEL's profit more than doubled year-on-year (from 10,111,328,000 to 22,578,063,000 EGP), which is a positive signal for a 5-7-year hold, though a single year's jump could include one-off items not explained in the evidence.\n\nPosition sizing:\n[removed: figure could not be verified] Remaining cash: 1,830.40 EGP. [removed: figure could not be verified] ETEL share of portfolio = 49.8 %, just under the 50 % concentration cap. I could not buy 129 or more shares without breaching that limit.\n\nRisks and limitations:\n- Only two balance-sheet/income-statement metrics are available; no revenue, market-cap, dividend, or valuation data is provided, so the 'bigger' comparison is incomplete.\n- ETEL and TMGH operate in very different sectors; a like-for-like 'size' comparison is imperfect.\n- ETEL's profit jump from 10.1 B to 22.6 B EGP in one year may include non-recurring items; the cause is not explained in the evidence.\n- Medium loss tolerance and a 5-7-year horizon are reasonable for a listed telecom, but equity prices can fall significantly in the interim. This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit for the year 31/12/2025: 22,578,063 (L.E. 000) = 22,578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL net profit for the year 31/12/2024: 10,111,328 (L.E. 000) = 10,111,328,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45",
+        "stated_value": 63687826000.0,
+        "statement": "ETEL total equity (consolidated) 31/12/2025: 63,687,826 (L.E. 000) = 63,687,826,000 EGP"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "TMGH total equity (consolidated) 31 December 2025: 157,708,140,765 LE"
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55"
+    ],
+    "limitations": [
+      "Only net profit and total equity are available for the size comparison; revenue, market capitalisation, and sector-adjusted metrics are absent from the evidence.",
+      "ETEL's FY2025 net profit (22.58 B EGP) is more than double its FY2024 figure (10.11 B EGP); the cause of the jump (one-off gains, accounting changes, organic growth) is not explained in the provided evidence.",
+      "No forward-looking data, dividend history, or valuation multiples are provided, so a full investment case for either stock cannot be built from this evidence alone.",
+      "ETEL (telecom) and TMGH (diversified holding) are in different sectors, making a direct 'bigger company' comparison imperfect.",
+      "These figures could not be verified and were not used: Net profit for the year (consolidated). Conclusions that depended on them are uncertain."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 1830.4,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      },
+      {
+        "ticker": "ETEL",
+        "shares": 128
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "value_mismatch",
+        "detail": "stated 5.78063e+08 but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)]"
+      }
+    ],
+    "revised": true,
+    "after_revision": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"18,169.60\" but evidence 'Net profit for the year (consolidated)' is 1.8202e+10 [Net profit for the year | | 18,201,981,482 | 12,769,517,325 | unit: LE] (looks like a scale error by 1e+06)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "rule": "text_value_mismatch",
+        "detail": "the explanation states \"18,169.60\" but evidence 'Net profit for the year (consolidated)' is 1.8202e+10 [Net profit for the year | | 18,201,981,482 | 12,769,517,325 | unit: LE] (looks like a scale error by 1e+06)"
+      }
+    ],
+    "dropped": [
+      "TMGH-TMGH_FY2025_consolidated_en-p7-55"
+    ],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 19.564,
+      "input_tokens": 2069,
+      "output_tokens": 2531,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 46.612,
+      "input_tokens": 3190,
+      "output_tokens": 6343,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 66.18
+}

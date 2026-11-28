@@ -1,0 +1,167 @@
+{
+  "case_id": "test_015",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "TMGH",
+    "shares": 200,
+    "explanation": "I recommend reducing your TMGH position from 400 to 200 shares (selling 200 shares at 82.50 EGP, freeing 16,500 EGP into cash). This is not a full exit, but a meaningful de-risking step driven by two converging concerns.\n\n**1. The debt picture cannot be confirmed as safe with the available evidence.** The FY2025 consolidated balance sheet shows total liabilities of 278.5 billion LE against equity of 157.7 billion LE (liabilities/equity ≈ 1.77×, up slightly from 1.74× in 2024). Liabilities grew 23.6% while equity grew 21.4%, so the balance sheet expanded marginally more on the debt side. Cash was essentially flat at 44.8 billion LE, covering only about 16% of total liabilities (down from 20%). However, the evidence does not provide a breakdown of what portion of the 278.5 billion LE is interest-bearing debt versus trade payables, deferred tax, or provisions. Without the notes to the financial statements, the income statement (EBITDA, interest expense), or the cash-flow statement, we cannot compute interest-coverage ratios or confirm that the company can service its borrowings from operating cash flow. For a capital-preservation investor, the inability to verify that the debt is manageable is itself a reason to reduce exposure rather than hold the full position.\n\n**2. The portfolio structure is a clear mismatch with your stated profile.** You hold 400 TMGH shares worth 33,000 EGP out of a 38,000 EGP portfolio – roughly 87% in a single stock. Your goal is to protect what you have, your horizon is 1–2 years, your willingness and capacity to absorb losses are both low, and your only cash is 5,000 EGP. A 25% drawdown on the current position would cost about 8,250 EGP, more than 20% of your total wealth. That is well outside the comfort zone of a low-tolerance, low-capacity investor. The suitability analysis confirms that the concentration, the short horizon, and the minimal cash buffer are structurally inconsistent with a capital-preservation mandate.\n\n**What the reduction achieves:**\n- TMGH drops to 200 × 82.50 = 16,500 EGP (≈ 43% of the 38,000 EGP portfolio).\n- Cash rises to 5,000 + 16,500 = 21,500 EGP (≈ 57%), giving you a much larger emergency buffer and the ability to meet a 1–2-year liquidity need without selling at an unfavourable price.\n- A 25% further drop in TMGH would now cost about 4,125 EGP (≈ 11% of total portfolio) rather than 8,250 EGP (≈ 22%).\n- You retain 200 shares, so you are not making an irreversible full exit. If the company's next earnings report or the full FY2025 notes confirm that the liability base is predominantly non-interest-bearing and that profitability is solid, you can reassess.\n\n**What I am NOT doing:** I am not selling all 400 shares. The verified leverage ratio (1.77×) is moderate and stable, the company's assets and equity are growing, and there is no evidence of distress. A complete exit would be a larger, harder-to-reverse decision that the current evidence does not clearly justify. I am also not buying more, as that would worsen the concentration and contradict your capital-preservation goal.\n\n**Risks and uncertainty:** This recommendation is based on a limited evidence set. The true interest-bearing debt level, profitability, and cash-flow generation are unknown. If the full FY2025 notes reveal that the 278.5 billion LE in liabilities is mostly trade payables and deferred tax (i.e., very little actual borrowings), the debt risk would be lower than the headline figure suggests, and you might prefer to hold more than 200 shares. Conversely, if the notes reveal heavy bank debt with thin interest coverage, a further reduction or full exit would be warranted. I recommend reviewing the full FY2025 annual report (notes to the balance sheet, income statement, cash-flow statement) before your next review. This is guidance, not a guarantee; equity prices can move for reasons unrelated to the balance sheet.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-45",
+        "stated_value": 436222206712.0,
+        "statement": "TMGH total assets (consolidated) at 31 December 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-46",
+        "stated_value": 355173008042.0,
+        "statement": "TMGH total assets (consolidated) at 31 December 2024 (Restated)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p6-35",
+        "stated_value": 278514065947.0,
+        "statement": "TMGH total liabilities (consolidated) at 31 December 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p6-36",
+        "stated_value": 225293194349.0,
+        "statement": "TMGH total liabilities (consolidated) at 31 December 2024 (Restated)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "TMGH total equity (consolidated) at 31 December 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-68",
+        "stated_value": 129879813693.0,
+        "statement": "TMGH total equity (consolidated) at 31 December 2024 (Restated)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-41",
+        "stated_value": 44846514337.0,
+        "statement": "TMGH cash and cash equivalents (consolidated) at 31 December 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-42",
+        "stated_value": 44909587972.0,
+        "statement": "TMGH cash and cash equivalents (consolidated) at 31 December 2024 (Restated)"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "No breakdown of total liabilities into interest-bearing debt vs. trade payables, deferred tax, or provisions; the true interest-bearing debt level is unknown.",
+      "No income-statement data (EBITDA, net profit, interest expense) is available, so interest-coverage ratios cannot be computed.",
+      "No cash-flow statement is available to assess operating cash flow, capex, or free cash flow.",
+      "No asset-quality or segment-level detail is provided; the 436 billion LE in assets is likely dominated by illiquid real-estate and agricultural holdings.",
+      "The 2024 comparatives are labelled 'Restated'; the direction and magnitude of the restatement are not disclosed in the evidence.",
+      "No share-price history, dividend data, or market-valuation metrics are available to assess the equity's price risk independently of the balance sheet."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "TMGH",
+    "shares": 200,
+    "explanation": "I recommend reducing your TMGH position from 400 to 200 shares (selling 200 shares at 82.50 EGP, freeing 16,500 EGP into cash). This is not a full exit, but a meaningful de-risking step driven by two converging concerns.\n\n**1. The debt picture cannot be confirmed as safe with the available evidence.** The FY2025 consolidated balance sheet shows total liabilities of 278.5 billion LE against equity of 157.7 billion LE (liabilities/equity ≈ 1.77×, up slightly from 1.74× in 2024). Liabilities grew 23.6% while equity grew 21.4%, so the balance sheet expanded marginally more on the debt side. Cash was essentially flat at 44.8 billion LE, covering only about 16% of total liabilities (down from 20%). However, the evidence does not provide a breakdown of what portion of the 278.5 billion LE is interest-bearing debt versus trade payables, deferred tax, or provisions. Without the notes to the financial statements, the income statement (EBITDA, interest expense), or the cash-flow statement, we cannot compute interest-coverage ratios or confirm that the company can service its borrowings from operating cash flow. For a capital-preservation investor, the inability to verify that the debt is manageable is itself a reason to reduce exposure rather than hold the full position.\n\n**2. The portfolio structure is a clear mismatch with your stated profile.** You hold 400 TMGH shares worth 33,000 EGP out of a 38,000 EGP portfolio – roughly 87% in a single stock. Your goal is to protect what you have, your horizon is 1–2 years, your willingness and capacity to absorb losses are both low, and your only cash is 5,000 EGP. A 25% drawdown on the current position would cost about 8,250 EGP, more than 20% of your total wealth. That is well outside the comfort zone of a low-tolerance, low-capacity investor. The suitability analysis confirms that the concentration, the short horizon, and the minimal cash buffer are structurally inconsistent with a capital-preservation mandate.\n\n**What the reduction achieves:**\n- TMGH drops to 200 × 82.50 = 16,500 EGP (≈ 43% of the 38,000 EGP portfolio).\n- Cash rises to 5,000 + 16,500 = 21,500 EGP (≈ 57%), giving you a much larger emergency buffer and the ability to meet a 1–2-year liquidity need without selling at an unfavourable price.\n- A 25% further drop in TMGH would now cost about 4,125 EGP (≈ 11% of total portfolio) rather than 8,250 EGP (≈ 22%).\n- You retain 200 shares, so you are not making an irreversible full exit. If the company's next earnings report or the full FY2025 notes confirm that the liability base is predominantly non-interest-bearing and that profitability is solid, you can reassess.\n\n**What I am NOT doing:** I am not selling all 400 shares. The verified leverage ratio (1.77×) is moderate and stable, the company's assets and equity are growing, and there is no evidence of distress. A complete exit would be a larger, harder-to-reverse decision that the current evidence does not clearly justify. I am also not buying more, as that would worsen the concentration and contradict your capital-preservation goal.\n\n**Risks and uncertainty:** This recommendation is based on a limited evidence set. The true interest-bearing debt level, profitability, and cash-flow generation are unknown. If the full FY2025 notes reveal that the 278.5 billion LE in liabilities is mostly trade payables and deferred tax (i.e., very little actual borrowings), the debt risk would be lower than the headline figure suggests, and you might prefer to hold more than 200 shares. Conversely, if the notes reveal heavy bank debt with thin interest coverage, a further reduction or full exit would be warranted. I recommend reviewing the full FY2025 annual report (notes to the balance sheet, income statement, cash-flow statement) before your next review. This is guidance, not a guarantee; equity prices can move for reasons unrelated to the balance sheet.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-45",
+        "stated_value": 436222206712.0,
+        "statement": "TMGH total assets (consolidated) at 31 December 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-46",
+        "stated_value": 355173008042.0,
+        "statement": "TMGH total assets (consolidated) at 31 December 2024 (Restated)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p6-35",
+        "stated_value": 278514065947.0,
+        "statement": "TMGH total liabilities (consolidated) at 31 December 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p6-36",
+        "stated_value": 225293194349.0,
+        "statement": "TMGH total liabilities (consolidated) at 31 December 2024 (Restated)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-67",
+        "stated_value": 157708140765.0,
+        "statement": "TMGH total equity (consolidated) at 31 December 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-68",
+        "stated_value": 129879813693.0,
+        "statement": "TMGH total equity (consolidated) at 31 December 2024 (Restated)"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-41",
+        "stated_value": 44846514337.0,
+        "statement": "TMGH cash and cash equivalents (consolidated) at 31 December 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p5-42",
+        "stated_value": 44909587972.0,
+        "statement": "TMGH cash and cash equivalents (consolidated) at 31 December 2024 (Restated)"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "No breakdown of total liabilities into interest-bearing debt vs. trade payables, deferred tax, or provisions; the true interest-bearing debt level is unknown.",
+      "No income-statement data (EBITDA, net profit, interest expense) is available, so interest-coverage ratios cannot be computed.",
+      "No cash-flow statement is available to assess operating cash flow, capex, or free cash flow.",
+      "No asset-quality or segment-level detail is provided; the 436 billion LE in assets is likely dominated by illiquid real-estate and agricultural holdings.",
+      "The 2024 comparatives are labelled 'Restated'; the direction and magnitude of the restatement are not disclosed in the evidence.",
+      "No share-price history, dividend data, or market-valuation metrics are available to assess the equity's price risk independently of the balance sheet."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 21500.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n# TMGH – Debt & Balance-Sheet Analysis (FY2025 Consolidated)\n\n## 1. What the Evidence Shows\n\nAll figures below are in **Egyptian Pounds (LE)**, as printed in the FY2025 consolidated balance sheet (unit: LE, not thousands).\n\n| Metric | 31 Dec 2025 | 31 Dec 2024 (Restated) | YoY Δ |\n|---|---|---|---|\n| Total assets | 436,222,206,712 [TMGH-TMGH_FY2025_consolidated_en-p5-45] | 355,173,008,042 [TMGH-TMGH_FY2025_consolidated_en-p5-46] | +22.8 % |\n| Total liabilities | 278,514,065,947 [TMGH-TMGH_FY2025_consolidated_en-p6-35] | 225,293,194,349 [TMGH-TMGH_FY2025_consolidated_en-p6-36] | +23.6 % |\n| Total equity | 157,708,140,765 [TMGH-TMGH_FY2025_consolidated_en-p5-67] | 129,879,813,693 [TMGH-TMGH_FY2025_consolidated_en-p5-68] | +21.4 % |\n| Cash & equivalents | 44,846,514,337 [TMGH-TMGH_FY2025_consolidated_en-p5-41] | 44,909,587,972 [TMGH-TMGH_FY2025_consolidated_en-p5-42] | −0.1 % |\n\n### Leverage ratios (computed from the figures above)\n\n| Ratio | 2025 | 2024 |\n|---|---|---|\n| Total liabilities / Total equity | **1.77×** | 1.74× |\n| Total liabilities / Total assets | **63.8 %** | 63.4 % |\n| Cash / Total liabilities | **16.1 %** | 19.9 % |\n| Cash / Total assets | **10.3 %** | 12.6 % |\n\n## 2. Reading the Debt Picture\n\n- **Leverage is moderate and stable.** The liabilities-to-equity ratio moved only from 1.74× to 1.77× over the year. For a diversified Egyptian conglomerate (real estate, agriculture, hospitality, etc.) this is not an extreme level, but it is not negligible either.\n- **Liabilities are growing slightly faster than equity** (+23.6 % vs +21.4 %), meaning the year's asset expansion was marginally more debt-funded than equity-funded.\n- **Cash is essentially flat** (−0.1 %), so the company did not build a larger liquidity buffer during a year of ~81 billion LE asset growth. Cash covers only about one-sixth of total liabilities.\n- **The 2024 column is labelled \"Restated.\"** This means the prior-year comparatives were adjusted after the original filing. The direction of the restatement is not disclosed in the evidence provided, so the true year-on-year change could be slightly different from what the table shows.\n\n## 3. Critical Data Gaps (what the evidence does NOT tell us)\n\nThese are material limitations for a debt-focused question:\n\n1. **No breakdown of liabilities.** \"Total liabilities\" of 278.5 billion LE [TMGH-TMGH_FY2025_consolidated_en-p6-35] lumps together interest-bearing bank debt, bonds, trade payables, deferred tax, provisions, and other items. The actual **interest-bearing debt** could be substantially lower (or higher) than the headline figure. Without the notes to the financial statements (e.g., a \"borrowings\" or \"financial liabilities\" line), the true debt burden is **AMBIGUOUS**.\n2. **No income-statement data.** There is no EBITDA, net profit, or interest expense in the evidence. Therefore **interest-coverage ratios cannot be computed**, and we cannot judge whether the company can service its debt from operating cash flow.\n3. **No cash-flow statement.** We cannot see operating cash flow, capex, or free cash flow to assess whether the flat cash balance is a choice or a constraint.\n4. **No asset-quality detail.** 436 billion LE in assets [TMGH-TMGH_FY2025_consolidated_en-p5-45] for a conglomerate is likely dominated by illiquid real-estate and agricultural holdings. The liquid portion beyond the 44.8 billion LE cash [TMGH-TMGH_FY2025_consolidated_en-p5-41] is unknown.\n5. **No segment or subsidiary-level data.** TMG's listed subsidiaries (e.g., TMG Real Estate, TMG Agriculture) carry their own debt; the consolidated figure may mask concentration in one segment.\n\n> **Flag:** Because the composition of the 278.5 billion LE in total liabilities is not provided, any statement about \"TMGH's debt\" based solely on this line is **AMBIGUOUS**. The figure is a ceiling, not a measure of interest-bearing debt.\n\n## 4. Relevance to Your Specific Situation\n\n- Your TMGH position: 400 shares × 82.50 EGP = **33,000 EGP**, plus 5,000 EGP cash → total portfolio ≈ 38,000 EGP.\n- Your stated profile (protect capital, 1–2-year horizon, low loss tolerance, low financial capacity to absorb losses) means that even a moderate drawdown in TMGH's share price would represent a meaningful percentage hit to a small portfolio.\n- The balance-sheet evidence shows a company that is **growing but carrying a steady, moderate leverage load**, with a cash buffer that did not grow alongside the balance sheet. That is neither a red flag nor a comfort signal on its own.\n- The absence of profitability and cash-flow data means we **cannot confirm** that the company is generating enough earnings to service whatever portion of the 278.5 billion LE is actual borrowings.\n\n## 5. Summary of Findings (no recommendation)\n\n| Area | Assessment |\n|---|---|\n| Leverage level | Moderate (1.77× liabilities/equity); stable YoY |\n| Leverage trend | Slightly rising (liabilities outpacing equity growth) |\n| Liquidity cushion | Cash flat at ~44.8 bn LE; covers ~16 % of total liabilities |\n| True debt burden | **AMBIGUOUS** – no interest-bearing-debt line provided |\n| Profitability / interest coverage | **Not assessable** – no P&L or cash-flow data in evidence |\n| Data quality | 2024 comparatives restated; no notes or segment detail supplied |\n\nThe evidence confirms that TMGH carries a substantial liability base that grew in 2025, but it does not allow a definitive conclusion on whether that liability base is predominantly interest-bearing debt, how easily it can be serviced, or whether the balance sheet poses a near-term solvency risk. For a 1–2-year, capital-preservation mandate, the missing profitability and debt-composition data are the key gaps that would need to be filled (e.g., by reviewing the full FY2025 notes, the income statement, and the cash-flow statement) before forming a view on the debt risk.",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## 1. Horizon vs. Asset Type\n\nThe investor's stated horizon is **1–2 years**, which is short for a single-listed-equity position. Over that window, a concentrated stock can swing well beyond what a \"protect what I have\" mandate tolerates. The horizon does not naturally align with holding a single equity as the dominant position.\n\n## 2. Liquidity Needs\n\nThe investor keeps a **small emergency fund**. The only cash on hand is **5,000 EGP**. If an unexpected expense arises, the investor would need to sell TMGH shares to free up cash, potentially at an unfavourable price. The portfolio therefore offers limited \"free\" liquidity without touching the equity position.\n\n## 3. Loss Willingness and Capacity\n\nBoth dimensions are **low**:\n\n- *Willingness:* The investor explicitly states a low tolerance for losses and a capital-preservation goal.\n- *Capacity:* With a total portfolio of roughly **38,000 EGP** (5,000 cash + 400 × 82.50 = 33,000 in TMGH), there is little financial cushion. A 20–30 % drawdown on the TMGH position would erode 6,600–10,000 EGP, which is a material share of the entire portfolio and would likely breach the investor's comfort level.\n\nThe combination of low willingness *and* low capacity means the investor has very little room to absorb an equity drawdown.\n\n## 4. Current Concentration\n\n| Component | Value (EGP) | Share of portfolio |\n|---|---|---|\n| TMGH (400 sh × 82.50) | 33,000 | **≈ 87 %** |\n| Cash | 5,000 | ≈ 13 % |\n| **Total** | **38,000** | 100 % |\n\nThe portfolio is **heavily concentrated in a single stock**. The investor's stated worry about TMGH's debt is a concern about the very asset that makes up the large majority of their wealth. In a capital-preservation mandate with a short horizon, an 87 % single-name concentration is a structural mismatch: the investor's entire outcome is tied to one company's fortunes, including the specific risk (leverage) they are already anxious about.\n\n## 5. What the Portfolio Allows\n\n- **Sellable:** All 400 TMGH shares are listed and can be sold in the open market. Selling the full position would convert the 33,000 EGP into cash, giving the investor **38,000 EGP in total liquid assets**.\n- **Free cash today:** 5,000 EGP is already in cash and available without any transaction.\n- **No other holdings** are listed, so there is no diversification \"buffer\" within the portfolio.\n\n## 6. Summary of Suitability Tensions\n\n| Factor | What the profile calls for | What the portfolio currently provides |\n|---|---|---|\n| Goal | Capital preservation | Single-stock, 87 % equity exposure |\n| Horizon | 1–2 years | Equity position with no stated exit plan |\n| Liquidity | Small emergency fund kept | Only 5,000 EGP cash; rest locked in one stock |\n| Loss tolerance | Low (willingness *and* capacity) | A 25 % drop in TMGH ≈ 8,250 EGP loss, > 20 % of total wealth |\n| Concentration | Diversification implied by \"protect what I have\" | ~87 % in one name |\n\nThe investor's stated concern about TMGH's debt is a **personal risk-perception issue** that I will not validate or refute through the company's financials. What I can note is that the *structure* of the portfolio—nearly all wealth in the very stock the investor is worried about, with a short horizon, low loss capacity, and minimal cash—creates a situation where the investor's own stated comfort parameters are difficult to meet while the position is held as-is.\n\n*No recommendation to buy, sell, or hold is made here. The above is a suitability snapshot for the team to discuss next steps with the investor.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 22.355,
+      "input_tokens": 1445,
+      "output_tokens": 3555,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 11.704,
+      "input_tokens": 1438,
+      "output_tokens": 1599,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 34.412,
+      "input_tokens": 4439,
+      "output_tokens": 5297,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 68.473
+}

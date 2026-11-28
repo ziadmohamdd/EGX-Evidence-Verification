@@ -1,0 +1,100 @@
+{
+  "case_id": "test_027",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "You asked me to take Abu Qir's last-quarter (Q3 2026) EPS, multiply it by four, and report a 'yearly earnings' figure. I cannot perform that calculation because the Q3 2026 EPS value printed in the report (١٩٩) is flagged AMBIGUOUS: the OCR note says a decimal comma may have been dropped, so the true figure could be 1.99 EGP or 199 EGP. Per the rules I must not use an AMBIGUOUS figure in any calculation, so the requested multiplication is not possible from the evidence given.\n\nWhat I can tell you from the verified figures: the nine-month EPS through 30 Sep 2026 is 8.74 EGP per share, up from 4.28 EGP in the same period a year earlier – a strong improvement that supports your income objective. The Q3 2025 EPS (1.23 EGP) is also verified. Note that even if the Q3 2026 figure were 1.99 EGP, simply multiplying it by four (→ 7.96 EGP) would understate the actual nine-month EPS of 8.74 EGP, because Abu Qir's quarters are not uniform (Q1+Q2 together contributed 8.74 − 1.99 ≈ 6.75 EGP). A single-quarter × 4 shortcut is therefore not a reliable proxy for full-year earnings.\n\nOn the investment decision itself: you already hold 200 shares of ABUK (≈ 15,242 EGP at 76.21 EGP/share) and your stated goal is to hold Abu Qir for income over a three-year horizon. The verified nine-month EPS growth (8.74 vs 4.28) is encouraging for an income-oriented holder. I recommend you continue to hold your existing position. No new purchase is warranted with only 10,000 EGP cash, and selling would contradict your stated income goal. This is guidance, not a guarantee; earnings can fluctuate quarter to quarter, and the ambiguous Q3 2026 print means I cannot confirm the exact pace of the most recent quarter's contribution.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Basic EPS for the nine months ended 30 Sep 2026 is 8.74 EGP per share (row heading unit: جنيه / EGP)."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Basic EPS for the nine months ended 30 Sep 2025 is 4.28 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "Basic EPS for the three months ended 30 Sep 2025 is 1.23 EGP per share."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-34 (3M 2026 EPS, AMBIGUOUS – possible missing decimal)",
+      "ABUK-ABUK_9M2026_results-p2-33 (9M change %, AMBIGUOUS – OCR artefact '%١٠٤')",
+      "ABUK-ABUK_9M2026_results-p2-36 (3M change %, AMBIGUOUS – OCR artefact '٦٦٢')"
+    ],
+    "limitations": [
+      "The Q3 2026 EPS (the figure you asked me to multiply by 4) is AMBIGUOUS and cannot be used in any calculation.",
+      "The page-level unit line reads 'مليون جنيه' (million EGP), but the EPS row heading explicitly states the unit is 'جنيه' (EGP) per share; I have used the row-level unit. If the page unit were to override, the figures would be nonsensical for a per-share metric, so the row heading is the correct unit.",
+      "Multiplying any single quarter's EPS by 4 does not reliably produce full-year EPS because quarterly earnings are not uniform; the verified 9M figure (8.74 EGP) is the best available proxy for year-to-date earnings.",
+      "No dividend information is provided in the evidence, so I cannot assess the actual income (dividend yield) you would receive from holding ABUK."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "You asked me to take Abu Qir's last-quarter (Q3 2026) EPS, multiply it by four, and report a 'yearly earnings' figure. I cannot perform that calculation because the Q3 2026 EPS value printed in the report (١٩٩) is flagged AMBIGUOUS: the OCR note says a decimal comma may have been dropped, so the true figure could be 1.99 EGP or 199 EGP. Per the rules I must not use an AMBIGUOUS figure in any calculation, so the requested multiplication is not possible from the evidence given.\n\nWhat I can tell you from the verified figures: the nine-month EPS through 30 Sep 2026 is 8.74 EGP per share, up from 4.28 EGP in the same period a year earlier – a strong improvement that supports your income objective. The Q3 2025 EPS (1.23 EGP) is also verified. Note that even if the Q3 2026 figure were 1.99 EGP, simply multiplying it by four (→ 7.96 EGP) would understate the actual nine-month EPS of 8.74 EGP, because Abu Qir's quarters are not uniform (Q1+Q2 together contributed 8.74 − 1.99 ≈ 6.75 EGP). A single-quarter × 4 shortcut is therefore not a reliable proxy for full-year earnings.\n\nOn the investment decision itself: you already hold 200 shares of ABUK (≈ 15,242 EGP at 76.21 EGP/share) and your stated goal is to hold Abu Qir for income over a three-year horizon. The verified nine-month EPS growth (8.74 vs 4.28) is encouraging for an income-oriented holder. I recommend you continue to hold your existing position. No new purchase is warranted with only 10,000 EGP cash, and selling would contradict your stated income goal. This is guidance, not a guarantee; earnings can fluctuate quarter to quarter, and the ambiguous Q3 2026 print means I cannot confirm the exact pace of the most recent quarter's contribution.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Basic EPS for the nine months ended 30 Sep 2026 is 8.74 EGP per share (row heading unit: جنيه / EGP)."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Basic EPS for the nine months ended 30 Sep 2025 is 4.28 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "Basic EPS for the three months ended 30 Sep 2025 is 1.23 EGP per share."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-34 (3M 2026 EPS, AMBIGUOUS – possible missing decimal)",
+      "ABUK-ABUK_9M2026_results-p2-33 (9M change %, AMBIGUOUS – OCR artefact '%١٠٤')",
+      "ABUK-ABUK_9M2026_results-p2-36 (3M change %, AMBIGUOUS – OCR artefact '٦٦٢')"
+    ],
+    "limitations": [
+      "The Q3 2026 EPS (the figure you asked me to multiply by 4) is AMBIGUOUS and cannot be used in any calculation.",
+      "The page-level unit line reads 'مليون جنيه' (million EGP), but the EPS row heading explicitly states the unit is 'جنيه' (EGP) per share; I have used the row-level unit. If the page unit were to override, the figures would be nonsensical for a per-share metric, so the row heading is the correct unit.",
+      "Multiplying any single quarter's EPS by 4 does not reliably produce full-year EPS because quarterly earnings are not uniform; the verified 9M figure (8.74 EGP) is the best available proxy for year-to-date earnings.",
+      "No dividend information is provided in the evidence, so I cannot assess the actual income (dividend yield) you would receive from holding ABUK."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ABUK",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 31.501,
+      "input_tokens": 2222,
+      "output_tokens": 4320,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 31.503
+}

@@ -1,0 +1,133 @@
+{
+  "case_id": "test_016",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 262,
+    "explanation": "The investor's stated goal is to buy the cheaper of ABUK and ETEL on earnings. Both analysts independently compute the same P/E ratios using verified EPS figures: ABUK at ≈6.5× (annualised 9M-2026 EPS of 8.74 EGP) versus ETEL at ≈11.9× (FY-2025 EPS of 11.93 EGP). ABUK is unambiguously the cheaper stock on this metric.\n\nI buy 262 shares of ABUK at 76.21 EGP = 19,967.02 EGP, leaving 20,032.98 EGP cash. This keeps ABUK at 49.9% of the 40,000 EGP portfolio, respecting the 50% single-name cap. Buying 263 shares would push the position to 50.1%, which is not permitted.\n\nKey caveats and risks:\n1. ABUK's P/E rests on an annualised 9-month estimate (8.74 × 12/9 = 11.65 EGP). Q4-2026 is unreported; if the quarter is seasonally weak, the true full-year P/E will be higher than 6.5×. ETEL's 11.9× is a completed trailing figure with no estimation error.\n2. The two EPS figures cover different calendar windows (9M-2026 vs FY-2025), so the comparison is approximate.\n3. The companies operate in very different sectors (fertilisers vs telecom); part of the P/E gap reflects sector multiples rather than pure 'cheapness.'\n4. No balance-sheet, cash-flow, or dividend data is available in the evidence, so leverage, solvency, and income sustainability over the 5-year horizon cannot be assessed. This is a material gap.\n5. Three ABUK figures are flagged AMBIGUOUS (9M change %, Q3-2026 quarterly EPS, Q3 change %) due to OCR issues and are excluded from all calculations. The Q3-2026 EPS in particular could not be verified, so the intra-year earnings trajectory is uncertain.\n6. With medium loss tolerance and capacity, a single-equity position of ~50% of the portfolio means a 50% drawdown in ABUK would halve the portfolio to ~20,000 EGP. The investor should be aware of this concentration risk.\n\nThis is guidance, not a guarantee. The P/E comparison favours ABUK, but the annualisation assumption, sector mismatch, and absence of balance-sheet data mean the 'cheaper' label carries meaningful uncertainty.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS for the 9 months ended 30 Sep 2026: 8.74 EGP per share"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK basic EPS for the 9 months ended 30 Sep 2025: 4.28 EGP per share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS for FY ended 31 Dec 2025: 11.93 EGP per share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic and diluted EPS for FY ended 31 Dec 2024: 4.79 EGP per share"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-33 (9M change %, AMBIGUOUS – OCR artefact '%١٠٤')",
+      "ABUK-ABUK_9M2026_results-p2-34 (Q3-2026 quarterly EPS '١٩٩', AMBIGUOUS – decimal comma possibly dropped; could be 1.99 or 199 EGP)",
+      "ABUK-ABUK_9M2026_results-p2-36 (Q3 change %, AMBIGUOUS – same OCR issue)"
+    ],
+    "limitations": [
+      "ABUK P/E uses annualised 9-month earnings; Q4-2026 is unreported, so the true full-year P/E may differ materially.",
+      "No balance-sheet, cash-flow, or dividend data is available for either company; leverage, solvency, and income sustainability over the 5-year horizon cannot be assessed.",
+      "The two EPS figures cover different calendar periods (9M-2026 vs FY-2025), limiting like-for-like comparability.",
+      "Sector difference (fertilisers vs telecom) means the P/E gap partly reflects structural sector multiples, not just relative valuation.",
+      "The AMBIGUOUS Q3-2026 EPS figure prevents verification of the intra-year earnings trajectory for ABUK."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 262,
+    "explanation": "The investor's stated goal is to buy the cheaper of ABUK and ETEL on earnings. Both analysts independently compute the same P/E ratios using verified EPS figures: ABUK at ≈6.5× (annualised 9M-2026 EPS of 8.74 EGP) versus ETEL at ≈11.9× (FY-2025 EPS of 11.93 EGP). ABUK is unambiguously the cheaper stock on this metric.\n\nI buy 262 shares of ABUK at 76.21 EGP = 19,967.02 EGP, leaving 20,032.98 EGP cash. This keeps ABUK at 49.9% of the 40,000 EGP portfolio, respecting the 50% single-name cap. Buying 263 shares would push the position to 50.1%, which is not permitted.\n\nKey caveats and risks:\n1. ABUK's P/E rests on an annualised 9-month estimate (8.74 × 12/9 = 11.65 EGP). Q4-2026 is unreported; if the quarter is seasonally weak, the true full-year P/E will be higher than 6.5×. ETEL's 11.9× is a completed trailing figure with no estimation error.\n2. The two EPS figures cover different calendar windows (9M-2026 vs FY-2025), so the comparison is approximate.\n3. The companies operate in very different sectors (fertilisers vs telecom); part of the P/E gap reflects sector multiples rather than pure 'cheapness.'\n4. No balance-sheet, cash-flow, or dividend data is available in the evidence, so leverage, solvency, and income sustainability over the 5-year horizon cannot be assessed. This is a material gap.\n5. Three ABUK figures are flagged AMBIGUOUS (9M change %, Q3-2026 quarterly EPS, Q3 change %) due to OCR issues and are excluded from all calculations. The Q3-2026 EPS in particular could not be verified, so the intra-year earnings trajectory is uncertain.\n6. With medium loss tolerance and capacity, a single-equity position of ~50% of the portfolio means a 50% drawdown in ABUK would halve the portfolio to ~20,000 EGP. The investor should be aware of this concentration risk.\n\nThis is guidance, not a guarantee. The P/E comparison favours ABUK, but the annualisation assumption, sector mismatch, and absence of balance-sheet data mean the 'cheaper' label carries meaningful uncertainty.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS for the 9 months ended 30 Sep 2026: 8.74 EGP per share"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK basic EPS for the 9 months ended 30 Sep 2025: 4.28 EGP per share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS for FY ended 31 Dec 2025: 11.93 EGP per share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic and diluted EPS for FY ended 31 Dec 2024: 4.79 EGP per share"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-33 (9M change %, AMBIGUOUS – OCR artefact '%١٠٤')",
+      "ABUK-ABUK_9M2026_results-p2-34 (Q3-2026 quarterly EPS '١٩٩', AMBIGUOUS – decimal comma possibly dropped; could be 1.99 or 199 EGP)",
+      "ABUK-ABUK_9M2026_results-p2-36 (Q3 change %, AMBIGUOUS – same OCR issue)"
+    ],
+    "limitations": [
+      "ABUK P/E uses annualised 9-month earnings; Q4-2026 is unreported, so the true full-year P/E may differ materially.",
+      "No balance-sheet, cash-flow, or dividend data is available for either company; leverage, solvency, and income sustainability over the 5-year horizon cannot be assessed.",
+      "The two EPS figures cover different calendar periods (9M-2026 vs FY-2025), limiting like-for-like comparability.",
+      "Sector difference (fertilisers vs telecom) means the P/E gap partly reflects structural sector multiples, not just relative valuation.",
+      "The AMBIGUOUS Q3-2026 EPS figure prevents verification of the intra-year earnings trajectory for ABUK."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 20032.98,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ABUK",
+        "shares": 262
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n# P/E Comparison: Abu Qir (ABUK) vs. Telecom Egypt (ETEL)\n\n## 1. Earnings Per Share – Verified Figures\n\n| Metric | ABUK | ETEL |\n|---|---|---|\n| Period | 9 months ended 30 Sep 2026 | Full year ended 31 Dec 2025 |\n| Basic EPS | **8.74 EGP** [ABUK-ABUK_9M2026_results-p2-31] | **11.93 EGP** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] |\n| Prior-year same period | 4.28 EGP (9M 2025) [ABUK-ABUK_9M2026_results-p2-32] | 4.79 EGP (FY 2024) [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56] |\n| YoY EPS growth | +104 % (as printed) | +149 % (computed: 11.93/4.79 − 1) |\n\nBoth companies show very strong earnings acceleration year-on-year.\n\n## 2. Price-to-Earnings Calculation\n\n| | ABUK | ETEL |\n|---|---|---|\n| Share price (cutoff) | 76.21 EGP | 141.95 EGP |\n| EPS used | 8.74 EGP (9M 2026) | 11.93 EGP (FY 2025) |\n| Annualised EPS | 8.74 × 12/9 = **11.65 EGP** *(estimate)* | 11.93 EGP *(actual full year)* |\n| **P/E** | **76.21 / 11.65 ≈ 6.5×** | **141.95 / 11.93 ≈ 11.9×** |\n\n**On this basis ABUK trades at roughly half the P/E of ETEL.**\n\n### Important caveat on comparability\n- ABUK's P/E is built on **annualised 9-month** earnings (Q4 2026 is not yet reported). If Q4 is seasonally weaker or stronger, the true full-year P/E will shift.\n- ETEL's P/E uses a **completed full-year** figure, so it is a \"trailing\" P/E with no estimation error.\n- The two periods are also not the same calendar window (9M 2026 vs. FY 2025), so the comparison is approximate.\n\n## 3. Growth Context\n\n- **ABUK:** 9M EPS more than doubled (4.28 → 8.74 EGP, +104 %) [ABUK-ABUK_9M2026_results-p2-31, -32]. The Q3-2026 quarterly EPS is printed as \"١٩٩\" and is flagged **AMBIGUOUS** [ABUK-ABUK_9M2026_results-p2-34] (a decimal comma may be missing; it could be 1.99 or 199 EGP). I do **not** use this figure in any calculation.\n- **ETEL:** FY EPS nearly tripled (4.79 → 11.93 EGP, +149 %) [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55, -56].\n\nBoth are in a high-growth earnings phase, which typically justifies a P/E premium; the fact that ABUK still screens at a lower multiple suggests the market is pricing in either (a) a less durable earnings base, (b) higher cyclicality, or (c) a lower growth multiple.\n\n## 4. Balance-Sheet / Risk Notes (from available evidence)\n\nThe evidence pack provided contains **only EPS lines** for both companies. No balance-sheet items (debt, equity, cash, working capital) or cash-flow data are included, so I cannot assess leverage, solvency, or dividend capacity. This is a material gap for a 5-year holding horizon.\n\n## 5. Data-Quality Flags\n\n| Flag | Detail |\n|---|---|\n| **AMBIGUOUS** [ABUK-ABUK_9M2026_results-p2-33] | 9M change % printed as \"%١٠٤\" – OCR artefact; not used in calculations. |\n| **AMBIGUOUS** [ABUK-ABUK_9M2026_results-p2-34] | Q3-2026 EPS \"١٩٩\" – decimal comma possibly dropped (1.99 vs 199). **Excluded from all computations.** |\n| **AMBIGUOUS** [ABUK-ABUK_9M2026_results-p2-36] | Q3 change % – same OCR issue. **Excluded.** |\n| Unit-line mismatch (ABUK) | Table unit line reads \"مليون جنيه\" (million EGP), yet the row is labelled \"نصيب السهم … (جنيه)\" (EPS in EGP). The per-share values (8.74, 4.28) are consistent with a 76 EGP share price, so I treat them as EGP/share, not millions. |\n| Unit-line mismatch (ETEL) | Table unit line reads \"L.E.(000)\", yet the row is \"Earning per share (L.E./Share)\". Values 11.93 / 4.79 are consistent with a 142 EGP share price, so I treat them as EGP/share. |\n| Period mismatch | ABUK data is 9-month; ETEL data is full-year. No single common reporting period is available for a like-for-like P/E. |\n\n## 6. Summary for the Decision Agent\n\n- **ABUK screens at ≈ 6.5× annualised P/E; ETEL at ≈ 11.9× trailing P/E.** On the earnings multiple alone, ABUK is the cheaper stock.\n- The ABUK multiple rests on an **annualised 9-month estimate**, not a reported full-year figure, so it carries estimation risk.\n- Both companies are in a period of very high EPS growth, which may narrow the multiple gap as the market re-rates.\n- **No balance-sheet, cash-flow, or dividend data** is available in the evidence to assess financial risk over a 5-year horizon.\n- Several ABUK figures are **AMBIGUOUS** due to OCR; the Q3-2026 quarterly EPS in particular could not be verified and was excluded.\n\n*No buy/sell/hold recommendation is made here; that is the decision agent's role.*",
+    "investor": "\n\n# Investor-Suitability Assessment & P/E Comparison\n\n## 1. Suitability Snapshot\n\n| Factor | Detail | Implication |\n|---|---|---|\n| **Horizon** | 5 years | Comfortably spans multiple earnings cycles; a single equity position is not forced into a short-term exit. |\n| **Liquidity needs** | Separate emergency fund maintained | No near-term cash call that would force a sale; the 40 000 EGP in the portfolio is \"free\" for investment. |\n| **Loss willingness** | Medium | A single-stock position in one name concentrates risk; the investor should be aware that a 30–40 % drawdown is plausible in a single equity over 5 years. |\n| **Loss capacity** | Medium | 40 000 EGP is the entire investable amount. A 50 % loss would leave 20 000 EGP – recoverable but painful. Committing the full 40 000 to one stock is at the upper edge of what \"medium capacity\" comfortably supports. |\n| **Current concentration** | No holdings | No existing position to rebalance or sell; the portfolio is 100 % cash. |\n| **Cash that can be committed** | **40 000 EGP** (all of it) | Nothing is locked in other assets. The investor could deploy the full amount, or split it, or hold back a reserve. |\n| **What can be sold / what is free** | Nothing to sell; 40 000 EGP cash is entirely free | No disposal constraints. |\n\n**Bottom line on suitability:** A 5-year horizon with a separate emergency fund and no other holdings makes a single equity purchase *feasible*. The medium loss tolerance/capacity pair suggests the investor should be mindful of position size – putting all 40 000 EGP into one stock is permissible but leaves no diversification cushion.\n\n---\n\n## 2. Price-to-Earnings Comparison\n\n### Earnings-per-share data used\n\n| Company | Period | EPS (EGP / share) | Source |\n|---|---|---|---|\n| **ABUK** (Abu Qir Fertilizers) | 9 months ended 30 Sep 2026 | **8.74** | ABUK 9M-2026 results, p. 2 (verified) |\n| **ABUK** | 9 months ended 30 Sep 2025 | 4.28 | same table (verified) |\n| **ETEL** (Telecom Egypt) | FY ended 31 Dec 2025 | **11.93** | ETEL FY-2025 EAS consolidated, p. 6 (verified) |\n| **ETEL** | FY ended 31 Dec 2024 | 4.79 | same table (verified) |\n\n> *Note on units:* Both row headings explicitly state the figure is \"per share\" in EGP (ABUK: \"جنيه\"; ETEL: \"L.E. / Share\"). The page-level unit lines (\"مليون جنيه\" / \"L.E.(000)\") apply to the aggregate rows on those pages, not to the per-share row.\n\n### P/E calculation\n\nBecause the two EPS figures cover different periods, I annualise ABUK's 9-month figure to make the comparison like-for-like:\n\n| | ABUK | ETEL |\n|---|---|---|\n| Share price (cutoff) | 76.21 EGP | 141.95 EGP |\n| Reported EPS | 8.74 EGP (9 M 2026) | 11.93 EGP (FY 2025) |\n| Annualised EPS | 8.74 × 12/9 = **11.65 EGP** | **11.93 EGP** (already full-year) |\n| **P/E (annualised)** | 76.21 / 11.65 ≈ **6.5×** | 141.95 / 11.93 ≈ **11.9×** |\n\n*(If one prefers to use the 9-month figure without annualising, ABUK's \"P/9M-E\" is 76.21 / 8.74 ≈ 8.7×, still well below ETEL's 11.9×.)*\n\n### Reading\n\n- **ABUK trades at roughly 6.5× annualised earnings**, about **half** the multiple of ETEL.\n- **ETEL trades at roughly 11.9×** its FY-2025 earnings.\n- On a pure price-to-earnings basis, **ABUK is the cheaper stock**.\n\nCaveats to keep in mind (not a financials deep-dive, just comparability flags):\n- ABUK's EPS is annualised from 9 months; the Q4 seasonality of a fertiliser producer may differ from a straight 4/3 scaling.\n- ETEL's FY-2025 EPS (11.93) is a completed full year, so it is a \"known\" figure, whereas ABUK's annualised number is an estimate.\n- The two companies operate in very different sectors (fertilisers vs. telecom), so the P/E gap partly reflects sector multiples, not just \"cheapness.\"\n\n---\n\n## 3. What the Portfolio Allows (Practical Constraints)\n\n- **No existing holdings** → nothing to sell; the entire 40 000 EGP is deployable.\n- **No concentration to unwind** → the investor is starting from zero.\n- **Liquidity is not a constraint** → the emergency fund is separate, so the 40 000 EGP can be committed without jeopardising day-to-day needs.\n- **Position-size consideration:** With medium loss capacity, committing the full 40 000 EGP to a single stock means a 50 % drawdown would halve the portfolio to 20 000 EGP. The investor may wish to consider whether deploying the full amount in one name aligns with their stated medium tolerance, or whether a partial commitment (e.g., 20 000–30 000 EGP) with the remainder held as cash would be more comfortable.\n\n---\n\n*I have presented the P/E comparison and the suitability factors as requested. I have not analysed the companies' underlying financials beyond the EPS figures needed for the ratio, and I have not recommended a specific buy/sell/hold action.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 23.918,
+      "input_tokens": 2276,
+      "output_tokens": 4010,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 28.879,
+      "input_tokens": 2269,
+      "output_tokens": 4042,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 20.371,
+      "input_tokens": 5594,
+      "output_tokens": 3392,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 73.172
+}

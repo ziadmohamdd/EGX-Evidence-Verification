@@ -1,0 +1,138 @@
+{
+  "case_id": "test_026",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "Answer to your question: Yes, ABUK's estimated full-year 2026 EPS beats EFID's FY-2025 EPS by a wide margin.\n\n**ABUK FY-2026 EPS estimate:**\n- Verified 9M-2026 basic EPS: 8.74 EGP/share.\n- No Q4-2026 or FY-2025 ABUK data exists in the evidence, so a precise full-year figure cannot be computed.\n- Floor (Q4 = 0): ≥ 8.74 EGP.\n- Linear annualisation (8.74 × 12/9): ≈ 11.65 EGP.\n- Seasonal proxy (Q4 ≈ Q3-2025 of 1.23 EGP): ≈ 9.97 EGP.\n- Reasonable range: roughly 8.7 – 11.7 EGP; point estimate ≈ 10 EGP.\n\n**EFID FY-2025 EPS (actual, audited):** 2.18 EGP/share.\n\n**Comparison:** Even the most conservative ABUK scenario (8.74 EGP, zero Q4 profit) is about 4× EFID's full-year 2025 EPS. Under the linear annualisation the multiple is ≈ 5.3×. The beat is robust across all scenarios.\n\n**Why I am recommending keep_cash rather than a buy:**\n1. Your stated goal is to *compare* the two exporters; you are still in the research phase. An EPS comparison, while informative, is only one dimension of an investment decision.\n2. The ABUK figure is a nine-month actual annualised to twelve months (unaudited), whereas EFID's is a completed, audited full year. The comparison is directionally clear but not perfectly like-for-like.\n3. No valuation metrics (P/E, P/B), balance-sheet data, dividend history, or sector-cyclicality information is in the evidence. For a 5-year horizon with medium loss tolerance, those factors matter as much as the EPS level.\n4. You hold no securities. Committing the full 35,000 EGP to one or two single stocks would create a new concentration at the upper edge of your medium risk tolerance. A diversified entry (or waiting for additional data) is more appropriate.\n5. The Q3-2026 ABUK EPS cell is AMBIGUOUS (OCR dropped a decimal), so I could not verify the internal decomposition of the 9M figure. This does not change the direction of the comparison but adds a small data-quality caveat.\n\n**What would change this to a buy:** If, after completing your comparison (valuation, balance sheet, dividends, sector outlook), you decide to allocate to one or both exporters, the 35,000 EGP cash is available. At current prices (ABUK 76.21, EFID 20.40) you could buy up to 459 ABUK shares or 1,716 EFID shares, or a blend, while respecting the 50% single-stock concentration limit.\n\n**Risks / uncertainty:** The ABUK 9M-2026 EPS of 8.74 EGP represents a large YoY jump (from 4.28 EGP in 9M-2025). If part of that is a one-off item, the Q4 run-rate and hence the full-year figure could be lower than the linear estimate. EGP depreciation over a 5-year horizon affects both names. This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS for the nine months ended 30 Sep 2026: 8.74 EGP per share"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK basic EPS for the nine months ended 30 Sep 2025: 4.28 EGP per share"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "ABUK basic EPS for the three months ended 30 Sep 2025: 1.23 EGP per share"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for FY ended 31 Dec 2025: 2.18 EGP per share"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for FY ended 31 Dec 2024: 1.09 EGP per share"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-33 (9M YoY change '%104' – AMBIGUOUS, OCR formatting unclear)",
+      "ABUK-ABUK_9M2026_results-p2-34 (Q3-2026 EPS '199' – AMBIGUOUS, decimal comma likely dropped; could be 1.99, 19.9, or 199)",
+      "ABUK-ABUK_9M2026_results-p2-36 (Q3 YoY change '662' – AMBIGUOUS, same OCR issue)"
+    ],
+    "limitations": [
+      "ABUK Q3-2026 EPS is AMBIGUOUS; I could not decompose the 9M figure into H1 + Q3 to check internal consistency. This does not affect the 9M total of 8.74 EGP (which is verified) but limits the precision of the full-year estimate.",
+      "No ABUK FY-2025 or Q4-2025 data is in the evidence, so I cannot derive a true Q4 seasonal pattern. The seasonal proxy uses Q3-2025 as a stand-in for Q4, which is imprecise.",
+      "The ABUK 9M figure is unaudited; the EFID FY figure is audited and consolidated. The comparison is not perfectly like-for-like in audit status or reporting period.",
+      "EPS comparison does not account for share count, market capitalisation, valuation multiples, balance-sheet strength, dividend policy, or sector cyclicality – all of which are relevant for a 5-year investment decision.",
+      "The large YoY EPS jump for ABUK (4.28 → 8.74) may include one-off items; without a breakdown of the income statement, I cannot confirm the sustainability of the run-rate into Q4."
+    ]
+  },
+  "final": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "Answer to your question: Yes, ABUK's estimated full-year 2026 EPS beats EFID's FY-2025 EPS by a wide margin.\n\n**ABUK FY-2026 EPS estimate:**\n- Verified 9M-2026 basic EPS: 8.74 EGP/share.\n- No Q4-2026 or FY-2025 ABUK data exists in the evidence, so a precise full-year figure cannot be computed.\n- Floor (Q4 = 0): ≥ 8.74 EGP.\n- Linear annualisation (8.74 × 12/9): ≈ 11.65 EGP.\n- Seasonal proxy (Q4 ≈ Q3-2025 of 1.23 EGP): ≈ 9.97 EGP.\n- Reasonable range: roughly 8.7 – 11.7 EGP; point estimate ≈ 10 EGP.\n\n**EFID FY-2025 EPS (actual, audited):** 2.18 EGP/share.\n\n**Comparison:** Even the most conservative ABUK scenario (8.74 EGP, zero Q4 profit) is about 4× EFID's full-year 2025 EPS. Under the linear annualisation the multiple is ≈ 5.3×. The beat is robust across all scenarios.\n\n**Why I am recommending keep_cash rather than a buy:**\n1. Your stated goal is to *compare* the two exporters; you are still in the research phase. An EPS comparison, while informative, is only one dimension of an investment decision.\n2. The ABUK figure is a nine-month actual annualised to twelve months (unaudited), whereas EFID's is a completed, audited full year. The comparison is directionally clear but not perfectly like-for-like.\n3. No valuation metrics (P/E, P/B), balance-sheet data, dividend history, or sector-cyclicality information is in the evidence. For a 5-year horizon with medium loss tolerance, those factors matter as much as the EPS level.\n4. You hold no securities. Committing the full 35,000 EGP to one or two single stocks would create a new concentration at the upper edge of your medium risk tolerance. A diversified entry (or waiting for additional data) is more appropriate.\n5. The Q3-2026 ABUK EPS cell is AMBIGUOUS (OCR dropped a decimal), so I could not verify the internal decomposition of the 9M figure. This does not change the direction of the comparison but adds a small data-quality caveat.\n\n**What would change this to a buy:** If, after completing your comparison (valuation, balance sheet, dividends, sector outlook), you decide to allocate to one or both exporters, the 35,000 EGP cash is available. At current prices (ABUK 76.21, EFID 20.40) you could buy up to 459 ABUK shares or 1,716 EFID shares, or a blend, while respecting the 50% single-stock concentration limit.\n\n**Risks / uncertainty:** The ABUK 9M-2026 EPS of 8.74 EGP represents a large YoY jump (from 4.28 EGP in 9M-2025). If part of that is a one-off item, the Q4 run-rate and hence the full-year figure could be lower than the linear estimate. EGP depreciation over a 5-year horizon affects both names. This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS for the nine months ended 30 Sep 2026: 8.74 EGP per share"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK basic EPS for the nine months ended 30 Sep 2025: 4.28 EGP per share"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "ABUK basic EPS for the three months ended 30 Sep 2025: 1.23 EGP per share"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for FY ended 31 Dec 2025: 2.18 EGP per share"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for FY ended 31 Dec 2024: 1.09 EGP per share"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-33 (9M YoY change '%104' – AMBIGUOUS, OCR formatting unclear)",
+      "ABUK-ABUK_9M2026_results-p2-34 (Q3-2026 EPS '199' – AMBIGUOUS, decimal comma likely dropped; could be 1.99, 19.9, or 199)",
+      "ABUK-ABUK_9M2026_results-p2-36 (Q3 YoY change '662' – AMBIGUOUS, same OCR issue)"
+    ],
+    "limitations": [
+      "ABUK Q3-2026 EPS is AMBIGUOUS; I could not decompose the 9M figure into H1 + Q3 to check internal consistency. This does not affect the 9M total of 8.74 EGP (which is verified) but limits the precision of the full-year estimate.",
+      "No ABUK FY-2025 or Q4-2025 data is in the evidence, so I cannot derive a true Q4 seasonal pattern. The seasonal proxy uses Q3-2025 as a stand-in for Q4, which is imprecise.",
+      "The ABUK 9M figure is unaudited; the EFID FY figure is audited and consolidated. The comparison is not perfectly like-for-like in audit status or reporting period.",
+      "EPS comparison does not account for share count, market capitalisation, valuation multiples, balance-sheet strength, dividend policy, or sector cyclicality – all of which are relevant for a 5-year investment decision.",
+      "The large YoY EPS jump for ABUK (4.28 → 8.74) may include one-off items; without a breakdown of the income statement, I cannot confirm the sustainability of the run-rate into Q4."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 35000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n# ABUK Full-Year 2026 EPS Estimate vs. EFID FY2025 EPS\n\n## 1. What the evidence gives us\n\n| Metric | Value | Source | Status |\n|---|---|---|---|\n| ABUK 9M-2026 basic EPS | **8.74 EGP** | [ABUK-ABUK_9M2026_results-p2-31] | Verified |\n| ABUK 9M-2025 basic EPS | **4.28 EGP** | [ABUK-ABUK_9M2026_results-p2-32] | Verified |\n| ABUK Q3-2025 basic EPS | **1.23 EGP** | [ABUK-ABUK_9M2026_results-p2-35] | Verified |\n| ABUK Q3-2026 basic EPS | \"199\" | [ABUK-ABUK_9M2026_results-p2-34] | **AMBIGUOUS** – OCR dropped a decimal comma; could be 1.99, 19.9, or 199. **Not used in any calculation.** |\n| ABUK 9M YoY change | \"%104\" | [ABUK-ABUK_9M2026_results-p2-33] | **AMBIGUOUS** – formatting unclear. **Not used.** |\n| ABUK Q3 YoY change | \"662\" | [ABUK-ABUK_9M2026_results-p2-36] | **AMBIGUOUS** – same OCR issue. **Not used.** |\n| EFID FY-2025 basic & diluted EPS | **2.18 EGP** | [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] | Verified |\n| EFID FY-2024 basic & diluted EPS | **1.09 EGP** | [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39] | Verified |\n\n> **Data-quality note on units:** The page-level unit line for the ABUK table reads \"مليون جنيه\" (million EGP), but the EPS row label itself explicitly states \"جنيه\" (EGP). The per-share figures are therefore in **whole EGP per share**, not millions. I apply the row-level unit.\n\n## 2. Estimating ABUK full-year 2026 EPS\n\n**What I can do:**\n- 9M-2026 EPS is confirmed at **8.74 EGP** [ABUK-ABUK_9M2026_results-p2-31].\n- Full-year 2026 EPS = 9M-2026 + Q4-2026.\n\n**What I cannot do:**\n- I have **no Q4-2026 figure** in the evidence.\n- I have **no FY-2025 figure** for ABUK, so I cannot back out Q4-2025 (FY-2025 − 9M-2025) to build a seasonal proxy for Q4-2026.\n- The Q3-2026 figure is **AMBIGUOUS** [ABUK-ABUK_9M2026_results-p2-34], so I cannot decompose 9M into H1 + Q3 to check internal consistency.\n\n**Reasonable bounds (no computation with ambiguous data):**\n\n| Scenario | Assumption | FY-2026 EPS |\n|---|---|---|\n| Floor | Q4-2026 EPS = 0 (no loss in Q4) | **≥ 8.74 EGP** |\n| Neutral seasonal proxy | Q4-2026 ≈ Q3-2025 = 1.23 EGP [ABUK-ABUK_9M2026_results-p2-35] (a single-quarter proxy, not a true Q4) | ≈ 8.74 + 1.23 = **≈ 9.97 EGP** |\n| Upside | Q4-2026 matches the 9M run-rate (8.74 / 3 ≈ 2.91 per quarter) | ≈ 8.74 + 2.91 = **≈ 11.65 EGP** |\n\nThe neutral proxy is the most defensible single-point estimate: **roughly 10 EGP**, with a wide uncertainty band because I am substituting a Q3-2025 figure for an unknown Q4-2026.\n\n> ⚠️ The 9M-2026 EPS of 8.74 EGP already represents a **~104 % YoY jump** over 4.28 EGP [ABUK-ABUK_9M2026_results-p2-31, -32]. If that growth is driven by a one-off item (e.g., asset disposal, tax credit), the Q4 run-rate could be materially lower than the 9M average, pulling the full-year figure toward the floor.\n\n## 3. Head-to-head: ABUK FY-2026E vs. EFID FY-2025\n\n| Company | Period | EPS (EGP) | Source |\n|---|---|---|---|\n| ABUK | FY-2026 (estimated) | **≈ 8.7 – 11.7** (point est. ≈ 10) | Derived from [ABUK-ABUK_9M2026_results-p2-31] + seasonal proxy |\n| EFID | FY-2025 (actual) | **2.18** | [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] |\n\n**Even the floor scenario (8.74 EGP, i.e., zero Q4 profit) is roughly 4× EFID's full-year 2025 EPS of 2.18 EGP.** Under the neutral proxy (~10 EGP) the gap widens to about 4.6×. ABUK's full-year 2026 EPS would beat EFID's 2025 EPS by a very wide margin under every scenario I can construct from the verified data.\n\n## 4. Caveats and data-quality flags\n\n1. **ABUK Q3-2026 EPS is AMBIGUOUS** [ABUK-ABUK_9M2026_results-p2-34]. I have excluded it from all calculations. If the true figure is 1.99 EGP, the 9M decomposition (H1 ≈ 6.75, Q3 ≈ 1.99) is internally consistent; if it is 19.9 or 199, the 9M total of 8.74 would be impossible, confirming an OCR error.\n2. **No FY-2025 ABUK data** is in the evidence, so I cannot verify the seasonal shape of Q4 or check whether Q4 is typically a strong or weak quarter for ABUK.\n3. **EFID's 2.18 EGP is a full-year, audited, consolidated figure** [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38], while ABUK's 8.74 EGP is a **nine-month, unaudited** figure. The comparison is therefore not perfectly like-for-like in terms of reporting period or audit status.\n4. **Scale / share-count differences:** ABUK and EFID have very different share counts and market capitalisations. An EPS comparison does not account for the absolute size of earnings or the risk profile of each business. For a 5-year horizon with medium loss tolerance, the investor should also weigh balance-sheet strength, dividend policy, and sector cyclicality, none of which are in the evidence provided here.\n5. **Currency:** Both figures are in EGP. No FX adjustment is needed for the comparison, but for a 5-year horizon the investor should be aware that EGP depreciation risk affects both names equally.\n\n## 5. Bottom line (evidence-based, no recommendation)\n\n- ABUK's **verified 9M-2026 EPS of 8.74 EGP** [ABUK-ABUK_9M2026_results-p2-31] already exceeds EFID's **verified FY-2025 EPS of 2.18 EGP** [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] by a factor of roughly 4.\n- A full-year 2026 EPS for ABUK will be **at least 8.74 EGP** and, under a simple seasonal proxy, **around 10 EGP**, making the beat over EFID's 2025 figure robust to reasonable Q4 assumptions.\n- The estimate carries **moderate uncertainty** because Q4-2026 is not in the evidence and the Q3-2026 figure is AMBIGUOUS. The comparison is directionally clear but the exact multiple should not be over-interpreted.",
+    "investor": "\n\n## ABUK Full-Year 2026 EPS Estimate vs. EFID FY 2025 EPS\n\n### The numbers from the evidence\n\n| Item | Source | Value |\n|---|---|---|\n| ABUK basic EPS, 9 M ended 30 Sep 2026 | ABUK 9M-2026 results, p. 2 (verified) | **8.74 EGP / share** |\n| EFID basic & diluted EPS, FY ended 31 Dec 2025 | EFID FY-2025 EAS, p. 6 (verified) | **2.18 EGP / share** |\n\n### Annualising ABUK to a full-year figure\n\nThe only clean, verified ABUK data point is the nine-month EPS of 8.74 EGP. The Q3-2026 cell (١٩٩) is flagged **AMBIGUOUS** in the OCR (a decimal comma may have been dropped, so it could read 1.99 EGP), so I will not build the estimate on it.\n\nThe standard linear annualisation is:\n\n$$\\text{FY 2026 EPS (est.)} \\;=\\; 8.74 \\times \\frac{12}{9} \\;\\approx\\; \\mathbf{11.65\\;EGP}$$\n\n> **Caveat:** This assumes Q4 earnings run at the same average pace as the first nine months. If Q4 is seasonally weaker (or stronger), the true figure will deviate. The estimate is a simple pro-rata, not a forecast.\n\n### Head-to-head\n\n| | ABUK (est. FY 2026) | EFID (FY 2025) |\n|---|---|---|\n| EPS | ≈ 11.65 EGP | 2.18 EGP |\n| Ratio | **≈ 5.3 ×** EFID | 1× |\n\nOn the arithmetic, ABUK's estimated full-year 2026 EPS is roughly **five times** EFID's 2025 EPS. So yes, it \"beats\" EFID's figure by a wide margin.\n\nTwo important caveats before reading too much into that:\n\n1. **Different reporting periods.** ABUK's number is a 9-month actual annualised to 12 months; EFID's is a completed full year. The ABUK figure carries an estimation error that EFID's does not.\n2. **Different share counts and capital structures.** A higher EPS does not automatically mean a better investment; it reflects per-share profit, not valuation, growth, or risk. (Per my mandate I will not go further into company fundamentals here.)\n\n---\n\n## Investor-suitability snapshot (context for any decision you may make)\n\n| Factor | Assessment |\n|---|---|\n| **Horizon** | 5 years – comfortably long enough for an equity position in either exporter; no need to force a short-term exit. |\n| **Liquidity needs** | You keep a **separate** emergency fund, so the 35,000 EGP in the portfolio is not earmarked for emergencies. |\n| **Loss willingness / capacity** | Both rated **medium**. A single-stock position in one exporter would concentrate risk; a split across both (or a mix with other assets) would better match a medium risk tolerance. |\n| **Current concentration** | **None** – the portfolio holds no securities, so there is no existing tilt to correct. |\n| **Cash that could reasonably be committed** | **35,000 EGP** is the full free cash. At current prices (ABUK 76.21 EGP, EFID 20.40 EGP) that buys roughly 459 shares of ABUK or ≈ 1,716 shares of EFID, or any blend. Because you have no other holdings, committing the entire 35,000 EGP to one or two single stocks would create a new concentration that sits at the upper edge of a \"medium\" loss tolerance. |\n| **What can be sold** | Nothing – no existing holdings. |\n| **What cash is free** | The full 35,000 EGP. |\n\nI have not selected a position or a weight; that is a decision for you (or the team) once the fundamental comparison you are running is complete."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 32.695,
+      "input_tokens": 2243,
+      "output_tokens": 4137,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 20.438,
+      "input_tokens": 2236,
+      "output_tokens": 2347,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 35.038,
+      "input_tokens": 5602,
+      "output_tokens": 4555,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 88.175
+}

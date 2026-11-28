@@ -1,0 +1,233 @@
+{
+  "case_id": "test_030",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 1470,
+    "explanation": "RANKING BY P/E RATIO (cheapest first):\n1. ABUK (Abu Qir): ~6.5× (annualised from 9M EPS of 8.74 EGP; price 76.21)\n2. EFID (Edita): 9.4× (price 20.40 / FY25 EPS 2.18)\n3. TMGH (Talaat Moustafa): 11.8× (price 82.50 / FY25 EPS 6.98)\n4. ETEL (Telecom Egypt): 11.9× (price 141.95 / FY25 EPS 11.93)\n\nRANKING BY EPS GROWTH (highest first):\n1. ETEL: +149% (4.79 → 11.93)\n2. ABUK: +104% (4.28 → 8.74, 9M YoY)\n3. EFID: +100% (1.09 → 2.18)\n4. TMGH: +59% (4.38 → 6.98)\n\nIMPORTANT CAVEATS:\n• ETEL: Net profit fell from 10,111,328,000 EGP (FY24) to 578,063,000 EGP (FY25), a 94% decline, yet EPS rose 149%. This implies a ~98% reduction in shares outstanding, which is highly unusual. The 2024 figure may include a one-time gain (e.g., asset disposal). This inconsistency makes ETEL's earnings quality uncertain; I have weighted it lowest in the allocation.\n• ABUK: Only 9-month (Jan–Sep 2026) data is available; the P/E is annualised (×4/3), which assumes the second half matches the first. Full-year FY2026 results are not yet in the evidence.\n• TMGH and EFID: Full-year FY2025 data, consistent between net profit and EPS growth. Most reliable for comparison.\n\nRECOMMENDED 4-STOCK ALLOCATION (100,000 EGP):\n• EFID – 1,470 shares × 20.40 = 29,988 EGP (~30%)\n• TMGH – 363 shares × 82.50 = 29,947.50 EGP (~30%)\n• ABUK – 328 shares × 76.21 = 24,996.88 EGP (~25%)\n• ETEL – 105 shares × 141.95 = 14,904.75 EGP (~15%)\nTotal invested: 99,837.13 EGP; residual cash: 162.87 EGP.\n\nRationale: EFID and TMGH get the largest weights because they have full-year, internally consistent data, solid double-digit growth, and P/E below 12×. ABUK is attractive on valuation (cheapest P/E) and strong 9M growth, but the shorter reporting window adds uncertainty. ETEL is included for diversification and its low P/E, but the 15% cap reflects the data inconsistency risk.\n\nRISKS: All four stocks are Egyptian-listed and subject to currency, regulatory, and macroeconomic risk. Past growth does not guarantee future performance. The ETEL profit collapse (if not a one-time item) could signal structural weakness. ABUK's annualised P/E may be optimistic if H2 slows. With a 7+ year horizon and medium risk tolerance, this diversified 4-stock basket is appropriate, but you should review holdings annually and be prepared for 20–30% drawdowns in any single name.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 578063000.0,
+        "statement": "ETEL net profit FY2025 = 578,063 thousand EGP = 578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL net profit FY2024 = 10,111,328 thousand EGP = 10,111,328,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic & diluted EPS FY2025 = 11.93 EGP/share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic & diluted EPS FY2024 = 4.79 EGP/share"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit FY2025 = 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit FY2024 = 1,606,727,698 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic & diluted EPS FY2025 = 2.18 EGP/share"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic & diluted EPS FY2024 = 1.09 EGP/share"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH consolidated net profit FY2025 = 18,201,981,482 EGP"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+        "stated_value": 12769517325.0,
+        "statement": "TMGH consolidated net profit FY2024 (restated) = 12,769,517,325 EGP"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH EPS FY2025 = 6.98 EGP/share"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "TMGH EPS FY2024 (restated) = 4.38 EGP/share"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS 9M ended 30 Sep 2026 = 8.74 EGP/share"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK basic EPS 9M ended 30 Sep 2025 = 4.28 EGP/share"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-33: 9M YoY % change (%104) – AMBIGUOUS, decimal/OCR unclear; I computed the 104% growth directly from the verified 8.74 and 4.28 figures instead.",
+      "ABUK-ABUK_9M2026_results-p2-34: 3M 2026 EPS (199) – AMBIGUOUS, possible missing decimal (could be 1.99); not used in any calculation.",
+      "ABUK-ABUK_9M2026_results-p2-36: 3M YoY % change (662) – AMBIGUOUS, OCR unclear; not used."
+    ],
+    "limitations": [
+      "ABUK P/E is annualised from 9-month data (×4/3); actual full-year FY2026 EPS may differ.",
+      "ETEL's 94% net-profit decline alongside 149% EPS growth is unexplained in the evidence; the 2024 figure may include a non-recurring item. This undermines confidence in ETEL's earnings trajectory.",
+      "No balance-sheet, cash-flow, dividend, or sector data is available; the analysis is limited to P/E and profit growth.",
+      "All four companies are Egyptian-listed; currency (EGP/USD) risk, regulatory changes, and macroeconomic factors are not captured in these figures.",
+      "This is guidance based solely on the provided evidence, not a guarantee of returns."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "EFID",
+    "shares": 1470,
+    "explanation": "CORRECTION FROM PREVIOUS RECOMMENDATION:\nIn my prior answer I misread the ETEL net-profit row. The figure 22,578,063 (in thousands) is the FY2025 value, not a note number. The correct ETEL net profit is 22,578,063,000 EGP for FY2025, not 578,063,000. This changes ETEL's story dramatically: profit GREW 123% year-on-year (10.1 B → 22.6 B EGP), and the modest gap between profit growth (+123%) and EPS growth (+149%) implies only a ~10% reduction in shares outstanding (plausible buyback), not the 98% collapse I previously flagged. ETEL is now the strongest grower in the set with internally consistent data.\n\nRANKING BY P/E RATIO (cheapest first):\n1. ABUK (Abu Qir): ~6.5× (annualised from 9M EPS 8.74 × 4/3 = 11.65; price 76.21)\n2. EFID (Edita): 9.4× (price 20.40 / FY25 EPS 2.18)\n3. TMGH (Talaat Moustafa): 11.8× (price 82.50 / FY25 EPS 6.98)\n4. ETEL (Telecom Egypt): 11.9× (price 141.95 / FY25 EPS 11.93)\n\nRANKING BY EPS GROWTH (highest first):\n1. ETEL: +149% (4.79 → 11.93, FY24→FY25)\n2. ABUK: +104% (4.28 → 8.74, 9M YoY)\n3. EFID: +100% (1.09 → 2.18, FY24→FY25)\n4. TMGH: +59% (4.38 → 6.98, FY24→FY25)\n\nRANKING BY NET-PROFIT GROWTH (highest first):\n1. ETEL: +123% (10,111,328,000 → 22,578,063,000 EGP)\n2. EFID: +68% (1,606,727,698 → 2,695,301,670 EGP)\n3. TMGH: +43% (12,769,517,325 → 18,201,981,482 EGP)\n4. ABUK: N/A (only 9-month data; no full-year comparison available)\n\nRECOMMENDED 4-STOCK ALLOCATION (100,000 EGP):\n• EFID – 1,470 shares × 20.40 = 29,988.00 EGP (~30%)\n• ETEL – 211 shares × 141.95 = 29,951.45 EGP (~30%)\n• TMGH – 242 shares × 82.50 = 19,965.00 EGP (~20%)\n• ABUK – 262 shares × 76.21 = 19,967.02 EGP (~20%)\nTotal invested: 99,871.47 EGP; residual cash: 128.53 EGP.\n\nRationale:\n• ETEL and EFID receive the largest weights (30% each). ETEL now shows the strongest and most coherent growth story (profit +123%, EPS +149%, P/E 11.9×). EFID offers the best P/E among full-year companies (9.4×) with 100% EPS growth.\n• TMGH (20%) provides a large-cap, moderate-growth anchor (P/E 11.8×, profit +43%).\n• ABUK (20%) is the cheapest on P/E (~6.5×) with strong 9M EPS growth (+104%), but the shorter reporting window (9 months, not full year) warrants a slightly smaller weight.\n\nRISKS AND CAVEATS:\n• ABUK P/E is annualised (×4/3); actual FY2026 EPS may differ if H2 slows.\n• All four are Egyptian-listed; EGP currency risk, regulatory changes, and macro factors are not captured in these figures.\n• Past growth does not guarantee future performance. With a 7+ year horizon and medium risk tolerance, this diversified basket is appropriate, but expect 20–30% drawdowns in any single name.\n• No balance-sheet, cash-flow, or dividend data is available; the analysis is limited to P/E and profit growth.\n• This is guidance based solely on the provided evidence, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL net profit FY2025 = 22,578,063 thousand EGP = 22,578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL net profit FY2024 = 10,111,328 thousand EGP = 10,111,328,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS FY2025 = 11.93 EGP/share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic and diluted EPS FY2024 = 4.79 EGP/share"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit FY2025 = 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit FY2024 = 1,606,727,698 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS FY2025 = 2.18 EGP/share"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS FY2024 = 1.09 EGP/share"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH consolidated net profit FY2025 = 18,201,981,482 EGP"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+        "stated_value": 12769517325.0,
+        "statement": "TMGH consolidated net profit FY2024 (restated) = 12,769,517,325 EGP"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH EPS FY2025 = 6.98 EGP/share"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "TMGH EPS FY2024 (restated) = 4.38 EGP/share"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS 9M ended 30 Sep 2026 = 8.74 EGP/share"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK basic EPS 9M ended 30 Sep 2025 = 4.28 EGP/share"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-33: 9M YoY % change (%104) – AMBIGUOUS, OCR decimal unclear; I computed the 104% growth directly from the verified 8.74 and 4.28 figures instead.",
+      "ABUK-ABUK_9M2026_results-p2-34: 3M 2026 EPS (199) – AMBIGUOUS, possible missing decimal (could be 1.99); not used in any calculation.",
+      "ABUK-ABUK_9M2026_results-p2-36: 3M YoY % change (662) – AMBIGUOUS, OCR unclear; not used."
+    ],
+    "limitations": [
+      "ABUK P/E is annualised from 9-month data (×4/3); actual full-year FY2026 EPS may differ if H2 performance diverges.",
+      "No balance-sheet, cash-flow, dividend, or sector data is available; the analysis is limited to P/E and profit growth.",
+      "All four companies are Egyptian-listed; currency (EGP/USD) risk, regulatory changes, and macroeconomic factors are not captured in these figures.",
+      "ETEL's ~10% implied share-count reduction (from profit/EPS cross-check) is plausible (buyback) but not explicitly confirmed in the evidence provided.",
+      "This is guidance based solely on the provided evidence, not a guarantee of returns."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 70012.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1470
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "value_mismatch",
+        "detail": "stated 5.78063e+08 but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)]"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 78.661,
+      "input_tokens": 4557,
+      "output_tokens": 10278,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 55.034,
+      "input_tokens": 7245,
+      "output_tokens": 7802,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 133.699
+}

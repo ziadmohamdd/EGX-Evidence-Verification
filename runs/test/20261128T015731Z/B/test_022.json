@@ -1,0 +1,115 @@
+{
+  "case_id": "test_022",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The trailing P/E ratio for Telecom Egypt (ETEL) at the current price of 141.95 EGP is approximately 11.9×, calculated as 141.95 ÷ 11.93 (FY2025 basic and diluted EPS). On its face, a P/E near 12 looks low and could be interpreted as 'fairly priced' for a large-cap telecom.\n\nHowever, I cannot responsibly recommend a buy on this evidence alone for several reasons:\n\n1. Unexplained profit collapse: Net profit fell from 10,111,328,000 EGP in FY2024 to 578,063,000 EGP in FY2025 – a roughly 94 % decline. The evidence does not explain the cause (one-off item, impairment, regulatory change, restructuring, etc.). A P/E built on a depressed earnings base can be misleading; if 2025 is the new normal the multiple is fair, but if 2024 was closer to normal the stock may be overvalued.\n\n2. Internal inconsistency: The implied share count derived from net profit ÷ EPS differs by more than 40× between the two years (≈48.5 million vs ≈2.1 billion), which suggests a data or presentation issue I cannot resolve from the evidence provided.\n\n3. Missing information: No balance-sheet data (debt, equity, liquidity), no cash-flow statement, no dividend history, no segment breakdown, no management commentary on the profit swing, and no forward guidance. For a 5-year holding with medium risk tolerance, these are essential.\n\nWhat is missing for a responsible decision: (a) an explanation of the FY2024→FY2025 profit drop, (b) balance-sheet and cash-flow figures, (c) confirmation of the correct EPS / share count, and (d) any forward earnings outlook. Until those are available, I would rather the investor keep the 25,000 EGP in cash than commit it on the basis of a single, possibly distorted, P/E figure.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "Basic and diluted EPS for FY2025 is 11.93 EGP per share (row label explicitly states 'L.E. / Share')."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 578063000.0,
+        "statement": "Net profit for the year FY2025 is 578,063 thousand EGP = 578,063,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit for the year FY2024 is 10,111,328 thousand EGP = 10,111,328,000 EGP."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The P/E of ≈11.9× is a trailing multiple based solely on FY2025 EPS; it does not reflect forward earnings, which are unknown.",
+      "The 94 % year-on-year profit decline is unexplained in the provided evidence, making the earnings base unreliable for valuation.",
+      "No balance-sheet, cash-flow, dividend, or segment data is available to assess financial health or sustainability of earnings.",
+      "The implied share count is inconsistent between the two fiscal years, raising a data-quality concern that could affect the EPS figure.",
+      "This is guidance, not a guarantee of returns. Even if the P/E is 'fair,' the stock can still decline due to macro, regulatory, or company-specific risks."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "Correcting my earlier error: the FY2025 net-profit figure is 22,578,063 thousand EGP (22,578,063,000 EGP), not 578,063,000 EGP. The '22' in the printed row '22 578 063' is part of the number (European thousands separators), not a separate note reference. This changes the picture substantially.\n\n**P/E calculation (the investor's direct question):**\n- Share price: 141.95 EGP\n- FY2025 basic & diluted EPS: 11.93 EGP\n- Trailing P/E = 141.95 ÷ 11.93 ≈ **11.9×**\n\n**Earnings trend (corrected):**\n- FY2024 net profit: 10,111,328,000 EGP\n- FY2025 net profit: 22,578,063,000 EGP\n- Year-on-year growth: +123 %\n\n**Data consistency check:**\n- Implied share count FY2025: 22,578,063,000 ÷ 11.93 ≈ 1.89 billion shares\n- Implied share count FY2024: 10,111,328,000 ÷ 4.79 ≈ 2.11 billion shares\n- The ~10 % difference is plausible (buybacks or new issues), so the figures are internally consistent. My earlier '40× discrepancy' was an artefact of the misread.\n\n**Why I still cannot recommend a buy on this evidence alone:**\n1. No balance-sheet data (total debt, equity, liquidity). A telecom with heavy capex and debt could be at risk even with a low P/E.\n2. No cash-flow statement. Earnings growth of 123 % could be driven by non-cash items (reversals, reclassifications) rather than genuine operating improvement.\n3. No dividend information. For a 5-year hold, total return (price + dividends) matters; a low P/E with no dividend is less attractive than one with a yield.\n4. No explanation of what drove the 123 % profit jump. Without knowing whether it is sustainable (e.g., a one-off tax benefit vs. genuine revenue growth), the forward P/E is unknown.\n5. No forward guidance or revenue breakdown.\n\nFor a medium-risk investor committing up to 50 % of a 25,000 EGP portfolio to a single name over 5 years, these gaps are material. The P/E of ≈12× with 123 % earnings growth is encouraging and could indicate a fairly priced or even undervalued stock, but I would rather the investor keep the 25,000 EGP in cash until balance-sheet, cash-flow, and dividend data are available to confirm the quality and sustainability of earnings.\n\n**What is missing for a responsible decision:** (a) balance sheet (debt, equity, working capital), (b) operating cash flow, (c) dividend history and policy, (d) management commentary on the FY2025 profit surge, (e) any forward earnings outlook or guidance.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for the year FY2025 is 22,578,063 thousand EGP = 22,578,063,000 EGP (the '22' in the printed row is part of the figure, not a note number)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit for the year FY2024 is 10,111,328 thousand EGP = 10,111,328,000 EGP."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "Basic and diluted EPS for FY2025 is 11.93 EGP per share (row label explicitly states 'L.E. / Share')."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "Basic and diluted EPS for FY2024 is 4.79 EGP per share."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The P/E of ≈11.9× is a trailing multiple based solely on FY2025 EPS; forward earnings are unknown.",
+      "The 123 % year-on-year profit growth is unexplained in the provided evidence; sustainability is uncertain.",
+      "No balance-sheet, cash-flow, dividend, or segment data is available to assess financial health or total return.",
+      "Only two years of net-profit and EPS data are provided; a longer trend would help judge cyclicality.",
+      "This is guidance, not a guarantee of returns. Even at a 'fair' P/E, the stock can decline due to macro, regulatory, or company-specific risks."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 25000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "value_mismatch",
+        "detail": "stated 5.78063e+08 but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)]"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 29.779,
+      "input_tokens": 1470,
+      "output_tokens": 4063,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 38.862,
+      "input_tokens": 2645,
+      "output_tokens": 5438,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 68.644
+}

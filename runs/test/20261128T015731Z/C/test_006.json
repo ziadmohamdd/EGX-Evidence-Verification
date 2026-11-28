@@ -1,0 +1,128 @@
+{
+  "case_id": "test_006",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "لا تتوفر أدلة كافية لاتخاذ قرار شراء مسؤول لأسهم ETEL في ظل ملف المستثمر الحالي، وذلك للأسباب التالية:\n\n**١. غياب بيانات الأرباح الموزعة (Dividends) – العائق الأهم:**\nالهدف الأساسي للمستثمر هو «دخل ثابت وتنمية بسيطة». لا يوجد في مجموعة الأدلة المقدمة أي ذكر لعائد أسهم (DPS) أو نسبة توزيع أرباح (Payout Ratio) أو أي تدفّق دخل من الشركة. بدون هذه البيانات، لا يمكن التأكد من أن السهم يحقق شرط «الدخل الثابت» الذي يطلبه المستثمر. شراء سهم دون معرفة ما إذا كان يوزّع أرباحًا أم لا لا يتوافق مع الهدف المعلَن.\n\n**٢. رقم الربحية لكل سهم (EPS) مُعلَّم كـ AMBIGUOUS:**\nسطر EPS يحمل تعارضًا في الوحدة: عنوان السطر يقول «L.E. / Share» بينما سطر الوحدة في الصفحة يقول «L.E.(000)». المحلل المالي علّم الرقمين (11.93 و 4.79) كـ AMBIGUOUS. وفقًا للقواعد، لا يجوز استخدام أرقام AMBIGUOUS في أي حساب. هذا يعني أنه لا يمكن حساب نسبة السعر إلى الربحية (P/E) أو أي مقياس تقييم لكل سهم، وهو المقياس الأساسي الوحيد المتاح للتقييم.\n\n**٣. غياب بيانات الميزانية العمومية والتدفقات النقدية:**\nلا توجد أي بيانات عن: إجمالي الديون، نسبة الدين إلى حقوق الملكية، تغطية الفوائد، التدفّق النقدي الحر، أو السيولة. لا يمكن تقييم المخاطر المالية أو قدرة الشركة على الاستمرار في توزيع أرباح (إن وُجدت) على مدى ٣-٥ سنوات.\n\n**٤. بيانات لعامين فقط مع قفزة هامش غير مفسّرة:**\nهامش صافي الربح قفز من ≈ ١٢.٤٪ إلى ≈ ٢١.٢٪ في عام واحد. لا توجد بيانات قطاعات أو ملاحظات توضيحية تبيّن ما إذا كان هذا التحسّن هيكليًا أم ناتجًا عن بنود استثنائية. قرار استثماري لمدّة ٣-٥ سنوات لا يمكن اتخاذه على أساس عامين فقط من بيانات قائمة الدخل دون سياق أوسع.\n\n**٥. عدم كفاية التنويع:**\nالمستثمر لا يملك أي أسهم حاليًا. حتى لو كان الشراء ممكنًا، فإن قاعدة التنويع تمنع تخصيص أكثر من ٥٠٪ من إجمالي المحفظة (٢٥,٠٠٠ جنيه) لشركة واحدة، أي بحد أقصى ≈ ١٢,٥٠٠ جنيه (٨٨ سهمًا بسعر ١٤١.٩٥). لكن المشكلة ليست في حجم الشراء بل في غياب الأساس الكافي للشراء أصلًا.\n\n**ما ينقص لاتخاذ قرار مسؤول:**\n- بيانات توزيعات الأرباح (DPS) لآخر ٣ سنوات على الأقل\n- بيانات الميزانية العمومية (ديون، سيولة، حقوق ملكية)\n- بيانات التدفّق النقدي الحر\n- تفسير لقفزة الهامش (بنود استثنائية أم هيكلية)\n- بيانات لثلاث سنوات على الأقل لتقييم الاتجاه\n- أي معلومات عن قطاع الاتصالات المصري والمخاطر التنظيمية\n\n**الخلاصة:**\nمع غياب بيانات الأرباح الموزعة (وهي جوهر هدف المستثمر) وغموض EPS وغياب الميزانية والتدفقات النقدية، فإن الأدلة المتاحة لا تسمح باتخاذ قرار شراء أو بيع مسؤول. يُنصح المستثمر بالاحتفاظ بنقوده (keep_cash) مؤقتًا حتى تتوفّر بيانات كافية، أو البحث عن أدوات دخل ثابت أخرى (سندات، أذون خزانة، صناديق دخل) تتوافق مع هدفه بشكل أوضح. هذا ليس توصية بعدم الاستثمار، بل اعتراف بأن الأدلة المقدمة غير كافية لقرار مسؤول.\n\n**ملاحظة:** هذا تحليل استرشادي وليس ضمانًا للعوائد. حتى مع اكتمال البيانات، يبقى الاستثمار في الأسهم محفوفًا بالمخاطر، خاصة مع تحمّل خسارة متوسط ومدّة ٣-٥ سنوات.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "إيرادات التشغيل للسنة المالية المنتهية في 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "إيرادات التشغيل للسنة المالية المنتهية في 31/12/2024"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "صافي ربح السنة للسنة المالية المنتهية في 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "صافي ربح السنة للسنة المالية المنتهية في 31/12/2024"
+      }
+    ],
+    "unused_figures": [
+      "EPS FY2025 = 11.93 (evidence: ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55) – AMBIGUOUS: تعارض بين عنوان السطر (L.E./Share) ووحدة الصفحة (L.E.(000)). لا يمكن استخدامه في حساب P/E أو أي مقياس تقييم لكل سهم.",
+      "EPS FY2024 = 4.79 (evidence: ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56) – AMBIGUOUS: نفس تعارض الوحدة. لا يمكن استخدامه في حسابات النمو أو التقييم."
+    ],
+    "limitations": [
+      "لا توجد بيانات توزيعات أرباح (DPS) أو نسبة توزيع (Payout Ratio) في مجموعة الأدلة، مما يمنع تقييم مدى توافق السهم مع هدف «الدخل الثابت».",
+      "لا توجد بيانات ميزانية عمومية (ديون، سيولة، حقوق ملكية) أو تدفقات نقدية، مما يمنع تقييم المخاطر المالية والاستدامة.",
+      "رقم EPS مُعلَّم AMBIGUOUS ولا يمكن استخدامه، مما يحجب المقياس التقييمي الأساسي (P/E).",
+      "البيانات تغطي عامين فقط (FY2024 و FY2025) من قائمة الدخل فقط، وهو غير كافٍ لقرار استثماري لمدّة ٣-٥ سنوات.",
+      "قفزة هامش صافي الربح من ≈١٢.٤٪ إلى ≈٢١.٢٪ غير مفسّرة ببيانات قطاعات أو ملاحظات، مما يثير شكوكًا حول الاستدامة.",
+      "لا توجد بيانات عن المخاطر القطاعية أو التنظيمية أو الحساسية لتقلبات سعر الصرف."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "لا تتوفر أدلة كافية لاتخاذ قرار شراء مسؤول لأسهم ETEL في ظل ملف المستثمر الحالي، وذلك للأسباب التالية:\n\n**١. غياب بيانات الأرباح الموزعة (Dividends) – العائق الأهم:**\nالهدف الأساسي للمستثمر هو «دخل ثابت وتنمية بسيطة». لا يوجد في مجموعة الأدلة المقدمة أي ذكر لعائد أسهم (DPS) أو نسبة توزيع أرباح (Payout Ratio) أو أي تدفّق دخل من الشركة. بدون هذه البيانات، لا يمكن التأكد من أن السهم يحقق شرط «الدخل الثابت» الذي يطلبه المستثمر. شراء سهم دون معرفة ما إذا كان يوزّع أرباحًا أم لا لا يتوافق مع الهدف المعلَن.\n\n**٢. رقم الربحية لكل سهم (EPS) مُعلَّم كـ AMBIGUOUS:**\nسطر EPS يحمل تعارضًا في الوحدة: عنوان السطر يقول «L.E. / Share» بينما سطر الوحدة في الصفحة يقول «L.E.(000)». المحلل المالي علّم الرقمين (11.93 و 4.79) كـ AMBIGUOUS. وفقًا للقواعد، لا يجوز استخدام أرقام AMBIGUOUS في أي حساب. هذا يعني أنه لا يمكن حساب نسبة السعر إلى الربحية (P/E) أو أي مقياس تقييم لكل سهم، وهو المقياس الأساسي الوحيد المتاح للتقييم.\n\n**٣. غياب بيانات الميزانية العمومية والتدفقات النقدية:**\nلا توجد أي بيانات عن: إجمالي الديون، نسبة الدين إلى حقوق الملكية، تغطية الفوائد، التدفّق النقدي الحر، أو السيولة. لا يمكن تقييم المخاطر المالية أو قدرة الشركة على الاستمرار في توزيع أرباح (إن وُجدت) على مدى ٣-٥ سنوات.\n\n**٤. بيانات لعامين فقط مع قفزة هامش غير مفسّرة:**\nهامش صافي الربح قفز من ≈ ١٢.٤٪ إلى ≈ ٢١.٢٪ في عام واحد. لا توجد بيانات قطاعات أو ملاحظات توضيحية تبيّن ما إذا كان هذا التحسّن هيكليًا أم ناتجًا عن بنود استثنائية. قرار استثماري لمدّة ٣-٥ سنوات لا يمكن اتخاذه على أساس عامين فقط من بيانات قائمة الدخل دون سياق أوسع.\n\n**٥. عدم كفاية التنويع:**\nالمستثمر لا يملك أي أسهم حاليًا. حتى لو كان الشراء ممكنًا، فإن قاعدة التنويع تمنع تخصيص أكثر من ٥٠٪ من إجمالي المحفظة (٢٥,٠٠٠ جنيه) لشركة واحدة، أي بحد أقصى ≈ ١٢,٥٠٠ جنيه (٨٨ سهمًا بسعر ١٤١.٩٥). لكن المشكلة ليست في حجم الشراء بل في غياب الأساس الكافي للشراء أصلًا.\n\n**ما ينقص لاتخاذ قرار مسؤول:**\n- بيانات توزيعات الأرباح (DPS) لآخر ٣ سنوات على الأقل\n- بيانات الميزانية العمومية (ديون، سيولة، حقوق ملكية)\n- بيانات التدفّق النقدي الحر\n- تفسير لقفزة الهامش (بنود استثنائية أم هيكلية)\n- بيانات لثلاث سنوات على الأقل لتقييم الاتجاه\n- أي معلومات عن قطاع الاتصالات المصري والمخاطر التنظيمية\n\n**الخلاصة:**\nمع غياب بيانات الأرباح الموزعة (وهي جوهر هدف المستثمر) وغموض EPS وغياب الميزانية والتدفقات النقدية، فإن الأدلة المتاحة لا تسمح باتخاذ قرار شراء أو بيع مسؤول. يُنصح المستثمر بالاحتفاظ بنقوده (keep_cash) مؤقتًا حتى تتوفّر بيانات كافية، أو البحث عن أدوات دخل ثابت أخرى (سندات، أذون خزانة، صناديق دخل) تتوافق مع هدفه بشكل أوضح. هذا ليس توصية بعدم الاستثمار، بل اعتراف بأن الأدلة المقدمة غير كافية لقرار مسؤول.\n\n**ملاحظة:** هذا تحليل استرشادي وليس ضمانًا للعوائد. حتى مع اكتمال البيانات، يبقى الاستثمار في الأسهم محفوفًا بالمخاطر، خاصة مع تحمّل خسارة متوسط ومدّة ٣-٥ سنوات.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01",
+        "stated_value": 106672946000.0,
+        "statement": "إيرادات التشغيل للسنة المالية المنتهية في 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02",
+        "stated_value": 81677812000.0,
+        "statement": "إيرادات التشغيل للسنة المالية المنتهية في 31/12/2024"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "صافي ربح السنة للسنة المالية المنتهية في 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "صافي ربح السنة للسنة المالية المنتهية في 31/12/2024"
+      }
+    ],
+    "unused_figures": [
+      "EPS FY2025 = 11.93 (evidence: ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55) – AMBIGUOUS: تعارض بين عنوان السطر (L.E./Share) ووحدة الصفحة (L.E.(000)). لا يمكن استخدامه في حساب P/E أو أي مقياس تقييم لكل سهم.",
+      "EPS FY2024 = 4.79 (evidence: ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56) – AMBIGUOUS: نفس تعارض الوحدة. لا يمكن استخدامه في حسابات النمو أو التقييم."
+    ],
+    "limitations": [
+      "لا توجد بيانات توزيعات أرباح (DPS) أو نسبة توزيع (Payout Ratio) في مجموعة الأدلة، مما يمنع تقييم مدى توافق السهم مع هدف «الدخل الثابت».",
+      "لا توجد بيانات ميزانية عمومية (ديون، سيولة، حقوق ملكية) أو تدفقات نقدية، مما يمنع تقييم المخاطر المالية والاستدامة.",
+      "رقم EPS مُعلَّم AMBIGUOUS ولا يمكن استخدامه، مما يحجب المقياس التقييمي الأساسي (P/E).",
+      "البيانات تغطي عامين فقط (FY2024 و FY2025) من قائمة الدخل فقط، وهو غير كافٍ لقرار استثماري لمدّة ٣-٥ سنوات.",
+      "قفزة هامش صافي الربح من ≈١٢.٤٪ إلى ≈٢١.٢٪ غير مفسّرة ببيانات قطاعات أو ملاحظات، مما يثير شكوكًا حول الاستدامة.",
+      "لا توجد بيانات عن المخاطر القطاعية أو التنظيمية أو الحساسية لتقلبات سعر الصرف."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 25000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n# ETEL – Financial Evidence Analysis (FY2025)\n\n## 1. Profitability\n\n| Metric | FY2025 | FY2024 | Source |\n|---|---|---|---|\n| Operating revenues | 106,672,946,000 EGP | 81,677,812,000 EGP | [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-01], [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-02] |\n| Net profit for the year | 22,578,063,000 EGP | 10,111,328,000 EGP | [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35], [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50] |\n| Net margin (computed) | ≈ 21.2 % | ≈ 12.4 % | derived from the two rows above |\n| Basic & diluted EPS | 11.93 EGP / share | 4.79 EGP / share | [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55], [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56] |\n\n**⚠ AMBIGUOUS – EPS unit:** The row label reads \"(L.E. / Share)\" but the page-level unit line states \"L.E.(000).\" The printed values (11.93 / 4.79) are consistent with per-share pounds, not thousands of pounds per share. I have treated them as **11.93 EGP and 4.79 EGP per share** respectively, but the unit conflict should be verified against the original PDF before any valuation work.\n\n## 2. Growth (YoY, FY2024 → FY2025)\n\n- **Revenue growth:** (106,672,946 − 81,677,812) / 81,677,812 ≈ **+30.6 %**\n- **Net-profit growth:** (22,578,063 − 10,111,328) / 10,111,328 ≈ **+123.3 %**\n- **EPS growth:** (11.93 − 4.79) / 4.79 ≈ **+149.1 %**\n\nThe profit growth substantially outpaces revenue growth, indicating a large margin expansion (12.4 % → 21.2 %). This could reflect one-off items, cost restructuring, or a genuine step-change; the evidence set does not include a segment or note breakdown to distinguish these.\n\n## 3. Valuation Snapshot (at cutoff price 141.95 EGP)\n\n- Trailing P/E (FY2025 EPS 11.93): **≈ 11.9×**\n- Trailing P/E (FY2024 EPS 4.79): **≈ 29.6×**\n\nThe wide gap between the two P/E multiples is a direct consequence of the near-tripling of EPS in one year. Whether 11.9× is \"cheap\" or 29.6× is \"expensive\" depends on the sustainability of the FY2025 margin, which the evidence does not address.\n\n## 4. Balance Sheet & Cash Flow\n\n**No balance-sheet, cash-flow, or dividend data are present in the supplied evidence.** Key items that are missing and would be material for a 3–5-year, income-oriented investor:\n\n- Total debt / equity, interest coverage\n- Free cash flow and dividend per share / payout ratio\n- Working-capital position\n- Any contingent liabilities or off-balance-sheet items\n\nWithout these, leverage risk, dividend sustainability, and liquidity of the balance sheet **cannot be assessed**.\n\n## 5. Risk Flags\n\n| Risk | Detail |\n|---|---|\n| **Single-year data** | Only FY2024 and FY2025 are provided. No 3- or 5-year trend to judge cyclicality or the durability of the margin jump. |\n| **Margin spike** | Net margin nearly doubled in one year (12.4 % → 21.2 %). No note or segment data to explain whether this is structural or one-off. |\n| **EPS unit ambiguity** | Flagged above; if the \"L.E.(000)\" unit were (incorrectly) applied, EPS would be 11,930 EGP/share, which is implausible, but the conflict should be resolved. |\n| **No dividend data** | For an investor whose stated goal is *fixed income and modest growth*, the absence of DPS / payout-ratio evidence is a significant gap. |\n| **No balance-sheet data** | Leverage, liquidity, and solvency cannot be evaluated. |\n| **Redundant evidence IDs** | p6-35/p6-49 (NP 2025) and p6-50/p6-36 (NP 2024) are duplicates; no contradiction, but it confirms the figures are internally consistent. |\n\n## 6. Data-Quality Summary\n\n- All monetary figures are in **L.E. (000)** and have been converted to whole EGP (×1,000).\n- The EPS row carries a **unit-label conflict** (row says \"L.E./Share\"; page says \"L.E.(000)\"). Treated as per-share EGP; flagged AMBIGUOUS.\n- No restatements, audit qualifications, or going-concern notes are visible in the supplied excerpts.\n- The evidence covers **only the income statement** (revenue, net profit, EPS). No other financial-statement section is included.\n\n## 7. What the Evidence Does and Does Not Support\n\n**Supported by the data:**\n- ETEL generated positive and growing revenues and profits in FY2025.\n- Profitability improved markedly year-over-year.\n- At the cutoff price, the trailing P/E on FY2025 earnings is in the low-teens.\n\n**Not supported / not assessable from the data given:**\n- Whether the FY2025 profit level is sustainable over a 3–5-year horizon.\n- Dividend yield, payout ratio, or any income stream (critical for the investor's stated \"fixed income\" goal).\n- Balance-sheet strength, debt levels, or liquidity risk.\n- Sector or competitive risks, regulatory exposure, or FX sensitivity.\n- Any forward guidance or analyst estimates.\n\n---\n\n*This is an evidence-only analysis. No buy / sell / hold recommendation is made or implied. The decision agent should weigh the above against the investor's stated profile (fixed-income orientation, 3–5-year horizon, medium loss tolerance, 25,000 EGP cash, no current holdings) and any additional data not included here.*",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## 1. Investment Horizon – 3 to 5 years\n\nA medium-term window. Long enough to benefit from a modest equity or dividend component, but short enough that a deep, prolonged drawdown (e.g., a 30 %+ equity loss) would be hard to recover from within the stated period. This horizon favours a **balanced, income-tilted** allocation rather than a pure-growth or pure-cash strategy.\n\n## 2. Liquidity Needs – Covered\n\nThe investor explicitly maintains a **separate emergency fund**. That means the 25,000 EGP sitting in the portfolio is not earmarked for short-term emergencies and is **fully deployable** for the stated 3–5-year goal. No large cash buffer needs to be retained inside the investment sleeve.\n\n## 3. Loss Tolerance & Capacity – Both Medium\n\n| Dimension | Reading |\n|---|---|\n| **Willingness** (psychological) | Medium – can stomach a temporary dip but would be uncomfortable with a 20 %+ peak-to-trough loss on the whole portfolio. |\n| **Capacity** (financial) | Medium – a significant loss would be felt but not catastrophic; the investor can wait it out for a few years. |\n\n**Implication:** A portfolio that is 100 % equities is too volatile for this profile. A 100 % cash / short-term-deposit portfolio would miss the \"modest growth\" (تنمية بسيطة) part of the goal. A **roughly 60–70 % fixed-income / 30–40 % equity** split (or an equivalent mix of income-generating instruments) sits comfortably within medium tolerance.\n\n## 4. Current Concentration\n\n- **Holdings: none.** There is no single-stock, sector, or asset-class concentration to manage.\n- **Cash: 25,000 EGP (100 % of the portfolio).** The only \"concentration\" is in cash, which carries inflation/real-return risk over 3–5 years but no market risk.\n\nStarting from zero holdings means there is **nothing to sell or rebalance**; the entire decision is about how to deploy the cash.\n\n## 5. Deployable Capital\n\n| Item | Amount (EGP) |\n|---|---|\n| Cash on hand | 25,000 |\n| Holdings to liquidate | 0 |\n| **Total free / commitable cash** | **25,000** |\n\nBecause the emergency fund is separate, the investor could reasonably commit **the full 25,000 EGP** to the investment plan. A small residual (e.g., 1,000–2,500 EGP, roughly 5–10 %) could be kept as a tactical buffer for opportunistic purchases or to avoid a single all-in entry, but there is no structural liquidity constraint.\n\n## 6. What the Portfolio Allows / Does Not Allow\n\n- **Can be sold:** Nothing – no existing securities, bonds, or funds.\n- **Free cash:** 25,000 EGP, unrestricted.\n- **Constraints:** None beyond the investor's own medium risk appetite and the 3–5-year time frame.\n\n## 7. Suitability Summary (no specific action recommended)\n\n| Parameter | Assessment |\n|---|---|\n| Goal fit | Fixed income + modest growth → income-tilted balanced allocation |\n| Horizon fit | 3–5 yr → medium-duration bonds / dividend equities appropriate; very long-duration or speculative assets less so |\n| Liquidity fit | No in-portfolio liquidity constraint; full 25,000 EGP deployable |\n| Risk fit | Medium/medium → cap equity exposure at roughly one-third to two-fifths; avoid leveraged or single-name concentrated bets |\n| Concentration | No existing concentration; any new position should be diversified across at least 2–3 instruments or asset classes |\n| Capital available | 25,000 EGP, fully free |\n\n> **Note:** The ETEL share price (141.95 EGP) and the FY2025 financial data provided are noted for reference only. Per the scope of this assessment, no company-level financial analysis or specific buy/sell recommendation is made. The suitability parameters above define *what kind* of allocation fits this investor; the selection of specific instruments is a separate step."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 26.38,
+      "input_tokens": 1490,
+      "output_tokens": 3235,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 15.354,
+      "input_tokens": 1483,
+      "output_tokens": 1717,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 30.482,
+      "input_tokens": 4351,
+      "output_tokens": 4055,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 72.22
+}

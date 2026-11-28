@@ -1,0 +1,181 @@
+{
+  "case_id": "test_013",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "COMI",
+    "shares": 0,
+    "explanation": "The evidence confirms that COMI is growing its loan book rapidly (+47.9% YoY) and its net interest income is rising (+18.3% YoY), which is directionally positive for a growth-oriented investor. However, the evidence is not sufficient for a responsible buy decision on a 10-year horizon for the following reasons:\n\n1. **No net profit or profitability metric.** The condensed statements provide net interest income but no operating expenses, non-interest income, provisions, or net profit line. We cannot confirm the bank is actually profitable, let alone growing earnings.\n\n2. **EPS is AMBIGUOUS and cannot be used.** The page unit line states 'All amounts are shown in EGP thousands,' but applying that multiplier to the per-share EPS (18.25 / 14.72) yields an implausible 18,250 EGP/share. The conventional reading (18.25 EGP/share) is unverified. Without a reliable EPS, no P/E ratio can be computed, and no earnings-based valuation is possible.\n\n3. **No valuation anchor.** With no reliable EPS, no book value per share, no P/B, and no dividend data, there is no basis to judge whether 128 EGP/share is cheap, fair, or expensive.\n\n4. **No credit-quality or capital-adequacy data.** A 47.9% loan-book expansion in a high-inflation, high-rate environment raises default risk, but no NPL ratio, provision coverage, stage breakdown, CET1/Tier 1 ratio, or liquidity coverage ratio is provided. We cannot assess whether the growth is being underwritten with adequate capital.\n\n5. **Funding-structure concern unresolvable.** Deposit growth (+14.2%) lagged loan growth (+47.9%) by ~34 pp, pushing the LDR from ~35% to ~46%. The source of the incremental funding (wholesale debt, capital, other) is not identifiable from the condensed balance-sheet excerpt.\n\n6. **Only two years of condensed data.** No multi-year trend, no quarterly data, no segment breakdown. It is impossible to determine whether FY2025 represents a structural acceleration or a one-off.\n\nFor a 10-year, high-growth mandate, the investor needs confidence that (a) the company is profitable and growing earnings, (b) the stock is not overvalued, and (c) the balance sheet can sustain the growth without a credit or funding crisis. None of these can be established from the evidence provided. The prudent course is to hold the 15,000 EGP in cash until fuller financial statements (full audited annual report with complete P&L, balance sheet, capital ratios, and credit-quality disclosures) are available for assessment.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-07",
+        "stated_value": 507953766000.0,
+        "statement": "COMI loans and advances to customers, net, Dec 31 2025: 507,953,766 thousand EGP = 507,953,766,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-08",
+        "stated_value": 343542674000.0,
+        "statement": "COMI loans and advances to customers, net, Dec 31 2024: 343,542,674 thousand EGP = 343,542,674,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+        "stated_value": 1110395693000.0,
+        "statement": "COMI due to customers (deposits), Dec 31 2025: 1,110,395,693 thousand EGP = 1,110,395,693,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-29",
+        "stated_value": 972595958000.0,
+        "statement": "COMI due to customers (deposits), Dec 31 2024: 972,595,958 thousand EGP = 972,595,958,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107699631000.0,
+        "statement": "COMI net interest income, FY2025: 107,699,631 thousand EGP = 107,699,631,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-06",
+        "stated_value": 91064222000.0,
+        "statement": "COMI net interest income, FY2024: 91,064,222 thousand EGP = 91,064,222,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "Basic EPS FY2025: 18.25 [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] – AMBIGUOUS: page unit line says 'EGP thousands' but per-share EPS in thousands is implausible; cannot be used in any calculation or valuation.",
+      "Basic EPS FY2024: 14.72 [COMI-COMI_FY2025_consolidated_condensed_en-p5-40] – AMBIGUOUS: same unit-line conflict as above; cannot be used."
+    ],
+    "limitations": [
+      "No net profit, ROE, ROA, or cost-to-income ratio available.",
+      "No NPL ratio, provision coverage, or credit-stage breakdown.",
+      "No capital adequacy (CET1, Tier 1, Total) or liquidity coverage ratio.",
+      "No book value per share, P/B, or dividend data for valuation.",
+      "Only two balance-sheet dates from a condensed (not full audited) statement; no multi-year trend.",
+      "Source of incremental loan funding (wholesale vs. capital) is not identifiable.",
+      "EPS unit ambiguity prevents any earnings-based valuation."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "COMI",
+    "shares": 0,
+    "explanation": "The evidence confirms that COMI is growing its loan book rapidly (+47.9% YoY) and its net interest income is rising (+18.3% YoY), which is directionally positive for a growth-oriented investor. However, the evidence is not sufficient for a responsible buy decision on a 10-year horizon for the following reasons:\n\n1. **No net profit or profitability metric.** The condensed statements provide net interest income but no operating expenses, non-interest income, provisions, or net profit line. We cannot confirm the bank is actually profitable, let alone growing earnings.\n\n2. **Basic EPS is AMBIGUOUS and cannot be used.** The page unit line states 'All amounts are shown in EGP thousands,' but applying that multiplier to the per-share Basic EPS figures yields an implausibly large value per share. The conventional reading (a small per-share number in EGP) is unverified. Without a reliable EPS, no P/E ratio can be computed, and no earnings-based valuation is possible. This ambiguity means we cannot assess whether the stock is cheap or expensive on an earnings basis.\n\n3. **No valuation anchor.** With no reliable EPS, no book value per share, no P/B, and no dividend data, there is no basis to judge whether 128 EGP/share is cheap, fair, or expensive.\n\n4. **No credit-quality or capital-adequacy data.** A 47.9% loan-book expansion in a high-inflation, high-rate environment raises default risk, but no NPL ratio, provision coverage, stage breakdown, CET1/Tier 1 ratio, or liquidity coverage ratio is provided. We cannot assess whether the growth is being underwritten with adequate capital.\n\n5. **Funding-structure concern unresolvable.** Deposit growth (+14.2%) lagged loan growth (+47.9%) by roughly 34 percentage points, pushing the loan-to-deposit ratio from approximately 35% to approximately 46%. The source of the incremental funding (wholesale debt, capital, other) is not identifiable from the condensed balance-sheet excerpt.\n\n6. **Only two years of condensed data.** No multi-year trend, no quarterly data, no segment breakdown. It is impossible to determine whether FY2025 represents a structural acceleration or a one-off.\n\nFor a 10-year, high-growth mandate, the investor needs confidence that (a) the company is profitable and growing earnings, (b) the stock is not overvalued, and (c) the balance sheet can sustain the growth without a credit or funding crisis. None of these can be established from the evidence provided. The prudent course is to hold the 15,000 EGP in cash until fuller financial statements (full audited annual report with complete P&L, balance sheet, capital ratios, and credit-quality disclosures) are available for assessment.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-07",
+        "stated_value": 507953766000.0,
+        "statement": "COMI loans and advances to customers, net, Dec 31 2025: 507,953,766 thousand EGP = 507,953,766,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-08",
+        "stated_value": 343542674000.0,
+        "statement": "COMI loans and advances to customers, net, Dec 31 2024: 343,542,674 thousand EGP = 343,542,674,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+        "stated_value": 1110395693000.0,
+        "statement": "COMI due to customers (deposits), Dec 31 2025: 1,110,395,693 thousand EGP = 1,110,395,693,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-29",
+        "stated_value": 972595958000.0,
+        "statement": "COMI due to customers (deposits), Dec 31 2024: 972,595,958 thousand EGP = 972,595,958,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107699631000.0,
+        "statement": "COMI net interest income, FY2025: 107,699,631 thousand EGP = 107,699,631,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-06",
+        "stated_value": 91064222000.0,
+        "statement": "COMI net interest income, FY2024: 91,064,222 thousand EGP = 91,064,222,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "Basic EPS FY2025 [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] – AMBIGUOUS: the page unit line says 'All amounts are shown in EGP thousands,' but applying that multiplier to a per-share figure is implausible. Cannot be used in any calculation or valuation. This means no P/E ratio or earnings-based valuation is possible.",
+      "Basic EPS FY2024 [COMI-COMI_FY2025_consolidated_condensed_en-p5-40] – AMBIGUOUS: same unit-line conflict as above. Cannot be used. This means no year-over-year EPS growth rate can be computed."
+    ],
+    "limitations": [
+      "No net profit, ROE, ROA, or cost-to-income ratio available.",
+      "No NPL ratio, provision coverage, or credit-stage breakdown.",
+      "No capital adequacy (CET1, Tier 1, Total) or liquidity coverage ratio.",
+      "No book value per share, P/B, or dividend data for valuation.",
+      "Only two balance-sheet dates from a condensed (not full audited) statement; no multi-year trend.",
+      "Source of incremental loan funding (wholesale vs. capital) is not identifiable.",
+      "EPS unit ambiguity prevents any earnings-based valuation or growth-rate calculation."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"18.25\", which is 'Basic' (18.25), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"14.72\", which is 'Basic' (14.72), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"18.25\", which is 'Basic' (18.25), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n# COMI (Commercial International Bank of Egypt) – Evidence Analysis\n\n## 1. Profitability\n\n| Metric | FY2025 | FY2024 | YoY Δ |\n|---|---|---|---|\n| Net interest income | 107,699,631,000 EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-05] | 91,064,222,000 EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-06] | +18.3 % |\n| Basic EPS | 18.25 EGP/share [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] | 14.72 EGP/share [COMI-COMI_FY2025_consolidated_condensed_en-p5-40] | +24.0 % |\n\n> **AMBIGUOUS – EPS unit.** The page-level unit line reads *\"All amounts are shown in EGP thousands\"* [COMI-COMI_FY2025_consolidated_condensed_en-p5-39]. Applying that multiplier literally would give 18,250 EGP/share, which is implausible for an Egyptian bank and would make the P/E at 128 EGP/share ≈ 0.007×. The conventional reading is **18.25 EGP per share** (i.e., the \"thousands\" qualifier does not apply to the per-share EPS line). I flag this and do **not** compute a P/E ratio on the ambiguous figure. If the 18.25 EGP reading is correct, the implied P/E at 128.00 EGP/share would be ≈ 7.0×, but I treat that as unverified.\n\nNet interest income of ~107.7 bn EGP on a loan book of ~508 bn EGP implies a net interest margin in the low single digits, consistent with a large Egyptian commercial bank. No non-interest income, operating expenses, or net profit line is provided, so **return on equity, ROA, and cost-to-income cannot be assessed** from the evidence given.\n\n## 2. Growth\n\n| Item | FY2025 (000 EGP) | FY2024 (000 EGP) | YoY Δ |\n|---|---|---|---|\n| Loans & advances, net | 507,953,766 [COMI-COMI_FY2025_consolidated_condensed_en-p4-07] | 343,542,674 [COMI-COMI_FY2025_consolidated_condensed_en-p4-08] | **+47.9 %** |\n| Due to customers (deposits) | 1,110,395,693 [COMI-COMI_FY2025_consolidated_condensed_en-p4-28] | 972,595,958 [COMI-COMI_FY2025_consolidated_condensed_en-p4-29] | +14.2 % |\n| Net interest income | 107,699,631 [COMI-COMI_FY2025_consolidated_condensed_en-p5-05] | 91,064,222 [COMI-COMI_FY2025_consolidated_condensed_en-p5-06] | +18.3 % |\n| Basic EPS | 18.25 [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] | 14.72 [COMI-COMI_FY2025_consolidated_condensed_en-p5-40] | +24.0 % |\n\nKey observations:\n\n- **Loan growth (+47.9 %) is more than three times deposit growth (+14.2 %).** The bank is expanding its asset side far faster than its core funding base.\n- Net interest income growth (+18.3 %) sits between the two, suggesting the additional loans are earning a spread, but the margin may be compressing as the bank reaches for yield.\n- EPS growth (+24.0 %) outpacing NII growth (+18.3 %) hints at some operating leverage or a one-off benefit, but without a full P&L this cannot be confirmed.\n\n## 3. Balance Sheet / Funding Structure\n\n- **Loan-to-deposit ratio (LDR):**\n  - FY2025: 507,953,766 / 1,110,395,693 ≈ **45.7 %**\n  - FY2024: 343,542,674 / 972,595,958 ≈ **35.3 %**\n\n  The LDR rose by roughly 10 percentage points in one year. While 45.7 % is still well below the 100 % ceiling, the **direction and speed** of the increase are notable. The bank is either (a) funding new loans with wholesale/interbank borrowing, (b) drawing on its own capital, or (c) both. The evidence does not include a full balance sheet, so the source of the incremental funding is **not identifiable** from the data provided.\n\n- No total assets, equity, capital adequacy ratio, or liquidity coverage ratio is in the evidence set.\n\n## 4. Risks (as inferable from the evidence)\n\n| Risk | Evidence basis |\n|---|---|\n| **Credit / asset-quality risk** | Loan book grew ~48 % in one year. No NPL ratio, provision coverage, or stage-1/2/3 breakdown is provided. Rapid loan growth in Egypt's high-inflation, high-rate environment (2024-25) historically raises default risk. |\n| **Funding / liquidity risk** | Deposit growth (+14.2 %) lagged loan growth (+47.9 %) by ~34 pp. LDR jumped from ~35 % to ~46 %. If the gap is funded by short-term wholesale debt, rollover risk rises. No funding-maturity data is available. |\n| **Interest-rate risk** | NII grew 18.3 %, but the Egyptian CBE cut rates through 2025. A bank with a rapidly growing, likely floating-rate loan book benefits in a high-rate environment but is exposed to a rate-cut cycle. No duration or repricing-gap data is provided. |\n| **FX / macro risk** | COMI is an Egyptian bank; the EGP has been volatile. No FX-exposure breakdown is in the evidence. |\n| **Data / reporting risk** | The figures come from a **condensed** consolidated statement (not a full audited annual report). Several key lines (total assets, equity, NPLs, capital ratios, non-interest income, provisions) are absent. |\n\n## 5. Data Quality & Limitations\n\n- **Source:** \"Consolidated condensed\" financial statements (FY2025), p. 4-5. This is a summary, not the full set of financial statements.\n- **Periods:** Only two balance-sheet dates (Dec 31 2025 and Dec 31 2024) and two income-statement periods. No quarterly or interim data, no three-year trend.\n- **Unit ambiguity on EPS** (flagged above).\n- **Missing items critical for a 10-year growth assessment:**\n  - Total assets, total equity, book value per share\n  - Net profit, ROE, ROA\n  - Non-interest income, operating expenses, cost-to-income\n  - NPL ratio, provision coverage, credit-cost\n  - Capital adequacy (CET1, Tier 1, Total)\n  - Dividend history / payout ratio\n  - Segment or geographic breakdown\n  - Any going-concern or audit-modification language\n\nBecause of these gaps, **a full valuation or a 10-year growth projection cannot be built from the evidence provided.**\n\n## 6. Summary of What the Evidence Does and Does Not Show\n\n**What it shows:**\n- COMI is growing its loan book aggressively (+47.9 % YoY) and its NII is rising (+18.3 %).\n- EPS is up ~24 % YoY (subject to the unit caveat).\n- The funding base (deposits) is growing, but much more slowly than the asset side.\n\n**What it does not show (and therefore cannot be assessed):**\n- Whether the growth is profitable on a net basis (no net profit, no ROE).\n- Whether the rapid loan growth is being underwritten with adequate capital and provisions.\n- The quality of the incremental loans (sector, tenor, collateral).\n- The sustainability of the funding model.\n- Any multi-year trend to judge whether FY2025 is a one-off acceleration or a structural shift.\n\n---\n\n*No action recommendation is made here. The above is a factual analysis of the provided evidence only. The decision agent should weigh these findings against the investor's 10-year high-growth mandate, risk tolerance, and the 15,000 EGP cash position before any allocation decision.*",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## 1. Horizon & Growth Objective\n\nA **10-year horizon** with a stated goal of **high growth** is well suited to equity-type, growth-oriented assets. The long time frame allows the investor to ride out multi-year drawdowns and benefit from compounding, which is the primary engine of equity growth. There is no tension between the horizon and the objective.\n\n## 2. Liquidity Needs\n\nThe investor reports **no withdrawals planned** over the horizon. This means:\n\n- No portion of the portfolio needs to be ring-fenced for near-term spending.\n- The entire cash balance can, in principle, be committed to longer-duration or less-liquid instruments without creating a funding gap.\n- A small emergency reserve (e.g., 1–2 months of living expenses) is still prudent as a matter of personal finance, but the profile as stated does not impose a liquidity constraint on the investment sleeve.\n\n## 3. Loss Tolerance & Capacity\n\n- **Willingness to accept losses: high.** The investor is psychologically comfortable with significant interim drawdowns (e.g., 30–50 %+ on a position).\n- **Financial capacity to withstand losses: high.** Even a severe loss on the full 15,000 EGP would not impair the investor's ability to meet obligations or maintain their standard of living.\n\nTogether, these two factors support a **high-risk / high-growth allocation** with minimal (or no) defensive ballast.\n\n## 4. Current Concentration\n\nThe portfolio holds **no securities**—it is 100 % cash. There is therefore:\n\n- No single-issuer concentration.\n- No sector or geographic concentration.\n- No existing position that would need to be trimmed or rebalanced.\n\nThe \"concentration\" problem is the inverse of the usual one: the portfolio is entirely **uninvested**, so the full growth objective is currently unmet.\n\n## 5. What the Portfolio Allows\n\n| Item | Detail |\n|---|---|\n| **Cash available** | **15,000 EGP** (the entire portfolio) |\n| **Holdings that can be sold** | None – there are no positions to liquidate |\n| **Free / deployable cash** | **15,000 EGP** (no liquidity constraint identified) |\n| **Illustrative share count at COMI price (128 EGP)** | 117 whole shares (15,000 ÷ 128 ≈ 117.19), leaving ≈ 24 EGP residual cash |\n\nBecause there are no existing holdings, the investor is starting from a blank slate; every EGP of the 15,000 is free to be allocated to new positions.\n\n## 6. Suitability Summary\n\n| Dimension | Assessment |\n|---|---|\n| Horizon vs. objective | 10 yr is ample for a high-growth equity strategy |\n| Liquidity constraint | None stated; full 15,000 EGP is deployable |\n| Risk capacity & willingness | Both high → supports aggressive, growth-tilted allocation |\n| Current concentration | 100 % cash; no diversification yet, no over-weight to correct |\n| Capital to commit | Up to **15,000 EGP** (≈ 117 shares of a 128 EGP stock, or split across several names) |\n\n**Bottom line:** The investor's profile—long horizon, no liquidity needs, high loss tolerance and capacity, and a currently all-cash portfolio—makes them well suited to a **fully invested, growth-oriented equity allocation** with the entire 15,000 EGP. The portfolio currently constrains nothing; the only \"limit\" is the size of the cash balance itself. No existing positions need to be sold or restructured.\n\n*This is a suitability assessment only. It does not constitute a recommendation to buy, sell, or hold any specific security.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 29.172,
+      "input_tokens": 1501,
+      "output_tokens": 4117,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 11.888,
+      "input_tokens": 1494,
+      "output_tokens": 1517,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 24.365,
+      "input_tokens": 4769,
+      "output_tokens": 3474,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 26.454,
+      "input_tokens": 3696,
+      "output_tokens": 3584,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 91.883
+}

@@ -1,0 +1,73 @@
+{
+  "case_id": "test_007",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "CIB",
+    "shares": 0,
+    "explanation": "The evidence provided in this report is for a company with the ticker COMI, not for CIB (Commercial International Bank). The financials shown—net profit of 82,258,815,000 EGP for FY2025, total equity of 231,486,342,000 EGP, customer deposits of 1,110,395,693,000 EGP, and a basic EPS of 18.25 EGP—belong to COMI. I have no verified financial data, share price, or valuation metrics for CIB in the evidence supplied, so I cannot responsibly assess whether CIB shares are attractive at any price. Without CIB-specific evidence (income statement, balance sheet, EPS, share price, dividend history, etc.), any buy/hold/sell call on CIB would be guesswork. Additionally, even if the evidence had been for CIB, concentrating the entire 200,000 EGP bonus into a single stock would be inconsistent with your medium risk tolerance and 5-year horizon; a diversified approach (or at least a partial allocation) would better protect you against company-specific risk. Please provide CIB-specific financial evidence and its current share price so a meaningful recommendation can be made.",
+    "claims": [],
+    "unused_figures": [
+      "COMI Net profit FY2025: 82,258,815,000 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-33)",
+      "COMI Net profit FY2024: 55,256,732,000 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-34)",
+      "COMI Basic EPS FY2025: 18.25 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-39)",
+      "COMI Basic EPS FY2024: 14.72 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-40)",
+      "COMI Total equity and net profit FY2025: 231,486,342,000 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p4-54)",
+      "COMI Total equity and net profit FY2024: 152,636,277,000 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p4-55)",
+      "COMI Due to customers FY2025: 1,110,395,693,000 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p4-28)",
+      "COMI Due to customers FY2024: 972,595,958,000 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p4-29)"
+    ],
+    "limitations": [
+      "All evidence provided pertains to COMI, not CIB; no CIB-specific financials, share price, or valuation data are available.",
+      "The investor's statement that 'CIB is the biggest private bank' is not verifiable from the supplied evidence.",
+      "No dividend, payout-ratio, or forward-earnings data for CIB is available to assess total return over a 5-year horizon.",
+      "This is guidance, not a guarantee of returns; even with full evidence, equity investments carry the risk of capital loss."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "CIB",
+    "shares": 0,
+    "explanation": "The evidence provided in this report is for a company with the ticker COMI, not for CIB (Commercial International Bank). The financials shown—net profit of 82,258,815,000 EGP for FY2025, total equity of 231,486,342,000 EGP, customer deposits of 1,110,395,693,000 EGP, and a basic EPS of 18.25 EGP—belong to COMI. I have no verified financial data, share price, or valuation metrics for CIB in the evidence supplied, so I cannot responsibly assess whether CIB shares are attractive at any price. Without CIB-specific evidence (income statement, balance sheet, EPS, share price, dividend history, etc.), any buy/hold/sell call on CIB would be guesswork. Additionally, even if the evidence had been for CIB, concentrating the entire 200,000 EGP bonus into a single stock would be inconsistent with your medium risk tolerance and 5-year horizon; a diversified approach (or at least a partial allocation) would better protect you against company-specific risk. Please provide CIB-specific financial evidence and its current share price so a meaningful recommendation can be made.",
+    "claims": [],
+    "unused_figures": [
+      "COMI Net profit FY2025: 82,258,815,000 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-33)",
+      "COMI Net profit FY2024: 55,256,732,000 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-34)",
+      "COMI Basic EPS FY2025: 18.25 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-39)",
+      "COMI Basic EPS FY2024: 14.72 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-40)",
+      "COMI Total equity and net profit FY2025: 231,486,342,000 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p4-54)",
+      "COMI Total equity and net profit FY2024: 152,636,277,000 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p4-55)",
+      "COMI Due to customers FY2025: 1,110,395,693,000 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p4-28)",
+      "COMI Due to customers FY2024: 972,595,958,000 EGP (evidence COMI-COMI_FY2025_consolidated_condensed_en-p4-29)"
+    ],
+    "limitations": [
+      "All evidence provided pertains to COMI, not CIB; no CIB-specific financials, share price, or valuation data are available.",
+      "The investor's statement that 'CIB is the biggest private bank' is not verifiable from the supplied evidence.",
+      "No dividend, payout-ratio, or forward-earnings data for CIB is available to assess total return over a 5-year horizon.",
+      "This is guidance, not a guarantee of returns; even with full evidence, equity investments carry the risk of capital loss."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 200000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 16.286,
+      "input_tokens": 1787,
+      "output_tokens": 2277,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 16.289
+}

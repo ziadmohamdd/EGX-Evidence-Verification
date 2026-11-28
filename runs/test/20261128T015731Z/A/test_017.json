@@ -1,0 +1,82 @@
+{
+  "case_id": "test_017",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "COMI",
+    "shares": 117,
+    "explanation": "COMI (CIB) earned far more than EFID (Edita) in 2025. COMI's net profit was 82,258,815,000 EGP (printed as 82,258,815 in EGP thousands), while EFID's net profit was 2,695,301,670 EGP. COMI out-earned EFID by 79,563,513,330 EGP — roughly 30 times more in absolute terms. Since your stated goal is to pick the more profitable company, COMI is the clear choice on the evidence provided.\n\nI recommend buying 117 shares of COMI at 128 EGP each (cost: 14,976 EGP), leaving 15,024 EGP in cash. This keeps COMI at 49.9% of your total 30,000 EGP portfolio, respecting the 50% single-position cap. Buying more than 117 shares would push the position above half the portfolio.\n\nImportant caveats: (1) We only have net-profit figures for two years; there is no revenue, margin, return-on-equity, or balance-sheet data to judge profitability quality or sustainability. (2) A larger absolute profit does not guarantee a better share-price return over five years — valuation, growth, and sector risk all matter. (3) Both companies showed year-over-year profit growth (COMI: 55.3 B → 82.3 B; EFID: 1.61 B → 2.70 B), which is encouraging, but one year of data is thin for a five-year horizon. (4) With medium loss tolerance, concentrating nearly half your capital in a single stock carries meaningful risk. Consider whether you would prefer to split between the two or keep more cash until you have additional data (revenue, dividends, debt levels). This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year ended Dec 31, 2025: 82,258,815 (EGP thousands) = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID net profit for the year ended 31 December 2025: 2,695,301,670 EGP"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Only net-profit figures are available; no revenue, profit margin, ROE, debt, or dividend data to assess the quality or sustainability of profitability.",
+      "Two years of data (2024, 2025) is limited for a five-year investment horizon.",
+      "Absolute profit size does not directly translate to share-price performance; valuation and growth prospects are unknown from the given evidence.",
+      "No information on share count, market capitalisation, or sector risk for either company."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "COMI",
+    "shares": 117,
+    "explanation": "COMI (CIB) earned far more than EFID (Edita) in 2025. COMI's net profit was 82,258,815,000 EGP (printed as 82,258,815 in EGP thousands), while EFID's net profit was 2,695,301,670 EGP. COMI out-earned EFID by 79,563,513,330 EGP — roughly 30 times more in absolute terms. Since your stated goal is to pick the more profitable company, COMI is the clear choice on the evidence provided.\n\nI recommend buying 117 shares of COMI at 128 EGP each (cost: 14,976 EGP), leaving 15,024 EGP in cash. This keeps COMI at 49.9% of your total 30,000 EGP portfolio, respecting the 50% single-position cap. Buying more than 117 shares would push the position above half the portfolio.\n\nImportant caveats: (1) We only have net-profit figures for two years; there is no revenue, margin, return-on-equity, or balance-sheet data to judge profitability quality or sustainability. (2) A larger absolute profit does not guarantee a better share-price return over five years — valuation, growth, and sector risk all matter. (3) Both companies showed year-over-year profit growth (COMI: 55.3 B → 82.3 B; EFID: 1.61 B → 2.70 B), which is encouraging, but one year of data is thin for a five-year horizon. (4) With medium loss tolerance, concentrating nearly half your capital in a single stock carries meaningful risk. Consider whether you would prefer to split between the two or keep more cash until you have additional data (revenue, dividends, debt levels). This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year ended Dec 31, 2025: 82,258,815 (EGP thousands) = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID net profit for the year ended 31 December 2025: 2,695,301,670 EGP"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Only net-profit figures are available; no revenue, profit margin, ROE, debt, or dividend data to assess the quality or sustainability of profitability.",
+      "Two years of data (2024, 2025) is limited for a five-year investment horizon.",
+      "Absolute profit size does not directly translate to share-price performance; valuation and growth prospects are unknown from the given evidence.",
+      "No information on share count, market capitalisation, or sector risk for either company."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15024.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 117
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 17.403,
+      "input_tokens": 1504,
+      "output_tokens": 2430,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 17.405
+}

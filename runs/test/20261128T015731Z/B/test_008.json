@@ -1,0 +1,101 @@
+{
+  "case_id": "test_008",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "TMGH",
+    "shares": 300,
+    "explanation": "You need 40,000 EGP within 2 months to pay your child's university fees, and your total portfolio (2,000 EGP cash + 300 TMGH shares × 82.50 EGP = 24,750 EGP) is only 26,750 EGP. You are already short by 13,250 EGP even if you liquidate everything today. Given your very low willingness and ability to accept losses, and the hard 2-month deadline, holding a stock exposes you to the risk that the price drops and your shortfall grows. The evidence shows TMGH is fundamentally strong—FY2025 consolidated net profit of 18,201,981,482 EGP (up from 12,769,517,325 EGP in FY2024) and EPS of 6.98 EGP (up from 4.38 EGP)—but strong fundamentals do not guarantee the share price will be stable or rising over the next 8 weeks. For a specific, non-negotiable payment due in 2 months, converting your shares to cash now is the prudent step. Selling all 300 shares at 82.50 EGP gives you 24,750 EGP, bringing your cash to 26,750 EGP. You will still need to find the remaining 13,250 EGP from another source (savings, family, a short-term loan, etc.), but at least the portion you do have is locked in as cash and cannot be eroded by a market move. This is guidance, not a guarantee: the stock could in fact rise over the next two months, but the downside risk is incompatible with your stated constraints. I recommend you sell the full 300 shares as soon as practicable to secure the cash.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH consolidated net profit for FY2025 is 18,201,981,482 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+        "stated_value": 12769517325.0,
+        "statement": "TMGH consolidated net profit for FY2024 (restated) is 12,769,517,325 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH consolidated EPS for FY2025 is 6.98 EGP per share."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "TMGH consolidated EPS for FY2024 (restated) is 4.38 EGP per share."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The evidence covers only FY2025 and FY2024 consolidated results; there is no forward-looking data, no information on upcoming dividends, no sector or macro context, and no indication of near-term price drivers.",
+      "The 2-month stock price path is unknown; the recommendation is based on risk management for a fixed payment obligation, not on a price forecast.",
+      "Even after selling all shares, the investor will still be 13,250 EGP short of the 40,000 EGP needed; this shortfall must be addressed from outside the portfolio."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "TMGH",
+    "shares": 300,
+    "explanation": "You need 40,000 EGP within 2 months to pay your child's university fees, and your total portfolio (2,000 EGP cash + 300 TMGH shares × 82.50 EGP = 24,750 EGP) is only 26,750 EGP. You are already short by 13,250 EGP even if you liquidate everything today. Given your very low willingness and ability to accept losses, and the hard 2-month deadline, holding a stock exposes you to the risk that the price drops and your shortfall grows. The evidence shows TMGH is fundamentally strong—FY2025 consolidated net profit of 18,201,981,482 EGP (up from 12,769,517,325 EGP in FY2024) and EPS of 6.98 EGP (up from 4.38 EGP)—but strong fundamentals do not guarantee the share price will be stable or rising over the next 8 weeks. For a specific, non-negotiable payment due in 2 months, converting your shares to cash now is the prudent step. Selling all 300 shares at 82.50 EGP gives you 24,750 EGP, bringing your cash to 26,750 EGP. You will still need to find the remaining 13,250 EGP from another source (savings, family, a short-term loan, etc.), but at least the portion you do have is locked in as cash and cannot be eroded by a market move. This is guidance, not a guarantee: the stock could in fact rise over the next two months, but the downside risk is incompatible with your stated constraints. I recommend you sell the full 300 shares as soon as practicable to secure the cash.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH consolidated net profit for FY2025 is 18,201,981,482 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+        "stated_value": 12769517325.0,
+        "statement": "TMGH consolidated net profit for FY2024 (restated) is 12,769,517,325 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH consolidated EPS for FY2025 is 6.98 EGP per share."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "TMGH consolidated EPS for FY2024 (restated) is 4.38 EGP per share."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The evidence covers only FY2025 and FY2024 consolidated results; there is no forward-looking data, no information on upcoming dividends, no sector or macro context, and no indication of near-term price drivers.",
+      "The 2-month stock price path is unknown; the recommendation is based on risk management for a fixed payment obligation, not on a price forecast.",
+      "Even after selling all shares, the investor will still be 13,250 EGP short of the 40,000 EGP needed; this shortfall must be addressed from outside the portfolio."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 26750.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 16.018,
+      "input_tokens": 1116,
+      "output_tokens": 2348,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 16.021
+}

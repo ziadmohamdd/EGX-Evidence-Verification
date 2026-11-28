@@ -1,0 +1,152 @@
+{
+  "case_id": "test_009",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "COMI",
+    "shares": 0,
+    "explanation": "Both companies in your portfolio show strong earnings growth in FY2025, which supports maintaining your current positions. EFID's consolidated net profit rose from 1,606,727,698 EGP to 2,695,301,670 EGP (≈68% growth), and its EPS doubled from 1.09 to 2.18 EGP. COMI's net profit grew from 55,256,732,000 EGP to 82,258,815,000 EGP (≈49% growth), with basic EPS rising from 14.72 to 18.25 EGP. At current prices, the implied trailing P/E ratios are roughly 9.4× for EFID (20.40 / 2.18) and 7.0× for COMI (128.00 / 18.25), which are not stretched.\n\nHowever, I must be transparent about the limits of this evidence and the risks relevant to your profile:\n\n1. **Limited data depth.** The evidence provides only one year of profit and EPS for each company. There is no balance-sheet information (debt, liquidity), no cash-flow statement, no dividend history, no revenue breakdown, and no sector or competitive context. For a retiree with low risk tolerance and low ability to absorb losses, this is a thin basis on which to make a confident buy or sell decision.\n\n2. **Concentration risk.** COMI represents 19,200 EGP of a 36,440 EGP portfolio (≈52.7%), already above the 50% diversification threshold. EFID is ≈33.6% and cash ≈13.7%. If you wish to reduce risk, trimming a small number of COMI shares (e.g., 8–10 shares, ≈1,024–1,280 EGP) would bring COMI below 50% and add a modest cash buffer. The evidence does not, however, give a strong reason to sell COMI on fundamentals—it is growing and trading at a modest P/E.\n\n3. **Sustainability of growth.** A single year of 49–68% profit growth could reflect a cyclical upswing, a one-off item, or a structural improvement. Without a second or third year of data, it is not possible to confirm the trend is durable.\n\n4. **No dividend information.** For a 3-year pre-retirement horizon, income (dividends) can reduce the need to sell shares for cash. The evidence contains no dividend data, so this cannot be assessed.\n\n**Recommendation: Hold.** The available evidence is consistent with both companies being profitable and growing, and the valuations are not excessive. There is no evidence of deterioration that would justify selling, and your cash position (5,000 EGP) plus the separate emergency fund provide a liquidity cushion. I would not recommend buying more equity at this stage given your stated goal of lowering risk.\n\n**Caveats and next steps:** Before your next review, try to obtain (a) at least two more years of financials to confirm the growth trend, (b) balance-sheet data to check leverage, (c) dividend history and payout policy, and (d) any sector-specific risk commentary. If COMI's weight remains above 50% at the next rebalancing, consider a small trim to restore diversification. This guidance is not a guarantee of returns; equity prices can fall even when earnings grow, and the limited evidence means there is meaningful uncertainty in this assessment.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2025 (EGP per share)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2024 (EGP per share)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year ended Dec 31 2025 (82,258,815 thousand EGP)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year ended Dec 31 2024 (55,256,732 thousand EGP)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "COMI basic EPS for the year ended Dec 31 2025 (EGP per share; table unit line says 'EGP thousands' but the per-share figure is interpreted as EGP)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+        "stated_value": 14.72,
+        "statement": "COMI basic EPS for the year ended Dec 31 2024 (EGP per share; table unit line says 'EGP thousands' but the per-share figure is interpreted as EGP)"
+      }
+    ],
+    "unused_figures": [
+      "COMI basic EPS figures (18.25 and 14.72) carry a table-level unit line of 'EGP thousands' which is ambiguous for a per-share metric. I interpreted them as EGP per share (the only economically sensible reading, since 18,250 EGP/share would imply a P/E of 0.007×). If the unit were literally thousands, the P/E calculation for COMI would be invalid and the valuation comparison would be affected."
+    ],
+    "limitations": [
+      "Only one fiscal year of profit and EPS data is available for each company; no multi-year trend can be confirmed.",
+      "No balance-sheet, cash-flow, or dividend data is provided, so leverage, liquidity, and income sustainability cannot be assessed.",
+      "No sector, competitive, or macroeconomic context is available.",
+      "The COMI EPS unit line is ambiguous (see unused_figures); the P/E estimate for COMI depends on the interpretation.",
+      "No forward guidance, analyst estimates, or market-valuation history is included."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "COMI",
+    "shares": 0,
+    "explanation": "Both companies in your portfolio show strong earnings growth in FY2025, which supports maintaining your current positions. EFID's consolidated net profit rose from 1,606,727,698 EGP to 2,695,301,670 EGP (≈68% growth), and its EPS doubled from 1.09 to 2.18 EGP. COMI's net profit grew from 55,256,732,000 EGP to 82,258,815,000 EGP (≈49% growth), with basic EPS rising from 14.72 to 18.25 EGP. At current prices, the implied trailing P/E ratios are roughly 9.4× for EFID (20.40 / 2.18) and 7.0× for COMI (128.00 / 18.25), which are not stretched.\n\nHowever, I must be transparent about the limits of this evidence and the risks relevant to your profile:\n\n1. **Limited data depth.** The evidence provides only one year of profit and EPS for each company. There is no balance-sheet information (debt, liquidity), no cash-flow statement, no dividend history, no revenue breakdown, and no sector or competitive context. For a retiree with low risk tolerance and low ability to absorb losses, this is a thin basis on which to make a confident buy or sell decision.\n\n2. **Concentration risk.** COMI represents 19,200 EGP of a 36,440 EGP portfolio (≈52.7%), already above the 50% diversification threshold. EFID is ≈33.6% and cash ≈13.7%. If you wish to reduce risk, trimming a small number of COMI shares (e.g., 8–10 shares, ≈1,024–1,280 EGP) would bring COMI below 50% and add a modest cash buffer. The evidence does not, however, give a strong reason to sell COMI on fundamentals—it is growing and trading at a modest P/E.\n\n3. **Sustainability of growth.** A single year of 49–68% profit growth could reflect a cyclical upswing, a one-off item, or a structural improvement. Without a second or third year of data, it is not possible to confirm the trend is durable.\n\n4. **No dividend information.** For a 3-year pre-retirement horizon, income (dividends) can reduce the need to sell shares for cash. The evidence contains no dividend data, so this cannot be assessed.\n\n**Recommendation: Hold.** The available evidence is consistent with both companies being profitable and growing, and the valuations are not excessive. There is no evidence of deterioration that would justify selling, and your cash position (5,000 EGP) plus the separate emergency fund provide a liquidity cushion. I would not recommend buying more equity at this stage given your stated goal of lowering risk.\n\n**Caveats and next steps:** Before your next review, try to obtain (a) at least two more years of financials to confirm the growth trend, (b) balance-sheet data to check leverage, (c) dividend history and payout policy, and (d) any sector-specific risk commentary. If COMI's weight remains above 50% at the next rebalancing, consider a small trim to restore diversification. This guidance is not a guarantee of returns; equity prices can fall even when earnings grow, and the limited evidence means there is meaningful uncertainty in this assessment.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2025 (EGP per share)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2024 (EGP per share)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year ended Dec 31 2025 (82,258,815 thousand EGP)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year ended Dec 31 2024 (55,256,732 thousand EGP)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "COMI basic EPS for the year ended Dec 31 2025 (EGP per share; table unit line says 'EGP thousands' but the per-share figure is interpreted as EGP)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+        "stated_value": 14.72,
+        "statement": "COMI basic EPS for the year ended Dec 31 2024 (EGP per share; table unit line says 'EGP thousands' but the per-share figure is interpreted as EGP)"
+      }
+    ],
+    "unused_figures": [
+      "COMI basic EPS figures (18.25 and 14.72) carry a table-level unit line of 'EGP thousands' which is ambiguous for a per-share metric. I interpreted them as EGP per share (the only economically sensible reading, since 18,250 EGP/share would imply a P/E of 0.007×). If the unit were literally thousands, the P/E calculation for COMI would be invalid and the valuation comparison would be affected."
+    ],
+    "limitations": [
+      "Only one fiscal year of profit and EPS data is available for each company; no multi-year trend can be confirmed.",
+      "No balance-sheet, cash-flow, or dividend data is provided, so leverage, liquidity, and income sustainability cannot be assessed.",
+      "No sector, competitive, or macroeconomic context is available.",
+      "The COMI EPS unit line is ambiguous (see unused_figures); the P/E estimate for COMI depends on the interpretation.",
+      "No forward guidance, analyst estimates, or market-valuation history is included."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 5000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 600
+      },
+      {
+        "ticker": "COMI",
+        "shares": 150
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 41.062,
+      "input_tokens": 2047,
+      "output_tokens": 5691,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 41.064
+}

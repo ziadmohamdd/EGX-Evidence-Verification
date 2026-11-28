@@ -1,0 +1,124 @@
+{
+  "case_id": "test_022",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor asked for ETEL's P/E at the 18 Nov 2026 price. Using the verified EPS of 11.93 EGP/share (FY 2025, row unit 'L.E. / Share') and the share price of 141.95 EGP, the trailing P/E is 141.95 / 11.93 ≈ 11.90×. Both analysts confirm this calculation.\n\nHowever, I cannot responsibly recommend a buy on the basis of this single ratio for three reasons:\n\n1. Data-quality red flag (AMBIGUOUS): Net profit as printed falls from 10,111,328,000 EGP (FY 2024) to 578,063,000 EGP (FY 2025) – a ~94 % decline – yet EPS rises from 4.79 to 11.93 (+149 %). These two sets of verified figures are internally inconsistent unless there was an unexplained, very large change in the weighted-average share count (e.g., a major buyback or share consolidation). The financial analyst flags this as AMBIGUOUS. Until Note 15 (share-count reconciliation) is reviewed, the earnings base underlying the P/E cannot be fully trusted.\n\n2. No valuation context: The investor's stated goal is to find a 'fairly priced' stock. A P/E of ~11.9× is a single data point. The evidence provides no peer P/E multiples, no historical P/E range for ETEL, no FY 2026 earnings estimate, no dividend yield, and no growth-rate data. Without these, I cannot judge whether 11.9× is cheap, fair, or expensive relative to alternatives.\n\n3. Concentration risk: The portfolio is 100 % cash (25,000 EGP). Buying ETEL would make it a single-name, 100 %-concentrated position, which the suitability analyst flags as the main structural risk for a medium-risk-tolerance investor. A partial position (e.g., 10,000–15,000 EGP) would be more appropriate, but I lack the valuation context to justify even a partial entry at this time.\n\nWhat is missing for a responsible buy decision: (a) resolution of the net-profit / EPS inconsistency (Note 15 share-count detail), (b) peer or historical P/E benchmarks, (c) forward earnings or growth guidance, and (d) dividend information. I recommend the investor obtain these before committing capital.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "Basic and diluted EPS FY 2025 = 11.93 EGP per share (row unit 'L.E. / Share' overrides page-level 'L.E.(000)')"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "Basic and diluted EPS FY 2024 = 4.79 EGP per share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 578063000.0,
+        "statement": "Net profit FY 2025 = 578,063 × 1,000 = 578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit FY 2024 = 10,111,328 × 1,000 = 10,111,328,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "Net profit FY 2025 (578,063,000 EGP) and Net profit FY 2024 (10,111,328,000 EGP) are flagged AMBIGUOUS because they are internally inconsistent with the EPS trend (net profit falls ~94 % while EPS rises ~149 %). They are not used in the P/E calculation (which relies on price and EPS only), but the inconsistency undermines confidence in the earnings base and therefore in the P/E as a reliable valuation metric. No conclusion about whether 11.9× is 'fair' can be drawn until the share-count reconciliation (Note 15) is reviewed."
+    ],
+    "limitations": [
+      "The P/E of ~11.9× is a trailing figure based on FY 2025 EPS; no forward or normalized P/E can be computed from the available evidence.",
+      "The net-profit / EPS inconsistency is unresolved; the P/E should be treated as indicative only.",
+      "No peer, sector, or historical P/E benchmarks are available in the evidence to assess whether 11.9× is 'fairly priced.'",
+      "No dividend, growth, or balance-sheet data is provided to support a broader valuation judgment.",
+      "This is guidance, not a guarantee of returns. Past earnings do not ensure future performance."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor asked for ETEL's P/E at the 18 Nov 2026 price. Using the verified EPS of 11.93 EGP/share (FY 2025, row unit 'L.E. / Share') and the share price of 141.95 EGP, the trailing P/E is 141.95 / 11.93 ≈ 11.90×. Both analysts confirm this calculation.\n\nHowever, I cannot responsibly recommend a buy on the basis of this single ratio for three reasons:\n\n1. Data-quality red flag (AMBIGUOUS): Net profit as printed falls from 10,111,328,000 EGP (FY 2024) to 578,063,000 EGP (FY 2025) – a ~94 % decline – yet EPS rises from 4.79 to 11.93 (+149 %). These two sets of verified figures are internally inconsistent unless there was an unexplained, very large change in the weighted-average share count (e.g., a major buyback or share consolidation). The financial analyst flags this as AMBIGUOUS. Until Note 15 (share-count reconciliation) is reviewed, the earnings base underlying the P/E cannot be fully trusted.\n\n2. No valuation context: The investor's stated goal is to find a 'fairly priced' stock. A P/E of ~11.9× is a single data point. The evidence provides no peer P/E multiples, no historical P/E range for ETEL, no FY 2026 earnings estimate, no dividend yield, and no growth-rate data. Without these, I cannot judge whether 11.9× is cheap, fair, or expensive relative to alternatives.\n\n3. Concentration risk: The portfolio is 100 % cash (25,000 EGP). Buying ETEL would make it a single-name, 100 %-concentrated position, which the suitability analyst flags as the main structural risk for a medium-risk-tolerance investor. A partial position (e.g., 10,000–15,000 EGP) would be more appropriate, but I lack the valuation context to justify even a partial entry at this time.\n\nWhat is missing for a responsible buy decision: (a) resolution of the net-profit / EPS inconsistency (Note 15 share-count detail), (b) peer or historical P/E benchmarks, (c) forward earnings or growth guidance, and (d) dividend information. I recommend the investor obtain these before committing capital.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "Basic and diluted EPS FY 2025 = 11.93 EGP per share (row unit 'L.E. / Share' overrides page-level 'L.E.(000)')"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "Basic and diluted EPS FY 2024 = 4.79 EGP per share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 578063000.0,
+        "statement": "Net profit FY 2025 = 578,063 × 1,000 = 578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit FY 2024 = 10,111,328 × 1,000 = 10,111,328,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "Net profit FY 2025 (578,063,000 EGP) and Net profit FY 2024 (10,111,328,000 EGP) are flagged AMBIGUOUS because they are internally inconsistent with the EPS trend (net profit falls ~94 % while EPS rises ~149 %). They are not used in the P/E calculation (which relies on price and EPS only), but the inconsistency undermines confidence in the earnings base and therefore in the P/E as a reliable valuation metric. No conclusion about whether 11.9× is 'fair' can be drawn until the share-count reconciliation (Note 15) is reviewed."
+    ],
+    "limitations": [
+      "The P/E of ~11.9× is a trailing figure based on FY 2025 EPS; no forward or normalized P/E can be computed from the available evidence.",
+      "The net-profit / EPS inconsistency is unresolved; the P/E should be treated as indicative only.",
+      "No peer, sector, or historical P/E benchmarks are available in the evidence to assess whether 11.9× is 'fairly priced.'",
+      "No dividend, growth, or balance-sheet data is provided to support a broader valuation judgment.",
+      "This is guidance, not a guarantee of returns. Past earnings do not ensure future performance."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 25000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n# Telecom Egypt (ETEL) – Price-to-Earnings Ratio\n\n## Calculation\n\n| Input | Value | Source |\n|---|---|---|\n| Share price (cutoff 2026-11-18) | 141.95 EGP | Prompt (market data) |\n| Basic & diluted EPS, FY 2025 | 11.93 EGP / share | [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] |\n\n**P/E = 141.95 ÷ 11.93 ≈ 11.90×**\n\n## Evidence Detail\n\n- **EPS (FY 2025):** The row is labelled *\"Basic and diluted earning per share for the year (L.E. / Share) (15)\"* and prints **11.93** under the 31/12/2025 column [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55]. The row's own unit tag \"(L.E. / Share)\" overrides the page-level \"L.E.(000)\" heading, so the figure is already in EGP per share – no scaling is applied.\n- **EPS (FY 2024, for context):** 4.79 EGP / share [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56], implying a ~149 % year-on-year EPS increase.\n- **Net profit (FY 2025):** 578,063 × 1,000 = **578,063,000 EGP** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35].\n- **Net profit (FY 2024):** 10,111,328 × 1,000 = **10,111,328,000 EGP** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50].\n\n## Data-Quality Flags\n\n1. **Net-profit vs. EPS inconsistency (AMBIGUOUS).** Net profit appears to *fall* from ≈ 10.1 bn EGP (FY 2024) to ≈ 0.58 bn EGP (FY 2025) [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50] vs. [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35], yet EPS *rises* from 4.79 to 11.93 [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55]. The two sets of figures are internally inconsistent unless there was a very large change in the weighted-average share count (e.g., a major buyback or share consolidation) that is not explained in the evidence provided. I have **not** recomputed EPS from net profit; I use the EPS as printed.\n\n2. **Page-unit vs. row-unit.** The page header reads \"L.E.(000)\" while the EPS row explicitly states \"(L.E. / Share).\" I treat the row-level unit as controlling for that line item. This is standard presentation, but it is worth noting for anyone re-deriving the figure.\n\n3. **Duplicate evidence IDs.** The net-profit line appears under four separate evidence IDs (p6-35, p6-36, p6-49, p6-50) with identical values, confirming the printed figure but offering no additional information.\n\n## Summary for the Investor\n\nAt the 18 Nov 2026 price of 141.95 EGP, ETEL trades at roughly **11.9× trailing (FY 2025) earnings**. The ratio is based on the EPS as printed in the audited consolidated statement. Because of the net-profit / EPS inconsistency flagged above, the P/E should be treated as **indicative only** until the share-count reconciliation (Note 15) is reviewed. No recommendation is made here.",
+    "investor": "\n\n## Investor-Suitability Snapshot\n\n| Dimension | Assessment |\n|---|---|\n| **Horizon** | 5 years – comfortably long enough for a single equity position to work through a full earnings cycle. |\n| **Liquidity needs** | Low for this sleeve; the investor maintains a separate emergency fund, so the 25,000 EGP here is not earmarked for near-term spending. |\n| **Loss willingness / capacity** | Both rated *medium*. A single-stock position in a large-cap telecom is within that envelope, but the investor should be comfortable with a 20–30 % drawdown before the 5-year horizon plays out. |\n| **Current concentration** | None – the portfolio is 100 % cash. Adding one equity position would make it 100 % concentrated in that name, which is the main structural risk to flag. |\n| **What can be sold** | Nothing; there are no existing holdings to liquidate. |\n| **Free cash available** | **25,000 EGP** (the entire portfolio). At 141.95 EGP/share that buys roughly **176 shares** of ETEL. |\n\nIn short: the investor *can* commit the full 25,000 EGP to a single stock without breaching liquidity or loss-tolerance limits, but doing so would leave zero diversification. A partial commitment (e.g., 10,000–15,000 EGP) would keep a cash buffer and reduce single-name risk, which better matches a \"medium\" risk profile.\n\n---\n\n## Answer to the Question: ETEL Price-to-Earnings Ratio\n\n**Inputs (from the FY2025 consolidated statements, p. 6):**\n\n- Share price at 18 Nov 2026: **141.95 EGP**\n- Basic & diluted EPS, FY 2025: **11.93 EGP / share**\n  *(The row heading explicitly states \"L.E. / Share\"; the page-level \"L.E.(000)\" unit applies to the net-profit line, not to the per-share figure.)*\n\n**Calculation:**\n\n$$\\text{P/E} = \\frac{141.95}{11.93} \\approx \\mathbf{11.9\\times}$$\n\nTelecom Egypt trades at roughly **11.9× trailing (FY2025) earnings** at the 18 November 2026 price.\n\n> *Note: This is a trailing P/E based on the most recently reported full-year EPS. A forward P/E would require an earnings estimate for FY2026, which is not in the evidence provided.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 23.894,
+      "input_tokens": 1202,
+      "output_tokens": 3602,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 9.422,
+      "input_tokens": 1195,
+      "output_tokens": 1435,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 25.787,
+      "input_tokens": 3043,
+      "output_tokens": 4065,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 59.106
+}

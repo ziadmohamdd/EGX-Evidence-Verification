@@ -1,0 +1,82 @@
+{
+  "case_id": "test_028",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "Edita's consolidated profit before income tax grew from 2,163,025,380 EGP in FY2024 to 3,703,837,580 EGP in FY2025, an absolute increase of 1,540,812,200 EGP, or roughly 71.2% year-on-year. This is a strong growth signal, and the net profit and EPS figures in the same report show a similar pattern (EPS doubled from 1.09 to 2.18 EGP), suggesting the growth is broad-based rather than a one-off item.\n\nHowever, I cannot recommend a buy to add to your Edita position. Your current portfolio is 15,000 EGP cash plus 1,000 EFID shares at 20.40 EGP (20,400 EGP), for a total of 35,400 EGP. EFID already represents 57.6% of that total, which exceeds the 50% single-company diversification cap. Because buying more EFID converts cash into the same stock, the percentage would only rise further, so no quantity of additional shares would bring the position back under the limit. The rule has no exceptions, so the only compliant action is to hold the existing 1,000 shares and keep the 15,000 EGP in cash (or deploy it into a different company, which is outside the scope of this evidence).\n\nRisks and uncertainty: the figures are from a single annual report (FY2025, signed). A 71% profit jump can reflect one-off gains, a low base in 2024, or sector tailwinds that may not persist. With a 5-year horizon and medium loss tolerance, the strong growth is encouraging, but you would want to see at least one more year of results to confirm sustainability before increasing exposure. This is guidance, not a guarantee of future returns.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-26",
+        "stated_value": 3703837580.0,
+        "statement": "Profit before income tax (consolidated) for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-27",
+        "stated_value": 2163025380.0,
+        "statement": "Profit before income tax (consolidated) for the year ended 31 December 2024"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Only one fiscal year of comparative data (FY2024 vs FY2025) is available; no longer trend to assess sustainability of the 71% growth.",
+      "No balance-sheet, cash-flow, or segment data provided, so the quality and source of the profit increase (operational vs. one-off) cannot be verified.",
+      "No valuation metrics (P/E, P/B, dividend yield) are given, so the current share price of 20.40 EGP cannot be assessed as cheap or expensive relative to earnings.",
+      "The diversification cap (no single company > 50% of portfolio) prevents any additional EFID purchase given the current 57.6% concentration."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "Edita's consolidated profit before income tax grew from 2,163,025,380 EGP in FY2024 to 3,703,837,580 EGP in FY2025, an absolute increase of 1,540,812,200 EGP, or roughly 71.2% year-on-year. This is a strong growth signal, and the net profit and EPS figures in the same report show a similar pattern (EPS doubled from 1.09 to 2.18 EGP), suggesting the growth is broad-based rather than a one-off item.\n\nHowever, I cannot recommend a buy to add to your Edita position. Your current portfolio is 15,000 EGP cash plus 1,000 EFID shares at 20.40 EGP (20,400 EGP), for a total of 35,400 EGP. EFID already represents 57.6% of that total, which exceeds the 50% single-company diversification cap. Because buying more EFID converts cash into the same stock, the percentage would only rise further, so no quantity of additional shares would bring the position back under the limit. The rule has no exceptions, so the only compliant action is to hold the existing 1,000 shares and keep the 15,000 EGP in cash (or deploy it into a different company, which is outside the scope of this evidence).\n\nRisks and uncertainty: the figures are from a single annual report (FY2025, signed). A 71% profit jump can reflect one-off gains, a low base in 2024, or sector tailwinds that may not persist. With a 5-year horizon and medium loss tolerance, the strong growth is encouraging, but you would want to see at least one more year of results to confirm sustainability before increasing exposure. This is guidance, not a guarantee of future returns.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-26",
+        "stated_value": 3703837580.0,
+        "statement": "Profit before income tax (consolidated) for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-27",
+        "stated_value": 2163025380.0,
+        "statement": "Profit before income tax (consolidated) for the year ended 31 December 2024"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Only one fiscal year of comparative data (FY2024 vs FY2025) is available; no longer trend to assess sustainability of the 71% growth.",
+      "No balance-sheet, cash-flow, or segment data provided, so the quality and source of the profit increase (operational vs. one-off) cannot be verified.",
+      "No valuation metrics (P/E, P/B, dividend yield) are given, so the current share price of 20.40 EGP cannot be assessed as cheap or expensive relative to earnings.",
+      "The diversification cap (no single company > 50% of portfolio) prevents any additional EFID purchase given the current 57.6% concentration."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 18.362,
+      "input_tokens": 2068,
+      "output_tokens": 2308,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 18.365
+}

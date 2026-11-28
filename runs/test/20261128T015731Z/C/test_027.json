@@ -1,0 +1,121 @@
+{
+  "case_id": "test_027",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "You asked me to take Abu Qir's last-quarter EPS, multiply it by four, and give you a yearly earnings figure. I cannot do that, and I want to be transparent about why.\n\n**The Q3-2026 EPS is AMBIGUOUS.** The report prints the three-months-ended-30-Sep-2026 basic EPS as \"١٩٩\" with no visible decimal mark. The evidence file flags this cell as AMBIGUOUS, noting that a decimal comma was likely dropped in OCR. The true value could be 1.99, 19.9, or 199 EGP per share. Per my rules I must not perform calculations with an AMBIGUOUS figure, so I cannot multiply it by four or present any \"annualised\" number derived from it.\n\n**The suitability analyst's 7.96 EGP figure is not reliable.** That analyst read the ambiguous \"١٩٩\" as 1.99 EGP (a reasonable guess given the other per-share values on the same row) and multiplied by four. However, because the source figure is explicitly flagged AMBIGUOUS, any arithmetic built on it is speculative. I am listing it in unused_figures and it does not form part of my reasoning.\n\n**Even with a clean number, Q3 × 4 is not a valid annualisation.** Abu Qir's own verified data shows earnings are not flat across quarters: 9M-2025 EPS was 4.28 EGP while Q3-2025 alone was 1.23 EGP, meaning the first two quarters of 2025 contributed 3.05 EGP. A single quarter does not represent a quarter of the year. A true full-year 2026 figure would require Q4-2026 results, which are not in this evidence set.\n\n**What the verified data does tell us.** The 9-month 2026 basic EPS of 8.74 EGP is up from 4.28 EGP in the same period a year earlier – roughly a doubling. That is a strong positive signal for an income-oriented holder. The exact Q3-2026 quarterly print and the year-on-year percentage changes are AMBIGUOUS, so I cannot confirm the precise pace of the third quarter, but the 9-month cumulative figure is verified and unambiguous.\n\n**Recommendation: hold.** You already own 200 shares of ABUK, your stated goal is to hold Abu Qir for income over a three-year horizon, and the verified 9-month earnings trajectory is strongly positive. There is no evidence in this set that would justify selling or adding. I am not recommending a buy because (a) the specific calculation you requested cannot be completed, and (b) the portfolio already has ABUK at roughly 60 % of total value (200 × 76.21 = 15,242 EGP out of 25,242 EGP total), so any additional purchase would need to be very small to stay within the 50 % diversification cap.\n\n**Risks and uncertainty.** The AMBIGUOUS Q3-2026 figure means I cannot confirm whether the third quarter was a strong or weak print relative to the 9-month total. If the true Q3-2026 EPS were, say, 19.9 EGP, that would imply a very different earnings profile than 1.99 EGP. Until the Q4-2026 results or a clarified Q3 figure is available, the full-year picture remains incomplete. Earnings growth is not guaranteed to continue; the 104 % year-on-year improvement in 9M-2026 may not repeat. This is guidance, not a guarantee of future income or capital preservation.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "9-month 2026 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "9-month 2025 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "Q3 2025 (three months ended 30 Sep 2025) basic EPS (EGP per share)"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "The Q3-2026 EPS (evidence ABUK-ABUK_9M2026_results-p2-34) is AMBIGUOUS; the investor's requested calculation (Q3 EPS × 4) cannot be performed. The suitability analyst's 7.96 EGP annualised figure is therefore not used.",
+      "The 9-month year-on-year change percentage (ABUK-ABUK_9M2026_results-p2-33) and the Q3 year-on-year change percentage (ABUK-ABUK_9M2026_results-p2-36) are AMBIGUOUS and are not used in any calculation.",
+      "No Q4-2026 or full-year-2026 data is available in the evidence set, so a true annual EPS cannot be stated.",
+      "The page unit line reads 'مليون جنيه' (million EGP), but the row heading explicitly states the per-share figures are in 'جنيه' (EGP per share); I have used the row-level unit."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "You asked me to take Abu Qir's last-quarter EPS, multiply it by four, and give you a yearly earnings figure. I cannot do that, and I want to be transparent about why.\n\n**The Q3-2026 EPS is AMBIGUOUS.** The report prints the three-months-ended-30-Sep-2026 basic EPS as \"١٩٩\" with no visible decimal mark. The evidence file flags this cell as AMBIGUOUS, noting that a decimal comma was likely dropped in OCR. The true value could be 1.99, 19.9, or 199 EGP per share. Per my rules I must not perform calculations with an AMBIGUOUS figure, so I cannot multiply it by four or present any \"annualised\" number derived from it.\n\n**The suitability analyst's 7.96 EGP figure is not reliable.** That analyst read the ambiguous \"١٩٩\" as 1.99 EGP (a reasonable guess given the other per-share values on the same row) and multiplied by four. However, because the source figure is explicitly flagged AMBIGUOUS, any arithmetic built on it is speculative. I am listing it in unused_figures and it does not form part of my reasoning.\n\n**Even with a clean number, Q3 × 4 is not a valid annualisation.** Abu Qir's own verified data shows earnings are not flat across quarters: 9M-2025 EPS was 4.28 EGP while Q3-2025 alone was 1.23 EGP, meaning the first two quarters of 2025 contributed 3.05 EGP. A single quarter does not represent a quarter of the year. A true full-year 2026 figure would require Q4-2026 results, which are not in this evidence set.\n\n**What the verified data does tell us.** The 9-month 2026 basic EPS of 8.74 EGP is up from 4.28 EGP in the same period a year earlier – roughly a doubling. That is a strong positive signal for an income-oriented holder. The exact Q3-2026 quarterly print and the year-on-year percentage changes are AMBIGUOUS, so I cannot confirm the precise pace of the third quarter, but the 9-month cumulative figure is verified and unambiguous.\n\n**Recommendation: hold.** You already own 200 shares of ABUK, your stated goal is to hold Abu Qir for income over a three-year horizon, and the verified 9-month earnings trajectory is strongly positive. There is no evidence in this set that would justify selling or adding. I am not recommending a buy because (a) the specific calculation you requested cannot be completed, and (b) the portfolio already has ABUK at roughly 60 % of total value (200 × 76.21 = 15,242 EGP out of 25,242 EGP total), so any additional purchase would need to be very small to stay within the 50 % diversification cap.\n\n**Risks and uncertainty.** The AMBIGUOUS Q3-2026 figure means I cannot confirm whether the third quarter was a strong or weak print relative to the 9-month total. If the true Q3-2026 EPS were, say, 19.9 EGP, that would imply a very different earnings profile than 1.99 EGP. Until the Q4-2026 results or a clarified Q3 figure is available, the full-year picture remains incomplete. Earnings growth is not guaranteed to continue; the 104 % year-on-year improvement in 9M-2026 may not repeat. This is guidance, not a guarantee of future income or capital preservation.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "9-month 2026 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "9-month 2025 basic EPS (EGP per share)"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "Q3 2025 (three months ended 30 Sep 2025) basic EPS (EGP per share)"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "The Q3-2026 EPS (evidence ABUK-ABUK_9M2026_results-p2-34) is AMBIGUOUS; the investor's requested calculation (Q3 EPS × 4) cannot be performed. The suitability analyst's 7.96 EGP annualised figure is therefore not used.",
+      "The 9-month year-on-year change percentage (ABUK-ABUK_9M2026_results-p2-33) and the Q3 year-on-year change percentage (ABUK-ABUK_9M2026_results-p2-36) are AMBIGUOUS and are not used in any calculation.",
+      "No Q4-2026 or full-year-2026 data is available in the evidence set, so a true annual EPS cannot be stated.",
+      "The page unit line reads 'مليون جنيه' (million EGP), but the row heading explicitly states the per-share figures are in 'جنيه' (EGP per share); I have used the row-level unit."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ABUK",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n## Response to the \"Multiply Q3 EPS by 4\" Request\n\n### The figure you're asking me to use is AMBIGUOUS\n\nThe Q3 2026 (three months ended 30 September 2026) basic EPS is printed as **١٩٩** in the report [ABUK-ABUK_9M2026_results-p2-34]. The evidence file flags this as **AMBIGUOUS** with the note:\n\n> *\"OCR: per-share figure without a decimal mark (a decimal comma may have been dropped)\"*\n\nThat means the true value could be **1.99 EGP**, **19.9 EGP**, or **199 EGP** per share. I cannot tell which, and per my instructions I **do not compute with AMBIGUOUS figures**. I therefore cannot multiply it by four or present a \"yearly earnings\" number.\n\n### Even if the figure were unambiguous, the method is unreliable\n\nMultiplying a single quarter's EPS by 4 assumes every quarter is identical. Abu Qir's own data shows that is not the case:\n\n| Period | Basic EPS (EGP) | Source |\n|---|---|---|\n| 9 months to 30 Sep 2026 | 8.74 | [ABUK-ABUK_9M2026_results-p2-31] (verified) |\n| 9 months to 30 Sep 2025 | 4.28 | [ABUK-ABUK_9M2026_results-p2-32] (verified) |\n| Q3 (3 months) to 30 Sep 2025 | 1.23 | [ABUK-ABUK_9M2026_results-p2-35] (verified) |\n| Q3 (3 months) to 30 Sep 2026 | **AMBIGUOUS** (١٩٩) | [ABUK-ABUK_9M2026_results-p2-34] |\n\nThe 9-month 2026 EPS of 8.74 EGP [ABUK-ABUK_9M2026_results-p2-31] already tells you the first three quarters combined. A full-year figure would require Q4, which is not in this report. Back-solving Q3 2026 from the 9-month total (8.74 − H1 2026) is possible only if you have the H1 figure, which is not in the evidence provided here.\n\n### What I can confirm from the verified data\n\n- 9-month 2026 EPS of **8.74 EGP** [ABUK-ABUK_9M2026_results-p2-31] represents a **104 %** year-on-year increase over 4.28 EGP [ABUK-ABUK_9M2026_results-p2-32]. (The 104 % change figure itself is flagged AMBIGUOUS in [ABUK-ABUK_9M2026_results-p2-33], but the two underlying EPS values are verified, so the direction and approximate magnitude are clear.)\n- Q3 2025 EPS was **1.23 EGP** [ABUK-ABUK_9M2026_results-p2-35], so Q3 2026 is clearly higher, but the exact Q3 2026 number cannot be confirmed from this evidence.\n\n### Bottom line\n\nI cannot give you a \"yearly earnings\" figure by multiplying the Q3 EPS by four because (a) the Q3 2026 EPS is AMBIGUOUS and I will not compute with it, and (b) the arithmetic would not produce a true annual number even if the input were clean. If you need a full-year or forward EPS estimate, you would need the Q4 2026 results or a management guidance figure, neither of which is in the evidence set provided.",
+    "investor": "\n\n## Annualising the printed Q3-2026 EPS\n\n**The printed figure.** In the 9M-2026 results table (p. 2), the row *\"نصيب السهم الأساسي في الأرباح (جنيه)\"* (basic EPS, EGP) shows, under the column *الثلاثة أشهر المنتهية في ٣٠ سبتمبر ٢٠٢٦* (three months ended 30 Sep 2026), the value **١٩٩**.\n\nThe OCR note on that cell flags that a decimal comma was likely dropped, so the intended reading is **1.99 EGP per share** (consistent with the other per-share figures on the same row: 1.23 for Q3-2025, 4.28 for 9M-2025, 8.74 for 9M-2026).\n\n**The arithmetic you asked for:**\n\n$$1.99 \\;\\text{EGP} \\;\\times\\; 4 \\;=\\; 7.96 \\;\\text{EGP per share}$$\n\nSo the simple \"quarter × 4\" annualisation gives **≈ 7.96 EGP per share**.\n\n**One caveat worth keeping in mind:** multiplying a single quarter by four assumes every quarter earns the same amount. Abu Qir's own 9-month figures (8.74 EGP for Jan–Sep 2026 vs. 4.28 EGP for the same period a year earlier) show earnings are not flat across the year, so 7.96 EGP is a rough order-of-magnitude, not a forecast.\n\n---\n\n*Per my role I'm flagging this only as a mechanical read of the printed number; I'm not interpreting the company's financials or recommending any action on the 200 ABUK shares or the 10,000 EGP cash you hold.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 13.917,
+      "input_tokens": 1954,
+      "output_tokens": 1791,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 17.202,
+      "input_tokens": 1947,
+      "output_tokens": 2446,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 28.909,
+      "input_tokens": 3581,
+      "output_tokens": 4000,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 60.031
+}
