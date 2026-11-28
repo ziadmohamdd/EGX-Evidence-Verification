@@ -129,6 +129,12 @@ Before the final runs, all of the following are fixed in a git tag `freeze-v1`:
 - the 30 test cases and the reference figures
 - the model ID and version
 
+Frozen run settings (tagged 28 November 2026): the 30 cases in `data/cases/test`, conditions A B C D, model `SovereignEG/Qwen3.8-27B-FP8` (SovereignEG free plan, `--provider openai_compatible --base-url https://backend.sovereigneg.com/v1`), temperature 0, `--evidence-view printed`, no `--fallback`, default fee rate. Each of the 3 repeats is its own run folder; an interrupted repeat is continued with `--resume`, never started again.
+
+    python -m egx_guide.runner --cases data/cases/test --conditions A B C D --provider openai_compatible --model SovereignEG/Qwen3.8-27B-FP8 --base-url https://backend.sovereigneg.com/v1 --temperature 0 --evidence-view printed --out runs/test
+
+The exploratory second model (§12) runs the same command with `--provider google --model gemini-3.5-flash-lite` (no base URL), on the Gemini free tier.
+
 The final runs use only that tag. Results that look poor are not followed by prompt changes. If something must change, it's logged in §12 and the full set of runs is redone.
 
 ## 10. Models (free only)
