@@ -1,5 +1,9 @@
 # EGX Evidence-Verified Investment Guide (research prototype)
 
+**[Explore the interactive codebase map →](https://ziadmohamdd.github.io/EGX-Evidence-Verification/map/)** · [Architecture map section](#architecture-map)
+
+[![Interactive codebase map of EGX Evidence Verification](docs/images/codebase_map.png)](https://ziadmohamdd.github.io/EGX-Evidence-Verification/map/)
+
 Code for the paper on whether evidence verification reduces incorrect financial claims in single-agent and multi-agent investment recommendations. Scope and decisions are in [PROJECT_AUDIT_SUMMARY.md](PROJECT_AUDIT_SUMMARY.md). Terms are in [GLOSSARY.md](GLOSSARY.md).
 
 ## Conditions
