@@ -1,0 +1,163 @@
+{
+  "case_id": "test_021",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 303,
+    "explanation": "## التوصية: شراء 303 سهم من TMGH (تقريباً 24,997.50 جنيه)\n\n### الأساس المالي (أرقام مُتحقَّق منها فقط):\n\n- **الإيرادات FY2025:** 62,495,144,197 جنيه، بنمو مُتحقَّق 46% عن العام السابق. هذا نمو قوي في قطاع العقارات.\n- **ربحية السهم (EPS) FY2025:** 6.98 جنيه مقابل 4.37 جنيه في FY2024، أي نمو مُتحقَّق 59.6%.\n- **صافي الربح FY2024:** 12,769,517,326 جنيه، بنمو مُتحقَّق 43% في FY2025.\n- **مضاعف السعر/الربحية (P/E):** 82.50 ÷ 6.98 ≈ 11.8×، وهو مستوى معقول لشركة تنمو بأكثر من 40% سنوياً.\n\n### لماذا 303 سهماً تحديداً؟\n\n- قاعدة التنويع تمنع أن تتجاوز أي شركة واحدة 50% من إجمالي محفظة المستثمر (نقد + أسهم بسعر السوق).\n- 303 × 82.50 = 24,997.50 جنيه → نسبة TMGH من المحفظة = 24,997.50 / 50,000 = 49.99% ✓\n- 304 سهم = 25,080 جنيه → 50.16% ✗ (تتجاوز الحد).\n- بالتالي 303 سهم هو الحد الأقصى المسموح، ويترك 25,002.50 جنيه نقداً كوسادة.\n\n### ملاءمة المستثمر:\n\n- **الأفق (5 سنوات):** مناسب لدورة عقارية كاملة (ذروة → تصحيح → تعافٍ).\n- **السيولة:** المستثمر لديه صندوق طوارئ منفصل، فلا حاجة لسيولة قصيرة الأجل من هذه المحفظة.\n- **تحمل الخسارة (متوسط):** وضع 50% فقط في سهم واحد (وليس 100%) يحدّ من المخاطر. خسارة 25% على 25,000 جنيه ≈ 6,250 جنيه، وهي ضمن النطاق المريح.\n- **الهدف:** المستثمر طلب صراحةً شراء أسهم شركة عقارات قوية، والأرقام المُتحقَّقة تدعم أن TMGH تنمو بقوة.\n\n### المخاطر والقيود (بصراحة):\n\n1. **لا توجد بيانات ميزانية** (ديون، حقوق ملكية، سيولة، أصول) في الأدلة المقدَّمة. هذا نقص جوهري لشركة عقارات كثيفة رأس المال.\n2. **لا توجد بيانات تدفقات نقدية** (تشغيلية، استثمارية، تمويلية).\n3. **سنتان فقط** (FY2024 وFY2025)؛ لا يمكن الحكم على استدامة النمو أو دورية القطاع.\n4. **رقمان AMBIGUOUS** (إيرادات FY2024 وصافي ربح FY2025) لم يُستخدما في أي حساب. هذا يعني أن القيمة المطلقة لصافي ربح FY2025 غير مؤكدة، لكن نسبة النمو 43% مُتحقَّق منها.\n5. **لا توجد تفاصيل على مستوى المشاريع** (خط أنابيب المشاريع، المبيعات المسبقة، مواعيد التسليم) وهي حاسمة في قطاع التطوير العقاري.\n6. **مضاعف P/E ≈ 11.8×** لا يمكن الحكم عليه (رخيص/غالي) دون مقارنة بأقران في القطاع، ولا توجد بيانات أقران في الأدلة.\n\n### الخلاصة:\n\nالأرقام المُتحقَّقة تُظهر شركة تنمو بقوة (إيرادات +46%، ربحية سهم +59.6%) بسعر معقول (P/E ≈ 11.8×). مع وجود فجوات بيانات مهمة (ميزانية، تدفقات نقدية، بيانات متعددة السنوات)، أوصي بالشراء عند الحد الأقصى المسموح بقاعدة التنويع (303 سهم ≈ 50% من المحفظة) بدلاً من التخصيص الكامل. النقد المتبقي (≈25,000 جنيه) يمكن استخدامه لاحقاً لشراء إضافي عند تصحيح سعري أو لتنويع المحفظة بسهم آخر. هذه توصية استرشادية وليست ضماناً للعائد؛ المخاطر المذكورة أعلاه حقيقية وقد تؤثر على القيمة على المدى المتوسط.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+        "stated_value": 62495144197.0,
+        "statement": "إيرادات TMGH (مجمعة) للسنة المنتهية 31 ديسمبر 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg",
+        "stated_value": 46.0,
+        "statement": "نمو الإيرادات (مجمعة) بنسبة مئوية عن FY2024"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "نصيب السهم في الأرباح (مجمعة) للسنة المنتهية 31 ديسمبر 2025 بالجنيه"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+        "stated_value": 4.37,
+        "statement": "نصيب السهم في الأرباح (مجمعة) للسنة المنتهية 31 ديسمبر 2024 بالجنيه"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg",
+        "stated_value": 59.6,
+        "statement": "نمو نصيب السهم في الأرباح بنسبة مئوية عن FY2024"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-10",
+        "stated_value": 12769517326.0,
+        "statement": "ربح العام بعد الضرائب (مجمعة) للسنة المنتهية 31 ديسمبر 2024"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-09-chg",
+        "stated_value": 43.0,
+        "statement": "نمو ربح العام بعد الضرائب (مجمعة) بنسبة مئوية عن FY2024"
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02 (إيرادات FY2024 – AMBIGUOUS: رقم 14 خانة بدون فواصل آلاف، لا يمكن تأكيده)",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09 (صافي ربح FY2025 – AMBIGUOUS: فواصل الأرقام غير واضحة '١٨٠٢٠١,٩٨١٠٤٨٢')"
+    ],
+    "limitations": [
+      "لا توجد بيانات ميزانية (أصول، ديون، حقوق ملكية، سيولة) في الأدلة المقدَّمة",
+      "لا توجد بيانات تدفقات نقدية (تشغيلية، استثمارية، تمويلية)",
+      "سنتان فقط من البيانات (FY2024 وFY2025)؛ لا يمكن تقييم استدامة النمو أو دورية القطاع",
+      "لا توجد تفاصيل على مستوى المشاريع العقارية (خط أنابيب، مبيعات مسبقة، مواعيد تسليم)",
+      "لا توجد بيانات أقران أو قطاع للمقارنة السعرية (P/E)",
+      "رقما AMBIGUOUS (إيرادات FY2024 وصافي ربح FY2025) لم يُستخدما؛ القيمة المطلقة لصافي ربح FY2025 غير مؤكدة لكن نسبة النمو 43% مُتحقَّق منها"
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "TMGH",
+    "shares": 303,
+    "explanation": "## التوصية: شراء 303 سهم من TMGH (تقريباً 24,997.50 جنيه)\n\n### الأساس المالي (أرقام مُتحقَّق منها فقط):\n\n- **الإيرادات FY2025:** 62,495,144,197 جنيه، بنمو مُتحقَّق 46% عن العام السابق. هذا نمو قوي في قطاع العقارات.\n- **ربحية السهم (EPS) FY2025:** 6.98 جنيه مقابل 4.37 جنيه في FY2024، أي نمو مُتحقَّق 59.6%.\n- **صافي الربح FY2024:** 12,769,517,326 جنيه، بنمو مُتحقَّق 43% في FY2025.\n- **مضاعف السعر/الربحية (P/E):** 82.50 ÷ 6.98 ≈ 11.8×، وهو مستوى معقول لشركة تنمو بأكثر من 40% سنوياً.\n\n### لماذا 303 سهماً تحديداً؟\n\n- قاعدة التنويع تمنع أن تتجاوز أي شركة واحدة 50% من إجمالي محفظة المستثمر (نقد + أسهم بسعر السوق).\n- 303 × 82.50 = 24,997.50 جنيه → نسبة TMGH من المحفظة = 24,997.50 / 50,000 = 49.99% ✓\n- 304 سهم = 25,080 جنيه → 50.16% ✗ (تتجاوز الحد).\n- بالتالي 303 سهم هو الحد الأقصى المسموح، ويترك 25,002.50 جنيه نقداً كوسادة.\n\n### ملاءمة المستثمر:\n\n- **الأفق (5 سنوات):** مناسب لدورة عقارية كاملة (ذروة → تصحيح → تعافٍ).\n- **السيولة:** المستثمر لديه صندوق طوارئ منفصل، فلا حاجة لسيولة قصيرة الأجل من هذه المحفظة.\n- **تحمل الخسارة (متوسط):** وضع 50% فقط في سهم واحد (وليس 100%) يحدّ من المخاطر. خسارة 25% على 25,000 جنيه ≈ 6,250 جنيه، وهي ضمن النطاق المريح.\n- **الهدف:** المستثمر طلب صراحةً شراء أسهم شركة عقارات قوية، والأرقام المُتحقَّقة تدعم أن TMGH تنمو بقوة.\n\n### المخاطر والقيود (بصراحة):\n\n1. **لا توجد بيانات ميزانية** (ديون، حقوق ملكية، سيولة، أصول) في الأدلة المقدَّمة. هذا نقص جوهري لشركة عقارات كثيفة رأس المال.\n2. **لا توجد بيانات تدفقات نقدية** (تشغيلية، استثمارية، تمويلية).\n3. **سنتان فقط** (FY2024 وFY2025)؛ لا يمكن الحكم على استدامة النمو أو دورية القطاع.\n4. **رقمان AMBIGUOUS** (إيرادات FY2024 وصافي ربح FY2025) لم يُستخدما في أي حساب. هذا يعني أن القيمة المطلقة لصافي ربح FY2025 غير مؤكدة، لكن نسبة النمو 43% مُتحقَّق منها.\n5. **لا توجد تفاصيل على مستوى المشاريع** (خط أنابيب المشاريع، المبيعات المسبقة، مواعيد التسليم) وهي حاسمة في قطاع التطوير العقاري.\n6. **مضاعف P/E ≈ 11.8×** لا يمكن الحكم عليه (رخيص/غالي) دون مقارنة بأقران في القطاع، ولا توجد بيانات أقران في الأدلة.\n\n### الخلاصة:\n\nالأرقام المُتحقَّقة تُظهر شركة تنمو بقوة (إيرادات +46%، ربحية سهم +59.6%) بسعر معقول (P/E ≈ 11.8×). مع وجود فجوات بيانات مهمة (ميزانية، تدفقات نقدية، بيانات متعددة السنوات)، أوصي بالشراء عند الحد الأقصى المسموح بقاعدة التنويع (303 سهم ≈ 50% من المحفظة) بدلاً من التخصيص الكامل. النقد المتبقي (≈25,000 جنيه) يمكن استخدامه لاحقاً لشراء إضافي عند تصحيح سعري أو لتنويع المحفظة بسهم آخر. هذه توصية استرشادية وليست ضماناً للعائد؛ المخاطر المذكورة أعلاه حقيقية وقد تؤثر على القيمة على المدى المتوسط.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01",
+        "stated_value": 62495144197.0,
+        "statement": "إيرادات TMGH (مجمعة) للسنة المنتهية 31 ديسمبر 2025"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg",
+        "stated_value": 46.0,
+        "statement": "نمو الإيرادات (مجمعة) بنسبة مئوية عن FY2024"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11",
+        "stated_value": 6.98,
+        "statement": "نصيب السهم في الأرباح (مجمعة) للسنة المنتهية 31 ديسمبر 2025 بالجنيه"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-12",
+        "stated_value": 4.37,
+        "statement": "نصيب السهم في الأرباح (مجمعة) للسنة المنتهية 31 ديسمبر 2024 بالجنيه"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg",
+        "stated_value": 59.6,
+        "statement": "نمو نصيب السهم في الأرباح بنسبة مئوية عن FY2024"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-10",
+        "stated_value": 12769517326.0,
+        "statement": "ربح العام بعد الضرائب (مجمعة) للسنة المنتهية 31 ديسمبر 2024"
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_results_summary_ar-p1-09-chg",
+        "stated_value": 43.0,
+        "statement": "نمو ربح العام بعد الضرائب (مجمعة) بنسبة مئوية عن FY2024"
+      }
+    ],
+    "unused_figures": [
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-02 (إيرادات FY2024 – AMBIGUOUS: رقم 14 خانة بدون فواصل آلاف، لا يمكن تأكيده)",
+      "TMGH-TMGH_FY2025_results_summary_ar-p1-09 (صافي ربح FY2025 – AMBIGUOUS: فواصل الأرقام غير واضحة '١٨٠٢٠١,٩٨١٠٤٨٢')"
+    ],
+    "limitations": [
+      "لا توجد بيانات ميزانية (أصول، ديون، حقوق ملكية، سيولة) في الأدلة المقدَّمة",
+      "لا توجد بيانات تدفقات نقدية (تشغيلية، استثمارية، تمويلية)",
+      "سنتان فقط من البيانات (FY2024 وFY2025)؛ لا يمكن تقييم استدامة النمو أو دورية القطاع",
+      "لا توجد تفاصيل على مستوى المشاريع العقارية (خط أنابيب، مبيعات مسبقة، مواعيد تسليم)",
+      "لا توجد بيانات أقران أو قطاع للمقارنة السعرية (P/E)",
+      "رقما AMBIGUOUS (إيرادات FY2024 وصافي ربح FY2025) لم يُستخدما؛ القيمة المطلقة لصافي ربح FY2025 غير مؤكدة لكن نسبة النمو 43% مُتحقَّق منها"
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 25002.5,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "TMGH",
+        "shares": 303
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n# TMGH – Financial Evidence Analysis (FY2025 Results)\n\n## 1. Profitability\n\n| Metric | FY2025 | FY2024 | Change |\n|---|---|---|---|\n| EPS (consolidated) | 6.98 EGP [TMGH-TMGH_FY2025_results_summary_ar-p1-11] | 4.37 EGP [TMGH-TMGH_FY2025_results_summary_ar-p1-12] | +59.6 % [TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg] |\n| Net profit after tax (consolidated) | **AMBIGUOUS** – printed \"١٨٠٢٠١,٩٨١٠٤٨٢\", separators unclear [TMGH-TMGH_FY2025_results_summary_ar-p1-09] | 12,769,517,326 EGP [TMGH-TMGH_FY2025_results_summary_ar-p1-10] | +43 % [TMGH-TMGH_FY2025_results_summary_ar-p1-09-chg] |\n\n- EPS more than doubled year-on-year (4.37 → 6.98 EGP), a verified +59.6 % jump [TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg].\n- The FY2025 net-profit absolute figure is **AMBIGUOUS** (unclear digit separators in the OCR). I do **not** use it in any calculation. The verified 43 % growth rate [TMGH-TMGH_FY2025_results_summary_ar-p1-09-chg] applied to the verified FY2024 base of 12,769,517,326 EGP [TMGH-TMGH_FY2025_results_summary_ar-p1-10] is directionally consistent with the garbled FY2025 string, but the exact FY2025 profit cannot be confirmed from the evidence.\n\n**Valuation reference (verified inputs only):**\nAt the cutoff price of 82.50 EGP/share, the implied trailing P/E on the verified FY2025 EPS of 6.98 EGP [TMGH-TMGH_FY2025_results_summary_ar-p1-11] is approximately **11.8×**.\n\n## 2. Growth\n\n| Metric | FY2025 | FY2024 | Change |\n|---|---|---|---|\n| Revenue (consolidated) | 62,495,144,197 EGP [TMGH-TMGH_FY2025_results_summary_ar-p1-01] | **AMBIGUOUS** – OCR string \"٤٢٠٦٧٠٠٢٨٣٠٢٨٨\" lacks proper separators [TMGH-TMGH_FY2025_results_summary_ar-p1-02] | +46 % [TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg] |\n\n- FY2025 revenue of ≈ 62.5 billion EGP is verified [TMGH-TMGH_FY2025_results_summary_ar-p1-01].\n- The FY2024 revenue figure is **AMBIGUOUS** (14-digit OCR string without the thousands separators used elsewhere on the page). I do **not** compute with it. The verified +46 % change [TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg] is the only reliable growth signal.\n- Revenue growth (46 %) outpaced net-profit growth (43 %), suggesting a modest margin compression or one-off item in FY2025, though the exact FY2025 profit is AMBIGUOUS so this cannot be confirmed.\n- EPS growth (59.6 %) exceeded both revenue and profit growth, which could reflect a share-count effect (buybacks, fewer shares outstanding) or a mix shift; no share-count data is provided in the evidence.\n\n## 3. Balance Sheet\n\n**No balance-sheet data (total assets, liabilities, equity, debt, cash, working capital) is present in the supplied evidence.** Leverage, liquidity, and asset quality cannot be assessed. This is a material gap for a 5-year holding horizon, especially for a real-estate company where project-level debt and off-balance-sheet commitments are common.\n\n## 4. Risks & Data-Quality Flags\n\n| Flag | Detail |\n|---|---|\n| **AMBIGUOUS – FY2024 revenue** [TMGH-TMGH_FY2025_results_summary_ar-p1-02] | OCR produced a 14-digit string without separators; the true value (≈ 42–43 bn EGP implied by the 46 % change) cannot be independently confirmed from the printed page. |\n| **AMBIGUOUS – FY2025 net profit** [TMGH-TMGH_FY2025_results_summary_ar-p1-09] | Digit separators in \"١٨٠٢٠١,٩٨١٠٤٨٢\" are inconsistent; the absolute profit figure is unreliable. |\n| **No balance-sheet evidence** | No data on debt, equity, cash, or asset base. |\n| **No cash-flow statement** | Operating, investing, and financing cash flows are absent. |\n| **Single-period snapshot** | Only FY2025 vs FY2024 is available; no multi-year trend to judge cyclicality or sustainability of the 46 % revenue / 59.6 % EPS growth. |\n| **No segment or project-level detail** | For a real-estate developer, project pipeline, pre-sales, and delivery timing are critical; none are in the evidence. |\n\n## 5. Summary of What the Evidence Supports\n\n- **Profitability is strong and improving:** verified EPS of 6.98 EGP [TMGH-TMGH_FY2025_results_summary_ar-p1-11] with a verified 59.6 % YoY increase [TMGH-TMGH_FY2025_results_summary_ar-p1-11-chg]; verified FY2024 net profit of 12,769,517,326 EGP [TMGH-TMGH_FY2025_results_summary_ar-p1-10] growing at a verified 43 % [TMGH-TMGH_FY2025_results_summary_ar-p1-09-chg].\n- **Top-line growth is robust:** verified FY2025 revenue of 62,495,144,197 EGP [TMGH-TMGH_FY2025_results_summary_ar-p1-01] up a verified 46 % [TMGH-TMGH_FY2025_results_summary_ar-p1-01-chg].\n- **Two key absolute figures are AMBIGUOUS** (FY2024 revenue, FY2025 net profit) and must not be used in further calculations until the source document is re-verified.\n- **Balance-sheet and cash-flow visibility is entirely absent**, which is a significant limitation for a 5-year investment thesis in a capital-intensive real-estate sector.\n- **The implied P/E of ≈ 11.8×** (82.50 EGP ÷ 6.98 EGP, both verified) is a reference point only; without peer or sector context in the evidence, it cannot be judged as cheap or expensive.\n\n*This is an evidence summary only. No buy, sell, or hold recommendation is made here; that determination belongs to the decision agent.*",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## 1. Investment Horizon – 5 Years\n\nA five-year horizon is well-suited to an equity position in a real-estate company. Real-estate stocks are cyclical; a 5-year window allows the investor to ride through at least one full property cycle (peak → correction → recovery) without being forced to sell at the bottom. The horizon is **compatible** with the stated goal of holding a \"strong real-estate company\" share.\n\n## 2. Liquidity Needs\n\nThe investor explicitly states a **separate emergency fund** exists outside this portfolio. That means:\n\n- The 50,000 EGP sitting in cash here is **not earmarked** for short-term obligations.\n- No near-term liquidity constraint forces a sale of any position.\n- The full cash balance is **free to deploy** if the investor chooses.\n\n## 3. Loss Tolerance & Capacity – Both \"Medium\"\n\n| Dimension | Implication |\n|---|---|\n| **Willingness** (medium) | The investor can stomach a moderate drawdown (roughly 15–25 %) without panic-selling, but a 40 %+ loss on a single position would likely feel uncomfortable. |\n| **Capacity** (medium) | The absolute amount at risk (≤ 50,000 EGP) is modest in EGP terms, so a 25 % loss ≈ 12,500 EGP is absorbable. However, because the portfolio is *only* this cash, a large loss would represent a large *percentage* of total investable assets. |\n\n**Suitability note:** A 100 % single-stock position in a cyclical real-estate name sits at the **upper edge** of what \"medium\" tolerance comfortably supports. A partial commitment (e.g., 60–80 % of cash) would keep the position within the medium band while leaving a small buffer for averaging down or a second, uncorrelated holding later.\n\n## 4. Current Concentration\n\n- **Holdings: none.** The portfolio is 100 % cash.\n- There is **no existing concentration** to dilute or rebalance.\n- Any purchase of TMGH would create a **100 % single-name, single-sector** position from day one.\n- With no other assets in the portfolio, the investor has **no diversification cushion** inside this account.\n\n## 5. What the Portfolio Allows\n\n| Item | Status |\n|---|---|\n| Holdings to sell / liquidate | **None** – no existing positions. |\n| Free cash | **50,000 EGP** (fully available; emergency fund is separate). |\n| Constraints on deployment | None from the portfolio side. |\n| Maximum shares purchasable at 82.50 EGP | ≈ **606 shares** (50,000 ÷ 82.50). |\n\n## 6. Reasonable Commitment Range\n\nGiven the medium loss profile, the 5-year horizon, and the absence of any other holdings:\n\n- **Conservative end (≈ 60 %):** ~30,000 EGP → ~363 shares. Leaves ~20,000 EGP in cash for a second entry point or a small diversifying position.\n- **Mid range (≈ 80 %):** ~40,000 EGP → ~484 shares. Keeps a ~10,000 EGP buffer.\n- **Aggressive end (100 %):** 50,000 EGP → ~606 shares. Maximises exposure to the single name; acceptable only if the investor is comfortable that a 25–30 % drawdown would not prompt a sale.\n\nAll three are *within* the stated medium tolerance; the choice among them is a matter of how much single-name risk the investor is willing to carry in a portfolio that has **no other assets**.\n\n## 7. Summary of Suitability\n\n- **Horizon:** ✔ 5 years fits a real-estate equity.\n- **Liquidity:** ✔ No near-term cash need; emergency fund is separate.\n- **Loss profile:** ⚠ Medium – a full single-stock position is at the outer edge; a partial commitment is more aligned.\n- **Concentration:** ⚠ Any purchase creates a 100 % single-name, single-sector portfolio.\n- **Cash available:** 50,000 EGP, fully deployable.\n- **Nothing to sell:** The portfolio is all cash; the decision is purely how much of that cash to commit.\n\n*This assessment covers suitability only. It does not evaluate TMGH's financials, issue a buy/sell/hold recommendation, or select a specific action.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 26.838,
+      "input_tokens": 2042,
+      "output_tokens": 4497,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 15.175,
+      "input_tokens": 2035,
+      "output_tokens": 1865,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 33.396,
+      "input_tokens": 5169,
+      "output_tokens": 4391,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 75.413
+}

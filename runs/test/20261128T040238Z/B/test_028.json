@@ -1,0 +1,108 @@
+{
+  "case_id": "test_028",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "Edita's consolidated profit before income tax grew from 2,163,025,380 EGP in FY2024 to 3,703,837,580 EGP in FY2025, an absolute increase of 1,540,812,200 EGP, or roughly 71.2% year-on-year. This is a strong growth signal, and EPS more than doubled (1.09 → 2.18 EGP), which is encouraging for a 5-year horizon.\n\nHowever, I cannot recommend a buy to add to your Edita position. Your current portfolio is 15,000 EGP cash + 1,000 × 20.40 EGP = 20,400 EGP in EFID, totalling 35,400 EGP. EFID already represents 57.6% of that total, which exceeds the 50% single-company diversification cap. Any additional purchase would push the concentration even higher, and the cap has no exceptions. To add to Edita in the future you would first need to diversify into other holdings so that EFID falls below half of the portfolio.\n\nGiven the strong earnings trajectory and your 5-year horizon, the most appropriate action right now is to hold your existing 1,000 shares. Risks to keep in mind: the figures are for a single fiscal year; a 71% jump can be partly cyclical or one-off; you have no evidence here on balance-sheet leverage, dividend policy, or sector headwinds. This is guidance, not a guarantee of future returns.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-26",
+        "stated_value": 3703837580.0,
+        "statement": "Profit before income tax (consolidated), 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-27",
+        "stated_value": 2163025380.0,
+        "statement": "Profit before income tax (consolidated), 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "Basic and Diluted EPS, 31 December 2025 (EGP per share)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "Basic and Diluted EPS, 31 December 2024 (EGP per share)"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Only one fiscal year of comparison is available; no multi-year trend to confirm sustainability of the 71% PBT growth.",
+      "No balance-sheet, cash-flow, or segment data provided, so leverage, working-capital needs, and revenue mix are unknown.",
+      "No dividend or buyback information to assess total shareholder return.",
+      "The 50% diversification cap prevents any new purchase of EFID at this time."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "Edita's consolidated profit before income tax grew from 2,163,025,380 EGP in FY2024 to 3,703,837,580 EGP in FY2025, an absolute increase of 1,540,812,200 EGP, or roughly 71.2% year-on-year. This is a strong growth signal, and EPS more than doubled (1.09 → 2.18 EGP), which is encouraging for a 5-year horizon.\n\nHowever, I cannot recommend a buy to add to your Edita position. Your current portfolio is 15,000 EGP cash + 1,000 × 20.40 EGP = 20,400 EGP in EFID, totalling 35,400 EGP. EFID already represents 57.6% of that total, which exceeds the 50% single-company diversification cap. Any additional purchase would push the concentration even higher, and the cap has no exceptions. To add to Edita in the future you would first need to diversify into other holdings so that EFID falls below half of the portfolio.\n\nGiven the strong earnings trajectory and your 5-year horizon, the most appropriate action right now is to hold your existing 1,000 shares. Risks to keep in mind: the figures are for a single fiscal year; a 71% jump can be partly cyclical or one-off; you have no evidence here on balance-sheet leverage, dividend policy, or sector headwinds. This is guidance, not a guarantee of future returns.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-26",
+        "stated_value": 3703837580.0,
+        "statement": "Profit before income tax (consolidated), 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-27",
+        "stated_value": 2163025380.0,
+        "statement": "Profit before income tax (consolidated), 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "Basic and Diluted EPS, 31 December 2025 (EGP per share)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "Basic and Diluted EPS, 31 December 2024 (EGP per share)"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Only one fiscal year of comparison is available; no multi-year trend to confirm sustainability of the 71% PBT growth.",
+      "No balance-sheet, cash-flow, or segment data provided, so leverage, working-capital needs, and revenue mix are unknown.",
+      "No dividend or buyback information to assess total shareholder return.",
+      "The 50% diversification cap prevents any new purchase of EFID at this time."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 16.824,
+      "input_tokens": 2068,
+      "output_tokens": 2236,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 16.827
+}

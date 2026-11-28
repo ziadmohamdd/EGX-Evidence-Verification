@@ -1,0 +1,123 @@
+{
+  "case_id": "test_026",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "Estimating Abu Qir's (ABUK) full-year 2026 EPS and comparing it to Edita's (EFID) 2025 EPS:\n\n**ABUK – 9-month 2026 EPS (verified):** 8.74 EGP for the nine months ended 30 September 2026, up from 4.28 EGP in the same period a year earlier. The Q3-2026 per-share figure is marked AMBIGUOUS (printed as '199', possibly a dropped decimal making it 1.99), so I cannot use it to build a quarter-by-quarter full-year estimate. The most defensible full-year 2026 estimate is a simple annualisation of the verified 9-month figure: 8.74 × (12/9) ≈ **11.65 EGP**. This assumes the run-rate holds through Q4, which is uncertain; a one-off item in the first nine months could make the true FY figure lower or higher.\n\n**EFID – FY2025 EPS (verified):** 2.18 EGP for the year ended 31 December 2025 (up from 1.09 EGP in FY2024).\n\n**Comparison:** ABUK's estimated FY2026 EPS (~11.65 EGP) is roughly 5.3× EFID's FY2025 EPS (2.18 EGP). On a pure per-share earnings basis, Abu Qir's estimated 2026 figure comfortably exceeds Edita's 2025 figure. However, this comparison is limited: (1) the ABUK number is an annualised estimate, not an audited full-year result; (2) the two companies are in different sectors (fertiliser/chemicals vs. food processing), so absolute EPS levels are not directly comparable without normalising for share count, capital structure, and sector margins; (3) the ABUK 104 % YoY growth and the Q3-2026 figure are both flagged AMBIGUOUS, so the growth trajectory cannot be confirmed with full confidence.\n\n**Why keep_cash:** You have no current holdings and a 5-year horizon with medium risk tolerance. The evidence provided covers only a single line item (EPS) for each company. There is no revenue, margin, debt, cash-flow, dividend, or balance-sheet data to assess sustainability of earnings, financial risk, or total return. Committing 35,000 EGP to either stock on the basis of one EPS line is not a responsible 5-year decision. I recommend keeping the cash while you gather fuller financial statements (income statement, balance sheet, cash flow) for both companies, and ideally a second year of ABUK data to confirm the growth trend. Once you have a broader picture, a diversified position (e.g., splitting between ABUK and EFID) could be considered, keeping any single holding below 50 % of total portfolio value.\n\n**Risks and uncertainty:** The ABUK full-year estimate is a linear annualisation and may be materially off if Q4 2026 differs from the first nine months. The AMBIGUOUS Q3-2026 figure means we cannot verify whether the 9-month pace was accelerating or decelerating in the most recent quarter. EFID's 100 % YoY EPS growth (1.09 → 2.18) is also strong but based on a single year; a second year of data would help confirm the trend. Neither company's valuation (P/E, P/B) can be assessed without a full share count and book value. This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS for the nine months ended 30 September 2026 is 8.74 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK basic EPS for the nine months ended 30 September 2025 is 4.28 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "ABUK basic EPS for the three months ended 30 September 2025 is 1.23 EGP per share."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2025 is 2.18 EGP per share."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2024 is 1.09 EGP per share."
+      }
+    ],
+    "unused_figures": [
+      "ABUK 9M2026 YoY change % (104 %) – AMBIGUOUS due to OCR; cannot be used in calculations. Affects confidence in the growth-rate narrative, though the 104 % is arithmetically consistent with the verified 8.74 vs 4.28 figures.",
+      "ABUK Q3-2026 EPS (printed '199', possibly 1.99) – AMBIGUOUS due to possible dropped decimal comma. Prevents a quarter-by-quarter build-up of the full-year 2026 estimate; forces reliance on simple annualisation of the 9-month figure.",
+      "ABUK Q3 YoY change % (662 %) – AMBIGUOUS due to OCR; cannot be used in calculations. Affects the ability to assess whether Q3-2026 was an outlier quarter."
+    ],
+    "limitations": [
+      "ABUK full-year 2026 EPS is an annualised estimate (8.74 × 12/9 ≈ 11.65 EGP), not an audited figure. It assumes the 9-month run-rate continues unchanged into Q4.",
+      "No revenue, margin, debt, cash-flow, dividend, or balance-sheet data is available for either company, limiting the depth of fundamental comparison.",
+      "The two companies operate in different sectors (fertiliser/chemicals vs. food processing), so absolute EPS levels are not directly comparable without normalisation.",
+      "Only one year of EFID data (FY2025) and nine months of ABUK data (9M2026) are available; multi-year trends cannot be assessed.",
+      "The AMBIGUOUS Q3-2026 ABUK figure prevents verification of whether earnings momentum was accelerating or decelerating in the most recent quarter."
+    ]
+  },
+  "final": {
+    "action": "keep_cash",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "Estimating Abu Qir's (ABUK) full-year 2026 EPS and comparing it to Edita's (EFID) 2025 EPS:\n\n**ABUK – 9-month 2026 EPS (verified):** 8.74 EGP for the nine months ended 30 September 2026, up from 4.28 EGP in the same period a year earlier. The Q3-2026 per-share figure is marked AMBIGUOUS (printed as '199', possibly a dropped decimal making it 1.99), so I cannot use it to build a quarter-by-quarter full-year estimate. The most defensible full-year 2026 estimate is a simple annualisation of the verified 9-month figure: 8.74 × (12/9) ≈ **11.65 EGP**. This assumes the run-rate holds through Q4, which is uncertain; a one-off item in the first nine months could make the true FY figure lower or higher.\n\n**EFID – FY2025 EPS (verified):** 2.18 EGP for the year ended 31 December 2025 (up from 1.09 EGP in FY2024).\n\n**Comparison:** ABUK's estimated FY2026 EPS (~11.65 EGP) is roughly 5.3× EFID's FY2025 EPS (2.18 EGP). On a pure per-share earnings basis, Abu Qir's estimated 2026 figure comfortably exceeds Edita's 2025 figure. However, this comparison is limited: (1) the ABUK number is an annualised estimate, not an audited full-year result; (2) the two companies are in different sectors (fertiliser/chemicals vs. food processing), so absolute EPS levels are not directly comparable without normalising for share count, capital structure, and sector margins; (3) the ABUK 104 % YoY growth and the Q3-2026 figure are both flagged AMBIGUOUS, so the growth trajectory cannot be confirmed with full confidence.\n\n**Why keep_cash:** You have no current holdings and a 5-year horizon with medium risk tolerance. The evidence provided covers only a single line item (EPS) for each company. There is no revenue, margin, debt, cash-flow, dividend, or balance-sheet data to assess sustainability of earnings, financial risk, or total return. Committing 35,000 EGP to either stock on the basis of one EPS line is not a responsible 5-year decision. I recommend keeping the cash while you gather fuller financial statements (income statement, balance sheet, cash flow) for both companies, and ideally a second year of ABUK data to confirm the growth trend. Once you have a broader picture, a diversified position (e.g., splitting between ABUK and EFID) could be considered, keeping any single holding below 50 % of total portfolio value.\n\n**Risks and uncertainty:** The ABUK full-year estimate is a linear annualisation and may be materially off if Q4 2026 differs from the first nine months. The AMBIGUOUS Q3-2026 figure means we cannot verify whether the 9-month pace was accelerating or decelerating in the most recent quarter. EFID's 100 % YoY EPS growth (1.09 → 2.18) is also strong but based on a single year; a second year of data would help confirm the trend. Neither company's valuation (P/E, P/B) can be assessed without a full share count and book value. This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS for the nine months ended 30 September 2026 is 8.74 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK basic EPS for the nine months ended 30 September 2025 is 4.28 EGP per share."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "ABUK basic EPS for the three months ended 30 September 2025 is 1.23 EGP per share."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2025 is 2.18 EGP per share."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2024 is 1.09 EGP per share."
+      }
+    ],
+    "unused_figures": [
+      "ABUK 9M2026 YoY change % (104 %) – AMBIGUOUS due to OCR; cannot be used in calculations. Affects confidence in the growth-rate narrative, though the 104 % is arithmetically consistent with the verified 8.74 vs 4.28 figures.",
+      "ABUK Q3-2026 EPS (printed '199', possibly 1.99) – AMBIGUOUS due to possible dropped decimal comma. Prevents a quarter-by-quarter build-up of the full-year 2026 estimate; forces reliance on simple annualisation of the 9-month figure.",
+      "ABUK Q3 YoY change % (662 %) – AMBIGUOUS due to OCR; cannot be used in calculations. Affects the ability to assess whether Q3-2026 was an outlier quarter."
+    ],
+    "limitations": [
+      "ABUK full-year 2026 EPS is an annualised estimate (8.74 × 12/9 ≈ 11.65 EGP), not an audited figure. It assumes the 9-month run-rate continues unchanged into Q4.",
+      "No revenue, margin, debt, cash-flow, dividend, or balance-sheet data is available for either company, limiting the depth of fundamental comparison.",
+      "The two companies operate in different sectors (fertiliser/chemicals vs. food processing), so absolute EPS levels are not directly comparable without normalisation.",
+      "Only one year of EFID data (FY2025) and nine months of ABUK data (9M2026) are available; multi-year trends cannot be assessed.",
+      "The AMBIGUOUS Q3-2026 ABUK figure prevents verification of whether earnings momentum was accelerating or decelerating in the most recent quarter."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 35000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 43.107,
+      "input_tokens": 2511,
+      "output_tokens": 5535,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 43.11
+}

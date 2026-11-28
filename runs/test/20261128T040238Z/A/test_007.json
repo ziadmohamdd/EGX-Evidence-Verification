@@ -1,0 +1,121 @@
+{
+  "case_id": "test_007",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "COMI",
+    "shares": 0,
+    "explanation": "You asked whether to put all 200,000 EGP into CIB (Commercial International Bank) shares. However, every piece of evidence provided in this report is for a company identified as **COMI**, not CIB. I am not permitted to use outside knowledge to confirm or deny whether COMI and CIB are the same entity, so I cannot responsibly make a buy/sell/hold recommendation on the specific stock you named. This is the primary reason for the insufficient-evidence verdict.\n\nEven setting that naming question aside, two further points are worth flagging:\n\n1. **Diversification rule.** Your portfolio is currently 100 % cash (200,000 EGP). The rule is that no single company may exceed 50 % of total portfolio value after a purchase. That caps any single-stock position at 100,000 EGP, i.e. at most 781 shares of COMI at 128 EGP (781 × 128 = 99,968 EGP). Putting \"all of it\" into one ticker is not permissible under the diversification constraint, regardless of how attractive the fundamentals look.\n\n2. **What the COMI evidence does show (for reference only, not a CIB recommendation).** COMI's consolidated net profit grew from 55,256,732,000 EGP (FY2024) to 82,258,815,000 EGP (FY2025), a roughly 49 % increase. Total equity rose from 152,636,277,000 EGP to 231,486,342,000 EGP over the same period. Customer deposits grew from 972,595,958,000 EGP to 1,110,395,693,000 EGP. These are positive signals for COMI, but they say nothing about CIB.\n\n**What is missing for a responsible decision:**\n- Financial statements, share price, and any other evidence specifically for CIB (the company you asked about).\n- Confirmation of whether the COMI ticker in this report corresponds to the CIB you have in mind.\n- A broader set of investment options so the 200,000 EGP can be split across at least two positions, keeping each below the 50 % cap.\n\nOnce you can provide CIB-specific evidence (or confirm the correct ticker), I can re-evaluate. In the meantime, keeping the cash while you clarify the ticker and gather a second candidate is the prudent step. This is guidance, not a guarantee of returns; equity prices can fall, and a 5-year horizon does not eliminate short-to-medium-term drawdown risk.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI consolidated net profit for the year ended Dec 31, 2025: 82,258,815 thousand EGP = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI consolidated net profit for the year ended Dec 31, 2024: 55,256,732 thousand EGP = 55,256,732,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+        "stated_value": 231486342000.0,
+        "statement": "COMI consolidated total equity and net profit for the year ended Dec 31, 2025: 231,486,342 thousand EGP = 231,486,342,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-55",
+        "stated_value": 152636277000.0,
+        "statement": "COMI consolidated total equity and net profit for the year ended Dec 31, 2024: 152,636,277 thousand EGP = 152,636,277,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+        "stated_value": 1110395693000.0,
+        "statement": "COMI consolidated due to customers as of Dec 31, 2025: 1,110,395,693 thousand EGP = 1,110,395,693,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-29",
+        "stated_value": 972595958000.0,
+        "statement": "COMI consolidated due to customers as of Dec 31, 2024: 972,595,958 thousand EGP = 972,595,958,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "COMI Basic EPS Dec 31, 2025: 18.25 (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-39) – the page unit line reads 'EGP thousands', which is inconsistent with a per-share EPS figure; treated as ambiguous and not used in any calculation.",
+      "COMI Basic EPS Dec 31, 2024: 14.72 (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-40) – same unit ambiguity as above; not used."
+    ],
+    "limitations": [
+      "All evidence pertains to the ticker COMI; the investor's question concerns CIB. Without confirmation that these are the same entity, no recommendation on CIB can be made.",
+      "EPS figures carry a page-level unit of 'EGP thousands' that is atypical for a per-share metric; they are excluded from analysis.",
+      "No revenue, asset, or liability detail beyond the items listed is available, so a full fundamental assessment of either company is not possible from this evidence alone."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "COMI",
+    "shares": 0,
+    "explanation": "You asked whether to put all 200,000 EGP into CIB (Commercial International Bank) shares. However, every piece of evidence provided in this report is for a company identified as **COMI**, not CIB. I am not permitted to use outside knowledge to confirm or deny whether COMI and CIB are the same entity, so I cannot responsibly make a buy/sell/hold recommendation on the specific stock you named. This is the primary reason for the insufficient-evidence verdict.\n\nEven setting that naming question aside, two further points are worth flagging:\n\n1. **Diversification rule.** Your portfolio is currently 100 % cash (200,000 EGP). The rule is that no single company may exceed 50 % of total portfolio value after a purchase. That caps any single-stock position at 100,000 EGP, i.e. at most 781 shares of COMI at 128 EGP (781 × 128 = 99,968 EGP). Putting \"all of it\" into one ticker is not permissible under the diversification constraint, regardless of how attractive the fundamentals look.\n\n2. **What the COMI evidence does show (for reference only, not a CIB recommendation).** COMI's consolidated net profit grew from 55,256,732,000 EGP (FY2024) to 82,258,815,000 EGP (FY2025), a roughly 49 % increase. Total equity rose from 152,636,277,000 EGP to 231,486,342,000 EGP over the same period. Customer deposits grew from 972,595,958,000 EGP to 1,110,395,693,000 EGP. These are positive signals for COMI, but they say nothing about CIB.\n\n**What is missing for a responsible decision:**\n- Financial statements, share price, and any other evidence specifically for CIB (the company you asked about).\n- Confirmation of whether the COMI ticker in this report corresponds to the CIB you have in mind.\n- A broader set of investment options so the 200,000 EGP can be split across at least two positions, keeping each below the 50 % cap.\n\nOnce you can provide CIB-specific evidence (or confirm the correct ticker), I can re-evaluate. In the meantime, keeping the cash while you clarify the ticker and gather a second candidate is the prudent step. This is guidance, not a guarantee of returns; equity prices can fall, and a 5-year horizon does not eliminate short-to-medium-term drawdown risk.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI consolidated net profit for the year ended Dec 31, 2025: 82,258,815 thousand EGP = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI consolidated net profit for the year ended Dec 31, 2024: 55,256,732 thousand EGP = 55,256,732,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+        "stated_value": 231486342000.0,
+        "statement": "COMI consolidated total equity and net profit for the year ended Dec 31, 2025: 231,486,342 thousand EGP = 231,486,342,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-55",
+        "stated_value": 152636277000.0,
+        "statement": "COMI consolidated total equity and net profit for the year ended Dec 31, 2024: 152,636,277 thousand EGP = 152,636,277,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+        "stated_value": 1110395693000.0,
+        "statement": "COMI consolidated due to customers as of Dec 31, 2025: 1,110,395,693 thousand EGP = 1,110,395,693,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-29",
+        "stated_value": 972595958000.0,
+        "statement": "COMI consolidated due to customers as of Dec 31, 2024: 972,595,958 thousand EGP = 972,595,958,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "COMI Basic EPS Dec 31, 2025: 18.25 (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-39) – the page unit line reads 'EGP thousands', which is inconsistent with a per-share EPS figure; treated as ambiguous and not used in any calculation.",
+      "COMI Basic EPS Dec 31, 2024: 14.72 (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-40) – same unit ambiguity as above; not used."
+    ],
+    "limitations": [
+      "All evidence pertains to the ticker COMI; the investor's question concerns CIB. Without confirmation that these are the same entity, no recommendation on CIB can be made.",
+      "EPS figures carry a page-level unit of 'EGP thousands' that is atypical for a per-share metric; they are excluded from analysis.",
+      "No revenue, asset, or liability detail beyond the items listed is available, so a full fundamental assessment of either company is not possible from this evidence alone."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 200000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 29.019,
+      "input_tokens": 1787,
+      "output_tokens": 3706,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 29.022
+}

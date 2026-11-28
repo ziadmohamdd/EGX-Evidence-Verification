@@ -1,0 +1,115 @@
+{
+  "case_id": "test_026",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "EPS comparison (as requested):\n\n• ABUK 9M-2026 basic EPS = 8.74 EGP (verified). A simple annualisation (8.74 × 12/9) gives an estimated full-year 2026 EPS of roughly 11.65 EGP. Even in the extreme case where Q4 contributed nothing, the full-year figure would still be 8.74 EGP.\n• EFID FY-2025 basic & diluted EPS = 2.18 EGP (verified).\n\nSo ABUK's estimated FY-2026 EPS (≈ 11.65 EGP, or at minimum 8.74 EGP) comfortably exceeds EFID's FY-2025 EPS of 2.18 EGP by a factor of roughly 4–5×. On a price-to-earnings basis at the given share prices (ABUK 76.21 EGP, EFID 20.40 EGP), ABUK trades at roughly 6.5× estimated FY-2026 EPS versus EFID at roughly 9.4× FY-2025 EPS.\n\nWhy I am not issuing a buy/hold/sell:\nThe evidence supplied covers only a single line item (basic EPS) for each company. A responsible 5-year investment decision for a medium-risk investor requires, at minimum: revenue and margin trends, balance-sheet leverage, dividend policy, sector/competitive position, and forward guidance. None of that is present in the evidence. I therefore cannot responsibly recommend allocating the investor's 35,000 EGP to either name on EPS alone.\n\nCaveats on the ABUK estimate:\n- The Q3-2026 standalone EPS (printed as 1.99) is flagged AMBIGUOUS (possible missing decimal), so I could not use it to build a quarter-by-quarter FY estimate. The annualisation above assumes earnings are spread evenly across quarters, which may over- or under-state the true Q4.\n- The 9M-2026 growth rate (printed as 104 %) is also AMBIGUOUS and was not used in any calculation.\n- ABUK's 9M-2026 figure is for the nine months ended 30 Sep 2026; EFID's is a full calendar year ended 31 Dec 2025. The periods are not perfectly aligned, but the gap is large enough that the comparison conclusion is robust.\n\nWhat would be needed to move to a concrete recommendation: full income statements (revenue, EBITDA, net profit) for at least 3 years for both companies, balance sheets (debt, equity, working capital), dividend history, and any forward guidance or sector outlook.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS for the nine months ended 30 Sep 2026 = 8.74 EGP per share"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK basic EPS for the nine months ended 30 Sep 2025 = 4.28 EGP per share"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "ABUK basic EPS for the three months ended 30 Sep 2025 = 1.23 EGP per share"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for FY ended 31 Dec 2025 = 2.18 EGP per share"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for FY ended 31 Dec 2024 = 1.09 EGP per share"
+      }
+    ],
+    "unused_figures": [
+      "ABUK 9M-2026 change % (printed 104 %) – AMBIGUOUS, not used in any calculation",
+      "ABUK Q3-2026 standalone EPS (printed 1.99) – AMBIGUOUS (possible missing decimal), not used in the FY estimate",
+      "ABUK Q3 change % (printed 662 %) – AMBIGUOUS, not used"
+    ],
+    "limitations": [
+      "ABUK FY-2026 EPS is an estimate by simple annualisation of the 9M figure; the true Q4 result is unknown and the AMBIGUOUS Q3-2026 figure prevents a quarter-by-quarter build-up.",
+      "Only one line item (basic EPS) is available for each company; no revenue, margin, leverage, dividend, or forward-guidance data is present.",
+      "The two periods are not identical (9M-2026 vs FY-2025), though the magnitude of the gap makes the comparison conclusion robust.",
+      "This is guidance, not a guarantee of returns. Past EPS does not ensure future performance."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "EPS comparison (as requested):\n\n• ABUK 9M-2026 basic EPS = 8.74 EGP (verified). A simple annualisation (8.74 × 12/9) gives an estimated full-year 2026 EPS of roughly 11.65 EGP. Even in the extreme case where Q4 contributed nothing, the full-year figure would still be 8.74 EGP.\n• EFID FY-2025 basic & diluted EPS = 2.18 EGP (verified).\n\nSo ABUK's estimated FY-2026 EPS (≈ 11.65 EGP, or at minimum 8.74 EGP) comfortably exceeds EFID's FY-2025 EPS of 2.18 EGP by a factor of roughly 4–5×. On a price-to-earnings basis at the given share prices (ABUK 76.21 EGP, EFID 20.40 EGP), ABUK trades at roughly 6.5× estimated FY-2026 EPS versus EFID at roughly 9.4× FY-2025 EPS.\n\nWhy I am not issuing a buy/hold/sell:\nThe evidence supplied covers only a single line item (basic EPS) for each company. A responsible 5-year investment decision for a medium-risk investor requires, at minimum: revenue and margin trends, balance-sheet leverage, dividend policy, sector/competitive position, and forward guidance. None of that is present in the evidence. I therefore cannot responsibly recommend allocating the investor's 35,000 EGP to either name on EPS alone.\n\nCaveats on the ABUK estimate:\n- The Q3-2026 standalone EPS (printed as 1.99) is flagged AMBIGUOUS (possible missing decimal), so I could not use it to build a quarter-by-quarter FY estimate. The annualisation above assumes earnings are spread evenly across quarters, which may over- or under-state the true Q4.\n- The 9M-2026 growth rate (printed as 104 %) is also AMBIGUOUS and was not used in any calculation.\n- ABUK's 9M-2026 figure is for the nine months ended 30 Sep 2026; EFID's is a full calendar year ended 31 Dec 2025. The periods are not perfectly aligned, but the gap is large enough that the comparison conclusion is robust.\n\nWhat would be needed to move to a concrete recommendation: full income statements (revenue, EBITDA, net profit) for at least 3 years for both companies, balance sheets (debt, equity, working capital), dividend history, and any forward guidance or sector outlook.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS for the nine months ended 30 Sep 2026 = 8.74 EGP per share"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "ABUK basic EPS for the nine months ended 30 Sep 2025 = 4.28 EGP per share"
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "ABUK basic EPS for the three months ended 30 Sep 2025 = 1.23 EGP per share"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for FY ended 31 Dec 2025 = 2.18 EGP per share"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for FY ended 31 Dec 2024 = 1.09 EGP per share"
+      }
+    ],
+    "unused_figures": [
+      "ABUK 9M-2026 change % (printed 104 %) – AMBIGUOUS, not used in any calculation",
+      "ABUK Q3-2026 standalone EPS (printed 1.99) – AMBIGUOUS (possible missing decimal), not used in the FY estimate",
+      "ABUK Q3 change % (printed 662 %) – AMBIGUOUS, not used"
+    ],
+    "limitations": [
+      "ABUK FY-2026 EPS is an estimate by simple annualisation of the 9M figure; the true Q4 result is unknown and the AMBIGUOUS Q3-2026 figure prevents a quarter-by-quarter build-up.",
+      "Only one line item (basic EPS) is available for each company; no revenue, margin, leverage, dividend, or forward-guidance data is present.",
+      "The two periods are not identical (9M-2026 vs FY-2025), though the magnitude of the gap makes the comparison conclusion robust.",
+      "This is guidance, not a guarantee of returns. Past EPS does not ensure future performance."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 35000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 33.291,
+      "input_tokens": 2511,
+      "output_tokens": 4442,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 33.295
+}

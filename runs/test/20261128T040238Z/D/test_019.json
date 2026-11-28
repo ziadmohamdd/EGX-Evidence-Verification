@@ -1,0 +1,125 @@
+{
+  "case_id": "test_019",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "COMI",
+    "shares": 0,
+    "explanation": "The investor's question concerns CIB, but no CIB evidence was provided; all evidence relates to COMI. The investor does not own CIB, so no CIB position can be opened or held. Even if the question is interpreted as referring to COMI, the condition to add (net-profit growth > 30%) is not confirmed. The FY2025 net-profit figure (82,258,815 EGP-thousands) is flagged AMBIGUOUS due to a fold in the scanned page and cannot be used in calculations. The only verified growth signal is basic EPS: 18.25 EGP (FY2025) vs 14.72 EGP (FY2024), implying approximately 24.0% growth, which is below the 30% threshold. Because the condition is not met, no additional shares are purchased. The investor retains the existing 100 COMI shares (≈ 12,800 EGP at 128.00 EGP/share) and the 20,000 EGP cash. Risks: the AMBIGUOUS 2025 net-profit figure means the true growth rate is unknown; if the obscured digits are confirmed and growth exceeds 30%, the investor may wish to revisit. The portfolio remains concentrated in a single equity name with a large cash buffer, consistent with the investor's medium loss tolerance and 4-year horizon. No outside information about CIB or COMI beyond the provided evidence has been used.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year, Dec 31 2024, in EGP (converted from 55,256,732 EGP-thousands)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "COMI basic EPS, Dec 31 2025, in EGP per share"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+        "stated_value": 14.72,
+        "statement": "COMI basic EPS, Dec 31 2024, in EGP per share"
+      }
+    ],
+    "unused_figures": [
+      "COMI net profit for the year, Dec 31 2025: 82,258,815 EGP-thousands (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-33) – AMBIGUOUS due to a fold in the scanned page; cannot be used to compute a verified growth rate. This means the true FY2025 net-profit growth is unknown, and the 30% threshold cannot be confirmed or definitively ruled out on the income-statement line."
+    ],
+    "limitations": [
+      "No CIB evidence was provided; the investor's question about CIB cannot be answered.",
+      "The FY2025 COMI net-profit figure is AMBIGUOUS, so the exact net-profit growth rate is unconfirmed.",
+      "EPS growth (~24%) is a proxy for net-profit growth only if the weighted-average share count is unchanged; no share-count data is in the evidence.",
+      "Only two fiscal years are available; no multi-year trend, balance-sheet, or cash-flow data is provided.",
+      "This is guidance, not a guarantee of returns. The investor should obtain a clean copy of the FY2025 annual report to resolve the ambiguous figure before making a final decision."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "COMI",
+    "shares": 0,
+    "explanation": "The investor's question concerns CIB, but no CIB evidence was provided; all evidence relates to COMI. The investor does not own CIB, so no CIB position can be opened or held. Even if the question is interpreted as referring to COMI, the condition to add (net-profit growth > 30%) is not confirmed. The FY2025 net-profit figure (82,258,815 EGP-thousands) is flagged AMBIGUOUS due to a fold in the scanned page and cannot be used in calculations. The only verified growth signal is basic EPS: 18.25 EGP (FY2025) vs 14.72 EGP (FY2024), implying approximately 24.0% growth, which is below the 30% threshold. Because the condition is not met, no additional shares are purchased. The investor retains the existing 100 COMI shares (≈ 12,800 EGP at 128.00 EGP/share) and the 20,000 EGP cash. Risks: the AMBIGUOUS 2025 net-profit figure means the true growth rate is unknown; if the obscured digits are confirmed and growth exceeds 30%, the investor may wish to revisit. The portfolio remains concentrated in a single equity name with a large cash buffer, consistent with the investor's medium loss tolerance and 4-year horizon. No outside information about CIB or COMI beyond the provided evidence has been used.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year, Dec 31 2024, in EGP (converted from 55,256,732 EGP-thousands)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "stated_value": 18.25,
+        "statement": "COMI basic EPS, Dec 31 2025, in EGP per share"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+        "stated_value": 14.72,
+        "statement": "COMI basic EPS, Dec 31 2024, in EGP per share"
+      }
+    ],
+    "unused_figures": [
+      "COMI net profit for the year, Dec 31 2025: 82,258,815 EGP-thousands (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-33) – AMBIGUOUS due to a fold in the scanned page; cannot be used to compute a verified growth rate. This means the true FY2025 net-profit growth is unknown, and the 30% threshold cannot be confirmed or definitively ruled out on the income-statement line."
+    ],
+    "limitations": [
+      "No CIB evidence was provided; the investor's question about CIB cannot be answered.",
+      "The FY2025 COMI net-profit figure is AMBIGUOUS, so the exact net-profit growth rate is unconfirmed.",
+      "EPS growth (~24%) is a proxy for net-profit growth only if the weighted-average share count is unchanged; no share-count data is in the evidence.",
+      "Only two fiscal years are available; no multi-year trend, balance-sheet, or cash-flow data is provided.",
+      "This is guidance, not a guarantee of returns. The investor should obtain a clean copy of the FY2025 annual report to resolve the ambiguous figure before making a final decision."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 100
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n## Company Mismatch – Important Flag\n\nYour question refers to **CIB** (Commercial International Bank), but every piece of evidence supplied in this file relates to **COMI** (Commodity & Industrial Investment Company). I can only analyse the COMI data that was provided; I have no CIB evidence to work from. If you intended COMI, the analysis below applies. If you truly need CIB, that evidence must be supplied separately.\n\n---\n\n## COMI – Net Profit & Growth (FY2025 vs FY2024)\n\n### Net profit (income statement)\n\n| Period | Value (as printed) | Status |\n|---|---|---|\n| Dec 31, 2025 | 82,258,815 EGP 000s → **82,258,815,000 EGP** | **AMBIGUOUS** – digits partially hidden by a fold in the scanned page [COMI-COMI_FY2025_consolidated_condensed_en-p5-33] |\n| Dec 31, 2024 | 55,256,732 EGP 000s → **55,256,732,000 EGP** | Verified [COMI-COMI_FY2025_consolidated_condensed_en-p5-34] |\n\nBecause the 2025 net-profit figure is flagged **AMBIGUOUS**, I **cannot** compute a reliable year-on-year net-profit growth rate from the income statement. Any percentage derived from 82,258,815 would be unreliable.\n\n### Basic EPS (verified proxy)\n\n| Period | EPS (EGP) | Status |\n|---|---|---|\n| Dec 31, 2025 | 18.25 | Verified [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] |\n| Dec 31, 2024 | 14.72 | Verified [COMI-COMI_FY2025_consolidated_condensed_en-p5-40] |\n\nEPS growth = (18.25 − 14.72) / 14.72 = **≈ 24.0 %**\n\n> Caveat: EPS growth equals net-profit growth only if the weighted-average share count is unchanged. No share-count data is in the evidence, so this is a proxy, not a confirmed net-profit growth figure.\n\n### Against your 30 % threshold\n\n- The **verified** EPS-based growth of ~24 % is **below** your 30 % trigger.\n- The **ambiguous** 2025 net-profit figure, if read at face value (82,258,815 vs 55,256,732), would imply ≈ 48.9 % growth – well above 30 %. However, because that figure is **AMBIGUOUS** (fold in the scan), I **cannot** treat it as confirmed and therefore **cannot** validate that the 30 % threshold is met.\n\n---\n\n## Data-Quality & Risk Notes\n\n1. **Scan defect:** The 2025 net-profit cell is partially obscured [COMI-COMI_FY2025_consolidated_condensed_en-p5-33]. Until a clean copy or the auditor's report confirms the digit, the figure should be treated as unverified.\n2. **Single-period evidence:** Only FY2025 and FY2024 are available; no multi-year trend, segment split, or cash-flow statement is provided, limiting the growth and balance-sheet assessment.\n3. **No balance-sheet or cash-flow data** was supplied, so leverage, liquidity, and working-capital risk cannot be evaluated from this evidence set.\n4. **Unit check:** All income-statement figures are in EGP thousands; EPS is in EGP per share. Conversions above reflect that.\n\n---\n\n## Bottom Line for Your Decision\n\n- I **cannot confirm** that COMI's net profit grew by more than 30 % in FY2025 because the 2025 figure is AMBIGUOUS.\n- The only **verified** growth signal (basic EPS) points to roughly **24 %**, which would **not** meet your 30 % add-on trigger.\n- Before acting on the 30 % rule, you would need a clean, verified copy of the FY2025 net-profit line (or the audited annual report) to resolve the ambiguity.\n\n*No buy/sell/hold recommendation is made here; that is the decision agent's role.*",
+    "investor": "\n\n## Note on the Question\n\nThe evidence supplied in this report is for **COMI** (the only holding in the portfolio), not for **CIB**. I have no CIB figures to work from, so I cannot confirm or deny a >30 % net-profit growth for CIB. In addition, my remit here is investor-suitability, not company-fundamental analysis, so I will not compute a growth rate from the COMI numbers that are printed.\n\nIf you intended to ask about **COMI**, the two net-profit figures are visible in the evidence (Dec 2025: 82,258,815 EGP-thousands; Dec 2024: 55,256,732 EGP-thousands), but I will leave the arithmetic to the research team.\n\n---\n\n## Suitability Snapshot\n\n| Dimension | Detail |\n|---|---|\n| **Goal** | Grow savings |\n| **Horizon** | 4 years – medium term; enough time to ride out a single market cycle, but not long enough to ignore drawdowns |\n| **Liquidity needs** | Low – a separate emergency fund is maintained, so portfolio cash is not earmarked for short-term bills |\n| **Willingness to accept losses** | Medium – comfortable with moderate volatility, but not a \"set-and-forget\" high-beta investor |\n| **Capacity to absorb losses** | Medium – a large drawdown would be felt but not catastrophic |\n\n### Current concentration\n\n| Item | Value (EGP) | Share of total |\n|---|---|---|\n| COMI – 100 sh × 128.00 | 12,800 | ≈ 39 % |\n| Cash | 20,000 | ≈ 61 % |\n| **Total** | **32,800** | 100 % |\n\nThe portfolio is **single-stock concentrated** on the equity side (100 % of the invested portion is COMI), but the large cash buffer keeps overall equity exposure modest.\n\n### What the portfolio allows\n\n- **Cash that is free to deploy:** the full **20,000 EGP** (emergency fund is held separately, so none of this cash is restricted).\n- **Equity that can be sold:** all **100 COMI shares** (≈ 12,800 EGP at the cutoff price) if a rebalance or exit is desired.\n- **No other holdings, no pledged assets, no near-term known outflows** are noted.\n\n### Fit observations (no action recommended)\n\n- A 4-year horizon with medium loss tolerance/capacity is broadly consistent with a **mixed allocation** (e.g., a blend of equities and fixed-income or money-market instruments) rather than an all-equity or all-cash posture.\n- The current 61 % cash / 39 % single-stock split sits at the conservative end; the investor has room to shift some of the 20,000 EGP cash into additional instruments if the research team identifies suitable opportunities, without breaching the medium-loss tolerance.\n- Because the only equity is a single name, any new equity commitment would either **add to COMI concentration** (raising single-stock risk) or **diversify** (reducing it). The suitability constraint is the medium loss capacity: a further large single-stock position would push concentration risk beyond what \"medium\" comfortably supports.\n- The investor's stated trigger (\"I will add if it grew by more than 30 %\") is a **fundamental-growth condition** that belongs to the research/valuation team, not to the suitability assessment. From a suitability standpoint, the 20,000 EGP cash is available to act on such a trigger, subject to the concentration and loss-tolerance limits above.\n\n*I have not analysed COMI's (or CIB's) financials and I am not recommending a buy, sell, or hold.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 18.868,
+      "input_tokens": 909,
+      "output_tokens": 1902,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 18.987,
+      "input_tokens": 902,
+      "output_tokens": 1549,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 22.122,
+      "input_tokens": 3118,
+      "output_tokens": 2393,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 59.981
+}

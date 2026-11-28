@@ -1,0 +1,181 @@
+{
+  "case_id": "test_012",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor asked to buy 1,000 additional EFID shares (20,400 EGP at 20.40 EGP/share), but the portfolio holds 0.00 EGP in cash. A buy must fit available cash, so the order cannot be executed as requested. The investor would need to deposit external funds before any purchase could be placed.\n\nEven setting the funding constraint aside, the evidence does not support a confident 'add more' decision at this time:\n\n1. Positive signals: FY2025 revenue grew 29.5% to 20,915,072,432 EGP and net profit grew 67.8% to 2,695,301,670 EGP; EPS doubled to 2.18 EGP. The income-statement trajectory is encouraging.\n\n2. Material data gaps: Only two fiscal years are available. There is no cash-flow statement, no total assets or equity figure, no debt split (interest-bearing vs. trade payables), no segment data, and no valuation metrics (P/E, market cap, peer comparison). The 42.1% jump in total liabilities (to 8,646,502,892 EGP) cannot be assessed for solvency risk without equity and asset data. The profit acceleration could reflect operating leverage, a one-off item, or a cost-structure change; the evidence does not disaggregate the drivers.\n\n3. Concentration and risk: The portfolio is 100% in EFID (2,000 shares × 20.40 = 40,800 EGP). Adding 1,000 shares would deepen an already fully concentrated single-stock position. With medium loss tolerance and capacity, a 30% drawdown on the enlarged 61,200 EGP position would represent a ~18,360 EGP paper loss. The suitability analyst correctly flags that this is at the upper edge of what medium tolerance typically supports, and that diversifying any incremental capital would be more prudent than adding 100% more of the same name.\n\n4. Liabilities unit flag: The total-liabilities row carries a 'unit: None' metadata tag, though the column heading explicitly reads 'EGP'. The financial analyst flagged this as a data-quality note. I have treated the figures as EGP per the column heading, but this is noted for transparency.\n\nRecommendation: Hold the existing 2,000 EFID shares. The investor should (a) deposit additional cash if they wish to add to the position, (b) consider whether any portion of new capital should go to a diversifying instrument rather than more EFID, and (c) revisit the decision once a full balance sheet, cash-flow statement, and at least a third year of results are available. This is guidance, not a guarantee of future performance; the two-year growth record is promising but not yet sufficient to confirm a durable trend.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "EFID consolidated revenue for the year ended 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-75",
+        "stated_value": 8646502892.0,
+        "statement": "EFID total liabilities as at 31 December 2025 (unit per column heading: EGP)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-76",
+        "stated_value": 6083968654.0,
+        "statement": "EFID total liabilities as at 31 December 2024 (unit per column heading: EGP)"
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36 (duplicate of p6-30, same net-profit FY2025 figure)",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31 (duplicate of p6-37, same net-profit FY2024 figure)",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-75 / p5-76 unit tag 'None': the financial analyst flagged this as a data-quality note. The column heading explicitly states 'EGP', so the figures are used as EGP. No calculation is affected, but the flag is recorded here for transparency."
+    ],
+    "limitations": [
+      "Only two fiscal years (FY2024, FY2025) are available; a multi-year trend cannot be established.",
+      "No cash-flow statement, total assets, total equity, or debt composition is in the evidence; solvency and liquidity ratios cannot be computed.",
+      "No valuation data (P/E, market cap, peer set) is provided; the 20.40 EGP share price cannot be assessed as cheap or expensive relative to earnings.",
+      "No dividend or share-count detail beyond the EPS line.",
+      "The investor's total net worth outside this portfolio is unknown, so the absolute loss capacity cannot be verified.",
+      "The 0.00 EGP cash balance means no purchase can be funded from within the portfolio without a prior deposit."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor asked to buy 1,000 additional EFID shares (20,400 EGP at 20.40 EGP/share), but the portfolio holds 0.00 EGP in cash. A buy must fit available cash, so the order cannot be executed as requested. The investor would need to deposit external funds before any purchase could be placed.\n\nEven setting the funding constraint aside, the evidence does not support a confident 'add more' decision at this time:\n\n1. Positive signals: FY2025 revenue grew 29.5% to 20,915,072,432 EGP and net profit grew 67.8% to 2,695,301,670 EGP; EPS doubled to 2.18 EGP. The income-statement trajectory is encouraging.\n\n2. Material data gaps: Only two fiscal years are available. There is no cash-flow statement, no total assets or equity figure, no debt split (interest-bearing vs. trade payables), no segment data, and no valuation metrics (P/E, market cap, peer comparison). The 42.1% jump in total liabilities (to 8,646,502,892 EGP) cannot be assessed for solvency risk without equity and asset data. The profit acceleration could reflect operating leverage, a one-off item, or a cost-structure change; the evidence does not disaggregate the drivers.\n\n3. Concentration and risk: The portfolio is 100% in EFID (2,000 shares × 20.40 = 40,800 EGP). Adding 1,000 shares would deepen an already fully concentrated single-stock position. With medium loss tolerance and capacity, a 30% drawdown on the enlarged 61,200 EGP position would represent a ~18,360 EGP paper loss. The suitability analyst correctly flags that this is at the upper edge of what medium tolerance typically supports, and that diversifying any incremental capital would be more prudent than adding 100% more of the same name.\n\n4. Liabilities unit flag: The total-liabilities row carries a 'unit: None' metadata tag, though the column heading explicitly reads 'EGP'. The financial analyst flagged this as a data-quality note. I have treated the figures as EGP per the column heading, but this is noted for transparency.\n\nRecommendation: Hold the existing 2,000 EFID shares. The investor should (a) deposit additional cash if they wish to add to the position, (b) consider whether any portion of new capital should go to a diversifying instrument rather than more EFID, and (c) revisit the decision once a full balance sheet, cash-flow statement, and at least a third year of results are available. This is guidance, not a guarantee of future performance; the two-year growth record is promising but not yet sufficient to confirm a durable trend.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "EFID consolidated revenue for the year ended 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year ended 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for the year ended 31 December 2024"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-75",
+        "stated_value": 8646502892.0,
+        "statement": "EFID total liabilities as at 31 December 2025 (unit per column heading: EGP)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-76",
+        "stated_value": 6083968654.0,
+        "statement": "EFID total liabilities as at 31 December 2024 (unit per column heading: EGP)"
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-36 (duplicate of p6-30, same net-profit FY2025 figure)",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31 (duplicate of p6-37, same net-profit FY2024 figure)",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-75 / p5-76 unit tag 'None': the financial analyst flagged this as a data-quality note. The column heading explicitly states 'EGP', so the figures are used as EGP. No calculation is affected, but the flag is recorded here for transparency."
+    ],
+    "limitations": [
+      "Only two fiscal years (FY2024, FY2025) are available; a multi-year trend cannot be established.",
+      "No cash-flow statement, total assets, total equity, or debt composition is in the evidence; solvency and liquidity ratios cannot be computed.",
+      "No valuation data (P/E, market cap, peer set) is provided; the 20.40 EGP share price cannot be assessed as cheap or expensive relative to earnings.",
+      "No dividend or share-count detail beyond the EPS line.",
+      "The investor's total net worth outside this portfolio is unknown, so the absolute loss capacity cannot be verified.",
+      "The 0.00 EGP cash balance means no purchase can be funded from within the portfolio without a prior deposit."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 0.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 2000
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n# EFID (Edita) – Financial Evidence Analysis\n\n## 1. Profitability\n\n| Metric | FY2025 | FY2024 | YoY Δ |\n|---|---|---|---|\n| Revenue | 20,915,072,432 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01] | 16,146,545,699 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02] | +29.5 % |\n| Net profit | 2,695,301,670 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] | 1,606,727,698 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37] | +67.8 % |\n| EPS (basic & diluted) | 2.18 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] | 1.09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39] | +100 % |\n| Net margin (derived) | ≈ 12.9 % | ≈ 10.0 % | +2.9 pp |\n\nProfit is growing roughly 2.3× faster than revenue, and the margin expanded by nearly three percentage points. EPS doubled. On the evidence provided, the income-statement trajectory is strongly positive.\n\n## 2. Growth\n\n- Revenue CAGR over the two-year window: +29.5 % [p6-01 vs p6-02].\n- Net-profit CAGR: +67.8 % [p6-30 vs p6-37].\n- EPS CAGR: +100 % [p6-38 vs p6-39].\n\nOnly two fiscal years are available in the evidence set, so a multi-year trend cannot be confirmed. The acceleration in profit relative to revenue could reflect operating leverage, a one-off item, or a change in cost structure; the evidence does not disaggregate the drivers.\n\n## 3. Balance Sheet / Leverage\n\n| Metric | FY2025 | FY2024 | YoY Δ |\n|---|---|---|---|\n| Total liabilities | 8,646,502,892 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-75] | 6,083,968,654 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-76] | +42.1 % |\n| Liabilities / Revenue (derived) | ≈ 41.3 % | ≈ 37.7 % | +3.6 pp |\n\n- Liabilities grew **42.1 %**, materially faster than revenue (+29.5 %) and net profit (+67.8 % in absolute terms but from a much smaller base). The leverage ratio (liabilities-to-revenue) worsened by ~3.6 pp.\n- **Missing data:** Total assets, total equity, current/non-current split of liabilities, interest-bearing debt, and cash-flow statement are **not** in the evidence set. A full solvency or liquidity assessment (D/E, current ratio, interest coverage) is therefore **not possible** with the figures provided.\n\n## 4. Risks & Data-Quality Flags\n\n| Flag | Detail |\n|---|---|\n| **AMBIGUOUS – unit tag** | The liabilities row carries `unit: None` in the source [p5-75, p5-76]. The column heading reads \"31 December 2025 EGP\", so the figures are interpreted as EGP. Flagging for the record; no computation is affected because the column heading is unambiguous. |\n| **Duplicate evidence IDs** | Net-profit FY2025 appears under both [p6-30] and [p6-36]; FY2024 under [p6-31] and [p6-37]. Values are identical (2,695,301,670 / 1,606,727,698 EGP), so no contradiction, but the duplication is noted. |\n| **No cash-flow or segment data** | Without operating cash flow, capex, or segment revenue, the quality of earnings and the sustainability of the 67.8 % profit jump cannot be verified. |\n| **No equity / asset figures** | Cannot compute ROE, D/E, or assess whether the 42 % liability build is funded by retained earnings or external borrowing. |\n| **Two-year window only** | A single year of growth does not establish a durable trend; a cyclical or one-off spike cannot be ruled out. |\n| **No dividend or share-count detail** | EPS is given, but the underlying share count and any dividend policy are absent from the evidence. |\n\n## 5. Relevance to the Investor's Stated Profile\n\n- **Position size:** 2,000 existing shares × 20.40 EGP = 40,800 EGP. Adding 1,000 shares would cost 20,400 EGP, roughly doubling the position.\n- **Cash on hand: 0.00 EGP.** The evidence set does not include a funding source for the additional 20,400 EGP. This is a practical constraint the decision agent must address.\n- **Horizon (3–5 yr) & medium loss tolerance:** The two-year profit trajectory is encouraging, but the absence of multi-year data, cash-flow confirmation, and a full balance-sheet picture means the medium-risk profile cannot be fully stress-tested against the evidence at hand.\n\n## 6. Summary of What the Evidence Does and Does Not Support\n\n**Supported by the evidence:**\n- Strong top-line and bottom-line growth in FY2025 vs FY2024.\n- Meaningful margin expansion.\n- EPS doubling.\n\n**Not supported / not assessable with the evidence given:**\n- Whether the profit growth is recurring or one-off.\n- The company's true leverage and solvency (no equity, no asset, no debt-split data).\n- Cash-generation ability (no cash-flow statement).\n- Valuation (no market-cap, P/E, or peer comparison in the evidence).\n- Dividend sustainability.\n\nI have not recommended a buy, sell, or hold. The decision agent should weigh the above against the investor's cash position, risk tolerance, and any additional data (full balance sheet, cash-flow statement, multi-year history) before acting.",
+    "investor": "\n\n## Investor-Suitability Assessment – Adding 1,000 EFID Shares\n\n### 1. Horizon & Liquidity\n\n- **Horizon (3–5 years):** Appropriate for a single-listed-equity position. No mismatch here.\n- **Liquidity needs:** The investor maintains a separate emergency fund, so the portfolio does not need to double as a cash buffer. This is a positive: the EFID holding can be held through normal volatility without being forced to sell.\n\n### 2. Loss Tolerance & Capacity\n\n- Both willingness **and** capacity to absorb losses are rated **medium**.\n- The portfolio is **100 % concentrated in one stock** (EFID, 2,000 sh × 20.40 EGP = **40,800 EGP**). There is no diversification cushion.\n- Adding 1,000 shares (≈ 20,400 EGP) would push the position to **3,000 sh / 61,200 EGP**, still 100 % in a single name.\n- A 30 % drawdown on the enlarged position would mean a paper loss of roughly **18,360 EGP** on the portfolio alone. Whether that sits comfortably within \"medium\" tolerance depends on the investor's total net worth outside this portfolio, which is not stated. The key point: **a fully concentrated single-stock book is at the upper edge of what \"medium\" loss tolerance typically supports**, and adding to it deepens the exposure rather than mitigating it.\n\n### 3. Current Concentration\n\n| Item | Value |\n|---|---|\n| Total portfolio value | 40,800 EGP |\n| EFID weight | **100 %** |\n| Other holdings / diversifiers | None |\n\nThere is no other asset class, sector, or instrument in the portfolio to offset EFID-specific risk. The concentration is the single most important suitability concern.\n\n### 4. What the Portfolio Allows (Cash & Sellable Assets)\n\n- **Free cash in the portfolio: 0.00 EGP.** There is no internal cash to fund the purchase.\n- **Sellable assets:** The only holding is the existing 2,000 EFID shares. Selling a portion of EFID to buy more EFID is circular and does not change the risk profile.\n- **Conclusion on funding:** The 20,400 EGP needed for 1,000 additional shares would have to come from **external funds** (salary, savings outside the portfolio, etc.). The investor should confirm that this external cash is genuinely surplus to the emergency fund and other obligations before committing it.\n\n### 5. How Much Could Reasonably Be Committed?\n\nGiven:\n\n- zero in-portfolio cash,\n- 100 % single-stock concentration already,\n- medium loss tolerance/capacity,\n\na prudent framing would be:\n\n- The investor can commit **only the amount of external cash they are comfortable losing in full** without affecting the emergency fund or other obligations.\n- Because the position is already undiversified, **any additional amount increases the single-name risk proportionally**. There is no \"safe\" tranche size that the portfolio structure itself can absorb; the constraint is the investor's overall balance-sheet capacity, not the portfolio's.\n- If the investor wishes to add to EFID while respecting medium loss tolerance, the more suitable path would be to **diversify the incremental capital** (e.g., a broad-market ETF, a second sector, or a fixed-income sleeve) rather than adding 100 % more of the same stock. That said, this is a suitability observation, not a recommendation.\n\n### 6. Summary of Suitability Flags\n\n| Factor | Status |\n|---|---|\n| Horizon fit | ✅ 3–5 yr suits an equity holding |\n| Liquidity / emergency fund | ✅ Kept separate; no forced-sale risk |\n| Loss tolerance vs. concentration | ⚠️ Medium tolerance + 100 % single stock is a stretch; adding 1,000 sh deepens it |\n| In-portfolio cash to fund purchase | ❌ 0.00 EGP – external funds required |\n| Diversification to offset new risk | ❌ None exists |\n| Financial capacity to absorb a large drawdown | ⚠️ Rated medium; a 30 %+ drop on 61,200 EGP ≈ 18,000+ EGP loss – investor should confirm this is within their overall means |\n\n**Bottom line for the team:** The horizon and liquidity setup are fine, but the portfolio's 100 % single-stock concentration combined with medium loss tolerance/capacity makes a straight \"add 1,000 more shares of the same stock\" request a suitability concern. The investor has no in-portfolio cash to deploy, so the purchase is entirely dependent on external funds. Before any order is placed, the team should confirm (a) the source and amount of external cash, (b) that the investor's total net worth can absorb a significant single-stock drawdown, and (c) whether the investor would consider diversifying at least part of the incremental capital. No action is taken here; this is the suitability read for the team's discussion."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 29.083,
+      "input_tokens": 1777,
+      "output_tokens": 3078,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 19.71,
+      "input_tokens": 1770,
+      "output_tokens": 1975,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 35.341,
+      "input_tokens": 4774,
+      "output_tokens": 3982,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 84.14
+}

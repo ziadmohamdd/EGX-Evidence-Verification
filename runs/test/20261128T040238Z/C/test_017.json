@@ -1,0 +1,123 @@
+{
+  "case_id": "test_017",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "COMI",
+    "shares": 117,
+    "explanation": "The investor asked which company earned more in 2025 and by how much. The evidence is unambiguous: CIB (COMI) reported FY2025 net profit of 82,258,815,000 EGP (printed as 82,258,815 in EGP thousands), while Edita (EFID) reported 2,695,301,670 EGP (printed in whole EGP). CIB earned 79,563,513,330 EGP more—roughly 30.5× Edita's profit. Both figures are verified and internally consistent across multiple evidence IDs; no AMBIGUOUS items were encountered.\n\nThe investor's stated goal is to 'pick the more profitable company' over a 5-year horizon. On the sole profitability metric available (2025 net profit), CIB is the clear choice. I therefore recommend buying COMI.\n\nSizing: COMI trades at 128 EGP/share. The diversification rule caps any single holding at 50% of total portfolio value (30,000 EGP). Maximum COMI allocation = 15,000 EGP → 15,000 / 128 = 117.19, so 117 shares (14,976 EGP). Remaining cash: 15,024 EGP. Post-trade portfolio: 14,976 (COMI, 49.9%) + 15,024 (cash, 50.1%) = 30,000 EGP. The 50% cap is respected.\n\nRisks and caveats: (1) A single year of net profit does not guarantee 5-year outperformance; no revenue, margin, debt, or sector data is in the evidence to confirm sustainability. (2) The investor's loss tolerance and capacity are both 'medium'; even with the 50% cap, nearly half the portfolio is in one stock, which is at the upper edge of what medium tolerance supports. (3) The 15,024 EGP cash cushion provides a modest buffer but is not a separate emergency fund. (4) This is guidance based on limited evidence, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI FY2025 net profit: 82,258,815 (EGP thousands) = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID FY2025 net profit: 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI FY2024 net profit: 55,256,732 (EGP thousands) = 55,256,732,000 EGP (context only)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID FY2024 net profit: 1,606,727,698 EGP (context only)"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Only one year of net profit is available; no multi-year trend, revenue, margin, debt, or sector data to assess 5-year sustainability.",
+      "No valuation metrics (P/E, P/B) are in the evidence, so 'more profitable' is assessed on absolute net profit only, not return on capital or per-share earnings.",
+      "The 50% diversification cap forces a partial allocation (117 shares), leaving 15,024 EGP in cash; the investor may prefer a different split.",
+      "Medium loss tolerance with ~50% in a single equity is at the upper boundary of what the profile supports."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "COMI",
+    "shares": 117,
+    "explanation": "The investor asked which company earned more in 2025 and by how much. The evidence is unambiguous: CIB (COMI) reported FY2025 net profit of 82,258,815,000 EGP (printed as 82,258,815 in EGP thousands), while Edita (EFID) reported 2,695,301,670 EGP (printed in whole EGP). CIB earned 79,563,513,330 EGP more—roughly 30.5× Edita's profit. Both figures are verified and internally consistent across multiple evidence IDs; no AMBIGUOUS items were encountered.\n\nThe investor's stated goal is to 'pick the more profitable company' over a 5-year horizon. On the sole profitability metric available (2025 net profit), CIB is the clear choice. I therefore recommend buying COMI.\n\nSizing: COMI trades at 128 EGP/share. The diversification rule caps any single holding at 50% of total portfolio value (30,000 EGP). Maximum COMI allocation = 15,000 EGP → 15,000 / 128 = 117.19, so 117 shares (14,976 EGP). Remaining cash: 15,024 EGP. Post-trade portfolio: 14,976 (COMI, 49.9%) + 15,024 (cash, 50.1%) = 30,000 EGP. The 50% cap is respected.\n\nRisks and caveats: (1) A single year of net profit does not guarantee 5-year outperformance; no revenue, margin, debt, or sector data is in the evidence to confirm sustainability. (2) The investor's loss tolerance and capacity are both 'medium'; even with the 50% cap, nearly half the portfolio is in one stock, which is at the upper edge of what medium tolerance supports. (3) The 15,024 EGP cash cushion provides a modest buffer but is not a separate emergency fund. (4) This is guidance based on limited evidence, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI FY2025 net profit: 82,258,815 (EGP thousands) = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID FY2025 net profit: 2,695,301,670 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI FY2024 net profit: 55,256,732 (EGP thousands) = 55,256,732,000 EGP (context only)"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID FY2024 net profit: 1,606,727,698 EGP (context only)"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "Only one year of net profit is available; no multi-year trend, revenue, margin, debt, or sector data to assess 5-year sustainability.",
+      "No valuation metrics (P/E, P/B) are in the evidence, so 'more profitable' is assessed on absolute net profit only, not return on capital or per-share earnings.",
+      "The 50% diversification cap forces a partial allocation (117 shares), leaving 15,024 EGP in cash; the investor may prefer a different split.",
+      "Medium loss tolerance with ~50% in a single equity is at the upper boundary of what the profile supports."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15024.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 117
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n## 2025 Net Profit Comparison: CIB (COMI) vs. Edita (EFID)\n\n### Extracted figures (FY 2025, in whole EGP)\n\n| Company | Net profit FY2025 | Source |\n|---|---|---|\n| **CIB (COMI)** | **82,258,815,000 EGP** | [COMI-COMI_FY2025_consolidated_condensed_en-p5-33] – printed as 82,258,815 in \"EGP thousands\" |\n| **Edita (EFID)** | **2,695,301,670 EGP** | [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] – printed as 2 695 301 670 in \"EGP\" |\n\n### Answer\n\n**CIB earned more in 2025.**\n\n- CIB net profit: 82,258,815,000 EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-33]\n- Edita net profit: 2,695,301,670 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30]\n- **Difference: 79,563,513,330 EGP** (CIB ahead)\n\nCIB's 2025 net profit is roughly **30.5×** Edita's.\n\n### Context from the same evidence (FY2024, for reference)\n\n- CIB FY2024: 55,256,732,000 EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-34]\n- Edita FY2024: 1,606,727,698 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37]\n\nBoth companies grew year-on-year (CIB +48.9 %, Edita +67.8 %), but the absolute gap between them widened substantially.\n\n### Data-quality note\n\nAll six evidence items are marked **verified** and the figures are internally consistent (the 2025 and 2024 columns appear in the same row across multiple evidence IDs). No AMBIGUOUS figures were encountered. The only conversion applied is the \"thousands\" multiplier on COMI's statement; EFID's statement is already in whole EGP.\n\n*This is a factual comparison of reported net profit only; it does not constitute a recommendation.*",
+    "investor": "\n\n## Answer to the question\n\n**CIB (COMI) earned more in 2025.**\n\n| Company | FY 2025 Net Profit |\n|---|---|\n| CIB (COMI) | 82,258,815,000 EGP *(82,258,815 × 1,000, unit \"EGP thousands\")* |\n| Edita (EFID) | 2,695,301,670 EGP *(unit \"EGP\")* |\n\n**Difference: 79,563,513,330 EGP** in CIB's favour.\n\n---\n\n## Investor-suitability snapshot\n\n| Dimension | Assessment |\n|---|---|\n| **Horizon** | 5 years – comfortably accommodates a single equity position; no need to force an exit on short-term volatility. |\n| **Liquidity needs** | Emergency fund is held separately, so the 30,000 EGP in the portfolio is not earmarked for day-to-day or crisis spending. |\n| **Loss willingness / capacity** | Both rated *medium*. A single-stock position in a 30,000 EGP portfolio means 100 % of investable capital is exposed to one issuer's risk; that is at the upper edge of what \"medium\" tolerance typically supports. |\n| **Current concentration** | No existing holdings, so there is no overlap or sector concentration to manage. The entire portfolio is cash. |\n| **What the portfolio allows** | • **Sellable assets:** none (no holdings).<br>• **Free cash:** the full **30,000 EGP** is available to commit, since the emergency fund sits outside this account. |\n| **Reasonable commitment** | Given medium loss tolerance and the fact that any single equity would represent the whole portfolio, committing the full 30,000 EGP to one stock is feasible but leaves no diversification buffer. A more conservative approach within this profile would be to commit a portion (e.g., 15,000–20,000 EGP) and retain the remainder as a cash cushion, though the investor has not asked for a sizing recommendation. |\n\n*No company-fundamental analysis or buy/sell recommendation is made here; the figures above are read directly from the cited evidence.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 8.508,
+      "input_tokens": 1236,
+      "output_tokens": 1360,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 9.519,
+      "input_tokens": 1229,
+      "output_tokens": 1488,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 23.822,
+      "input_tokens": 2701,
+      "output_tokens": 3048,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 41.853
+}

@@ -1,0 +1,148 @@
+{
+  "case_id": "test_007",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked specifically about CIB (Commercial International Bank of Egypt), but every piece of evidence provided is for COMI, a different company. There is no CIB financial data, no CIB share price, and no CIB valuation in the evidence set. I cannot evaluate, recommend, or reject a CIB position on the basis of COMI's numbers, and I will not silently substitute one issuer for another.\n\nEven setting the company mismatch aside, the COMI evidence is a two-period condensed consolidated statement. It lacks an income-statement breakdown (interest income, fee income, provisions), a cash-flow statement, credit-quality metrics (NPL ratio, coverage, stage migration), regulatory capital-adequacy ratios, and any forward-looking guidance. A single 49 % year-on-year profit jump in a condensed filing could reflect a one-off item (FX revaluation, provision release, capital raise) rather than sustainable earnings growth, and with only two periods the driver cannot be isolated.\n\nThe basic EPS figures (18.25 and 14.72) carry an AMBIGUOUS unit flag: the page unit line reads 'EGP thousands,' which, taken literally, would make EPS 18,250 EGP/share and render any P/E calculation meaningless. Until the unit is confirmed, no per-share valuation metric can be relied upon.\n\nOn suitability: the investor's medium loss-willingness and medium loss-capacity profile is not well-matched to a 100 % single-stock, single-sector, single-country position. A banking-sector stress event could produce a 30–50 % drawdown, wiping out 60,000–100,000 EGP of the 200,000 EGP bonus. The diversification rule also caps any single holding at 50 % of total portfolio value, so an all-in purchase is structurally prohibited regardless of the investor's preference.\n\nWhat is missing for a responsible decision:\n1. CIB-specific financial statements, share price, and valuation data.\n2. If COMI were the intended target: full (non-condensed) financials, at least three years of history, credit-quality and regulatory-capital data, and confirmation of the EPS unit.\n3. Peer and sector context to benchmark valuation and risk.\n4. Any forward-looking information (guidance, dividend policy, capital plans).\n\nUntil CIB data is provided (or the investor confirms COMI is the intended target and fuller evidence is supplied), no buy, hold, or sell recommendation can be made. The 200,000 EGP should remain in cash pending adequate information.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year, Dec. 31, 2025: 82,258,815 (thousands EGP) = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year, Dec. 31, 2024: 55,256,732 (thousands EGP) = 55,256,732,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+        "stated_value": 231486342000.0,
+        "statement": "COMI total equity and net profit for the year (consolidated), Dec. 31, 2025: 231,486,342 (thousands EGP) = 231,486,342,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-55",
+        "stated_value": 152636277000.0,
+        "statement": "COMI total equity and net profit for the year (consolidated), Dec. 31, 2024: 152,636,277 (thousands EGP) = 152,636,277,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+        "stated_value": 1110395693000.0,
+        "statement": "COMI due to customers (consolidated), Dec. 31, 2025: 1,110,395,693 (thousands EGP) = 1,110,395,693,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-29",
+        "stated_value": 972595958000.0,
+        "statement": "COMI due to customers (consolidated), Dec. 31, 2024: 972,595,958 (thousands EGP) = 972,595,958,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "COMI basic EPS Dec. 31, 2025: 18.25 (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-39) – AMBIGUOUS: page unit line says 'EGP thousands' but EPS is conventionally per share; cannot be used in P/E or any per-share calculation until the unit is confirmed.",
+      "COMI basic EPS Dec. 31, 2024: 14.72 (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-40) – AMBIGUOUS: same unit conflict as above; excluded from all calculations."
+    ],
+    "limitations": [
+      "All evidence pertains to COMI; the investor's question is about CIB. No CIB data exists in the evidence set.",
+      "EPS unit is ambiguous (thousands vs. per-share), so no P/E, PEG, or dividend-yield calculation is possible.",
+      "Only two periods of condensed data are available; no multi-year trend, no income-statement detail, no cash-flow statement, no credit-quality or regulatory-capital metrics.",
+      "No peer, sector, or macro context is provided to benchmark valuation or risk.",
+      "The 49 % profit growth could be a one-off item; the driver cannot be identified from a condensed two-period filing.",
+      "This is guidance, not a guarantee of returns. Egyptian-listed equities carry country, currency, and regulatory risk that is not fully captured by the limited data provided."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": null,
+    "shares": 0,
+    "explanation": "The investor asked specifically about CIB (Commercial International Bank of Egypt), but every piece of evidence provided is for COMI, a different company. There is no CIB financial data, no CIB share price, and no CIB valuation in the evidence set. I cannot evaluate, recommend, or reject a CIB position on the basis of COMI's numbers, and I will not silently substitute one issuer for another.\n\nEven setting the company mismatch aside, the COMI evidence is a two-period condensed consolidated statement. It lacks an income-statement breakdown (interest income, fee income, provisions), a cash-flow statement, credit-quality metrics (NPL ratio, coverage, stage migration), regulatory capital-adequacy ratios, and any forward-looking guidance. A single 49 % year-on-year profit jump in a condensed filing could reflect a one-off item (FX revaluation, provision release, capital raise) rather than sustainable earnings growth, and with only two periods the driver cannot be isolated.\n\nThe basic EPS figures (18.25 and 14.72) carry an AMBIGUOUS unit flag: the page unit line reads 'EGP thousands,' which, taken literally, would make EPS 18,250 EGP/share and render any P/E calculation meaningless. Until the unit is confirmed, no per-share valuation metric can be relied upon.\n\nOn suitability: the investor's medium loss-willingness and medium loss-capacity profile is not well-matched to a 100 % single-stock, single-sector, single-country position. A banking-sector stress event could produce a 30–50 % drawdown, wiping out 60,000–100,000 EGP of the 200,000 EGP bonus. The diversification rule also caps any single holding at 50 % of total portfolio value, so an all-in purchase is structurally prohibited regardless of the investor's preference.\n\nWhat is missing for a responsible decision:\n1. CIB-specific financial statements, share price, and valuation data.\n2. If COMI were the intended target: full (non-condensed) financials, at least three years of history, credit-quality and regulatory-capital data, and confirmation of the EPS unit.\n3. Peer and sector context to benchmark valuation and risk.\n4. Any forward-looking information (guidance, dividend policy, capital plans).\n\nUntil CIB data is provided (or the investor confirms COMI is the intended target and fuller evidence is supplied), no buy, hold, or sell recommendation can be made. The 200,000 EGP should remain in cash pending adequate information.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year, Dec. 31, 2025: 82,258,815 (thousands EGP) = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year, Dec. 31, 2024: 55,256,732 (thousands EGP) = 55,256,732,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-54",
+        "stated_value": 231486342000.0,
+        "statement": "COMI total equity and net profit for the year (consolidated), Dec. 31, 2025: 231,486,342 (thousands EGP) = 231,486,342,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-55",
+        "stated_value": 152636277000.0,
+        "statement": "COMI total equity and net profit for the year (consolidated), Dec. 31, 2024: 152,636,277 (thousands EGP) = 152,636,277,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-28",
+        "stated_value": 1110395693000.0,
+        "statement": "COMI due to customers (consolidated), Dec. 31, 2025: 1,110,395,693 (thousands EGP) = 1,110,395,693,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-29",
+        "stated_value": 972595958000.0,
+        "statement": "COMI due to customers (consolidated), Dec. 31, 2024: 972,595,958 (thousands EGP) = 972,595,958,000 EGP"
+      }
+    ],
+    "unused_figures": [
+      "COMI basic EPS Dec. 31, 2025: 18.25 (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-39) – AMBIGUOUS: page unit line says 'EGP thousands' but EPS is conventionally per share; cannot be used in P/E or any per-share calculation until the unit is confirmed.",
+      "COMI basic EPS Dec. 31, 2024: 14.72 (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-40) – AMBIGUOUS: same unit conflict as above; excluded from all calculations."
+    ],
+    "limitations": [
+      "All evidence pertains to COMI; the investor's question is about CIB. No CIB data exists in the evidence set.",
+      "EPS unit is ambiguous (thousands vs. per-share), so no P/E, PEG, or dividend-yield calculation is possible.",
+      "Only two periods of condensed data are available; no multi-year trend, no income-statement detail, no cash-flow statement, no credit-quality or regulatory-capital metrics.",
+      "No peer, sector, or macro context is provided to benchmark valuation or risk.",
+      "The 49 % profit growth could be a one-off item; the driver cannot be identified from a condensed two-period filing.",
+      "This is guidance, not a guarantee of returns. Egyptian-listed equities carry country, currency, and regulatory risk that is not fully captured by the limited data provided."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 200000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n# Analysis: COMI (NOT CIB) – FY2025 Condensed Consolidated Financials\n\n## ⚠️ Critical Identification Mismatch\n\n**The evidence provided is for COMI, not CIB (Commercial International Bank of Egypt).** The share price supplied is \"COMI: 128.00 EGP\" and every evidence tag reads \"COMI.\" I cannot analyse CIB on the basis of COMI's financials. The user's premise (\"CIB is the biggest private bank\") is a separate factual claim I have no evidence to confirm or refute here. All figures below refer to **COMI only**.\n\n---\n\n## 1. Profitability\n\n| Metric | FY2025 | FY2024 | YoY Δ |\n|---|---|---|---|\n| Net profit | 82,258,815,000 EGP [COMI-…p5-33] | 55,256,732,000 EGP [COMI-…p5-34] | **+48.9 %** |\n| Basic EPS | 18.25 EGP/share [COMI-…p5-39] | 14.72 EGP/share [COMI-…p5-40] | **+24.0 %** |\n\n- **P/E at 128.00 EGP:** 128.00 / 18.25 ≈ **7.0×** (FY2025).\n- **ROE (approx.):** 82,258,815 / 231,486,342 ≈ **35.5 %** [COMI-…p5-33 / COMI-…p4-54].\n\n> **AMBIGUOUS – EPS unit.** The page unit line reads *\"All amounts are shown in EGP thousands\"* [COMI-…p5-39]. Taken literally, 18.25 would mean 18,250 EGP/share, yielding an implausible P/E of 0.007. I have treated EPS as **EGP per share** (the standard convention), but the printed unit line creates a flag. No computation should be relied upon until the unit is confirmed.\n\n---\n\n## 2. Growth\n\n| Item | FY2025 | FY2024 | YoY Δ |\n|---|---|---|---|\n| Total equity (consolidated) | 231,486,342,000 EGP [COMI-…p4-54] | 152,636,277,000 EGP [COMI-…p4-55] | **+51.7 %** |\n| Due to customers (deposits) | 1,110,395,693,000 EGP [COMI-…p4-28] | 972,595,958,000 EGP [COMI-…p4-29] | **+14.2 %** |\n\n- Profit and equity grew far faster than the deposit base, suggesting either a large retained-earnings build, a capital raise, or a one-off item. With only two periods and a **condensed** statement, the driver cannot be isolated.\n- Deposit growth of ~14 % is moderate for an Egyptian bank in a high-rate environment.\n\n---\n\n## 3. Balance-Sheet / Leverage Snapshot\n\n- **Equity-to-deposits:** 231,486,342 / 1,110,395,693 ≈ **20.8 %** [COMI-…p4-54 / COMI-…p4-28]. Typical for a bank, but no regulatory capital-adequacy ratio (CET1, Tier 1, Total) is provided, so I cannot assess whether the bank meets CBE minimums.\n- No total-assets, loan-book, or NPL figures are in the evidence.\n\n---\n\n## 4. Risks & Gaps\n\n| Risk / Gap | Detail |\n|---|---|\n| **Wrong company** | Evidence is COMI; the investor asked about CIB. No CIB data is available. |\n| **Condensed statements** | Titled \"condensed\" – no income-statement detail (interest income, fee income, provisions), no cash-flow statement, no segment breakdown. |\n| **Only two periods** | No 3- or 5-year trend; a single 49 % profit jump could be a one-off (e.g., FX revaluation, a large provision release). |\n| **No credit-quality data** | NPL ratio, coverage, stage-2/3 migration – all absent. |\n| **No regulatory capital data** | Cannot verify CBE capital-adequacy compliance. |\n| **Interest-rate / FX risk** | Egyptian banks are highly sensitive to EGP devaluation and policy-rate moves; no sensitivity or hedge data provided. |\n| **Liquidity risk** | Deposit growth (14 %) lagging equity growth (52 %) may indicate a funding mix shift, but without the full balance sheet this is speculative. |\n| **EPS unit ambiguity** | Flagged above; if the \"thousands\" unit were applied, all per-share metrics would be wrong. |\n\n---\n\n## 5. Data-Quality Flags\n\n1. **Unit-line conflict on EPS** – \"EGP thousands\" vs. per-share convention. **AMBIGUOUS**; do not use EPS-derived ratios (P/E, PEG) until confirmed.\n2. **Condensed format** – material line items (revenue, provisions, loan book, cash & equivalents, fixed assets) are absent.\n3. **No auditor's opinion or going-concern note** visible in the provided excerpts.\n4. **No related-party or off-balance-sheet disclosures** in the evidence.\n\n---\n\n## 6. Summary for the Decision Agent\n\n- The evidence **does not support any conclusion about CIB**; it covers COMI only.\n- For COMI specifically: FY2025 shows strong headline profit growth (+49 %) and a high ROE (~35 %), with a low P/E (~7×) at 128 EGP. However, the data set is a **two-period condensed statement** lacking income-statement detail, credit-quality metrics, regulatory capital ratios, and cash-flow information. The EPS unit is ambiguous.\n- For an investor with a **5-year horizon, medium loss tolerance, and 200,000 EGP to deploy**, the evidence is **insufficient to evaluate either COMI or CIB** on a standalone basis. No diversification, valuation-comparison, or sector-risk context is available in the provided evidence.\n\n*No investment action is recommended here; that is the decision agent's role.*",
+    "investor": "\n\n# Investor-Suitability Assessment – 200,000 EGP Bonus / CIB (COMI)\n\n## 1. What the portfolio allows\n\n| Item | Detail |\n|---|---|\n| Free cash | **200,000 EGP** – entirely unencumbered |\n| Existing holdings | **None** – nothing to sell or liquidate |\n| Emergency fund | Held **separately**, so the 200 k is not needed for short-term liquidity |\n| Maximum commitable amount | Up to the full 200,000 EGP, in principle |\n\nAt the cutoff price of **128 EGP/share**, the full amount would buy roughly **1,562 COMI shares**.\n\n## 2. Horizon\n\nA **5-year** horizon is workable for listed equities. It is long enough to ride out typical 12–24-month drawdowns in a large-cap bank, so the time frame does not, by itself, rule out a CIB position. It is not so long that the risk becomes irrelevant, though.\n\n## 3. Liquidity needs\n\nBecause the emergency fund is ring-fenced elsewhere, this 200 k does **not** need to stay liquid in the near term. CIB shares trade on the Egyptian Exchange, so even if the investor did need to exit early, the position is sellable in the normal course. Liquidity is therefore **not a binding constraint** on committing this cash.\n\n## 4. Loss willingness and capacity – the key constraint\n\nBoth are rated **medium**. In practical terms:\n\n- **Willingness (psychological):** The investor is comfortable with moderate drawdowns (say 10–20 %) but would be uncomfortable with a 40–50 % loss on the position.\n- **Capacity (financial):** The investor can absorb a moderate hit to net worth but does not have a large cushion beyond this 200 k. A 50 % loss would wipe out 100,000 EGP – a material sum relative to the investable base.\n\nA **single-stock, single-sector, single-country** position can easily produce a 30–50 % drawdown in a banking-sector stress event, a regulatory shock, or a macro downturn in Egypt. That sits at or beyond the upper edge of what \"medium\" tolerance and capacity can comfortably absorb.\n\n## 5. Concentration\n\nThe portfolio today is **100 % cash, 0 % equities**. Putting the entire 200,000 EGP into COMI would create:\n\n- **100 % single-stock concentration** (one issuer)\n- **100 % sector concentration** (banking / financial services)\n- **100 % country concentration** (Egypt)\n\nThere is no existing diversification to offset this. The \"biggest private bank\" argument speaks to CIB's relative strength *within* the Egyptian banking sector, but it does not eliminate the idiosyncratic and sector-level risks that a 100 % single-name position carries.\n\n## 6. Suitability summary\n\n| Dimension | Assessment |\n|---|---|\n| Horizon (5 yr) | Compatible with equity exposure |\n| Liquidity | No constraint – emergency fund is separate |\n| Loss willingness (medium) | A 100 % single-stock position **exceeds** the stated comfort level in a stress scenario |\n| Loss capacity (medium) | A 40–50 % drawdown on 200 k (80–100 k EGP) is at the **upper boundary** of what the investor can absorb |\n| Current concentration | Moving from 0 % to 100 % in one name/sector/country is a **sharp concentration jump** with no offsetting holdings |\n| Cash available | Full 200,000 EGP is free to deploy |\n\n**Bottom line on suitability:** The 5-year horizon and the separate emergency fund make it *possible* to invest this bonus in equities, and CIB is a liquid, large-cap listed name. However, committing **100 %** of the investable amount to a **single stock in a single sector** is **not well-matched** to a medium loss-willingness / medium loss-capacity profile. The concentration risk of an all-in position in one bank – even the largest private bank – is the principal suitability concern. A structure that spreads the 200,000 EGP across more than one name, sector, or asset class would align more closely with the stated risk parameters while still allowing the investor to participate in CIB if they wish.\n\n*This is a suitability observation, not a recommendation to buy, sell, or hold any security.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 20.234,
+      "input_tokens": 1519,
+      "output_tokens": 3534,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 14.91,
+      "input_tokens": 1512,
+      "output_tokens": 2369,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 18.72,
+      "input_tokens": 4395,
+      "output_tokens": 3443,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 53.868
+}

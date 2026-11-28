@@ -1,0 +1,177 @@
+{
+  "case_id": "test_001",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "COMI",
+    "shares": 0,
+    "explanation": "I recommend holding the existing 300 COMI shares and keeping the 30,000 EGP cash undeployed for now.\n\n**Why hold rather than buy, sell, or declare insufficient evidence:**\n\n1. **Positive one-year fundamentals.** Net interest income grew 18.3 % (91,064,222,000 → 107,699,631,000 EGP), net profit grew 48.9 % (55,256,732,000 → 82,258,815,000 EGP), and total assets grew 18.7 % (1,214,973,261,000 → 1,442,494,120,000 EGP). These are encouraging signals for a bank the investor wants to hold over five years. There is no negative signal in the evidence that would justify selling.\n\n2. **The investor's goal and horizon align with holding.** The stated goal is to 'grow savings steadily with a bank stock,' and a five-year horizon is appropriate for a listed bank equity. The separate emergency fund means the 30,000 EGP cash is not needed for liquidity, but it also does not need to be rushed into the stock.\n\n3. **Buying more COMI is not feasible under the diversification rule.** COMI already represents 38,400 / 68,400 = 56.1 % of the portfolio. Any additional purchase would push the single-name weight even higher, breaching the 50 % cap. The rule requires that after a buy no single company exceed half the portfolio; since the position is already above that threshold, no buy size satisfies the constraint.\n\n4. **Selling is not warranted.** The available evidence shows growth, not deterioration. With only two fiscal years and a condensed report, there is no basis to conclude the position should be reduced. The medium loss tolerance is a caution against *adding* concentration, not a trigger to exit a position that is performing well.\n\n5. **Evidence limitations (honest uncertainty).** The evidence base is thin: only FY2024 and FY2025, a condensed consolidated statement, no capital-adequacy ratio, no NPL or loan-quality data, no dividend history, no multi-year trend, and no peer comparison. The 48.9 % profit jump could partly reflect a one-off item (provision release, low base) that cannot be confirmed or excluded from these pages. I am holding on the strength of the direction of the numbers, not on a full five-year fundamental case. If the investor can obtain 3–5 years of financials, CAR, NPL ratios, and dividend records, a more confident add-or-trim decision could be made later.\n\n6. **AMBIGUOUS figures not used.** The basic EPS values (18.25 and 14.72) carry a printed unit label of 'EGP thousands,' which is inconsistent with a per-share figure. I have excluded them from all calculations. This means I cannot compute a P/E ratio or verify the EPS growth rate of 24 %; the qualitative observation that EPS improved is noted but not relied upon quantitatively.\n\n**Risks to monitor:** single-issuer concentration (56 %), Egyptian macro/currency risk, potential future share dilution (implied by the gap between profit growth and the EPS direction), and the absence of credit-risk and capital metrics. The 30,000 EGP cash buffer (43.9 % of the portfolio) provides a cushion consistent with the investor's medium risk tolerance and can be deployed into COMI or another bank name once the concentration is brought below 50 % (e.g., after a future capital event or if the investor adds a second holding).\n\nThis is guidance, not a guarantee of returns. The recommendation is to stay the course for now and revisit when more complete financial data becomes available.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107699631000.0,
+        "statement": "COMI net interest income for the year ended Dec 31, 2025 was 107,699,631 thousand EGP = 107,699,631,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-06",
+        "stated_value": 91064222000.0,
+        "statement": "COMI net interest income for the year ended Dec 31, 2024 was 91,064,222 thousand EGP = 91,064,222,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year ended Dec 31, 2025 was 82,258,815 thousand EGP = 82,258,815,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year ended Dec 31, 2024 was 55,256,732 thousand EGP = 55,256,732,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-24",
+        "stated_value": 1442494120000.0,
+        "statement": "COMI total consolidated assets at Dec 31, 2025 were 1,442,494,120 thousand EGP = 1,442,494,120,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-25",
+        "stated_value": 1214973261000.0,
+        "statement": "COMI total consolidated assets at Dec 31, 2024 were 1,214,973,261 thousand EGP = 1,214,973,261,000 EGP."
+      }
+    ],
+    "unused_figures": [
+      "Basic EPS FY2025 = 18.25 [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] – AMBIGUOUS: printed unit label 'EGP thousands' is inconsistent with a per-share figure; excluded from all calculations. Affects the ability to compute a P/E ratio or verify the 24 % EPS growth rate.",
+      "Basic EPS FY2024 = 14.72 [COMI-COMI_FY2025_consolidated_condensed_en-p5-40] – AMBIGUOUS: same unit-label inconsistency; excluded from all calculations."
+    ],
+    "limitations": [
+      "Only two fiscal years (FY2024, FY2025) are available; no multi-year trend or cyclicality assessment is possible.",
+      "The source is a consolidated condensed statement; capital adequacy ratio, NPL ratio, loan-to-deposit ratio, dividend history, ROE/ROA, and cost-to-income ratio are absent.",
+      "The 48.9 % net-profit growth may include one-off items (provision release, low base) that cannot be identified from the condensed data.",
+      "Egypt-specific macro risks (currency, interest-rate policy, regulation) are not addressed in the provided evidence.",
+      "The EPS figures are AMBIGUOUS and were excluded; no valuation multiple (P/E) could be computed."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "COMI",
+    "shares": 0,
+    "explanation": "I recommend holding the existing 300 COMI shares and keeping the 30,000 EGP cash undeployed for now.\n\n**Why hold rather than buy, sell, or declare insufficient evidence:**\n\n1. **Positive one-year fundamentals.** Net interest income grew 18.3 % (from 91,064,222,000 EGP to 107,699,631,000 EGP), net profit grew 48.9 % (from 55,256,732,000 EGP to 82,258,815,000 EGP), and total assets grew 18.7 % (from 1,214,973,261,000 EGP to 1,442,494,120,000 EGP). These are encouraging signals for a bank the investor wants to hold over five years. There is no negative signal in the evidence that would justify selling.\n\n2. **The investor's goal and horizon align with holding.** The stated goal is to 'grow savings steadily with a bank stock,' and a five-year horizon is appropriate for a listed bank equity. The separate emergency fund means the 30,000 EGP cash is not needed for liquidity, but it also does not need to be rushed into the stock.\n\n3. **Buying more COMI is not feasible under the diversification rule.** COMI already represents 38,400 / 68,400 = 56.1 % of the portfolio (300 shares × 128 EGP = 38,400 EGP; total portfolio = 38,400 + 30,000 = 68,400 EGP). Any additional purchase would push the single-name weight even higher, breaching the 50 % cap. The rule requires that after a buy no single company exceed half the portfolio; since the position is already above that threshold, no buy size satisfies the constraint.\n\n4. **Selling is not warranted.** The available evidence shows growth, not deterioration. With only two fiscal years and a condensed report, there is no basis to conclude the position should be reduced. The medium loss tolerance is a caution against *adding* concentration, not a trigger to exit a position that is performing well.\n\n5. **Evidence limitations (honest uncertainty).** The evidence base is thin: only FY2024 and FY2025, a condensed consolidated statement, no capital-adequacy ratio, no NPL or loan-quality data, no dividend history, no multi-year trend, and no peer comparison. The 48.9 % profit jump could partly reflect a one-off item (provision release, low base) that cannot be confirmed or excluded from these pages. I am holding on the strength of the direction of the numbers, not on a full five-year fundamental case. If the investor can obtain 3–5 years of financials, CAR, NPL ratios, and dividend records, a more confident add-or-trim decision could be made later.\n\n6. **AMBIGUOUS figures not used.** The basic EPS figures in the report carry a printed unit label of 'EGP thousands,' which is inconsistent with a per-share figure. I have excluded them from all calculations. This means I cannot compute a P/E ratio or verify the year-on-year EPS growth rate; the qualitative observation that EPS improved is noted but not relied upon quantitatively. This affects the ability to assess whether the current share price of 128 EGP is rich or cheap relative to earnings.\n\n**Risks to monitor:** single-issuer concentration (56 %), Egyptian macro/currency risk, potential future share dilution, and the absence of credit-risk and capital metrics. The 30,000 EGP cash buffer (43.9 % of the portfolio) provides a cushion consistent with the investor's medium risk tolerance and can be deployed into COMI or another bank name once the concentration is brought below 50 % (e.g., after a future capital event or if the investor adds a second holding).\n\nThis is guidance, not a guarantee of returns. The recommendation is to stay the course for now and revisit when more complete financial data becomes available.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-05",
+        "stated_value": 107699631000.0,
+        "statement": "COMI net interest income for the year ended Dec 31, 2025 was 107,699,631 thousand EGP = 107,699,631,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-06",
+        "stated_value": 91064222000.0,
+        "statement": "COMI net interest income for the year ended Dec 31, 2024 was 91,064,222 thousand EGP = 91,064,222,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year ended Dec 31, 2025 was 82,258,815 thousand EGP = 82,258,815,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year ended Dec 31, 2024 was 55,256,732 thousand EGP = 55,256,732,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-24",
+        "stated_value": 1442494120000.0,
+        "statement": "COMI total consolidated assets at Dec 31, 2025 were 1,442,494,120 thousand EGP = 1,442,494,120,000 EGP."
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p4-25",
+        "stated_value": 1214973261000.0,
+        "statement": "COMI total consolidated assets at Dec 31, 2024 were 1,214,973,261 thousand EGP = 1,214,973,261,000 EGP."
+      }
+    ],
+    "unused_figures": [
+      "Basic EPS FY2025 [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] – AMBIGUOUS: printed unit label 'EGP thousands' is inconsistent with a per-share figure; excluded from all calculations. Affects the ability to compute a P/E ratio or verify the year-on-year EPS growth rate.",
+      "Basic EPS FY2024 [COMI-COMI_FY2025_consolidated_condensed_en-p5-40] – AMBIGUOUS: same unit-label inconsistency; excluded from all calculations."
+    ],
+    "limitations": [
+      "Only two fiscal years (FY2024, FY2025) are available; no multi-year trend or cyclicality assessment is possible.",
+      "The source is a consolidated condensed statement; capital adequacy ratio, NPL ratio, loan-to-deposit ratio, dividend history, ROE/ROA, and cost-to-income ratio are absent.",
+      "The 48.9 % net-profit growth may include one-off items (provision release, low base) that cannot be identified from the condensed data.",
+      "Egypt-specific macro risks (currency, interest-rate policy, regulation) are not addressed in the provided evidence.",
+      "The EPS figures are AMBIGUOUS and were excluded; no valuation multiple (P/E) could be computed, so the 128 EGP share price cannot be assessed as rich or cheap relative to earnings."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 30000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-39",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"18.25\", which is 'Basic' (18.25), but it is not listed in claims"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-40",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"14.72\", which is 'Basic' (14.72), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n# COMI (Commercial International Bank Egypt) – Financial Evidence Analysis\n\n## 1. Profitability\n\n| Metric | FY2025 | FY2024 | YoY Change |\n|---|---|---|---|\n| Net interest income | 107,699,631,000 EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-05] | 91,064,222,000 EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-06] | +18.3 % |\n| Net profit for the year | 82,258,815,000 EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-33] | 55,256,732,000 EGP [COMI-COMI_FY2025_consolidated_condensed_en-p5-34] | +48.9 % |\n| Basic EPS | 18.25 EGP/share [COMI-COMI_FY2025_consolidated_condensed_en-p5-39] | 14.72 EGP/share [COMI-COMI_FY2025_consolidated_condensed_en-p5-40] | +24.0 % |\n\n**Observations:**\n- Net profit grew almost 49 % year-on-year, well ahead of the 18 % growth in net interest income, implying a meaningful improvement in cost efficiency, fee income, or lower provisions (the condensed report does not break these out).\n- EPS rose from 14.72 to 18.25 EGP, a 24 % increase. The gap between net-profit growth (49 %) and EPS growth (24 %) suggests a significant increase in the share count (e.g., a capital raise or bonus issue) during FY2025.\n\n> **AMBIGUOUS – Data-quality flag:** The EPS row carries the unit line *\"All amounts are shown in EGP thousands\"* [COMI-COMI_FY2025_consolidated_condensed_en-p5-39 / p5-40]. Per-share figures are not expressed in thousands; the values 18.25 and 14.72 are clearly EGP per share. I have treated them as EGP/share, but the printed unit label is inconsistent and should be confirmed against the full report before relying on the EPS figures in any valuation model.\n\n## 2. Growth\n\n- **Revenue (NII) growth:** +18.3 % YoY (107.7 bn → 107.7 bn EGP, in thousands: 107,699,631 vs 91,064,222) [p5-05, p5-06].\n- **Profit growth:** +48.9 % YoY (82,258,815 vs 55,256,732, in thousands) [p5-33, p5-34].\n- **Balance-sheet growth:** Total assets rose from 1,214,973,261,000 EGP to 1,442,494,120,000 EGP, a +18.7 % increase [COMI-COMI_FY2025_consolidated_condensed_en-p4-24, p4-25].\n\nThe balance-sheet expansion (~19 %) is broadly in line with NII growth (~18 %), suggesting the bank is growing its loan/deposit book at a steady pace rather than relying on one-off items.\n\n**Limitation:** Only two fiscal years are provided. A 5-year horizon requires a longer track record to assess cyclicality, and no multi-year trend can be established from this evidence alone.\n\n## 3. Balance Sheet\n\n| Item | Dec 31, 2025 | Dec 31, 2024 |\n|---|---|---|\n| Total assets (consolidated) | 1,442,494,120,000 EGP [p4-24] | 1,214,973,261,000 EGP [p4-25] |\n\n- The bank's asset base grew by roughly 227.5 bn EGP in one year.\n- **No other balance-sheet line items are provided** in the evidence (no equity, liabilities, loan book, deposits, or capital-adequacy ratio). This is a material gap for assessing solvency and leverage.\n\n## 4. Risks (as identifiable from the evidence)\n\n- **Data scarcity / condensed reporting:** The source is a *consolidated condensed* statement. Key risk indicators—NPL ratio, loan-to-deposit ratio, capital adequacy (CAR), interest-rate sensitivity, off-balance-sheet exposures—are **absent** from the provided evidence.\n- **Single-year comparison:** With only FY2024 and FY2025, it is impossible to judge whether the 49 % profit jump is sustainable or a one-off (e.g., a large provision release, a one-time gain, or a low base).\n- **Share-count dilution:** The divergence between net-profit growth (+49 %) and EPS growth (+24 %) implies a material increase in shares outstanding. For a 5-year holder, future dilution from further capital raises is a risk that cannot be quantified from this evidence.\n- **Egypt-specific macro risks** (currency devaluation, interest-rate policy, regulatory changes) are not addressed in the provided pages.\n- **Concentration in the portfolio:** At the cutoff price of 128 EGP/share, the 300 COMI shares are worth 38,400 EGP, representing **56.1 %** of the 68,400 EGP total portfolio (30,000 EGP cash + 38,400 EGP COMI). The investor's medium loss-tolerance and medium financial capacity make this concentration a relevant consideration, though I do not draw a conclusion on it.\n\n## 5. Data Quality Summary\n\n| Aspect | Assessment |\n|---|---|\n| Verification status | All eight evidence items are marked **verified** |\n| Unit consistency | NII, net profit, and total assets are consistently in EGP thousands – clear. **EPS row unit label is AMBIGUOUS** (see flag above). |\n| Period coverage | Two fiscal years only (FY2024, FY2025). No interim or quarterly data. |\n| Report type | \"Consolidated condensed\" – summary-level; detailed notes, segment data, and risk disclosures are not included in the provided evidence. |\n| Missing items for a 5-year bank-stock assessment | Capital adequacy, NPLs, dividend history, ROE/ROA, cost-to-income ratio, peer comparison, forward guidance. |\n\n## 6. Summary for the Decision Agent\n\nThe evidence shows a large Egyptian bank with strong one-year profit growth (+49 %), solid NII growth (+18 %), and a growing balance sheet (+19 %). EPS improved 24 % to 18.25 EGP. However, the evidence base is thin: only two years, a condensed report, no capital or credit-risk metrics, an AMBIGUOUS unit label on the EPS line, and no dividend or multi-year trend data. The investor's 5-year horizon and medium risk tolerance would benefit from substantially more evidence (at least 3–5 years of financials, CAR, NPLs, dividend record) before a well-informed decision can be made.\n\n*No action recommendation is made here; that is the role of the decision agent.*",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## Horizon & Liquidity\n\n- **5-year horizon** is well-suited to a single listed bank equity; the investor is not forced to sell on short-term volatility.\n- **Liquidity is not a constraint on this portfolio.** The investor maintains a separate emergency fund, so the 30,000 EGP sitting in cash here is *free* capital that does not need to be preserved for day-to-day or emergency use.\n- The 300 COMI shares (38,400 EGP at 128 EGP) are also liquid on the exchange, so in a genuine stress scenario the investor could sell all or part of the position. In practice, with a 5-year horizon, that is unlikely to be needed.\n\n## Loss Willingness & Capacity\n\n- Both willingness and capacity are rated **medium**. This means the investor can absorb a moderate drawdown (e.g., 20–30 % on the equity sleeve) but would be uncomfortable with a near-total loss of the equity allocation.\n- A single bank stock already carries idiosyncratic risk (regulatory, credit-cycle, management). Medium tolerance argues for **not** pushing the equity share of the portfolio to 100 % in one name, and for keeping a meaningful cash or lower-volatility buffer.\n\n## Current Concentration\n\n| Component | Value (EGP) | % of portfolio |\n|---|---|---|\n| COMI (300 sh × 128) | 38,400 | 56.1 % |\n| Cash | 30,000 | 43.9 % |\n| **Total** | **68,400** | **100 %** |\n\n- The investor is already **56 % in a single bank stock**. The stated goal is to \"grow savings steadily with a bank stock,\" so staying in the bank-equity space is consistent with intent, but the concentration in *one* issuer is the key risk to flag.\n- Adding the full 30,000 EGP into more COMI would make the portfolio **100 % one stock**, which sits at the upper edge of what medium loss tolerance comfortably supports.\n\n## What the Portfolio Allows\n\n- **Free cash available to commit:** the full 30,000 EGP (emergency fund is separate).\n- **Sellable equity:** 300 COMI shares (38,400 EGP) could be reduced or sold entirely if the investor wished to rebalance, though with a 5-year horizon there is no urgency.\n- **No other holdings** are present, so there is no diversification cushion within the portfolio itself.\n\n## Suitability Summary (no action recommended)\n\n- The 5-year horizon and separate emergency fund make a bank-equity holding **appropriate** for this investor's stated goal.\n- Medium loss tolerance/capacity is the binding constraint: it supports holding a bank stock but cautions against **full concentration in a single issuer**.\n- The 30,000 EGP cash is entirely deployable; the 38,400 EGP in COMI is also liquid if a rebalance were ever desired.\n- Any further commitment of cash into COMI (or another single bank) should be weighed against the resulting single-name concentration relative to the investor's medium risk profile.\n\n*This is a suitability read, not a recommendation to buy, sell, or hold any security.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 20.441,
+      "input_tokens": 1476,
+      "output_tokens": 3116,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 10.175,
+      "input_tokens": 1469,
+      "output_tokens": 1443,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 31.835,
+      "input_tokens": 4291,
+      "output_tokens": 4793,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 51.932,
+      "input_tokens": 3938,
+      "output_tokens": 3453,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 114.387
+}

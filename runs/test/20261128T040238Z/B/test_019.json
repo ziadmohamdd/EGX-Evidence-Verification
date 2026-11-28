@@ -1,0 +1,70 @@
+{
+  "case_id": "test_019",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "CIB",
+    "shares": 0,
+    "explanation": "Your question asks about CIB's net profit growth in 2025, but every piece of evidence provided in this report relates to COMI (your current holding), not CIB. No CIB financial statements, EPS, share price, or any other CIB data are included in the evidence set. Without CIB's 2024 and 2025 net profit figures I cannot calculate a growth rate, and without a CIB share price I cannot size a position. I therefore cannot confirm whether CIB's profit grew by more than 30 % or make a buy recommendation. If you intended to ask about COMI instead, please note that COMI's FY2025 net-profit figure is marked AMBIGUOUS (digits hidden by a fold in the scanned page), so even for COMI the 2025-vs-2024 growth calculation would be unreliable. Please provide CIB's financial data (or clarify if you meant COMI) and I will reassess.",
+    "claims": [],
+    "unused_figures": [
+      "COMI Net profit for the year, Dec. 31, 2025: 82,258,815 (EGP thousands) – marked AMBIGUOUS; digits hidden by a fold in the scanned page. Cannot be used in any growth calculation. This figure is also for COMI, not CIB, so it is irrelevant to the question as asked."
+    ],
+    "limitations": [
+      "No CIB evidence of any kind was provided; the entire evidence set covers COMI only.",
+      "Even for COMI, the FY2025 net-profit figure is AMBIGUOUS and cannot be used in calculations.",
+      "No CIB share price is available, so a position size cannot be determined.",
+      "This is guidance, not a guarantee of returns. Past profit growth does not ensure future performance."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "CIB",
+    "shares": 0,
+    "explanation": "Your question asks about CIB's net profit growth in 2025, but every piece of evidence provided in this report relates to COMI (your current holding), not CIB. No CIB financial statements, EPS, share price, or any other CIB data are included in the evidence set. Without CIB's 2024 and 2025 net profit figures I cannot calculate a growth rate, and without a CIB share price I cannot size a position. I therefore cannot confirm whether CIB's profit grew by more than 30 % or make a buy recommendation. If you intended to ask about COMI instead, please note that COMI's FY2025 net-profit figure is marked AMBIGUOUS (digits hidden by a fold in the scanned page), so even for COMI the 2025-vs-2024 growth calculation would be unreliable. Please provide CIB's financial data (or clarify if you meant COMI) and I will reassess.",
+    "claims": [],
+    "unused_figures": [
+      "COMI Net profit for the year, Dec. 31, 2025: 82,258,815 (EGP thousands) – marked AMBIGUOUS; digits hidden by a fold in the scanned page. Cannot be used in any growth calculation. This figure is also for COMI, not CIB, so it is irrelevant to the question as asked."
+    ],
+    "limitations": [
+      "No CIB evidence of any kind was provided; the entire evidence set covers COMI only.",
+      "Even for COMI, the FY2025 net-profit figure is AMBIGUOUS and cannot be used in calculations.",
+      "No CIB share price is available, so a position size cannot be determined.",
+      "This is guidance, not a guarantee of returns. Past profit growth does not ensure future performance."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 100
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 14.733,
+      "input_tokens": 1177,
+      "output_tokens": 1874,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 14.738
+}

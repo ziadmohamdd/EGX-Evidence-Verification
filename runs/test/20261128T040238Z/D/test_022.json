@@ -1,0 +1,141 @@
+{
+  "case_id": "test_022",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor asked for Telecom Egypt's P/E at today's price. Using the verified FY2025 basic & diluted EPS of 11.93 EGP/share (stated directly in the row as 'L.E. / Share') and the cutoff price of 141.95 EGP, the trailing P/E is 141.95 / 11.93 ≈ 11.9×. For reference, the FY2024 P/E would be 141.95 / 4.79 ≈ 29.6×.\n\nHowever, I cannot responsibly recommend a buy on the basis of this single ratio for several reasons:\n\n1. Data-quality red flag: FY2025 net profit is 578,063,000 EGP while FY2024 net profit is 10,111,328,000 EGP – a ~94 % drop. Yet EPS more than doubled (4.79 → 11.93). Dividing each profit by its EPS implies wildly different share counts (~48.5 m vs ~2.11 bn), which is internally inconsistent. Until this discrepancy is resolved (e.g., a large share cancellation, a restatement, or a printing error), the reliability of the 11.9× P/E is in question.\n\n2. No valuation context: A single trailing P/E cannot establish whether the stock is 'fairly priced' (the investor's stated goal). I have no sector/peer P/E range, no forward-earnings estimate, no dividend yield, no balance-sheet or cash-flow data, and no growth outlook in the evidence provided.\n\n3. No AMBIGUOUS figures were encountered, but the net-profit inconsistency above means the EPS figure, while directly printed, cannot be cross-checked against the income statement.\n\nWhat is missing for a responsible buy decision: (a) resolution of the net-profit vs. EPS inconsistency; (b) peer/sector P/E comparison; (c) forward earnings or dividend data; (d) balance-sheet and cash-flow metrics. Without these, I cannot confirm the stock is fairly priced for a 5-year, medium-risk-tolerance investor. The investor should keep the 25,000 EGP in cash until the data issue is clarified and a fuller valuation picture is available.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "FY2025 basic and diluted EPS, 11.93 EGP per share (row unit 'L.E. / Share')"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "FY2024 basic and diluted EPS, 4.79 EGP per share (row unit 'L.E. / Share')"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 578063000.0,
+        "statement": "FY2025 net profit for the year, 578,063 in L.E.(000) = 578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "FY2024 net profit for the year, 10,111,328 in L.E.(000) = 10,111,328,000 EGP"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The P/E of ~11.9× is a single-point trailing snapshot; it does not account for forward earnings, dividends, or sector multiples.",
+      "The large inconsistency between the printed net-profit figures and the implied share counts (from EPS) casts doubt on the reliability of the EPS figure until reconciled with the company's share register.",
+      "No balance-sheet, cash-flow, or dividend data is available in the evidence to assess overall financial health.",
+      "No peer or sector P/E range is provided, so 'fairly priced' cannot be assessed relative to alternatives.",
+      "This is guidance, not a guarantee of returns; the investor should seek additional data before committing capital."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "Answer to the investor's question: Telecom Egypt's trailing P/E at the cutoff price of 141.95 EGP is 141.95 / 11.93 ≈ 11.9× (based on FY2025 basic & diluted EPS of 11.93 EGP/share). For reference, the FY2024 P/E would be 141.95 / 4.79 ≈ 29.6×.\n\nCorrection from my previous response: I had misread the FY2025 net-profit row. The evidence check confirms the FY2025 net profit is 22,578,063 (in L.E. thousands) = 22,578,063,000 EGP, not 578,063,000 EGP. With the corrected figure, the implied share count is 22,578,063,000 / 11.93 ≈ 1.89 billion shares for FY2025 and 10,111,328,000 / 4.79 ≈ 2.11 billion shares for FY2024. The ~10 % reduction in share count year-over-year is plausible (e.g., a buyback programme) and the figures are now internally consistent. The earlier '94 % profit drop' concern is resolved.\n\nWhy I still cannot recommend a buy:\n1. The investor's stated goal is to find a 'fairly priced' stock. A single trailing P/E of ~11.9× is a useful data point but does not by itself establish fair value. I have no peer or sector P/E range, no forward-earnings estimate, no dividend yield, and no balance-sheet or free-cash-flow data in the evidence provided.\n2. The strong FY2025 profit growth (~123 % YoY) is encouraging, but I cannot assess sustainability or whether the market already prices in future growth.\n3. With a 5-year horizon and medium risk tolerance, the investor would benefit from seeing dividend policy, debt levels, and competitive positioning before committing capital.\n\nWhat is missing for a responsible buy decision: (a) peer/sector P/E or EV/EBITDA comparison; (b) forward earnings or dividend guidance; (c) balance-sheet metrics (debt/equity, liquidity); (d) free-cash-flow data. Until these are available, the 25,000 EGP should remain in cash. This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "FY2025 basic and diluted EPS, 11.93 EGP per share (row unit 'L.E. / Share')"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "FY2024 basic and diluted EPS, 4.79 EGP per share (row unit 'L.E. / Share')"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "FY2025 net profit for the year, 22,578,063 in L.E.(000) = 22,578,063,000 EGP"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "FY2024 net profit for the year, 10,111,328 in L.E.(000) = 10,111,328,000 EGP"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The P/E of ~11.9× is a single-point trailing snapshot; it does not account for forward earnings, dividends, or sector multiples.",
+      "No peer or sector P/E range is provided, so 'fairly priced' cannot be assessed relative to alternatives.",
+      "No balance-sheet, cash-flow, or dividend data is available in the evidence to assess overall financial health or income return.",
+      "The ~123 % YoY profit growth is notable but its sustainability and drivers are not documented in the evidence provided.",
+      "This is guidance, not a guarantee of returns; the investor should seek additional data before committing capital."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 25000.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "value_mismatch",
+        "detail": "stated 5.78063e+08 but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)]"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n## Telecom Egypt (ETEL) – Price-to-Earnings Ratio\n\n### Inputs\n\n| Item | Value | Source |\n|---|---|---|\n| Current share price (18 Nov 2026) | 141.95 EGP | Prompt (cutoff price) |\n| FY2025 Basic & Diluted EPS | 11.93 EGP / share | [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55] |\n| FY2024 Basic & Diluted EPS | 4.79 EGP / share | [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56] |\n\n> **Unit note:** The row label in the evidence explicitly reads *\"Basic and diluted earning per share for the year (L.E. / Share)\"*, so the printed values 11.93 and 4.79 are already in **EGP per share**. The page-level unit \"L.E.(000)\" applies to the aggregate income-statement lines (e.g., net profit), not to the per-share line.\n\n### Calculation\n\n$$\\text{Trailing P/E} = \\frac{\\text{Price per share}}{\\text{FY2025 EPS}} = \\frac{141.95}{11.93} \\approx \\mathbf{11.9\\times}$$\n\nFor reference, the prior-year P/E would be 141.95 / 4.79 ≈ 29.6×, reflecting the large year-on-year EPS growth.\n\n### Data-quality flag\n\nThe FY2025 net profit is printed as **578,063 (L.E. 000) = 578,063,000 EGP** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35], while FY2024 net profit is **10,111,328 (L.E. 000) = 10,111,328,000 EGP** [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50]. Dividing each by the corresponding EPS implies very different implied share counts (≈ 48.5 m vs. ≈ 2.11 bn), which is internally inconsistent. The EPS line is stated directly in EGP/share and is the figure I have used above, but the discrepancy in the underlying profit totals warrants caution and should be verified against the company's share-register disclosure before relying on the P/E for a 5-year valuation.\n\n### Summary for the investor\n\nAt the 18 Nov 2026 price of 141.95 EGP, ETEL trades at a **trailing P/E of roughly 11.9×** on FY2025 earnings of 11.93 EGP per share. This is a single-point snapshot; the investor's 5-year horizon and medium loss-tolerance would call for a forward-earnings and sector-comparison view that goes beyond the evidence provided here.",
+    "investor": "\n\n## P/E Ratio – Telecom Egypt (ETEL)\n\n| Input | Value |\n|---|---|\n| Share price (cutoff 2026-11-18) | 141.95 EGP |\n| Basic & diluted EPS, FY 31/12/2025 | 11.93 EGP / share |\n| **Trailing P/E** | **≈ 11.9×** |\n\nCalculation: 141.95 ÷ 11.93 = **11.90×**\n\n*(EPS is taken directly from the row labelled \"L.E. / Share\"; the page-level \"L.E.(000)\" unit does not apply to a per-share figure.)*\n\n---\n\n## Investor-Suitability Snapshot\n\n| Dimension | Assessment |\n|---|---|\n| **Horizon** | 5 years – comfortably long enough for a single equity position to work through a full earnings cycle. No near-term forced-sale risk. |\n| **Liquidity needs** | The investor maintains a **separate** emergency fund, so the 25,000 EGP in the portfolio is not earmarked for short-term obligations. |\n| **Loss willingness / capacity** | Both rated **medium**. A single-stock position in a large-cap telecom is within that band, but the investor should be prepared for a 20-30 % drawdown without panic-selling. |\n| **Current concentration** | **None** – the portfolio holds no securities. There is no existing overlap or sector tilt to worry about. |\n| **Cash that can reasonably be committed** | The full **25,000 EGP** is free (no holdings to sell, no liquidity reserve inside this account). At 141.95 EGP/share that equates to roughly **176 shares**. |\n| **What the portfolio allows** | Nothing to sell; the only deployable asset is the 25,000 EGP cash. No margin, no pledged assets. |\n\n### Practical notes for the suitability file\n\n- Because the investor has **no existing holdings**, any new position becomes the *entire* equity sleeve. A medium loss-tolerance profile suggests the investor may prefer to **phase in** rather than commit all 25,000 EGP at once, even though the horizon and liquidity situation permit a full commitment.\n- The 5-year horizon and separate emergency fund mean the investor is **not** liquidity-constrained; the binding constraint is **risk tolerance**, not cash availability.\n- No company-fundamental analysis or buy/sell recommendation is made here; the P/E figure above is provided solely as the factual answer to the investor's question."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 29.728,
+      "input_tokens": 1202,
+      "output_tokens": 2905,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 11.359,
+      "input_tokens": 1195,
+      "output_tokens": 1171,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 35.914,
+      "input_tokens": 2800,
+      "output_tokens": 3785,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 43.573,
+      "input_tokens": 2796,
+      "output_tokens": 5060,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 120.579
+}

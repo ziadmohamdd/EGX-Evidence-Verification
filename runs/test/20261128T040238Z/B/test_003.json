@@ -1,0 +1,165 @@
+{
+  "case_id": "test_003",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "ETEL",
+    "shares": 100,
+    "explanation": "I recommend selling 100 shares of ETEL (generating approximately 14,195 EGP at the current price of 141.95 EGP/share). This brings your cash to roughly 24,195 EGP, comfortably covering your 15,000 EGP liquidity need within 6 months with a buffer, and reduces your ETEL holding from 500 to 400 shares.\n\n**Why reduce the position:**\n\n1. **Severe profit decline:** ETEL's consolidated net profit fell from 10,111,328,000 EGP in FY2024 to 578,063,000 EGP in FY2025 – a drop of roughly 94%. For a retiree with low willingness and low ability to absorb losses, this is a major warning sign. I do not have revenue data, management commentary, or industry context to determine whether this is a one-time event or a structural deterioration, so the uncertainty itself argues for reducing exposure.\n\n2. **Liquidity gap:** You need 15,000 EGP within 6 months but hold only 10,000 EGP in cash. Selling 100 shares closes that gap and adds a safety margin.\n\n3. **Concentration risk:** ETEL represents about 87.6% of your total portfolio value (70,975 EGP out of 80,975 EGP). After selling 100 shares, ETEL still accounts for roughly 70% of the portfolio. I would ideally see further diversification, but I cannot recommend buying other stocks without evidence on them.\n\n4. **Income goal uncertainty:** Your goal is retirement income, but with a 94% profit decline, the sustainability of any future dividends is in serious question. I have no dividend data in the evidence to confirm or deny this. The company does hold 8,312,470,000 EGP in cash and cash equivalents, which is a positive, but total liabilities of 162,194,701,000 EGP (up from 152,014,797,000 EGP) add leverage risk.\n\n**Why not sell more (or all 500 shares):**\n- I lack sufficient evidence (no revenue trend, no dividend history, no forward guidance, no peer comparison) to conclude the decline is permanent.\n- The company's cash position is substantial relative to the profit level.\n- A full exit would eliminate any potential income stream and lock in the decision without more information.\n\n**Risks and uncertainties:**\n- The 94% profit drop could signal ongoing operational problems; without further data I cannot rule out further declines.\n- The EPS figures (11.93 EGP/share in FY2025 vs. 4.79 in FY2024) appear to have risen despite the profit collapse, which may reflect a large change in share count (buyback or consolidation). I cannot verify this from the evidence provided, so I treat the EPS trend with caution.\n- You remain heavily concentrated in a single stock even after this sale. If you can identify other income-generating, lower-volatility instruments, consider diversifying further in the coming months.\n- This is guidance, not a guarantee. The stock price could move in either direction, and the profit recovery (or further decline) is uncertain.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 578063000.0,
+        "statement": "ETEL consolidated net profit for the year ended 31/12/2025 was 578,063,000 EGP (578,063 in L.E. thousands)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL consolidated net profit for the year ended 31/12/2024 was 10,111,328,000 EGP (10,111,328 in L.E. thousands)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS for FY2025 was 11.93 EGP per share."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic and diluted EPS for FY2024 was 4.79 EGP per share."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-69",
+        "stated_value": 162194701000.0,
+        "statement": "ETEL total consolidated liabilities at 31/12/2025 were 162,194,701,000 EGP (162,194,701 in L.E. thousands)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-26",
+        "stated_value": 8312470000.0,
+        "statement": "ETEL consolidated cash and cash equivalents at 31/12/2025 were 8,312,470,000 EGP (8,312,470 in L.E. thousands)."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-49 (duplicate of p6-35, same FY2025 net profit figure)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36 (duplicate of p6-50, same FY2024 net profit figure)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-70 (duplicate of p5-69, same FY2024 liabilities figure)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-27 (duplicate of p5-26, same FY2024 cash figure)"
+    ],
+    "limitations": [
+      "No dividend data is provided, so I cannot assess whether ETEL currently pays or will continue to pay dividends, which is central to the investor's income goal.",
+      "No revenue or operating-income data is available, so the cause and reversibility of the 94% profit decline cannot be determined.",
+      "No information on share count changes, buybacks, or capital structure is provided, making the EPS increase (4.79 to 11.93) difficult to interpret alongside the profit collapse.",
+      "No forward guidance, analyst estimates, or peer/industry data are available to contextualise the results.",
+      "The evidence covers only two fiscal years; a longer trend would be needed to judge whether the decline is cyclical or structural."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "ETEL",
+    "shares": 100,
+    "explanation": "I recommend selling 100 shares of ETEL, generating approximately 14,195 EGP at the current price of 141.95 EGP/share. This brings your cash to roughly 24,195 EGP, comfortably covering your 15,000 EGP liquidity need within 6 months with a buffer, and reduces your ETEL holding from 500 to 400 shares.\n\n**Why sell (primarily a liquidity decision):**\n\n1. **Hard liquidity gap:** You need 15,000 EGP within 6 months but hold only 10,000 EGP in cash. Selling 100 shares closes that gap and adds a safety margin of about 9,000 EGP above the minimum requirement. Given your low ability to withstand losses, having a cash buffer is important.\n\n2. **Concentration risk:** ETEL represents about 87.6% of your total portfolio value (70,975 EGP out of 80,975 EGP). Even after selling 100 shares, ETEL still accounts for roughly 70% of the portfolio. I would ideally see further diversification, but I cannot recommend buying other stocks without evidence on them.\n\n**Why not sell more (or all 500 shares):**\n\n1. **Strong profit growth:** ETEL's consolidated net profit rose from 10,111,328,000 EGP in FY2024 to 22,578,063,000 EGP in FY2025 – an increase of approximately 123%. EPS also rose from 4.79 to 11.93 EGP per share, consistent with the profit growth. This is a positive fundamental signal for a retiree seeking income, as it suggests the company has the earnings capacity to support dividends (though I have no direct dividend data).\n\n2. **Adequate cash position:** The company holds 8,312,470,000 EGP in cash and cash equivalents, which is a substantial liquidity cushion.\n\n3. **Income goal alignment:** With profits more than doubling, the company is in a better position to generate shareholder income. A full exit would eliminate any potential dividend stream.\n\n**Risks and uncertainties:**\n- Total liabilities rose from 152,014,797,000 EGP in FY2024 to 162,194,701,000 EGP in FY2025, indicating increasing leverage. I do not have total assets or equity figures to assess the full balance-sheet picture.\n- I have no dividend data, so I cannot confirm whether ETEL currently pays dividends or what the payout ratio is. Your income goal depends on this, and the absence of data is a significant gap.\n- I have no revenue data, no forward guidance, and no peer comparison to contextualise the profit growth. The 123% increase could reflect one-time items, a cyclical upswing, or sustainable growth – I cannot distinguish from the evidence provided.\n- You remain heavily concentrated in a single stock even after this sale. If you can identify other income-generating, lower-volatility instruments, consider diversifying further in the coming months.\n- This is guidance, not a guarantee of returns. The stock price could move in either direction, and future earnings are uncertain.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "ETEL consolidated net profit for the year ended 31/12/2025 was 22,578,063,000 EGP (22,578,063 in L.E. thousands)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-50",
+        "stated_value": 10111328000.0,
+        "statement": "ETEL consolidated net profit for the year ended 31/12/2024 was 10,111,328,000 EGP (10,111,328 in L.E. thousands)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS for FY2025 was 11.93 EGP per share."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-56",
+        "stated_value": 4.79,
+        "statement": "ETEL basic and diluted EPS for FY2024 was 4.79 EGP per share."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-69",
+        "stated_value": 162194701000.0,
+        "statement": "ETEL total consolidated liabilities at 31/12/2025 were 162,194,701,000 EGP (162,194,701 in L.E. thousands)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-70",
+        "stated_value": 152014797000.0,
+        "statement": "ETEL total consolidated liabilities at 31/12/2024 (reclassified) were 152,014,797,000 EGP (152,014,797 in L.E. thousands)."
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-26",
+        "stated_value": 8312470000.0,
+        "statement": "ETEL consolidated cash and cash equivalents at 31/12/2025 were 8,312,470,000 EGP (8,312,470 in L.E. thousands)."
+      }
+    ],
+    "unused_figures": [
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-49 (duplicate of p6-35, same FY2025 net profit figure)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36 (duplicate of p6-50, same FY2024 net profit figure)",
+      "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-27 (duplicate of p5-26, same FY2024 cash figure)"
+    ],
+    "limitations": [
+      "No dividend data is provided, so I cannot assess whether ETEL currently pays or will continue to pay dividends, which is central to the investor's income goal.",
+      "No revenue or operating-income data is available, so the drivers and sustainability of the 123% profit increase cannot be fully assessed.",
+      "No total assets or equity figures are provided, so the full leverage picture (liabilities relative to assets) cannot be evaluated.",
+      "No forward guidance, analyst estimates, or peer/industry data are available to contextualise the results.",
+      "The evidence covers only two fiscal years; a longer trend would be needed to judge whether the growth is cyclical or structural.",
+      "The EPS row carries a page-level unit of L.E.(000) but the line item itself is labelled 'L.E. / Share'; I have treated the values (11.93 and 4.79) as EGP per share, consistent with the stock price of 141.95 EGP."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 24195.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 400
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "value_mismatch",
+        "detail": "stated 5.78063e+08 but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)]"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-70",
+        "rule": "uncited_figure",
+        "detail": "the explanation states \"152,014,797,000\", which is 'Total liabilities (consolidated)' (1.52015e+11), but it is not listed in claims"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 49.027,
+      "input_tokens": 2157,
+      "output_tokens": 6182,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 49.26,
+      "input_tokens": 4218,
+      "output_tokens": 6612,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 98.293
+}

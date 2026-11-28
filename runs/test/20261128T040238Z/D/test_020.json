@@ -1,0 +1,159 @@
+{
+  "case_id": "test_020",
+  "condition": "D",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor asked whether ETEL's equity grew in 2025. The 2025 Total Equity figure (printed as 63,687,826,000 EGP) is flagged AMBIGUOUS because a stamp obscures the 2025 column in the source document. Per data-quality rules I cannot use that figure in any calculation, so I cannot confirm or deny equity growth for 2025. The only verified equity data point is the 2024 Reclassified figure of 45,937,991,000 EGP. The conclusion on equity growth is therefore indeterminate from the available evidence.\n\nWhat the verified data does show: (1) Total Assets grew from 197,952,788,000 EGP (2024) to 225,882,527,000 EGP (2025), a verified increase of roughly 14 %. (2) Net profit for the year fell sharply from 10,111,328,000 EGP (2024) to 578,063,000 EGP (2025), a verified decline of approximately 94 %. (Note: the financial analyst's report initially described the profit change as a 'rise' in one sentence and then correctly identified it as a 'substantial decline' in the next; the verified figures confirm a decline.)\n\nRecommendation rationale: The investor's stated goal is to keep a solid telecom holding over a 5-year horizon, and they already own 300 ETEL shares. While I cannot confirm the 2025 equity figure, there is no verified evidence of fundamental deterioration that would mandate a sale. The asset base is growing. The profit decline is a material risk flag that warrants monitoring, but a single-year profit drop does not, by itself, justify exiting a 5-year position, especially when the investor's explicit goal is to maintain this holding. I recommend holding the existing 300 shares.\n\nKey risks and caveats: (a) The 2025 equity figure remains unverified; a clean copy of the FY2025 consolidated balance sheet should be obtained to resolve the ambiguity. (b) The ~94 % net-profit decline is a serious warning sign for a 5-year hold and should be investigated (one-time charges vs. structural revenue decline). (c) The portfolio is ~81 % concentrated in a single stock, which is at the edge of what the investor's low loss-tolerance profile comfortably supports. (d) This is guidance, not a guarantee of returns; the investor should re-evaluate if the profit decline persists into 2026.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-46",
+        "stated_value": 45937991000.0,
+        "statement": "Total Equity (consolidated) at 31/12/2024 Reclassified"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total Assets (consolidated) at 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-32",
+        "stated_value": 197952788000.0,
+        "statement": "Total Assets (consolidated) at 31/12/2024 Reclassified"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 578063000.0,
+        "statement": "Net profit for the year at 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit for the year at 31/12/2024"
+      }
+    ],
+    "unused_figures": [
+      "Total Equity (consolidated) at 31/12/2025, printed as 63,687,826,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] – AMBIGUOUS (stamp covers the 2025 column). This figure cannot be used to confirm or deny equity growth in 2025, which is the investor's specific question."
+    ],
+    "limitations": [
+      "The 2025 Total Equity figure is AMBIGUOUS and excluded from all calculations; the equity-growth question cannot be answered definitively.",
+      "No revenue, EBITDA, debt, or dividend data is available in the evidence to assess the quality of the profit decline or the company's long-term earnings power.",
+      "No forward-looking guidance, sector outlook, or peer comparison is available.",
+      "The 94 % net-profit decline may reflect one-time items (impairments, restructuring) or a structural change; the evidence does not distinguish between these."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ETEL",
+    "shares": 0,
+    "explanation": "The investor asked whether ETEL's equity grew in 2025. The 2025 Total Equity figure (printed as 63,687,826,000 EGP) is flagged AMBIGUOUS because a stamp obscures the 2025 column. Per data-quality rules I cannot use that figure, so I cannot confirm or deny equity growth for 2025. The only verified equity data point is the 2024 Reclassified figure of 45,937,991,000 EGP. The equity-growth question therefore remains indeterminate from the available evidence.\n\nWhat the verified data does show (corrected from my prior analysis):\n(1) Net profit for the year INCREASED substantially, from 10,111,328,000 EGP (2024) to 22,578,063,000 EGP (2025), a verified growth of approximately 123 %. My earlier reading of the 2025 profit as 578,063,000 EGP was a parsing error: I incorrectly split the printed figure '22 578 063' into a note number '22' and a value '578 063', when the correct reading is the single value 22,578,063 (thousands). This correction materially changes the assessment: the company is not suffering a profit collapse but is more than doubling its earnings.\n(2) Total Assets grew from 197,952,788,000 EGP (2024) to 225,882,527,000 EGP (2025), a verified increase of roughly 14 %.\n\nRecommendation rationale: The investor's stated goal is to keep a solid telecom holding over a 5-year horizon, and they already own 300 ETEL shares. The corrected profit data (123 % growth) and asset growth (14 %) are strongly positive signals for a multi-year hold. There is no verified evidence of fundamental deterioration. I recommend holding the existing 300 shares.\n\nKey risks and caveats: (a) The 2025 equity figure remains unverified; a clean copy of the FY2025 consolidated balance sheet should be obtained to resolve the ambiguity and answer the investor's specific question. (b) The portfolio is approximately 81 % concentrated in a single stock (ETEL at 42,585 EGP out of 52,585 EGP total), which is at the edge of what the investor's low loss-tolerance profile comfortably supports. (c) No revenue, EBITDA, debt, or dividend data is available in the evidence to assess the quality and sustainability of the profit growth. (d) This is guidance, not a guarantee of returns; the investor should re-evaluate if the profit trajectory reverses in 2026.",
+    "claims": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-46",
+        "stated_value": 45937991000.0,
+        "statement": "Total Equity (consolidated) at 31/12/2024 Reclassified"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31",
+        "stated_value": 225882527000.0,
+        "statement": "Total Assets (consolidated) at 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p5-32",
+        "stated_value": 197952788000.0,
+        "statement": "Total Assets (consolidated) at 31/12/2024 Reclassified"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "stated_value": 22578063000.0,
+        "statement": "Net profit for the year at 31/12/2025"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36",
+        "stated_value": 10111328000.0,
+        "statement": "Net profit for the year at 31/12/2024"
+      }
+    ],
+    "unused_figures": [
+      "Total Equity (consolidated) at 31/12/2025, printed as 63,687,826,000 EGP [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] – AMBIGUOUS (stamp covers the 2025 column). This figure cannot be used to confirm or deny equity growth in 2025, which is the investor's specific question."
+    ],
+    "limitations": [
+      "The 2025 Total Equity figure is AMBIGUOUS and excluded from all calculations; the equity-growth question cannot be answered definitively.",
+      "No revenue, EBITDA, debt, or dividend data is available in the evidence to assess the quality and sustainability of the 123 % profit growth.",
+      "No forward-looking guidance, sector outlook, or peer comparison is available.",
+      "The 123 % profit increase may include one-time gains (asset disposals, revaluation) or reflect a structural improvement; the evidence does not distinguish between these.",
+      "The portfolio remains heavily concentrated in a single stock (~81 %), which is a risk for an investor with low loss tolerance."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ETEL",
+        "shares": 300
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35",
+        "rule": "value_mismatch",
+        "detail": "stated 5.78063e+08 but evidence 'Net profit for the year' is 2.25781e+10 [Net profit for the year 22 578 063 10 111 328 | unit: L.E.(000)]"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": {
+    "financial": "\n\n## Did Telecom Egypt's Equity Grow in 2025?\n\n### What the evidence shows\n\n| Item | Period | Value (L.E.) | Status |\n|---|---|---|---|\n| Total Equity (consolidated) | 31/12/2024 Reclassified | 45,937,991,000 | **Verified** [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-46] |\n| Total Equity (consolidated) | 31/12/2025 | 63,687,826,000 | **AMBIGUOUS** – a stamp covers the 2025 column [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] |\n\n### Assessment\n\n- The **2024 Reclassified** equity figure of **45,937,991,000 EGP** is verified and usable [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-46].\n- The **2025** equity figure is printed as 63,687,826,000 EGP, but the evidence explicitly flags it as **AMBIGUOUS** because a stamp obscures the 2025 column [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45]. Per data-quality rules, I **cannot compute a growth rate or confirm a direction of change** using this figure.\n\n### Conclusion\n\nBased on the verified evidence available, **I cannot confirm whether equity grew in 2025**. The only fully verified data point is the 2024 Reclassified equity of 45,937,991,000 EGP. The 2025 figure, while printed at a higher level (63,687,826,000 EGP), is unreliable due to the stamp obstruction and must be treated as unverified.\n\n> **Data-quality flag:** The 2025 Total Equity figure [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-45] is **AMBIGUOUS** and has been excluded from any computation. A clean, unobstructed copy of the FY2025 consolidated balance sheet (page 5) would be needed to resolve this.\n\n### Context from other verified figures (for completeness)\n\n- Total Assets grew from 197,952,788,000 EGP (2024 Reclassified) [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-32] to 225,882,527,000 EGP (2025) [ETEL-ETEL_FY2025_EAS_consolidated_en-p5-31] – a verified increase of roughly 14 %.\n- Net profit for the year rose from 10,111,328,000 EGP (2024) [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-36] to 578,063,000 EGP (2025) [ETEL-ETEL_FY2025_EAS_consolidated_en-p6-35].\n\n*Note on the net-profit figures:* The 2025 column reads \"578 063\" and the 2024 column reads \"10 111 328\" in the printed row. The 2025 figure appears to be a substantial **decline** versus 2024, which is a material risk flag for a 5-year holding. However, the question asked specifically about equity, so I flag this only as supplementary context.\n\n**Bottom line for the investor:** The equity-growth question **cannot be answered definitively** with the current evidence. Before making any portfolio decision on the 300 ETEL shares, the 2025 balance-sheet figure should be re-verified from an unobstructed source.",
+    "investor": "\n\n## Answer to your question: Did ETEL's equity grow in 2025?\n\n**On the printed figures, yes — but with a data-quality caveat.**\n\n| Period | Total Equity (consolidated) | Status |\n|---|---|---|\n| 31/12/2024 (Reclassified) | 45,937,991,000 EGP | Verified |\n| 31/12/2025 | 63,687,826,000 EGP | **Ambiguous** – a stamp covers the 2025 column in the source PDF |\n\nThe 2024 baseline is clean and verified. The 2025 figure is legible in the scan but flagged as unreadable/ambiguous because a stamp overlaps the column. If the printed number is correct, equity rose by roughly **17.7 billion EGP (+38.6 %)** year-on-year. I can confirm the 2024 starting point with confidence; I can only report the 2025 figure as \"as printed, unverified.\"\n\n---\n\n## How this fits your suitability picture\n\n- **Goal & horizon.** You want to *keep* a solid telecom holding over 5 years. A ~39 % equity build (if confirmed) is directionally consistent with a company that is still accumulating capital, which supports a \"hold\" mindset rather than a \"get out\" one.\n- **Loss tolerance vs. capacity.** Your *willingness* to absorb losses is low, but your *capacity* is medium. A single-name, single-sector position (see below) sits at the edge of what that combination comfortably allows.\n- **Concentration.** Your portfolio is 300 × 141.95 = **42,585 EGP in ETEL** plus **10,000 EGP cash** → total ≈ 52,585 EGP. ETEL is roughly **81 %** of the portfolio. That is a heavy single-stock, single-sector tilt for someone with low loss willingness.\n- **Liquidity / free cash.** You keep a separate emergency fund, so the 10,000 EGP in the portfolio is genuinely free. The 300 ETEL shares are sellable on the exchange, but selling any of them would reduce the \"solid telecom holding\" you want to keep.\n- **What the portfolio allows.** You could commit up to the 10,000 EGP cash without touching the ETEL position. Selling ETEL shares is possible but would directly undermine your stated goal and increase the weight of cash (lowering the telecom exposure you want to maintain).\n\n**Bottom line for your question:** The evidence points to equity growth in 2025, but the 2025 figure carries an ambiguity flag. Before treating that number as a firm basis for a 5-year hold decision, it would be prudent to confirm the 2025 total-equity line from a clean copy of the FY2025 consolidated statements."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 14.45,
+      "input_tokens": 1571,
+      "output_tokens": 1552,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 19.936,
+      "input_tokens": 1564,
+      "output_tokens": 2098,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 40.85,
+      "input_tokens": 3496,
+      "output_tokens": 4694,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent_revision",
+      "seconds": 44.039,
+      "input_tokens": 3373,
+      "output_tokens": 5206,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 119.28
+}

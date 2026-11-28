@@ -1,0 +1,88 @@
+{
+  "case_id": "test_016",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 262,
+    "explanation": "Comparing the two stocks on a price-to-earnings basis:\n\n**ABUK (Abu Qir Fertilizers):**\n- Share price: 76.21 EGP\n- 9-month EPS (ended 30 Sep 2026): 8.74 EGP (verified)\n- Annualised EPS (approx.): 8.74 × 12/9 ≈ 11.65 EGP\n- Approximate P/E: 76.21 / 11.65 ≈ 6.5×\n\n**ETEL (Telecom Egypt):**\n- Share price: 141.95 EGP\n- Full-year EPS (FY2025): 11.93 EGP (verified)\n- P/E: 141.95 / 11.93 ≈ 11.9×\n\nABUK trades at roughly 6.5× annualised earnings versus ETEL's ~11.9×, making ABUK the cheaper stock on an earnings basis. The investor's stated goal is to buy the cheaper of the two, so ABUK is the selection.\n\n**Position sizing:** With 40,000 EGP in cash and no other holdings, the diversification rule (no single stock > 50% of total portfolio value) caps the ABUK position at 20,000 EGP, i.e. 262 shares (262 × 76.21 = 19,967 EGP; remaining cash ≈ 20,033 EGP; ABUK ≈ 49.9% of portfolio).\n\n**Caveats and risks:**\n- ABUK's EPS is for only 9 months; annualising by ×12/9 assumes the final quarter matches the average of the first three, which may not hold. The true full-year P/E could be higher or lower.\n- ETEL's EPS is for the full year 2025, so the comparison is not perfectly like-for-like (9-month annualised vs. full-year actual).\n- A low P/E can reflect market concerns about growth, one-off earnings, or sector risk; it does not guarantee outperformance.\n- The investor has medium loss tolerance; a 5-year horizon provides some cushion, but concentration in a single stock (even at 50%) carries risk.\n- This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS for the 9 months ended 30 Sep 2026 is 8.74 EGP per share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS for the year ended 31/12/2025 is 11.93 EGP per share"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "ABUK EPS is for 9 months only; annualisation (×12/9) is an approximation and the true full-year P/E may differ.",
+      "ETEL EPS is for FY2025 while ABUK is 9M 2026; the periods are not identical, so the P/E comparison is approximate.",
+      "The AMBIGUOUS figures (Q3 2026 EPS, 9M change %, Q3 change %) could not be used due to OCR uncertainty; this does not affect the core P/E comparison but limits the ability to assess recent momentum or growth rate."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "ABUK",
+    "shares": 262,
+    "explanation": "Comparing the two stocks on a price-to-earnings basis:\n\n**ABUK (Abu Qir Fertilizers):**\n- Share price: 76.21 EGP\n- 9-month EPS (ended 30 Sep 2026): 8.74 EGP (verified)\n- Annualised EPS (approx.): 8.74 × 12/9 ≈ 11.65 EGP\n- Approximate P/E: 76.21 / 11.65 ≈ 6.5×\n\n**ETEL (Telecom Egypt):**\n- Share price: 141.95 EGP\n- Full-year EPS (FY2025): 11.93 EGP (verified)\n- P/E: 141.95 / 11.93 ≈ 11.9×\n\nABUK trades at roughly 6.5× annualised earnings versus ETEL's ~11.9×, making ABUK the cheaper stock on an earnings basis. The investor's stated goal is to buy the cheaper of the two, so ABUK is the selection.\n\n**Position sizing:** With 40,000 EGP in cash and no other holdings, the diversification rule (no single stock > 50% of total portfolio value) caps the ABUK position at 20,000 EGP, i.e. 262 shares (262 × 76.21 = 19,967 EGP; remaining cash ≈ 20,033 EGP; ABUK ≈ 49.9% of portfolio).\n\n**Caveats and risks:**\n- ABUK's EPS is for only 9 months; annualising by ×12/9 assumes the final quarter matches the average of the first three, which may not hold. The true full-year P/E could be higher or lower.\n- ETEL's EPS is for the full year 2025, so the comparison is not perfectly like-for-like (9-month annualised vs. full-year actual).\n- A low P/E can reflect market concerns about growth, one-off earnings, or sector risk; it does not guarantee outperformance.\n- The investor has medium loss tolerance; a 5-year horizon provides some cushion, but concentration in a single stock (even at 50%) carries risk.\n- This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "ABUK basic EPS for the 9 months ended 30 Sep 2026 is 8.74 EGP per share"
+      },
+      {
+        "evidence_id": "ETEL-ETEL_FY2025_EAS_consolidated_en-p6-55",
+        "stated_value": 11.93,
+        "statement": "ETEL basic and diluted EPS for the year ended 31/12/2025 is 11.93 EGP per share"
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-33",
+      "ABUK-ABUK_9M2026_results-p2-34",
+      "ABUK-ABUK_9M2026_results-p2-36"
+    ],
+    "limitations": [
+      "ABUK EPS is for 9 months only; annualisation (×12/9) is an approximation and the true full-year P/E may differ.",
+      "ETEL EPS is for FY2025 while ABUK is 9M 2026; the periods are not identical, so the P/E comparison is approximate.",
+      "The AMBIGUOUS figures (Q3 2026 EPS, 9M change %, Q3 change %) could not be used due to OCR uncertainty; this does not affect the core P/E comparison but limits the ability to assess recent momentum or growth rate."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 20032.98,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ABUK",
+        "shares": 262
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 22.042,
+      "input_tokens": 2544,
+      "output_tokens": 3536,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 22.045
+}

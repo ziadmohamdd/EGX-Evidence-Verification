@@ -1,0 +1,120 @@
+{
+  "case_id": "test_008",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "sell",
+    "ticker": "TMGH",
+    "shares": 300,
+    "explanation": "The investor must pay 40,000 EGP in university fees within 2 months, has low willingness and low capacity to absorb losses, and holds 300 TMGH shares (24,750 EGP at 82.50 EGP) plus 2,000 EGP cash. A fixed, non-discretionary payment due in 8 weeks is a liquidity event, not an investment horizon. Holding a single listed equity through that window exposes the earmarked funds to price risk the investor cannot afford: a 10 % drop in TMGH would erase roughly 2,475 EGP and widen an already existing 13,250 EGP shortfall. Selling all 300 shares converts the position to cash immediately (subject to T+2 settlement), locks in 24,750 EGP, and eliminates further mark-to-market risk. The total portfolio after the sale would be 26,750 EGP in cash—still 13,250 EGP short of the 40,000 EGP target, a gap that must be closed from outside this portfolio (savings, family support, a short-term loan, etc.). No combination of holdings within this portfolio can meet the full obligation, but selling is the only action consistent with the investor's zero-loss-tolerance constraint and the fixed deadline. The FY2025 financials (net profit 18.2 billion EGP, EPS 6.98 EGP, both up ~42-59 % YoY) confirm TMGH is a fundamentally sound company, but annual profitability is irrelevant to a 2-month cash need with no room for drawdown. The FY2024 restatement and the absence of balance-sheet, cash-flow, dividend, and risk-factor data in the evidence further limit what can be said about near-term price behaviour, reinforcing the case to de-risk now rather than speculate. Risks of selling: the investor forgoes any upside if TMGH rises over the next two months, and the 13,250 EGP shortfall remains regardless of the action taken. This recommendation does not guarantee the fees will be paid; it only removes equity price risk from the funds that are available.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH consolidated net profit for FY2025 is 18,201,981,482 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+        "stated_value": 12769517325.0,
+        "statement": "TMGH consolidated net profit for FY2024 (restated) is 12,769,517,325 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH consolidated EPS for FY2025 is 6.98 EGP per share."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "TMGH consolidated EPS for FY2024 (restated) is 4.38 EGP per share."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The evidence contains only two P&L line items (net profit and EPS) for two periods; no balance sheet, cash-flow statement, revenue, margin, dividend, or risk-factor data is available.",
+      "FY2024 figures are restated; the reason and magnitude of the restatement are not disclosed, so YoY growth rates carry a comparability caveat.",
+      "No data on 2-month price volatility, bid-ask spread, or market liquidity for 300 shares is provided.",
+      "The 13,250 EGP shortfall (40,000 needed vs. 26,750 available) cannot be resolved within this portfolio; the investor must source the remainder externally.",
+      "Settlement timing (typically T+2 in Egypt) means cash from the sale may not be available on the exact sale date."
+    ]
+  },
+  "final": {
+    "action": "sell",
+    "ticker": "TMGH",
+    "shares": 300,
+    "explanation": "The investor must pay 40,000 EGP in university fees within 2 months, has low willingness and low capacity to absorb losses, and holds 300 TMGH shares (24,750 EGP at 82.50 EGP) plus 2,000 EGP cash. A fixed, non-discretionary payment due in 8 weeks is a liquidity event, not an investment horizon. Holding a single listed equity through that window exposes the earmarked funds to price risk the investor cannot afford: a 10 % drop in TMGH would erase roughly 2,475 EGP and widen an already existing 13,250 EGP shortfall. Selling all 300 shares converts the position to cash immediately (subject to T+2 settlement), locks in 24,750 EGP, and eliminates further mark-to-market risk. The total portfolio after the sale would be 26,750 EGP in cash—still 13,250 EGP short of the 40,000 EGP target, a gap that must be closed from outside this portfolio (savings, family support, a short-term loan, etc.). No combination of holdings within this portfolio can meet the full obligation, but selling is the only action consistent with the investor's zero-loss-tolerance constraint and the fixed deadline. The FY2025 financials (net profit 18.2 billion EGP, EPS 6.98 EGP, both up ~42-59 % YoY) confirm TMGH is a fundamentally sound company, but annual profitability is irrelevant to a 2-month cash need with no room for drawdown. The FY2024 restatement and the absence of balance-sheet, cash-flow, dividend, and risk-factor data in the evidence further limit what can be said about near-term price behaviour, reinforcing the case to de-risk now rather than speculate. Risks of selling: the investor forgoes any upside if TMGH rises over the next two months, and the 13,250 EGP shortfall remains regardless of the action taken. This recommendation does not guarantee the fees will be paid; it only removes equity price risk from the funds that are available.",
+    "claims": [
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-55",
+        "stated_value": 18201981482.0,
+        "statement": "TMGH consolidated net profit for FY2025 is 18,201,981,482 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-56",
+        "stated_value": 12769517325.0,
+        "statement": "TMGH consolidated net profit for FY2024 (restated) is 12,769,517,325 EGP."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-61",
+        "stated_value": 6.98,
+        "statement": "TMGH consolidated EPS for FY2025 is 6.98 EGP per share."
+      },
+      {
+        "evidence_id": "TMGH-TMGH_FY2025_consolidated_en-p7-62",
+        "stated_value": 4.38,
+        "statement": "TMGH consolidated EPS for FY2024 (restated) is 4.38 EGP per share."
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The evidence contains only two P&L line items (net profit and EPS) for two periods; no balance sheet, cash-flow statement, revenue, margin, dividend, or risk-factor data is available.",
+      "FY2024 figures are restated; the reason and magnitude of the restatement are not disclosed, so YoY growth rates carry a comparability caveat.",
+      "No data on 2-month price volatility, bid-ask spread, or market liquidity for 300 shares is provided.",
+      "The 13,250 EGP shortfall (40,000 needed vs. 26,750 available) cannot be resolved within this portfolio; the investor must source the remainder externally.",
+      "Settlement timing (typically T+2 in Egypt) means cash from the sale may not be available on the exact sale date."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 26750.0,
+    "currency": "EGP",
+    "holdings": []
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n# TMGH – Company Evidence Analysis\n\n## 1. Profitability\n\n| Metric | FY2025 | FY2024 (Restated) |\n|---|---|---|\n| Net profit (consolidated) | 18,201,981,482 EGP [TMGH-TMGH_FY2025_consolidated_en-p7-55] | 12,769,517,325 EGP [TMGH-TMGH_FY2025_consolidated_en-p7-56] |\n| Earnings per share | 6.98 EGP [TMGH-TMGH_FY2025_consolidated_en-p7-61] | 4.38 EGP [TMGH-TMGH_FY2025_consolidated_en-p7-62] |\n\nTMGH is clearly profitable in both periods. The FY2025 net profit of 18,201,981,482 EGP [TMGH-TMGH_FY2025_consolidated_en-p7-55] represents a substantial absolute level of earnings.\n\n## 2. Growth\n\n- **Net profit growth (YoY):** (18,201,981,482 − 12,769,517,325) / 12,769,517,325 ≈ **+42.5 %** (derived from [TMGH-TMGH_FY2025_consolidated_en-p7-55] and [TMGH-TMGH_FY2025_consolidated_en-p7-56]).\n- **EPS growth (YoY):** (6.98 − 4.38) / 4.38 ≈ **+59.4 %** (derived from [TMGH-TMGH_FY2025_consolidated_en-p7-61] and [TMGH-TMGH_FY2025_consolidated_en-p7-62]).\n\nBoth metrics show strong year-on-year improvement. The EPS growth outpacing net-profit growth suggests a possible reduction in share count (buybacks or capital restructuring), though the evidence set does not include a share-count line to confirm this.\n\n## 3. Balance Sheet\n\n**No balance-sheet data (total assets, liabilities, equity, cash, debt) is present in the supplied evidence.** I cannot assess leverage, liquidity, or solvency from what has been provided.\n\n## 4. Risks\n\n- **Restated prior-year figures:** The FY2024 column is labelled \"2024 (Restated)\" [TMGH-TMGH_FY2025_consolidated_en-p7-56, -62]. A restatement signals that the originally reported FY2024 numbers were adjusted, which can indicate accounting corrections, reclassifications, or changes in reporting scope. The magnitude and reason for the restatement are **not disclosed** in the evidence provided.\n- **No forward-looking or risk-factor disclosures** (e.g., sector exposure, regulatory risk, FX risk, concentration risk) are included in the four evidence items.\n- **No dividend information** is provided, so I cannot assess income yield or payout sustainability.\n\n## 5. Data Quality\n\n- All four figures are tagged **verified** in the evidence metadata.\n- The unit line reads \"LE\" (Egyptian Pounds, not thousands), so the figures are already in whole pounds as printed.\n- The evidence covers **only two line items** (net profit and EPS) for **two periods**. There is no income-statement detail (revenue, EBITDA, margins), no balance sheet, no cash-flow statement, and no segment breakdown. The analytical picture is therefore **narrow**.\n- The 2024 restatement introduces a **comparability caveat**: the FY2025-vs-FY2024 growth rates above are computed against restated figures, which may not be directly comparable to the originally published FY2024 numbers.\n\n## 6. Relevance to the Stated Investor Context (factual observations only)\n\n- The investor's 300 TMGH shares are worth 300 × 82.50 = **24,750 EGP** at the cutoff price, plus 2,000 EGP cash, for a total portfolio of **26,750 EGP**.\n- The stated liquidity need is **40,000 EGP within 2 months**, which exceeds the total portfolio value by **13,250 EGP** even if every share were sold at the cutoff price.\n- The investor's horizon (2 months) is far shorter than the annual reporting cycle of the evidence provided; the FY2025 figures [TMGH-TMGH_FY2025_consolidated_en-p7-55] reflect a full-year result and do not speak to 2-month price volatility or liquidity.\n- The investor's low loss tolerance and low ability to withstand losses are noted as constraints, but **no action recommendation is made here**; that is the decision agent's role.\n\n## 7. Gaps / Items I Cannot Assess from This Evidence\n\n- Revenue, margins, and operating leverage\n- Balance-sheet strength, debt levels, and cash position\n- Dividend policy and yield\n- Share-count changes (to explain the EPS-vs-profit growth gap)\n- Reason and magnitude of the FY2024 restatement\n- Sector, regulatory, and macro risks specific to TMGH\n- 2-month price volatility, bid-ask spread, or market-liquidity constraints on selling 300 shares\n\n**Bottom line of the evidence:** TMGH shows strong and growing consolidated profitability (net profit 18,201,981,482 EGP in FY2025, +42.5 % YoY; EPS 6.98 EGP, +59.4 % YoY) [TMGH-TMGH_FY2025_consolidated_en-p7-55, -56, -61, -62]. However, the evidence set is limited to two P&L line items, the prior year is restated, and no balance-sheet, cash-flow, risk, or dividend data is available. The analysis above is confined to what the four verified figures support.",
+    "investor": "\n\n# Investor-Suitability Assessment\n\n## 1. Horizon & Liquidity Need\n\nThe stated horizon is **2 months**, and the purpose is a fixed, non-discretionary payment (university fees) of **40,000 EGP**. This is not an investment horizon in any meaningful sense; it is a **liquidity event**. The investor needs a known sum of cash by a known date, with no room for the funds to be tied up, volatile, or uncertain.\n\n## 2. Loss Tolerance & Capacity\n\n- **Willingness to accept losses:** Low.\n- **Capacity to absorb losses:** Low.\n\nWith a hard deadline and a fixed obligation, any drawdown on the assets earmarked for the fees would directly jeopardise the payment. In practice, the investor can tolerate **zero** loss on the 40,000 EGP needed.\n\n## 3. Current Concentration\n\n| Asset | Quantity | Price (EGP) | Value (EGP) |\n|---|---|---|---|\n| Cash | – | – | 2,000 |\n| TMGH shares | 300 | 82.50 | 24,750 |\n| **Total portfolio** | | | **26,750** |\n\n- **100 % of the non-cash portfolio is a single equity (TMGH).** There is no diversification, no fixed-income buffer, and no other liquid instrument.\n- The cash component is only **2,000 EGP (≈ 7.5 % of total value)**, leaving the investor almost entirely exposed to the mark-to-market of one stock.\n\n## 4. What the Portfolio Can Actually Provide\n\n- **Immediately free cash:** 2,000 EGP.\n- **Sellable equity:** 300 × TMGH at 82.50 EGP = 24,750 EGP, subject to:\n  - Exchange trading hours and settlement (typically T+2 in Egypt),\n  - Bid/ask spread and any market impact on 300 shares,\n  - Potential price movement between today and the sale date.\n- **Maximum realistic proceeds (all-in):** ≈ 26,750 EGP, before any transaction costs.\n\n## 5. The Critical Gap\n\n| Item | Amount (EGP) |\n|---|---|\n| Amount needed in 2 months | 40,000 |\n| Total portfolio value (cash + TMGH) | 26,750 |\n| **Shortfall** | **13,250** |\n\nEven if the investor liquidated **every** asset in the portfolio today and received the full quoted price, the proceeds would cover only about **67 %** of the university fees. The remaining **13,250 EGP** must come from **outside this portfolio** (savings elsewhere, a loan, family support, etc.). No combination of holdings within this portfolio can close the gap.\n\n## 6. Suitability Summary\n\n- **Time mismatch:** A 2-month, fixed-amount obligation is fundamentally incompatible with holding a single equity position. The asset class (listed equity) carries price risk that the investor neither wants nor can afford over this window.\n- **Concentration risk:** All non-cash wealth is in one stock; any adverse move in TMGH directly erodes the funds needed for the fees.\n- **Liquidity risk:** Converting 300 shares to cash is straightforward in principle, but the proceeds are still 13,250 EGP short of the target, and the conversion is not instantaneous (settlement lag, market hours).\n- **Loss capacity:** With both willingness and capacity at \"low,\" the investor has no cushion. A 10 % drop in TMGH would shave roughly 2,475 EGP off the available funds, widening the shortfall to ≈ 15,725 EGP.\n\n## 7. What the Portfolio Allows (and Does Not)\n\n**Allows:**\n- Up to 2,000 EGP of cash is free and immediately available.\n- Up to 24,750 EGP can be raised by selling the TMGH position, subject to market conditions and settlement timing.\n- No other assets, margin, or embedded liquidity exist in this portfolio.\n\n**Does not allow:**\n- Meeting the full 40,000 EGP obligation from within this portfolio.\n- Absorbing any meaningful price decline in TMGH without further reducing the already-insufficient proceeds.\n- Any \"wait-and-see\" or partial-holding strategy, because the deadline is fixed and the shortfall already exists at today's prices.\n\n---\n\n*This assessment describes the fit (or lack thereof) between the investor's constraints and the portfolio's characteristics. It does not constitute a recommendation to buy, sell, or hold any security, and it does not analyse TMGH's financial statements.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 11.79,
+      "input_tokens": 848,
+      "output_tokens": 2059,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 10.849,
+      "input_tokens": 841,
+      "output_tokens": 1846,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 12.75,
+      "input_tokens": 3634,
+      "output_tokens": 2190,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 35.394
+}

@@ -1,0 +1,62 @@
+{
+  "case_id": "test_019",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "insufficient_evidence",
+    "ticker": "CIB",
+    "shares": 0,
+    "explanation": "Your question is about CIB's net profit growth in 2025, but every piece of evidence provided in this report relates to COMI, not CIB. There is no CIB income statement, EPS, or any other CIB financial figure in the materials I was given, so I cannot calculate CIB's year-on-year profit growth and therefore cannot confirm whether it exceeded your 30% threshold. Without that number I cannot responsibly tell you to add to a CIB position. If you can supply CIB's FY2025 (and FY2024) net profit figures, I would be happy to re-evaluate. In the meantime, your existing COMI holding (100 shares) and 20,000 EGP cash remain untouched. Note: the one COMI figure that was marked AMBIGUOUS (FY2025 net profit, obscured by a page fold) is also unusable, so even a COMI growth calculation would be incomplete.",
+    "claims": [],
+    "unused_figures": [
+      "COMI Net profit for the year, Dec. 31, 2025 (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-33): marked AMBIGUOUS because the digits are hidden by a fold in the scanned page; cannot be used in any calculation."
+    ],
+    "limitations": [
+      "No CIB financial data was provided; the entire evidence set covers COMI only.",
+      "The COMI FY2025 net profit figure is unreadable (AMBIGUOUS), so even a COMI growth comparison would be incomplete.",
+      "This is guidance, not a guarantee of returns. Past profit growth does not ensure future performance."
+    ]
+  },
+  "final": {
+    "action": "insufficient_evidence",
+    "ticker": "CIB",
+    "shares": 0,
+    "explanation": "Your question is about CIB's net profit growth in 2025, but every piece of evidence provided in this report relates to COMI, not CIB. There is no CIB income statement, EPS, or any other CIB financial figure in the materials I was given, so I cannot calculate CIB's year-on-year profit growth and therefore cannot confirm whether it exceeded your 30% threshold. Without that number I cannot responsibly tell you to add to a CIB position. If you can supply CIB's FY2025 (and FY2024) net profit figures, I would be happy to re-evaluate. In the meantime, your existing COMI holding (100 shares) and 20,000 EGP cash remain untouched. Note: the one COMI figure that was marked AMBIGUOUS (FY2025 net profit, obscured by a page fold) is also unusable, so even a COMI growth calculation would be incomplete.",
+    "claims": [],
+    "unused_figures": [
+      "COMI Net profit for the year, Dec. 31, 2025 (evidence COMI-COMI_FY2025_consolidated_condensed_en-p5-33): marked AMBIGUOUS because the digits are hidden by a fold in the scanned page; cannot be used in any calculation."
+    ],
+    "limitations": [
+      "No CIB financial data was provided; the entire evidence set covers COMI only.",
+      "The COMI FY2025 net profit figure is unreadable (AMBIGUOUS), so even a COMI growth comparison would be incomplete.",
+      "This is guidance, not a guarantee of returns. Past profit growth does not ensure future performance."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 20000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 100
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 11.823,
+      "input_tokens": 1177,
+      "output_tokens": 1766,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 11.825
+}

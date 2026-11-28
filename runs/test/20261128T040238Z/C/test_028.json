@@ -1,0 +1,101 @@
+{
+  "case_id": "test_028",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor's stated goal is to add to Edita, and the financials support a positive view: consolidated profit before tax grew from 2,163,025,380 EGP in FY2024 to 3,703,837,580 EGP in FY2025, an absolute increase of 1,540,812,200 EGP (≈71.2 %). Gross profit and net profit show the same upward trajectory, and EPS more than doubled (1.09 → 2.18 EGP). All figures are verified and unambiguous.\n\nHowever, the diversification constraint blocks any additional purchase. The current portfolio is 1,000 EFID shares × 20.40 EGP = 20,400 EGP in equity plus 15,000 EGP cash, for a total of 35,400 EGP. EFID already represents 57.6 % of that total, exceeding the 50 % single-company cap. Buying even one more share would push the concentration higher while the total portfolio value stays at 35,400 EGP, so no buy is permissible under the rules.\n\nBecause the investor already owns EFID, the correct action is to hold the existing 1,000 shares. The strong earnings growth is encouraging for the 5-year horizon, but the position cannot be increased until the portfolio is rebalanced (e.g., by adding other holdings or receiving additional cash) so that EFID falls below the 50 % threshold.\n\nRisks and uncertainty: the 71 % PBT growth is a single-year figure; it does not guarantee future performance. The investor's medium loss tolerance and medium financial capacity mean that a concentrated position in one stock carries meaningful downside risk if earnings reverse. No AMBIGUOUS figures were encountered, so no conclusions are affected by data gaps.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-26",
+        "stated_value": 3703837580.0,
+        "statement": "EFID consolidated profit before income tax for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-27",
+        "stated_value": 2163025380.0,
+        "statement": "EFID consolidated profit before income tax for the year ended 31 December 2024"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The 50 % single-company diversification cap prevents any additional EFID purchase given the current portfolio composition.",
+      "A single year of 71 % PBT growth does not establish a sustainable trend; future performance is uncertain.",
+      "No forward-looking guidance, sector outlook, or valuation metrics (P/E, dividend yield) are available in the evidence to assess whether the current price of 20.40 EGP is attractive."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor's stated goal is to add to Edita, and the financials support a positive view: consolidated profit before tax grew from 2,163,025,380 EGP in FY2024 to 3,703,837,580 EGP in FY2025, an absolute increase of 1,540,812,200 EGP (≈71.2 %). Gross profit and net profit show the same upward trajectory, and EPS more than doubled (1.09 → 2.18 EGP). All figures are verified and unambiguous.\n\nHowever, the diversification constraint blocks any additional purchase. The current portfolio is 1,000 EFID shares × 20.40 EGP = 20,400 EGP in equity plus 15,000 EGP cash, for a total of 35,400 EGP. EFID already represents 57.6 % of that total, exceeding the 50 % single-company cap. Buying even one more share would push the concentration higher while the total portfolio value stays at 35,400 EGP, so no buy is permissible under the rules.\n\nBecause the investor already owns EFID, the correct action is to hold the existing 1,000 shares. The strong earnings growth is encouraging for the 5-year horizon, but the position cannot be increased until the portfolio is rebalanced (e.g., by adding other holdings or receiving additional cash) so that EFID falls below the 50 % threshold.\n\nRisks and uncertainty: the 71 % PBT growth is a single-year figure; it does not guarantee future performance. The investor's medium loss tolerance and medium financial capacity mean that a concentrated position in one stock carries meaningful downside risk if earnings reverse. No AMBIGUOUS figures were encountered, so no conclusions are affected by data gaps.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-26",
+        "stated_value": 3703837580.0,
+        "statement": "EFID consolidated profit before income tax for the year ended 31 December 2025"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-27",
+        "stated_value": 2163025380.0,
+        "statement": "EFID consolidated profit before income tax for the year ended 31 December 2024"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "The 50 % single-company diversification cap prevents any additional EFID purchase given the current portfolio composition.",
+      "A single year of 71 % PBT growth does not establish a sustainable trend; future performance is uncertain.",
+      "No forward-looking guidance, sector outlook, or valuation metrics (P/E, dividend yield) are available in the evidence to assess whether the current price of 20.40 EGP is attractive."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 1000
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n## Edita (EFID) – Profit Before Tax Growth, FY2025\n\n| Metric | FY2024 | FY2025 | Change |\n|---|---|---|---|\n| Profit before income tax (consolidated) | 2,163,025,380 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-27] | 3,703,837,580 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-26] | **+1,540,812,200 EGP** |\n\n**Absolute increase:** 3,703,837,580 − 2,163,025,380 = **1,540,812,200 EGP**\n\n**Percentage growth:** 1,540,812,200 ÷ 2,163,025,380 ≈ **71.2 %**\n\nBoth figures are taken directly from the consolidated income statement (p. 6, unit: EGP, i.e. whole pounds). No AMBIGUOUS values are involved; the two periods are clearly labelled in the column headings and the figures are marked *verified*.\n\n**Context within the same statement:** Gross profit rose from 4,987,667,576 EGP to 7,192,057,221 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-05 / -06], and net profit for the year rose from 1,606,727,698 EGP to 2,695,301,670 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30 / -31], so the pre-tax growth is consistent with the broader earnings trajectory. EPS more than doubled, from 1.09 EGP to 2.18 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38 / -39].\n\nNo further computation or adjustment is needed to answer the question as posed.",
+    "investor": "\n\n## Edita (EFID) – Profit Before Tax Growth in 2025\n\nFrom the consolidated income statement (p. 6, FY2025 EAS):\n\n| Period | Profit before income tax (EGP) |\n|---|---|\n| 31 December 2025 | 3,703,837,580 |\n| 31 December 2024 | 2,163,025,380 |\n\n**Absolute growth:** 3,703,837,580 − 2,163,025,380 = **1,540,812,200 EGP**\n\n**Percentage growth:** 1,540,812,200 ÷ 2,163,025,380 ≈ **71.2 %**\n\nSo Edita's consolidated profit before tax increased by roughly **1.54 billion EGP** (about 71 %) year-on-year in 2025."
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 6.383,
+      "input_tokens": 1800,
+      "output_tokens": 1109,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 5.304,
+      "input_tokens": 1793,
+      "output_tokens": 784,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 14.53,
+      "input_tokens": 2878,
+      "output_tokens": 1936,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 26.224
+}

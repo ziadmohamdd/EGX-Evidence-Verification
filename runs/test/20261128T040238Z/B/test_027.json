@@ -1,0 +1,104 @@
+{
+  "case_id": "test_027",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "I cannot perform the calculation you asked for. The last-quarter (3-month) EPS for the period ended 30 September 2026 is printed as \"١٩٩\" in the report, but this figure is flagged AMBIGUOUS because the OCR could not confirm whether a decimal comma was dropped (i.e., it could be 1.99 EGP or 199 EGP). Per the rules, I must not use an AMBIGUOUS figure in any calculation, so I cannot multiply it by four to produce an annualised number. The same limitation applies to the two percentage-change columns (104 % and 662 %), which are also AMBIGUOUS.\n\nWhat I can confirm from the verified figures: the 9-month EPS for the period ended 30 Sep 2026 is 8.74 EGP, versus 4.28 EGP a year earlier – a clear year-on-year improvement. The 3-month EPS for the prior-year quarter (30 Sep 2025) was 1.23 EGP. These verified numbers suggest earnings momentum, but I cannot responsibly annualise a single ambiguous quarter.\n\nOn the holding decision: you already own 200 shares of ABUK, your stated goal is income from this stock, and your 3-year horizon is consistent with an earnings-growth play. The 9-month EPS nearly doubling year-on-year (8.74 vs 4.28 EGP) is a positive signal for future dividend capacity. I am not recommending a buy because your ABUK position (200 × 76.21 = 15,242 EGP) already represents roughly 60 % of your total portfolio value (25,242 EGP), and any additional purchase would keep the single-stock weight above the 50 % diversification cap. I am not recommending a sell because the earnings trend supports your income objective and you have a separate emergency fund, so there is no liquidity pressure.\n\nRisks and uncertainty: (1) The Q3-2026 EPS figure is unresolved; if it is truly 1.99 EGP the quarterly run-rate is modest, but if the OCR dropped a decimal and it is 199 EGP the picture would be very different – you should verify against the original PDF. (2) A 9-month result does not guarantee full-year performance; Q4 could be weaker. (3) Earnings growth does not automatically translate into dividends; the board's payout decision matters. (4) The stock price of 76.21 EGP already reflects some of the earnings improvement. This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Basic EPS for the 9 months ended 30 Sep 2026 is 8.74 EGP per share (row unit: جنيه / EGP)."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Basic EPS for the 9 months ended 30 Sep 2025 is 4.28 EGP per share (row unit: جنيه / EGP)."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "Basic EPS for the 3 months ended 30 Sep 2025 is 1.23 EGP per share (row unit: جنيه / EGP)."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-34 (3M 2026 EPS, printed as ١٩٩ – AMBIGUOUS: decimal comma may be missing; cannot be used to annualise)",
+      "ABUK-ABUK_9M2026_results-p2-33 (9M YoY change %, printed as %١٠٤ – AMBIGUOUS: not a single clear number)",
+      "ABUK-ABUK_9M2026_results-p2-36 (3M YoY change %, printed as ٦٦٢ – AMBIGUOUS: per-share figure without a decimal mark)"
+    ],
+    "limitations": [
+      "The 3-month 2026 EPS (the figure you asked me to annualise) is AMBIGUOUS and therefore excluded from all calculations. I cannot give you a reliable 'quarter × 4' annualised EPS.",
+      "The page-level unit line reads 'مليون جنيه' (million EGP), but the row heading for EPS explicitly states 'جنيه' (EGP). I have treated the EPS figures as EGP per share, consistent with the row heading and the stock's market price of 76.21 EGP.",
+      "No dividend-per-share or payout-ratio data is provided in the evidence, so I cannot directly assess the income (dividend) yield you are targeting."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "I cannot perform the calculation you asked for. The last-quarter (3-month) EPS for the period ended 30 September 2026 is printed as \"١٩٩\" in the report, but this figure is flagged AMBIGUOUS because the OCR could not confirm whether a decimal comma was dropped (i.e., it could be 1.99 EGP or 199 EGP). Per the rules, I must not use an AMBIGUOUS figure in any calculation, so I cannot multiply it by four to produce an annualised number. The same limitation applies to the two percentage-change columns (104 % and 662 %), which are also AMBIGUOUS.\n\nWhat I can confirm from the verified figures: the 9-month EPS for the period ended 30 Sep 2026 is 8.74 EGP, versus 4.28 EGP a year earlier – a clear year-on-year improvement. The 3-month EPS for the prior-year quarter (30 Sep 2025) was 1.23 EGP. These verified numbers suggest earnings momentum, but I cannot responsibly annualise a single ambiguous quarter.\n\nOn the holding decision: you already own 200 shares of ABUK, your stated goal is income from this stock, and your 3-year horizon is consistent with an earnings-growth play. The 9-month EPS nearly doubling year-on-year (8.74 vs 4.28 EGP) is a positive signal for future dividend capacity. I am not recommending a buy because your ABUK position (200 × 76.21 = 15,242 EGP) already represents roughly 60 % of your total portfolio value (25,242 EGP), and any additional purchase would keep the single-stock weight above the 50 % diversification cap. I am not recommending a sell because the earnings trend supports your income objective and you have a separate emergency fund, so there is no liquidity pressure.\n\nRisks and uncertainty: (1) The Q3-2026 EPS figure is unresolved; if it is truly 1.99 EGP the quarterly run-rate is modest, but if the OCR dropped a decimal and it is 199 EGP the picture would be very different – you should verify against the original PDF. (2) A 9-month result does not guarantee full-year performance; Q4 could be weaker. (3) Earnings growth does not automatically translate into dividends; the board's payout decision matters. (4) The stock price of 76.21 EGP already reflects some of the earnings improvement. This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Basic EPS for the 9 months ended 30 Sep 2026 is 8.74 EGP per share (row unit: جنيه / EGP)."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Basic EPS for the 9 months ended 30 Sep 2025 is 4.28 EGP per share (row unit: جنيه / EGP)."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "Basic EPS for the 3 months ended 30 Sep 2025 is 1.23 EGP per share (row unit: جنيه / EGP)."
+      }
+    ],
+    "unused_figures": [
+      "ABUK-ABUK_9M2026_results-p2-34 (3M 2026 EPS, printed as ١٩٩ – AMBIGUOUS: decimal comma may be missing; cannot be used to annualise)",
+      "ABUK-ABUK_9M2026_results-p2-33 (9M YoY change %, printed as %١٠٤ – AMBIGUOUS: not a single clear number)",
+      "ABUK-ABUK_9M2026_results-p2-36 (3M YoY change %, printed as ٦٦٢ – AMBIGUOUS: per-share figure without a decimal mark)"
+    ],
+    "limitations": [
+      "The 3-month 2026 EPS (the figure you asked me to annualise) is AMBIGUOUS and therefore excluded from all calculations. I cannot give you a reliable 'quarter × 4' annualised EPS.",
+      "The page-level unit line reads 'مليون جنيه' (million EGP), but the row heading for EPS explicitly states 'جنيه' (EGP). I have treated the EPS figures as EGP per share, consistent with the row heading and the stock's market price of 76.21 EGP.",
+      "No dividend-per-share or payout-ratio data is provided in the evidence, so I cannot directly assess the income (dividend) yield you are targeting."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ABUK",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [],
+    "revised": false,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 35.127,
+      "input_tokens": 2222,
+      "output_tokens": 4554,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 35.131
+}

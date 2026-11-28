@@ -1,0 +1,98 @@
+{
+  "case_id": "test_027",
+  "condition": "A",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "You asked me to take Abu Qir's last-quarter (3 months ended 30 Sep 2026) EPS, multiply it by four, and give you an annualised figure. I cannot do that reliably. The printed value in that column is '١٩٩' (199), but the OCR note flags it as AMBIGUOUS: a decimal comma may have been dropped, so the true figure could be 1.99 EGP per share rather than 199 EGP. Multiplying 1.99 × 4 gives ≈ 7.96 EGP; multiplying 199 × 4 gives 796 EGP. These are wildly different and would lead to opposite conclusions about income yield, so I will not use that figure in any calculation.\n\nWhat I can confirm from the verified entries:\n• 9-month EPS (ended 30 Sep 2026): 8.74 EGP per share.\n• 9-month EPS (ended 30 Sep 2025): 4.28 EGP per share.\n• 3-month EPS (ended 30 Sep 2025): 1.23 EGP per share.\n\nThe verified 9-month data shows earnings per share more than doubled year-on-year (8.74 vs 4.28), which is encouraging for an income-oriented holder. However, I cannot confirm the run-rate for the most recent quarter because of the OCR ambiguity, and I also cannot verify the stated percentage changes (the 9M change and 3M change columns are both flagged AMBIGUOUS). A simple ×4 annualisation of a single quarter also ignores seasonality, so even with a clean number it would be a rough estimate, not a forecast.\n\nGiven that you already own 200 shares of ABUK, your stated goal is to hold the stock for income over a 3-year horizon, and the verified 9-month earnings trajectory is positive, the most appropriate action is to continue holding your existing position. I would not add to the position (buy) until the quarterly EPS figure is confirmed from a cleaner source, and there is no verified negative signal that would justify selling. Please verify the Q3-2026 EPS directly from the company's filing or your broker's data before making any size change.\n\nRisks: The ambiguity means the true quarterly earnings could be materially lower (or higher) than either reading. A single quarter's result does not guarantee the full-year or multi-year income stream. The stock price (76.21 EGP) and the earnings figures come from a single report; I have no dividend-payout data in the evidence to confirm the actual cash income you will receive.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Basic EPS for the 9 months ended 30 Sep 2026 is 8.74 EGP per share (row heading unit: EGP)."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Basic EPS for the 9 months ended 30 Sep 2025 is 4.28 EGP per share (row heading unit: EGP)."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "Basic EPS for the 3 months ended 30 Sep 2025 is 1.23 EGP per share (row heading unit: EGP)."
+      }
+    ],
+    "unused_figures": [
+      "3M 2026 EPS printed as '١٩٩' (evidence ABUK-ABUK_9M2026_results-p2-34) – AMBIGUOUS: a decimal comma may be missing, so the value could be 1.99 or 199 EGP. This is the exact figure the investor asked to annualise, so the requested ×4 calculation cannot be performed.",
+      "9M change % printed as '%١٠٤' (evidence ABUK-ABUK_9M2026_results-p2-33) – AMBIGUOUS: OCR could not confirm whether this is 104% or another value.",
+      "3M change % printed as '٦٦٢' (evidence ABUK-ABUK_9M2026_results-p2-36) – AMBIGUOUS: OCR could not confirm the exact percentage."
+    ],
+    "limitations": [
+      "The page-level unit line reads 'مليون جنيه' (million EGP), while the row heading for EPS reads 'جنيه' (EGP). I used the row-heading unit (EGP per share) because the values are consistent with per-share EGP and the row heading is specific to this line. If the page unit were applied, the figures would be in millions of EGP per share, which is implausible.",
+      "No dividend-payout ratio or declared-dividend data is present in the evidence, so I cannot confirm the actual cash income per share you will receive.",
+      "A ×4 annualisation of one quarter ignores intra-year seasonality and is not a reliable full-year or multi-year earnings estimate."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "ABUK",
+    "shares": 0,
+    "explanation": "You asked me to take Abu Qir's last-quarter (3 months ended 30 Sep 2026) EPS, multiply it by four, and give you an annualised figure. I cannot do that reliably. The printed value in that column is '١٩٩' (199), but the OCR note flags it as AMBIGUOUS: a decimal comma may have been dropped, so the true figure could be 1.99 EGP per share rather than 199 EGP. Multiplying 1.99 × 4 gives ≈ 7.96 EGP; multiplying 199 × 4 gives 796 EGP. These are wildly different and would lead to opposite conclusions about income yield, so I will not use that figure in any calculation.\n\nWhat I can confirm from the verified entries:\n• 9-month EPS (ended 30 Sep 2026): 8.74 EGP per share.\n• 9-month EPS (ended 30 Sep 2025): 4.28 EGP per share.\n• 3-month EPS (ended 30 Sep 2025): 1.23 EGP per share.\n\nThe verified 9-month data shows earnings per share more than doubled year-on-year (8.74 vs 4.28), which is encouraging for an income-oriented holder. However, I cannot confirm the run-rate for the most recent quarter because of the OCR ambiguity, and I also cannot verify the stated percentage changes (the 9M change and 3M change columns are both flagged AMBIGUOUS). A simple ×4 annualisation of a single quarter also ignores seasonality, so even with a clean number it would be a rough estimate, not a forecast.\n\nGiven that you already own 200 shares of ABUK, your stated goal is to hold the stock for income over a 3-year horizon, and the verified 9-month earnings trajectory is positive, the most appropriate action is to continue holding your existing position. I would not add to the position (buy) until the quarterly EPS figure is confirmed from a cleaner source, and there is no verified negative signal that would justify selling. Please verify the Q3-2026 EPS directly from the company's filing or your broker's data before making any size change.\n\nRisks: The ambiguity means the true quarterly earnings could be materially lower (or higher) than either reading. A single quarter's result does not guarantee the full-year or multi-year income stream. The stock price (76.21 EGP) and the earnings figures come from a single report; I have no dividend-payout data in the evidence to confirm the actual cash income you will receive.",
+    "claims": [
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-31",
+        "stated_value": 8.74,
+        "statement": "Basic EPS for the 9 months ended 30 Sep 2026 is 8.74 EGP per share (row heading unit: EGP)."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-32",
+        "stated_value": 4.28,
+        "statement": "Basic EPS for the 9 months ended 30 Sep 2025 is 4.28 EGP per share (row heading unit: EGP)."
+      },
+      {
+        "evidence_id": "ABUK-ABUK_9M2026_results-p2-35",
+        "stated_value": 1.23,
+        "statement": "Basic EPS for the 3 months ended 30 Sep 2025 is 1.23 EGP per share (row heading unit: EGP)."
+      }
+    ],
+    "unused_figures": [
+      "3M 2026 EPS printed as '١٩٩' (evidence ABUK-ABUK_9M2026_results-p2-34) – AMBIGUOUS: a decimal comma may be missing, so the value could be 1.99 or 199 EGP. This is the exact figure the investor asked to annualise, so the requested ×4 calculation cannot be performed.",
+      "9M change % printed as '%١٠٤' (evidence ABUK-ABUK_9M2026_results-p2-33) – AMBIGUOUS: OCR could not confirm whether this is 104% or another value.",
+      "3M change % printed as '٦٦٢' (evidence ABUK-ABUK_9M2026_results-p2-36) – AMBIGUOUS: OCR could not confirm the exact percentage."
+    ],
+    "limitations": [
+      "The page-level unit line reads 'مليون جنيه' (million EGP), while the row heading for EPS reads 'جنيه' (EGP). I used the row-heading unit (EGP per share) because the values are consistent with per-share EGP and the row heading is specific to this line. If the page unit were applied, the figures would be in millions of EGP per share, which is implausible.",
+      "No dividend-payout ratio or declared-dividend data is present in the evidence, so I cannot confirm the actual cash income per share you will receive.",
+      "A ×4 annualisation of one quarter ignores intra-year seasonality and is not a reliable full-year or multi-year earnings estimate."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 10000.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "ABUK",
+        "shares": 200
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 28.486,
+      "input_tokens": 2222,
+      "output_tokens": 4438,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 28.489
+}

@@ -1,0 +1,149 @@
+{
+  "case_id": "test_012",
+  "condition": "C",
+  "status": "ok",
+  "proposed": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor asked to buy 1,000 additional EFID shares at 20.40 EGP (cost: 20,400 EGP), but the portfolio contains 0.00 EGP in cash. A buy must fit the available cash, and no cash is available, so the order cannot be executed. I therefore recommend holding the existing 2,000 EFID shares unchanged.\n\nThe financial evidence is positive: FY2025 revenue grew ~29.5% to 20.92 billion EGP, net profit grew ~67.8% to 2.70 billion EGP, and EPS doubled to 2.18 EGP, implying a trailing P/E of roughly 9.4× at the 20.40 EGP price. Margin expanded from ~9.9% to ~12.9%. For a 3–5-year horizon these are encouraging fundamentals.\n\nHowever, two practical constraints prevent the add:\n1. Funding: 20,400 EGP must be deposited from outside the portfolio before any purchase can be made. The investor should confirm this does not erode the separate emergency fund.\n2. Concentration: The portfolio is already 100% EFID. Adding 1,000 shares would raise absolute exposure by 50% while keeping the portfolio 100% in a single name. With medium loss tolerance and medium financial capacity, a 30–40% drawdown in EFID would translate directly into a 30–40% portfolio loss with no offset. The diversification rule (no single company > 50% of portfolio value) is already breached in the current state; any future buy would need to be sized so that EFID falls to ≤ 50% of total portfolio value, which would require adding cash or other assets first.\n\nAdditional caution: total liabilities rose ~42% YoY, but the unit on that line is marked 'None' in the source (AMBIGUOUS), so I have not used it in any ratio. Without a full balance sheet, cash-flow statement, or dividend data, the sustainability of the earnings growth and the composition of the liability increase remain unverified. These are material gaps for a 3–5-year holding.\n\nRecommendation: Hold the current 2,000 EFID shares. If the investor wishes to add, they must first deposit at least 20,400 EGP (or more, to allow for diversification) and should consider a smaller add or a diversification plan to bring the single-name weight below 50%.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue for FY2025 is 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "EFID consolidated revenue for FY2024 is 16,146,545,699 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for FY2025 is 2,695,301,670 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for FY2024 is 1,606,727,698 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for FY2025 is 2.18 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for FY2024 is 1.09 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-75 (Total liabilities FY2025: 8,646,502,892 – unit marked 'None', AMBIGUOUS; not used in any calculation)",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-76 (Total liabilities FY2024: 6,083,968,654 – unit marked 'None', AMBIGUOUS; not used in any calculation)"
+    ],
+    "limitations": [
+      "No cash-flow statement, full balance sheet (assets, equity, debt split), dividend data, or segment breakdown is available; the analysis is limited to income-statement lines and one ambiguous balance-sheet line.",
+      "The AMBIGUOUS total-liabilities figures (unit 'None') prevent any leverage or solvency ratio from being computed; the 42% liability increase noted by the financial analyst cannot be confirmed in absolute terms.",
+      "No forward guidance, management commentary, or FX/inflation context is provided; the 3–5-year outlook rests on a single year of reported results.",
+      "The portfolio currently has 0 EGP cash, so no purchase can be executed without an external deposit; this recommendation is conditional on the investor's ability and willingness to fund the trade."
+    ]
+  },
+  "final": {
+    "action": "hold",
+    "ticker": "EFID",
+    "shares": 0,
+    "explanation": "The investor asked to buy 1,000 additional EFID shares at 20.40 EGP (cost: 20,400 EGP), but the portfolio contains 0.00 EGP in cash. A buy must fit the available cash, and no cash is available, so the order cannot be executed. I therefore recommend holding the existing 2,000 EFID shares unchanged.\n\nThe financial evidence is positive: FY2025 revenue grew ~29.5% to 20.92 billion EGP, net profit grew ~67.8% to 2.70 billion EGP, and EPS doubled to 2.18 EGP, implying a trailing P/E of roughly 9.4× at the 20.40 EGP price. Margin expanded from ~9.9% to ~12.9%. For a 3–5-year horizon these are encouraging fundamentals.\n\nHowever, two practical constraints prevent the add:\n1. Funding: 20,400 EGP must be deposited from outside the portfolio before any purchase can be made. The investor should confirm this does not erode the separate emergency fund.\n2. Concentration: The portfolio is already 100% EFID. Adding 1,000 shares would raise absolute exposure by 50% while keeping the portfolio 100% in a single name. With medium loss tolerance and medium financial capacity, a 30–40% drawdown in EFID would translate directly into a 30–40% portfolio loss with no offset. The diversification rule (no single company > 50% of portfolio value) is already breached in the current state; any future buy would need to be sized so that EFID falls to ≤ 50% of total portfolio value, which would require adding cash or other assets first.\n\nAdditional caution: total liabilities rose ~42% YoY, but the unit on that line is marked 'None' in the source (AMBIGUOUS), so I have not used it in any ratio. Without a full balance sheet, cash-flow statement, or dividend data, the sustainability of the earnings growth and the composition of the liability increase remain unverified. These are material gaps for a 3–5-year holding.\n\nRecommendation: Hold the current 2,000 EFID shares. If the investor wishes to add, they must first deposit at least 20,400 EGP (or more, to allow for diversification) and should consider a smaller add or a diversification plan to bring the single-name weight below 50%.",
+    "claims": [
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01",
+        "stated_value": 20915072432.0,
+        "statement": "EFID consolidated revenue for FY2025 is 20,915,072,432 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02",
+        "stated_value": 16146545699.0,
+        "statement": "EFID consolidated revenue for FY2024 is 16,146,545,699 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for FY2025 is 2,695,301,670 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for FY2024 is 1,606,727,698 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38",
+        "stated_value": 2.18,
+        "statement": "EFID basic and diluted EPS for FY2025 is 2.18 EGP."
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39",
+        "stated_value": 1.09,
+        "statement": "EFID basic and diluted EPS for FY2024 is 1.09 EGP."
+      }
+    ],
+    "unused_figures": [
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-75 (Total liabilities FY2025: 8,646,502,892 – unit marked 'None', AMBIGUOUS; not used in any calculation)",
+      "EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-76 (Total liabilities FY2024: 6,083,968,654 – unit marked 'None', AMBIGUOUS; not used in any calculation)"
+    ],
+    "limitations": [
+      "No cash-flow statement, full balance sheet (assets, equity, debt split), dividend data, or segment breakdown is available; the analysis is limited to income-statement lines and one ambiguous balance-sheet line.",
+      "The AMBIGUOUS total-liabilities figures (unit 'None') prevent any leverage or solvency ratio from being computed; the 42% liability increase noted by the financial analyst cannot be confirmed in absolute terms.",
+      "No forward guidance, management commentary, or FX/inflation context is provided; the 3–5-year outlook rests on a single year of reported results.",
+      "The portfolio currently has 0 EGP cash, so no purchase can be executed without an external deposit; this recommendation is conditional on the investor's ability and willingness to fund the trade."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 0.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "EFID",
+        "shares": 2000
+      }
+    ]
+  },
+  "verifier": null,
+  "reports": {
+    "financial": "\n\n# EFID (Edita) – Financial Evidence Analysis\n\n## 1. Profitability & Growth\n\n| Metric | FY2025 | FY2024 | YoY Δ |\n|---|---|---|---|\n| Revenue | 20,915,072,432 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-01] | 16,146,545,699 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-02] | +29.5 % |\n| Net profit | 2,695,301,670 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30] | 1,606,727,698 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-37] | +67.8 % |\n| EPS (basic & diluted) | 2.18 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-38] | 1.09 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-39] | +100 % |\n\n- **Net margin** (computed): 2,695,301,670 / 20,915,072,432 ≈ **12.9 %** in FY2025 vs. 1,606,727,698 / 16,146,545,699 ≈ **9.9 %** in FY2024. Margin expanded roughly 300 bps.\n- **Implied P/E at the 20.40 EGP cutoff price**: 20.40 / 2.18 ≈ **9.4×** FY2025 EPS. For a company whose earnings roughly doubled, this multiple is low by most emerging-market standards, though it may reflect market scepticism about sustainability or currency risk.\n\n## 2. Balance Sheet (limited data)\n\n| Metric | FY2025 | FY2024 | YoY Δ |\n|---|---|---|---|\n| Total liabilities | 8,646,502,892 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-75] | 6,083,968,654 EGP [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-76] | +42.1 % |\n\n- Liabilities grew **42.1 %**, outpacing revenue growth (29.5 %). This suggests the top-line expansion is being funded in part by additional borrowing or accruals.\n- **Data gap:** No total-assets, total-equity, or debt-vs-equity split is present in the supplied evidence. I therefore **cannot** compute a leverage ratio, interest-coverage ratio, or assess whether the liability increase is interest-bearing debt vs. trade payables. This is a material blind spot for a 3–5-year horizon.\n\n## 3. Risks & Constraints Relevant to the Investor\n\n- **Liquidity / funding constraint (practical):** The portfolio shows **Cash: 0.00 EGP**. Purchasing 1,000 additional shares at 20.40 EGP would require **20,400 EGP** of cash that is not currently in the account. The investor would need to source external funds or liquidate another position before the trade can be executed.\n- **Concentration:** The investor already holds 2,000 EFID shares (≈ 40,800 EGP at 20.40). Adding 1,000 shares would make the position 3,000 shares (≈ 61,200 EGP), a **50 % increase** in a single-name position. With medium loss-tolerance and medium financial capacity, this concentration warrants attention.\n- **Currency / macro risk:** All figures are in EGP. The evidence contains no FX-hedging or inflation-adjusted data. For a 3–5-year EGP-denominated holding, EGP depreciation against the investor's base currency is an unquantified risk.\n- **Liability trajectory:** The 42 % jump in total liabilities, without visibility into the composition (short-term vs. long-term, interest-bearing vs. operating), is a flag. If a meaningful share is short-term interest-bearing debt, refinancing risk in a high-rate environment could compress the margin gains seen in FY2025.\n\n## 4. Data-Quality Notes\n\n- **Unit ambiguity on Total Liabilities:** The metadata line reads *\"unit: None\"* [EFID-EFID_FY2025_EAS_consolidated_signed_en-p5-75], while the column heading explicitly states \"EGP.\" I have treated the figures as **whole EGP** based on the column heading. If the \"None\" unit were to imply a different scaling (e.g., thousands), every liability figure above would need to be multiplied accordingly. **Flagged as AMBIGUOUS** – I have not used the liability figures in any ratio computation because of this.\n- **Duplicate evidence rows:** Net profit and EPS each appear twice (e.g., p6-30 and p6-36 for FY2025 net profit; p6-38 and p6-39 for EPS). The values are identical, so no conflict, but the duplication is noted.\n- **No segment, cash-flow, or dividend data** is provided. The analysis is limited to the income-statement and one balance-sheet line item.\n\n## 5. Summary of What the Evidence Supports (and Does Not)\n\n**Supported by the data:**\n- Strong top-line and bottom-line growth in FY2025 (revenue +29.5 %, net profit +67.8 %, EPS +100 %).\n- Margin expansion (~300 bps).\n- A low trailing P/E (~9.4×) relative to the growth rate.\n\n**Not supported / missing from the evidence:**\n- Full balance-sheet picture (assets, equity, debt structure, current ratio).\n- Cash-flow statement (operating cash flow, capex, free cash flow).\n- Dividend history or payout policy.\n- Segment or geographic revenue mix.\n- Any forward guidance or management commentary.\n- FX or inflation context.\n\nI have presented the evidence and the analytical observations above. The decision on whether to add 1,000 EFID shares rests with the decision agent, who should also weigh the **zero-cash constraint** and the **concentration increase** before any order is placed.",
+    "investor": "\n\n# Investor-Suitability Assessment – Adding to EFID Position\n\n## 1. Horizon\n\nA 3–5-year horizon is broadly compatible with a single-listed-equity holding. It gives the position time to ride out normal market cycles without forcing a sale at an inopportune moment. No horizon mismatch here.\n\n## 2. Liquidity Needs\n\nThe investor maintains a **separate emergency fund**, so the portfolio itself does not need to double as a liquidity buffer. This is a positive: the EFID position can be held through a drawdown without the investor being forced to sell to cover a personal cash shortfall.\n\n## 3. Loss Tolerance & Capacity\n\n| Dimension | Rating | Implication |\n|---|---|---|\n| Willingness to accept losses | **Medium** | Investor is comfortable with moderate drawdowns but not extreme ones. |\n| Financial capacity to absorb losses | **Medium** | A large loss would be felt but not catastrophic. |\n\nA single-stock position amplifies volatility. If EFID were to fall 30–40 % (a plausible move for a mid-cap over a 1–2-year window), the **entire** portfolio would take that hit. With medium tolerance *and* medium capacity, a 100 %-concentrated book sits at the upper edge of what this investor can comfortably absorb. The investor should be aware that the \"medium\" rating is calibrated for a diversified book, not a single-name one.\n\n## 4. Current Concentration\n\n- **Today:** 2,000 EFID shares × 20.40 EGP = **40,800 EGP** – 100 % of the portfolio in one name.\n- **After the proposed add:** 3,000 shares × 20.40 EGP = **61,200 EGP** – still 100 % in one name, and the absolute exposure rises by 50 %.\n\nThere is no diversification cushion. Any idiosyncratic event (sector shock, management change, regulatory action on the food-retail sector) hits the whole portfolio with no offset.\n\n## 5. Cash Available to Fund the Purchase\n\n| Item | Amount (EGP) |\n|---|---|\n| Cash in portfolio | **0.00** |\n| Cost of 1,000 additional shares @ 20.40 | **20,400** |\n| **Shortfall to be funded externally** | **20,400** |\n\n- **No free cash** exists in the portfolio.\n- The only other asset is the 2,000 EFID shares themselves; selling a portion would generate cash but would not reduce concentration (it would simply be a smaller position in the same stock) and would not create net new buying power for EFID.\n- The investor would need to **deposit 20,400 EGP from outside the portfolio** to execute the trade.\n\n## 6. What the Portfolio Allows / Does Not Allow\n\n- **Can be sold:** EFID shares (2,000 available). Selling would free cash but would not help fund a *larger* EFID position.\n- **Free cash:** None (0 EGP).\n- **External funding required:** 20,400 EGP must come from the investor's personal funds outside this portfolio.\n\n## 7. Suitability Summary\n\n| Factor | Verdict |\n|---|---|\n| Horizon (3–5 yr) | ✅ Compatible with an equity holding |\n| Liquidity (separate emergency fund) | ✅ No forced-sale risk |\n| Loss tolerance / capacity (medium / medium) | ⚠️ At the upper edge for a 100 %-single-stock book; a 30 %+ drawdown would be a significant, though survivable, event |\n| Concentration | ⚠️ Already 100 % in one name; the add increases absolute exposure by 50 % without adding any diversification |\n| Cash to fund the trade | ❌ 0 EGP in portfolio; 20,400 EGP must be sourced externally |\n\n**Key considerations for the investor before proceeding:**\n\n1. **Funding source:** Confirm that 20,400 EGP is available from outside the portfolio and that committing it does not erode the separate emergency fund or other near-term obligations.\n2. **Concentration risk:** The addition keeps the portfolio 100 % in a single stock. With medium loss tolerance and capacity, the investor should be explicit that a 30–40 % decline in EFID would translate directly into a 30–40 % portfolio loss with no offsetting positions.\n3. **Position sizing:** If the investor wishes to keep the single-stock exposure within a range that a \"medium\" loss profile can absorb, a smaller add (e.g., 500 shares ≈ 10,200 EGP) or a plan to diversify a portion of the proceeds in the future could be considered. This is a sizing question for the investor, not a recommendation.\n\n*This assessment addresses suitability only. It does not constitute a buy/sell recommendation or an analysis of EFID's financials.*"
+  },
+  "calls": [
+    {
+      "role": "financial_analyst",
+      "seconds": 17.76,
+      "input_tokens": 1777,
+      "output_tokens": 3183,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "investor_analyst",
+      "seconds": 17.374,
+      "input_tokens": 1770,
+      "output_tokens": 2142,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "decision_agent",
+      "seconds": 23.682,
+      "input_tokens": 4767,
+      "output_tokens": 3254,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 58.82
+}

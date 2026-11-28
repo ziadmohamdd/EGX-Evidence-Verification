@@ -1,0 +1,128 @@
+{
+  "case_id": "test_017",
+  "condition": "B",
+  "status": "ok",
+  "proposed": {
+    "action": "buy",
+    "ticker": "COMI",
+    "shares": 117,
+    "explanation": "CIB (COMI) earned far more than Edita (EFID) in 2025. CIB's consolidated net profit for the year ended 31 Dec 2025 was 82,258,815 thousand EGP, i.e. 82,258,815,000 EGP. Edita's consolidated net profit for the same year was 2,695,301,670 EGP. CIB therefore out-earned Edita by 79,563,513,330 EGP (roughly 30× Edita's profit). Both companies also grew year-on-year (CIB: 55.26 bn → 82.26 bn; Edita: 1.61 bn → 2.70 bn), so the trend is positive for both.\n\nBecause your stated goal is to pick the more profitable company and the only profitability metric available in the evidence is absolute net profit, CIB is the clear choice on that basis. I must flag an important limitation: without revenue, equity, or margin data we cannot judge relative profitability (e.g. return on equity or net margin), so 'more profitable' here means 'larger absolute profit.' A 5-year horizon and medium risk tolerance are consistent with holding a large, profitable bank, but you should be aware that a single-stock position carries concentration risk.\n\nDiversification constraint: with 30,000 EGP in cash and no other holdings, I can invest at most 50 % of the portfolio (15,000 EGP) in one name. At 128 EGP per share that allows 117 shares (117 × 128 = 14,976 EGP), leaving 5,024 EGP in cash. Post-purchase portfolio: 14,976 EGP in COMI (49.9 %) + 5,024 EGP cash = 30,000 EGP, satisfying the 50 % cap.\n\nRisks and uncertainty: this recommendation rests on a single year's net-profit figure. Earnings can be volatile; a bank's profit is sensitive to interest-rate cycles, credit losses, and regulatory changes. The evidence does not include balance-sheet data, dividend history, or forward guidance, so I cannot confirm that 2025 profit is sustainable over your 5-year horizon. This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815.0,
+        "statement": "COMI net profit for the year ended 31 Dec 2025, as printed in EGP thousands"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732.0,
+        "statement": "COMI net profit for the year ended 31 Dec 2024, as printed in EGP thousands"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for the year ended 31 Dec 2025, in EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year ended 31 Dec 2024, in EGP"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "No revenue, equity, or margin data available, so relative profitability (ROE, net margin) cannot be assessed.",
+      "Only one year of forward-looking context; 2025 profit may not be representative of the 5-year horizon.",
+      "No dividend, buyback, or balance-sheet information to evaluate total shareholder return.",
+      "Single-year snapshot; no multi-year trend beyond 2024→2025."
+    ]
+  },
+  "final": {
+    "action": "buy",
+    "ticker": "COMI",
+    "shares": 117,
+    "explanation": "CIB (COMI) earned far more than Edita (EFID) in 2025. CIB's consolidated net profit for the year ended 31 Dec 2025 was 82,258,815 thousand EGP, i.e. 82,258,815,000 EGP in base units. Edita's consolidated net profit for the same year was 2,695,301,670 EGP. CIB therefore out-earned Edita by 79,563,513,330 EGP (roughly 30× Edita's profit). Both companies also grew year-on-year (CIB: 55,256,732,000 → 82,258,815,000 EGP; Edita: 1,606,727,698 → 2,695,301,670 EGP), so the trend is positive for both.\n\nBecause your stated goal is to pick the more profitable company and the only profitability metric available in the evidence is absolute net profit, CIB is the clear choice on that basis. I must flag an important limitation: without revenue, equity, or margin data we cannot judge relative profitability (e.g. return on equity or net margin), so 'more profitable' here means 'larger absolute profit.' A 5-year horizon and medium risk tolerance are consistent with holding a large, profitable bank, but you should be aware that a single-stock position carries concentration risk.\n\nDiversification constraint: with 30,000 EGP in cash and no other holdings, I can invest at most 50 % of the portfolio (15,000 EGP) in one name. At 128 EGP per share that allows 117 shares (117 × 128 = 14,976 EGP), leaving 5,024 EGP in cash. Post-purchase portfolio: 14,976 EGP in COMI (49.9 %) + 5,024 EGP cash = 30,000 EGP, satisfying the 50 % cap.\n\nRisks and uncertainty: this recommendation rests on a single year's net-profit figure. Earnings can be volatile; a bank's profit is sensitive to interest-rate cycles, credit losses, and regulatory changes. The evidence does not include balance-sheet data, dividend history, or forward guidance, so I cannot confirm that 2025 profit is sustainable over your 5-year horizon. This is guidance, not a guarantee of returns.",
+    "claims": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "stated_value": 82258815000.0,
+        "statement": "COMI net profit for the year ended 31 Dec 2025: 82,258,815 (in EGP thousands) = 82,258,815,000 EGP"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "stated_value": 55256732000.0,
+        "statement": "COMI net profit for the year ended 31 Dec 2024: 55,256,732 (in EGP thousands) = 55,256,732,000 EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-30",
+        "stated_value": 2695301670.0,
+        "statement": "EFID consolidated net profit for the year ended 31 Dec 2025, in EGP"
+      },
+      {
+        "evidence_id": "EFID-EFID_FY2025_EAS_consolidated_signed_en-p6-31",
+        "stated_value": 1606727698.0,
+        "statement": "EFID consolidated net profit for the year ended 31 Dec 2024, in EGP"
+      }
+    ],
+    "unused_figures": [],
+    "limitations": [
+      "No revenue, equity, or margin data available, so relative profitability (ROE, net margin) cannot be assessed.",
+      "Only one year of forward-looking context; 2025 profit may not be representative of the 5-year horizon.",
+      "No dividend, buyback, or balance-sheet information to evaluate total shareholder return.",
+      "Single-year snapshot; no multi-year trend beyond 2024→2025."
+    ]
+  },
+  "blocked": false,
+  "violations": [],
+  "warnings": [],
+  "proposed_portfolio": {
+    "cash": 15024.0,
+    "currency": "EGP",
+    "holdings": [
+      {
+        "ticker": "COMI",
+        "shares": 117
+      }
+    ]
+  },
+  "verifier": {
+    "first_pass": [
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-33",
+        "rule": "value_mismatch",
+        "detail": "stated 8.22588e+07 but evidence 'Net profit for the year' is 8.22588e+10 [| Net profit for the year | | 82,258,815 | 55,256,732 | | unit: (All amounts are shown in EGP thousands)] (looks like a scale error by 1000)"
+      },
+      {
+        "evidence_id": "COMI-COMI_FY2025_consolidated_condensed_en-p5-34",
+        "rule": "value_mismatch",
+        "detail": "stated 5.52567e+07 but evidence 'Net profit for the year' is 5.52567e+10 [| Net profit for the year | | 82,258,815 | 55,256,732 | | unit: (All amounts are shown in EGP thousands)] (looks like a scale error by 1000)"
+      }
+    ],
+    "revised": true,
+    "after_revision": [],
+    "dropped": [],
+    "withdrawn": []
+  },
+  "reports": null,
+  "calls": [
+    {
+      "role": "single_agent",
+      "seconds": 23.708,
+      "input_tokens": 1504,
+      "output_tokens": 3168,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    },
+    {
+      "role": "single_agent_revision",
+      "seconds": 14.679,
+      "input_tokens": 2894,
+      "output_tokens": 2159,
+      "error": null,
+      "model": "openai_compatible:SovereignEG/Qwen3.8-27B-FP8",
+      "fallbacks": []
+    }
+  ],
+  "seconds": 38.393
+}
